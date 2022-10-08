@@ -11,18 +11,19 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: Kuruluşunuzun verilerini tutmak veya silmek için Microsoft 365 bekletme ilkeleri ve bekletme etiketleri için yapılandırabileceğiniz ayarları anlayın.
-ms.openlocfilehash: c0c5003a1e4a8b8aba231a0f3790aa0a82f26e15
-ms.sourcegitcommit: a1c86e51f6fec7517356251c3b99b1a86705c8c5
+ms.openlocfilehash: a9741c9dd993bcbdf9718535d7e182c13acaca15
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67336720"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504534"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Bekletme ilkeleri ve bekletme etiketi ilkeleri için yaygın ayarlar
 
@@ -39,6 +40,8 @@ Bekletme için bu ilkeleri destekleyen senaryolar için bkz:
 Her senaryoya özgü ayarlar ilgili belgelerinde açıklanmıştır.
 
 Microsoft 365'te bekletme ilkeleri ve bekletmenin nasıl çalıştığı hakkında genel bakış bilgileri için bkz. [Bekletme ilkeleri ve bekletme etiketleri hakkında bilgi edinin](retention.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="scopes---adaptive-and-static"></a>Kapsamlar - uyarlamalı ve statik
 
@@ -398,7 +401,7 @@ Saklama süresinin sonunda, içeriğin kalıcı olarak silinmesini isteyip istem
 
 ![Bekletme ayarları sayfası.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
 
-Sonraki bölümde açıklandığı gibi bekletme etiketlerinin başka bir seçeneği vardır; kendi saklama süresine sahip başka bir bekletme etiketi uygulamak için.
+Bekletme etiketlerinin iki seçeneği daha vardır. Sonraki bölümde açıklandığı gibi, kendi saklama süresine sahip başka bir bekletme etiketi uygulayabilirler. İsterseniz, özel eylemler için [bir Power Automate akışı tetikleyebilirler](retention-label-flow.md) .
 
 Bekletmeyi yapılandırmadan önce, önce ilgili iş yükleri için kapasite ve depolama sınırları hakkında bilgi edinin:
 
@@ -409,9 +412,6 @@ Bekletmeyi yapılandırmadan önce, önce ilgili iş yükleri için kapasite ve 
     Kullanıcılar tarafından veya ilke ayarlarından otomatik olarak kısa bir süre içinde yüksek miktarda e-postanın silindiği aşırı durumlarda, exchange'i kullanıcının birincil posta kutusunda bulunan Kurtarılabilir Öğeler klasöründeki öğeleri arşiv posta kutusunda kurtarılabilir öğeler klasörüne daha sık taşımak üzere yapılandırmanız da gerekebilir. Adım adım yönergeler için bkz. [Bekleyen posta kutuları için Kurtarılabilir Öğeler kotasını artırma](increase-the-recoverable-quota-for-mailboxes-on-hold.md).
 
 #### <a name="relabeling-at-the-end-of-the-retention-period"></a>Saklama süresinin sonunda yeniden etiketleme
-
-> [!NOTE]
-> Bu seçenek önizleme aşamasındadır ve değiştirilebilir.
 
 Bekletme süresinin sonunda otomatik olarak farklı bir bekletme etiketi uygulayacak şekilde bir bekletme etiketi yapılandırdığınızda, öğe yeni seçilen bekletme etiketinin bekletme ayarlarına tabi olur. Bu seçenek, öğenin bekletme ayarlarını otomatik olarak değiştirmenize olanak tanır.
 

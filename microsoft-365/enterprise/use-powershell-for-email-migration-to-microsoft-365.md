@@ -10,18 +10,20 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
 description: PowerShell kullanarak e-postayı mevcut sisteminizden Microsoft 365'e geçirmeyi öğrenin.
-ms.openlocfilehash: d4eebdcc80e058244d11ed8c375aefb5461d5ec1
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 3a519dae857105947d0c86f6a9ac70557cd2a789
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672743"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194609"
 ---
 # <a name="how-to-use-powershell-to-migrate-email-to-microsoft-365"></a>E-postayı Microsoft 365'e geçirmek için PowerShell'i kullanma
 

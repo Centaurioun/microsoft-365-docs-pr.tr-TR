@@ -7,19 +7,20 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 description: Kullanıcıları Microsoft 365 İş Standart kuruluşa katılmaya davet etme
-ms.openlocfilehash: 30896a963c3a60e3124e0d1a750bb17a44941037
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: 3ebee814a0241a6f4c6f7bc13e21209693cda6b8
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67644257"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68168935"
 ---
 # <a name="invite-users-to-a-microsoft-365-for-business-subscription-admin"></a>Kullanıcıları iş için Microsoft 365 aboneliğine davet etme (Yönetici)
 

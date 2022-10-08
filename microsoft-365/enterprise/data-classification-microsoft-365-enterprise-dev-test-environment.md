@@ -1,5 +1,5 @@
 ---
-title: Kurumsal test ortamı için Microsoft 365 veri sınıflandırması
+title: Kurumsal test ortamınız için Microsoft 365 veri sınıflandırması
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -8,39 +8,41 @@ manager: scotv
 ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- scotvorg
+- M365-security-compliance
 ms.custom:
 - Ent_TLGs
 - admindeeplinkMAC
 - admindeeplinkDEFENDER
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Kurumsal test ortamınız için Microsoft 365 belgeler üzerinde bekletme etiketleri oluşturmak ve kullanmak için bu Test Laboratuvarı Kılavuzu'nu kullanın.
-ms.openlocfilehash: f5bcde88be148ed883b4ad10e3b8116ed21c9fa8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Kurumsal test ortamınız için Microsoft 365'teki belgelerde bekletme etiketleri oluşturmak ve kullanmak için bu Test Laboratuvarı Kılavuzu'nu kullanın.
+ms.openlocfilehash: 959492fc2cd8402165b5222dbafc6d718fc9d14b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096820"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68168803"
 ---
-# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Kurumsal test ortamı için Microsoft 365 veri sınıflandırması
+# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Kurumsal test ortamınız için Microsoft 365 veri sınıflandırması
 
 *Bu Test Laboratuvarı Kılavuzu hem kurumsal hem de Office 365 Kurumsal test ortamları için Microsoft 365 için kullanılabilir.*
 
-Bu makalede, kurumsal test ortamınız için Microsoft 365 bekletme etiketlerini kullanarak veri sınıflandırmasını yapılandırma işlemi açıklanmaktadır.
+Bu makalede, kurumsal test ortamınız için Microsoft 365'te bekletme etiketlerini kullanarak veri sınıflandırmasını yapılandırma işlemi açıklanmaktadır.
 
 Test ortamınızdaki verileri sınıflandırmak üç aşamayı içerir:
-- [1. Aşama: Kurumsal test ortamı için Microsoft 365 oluşturma](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [1. Aşama: Kurumsal test ortamı için Microsoft 365'inizi oluşturma](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [2. Aşama: Bekletme etiketleri oluşturma](#phase-2-create-retention-labels)
 - [3. Aşama: Belgelere bekletme etiketleri uygulama](#phase-3-apply-retention-labels-to-documents)
 
 ![Microsoft bulutu için Test Laboratuvarı Kılavuzları.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Kurumsal Test Laboratuvarı Kılavuzu yığınındaki Microsoft 365 tüm makalelere yönelik görsel bir harita için [kurumsal Test Laboratuvarı Kılavuzu Yığını için Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf) bölümüne gidin.
+> Microsoft 365 kurumsal Test Laboratuvarı Kılavuzu yığınındaki tüm makalelere yönelik görsel bir harita için [, Kurumsal Test Laboratuvarı Kılavuz Yığını için Microsoft 365'e](../downloads/Microsoft365EnterpriseTLGStack.pdf) gidin.
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>1. Aşama: Kurumsal test ortamı için Microsoft 365 oluşturma
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>1. Aşama: Kurumsal test ortamı için Microsoft 365'inizi oluşturma
 
 Bekletme etiketlerini yalnızca minimum gereksinimlerle basit bir şekilde yapılandırmak istiyorsanız [Basit temel yapılandırma](lightweight-base-configuration-microsoft-365-enterprise.md) yönergelerini izleyin.
   
@@ -51,10 +53,10 @@ Sanal bir kuruluşta bekletme etiketlerini yapılandırmak istiyorsanız Doğrud
 
 ## <a name="phase-2-create-retention-labels"></a>2. Aşama: Bekletme etiketleri oluşturma
 
-Bu aşamada, SharePoint Çevrimiçi belgeler klasörleri için farklı bekletme düzeyleri için bekletme etiketlerini oluşturun:
+Bu aşamada, SharePoint Online belgeleri klasörleri için farklı bekletme düzeyleri için bekletme etiketlerini oluşturun:
 
 1. genel yönetici hesabınızla <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalında</a> oturum açın.
-1. **Tarayıcınızın Giriş - Microsoft 365 güvenlik** sekmesinde **ClassificationRetention** >  etiketleri'ni seçin.
+1. Tarayıcınızın **Giriş - Microsoft 365 güvenlik** sekmesinde **Sınıflandırma** > **Bekletme etiketleri'ni** seçin.
 1. **Etiket oluştur'u** seçin.
 1. **Etiketinizi adlandırın** bölmesinde, **Etiketinizi adlandırın** alanına **İç Genel** yazın ve **İleri'yi** seçin.
 1. **Dosya planı tanımlayıcıları** bölmesinde **İleri'yi** seçin.
@@ -79,27 +81,27 @@ Bekletme etiketlerinin yayımlanması birkaç dakika sürebilir.
 
 Bu aşamada, SharePoint Online sitesinin Belgeler klasöründeki dosyalar için varsayılan bekletme etiketi davranışını keşfeder ve belgenin bekletme etiketini el ile değiştirirsiniz.
 
-İlk olarak, hassas düzeyde bir SharePoint Çevrimiçi ekip sitesi oluşturun:
+İlk olarak hassas düzeyde bir SharePoint Online ekip sitesi oluşturun:
   
 1. Tarayıcınızın özel bir örneğini kullanarak genel yönetici hesabınızı kullanarak <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 yönetim merkezi</a> oturum açın.
-1. Kutucuk listesinde **SharePoint'ı** seçin.
+1. Kutucuk listesinde **SharePoint'i** seçin.
 1. Tarayıcınızdaki yeni **SharePoint** sekmesinde **Site oluştur'u** seçin.
 1. **Site oluştur** sayfasında **Ekip sitesi'ni** seçin.
 1. **Ekip sitesi adı** kutusuna **SensitiveFiles** yazın.
-1. **Ekip sitesi açıklaması** kutusuna **hassas dosyalar için SharePoint site** girin.
+1. **Ekip sitesi açıklaması** kutusuna **hassas dosyalar için SharePoint sitesi** girin.
 1. **Gizlilik ayarları'nda** **Özel - yalnızca üyeler bu siteye erişebilir'i** seçin ve ardından **İleri'yi** seçin.
-1. **Eklemek istediğiniz Who?** bölmesinde **Son'u** seçin.
+1. **Kim eklemek istiyorsunuz?** bölmesinde **Son'u** seçin.
     
 Ardından, SensitiveFiles ekip sitesinin Belgeler klasörünü Hassas saklama etiketi için yapılandırın.
   
 1. Tarayıcınızın **SensitiveFiles** sekmesinde **Belgeler'i** seçin.
 1. **Ayarlar** simgesini ve ardından **Kitaplık ayarları'nı** seçin.
 1. **İzinler ve Yönetim** altında **, Bu liste veya kitaplıktaki öğelere etiket uygula'yı** seçin. Bu seçenek görünmüyorsa bekletme etiketleriniz henüz yayımlanmaz. Bu adımı daha sonra deneyin.
-1. **Ayarlar Etiketi Uygula'da**, açılan **kutudan Hassas'ı** ve ardından **Kaydet'i** seçin.
+1. **Ayarlar-Etiket Uygula'da**, açılan **kutudan Hassas'ı** ve ardından **Kaydet'i** seçin.
 
 Ardından, SensitiveFiles sitesinde yeni bir belge oluşturun ve bekletme etiketini değiştirin.
     
-1. Belgeler klasöründe **YeniWord** **belgesi'ni** >  seçin.
+1. Belgeler klasöründe Yeni **Word** **belgesi'ni** >  seçin.
 1. Boş belgeye metin girin. Metnin kaydedilmesini bekleyin.
 1. Menü çubuğunda **Paylaşılan Belgeler'i** seçin.
 1. **Document.docx** dosya adının yanında dikey üç noktayı ve ardından **Ayrıntılar'ı** seçin.
@@ -113,7 +115,7 @@ Test ortamınızdaki ek [bilgi koruma](m365-enterprise-test-lab-guides.md#inform
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kurumsal Test Laboratuvarı Kılavuzları için Microsoft 365](m365-enterprise-test-lab-guides.md)
+[Kurumsal test laboratuvarı kılavuzları için Microsoft 365](m365-enterprise-test-lab-guides.md)
 
 [Microsoft 365 Kurumsal’a genel bakış](microsoft-365-overview.md)
 

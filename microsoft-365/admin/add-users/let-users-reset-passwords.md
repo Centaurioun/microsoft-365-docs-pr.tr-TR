@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -30,12 +31,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Kullanıcıların self servis parola sıfırlama aracını kullanarak kendi parolalarını sıfırlamasına izin vermek için Microsoft 365 yönetim merkezi bir ilke ayarlamayı öğrenin.
-ms.openlocfilehash: 7ee0d3aa8053c4156eba999a77a5ea5d1643cd98
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: d9c962b26343cf5e2ddd6c1f4b2c8126b2b157fa
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662343"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195203"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Kullanıcıların kendi parolalarını sıfırlamasına izin verme
 
@@ -64,9 +65,9 @@ Bu videoyu faydalı bulduysanız, [küçük işletmelere ve Microsoft 365’i il
   
 - Microsoft 365 iş, eğitim veya kar amacı gütmeyen ücretli planlarla bulut kullanıcıları için **ücretsiz** self servis parola sıfırlaması alırsınız. Microsoft 365 deneme sürümüyle çalışmaz.
 
-- Azure kullanır. Bu adımları izlediğinizde, Azure'da bu özelliği otomatik olarak **ücretsiz** alırsınız. Diğer Azure özelliklerini kullanmazsanız, self servis parola sıfırlama özelliğini açmanın sizin için hiçbir maliyeti yoktur.
+- It uses Azure. You'll automatically get this feature in Azure for **free** when you do these steps. It won't cost you anything to turn on self-service password reset if you don't use other Azure features.
 
-- **Şirket içi Active Directory'yi kullanıyorsanız** yukarıdaki iki nokta sizin için geçerli değildir. Onun yerine, bu özelliği ayarlayabilirsiniz ancak **bunun için ücretli bir Azure AD Premium aboneliği gerekir**.
+- **If you're using an on-premises Active Directory**, the above two points don't apply. Rather, you can set this up but **it requires a paid subscription to Azure AD Premium**.
 
 Bu makale, bir işletme, okul veya kar amacı gütmeyen kuruluş için parola süre sonu ilkesi belirleyen kişilere yöneliktir. Bu adımları tamamlamak için Microsoft 365 yönetici hesabınızla oturum açmanız gerekir. [Yönetici hesabı nedir?] (Microsoft 365 yönetim merkezi Genel Bakış](.. /admin-overview/admin-center-overview.md)
 

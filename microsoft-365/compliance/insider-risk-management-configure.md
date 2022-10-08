@@ -12,18 +12,24 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- highpri
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: f000ece5715667b07222d31a9e131fed3eab552f
-ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
+ms.openlocfilehash: eb44b1ce51466af5c1478b894721c54c13e89b40
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "67648691"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503566"
 ---
 # <a name="get-started-with-insider-risk-management"></a>İçeriden risk yönetimini kullanmaya başlama
+
+>[!IMPORTANT]
+>Microsoft Purview İçeriden Risk Yönetimi IP hırsızlığı, veri sızıntısı ve güvenlik ihlalleri gibi olası kötü amaçlı veya yanlışlıkla insider risklerini belirlemek için çeşitli sinyalleri ilişkilendirmektedir. Insider risk yönetimi, müşterilerin güvenlik ve uyumluluğu yönetmek için ilkeler oluşturmasına olanak tanır. Tasarım gereği gizlilikle oluşturulan kullanıcılar varsayılan olarak takma ad kullanır ve kullanıcı düzeyinde gizlilik sağlamaya yardımcı olmak için rol tabanlı erişim denetimleri ve denetim günlükleri kullanılır.
 
 Kuruluşunuzdaki risk uyarılarına göre hareket etmek üzere riskli etkinlikleri ve yönetim araçlarını belirlemek için insider risk yönetimi ilkelerini kullanın. Önkoşulları ayarlamak ve bir iç risk yönetimi ilkesi yapılandırmak için aşağıdaki adımları tamamlayın.
 
@@ -31,6 +37,8 @@ Kuruluşunuzdaki risk uyarılarına göre hareket etmek üzere riskli etkinlikle
 > Insider risk yönetimi çözümü, müşterilerin kullanıcı düzeyinde iç idareyi kolaylaştırmalarına yardımcı olmak için kiracı düzeyinde bir seçenek sağlar. Kiracı düzeyi yöneticileri, kuruluşunuzun üyeleri için bu çözüme erişim sağlamak üzere izinler ayarlayabilir ve riskli olabilecek etkinliklerin kullanıcı düzeyinde tanımlanmasını desteklemek üzere ilgili verileri içeri aktarmak için Microsoft Purview uyumluluk portalı veri bağlayıcıları ayarlayabilir. Müşteriler bireysel kullanıcının davranışı, karakteri veya performansıyla ilgili içgörülerin yönetici tarafından hesaplanıp kuruluştaki diğer kişilerin kullanımına sunulabileceğini kabul eder. Ayrıca müşteriler, yalnızca iç risk yönetimi hizmetinden alınan içgörülere güvenmek yerine, bireysel kullanıcının çalışmayla ilgili davranışı, karakteri veya performansıyla ilgili kendi tam araştırmalarını yürütmeleri gerektiğini kabul eder. Müşteriler, tek tek kullanıcı belirleme ve düzeltme eylemleriyle ilgili yasalar da dahil olmak üzere tüm geçerli yasalara uygun olarak insider risk yönetimi hizmetini ve ilişkili tüm özellikleri veya hizmetleri kullanmakla sorumludur.
 
 Insider risk ilkelerinin kuruluşunuzdaki riski yönetmenize nasıl yardımcı olabileceği hakkında daha fazla bilgi için bkz. [Insider risk yönetimi hakkında bilgi edinin](insider-risk-management.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="subscriptions-and-licensing"></a>Abonelikler ve lisanslama
 

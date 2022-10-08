@@ -11,6 +11,7 @@ ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
@@ -18,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 müşteri verilerinizin dünya çapında nerede depolandığını belirleme
-ms.openlocfilehash: 88cd23d805d52762ca0d3bb4e7e0ea8fa0c57022
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: b16e3dd298b5106446d882b1d950b8aacd68d708
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671269"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68298089"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 müşteri verilerinizin depolandığı yer
 
@@ -580,7 +581,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Forms | Amerika Birleşik Devletleri |
 | Viva Bağlantılar | Avustralya |
 | Viva Konular | Avustralya |
-| Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Öğrenme | Avustralya |
 | Viva Analizler - Kişisel | Avustralya |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca 3. taraf İk verileriyle Yönetici/Lider | Amerika Birleşik Devletleri |

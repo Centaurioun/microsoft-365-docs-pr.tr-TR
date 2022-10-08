@@ -7,9 +7,10 @@ author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -23,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Kuruluşunuzdaki kişilerin Microsoft 365 hizmetlerini nasıl kullandığını gösteren düzenli bir rapor alın ve daha fazla içgörü için her grafikte detaya gidin.
-ms.openlocfilehash: 79c4c4bcdb7036fcf32e8d8ee98f29ce49e4c3dd
-ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
+ms.openlocfilehash: 1c1c5539b553b26680c826c0329f5a69a6d5c798
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67639602"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503852"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Yönetim merkezinde Microsoft 365 Raporları
 
@@ -36,7 +37,7 @@ YouTube'da [Microsoft 365 küçük işletme yardımına](https://go.microsoft.co
 
 İşletmenizdeki kişilerin Microsoft 365 hizmetlerini nasıl kullandığını kolayca görebilirsiniz. Örneğin, kimin bir hizmeti çok fazla kullandığını ve kotalara ulaştığını veya kimlerin Microsoft 365 lisansına ihtiyacı olmadığını belirleyebilirsiniz. Kalıcı lisans modeli raporlara dahil edilmeyecektir. 
   
-Son 7 gün, son 30 gün, son 90 gün ve son 180 güne yönelik raporlar sağlanır. Tüm raporlama dönemlerine ilişkin veriler hemen hazır olmaz. Raporlar 48 saat içinde sunulur.
+Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
 
 ## <a name="watch-act-on-a-usage-report-in-microsoft-365"></a>Izleyin: Microsoft 365'te kullanım raporu üzerinde işlem yapma
   
@@ -131,7 +132,7 @@ Yok<sup>2</sup>: Hizmet ortamda kullanılamaz, bu nedenle raporu serbest bırakm
 
 ## <a name="how-to-view-usage-information-for-a-specific-user"></a>Belirli bir kullanıcının kullanım bilgilerini görüntüleme
 
-Belirli bir kullanıcının hizmeti ne kadar kullandığını araştırmak için hizmet raporlarını kullanın. Örneğin, belirli bir kullanıcının ne kadar posta kutusu depolama alanı kullandığını bulmak için, Posta Kutusu kullanım raporunu açın ve kullanıcılara ada göre sıralayın. Binlerce kullanıcınız varsa, listeyi hızla filtreleyebilmek için raporu Excel’e aktarın.
+Use the service reports to research how much a specific user is using the service. For example, to find out how much mailbox storage a specific user has consumed, open the Mailbox usage report, and sort the users by name. If you have thousands of users, export the report to Excel so you filter through the list quickly.
 
 Bir kullanıcının hesabını girdiğiniz bir rapor oluşturamaz ve ardından hangi hizmetleri ve ne kadarını kullandığının listesini alamazsınız.
 
@@ -169,9 +170,9 @@ Rapor yalnızca bir Gizlilik Ayarı özelliği içerir. Graph API hakkında daha
 
 Bu değişikliklerin rapor panosundaki raporlarına yansıması birkaç dakika sürer. Bu ayar, Microsoft [Graph](/graph/api/resources/report) ve [Power BI'daki](/microsoft-365/admin/usage-analytics/usage-analytics) Microsoft 365 kullanım raporları ve [Microsoft Teams Yönetici merkezindeki kullanım raporları](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference) için de geçerlidir. Tanımlanabilir kullanıcı bilgilerini göstermek, Microsoft Purview uyumluluk portalı denetim günlüğünde günlüğe kaydedilen bir olaydır.
 
-## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>Kullanıcı hesabı kapatıldığında kullanım verilerine ne olur?
+## <a name="what-happens-to-usage-data-when-a-user-account-is-deleted"></a>Kullanıcı hesabı silindiğinde kullanım verilerine ne olur?
 
-Bir kullanıcının hesabını her kapattığınızda, Microsoft bu kullanıcının kullanım verilerini 30 gün içinde siler. Bu kullanıcı, etkin olduğu dönemler için Etkinlik grafiği toplamlarına dahil edilmeye devam eder, ancak Kullanıcı Ayrıntıları tablosunda görünmez.
+Bir kullanıcının hesabını her sildiğinizde, Microsoft bu kullanıcının kullanım verilerini 30 gün içinde siler. Silinen kullanıcılar, etkin oldukları dönemler için Etkinlik grafiği toplamlarına dahil edilmeye devam eder, ancak Kullanıcı Ayrıntıları tablosunda gösterilmez.
 
 Ancak, geçerli tarihten itibaren en fazla 28 gün olan belirli bir günü seçtiğinizde rapor, kullanıcının o gün için kullanımını Kullanıcı Ayrıntıları tablosunda gösterir.
 

@@ -11,16 +11,21 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: d117ba643ceb15cc867e0688675b56caa3d302f7
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6fe74108e484b158b292f86191425cd0aa73b0b4
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637295"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503478"
 ---
 # <a name="plan-for-insider-risk-management"></a>İçeriden risk yönetimi planı
+
+>[!IMPORTANT]
+>Microsoft Purview İçeriden Risk Yönetimi IP hırsızlığı, veri sızıntısı ve güvenlik ihlalleri gibi olası kötü amaçlı veya yanlışlıkla insider risklerini belirlemek için çeşitli sinyalleri ilişkilendirmektedir. Insider risk yönetimi, müşterilerin güvenlik ve uyumluluğu yönetmek için ilkeler oluşturmasına olanak tanır. Tasarım gereği gizlilikle oluşturulan kullanıcılar varsayılan olarak takma ad kullanır ve kullanıcı düzeyinde gizlilik sağlamaya yardımcı olmak için rol tabanlı erişim denetimleri ve denetim günlükleri kullanılır.
 
 Kuruluşunuzda [insider risk yönetimine](insider-risk-management.md) başlamadan önce, bilgi teknolojisi ve uyumluluk yönetimi ekipleriniz tarafından gözden geçirilmesi gereken önemli planlama etkinlikleri ve dikkat edilmesi gereken noktalar vardır. Aşağıdaki alanlarda dağıtımı ayrıntılı bir şekilde anlamak ve planlamak, iç risk yönetimi özelliklerini uygulama ve kullanımınızın sorunsuz bir şekilde ilerlemesini ve çözüm için en iyi yöntemlerle uyumlu olmasını sağlamaya yardımcı olur. 
 
@@ -33,6 +38,8 @@ Insider risk yönetimi iş akışının kuruluşunuzun kuruluşunuzun değerleri
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
 Kuruluşunuzdaki kullanıcıların veri risklerini en aza indirmeye yardımcı olmak için insider risk yönetimi ve iletişim uyumluluğunun birlikte nasıl çalıştığına ilişkin [Microsoft Mechanics videosunu](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) inceleyin.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>Kuruluşunuzdaki paydaşlarla çalışma
 

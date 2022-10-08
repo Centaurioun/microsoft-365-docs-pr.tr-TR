@@ -16,17 +16,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bb6189c92057b3c58a518bab3768011c4a1cffe4
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 655858dab8b590909073f42c54148f7d0cbe4f06
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480964"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503522"
 ---
 # <a name="investigate-and-respond-with-microsoft-365-defender"></a>Microsoft 365 Defender ile araştırma ve yanıtlama
 
@@ -85,6 +86,6 @@ Daha fazla bilgi için bkz[. Microsoft 365 Defender'de tehdit analizi](threat-an
 
 ## <a name="collaborate-with-microsoft-experts"></a>Microsoft uzmanlarıyla işbirliği yapma
 
-Microsoft Tehdit Uzmanları - Hedefli Saldırı Bildirimleri yönetilen bir tehdit avcılığı hizmetidir. Başvurduktan ve kabul edildikten sonra, Microsoft tehdit uzmanlarından hedefli saldırı bildirimleri alırsınız, böylece ortamınıza yönelik kritik tehditleri kaçırmazsınız. Bu bildirimler kuruluşunuzun uç noktalarını, e-postalarını ve kimliklerini korumanıza yardımcı olur. Microsoft Tehdit Uzmanları – İsteğe Bağlı Uzmanlar, kuruluşunuzun karşılaştığı tehditler hakkında uzman tavsiyeleri almanızı sağlar ve kuruluşunuzun karşılaştığı tehditlerle ilgili yardım almak için size ulaşabilirsiniz. Ek abonelik hizmeti olarak kullanılabilir.
+Endpoint Attack Notifications (eski adıyla Microsoft Tehdit Uzmanları - Hedefli Saldırı Bildirimleri) yönetilen bir tehdit avcılığı hizmetidir. Başvurduktan ve kabul edildikten sonra Microsoft tehdit uzmanlarından Uç Nokta Saldırısı Bildirimleri alırsınız, böylece ortamınıza yönelik kritik tehditleri kaçırmazsınız. Bu bildirimler kuruluşunuzun uç noktalarını, e-postalarını ve kimliklerini korumanıza yardımcı olur. Microsoft Defender Uzmanlar – İsteğe Bağlı Uzmanlar, kuruluşunuzun karşılaştığı tehditler hakkında uzman tavsiyeleri almanıza olanak tanır ve kuruluşunuzun karşılaştığı tehditlerle ilgili yardım alabilirsiniz. Ek abonelik hizmeti olarak kullanılabilir.
 
-Daha fazla bilgi için bkz. [Microsoft 365'te Microsoft Tehdit Uzmanları genel bakış](/microsoft-365/security/defender/microsoft-threat-experts).
+Daha fazla bilgi için bkz. [microsoft 365'te uzmanlara genel bakış Microsoft Defender](/microsoft-365/security/defender/microsoft-threat-experts).

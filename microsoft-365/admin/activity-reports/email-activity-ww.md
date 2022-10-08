@@ -5,9 +5,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -19,14 +20,14 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: Microsoft 365 yönetim merkezi Microsoft 365 Raporları panosunu kullanarak e-posta etkinlik raporu almayı ve kullanıcı e-posta eğilimlerini anlama hakkında bilgi edinin.
-ms.openlocfilehash: 2cbea5265976f46be41379843981afb5a5a057de
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: b443dc43449ec3de0db0fad135269a9d297c8554
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662131"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195291"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>Yönetim merkezinde Microsoft 365 Raporları - E-posta etkinliği
+# <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>Yönetim merkezinde Microsoft 365 Raporları - Email etkinliği
 
 Microsoft 365 Raporları panosu, kuruluşunuzdaki ürünler genelindeki etkinliğe genel bakışı gösterir. Bu pano sayesinde her bir üründeki etkinliklerle ilgili daha ayrıntılı bilgi edinmek için ürün düzeyinde raporları ayrıntılı olarak inceleyebilirsiniz. [Raporlara genel bakış konusuna](activity-reports.md) göz atın.
   
@@ -35,14 +36,14 @@ Microsoft 365 Raporları panosu, kuruluşunuzdaki ürünler genelindeki etkinli�
 ## <a name="how-to-get-to-the-email-activity-report"></a>E-posta etkinlik raporuna ulaşma
 
 1. Yönetim merkezinde, **Raporlar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Kullanımı</a> sayfasına gidin.
-2. **E-posta etkinliği** altında **Daha Fazla Görüntüle'yi** seçin. 
-3. **E-posta etkinliği** açılan listesinde **Exchange** \> **E-posta etkinliği'ni** seçin.
+2. **etkinlik Email** altında **Daha Fazla Görüntüle'yi** seçin. 
+3. **Email etkinliği** açılan listesinde **Exchange** \> **Email etkinliği'ni** seçin.
   
 ## <a name="interpret-the-email-activity-report"></a>E-posta etkinlik raporunu yorumlama
 
 Kullanıcınızın e-posta etkinliğini görmek için, **Etkinlik** ve **Kullanıcılar** grafiklerine bakabilirsiniz. 
   
-![E-posta etkinlik raporu.](../../media/5eb1d9e9-8106-4843-acb7-c0238c0da816.png)
+![etkinlik raporunu Email.](../../media/5eb1d9e9-8106-4843-acb7-c0238c0da816.png)
 
 **E-posta etkinlik** raporu son 7 gün, 30 gün, 90 gün veya 180 günlük eğilimler için görüntülenebilir. Ancak raporda belirli bir gün seçerseniz, tablo geçerli tarihten itibaren (raporun oluşturulduğu tarihten değil) 28 güne kadar olan verileri gösterir. Her rapordaki veriler genellikle son 24-48 saati kapsar.
 
@@ -80,9 +81,9 @@ Kuruluşunuzun ilkeleri nedeniyle kişisel kullanıcı bilgilerinin bulunduğu r
 
 Rapora sütun eklemek veya rapordan sütun kaldırmak için Sütunları **seç'i** seçin.  
 
-![E-posta etkinliği raporu - sütunları seçin.](../../media/80ffa0ad-61c5-4a6f-8a1d-5f6730ff7da9.png)
+![etkinlik raporunu Email - sütunları seçin.](../../media/80ffa0ad-61c5-4a6f-8a1d-5f6730ff7da9.png)
 
 Dışarı **Aktar bağlantısını** seçerek rapor verilerini bir Excel .csv dosyasına da aktarabilirsiniz. Bu işlem tüm kullanıcıların verilerini dışarı aktarır ve daha fazla çözümleme yapmak için basit sıralama ve filtreleme işlemlerini kullanmanıza olanak tanır. 
    
 > [!NOTE]
-> E-posta etkinlik raporu yalnızca lisansları olan kullanıcılarla ilişkilendirilmiş posta kutuları için kullanılabilir.
+> Email etkinlik raporu yalnızca lisansları olan kullanıcılarla ilişkilendirilmiş posta kutuları için kullanılabilir.

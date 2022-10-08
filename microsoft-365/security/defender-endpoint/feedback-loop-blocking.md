@@ -15,14 +15,16 @@ ms.custom:
 - next-gen
 - edr
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 63d9ca3d3dcfed45aa62f88430f0d07ff86e7982
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 42e3a8ac53d407e19457ab84cad85a1a3bcbcc92
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67697045"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194323"
 ---
 # <a name="feedback-loop-blocking"></a>Geri bildirim döngüsü engelleme
 

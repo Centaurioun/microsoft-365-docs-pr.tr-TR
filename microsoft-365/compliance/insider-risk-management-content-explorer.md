@@ -11,15 +11,20 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
-ms.openlocfilehash: c193325608feef3bc8114b50af9d5e5832eb9d66
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.collection:
+- tier1
+- purview-compliance
+ms.openlocfilehash: 9bcd30f68f73d3596a55e1cd74a77aff32889df7
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642557"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503940"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Insider risk yönetimi İçerik gezgini
+
+>[!IMPORTANT]
+>Microsoft Purview İçeriden Risk Yönetimi IP hırsızlığı, veri sızıntısı ve güvenlik ihlalleri gibi olası kötü amaçlı veya yanlışlıkla insider risklerini belirlemek için çeşitli sinyalleri ilişkilendirmektedir. Insider risk yönetimi, müşterilerin güvenlik ve uyumluluğu yönetmek için ilkeler oluşturmasına olanak tanır. Tasarım gereği gizlilikle oluşturulan kullanıcılar varsayılan olarak takma ad kullanır ve kullanıcı düzeyinde gizlilik sağlamaya yardımcı olmak için rol tabanlı erişim denetimleri ve denetim günlükleri kullanılır.
 
 Insider risk yönetimi **İçerik gezgini** , *Insider Risk Yönetimi Araştırmacıları* rolüne atanan kullanıcıların uyarılardaki etkinlikle ilişkili içeriğin bağlamını ve ayrıntılarını incelemesine olanak tanır. İçerik gezginindeki servis talebi verileri her gün yeni etkinlik içerecek şekilde yenilenir. Bir servis talebi için onaylanan tüm uyarılar için, verilerin ve ileti dosyalarının kopyaları öğelerin zamanında anlık görüntü olarak arşivlenir ve depolama kaynaklarında özgün dosyalar ve iletiler korunur. Gerekirse, servis talebi veri dosyaları taşınabilir belge dosyası (PDF) olarak veya özgün dosya biçiminde dışarı aktarılabilir.
 
@@ -31,6 +36,8 @@ Bazı durumlarda, bir servis talebiyle ilişkili veriler İçerik gezgininde gö
 
 > [!NOTE]
 > İçerik gezgini; SharePoint, Exchange, Microsoft Teams ve OneDrive İş üzerindeki kullanıcı etkinliği gibi Microsoft 365 hizmet dosyalarıyla ilgili kullanıcı etkinliklerini içerir.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="column-options"></a>Sütun seçenekleri
 
@@ -49,9 +56,9 @@ Risk analistlerinin ve araştırmacıların yakalanan verileri ve iletileri göz
 | **Oluşturma zamanı** | Dosyanın veya e-posta iletisinin oluşturulduğu saat. |
 | **Tarih (UTC)** | E-posta için, iletinin bir alıcı tarafından alındığı veya gönderen tarafından gönderildiği tarih. Belgeler için, belgenin son değiştirildiği tarih. Tarih Eşgüdümlü Evrensel Saat (UTC) biçimindedir.|
 | **Baskın tema** | Analiz için hesaplanmış baskın tema. |
-| **E-posta kümesi kimliği** | Aynı e-posta kümesindeki tüm iletiler için grup kimliği. |
+| **kimliği Email ayarlama** | Aynı e-posta kümesindeki tüm iletiler için grup kimliği. |
 | **Aile Kimliği** | Aile Kimliği tüm öğeleri birlikte gruplandır; e-posta için bu sütun iletiyi ve tüm ekleri içerir; bu sütun, belgeler için belgeyi ve eklenmiş öğeleri içerir. |
-| **Dosya sınıfı** | SharePoint ve OneDrive içeriği için: **Belge**; Exchange'den içerik için: **E-posta** veya **Ek**. |
+| **Dosya sınıfı** | SharePoint ve OneDrive içeriği için: **Belge**; exchange içeriği için: **Email** veya **Ek**. |
 | **Dosya Kimliği** | Servis talebi içinde benzersiz belge tanımlayıcısı. |
 | **Dosya türü simgesi** | Dosyanın uzantısı; örneğin, docx, one, pptx veya xlsx. Bu alan, FileExtension site özelliğiyle aynı özelliktir. |
 | **Kimlik** | Dosyanın GUID tanımlayıcısı. |
@@ -90,7 +97,7 @@ Bir aramanın kapsamını daraltmak ve daha iyileştirilmiş bir sonuç kümesi 
 | **Kaynak** | Belgenin kuruluşunuzdaki konumu. Örneğin, belirli bir SharePoint sitesi konumu. |
 | **Konu/Başlık** | E-posta için, iletinin konu satırındaki metin. Belgeler için, belgenin başlığı. Belgelerdeki Title özelliği, Microsoft Office belgelerinde belirtilen meta verilerdir. Birden çok konunun/başlığın adını virgülle ayırarak yazabilirsiniz. İki veya daha fazla değer OR işleci tarafından mantıksal olarak bağlanır. |
 
-### <a name="email-filters"></a>E-posta filtreleri
+### <a name="email-filters"></a>Email filtreleri
 
 | **Filtrele** | **Açıklama** |
 |:---------------------|:----------------|

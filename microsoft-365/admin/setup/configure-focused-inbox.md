@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: İşletmedeki herkes için e-posta ayarlarını yapılandırmaktan sorumluysanız, bu makalede kullanıcılar için Odaklanmış Gelen Kutusu'nu yapılandırma açıklanmaktadır.
-ms.openlocfilehash: 9c3b17c632c2316f3c36a4f79362895d790b1c7b
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: fd2a8e82297eb7b3298688e72a0f01f7c0b98fc6
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66010222"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169111"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Kuruluşunuzdaki herkes için Odaklanmış Gelen Kutusu'nu yapılandırma
 
@@ -36,7 +37,7 @@ ms.locfileid: "66010222"
 
 Odaklanmış Gelen Kutusu'nu yalnızca kendiniz için kapatmak istiyorsanız, bkz. [Odaklanmış Gelen Kutusu'nu kapatma](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2).      
 
-Kullanıcılarınızın işle ilgili, örneğin İK veya Muhasebe bölümünden gelen e-posta iletilerini aldığından emin olmak istiyorsanız Odaklanmış Gelen Kutusu'nu yapılandırarak böyle iletilerin Odaklanmış görünüme ulaşmasını sağlayabilirsiniz. Bunun yanı sıra, kuruluşunuzdaki kullanıcıların kendi posta kutularındaki Odaklanmış Gelen Kutusu'na bakıp bakmadıklarını da denetleyebilirsiniz.
+If you want to be sure that your users receive business-specific email messages, for example, from HR or payroll, you can configure Focused Inbox so these messages reach the Focused view. You can also control whether users in your organization see the Focused Inbox in their mailbox.
   
 ## <a name="turn-focused-inbox-on-or-off-in-your-organization"></a>Kuruluşunuzda Odaklanmış Gelen Kutusu'nu açma veya kapatma
 
@@ -44,11 +45,11 @@ Kuruluşunuzda herkes için Odaklanmış Gelen Kutusu'nu açma veya kapatma işl
   
 **Odaklanmış Gelen Kutusu'nu kapatmak için:**
   
-Aşağıdaki PowerShell örneği, kuruluşunuzda Odaklanmış Gelen Kutusu'nu **Kapalı** duruma getirir. Ancak, kullanıcılarınıza sağlanan özelliklerin kullanılabilmesini engellemez. İsterlerse, istemcilerinin her biri için Odaklanmış Gelen Kutusu'nu yeniden etkinleştirebilirler. 
+The following PowerShell example turns Focused Inbox **Off** in your organization. However, it doesn't block the availability of the feature for your users. If they want, they can still re-enable Focused Inbox again on each of their clients. 
   
-1. [PowerShell'i Exchange Online Bağlan](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Exchange Online PowerShell’e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Bu yordamı veya yordamları gerçekleştirebilmeniz için, önce izinlerin atanması gerekir. Size hangi izinlerin gerektiğini görmek için, [Mesajlaşma ilkesi ve uyumluluk izinleri](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help) konusunda yer alan "Aktarım kuralları" girdisine bakın.
+2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help).
 
 3. **Get-OrganizationConfig** cmdlet'ini çalıştırın. 
 
@@ -78,23 +79,23 @@ Aşağıdaki PowerShell örneği, kuruluşunuzda Odaklanmış Gelen Kutusu'nu **
     
 ## <a name="what-do-users-see-after-i-turn-on-focused-inbox"></a>Ben Odaklanmış Gelen Kutusu'nu açtıktan sonra kullanıcılar ne görüyor?
 
-Kullanıcılarınız ancak Outlook'u kapatıp yeniden başlattıktan sonra Odaklanmış görünümü görebilirler. Outlook'u yeniden başlattıklarında, Outlook kullanıcı arabiriminde onlara yeni Odaklanmış Gelen Kutusu'nu kullanma seçeneği sağlayan bir İpucu görürler.
+Your users will see the Focused view only after they close and restart Outlook. When they restart Outlook, they'll see a Tip in the Outlook user interface giving them to the option to use the new Focused Inbox.
   
 ![An image of what Focused Inbox looks like when a user first opens Outlook on the web.](../../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
   
-İkincil'den Odaklanmış Gelen Kutusu'na geçiş yapıyorsanız kullanıcılarınız, özelliği etkinleştirmeyi ("Dene") veya kapatmayı tercih edebilir. Kullanıcının çok sayıda (desteklenen) istemcisi varsa her birinde Odaklanmış Gelen Kutusu'nu ayrı olarak etkinleştirebilir/devre dışı bırakabilir. İpucu şöyle görünür:
+If you're switching from Clutter to Focused Inbox, they can decide to enable it ("Try it") or dismiss the feature. If the user has multiple (supported) clients, they can enable/disable Focused Inbox individually on each one. The tip looks like this:
   
 ![An image of what Focused Inbox looks like when it's rolled out to your users and Outlook is re-opened.](../../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
   
-Kullanıcı, Odaklanmış Gelen Kutusu'nu kullanmaya karar verdiğinde İkincil özelliği otomatik olarak devre dışı kalır. İkincil klasörü, kullanıcının yeniden adlandırabileceği veya silebileceği standart bir klasöre dönüşür.
+When a user decides to start using Focused Inbox, Clutter gets disabled automatically. The Clutter folder gets converted into a standard folder, that allows the user to rename or delete it.
   
 ## <a name="turn-focused-inbox-on-or-off-for-specific-users"></a>Odaklanmış Gelen Kutusu'nu belirli kullanıcılar için açma ve kapatma
 
 Bu örnek, Contoso kuruluşundaki Fatih Kara için Odaklanmış Gelen Kutusunu **Kapalı** olarak ayarlar. Ancak bu kişiye sağlanan özelliklerin kullanılabilmesini engellemez. İstediği takdirde, her istemcisinde Odaklanmış Gelen Kutusu'nu yeniden etkinleştirebilir. 
   
-1. [PowerShell'i Exchange Online Bağlan](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Exchange Online PowerShell’e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Bu yordamı veya yordamları gerçekleştirebilmeniz için, önce izinlerin atanması gerekir. Size hangi izinlerin gerektiğini görmek için, Mesajlaşma ilkesi ve uyumluluk izinleri konusunda yer alan "Aktarım kuralları" girişine bakın.
+2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in the Messaging policy and compliance permissions topic.
 
 3. **Get-FocusedInbox** cmdlet'ini çalıştırın, örneğin: 
 
@@ -135,9 +136,9 @@ Bu örnek, Contoso kuruluşundaki Fatih Kara için Odaklanmış Gelen Kutusunu *
   
 ## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Tüm kullanıcılarınızın e-posta iletilerini Odaklanmış görünüme yönlendirecek aktarım kuralını oluşturmak için PowerShell kullanma
 
-1. [PowerShell'i Exchange Online Bağlan](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Exchange Online PowerShell’e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Bu yordamı veya yordamları gerçekleştirebilmeniz için, önce izinlerin atanması gerekir. Size hangi izinlerin gerektiğini görmek için, [Mesajlaşma ilkesi ve uyumluluk izinleri](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help) konusunda yer alan "Aktarım kuralları" girdisine bakın.
+2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help).
 
 3. "Bordro Departmanı"ndan gelen tüm iletilerin (örneğin, Odaklanmış Gelen Kutusuna) teslim edilmesine izin vermek için aşağıdaki komutu çalıştırın.
 
@@ -159,7 +160,7 @@ Aktarım kuralı varsa geçersiz kılma için bir bildirim gösterilir. Web üze
 
 ## <a name="turn-onoff-clutter"></a>İkincil özelliğini açma/kapatma
 
-İkincil özelliğinin bazı kullanıcılarda aniden çalışmayı durdurduğunu bildiren raporlar aldık. Böyle bir durumla karşılaşırsanız, bu özelliği belli kullanıcılar için yeniden etkinleştirebilirsiniz. Bkz. [Kuruluşunuz için İkincil özelliğini yapılandırma](../email/configure-clutter.md).
+We've received reports that Clutter suddenly stopped working for some users. If this happens, you can enable it again for specific users. See [Configure Clutter for your organization](../email/configure-clutter.md).
 
 ## <a name="faq-for-focused-inbox"></a>Odaklanmış Gelen Kutusu hakkında SSS
 
@@ -167,11 +168,11 @@ Burada, Odaklanmış Gelen Kutusu hakkında Sık Sorulan Soruların yanıtları 
 
 ### <a name="can-i-control-how-i-roll-out-focused-inbox-in-my-organization"></a>Odaklanmış Gelen Kutusu'nun kuruluşumda nasıl dağıtılacağını denetleyebilir miyim?
 
-Evet. Odaklanmış Gelen Kutusu'nu kuruluşun tamamı için açıp kapatabileceğiniz gibi, belirli kullanıcılar için de açıp kapatabilirsiniz. Yukarıya bakınız.
+Yes. You can turn Focused Inbox on or off for your entire organization, or you can turn it on or off for specified users. See above.
   
 ### <a name="is-the-focused-inbox-feature-only-available-for-office-2016-clients"></a>Odaklanmış Gelen Kutusu özelliği YALNIZCA Office 2016 istemcilerinde mi kullanılabilir?
 
-Evet, yalnızca Office 2016'ya sahip kullanıcılar etkilenir. Özellik, Outlook 2013 veya önceki sürümlerine geri aktarılmaz.
+Evet, yalnızca Office 2016'ya sahip kullanıcılar etkilenir. Özellik Outlook 2013 veya daha önceki bir sürüme geri aktarılmayacak.
   
 ### <a name="how-long-does-it-take-for-focused-inbox-changes-to-take-place-in-outlook"></a>Odaklanmış Gelen Kutusu değişikliklerinin Outlook'ta geçerlilik kazanması ne kadar sürer?
 
@@ -179,17 +180,17 @@ Odaklanmış Gelen Kutusu'nu açtıktan veya kapattıktan sonra, ayarların geç
   
 ### <a name="what-happens-to-clutter-once-i-turn-on-focused-inbox"></a>Odaklanmış Gelen Kutusu'nu açtıktan sonra İkincil klasörüne ne olur?
 
-Geçiş yaptıktan sonra eyleme dönüştürme olasılığı daha düşük olan e-postalar İkincil klasörünüze gelmez. Bunun yerine, e-postalar, gelen kutunuzda Odaklanmış ve Diğer sekmeleri arasında bölünür. Öğeleri İkincil klasörüne taşırken kullanılan algoritma, artık Odaklanmış Gelen Kutusu'nda kullanılır, yani İkincil'e taşınmak üzere ayarlanmış tüm e-postalar artık Diğer sekmesine taşınır. İkincil klasöründe bulunan tüm iletiler, siz onları silmeye veya taşımaya karar verene kadar orada kalır.
+After switching, you'll no longer receive less actionable email in the Clutter folder. Instead, email will be split between the Focused and Other tabs in your inbox. The same algorithm that moved items to the Clutter folder now powers Focused Inbox, meaning that any emails that were set to move to Clutter will now be moved to Other. Any messages already in your Clutter folder will remain there until you decide to delete or move them.
   
 Microsoft MVP'si [Tony Redmond](https://www.petri.com/author/tony-redmond)'ın şu gönderisini gözden geçirin: [Office 365'te Odaklanmış Gelen Kutusu Nasıl İkincil Klasörünün Yerini Alır](https://www.petri.com/focused-inbox-office-365).
   
 ### <a name="can-i-keep-users-on-clutter-what-is-microsofts-recommendation-when-it-comes-to-using-clutter-vs-focused-inbox"></a>Kullanıcıları İkincil'de tutabilir miyim? Odaklanmış Gelen Kutusu yerine İkincil kullanılması konusunda Microsoft'un önerisi nedir?
 
-Evet, kullanıcıları İkincil'de tutup Odaklanmış Gelen Kutusu'nu devre dışı bırakabilirsiniz; ancak, sonunda Odaklanmış Gelen Kutusu tamamen İkincil'in yerini alacaktır. Dolayısıyla, Microsoft şimdi Odaklanmış Gelen Kutusu'na geçmenizi önerir. Exchange Online ile İkincil'i ne zaman kullanacağınız hakkında daha fazla bilgi edinmek için şu blog gönderisine bakın: [Odaklanmış Gelen Kutusu güncelleştirmesi ve İkincil ile ilgili planlarımız](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448).
+Yes, you can keep users on Clutter and disable Focused Inbox, however, eventually Clutter will be fully replaced with Focused Inbox so Microsoft's recommends moving to Focused Inbox now. To learn more about when you use Clutter with Exchange Online, see this blog post: [Update on Focused Inbox and our plans for Clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448).
   
 ### <a name="should-i-disable-clutter-for-my-end-users-if-we-are-going-to-move-everyone-to-focused-inbox"></a>Herkesi Odaklanmış Gelen Kutusu'na geçireceksek son kullanıcılarım için İkincil'i devre dışı bırakabilir miyim?
 
-Hayır. Set-Clutter cmdlet'i çalıştırarak bir posta kutusu için İkincil'i devre dışı bırakmak mümkündür. Bununla birlikte, bunu yaparsanız posta kutusu sahibi daha önce İkincil klasörüne yönlendirilmiş iletilerin Gelen Kutusu'nda kaldığını görür ve istemcisi Odaklanmış Gelen Kutusu'nu destekleyen bir sürümü yükseltilene kadar söz konusu iletileri işlemek zorunda kalır. Dolayısıyla, en iyisi yükseltilmiş istemciler sağlanana kadar İkincil'i devre dışı bırakmamaktır.
+No. It's possible to disable Clutter for a mailbox explicitly by running the Set-Clutter cmdlet. However, if you do this, the mailbox owner will see messages that were previously redirected to the Clutter folder remain in the Inbox and they'll have to process those messages until their client is upgraded to a version that supports the Focused Inbox. It's therefore best not to disable Clutter until the upgraded clients are available.
   
 ### <a name="why-are-there-two-different-cmdlets-for-managing-focused-inbox"></a>Odaklanmış Gelen Kutusu'nu yönetmek için neden iki farklı cmdlet var?
 
@@ -201,15 +202,15 @@ Odaklanmış Gelen Kutusu'yla ilişkili iki durum vardır.
 
 ### <a name="how-does-outlook-decide-to-show-the-focused-inbox-experience-with-these-two-states"></a>Outlook, Odaklanmış Gelen Kutusu deneyimini bu iki durum bilgisinden hangisiyle göstereceğine nasıl karar verir?
 
-Outlook, deneyime karar verirken hangi cmdlet'in en son zaman damgasına sahip olduğuna bakar. Varsayılan olarak, her iki zaman damgası da "null" değere sahiptir ve bu durumda özellik devre dışı bırakılır.
+Outlook decides to show the experience by choosing which cmdlet has the latest time stamp. By default, both time stamps are "null" and in this case, the feature is enabled.
   
 ### <a name="why-does-the-get-focusedinbox-cmdlet-return-true-when-ive-turned-focused-inbox-off-in-my-organization"></a>Kuruluşumda Odaklanmış Gelen Kutusu'nu kapattığımda Get-FocusedInbox cmdlet'i neden "true" döndürüyor?
 
-Odaklanmış Gelen Kutusu'nu denetlemek için iki cmdlet vardır. Posta kutusu için Get-FocusedInbox'ı çalıştırdığınızda, bu cmdlet özelliğin posta kutusu düzeyi durumunu döndürür. Outlook'taki deneyim, hangi cmdlet durumunun en son değiştirildiğine bağlı olarak seçilir.
+There are two cmdlets for controlling Focused Inbox. When you run Get-FocusedInbox for a mailbox, it returns the mailbox level state of the feature. The experience in Outlook is chosen based on which cmdlet state was last modified.
   
 ### <a name="can-i-run-a-script-to-see-who-has-turned-on-focused-inbox"></a>Odaklanmış Gelen Kutusu'nu etkinleştiren kişileri görmek için bir betik çalıştırabilir miyim?
 
-Hayır, ve bu tasarım gereği. Odaklanmış Gelen Kutusu etkinleştirmesi bir istemci tarafı ayarı olduğundan, cmdlet'in tüm yapabilecekleri kullanıcının posta kutusunun istemci deneyimi için uygun olup olmadığını size bildirmektir. Örneğin Outlook uygulamasında ve Outlook Mobile'da etkinleştirilip Web üzerinde Outlook devre dışı bırakılan bazı istemcilerde aynı anda etkinleştirilebilir ve bazılarında devre dışı bırakılabilir.
+Hayır, ve bu tasarım gereği. Odaklanmış Gelen Kutusu etkinleştirmesi bir istemci tarafı ayarı olduğundan, cmdlet'in tüm yapabilecekleri kullanıcının posta kutusunun istemci deneyimi için uygun olup olmadığını size bildirmektir. Bazı istemcilerde aynı anda etkinleştirilmesi ve bazılarında devre dışı bırakılması mümkündür; örneğin, Outlook uygulamasında ve Outlook Mobile'da etkinleştirilebilir ancak Web üzerinde Outlook devre dışı bırakılabilir.
 
 ## <a name="related-content"></a>İlgili içerik
 

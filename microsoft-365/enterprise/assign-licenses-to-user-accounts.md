@@ -17,6 +17,7 @@ ms.custom:
 - O365E_HRCSetupAADConnectAboutLM617031
 - O365E_AddUsersWithDirSync
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:
@@ -26,12 +27,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Microsoft 365 lisanslarının kullanıcı hesaplarına bireysel olarak veya grup üyeliği temelinde nasıl atandığı açıklanır.
-ms.openlocfilehash: 77fd3f911bd21c492390df2cd083f399b0bbfacf
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: f9b508e4299e84752238a5f2f0290a4ad223c17f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851468"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194895"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Kullanıcı hesaplarına Microsoft 365 lisansları atama
 

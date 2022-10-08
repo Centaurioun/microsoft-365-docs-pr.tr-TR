@@ -14,19 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a865cec3ed136dcde84aa5ed0d93754fbbf6ac22
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 1be83dbddad556b877247470e5b37f6cf0708657
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686385"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504490"
 ---
 # <a name="create-and-manage-communication-compliance-policies"></a>İletişim uyumluluğu ilkeleri oluşturma ve yönetme
+
+>[!IMPORTANT]
+>Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamak için kullanılır.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="policies"></a>İlkeler
 
@@ -123,16 +128,16 @@ Aşağıdaki tabloda desteklenen içerik türleri için algılama süresi özetl
 
 |**İçerik türü**|**Algılama süresi**|
 |:---------------|:--------------------|
-| E-posta gövdesi içeriği | 1 saat |
+| Gövde içeriğini Email | 1 saat |
 | Teams gövde içeriği | 1 saat |
 | Yammer gövde içeriği | 13 saat |
-| E-posta OCR | 13 saat |
+| Email OCR | 13 saat |
 | Teams OCR | 13 saat |
-| E-posta eki | 13 saat |
+| ek Email | 13 saat |
 | Ekip eki | 13 saat |
 | Teams modern eki | 13 saat |
 | Teams meta verileri | 1 saat |
-| E-posta meta verileri | 1 saat |
+| meta verileri Email | 1 saat |
 
 31 Temmuz 2022'ye kadar oluşturulan mevcut ilkeler için iletileri algılamak ve bu ilkelerle eşleşen uyarıları gözden geçirmek 24 saat kadar sürebilir. Bu ilkelerin gecikme süresini azaltmak için [mevcut ilkeyi kopyalayın](/microsoft-365/compliance/communication-compliance-policies#copy-a-policy) ve kopyadan yeni bir ilke oluşturun. Eski ilkeden herhangi bir veri saklamanız gerekmiyorsa, bu veriler duraklatılabilir veya silinebilir.
 

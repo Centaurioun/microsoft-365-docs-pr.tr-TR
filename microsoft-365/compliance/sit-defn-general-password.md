@@ -1,5 +1,5 @@
 ---
-title: Genel parola varlığı tanımı (önizleme)
+title: Genel parola varlığı tanımı
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,18 +20,20 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Genel parolaya duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: 39a789fed5d0cf1467da4be0e05324dea3d5a12d
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: 59171b8add2bb9a694eecfb9e5151c79b9078e34
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68476759"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504270"
 ---
-# <a name="general-password-preview"></a>Genel Parola (önizleme)
+# <a name="general-password"></a>Genel Parola
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="format"></a>Biçim
+Bu SIT, [Tüm kimlik bilgileri](sit-defn-all-creds.md) paketlenmiş SIT'e de dahildir.
+
+ ## <a name="format"></a>Biçim
 
 En fazla 20.000 karakterlik harf, rakam ve özel karakter birleşimi.
 
@@ -226,9 +228,15 @@ veya
 
 `abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==`
 
+## <a name="credential-example"></a>Kimlik bilgisi örneği 
+
+`<secret>ZYXWVU_3</secret>`
+
 ## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
+
+Sağlama toplamları olan SID'ler, bilgilerin geçerli olup olmadığını denetlemek için benzersiz bir hesaplama kullanır. Bu, **Sağlama Toplamı** değeri **Evet** olduğunda hizmetin yalnızca hassas verileri temel alarak pozitif bir algılama gerçekleştirebileceği anlamına gelir. **Sağlama Toplamı** değeri Ek (ikincil) öğe **olmadığında**, hizmetin pozitif bir algılama yapması için de algılanması gerekir.
 
 ## <a name="description"></a>Açıklama
 

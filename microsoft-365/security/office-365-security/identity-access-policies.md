@@ -15,7 +15,7 @@ ms.custom:
 - goldenconfig
 ms.collection:
 - M365-identity-device-management
-- M365-security-compliance
+- m365-security
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
@@ -23,12 +23,12 @@ ms.collection:
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: dd0182bda8e23537a1c7914270037ea61c16feaa
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 8b956258393dbd9f79e219b6cd13e83ec6fa1bf4
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686647"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060482"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Yaygın Sıfır Güven kimlik ve cihaz erişim ilkeleri
 
@@ -376,8 +376,8 @@ Her yapılandırma düzeyi için belirli cihaz uyumluluğu ve cihaz kısıtlama 
 ||Antivirus|Gerektirir|Seç|
 ||Antispyware|Gerektirir|Seç <p> Bu ayar, Windows Güvenliği uygulamasına kayıtlı bir Casus Yazılımdan Koruma çözümü gerektirir.|
 |Bulut için Defender|Microsoft Defender Kötü Amaçlı Yazılımdan Koruma|Gerektirir|Seç|
-||Microsoft Defender Kötü amaçlı yazılımdan koruma en düşük sürümü||Tür <p> Yalnızca Windows 10 masaüstü için desteklenir. Microsoft, en son sürümden en fazla beş geride kalan sürümleri önerir.|
-||Microsoft Defender Kötü Amaçlı Yazılımdan Koruma imzası güncel|Gerektirir|Seç|
+||kötü amaçlı yazılımdan koruma en düşük sürümünü Microsoft Defender||Tür <p> Yalnızca Windows 10 masaüstü için desteklenir. Microsoft, en son sürümden en fazla beş geride kalan sürümleri önerir.|
+||Kötü amaçlı yazılımdan koruma imzasını güncel Microsoft Defender|Gerektirir|Seç|
 ||Gerçek zamanlı koruma|Gerektirir|Seç <p> Yalnızca Windows 10 ve üzeri masaüstü için desteklenir|
 
 #### <a name="microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender

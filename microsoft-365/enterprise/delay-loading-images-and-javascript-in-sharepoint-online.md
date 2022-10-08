@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 12/3/2019
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 f1.keywords:
@@ -20,21 +21,21 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: Görüntülerin ve temel olmayan JavaScript'in yüklenmesini geciktirmek için JavaScript kullanarak SharePoint Çevrimiçi sayfaların yükleme süresini nasıl azaltacağınızı öğrenin.
-ms.openlocfilehash: 8252e169e36dc6976a7be0b4815915ee72283eff
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+description: Görüntülerin ve temel olmayan JavaScript'in yüklenmesini geciktirmek için JavaScript kullanarak SharePoint Online sayfalarının yükleme süresini nasıl azaltacağınızı öğrenin.
+ms.openlocfilehash: 0914b318554badac3cb5ea28e4db641cbb6370e7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754742"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194807"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>SharePoint Online'da görüntülerin ve JavaScript'in yüklenmesini geciktirme
 
-Bu makalede, görüntülerin yüklenmesini geciktirmek için JavaScript kullanarak ve sayfa yüklenene kadar gerekli olmayan JavaScript'i yüklemeyi bekleyerek SharePoint Çevrimiçi sayfaların yükleme süresini nasıl azaltabileceğiniz açıklanır.
+Bu makalede, görüntülerin yüklenmesini geciktirmek için JavaScript kullanarak ve sayfa yüklenene kadar gerekli olmayan JavaScript'i yüklemeyi bekleyerek SharePoint Online sayfalarının yükleme süresini nasıl azaltabileceğiniz açıklanır.
   
-Görüntüler SharePoint Online'da sayfa yükleme hızlarını olumsuz etkileyebilir. Varsayılan olarak, çoğu modern İnternet tarayıcısı html sayfası yüklenirken görüntüleri önceden getirir. Bu, kullanıcı aşağı kaydırana kadar görüntüler ekranda görünmüyorsa sayfanın gereksiz şekilde yavaş yüklenmesine neden olabilir. Görüntüler, tarayıcının sayfanın görünür bölümünü yüklemesini engelleyebilir. Bu sorunu geçici olarak çözmek için javascript kullanarak önce görüntüleri yüklemeyi atlayabilirsiniz. Ayrıca, temel olmayan JavaScript'i yüklemek SharePoint sayfalarınızda indirme sürelerini de yavaşlatabilir. Bu konuda, SharePoint Online'da JavaScript ile sayfa yükleme sürelerini iyileştirmek için kullanabileceğiniz bazı yöntemler açıklanmaktadır.
+Görüntüler SharePoint Online'da sayfa yükleme hızlarını olumsuz etkileyebilir. Varsayılan olarak, çoğu modern İnternet tarayıcısı html sayfası yüklenirken görüntüleri önceden getirir. Bu, kullanıcı aşağı kaydırana kadar görüntüler ekranda görünmüyorsa sayfanın gereksiz şekilde yavaş yüklenmesine neden olabilir. Görüntüler, tarayıcının sayfanın görünür bölümünü yüklemesini engelleyebilir. Bu sorunu geçici olarak çözmek için javascript kullanarak önce görüntüleri yüklemeyi atlayabilirsiniz. Ayrıca, temel olmayan JavaScript'i yüklemek SharePoint sayfalarınızda indirme sürelerini de yavaşlatabilir. Bu konuda, SharePoint Online'da JavaScript ile sayfa yükleme sürelerini geliştirmek için kullanabileceğiniz bazı yöntemler açıklanmaktadır.
   
-## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>JavaScript kullanarak SharePoint Çevrimiçi sayfalarda görüntü yüklemesini geciktirerek sayfa yükleme sürelerini iyileştirme
+## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>JavaScript kullanarak SharePoint Online sayfalarında görüntü yüklemesini geciktirerek sayfa yükleme sürelerini iyileştirme
 
 Bir web tarayıcısının görüntüleri önceden getirmesini önlemek için JavaScript kullanabilirsiniz. Bu, genel belge işlemeyi hızlandırır. Bunu yapmak için src özniteliğinin değerini etiketinden \<img\> kaldırır ve şunun gibi bir veri özniteliğindeki bir dosyanın yoluyla değiştirirsiniz: data-src. Örneğin:
   
@@ -88,7 +89,7 @@ $(window).on("scroll", function () {
 
 ```
 
-SharePoint Online için, #s4 çalışma alanı \<div\> etiketindeki kaydırma olayına aşağıdaki işlevi eklemeniz gerekir. Bunun nedeni, şeridin sayfanın en üstüne bağlı kalmasını sağlamak için pencere olaylarının geçersiz kılınmasıdır.
+SharePoint Online için, #s4-workspace \<div\> etiketindeki kaydırma olayına aşağıdaki işlevi eklemeniz gerekir. Bunun nedeni, şeridin sayfanın en üstüne bağlı kalmasını sağlamak için pencere olaylarının geçersiz kılınmasıdır.
   
 ```javascript
 //Keep the ribbon at the top of the page
@@ -99,7 +100,7 @@ $('#s4-workspace').on("scroll", function () {
 
 Metin dosyasını .js uzantısıyla javascript dosyası olarak kaydedin, örneğin delayLoadImages.js.
   
-delayLoadImages.js yazmayı tamamladıktan sonra, dosyanın içeriğini SharePoint Online'daki bir ana sayfaya ekleyebilirsiniz. Bunu, ana sayfadaki üst bilgiye bir betik bağlantısı ekleyerek yaparsınız. Ana sayfaya eklendikten sonra JavaScript, SharePoint Online sitenizdeki bu ana sayfa düzenini kullanan tüm sayfalara uygulanır. Alternatif olarak, bunu sitenizin yalnızca bir sayfasında kullanmak istiyorsanız, JavaScript'i sayfaya eklemek için betik düzenleyicisi Web Bölümünü kullanın. Daha fazla bilgi için şu konulara bakın:
+delayLoadImages.js yazmayı bitirdikten sonra, dosyanın içeriğini SharePoint Online'daki bir ana sayfaya ekleyebilirsiniz. Bunu, ana sayfadaki üst bilgiye bir betik bağlantısı ekleyerek yaparsınız. Ana sayfaya girdikten sonra, JavaScript SharePoint Online sitenizde bu ana sayfa düzenini kullanan tüm sayfalara uygulanır. Alternatif olarak, bunu sitenizin yalnızca bir sayfasında kullanmak istiyorsanız, JavaScript'i sayfaya eklemek için betik düzenleyicisi Web Bölümünü kullanın. Daha fazla bilgi için şu konulara bakın:
   
 - [Nasıl yapılır: SharePoint 2013'te bir siteye ana sayfa uygulama](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
 
@@ -119,7 +120,7 @@ JavaScript kullanarak görüntü yüklemesini geciktirme, performansı artırmad
   
 ## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>GitHub kod örneği: Performansı artırmak için JavaScript ekleme
 
-GitHub'de sağlanan [JavaScript ekleme](https://go.microsoft.com/fwlink/p/?LinkId=524759) makalesini ve kod örneğini kaçırmayın.
+GitHub'da sağlanan [JavaScript ekleme](https://go.microsoft.com/fwlink/p/?LinkId=524759) makalesini ve kod örneğini kaçırmayın.
   
 ## <a name="see-also"></a>Ayrıca bkz.
 

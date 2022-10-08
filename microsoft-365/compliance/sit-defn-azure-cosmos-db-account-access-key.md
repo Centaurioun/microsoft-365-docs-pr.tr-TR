@@ -1,5 +1,5 @@
 ---
-title: Azure COSMOS DB hesabı erişim anahtarı varlık tanımı (önizleme)
+title: Azure COSMOS DB hesabı erişim anahtarı varlık tanımı
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,18 +20,20 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Azure COSMOS DB hesabı erişim anahtarına duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: dccc5018c5d3a27f188f496cd0d13790b78707d2
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: 4c301ceaf039b05f011497de84d0f24421866507
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68475989"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504292"
 ---
-# <a name="azure-cosmos-db-account-access-key-preview"></a>Azure COSMOS DB hesabı erişim anahtarı (önizleme)
+# <a name="azure-cosmos-db-account-access-key"></a>Azure COSMOS DB hesabı erişim anahtarı
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="format"></a>Biçim
+Bu SIT, [Tüm kimlik bilgileri](sit-defn-all-creds.md) paketlenmiş SIT'e de dahildir.
+
+ ## <a name="format"></a>Biçim
 
 Harf, rakam ve özel karakterlerden oluşan 88 karakterden oluşan bir birleşim.
 
@@ -49,9 +51,15 @@ Harf, rakam ve özel karakterlerden oluşan 88 karakterden oluşan bir birleşim
 
 `abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==`
 
+## <a name="credential-example"></a>Kimlik bilgisi örneği 
+
+`AccountEndpoint=https://account.documents.azure.com;AccountKey=abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==`
+
 ## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
+
+Sağlama toplamları olan SID'ler, bilgilerin geçerli olup olmadığını denetlemek için benzersiz bir hesaplama kullanır. Bu, **Sağlama Toplamı** değeri **Evet** olduğunda hizmetin yalnızca hassas verileri temel alarak pozitif bir algılama gerçekleştirebileceği anlamına gelir. **Sağlama Toplamı** değeri Ek (ikincil) öğe **olmadığında**, hizmetin pozitif bir algılama yapması için de algılanması gerekir.
 
 ## <a name="definition"></a>Tanım
 

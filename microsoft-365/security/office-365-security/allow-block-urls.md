@@ -12,16 +12,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150manage-tenant-allows.md
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Yöneticiler, Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde URL'lere nasıl izin vereceğinizi veya url'leri nasıl engelleyebileceğinizi öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: ccfbd345edf69a1ebc0aef3bdfe5ab070659d819
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: 399bf9b5747a62759959b42dc986b1ab525d2c15
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67644323"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060592"
 ---
 # <a name="allow-or-block-urls-using-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesini kullanarak URL'lere izin verme veya URL’leri engelleme
 
@@ -447,8 +447,8 @@ Aşağıdaki girdiler geçersiz:
 - **Eksik veya geçersiz etki alanı değerleri**:
 
   - Contoso
-  - \*.contoso.\*
-  - \*.com
+  - \*.Contoso.\*
+  - \*.Com
   - \*.pdf
 
 - **Metinde veya aralık karakterleri olmadan joker karakter**:

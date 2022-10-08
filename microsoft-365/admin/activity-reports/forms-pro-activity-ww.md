@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -19,32 +20,32 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Raporlar panosunu kullanarak Microsoft Dynamics 365 Customer Voice etkinlik raporu almayı öğrenin ve lisanslı kullanıcıların nasıl işbirliğine sahip olduğunu öğrenin.
-ms.openlocfilehash: d31b290e9409e7d0e9a49013e0397578b5829697
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+description: Raporlar panosunu kullanarak Microsoft Dynamics 365 Customer Voice etkinlik raporu almayı ve lisanslı kullanıcıların nasıl işbirliği kullandığını öğrenin.
+ms.openlocfilehash: f5fcb30dbc59c0d35dd707be600470d04c0d3c91
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663030"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195269"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Yönetim merkezinde Microsoft 365 Raporları - Dynamics 365 Müşteri Sesi etkinliği
+# <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Yönetim merkezinde Microsoft 365 Raporları - Dynamics 365 Customer Voice etkinliği
 
 Microsoft 365 Raporları panosu, kuruluşunuzdaki ürünler genelindeki etkinliğe genel bakışı gösterir. Bu pano sayesinde ürünlerin her birindeki etkinliklerle ilgili daha ayrıntılı bilgi edinmek için ürün düzeyinde raporları ayrıntılı olarak inceleyebilirsiniz. [Raporlara genel bakış konusuna](activity-reports.md) göz atın.
   
-Örneğin, Dynamics 365 Customer Voice ile etkileşimlerine bakarak Microsoft Dynamics 365 Customer Voice kullanma lisansına sahip her kullanıcının etkinliğini anlayabilirsiniz. Ayrıca, oluşturulan Pro Anketlerinin sayısına ve kullanıcıların yanıt verdiği Pro Anketlerine bakarak devam eden işbirliği düzeyini anlamanıza yardımcı olur. 
+Örneğin, Microsoft Dynamics 365 Customer Voice kullanma lisansına sahip her kullanıcının etkinliğini anlamak için Dynamics 365 Customer Voice etkileşimlerine bakabilirsiniz. Ayrıca, oluşturulan Pro Anketlerinin sayısına ve kullanıcıların yanıt verdiği Pro Anketlerine bakarak devam eden işbirliği düzeyini anlamanıza yardımcı olur. 
   
 ## <a name="how-to-get-to-the-dynamics-365-customer-voice-activity-report"></a>Dynamics 365 Customer Voice etkinlik raporuna erişme
 
 1. Yönetim merkezinde **Raporlar'a** gidin ve **Kullanım'ı** seçin. 
-2. Pano giriş sayfasında Dynamics 365 Müşteri Sesi kartındaki **Daha fazla görüntüle** düğmesine tıklayın.
+2. Pano giriş sayfasında, Dynamics 365 Customer Voice kartındaki **Daha fazla görüntüle** düğmesine tıklayın.
   
 ## <a name="interpret-the-dynamics-365-customer-voice-activity-report"></a>Dynamics 365 Customer Voice etkinlik raporunu yorumlama
 
-**Etkinlik** sekmesini seçerek Dynamics 365 Customer Voice raporunda etkinlikleri görüntüleyebilirsiniz.
+**Etkinlik** sekmesini seçerek Dynamics 365 Customer Voice raporundaki etkinlikleri görüntüleyebilirsiniz.
 
 ![Microsoft 365 raporları - Microsoft Dynamics 365 Customer Voice etkinlik raporu.](../../media/a7e57d18-1ac8-4d4b-bd70-83361505dc3e.png)
 
-Rapora sütun eklemek veya rapordan sütun kaldırmak için Sütunları **seç'i** seçin.  <br/> ![Dynamics 365 Customer Voice etkinlik raporu - sütunları seçin.](../../media/5ab66f4b-32eb-4c9b-9683-1157ae9e2c0a.png)
+Rapora sütun eklemek veya rapordan sütun kaldırmak için Sütunları **seç'i** seçin.  <br/> ![etkinlik raporunu Dynamics 365 Customer Voice - sütunları seçin.](../../media/5ab66f4b-32eb-4c9b-9683-1157ae9e2c0a.png)
 
 Dışarı **Aktar** bağlantısını seçerek rapor verilerini bir Excel .csv dosyasına da aktarabilirsiniz. Bu işlem tüm kullanıcıların verilerini dışarı aktarır ve daha fazla çözümleme yapmak için basit sıralama ve filtreleme işlemlerini kullanmanıza olanak tanır.
 

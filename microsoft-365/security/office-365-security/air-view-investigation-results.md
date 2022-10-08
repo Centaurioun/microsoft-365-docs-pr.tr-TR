@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Microsoft 365'te otomatik bir araştırma sırasında ve sonrasında sonuçları ve önemli bulguları görüntüleyebilirsiniz.
 ms.date: 01/29/2021
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 75700ed2c5eaa197750cf8634ccbdeadf0ee204e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: dd9d192862e82a43453459a6fedbb8b38c71a2cd
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481558"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060570"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365'te otomatik araştırmanın ayrıntıları ve sonuçları
 

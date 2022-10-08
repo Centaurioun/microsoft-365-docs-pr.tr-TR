@@ -11,18 +11,25 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 7f2a2f40d79db0fd344ca2a78f09840fd39939c8
-ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
+ms.openlocfilehash: d4a8d948f460bf44d7d159a39eedcf2a0ca65c73
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "67648735"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503896"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Insider risk yönetimi etkinliklerini araştırma
 
+>[!IMPORTANT]
+>Microsoft Purview İçeriden Risk Yönetimi IP hırsızlığı, veri sızıntısı ve güvenlik ihlalleri gibi olası kötü amaçlı veya yanlışlıkla insider risklerini belirlemek için çeşitli sinyalleri ilişkilendirmektedir. Insider risk yönetimi, müşterilerin güvenlik ve uyumluluğu yönetmek için ilkeler oluşturmasına olanak tanır. Tasarım gereği gizlilikle oluşturulan kullanıcılar varsayılan olarak takma ad kullanır ve kullanıcı düzeyinde gizlilik sağlamaya yardımcı olmak için rol tabanlı erişim denetimleri ve denetim günlükleri kullanılır.
+
 Riskli kullanıcı etkinliklerini araştırmak, kuruluşunuz için insider risklerini en aza indirmenin önemli bir ilk adımıdır. Bu riskler, şirket içi risk yönetimi ilkelerinden uyarı oluşturan etkinlikler veya ilkeler tarafından algılanan ancak kullanıcılar için hemen bir iç risk yönetimi uyarısı oluşturmayan etkinlikler olabilir. **Kullanıcı etkinlik raporlarını (önizleme)** veya **Uyarı panosunu** kullanarak bu tür etkinlikleri araştırabilirsiniz.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="user-activity-reports-preview"></a>Kullanıcı etkinliği raporları (önizleme)
 

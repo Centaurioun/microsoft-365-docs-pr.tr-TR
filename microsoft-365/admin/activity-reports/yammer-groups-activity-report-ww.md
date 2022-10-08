@@ -2,14 +2,15 @@
 title: Yammer grupları etkinlik raporlarını Microsoft 365 yönetim merkezi
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Kuruluşunuzda oluşturulan ve kullanılan Yammer gruplarının sayısı ve etkinlikleri hakkında daha fazla bilgi edinmek için Yammer grupları etkinlik raporunu alın.
-ms.openlocfilehash: c4a967a10763d702cdd798059783f15ec6482927
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 768cd976545e42c0163cb50880418f64817d5a4f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662580"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195247"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Yönetim merkezinde Microsoft 365 Raporları - Yammer grupları etkinlik raporu
 

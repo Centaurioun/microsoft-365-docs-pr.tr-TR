@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 8aafef819574d14871da0ee3199adfc5da6da2d0
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 89955b01c80ddc5734508b0dd71f09508e991e21
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67798186"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504072"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Uç Nokta için Defender'da gelişmiş özellikleri yapılandırma
 
@@ -39,7 +41,7 @@ Kullandığınız Microsoft güvenlik ürünlerine bağlı olarak, Uç Nokta iç
 
 1. Gezinti bölmesinde **Ayarlar** \> **Uç Noktaları** \> **Gelişmiş özellikler'i** seçin.
 2. Yapılandırmak istediğiniz gelişmiş özelliği seçin ve ayarı **Açık** ve **Kapalı** arasında değiştirin.
-3. **Tercihleri kaydet'e** tıklayın.
+3. **Tercihleri kaydet'i** seçin.
 
 Kötü amaçlı olabilecek dosyalardan daha iyi korunmak ve güvenlik araştırmaları sırasında daha iyi içgörü elde etmek için aşağıdaki gelişmiş özellikleri kullanın.
 
@@ -70,14 +72,16 @@ Bu özelliği etkinleştirmek, imzalanmamış betikleri canlı yanıt oturumunda
 
 İstenmeyebilecek uygulamalar (PUA), makinenizin yavaş çalışmasına, beklenmeyen reklamlar görüntülemesine veya en kötü ihtimalle beklenmedik veya istenmeyen olabilecek başka yazılımlar yüklemesine neden olabilecek bir yazılım kategorisidir.
 
-İstenmeyebilecek uygulamaların (PUA) cihazlarda PUA koruması yapılandırılmamış olsa bile kiracınızdaki tüm cihazlarda düzeltilebilmesi için bu özelliği açın. Özelliğin bu şekilde etkinleştirilmesi, kullanıcıların cihazlarına yanlışlıkla istenmeyen uygulamalar yüklemesini önlemektedir. Kapatıldığında düzeltme, cihaz yapılandırmasına bağlıdır.
+PuA koruması cihazlarda yapılandırılmamış olsa bile kiracınızdaki tüm cihazlarda istenmeyebilecek uygulamaların (PUA) düzeltilmiş olması için bu özelliği açın. Özelliğin bu şekilde etkinleştirilmesi, kullanıcıların cihazlarına yanlışlıkla istenmeyen uygulamalar yüklemesini önlemektedir. Kapatıldığında düzeltme, cihaz yapılandırmasına bağlıdır.
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>Kapsamı belirlenmiş cihaz gruplarıyla bağıntıyı kısıtlama
 
 Bu yapılandırma, yerel SOC işlemlerinin uyarı bağıntılarını yalnızca erişebilecekleri cihaz gruplarıyla sınırlamak istedikleri senaryolar için kullanılabilir. Bu ayarı açtığınızda, cihazlar arası grupların uyarılardan oluşan bir olay artık tek bir olay olarak kabul edilmez. Yerel SOC daha sonra ilgili cihaz gruplarından birine erişimi olduğundan olay üzerinde işlem yapabilir. Ancak genel SOC, bir olay yerine cihaz grubuna göre birkaç farklı olay görür. Bunu yapmak tüm kuruluş genelinde olay bağıntısının avantajlarından daha fazla olmadığı sürece bu ayarın etkinleştirilmesini önermeyiz.
 
 > [!NOTE]
-> Bu ayarın değiştirilmesi yalnızca gelecekteki uyarı bağıntılarını etkiler.
+> - Bu ayarın değiştirilmesi yalnızca gelecekteki uyarı bağıntılarını etkiler.
+>
+> - Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.
 
 ## <a name="enable-edr-in-block-mode"></a>Blok modunda EDR'yi etkinleştirme
 
@@ -130,9 +134,9 @@ Daha fazla bilgi için bkz. [Göstergeleri yönetme](manage-indicators.md).
 ## <a name="tamper-protection"></a>Kurcalama koruması
 Bazı siber saldırılar sırasında kötü aktörler, makinelerinizde virüsten koruma gibi güvenlik özelliklerini devre dışı bırakmaya çalışır. Kötü aktörler verilerinize daha kolay erişim elde etmek, kötü amaçlı yazılım yüklemek veya verilerinizi, kimliğinizi ve cihazlarınızı başka bir şekilde kullanmak için güvenlik özelliklerinizi devre dışı bırakmak ister.
 
-Kurcalama koruması temelde Microsoft Defender Virüsten Koruma'nın kilitlenmesini sağlar ve güvenlik ayarlarınızın uygulamalar ve yöntemler aracılığıyla değiştirilmesini önler.
+Kurcalama koruması temelde Virüsten Koruma Microsoft Defender kilitler ve güvenlik ayarlarınızın uygulamalar ve yöntemler aracılığıyla değiştirilmesini engeller.
 
-Kuruluşunuz Microsoft Defender Virüsten Koruma kullanıyorsa ve Bulut tabanlı koruma etkinleştirildiyse bu özellik kullanılabilir. Daha fazla bilgi için bkz. [Bulut tabanlı koruma aracılığıyla Microsoft Defender Virüsten Koruma'da yeni nesil teknolojileri kullanma](cloud-protection-microsoft-defender-antivirus.md).
+Kuruluşunuz virüsten koruma Microsoft Defender kullanıyorsa ve Bulut tabanlı koruma etkinleştirildiğinde bu özellik kullanılabilir. Daha fazla bilgi için bkz. [Bulut tabanlı koruma aracılığıyla Microsoft Defender Virüsten Koruma'da yeni nesil teknolojileri kullanma](cloud-protection-microsoft-defender-antivirus.md).
 
 Güvenlik çözümünüzde ve temel özelliklerinde istenmeyen değişiklikleri önlemek için kurcalama korumasını açık tutun.
 
@@ -170,12 +174,11 @@ Bu özelliği açtığınızda, Office 365 posta kutuları ve Windows cihazları
 
 Office 365 Tehdit Bilgileri'nde bağlamsal cihaz tümleştirmesi almak için Güvenlik & Uyumluluğu panosunda Uç Nokta için Defender ayarlarını etkinleştirmeniz gerekir. Daha fazla bilgi için bkz [. Tehdit araştırması ve yanıtı](/microsoft-365/security/office-365-security/office-365-ti).
 
-## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Microsoft Tehdit Uzmanları - Hedefli Saldırı Bildirimleri
+## <a name="endpoint-attack-notifications"></a>Uç Nokta Saldırısı Bildirimleri
 
-İki Microsoft Tehdit Uzmanı bileşeninden hedeflenen saldırı bildirimi genel kullanıma hazır durumdadır. İsteğe bağlı uzmanlar özelliği hala önizleme aşamasındadır. İsteğe bağlı uzmanlar özelliğini yalnızca önizleme için başvurduysanız ve uygulamanız onaylandıysa kullanabilirsiniz. Hedeflenen saldırı bildirimlerini Microsoft Tehdit Uzmanları Uç Nokta için Defender portalınızın uyarılar panosu aracılığıyla ve yapılandırdığınızda e-posta yoluyla alabilirsiniz.
+Uç Nokta Saldırısı Bildirimleri, Microsoft'un aciliyete ve uç nokta verileriniz üzerindeki etkisine bağlı olarak önceliklendirilecek kritik tehditleri etkin bir şekilde avlamasını sağlar. 
 
-> [!NOTE]
-> Uç Nokta için Defender'daki Microsoft Tehdit Uzmanları özelliği, [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) için E5 lisansıyla kullanılabilir.
+E-posta, işbirliği, kimlik, bulut uygulamaları ve uç noktalara yayılan tehditler de dahil olmak üzere Microsoft 365 Defender kapsamlı proaktif avcılık için Microsoft Defender Uzmanları hakkında [daha fazla bilgi edinin](https://aka.ms/DefenderExpertsForHuntingGetStarted).
 
 ## <a name="microsoft-defender-for-cloud-apps"></a>Bulut Uygulamaları için Microsoft Defender
 
@@ -190,9 +193,9 @@ Kimlik için Microsoft Defender'da bağlamsal cihaz tümleştirmesi almak için 
 
 1. [Kimlik için Microsoft Defender portalında](https://portal.atp.azure.com/) Genel Yönetici veya Güvenlik Yöneticisi rolüyle oturum açın.
 
-2. **Örneğinizi oluşturun'a** tıklayın.
+2. **Örneğinizi oluşturun'u** seçin.
 
-3. Tümleştirme ayarını **Açık** olarak değiştirin ve **Kaydet'e** tıklayın.
+3. Tümleştirme ayarını **Açık** olarak değiştirin ve **Kaydet'i** seçin.
 
 Her iki portaldaki tümleştirme adımlarını tamamladıktan sonra cihaz ayrıntıları veya kullanıcı ayrıntıları sayfasında ilgili uyarıları görebilirsiniz.
 

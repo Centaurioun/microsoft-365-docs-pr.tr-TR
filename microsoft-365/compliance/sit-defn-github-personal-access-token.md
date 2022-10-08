@@ -1,5 +1,5 @@
 ---
-title: GitHub kişisel erişim belirteci varlık tanımı (önizleme)
+title: GitHub kişisel erişim belirteci varlık tanımı
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,18 +20,20 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: GitHub kişisel erişim belirteci hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 65106dfc50be2335106a2b8e53f9fc9e5518b8bf
-ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
+ms.openlocfilehash: 9a887ec28d5e90ffc61a16a2a1975aa2d6f8e366
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68378544"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504050"
 ---
-# <a name="github-personal-access-token-preview"></a>GitHub kişisel erişim belirteci (önizleme)
+# <a name="github-personal-access-token"></a>GitHub kişisel erişim belirteci
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="format"></a>Biçim
+Bu SIT, [Tüm kimlik bilgileri](sit-defn-all-creds.md) paketlenmiş SIT'e de dahildir.
+
+ ## <a name="format"></a>Biçim
 
 Harf, rakam ve özel karakterlerden oluşan 40 karakterden oluşan bir birleşim.
 
@@ -72,9 +74,15 @@ veya
 
 `abcdef0123456789abcdef0123456789abcdef01`
 
+## <a name="credential-example"></a>Kimlik bilgisi örneği 
+
+`pat=ghp_abcdefghijklmnopqrstuvwxyzABCD012345`
+
 ## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
+
+Sağlama toplamları olan SID'ler, bilgilerin geçerli olup olmadığını denetlemek için benzersiz bir hesaplama kullanır. Bu, **Sağlama Toplamı** değeri **Evet** olduğunda hizmetin yalnızca hassas verileri temel alarak pozitif bir algılama gerçekleştirebileceği anlamına gelir. **Sağlama Toplamı** değeri Ek (ikincil) öğe **olmadığında**, hizmetin pozitif bir algılama yapması için de algılanması gerekir.
 
 ## <a name="definition"></a>Tanım
 

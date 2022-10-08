@@ -16,19 +16,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 9293cf55f769f86d16a8f63aaebee7d1a524c32c
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: d1c43e36c4f05bfd6d3324453e641a7120ac2771
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811558"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060922"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Microsoft 365 Defender ile olay yanıtı
 
@@ -196,7 +196,7 @@ Personelinize yeni olaylar veya mevcut olaylarla ilgili güncelleştirmeler hakk
  
 **Belirli algılama kaynaklarıyla daha ayrıntılı bilgi edinin**: Yalnızca belirli bir algılama kaynağı için bildirim alabilirsiniz. 
 
-**Algılama veya hizmet kaynağı başına önem derecesini ayarlayın**: E-posta bildirimlerini yalnızca kaynak başına belirli önem derecelerinde almayı seçebilirsiniz. Örneğin, EDR için Orta ve Yüksek uyarılar ve Microsoft Defender Uzmanları için tüm önem dereceleri hakkında bildirim alabilirsiniz.  
+**Algılama veya hizmet kaynağı başına önem derecesini ayarlayın**: E-posta bildirimlerini yalnızca kaynak başına belirli önem derecelerinde almayı seçebilirsiniz. Örneğin, EDR için Orta ve Yüksek uyarılar ve Microsoft Defender Uzmanları için tüm önem dereceleri için bildirim alabilirsiniz.  
 
 E-posta bildirimi olayla ilgili olay adı, önem derecesi ve kategoriler gibi önemli ayrıntıları içerir. Ayrıca doğrudan olaya gidip analizinizi hemen başlatabilirsiniz. Daha fazla bilgi için bkz [. Olayları araştırma](investigate-incidents.md).
 

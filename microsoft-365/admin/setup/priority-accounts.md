@@ -7,21 +7,22 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Adm_O365
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: İş etkisi yüksek hesaplara gönderilen veya bu hesaplardan gönderilen başarısız ve gecikmeli e-posta iletilerini izleyin.
-ms.openlocfilehash: fa694710a43e78d27b450f67baa52b9def76adc3
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: c71937e4e46f3d57a504fd817d7ce4955777fd6f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306771"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169045"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Öncelikli hesapları yönetme ve izleme
 

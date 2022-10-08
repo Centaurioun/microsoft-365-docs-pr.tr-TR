@@ -12,18 +12,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-endpointprotect
 - highpri
-ms.topic: article
+- tier1
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: f87554eccfbd4123d36c3cb5800997ddc7613f50
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 25332c75c9f4362e456f34999f77ef7d83fb8c4e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67698018"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194367"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>halkalarda Uç Nokta için Microsoft Defender dağıtma
 
@@ -81,7 +82,7 @@ Aşağıdaki tabloda desteklenen uç noktalar ve cihazları hizmete eklemek içi
 
 |Uç nokta|Dağıtım aracı|
 |---|---|
-|**Windows**|[Yerel betik (en fazla 10 cihaz)](configure-endpoints-script.md) <br> NOT: Üretim ortamında 10'dan fazla cihaz dağıtmak istiyorsanız, bunun yerine grup ilkesi yöntemini veya aşağıda listelenen diğer desteklenen araçları kullanın.<br>  [Grup İlkesi](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Aygıt Yöneticisi](configure-endpoints-mdm.md) <br>   [Microsoft Uç Noktası Yapılandırma Yöneticisi](configure-endpoints-sccm.md) <br> [VDI betikleri](configure-endpoints-vdi.md) <br> [Bulut için Microsoft Defender ile tümleştirme](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)|
+|**Windows**|[Yerel betik (en fazla 10 cihaz)](configure-endpoints-script.md) <br> NOT: Üretim ortamında 10'dan fazla cihaz dağıtmak istiyorsanız, bunun yerine grup ilkesi yöntemini veya aşağıda listelenen diğer desteklenen araçları kullanın.<br>  [Grup İlkesi](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Aygıt Yöneticisi](configure-endpoints-mdm.md) <br>   [Microsoft Uç Noktası Yapılandırma Yöneticisi](configure-endpoints-sccm.md) <br> [VDI betikleri](configure-endpoints-vdi.md) |
 |**macOS**|[Yerel betik](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobil Cihaz Yönetimi](mac-install-with-other-mdm.md)|
 |**Linux Server**|[Yerel betik](linux-install-manually.md) <br> [Kukla](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 |**iOS**|[Microsoft Endpoint Manager](ios-install.md)|

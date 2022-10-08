@@ -6,19 +6,19 @@ manager: serdars
 ms.reviewer: sovaish
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft Teams sınıflarını Canvas ile tümleştirme
-ms.openlocfilehash: 10024e124ce50ab542e6e68a5c237a47e1f7af83
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: abff070c5981570f6afb8f712e5a4e8026050248
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923029"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194433"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Canvas ile Microsoft Teams sınıflarını kullanma
 
@@ -27,11 +27,11 @@ Microsoft Teams sınıfları, eğitimcilerin ve öğrencilerin Öğrenme Yöneti
 ## <a name="prerequisites-before-deployment"></a>Dağıtım Öncesi Önkoşullar
 
 > [!NOTE]
-> Geçerli Teams sınıfları LTI yalnızca Tuval kullanıcılarının sınırlı bir kapsamda Microsoft Azure Active Directory (AAD) ile eşitlenmesini destekler.
+> Geçerli Teams sınıfları LTI yalnızca Tuval kullanıcılarının sınırlı kapsamdaki Microsoft Azure Active Directory (AAD) ile eşitlenmesini destekler.
 >
 > - Kiracınızın bir Microsoft Education lisansı (A1 veya üzeri) olması gerekir.
 > - Tuval ve Microsoft arasında kullanıcıları eşlemek için yalnızca tek bir Microsoft kiracısı kullanılabilir.
-> - Kiracınızın Tuval alanı (e-posta, Benzersiz Kullanıcı Kimliği, SIS Kimliği veya Tümleştirme Kimliği) ile AAD'deki bir alan (Kullanıcı Asıl Adı (UPN), Birincil E-posta Adresi (Posta) veya E-posta Diğer Adı (mailNickname)) arasında tam eşleşmesi olmalıdır.
+> - Kiracınızın Tuval alanı (e-posta, Benzersiz Kullanıcı Kimliği, SIS Kimliği veya Tümleştirme Kimliği) ile AAD'deki bir alan (Kullanıcı Asıl Adı (UPN), Birincil Email Adresi (Posta) veya Email Diğer Adı (mailNickname)) arasında tam eşleşmesi olmalıdır.
 > - Sınıf ve grup oluşturmak için SDS kullanıyorsanız, sınıfların çoğaltılmasını önlemek için SDS'de Takım Oluşturma Seçeneğini devre dışı bırakmanızı ve [Grup Temizleme](/schooldatasync/group-cleanup) gerçekleştirmenizi öneririz. SDS, kuruluş ve kullanıcı verilerini eşitlemek için hala kullanılabilir.
 
 ## <a name="enable-the-microsoft-teams-app-in-canvas"></a>Tuval'de Microsoft Teams uygulamasını etkinleştirme
@@ -55,7 +55,7 @@ Tümleştirmeye başlamak için geliştirici anahtarlarını etkinleştirerek, M
 7. Aşağıdaki alanları uygun bilgilerle doldurun. Bu alanlar Tuval'deki kullanıcıları AAD'deki kullanıcılarla eşleştirmek için kullanılır.
    - **Kiracı Adı**, Microsoft kiracı adınızdır.
    - **Login Özniteliği**, eşleme için kullanılan aşağıdaki Tuval kullanıcı özniteliklerinden biridir:
-      - **E-posta** , Tuval kullanıcısının varsayılan e-posta adresidir. Kullanıcılar Tuval'de varsayılan e-posta adreslerini değiştirirse kurstaki kayıtlarının Teams ile eşitlenmesi engellenebilir.
+      - **Email** Tuval kullanıcısının varsayılan e-posta adresidir. Kullanıcılar Tuval'de varsayılan e-posta adreslerini değiştirirse kurstaki kayıtlarının Teams ile eşitlenmesi engellenebilir.
       - **Benzersiz Kullanıcı Kimliği** , kullanıcının Tuval oturum açma kimliğidir.
       - **SIS Kullanıcı Kimliği** , Öğrenci Bilgi Sistemi'nden (SIS) doldurulan ve kullanıcının profil sayfasında görüntülenebilir kimlik değeridir.
       - **Tümleştirme Kimliği** yalnızca SIS içeri aktarma işlemleriyle doldurulur ve kullanıcının profil sayfasında görüntülenebilir. Bu benzersiz tanımlayıcı genellikle kurum tarafından sağlanır ve birden çok hesaptaki kullanıcıları tanımlamak için hesap güvenlerinde veya konsorsiyum durumlarında kullanılır.
@@ -65,7 +65,7 @@ Tümleştirmeye başlamak için geliştirici anahtarlarını etkinleştirerek, M
 
 8. **Ayarları Güncelleştir'i** seçin.
 
-9. Canvas'ın **Microsoft-Teams-Sync-for-Canvas Azure uygulamasına** erişimi onaylamak için **Kiracı erişimi ver** bağlantısını seçin. Microsoft Kimlik Platformu Yönetici Onayı Uç Noktası'na yönlendirilirsiniz.
+9. Canvas'ın **Microsoft-Teams-Sync-for-Canvas Azure uygulamasına** erişimi onaylamak için **Kiracı erişimi ver** bağlantısını seçin. Microsoft Kimlik Platformu Yönetici Onay Uç Noktası'na yönlendirilirsiniz.
 
    ![Izin.](media/permissions.png)
 
@@ -80,7 +80,7 @@ Eşitlemeyi etkinleştirdikten ve Azure uygulamasını onayladıktan sonra, Tuva
 
 **Teams sınıfları LTI uygulamasını Tuval ortamına eklemek için**:
 
-1. **Yönetici ayarları'ndaki** **Uygulamalar** sekmesinde **+ Uygulama'yı** seçerek Teams LTI uygulamalarını ekleyin.
+1. **Yönetici ayarlarındaki** **Uygulamalar** sekmesinde **+ Uygulama'yı** seçerek Teams LTI uygulamalarını ekleyin.
 
    ![dış uygulamalar.](media/external-apps.png)
 

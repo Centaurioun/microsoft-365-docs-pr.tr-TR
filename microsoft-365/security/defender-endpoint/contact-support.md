@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: bc0141afc700be2339f66ac3456be601089bba29
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0e956ef81cd3303b59670788bef5f0252faf186e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67705128"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68168583"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Uç Nokta için Microsoft Defender destek hattı ile iletişime geçin
 

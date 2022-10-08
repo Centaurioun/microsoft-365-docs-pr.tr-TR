@@ -1,5 +1,5 @@
 ---
-title: Azure AD istemci erişim belirteci varlık tanımı (önizleme)
+title: İstemci erişim belirteci varlık tanımını Azure AD
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,18 +20,20 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Azure AD istemci erişim belirteci hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 4a5a61d66316f4dda84d9f3fe93b2ffe113d5d78
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: 99c60e5c6ff2f78b2bf4ecf610e860baea7f95d4
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68475979"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503434"
 ---
-# <a name="azure-ad-client-access-token-preview"></a>Azure AD istemci erişim belirteci (önizleme)
+# <a name="azure-ad-client-access-token"></a>Azure AD istemci erişim belirteci
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="format"></a>Biçim
+Bu SIT, [Tüm kimlik bilgileri](sit-defn-all-creds.md) paketlenmiş SIT'e de dahildir.
+
+ ## <a name="format"></a>Biçim
 
 Harf, rakam ve özel karakterlerden oluşan en fazla 10.000 karakterden oluşan bir birleşim.
 
@@ -84,13 +86,22 @@ En fazla 1.000 karakterden oluşan bir birleşim
 
 örneğin:
 
-`eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ing0Nzh4eU9wbHNNMUg3TlhrN1N4MTd4MXVwYyIsImtpZCI6Ing0Nzh4`
+`eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ing0Nzh4eU9wbHNNMUg3TlhrN1N4MTd4MX...`
 
 
+
+## <a name="credential-example"></a>Kimlik bilgisi örneği 
+
+`Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ing0Nzh4eU9wbHNNMUg3TlhrN1N4MTd4MX...`
+
+> [!IMPORTANT]
+> Bu örnek kesildi. Bu SIT'in algılanabilir bir örneği değildir.
 
 ## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
+
+Sağlama toplamları olan SID'ler, bilgilerin geçerli olup olmadığını denetlemek için benzersiz bir hesaplama kullanır. Bu, **Sağlama Toplamı** değeri **Evet** olduğunda hizmetin yalnızca hassas verileri temel alarak pozitif bir algılama gerçekleştirebileceği anlamına gelir. **Sağlama Toplamı** değeri Ek (ikincil) öğe **olmadığında**, hizmetin pozitif bir algılama yapması için de algılanması gerekir.
 
 ## <a name="definition"></a>Tanım
 

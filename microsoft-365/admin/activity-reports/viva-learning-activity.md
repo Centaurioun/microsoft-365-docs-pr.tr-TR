@@ -1,13 +1,14 @@
 ---
 title: etkinlik raporlarını Microsoft 365 yönetim merkezi Viva Öğrenme
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -18,22 +19,22 @@ search.appverid:
 - MOE150
 - GEA150
 description: Kullanıcı etkileşimleri ve kullanılan özellikler gibi lisanslı Viva Öğrenme kullanıcı etkinliğini anlamak için bir Microsoft 365 Viva Öğrenme etkinlik raporu alın.
-ms.openlocfilehash: edc6aa40960fc1f3e15690a12677533e40cf62e0
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 8380b713d4febe53683d1ab3e82f407dbf3afc86
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467174"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195225"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---viva-learning-activity"></a>Yönetim merkezinde raporları Microsoft 365 - Viva Öğrenme etkinliği
+# <a name="microsoft-365-reports-in-the-admin-center---viva-learning-activity"></a>Yönetim merkezinde Microsoft 365 Raporları - Viva Öğrenme etkinliği
 
 Microsoft 365 yöneticisi olarak Raporlar panosu, kuruluşunuzdaki çeşitli ürünlerde etkinliğe genel bakış bilgilerini gösterir. Bu pano size, her ürüne özgü etkinlikler hakkında daha ayrıntılı bilgi edinmek için detaya gitme olanağı tanır. Microsoft 365 yönetim merkezi etkinlik raporlarına göz atın. 
 
-Örneğin, lisanslı Viva Öğrenme kullanıcılarınızın etkileşimlerine bakarak etkinliklerini anlayabilirsiniz. Ayrıca, Learning Uygulamasında kullanılan özelliklerin türünü anlamanıza da yardımcı olur.
+Örneğin, lisanslı Viva Öğrenme kullanıcılarınızın etkileşimlerine bakarak etkinliklerini anlayabilirsiniz. Ayrıca Öğrenme Uygulamasında kullanılan özelliklerin türünü anlamanıza da yardımcı olur.
 
 ## <a name="how-do-i-get-to-the-to-the-viva-learning-activity-report"></a>Viva Öğrenme etkinlik raporuna Nasıl yaparım? ulaşabilirsiniz?  
 
-1. Yönetim merkezinde **ReportsUsage**  >  sayfasına gidin. 
+1. Yönetim merkezinde **Rapor** > **Kullanımı** sayfasına gidin. 
 2. Pano giriş sayfasından Viva Öğrenme kartındaki **Daha fazla görüntüle** düğmesini seçin. 
 
 ## <a name="interpret-the-microsoft-365-apps-usage-report"></a>Microsoft 365 Uygulamaları kullanım raporunu yorumlama

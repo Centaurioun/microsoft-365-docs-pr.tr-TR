@@ -1,5 +1,5 @@
 ---
-title: Azure Batch Paylaşılan Erişim Anahtarı varlık tanımı (önizleme)
+title: Paylaşılan Erişim Anahtarı varlık tanımını Azure Batch
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,18 +20,20 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Paylaşılan Erişim Anahtarı hassas bilgi türü varlık tanımını Azure Batch.
-ms.openlocfilehash: 99011f6303947de601bd7252b5ce360822c22650
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: 4989b2735b0dd5a8db8eac1cfd12407f7a9b023a
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68476297"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504430"
 ---
-# <a name="azure-batch-shared-access-key-preview"></a>Azure Batch Paylaşılan Erişim Anahtarı (önizleme)
+# <a name="azure-batch-shared-access-key"></a>Azure Batch Paylaşılan Erişim Anahtarı
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="format"></a>Biçim
+Bu SIT, [Tüm kimlik bilgileri](sit-defn-all-creds.md) paketlenmiş SIT'e de dahildir.
+
+ ## <a name="format"></a>Biçim
 
 Desenin parçası olmayan eşittir (=) işaretiyle biten harf, rakam ve özel karakterlerden oluşan 43 karakterden oluşan bir birleşim.
 
@@ -48,9 +50,15 @@ Desenin parçası olmayan eşittir (=) işaretiyle biten harf, rakam ve özel ka
 
 `abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=`
 
+## <a name="credential-example"></a>Kimlik bilgisi örneği 
+
+`Account=account.batch.azure.net;AccountKey=abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=;`
+
 ## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
+
+Sağlama toplamları olan SID'ler, bilgilerin geçerli olup olmadığını denetlemek için benzersiz bir hesaplama kullanır. Bu, **Sağlama Toplamı** değeri **Evet** olduğunda hizmetin yalnızca hassas verileri temel alarak pozitif bir algılama gerçekleştirebileceği anlamına gelir. **Sağlama Toplamı** değeri Ek (ikincil) öğe **olmadığında**, hizmetin pozitif bir algılama yapması için de algılanması gerekir.
 
 ## <a name="definition"></a>Tanım
 

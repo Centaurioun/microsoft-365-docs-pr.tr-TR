@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -25,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Bir kullanıcının kuruluşunuzda oturum açabilmesini engelledikten sonra, eski çalışanın posta kutusunun içeriğini kaydetmenin iki yolunu öğrenin.
-ms.openlocfilehash: 05d3ba3a4a6cc25758d3572af330231c41a24394
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: f77a68cf310f292ffc776269146d363d7cc3ba0d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436635"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195137"
 ---
 # <a name="step-2---save-the-contents-of-a-former-employees-mailbox"></a>2. Adım - Eski çalışanın posta kutusunun içeriğini kaydetme
 
@@ -40,7 +41,7 @@ Bu adımda, kullanıcıya bir Dava Tutma veya Yerinde Saklama yerleştirin ya da
 
 Bir kullanıcının kuruluşunuzda oturum açabilmesini engelledikten sonra, posta kutusunun içeriğini kaydedebilirsiniz. Eski çalışanın posta kutusunun içeriğini kaydetmenin iki yolu vardır.
   
-1. Kullanıcı hesabını silmeden önce posta kutusu üzerinde Mahkeme Nedeniyle Tutma veya Yerinde Saklama belirleyebilirsiniz. Bu, ikinci seçenekten çok daha karmaşıktır ancak Enterprise planınız arşivleme ve yasal saklamayı içerir, dava açma bir olasılıktır ve teknik olarak güçlü bir BT departmanınız vardır.
+1. Kullanıcı hesabını silmeden önce posta kutusu üzerinde Mahkeme Nedeniyle Tutma veya Yerinde Saklama belirleyebilirsiniz. Bu, ikinci seçenekten çok daha karmaşıktır ancak şu durumda yapmaya değer: Kurumsal planınız arşivleme ve yasal saklamayı içerir, dava açma olasılığı vardır ve teknik açıdan güçlü bir BT departmanınız vardır.
 
     Posta kutusunu "etkin olmayan posta kutusuna" dönüştürdükten sonra, yöneticiler, uyumluluk görevlileri veya kayıt yöneticileri Exchange Online'daki In-Place eBulma araçlarını kullanarak içeriklere erişebilir ve içeriklerde arama yapabilir.
 
@@ -48,12 +49,12 @@ Bir kullanıcının kuruluşunuzda oturum açabilmesini engelledikten sonra, pos
 
     Posta kutusuna ayrı tutma hakkında bilgi edinmek için bkz. [Exchange Online'da etkin olmayan posta kutularını yönetme](../../compliance/create-and-manage-inactive-mailboxes.md).
 
-    **VEYA**
+    **Veya**
 
-2. Eski çalışanın e-posta adresini Masaüstündeki Outlook sürümünüze ekleyin ve ardından verileri bir .pst dosyasına aktarın. Gerektiğinde verileri başka bir e-posta hesabına aktarabilirsiniz. [4. Adım : Başka bir çalışanın OneDrive ve Outlook verilerine erişmesini sağlayın](remove-former-employee-step-4.md).
+2. Eski çalışanın e-posta adresini Masaüstünde Outlook sürümünüze ekleyin ve ardından verileri bir .pst dosyasına aktarın. Gerektiğinde verileri başka bir e-posta hesabına aktarabilirsiniz. [4. Adım : Başka bir çalışanın OneDrive ve Outlook verilerine erişmesini sağlayın](remove-former-employee-step-4.md).
 
 ## <a name="related-content"></a>İlgili içerik
 
-[Exchange Online'da yönetim merkezi Exchange](/exchange/exchange-admin-center)
+[Exchange Online'de Exchange yönetim merkezi](/exchange/exchange-admin-center)
 
 [Kullanıcıyı geri yükleme](restore-user.md)

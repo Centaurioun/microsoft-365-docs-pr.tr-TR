@@ -16,19 +16,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-firstincident
 - highpri
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 63c9e47f30e113a6b79e0b290d19b8fe9e9a6399
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 9352f54e54966850484caf2b3a116710c41b248a
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482306"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060878"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Adım 2. İlk olayınızı düzeltme
 

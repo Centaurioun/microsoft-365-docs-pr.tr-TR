@@ -8,16 +8,17 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Yöneticiler, Office 365 için Microsoft Defender Plan 2'de belirtilen koşullar karşılandığında başlatılan belirli teknikleri ve yükleri içeren otomatik simülasyonlar oluşturmayı öğrenebilir.
 ms.subservice: mdo
-ms.openlocfilehash: 0099373996cee691eacab8b6469d368d711128eb
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 0fb6e45150d04e8a376964584506fc4ac876bd08
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67476154"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060636"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Saldırı simülasyonu eğitimi için simülasyon otomasyonları
 
@@ -89,7 +90,7 @@ Ayrıca yükte kullanılan oturum açma sayfasını görüntüleyebilir, kullan�
 - **Teknik**: Önceki sayfada seçtiğiniz teknik başına en az bir yük seçmeniz gerekir.
 - **Dil**: Kullanılabilir değerler şunlardır: **İngilizce**, **İspanyolca**, **Almanca**, **Japonca**, **Fransızca**, **Portekizce**, **Felemenkçe**, **İtalyanca**, **İsveççe**, **Çince (Basitleştirilmiş)**, **Norveççe Bokmål**, **Lehçe**, **Rusça**, **Fince**, **Korece**, **Türkçe**, **Macarca**, **İbranice**, **Tayca**, **Arapça**, **Vietnamca**, **Slovakça**, **Yunanca**, **Endonezya dili**, **Rumence**, **Slovence**, **Hırvat**, **Katalanca** veya **Diğer**.
 - **Tıklama oranı**: Bu yüke kaç kişinin tıklamış olduğu.
-- **Tahmin edilen risk oranı**: Microsoft 365 genelinde yükün geçmiş verileri, bu yük tarafından tehlikeye atılacak kişilerin yüzdesini tahmin eder.
+- **Tahmin edilen risk oranı**: Microsoft 365 genelinde, bu yükte güvenliği tehlikeye atılacak kişilerin yüzdesini tahmin eden geçmiş veriler (yükü alan kullanıcıların/ toplam kullanıcı sayısı).
 - **Başlatılan simülasyonlar** , bu yükün diğer simülasyonlarda kaç kez kullanıldığını sayar.
 
 ![Ara simgesinde.](../../media/m365-cc-sc-search-icon.png) **Arama** kutusuna yük adının bir kısmını yazabilir ve sonuçları filtrelemek için Enter tuşuna basabilirsiniz.

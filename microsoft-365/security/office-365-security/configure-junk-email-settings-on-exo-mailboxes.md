@@ -13,16 +13,16 @@ search.appverid:
 - MBS150
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Yöneticiler, Exchange Online posta kutularında gereksiz e-posta ayarlarını yapılandırmayı öğrenebilir. Bu ayarların çoğu Outlook veya Web üzerinde Outlook kullanıcıların kullanımına sunulmuştur.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 9f8c5ed64526b03cb4a47b06962be94274517789
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 2a96902e16ef372e5d9cd1198f15ce2541943aa1
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483486"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060526"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Exchange Online posta kutularında gereksiz e-posta ayarlarını yapılandırma
 

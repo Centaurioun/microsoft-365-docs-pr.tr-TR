@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: a89522b3631eebfe52865e461979fb2736710005
-ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
+ms.openlocfilehash: a53e024218cd8ef81b9310107d12838bb400603f
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68495132"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504006"
 ---
 # <a name="attack-surface-reduction-asr-rules-reference"></a>Saldırı yüzeyini azaltma (ASR) kuralları başvurusu
 
@@ -115,24 +115,24 @@ Aşağıdaki tabloda, şu anda genel kullanıma sunulan kurallar için desteklen
 
 Bu tabloda başvurulan yapılandırma yönetim sistemi sürümleri hakkındaki bilgilerin bağlantıları bu tablonun altında listelenmiştir.
 
-|Kural adı | Intune | Microsoft Endpoint Manager |Microsoft Uç Noktası Yapılandırma Yöneticisi |<sup>grup ilkesi[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
-|---|:---:|:---:|:---:|:---:|:---:|
-|[Güvenlik açığı bulunan imzalı sürücülerin kötüye kullanılması engellendi](#block-abuse-of-exploited-vulnerable-signed-drivers) | E  | Y MEM OMA-URI |   | E  |  E  |
-|[Adobe Reader'ın alt işlemler oluşturmalarını engelleme](#block-adobe-reader-from-creating-child-processes) | E |   |  | E  | E  |
-|[Tüm Office uygulamalarının alt işlemler oluşturmalarını engelleme](#block-all-office-applications-from-creating-child-processes) | E |   |E <br><br> CB 1710 | E  | E  |
-|[Windows yerel güvenlik yetkilisi alt sisteminden (lsass.exe) kimlik bilgilerinin çalınmalarını engelleme](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | E  |   | E <br><br>CB 1802 | E  | E  |
-|[E-posta istemcisinden ve web postasından yürütülebilir içeriği engelleme](#block-executable-content-from-email-client-and-webmail) | E |  |E <br><br> CB 1710 | E | E  |
-|[Bir yaygınlık, yaş veya güvenilir liste ölçütüne uymadığı sürece yürütülebilir dosyaların çalışmasını engelleyin](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | E |   | E <br><br> CB 1802 |  E |  E |
-|[Karartılmış olabilecek betiklerin yürütülmesini engelleme](#block-execution-of-potentially-obfuscated-scripts) | E |   |  E  <br><br> CB 1710 | E  | E  |
-|[JavaScript veya VBScript'in indirilen yürütülebilir içeriği başlatmasını engelleme](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | E |   | E <br><br> CB 1710 | E  | E  |
-|[Office uygulamalarının yürütülebilir içerik oluşturmalarını engelleme](#block-office-applications-from-creating-executable-content) | E |  |E <br><br> CB 1710 | E  | E  |
-|[Office uygulamalarının diğer işlemlere kod eklemesini engelleme](#block-office-applications-from-injecting-code-into-other-processes) | E |  | E <br><br> CB 1710 | E  | E  |
-|[Office iletişim uygulamasının alt işlemler oluşturmalarını engelleme](#block-office-communication-application-from-creating-child-processes) | E |  |E <br><br> CB 1710 | E  | E  |
-|[WMI olay aboneliği aracılığıyla kalıcılığı engelleme](#block-persistence-through-wmi-event-subscription) |  |  |  |E   | E  |
-|[PSExec ve WMI komutlarından kaynaklanan işlem oluşturma işlemlerini engelleme](#block-process-creations-originating-from-psexec-and-wmi-commands) | E |   |   |  E | E  |
-|[USB'den çalıştırılan güvenilmeyen ve imzalanmamış işlemleri engelleme](#block-untrusted-and-unsigned-processes-that-run-from-usb) | E |   |E <br><br> CB 1802  | E  | E  |
-|[Office makrolarından Win32 API çağrılarını engelleme](#block-win32-api-calls-from-office-macros) | E |   | E <br><br> CB 1710  | E  |  E |
-|[Fidye yazılımına karşı gelişmiş koruma kullanma](#use-advanced-protection-against-ransomware) | E |   | E <br><br> CB 1802 | E  | E  |
+|Kural adı | Microsoft Intune | Microsoft Uç Noktası Yapılandırma Yöneticisi |<sup>grup ilkesi[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
+|---|:---:|:---:|:---:|:---:|
+|[Güvenlik açığı bulunan imzalı sürücülerin kötüye kullanılması engellendi](#block-abuse-of-exploited-vulnerable-signed-drivers) | E |   | E  |  E  |
+|[Adobe Reader'ın alt işlemler oluşturmalarını engelleme](#block-adobe-reader-from-creating-child-processes) | E |  | E  | E  |
+|[Tüm Office uygulamalarının alt işlemler oluşturmalarını engelleme](#block-all-office-applications-from-creating-child-processes) | E |E <br><br> CB 1710 | E  | E  |
+|[Windows yerel güvenlik yetkilisi alt sisteminden (lsass.exe) kimlik bilgilerinin çalınmalarını engelleme](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | E  | E <br><br>CB 1802 | E  | E  |
+|[E-posta istemcisinden ve web postasından yürütülebilir içeriği engelleme](#block-executable-content-from-email-client-and-webmail) | E |E <br><br> CB 1710 | E | E  |
+|[Bir yaygınlık, yaş veya güvenilir liste ölçütüne uymadığı sürece yürütülebilir dosyaların çalışmasını engelleyin](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | E | E <br><br> CB 1802 |  E |  E |
+|[Karartılmış olabilecek betiklerin yürütülmesini engelleme](#block-execution-of-potentially-obfuscated-scripts) | E |E  <br><br> CB 1710 | E  | E  |
+|[JavaScript veya VBScript'in indirilen yürütülebilir içeriği başlatmasını engelleme](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | E |E <br><br> CB 1710 | E  | E  |
+|[Office uygulamalarının yürütülebilir içerik oluşturmalarını engelleme](#block-office-applications-from-creating-executable-content) | E |E <br><br> CB 1710 | E  | E  |
+|[Office uygulamalarının diğer işlemlere kod eklemesini engelleme](#block-office-applications-from-injecting-code-into-other-processes) | E |E <br><br> CB 1710 | E  | E  |
+|[Office iletişim uygulamasının alt işlemler oluşturmalarını engelleme](#block-office-communication-application-from-creating-child-processes) | E |E <br><br> CB 1710 | E  | E  |
+|[WMI olay aboneliği aracılığıyla kalıcılığı engelleme](#block-persistence-through-wmi-event-subscription) |E  |  |E   | E  |
+|[PSExec ve WMI komutlarından kaynaklanan işlem oluşturma işlemlerini engelleme](#block-process-creations-originating-from-psexec-and-wmi-commands) | E |   |  E | E  |
+|[USB'den çalıştırılan güvenilmeyen ve imzalanmamış işlemleri engelleme](#block-untrusted-and-unsigned-processes-that-run-from-usb) | E |E <br><br> CB 1802  | E  | E  |
+|[Office makrolarından Win32 API çağrılarını engelleme](#block-win32-api-calls-from-office-macros) | E |E <br><br> CB 1710  | E  |  E |
+|[Fidye yazılımına karşı gelişmiş koruma kullanma](#use-advanced-protection-against-ransomware) | E |E <br><br> CB 1802 | E  | E  |
 
   (<a id="fn1">1</a>) Herhangi bir kuralın GUID'sini kullanarak saldırı yüzeyi azaltma kurallarını kural temelinde yapılandırabilirsiniz.
 

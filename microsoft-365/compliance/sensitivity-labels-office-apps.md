@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: MASAÜSTÜ, mobil ve web için Office uygulamalarında duyarlılık etiketlerini yönetmek için BT yöneticilerine yönelik bilgiler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 06c3ba12cbea34b4b81acf84b579c56cfc50cd22
-ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
+ms.openlocfilehash: d11bd5a8128b4fe3e9cb14901f2c7ce1e5e1bfed
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68362870"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504314"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office uygulamalarında duyarlılık etiketlerini yönetme
 
@@ -145,7 +145,9 @@ Bu ayar Windows Office uygulamalarına özgü olduğundan, Windows'ta duyarlıl�
 
 ## <a name="office-file-types-supported"></a>Desteklenen Office dosya türleri
 
-Word, Excel ve PowerPoint dosyaları için yerleşik etiketlemeye sahip Office uygulamaları, Açık XML biçimini (.docx ve .xlsx gibi) destekler ancak Microsoft Office 97-2003 biçimini (.doc ve .xls gibi), Açık Belge Biçimi'ni (.odt ve .ods gibi) veya diğer biçimleri desteklemez. Yerleşik etiketleme için bir dosya türü desteklenmediğinde, **Duyarlılık** düğmesi Office uygulamasında kullanılamaz.
+Genel olarak, Word, Excel ve PowerPoint dosyaları için yerleşik etiketlemeye sahip Office uygulamaları Açık XML biçimini (.docx ve .xlsx gibi) destekler ancak Microsoft Office 97-2003 biçimini (.doc ve .xls gibi), Açık Belge Biçimi'ni (.odt ve .ods gibi) veya diğer biçimleri desteklemez. Yerleşik etiketleme için bir dosya türü desteklenmediğinde, **Duyarlılık** düğmesi Office uygulamasında kullanılamaz.
+
+Bu hizmetler duyarlılık etiketleri için etkinleştirildiğinde SharePoint ve OneDrive için desteklenen belirli dosya türleri için bkz. [SharePoint ve OneDrive'da Office dosyaları için duyarlılık etiketlerini etkinleştirme](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types).
 
 Azure Information Protection birleşik etiketleme istemcisi hem Open XML biçimini hem de Microsoft Office 97-2003 biçimini destekler. Daha fazla bilgi için, bu [istemcinin yönetici kılavuzundaki Azure Information Protection birleşik etiketleme istemcisi tarafından desteklenen dosya türleri](/azure/information-protection/rms-client/clientv2-admin-guide-file-types) bölümüne bakın.
 

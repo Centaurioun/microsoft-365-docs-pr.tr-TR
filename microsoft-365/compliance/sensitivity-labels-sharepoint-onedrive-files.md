@@ -11,18 +11,19 @@ ms.date: ''
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: Yöneticiler SharePoint ve OneDrive'da Word, Excel ve PowerPoint dosyaları için duyarlılık etiketi desteğini etkinleştirebilir.
-ms.openlocfilehash: b995d1b97676eb3251c33069ed20f9ce382a61bb
-ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
+ms.openlocfilehash: 9bba98b57c2d677cce9f6afcc4ab1a11a49e94e3
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67069679"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503544"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint ve OneDrive'daki Office dosyaları için hassasiyet etiketlerini etkinleştirme
 
@@ -65,11 +66,29 @@ Yeni özelliklerin nasıl çalıştığını görmek için aşağıdaki videoyu 
 
 SharePoint'te şu anda SharePoint Information Rights Management (IRM) kullanarak belgeleri koruyorsanız, bu sayfadaki [SharePoint Information Rights Management (IRM) ve duyarlılık etiketleri](#sharepoint-information-rights-management-irm-and-sensitivity-labels) bölümünü denetlediğinizden emin olun.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="requirements"></a>Gereksinimler
 
 Bu yeni özellikler yalnızca [duyarlılık etiketleriyle](sensitivity-labels.md) çalışır. Şu anda Azure Information Protection etiketleriniz varsa, karşıya yüklediğiniz yeni dosyalar için bu özellikleri etkinleştirebilmek için önce bunları duyarlılık etiketlerine geçirin. Yönergeler için bkz. [Azure Information Protection etiketlerini birleşik duyarlılık etiketlerine geçirme](/azure/information-protection/configure-policy-migrate-labels).
 
 Windows'da OneDrive eşitleme uygulama sürümü 19.002.0121.0008 veya üzerini ve Mac'te 19.002.0107.0008 veya sonraki bir sürümü kullanın. Bu sürümlerin her ikisi de 28 Ocak 2019'da yayımlandı ve şu anda tüm halkalarda yayınlanıyor. Daha fazla bilgi için bkz. [OneDrive sürüm notları](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0). SharePoint ve OneDrive'da Office dosyaları için duyarlılık etiketlerini etkinleştirdikten sonra, eşitleme uygulamasının eski bir sürümünü çalıştıran kullanıcılardan bunu güncelleştirmeleri istenir.
+
+## <a name="supported-file-types"></a>Desteklenen dosya türleri
+
+SharePoint ve OneDrive için duyarlılık etiketlerini etkinleştirdikten sonra, duyarlılık etiketleme senaryoları için aşağıdaki dosya türleri desteklenir.
+
+Web üzerinde Office veya SharePoint'te duyarlılık etiketi uygulama:
+
+- **Word**: .docx, .docm
+- **Excel**: .xlsx, .xlsm, .xlsb
+- **PowerPoint**: .pptx, .ppsx
+
+Etiketli bir belgeyi karşıya yükleme ve ardından bu duyarlılık etiketini ayıklama ve görüntüleme:
+
+- **Word**: doc, .docx, .docm, .dot, .dotx, .dotm
+- **Excel**: .xls, .xlt, .xla, .xlc, .xlm, .xlw, .xlsx, .xltx, .xlsm, .xltm, .xlam, .xlsb
+- **PowerPoint**: .ppt, .pot, .pps, .ppa, .pptx, .ppsx, .ppsxm, .potx, .ppam, .pptm, .potm, .ppsm
 
 ## <a name="limitations"></a>Sınırlamalar
 

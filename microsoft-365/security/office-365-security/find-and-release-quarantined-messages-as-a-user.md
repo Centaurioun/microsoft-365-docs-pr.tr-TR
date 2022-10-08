@@ -14,19 +14,19 @@ search.appverid:
 - MEW150
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Kullanıcılar, kendilerine teslim edilmesi gereken Exchange Online Protection (EOP) içinde karantinaya alınan iletileri görüntülemeyi ve yönetmeyi öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 adobe-target: true
-ms.openlocfilehash: eb53982c581dc44a4a8f0b4144803a43dfdc9aa0
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: c356ff685d2ab64fe46c5d79d53473b23ce9b83d
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67796950"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060548"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Karantinaya alınan iletileri EOP'de kullanıcı olarak bulma ve bırakma
 

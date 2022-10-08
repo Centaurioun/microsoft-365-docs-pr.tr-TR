@@ -13,23 +13,24 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
 - m365solution-overview
 - m365solution-fpfn
 - highpri
+- tier1
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
 search.appverid: met150
-ms.openlocfilehash: 0c305a3dd19cd412238017649eae141c7e308326
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: d057d64ac3d828a871103fa1b5120f7730f0d63c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67798164"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195357"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'da yanlış pozitifleri/negatifleri ele alın
 
@@ -120,7 +121,7 @@ Hatalı pozitif veya gerçek pozitif olan ancak önemli olmayan olaylar için uy
 
 ## <a name="part-2-review-remediation-actions"></a>2. Bölüm: Düzeltme eylemlerini gözden geçirme
 
-Dosyayı karantinaya alma veya işlemi durdurma gibi [düzeltme eylemleri](manage-auto-investigation.md#remediation-actions), tehdit olarak algılanan varlıklarda (dosyalar gibi) gerçekleştirilir. Otomatik araştırma ve Microsoft Defender Virüsten Koruma aracılığıyla çeşitli düzeltme eylemleri otomatik olarak gerçekleştirilir:
+Dosyayı karantinaya alma veya işlemi durdurma gibi [düzeltme eylemleri](manage-auto-investigation.md#remediation-actions), tehdit olarak algılanan varlıklarda (dosyalar gibi) gerçekleştirilir. Otomatik araştırma ve virüsten koruma Microsoft Defender aracılığıyla çeşitli düzeltme eylemleri otomatik olarak gerçekleştirilir:
 
 - Dosyayı karantinaya al
 - Kayıt defteri anahtarını kaldırma
@@ -207,7 +208,7 @@ Uç Nokta için Microsoft Defender genelinde dışlamaları tanımlamak için a�
 - [Uç Nokta için Microsoft Defender için "izin ver" göstergeleri oluşturma](#indicators-for-microsoft-defender-for-endpoint)
 
 > [!NOTE]
-> Microsoft Defender Virüsten Koruma dışlamaları yalnızca virüsten koruma için geçerlidir, diğer Uç Nokta için Microsoft Defender özellikleri için geçerli değildir. Dosyaları geniş kapsamlı bir şekilde dışlamak için Microsoft Defender Virüsten Koruma için dışlamaları ve Uç Nokta için Microsoft Defender [için özel göstergeleri](/microsoft-365/security/defender-endpoint/manage-indicators) kullanın.
+> Microsoft Defender Virüsten koruma dışlamaları yalnızca virüsten koruma için geçerlidir, diğer Uç Nokta için Microsoft Defender özellikleri için geçerli değildir. Dosyaları genel olarak dışlamak için Microsoft Defender Virüsten Koruma için dışlamaları ve Uç Nokta için Microsoft Defender [için özel göstergeleri](/microsoft-365/security/defender-endpoint/manage-indicators) kullanın.
 
 Bu bölümdeki yordamlarda dışlamaların ve göstergelerin nasıl tanımlanacağı açıklanmaktadır.
 
@@ -216,7 +217,7 @@ Bu bölümdeki yordamlarda dışlamaların ve göstergelerin nasıl tanımlanaca
 Genel olarak, Microsoft Defender Virüsten Koruma için dışlamalar tanımlamanız gerekmez. Dışlamaları düzenli olarak tanımladığınızdan ve yalnızca hatalı pozitif sonuçlara neden olan dosyaları, klasörleri, işlemleri ve işlem tarafından açılan dosyaları eklediğinizden emin olun. Ayrıca, tanımlı dışlamalarınızı düzenli olarak gözden geçirmeyi unutmayın. Virüsten koruma dışlamalarınızı tanımlamak veya düzenlemek için [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) kullanmanızı öneririz; ancak [grup ilkesi](/azure/active-directory-domain-services/manage-group-policy) gibi diğer yöntemleri kullanabilirsiniz (bkz. [Uç Nokta için Microsoft Defender yönetme](manage-mde-post-migration.md).
 
 > [!TIP]
-> Virüsten koruma dışlamalarıyla ilgili yardıma mı ihtiyacınız var? Bkz [. Microsoft Defender Virüsten Koruma taramaları için dışlamaları yapılandırma ve doğrulama](configure-exclusions-microsoft-defender-antivirus.md).
+> Virüsten koruma dışlamalarıyla ilgili yardıma mı ihtiyacınız var? Bkz[. Microsoft Defender Virüsten Koruma taramaları için dışlamaları yapılandırma ve doğrulama](configure-exclusions-microsoft-defender-antivirus.md).
 
 #### <a name="use-microsoft-endpoint-manager-to-manage-antivirus-exclusions-for-existing-policies"></a>Virüsten koruma dışlamalarını yönetmek için Microsoft Endpoint Manager kullanma (mevcut ilkeler için)
 
@@ -226,7 +227,7 @@ Genel olarak, Microsoft Defender Virüsten Koruma için dışlamalar tanımlaman
 
 3. **Özellikler'i** seçin ve **Yapılandırma ayarları'nın** yanında **Düzenle'yi** seçin.
 
-4. **Microsoft Defender Virüsten Koruma Dışlamaları'nın** kapsamını genişletin ve dışlamalarınızı belirtin.
+4. **Virüsten Koruma Dışlamaları Microsoft Defender** genişletin ve dışlamalarınızı belirtin.
 
 5. **Gözden Geçir + kaydet'i** ve ardından **Kaydet'i** seçin.
 
@@ -238,7 +239,7 @@ Genel olarak, Microsoft Defender Virüsten Koruma için dışlamalar tanımlaman
 
 3. Bir platform seçin (**Windows 10 ve üzeri**, **macOS** veya **Windows 10 ve Windows Server** gibi).
 
-4. **Profil** için **Microsoft Defender Virüsten Koruma dışlamaları'nı** ve ardından **Oluştur'u** seçin.
+4. **Profil** için **Virüsten Koruma dışlamaları Microsoft Defender** ve ardından **Oluştur'u** seçin.
 
 5. Profil için bir ad ve açıklama belirtin ve ardından **İleri'yi** seçin.
 
@@ -399,7 +400,7 @@ Bulut tabanlı koruma ayarlarınızı düzenlemek veya ayarlamak için [Microsof
 > [!TIP]
 > PUA hakkında daha fazla bilgi edinmek için bkz. [İstenmeyebilecek uygulamaları algılama ve engelleme](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
-Kuruluşunuzun kullandığı uygulamalara bağlı olarak, PUA koruma ayarlarınızın bir sonucu olarak hatalı pozitif sonuçlar alıyor olabilirsiniz. Gerekirse, PUA korumasını bir süre denetim modunda çalıştırmayı veya kuruluşunuzdaki cihazların bir alt kümesine PUA koruması uygulamayı göz önünde bulundurun. PUA koruması, Microsoft Edge tarayıcısı ve Microsoft Defender Virüsten Koruma için yapılandırılabilir.
+Kuruluşunuzun kullandığı uygulamalara bağlı olarak, PUA koruma ayarlarınızın bir sonucu olarak hatalı pozitif sonuçlar alıyor olabilirsiniz. Gerekirse, PUA korumasını bir süre denetim modunda çalıştırmayı veya kuruluşunuzdaki cihazların bir alt kümesine PUA koruması uygulamayı göz önünde bulundurun. PUA koruması Microsoft Edge tarayıcısı ve Microsoft Defender Virüsten Koruma için yapılandırılabilir.
 
 PUA koruma ayarlarını düzenlemek veya ayarlamak için [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) kullanmanızı öneririz; ancak [grup ilkesi](/azure/active-directory-domain-services/manage-group-policy) gibi diğer yöntemleri kullanabilirsiniz (bkz. [Uç Nokta için Microsoft Defender yönetme](manage-mde-post-migration.md).
 
@@ -411,7 +412,7 @@ PUA koruma ayarlarını düzenlemek veya ayarlamak için [Microsoft Endpoint Man
 
 3. **Yönet'in** altında **Özellikler'i** seçin ve yapılandırma **ayarları'nın** yanındaki **Düzenle'yi** seçin.
 
-4. **Yapılandırma ayarları** sekmesinde ekranı aşağı kaydırın ve **Microsoft Defender Virüsten Koruma'yı** genişletin.
+4. **Yapılandırma ayarları** sekmesinde ekranı aşağı kaydırın ve **Virüsten Koruma Microsoft Defender** genişletin.
 
 5. **İstenmeyebilecek uygulamaları algıla** ayarını **Denetim** olarak ayarlayın. (Bunu kapatabilirsiniz, ancak denetim modunu kullanarak algılamaları görebilirsiniz.)
 
@@ -427,7 +428,7 @@ PUA koruma ayarlarını düzenlemek veya ayarlamak için [Microsoft Endpoint Man
 
 4. **Temel Bilgiler** sekmesinde, ilkeniz için bir ad ve açıklama belirtin. Ardından **İleri'yi** seçin.
 
-5. **Yapılandırma ayarları** sekmesinde ekranı aşağı kaydırın ve **Microsoft Defender Virüsten Koruma'yı** genişletin.
+5. **Yapılandırma ayarları** sekmesinde ekranı aşağı kaydırın ve **Virüsten Koruma Microsoft Defender** genişletin.
 
 6. **İstenmeyebilecek uygulamaları algıla'yı** **Denetim** olarak ayarlayın ve **İleri'yi** seçin. (PUA korumasını kapatabilirsiniz, ancak denetim modunu kullanarak algılamaları görebilirsiniz.)
 

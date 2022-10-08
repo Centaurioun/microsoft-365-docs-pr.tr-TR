@@ -1,33 +1,36 @@
 ---
-title: İş için Microsoft Defender deneme playbook'u
+title: İş için Microsoft Defender deneme kullanım kılavuzu
 f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
-ms.collection: m365-security-compliance
+ms.topic: how-to
+ms.collection:
+- m365-security
+- tier1
 ms.localizationpriority: high
+ms.date: 10/07/2022
 ms.service: microsoft-365-security
 ms.subservice: mdb
 search.appverid:
 - MOE150
 - MET150
-description: Bu playbook ile İş için Defender denemenizden en iyi şekilde geçin. Hızlı bir şekilde ayarlayın ve yeni güvenlik özelliklerinizi kullanmaya başlayın.
+description: Bu kılavuzla İş için Defender denemenizden en iyi şekilde emin olun. Hızlı bir şekilde ayarlayın ve yeni güvenlik özelliklerinizi kullanmaya başlayın.
 ms.custom: trial-playbook
-ms.openlocfilehash: f03b444b685d4f2bc39a5a0e73d2488b88db6dec
-ms.sourcegitcommit: 511d15831b97d02e5a0f5e11834ad52617abd0f6
+ms.openlocfilehash: 290c5eb2f6ced1816a7955fc8528a3c6cadcccc2
+ms.sourcegitcommit: 9f5cf8cf8a2e25cfd07b23b7f6d7f9d138a9cd16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67600389"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68501542"
 ---
-# <a name="trial-playbook-microsoft-defender-for-business"></a>Deneme playbook'u: İş için Microsoft Defender
+# <a name="trial-user-guide-microsoft-defender-for-business"></a>Deneme kullanım kılavuzu: İş için Microsoft Defender
 
-**İş için Defender deneme playbook'una hoş geldiniz!**
+**İş için Defender deneme kullanım kılavuzuna hoş geldiniz!**
 
-Bu playbook, 30 günlük ücretsiz denemenizden en iyi şekilde yararlanabilirsiniz. İş için Defender'ın güvenliğinizi geleneksel virüsten korumadan yeni nesil koruma, uç nokta algılama ve yanıt ve güvenlik açığı yönetimine yükseltmeye nasıl yardımcı olabileceğini öğrenmek için Microsoft Defender ekibinin bu makaledeki önerilerini kullanın.
+Bu kılavuz, ücretsiz denemenizin temel özelliklerini ayarlamanıza ve kullanmanıza yardımcı olur. Microsoft Defender ekibinin bu makaledeki önerileri kullanarak, İş için Defender'ın güvenliğinizi geleneksel virüsten korumadan yeni nesil koruma, uç nokta algılama ve yanıt ve güvenlik açığı yönetimine yükseltmeye nasıl yardımcı olabileceğini öğrenin.
 
 ## <a name="what-is-defender-for-business"></a>İş için Defender nedir?
 
@@ -51,10 +54,10 @@ Deneme aboneliğinizi şu şekilde ayarlayabilirsiniz:
 İş için Defender'a kaydoldıktan sonra, ilk adım **[kullanıcı eklemek ve lisans atamaktır](mdb-add-users.md)**.
 
 > [!NOTE]
-> Bu görevi gerçekleştirmek için genel yönetici olmanız gerekir. Şirketinizi Microsoft 365 veya İş için Defender'a kaydolan kişi varsayılan olarak genel yöneticidir. [Roller ve izinler hakkında Mer informasjon](mdb-roles-permissions.md).
+> Bu görevi gerçekleştirmek için genel yönetici olmanız gerekir. Şirketinizi Microsoft 365 veya İş için Defender'a kaydolan kişi varsayılan olarak genel yöneticidir. [Roller ve izinler hakkında daha fazla bilgi edinin](mdb-roles-permissions.md).
 
 ### <a name="step-2-visit-the-microsoft-365-defender-portal"></a>2. Adım: Microsoft 365 Defender portalını ziyaret edin
- 
+
 Microsoft 365 Defender portalı ([https://security.microsoft.com](https://security.microsoft.com)), İş için Defender'ı kullandığınız ve yönettiğiniz tek durak mağazadır. Başlamanıza yardımcı olacak açıklama balonları, ilgili bilgileri ortaya çıkartan kartlar ve çeşitli özelliklere ve özelliklere kolay erişim sağlayan bir gezinti çubuğu içerir.
 
 - **[Microsoft 365 Defender portalını ziyaret edin](mdb-get-started.md)**.
@@ -70,7 +73,7 @@ Microsoft 365 Defender portalı ([https://security.microsoft.com](https://securi
 #### <a name="setup-wizard-flow-what-to-expect"></a>Kurulum sihirbazı akışı: bekleyebileceğinizler
 
 > [!TIP]
-> **Kurulum sihirbazını kullanmak isteğe bağlıdır.** (Bkz. [Sihirbazı kullanmazsam ne olur?](mdb-use-wizard.md#what-happens-if-i-dont-use-the-wizard)) Sihirbazı kullanmamayı seçerseniz veya kurulum işleminiz tamamlanmadan önce sihirbaz kapatılırsa, kurulum ve yapılandırma işlemini kendiniz tamamlayabilirsiniz. Bkz. [4. Adım](#step-4-set-up-and-configure-defender-for-business). 
+> **Kurulum sihirbazını kullanmak isteğe bağlıdır.** (Bkz. [Sihirbazı kullanmazsam ne olur?](mdb-use-wizard.md#what-happens-if-i-dont-use-the-wizard)). Sihirbazı kullanmamayı seçerseniz veya kurulum işleminiz tamamlanmadan önce sihirbaz kapatılırsa, kurulum ve yapılandırma işlemini kendiniz tamamlayabilirsiniz. Bkz [. 4. Adım: İş için Defender'ı ayarlama ve yapılandırma](#step-4-set-up-and-configure-defender-for-business).
 
 1. **[Kullanıcı izinleri atayın](mdb-roles-permissions.md#view-or-edit-role-assignments)**. Güvenlik ekibinize Microsoft 365 Defender portalına erişim izni verin.
 
@@ -79,11 +82,11 @@ Microsoft 365 Defender portalı ([https://security.microsoft.com](https://securi
 3. **[Windows cihazlarını ekleme ve yapılandırma](mdb-onboard-devices.md)**. Cihazları hemen ekleme, bu cihazların ilk günden korunmasına yardımcı olur.
 
    > [!NOTE]
-   > Kurulum sihirbazını kullandığınızda sistem, Zaten Intune'a kayıtlı Windows cihazlarınız olup olmadığını algılar. Bu cihazların tümü veya bazıları için otomatik ekleme kullanmak isteyip istemediğiniz sorulur. Tüm Windows cihazlarını bir kerede ekleyebilir veya ilk başta belirli cihazları seçip daha sonra daha fazla cihaz ekleyebilirsiniz. [Otomatik ekleme hakkında Mer informasjon](mdb-use-wizard.md#what-is-automatic-onboarding).
-   
+   > Kurulum sihirbazını kullandığınızda, sistem zaten Intune kayıtlı Windows cihazlarınız olup olmadığını algılar. Bu cihazların tümü veya bazıları için otomatik ekleme kullanmak isteyip istemediğiniz sorulur. Tüm Windows cihazlarını bir kerede ekleyebilir veya ilk başta belirli cihazları seçip daha sonra daha fazla cihaz ekleyebilirsiniz. [Otomatik ekleme hakkında daha fazla bilgi edinin](mdb-use-wizard.md#what-is-automatic-onboarding).
+
    Diğer cihazları eklemek için [4. adıma](#step-4-set-up-and-configure-defender-for-business) bakın.
 
-4.  **[Güvenlik ilkelerinizi görüntüleyin ve düzenleyin](mdb-configure-security-settings.md)**. İş için Defender, şirketinizin cihazlarına uygulanabilecek yeni nesil koruma ve güvenlik duvarı koruması için varsayılan güvenlik ilkelerini içerir. Önceden yapılandırılmış bu güvenlik ilkeleri önerilen ayarları kullanır, böylece cihazlarınız İş için Defender'a eklenir eklenmez korunursunuz. Ayrıca ilkeleri düzenleyebilir veya yeni ilkeler oluşturabilirsiniz.
+4. **[Güvenlik ilkelerinizi görüntüleyin ve düzenleyin](mdb-configure-security-settings.md)**. İş için Defender, şirketinizin cihazlarına uygulanabilecek yeni nesil koruma ve güvenlik duvarı koruması için varsayılan güvenlik ilkelerini içerir. Önceden yapılandırılmış bu güvenlik ilkeleri önerilen ayarları kullanır, böylece cihazlarınız İş için Defender'a eklenir eklenmez korunursunuz. Ayrıca ilkeleri düzenleyebilir veya yeni ilkeler oluşturabilirsiniz.
 
 ### <a name="step-4-set-up-and-configure-defender-for-business"></a>4. Adım: İş için Defender'ı ayarlama ve yapılandırma
 
@@ -91,9 +94,9 @@ Kurulum sihirbazını kullanmamayı seçerseniz, İş için Defender'ın [genel 
 
 [:::image type="content" source="media/mdb-setup-process-2.png" alt-text="İş için Defender için kurulum ve yapılandırma işlemi.":::](mdb-setup-configuration.md)
 
-Kurulum sihirbazını kullandıysanız ancak Windows dışı cihazlar gibi daha fazla cihaz eklemeniz gerekiyorsa, aşağıdaki yordamda doğrudan 4. adıma gidin:
+Kurulum sihirbazını kullandıysanız ancak Windows dışı cihazlar gibi daha fazla cihaz eklemeniz gerekiyorsa, aşağıdaki yordamda doğrudan [4. adıma](mdb-onboard-devices.md) gidin:
 
-1. İş için **[Defender'ı yapılandırma ve kullanma gereksinimlerini gözden geçirin](mdb-requirements.md)**. 
+1. İş için **[Defender'ı yapılandırma ve kullanma gereksinimlerini gözden geçirin](mdb-requirements.md)**.
 
 2. Microsoft 365 Defender portalında **[roller ve izinler atayın](mdb-roles-permissions.md)**.
 
@@ -105,65 +108,57 @@ Kurulum sihirbazını kullandıysanız ancak Windows dışı cihazlar gibi daha 
    - [E-posta bildirimi türleri hakkında bilgi edinin](mdb-email-notifications.md#types-of-email-notifications).
    - [E-posta bildirim ayarlarını görüntüleyin ve düzenleyin](mdb-email-notifications.md#view-and-edit-email-notifications).
 
-4. **[Cihazları ekleme](mdb-onboard-devices.md)**. İş için Defender ile, şirketinizin cihazlarını eklemek için aralarından seçim yapabileceğiniz çeşitli seçenekler vardır. İlk olarak, eklemek istediğiniz işletim sistemini seçin.
+4. **[Cihazları ekleme](mdb-onboard-devices.md)**. Windows ve Mac istemcilerini eklemek için yerel bir betik kullanabilirsiniz.
 
-   | Cihaz türü | Ekleme yöntemleri |
-   |:---|:---|
-   | [Windows istemcileri](mdb-onboard-devices.md) | Windows istemci cihazlarını İş için Defender'a eklemek için aşağıdaki seçeneklerden birini belirleyin:<ul><li>Yerel betik (cihazları Microsoft 365 Defender portalında el ile ekleme için)</li><li>نهج المجموعة (zaten نهج المجموعة kullanıyorsanız ve bu yöntemi tercih ediyorsanız)</li><li>Microsoft Intune (*önerilir*; [Microsoft 365 İş Ekstra](../../business-premium/index.md) dahil)</li></ul> |
-   | [Mac](mdb-onboard-devices.md) | Mac'i eklemek için aşağıdaki seçeneklerden birini belirleyin:<ul><li>Mac için yerel betik (*önerilir*)</li><li>Mac için Microsoft Intune (Intune [Microsoft 365 İş Ekstra](../../business-premium/index.md) dahildir)</li></ul><p>Mac'i eklemek için yerel bir betik kullanmanızı öneririz. [Intune'da Mac cihazları için kayıt ayarlayabilirsiniz](/mem/intune/enrollment/macos-enroll) ancak yerel betik, Mac'i İş için Defender'a eklemek için en basit yöntemdir. |
-   | Windows Server ve Linux sunucuları | *Windows Server veya Linux Server örneğini ekleme özelliği şu anda önizleme aşamasındadır ve ek lisans gerektirir*. Daha fazla bilgi edinmek için aşağıdaki makalelere bakın: <ul><li>[İş için Defender gereksinimleri](mdb-requirements.md)</li><li>[Cihazları İş için Defender'a ekleme](mdb-onboard-devices.md)</li></ul> |
-   | [Mobil cihazlar](mdb-onboard-devices.md) | Android ve iOS/iPadOS cihazları gibi mobil cihazları eklemek için Microsoft Intune'a ihtiyacınız vardır. [Microsoft 365 İş Ekstra](../../business-premium/index.md) varsa, Intune aboneliğinizin bir parçasıdır. Intune ayrıca satın alınabilir. Bu cihazları Intune'a kaydetme konusunda yardım almak için aşağıdaki kaynaklara bakın:<ul><li>[Android cihazları kaydetme](/mem/intune/enrollment/android-enroll)</li><li>[iOS veya iPadOS cihazlarını kaydetme](/mem/intune/enrollment/ios-enroll)</li></ul> |
+5. **[Güvenlik ilkelerinizi görüntüleyin ve yapılandırın](mdb-configure-security-settings.md)**. Şirketinizin cihazlarını İş için Defender'a ekledikten sonra, sonraki adım güvenlik ilkelerinizi ve ayarlarınızı görüntülemek ve düzenlemektir. 
 
-5. **[Güvenlik ilkelerinizi görüntüleyin ve yapılandırın](mdb-configure-security-settings.md)**. Şirketinizin cihazlarını İş için Defender'a ekledikten sonra, sonraki adım güvenlik ilkelerinizi ve ayarlarınızı görüntülemek ve düzenlemektir. İş için Defender, önerilen ayarları kullanan önceden yapılandırılmış güvenlik ilkeleri içerir. Ancak ayarları iş gereksinimlerinize uyacak şekilde düzenleyebilirsiniz.
+İş için Defender, önerilen ayarları kullanan önceden yapılandırılmış güvenlik ilkeleri içerir. Ancak ayarları iş gereksinimlerinize uyacak şekilde düzenleyebilirsiniz.
 
-   | Eylem | Açıklama |
-   |:---|:---|
-   | [Güvenlik ilkelerinizi ve cihazlarınızı yöneteceğiniz yeri seçin](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices). | [Basitleştirilmiş yapılandırma işlemini](mdb-simplified-configuration.md) seçerseniz güvenlik ilkelerinizi Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ) görüntüleyebilir ve yönetebilirsiniz. Ancak bu seçenekle sınırlı değilsiniz. [Intune](/mem/intune/protect/) kullanıyorsanız, güvenlik ilkelerinizi ve cihazlarınızı yönetmek için Microsoft Endpoint Manager yönetim merkezini kullanmaya devam edebilirsiniz. |
-   | [Yeni nesil koruma ilkelerinizi görüntüleyin veya düzenleyin](mdb-configure-security-settings.md#view-or-edit-your-next-generation-protection-policies). | Yeni nesil koruma ayarları gerçek zamanlı koruma, ilk bakışta blok, ağ koruması, istenmeyebilecek uygulamalarda yapılacak eylemler ve virüsten koruma zamanlanmış taramaları içerir.  |
-   | [Güvenlik duvarı ilkelerinizi görüntüleyin veya düzenleyin](mdb-configure-security-settings.md#view-or-edit-your-firewall-policies-and-custom-rules). | Güvenlik duvarı koruması, şirketinizin cihazlarına hangi ağ trafiğinin akışına izin verileceğini belirler. [Özel kurallar](mdb-custom-rules-firewall.md) , güvenlik duvarı ilkelerinizin özel durumlarını tanımlamak için kullanılabilir. |
-   | [Web içeriği filtrelemeyi ayarlayın](mdb-configure-security-settings.md#set-up-web-content-filtering). | Web içeriği filtrelemesi, güvenlik ekibinizin web sitelerine erişimi yetişkin içeriği, yüksek bant genişliği, yasal sorumluluk, boş zaman veya kategorilere ayrılmamış gibi içerik kategorilerine göre izlemesine ve düzenlemesine olanak tanır. |
-   | [Gelişmiş özellikler için ayarları gözden geçirin](mdb-configure-security-settings.md#review-settings-for-advanced-features). | İş için Defender'da güvenlik özellikleri önerilen ayarlar için önceden yapılandırılmıştır. Ayarları iş gereksinimlerinize uyacak şekilde gözden geçirebilir ve düzenleyebilirsiniz. <br/><br/>Gelişmiş özelliklerin ayarlarına erişmek için Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com)) **Ayarlar** > **Uç Noktaları** > **Genel** > **Gelişmiş özellikler'e** gidin. |
-   | Microsoft 365 Defender portalında [diğer ayarları görüntüleyin ve düzenleyin](mdb-configure-security-settings.md#access-your-settings-in-the-microsoft-365-defender-portal). | Cihazlara uygulanan güvenlik ilkelerine ek olarak, İş için Defender'da görüntüleyebileceğiniz ve düzenleyebileceğiniz başka ayarlar da vardır. Örneğin, kullanılacak saat dilimini belirtirsiniz ve cihazları ekleyebilir (veya devre dışı bırakabilirsiniz). |
+Gözden geçirilip yapılandırılan güvenlik ilkeleri şunlardır:
+
+- Şirketinizin cihazları için virüsten koruma ve kötü amaçlı yazılımdan korumayı belirleyen [yeni nesil koruma ilkeleri](mdb-configure-security-settings.md#view-or-edit-your-next-generation-protection-policies)
+- Şirketinizin cihazlarına hangi ağ trafiğinin akışına izin verileceğini belirleyen [güvenlik duvarı koruması ve kuralları](mdb-configure-security-settings.md#view-or-edit-your-firewall-policies-and-custom-rules)
+- [Kişilerin](mdb-configure-security-settings.md#set-up-web-content-filtering)yetişkinlere yönelik içerik veya yasal sorumluluk gibi kategorilere göre belirli web sitelerini (URL' ler) ziyaret etmesini engelleyen web içeriği filtreleme
+- Blok modunda otomatik araştırma ve yanıt ile uç nokta algılama ve yanıt (EDR) gibi [gelişmiş özellikler](mdb-configure-security-settings.md#review-settings-for-advanced-features)
 
 ## <a name="start-using-defender-for-business"></a>İş için Defender'ı kullanmaya başlama
 
-Sonraki 30 gün içinde, aşağıdaki bölümlerde açıklandığı gibi yeni güvenlik özelliklerinizi denemenizi öneririz:
+Önümüzdeki 30 gün boyunca, ürün ekibinden deneyebileceğiniz önemli özelliklerle ilgili yönergeler aşağıda verilmiştir:
 
-- [Microsoft Defender Güvenlik Açığı Yönetimi panonuzu kullanma](#use-the-defender-vulnerability-management-dashboard) 
-- [Algılanan tehditleri görüntüleme ve tehditlere karşılık verme](#view-and-respond-to-detected-threats)
-- [Güvenlik ilkelerini gözden geçirme](#review-security-policies)
-- [Devam eden güvenlik yönetimine hazırlanma](#prepare-for-ongoing-security-management)
+1. [Microsoft Defender Güvenlik Açığı Yönetimi panonuzu kullanın](#1-use-the-defender-vulnerability-management-dashboard). 
 
-### <a name="use-the-defender-vulnerability-management-dashboard"></a>Defender Güvenlik Açığı Yönetimi panosunu kullanma
+2. [Algılanan tehditleri görüntüleyin ve yanıt verin](#2-view-and-respond-to-detected-threats).
 
-İş için Defender, güvenlik ekibinize zaman ve çaba kazandırmak için tasarlanmış bir Defender Güvenlik Açığı Yönetimi panosu içerir. [Defender Güvenlik Açığı Yönetimi panonuzu kullanın](mdb-view-tvm-dashboard.md).
+3. [Güvenlik ilkelerini gözden geçirin](#3-review-security-policies).
+
+4. [Devam eden güvenlik yönetimine hazırlanın](#4-prepare-for-ongoing-security-management).
+
+5. [Belge Bırakma Arka Kapı öğreticisini deneyin](#5-try-the-document-drops-backdoor-tutorial).
+
+### <a name="1-use-the-defender-vulnerability-management-dashboard"></a>1. Defender Güvenlik Açığı Yönetimi panosunu kullanma
+
+İş için Defender, güvenlik ekibinize zaman ve çaba kazandırmak için tasarlanmış bir Defender Güvenlik Açığı Yönetimi panosu içerir. [Defender Güvenlik Açığı Yönetimi panonuzu kullanmayı](mdb-view-tvm-dashboard.md) öğrenin.
 
 - Kuruluşunuzdaki cihazlarla ilişkili pozlama puanınızı görüntüleyin.
-- Cihazlarla adres bozukluğu olan iletişimler gibi en önemli güvenlik önerilerinizi görüntüleyin, güvenlik duvarı korumasını açın veya Microsoft Defender Virüsten Koruma tanımlarını güncelleştirin.
+- Cihazlarla adres engelli iletişimler gibi en önemli güvenlik önerilerinizi görüntüleyin, güvenlik duvarı korumasını açın veya Virüsten Koruma tanımlarını Microsoft Defender güncelleştirin.
 - Karantinaya gönderilen dosyalar veya cihazlarda bulunan güvenlik açıkları gibi düzeltme etkinliklerini görüntüleyin.
 
-### <a name="view-and-respond-to-detected-threats"></a>Algılanan tehditleri görüntüleme ve tehditlere karşılık verme
+### <a name="2-view-and-respond-to-detected-threats"></a>2. Algılanan tehditleri görüntüleme ve yanıtlama
 
-Tehditler algılandığında ve uyarılar tetiklendiğinde olaylar oluşturulur. Kuruluşunuzun güvenlik ekibi olayları Microsoft 365 Defender portalında görüntüleyebilir ve yönetebilir. [Algılanan tehditleri görüntüleyin ve yanıt verin](mdb-view-manage-incidents.md). 
+Tehditler algılandığında ve uyarılar tetiklendiğinde olaylar oluşturulur. Kuruluşunuzun güvenlik ekibi olayları Microsoft 365 Defender portalında görüntüleyebilir ve yönetebilir. [Algılanan tehditleri görüntülemeyi ve yanıtlamayı](mdb-view-manage-incidents.md) öğrenin. 
 
 - [Olayları görüntüleyin ve yönetin](mdb-view-manage-incidents.md).
 - [Tehditlere yanıt verme ve tehditleri azaltma](mdb-respond-mitigate-threats.md).
 - [İşlem Merkezi'nde aracılık eylemlerini gözden geçirin](mdb-review-remediation-actions.md).
 - [Raporları görüntüleyin ve kullanın](mdb-reports.md).
 
-### <a name="review-security-policies"></a>Güvenlik ilkelerini gözden geçirme
+### <a name="3-review-security-policies"></a>3. Güvenlik ilkelerini gözden geçirin
 
-İş için Defender'da güvenlik ayarları cihazlara uygulanan ilkeler aracılığıyla yapılandırılır. İş için Defender, şirketinizin cihazlarını eklendikleri anda korumaya yardımcı olmak, kuruluşunuzu kimlik, cihaz, uygulama ve belge güvenliği tehditlerine karşı korumaya yardımcı olmak için önceden yapılandırılmış ilkeler içerir. [Güvenlik ilkelerini gözden geçirin](mdb-view-edit-create-policies.md).
+İş için Defender'da güvenlik ayarları cihazlara uygulanan ilkeler aracılığıyla yapılandırılır. İş için Defender, şirketinizin cihazlarını eklendikleri anda korumaya yardımcı olmak, kuruluşunuzu kimlik, cihaz, uygulama ve belge güvenliği tehditlerine karşı korumaya yardımcı olmak için önceden yapılandırılmış ilkeler içerir. 
 
-- [Varsayılan ilkeleriniz hakkında bilgi edinin](mdb-view-edit-create-policies.md#default-policies-in-defender-for-business).
-- [Mevcut ilkelerinizi görüntüleyin](mdb-view-edit-create-policies.md#view-your-existing-policies).
-- [İlke sırasını anlama](mdb-policy-order.md). 
-- [Yeni nesil yapılandırma ayarlarını anlama](mdb-next-gen-configuration-settings.md).
-- [Varsayılan güvenlik duvarı ayarlarınızı gözden geçirin](mdb-firewall.md#default-firewall-settings-in-defender-for-business).
-- [Yapılandırabileceğiniz güvenlik duvarı ayarlarını anlama](mdb-firewall.md#firewall-settings-you-can-configure-in-defender-for-business).
-- [Web içeriği filtrelemeyi ayarlayın](mdb-configure-security-settings.md#set-up-web-content-filtering). Web içeriği filtreleme, güvenlik ekibinizin web sitelerine erişimi içerik kategorilerine göre izlemesine ve düzenlemesine olanak tanır. Varsayılan olarak açık değildir, bu nedenle kuruluşunuz için bu özelliği istiyorsanız ayarlamanız gerekir.
-  
-### <a name="prepare-for-ongoing-security-management"></a>Devam eden güvenlik yönetimine hazırlanma
+[Güvenlik ilkelerini gözden geçirmeyi](mdb-view-edit-create-policies.md) öğrenin.
+
+### <a name="4-prepare-for-ongoing-security-management"></a>4. Devam eden güvenlik yönetimine hazırlanma
 
 Bir cihazda tehdit algılama, yeni cihazlar ekleme ve kuruluşa katılan veya ayrılan çalışanlar gibi yeni güvenlik olayları, güvenliği yönetmenizi gerektirir. İş için Defender'da cihaz güvenliğini yönetmenin birçok yolu vardır.
 
@@ -171,6 +166,23 @@ Bir cihazda tehdit algılama, yeni cihazlar ekleme ve kuruluşa katılan veya ay
 - Tehdit algılamaları olan [bir cihazda işlem yapın](mdb-manage-devices.md#take-action-on-a-device-that-has-threat-detections).
 - [İş için Defender'a bir cihaz ekleme](mdb-manage-devices.md#onboard-a-device).
 - [İş için Defender'dan bir cihazı kullanıma alın](mdb-manage-devices.md#offboard-a-device).
+
+### <a name="5-try-the-document-drops-backdoor-tutorial"></a>5. Belge Bırakma Arka Kapı öğreticisini deneyin
+
+Bir öğreticiyi deneyerek İş için Defender'ın nasıl çalıştığını hızla görün.
+
+Bir test cihazına dosya tabanlı kötü amaçlı yazılım getiren bir saldırının benzetimini yapmak. Öğreticide simülasyon dosyasının nasıl kullanılacağı ve Microsoft 365 Defender portalında nelerin izleyebileceğiniz açıklanır.
+
+>[!NOTE]
+> Bu öğretici, Test cihazınıza Microsoft Word'un yüklenmesini gerektirir.
+
+Öğreticiye erişmek için aşağıdakileri yapın:
+
+1. [Microsoft 365 Defender portalına](https://security.microsoft.com) gidin ve oturum açın.
+
+2. Gezinti bölmesindeki **Uç Noktalar'ın** altında **Öğreticiler'i** seçin.
+
+3. **Belge Bırakma Arka Kapı'yı** seçin.
 
 ## <a name="additional-resources"></a>Ek kaynaklar
 
