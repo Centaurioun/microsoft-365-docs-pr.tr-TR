@@ -11,18 +11,19 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: Kuruluşunuzda Yammer iletilerinin otomatik olarak tutulmasını veya silinmesini yönetebilmeniz için Yammer için geçerli olan Microsoft 365 bekletme ilkeleri hakkında bilgi edinin.
-ms.openlocfilehash: c449dd7a562d770eea38e955897cb7bf977cd91e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 631e8172d29826b3bad6c95c006a8ea8c18bce59
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66944031"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484379"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Yammer için bekletme hakkında bilgi edinin
 
@@ -36,12 +37,16 @@ Diğer iş yükleri için bkz:
 - [Microsoft Teams için bekletme hakkında bilgi edinin](retention-policies-teams.md)
 - [Exchange için bekletme hakkında bilgi edinin](retention-policies-exchange.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="whats-included-for-retention-and-deletion"></a>Saklama ve silmeye dahil olanlar
 
 Yammer kullanıcı iletileri ve topluluk iletileri Yammer için bekletme ilkeleri kullanılarak silinebilir ve bu iletilerdeki metne ek olarak, uyumluluk nedenleriyle aşağıdaki öğeler korunabilir: Köprü metni bağlantıları ve diğer Yammer iletilerine bağlantılar.
 
 > [!NOTE]
 > Aşağıdaki bölümde açıklandığı gibi, kullanıcı iletileri tek bir kullanıcı için özel iletiler ve bu kullanıcıyla ilişkilendirilmiş tüm topluluk iletilerini içerir.
+> 
+> Kullanıcı iletileri, bekletme ilkeleri tarafından desteklenen [hikaye akışı gönderilerini](https://support.microsoft.com/office/overview-of-storyline-for-yammer-and-viva-engage-530e4e66-9f1c-4be1-b371-08ea40dc4b69) de içerir.
 
 Kullanıcı iletileri konuşmadaki kişilerin tüm adlarını, topluluk iletileri ise topluluk adını ve ileti başlığını (varsa) içerir.
 

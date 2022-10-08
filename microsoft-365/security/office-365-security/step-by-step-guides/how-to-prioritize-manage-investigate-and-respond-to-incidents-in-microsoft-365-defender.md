@@ -13,16 +13,19 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 942a0d6462e59d843bd3473936b1620b6af7b797
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 171f4f5d727d98ee1f00af697e75992ff6dbe911
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737224"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484225"
 ---
 # <a name="prioritize-manage-investigate--respond-to-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender'da Olaylara Öncelik Verme, Yönetme, Araştırma & Yanıt Verme
 
@@ -41,7 +44,7 @@ Olay sayfası yüklendiğinde, eylemleri sıralamak için sütunlara tıklayarak
 
 Artık olayları yönet düğmesiyle yeniden adlandırmayı, atamayı, sınıflandırmayı, etiketlemeyi, durumu değiştirmeyi veya açıklama eklemeyi seçebileceğiniz önceliklendirilmiş bir olay listeniz var.
 
-Office için Microsoft Defender öğelerinin dahil olduğundan emin olmak için filtreleri kullanın.
+Office öğeleri için Microsoft Defender eklendiğinden emin olmak için filtreleri kullanın.
 
 Belirli uyarılar arıyorsanız, olay arama özelliğini kullanın (*Ad veya kimlik arayın) veya* belirli bir uyarıda uyarı kuyruğu filtrelemesini kullanmayı göz önünde bulundurun.
 

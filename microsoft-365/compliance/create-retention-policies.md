@@ -11,19 +11,20 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Kullanıcıların e-posta, belgeler ve konuşmalarla oluşturduğu içeriğin denetimini verimli bir şekilde korumak için bekletme ilkesi kullanın. İstediğinizi koruyun ve istemediğinizden kurtulun.
-ms.openlocfilehash: a6b8e346547d246322593c67a07a0eaeb9f13c18
-ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.openlocfilehash: e8efe7834f20b651d875a17cf59413edb63bd6b1
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67336320"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484269"
 ---
 # <a name="create-and-configure-retention-policies"></a>Bekletme ilkeleri oluşturma ve yapılandırma
 
@@ -37,6 +38,8 @@ Bekletme ilkeleri ve Microsoft 365'te bekletmenin nasıl çalıştığı hakkın
 
 > [!NOTE]
 > Bu sayfadaki bilgiler uyumluluk yöneticilerine yöneliktir. Yönetici değilseniz ve kullandığınız uygulamalar için bekletme ilkelerinin nasıl yapılandırıldığını anlamak istiyorsanız yardım masanıza, BT departmanınıza veya yöneticinize başvurun. Teams sohbetlerinde ve kanal iletilerinde bekletme ilkeleriyle ilgili iletiler görüyorsanız, [Bekletme ilkeleriyle ilgili Teams iletilerini](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b) gözden geçirmeniz yararlı olabilir.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -88,7 +91,7 @@ Birden fazla bekletme ilkeniz varsa ve bekletme etiketlerini de kullandığını
     
     - **Statik'i** seçtiyseniz: **İlkenin uygulanacağı konumları seçin** sayfasında Teams için bir veya daha fazla konum seçin:
         - **Teams kanal iletisi**: Standart ve paylaşılan kanal sohbetlerinden, standart ve paylaşılan kanal toplantılarından gelen iletiler, ancak kendi ilke konumlarına sahip [özel kanallardan](/microsoftteams/private-channels) değil.
-        - **Teams sohbetleri**: Özel 1:1 sohbetlerinden, grup sohbetlerinden ve toplantı sohbetlerinden gelen iletiler.
+        - **Teams sohbetleri**: Özel 1:1 sohbetlerinden, grup sohbetlerinden, toplantı sohbetlerinden ve kendinizle sohbetten gelen iletiler.
         - **Teams özel kanal iletileri**: Özel kanal sohbetlerinden ve özel kanal toplantılarından gelen iletiler. Bu seçeneği belirlerseniz, aynı bekletme ilkesindeki diğer Teams konumlarını seçemezsiniz.
         
        Varsayılan olarak [, tüm ekipler ve tüm kullanıcılar seçilir](retention-settings.md#a-policy-that-applies-to-entire-locations), ancak [**Seç** ve **Dışla** seçeneklerini](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions) belirleyerek bunu iyileştirebilirsiniz.
@@ -103,7 +106,7 @@ Teams için bekletme ilkelerini kullanma ve son kullanıcı deneyimini anlama ko
 
 Örnek kılavuzlarla bekletme ve zamanlama bilgileri için hangi ileti öğelerinin desteklendiği de dahil olmak üzere, teams için bekletmenin nasıl çalıştığı hakkında teknik ayrıntılar için bkz. [Microsoft Teams için bekletme hakkında bilgi edinin](retention-policies-teams.md).
 
-#### <a name="known-configuration-issues"></a>Bilinen yapılandırma sorunları
+#### <a name="known-configuration-issues-for-teams-retention-policies"></a>Teams bekletme ilkeleri için bilinen yapılandırma sorunları
 
 - Öğelerin en son değiştirildiği saklama süresini başlatma seçeneğini belirleyebilirsiniz ancak **öğeler oluşturulduğunda** değeri her zaman kullanılır. Düzenlenen iletiler için, bu önceden düzenlenmiş iletinin ne zaman oluşturulduğunu belirlemek için özgün iletinin bir kopyası özgün zaman damgasıyla birlikte kaydedilir ve düzenlenen iletinin daha yeni bir zaman damgası vardır.
 
@@ -156,7 +159,13 @@ Microsoft 365 gruplarına, SharePoint sitelerine veya OneDrive hesaplarına uygu
 
 6. Yapılandırmayı tamamlayın ve ayarlarınızı kaydedin.
 
-Yammer'da bekletme ilkelerinin nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Yammer için bekletme hakkında bilgi edinin](retention-policies-yammer.md).
+Örnek kılavuzlarla bekletme ve zamanlama bilgileri için hangi ileti öğelerinin desteklendiği de dahil olmak üzere Yammer'da bekletmenin nasıl çalıştığı hakkında teknik ayrıntılar için bkz. [Yammer için bekletme hakkında bilgi edinin](retention-policies-yammer.md).
+
+#### <a name="known-configuration-issues-for-yammer-retention-policies"></a>Yammer bekletme ilkeleri için bilinen yapılandırma sorunları
+
+- Öğelerin en son değiştirildiği saklama süresini başlatma seçeneğini belirleyebilirsiniz ancak **öğeler oluşturulduğunda** değeri her zaman kullanılır. Düzenlenen iletiler için, bu önceden düzenlenmiş iletinin ne zaman oluşturulduğunu belirlemek için özgün iletinin bir kopyası özgün zaman damgasıyla birlikte kaydedilir ve düzenlenen iletinin daha yeni bir zaman damgası vardır.
+
+- Yammer kullanıcı iletileri konumu için **Düzenle'yi** seçtiğinizde, konukları ve posta kutusu olmayan kullanıcıları görebilirsiniz. Bekletme ilkeleri bu kullanıcılar için tasarlanmamıştır, bu nedenle bunları seçmeyin.
 
 #### <a name="additional-retention-policies-needed-to-support-yammer"></a>Yammer'ı desteklemek için gereken ek saklama ilkeleri
 

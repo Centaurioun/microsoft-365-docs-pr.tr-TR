@@ -15,13 +15,14 @@ ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 ms.collection:
+- scotvorg
 - M365-subscription-management
-ms.openlocfilehash: 3867be6d179ee8b014563c898562c3eaeb20546e
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 7809e71165216f4b18ffae5e0151cdd941681832
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731364"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484618"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Kiracılar arası posta kutusu geçişi (önizleme)
 
@@ -42,7 +43,7 @@ Bu makalede, kiracılar arası posta kutusu taşıma işlemi açıklanır ve Exc
 > Şu anda bazı senaryolarda Teams sohbet verilerinin de posta kutusunda tutulmasına rağmen Teams sohbet verilerinin geçirilmemesi sorununu araştırıyoruz. Teams sohbet verilerinin korunması gerekiyorsa, posta kutusunu geçirmek için bu özelliği kullanmayın.
 
 > [!NOTE]
-> Kiracılar arası posta kutusu geçişlerinizin yanı sıra e-posta için yeni Etki Alanı Paylaşımı özelliğimizin önizlemesini oluşturmak istiyorsanız lütfen [formu aka.ms/domainshringpreview'da](https://aka.ms/domainshringpreview) tamamlayın. E-posta için etki alanı paylaşımı, ayrı Microsoft 365 kiracılarındaki kullanıcıların aynı özel etki alanındaki adresleri kullanarak e-posta gönderip almasını sağlar. Bu özellik, ayrı kiracılardaki kullanıcıların e-posta adreslerinde ortak bir kurumsal markayı temsil etmeleri gereken senaryoları çözmeye yöneliktir. Geçerli önizleme, kiracılar arası posta kutusu geçişi birlikte kullanılabilirliği sırasında etki alanlarının süresiz olarak paylaşılması ve paylaşılan etki alanlarının paylaşılması için destek sağlar.
+> Kiracılar arası posta kutusu geçişlerinizin yanı sıra e-posta için yeni Etki Alanı Paylaşımı özelliğimizi önizlemek istiyorsanız lütfen [formu aka.ms/domainsharingpreview'da](https://aka.ms/domainsharingpreview) tamamlayın. E-posta için etki alanı paylaşımı, ayrı Microsoft 365 kiracılarındaki kullanıcıların aynı özel etki alanındaki adresleri kullanarak e-posta gönderip almasını sağlar. Bu özellik, ayrı kiracılardaki kullanıcıların e-posta adreslerinde ortak bir kurumsal markayı temsil etmeleri gereken senaryoları çözmeye yöneliktir. Geçerli önizleme, kiracılar arası posta kutusu geçişi birlikte kullanılabilirliği sırasında etki alanlarının süresiz olarak paylaşılması ve paylaşılan etki alanlarının paylaşılması için destek sağlar.
 
 ## <a name="preparing-source-and-target-tenants"></a>Kaynak ve hedef kiracıları hazırlama
 
@@ -189,7 +190,8 @@ Aboneliğin kiracı kimliğini almak için [Microsoft 365 yönetim merkezi](http
 
 2. Açılır pencere göründüğünde uygulamayı kabul edin. Ayrıca Azure Active Directory portalınızda oturum açabilir ve uygulamayı Kurumsal uygulamalar altında bulabilirsiniz.
 
-3. Exchange Online PowerShell'de yeni bir kuruluş ilişkisi oluşturun veya mevcut kuruluş ilişkisi nesnenizi hedef (hedef) kiracınızla düzenleyin:
+3. Kaynak Exchange Online kiracıdaki [Exchange Online PowerShell'e bağlanın](/powershell/exchange/connect-to-exchange-online-powershell).
+4. Exchange Online PowerShell'de yeni bir kuruluş ilişkisi oluşturun veya mevcut kuruluş ilişkisi nesnenizi hedef (hedef) kiracınızla düzenleyin:
 
    ```powershell
    $targetTenantId="[tenant id of your trusted partner, where the mailboxes are being moved to]"
@@ -215,7 +217,7 @@ Aboneliğin kiracı kimliğini almak için [Microsoft 365 yönetim merkezi](http
 [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) cmdlet'ini hedef kiracınızda oluşturduğunuz kiracılar arası geçiş uç noktasında çalıştırarak kiracılar arası posta kutusu geçiş yapılandırmasını doğrulayabilirsiniz.
 
 ```powershell
-Test-MigrationServerAvailability -EndPoint "Migration endpoint for cross-tenant mailbox moves" - TestMailbox "Primary SMTP of MailUser object in target tenant"
+Test-MigrationServerAvailability -EndPoint "Migration endpoint for cross-tenant mailbox moves" -TestMailbox "Primary SMTP of MailUser object in target tenant"
 ```
 
 ### <a name="move-mailboxes-back-to-the-original-source"></a>Posta kutularını özgün kaynağa geri taşıma
@@ -363,11 +365,20 @@ T2Tbatch                   Syncing ExchangeRemoteMove 1
 ```
 
 > [!NOTE]
-> CSV dosyasındaki e-posta adresi, kaynak kiracıda değil hedef kiracıda belirtilen adres olmalıdır.
+> CSV dosyasındaki e-posta adresi, kaynak kiracıdaki adres değil, hedef kiracıda (örneğin, userA@targettenant.onmicrosoft.com) belirtilen adres olmalıdır.
 >
 > [Cmdlet hakkında daha fazla bilgi için buraya tıklayın](/powershell/module/exchange/new-migrationbatch)
 >
-> [Örnek bir CSV dosyası için buraya tıklayın](/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
+> [Bazı örnek CSV dosya bilgileri için buraya tıklayın](/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
+
+Aşağıda en az örnek CSV dosyası verilmiştir:
+
+```csv
+EmailAddress
+userA@targettenant.onmicrosoft.com
+userB@targettenant.onmicrosoft.com
+userC@targettenant.onmicrosoft.com
+```
 
 Geçiş toplu işlemi gönderimi, kiracılar arası seçenek belirlenirken yeni [Exchange yönetim merkezinden](https://go.microsoft.com/fwlink/p/?linkid=2059104) de desteklenir.
 
@@ -513,9 +524,9 @@ Hayır, kaynak kiracı ve hedef kiracı etki alanı adları benzersiz olmalıdı
 
 Evet, ancak mağaza izinlerini yalnızca şu makalelerde açıklandığı gibi saklarız:
 
-- [Microsoft Docs | Exchange Online'de alıcılar için izinleri yönetme](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
+- [Exchange Online'de alıcılar için izinleri yönetme](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
 
-- [Microsoft Desteği | Ayrılmış Office 365 Exchange ve Outlook posta kutusu izinleri verme](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
+- [Ayrılmış Office 365 Exchange ve Outlook posta kutusu izinleri verme](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
 
 ### <a name="do-you-have-any-recommendations-for-batches"></a>Toplu iş önerileriniz var mı?
 
@@ -554,6 +565,15 @@ Bu dönüştürmeler geçiş işlemi sırasında otomatik olarak gerçekleşir. 
 ### <a name="at-which-step-should-i-assign-the-exchange-online-license-to-destination-mailusers"></a>Hedef MailUsers'a Exchange Online lisansını hangi adımda atamalıyım?
 
 Geçiş tamamlanmadan önce bu yapılabilir, ancak _ExchangeGuid_ özniteliğini damgalamadan önce lisans atamamalısınız veya MailUser nesnesinin posta kutusuna dönüştürülmesi başarısız olur ve bunun yerine yeni bir posta kutusu oluşturulur. Bu riski azaltmak için geçiş tamamlanana kadar beklemek ve 30 günlük yetkisiz kullanım süresi boyunca lisans atamak en iyisidir.
+
+### <a name="can-i-use-azure-ad-connect-to-sync-users-to-the-new-tenant-if-i-am-keeping-the-on-prem-active-directory"></a>Şirket içi Active Directory'yi tutuyorsam kullanıcıları yeni kiracıyla eşitlemek için Azure AD Connect kullanabilir miyim?
+
+Evet. İki Azure AD Connect örneğinin farklı kiracılarla eşitlenmesi mümkündür.
+Ancak, bilmeniz gereken bazı şeyler vardır.
+
+- Bu makalede sağlanan betikle kullanıcı hesaplarının ön sağlama işlemi yapılmamalıdır. Bunun yerine, hedef kiracıyı doldurmak için geçiş kapsamındaki kullanıcıların seçmeli OU eşitlemesi gerçekleştirilebilir; Azure AD Connect yapılandırması sırasında UPN'nin eşleşmediği konusunda bir uyarı alırsınız.
+- Karma Exchange'in geçerli durumuna bağlı olarak, şirket içi dizin nesnelerinin başka bir kiracıyla eşitlemeyi denemeden önce gerekli özniteliklerin (msExchMailboxGUID ve proxyAddresses gibi) doğru doldurulduğunu doğrulamanız gerekir, aksi takdirde çift posta kutuları ve geçiş hatalarıyla ilgili sorunlarla karşılaşırsınız.
+- Tam geçiş sırasında özel etki alanını da taşımadığınız sürece, geçiş tamamlandıktan sonra UPN geçişini yönetmek ve geçiş tamamlandıktan sonra şirket içinde değiştirmek için bazı ek adımlar uygulamanız gerekir.
 
 ## <a name="known-issues"></a>Bilinen sorunlar
 

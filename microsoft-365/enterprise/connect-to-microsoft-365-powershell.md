@@ -5,9 +5,11 @@ author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -15,13 +17,13 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: Microsoft 365 için PowerShell kullanarak Microsoft 365 kiracınıza Bağlan ve komut satırından yönetim merkezi görevlerini gerçekleştirin.
-ms.openlocfilehash: 24596a2781a8b2176908d6e5d3a6c5bd74b0260a
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+description: Komut satırından yönetim merkezi görevlerini gerçekleştirmek için Microsoft 365 için PowerShell'i kullanarak Microsoft 365 kiracınıza bağlanın.
+ms.openlocfilehash: 0192ed18c1c99cd08008570ce4b97a558621761f
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637439"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484357"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>PowerShell ile Microsoft 365’e bağlanma
 
@@ -29,12 +31,12 @@ ms.locfileid: "65637439"
 
 Microsoft 365 için PowerShell, Microsoft 365 ayarlarınızı komut satırından yönetmenizi sağlar. PowerShell'e bağlanmak için gerekli yazılımı yüklemeniz ve ardından Microsoft 365 kuruluşunuza bağlanmanız gerekir.
 
-PowerShell modülünün Microsoft 365 bağlanmak ve kullanıcı hesaplarını, gruplarını ve lisanslarını yönetmek için kullanabileceğiniz iki sürümü vardır:
+PowerShell modülünün Microsoft 365'e bağlanmak ve kullanıcı hesaplarını, gruplarını ve lisanslarını yönetmek için kullanabileceğiniz iki sürümü vardır:
 
-- cmdlet'leri adında *AzureAD* bulunan Graph için PowerShell'i Azure Active Directory
+- Cmdlet'leri adında *AzureAD* bulunan Graph için Azure Active Directory PowerShell
 - cmdlet'leri adında *Msol* bulunan Windows PowerShell için Microsoft Azure Active Directory Modülü
 
-Şu anda Graph için PowerShell Azure Active Directory modülü, kullanıcı, grup ve lisans yönetimine yönelik Windows PowerShell modülü için Microsoft Azure Active Directory Modülü'nin işlevselliğinin tamamen yerini almaz. Bazı durumlarda, her iki sürümü de kullanmanız gerekir. Her iki sürümü de aynı bilgisayara güvenle yükleyebilirsiniz.
+Şu anda Graph için Azure Active Directory PowerShell modülü, kullanıcı, grup ve lisans yönetimi için Windows PowerShell modülü için Microsoft Azure Active Directory Modülü'nin işlevselliğini tamamen değiştirmez. Bazı durumlarda, her iki sürümü de kullanmanız gerekir. Her iki sürümü de aynı bilgisayara güvenle yükleyebilirsiniz.
 
 >[!Note]
 >Ayrıca [azure Cloud Shell](#connect-with-the-azure-cloud-shell) Microsoft 365 yönetim merkezi de bağlanabilirsiniz.
@@ -44,20 +46,20 @@ PowerShell modülünün Microsoft 365 bağlanmak ve kullanıcı hesaplarını, g
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Başlamadan önce bilmeniz gerekenler
 
 >[!NOTE]
-> Azure Active Directory Modülü, Microsoft Graph PowerShell SDK ile değiştiriliyor. Tüm Microsoft Graph API'lerine erişmek için Microsoft Graph PowerShell SDK'sını kullanabilirsiniz. Daha fazla bilgi için bkz. [Microsoft Graph PowerShell SDK ile Kullanmaya başlayın](/powershell/microsoftgraph/get-started).
+> Azure Active Directory Modülü, Microsoft Graph PowerShell SDK'sı ile değiştiriliyor. Tüm Microsoft Graph API'lerine erişmek için Microsoft Graph PowerShell SDK'sını kullanabilirsiniz. Daha fazla bilgi için bkz. [Microsoft Graph PowerShell SDK'sını kullanmaya başlama](/powershell/microsoftgraph/get-started).
 
 **İşletim sistemi**
 
-Windows 64 bit sürümünü kullanmanız gerekir. Windows PowerShell için Microsoft Azure Active Directory Modülünün 32 bit sürümü desteği 2014'te sona erdi.
+Windows'un 64 bit sürümünü kullanmanız gerekir. Windows PowerShell için Microsoft Azure Active Directory Modülünün 32 bit sürümü desteği 2014'te sona erdi.
 
-aşağıdaki Windows sürümlerini kullanabilirsiniz:
+Aşağıdaki Windows sürümlerini kullanabilirsiniz:
     
   - Windows 10, Windows 8.1, Windows 8 veya Windows 7 Service Pack 1 (SP1) 
     
   - Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 veya Windows Server 2008 R2 SP1
 
 >[!Note]
->Windows 8.1, Windows 8, Windows 7 Service Pack 1 (SP1), Windows Server 2012 R2, Windows Server 2012 ve Windows Server 2008 R2 SP1 [için Windows Management Framework 5.1](https://www.microsoft.com/download/details.aspx?id=54616).
+>Windows 8.1, Windows 8, Windows 7 Service Pack 1 (SP1), Windows Server 2012 R2, Windows Server 2012 ve Windows Server 2008 R2 SP1 için [Windows Management Framework 5.1'i](https://www.microsoft.com/download/details.aspx?id=54616) indirip yükleyin.
 
 **PowerShell**
 
@@ -69,20 +71,20 @@ aşağıdaki Windows sürümlerini kullanabilirsiniz:
 >Bu yordamlar, Microsoft 365 yönetici rolünün üyesi olan kullanıcılara yöneliktir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../admin/add-users/about-admin-roles.md).
 
 
-## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Graph için Azure Active Directory PowerShell modülüyle Bağlan
+## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Graph için Azure Active Directory PowerShell modülüyle bağlanma
 
-Graph modülü için Azure Active Directory PowerShell komutlarının cmdlet adında *AzureAD* vardır. [Graph modülü veya Azure PowerShell için Azure Active Directory PowerShell'i](/powershell/azure/active-directory/install-adv2) yükleyebilirsiniz.[](/powershell/azure/install-az-ps)
+Graph için Azure Active Directory PowerShell modülündeki komutların cmdlet'i adında *AzureAD* bulunur. [Graph için Azure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2) modülünü veya [Azure PowerShell](/powershell/azure/install-az-ps) yükleyebilirsiniz.
 
-Graph için Azure Active Directory PowerShell modülündeki yeni cmdlet'leri gerektiren yordamlar için, modülü yüklemek ve Microsoft 365 aboneliğinize bağlanmak için bu adımları izleyin.
+Graph için Azure Active Directory PowerShell modülündeki yeni cmdlet'leri gerektiren yordamlar için bu adımları izleyerek modülü yükleyin ve Microsoft 365 aboneliğinize bağlanın.
 
 > [!Note]
-> farklı Windows sürümleri için destek hakkında bilgi için bkz[. Graph modülü için PowerShell Azure Active Directory](/powershell/azure/active-directory/install-adv2).
+> Windows'un farklı sürümleri için destek hakkında bilgi için bkz. [Graph için Azure Active Directory PowerShell modülü](/powershell/azure/active-directory/install-adv2) .
 
 ### <a name="step-1-install-the-required-software"></a>1. Adım: Gerekli yazılımı yükleme
 
 Bu adımlar bilgisayarınızda yalnızca bir kez gereklidir. Ancak büyük olasılıkla yazılımı düzenli aralıklarla güncelleştirmeniz gerekir.
   
-1. Yükseltilmiş bir Windows PowerShell Komut İstemi penceresi açın (yönetici olarak Windows PowerShell çalıştırın).
+1. bir Windows PowerShell Komut İstemi penceresi açın.
     
 2. Bu komutu çalıştırın:
     
@@ -109,25 +111,25 @@ Yüklemeye devam etmek için **Evet** veya **Tümüne Evet** yanıtını verin.
     Import-Module  AzureAD
     ```
     
-### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>2. Adım: Microsoft 365 aboneliğiniz için Azure AD Bağlan
+### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>2. Adım: Microsoft 365 aboneliğiniz için Azure AD bağlanma
 
-Microsoft 365 aboneliğinizin Azure Active Directory (Azure AD) bir hesap adı ve parolayla veya çok faktörlü kimlik doğrulamasıyla bağlanmak için, Windows PowerShell komut isteminden bu komutlardan birini çalıştırın. (Yükseltilmesi gerekmez.)
+Microsoft 365 aboneliğinizin Azure Active Directory'ye (Azure AD) hesap adı ve parolayla veya çok faktörlü kimlik doğrulamasıyla bağlanmak için, Windows PowerShell komut isteminden bu komutlardan birini çalıştırın. (Yükseltilmesi gerekmez.)
 
 | Office 365 bulut | Komut |
 |:-------|:-----|
 | Office 365 Worldwide (+GCC) | `Connect-AzureAD` |
 | 21 Vianet tarafından sağlanan Office 365 | `Connect-AzureAD -AzureEnvironmentName AzureChinaCloud` |
 | Office 365 Almanya | `Connect-AzureAD -AzureEnvironmentName AzureGermanyCloud` |
-| Office 365 ABD Kamu DoD ve Office 365 ABD Hükümeti GCC Yüksek | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
+| Office 365 ABD Kamu DoD ve Office 365 ABD Kamu GCC High | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
 |||
 
-**Hesabınızda oturum açın** iletişim kutusunda, Microsoft 365 iş veya okul hesabı kullanıcı adınızı ve parolanızı yazın ve **ardından Tamam'ı** seçin.
+**Hesabınızda oturum açın** iletişim kutusunda, Microsoft 365 iş veya okul hesabı kullanıcı adınızı ve parolanızı yazın ve **tamam'ı** seçin.
 
 Çok faktörlü kimlik doğrulaması kullanıyorsanız doğrulama kodu gibi ek kimlik doğrulama bilgileri sağlamak için yönergeleri izleyin.
 
-Bağlandıktan sonra, [Graph modülü için Azure Active Directory PowerShell cmdlet'lerini](/powershell/module/azuread) kullanabilirsiniz.
+Bağlandıktan sonra [Graph için Azure Active Directory PowerShell modülü](/powershell/module/azuread) cmdlet'lerini kullanabilirsiniz.
 
-## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell için Microsoft Azure Active Directory Modülü ile Bağlan
+## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell için Microsoft Azure Active Directory Modülü ile bağlanma
 
 >[!Note]
 >Windows PowerShell için Microsoft Azure Active Directory Modülü'ndeki cmdlet'lerin adında *Msol* bulunur.
@@ -149,7 +151,7 @@ Bu adımlar bilgisayarınızda yalnızca bir kez gereklidir. Ancak büyük olas�
    1. NuGet sağlayıcısını yüklemeniz istenirse **Y** yazın ve Enter tuşuna basın.
    1. Modülü PSGallery'den yüklemeniz istenirse **Y** yazın ve Enter tuşuna basın.
     
-### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>2. Adım: Microsoft 365 aboneliğiniz için Azure AD Bağlan
+### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>2. Adım: Microsoft 365 aboneliğiniz için Azure AD bağlanma
 
 Microsoft 365 aboneliğinizin Azure AD bir hesap adı ve parolayla veya çok faktörlü kimlik doğrulamasıyla bağlanmak için, Windows PowerShell komut isteminden bu komutlardan birini çalıştırın. (Yükseltilmesi gerekmez.)
 
@@ -158,16 +160,16 @@ Microsoft 365 aboneliğinizin Azure AD bir hesap adı ve parolayla veya çok fak
 | Office 365 Worldwide (+GCC) | `Connect-MsolService` |
 | 21 Vianet tarafından sağlanan Office 365 | `Connect-MsolService -AzureEnvironment AzureChinaCloud` |
 | Office 365 Almanya | `Connect-MsolService -AzureEnvironment AzureGermanyCloud` |
-| Office 365 ABD Kamu DoD ve Office 365 ABD Hükümeti GCC Yüksek | `Connect-MsolService -AzureEnvironment USGovernment` |
+| Office 365 ABD Kamu DoD ve Office 365 ABD Kamu GCC High | `Connect-MsolService -AzureEnvironment USGovernment` |
 |||
 
-**Hesabınızda oturum açın** iletişim kutusunda, Microsoft 365 iş veya okul hesabı kullanıcı adınızı ve parolanızı yazın ve **ardından Tamam'ı** seçin.
+**Hesabınızda oturum açın** iletişim kutusunda, Microsoft 365 iş veya okul hesabı kullanıcı adınızı ve parolanızı yazın ve **tamam'ı** seçin.
 
 Çok faktörlü kimlik doğrulaması kullanıyorsanız doğrulama kodu gibi ek kimlik doğrulama bilgileri sağlamak için yönergeleri izleyin.
 
 ### <a name="how-do-you-know-it-worked"></a>İşe yaramış olduğunu nereden biliyorsun?
 
-Hata iletisi alamazsanız başarıyla bağlandınız. Hızlı test için **Get-MsolUser** gibi bir Microsoft 365 cmdlet'ini çalıştırın ve sonuçlara bakın.
+Hata iletisi alamazsanız başarıyla bağlandınız. Hızlı test için  **Get-MsolUser** gibi bir Microsoft 365 cmdlet'ini çalıştırın ve sonuçlara bakın.
   
 Hata iletisi alırsanız aşağıdaki sorunları denetleyin:
   
@@ -182,7 +184,7 @@ Hata iletisi alırsanız aşağıdaki sorunları denetleyin:
   - Windows 10, Windows 8.1 ve Windows 8 için bkz. [.NET Framework 3.5'i Windows 10, Windows 8.1 ve Windows 8 yükleme](/dotnet/framework/install/dotnet-35-windows-10).
 
   
-- **Windows PowerShell için Microsoft Azure Active Directory Modülü sürümünüz güncel olmayabilir.** Denetlemek için Microsoft 365 için PowerShell'de veya Windows PowerShell için Microsoft Azure Active Directory Modülü'nde aşağıdaki komutu çalıştırın:
+- **Windows PowerShell için Microsoft Azure Active Directory Modülü sürümünüz güncel olmayabilir.** Denetlemek için, Microsoft 365 için PowerShell'de veya Windows PowerShell için Microsoft Azure Active Directory Modülü'nde aşağıdaki komutu çalıştırın:
     
   ```powershell
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
@@ -190,7 +192,7 @@ Hata iletisi alırsanız aşağıdaki sorunları denetleyin:
 
     Döndürülen sürüm numarası *1.0.8070.2'den* düşükse, Windows PowerShell için Microsoft Azure Active Directory Modülünü kaldırın ve yukarıdaki [1. Adım'dan](#step-1-install-the-required-software) yükleyin.
 
-- **Bağlantı hata iletisi alırsanız**, ["Bağlan-MsolService: Tür özel durumu oluşturuldu" hatasına](/office365/troubleshoot/active-directory/connect-msoservice-throw-exception) bakın.
+- **Bağlantı hata iletisi alırsanız**, ["Connect-MsolService: Tür özel durumu oluşturuldu" hatasına](/office365/troubleshoot/active-directory/connect-msoservice-throw-exception) bakın.
     
 - **"Get-Item: Path bulunamıyor" hata iletisini alırsanız** şu komutu çalıştırın:
 
@@ -199,7 +201,7 @@ Hata iletisi alırsanız aşağıdaki sorunları denetleyin:
      (dir "C:\Program Files\WindowsPowerShell\Modules\MSOnline").Name
    ```
 
-## <a name="connect-with-the-azure-cloud-shell"></a>Azure Cloud Shell ile Bağlan
+## <a name="connect-with-the-azure-cloud-shell"></a>Azure Cloud Shell ile bağlanma
 
 Microsoft 365 yönetim merkezi azure Cloud Shell ile bağlantı kurmak ve kullanmak için görev çubuğunun sağ üst köşesindeki PowerShell penceresi simgesini seçin. **Azure'a Hoş Geldiniz Cloud Shell** bölmesinde **PowerShell'i** seçin.
 
@@ -212,5 +214,5 @@ Daha fazla bilgi için bkz. [Azure Cloud Shell](/azure/cloud-shell/overview).
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [PowerShell ile Microsoft 365’i yönetme](manage-microsoft-365-with-microsoft-365-powershell.md)
-- [Microsoft 365 için PowerShell ile Kullanmaya başlayın](getting-started-with-microsoft-365-powershell.md)
+- [Microsoft 365 için PowerShell'i kullanmaya başlama](getting-started-with-microsoft-365-powershell.md)
 - [Tek bir Windows PowerShell penceresinde tüm Microsoft 365 hizmetlerine bağlanma](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md)

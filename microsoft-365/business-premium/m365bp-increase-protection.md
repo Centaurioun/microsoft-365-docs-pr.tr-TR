@@ -9,23 +9,26 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/05/2022
 ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 İş Ekstra'de koruma düzeyini artırma konusunda yardım alın
-ms.openlocfilehash: acb132d401a4f2ad2754db9e448140ccad692a31
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: e6220e0cf8ff8208efe1a0f036300fa631fdd201
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737950"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484401"
 ---
 # <a name="protect-against-malware-and-other-cyberthreats-with-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra ile kötü amaçlı yazılımlara ve diğer siber tehditlere karşı koruma
 
@@ -99,7 +102,7 @@ Katı koruma diğer tüm ilkeleri geçersiz kılar ve yerleşik koruma diğer il
 
 2. Şablonlu ilkeler bölümünde **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Önceden Ayarlanmış Güvenlik İlkeleri'ne** gidin. ( **Doğrudan Önceden Ayarlanmış güvenlik ilkeleri** sayfasına gitmek için kullanın <https://security.microsoft.com/presetSecurityPolicies>.)
 
-3. **Önceden ayarlanmış güvenlik ilkeleri** sayfasındaki **Standart koruma** veya **Katı koruma** bölümünde Devre **dışı** olan iki durumlu düğmeyi **Etkin** olarak değiştirin ve **yönet'i** seçin.
+3. **Önceden ayarlanmış güvenlik ilkeleri** sayfasındaki **Standart koruma** veya **Katı koruma** bölümünde **Koruma Ayarlarını Yönet'i** seçin.
 
 4. **Standart koruma uygulama** veya **Katı koruma uygulama** sihirbazı açılır öğede başlar. **EOP korumaları için geçerlidir** sayfasında, ilkelerin geçerli olduğu iç alıcıları tanımlayın (alıcı koşulları):
    - **Kullanıcılar**

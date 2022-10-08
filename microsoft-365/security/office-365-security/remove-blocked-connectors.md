@@ -11,17 +11,18 @@ ms.date: ''
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Microsoft 365 Defender'da engellenen bağlayıcıları kaldırmayı öğrenin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: f15a782d9acac240a091e4a6670e00d83bead517
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+search.appverid: met150
+ms.openlocfilehash: e376676045a68d4127fbdd7eb05e0000c6e0788d
+ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67495829"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68484313"
 ---
 # <a name="remove-blocked-connectors-from-the-restricted-entities-portal"></a>Engellenen bağlayıcıları Kısıtlı varlıklar portalından kaldırma
 

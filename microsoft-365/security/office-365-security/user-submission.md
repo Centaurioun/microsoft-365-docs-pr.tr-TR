@@ -12,18 +12,18 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom: ''
 description: Yöneticiler, kullanıcılar tarafından bildirilen istenmeyen posta ve kimlik avı iletilerini toplamak için özel bir posta kutusunu (kullanıcı gönderimleri posta kutusu olarak da bilinir) tanımlamayı öğrenebilir. Diğer ayarlar, kullanıcılar iletileri raporladığında raporlama deneyimini tamamlar.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: e11b30d14a7aff37c6c33dd5e8ce36b0e922097b
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 9f983a18f893f8d7a79b6ae93c5930a7be3abb02
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851072"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476957"
 ---
 # <a name="user-reported-message-settings"></a>Kullanıcı tarafından bildirilen ileti ayarları
 
@@ -57,7 +57,7 @@ Başlamadan önce, Exchange Online Protection ve Office 365 için Defender yapı
 
   - Kötü amaçlı yazılım için sıfır saat otomatik temizlemeyi (ZAP) kapatın (**Koruma ayarları** bölümü \> **Kötü amaçlı yazılım için sıfır saat otomatik temizlemeyi etkinleştirme** seçili değil veya `-ZapEnabled $false` PowerShell'de).
 
-  - Sık kullanılan ekler filtrelemesini kapatın (**Koruma ayarları** bölümü \> **Ortak ekler filtresini etkinleştirme filtresi** seçili değil veya `EnableFileFilter $false` PowerShell'de).
+  - Sık kullanılan ekler filtrelemesini kapatın (**Koruma ayarları** bölümü \> **Ortak ekler filtresini etkinleştirme filtresi** seçili değil veya `-EnableFileFilter $false` PowerShell'de).
   
   Yönergeler için bkz. [Kötü amaçlı yazılımdan koruma ilkesi oluşturma](configure-anti-malware-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-malware-policies).
 
@@ -70,6 +70,8 @@ Başlamadan önce, Exchange Online Protection ve Office 365 için Defender yapı
   - Dinamik Teslim de dahil olmak üzere Güvenli Ekler taramasının kapalı olduğu kullanıcı gönderimleri posta kutusu için Güvenli Ekler ilkesi oluşturun (**Ayarlar** \> **Güvenli Ekler bilinmeyen kötü amaçlı yazılım yanıtı** bölümü \> **Kapalı** veya `-Enable $false` PowerShell'de). Yönergeler için bkz. [Office 365 için Microsoft Defender'da Güvenli Ekler ilkelerini ayarlama](set-up-safe-attachments-policies.md).
 
   - E-postada Güvenli Bağlantılar taramasının kapalı olduğu kullanıcı gönderimleri posta kutusu için bir Güvenli Bağlantılar ilkesi oluşturun (**URL & koruma ayarlarıNa** \> tıklayın **Açık: Güvenli Bağlantılar, kullanıcılar e-postadaki veya PowerShell'deki bağlantıları tıklattığında bilinen, kötü amaçlı bağlantıların listesini denetler**).`EnableSafeLinksForEmail $false` Yönergeler için bkz. [Office 365 için Microsoft Defender'de Güvenli Bağlantılar ilkelerini ayarlama](set-up-safe-links-policies.md).
+
+- Veri kaybı önlemeniz (DLP) varsa, özel posta kutusunu bunun dışında tutun. Yönergeler için bkz. [DLP'de özel durumlar oluşturma](/microsoft-365/compliance/dlp-conditions-and-exceptions).
 
 Posta kutusunun bu gereksinimleri karşıladığını doğruladıktan sonra, kullanıcı gönderileri posta kutusunu ve diğer kullanıcı tarafından bildirilen ileti ayarlarını belirlemek için bu makaledeki yönergelerin geri kalanını kullanın.
 
@@ -205,10 +207,10 @@ Tek gereksinim, özgün iletilerin sıkıştırılmamış olarak eklenmesidir. E
   - 3. X-Ms-Exchange-Organization-Network-Message-Id
   - 4. X-Ms-Exchange-Crosstenant-Id
 
-> [!NOTE]
-> içindeki `X-Ms-Exchange-Crosstenant-Id` TenantId değeri kiracıyla aynı olmalıdır.
->
-> `X-Microsoft-Antispam-Message-Info` geçerli bir xmi olmalıdır.
+   > [!NOTE]
+   > içindeki `X-Ms-Exchange-Crosstenant-Id` TenantId değeri kiracıyla aynı olmalıdır.
+   >
+   > `X-Microsoft-Antispam-Message-Info` geçerli bir xmi olmalıdır.
 
 - Kullanıcı gönderimleri posta kutusuna gönderilen iletilerin Konu satırı (Zarf Başlığı) aşağıdaki ön ek değerlerinden biriyle başlamalıdır:
   - `1|`veya .`Junk:`
