@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 6/26/2018
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 f1.keywords:
@@ -22,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: Office 365 senaryoları için IP ön eklerinin sayısını ve gerekli bant genişliğini yönetmek üzere Azure ExpressRoute'ta BGP topluluklarını kullanmayı öğrenin.
-ms.openlocfilehash: 3e7ec6373299741cc1d34c18cc6be5b9366f3de6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 44ec80f67d1ce3e006e5359c0b6480543a09b791
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095784"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68163502"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Office 365 senaryoları için ExpressRoute'ta BGP topluluklarını kullanma
 
@@ -42,11 +43,11 @@ Müşterilere bu hedeflere yardımcı olmak için ExpressRoute üzerinden tanıt
 > [!NOTE]
 > Diğer uygulamalarla ilişkili bazı ağ trafiğinin topluluk değerine eklenmesini beklemelisiniz. Bu, paylaşılan hizmetler ve veri merkezleriyle hizmet olarak genel bir Yazılım teklifi için beklenen davranıştır. Bu, ön ek sayısını ve/veya bant genişliğini yöneten yukarıdaki iki hedefle mümkün olduğunda en aza indirilmiştir.
 
-|**Hizmet**|**BGP Community Değeri**|**Notlar**|
+|**Hizmet**|**BGP Topluluk Değeri**|**Notlar**|
 |:-----|:-----|:-----|
 |Exchange Online\*  <br/> |12076:5010  <br/> |Exchange ve EOP hizmetlerini içerir\*  <br/> |
 |SharePoint Online\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
-|Skype Kurumsal\*  <br/> |12076:5030  <br/> |çevrimiçi & Microsoft Teams hizmetlerini Skype Kurumsal  <br/> |
+|Skype Kurumsal\*  <br/> |12076:5030  <br/> |Skype Kurumsal Çevrimiçi & Microsoft Teams hizmetleri  <br/> |
 |Diğer Office 365 hizmetleri\*  <br/> |12076:5100  <br/> |Azure Active Directory (Kimlik Doğrulama ve Dizin Eşitleme senaryoları) ve Office 365 Portal hizmetlerini içerir  <br/> |
 |\*ExpressRoute'a dahil edilen hizmet senaryolarının kapsamı [Office 365 uç noktaları](./urls-and-ip-address-ranges.md) makalesinde belgelenmiştir.  <br/> \*\*Gelecekte ek hizmetler ve BGP topluluk değerleri eklenebilir. [BgP Topluluklarının geçerli listesine bakın](/azure/expressroute/expressroute-routing).  <br/> |
 
@@ -56,11 +57,11 @@ Müşteriler, Azure ExpressRoute aracılığıyla ağı tarafından kabul edilen
   
 ### <a name="scenario-1-minimizing-the-number-of-office-365-ip-prefixes"></a>Senaryo 1: Office 365 IP ön eklerinin sayısını en aza indirme
 
-Contoso Corporation, şu anda Exchange Online ve SharePoint Online için Office 365 kullanan 50.000 kişilik bir şirkettir. ExpressRoute gereksinimlerini gözden geçirirken Contoso, ağ cihazlarının birçok bölgesel konumda 100 ek yol girdisi üzerindeki yönlendirme tablosu boyutlarını işleyemediğini belirler. Contoso, ExpressRoute'un tüm Office 365 hizmetleri için tanıtacağı ip ön eklerinin toplam sayısını gözden geçirdi ve 100'ü aştığı sonucuna vardı. Contoso, 100 ek yol girdisinin altında kalmak için Office 365 için ExpressRoute kullanımını yalnızca ExpressRoute Microsoft eşlemesi aracılığıyla alınan SharePoint Çevrimiçi BGP topluluk değeri olan 12076:5020 olarak kapsamına alır.
+Contoso Corporation, şu anda Exchange Online ve SharePoint Online için Office 365 kullanan 50.000 kişilik bir şirkettir. ExpressRoute gereksinimlerini gözden geçirirken Contoso, ağ cihazlarının birçok bölgesel konumda 100 ek yol girdisi üzerindeki yönlendirme tablosu boyutlarını işleyemediğini belirler. Contoso, ExpressRoute'un tüm Office 365 hizmetleri için tanıtacağı ip ön eklerinin toplam sayısını gözden geçirdi ve 100'ü aştığı sonucuna vardı. Contoso, 100 ek yol girdisinin altında kalmak için Office 365 için ExpressRoute kullanımını yalnızca ExpressRoute Microsoft eşlemesi aracılığıyla alınan SharePoint Online BGP topluluk değeri olan 12076:5020 ile kapsamlar.
 
 |**KULLANıLAN BGP topluluk etiketi**|**Azure ExpressRoute üzerinden yönlendirilebilen işlevsellik**|**İnternet yolları gerekli**|
 |:-----|:-----|:-----|
-|SharePoint  <br/> (12076:5020)  <br/> |çevrimiçi &amp; OneDrive İş SharePoint  <br/> | DNS, CRL, &amp; CDN istekleri  <br/>  Azure ExpressRoute üzerinden özel olarak desteklenmeyen diğer tüm Office 365 hizmetleri  <br/>  Diğer tüm Microsoft bulut hizmetleri  <br/>  Office 365 portal, Office 365 kimlik doğrulaması, &amp; tarayıcıda Office  <br/>  Exchange Online, Exchange Online Protection ve Skype Kurumsal Online  <br/> |
+|SharePoint  <br/> (12076:5020)  <br/> |SharePoint Online &amp; OneDrive İş  <br/> | DNS, CRL, &amp; CDN istekleri  <br/>  Azure ExpressRoute üzerinden özel olarak desteklenmeyen diğer tüm Office 365 hizmetleri  <br/>  Diğer tüm Microsoft bulut hizmetleri  <br/>  Office 365 portal, Office 365 kimlik doğrulaması, &amp; Tarayıcıda Office  <br/>  Exchange Online, Exchange Online Protection ve Skype Kurumsal Online  <br/> |
 
 > [!NOTE]
 > Her hizmet için daha düşük ön ek sayıları elde etmek için hizmetler arasında en az miktarda çakışma devam eder. Bu beklenen davranıştır.
@@ -69,11 +70,11 @@ Contoso Corporation, şu anda Exchange Online ve SharePoint Online için Office 
 
 Dağıtılmış heterojen ağa sahip çok uluslu büyük bir kuruluş olan Fabrikam Inc, dahil olmak üzere birçok Office 365 hizmetinin abonesi; Exchange Online, SharePoint Online ve Skype Kurumsal Online. Fabrikam'ın iç yönlendirme altyapısı, yönlendirme tablolarındaki binlerce IP ön ekini işleyebilir; Ancak Fabrikam yalnızca ağ performansına en duyarlı Office 365 uygulamalar için ExpressRoute ve iç bant genişliği sağlamak ve diğer tüm Office 365 uygulamaları için mevcut İnternet bant genişliğini kullanmak istiyor.
   
-Bu nedenle Fabrikam, Azure ExpressRoute bant genişliğini yalnızca ExpressRoute Microsoft eşlemesi aracılığıyla alınan Çevrimiçi BGP Community değeri olan 12076:5030 Skype Kurumsal kapsamına alır. Office 365 ile ilişkili kalan ağ trafiği İnternet çıkış noktalarını kullanmaya devam eder.
+Bu nedenle Fabrikam, Azure ExpressRoute bant genişliğini yalnızca ExpressRoute Microsoft eşlemesi aracılığıyla alınan Çevrimiçi BGP Topluluğu değeri olan 12076:5030 Skype Kurumsal kapsamına alır. Office 365 ile ilişkili kalan ağ trafiği İnternet çıkış noktalarını kullanmaya devam eder.
 
 |**KULLANıLAN BGP topluluk etiketi**|**Azure ExpressRoute üzerinden yönlendirilebilen işlevsellik**|**İnternet yolları gerekli**|
 |:-----|:-----|:-----|
-|Skype Kurumsal  <br/> (12076:5030)  <br/> |Skype SIP sinyalleri, indirmeler, ses, video ve masaüstü paylaşımı  <br/> | DNS, CRL, &amp; CDN istekleri  <br/>  Azure ExpressRoute üzerinden özel olarak desteklenmeyen diğer tüm Office 365 hizmetleri  <br/>  Diğer tüm Microsoft bulut hizmetleri  <br/>  Office 365 portal, Office 365 kimlik doğrulaması, &amp; tarayıcıda Office  <br/>  telemetri Skype Kurumsal, Skype istemci hızlı ipuçları, genel anlık ileti bağlantısı  <br/>  çevrimiçi Exchange Online, Exchange Online Protection ve SharePoint  <br/> |
+|Skype Kurumsal  <br/> (12076:5030)  <br/> |Skype SIP sinyalleri, indirmeler, ses, video ve masaüstü paylaşımı  <br/> | DNS, CRL, &amp; CDN istekleri  <br/>  Azure ExpressRoute üzerinden özel olarak desteklenmeyen diğer tüm Office 365 hizmetleri  <br/>  Diğer tüm Microsoft bulut hizmetleri  <br/>  Office 365 portal, Office 365 kimlik doğrulaması, &amp; Tarayıcıda Office  <br/>  telemetri Skype Kurumsal, Skype istemcisi hızlı ipuçları, genel anlık ileti bağlantısı  <br/>  Exchange Online, Exchange Online Protection ve SharePoint Online  <br/> |
 
 ### <a name="scenario-3-scoping-azure-expressroute-for-office-365-services-only"></a>Senaryo 3: Yalnızca Office 365 hizmetleri için Azure ExpressRoute kapsamını belirleme
 
@@ -83,7 +84,7 @@ Woodgrove Bank, Office 365 dışındaki Microsoft bulut hizmetleriyle ilişkili 
 
 |**KULLANıLAN BGP topluluk etiketi**|**Azure ExpressRoute üzerinden yönlendirilebilen işlevsellik**|**İnternet yolları gerekli**|
 |:-----|:-----|:-----|
-|Exchange, Skype Kurumsal & Microsoft Teams, SharePoint, &amp; diğer hizmetler  <br/> (12076:5010, 12076:5020, 12076:5030, 12076:5100)  <br/> |&amp; Exchange Online Exchange Online Protection  <br/> çevrimiçi &amp; OneDrive İş SharePoint  <br/> Skype SIP sinyalleri, indirmeler, ses, video ve masaüstü paylaşımı  <br/> Office 365 portal, Office 365 kimlik doğrulaması, &amp; tarayıcıda Office  <br/> | DNS, CRL, &amp; CDN istekleri  <br/>  Azure ExpressRoute üzerinden özel olarak desteklenmeyen diğer tüm Office 365 hizmetleri  <br/>  Diğer tüm Microsoft bulut hizmetleri  <br/> |
+|Exchange, Skype Kurumsal & Microsoft Teams, SharePoint ve &amp; diğer hizmetler  <br/> (12076:5010, 12076:5020, 12076:5030, 12076:5100)  <br/> |&amp; Exchange Online Exchange Online Protection  <br/> SharePoint Online &amp; OneDrive İş  <br/> Skype SIP sinyalleri, indirmeler, ses, video ve masaüstü paylaşımı  <br/> Office 365 portal, Office 365 kimlik doğrulaması, &amp; Tarayıcıda Office  <br/> | DNS, CRL, &amp; CDN istekleri  <br/>  Azure ExpressRoute üzerinden özel olarak desteklenmeyen diğer tüm Office 365 hizmetleri  <br/>  Diğer tüm Microsoft bulut hizmetleri  <br/> |
 
 ## <a name="key-planning-considerations-to-using-bgp-communities"></a>BGP topluluklarını kullanma konusunda önemli planlama konuları
 

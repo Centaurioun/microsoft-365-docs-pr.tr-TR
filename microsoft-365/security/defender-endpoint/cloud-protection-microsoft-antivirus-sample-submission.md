@@ -14,14 +14,16 @@ ms.custom: nextgen
 ms.subservice: mde
 ms.topic: article
 ms.date: 02/24/2022
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 55cc82f03a193f94909268317b59370ef62ca79f
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: aa5527416d0596a5a54bb0c2c1d7607391c426bd
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701532"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68146513"
 ---
 # <a name="cloud-protection-and-sample-submission-at-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma'da bulut koruması ve örnek gönderme
 
@@ -34,15 +36,15 @@ ms.locfileid: "67701532"
 
 Microsoft Defender Virüsten Koruma, kötü amaçlı yazılımları algılamak için birçok akıllı mekanizma kullanır. En güçlü özelliklerden biri, kötü amaçlı yazılımları algılamak ve hızlı analiz gerçekleştirmek için bulutun gücünü uygulama özelliğidir. Bulut koruması ve otomatik örnek gönderimi, yeni ve yeni tehditlere karşı korunmaya yardımcı olmak için Microsoft Defender Virüsten Koruma ile birlikte çalışır. 
 
-Şüpheli veya kötü amaçlı bir dosya algılanırsa, Microsoft Defender Virüsten Koruma dosyayı engellerken analiz için bulut hizmetine bir örnek gönderilir. Hızlı bir şekilde gerçekleşen bir belirleme yapılır yapılmaz, dosya Microsoft Defender Virüsten Koruma tarafından yayımlanır veya engellenir. 
+Şüpheli veya kötü amaçlı bir dosya algılanırsa, Microsoft Defender Virüsten Koruma dosyayı engellerken analiz için bulut hizmetine bir örnek gönderilir. Hızla gerçekleşen bir belirleme yapılır yapılmaz, dosya Microsoft Defender Virüsten Koruma tarafından yayımlanır veya engellenir. 
 
-Bu makalede, Microsoft Defender Virüsten Koruma'da bulut korumasına ve otomatik örnek gönderime genel bir bakış sağlanır. Bulut koruması hakkında daha fazla bilgi edinmek için bkz. [Bulut koruması ve Microsoft Defender Virüsten Koruma](cloud-protection-microsoft-defender-antivirus.md).
+Bu makale, Microsoft Defender Virüsten Koruma'da bulut korumasına ve otomatik örnek göndermeye genel bakış sağlar. Bulut koruması hakkında daha fazla bilgi edinmek için bkz. [Bulut koruması ve Microsoft Defender Virüsten Koruma](cloud-protection-microsoft-defender-antivirus.md).
 
 ## <a name="how-cloud-protection-and-sample-submission-work-together"></a>Bulut koruması ve örnek gönderim birlikte nasıl çalışır?
 
 Bulut korumasının örnek gönderimle birlikte nasıl çalıştığını anlamak için Uç Nokta için Defender'ın tehditlere karşı nasıl koruma koruyabileceğini anlamak yararlı olabilir. Microsoft Akıllı Güvenlik Grafı, geniş bir algılayıcı ağından gelen tehdit verilerini izler. Microsoft, istemciden gelen sinyallere ve Akıllı Güvenlik Grafı'ndaki geniş algılayıcı ve veri ağına göre dosyaları değerlendirebilen bulut tabanlı makine öğrenmesi modellerini katmanlar. Bu yaklaşım, Uç Nokta için Defender'a daha önce görülmemiş birçok tehdidi engelleme olanağı sağlar. 
 
-Aşağıdaki görüntüde Microsoft Defender Virüsten Koruma ile bulut koruması akışı ve örnek gönderim gösterilir:
+Aşağıdaki görüntüde, Microsoft Defender Virüsten Koruma ile bulut koruması akışı ve örnek gönderim gösterilir:
 
 :::image type="content" source="images/cloud-protection-flow.png" alt-text="Bulut tabanlı koruma akışı" lightbox="images/cloud-protection-flow.png":::
 
@@ -56,7 +58,7 @@ Microsoft Defender Virüsten Koruma ve bulut koruması, aşağıdaki yöntemleri
 
 4. Uç noktada çalışan Microsoft Defender Virüsten Koruma'nın şüpheli bir dosyanın amacını doğrulamak için daha fazla zekaya ihtiyaç duyduğu durumlar için gelişmiş bulut tabanlı koruma sağlanır.
 
-   1. Microsoft Defender Virüsten Koruma net bir belirleme yapamazsa, dosya meta verileri bulut koruma hizmetine gönderilir. Bulut koruma hizmeti genellikle milisaniye içinde meta verileri temel alarak dosyanın kötü amaçlı olup olmadığını belirleyebilir.  
+   1. Virüsten Koruma Microsoft Defender net bir belirleme yapamazsa, dosya meta verileri bulut koruma hizmetine gönderilir. Bulut koruma hizmeti genellikle milisaniye içinde meta verileri temel alarak dosyanın kötü amaçlı olup olmadığını belirleyebilir.  
 
       - Dosya meta verilerinin bulut sorgusu davranış, web işareti veya net bir kararın belirlenmediği diğer özelliklerin bir sonucu olabilir.
       - Kötü amaçlı yazılım kararına ulaşma veya tehdit oluşturmama hedefiyle küçük bir meta veri yükü gönderilir. Meta veriler kişisel bilgileri (PII) içermez. Dosya adları gibi bilgiler karma olarak sağlanır.
@@ -134,7 +136,7 @@ Daha fazla bilgi için aşağıdaki kaynaklara bakın:
 
 ## <a name="other-file-sample-submission-scenarios"></a>Diğer dosya örneği gönderme senaryoları
 
-Uç Nokta için Defender'ın Microsoft Defender Virüsten Koruma'daki bulut korumasıyla ilgili olmayan bir dosya örneği isteyebileceği iki senaryo daha vardır. Bu senaryolar aşağıdaki tabloda açıklanmıştır:
+Uç Nokta için Defender'ın Microsoft Defender Virüsten Koruma'da bulut korumasıyla ilgili olmayan bir dosya örneği isteyebileceği iki senaryo daha vardır. Bu senaryolar aşağıdaki tabloda açıklanmıştır:
 
 | Senaryo | Açıklama |
 |:---|:---|

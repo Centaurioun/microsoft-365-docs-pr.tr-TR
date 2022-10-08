@@ -11,18 +11,19 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
 f1.keywords:
 - NOCSH
 description: VPN bölünmüş tüneli için Teams medya trafiğinin güvenliğini sağlama
-ms.openlocfilehash: eb06696b35df6ddb923c6b1e9ae97abf01dccabe
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: fc37f945b95aedfc837063ceb028f48a05a1d48b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701158"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170255"
 ---
 # <a name="securing-teams-media-traffic-for-vpn-split-tunneling"></a>VPN bölünmüş tüneli için Teams medya trafiğinin güvenliğini sağlama
 

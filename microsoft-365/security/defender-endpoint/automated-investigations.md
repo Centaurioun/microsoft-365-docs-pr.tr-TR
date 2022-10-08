@@ -14,18 +14,18 @@ ms.date: 08/31/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
 search.appverid: met150
-ms.openlocfilehash: cd89030a72f025c620d75506554f305e342e9d50
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 9d9c8429d5bc2ca21576c42cc60f0dd94ea53e41
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812402"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68143917"
 ---
 # <a name="overview-of-automated-investigations"></a>Otomatik araştırmalara genel bakış
 
@@ -87,7 +87,7 @@ Bekleyen veya tamamlanan tüm düzeltme eylemleri [İşlem merkezinde](auto-inve
 Aboneliğiniz [Uç Nokta için Defender](microsoft-defender-endpoint.md) veya [İş için Defender](../defender-business/mdb-overview.md) içermelidir.
 
 > [!NOTE]
-> Otomatik araştırma ve yanıt, pasif modda veya etkin modda çalışmak için Microsoft Defender Virüsten Koruma gerektirir. Microsoft Defender Virüsten Koruma devre dışı bırakılır veya kaldırılırsa, Otomatik Araştırma ve Yanıt düzgün çalışmaz.
+> Otomatik araştırma ve yanıt, pasif modda veya etkin modda çalışmak için Microsoft Defender Virüsten Koruma gerektirir. Microsoft Defender Virüsten Koruma devre dışı bırakılırsa veya kaldırılırsa, Otomatik Araştırma ve Yanıt düzgün çalışmaz.
 
 Şu anda AIR yalnızca aşağıdaki işletim sistemi sürümlerini destekler:
 

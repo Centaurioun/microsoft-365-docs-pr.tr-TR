@@ -1,22 +1,26 @@
 ---
-title: SharePoint Syntex'de erişilebilirlik modu
+title: Microsoft SharePoint Syntex'de erişilebilirlik modu
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 ms.localizationpriority: medium
 description: SharePoint Syntex modellerini eğitirken ve modellerle çalışırken erişilebilirlik özellikleri modunu kullanmayı öğrenin.
-ms.openlocfilehash: 567abb862af27457c1eb9395e32bf68d98446887
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: 1355e48b42ab74c9d03f5b2944f3a7d146b4dd18
+ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882340"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68026457"
 ---
-# <a name="accessibility-mode-in-sharepoint-syntex"></a>SharePoint Syntex'de erişilebilirlik modu
+# <a name="accessibility-mode-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'de erişilebilirlik modu
 
 [SharePoint Syntex'da](index.md) kullanıcılar örnek belgelerle çalışırken model eğitiminin (etiket, eğit, test) tüm aşamalarında erişilebilirlik modunu açabilir. Erişilebilirlik modunu kullanmak, görme bozukluğu olan kullanıcıların belge görüntüleyicisinde gezinirken ve öğeleri etiketlediklerinde klavye erişilebilirliğini kolaylaştırmalarına yardımcı olabilir.
 
@@ -61,9 +65,9 @@ Bir dize etiketlendikten veya görüntüleyicide bir etiket kaldırıldıktan so
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ayıklayıcı oluşturma](create-an-extractor.md)
+[Ayıklayıcı oluştur](create-an-extractor.md)
 
-[Sınıflandırıcı oluşturma](create-a-classifier.md)
+[Sınıflandırıcı oluştur](create-a-classifier.md)
 
 
 

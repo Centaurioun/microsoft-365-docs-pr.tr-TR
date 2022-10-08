@@ -1,22 +1,24 @@
 ---
 title: SKOS tabanlı biçim kullanarak terim kümesini içeri aktarma
-description: SKOS tabanlı biçim kullanarak terim kümesini içeri aktarmayı öğrenin
+description: SKOS tabanlı bir biçim kullanarak terim kümesini içeri aktarmayı öğrenin.
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.service: microsoft-365-enterprise
 ms.topic: article
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 ms.custom: admindeeplinkSPO
 search.appverid: ''
 ms.localizationpriority: high
-ms.openlocfilehash: 4e9d091eaf92940b2bdfce95712a9d5e4947cf92
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 411c4e3303d6bb20370d540de998f9e6ea95105d
+ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67580936"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68026040"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>SKOS tabanlı biçim kullanarak terim kümesini içeri aktarma
 

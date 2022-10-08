@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+ms.service: o365-solutions
 ms.localizationpriority: high
 search.appverid:
 - MET150
@@ -21,12 +21,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Hassas veriler için koruma ile ekip dağıtmayı öğrenin.
-ms.openlocfilehash: 9d340079dd60337c8071d31cec137524cf173f66
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 23c9d4761ce20cc003c91b2fea329ca74b2bc835
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731408"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987224"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Hassas veriler için koruma ile ekipleri yapılandırma
 

@@ -1,7 +1,7 @@
 ---
 title: Saldırı yüzeyini azaltma (ASR) kuralları testi
-description: Saldırı yüzeyi azaltma (ASR) kuralları dağıtımınızı test etmek için rehberlik sağlar.
-keywords: Saldırı yüzeyi azaltma kuralları dağıtımı, ASR dağıtımı, ASR kurallarını etkinleştirme, ASR'yi yapılandırma, konak yetkisiz erişim önleme sistemi, koruma kuralları, açıktan yararlanma önleme kuralları, kötüye kullanıma karşı koruma kuralları, kötüye kullanma kuralları, bulaşma önleme kuralları, Uç Nokta için Microsoft Defender, ASR kurallarını yapılandırma
+description: Saldırı yüzeyi azaltma (ASR) kuralları dağıtımınızı test etmek için rehberlik sağlar. Uç Nokta için Microsoft Defender (MDE) ASR testi, denetim defender ASR kuralları, MEM kullanarak ASR kurallarını yapılandırma, Microsoft ASR kural raporlama, ASR kuralları dışlamaları, ASR kuralları olay görüntüleyicisi içerir.
+keywords: Uç Nokta için Microsoft Defender (MDE) Saldırı yüzeyi azaltma (ASR) kuralları dağıtımı, Saldırı yüzeyi azaltma kılavuzu, ASR dağıtımı, test ASR kuralları, ASR kuralları dışlamaları, Microsoft ASR, ASR kurallarını yapılandırma, saldırı yüzeyi azaltma kuralları en iyi uygulama, saldırı yüzeyi azaltma intune, ASR kuralları olay görüntüleyicisi, saldırı yüzeyi azaltma defender, ASR kuralları powershell, saldırı yüzeyi azaltma en iyi uygulaması, devre dışı bırakma  ASR kuralları, konak yetkisiz erişim önleme sistemi, koruma kuralları, kötüye kullanıma karşı koruma kuralları, kötüye kullanıma karşı koruma kuralları, bulaşma önleme kuralları, Uç Nokta için Microsoft Defender, ASR kurallarını yapılandırma
 search.product: eADQiWindows 10XVcnh
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -17,32 +17,43 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-asr-rules
 - highpri
+- tier1
 ms.date: 09/18/2022
 search.appverid: met150
-ms.openlocfilehash: 76148e9b727d3894ee2696c2d59b84832b59c4d4
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 6bbdf9f1971f86c6c2b9ac32033c738d50c5945f
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811624"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68150011"
 ---
 # <a name="test-attack-surface-reduction-asr-rules"></a>Saldırı yüzeyini azaltma (ASR) kuralları testi
 
-Saldırı yüzeyi azaltma (ASR) kurallarının test edilmesi, kuralların herhangi bir kuralı etkinleştirmeden önce iş kolu işlemlerini engelleyecek olup olmadığını belirlemenize yardımcı olur. Küçük, denetimli bir grupla başlayarak, dağıtımınızı kuruluşunuz genelinde genişletirken olası iş kesintilerini sınırlayabilirsiniz.
+Uç Nokta için Microsoft Defender (MDE) saldırı yüzeyini azaltma (ASR) kurallarının test edilmesi, kuralların herhangi bir kuralı etkinleştirmeden önce iş kolu işlemlerini engelleyecek olup olmadığını belirlemenize yardımcı olur. Küçük, denetimli bir grupla başlayarak, dağıtımınızı kuruluşunuz genelinde genişletirken olası iş kesintilerini sınırlayabilirsiniz.
+
+ASR kuralları dağıtım kılavuzunun bu bölümünde şunları nasıl yapacağınızı öğreneceksiniz:
+
+- MEM kullanarak kuralları yapılandırma
+- Uç Nokta için Microsoft Defender ASR kural raporlarını kullanma
+- ASR kuralları dışlamalarını yapılandırma
+- PowerShell kullanarak ASR kurallarını etkinleştirme
+- ASR kuralları olayları için Olay Görüntüleyicisi kullanma
+
+> [!NOTE]
+> ASR kurallarını test etmeye başlamadan önce, önceden **denetle** veya **etkinleştir** (varsa) olarak ayarlamış olduğunuz tüm kuralları devre dışı bırakmanız önerilir. ASR kurallarını devre dışı bırakmak için ASR kuralları raporunu kullanma hakkında bilgi için bkz. [Saldırı yüzeyi azaltma](attack-surface-reduction-rules-report.md) kuralları raporları.
 
 Kademe 1 ile saldırı yüzeyi azaltma (ASR) kuralları dağıtımınıza başlayın.
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-rules-testing-steps.png" alt-text="ASR kuralları test adımları" lightbox="images/asr-rules-testing-steps.png":::
+> :::image type="content" source="images/asr-rules-testing-steps.png" alt-text="Uç Nokta için Microsoft Defender (MDE) saldırı yüzeyini azaltma (ASR kuralları) test adımları. ASR kurallarını denetleme, ASR kuralları dışlamalarını yapılandırma. ASR kuralları MEM'i yapılandırın. ASR kural dışlamaları. ASR kuralları olay görüntüleyicisi." lightbox="images/asr-rules-testing-steps.png":::
   
 ## <a name="step-1-test-asr-rules-using-audit"></a>1. Adım: Denetim kullanarak ASR kurallarını test edin
 
 1. halkadaki şampiyon kullanıcılarınız veya cihazlarınızdan başlayarak, denetim olarak ayarlanmış kurallarla ASR kurallarını açarak test aşamasına başlayın. Genellikle, test aşamasında hangi kuralların tetiklendiğini belirleyebilmeniz için tüm kuralları (Denetim'de) etkinleştirmeniz öneridir. Denetim olarak ayarlanan kuralların genellikle kuralın uygulandığı varlığın veya varlıkların işlevselliğini etkilemediğini ancak değerlendirme için günlüğe kaydedilen olaylar oluşturduğunu unutmayın; son kullanıcılar üzerinde hiçbir etkisi yoktur.
 
-### <a name="configure-asr-rules-using-mem"></a>MEM kullanarak ASR Kurallarını yapılandırma
+### <a name="configure-asr-rules-using-mem"></a>MEM kullanarak ASR kurallarını yapılandırma
 
 Özel ASR kurallarını yapılandırmak için Microsoft Endpoint Manager (MEM) Uç Nokta Güvenliği'ni kullanabilirsiniz.
 
@@ -66,7 +77,11 @@ Kademe 1 ile saldırı yüzeyi azaltma (ASR) kuralları dağıtımınıza başla
 
 8. [İsteğe bağlı] **Kapsam etiketleri** bölmesinde, belirli cihazlara etiket bilgileri ekleyebilirsiniz. Ayrıca, doğru yöneticilerin doğru Intune nesnelere doğru erişime ve görünürlüğe sahip olduğundan emin olmak için rol tabanlı erişim denetimi ve kapsam etiketlerini de kullanabilirsiniz. Daha fazla bilgi edinin: [Intune'de dağıtılmış BT için rol tabanlı erişim denetimi (RBAC) ve kapsam etiketlerini kullanın](/mem/intune/fundamentals/scope-tags).
 9. **Atamalar** bölmesinde, profili kullanıcı veya cihaz gruplarınıza dağıtabilir veya "atayabilirsiniz". Daha fazla bilgi edinin: [Microsoft Intune'de cihaz profilleri atama](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
-10. **Gözden Geçir ve oluştur** bölmesinde ayarlarınızı gözden geçirin. Kuralları uygulamak için **Oluştur'a** tıklayın.
+   
+    >[!Note]
+    > Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.
+
+1. **Gözden Geçir ve oluştur** bölmesinde ayarlarınızı gözden geçirin. Kuralları uygulamak için **Oluştur'a** tıklayın.
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="images/asr-mem-review-create.png" alt-text="Profil oluştur sayfası" lightbox="images/asr-mem-review-create.png":::
@@ -76,7 +91,7 @@ ASR kuralları için yeni saldırı yüzeyi azaltma ilkeniz **Uç nokta güvenli
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="images/asr-mem-my-asr-rules.png" alt-text=" Saldırı yüzeyi azaltma sayfası" lightbox="images/asr-mem-my-asr-rules.png":::
 
-## <a name="step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>2. Adım: Microsoft 365 Defender portalındaki Saldırı yüzeyi azaltma kuralları raporlama sayfasını anlama
+## <a name="step-2-understand-the-asr-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>2. Adım: Microsoft 365 Defender portalındaki ASR kuralları raporlama sayfasını anlama
 
 ASR kuralları raporlama sayfası **, Microsoft 365 Defender portal** > **Raporları** > **Saldırı yüzeyi azaltma kuralları** bölümünde bulunur. Bu sayfada üç sekme vardır:
 
@@ -96,8 +111,7 @@ Saldırı Yüzeyi azaltma kuralları bölmesi, kural başına algılanan olaylar
 >[!Note]
 >ASR kuralları raporlarında bazı farklılıklar vardır. Microsoft, tutarlı bir deneyim sağlamak için ASR kuralları raporlarının davranışını güncelleştirme sürecindedir.
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-01b.png" alt-text="Saldırı yüzeyi azaltma kuralları sayfası" lightbox="images/asr-defender365-01b.png"::: 
+> :::image type="content" source="images/asr-defender365-01b.png" alt-text="Saldırı yüzeyi azaltma kuralları sayfası" lightbox="images/asr-defender365-01b.png":::
 
 **Algılamaları görüntüle'ye** tıklayarak **Algılamalar** sekmesini açın.
 
@@ -126,7 +140,7 @@ Saldırı Yüzeyi azaltma kuralları bölmesi, kural başına algılanan olaylar
 > :::image type="content" source="images/asr-defender365-filter.png" alt-text="Kurallar üzerinde Saldırı yüzeyi azaltma kuralları algılamaları filtresi" lightbox="images/asr-defender365-filter.png":::
 
 >[!Note]
->Microsoft Microsoft 365 Güvenlik E5 veya A5, Windows E5 veya A5 lisansınız varsa, aşağıdaki bağlantı Microsoft Defender 365 Raporları > [Saldırı yüzeyi azaltmaları](https://security.microsoft.com/asr?viewid=detections) > Algılamalar sekmesini açar.
+>Microsoft Microsoft 365 Güvenlik E5 veya A5, Windows E5 veya A5 lisansınız varsa, aşağıdaki bağlantı Microsoft Defender 365 Raporları > [Saldırı yüzeyi azaltmaları > Algılamalar](https://security.microsoft.com/asr?viewid=detections) sekmesini açar.
 
 ### <a name="configuration-tab"></a>Yapılandırma sekmesi
 
@@ -170,6 +184,8 @@ Bu sekme, dışlama için algılanan varlıkları (örneğin, hatalı pozitifler
 
 > [!Note]
 >Microsoft Defender 365 E5 (veya Windows E5?) lisansınız varsa, bu bağlantı Microsoft Defender 365 Raporları > Saldırı yüzeyi azaltmaları > [Dışlamalar](https://security.microsoft.com/asr?viewid=exclusions) sekmesini açar.
+
+ASR kurallarını yönetmek için ASR kuralları raporunu kullanma hakkında daha fazla bilgi için bkz [. Saldırı yüzeyi azaltma kuralları raporları](attack-surface-reduction-rules-report.md).
 
 ### <a name="use-powershell-as-an-alternative-method-to-enable-asr-rules"></a>ASR kurallarını etkinleştirmek için alternatif yöntem olarak PowerShell kullanma
 

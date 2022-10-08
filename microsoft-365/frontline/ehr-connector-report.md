@@ -20,17 +20,18 @@ ms.collection:
 - m365solution-healthcare
 - m365solution-scenario
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 ms.reviewer: ''
 description: Kuruluşunuzdaki EHR tümleşik sanal randevu kullanımına genel bir bakış elde etmek için Microsoft Teams yönetim merkezinde Teams EHR bağlayıcısı Sanal Randevular raporunu kullanmayı öğrenin.
-ms.openlocfilehash: 6ec3423df4b6cd094bd2cab07e44c06923ec58bf
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 6890c664897e4bb9e0998f4c441dc623bac1baa1
+ms.sourcegitcommit: 674dfa2cb2f20546d2f7822e09bacf0e12e2718b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66862510"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68039247"
 ---
 # <a name="microsoft-teams-ehr-connector-virtual-appointments-report"></a>Microsoft Teams EHR bağlayıcısı Sanal Randevular raporu
 

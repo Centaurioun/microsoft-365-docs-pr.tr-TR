@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: Azure PIM'i tümleştirerek kullanıcılara Office 365 için Microsoft Defender'da yükseltilmiş ayrıcalık görevleri gerçekleştirmeleri için tam zamanında ve sınırlı erişim vermek ve verilerinize yönelik riski azaltmayı öğrenin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 6a198c25fd329c0bce79e85af8831a673b30cd1a
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: ed82f1bcf609605acf72cb33387b4439dc16e5c3
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597680"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68054676"
 ---
 <!--A-->
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) ve neden Office 365 için Microsoft Defender

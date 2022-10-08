@@ -14,21 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Almanya ehliyet numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 5510d85d36fe3afbe4da2189af1147ede4dfebcb
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: b9e158dd3c7ae2d6eba3f9e8eb427a7b1847d5a3
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948918"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68380370"
 ---
-# <a name="germany-drivers-license-number"></a>Almanya sürücü lisans numarası
+# <a name="germany-drivers-license-number"></a>Almanya ehliyet numarası
 
 Bu hassas bilgi türü varlığı, AB Sürücü Lisans Numarası hassas bilgi türüne dahil edilir. Tek başına hassas bilgi türü varlığı olarak da kullanılabilir.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -44,17 +47,17 @@ Bu hassas bilgi türü varlığı, AB Sürücü Lisans Numarası hassas bilgi t�
 - basamak
 - bir rakam veya harf
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_german_drivers_license` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_german_drivers_license_number` bir anahtar sözcük bulunur.
-- Sağlama toplamı geçer.
+- İşlev `Func_german_drivers_license`, desenle eşleşen içeriği bulur.
+- `Keyword_german_drivers_license_number` içinden bir anahtar sözcük bulundu.
+- Sağlama toplamı başarılı.
 
 ```xml
     <!-- German Driver's License Number -->

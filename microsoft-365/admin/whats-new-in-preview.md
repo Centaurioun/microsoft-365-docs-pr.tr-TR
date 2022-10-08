@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -22,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: Microsoft 365 yönetim merkezi - Bu ay eklenen özellikler hakkında bilgi edinin.
-ms.openlocfilehash: 588e5d405bb0a343d95014892d23b62f2e1f28f4
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 4f1c26dbcedc1057157e782b7e7489b5b6ed478e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388891"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68164029"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezi'deki yenilikler
 
@@ -50,6 +51,37 @@ Diğer Microsoft bulut hizmetleriyle ilgili yeni şeyleri öğrenmek isterseniz:
 - [SharePoint yönetim merkezindeki yenilikler](/sharepoint/what-s-new-in-admin-center)
 - [Office güncelleştirmeleri](/OfficeUpdates/)
 - [Windows sürüm durumunu denetleme](/windows/deployment/update/check-release-health)
+
+## <a name="august-2022"></a>Ağustos 2022
+
+### <a name="date-filter-in-the-net-promoter-score-nps-survey-insights-dashboard"></a>Net Promoter Score (NPS) anket içgörüleri panosundaki tarih filtresi
+
+Geri bildirimlerinize bağlı olarak, NPS anket içgörüleri panosunda sizin gibi yöneticilerin tarihe göre Net Promoter Score (NPS) verilerini ve içgörülerini filtrelemesine olanak tanıyan yeni bir işlev sunuyoruz. Böylece tarih aralığı tercihinize göre ayrıntılara erişebilirsiniz.
+
+Bu değişiklikle, aşağıdaki tarih aralıklarına göre NPS anket içgörülerine bakabileceksiniz:
+
+- Son 30 gün
+- Son 90 gün
+- Son 180 gün
+
+Erişim için **Sistem Sağlığı** > **Ürünü geri bildirimi** > **NPS anket içgörüleri sekmesine** gidin.
+
+:::image type="content" source="../media/nps-date-filter.png" alt-text="Ekran görüntüsü: NPS anket içgörüleri panosunda tarih filtresi" lightbox="../media/nps-date-filter.png":::
+
+[NPS anket içgörüleri](/microsoft-365/admin/manage/manage-feedback-product-insights) hakkında daha fazla bilgi edinin.
+
+NPS anket içgörüleri ile ilgili sorular veya geri bildirimler için Prosight@microsoft.com adresinden bizimle iletişime geçin.
+
+
+## <a name="july-2022"></a>Temmuz 2022
+
+### <a name="multi-tenant-billing-relationships"></a>Çok kiracılı faturalama ilişkileri
+
+Artık diğer kiracılarla çok kiracılı faturalama ilişkileri oluşturabilirsiniz. Çok kiracılı faturalama ilişkisi, kuruluşunuzun ödeme hesabını diğer kiracılarla güvenli bir şekilde paylaşmanıza olanak tanırken, faturalama verileriniz üzerinde denetimi de korumanızı sağlar.
+
+Bu özellik, Microsoft Müşteri Sözleşmesi sahip kuruluş hesabı müşterileri tarafından kullanılabilir.
+
+Daha fazla bilgi için bkz. [Microsoft 365 yönetim merkezi birden çok kiracı arasında faturalamayı yönetme](../commerce/billing-and-payments/manage-multi-tenant-billing.md).
 
 ## <a name="may-2022"></a>Mayıs 2022
 

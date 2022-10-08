@@ -12,16 +12,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 1a0d5fc868c9b024125e4c5ff27adab24a033211
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 619fe25a2390a79fee11fde078b6ca9a3579705e
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742037"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68150099"
 ---
 # <a name="microsoft-defender-for-endpoint-api-release-notes"></a>api sürüm notlarını Uç Nokta için Microsoft Defender
 

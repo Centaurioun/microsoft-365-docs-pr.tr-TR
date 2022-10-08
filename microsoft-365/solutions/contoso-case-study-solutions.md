@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -16,12 +16,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Kurgusal ama temsili bir küresel kuruluşun Microsoft 365 çözümlerini nasıl dağıttığını.
-ms.openlocfilehash: 56170c8af66c39d34c3e863b69af74991f41b156
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 66e09b53a8997ac4aa3769a4b39d46ca0feeeb19
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730649"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987180"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Contoso Corporation için Microsoft 365 çözümleri
 

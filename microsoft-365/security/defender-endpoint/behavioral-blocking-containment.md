@@ -16,14 +16,16 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: ba259111f758bfb2ce34210e436f9838c0ccf060
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 8871a9ebaa683a81ceaa4123d2f9cc52bbac9222
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740499"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68142091"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Davranışsal engelleme ve kapsama
 
@@ -67,7 +69,7 @@ Aşağıdaki görüntüde davranış engelleme ve kapsama özellikleri tarafınd
 
 - **[Geri bildirim döngüsü engelleme](feedback-loop-blocking.md)** (hızlı koruma olarak da adlandırılır) Tehdit algılamaları davranış zekası aracılığıyla gözlemlenir. Tehditler durdurulur ve diğer uç noktalarda çalıştırılması engellenir. (Geri bildirim döngüsü engelleme varsayılan olarak etkindir.)
 
-- **[Blok modunda uç nokta algılama ve yanıt (EDR)](edr-in-block-mode.md)** İhlal sonrası koruma aracılığıyla gözlemlenen kötü amaçlı yapıtlar veya davranışlar engellenir ve kapsanmaktadır. Blok modunda EDR, Birincil virüsten koruma çözümü Microsoft Defender Virüsten Koruma olmasa bile çalışır. (Blok modunda EDR varsayılan olarak etkin değildir; Microsoft 365 Defender'de açarsınız.)
+- **[Blok modunda uç nokta algılama ve yanıt (EDR)](edr-in-block-mode.md)** İhlal sonrası koruma aracılığıyla gözlemlenen kötü amaçlı yapıtlar veya davranışlar engellenir ve kapsanmaktadır. Blok modundaki EDR, Microsoft Defender Virüsten Koruma birincil virüsten koruma çözümü olmasa bile çalışır. (Blok modunda EDR varsayılan olarak etkin değildir; Microsoft 365 Defender'de açarsınız.)
 
 Microsoft tehdit koruma özelliklerini ve özelliklerini geliştirmeye devam ettiğinden davranış engelleme ve kapsama alanında daha fazlasının gelmesini bekleyin. Planlanan ve kullanıma sunulanları görmek için [Microsoft 365 yol haritasını](https://www.microsoft.com/microsoft-365/roadmap) ziyaret edin.
 

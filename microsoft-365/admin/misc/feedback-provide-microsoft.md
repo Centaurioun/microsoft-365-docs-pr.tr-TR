@@ -7,15 +7,17 @@ author: Kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 description: Microsoft ürünleri ve hizmetleri hakkında Microsoft'a geri bildirim sağlamanın farklı yolları hakkında bilgi edinin.
-ms.openlocfilehash: 5544ebcf5ae484a262056cae7ff44364a93cdaf5
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 8322d4a7797a6b09faecb0b2a8fa3a4fa07b3d92
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637372"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68164755"
 ---
 # <a name="learn-about-how-to-provide-feedback-to-microsoft"></a>Microsoft’a geri bildirim gönderme hakkında bilgi edinin
 
@@ -43,7 +45,7 @@ Platforma ve uygulamaya bağlı olarak ek günlükler ve ekran görüntüleri g�
 
 ### <a name="sending-feedback-from-feedback-our-community-feedback-web-portal"></a>Topluluk geri bildirimi web portalımız olan Geri Bildirim'den geri bildirim gönderme
 
-[Geri Bildirim](https://feedbackportal.microsoft.com/) kullanıyorsanız, doğrudan web portalından geri bildirim sağlayabilirsiniz.  Community geri bildirim, topluluktan gelen geri bildirimlere göz atmanızı veya oy vermenizi sağlar. Community geri bildirimi farklı forumlarda herkese açık olarak görüntülenir. Kullanıcı adınız, herkese açık olarak gönderdiğiniz geri bildirimler veya sağladığınız yorumlar tarafından görüntülenir.
+[Geri Bildirim](https://feedbackportal.microsoft.com/) kullanıyorsanız, doğrudan web portalından geri bildirim sağlayabilirsiniz.  Topluluk geri bildirimi, topluluktan gelen geri bildirimlere göz atmanızı veya oy vermenizi sağlar. Topluluk geri bildirimi, farklı forumlarda herkese açık olarak görüntülenir. Kullanıcı adınız, herkese açık olarak gönderdiğiniz geri bildirimler veya sağladığınız yorumlar tarafından görüntülenir.
 
 :::image type="content" source="../../media/sending-feedback-community-portal.png" alt-text="Ekran görüntüsü: Geri bildirim gönderebileceğiniz Microsoft ürünlerinin seçimi":::
 
@@ -70,7 +72,7 @@ Microsoft, Windows Geri Bildirim Merkezi ve Geri Bildirim web portalı aracılı
 
 Geri bildirim portalında her geri bildirim kartını aşağıdaki durumlardan biriyle etiketlenmiş olarak görürsünüz. Bu durum etiketini aşağıdaki ekran görüntüsünde gösterildiği gibi bulabilirsiniz.
 
-:::image type="content" source="../../media/ink-to-text-conversion.png" alt-text="Ekran görüntüsü: IPad mürekkeple metne dönüştürmeye yönelik geri bildirim kartı örneği":::
+:::image type="content" source="../../media/ink-to-text-conversion.png" alt-text="Ekran görüntüsü: iPad'de mürekkeple metne dönüştürmede geri bildirim kartı örneği":::
 
 **Bizde var.**  Geri bildiriminiz başarıyla gönderildi! Her gönderime yanıt veremediğimiz halde tüm geri bildirim gönderimlerini izliyoruz.
 Bu, geri bildirimin gönderildikten sonra varsayılan durumudur ve geri bildirimin sistemimize başarıyla gönderildiğini belirtir.

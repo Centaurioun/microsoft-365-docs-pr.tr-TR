@@ -13,14 +13,16 @@ ms.author: macapara
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.topic: article
-ms.openlocfilehash: feac94002669ae3e5fa1ddf58b8f191dc507f1c4
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: a7cc35decd9c6168b3c22af8ea7d20baca75d25b
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67810834"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68149989"
 ---
 # <a name="migrating-servers-from-microsoft-monitoring-agent-to-the-unified-solution"></a>Sunucuları Microsoft Monitoring Agent'tan birleşik çözüme geçirme
 

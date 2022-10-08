@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 8f2d1200d3d703e89959dbe8446838f266d1731a
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e6a97b532098631a14850be0afd06b9bc9e2e11d
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703378"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68150121"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Android özelliklerinde Uç Nokta için Defender’ı yapılandırın
 
@@ -62,15 +63,15 @@ Bu özellik, Wi-Fi ağları için birincil saldırı vektörleri olan Wi-Fi ilgi
 
 Özelliği Microsoft Endpoint Manager Yönetici merkezinden yapılandırma ve güvenilen sertifikalar ekleme gibi esneklik sunmak için çeşitli yönetici denetimleri içerir. Yöneticiler, Android cihazlardan Uç Nokta için Defender tarafından gönderilen verileri yapılandırmak için [gizlilik denetimlerini](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) de etkinleştirebilir.
 
-Uç nokta için Microsoft Defender'da ağ koruması varsayılan olarak etkindir. Yöneticiler **, Android cihazlarda Ağ korumasını yapılandırmak** için aşağıdaki adımları kullanabilir.
+Uç nokta için Microsoft Defender ağ koruması varsayılan olarak etkindir. Yöneticiler **, Android cihazlarda Ağ korumasını yapılandırmak** için aşağıdaki adımları kullanabilir.
 
 1. Microsoft Endpoint Manager Yönetici'da Uygulamalar > Uygulama yapılandırma ilkeleri'ne gidin. Yeni bir Uygulama yapılandırma ilkesi oluşturun.
     > [!div class="mx-imgBorder"]
     > ![İlke oluşturma resmi.](images/android-mem.png)
-1. İlkeyi benzersiz olarak tanımlamak için bir ad ve açıklama sağlayın. Platform olarak **'Android Enterprise'ı** ve profil türü olarak **'Yalnızca kişisel iş profili'ni** ve Hedeflenen uygulama olarak **'Microsoft Defender'ı** seçin.
+1. İlkeyi benzersiz olarak tanımlamak için bir ad ve açıklama sağlayın. Platform olarak **'Android Enterprise'ı** ve profil türü olarak **'Yalnızca kişisel iş profili'ni** ve Hedeflenen uygulama olarak **'Microsoft Defender'** seçeneğini belirleyin.
     > [!div class="mx-imgBorder"]
     > ![İlke ayrıntılarının görüntüsü.](images/appconfigdetails.png)
-1. Ayarlar sayfasında **'Yapılandırma tasarımcısını kullan'ı seçin ve Ağ Koruması'nı** devre dışı bırakmak için anahtar olarak **'Microsoft Defender'da Ağ Korumasını Etkinleştir'i** ve **'0'** olarak değeri ekleyin. (Ağ koruması varsayılan olarak etkindir)
+1. Ayarlar sayfasında **'Yapılandırma tasarımcısını kullan'ı seçin ve Ağ Koruması'nı** devre dışı bırakmak için anahtar ve değer olarak **'0'** olarak **'Microsoft Defender'de Ağ Korumasını Etkinleştir'i** ekleyin. (Ağ koruması varsayılan olarak etkindir)
     > [!div class="mx-imgBorder"]
     > ![Ağ koruma ilkesini etkinleştirme seçeneğinin görüntüsü](images/selectnp.png)
     

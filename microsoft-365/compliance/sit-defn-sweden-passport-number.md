@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: İsveç pasaport numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 497965aea803a162fc97bb64fa456191f8788aab
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7328b3ebae0a59c5a9c8e23446e4d5302924da09
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948327"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472134"
 ---
 # <a name="sweden-passport-number"></a>İsveç pasaport numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -36,19 +39,19 @@ sekiz basamak
 
 ardışık sekiz basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
 - normal ifade Regex_sweden_passport_number desenle eşleşen içeriği bulur.
 - veya `Keyword_sweden_passport` anahtar `Keywords_eu_passport_number` sözcüğü bulunur.
 - normal ifade `Regex_sweden_eu_passport_date` DD MMM/AAA YY (01 OCA/JAN 12) biçiminde bir tarih bulur veya bir `Keywords_eu_passport_date` anahtar sözcük bulunur.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - normal ifade Regex_sweden_passport_number desenle eşleşen içeriği bulur.
 - veya `Keyword_sweden_passport` anahtar `Keywords_eu_passport_number` sözcüğü bulunur.

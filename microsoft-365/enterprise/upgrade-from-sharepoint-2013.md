@@ -8,18 +8,19 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.collection:
+- scotvorg
 - Ent_O365
 search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
 description: SharePoint Server 2013 ve SharePoint Foundation 2013'ten yükseltecek bilgileri ve kaynakları bulun. Her iki destek de 11 Nisan 2023'de sona erer.
-ms.openlocfilehash: 3e79c47af055765c92c65a6900af533d83c8bc8b
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: cd2c9b233685aeeee329b5ebeafcb3ff3a27f4b3
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670079"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68193289"
 ---
 # <a name="upgrading-from-sharepoint-2013"></a>SharePoint 2013'ten yükseltme
 

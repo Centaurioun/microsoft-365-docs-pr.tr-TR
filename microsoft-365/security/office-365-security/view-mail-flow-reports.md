@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Yöneticiler, Güvenlik & Uyumluluk Merkezi'ndeki Raporlar panosunda bulunan posta akışı raporları hakkında bilgi edinebilir.
 ms.custom: ''
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 26a6211e86266dad2705eb7024ad8a4b86e63e25
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 81555650f71692864dc00abad9c65df883cf9955
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851050"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68048516"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Güvenlik & Uyumluluk Merkezi'ndeki Raporlar panosunda posta akışı raporlarını görüntüleme
 

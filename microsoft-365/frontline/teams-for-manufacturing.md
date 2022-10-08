@@ -13,8 +13,10 @@ ms.collection:
 - M365-collaboration
 - microsoftcloud-manufacturing
 - m365-frontline
+- highpri
 - m365solution-manufacturing
 - m365solution-overview
+- highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -23,12 +25,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 20dc1e5305e41e97501ce9d654c74f1afd0ee5b2
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
+ms.openlocfilehash: 74f4f51c53964b75f046a9afa9666a41530ae97f
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66827138"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68054280"
 ---
 # <a name="get-started-with-microsoft-365-for-manufacturing"></a>Üretim için Microsoft 365'i kullanmaya başlama
 
@@ -45,7 +47,7 @@ Microsoft 365 ve Microsoft Teams, üretim kuruluşlarına günlük operasyonlar�
 - [İş gücünüzle bağlantı kurma ve etkileşim kurma](#connect-and-engage-your-workforce)
 - [İş gücü yönetimini geliştirme](#enhance-workforce-management)
 - [Operasyonel verimliliği artırma](#increase-operational-efficiency)
-- [Çalışanları ekleme ve eğitma](#onboard-and-train-employees)
+- [Çalışanları işe alma ve eğitme](#onboard-and-train-employees)
 
 > [!NOTE]
 > Bu özelliklerin tümü için kullanıcıların uygun bir lisansa sahip olması gerekir. Ön çalışanlar için Microsoft 365 F1 ve F3 ya da Office 365 F3, Office 365 A3, A5, E3 ve E5'in yanı sıra Microsoft 365 İş Standart, İş Ekstra, A3, A5, E3 ve E5 desteklenir. Genel Teams lisanslama hakkında daha fazla bilgi için bkz. [Teams'e kullanıcı erişimini yönetme](/microsoftteams//user-access). [Ön cephe çalışanları için](flw-licensing-options.md) Microsoft 365'i diğer lisanslarla birlikte kullanma hakkında daha fazla bilgi için bkz. Ön cephe çalışanları için lisans seçenekleri.
@@ -83,7 +85,7 @@ Daha fazla bilgi: [Ön cephe ekibi işbirliği](flw-team-collaboration.md) ve [V
 
 Daha fazla bilgi: [İş süreçlerini basitleştirme](simplify-business-processes.md)
 
-### <a name="onboard-and-train-employees"></a>Çalışanları ekleme ve eğitma
+### <a name="onboard-and-train-employees"></a>Çalışanları işe alma ve eğitme
 
 Tüm çalışanlarınızın başarılı olmak için ihtiyaç duydukları bilgiye ve yeteneklere sahip olduğundan emin olun.
 

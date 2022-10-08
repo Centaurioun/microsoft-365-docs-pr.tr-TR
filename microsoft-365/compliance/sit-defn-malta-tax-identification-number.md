@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Malta vergi kimlik numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 5f77f6755ff69bf200a3999e684901bf39bdf6d9
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 6d483f84ad64f7d85eb5d28a33777be516d5c2df
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948490"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68384151"
 ---
 # <a name="malta-tax-identification-number"></a>Malta vergi kimlik numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -49,16 +52,16 @@ Malta uyruklu olmayanlar ve Malta varlıkları: dokuz basamak
 
 - dokuz basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Geçerli değil
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Regex `Regex_malta_eu_tax_file_number`  veya `Regex_malta_eu_tax_file_number_non_maltese_national` desenle eşleşen içeriği bulur.
-- 'den `Keywords_malta_eu_tax_file_number` bir anahtar sözcük bulunur.
+- `Keywords_malta_eu_tax_file_number` içinden bir anahtar sözcük bulundu.
 
 DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının güvenilirliği düşüktür:
 

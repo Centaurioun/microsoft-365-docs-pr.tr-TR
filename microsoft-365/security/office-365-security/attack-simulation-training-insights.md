@@ -8,17 +8,18 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom: ''
 description: Yöneticiler, Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi kullanıcıları nasıl etkilediğini öğrenebilir ve simülasyon ve eğitim sonuçlarından içgörüler elde edebilir.
 ms.subservice: mdo
-ms.openlocfilehash: af3a1e9f7a2b991b7ece6f36595e2f7759eccb9d
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 2e6ac342a5d9bdc1b7a2c1476b64a25080272277
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483134"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68077809"
 ---
 # <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Office 365 için Defender Saldırı simülasyonu eğitimi için içgörüler ve raporlar
 
@@ -26,7 +27,7 @@ ms.locfileid: "67483134"
 
 [Office 365 için Microsoft Defender plan 2](defender-for-office-365.md) **için geçerlidir**
 
-Microsoft, Office Plan 2 veya Microsoft 365 E5 için Microsoft Defender'da Saldırı simülasyonu eğitimi simülasyonların ve ilgili eğitimlerin sonuçlarından içgörüler ve raporlar sağlar. Bu bilgiler, kullanıcılarınızın tehdit hazırlığı ilerleme durumu ve kullanıcılarınızı gelecekteki saldırılara daha iyi hazırlamak için önerilen sonraki adımlar hakkında bilgi sahibi olmanıza yardımcı olur.
+Office Plan 2 veya Microsoft 365 E5 için Microsoft Defender'da Saldırı simülasyonu eğitimi,Microsoft simülasyonların ve ilgili eğitimlerin sonuçlarından içgörüler ve raporlar sağlar. Bu bilgiler, kullanıcılarınızın tehdit hazırlığı ilerleme durumu ve kullanıcılarınızı gelecekteki saldırılara daha iyi hazırlamak için önerilen sonraki adımlar hakkında bilgi sahibi olmanıza yardımcı olur.
 
 İçgörüler ve raporlar, Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi aşağıdaki konumlarda bulunur:
 
@@ -61,8 +62,8 @@ Ayrıntıları görüntülemek için bir simülasyon seçebilirsiniz.
 
 Grafik verilerinin kendisi aşağıdaki bilgileri gösterir:
 
-- **Tahmin edilen risk oranı**<sup>\*</sup>: Diğer tüm Microsoft 365 kuruluşlarında aynı yük türünü kullanan Saldırı simülasyonu eğitimi simülasyonları için ortalama risk oranı.
-- **Gerçek risk oranı**<sup>\*</sup>: Simülasyona düşen kullanıcıların gerçek yüzdesi.
+- **Tahmin edilen risk oranı**: Microsoft 365 genelinde, bu simülasyonun tehlikeye atılacağı kişilerin yüzdesini tahmin eden geçmiş verileri (kullanıcılar tehlikeye girdi/ simülasyonu alan toplam kullanıcı sayısı).
+- **Gerçek risk oranı**: Simülasyon tarafından güvenliği tehlikeye giren kişilerin gerçek yüzdesi (güvenliği tehlikeye giren gerçek kullanıcılar/ kuruluşunuzda simülasyonu alan toplam kullanıcı sayısı).
 
 Grafikte bir veri noktasının üzerine geldiğinizde gerçek yüzde değerleri gösterilir.
 

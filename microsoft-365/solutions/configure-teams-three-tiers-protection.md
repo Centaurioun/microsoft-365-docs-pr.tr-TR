@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+ms.service: o365-solutions
 ms.localizationpriority: high
 search.appverid:
 - MET150
@@ -23,12 +23,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: Teams'i üç koruma katmanı kullanarak daha iyi dosya paylaşımı güvenliği için yapılandırmayı ve güvenliği işbirliği kolaylığıyla dengelemeyi öğrenin.
-ms.openlocfilehash: bea49c19489a14e86af169454d7c84283eef41d4
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 46c078a0ccb44b1c13877065886862dcfa9a67bf
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730429"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987202"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Teams'i üç koruma katmanıyla yapılandırma
 

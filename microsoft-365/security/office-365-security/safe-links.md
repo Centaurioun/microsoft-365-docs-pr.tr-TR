@@ -13,7 +13,7 @@ ms.date: 09/08/2021
 ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Bir kuruluşu kimlik avına ve kötü amaçlı URL kullanan diğer saldırılara karşı korumak için Office 365 için Defender'de Güvenli Bağlantılar koruması hakkında bilgi edinin. Teams Güvenli Bağlantılar'ı keşfedin ve Güvenli Bağlantılar iletilerinin grafiklerini görün.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 501e75e2c81d12d99b1f093991b864c7ad43519e
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 048de0ae500dfbeeb9f4981af50d4297a80b6e9c
+ms.sourcegitcommit: c550d73b153ad4856188c9109d9d80f02ca989b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67612911"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68140930"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Güvenli Bağlantılar
 
@@ -90,6 +90,9 @@ Bu makale, aşağıdaki Güvenli Bağlantılar ayarları türlerinin ayrıntıl�
 
   - [Güvenli Bağlantılar için "Aşağıdaki URL'leri engelle" listesi](#block-the-following-urls-list-for-safe-links)
 
+  > [!NOTE]
+  > **Genel ayarlar** menüsü ve Güvenli Bağlantılar için **aşağıdaki URL'leri engelle** listesi kullanım dışı bırakılıyor. Bunun yerine [Kiracı İzin Ver/Engelle Listesindeki](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) URL'ler için blok girdilerini kullanın.
+
 Aşağıdaki tabloda, Office 365 için Defender içeren Microsoft 365 ve Office 365 kuruluşlarında Güvenli Bağlantılar senaryoları açıklanmaktadır (örneklerde lisans eksikliğinin hiçbir zaman sorun oluşturmadığını unutmayın).
 
 |Senaryo|Sonuç|
@@ -97,7 +100,6 @@ Aşağıdaki tabloda, Office 365 için Defender içeren Microsoft 365 ve Office 
 |Jean pazarlama departmanının bir üyesidir. Office uygulamaları için Güvenli Bağlantılar koruması, pazarlama departmanı üyeleri için geçerli olan Güvenli Bağlantılar ilkesinde açıktır. Jean, e-posta iletisinde bir PowerPoint sunusu açar ve ardından sunudaki bir URL'ye tıklar.|Jean, Güvenli Bağlantılar tarafından korunuyor. <p> Jean, Office uygulamaları için Güvenli Bağlantılar korumasının açık olduğu Güvenli Bağlantılar ilkesine dahildir. <p> Office uygulamalarında Güvenli Bağlantılar koruması gereksinimleri hakkında daha fazla bilgi için, bu makalenin devamında yer alan [Office uygulamaları için Güvenli Bağlantılar ayarları](#safe-links-settings-for-office-apps) bölümüne bakın.|
 |Chris'in Microsoft 365 E5 kuruluşunda Yapılandırılmış Güvenli Bağlantılar ilkesi yok. Chris, dış gönderenden, sonunda tıkladığı kötü amaçlı bir web sitesinin URL'sini içeren bir e-posta alır.|Chris, Güvenli Bağlantılar tarafından korunuyor. <p> **Yerleşik koruma** önayarlı güvenlik ilkesi, tüm alıcılara (Standart veya Katı önceden belirlenmiş güvenlik ilkeleri veya özel Güvenli Bağlantılar ilkelerinde tanımlanmayan kullanıcılar) Güvenli Bağlantılar koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md).|
 |Pat'in kuruluşunda yöneticiler Pat'i uygulayan bir Güvenli Bağlantılar ilkesi oluşturmuştur, ancak Office uygulamaları için Güvenli Bağlantılar koruması kapalıdır. Pat bir Word belgesi açar ve dosyadaki bir URL'ye tıklar.|Pat, Güvenli Bağlantılar tarafından korunmaz. <p> Pat etkin bir Güvenli Bağlantılar ilkesine dahil olsa da, bu ilkede Office uygulamaları için Güvenli Bağlantılar koruması kapatıldığından koruma uygulanamaz.|
-|Lee'nin kuruluşunda, `https://tailspintoys.com` Güvenli Bağlantılar için genel ayarlardaki **Aşağıdaki URL'leri engelle** listesinde yapılandırılır. Lee'yi içeren bir Güvenli Bağlantılar ilkesi zaten var. Lee, URL'sini `https://tailspintoys.com/aboutus/trythispage`içeren bir e-posta iletisi alır. Lee URL'ye tıklar.|URL Lee için otomatik olarak engellenebilir; listedeki URL girdisine ve Lee'nin kullandığı e-posta istemcisine bağlıdır. Daha fazla bilgi için, bu [makalenin devamında yer alan Güvenli Bağlantılar için "Aşağıdaki URL'leri engelle" listesine](#block-the-following-urls-list-for-safe-links) bakın.|
 |Jamie ve Julia contoso.com için çalışıyor. Uzun zaman önce, yöneticiler Hem Jamie hem de Julia için geçerli olan Güvenli Bağlantılar ilkeleri yapılandırdı. Jamie, e-postanın kötü amaçlı bir URL içerdiğini bilmeden Julia'ya bir e-posta gönderir.|Julia, kendisine uygulanan Güvenli Bağlantılar ilkesi iç alıcılar arasındaki iletilere uygulanacak şekilde **yapılandırılmışsa** Güvenli Bağlantılar tarafından korunur. Daha fazla bilgi için, bu makalenin devamında yer alan [e-posta iletileri için Güvenli Bağlantılar ayarları](#safe-links-settings-for-email-messages) bölümüne bakın.|
 
 ## <a name="recipient-filters-in-safe-links-policies"></a>Güvenli Bağlantılar ilkelerindeki alıcı filtreleri
@@ -164,8 +166,6 @@ Yüksek düzeyde, Güvenli Bağlantılar koruması e-posta iletilerindeki URL'le
 2. Kullanıcı iletiyi posta kutusunda açar ve iletideki bir URL'ye tıklar.
 
 3. Güvenli Bağlantılar, web sitesini açmadan önce URL'yi hemen denetler:
-
-   - URL **Aşağıdaki URL'leri engelle** listesinde yer alıyorsa [, engellenen bir URL uyarısı](#blocked-url-warning) açılır.
 
    - URL, kötü amaçlı olduğu belirlenen bir web sitesine işaret ederse, [kötü amaçlı bir web sitesi uyarı](#malicious-website-warning) sayfası (veya farklı bir uyarı sayfası) açılır.
 
@@ -275,7 +275,7 @@ Birden çok ilke oluşturduktan sonra, uygulanacağı sırayı belirtebilirsiniz
 ## <a name="block-the-following-urls-list-for-safe-links"></a>Güvenli Bağlantılar için "Aşağıdaki URL'leri engelle" listesi
 
 > [!NOTE]
-> Artık [Kiracı İzin Ver/Engelle Listesi'nde](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) blok URL'si girdilerini yönetebilirsiniz. "Aşağıdaki URL'leri engelle" listesi kullanım dışı bırakılıyor. Kiracı İzin Ver/Engelle Listesindeki URL girdilerini engellemek için "Aşağıdaki URL'leri engelle" listesinden mevcut girdileri geçirmeyi deneyeceğiz. Engellenen URL'yi içeren iletiler karantinaya alınır.
+> Güvenli Bağlantılar için **Aşağıdaki URL'leri engelle** listesi kullanım dışı bırakılıyor. Bunun yerine [Kiracı İzin Ver/Engelle Listesindeki](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) URL'ler için blok girdilerini kullanın. Engellenen URL'yi içeren iletiler karantinaya alınır.
 
 **Aşağıdaki URL'leri engelle** listesi, aşağıdaki konumlarda Güvenli Bağlantılar taraması tarafından her zaman engellenen bağlantıları tanımlar:
 

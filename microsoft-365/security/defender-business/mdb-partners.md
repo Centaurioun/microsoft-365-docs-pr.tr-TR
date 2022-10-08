@@ -1,6 +1,6 @@
 ---
-title: İş için Microsoft Defender ve Microsoft iş ortağı kaynakları
-description: MSP PSA ve İş için Defender ile RMM tümleştirmesi ve Microsoft 365 Lighthouse gibi iş ortağı kaynakları hakkında bilgi edinin.
+title: İş için Microsoft Defender ve Microsoft 365 İş Ekstra kullanan Microsoft iş ortakları için kaynaklar
+description: Uzaktan izleme ve yönetim (RMM) araçlarınızı ve profesyonel hizmet otomasyonu (PSA) yazılımınızı İş için Defender, Microsoft 365 İş Ekstra, Uç Nokta için Defender ve Microsoft 365 Lighthouse ile tümleştirmeyi öğrenin.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -10,50 +10,60 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/31/2022
+ms.date: 09/28/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
-ms.openlocfilehash: 9e25a2478f9bb250dd32483cfbb3ef008ce905c0
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+- m365-security
+- tier1
+ms.openlocfilehash: e3abcf7ec562a0133dce3716df2fa3c9156ddad1
+ms.sourcegitcommit: c550d73b153ad4856188c9109d9d80f02ca989b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599164"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68140786"
 ---
-# <a name="microsoft-defender-for-business-and-microsoft-partner-resources"></a>İş için Microsoft Defender ve Microsoft iş ortağı kaynakları
+# <a name="resources-for-microsoft-partners-using-microsoft-defender-for-business-and-microsoft-365-business-premium"></a>İş için Microsoft Defender ve Microsoft 365 İş Ekstra kullanan Microsoft iş ortakları için kaynaklar
 
-Microsoft iş ortakları, müşterilerin başarılı olmasını sağlamak için iş ortaklarını güçlendiren kaynaklara, programlara ve araçlara erişebilir. Bu makalede, [İş için Defender](mdb-overview.md) veya [Microsoft 365 İş Ekstra](../../business-premium/index.md) kullanan müşterilere hizmet veren Microsoft iş ortakları tarafından sağlanan kaynaklara genel bir bakış sağlanmaktadır.
+Küçük ve orta ölçekli işletmeler, başarılarının önemli bir bileşeni olarak güvenliği tanır, ancak genellikle özel bir güvenlik operasyonları ekibine sahip olacak kapasiteye veya uzmanlığa sahip değildir. Müşterilerin genellikle uç noktalarının ve ağlarının güvenliğini yönetme ve uyarıları veya algılanan tehditleri ele alma konusunda yardıma ihtiyacı vardır. Microsoft iş ortakları yardımcı olabilir!
 
-## <a name="resources-for-microsoft-managed-service-providers-to-build-cybersecurity-capabilities"></a>Microsoft tarafından yönetilen hizmet sağlayıcılarının siber güvenlik özellikleri oluşturma kaynakları
+Microsoft iş ortağıysanız ve [İş için Defender](mdb-overview.md), [Microsoft 365 İş Ekstra](../../business-premium/index.md) veya [Uç Nokta için Defender'a](../defender-endpoint/microsoft-defender-endpoint.md) sahip veya ihtiyacı olan müşterilerle çalışıyorsanız, bu makale size yöneliktir.
 
-Çoğu yönetilen hizmet sağlayıcısı (MSP) gelişmiş bir özellik yığını sunar. Örneğin, birçok MSP yedekleme & kurtarma, ağ yönetimi, iş kolu uygulamaları ve siber güvenlik özelliklerini içeren yazılım ve hizmetler sunar. Küçük ve orta ölçekli işletmeler, başarılarının önemli bir bileşeni olarak güvenliği tanır, ancak genellikle özel bir güvenlik operasyonları ekibine sahip olacak kapasiteye veya uzmanlığa sahip değildir. Bu müşteriler genellikle uç noktalarının ve ağlarının güvenliğini yönetmek ve uyarıları veya algılanan tehditleri ele almak için yardıma ihtiyaç duyar.
+- [Microsoft uç nokta güvenliğini RMM araçlarınız ve PSA yazılımınızla nasıl tümleştirebileceğinizi öğrenin](#integrate-microsoft-endpoint-security-with-your-rmm-tools-and-psa-software).
+- [Müşterilerinizin cihazlarını ve verilerini güvenli ve yönetmek için Microsoft 365 Lighthouse nasıl kullanabileceğinizi görün](#use-microsoft-365-lighthouse-to-secure-and-manage-your-customers-devices-and-data).
+- [İş için Defender ve Microsoft 365 İş Ekstra hakkında daha fazla bilgi edinin](#learn-more-about-defender-for-business-and-microsoft-365-business-premium).
 
-**Microsoft MSP'niz varsa ve Microsoft uç nokta güvenlik özelliklerini uzaktan izleme ve yönetim (RMM) araçlarınızla ve profesyonel hizmet otomasyonu (PSA) yazılımınızla tümleştirmek istiyorsanız [Uç Nokta için Defender API'lerini](../defender-endpoint/management-apis.md) kullanabilirsiniz**. RMM araçlarınız ve PSA yazılımınızla Uç Nokta için Defender API'lerini kullanarak şunları yapabilirsiniz:
+## <a name="integrate-microsoft-endpoint-security-with-your-rmm-tools-and-psa-software"></a>Microsoft uç nokta güvenliğini RMM araçlarınız ve PSA yazılımınızla tümleştirme
 
-- [Uyarıları ve olayları ele](mdb-respond-mitigate-threats.md) almak için müşterilerinizin Microsoft 365 Defender portalına erişin.
+Microsoft Yönetilen Hizmet Sağlayıcısı (MSP)yseniz, Microsoft uç nokta güvenliğini uzaktan izleme ve yönetim (RMM) araçlarınızla ve profesyonel hizmet otomasyonu (PSA) yazılımınızla tümleştirerek şunları yapabilirsiniz: 
+
+- [Algılanan tehditleri ve olayları ele](mdb-respond-mitigate-threats.md) almak için müşterilerinizin Microsoft 365 Defender portalına erişin.
 - Müşterilerinizin kiracılarında yeni uyarılar veya güvenlik açıkları hakkında [e-posta bildirimleri](mdb-email-notifications.md) alın.
 - Güvenlik bilgileriniz ve [olay](mdb-view-manage-incidents.md) yönetimi (SIEM) araçlarınızla olayları ve uyarıları getirin ve görüntüleyin.
 - Otomatik [araştırmalardan sonraki eylemleri](mdb-review-remediation-actions.md) onaylama veya cihazda el ile yanıt eylemleri gerçekleştirme gibi düzeltme eylemlerini düzenleyin.
 
-Daha fazla bilgi edinmek için aşağıdaki kaynakları kullanın:
+Tümleştirme [, Uç Nokta için Defender API'leri](../defender-endpoint/management-apis.md) kullanılarak yapılabilir. Daha fazla bilgi edinmek için aşağıdaki kaynakları kullanın:
 
 | Kaynak | Açıklama |
 |:---|:---|
 | [Yönetim ve API'lere genel bakış](../defender-endpoint/management-apis.md) | İş için Defender Uç Nokta için Microsoft Defender üzerine kurulmuştur ve tümleştirmeye hazır bir platformdur. Bu makalede, Uç Nokta için Defender API'lerini kullanarak iş akışlarını otomatikleştirme ve yenilik yapmayı açıklar. |
 | [Güvenlik hizmeti sağlayıcısı tümleştirmesini yapılandırın](../defender-endpoint/configure-mssp-support.md) | Müşterinin kiracısını MSP çözümünüzle başarıyla tümleştirmek için atılması gereken adımlara genel bir bakış sağlar. |
 
-## <a name="resources-for-cloud-solution-providers"></a>Bulut Çözümü Sağlayıcıları için Kaynaklar
+## <a name="use-microsoft-365-lighthouse-to-secure-and-manage-your-customers-devices-and-data"></a>Müşterilerinizin cihazlarını ve verilerinin güvenliğini sağlamak ve yönetmek için Microsoft 365 Lighthouse kullanma
 
-Microsoft Bulut Çözümü Sağlayıcıları (CSP' ler), lisansları yeniden satışa sunmanın ötesine geçerek müşterilerin işlerine daha fazla dahil olabilir. Örneğin, CSP'ler küçük ve orta ölçekli işletme müşterilerinin güvenlik ayarlarını ve özelliklerini yönetmek için Microsoft 365 Lighthouse kullanabilir. CSP'ler ayrıca algılanan tehditleri görüntüleyebilir ve yönetebilir ve cihazlarda virüsten koruma taramaları başlatabilir.
+Microsoft Bulut Çözümü Sağlayıcısı (CSP) veya MSP'yseniz, Microsoft 365 Lighthouse kullanarak müşterilerinizin güvenlik ayarlarını ve özelliklerini yönetmesine yardımcı olabilir, verilerini ve cihazlarını koruyabilirsiniz. Microsoft 365 Lighthouse kullanarak:
+
+- Müşterilerinizin güvenlik ayarlarını ve özelliklerini yönetin. 
+- Müşterilerinizin kiracılarında algılanan tehditleri görüntüleyin ve yönetin.
+- Müşterilerin cihazlarında virüsten koruma taramaları başlatarak bunları güncel ve korumalı tutun.
 
 | Kaynak | Açıklama |
 |:---|:---|
+| [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md) | MSP'lerin ve CSP'lerin küçük ve orta ölçekli işletmeler için cihazları, verileri ve kullanıcıları güvenli bir şekilde yönetmesine ve yönetmesine yardımcı olan bir yönetim portalı olan Microsoft 365 Lighthouse genel bakış sağlar. |
 | [Microsoft 365 Lighthouse ve İş için Microsoft Defender](mdb-lighthouse-integration.md) | İş için Defender'ın Microsoft 365 Lighthouse ile nasıl tümleştirilip ek bilgilere bağlantılar içerdiğini açıklar. |
 
-## <a name="resources-for-partners-to-learn-about-defender-for-business-and-microsoft-365-business-premium"></a>İş ortakları için İş için Defender ve Microsoft 365 İş Ekstra hakkında bilgi edinme kaynakları
+## <a name="learn-more-about-defender-for-business-and-microsoft-365-business-premium"></a>İş için Defender ve Microsoft 365 İş Ekstra hakkında daha fazla bilgi edinin
 
 | Kaynak | Açıklama |
 |:---|:---|

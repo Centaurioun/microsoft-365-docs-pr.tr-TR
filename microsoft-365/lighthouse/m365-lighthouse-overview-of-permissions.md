@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Lighthouse izin gereksinimleri hakkında daha fazla bilgi edinin.
-ms.openlocfilehash: b808c90cf660303e8794e18a1ce4e1be90fb63c0
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 9626712c9363e6079cbc5a367e1f7fe79ea7e36f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599098"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68193201"
 ---
 # <a name="overview-of-permissions-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse izinlerine genel bakış
 

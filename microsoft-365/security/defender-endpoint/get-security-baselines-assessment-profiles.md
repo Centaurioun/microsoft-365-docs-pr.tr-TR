@@ -11,17 +11,19 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 5aa9ba2cc42784c39f183346f41b72f24424f6a9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 71c005591d1dda839c9db2cf2d0d5454a73f5229
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694601"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68192849"
 ---
 # <a name="list-all-security-baselines-assessment-profiles"></a>Tüm güvenlik temelleri değerlendirme profillerini listeleme
 

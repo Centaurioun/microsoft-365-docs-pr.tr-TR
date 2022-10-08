@@ -13,16 +13,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 5473be1b45b87d677a7d18ba0bd8174364aa53b5
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 17eb5fbb7249ba3ff38c30267632447d0c594f17
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67682205"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68078073"
 ---
 # <a name="get-incident-information-api"></a>Olay bilgileri API'si alma
 

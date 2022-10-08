@@ -7,19 +7,20 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 description: Outlook, Yahoo, Gmail veya başka bir hesap kullanarak Microsoft 365 İş Standart bir kuruluşa katılmak için e-posta daveti kabul edin.
-ms.openlocfilehash: b7cc7e2cc9ff07444b562f7ed70f55a6d33201fd
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: 64567fef4456fee9fdeef71ca8a818ccc4a9b275
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67644345"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68164447"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-for-business-subscription-organization-using-an-outlook-yahoo-gmail-or-other-account-user"></a>Outlook, Yahoo, Gmail veya başka bir hesap kullanarak bir İş için Microsoft 365 aboneliği kuruluşuna e-posta daveti kabul etme (Kullanıcı)
 

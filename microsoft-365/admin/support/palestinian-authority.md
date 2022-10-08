@@ -7,41 +7,43 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
-description: Ülkeniz veya bölgeniz için de destek ile nasıl bağlantı kuracaklarını öğrenin.
+description: Ülkeniz veya bölgeniz için desteğe nasıl başvuracağınızı öğrenin.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 77ca2217c456b2605136679349ba504fbf5b79b4
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 296e68ec6a7827d766b87dc8eef74568880ed895
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62999014"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68193597"
 ---
-# <a name="contact-support-for-palestinian-authority"></a>İsrail Yetkilisi için destek ile iletişime geçin
+# <a name="contact-support-for-palestinian-authority"></a>Filistin Yönetimi için desteğe başvurun
 
 [Başka bir ülke veya bölge bulun](../get-help-support.md).
 
 ## <a name="phone-number"></a>Telefon numarası
 +962 6 5503451
 
-1. seçeneği belirleyin
+Seçenek 1'i seçin
 
-9. seçeneği belirleyin
+9 seçeneğini belirleyin
 
-Kod 7702 girin
+7702 kodunu girin
 
 ## <a name="hours"></a>Saatler
 ### <a name="billing-support"></a>Faturalama Desteği:
 
-Arapça: Sun-Thu 10:00 -17:00
+Arapça: Sun-Thu 10:00-18:00
 
-İngilizce: Mon-Fri 10:00 -17:00
+İngilizce: Mon-Fri 10:00-18:00
 
 ### <a name="technical-support"></a>Teknik Destek:
 
-Arapça: Sun-Thu 10:00 -17:00
+Arapça: Sun-Thu 10:00-18:00
 
 İngilizce: Haftanın 7 günü, günde 24 saat
 

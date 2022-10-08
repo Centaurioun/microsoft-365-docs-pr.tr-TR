@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4084db5633a02b1d6f1eeba743549d45c6464689
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: a65012792f930c77977537b724cf36d94cc2527b
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67693267"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68145677"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Android’de Uç Nokta için Microsoft Defender - Gizlilik bilgileri
 

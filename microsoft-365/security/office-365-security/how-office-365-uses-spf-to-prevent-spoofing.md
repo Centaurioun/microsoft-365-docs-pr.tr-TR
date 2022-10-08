@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365'in, hedef e-posta sistemlerinin özel etki alanınızdan gönderilen iletilere güvenmesini sağlamak için DNS'deki Sender Policy Framework (SPF) TXT kaydını nasıl kullandığını öğrenin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: c530bc191218d283922cda144de3d247cc182330
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: c657f86656da005aba416159217d01ca6eb636cb
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596885"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68055006"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Microsoft 365, kimlik sahtekarlıklarını önlemek için Sender Policy Framework'i (SPF) nasıl kullanır?
 
@@ -167,15 +167,15 @@ burada:
 
 - Zorlama kuralı genellikle aşağıdakilerden biridir:
 
-  - -tümü
+  - -Tüm
 
     Sabit başarısız olduğunu gösterir. Etki alanınız için tüm yetkili IP adreslerini biliyorsanız, bunları SPF TXT kaydında listeleyin ve -all (sabit başarısız) niteleyicisini kullanın. Ayrıca, yalnızca SPF kullanıyorsanız, yani DMARC veya DKIM kullanmıyorsanız - all niteleyicisini kullanmanız gerekir. Her zaman bu niteleyiciyi kullanmanızı öneririz.
 
-  - ~tümü
+  - ~Tüm
 
     Geçici başarısızlığa işaret eder. IP adreslerinin tam listesine sahip olduğunuzdan emin değilseniz ~all (geçici başarısız) niteleyicisini kullanmanız gerekir. Ayrıca, p=quarantine veya p=reject ile DMARC kullanıyorsanız ~ all kullanabilirsiniz. Aksi takdirde -all kullanın.
 
-  - ?all
+  - ?Tüm
 
     Nötr değeri gösterir. Bu, SPF test edilirken kullanılır. Canlı dağıtımınızda bu niteleyiciyi kullanmanızı önermiyoruz.
 

@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 05feb4b20f1f2ae5e6ade0e3155ab21978ec762d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: a96aacfc4c2133b8aae436c97bfd438f2f478123
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696539"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68142449"
 ---
 # <a name="common-rest-api-error-codes"></a>Yaygın REST API hata kodları
 

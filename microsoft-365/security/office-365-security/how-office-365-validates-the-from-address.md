@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Yöneticiler, kimlik avının önlenmesine yardımcı olmak için Exchange Online Protection (EOP) ve Outlook.com tarafından kabul edilen veya reddedilen e-posta adresi türleri hakkında bilgi edinebilir.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a4687ca9d9135a8feef66f4caabfcb7a3a2313b4
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 873f529e6dff8e805e947e3be3366c56215e1661
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598417"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68077655"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>EOP kimlik avının önlenmesi için Kimden adresini nasıl doğrular?
 

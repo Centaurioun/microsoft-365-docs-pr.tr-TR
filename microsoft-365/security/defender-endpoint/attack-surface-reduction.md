@@ -18,15 +18,15 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.topic: article
 ms.collection:
-- m365initiative-m365-defender
-- M365-security-compliance
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 38b38a43c2531ab7ce4932ad9f00a04c9289fdc8
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: c0bd85618ec90b193728b9705d473eadc45712af
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811779"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68148735"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>Saldırı yüzeyi azaltma kurallarına genel bakış
 
@@ -51,7 +51,13 @@ Saldırı yüzeyi azaltma kuralları aşağıdakiler gibi belirli yazılım davr
 
 Bu tür yazılım davranışları bazen meşru uygulamalarda görülür. Ancak bu davranışlar genellikle kötü amaçlı yazılım aracılığıyla saldırganlar tarafından yaygın olarak kötüye kullanıldıklarından riskli olarak kabul edilir. Saldırı yüzeyi azaltma kuralları yazılım tabanlı riskli davranışları kısıtlayabilir ve kuruluşunuzun güvende kalmasına yardımcı olabilir.
 
-Saldırı yüzeyi azaltma kurallarını yapılandırma hakkında daha fazla bilgi için bkz. [Saldırı yüzeyi azaltma kurallarını etkinleştirme](enable-attack-surface-reduction.md).
+ASR kurallarının nasıl yönetileceğini gösteren sıralı ve uçtan uca bir işlem için bkz:
+
+- [Saldırı yüzeyini azaltma (ASR) kuralları dağıtımına genel bakış](attack-surface-reduction-rules-deployment.md)
+- [Saldırı yüzeyini azaltma (ASR) kuralları dağıtım planı](attack-surface-reduction-rules-deployment-plan.md)
+- [Saldırı yüzeyini azaltma (ASR) kuralları testi](attack-surface-reduction-rules-deployment-test.md)
+- [Saldırı yüzeyini azaltma (ASR) kurallarını etkinleştirme](attack-surface-reduction-rules-deployment-implement.md)
+- [Saldırı yüzeyini azaltma (ASR) kurallarını kullanıma hazır hale getirme](attack-surface-reduction-rules-deployment-operationalize.md)
 
 ## <a name="assess-rule-impact-before-deployment"></a>Dağıtımdan önce kural etkisini değerlendirme
 
@@ -81,9 +87,9 @@ Uyarı modu, Windows'un aşağıdaki sürümlerini çalıştıran cihazlarda des
 - Windows 11
 - [Windows Server, sürüm 1809](/windows-server/get-started/whats-new-in-windows-server-1809) veya üzeri
 
-Microsoft Defender Virüsten Koruma [, Etkin modda](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state) gerçek zamanlı koruma ile çalışıyor olmalıdır.
+Microsoft Defender Virüsten Koruma [etkin modda](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state) gerçek zamanlı koruma ile çalışıyor olmalıdır.
 
-Ayrıca [, Microsoft Defender Virüsten Koruma ve kötü amaçlı yazılımdan koruma güncelleştirmelerinin](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) yüklü olduğundan emin olun.
+Ayrıca [virüsten koruma ve kötü amaçlı yazılımdan koruma güncelleştirmelerinin Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) yüklendiğinden emin olun.
 
 - En düşük platform sürümü gereksinimi: `4.18.2008.9`
 - En düşük altyapı sürümü gereksinimi: `1.1.17400.5`
@@ -108,7 +114,7 @@ Ayrıca, belirli saldırı yüzeyi azaltma kuralları tetiklendiğinde uyarılar
 
 Bildirimler ve oluşturulan tüm uyarılar <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalında</a> görüntülenebilir.
 
-Bildirim ve uyarı işlevselliği hakkında belirli ayrıntılar için **bkz. Saldırı yüzeyi azaltma kuralları başvurusu** makalesindeki [Kural uyarı ve bildirim ayrıntılarına](attack-surface-reduction-rules-reference.md#per-rule-alert-and-notification-details) göre.
+Bildirim ve uyarı işlevselliği hakkında belirli ayrıntılar için **bkz. Saldırı yüzeyi azaltma kuralları başvurusu** makalesindeki [Kural uyarı ve bildirim ayrıntılarına](attack-surface-reduction-rules-reference.md#per-asr-rule-alert-and-notification-details) göre.
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Gelişmiş avcılık ve saldırı yüzeyi azaltma olayları
 
@@ -176,8 +182,18 @@ Olayları yalnızca denetimli klasör erişimiyle ilgili olan aşağıdaki olayl
 
 Olay günlüğünde saldırı yüzeyi azaltma olayları için listelenen "altyapı sürümü", işletim sistemi tarafından değil Uç Nokta için Defender tarafından oluşturulur. Uç Nokta için Defender Windows 10 ve Windows 11 ile tümleşiktir, bu nedenle bu özellik Windows 10 veya Windows 11 yüklü tüm cihazlarda çalışır.
 
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Saldırı yüzeyini azaltma (ASR) kuralları dağıtımına genel bakış](attack-surface-reduction-rules-deployment.md)
+- [Saldırı yüzeyini azaltma (ASR) kuralları dağıtım planı](attack-surface-reduction-rules-deployment-plan.md)
+- [Saldırı yüzeyini azaltma (ASR) kuralları testi](attack-surface-reduction-rules-deployment-test.md)
+- [Saldırı yüzeyini azaltma (ASR) kurallarını etkinleştirme](attack-surface-reduction-rules-deployment-implement.md)
+- [Saldırı yüzeyini azaltma (ASR) kurallarını kullanıma hazır hale getirme](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Saldırı yüzeyi azaltma \(ASR\) kuralları raporu](attack-surface-reduction-rules-report.md)
+
 > [!TIP]
 > Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
+>
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

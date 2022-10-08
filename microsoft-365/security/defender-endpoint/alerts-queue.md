@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.topic: article
 ms.date: 03/27/2020
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 45b40cd4f893ca9fab4f07f2bd1e36f7c8690b81
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e9623dbf66826d3654e987ef41ca9006c0548888
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703346"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68145809"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Uç Nokta için Microsoft Defender Uyarıları kuyruğu görüntüleme ve düzenleme
 
@@ -73,7 +75,7 @@ Uç Nokta için Defender uyarı önem derecesi, algılanan davranışın önem d
 Bu nedenle, örneğin:
 
 - Microsoft Defender Virüsten Koruma tarafından algılanan ve cihaza bulaşmayan bir tehdit algılanan bir Uç Nokta için Defender uyarısının önem derecesi, gerçek bir hasar olmadığından "Bilgilendirici" olarak kategorilere ayrılmıştır.
-- Yürütülürken ticari bir kötü amaçlı yazılım algılandı, ancak Microsoft Defender Virüsten Koruma tarafından engellendi ve düzeltildi, çünkü tek bir cihaza zarar vermesine rağmen kurumsal bir tehdit oluşturmadığı için "Düşük" olarak kategorilere ayrılmıştır.
+- Yürütülürken ticari bir kötü amaçlı yazılım algılandı, ancak Microsoft Defender Virüsten Koruma tarafından engellendi ve düzeltildi, tek tek cihaza zarar verdiği halde kurumsal bir tehdit oluşturmadığı için "Düşük" olarak kategorize edildi.
 - Yürütülürken algılanan ve yalnızca tek bir cihaz için değil, kuruluş için de tehdit oluşturabilen ve sonunda engellenip engellenmediğine bakılmaksızın kötü amaçlı yazılımla ilgili bir uyarı "Orta" veya "Yüksek" olarak derecelenebilir.
 - Engellenmeyen veya düzeltilmemiş şüpheli davranış uyarıları, aynı kurumsal tehdit dikkate alınarak "Düşük", "Orta" veya "Yüksek" olarak sıralanır.
 

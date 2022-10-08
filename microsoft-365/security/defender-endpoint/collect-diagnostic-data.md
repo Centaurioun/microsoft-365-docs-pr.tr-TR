@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Antivirus'ün tanılama verilerini toplayın
-description: Microsoft Defender Virüsten Koruma sorunlarını gidermek için veri toplamak için bir araç kullanma
+description: Virüsten Koruma Microsoft Defender sorunlarını gidermek için veri toplamak için bir araç kullanma
 keywords: sorun giderme, hata, düzeltme, uyumluluk güncelleştirme, oms, izleme, rapor, Microsoft Defender av, grup ilkesi nesnesi, ayar, tanılama verileri, Microsoft Defender Virüsten Koruma
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
@@ -16,14 +16,16 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: c57cabf3e4de59b572dd880aeffa2f1b723fe155
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 5b9f1a5bc1df8564c5f4f028dc9fefee6c05e1a6
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699268"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68148691"
 ---
 # <a name="collect-microsoft-defender-antivirus-diagnostic-data"></a>Microsoft Defender Virüsten Koruma tanılama verilerini toplama
 
@@ -35,7 +37,7 @@ ms.locfileid: "67699268"
 - [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Bu makalede, Microsoft Defender Virüsten Koruma'yı kullanırken karşılaşabileceğiniz sorunları gidermeye yardımcı olmak için Microsoft destek ve mühendislik ekipleri tarafından kullanılabilecek tanılama verilerinin nasıl toplandığı açıklanır.
+Bu makalede, Microsoft Defender Virüsten Koruma kullanırken karşılaşabileceğiniz sorunları gidermeye yardımcı olmak için Microsoft destek ve mühendislik ekipleri tarafından kullanılabilecek tanılama verilerinin nasıl toplandığı açıklanır.
 
 > [!NOTE]
 > Araştırma veya yanıt sürecinin bir parçası olarak bir cihazdan araştırma paketi toplayabilirsiniz. Şu şekilde yapılır: [Cihazlardan araştırma paketi toplayın](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices).
@@ -53,7 +55,7 @@ Aynı sorunla karşılaşan en az iki cihazda, aşağıdaki adımları uygulayar
 2. Microsoft Defender Virüsten Koruma dizinine gidin. Varsayılan olarak, bu değeridir `C:\Program Files\Windows Defender`.
 
    > [!NOTE]
-   > [Güncelleştirilmiş bir Microsoft Defender kötü amaçlı yazılımdan koruma platformu sürümü](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform) çalıştırıyorsanız lütfen şu konumdan komutunu çalıştırın`MpCmdRun`: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`.
+   > [Güncelleştirilmiş Microsoft Defender kötü amaçlı yazılımdan koruma platformu sürümü](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform) çalıştırıyorsanız lütfen şu konumdan komutunu çalıştırın`MpCmdRun`: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`.
 
 3. Aşağıdaki komutu yazın ve **Enter tuşuna** basın
 
@@ -140,4 +142,4 @@ Tanılama .cab dosyasının grup ilkesi Nesnesi (GPO) kullanılarak nerede oluş
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Microsoft Defender Virüsten Koruma raporlama sorunlarını giderme](troubleshoot-reporting.md)
+- [Virüsten Koruma raporlama Microsoft Defender sorunlarını giderme](troubleshoot-reporting.md)

@@ -2,14 +2,15 @@
 title: Microsoft Benimseme Puanı - İçerik işbirliği
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: İçerik işbirliğinin ayrıntıları - kişiler Benimseme Puanı'nı deneyimler.
-ms.openlocfilehash: 12746d9e71facceb1259ed2ce71b590df648c8c7
-ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
+ms.openlocfilehash: 4e9ef9656fc30ceb792d92cea0dedbcbd5420369
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67437939"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68164909"
 ---
 # <a name="content-collaboration--people-experiences"></a>İçerik işbirliği – Kişiler deneyimler
 

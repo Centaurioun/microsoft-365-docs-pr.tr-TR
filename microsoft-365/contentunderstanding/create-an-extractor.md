@@ -1,5 +1,5 @@
 ---
-title: Ayıklayıcı oluşturma Microsoft SharePoint Syntex
+title: Microsoft SharePoint Syntex'de ayıklayıcı oluşturma
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex'da ayıklayıcı oluşturmayı öğrenin.
-ms.openlocfilehash: 590ea0154a057051202e19b0bf6ff67c3b540d08
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: e80100c7a1f5614c3057188a630ae81182e87f7c
+ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583747"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68026545"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'de ayıklayıcı oluşturma
 

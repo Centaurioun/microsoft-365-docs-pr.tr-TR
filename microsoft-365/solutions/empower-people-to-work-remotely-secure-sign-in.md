@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Karma çalışanlarınızın çok faktörlü kimlik doğrulaması (MFA) ile oturum açmasını zorunlu kılar.
-ms.openlocfilehash: ebb4b02db1dbaed6f4b22c2cc4b9d67f1e52429f
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 5c3beda36249141b997dd64f85a6ca75aaa109b1
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727688"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987026"
 ---
 # <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>Adım 1. MFA ile karma çalışanlar için oturum açma güvenliğini artırma
 

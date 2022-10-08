@@ -2,14 +2,15 @@
 title: Teams uygulama kullanım raporlarını Microsoft 365 yönetim merkezi
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams uygulama kullanım raporunu Microsoft 365 Raporları'ndan alarak kuruluşunuzda kullanılan Microsoft Teams uygulamaları hakkında içgörüler elde edin.
-ms.openlocfilehash: 22e176235a455b288e078cfd5cd135beff5d668d
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 20cf31e5ef7724b87aa369c11bb15ad46b9d8490
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663008"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194081"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Yönetim merkezinde Microsoft 365 Raporları - Microsoft Teams cihaz kullanımı
 
@@ -52,7 +53,7 @@ Dışarı **Aktar** bağlantısını seçerek rapor verilerini bir Excel .csv do
 |Öğe|Açıklama|
 |:-----|:-----|
 |**Metrik**|**Tanım**|
-|Kullanıcı adı  <br/> |Kullanıcının görünen adı.  <br/> |
+|Kullanıcı Adı  <br/> |Kullanıcının görünen adı.  <br/> |
 |Windows  <br/> |Kullanıcı Windows tabanlı bir bilgisayarda Teams masaüstü istemcisinde etkinse seçilir.  <br/> |
 |Mac  <br/> |Kullanıcı macOS bilgisayarda Teams masaüstü istemcisinde etkinse seçilir.  <br/> |
 |iOS  <br/> |Kullanıcı iOS için Teams mobil istemcisinde etkinse seçilir.  <br/> |

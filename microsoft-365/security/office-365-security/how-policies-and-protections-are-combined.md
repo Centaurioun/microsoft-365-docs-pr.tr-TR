@@ -11,18 +11,19 @@ audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Yöneticiler, Exchange Online Protection'de (EOP) korumaların uygulama sırası ve koruma ilkelerindeki öncelik değerinin hangi ilkenin uygulandığını nasıl belirlediği hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: b976c738bb77d6a6e3264e1e1cde76a7afdfe005
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 5bb3f1a8b15c2d6407ba09ffd2fafaa1987c010f
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598373"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68082603"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>E-posta korumasının sırası ve önceliği
 

@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -18,12 +18,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Microsoft 365 Grupları, Teams, SharePoint ve Yammer gibi Microsoft 365 işbirliği araçları için en iyi idare yöntemlerini öğrenin.
-ms.openlocfilehash: 326611359b7146405664c85623122de48204e9c7
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: d72cac57d01c6d2189c2ce67d588d75fb8011e81
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811296"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987356"
 ---
 # <a name="what-is-collaboration-governance"></a>İşbirliği idaresi nedir?
 
@@ -65,7 +65,7 @@ Microsoft 365 grupları, kullanıcıların iletişim ve işbirliği için kullan
 |[Proje ve Yol Haritası](https://support.microsoft.com/project)|Web tabanlı proje yönetimi araçları|
 |[SharePoint ekip sitesi](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|Grubunuzla ilgili bilgiler, bağlantılar ve içerik için merkezi bir depo|
 |[Stream](https://support.microsoft.com/microsoft-stream)|Video akış hizmeti|
-|[Teams](https://support.microsoft.com/teams)|Microsoft 365'te sohbet tabanlı çalışma alanı|
+|[Takım](https://support.microsoft.com/teams)|Microsoft 365'te sohbet tabanlı çalışma alanı|
 |[Yammer grubu](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)|Konuşma yapmak ve bilgi paylaşmak için ortak bir yer|
 
 Microsoft 365 Grupları, kuruluşunuzdaki grupları yönetmenize yardımcı olmak için bir süre sonu ilkesi, adlandırma kuralları ve engellenen sözcükler ilkesi gibi çeşitli idare denetimleri içerir. Gruplar üyeliği ve bu kaynak paketine erişimi denetlediğinden, grupları yönetmek Microsoft 365'te işbirliğini yönetmenin önemli bir parçasıdır.

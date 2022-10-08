@@ -16,19 +16,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 2dba3d88b2df64a5d3ee9890e42116fb239b41b4
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 9bef9d4503ed409d9bca0a094b69201ed3509efb
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811274"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68142135"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Otomatik bir soruşturmanın ayrıntılarını ve sonuçlarını görüntüleyin
 
@@ -81,7 +81,9 @@ Araştırmayla ilgili geçmiş, geçerli ve bekleyen etkinlikleri görmek için 
 Araştırma ayrıntıları görünümünde, aşağıdaki tabloda açıklanan **Araştırma grafı**, Uyarılar, **Cihazlar**, **Kimlikler**, **Anahtar bulguları**, **Varlıklar**, **Günlük** ve **Bekleyen eylemler** sekmeleriyle ilgili bilgileri görebilirsiniz. 
 
 > [!NOTE]
-> Araştırma ayrıntıları sayfasında gördüğünüz belirli sekmeler, aboneliğinizin içeriğine bağlıdır. Örneğin, aboneliğiniz Plan 2'Office 365 için Microsoft Defender içermiyorsa **Posta Kutuları** sekmesini görmezsiniz.
+> - Araştırma ayrıntıları sayfasında gördüğünüz belirli sekmeler, aboneliğinizin içeriğine bağlıdır. Örneğin, aboneliğiniz Plan 2'Office 365 için Microsoft Defender içermiyorsa **Posta Kutuları** sekmesini görmezsiniz.
+>
+> - Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.
 
 |Sekme|Açıklama|
 |---|---|

@@ -14,14 +14,16 @@ ms.author: macapara
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: e0e01cbb2d565f6daab6570b723e491b1fc1e179
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 44e49bab1f0db3eda9216f3b5f6ec0deaac24306
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811757"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68149857"
 ---
 # <a name="integration-with-microsoft-defender-for-cloud"></a>Bulut için Microsoft Defender ile tümleştirme
 
@@ -31,22 +33,22 @@ ms.locfileid: "67811757"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Bulut için Microsoft Defender
 
-Uç Nokta için Microsoft Defender kapsamlı bir Windows sunucusu koruma çözümü sağlamak için Bulut için Microsoft Defender ile tümleştirebilir. Bu tümleştirme ile Bulut için Microsoft Defender, Windows Sunucuları için gelişmiş tehdit algılama sağlamak üzere Uç Nokta için Defender'ın gücünü kullanabilir.
+Uç Nokta için Microsoft Defender kapsamlı bir Windows sunucusu koruma çözümü sağlamak için Bulut için Microsoft Defender ile tümleştirebilir. Bu tümleştirme sayesinde Bulut için Microsoft Defender, Windows Server'lar için gelişmiş tehdit algılama sağlamak üzere Uç Nokta için Defender'ın gücünü kullanabilir.
 
 Bu tümleştirmeye aşağıdaki özellikler dahildir:
 
-- Otomatik ekleme - Uç Nokta için Defender algılayıcısı, Bulut için Microsoft Defender'a eklenen Windows Sunucularında otomatik olarak etkinleştirilir. Bulut için Microsoft Defender ekleme hakkında daha fazla bilgi için bkz. [Tümleşik Uç Nokta için Microsoft Defender lisansını kullanma](/azure/security-center/security-center-wdatp).
+- Otomatik ekleme - Uç Nokta için Defender algılayıcısı, Bulut için Microsoft Defender eklenen Windows Sunucularında otomatik olarak etkinleştirilir. Bulut ekleme Microsoft Defender hakkında daha fazla bilgi için bkz. [Tümleşik Uç Nokta için Microsoft Defender lisansını kullanma](/azure/security-center/security-center-wdatp).
 
     > [!NOTE]
-    > Sunucular için Microsoft Defender ile Uç Nokta için Microsoft Defender arasındaki tümleştirme[, Windows Server 2019 ve Windows Sanal Masaüstü'nü (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview) destekleyecek şekilde genişletildi.
+    > Sunucular ve Uç Nokta için Microsoft Defender için Microsoft Defender arasındaki tümleştirme[, Windows Server 2019 ve Windows Sanal Masaüstü'nü (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview) destekleyecek şekilde genişletilmiştir.
 
-- Bulut için Microsoft Defender tarafından izlenen Windows sunucuları, Uç Nokta için Defender'da da kullanılabilir. Bulut için Microsoft Defender, istemciler ve sunucular arasında tek bir görünüm sağlayarak Uç Nokta için Defender kiracısına sorunsuz bir şekilde bağlanır.  Ayrıca, Uç Nokta için Defender uyarıları Bulut için Microsoft Defender konsolunda kullanılabilir.
-- Sunucu araştırması - Bulut için Microsoft Defender müşterileri, olası bir ihlalin kapsamını ortaya çıkarmak için ayrıntılı araştırma yapmak üzere Microsoft 365 Defender portalına erişebilir.
+- Bulut için Microsoft Defender tarafından izlenen Windows sunucuları Uç Nokta için Defender'da da kullanılabilir. Bulut için Microsoft Defender, istemciler ve sunucular arasında tek bir görünüm sağlayarak Uç Nokta için Defender kiracısına sorunsuz bir şekilde bağlanır.  Buna ek olarak, Uç Nokta için Defender uyarıları Bulut için Microsoft Defender konsolunda kullanılabilir.
+- Sunucu araştırması - Bulut müşterileri için Microsoft Defender, olası bir ihlalin kapsamını ortaya çıkarmak üzere ayrıntılı araştırma yapmak üzere Microsoft 365 Defender portalına erişebilir.
 
 > [!IMPORTANT]
 > - Sunucuları izlemek için Bulut için Microsoft Defender kullandığınızda, otomatik olarak bir Uç Nokta için Defender kiracısı oluşturulur (ABD kullanıcıları için ABD'de, Avrupa ve Birleşik Krallık kullanıcıları için AB'de).<br>
 Uç Nokta için Defender tarafından toplanan veriler, sağlama sırasında tanımlandığı gibi kiracının coğrafi konumunda depolanır.
-> - Bulut için Microsoft Defender'ı kullanmadan önce Uç Nokta için Defender kullanıyorsanız, daha sonra Bulut için Microsoft Defender ile tümleştirilseniz bile verileriniz kiracınızı oluştururken belirttiğiniz konumda depolanır.
+> - Bulut için Microsoft Defender kullanmadan önce Uç Nokta için Defender kullanıyorsanız, daha sonra Bulut için Microsoft Defender ile tümleştirseniz bile verileriniz kiracınızı oluştururken belirttiğiniz konumda depolanır.
 > - Yapılandırıldıktan sonra, verilerinizin depolandığı konumu değiştiremezsiniz. Verilerinizi başka bir konuma taşımanız gerekiyorsa, kiracıyı sıfırlamak için Microsoft Desteği'a başvurmanız gerekir. <br>
 Bu tümleştirmeyi kullanan sunucu uç noktası izlemesi, Office 365 GCC müşterileri için devre dışı bırakıldı.
 

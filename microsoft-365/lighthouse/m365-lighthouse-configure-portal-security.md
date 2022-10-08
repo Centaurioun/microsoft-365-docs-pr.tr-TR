@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için portal güvenliğini yapılandırmayı öğrenin.
-ms.openlocfilehash: de8c56712aade4cd12ac9db620bf2bab177086fa
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: dbadd9742e8b477bf4fa97e2556c37b0a3e3fe3b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67590776"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68193223"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>Microsoft 365 Lighthouse portal güvenliğini yapılandırma
 

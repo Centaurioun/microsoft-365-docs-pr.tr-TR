@@ -6,11 +6,13 @@ manager: scotv
 ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -19,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: Microsoft 365 hesaplarına erişimi engellemek ve engellemesini kaldırmak için PowerShell'i kullanma.
-ms.openlocfilehash: ffeac03f9f48e6531443a8f90a3d5fd3506172fe
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ab212909aa0fa664bee42ac7d5ca74b4b29f7994
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091621"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68163458"
 ---
 # <a name="block-microsoft-365-user-accounts-with-powershell"></a>PowerShell ile Microsoft 365 kullanıcı hesaplarını engelleme
 
 *Bu makale hem Microsoft 365 Kurumsal hem de Office 365 Kurumsal için geçerlidir.*
 
-bir Microsoft 365 hesabına erişimi engellediğinizde, hesabı kullanan herkesin oturum açmasını ve Microsoft 365 kuruluşunuzdaki hizmetlere ve verilere erişmesini engellersiniz. Tek veya birden çok kullanıcı hesabına erişimi engellemek için PowerShell'i kullanabilirsiniz.
+Bir Microsoft 365 hesabına erişimi engellediğinizde, microsoft 365 kuruluşunuzdaki hizmet ve verilere erişmek için herkesin hesabı kullanmasını engellersiniz. Tek veya birden çok kullanıcı hesabına erişimi engellemek için PowerShell'i kullanabilirsiniz.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph için Azure Active Directory PowerShell modülünü kullanma
 
@@ -127,7 +129,7 @@ Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential
 >[!Note]
 >PowerShell Core, Windows PowerShell modülü için Microsoft Azure Active Directory Modülünü ve adında *Msol* bulunan cmdlet'leri desteklemez. Bu cmdlet'leri Windows PowerShell çalıştırmanız gerekir.
 
-Bu örnek, kullanıcı hesabı *fabricec\@ litwareinc.com* erişimini engeller.
+Bu örnek, kullanıcı hesabı *doku litwareinc.com\@* erişimini engeller.
 
 ```powershell
 Set-MsolUser -UserPrincipalName fabricec@litwareinc.com -BlockCredential $true
@@ -174,4 +176,4 @@ Metin dosyasında listelenen hesapların engelini kaldırmak için aşağıdaki 
 
 [PowerShell ile Microsoft 365’i yönetme](manage-microsoft-365-with-microsoft-365-powershell.md)
 
-[Microsoft 365 için PowerShell ile Kullanmaya başlayın](getting-started-with-microsoft-365-powershell.md)
+[Microsoft 365 için PowerShell'i kullanmaya başlama](getting-started-with-microsoft-365-powershell.md)

@@ -8,17 +8,18 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom: ''
 description: Yöneticiler, Office 365 için Microsoft Defender Plan 2'deki Saldırı simülasyonu eğitimi kullanarak kimlik avı saldırılarının simülasyonunu yapmayı ve kullanıcılarını kimlik avı önleme konusunda eğitmeyi öğrenebilir.
 ms.subservice: mdo
-ms.openlocfilehash: 7983e1767565870cec1fb3457fc3466e99b0d8db
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: cfd17d6aeb21b05aef13c95489780ddcd209fbf0
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67474215"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68048934"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Office 365 için Defender'de Saldırı simülasyonu eğitimi ile kimlik avı saldırısı simülasyonu
 
@@ -84,7 +85,7 @@ Her yük için aşağıdaki ayrıntılar gösterilir:
 - **Yük adı**
 - **Dil**: Yük içeriğinin dili. Microsoft'un yük kataloğu (genel), filtrelenebilen 10'undan fazla dilde yük sağlar.
 - **Tıklama oranı**: Bu yüke kaç kişinin tıklamış olduğu.
-- **Tahmin edilen risk oranı**: Microsoft 365 genelinde yükün geçmiş verileri, bu yük tarafından tehlikeye atılacak kişilerin yüzdesini tahmin eder.
+- **Tahmin edilen risk oranı**: Microsoft 365 genelinde, bu yükte güvenliği tehlikeye atılacak kişilerin yüzdesini tahmin eden geçmiş veriler (yükü alan kullanıcıların/ toplam kullanıcı sayısı).
 - **Başlatılan simülasyonlar** , bu yükün diğer simülasyonlarda kaç kez kullanıldığını sayar.
 
 ![Ara simgesinde.](../../media/m365-cc-sc-search-icon.png) **Arama** kutusuna yük adının bir kısmını yazabilir ve sonuçları filtrelemek için Enter tuşuna basabilirsiniz.

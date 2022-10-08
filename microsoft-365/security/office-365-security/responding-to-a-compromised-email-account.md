@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: how-to
 ms.collection:
 - o365_security_incident_response
-- M365-security-compliance
+- m365-security
 - m365solution-smb
 - highpri
 ms.custom:
@@ -21,12 +21,12 @@ search.appverid:
 description: Microsoft 365'te bulunan araçları kullanarak güvenliği aşılmış bir e-posta hesabını tanımayı ve yanıtlamayı öğrenin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a4b491a8a1fa3b8db000874357c5d5dbfbe91d38
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: c2bc977d80cb2226f3348cf4d53715c5e079756e
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67850226"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68054940"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Güvenliği Aşılmış Email Hesabına Yanıt Verme
 

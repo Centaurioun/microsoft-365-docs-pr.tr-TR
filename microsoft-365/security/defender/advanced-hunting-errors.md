@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: 0839bd8c82defd79193c040c54c4b83afc7d24ce
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 3886e1b8e70ba16e02e039171b60c4a209a83ec4
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480094"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68049418"
 ---
 # <a name="handle-advanced-hunting-errors"></a>Gelişmiş tehdit avcılığı hatalarını işleme
 

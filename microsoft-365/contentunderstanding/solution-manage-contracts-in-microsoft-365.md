@@ -11,16 +11,18 @@ ms.service: microsoft-365-enterprise
 ms.collection:
 - m365solution-managecontracts
 - m365solution-overview
+- highpri
+- m365initiative-syntex
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: SharePoint Syntex, SharePoint Listeleri, Microsoft Teams ve Power Automate'in Microsoft 365 çözümünü kullanarak sözleşmeleri yönetmeyi öğrenin.
-ms.openlocfilehash: 6d925999c70e49ec17dcb04925256a2b229007bf
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: edb05502ff9f4a84f194e4f991307886ce85bd46
+ms.sourcegitcommit: 674dfa2cb2f20546d2f7822e09bacf0e12e2718b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812270"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68041183"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Microsoft 365 çözümü kullanarak sözleşmeleri yönetme
 

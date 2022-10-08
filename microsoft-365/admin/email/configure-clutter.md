@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -22,21 +23,21 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: 'Exchange PowerShell kullanarak kuruluşunuzdaki tüm veya belirli kullanıcılar için İkincil özelliğini etkinleştirmeyi veya devre dışı bırakmayı öğrenin. '
-ms.openlocfilehash: 64c11b2a8bbce3747727c458a4427f5c0e1b135b
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 5c625bda18a1e1b30ecd33edd868ffbb040af1ef
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437205"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68193993"
 ---
 # <a name="configure-microsoft-365-clutter-for-your-organization"></a>Kuruluşunuz için Microsoft 365 İkincil'i yapılandırma
 
 > [!TIP]
 > [Odaklanmış Gelen Kutusu](../setup/configure-focused-inbox.md) İkincil'in yerini alacak. Daha fazla bilgi edinin: [Odaklanmış Gelen Kutusu'nu ve İkincil planlarımızı güncelleştirme](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
   
-Yönetici olarak, Microsoft 365 İkincil özelliğini yönetmeniz gerekebilir. Kuruluşunuzdaki kullanıcılar için İkincil özelliğini açmak/kapatmak için PowerShell'Exchange kullanmanız gerekir. (Kişiler şu yönergeleri kullanarak bu özelliği açabilir/kapatabilir: [Outlook İkincil özelliğini kapatın/açın](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c).
+Yönetici olarak, Microsoft 365'teki İkincil özelliğini yönetmeniz gerekebilir. Kuruluşunuzdaki kullanıcılar için İkincil özelliğini açmak/kapatmak için Exchange PowerShell'i kullanmanız gerekir. (Kişiler şu yönergeleri kullanarak bu özelliği açabilir/kapatabilir: [Outlook'ta İkincil özelliğini kapatma/açma](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c).
   
-[PowerShell'i Exchange kullanma hakkında](/powershell/exchange/exchange-online-powershell) ayrıntılı bilgi [için PowerShell'i Exchange Online için PowerShell'i Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) ve Bağlan ile kullanma bölümüne bakın. En azından Exchange Hizmet yöneticisi rolüne ve PowerShell ile Exchange Online bağlanabilen bir hesabınız olmalıdır. 
+Exchange [PowerShell'i kullanmayla ilgili ayrıntılar için PowerShell'i Exchange Online ile kullanma](/powershell/exchange/exchange-online-powershell) ve [Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell) makalesine göz atın. En azından Exchange Hizmeti yönetici rolüne ve PowerShell ile Exchange Online bağlanabilen bir hesabınız olması gerekir. 
   
 ## <a name="turn-clutter-on-using-exchange-powershell"></a>Exchange PowerShell kullanarak İkincil özelliğini açma
 
@@ -74,7 +75,7 @@ Yönetici olarak, Exchange PowerShell kullanarak İkincil özelliğini yeniden e
     
 - İkincil veya Odaklanmış Gelen Kutusu etkin değilse: 
     
-  - Kullanıcının Posta Ayarlar hem İkincil hem de Odaklanmış Gelen Kutusu seçenekler olarak görünür
+  - Hem İkincil hem de Odaklanmış Gelen Kutusu kullanıcının Posta Ayarları'nda seçenekler olarak görünür
     
  **Outlook.com kullanıyorsanız:**
   
@@ -88,7 +89,7 @@ Yönetici olarak, Exchange PowerShell kullanarak İkincil özelliğini yeniden e
     
 - İkincil veya Odaklanmış Gelen Kutusu etkin değilse: 
     
-  - Kullanıcının Posta Ayarlar hem İkincil hem de Odaklanmış Gelen Kutusu seçenekler olarak görünür
+  - Hem İkincil hem de Odaklanmış Gelen Kutusu kullanıcının Posta Ayarları'nda seçenekler olarak görünür
     
 - Kullanıcı geçmişte bir noktada Odaklanmış Gelen Kutusu'nu etkinleştirdiyse:
     
@@ -100,6 +101,6 @@ Yönetici olarak, Exchange PowerShell kullanarak İkincil özelliğini yeniden e
     
 ## <a name="related-content"></a>İlgili içerik
 
-[Outlook düşük öncelikli iletileri sıralamak için İkincil özelliğini kullanma](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0) (makale)\
+[Outlook'ta düşük öncelikli iletileri sıralamak için İkincil özelliğini kullanma](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0) (makale)\
 [OWA'da düşük öncelikli iletileri sıralamak için İkincil özelliğini kullanma](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce) (makale)\
-[Outlook İkincil özelliğini kapatma](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c) (makale)
+[Outlook'ta İkincil özelliğini kapatma](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c) (makale)

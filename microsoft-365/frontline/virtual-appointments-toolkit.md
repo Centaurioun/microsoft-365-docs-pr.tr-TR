@@ -18,17 +18,18 @@ ms.collection:
 - m365solution-healthcare
 - m365solution-scenario
 - m365-frontline
+- highpri
 ms.reviewer: ''
 description: Müşterilerinizin kuruluşunuzla sanal randevuların nasıl kullanılacağını anlamasına yardımcı olmak için web sitenize ekleyebileceğiniz özelleştirilebilir kaynaklar ve bilgi grafikleri.
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: e0ac855943bb0cd9ddb7279252b1df6ae9440ffc
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: a0844c3602af089660d4bbf1be8a5e475f8fe208
+ms.sourcegitcommit: 597aad78b6952b4a5642a84dddf3fe3c8cc8eeff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67277059"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67999891"
 ---
 # <a name="help-your-clients-and-customers-use-virtual-appointments"></a>İstemcilerinizin ve müşterilerinizin sanal randevuları kullanmasına yardımcı olma
 

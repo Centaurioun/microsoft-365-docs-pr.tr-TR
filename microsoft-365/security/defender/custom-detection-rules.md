@@ -17,15 +17,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-m365-defender
+- tier2
 ms.topic: article
-ms.openlocfilehash: 100eb64b5c99cb2292c7b10bb2345ebf634b61e6
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 304883b0d0ba554c5f2f0d4044c03445662d5fe9
+ms.sourcegitcommit: ef0c7a914782999d148c79240b2d3f7be53e5690
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67477901"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68138177"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Özel algılama kuralları oluşturma ve yönetme
 
@@ -127,9 +128,9 @@ Sorguyu sorgu düzenleyicisinde kullanarak **Algılama kuralı oluştur'u** seç
 Yeni bir kural kaydettiğinizde çalıştırılır ve son 30 günlük verilerin eşleşmelerini denetler. Kural daha sonra sabit aralıklarla yeniden çalıştırılır ve seçtiğiniz sıklık temelinde bir geri arama süresi uygular:
 
 - **Her 24 saatte** bir— 24 saatte bir çalışır ve son 30 güne ait verileri denetler
-- **Her 12 saatte** bir— 12 saatte bir çalışır ve son 24 saatteki verileri denetler
-- **Her 3 saatte** bir— 3 saatte bir çalışır ve son 6 saatteki verileri denetler
-- **Saatte bir**— saatlik çalışır ve son 2 saatdeki verileri denetler
+- **Her 12 saatte** bir— 12 saatte bir çalışır ve son 48 saatteki verileri denetler
+- **Her 3 saatte** bir— 3 saatte bir çalışır ve son 12 saatteki verileri denetler
+- **Saatte bir**—son 4 saatteki verileri denetleerek saatlik olarak çalışır
 
 Bir kuralı düzenlediğinizde, bir sonraki çalışma zamanında uygulanan değişiklikler ayarladığınız sıklık değerine göre zamanlanmış olarak çalıştırılır. Kural sıklığı, alım süresini değil olay zaman damgasını temel alır.
 
@@ -152,7 +153,7 @@ Her varlık türü (posta kutusu, kullanıcı veya cihaz) için yalnızca bir s�
 Bu eylemler, sorgu sonuçlarının sütunundaki `DeviceId` cihazlara uygulanır:
 - **Cihazı yalıtma**— tam ağ yalıtımı uygulamak için Uç Nokta için Microsoft Defender kullanır ve cihazın herhangi bir uygulama veya hizmete bağlanmasını önler. [Makine yalıtımı Uç Nokta için Microsoft Defender hakkında daha fazla bilgi edinin](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
 - **Araştırma paketi toplama**— ZIP dosyasındaki cihaz bilgilerini toplar. [Uç Nokta için Microsoft Defender araştırma paketi hakkında daha fazla bilgi edinin](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
-- **Virüsten koruma taraması çalıştırma**—cihazda tam bir Microsoft Defender Virüsten Koruma taraması gerçekleştirir
+- **Virüsten koruma taraması çalıştırma**—cihazda tam Microsoft Defender Virüsten Koruma taraması gerçekleştirir
 - **Araştırma başlatma**—cihazda [otomatik bir araştırma](m365d-autoir.md) başlatır
 - **Uygulama yürütmeyi kısıtlayın**; cihazdaki kısıtlamaları yalnızca Microsoft tarafından verilen bir sertifikayla imzalanan dosyaların çalışmasına izin verecek şekilde ayarlar. [Uç Nokta için Microsoft Defender ile uygulama kısıtlamaları hakkında daha fazla bilgi edinin](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)
 

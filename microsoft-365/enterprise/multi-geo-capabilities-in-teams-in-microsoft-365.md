@@ -15,14 +15,15 @@ ms.collection:
 - SPO_Content
 - m365solution-scenario
 - m365solution-spintranet
+- highpri
 ms.localizationpriority: medium
 description: Teams'in Microsoft 365 Multi-Geo ile nasıl çalıştığı hakkında bilgi edinin.
-ms.openlocfilehash: 9b00b36fb56259361c2cdf8ee1b7cd020923e7d8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0c70bc42dc284c9dd2a766be0b0c409bf254e9c6
+ms.sourcegitcommit: 674dfa2cb2f20546d2f7822e09bacf0e12e2718b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67698341"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68041821"
 ---
 # <a name="multi-geo-capabilities-in-microsoft-teams"></a>Microsoft Teams'deki Multi-Geo özellikleri
 

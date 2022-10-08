@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection:
 - highpri
 - SPO_Content
@@ -18,12 +18,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Kuruluşunuzun dışındaki kişilerle işbirliği yapmak için Microsoft Teams'de paylaşılan kanalları etkinleştirmeyi öğrenin.
-ms.openlocfilehash: 6f188f82e6f1c17cfc963449872e1c88a1c205ac
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: eb35cdc235edfe9e5f0a6ae54c0978e0cfdb49d9
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730693"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987334"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>Paylaşılan kanalda dış katılımcılarla işbirliği yapma
 

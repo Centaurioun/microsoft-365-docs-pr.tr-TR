@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -21,21 +22,21 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: "Kullanım analizinin bir API'ye nasıl bağlanıp çeşitli Microsoft 365 hizmetlerinin aylık kullanım eğilimini sağladığını öğrenin.  "
-ms.openlocfilehash: 05b8a6d9a69cc6347b4d2cdcfbdeaa26bd479cbd
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 3fc65dce334f0db5146bc72c1b2791bdfb6c66c0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65620992"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68163963"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 kullanım analizi veri modeli
 
 ## <a name="data-for-the-microsoft-365-usage-analytics-tables"></a>Microsoft 365 kullanım analizi tablolarına yönelik veriler
 
-Microsoft 365 kullanım analizi, çok boyutlu bir veri modelini kullanıma sunan bir API'ye bağlanır. Microsoft 365 kullanım analizinin verilerini oluşturmak için kullandığı API'ler çeşitli, genel kullanıma açık Graph API'lerdendir. Microsoft 365 kullanım analizi API'sinin işlevi genel olarak kullanılamaz.
+Microsoft 365 kullanım analizi, çok boyutlu bir veri modelini kullanıma sunan bir API'ye bağlanır. Microsoft 365 kullanım analizinin verilerini oluşturmak için kullandığı API'ler çeşitli, genel kullanıma açık Graph API'lerindendir. Microsoft 365 kullanım analizi API'sinin işlevi genel olarak kullanılamaz.
   
 > [!NOTE]
-> Daha fazla bilgi için bkz[. Microsoft Graph'da Microsoft 365 kullanım raporlarıyla çalışma](/graph/api/resources/report). 
+> Daha fazla bilgi için bkz [. Microsoft Graph'ta Microsoft 365 kullanım raporlarıyla çalışma](/graph/api/resources/report). 
   
 Bu API, çeşitli Microsoft 365 hizmetlerinin aylık kullanım eğilimi hakkında bilgi sağlar. API'ler tarafından tam olarak hangi verilerin döndürüldüğünü görmek için aşağıdaki bölümde yer alan tabloya başvurun.
   
@@ -51,7 +52,7 @@ Bu API, çeşitli Microsoft 365 hizmetlerinin aylık kullanım eğilimi hakkınd
 |Kiracı SharePoint Online Kullanımı  <br/> |SharePoint siteleri hakkında, Takım veya Gruplar sitelerini kapsayan toplam site sayısı, sitedeki belge sayısı, etkinlik türüne göre dosya sayısı ve kullanılan depolama alanı gibi verileri içerir.  <br/> |Geçerli kısmi ay dahil olmak üzere 12 aylık sıralı bir dönem için ay sonu durum verilerini içerir.  <br/> |
 |Kiracı OneDrive İş Kullanımı  <br/> |OneDrive hesaplarıyla ilgili olarak hesap sayısı, OneDrive'lardaki belge sayısı, kullanılan depolama alanı, etkinlik türüne göre dosya sayısı gibi verileri içerir.  <br/> |Geçerli kısmi ay dahil olmak üzere 12 aylık sıralı bir dönem için ay sonu durum verilerini içerir.  <br/> |
 |Kiracı Microsoft 365 Grupları Kullanımı  <br/> |Posta Kutusu, SharePoint ve Yammer gibi Microsoft 365 Grupları kullanımıyla ilgili verileri içerir.  <br/> |Geçerli kısmi ay dahil olmak üzere 12 aylık sıralı bir dönem için ay sonu durum verilerini içerir.  <br/> |
-|Kiracı Office Etkinleştirmesi  <br/> |Office abonelik etkinleştirme sayısı, cihaz başına etkinleştirme sayısı (Android/iOS/Mac/PC), hizmet planına göre etkinleştirmeler (Kurumlar için Microsoft 365 Uygulamaları, Visio, Project gibi) hakkındaki verileri içerir.  <br/> |Geçerli kısmi ay dahil olmak üzere 12 aylık sıralı bir dönem için ay sonu durum verilerini içerir.  <br/> |
+|Kiracı Office Etkinleştirmesi  <br/> |Office aboneliği etkinleştirme sayısı, cihaz başına etkinleştirme sayısı (Android/iOS/Mac/PC), hizmet planına göre etkinleştirmeler (örneğin, Kurumlar için Microsoft 365 Uygulamaları, Visio, Project) hakkındaki verileri içerir.  <br/> |Geçerli kısmi ay dahil olmak üzere 12 aylık sıralı bir dönem için ay sonu durum verilerini içerir.  <br/> |
 |Kullanıcı Durumu  <br/> |Kullanıcı görünen adı, kullanıcıya atanan ürünler, konum, bölüm, unvan, şirket dahil olmak üzere kullanıcılarla ilgili meta veriler içerir. Bu veriler, son tam ay içinde lisans atanmış kullanıcılarla ilgilidir. Her kullanıcı benzersiz olarak bir kullanıcı kimliğiyle temsil edilir.  <br/> |Bu veriler, son tam ay içinde bir lisans atanmış kullanıcılarla ilgilidir.  <br/> |
 |Kullanıcı Etkinliği  <br/> |Lisanslı kullanıcılar tarafından gerçekleştirilen etkinlikler hakkında kullanıcı başına düzeyinde bilgiler içerir.  <br/> Bu veri tablosunda döndürülen ürün etkinlikleri hakkında bilgi edinmek için bkz. [etkin kullanıcı tanımı](active-user-in-usage-reports.md).      <br/> |Bu veriler, son tam ay içinde hizmetlerin herhangi birinde etkinlik gerçekleştirmiş kullanıcılarla ilgilidir.  <br/> |
    
@@ -67,13 +68,13 @@ Bu tablo, son tam ay içinde kendilerine lisans atanmış olan tüm kullanıcıl
 |Timeframe  <br/> |Bu tablonun hangi aya ait verileri içerdiğini gösteren değer.  <br/> |
 |UPN  <br/> |Diğer dış veri kaynaklarıyla birleştirebilmek amacıyla kullanıcıyı benzersiz olarak tanımlayan kullanıcı asıl adı.  <br/> |
 |Displayname  <br/> |Kullanıcının görünen adı.  <br/> |
-|IDType  <br/> |Kullanıcı Yammer kimliğini kullanarak bağlanan Yammer bir kullanıcıysa kimlik türü 1 veya Microsoft 365 kimliğini kullanarak Yammer bağlanıyorsa 0 olarak ayarlanır.  <br/> Değer, bu kullanıcının Microsoft 365 kimliğiyle değil Yammer kimliğiyle Yammer bağlandığını göstermek için 1'dir  <br/> |
-|HasLicenseEXO  <br/> |Kullanıcıya bir lisans atandıysa ve ayın son gününde Exchange kullanmak üzere etkinleştirildiyse true olarak ayarlayın.  <br/> |
+|IDType  <br/> |Kullanıcı Yammer kimliğini kullanarak bağlanan bir Yammer kullanıcısıysa kimlik türü 1 veya Microsoft 365 kimliğini kullanarak Yammer'a bağlanıyorsa 0 olarak ayarlanır.  <br/> Değer, bu kullanıcının Microsoft 365 kimliğiyle değil Yammer kimliğiyle Yammer'a bağlandığını göstermek için 1'dir  <br/> |
+|HasLicenseEXO  <br/> |Kullanıcıya bir lisans atandıysa ve ayın son gününde Exchange'i kullanmak üzere etkinleştirildiyse true olarak ayarlayın.  <br/> |
 |HasLicenseODB  <br/> |Kullanıcıya bir lisans atandıysa ve ayın son gününde OneDrive İş kullanmak üzere etkinleştirildiyse true olarak ayarlayın.  <br/> |
 |HasLicenseSPO  <br/> |Kullanıcıya bir lisans atandıysa ve ayın son gününde SharePoint Online'ı kullanacak şekilde etkinleştirildiyse true olarak ayarlayın.  <br/> |
-|HasLicenseYAM  <br/> |Kullanıcıya bir lisans atandıysa ve ayın son gününde Yammer kullanmak üzere etkinleştirildiyse true olarak ayarlayın.  <br/> |
-|HasLicenseSFB  <br/> |Kullanıcıya bir lisans atandıysa ve ayın son gününde İş İçin Skype kullanmak üzere etkinleştirildiyse true olarak ayarlayın.  <br/> |
-|HasLicenseTeams  <br/> |Kullanıcıya bir lisans atanırsa true olarak ayarlayın ve ayın son gününde Microsoft Teams kullanımını etkinleştirin.  <br/> |
+|HasLicenseYAM  <br/> |Kullanıcıya bir lisans atandıysa ve yammer'ı ayın son gününde kullanmak üzere etkinleştirildiyse true olarak ayarlayın.  <br/> |
+|HasLicenseSFB  <br/> |Kullanıcıya bir lisans atandıysa ve ayın son gününde Skype Kurumsal'ı kullanmak üzere etkinleştirildiyse true olarak ayarlayın.  <br/> |
+|HasLicenseTeams  <br/> |Kullanıcıya bir lisans atandığında true olarak ayarlayın ve ayın son gününde Microsoft Teams'i kullanmayı etkinleştirin.  <br/> |
 |Şirket  <br/> |Bu kullanıcı için Azure Active Directory'de temsil edilen şirket verileri.  <br/> |
 |Bölüm  <br/> |Bu kullanıcı için Azure Active Directory'de temsil edilen bölüm verileri.  <br/> |
 |LocationCity  <br/> |Bu kullanıcı için Azure Active Directory'de temsil edilen şehir verileri.  <br/> |
@@ -81,8 +82,8 @@ Bu tablo, son tam ay içinde kendilerine lisans atanmış olan tüm kullanıcıl
 |LocationState  <br/> |Bu kullanıcı için Azure Active Directory'de temsil edilen eyalet verileri.  <br/> |
 |KonumOffice  <br/> |Kullanıcının ofisi.  <br/> |
 |Başlık  <br/> |Bu kullanıcı için Azure Active Directory'de temsil edilen unvan verileri.  <br/> |
-|Silindi  <br/> |Kullanıcı son tam ay içinde Microsoft 365 silindiyse True.  <br/> |
-|SilinmişTarih  <br/> |Kullanıcının Microsoft 365 silindiği tarih.  <br/> |
+|Silindi  <br/> |Kullanıcının son tam ay içinde Microsoft 365'ten silinmesi durumunda true.  <br/> |
+|SilinmişTarih  <br/> |Kullanıcının Microsoft 365'ten silindiği tarih.  <br/> |
 |YAM_State  <br/> |Yammer sistemindeki kullanıcının durumları etkin, silinmiş veya askıya alınmış olabilir.  <br/> |
 |YAM_ActivationDate  <br/> |Kullanıcının Yammer'da etkin durumuna geçtiği tarih.  <br/> |
 |YAM_DeletionDate  <br/> |Kullanıcının Yammer'da silinmiş durumuna geçtiği tarih.  <br/> |
@@ -95,7 +96,7 @@ Bu tablo, önceki ay içinde hizmetlerin herhangi birinde etkinlik gerçekleşti
 |**Sütun adı**|**Sütun açıklaması**|
 |:-----|:-----|
 |Userıd  <br/> |Kullanıcıyı temsil eden ve veri kümesindeki diğer veri tablolarıyla birleştirmeyi etkinleştiren benzersiz kullanıcı kimliği.  <br/> |
-|IDType  <br/> |Kullanıcı Yammer kimliğini kullanarak bağlanan Yammer bir kullanıcıysa kimlik türü 1 veya Microsoft 365 kimliğini kullanarak Yammer bağlanıyorsa 0 olarak ayarlanır.  <br/> Değer, bu kullanıcının Microsoft 365 kimliğiyle değil Yammer kimliğiyle Yammer bağlandığını göstermek için 1'dir  <br/> |
+|IDType  <br/> |Kullanıcı Yammer kimliğini kullanarak bağlanan bir Yammer kullanıcısıysa kimlik türü 1 veya Microsoft 365 kimliğini kullanarak Yammer'a bağlanıyorsa 0 olarak ayarlanır.  <br/> Değer, bu kullanıcının Microsoft 365 kimliğiyle değil Yammer kimliğiyle Yammer'a bağlandığını göstermek için 1'dir  <br/> |
 |Timeframe  <br/> |Bu tablonun hangi aya ait verileri temsil ettiğini gösteren değer.  <br/> |
 |EXO_EmailSent  <br/> |Gönderilen e-posta sayısı.  <br/> |
 |EXO_EmailReceived  <br/> |Alınan e-posta sayısı.  <br/> |
@@ -134,9 +135,9 @@ Bu tablo, önceki ay içinde hizmetlerin herhangi birinde etkinlik gerçekleşti
 |Teams_CallParticipate  <br/> |Kullanıcının katıldığı çağrı sayısı.  <br/> |
 |Teams_MeetingParticipate  <br/> |Kullanıcının katıldığı toplantı sayısı.  <br/> |
 |Teams_HasOtherAction  <br/> |Kullanıcı Microsoft Teams'de diğer eylemler gerçekleştirdiğinde Boole değeri.  <br/> |
-|YAM_MessagePost  <br/> |Bu kullanıcının yayınladığı Yammer ileti sayısı.  <br/> |
-|YAM_MessageLiked  <br/> |Bu kullanıcının beğendiği Yammer ileti sayısı.  <br/> |
-|YAM_MessageRead  <br/> |Bu kullanıcının okuduğu Yammer ileti sayısı.  <br/> |
+|YAM_MessagePost  <br/> |Bu kullanıcının yayınladığı Yammer iletilerinin sayısı.  <br/> |
+|YAM_MessageLiked  <br/> |Bu kullanıcının beğendiği Yammer iletilerinin sayısı.  <br/> |
+|YAM_MessageRead  <br/> |Bu kullanıcının okuduğu Yammer iletilerinin sayısı.  <br/> |
 |SFB_P2PSummary  <br/> |Bu kullanıcının katıldığı eşler arası oturum sayısı.  <br/> |
 |SFB_ConfOrgSummary  <br/> |Bu kullanıcının düzenlediği konferans oturumu sayısı.  <br/> |
 |SFB_ConfPartSummary  <br/> |Bu kullanıcının katıldığı konferans oturumu sayısı.  <br/> |
@@ -146,14 +147,14 @@ Bu tablo, önceki ay içinde hizmetlerin herhangi birinde etkinlik gerçekleşti
    
 ### <a name="data-table---tenant-product-usage"></a>Veri tablosu - Kiracı Ürün Kullanımı
 
-Bu tablo, Microsoft 365 içindeki her ürün için etkinleştirme, etkin, geri dönen ve ilk kez kullananlar açısından aylık benimseme verileri sağlar. Microsoft 365 değerleri, ürünlerden herhangi birinde etkin kullanımı temsil eder.
+Bu tablo, Microsoft 365'teki her ürün için etkinleştirme, etkin, geri dönen ve ilk kez kullananlar açısından aylık benimseme verileri sağlar. Microsoft 365 değerleri, ürünlerden herhangi birinde etkin kullanımı temsil eder.
   
 |**Sütun adı**|**Sütun açıklaması**|
 |:-----|:-----|
 |Ürün  <br/> |Kullanım bilgileri özetlenen ürünlerin adı. Ürün sütunundaki Microsoft 365 değeri, ürünlerin herhangi birindeki etkinliği temsil eder  <br/> |
-|Zaman Çerçevesi  <br/> |Ay değeri. İçinde bulunulan kısmi ay dahil son 12 ay için ürün başına her ay ayrı bir satırda verilir.  <br/> |
+|Zaman Çerçevesi  <br/> |Month value. There will be one row per product per month for the last 12 months including the current partial month.  <br/> |
 |EnabledUsers  <br/> |Bir kullanıcı ayın bir bölümü için etkinleştirildiyse, zaman çerçevesi değeri için ürünü kullanmak üzere etkinleştirilen kullanıcı sayısı yine de sayılır.  <br/> |
-|ActiveUsers  <br/> |Üründe zaman çerçevesi değeri için kasıtlı bir etkinlik gerçekleştiren kullanıcı sayısı.  <br/> Bir kullanıcı üründeki temel etkinliklerden birini gerçekleştirdiyse, ilgili ayda ürün için etkin olarak sayılır. Temel etkinlikler **Kiracı Ürün Etkinliği** tablosunda sağlanmıştır.  <br/> |
+|ActiveUsers  <br/> |Üründe zaman çerçevesi değeri için kasıtlı bir etkinlik gerçekleştiren kullanıcı sayısı.  <br/> A user is counted as active for a product in a particular month, if they have performed one of the key activities in the product. The key activities are available in the **Tenant Product Activity** table.  <br/> |
 |KümülatifActiveUsers  <br/> |Bir ürünü kullanacak şekilde etkinleştirilmiş ve yeni kullanım sisteminde veri toplama işlemi başladığından beri zaman çerçevesi ayına kadar ürünü kullanmış olan kullanıcı sayısı.  <br/> |
 |MoMReturningUsers  <br/> |Zaman çerçevesi ayında etkin olan ve bir önceki ay da etkin olmuş kullanıcı sayısı.  <br/> |
 |FirstTimeUsers  <br/> |Yeni kullanım sisteminde veri toplama işlemi başladığından beri ilk kez zaman çerçevesinde etkin olmuş kullanıcı sayısı.  <br/> Bir kullanıcının bu yeni raporlama sisteminde veri toplama işlemi başladığından beri ilk kez etkinlik gerçekleştirdiğini algılarsak, bu kullanıcı ilgili ay için ilk kez kullananlar arasında sayılır. İlk kez kullanıcı olarak sayıldığında, bu kullanıcının etkinliğinde büyük bir boşluk olsa bile, bir daha asla ilk kez kullanan kullanıcı olarak sayılmaz  <br/> |
@@ -165,8 +166,8 @@ Bu tablo, ürünlerdeki çeşitli etkinlikler için aylık etkinlik toplamları 
   
 |**Sütun adı**|**Sütun açıklaması**|
 |:-----|:-----|
-|Zaman Çerçevesi  <br/> |Ay değeri. İçinde bulunulan kısmi ay dahil son 12 ay için ürün başına her ay ayrı bir satırda verilir.  <br/> |
-|Ürün  <br/> |Kullanım verilerinin kullanılabildiği Microsoft 365 ürünün adı.  <br/> |
+|Zaman Çerçevesi  <br/> |Month value. There will be one row per product per month for the last 12 months including the current partial month.  <br/> |
+|Ürün  <br/> |Kullanım verilerinin kullanılabildiği Microsoft 365'in içindeki ürünün adı.  <br/> |
 |Etkinlik  <br/> |Bir üründe, ürünün etkin olarak kullanıldığını göstermek için kullanılan etkinliğin adı.  <br/> |
 |ActivityCount  <br/> |Bu, tüm etkin kullanıcıları kapsayacak şekilde üründe gerçekleştirilen her etkinlik için sayılan toplam etkinlik sayısıdır.  <br/> **Not:** SharePoint Online ve OneDrive İş etkinlikleri için bu değer, kullanıcıların etkileşim gerçekleştirdiği farklı belge sayısını temsil eder.  <br/> |
 |ActiveUserCount  <br/> |Ürün içinde etkinliği gerçekleştiren kullanıcı sayısı.  <br/> |
@@ -179,7 +180,7 @@ Bu tablo, kullanıcı posta kutusu olan tüm lisanslı Exchange Online kullanıc
   
 |**Sütun adı**|**Sütun açıklaması**|
 |:-----|:-----|
-|TotalMailboxes  <br/> |Microsoft 365 aboneliği için kullanıcı posta kutularının sayısı.  <br/> |
+|TotalMailboxes  <br/> |Microsoft 365 aboneliği için kullanıcı posta kutusu sayısı.  <br/> |
 |IssueWarningQuota  <br/> |Tüm kullanıcıların posta kutuları arasında uyarı verme kotası.  <br/> |
 |ProhibitSendQuota  <br/> |Tüm kullanıcı posta kutularında gönderimi yasaklamak için toplam kota.  <br/> |
 |ProhibitSendReceiveQuota  <br/> |Tüm kullanıcı posta kutularında gönderim ve alımı yasaklamak için toplam kota.  <br/> |
@@ -194,11 +195,11 @@ Bu tablo, kullanıcı posta kutusu olan tüm lisanslı Exchange Online kullanıc
    
 ### <a name="data-table---tenant-client-usage"></a>Veri tablosu - Kiracı İstemci Kullanımı
 
-Bu tablo, kullanıcıların Exchange Online, Skype Kurumsal ve Yammer bağlanmak için kullandığı istemciler hakkında aylık özet verileri sağlar. Bu tabloda henüz SharePoint Online ve OneDrive İş için istemci kullanım verileri yoktur.
+Bu tablo, kullanıcıların Exchange Online, Skype Kurumsal ve Yammer'a bağlanmak için kullandığı istemciler hakkında aylar boyunca özet veriler sağlar. Bu tabloda henüz SharePoint Online ve OneDrive İş için istemci kullanım verileri yoktur.
   
 |**Sütun adı**|**Sütun açıklaması**|
 |:-----|:-----|
-|Ürün  <br/> |İstemci kullanım verilerinin kullanılabildiği Microsoft 365 ürünün adı.  <br/> |
+|Ürün  <br/> |Microsoft 365'in içinde istemci kullanım verilerinin kullanılabildiği ürünün adı.  <br/> |
 |Clientıd  <br/> |Ürüne bağlanmak için kullanılan her cihazın adı.  <br/> |
 |UserCount  <br/> |Her ürün için istemcilerin her birini kullanan kullanıcı sayısı.  <br/> |
 |Zaman Çerçevesi  <br/> |Ay değeri  <br/> |
@@ -217,8 +218,8 @@ Bu tablo, SharePoint Online sitelerinin kullanımı veya etkinliği hakkında ay
 |ActivityType  <br/> |Çeşitli dosya etkinliği türlerini (tümü/etkin dosyalar/ DIŞ/İÇ paylaşılan dosyalar/eşitlenen dosyalar) kaydeden site sayısı.  <br/> Gerçekleştirilen dosya etkinliklerinden herhangi birini temsil eder.  <br/> |
 |SitesWithOwnerActivities  <br/> |Site sahibinin kendi sitelerinde belirli bir dosya etkinliği gerçekleştirdiği etkin site sayısı. Site sahibini PowerShell komutu **get-sposite'den** alabilirsiniz. Bu, siteden sorumlu kişidir.   <br/> |
 |SitesWithNonOwnerActivities  <br/> |Sitelerde site sahibi dışındaki kullanıcıların belirli bir dosya etkinliği gerçekleştirdiği etkin sitelerin ilgili aya ait toplam sayısı. Site sahibini PowerShell komutu **get-sposite'den** alabilirsiniz. Bu, siteden sorumlu kişidir. <br/> |
-|ActivityTotalSites  <br/> |Zaman çerçevesi içinde etkinlik kaydeden site sayısı. Bir sitede zaman çerçevesinin başlarında etkinlik gerçekleşmiş ve zaman çerçevesinin sonuna kadar site silinmişse bu site yine de ilgili zaman çerçevesi için toplam etkin site sayısına dahil edilir.  <br/> |
-|Zaman Çerçevesi  <br/> |Bu sütunda tarih değeri yer alır. Takvim tablosu için çoğa bir ilişkisi olarak kullanılır.  <br/> |
+|ActivityTotalSites  <br/> |Number of sites that recorded any activity during the timeframe. If a site that had activity earlier in the timeframe, and was deleted by the end of the timeframe, it would still be counted in the active site total for that timeframe.  <br/> |
+|Zaman Çerçevesi  <br/> |This column has the date value. Used as Many to one relationship for Calendar table.  <br/> |
 |İçerik Tarihi  <br/> |Zaman çerçevesi geçerli ayı gösteriyorsa, bu değer geçerli ayda en son hangi tarihe ait veriler olduğunu gösterir.  <br/> Zaman çerçevesi önceki ayı gösteriyorsa, bu değer zaman çerçevesi ayının son tarihini gösterir.  <br/> |
    
 ### <a name="data-table---tenant-onedrive-usage"></a>Veri tablosu - Kiracı OneDrive Kullanımı
@@ -230,12 +231,12 @@ Bu tablo, OneDrive hesaplarıyla ilgili olarak hesap sayısı, OneDrive hesaplar
 |Site Türü  <br/> |Değer "OneDrive"dır.  <br/> |
 |TotalSites  <br/> |Zaman çerçevesinin sonunda mevcut olan OneDrive İş hesabı sayısı.  <br/> |
 |DocumentCount  <br/> |Zaman çerçevesi sonunda tüm OneDrive İş hesaplarında mevcut olan toplam belge sayısı  <br/> |
-|Diplansed  <br/> |Zaman çerçevesinin sonunda tüm OneDrive hesabında kullanılan toplam depolama alanı.  <br/> |
+|Diplansed  <br/> |Zaman çerçevesinin sonunda tüm OneDrive hesabında toplam kullanılan toplam depolama alanı.  <br/> |
 |ActivityType  <br/> |Çeşitli dosya etkinliği türlerini (tümü/etkin dosyalar/ DIŞ/İÇ paylaşılan dosyalar/eşitlenen dosyalar) kaydeden hesap sayısı.  <br/> Tümü ifadesi, gerçekleştirilen dosya etkinliklerinden herhangi birini temsil eder  <br/> |
 |SitesWithOwnerActivities  <br/> |Hesap sahibinin kendi hesabında belirli bir dosya etkinliği gerçekleştirdiği etkin OneDrive İş hesabı sayısı.  <br/> |
 |SitesWithNonOwnerActivities  <br/> |Dosya etkinliğinin hesap sahibi dışındaki kullanıcılar tarafından gerçekleştirildiği OneDrive İş hesabı sayısı.  <br/> |
-|ActivityTotalSites  <br/> |Zaman çerçevesi boyunca herhangi bir etkinlik kaydeden OneDrive İş hesabı sayısı. Bir OneDrive İş hesabında zaman çerçevesinin başlarında etkinlik gerçekleşmiş ve zaman çerçevesinin sonuna kadar hesap silinmişse bu hesap yine de ilgili zaman çerçevesi için toplam etkin OneDrive İş hesabı sayısına dahil edilir.  <br/> |
-|Zaman Çerçevesi  <br/> |Bu sütunda tarih değeri yer alır. Takvim tablosu için çoğa bir ilişkisi olarak kullanılır.  <br/> |
+|ActivityTotalSites  <br/> |Number of OneDrive for Business accounts that recorded any activity during the timeframe. If a OneDrive for Business account had activity earlier in the timeframe, and was deleted by the end of the timeframe, it would still be counted in the active OneDrive for Business account for that timeframe.  <br/> |
+|Zaman Çerçevesi  <br/> |This column has the date value. Used as Many to one relationship for Calendar table.  <br/> |
 |İçerik Tarihi  <br/> |Zaman çerçevesi geçerli ayı gösteriyorsa, bu değer geçerli ayda en son hangi tarihe ait veriler olduğunu gösterir.  <br/> Zaman çerçevesi önceki ayı gösteriyorsa, bu değer zaman çerçevesi ayının son tarihini gösterir.  <br/> |
    
 ### <a name="data-table---tenant-microsoft-365-groups-usage"></a>Veri tablosu - Kiracı Microsoft 365 Grupları Kullanımı
@@ -246,7 +247,7 @@ Bu tabloda kuruluş genelinde Microsoft 365 Grupları nasıl kullanıldığına 
 
 |**Sütun adı**|**Sütun Açıklaması**|
 |:-----|:-----|
-|Süre  <br/> |Ay değeri. İçinde bulunulan kısmi ay dahil son 12 ay için ürün başına her ay ayrı bir satırda verilir.  <br/> |
+|Süre  <br/> |Month value. There will be one row per product per month for the last 12 months including the current partial month.  <br/> |
 |GroupType  <br/> |Grup türü (özel/genel/tüm).  <br/> |
 |TotalGroups  <br/> |Her grup türündeki grup sayısı.  <br/> |
 |ActiveGroups  <br/> |Etkin grup sayısı.  <br/> |
@@ -257,14 +258,14 @@ Bu tabloda kuruluş genelinde Microsoft 365 Grupları nasıl kullanıldığına 
 |MBX_StorageUsed  <br/> |Kullanılan posta kutusu depolama alanı miktarı.  <br/> |
 |SPO_TotalGroups  <br/> |SharePoint gruplarının sayısı.  <br/> |
 |SPO_ActiveGroups  <br/> |Etkin SharePoint gruplarının sayısı.  <br/> |
-|SPO_FileAccessedActiveGroups  <br/> |Dosya erişimli etkinlikleri olan SharePoint gruplarının sayısı.  <br/> |
+|SPO_FileAccessedActiveGroups  <br/> |Dosyaya erişilen etkinlikleri olan SharePoint gruplarının sayısı.  <br/> |
 |SPO_FileSyncedActiveGroups  <br/> |Dosya eşitlenmiş etkinlikleri olan SharePoint gruplarının sayısı.  <br/> |
 |SPO_FileSharedInternallyActiveGroups  <br/> |Şirket içinde veya gruplarla (dış kullanıcıları içerebilecek) paylaşılan etkinliklere sahip SharePoint gruplarının sayısı.  <br/> |
 |SPO_FileSharedExternallyActiveGroups  <br/> |Dosyaların şirket dışında paylaşıldığı etkinliklere sahip SharePoint gruplarının sayısı.  <br/> |
 |SPO_TotalActivities  <br/> |SharePoint etkinliklerinin sayısı.  <br/> |
 |SPO_FileAccessedActivities  <br/> |Dosya erişimli SharePoint etkinliklerinin sayısı.  <br/> |
 |SPO_FileSyncedActivities  <br/> |Dosya eşitlemeli SharePoint etkinliklerinin sayısı.  <br/> |
-|SPO_FileSharedInternallyActivities  <br/> |Dahili olarak veya gruplarla (dış üyeleri içerebilen) dosya paylaşılan etkinliklerinin SharePoint sayısı.  <br/> |
+|SPO_FileSharedInternallyActivities  <br/> |Şirket içinde veya gruplarla (dış üyeleri içerebilen) SharePoint dosyası paylaşılan etkinliklerinin sayısı.  <br/> |
 |SPO_FileSharedExternallyActivities  <br/> |Dosyaların şirket dışında paylaşıldığı SharePoint etkinliklerinin sayısı.  <br/> |
 |SPO_TotalFiles  <br/> |SharePoint dosyalarının sayısı.  <br/> |
 |SPO_ActiveFiles  <br/> |Etkin SharePoint dosyalarının sayısı.  <br/> |
@@ -291,7 +292,7 @@ Bu tablo, kullanıcılar için lisans ataması hakkında aylık özet verileri s
 
 ### <a name="data-table---tenant-office-activation"></a>Veri tablosu - Kiracı Office Etkinleştirmesi
 
-Tabloda, hizmet planlarında Office abonelik etkinleştirmelerinin sayısıyla ilgili veriler (örneğin, kuruluşlar için Microsoft 365 Uygulamaları, Visio Project) sağlanır. Cihaz (Android/iOS/Mac/PC) başına etkinleştirme sayısı hakkında da veri sağlar.
+Tabloda, hizmet planları genelinde office aboneliği etkinleştirmelerinin sayısıyla ilgili veriler (örneğin, kuruluşlar için Microsoft 365 Uygulamaları, Visio, Project) sağlanır. Cihaz (Android/iOS/Mac/PC) başına etkinleştirme sayısı hakkında da veri sağlar.
   
 |**Sütun adı**|**Sütun açıklaması**|
 |:-----|:-----|
@@ -303,5 +304,5 @@ Tabloda, hizmet planlarında Office abonelik etkinleştirmelerinin sayısıyla i
 |MacCount  <br/> |Zaman çerçevesinin sonuna kadar Mac cihaz için hizmet planı başına etkinleştirme sayısı.  <br/> |
 |PcCount  <br/> |Zaman çerçevesinin sonuna kadar PC cihaz için hizmet planı başına etkinleştirme sayısı.  <br/> |
 |WinRtCount  <br/> |Zaman çerçevesinin sonuna kadar Windows Mobile cihazı için hizmet planı başına etkinleştirme sayısı.  <br/> |
-|Zaman Çerçevesi  <br/> |Bu sütunda tarih değeri yer alır. Takvim tablosu için çoğa bir ilişkisi olarak kullanılır.  <br/> |
+|Zaman Çerçevesi  <br/> |This column has the date value. Used as Many to one relationship for Calendar table.  <br/> |
 |İçerik Tarihi  <br/> |Zaman çerçevesi geçerli ayı gösteriyorsa, bu değer geçerli ayda en son hangi tarihe ait veriler olduğunu gösterir.  <br/> Zaman çerçevesi önceki ayı gösteriyorsa, bu değer zaman çerçevesi ayının son tarihini gösterir.  <br/> |

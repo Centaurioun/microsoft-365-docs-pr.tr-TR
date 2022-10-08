@@ -15,18 +15,20 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 55a5dbaf78ff19b9ef70d77493f7ac8568a0039d
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 782751ad3a554250095bdfe020a2ccf01b4ccba0
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483420"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68051398"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Microsoft 365 Defender açarken sık sorulan sorular
 
@@ -62,7 +64,7 @@ Microsoft 365 Defender deneyimlerinizi iyileştirmek için desteklenen *tüm* [M
 Microsoft 365 Defender, birleştirilmiş verilerin işlendiği ve depolandığı veri merkezi için otomatik olarak en uygun konumu seçer. Uç Nokta için Microsoft Defender varsa, Uç Nokta için Defender tarafından kullanılan konumu seçer.
 
 >[!NOTE]
->Uç Nokta için Microsoft Defender Bulut için Microsoft Defender aracılığıyla açıldığında Avrupa Birliği (AB) veri merkezlerinde otomatik olarak sağlamalar. Microsoft 365 Defender, Uç Nokta için Microsoft Defender bu şekilde sağlayan müşteriler için aynı AB veri merkezinde otomatik olarak sağlanır.
+>Uç Nokta için Microsoft Defender, Bulut için Microsoft Defender aracılığıyla etkinleştirildiğinde Avrupa Birliği (AB) veri merkezlerinde otomatik olarak sağlamalar sağlar. Microsoft 365 Defender, Uç Nokta için Microsoft Defender bu şekilde sağlayan müşteriler için aynı AB veri merkezinde otomatik olarak sağlanır.
 
 Veri merkezi konumu, Microsoft 365 Defender için ayarlar sayfasında hizmet sağlanmadan önce ve sonra gösterilir (**Ayarlar > Microsoft 365 Defender**). Başka bir veri merkezi konumu kullanmayı tercih ediyorsanız, Microsoft desteğine başvurmak için Microsoft 365 Defender portalında **Yardım mı gerekiyor?** öğesini seçin.
 

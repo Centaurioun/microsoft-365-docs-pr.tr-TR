@@ -13,8 +13,10 @@ ms.collection:
 - M365-collaboration
 - microsoftcloud-financial-services
 - m365-frontline
+- highpri
 - m365solution-financialservices
 - m365solution-overview
+- highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -23,12 +25,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 67be94b826011160715917a8b37a964e88d4a48a
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
+ms.openlocfilehash: 35774f5c8b220225f0f51badfdbff1d2d3362e04
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66827148"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68054390"
 ---
 # <a name="get-started-with-microsoft-365-for-financial-services"></a>Finansal Hizmetler için Microsoft 365'i kullanmaya başlama
 
@@ -44,7 +46,7 @@ Microsoft 365 ve Microsoft Teams, finansal hizmet kuruluşlarına günlük opera
 
 - [Konumlar içinde ve konumlar arasında iletişim kurma](#communicate-within-and-across-locations)
 - [İş süreçlerini basitleştirme](#simplify-business-processes)
-- [Çalışanları ekleme ve eğitma](#onboard-and-train-employees)
+- [Çalışanları işe alma ve eğitme](#onboard-and-train-employees)
 - [Kurumsal iletişimleri güçlendirme](#strengthen-corporate-communications)
 - [Kredi uygulamaları üzerinde işbirliği yapma](#collaborate-on-loan-applications)
 
@@ -75,7 +77,7 @@ Daha fazla bilgi: [Ön cephe ekip işbirliği](flw-team-collaboration.md)
 
 Daha fazla bilgi: [İş süreçlerini basitleştirme](simplify-business-processes.md)
 
-### <a name="onboard-and-train-employees"></a>Çalışanları ekleme ve eğitma
+### <a name="onboard-and-train-employees"></a>Çalışanları işe alma ve eğitme
 
 Finansal hizmet kuruluşları, ön cephe personelinin yüksek bilgi bankaları nedeniyle benzersiz ihtiyaçlara sahiptir. Numeracy becerilerinden şirket ve kamu düzenlemeleri hakkında güncel bilgiye kadar, iş gücünüzün güçlü bir katılım ve eğitim süreciyle hazır olduğundan emin olun.
 

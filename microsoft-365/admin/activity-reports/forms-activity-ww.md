@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Raporları panosunu kullanarak Microsoft Forms etkinlik raporu almayı ve lisanslı kullanıcıların formlarla nasıl etkileşime geçtiğini öğrenin.
-ms.openlocfilehash: 106baca93a3cd7078c97d3ca3f5430efc540d4af
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 90a7ec26defaaca832411a775f71d32c2333ecef
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662140"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194169"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Yönetim merkezinde Microsoft 365 Raporları - Forms etkinliği
 

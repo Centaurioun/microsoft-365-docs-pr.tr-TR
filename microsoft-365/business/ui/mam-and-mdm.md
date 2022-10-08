@@ -10,9 +10,11 @@ ms.topic: conceptual
 f1_keywords:
 - O365E_understand_devices
 - BCS365_understand_devices
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: M365-subscription-management
+ms.collection:
+- scotvorg
+- M365-subscription-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -22,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Mobil cihaz yönetimi ile mobil uygulama yönetimi veya MDM ile MAM arasındaki farkları öğrenin.
-ms.openlocfilehash: 6b4164d230803e7eac99c238f017707c7af8a1fe
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 5e47b7d69e65605b9615543ffdc0a6b787cdec35
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621751"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169661"
 ---
 # <a name="difference-between-mdm-and-mam"></a>MDM ile MAM arasındaki fark
 
@@ -40,4 +42,4 @@ Microsoft 365 İş Ekstra, Windows 10 cihazlarınızdaki verileri koruyan ilkele
 
 ## <a name="mobile-application-management-or-mam"></a>Mobil uygulama yönetimi veya MAM
 
-Mobil uygulama yönetimi, kullanıcılarınızın iPhone ve Android gibi kişisel cihazlarında ve kişisel Win 10 bilgisayarlarında iş verilerinizi denetlemenize olanak tanır. Kullanıcılarınızın iş verilerini Office uygulamalardan kişisel uygulamalarına kopyalamasını önlemek için uygulama yönetimi ilkelerini kullanabilirsiniz. Ayrıca, kişisel cihazlarında Office uygulamalarından tüm verileri kaldırabilirsiniz. Daha fazla bilgi için bkz. [Android veya iOS cihazlar için uygulama koruma ayarlarını ayarlama](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md) ve [Windows 10 cihazlar için uygulama koruma ayarlarını ayarlama](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md).
+Mobil uygulama yönetimi, kullanıcılarınızın iPhone ve Android gibi kişisel cihazlarında ve kişisel Win 10 bilgisayarlarında iş verilerinizi denetlemenize olanak tanır. Kullanıcılarınızın iş verilerini Office uygulamalarından kişisel uygulamalarına kopyalamasını önlemek için uygulama yönetimi ilkelerini kullanabilirsiniz. Ayrıca, kişisel cihazlarında Office uygulamalarından tüm verileri kaldırabilirsiniz. Daha fazla bilgi için bkz. [Android veya iOS cihazları için uygulama koruma ayarlarını ayarlama](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md) ve [Windows 10 cihazlar için uygulama koruma ayarlarını ayarlama](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md).

@@ -14,22 +14,25 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: İzlanda fiziksel hassas bilgi türü varlık tanımını ele alır.
-ms.openlocfilehash: cf6ac37063a2b217a2ca0db1c82f970ba18d726f
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9f0974abcaf0dac3ad8a95d12f26adee7bcf85b1
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948421"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68380181"
 ---
 # <a name="iceland-physical-addresses"></a>İzlanda fiziksel adresleri
 
-Bu unbundled adlandırılmış varlık, İzlanda'dan gelen fiziksel adresle ilgili desenleri algılar. Ayrıca varlık SIT adlı [paketlenmiş Tüm Fiziksel Adresler'e](sit-defn-all-physical-addresses.md) de dahildir.
+Bu unbundled adlandırılmış varlık, İzlanda'dan gelen fiziksel adresle ilgili desenleri algılar. Ayrıca bu varlık [Tüm Fiziksel Adresler](sit-defn-all-physical-addresses.md) paketlenmiş adlandırılmış varlık hassas bilgi türüne dahildir.
 
-## <a name="confidence-level"></a>Güvenilirlik düzeyi
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## <a name="confidence-level"></a>Olasılık düzeyi
 
 Orta

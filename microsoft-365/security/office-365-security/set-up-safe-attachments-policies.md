@@ -13,17 +13,17 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Kuruluşunuzu e-postadaki kötü amaçlı dosyalardan korumak için Güvenli Ekler ilkelerini tanımlama hakkında bilgi edinin.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 11d6a276d40441092b3d4f060933cfb2968e0a8e
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: 0ab079d36a8f750975ee2b60f273e119cdfa5392
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67644213"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68048816"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de Güvenli Ekler ilkelerini ayarlama
 

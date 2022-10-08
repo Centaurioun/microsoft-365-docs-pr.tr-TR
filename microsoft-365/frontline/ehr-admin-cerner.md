@@ -20,17 +20,18 @@ ms.collection:
 - m365solution-healthcare
 - m365solution-scenario
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 ms.reviewer: ansantam
 description: Kuruluşunuzdaki sağlık sağlayıcılarının doğrudan Cerner EHR sisteminden Teams'deki hastalarla veya diğer sağlayıcılarla sanal randevular yürütmesini sağlamak için Teams EHR bağlayıcısını tümleştirmeyi öğrenin.
-ms.openlocfilehash: 856447ac9036be5a707788e333892aba106800c7
-ms.sourcegitcommit: 0c8934129b5ed147fb873fc3f4d201042c313571
+ms.openlocfilehash: c04d2840c808fbaa98717a64288df372aeab19cc
+ms.sourcegitcommit: 674dfa2cb2f20546d2f7822e09bacf0e12e2718b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67333730"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68043757"
 ---
 # <a name="virtual-appointments-with-teams---integration-into-cerner-ehr"></a>Teams ile sanal randevular - Cerner EHR ile tümleştirme
 

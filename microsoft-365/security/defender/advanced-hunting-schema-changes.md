@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: 12653741e10eaba0e8a658e24d3001e16af4e5d5
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 1360ba4535dc9eaa18c320313382b1500cd8cee6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482526"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68049132"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Gelişmiş tehdit avcılığı şeması - Adlandırma değişiklikleri
 
@@ -65,7 +67,7 @@ Adlandırma değişiklikleri, özel algılama kuralları tarafından kullanılan
 | `DetectionSource` | AutomatedInvestigation |Otomatik araştırma | Rebranding |
 | `DetectionSource` | ThreatExperts | Microsoft Tehdit Uzmanları | Rebranding |
 | `DetectionSource` | 3. taraf TI | 3. Taraf algılayıcıları | Rebranding |
-| `ServiceSource` | Microsoft Defender ATP| Uç Nokta için Microsoft Defender | Rebranding |
+| `ServiceSource` | MICROSOFT DEFENDER ATP| Uç Nokta için Microsoft Defender | Rebranding |
 |`ServiceSource` |Microsoft Tehdit Koruması | Microsoft 365 Defender | Rebranding |
 | `ServiceSource` | ATP'Office 365 |Office 365 için Microsoft Defender | Rebranding |
 | `ServiceSource` |Azure ATP |Kimlik için Microsoft Defender | Rebranding |

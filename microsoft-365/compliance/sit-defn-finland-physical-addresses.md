@@ -14,22 +14,25 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Finlandiya fiziksel olarak hassas bilgi türü varlık tanımını ele alır.
-ms.openlocfilehash: 736f98d7d31e3d9b6b2788c40d047d1a6a60ffd2
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7764641aaad6d8e2514882e2863765ff6126a3d8
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989350"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68380260"
 ---
 # <a name="finland-physical-addresses"></a>Finlandiya fiziksel adresleri
 
-Bu unbundled adlandırılmış varlık, Finlandiya'dan gelen fiziksel adresle ilgili desenleri algılar. Ayrıca varlık SIT adlı [paketlenmiş Tüm Fiziksel Adresler'e](sit-defn-all-physical-addresses.md) de dahildir.
+Bu unbundled adlandırılmış varlık, Finlandiya'dan gelen fiziksel adresle ilgili desenleri algılar. Ayrıca bu varlık [Tüm Fiziksel Adresler](sit-defn-all-physical-addresses.md) paketlenmiş adlandırılmış varlık hassas bilgi türüne dahildir.
 
-## <a name="confidence-level"></a>Güvenilirlik düzeyi
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## <a name="confidence-level"></a>Olasılık düzeyi
 
 Orta

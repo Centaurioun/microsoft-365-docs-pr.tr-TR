@@ -14,14 +14,16 @@ ms.custom: nextgen
 ms.date: 07/11/2022
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 63fe41d327d39c15f383c8a70c0b46d5f5d03afd
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 33f8aa1f9fc9ad2411c4705cf92666f7983a2b29
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703148"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68193179"
 ---
 # <a name="turn-on-block-at-first-sight"></a>İlk görüşte engellemeyi etkinleştirin
 
@@ -47,7 +49,7 @@ Bu makalede "ilk bakışta engelle" olarak bilinen bir virüsten koruma/kötü a
 - Belirtilen örnek gönderim zaman aşımı (50 saniye gibi); Ve
 - Dosya engelleme düzeyi yüksek.
 
-Çoğu kurumsal kuruluşta, ilk bakışta bloğu etkinleştirmek için gereken ayarlar Microsoft Defender Virüsten Koruma dağıtımlarıyla yapılandırılır.
+Çoğu kurumsal kuruluşta, ilk bakışta engellemeyi etkinleştirmek için gereken ayarlar Microsoft Defender Virüsten Koruma dağıtımlarıyla yapılandırılır.
 
 ## <a name="how-it-works"></a>Nasıl çalışır?
 
@@ -66,7 +68,7 @@ Microsoft Defender Virüsten Koruma, doğru, akıllı ve gerçek zamanlı koruma
 
 - Engelle ilk bakışta yalnızca yürütülebilir dosyalar ve İnternet'ten indirilen veya İnternet bölgesinden gelen taşınabilir olmayan yürütülebilir dosyalar için bulut koruma arka ucu kullanır. .exe dosyasının karma değeri, bulut arka ucu üzerinden denetlenerek dosyanın önceden algılanmamış bir dosya olup olmadığını belirler.
 
-- Bulut arka ucu bir belirleme yapamazsa, Microsoft Defender Virüsten Koruma dosyayı kilitler ve bir kopyasını buluta yükler. Bulut, dosyanın kötü amaçlı olup olmadığını belirleyip belirlemediğine bağlı olarak dosyanın sonraki tüm karşılaşmalarda çalıştırılmasına veya engellenmesine izin vermeden önce bir belirlemeye ulaşmak için daha fazla analiz gerçekleştirir.
+- Bulut arka ucu belirleme yapamıyorsa Microsoft Defender Virüsten Koruma dosyayı kilitler ve bir kopyasını buluta yükler. Bulut, dosyanın kötü amaçlı olup olmadığını belirleyip belirlemediğine bağlı olarak dosyanın sonraki tüm karşılaşmalarda çalıştırılmasına veya engellenmesine izin vermeden önce bir belirlemeye ulaşmak için daha fazla analiz gerçekleştirir.
 
 - Çoğu durumda, bu işlem yeni kötü amaçlı yazılımların yanıt süresini saatlerden saniyelere düşürebilir.
 
@@ -81,7 +83,7 @@ Microsoft Defender Virüsten Koruma, doğru, akıllı ve gerçek zamanlı koruma
 
 2. **Cihaz kısıtlamaları** profil türünü kullanarak bir profil seçin veya oluşturun.
 
-3. Cihaz kısıtlamaları profilinin **Yapılandırma ayarları** bölümünde **, Microsoft Defender Virüsten Koruma** altında aşağıdaki ayarları ayarlayın veya onaylayın:
+3. Cihaz kısıtlamaları profilinin **Yapılandırma ayarları** bölümünde virüsten **koruma Microsoft Defender** altında aşağıdaki ayarları ayarlayın veya onaylayın:
 
    - **Bulut tabanlı koruma**: Etkin
    - **Dosya Engelleme Düzeyi**: Yüksek
@@ -95,8 +97,8 @@ Microsoft Defender Virüsten Koruma, doğru, akıllı ve gerçek zamanlı koruma
 > [!TIP]
 >
 > - Dosya engelleme **düzeyinin Yüksek** olarak ayarlanması güçlü bir algılama düzeyi uygular. Dosya engellemenin meşru dosyaların hatalı pozitif algılanmasına neden olması olası olmayan bir durumda, güvenlik operasyonları ekibiniz [karantinaya alınan dosyaları geri yükleyebilir](./restore-quarantined-files-microsoft-defender-antivirus.md).
-> - Intune'da Microsoft Defender Virüsten Koruma cihaz kısıtlamalarını yapılandırma hakkında daha fazla bilgi için bkz. [Microsoft Intune'de cihaz kısıtlama ayarlarını yapılandırma](/intune/device-restrictions-configure).
-> - Intune'daki Microsoft Defender Virüsten Koruma cihaz kısıtlamalarının listesi için bkz. [Intune'de Windows 10 (ve daha yeni) ayarlar için cihaz kısıtlaması](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
+> - Intune Microsoft Defender Virüsten Koruma cihaz kısıtlamalarını yapılandırma hakkında daha fazla bilgi için bkz[. Microsoft Intune'da cihaz kısıtlama ayarlarını yapılandırma](/intune/device-restrictions-configure).
+> - Intune'da Microsoft Defender Virüsten Koruma cihaz kısıtlamalarının listesi için bkz. [Intune'de Windows 10 (ve daha yeni) ayarlar için cihaz kısıtlaması](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
 ## <a name="turn-on-block-at-first-sight-with-microsoft-endpoint-manager"></a>Microsoft Endpoint Manager ile ilk bakışta blok açma
 
@@ -163,7 +165,7 @@ Windows Güvenliği uygulamasını kullanarak ilk bakışta bloğun tek tek iste
 
 1. Microsoft Endpoint Manager yönetim merkezine (<https://endpoint.microsoft.com>) gidin ve oturum açın.
 
-2. **Uç nokta güvenliği** \> **Virüsten Koruma'ya** gidin ve Microsoft Defender Virüsten Koruma ilkenizi seçin.
+2. **Endpoint security** \> **Virüsten Koruma'ya** gidin ve Microsoft Defender Virüsten Koruma ilkenizi seçin.
 
 3. **Yönet'in** altında **Özellikler'i** seçin.
 
@@ -183,7 +185,7 @@ Windows Güvenliği uygulamasını kullanarak ilk bakışta bloğun tek tek iste
 
 2. **grup ilkesi Yönetim Düzenleyicisi'ni** kullanarak **Bilgisayar yapılandırması'na** gidin ve **Yönetim şablonları'nı** seçin.
 
-3. **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **MAPS** aracılığıyla ağacı genişletin.
+3. **Virüsten Koruma** \> **MAPS** Microsoft Defender **Windows bileşenleri** \> aracılığıyla ağacı genişletin.
 
 4. **'İlk Bakışta Engelle' özelliğini yapılandır'a** çift tıklayın ve seçeneği **Devre Dışı** olarak ayarlayın.
 
@@ -225,6 +227,6 @@ Bir kuruluş tarafından yönetilmeyen kişisel bir cihazınız varsa, ilk gör�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Windows 10'da Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10'de virüsten koruma Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)
 - [Bulut tabanlı korumayı etkinleştirme](enable-cloud-protection-microsoft-defender-antivirus.md)
 - [Windows Güvenliği ile korunmaya devam edin](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963)

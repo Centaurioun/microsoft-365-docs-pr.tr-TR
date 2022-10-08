@@ -11,17 +11,18 @@ ms.date: ''
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Yöneticiler, Office 365 için Microsoft Defender sahip kuruluşlarda kullanılabilen gelişmiş kimlik avı önleme ilkelerini oluşturmayı, değiştirmeyi ve silmeyi öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 9a144968d112328ace78b27f2f62b4ecc3cfd921
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+search.appverid: met150
+ms.openlocfilehash: 3c0bdc066d1f47c02afe8fae1938813241bceff5
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611223"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68055226"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de kimlik avı önleme ilkelerini yapılandırma
 
@@ -178,7 +179,7 @@ Microsoft 365 Defender portalında özel kimlik avı önleme ilkesi oluşturmak,
 
        En az bir girdi seçtikten sonra Etki ![alanlarını sil simgesi.](../../media/m365-cc-sc-delete-icon.png) **Seçili** girişleri kaldırmak için kullanabileceğiniz Sil simgesi görüntülenir.
 
-   - **Güvenilen gönderenler ve etki alanları ekleyin**: **Yönet (nn) güvenilen gönderenler ve etki alanları'na** tıklayarak ilke için kimliğe bürünme koruması özel durumlarını belirtin. Görüntülenen **Kimliğe bürünme koruması için özel etki alanlarını yönet** açılır penceresinde aşağıdaki ayarları yapılandırın:
+   - **Güvenilen gönderenler ve etki alanları ekleme**: **Yönet (nn) güvenilen gönderenlere ve etki alanlarına** tıklayarak ilke için kimliğe bürünme koruması özel durumlarını belirtin. Görüntülenen **Kimliğe bürünme koruması için özel etki alanlarını yönet** açılır penceresinde aşağıdaki ayarları yapılandırın:
       - **Gönderenler**: **Gönderen** sekmesinin seçili olduğunu doğrulayın ve Gönderen ekle simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) Görüntülenen **Güvenilir gönderen ekle** açılır öğesinde, kutuya bir e-posta adresi girin ve **Ekle'ye** tıklayın. Bu adımı gerektiği kadar tekrarlayın. Var olan bir girdiyi kaldırmak için, girdinin Sil simgesine](../../media/m365-cc-sc-close-icon.png) tıklayın![.
 
         İşiniz bittiğinde **Ekle'ye** tıklayın.
@@ -190,11 +191,13 @@ Microsoft 365 Defender portalında özel kimlik avı önleme ilkesi oluşturmak,
         İşiniz bittiğinde **Ekle'ye** tıklayın.
 
      > [!NOTE]
-     > Aşağıdaki gönderenlerden gelen Microsoft 365 sistem iletileri kimliğe bürünme girişimi olarak tanımlanırsa, gönderenleri güvenilen gönderenler listesine ekleyebilirsiniz:
      >
-     > - `⁠noreply@email.teams.microsoft.com`
-     > - `noreply@emeaemail.teams.microsoft.com`
-     > - `no-reply@sharepointonline.com`
+     > - Aşağıdaki gönderenlerden gelen Microsoft 365 sistem iletileri kimliğe bürünme girişimi olarak tanımlanırsa, gönderenleri güvenilen gönderenler listesine ekleyebilirsiniz:
+     >   - `⁠noreply@email.teams.microsoft.com`
+     >   - `noreply@emeaemail.teams.microsoft.com`
+     >   - `no-reply@sharepointonline.com`
+     >
+     > - Güvenilen etki alanı girdileri, belirtilen etki alanının alt etki alanları içermez. Her alt etki alanı için bir giriş eklemeniz gerekir.
 
      **Kimliğe bürünme için özel etki alanlarını yönet** açılır listesine döndüğünüzde, listeden bir veya daha fazla girdi seçerek **Gönderen** ve **Etki Alanı** sekmelerindeki girdileri kaldırabilirsiniz. Ara simgesini kullanarak ![girdileri arayabilirsiniz.](../../media/m365-cc-sc-create-icon.png) **Arama** kutusu.
 

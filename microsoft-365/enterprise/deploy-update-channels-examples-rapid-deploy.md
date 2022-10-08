@@ -11,16 +11,17 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
 description: En son sürümü dağıtan bir kuruluşun Windows 10 ve Microsoft 365 uygulamaları için kanalları nasıl kullandığı.
-ms.openlocfilehash: 538759d0b7edd0711cfbc6d9862f496d36e1b5f2
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 99759f44c305e51338ec9fbddca9193a8d64bab6
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560625"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68163436"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>En son sürümler için geniş dağıtım örneği
 

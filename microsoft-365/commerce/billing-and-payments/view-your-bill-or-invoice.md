@@ -8,10 +8,11 @@ manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 search.appverid: GEA150
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -27,12 +28,12 @@ ms.custom:
 - adminvideo
 description: Microsoft 365 yönetim merkezinde faturanızı veya fatura ekstrenizi bulun. Ayrıca, faturanızı kaydedebilir ve faturanızın bir kopyasını yazdırabilirsiniz.
 ms.date: 01/25/2022
-ms.openlocfilehash: 123d70825f0d894d72d48fbe890652d37fe7d4b2
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: e04cf46ceba2886fc0e939ead05a49147e4aa759
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664603"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68165723"
 ---
 # <a name="view-your-microsoft-365-for-business-subscription-bill-or-invoice"></a>İş için Microsoft 365 abonelik faturanızı veya faturanızı görüntüleme
 
@@ -50,7 +51,7 @@ Bu makalede açıklanan adımları yerine getirmek için Genel yönetici veya Fa
   
 ## <a name="watch-view-download-or-print-your-bill"></a>İzleyin: Faturanızı görüntüleme, indirme veya yazdırma
 
-[YouTube kanalımızda](https://go.microsoft.com/fwlink/?linkid=2197915) bu videoya ve diğer videolara göz atın.
+[YouTube kanalımızda](https://go.microsoft.com/fwlink/?linkid=2209539) bu videoya ve diğer videolara göz atın.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
 

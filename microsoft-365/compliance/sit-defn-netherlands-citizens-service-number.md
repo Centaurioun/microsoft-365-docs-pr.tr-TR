@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Hollanda vatandaşlık hizmeti (BSN) numarasına duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: 4a5ca70bbbffe2d89b2dd05bd51e3dcda525e6a3
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 11b4c2a2354b074277761dca5d513747892d5d40
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989531"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68383315"
 ---
 # <a name="netherlands-citizens-service-bsn-number"></a>Hollanda vatandaşlık hizmeti (BSN) numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -42,17 +45,17 @@ sekiz-dokuz basamak:
 - boşluk (isteğe bağlı)
 - iki-üç basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
 - Desenle eşleşen işlev `Func_netherlands_bsn finds` içeriği.
-- 'den `Keyword_netherlands_bsn` bir anahtar sözcük bulunur.
-- Sağlama toplamı geçer.
+- `Keyword_netherlands_bsn` içinden bir anahtar sözcük bulundu.
+- Sağlama toplamı başarılı.
 
 ```xml
       <!-- Netherlands Citizen's Service (BSN) Number -->

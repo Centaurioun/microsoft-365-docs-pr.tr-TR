@@ -14,16 +14,18 @@ localization_priority: Normal
 ms.date: 09/06/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 ms.reviewer: mkaminska
-ms.openlocfilehash: d26415db3a43dc4628daad3ce8c795ab293a1570
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 7bd1848793b72740a988b83661aa42bd66963749
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731706"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68193025"
 ---
 # <a name="device-health-reports-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'da cihaz durumu raporları
 
@@ -37,7 +39,7 @@ ms.locfileid: "67731706"
 
 > Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Cihaz Durumu raporu, kuruluşunuzdaki cihazlar hakkında bilgi sağlar. Rapor algılayıcı durumunu, virüsten koruma durumunu, işletim sistemi platformlarını, Windows 10 sürümlerini ve Microsoft Defender Virüsten Koruma güncelleştirme sürümlerini gösteren popüler bilgileri içerir.
+Cihaz Durumu raporu, kuruluşunuzdaki cihazlar hakkında bilgi sağlar. Rapor algılayıcı sistem durumunu, virüsten koruma durumunu, işletim sistemi platformlarını, Windows 10 sürümlerini ve virüsten koruma güncelleştirme sürümlerini Microsoft Defender gösteren popüler bilgileri içerir.
 
 > [!IMPORTANT]
 > Windows&nbsp;Server&nbsp;2012&nbsp;R2 ve Windows&nbsp;Server&nbsp;2016'nın cihaz durumu raporlarında görünmesi için bu cihazların modern birleşik çözüm paketi kullanılarak eklenmesi gerekir. Daha fazla bilgi için bkz. [Windows Server 2012 R2 ve 2016 için modern birleşik çözümde yeni işlevler](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
@@ -50,7 +52,7 @@ Cihaz durumu ve uyumluluk panosu iki sekmede yapılandırılmıştır:
   - [İşletim sistemleri ve platformlar kartı](device-health-sensor-health-os.md#operating-systems-and-platforms-card)
   - [Windows sürümleri kartı](device-health-sensor-health-os.md#windows-versions-card)
 
-- [**Microsoft Defender Virüsten Koruma sistem durumu sekmesinde Microsoft**](device-health-microsoft-defender-antivirus-health.md#microsoft-defender-antivirus-health-tab) Defender Virüsten Koruma'nın özelliklerini bildiren sekiz kart vardır:
+- [**Microsoft Defender Virüsten Koruma sistem durumu** sekmesinde](device-health-microsoft-defender-antivirus-health.md#microsoft-defender-antivirus-health-tab), Microsoft Defender Virüsten Koruma'nın özelliklerini bildiren sekiz kart vardır:
   - [Virüsten koruma modu kartı](device-health-microsoft-defender-antivirus-health.md#antivirus-mode-card)
   - [Virüsten koruma altyapısı sürüm kartı](device-health-microsoft-defender-antivirus-health.md#antivirus-engine-version-card)
   - [Virüsten koruma güvenlik bilgileri sürüm kartı](device-health-microsoft-defender-antivirus-health.md#antivirus-security-intelligence-version-card)

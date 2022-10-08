@@ -17,17 +17,18 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-asr-rules
 - highpri
+- tier1
 ms.date: 09/19/2022
 search.appverid: met150
-ms.openlocfilehash: dbfdf76791309f637e3380d748ff4c6533d1daa8
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 347392494d920da486f8928380310b3b75abbbd1
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811823"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68146579"
 ---
 # <a name="enable-attack-surface-reduction-asr-rules"></a>Saldırı yüzeyini azaltma (ASR) kurallarını etkinleştirme
 

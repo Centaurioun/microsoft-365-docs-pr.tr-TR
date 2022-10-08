@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 bulut hizmetlerine erişimi iyileştirirken uzak çalışanlarınızın şirket içi kaynaklara erişebildiğinden emin olun.
-ms.openlocfilehash: 8482de846405f6ff4b0f786d2863bc208f0ed5cf
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: f0614a6f74d3857bfbcbeb802b588ad5477524e3
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730715"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987070"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Adım 2. Şirket içi uygulama ve hizmetlere uzaktan erişim sağlama
 

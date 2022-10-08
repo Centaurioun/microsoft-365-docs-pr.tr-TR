@@ -19,18 +19,19 @@ ms.localizationpriority: high
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 - microsoftcloud-healthcare
 - microsoftcloud-retail
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7e91519820adbefd780f27759c3da4ef31d7cb8f
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 2a9174b1cb9e9090b7010798041c539608ace616
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824723"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68077458"
 ---
 # <a name="schedule-owner-for-shift-management"></a>Vardiya yönetimi için Sahibi Zamanla
 

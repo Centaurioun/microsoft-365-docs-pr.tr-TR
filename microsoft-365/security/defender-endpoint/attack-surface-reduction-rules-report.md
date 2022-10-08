@@ -15,15 +15,17 @@ ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.date: 08/25/2022
 search.appverid: met150
-ms.openlocfilehash: 2feedef05628e9e4e44975061ee331822874caf0
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 87aafd6add0d75ec19a621ef46d7beed7cbbb5c6
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812610"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68148823"
 ---
 # <a name="attack-surface-reduction-asr-rules-report"></a>Saldırı yüzeyi azaltma (ASR) kuralları raporu
 
@@ -287,5 +289,10 @@ Dışlama ekle sayfasında, algılanan tüm dosyalarda (seçimden sonra) kullan�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Saldırı yüzeyi azaltma kurallarını etkinleştirme](attack-surface-reduction-rules-deployment-implement.md)
+- [Saldırı yüzeyini azaltma (ASR) kuralları dağıtımına genel bakış](attack-surface-reduction-rules-deployment.md)
+- [Saldırı yüzeyini azaltma (ASR) kuralları dağıtım planı](attack-surface-reduction-rules-deployment-plan.md)
+- [Saldırı yüzeyini azaltma (ASR) kuralları testi](attack-surface-reduction-rules-deployment-test.md)
+- [Saldırı yüzeyini azaltma (ASR) kurallarını etkinleştirme](attack-surface-reduction-rules-deployment-implement.md)
+- [Saldırı yüzeyini azaltma (ASR) kurallarını kullanıma hazır hale getirme](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Saldırı yüzeyi azaltma \(ASR\) kuralları raporu](attack-surface-reduction-rules-report.md)
 - [Saldırı yüzeyi azaltma kuralları başvurusu](attack-surface-reduction-rules-reference.md)

@@ -16,14 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
-ms.openlocfilehash: 6a4d665e4800e5f3aaf07129f9d5dbff1d3bfd2a
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+- m365-security
+- tier1
+ms.openlocfilehash: 7bd977ced10aa2c6823ffc3d766ac552c295e062
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496581"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68048978"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Microsoft 365 Defender aracılığıyla Microsoft Tehdit Uzmanları özelliklerini yapılandırma ve yönetme
 
@@ -170,4 +170,4 @@ Bir uzman daha fazla bilgi veya dosya örneği isterse, araştırmayı devam ett
 
 ## <a name="to-proactively-hunt-threats-across-endpoints-office-365-cloud-applications-and-identity-refer-to"></a>Uç noktalar, Office 365, bulut uygulamaları ve kimlik genelinde tehditleri proaktif olarak avlamak için bkz: 
 
-- [Avcılık için Microsoft Defender Uzmanlarına genel bakış](defender-experts-for-hunting.md)
+- [Microsoft Defender Uzmanlarına Genel Bakış](defender-experts-for-hunting.md)

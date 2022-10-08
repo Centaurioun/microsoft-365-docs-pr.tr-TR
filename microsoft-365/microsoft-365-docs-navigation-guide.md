@@ -10,14 +10,14 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 ms.collection: Adm_TOC
-ms.openlocfilehash: 95b14f45925e1b26e876474fc1a41343882ec817
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: ea25a5338639804e749738fb0d010af8d21b7d28
+ms.sourcegitcommit: 674dfa2cb2f20546d2f7822e09bacf0e12e2718b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737664"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68043409"
 ---
-# <a name="microsoft-365-docs-navigation-guide"></a>Microsoft 365 belgeleri gezinti kılavuzu
+# <a name="microsoft-365-documentation-navigation-guide"></a>Microsoft 365 belgeleri gezinti kılavuzu
 
 Bu konuda, Microsoft 365 teknik belge alanında gezinmek için bazı ipuçları ve püf noktaları sağlanır.  
 
@@ -29,12 +29,14 @@ Microsoft **365** teknik belge kümesindeki her sayfanın üst kısmındaki üst
 
 ![Üst bilgide Microsoft 365.](media/m365-header-cursor.png)
 
-## <a name="toc-search"></a>İçindekiler tablosu araması 
-Microsoft Docs, üstteki filtre arama kutusunu kullanarak içindekiler tablosundaki içeriği arayabilirsiniz:
+## <a name="toc-search"></a>İçindekiler tablosu araması
+
+Microsoft Learn'de, en üstteki filtre arama kutusunu kullanarak içindekiler tablosundaki içeriği arayabilirsiniz:
 
 ![Filtre kutusunu kullanın.](media/m365-filter-by-title.png)
 
 ## <a name="version-filter"></a>Sürüm filtresi
+
 Microsoft 365 teknik belgeleri, Office 365 Almanya ve 21 Vianet (Çin) tarafından sağlanan Office 365 dahil olmak üzere ek ürünler için içerik sağlar. Özellikler bu sürümler arasında farklılık gösterebilir ve bu nedenle bazen içeriğin kendisi farklılık gösterebilir.
 
 Microsoft 365'in uygun sürümü için içerik gördüğünüzden emin olmak için sürüm filtresini kullanabilirsiniz:
@@ -53,7 +55,7 @@ Sağ gezinti bölmesi, bir makalenin içindeki bölümlere hızla gitmenize ve m
 
 ![Sağ gezinti.](media/m365-article-sections.png)
 
-## <a name="submit-docs-feedback"></a>Belge geri bildirimi gönderme
+## <a name="submit-feedback"></a>Geri bildirim gönderme
 
 Bir makalenin içinde yanlış bir şey bulursanız, sayfanın en altına gidip İçerik geri bildirimi'ni seçerek bu makale için SQL İçerik ekibine **geri bildirim** gönderebilirsiniz.
 
@@ -61,7 +63,7 @@ Bir makalenin içinde yanlış bir şey bulursanız, sayfanın en altına gidip 
 
 ## <a name="contribute-to-microsoft-365-documentation"></a>Microsoft 365 belgelerine katkıda bulunma
 
-İçeriği Microsoft Docs kendiniz düzenleyebildiğinizi biliyor muydunuz? Bunu yaparsanız, belgelerimizi geliştirmekle kalmaz, aynı zamanda sayfaya katkıda bulunan olarak da kabul edilirsiniz. Başlamak için bkz.
+Microsoft Learn'de içeriği kendiniz düzenleyebileceğinizi biliyor muydunuz? Bunu yaparsanız, belgelerimizi geliştirmekle kalmaz, aynı zamanda sayfaya katkıda bulunan olarak da kabul edilirsiniz. Başlamak için bkz.
 
 - [Microsoft Docs katkıda bulunan kılavuzu](/contribute/)
 

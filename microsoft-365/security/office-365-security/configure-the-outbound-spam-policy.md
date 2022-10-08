@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Yöneticiler, Exchange Online Protection (EOP) içinde giden istenmeyen posta ilkelerini görüntülemeyi, oluşturmayı, değiştirmeyi ve silmeyi öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 03b6769e91ce667cafe2318a5ea4a7a44550bc67
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: a39fd3fa850ffa82c5ff0d44b61d1828bf1dbf4a
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613482"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68082647"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>EOP'de giden istenmeyen posta filtrelemeyi yapılandırma
 

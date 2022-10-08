@@ -11,18 +11,19 @@ ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection:
 - m365-frontline
+- highpri
 - m365solution-frontline
 - m365solution-scenario
 ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 40b9950ebbfd041c1371da2dbcc04d1b6ef912ff
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 3cdc1433e419a8179d4de60465788602e4f1b532
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67615919"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68082471"
 ---
 # <a name="microsoft-365-for-frontline-workers---scenario-posters"></a>Ön cephe çalışanları için Microsoft 365 - senaryo posterleri
 

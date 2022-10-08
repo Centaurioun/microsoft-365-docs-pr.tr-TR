@@ -5,11 +5,13 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: landing-page
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -18,13 +20,13 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Özet: PowerShell kullanarak yeni SharePoint Çevrimiçi siteler oluşturun ve ardından bu sitelere kullanıcı ve grup ekleyin.'
-ms.openlocfilehash: 9d99f98825d88e2d2e63f106a7b5704c773c8be1
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: "Özet: PowerShell'i kullanarak yeni SharePoint Online siteleri oluşturun ve ardından bu sitelere kullanıcı ve grup ekleyin."
+ms.openlocfilehash: f640b7abcba9f05460e77fb11b8578c15b0a76fc
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101347"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167549"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>PowerShell ile SharePoint Online siteleri oluşturma ve kullanıcı ekleme
 
@@ -32,13 +34,13 @@ ms.locfileid: "65101347"
 
 SharePoint Online siteleri oluşturmak ve kullanıcı eklemek için Microsoft 365 için PowerShell kullandığınızda, görevleri Microsoft 365 yönetim merkezi çok daha hızlı ve tekrar tekrar gerçekleştirebilirsiniz. ayrıca Microsoft 365 yönetim merkezi gerçekleştirilemez görevleri de gerçekleştirebilirsiniz.
 
-## <a name="connect-to-sharepoint-online"></a>SharePoint Online'a Bağlan
+## <a name="connect-to-sharepoint-online"></a>SharePoint Online'a bağlanma
 
-Bu konudaki yordamlar, SharePoint Online'a bağlanmanızı gerektirir. Yönergeler için bkz. [çevrimiçi PowerShell SharePoint Bağlan](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+Bu konudaki yordamlar, SharePoint Online'a bağlanmanızı gerektirir. Yönergeler için bkz. [SharePoint Online PowerShell'e bağlanma](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 ## <a name="step-1-create-new-site-collections-using-powershell"></a>1. Adım: PowerShell kullanarak yeni site koleksiyonları oluşturma
 
-PowerShell kullanarak birden çok site ve sağlanan örnek kodu kullanarak oluşturduğunuz bir .csv dosyası oluşturun ve Not Defteri. Bu yordam için köşeli ayraç içinde gösterilen yer tutucu bilgilerini kendi sitenize ve kiracıya özgü bilgilerle değiştireceksiniz. Bu işlem, tek bir dosya oluşturmanıza ve bu dosyayı kullanan tek bir PowerShell komutu çalıştırmanıza olanak tanır. Bu, gerçekleştirilen eylemlerin hem yinelenebilir hem de taşınabilir olmasını sağlar ve SharePoint Çevrimiçi Yönetim Kabuğu'na uzun komutlar yazmanın neden olabileceği birçok hatayı (hepsi olmasa da) ortadan kaldırır. Bu yordamın iki bölümü vardır. İlk olarak bir .csv dosyası oluşturacak ve ardından PowerShell kullanarak bu .csv dosyasına başvuracaksınız. Bu dosya, siteleri oluşturmak için içeriğini kullanır.
+PowerShell kullanarak birden çok site ve sağlanan örnek kodu ve Not Defteri'ni kullanarak oluşturduğunuz bir .csv dosyası oluşturun. Bu yordam için köşeli ayraç içinde gösterilen yer tutucu bilgilerini kendi sitenize ve kiracıya özgü bilgilerle değiştireceksiniz. Bu işlem, tek bir dosya oluşturmanıza ve bu dosyayı kullanan tek bir PowerShell komutu çalıştırmanıza olanak tanır. Bu, gerçekleştirilen eylemlerin hem yinelenebilir hem de taşınabilir olmasını sağlar ve SharePoint Online Yönetim Kabuğu'na uzun komutlar yazmanın neden olabileceği birçok hatayı (hepsi olmasa da) ortadan kaldırır. Bu yordamın iki bölümü vardır. İlk olarak bir .csv dosyası oluşturacak ve ardından PowerShell kullanarak bu .csv dosyasına başvuracaksınız. Bu dosya, siteleri oluşturmak için içeriğini kullanır.
 
 PowerShell cmdlet'i .csv dosyasını içeri aktarır ve dosyanın ilk satırını sütun üst bilgileri olarak okuyan küme ayraçlarının içinde bir döngüye aktarır. PowerShell cmdlet'i daha sonra kalan kayıtlarda yinelenir, her kayıt için yeni bir site koleksiyonu oluşturur ve site koleksiyonunun özelliklerini sütun üst bilgilerine göre atar.
 
@@ -47,7 +49,7 @@ PowerShell cmdlet'i .csv dosyasını içeri aktarır ve dosyanın ilk satırın�
 > [!NOTE]
 > Kaynak kotası parametresi yalnızca klasik sitelerde çalışır. Bu parametreyi modern bir sitede kullanırsanız, kullanım dışı bırakıldığını belirten bir uyarı iletisi alabilirsiniz.
 
-1. Not Defteri açın ve içine aşağıdaki metin bloğunu yapıştırın:
+1. Not Defteri'ni açın ve içine aşağıdaki metin bloğunu yapıştırın:
 
    ```powershell
    Owner,StorageQuota,Url,ResourceQuota,Template,TimeZoneID,Name
@@ -59,7 +61,7 @@ PowerShell cmdlet'i .csv dosyasını içeri aktarır ve dosyanın ilk satırın�
 
    Burada *kiracı* , kiracınızın adıdır ve *sahip* , birincil site koleksiyonu yöneticisi rolünü vermek istediğiniz kiracınızdaki kullanıcının kullanıcı adıdır.
 
-   (Toplu değiştirme işlemlerini daha hızlı yapmak için Not Defteri kullandığınızda Ctrl+H tuşlarına basabilirsiniz.)
+   (Daha hızlı bir şekilde değiştirmek için Not Defteri'ni kullanırken Ctrl+H tuşlarına basabilirsiniz.)
 
 2. Dosyayı masaüstünüzde **SiteCollections.csv** olarak kaydedin.
 
@@ -96,7 +98,7 @@ Aşağıdaki yordamlar TeamSite01, Blog01, Project01 ve Community01 örnek sitel
 
 ### <a name="create-csv-and-ps1-files"></a>.csv ve .ps1 dosyaları oluşturma
 
-1. Not Defteri açın ve içine aşağıdaki metin bloğunu yapıştırın:
+1. Not Defteri'ni açın ve içine aşağıdaki metin bloğunu yapıştırın:
 
    ```powershell
    Site,Group,PermissionLevels
@@ -114,7 +116,7 @@ Aşağıdaki yordamlar TeamSite01, Blog01, Project01 ve Community01 örnek sitel
 
 2. Dosyayı **masaüstünüzdeGroupsAndPermissions.csv** olarak kaydedin.
 
-3. Yeni bir Not Defteri örneği açın ve içine aşağıdaki metin bloğunu yapıştırın:
+3. Not Defteri'nin yeni bir örneğini açın ve içine aşağıdaki metin bloğunu yapıştırın:
 
    ```powershell
    Group,LoginName,Site
@@ -132,7 +134,7 @@ Aşağıdaki yordamlar TeamSite01, Blog01, Project01 ve Community01 örnek sitel
 
 4. Dosyayı **masaüstünüzdeUsers.csv** olarak kaydedin.
 
-5. Yeni bir Not Defteri örneği açın ve içine aşağıdaki metin bloğunu yapıştırın:
+5. Not Defteri'nin yeni bir örneğini açın ve içine aşağıdaki metin bloğunu yapıştırın:
 
    ```powershell
    Import-Csv C:\users\MyAlias\desktop\GroupsAndPermissions.csv | ForEach-Object {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
@@ -147,7 +149,7 @@ Artık birden çok site koleksiyonuna kullanıcı ve grup eklemek için UsersAnd
 
 ### <a name="run-usersandgroupsps1-script"></a>UsersAndGroups.ps1 betiğini çalıştırma
 
-1. SharePoint Çevrimiçi Yönetim Kabuğu'na dönün.
+1. SharePoint Online Yönetim Kabuğu'na dönün.
 
 2. Windows PowerShell isteminde aşağıdaki satırı yazın veya kopyalayıp yapıştırın ve Enter tuşuna basın:
 
@@ -169,9 +171,9 @@ Artık birden çok site koleksiyonuna kullanıcı ve grup eklemek için UsersAnd
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çevrimiçi PowerShell'i SharePoint için Bağlan](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+[SharePoint Online PowerShell'e bağlanma](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
-[PowerShell ile SharePoint Çevrimiçi site gruplarını yönetme](manage-sharepoint-site-groups-with-powershell.md)
+[PowerShell ile SharePoint Online site gruplarını yönetme](manage-sharepoint-site-groups-with-powershell.md)
 
 [PowerShell ile Microsoft 365’i yönetme](manage-microsoft-365-with-microsoft-365-powershell.md)
 

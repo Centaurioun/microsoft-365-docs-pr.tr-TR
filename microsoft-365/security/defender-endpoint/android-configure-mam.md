@@ -14,15 +14,16 @@ manager: dansimp
 ms.localizationpriority: medium
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: f8417501dbf1583cf2eb3e062e39822e6b0c2108
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 8465046f816880b68f51211ee0c9b2ffb209909e
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67679679"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68145875"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-risk-signals-using-app-protection-policies-mam"></a>Uygulama Koruma İlkelerini (MAM) kullanarak Uç Nokta için Microsoft Defender risk sinyallerini yapılandırma
 
@@ -50,7 +51,7 @@ Son kullanıcıların Uç Nokta için Microsoft Defender cihazlarına yüklemek 
 
 ## <a name="admin-prerequisites"></a>Yönetici önkoşulları
 
-- **Endpoint-Intune için Microsoft Defender bağlayıcısının etkinleştirildiğini doğrulama**
+- **Endpoint-Intune bağlayıcısı için Microsoft Defender etkinleştirildiğini doğrulayın**
 
   a. security.microsoft.com gidin. 
 
@@ -60,7 +61,7 @@ Son kullanıcıların Uç Nokta için Microsoft Defender cihazlarına yüklemek 
 
   :::image type="content" source="images/enable-intune-connection.png" alt-text="Microsoft 365 Defender portalındaki Gelişmiş özellikler bölümü" lightbox="images/enable-intune-connection.png":::
 
-  d. **Microsoft Endpoint Manager (Intune)** bölümüne gidin ve Endpoint-Intune için Microsoft Defender bağlayıcının etkinleştirilip etkinleştirilmediğini doğrulayın.
+  d. **Microsoft Endpoint Manager (Intune)** bölümüne gidin ve Endpoint-Intune bağlayıcısı için Microsoft Defender etkinleştirilip etkinleştirilmediğini doğrulayın.
 
   :::image type="content" source="images/validate-intune-connector.png" alt-text="Microsoft 365 Defender portalındaki intune bağlayıcısı durum bölmesi" lightbox="images/validate-intune-connector.png":::
 
@@ -79,7 +80,7 @@ Son kullanıcıların Uç Nokta için Microsoft Defender cihazlarına yüklemek 
 - **Uygulama koruma ilkesi oluşturma** 
  
 Bir uygulama koruma ilkesi oluşturarak Uç Nokta için Microsoft Defender risk sinyallerine göre yönetilen bir uygulamanın erişimini engelleyin veya verileri silin.
-Uç Nokta için Microsoft Defender, uygulama koruma ilkelerinde (MAM olarak da bilinir) kullanılacak tehdit sinyalleri gönderecek şekilde yapılandırılabilir. Bu özellik sayesinde yönetilen uygulamaları korumak için Uç Nokta için Microsoft Defender kullanabilirsiniz.
+Uç Nokta için Microsoft Defender, uygulama koruma ilkelerinde (MAM olarak da bilinir) kullanılacak tehdit sinyalleri gönderecek şekilde yapılandırılabilir. Bu özellik sayesinde yönetilen uygulamaları korumak için Uç Nokta için Microsoft Defender kullanabilirsiniz. 
 
 1. İlke oluşturma <br>
 Uygulama koruması ilkeleri (APP), kuruluşun verilerinin güvenli kalmasını veya yönetilen bir uygulamada yer almamasını sağlayan kurallardır. İlke, kullanıcı "şirket" verilerine erişmeye veya verileri taşımaya çalıştığında uygulanan bir kural ya da kullanıcı uygulamanın içindeyken yasaklanan veya izlenen bir dizi eylem olabilir. 
@@ -133,11 +134,34 @@ Mobil uygulama yönetimi cihaz yönetimi gerektirmediğinden, şirket verilerini
 
 6. Yönetilen uygulamada oturum açmak için **Devam'ı** seçin. 
 
-## <a name="configure-privacy-controls"></a>Gizlilik denetimlerini yapılandırma 
->[!IMPORTANT]
->MAM üzerinde Uç Nokta için Microsoft Defender gizlilik denetimleri genel önizleme aşamasındadır. Aşağıdaki bilgiler, ticari olarak piyasaya sürülmeden önce önemli ölçüde değiştirilebilen önceden yayımlanmış ürünle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
->**Bu özelliği denemek veya geri bildirim sağlamak istiyorsanız lütfen mdatpmobile@microsoft.com adresinden bize ulaşın.**
+## <a name="configure-web-protection"></a>Web korumasını yapılandırma 
+Android'de Uç Nokta için Defender, BT Yöneticilerinin web korumasını yapılandırmasına olanak tanır. Web koruması [Microsoft Endpoint Manager Yönetici merkezinde](https://endpoint.microsoft.com) kullanılabilir.
 
+Web koruması, cihazların web tehditlerine karşı korunmasına ve kullanıcıların kimlik avı saldırılarına karşı korunmasına yardımcı olur. Web koruması kapsamında kimlik avı önleme ve özel göstergelerin (URL ve IP adresleri) desteklendiğini unutmayın. Web içeriği filtreleme şu anda mobil platformlarda desteklenmiyor.
+
+1. Microsoft Endpoint Manager yönetim merkezinde **Uygulamalar > Uygulama yapılandırma ilkeleri > yönetilen > uygulama ekle'ye** gidin.
+
+2. İlkeye bir **ad** verin.
+
+3. **Genel Uygulamaları Seç'in** altında hedef uygulama olarak **Uç Nokta için Microsoft Defender'ı** seçin.
+
+4. **Ayarlar** sayfasında, **Genel Yapılandırma Ayarları'nın** altında aşağıdaki anahtarları ekleyin ve değerlerini gerektiği gibi ayarlayın.
+    - **Antiphishing** 
+    - **Vpn** 
+    
+   Web korumasını devre dışı bırakmak için antiphishing ve VPN değerleri için 0 girin.
+   Yalnızca web koruması ile VPN kullanımını devre dışı bırakmak için şu değerleri girin:
+    - vpn için 0
+    - Antiphishing için 1
+    
+1. **DefenderMAMConfigs** anahtarını ekleyin ve değeri 1 olarak ayarlayın.
+
+5. Bu ilkeyi kullanıcılara atayın. Varsayılan olarak, bu değer false olarak ayarlanır.
+
+6. İlkeyi gözden geçirin ve oluşturun.
+
+
+## <a name="configure-privacy-controls"></a>Gizlilik denetimlerini yapılandırma
 Yöneticiler, gizliliği etkinleştirmek ve ilgili tehditler için uyarı raporunun bir parçası olarak etki alanı adını, uygulama ayrıntılarını ve ağ bilgilerini toplamamak için aşağıdaki adımları kullanabilir.
 
 1. Microsoft Endpoint Manager yönetim merkezinde **Uygulamalar > Uygulama yapılandırma ilkeleri > > Yönetilen uygulamalar ekle'ye** gidin.
@@ -146,17 +170,15 @@ Yöneticiler, gizliliği etkinleştirmek ve ilgili tehditler için uyarı raporu
 
 3. Genel Uygulamaları Seç'in altında hedef uygulama olarak **Uç Nokta için Microsoft Defender'ı** seçin.
 
-4. Ayarlar sayfasında, Genel Yapılandırma Ayarları'nın altında **DefenderExcludeURLInReport**, **DefenderExcludeAppInReport** tuşlarını ve değerini true olarak ekleyin.
+4. Ayarlar sayfasında, Genel Yapılandırma Ayarları'nın altında **DefenderExcludeURLInReport**, **DefenderExcludeAppInReport** tuşlarını ve değerini true olarak ekleyin. 
+
+1. **DefenderMAMConfigs** anahtarını ekleyin ve değeri 1 olarak ayarlayın.
 
 5. Bu ilkeyi kullanıcılara atayın. Varsayılan olarak, bu değer false olarak ayarlanır.
 
 6. İlkeyi gözden geçirin ve oluşturun.
 
 ## <a name="optional-permissions"></a>İsteğe bağlı izinler 
->[!IMPORTANT]
->Uç Nokta için Microsoft Defender üzerinde isteğe bağlı İzinler genel önizleme aşamasındadır. Aşağıdaki bilgiler, ticari olarak piyasaya sürülmeden önce önemli ölçüde değiştirilebilen önceden yayımlanmış ürünle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
->**Bu özelliği denemek veya geri bildirim sağlamak istiyorsanız lütfen mdatpmobile@microsoft.com adresinden bize ulaşın.**
-
 Android'de Uç Nokta için Microsoft Defender, ekleme akışında İsteğe Bağlı İzinler'i etkinleştirir. Şu anda ekleme akışında MDE için gereken izinler zorunlu. Bu özellik sayesinde yönetici, ekleme sırasında zorunlu VPN ve Erişilebilirlik İzinlerini zorunlu tutmadan MAM ilkeleriyle Android cihazlarda MDE dağıtabilir. Son Kullanıcılar zorunlu izinler olmadan uygulamayı ekleyebilir ve daha sonra bu izinleri gözden geçirebilir. 
 
 ### <a name="configure-optional-permission"></a>İsteğe bağlı izni yapılandırma
@@ -169,7 +191,9 @@ Cihazlar için İsteğe bağlı izinleri etkinleştirmek için aşağıdaki adı
 
 3. Genel uygulamalarda **Uç Nokta için Microsoft Defender*** öğesini seçin.
 
-4. Ayarlar sayfasında **Yapılandırma tasarımcısını kullan'ı** seçin ve **DefenderOptionalVPN** veya **DefenderOptionalAccessibility** ya da **anahtar** ve değer türü olarak Boole değerini ekleyin. 
+4. Ayarlar sayfasında **Yapılandırma tasarımcısını** ve **DefenderOptionalVPN'i** veya **DefenderOptionalAccessibility'i** veya **hem anahtar hem de** değer türünü Boole olarak kullan'ı seçin. 
+
+1. **DefenderMAMConfigs** anahtarını ekleyin ve değeri 1 olarak ayarlayın.
 
 5. İsteğe bağlı izinleri etkinleştirmek için değeri **true** olarak girin ve bu ilkeyi kullanıcılara atayın. Varsayılan olarak, bu değer false olarak ayarlanır.
 Anahtar değeri true olarak ayarlanmış kullanıcılar için, kullanıcılar bu izinleri vermeden uygulamayı ekleyebilecektir.

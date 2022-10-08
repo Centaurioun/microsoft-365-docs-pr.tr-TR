@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Exchange Online Protection'da (EOP) varsayılan olarak güvenli ayarı hakkında daha fazla bilgi edinin
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: b70e3639df2cfa1b2099cc5e61efe43b216b4afe
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: b12adb910e031a6cbdebfe80e38bafaafa9e372f
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497323"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68048670"
 ---
 # <a name="secure-by-default-in-office-365"></a>Office 365'de varsayılan olarak güvenlidir
 

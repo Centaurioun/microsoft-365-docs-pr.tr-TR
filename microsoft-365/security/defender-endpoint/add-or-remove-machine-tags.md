@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 4cc445eac8f8c458f37489f493d4113836379802
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 3f6139d50e0c1f565952e853f80a325af3afb26e
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742103"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68150275"
 ---
 # <a name="add-or-remove-machine-tags-api"></a>Makine etiketleri API'sini ekleme veya kaldırma
 

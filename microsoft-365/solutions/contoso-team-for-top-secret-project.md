@@ -8,7 +8,7 @@ manager: serdars
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: overview
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: "Özet: Contoso'nun yeni bir ürün ve hizmet paketi geliştirmek için çok gizli bir proje için güvenlik yalıtımına sahip bir ekibi nasıl kullandığı."
-ms.openlocfilehash: 2afc993245e2ad1a67242855dd658a38de5e628a
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 33a13b778c51690200e5e590fb2c56faeff8de0f
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730671"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987136"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation'ın çok gizli projesi için yalıtılmış ekip
 

@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: İş için Microsoft 365'in Genel Veri Koruma Yönetmeliği (GDPR) sürecinde size nasıl yardımcı olabileceğini öğrenin.
-ms.openlocfilehash: b0d0131c807d111a3b5f9b5024a07040ca47fdfd
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: c89efa8b64dcfc5392a9be2da8fecf708197fb8e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664285"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68193817"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>GDPR basitleştirilmiş: Küçük işletmeniz için bir kılavuz
 
@@ -150,7 +151,7 @@ Bu tür belgeler aşağıda listelenen bilgileri içermelidir.
 |---|---|
 |Veri işlemenin amacı|Müşterileri eve teslimat sağlama gibi özel teklifler hakkında uyarmak; ödeme sağlayıcıları; çalışanlar için maaş ve sosyal güvenlik kapsamı|
 |Kişisel veri türleri|Müşterilerin iletişim bilgileri; tedarikçilerin iletişim bilgileri; çalışan verileri|
-|İlgili veri konularının kategorileri|Çalışanlar; müşteriler; Tedarikçi|
+|İlgili veri konularının kategorileri|Çalışan; Müşteri; Tedarikçi|
 |Alıcı kategorileri|İşgücü yetkilileri; vergi daireleri|
 |Depolama dönemleri|İş sözleşmesinin (ve ilgili yasal yükümlülüklerin) sonuna kadar çalışanların kişisel verileri; müşteri/sözleşme ilişkisi bitene kadar müşterilerin kişisel verileri|
 |Kişisel verileri korumaya yönelik teknik ve kurumsal güvenlik önlemleri|BT sistemi çözümleri düzenli olarak güncelleştirildi; güvenli konum; erişim denetimi; veri şifrelemesi; veri yedekleme|

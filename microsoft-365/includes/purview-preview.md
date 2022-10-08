@@ -1,0 +1,2 @@
+> [!TIP]
+> E5 müşterisi değilseniz Microsoft Purview'daki tüm premium özellikleri ücretsiz olarak deneyebilirsiniz. Güçlü Purview özelliklerinin kuruluşunuzun veri güvenliği ve uyumluluk gereksinimlerini yönetmesine nasıl yardımcı olabileceğini keşfetmek için 90 günlük Purview çözümleri deneme sürümünü kullanın. [Şimdi Microsoft Purview uyumluluk portalı deneme hub'ında](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef) başlayın. [Kaydolma ve deneme koşulları](/microsoft-365/compliance/compliance-easy-trials) hakkında ayrıntılı bilgi edinin.

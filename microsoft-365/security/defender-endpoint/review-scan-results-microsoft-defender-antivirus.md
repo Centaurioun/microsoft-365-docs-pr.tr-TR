@@ -15,16 +15,18 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 4e7ca073690074efcb84c594ea533f068f904af2
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: fb507f6249a5a421675908ede074267d389313ba
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689723"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231714"
 ---
-# <a name="review-microsoft-defender-antivirus-scan-results"></a>Microsoft Defender Virüsten Koruma tarama sonuçlarını gözden geçirin
+# <a name="review-microsoft-defender-antivirus-scan-results"></a>Virüsten koruma tarama sonuçlarını Microsoft Defender gözden geçirin
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -64,7 +66,7 @@ Get-MpThreat
 
 :::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="PowerShell kodu" lightbox="../../media/wdav-get-mpthreat.png":::
 
-[PowerShell'i Microsoft Defender Virüsten Koruma ile](use-powershell-cmdlets-microsoft-defender-antivirus.md) kullanma hakkında daha fazla bilgi için bkz. Microsoft Defender [Virüsten Koruma ve Defender Virüsten Koruma cmdlet'lerini](/powershell/module/defender/) yapılandırmak ve çalıştırmak için PowerShell cmdlet'lerini kullanma.
+[PowerShell'i Microsoft Defender Virüsten Koruma](use-powershell-cmdlets-microsoft-defender-antivirus.md) ile kullanma hakkında daha fazla bilgi için bkz. Microsoft Defender [Virüsten Koruma ve Defender Virüsten Koruma cmdlet'lerini](/powershell/module/defender/) yapılandırmak ve çalıştırmak için PowerShell cmdlet'lerini kullanma.
 
 ## <a name="use-windows-management-instruction-wmi-to-review-scan-results"></a>Tarama sonuçlarını gözden geçirmek için Windows Yönetim Yönergesi'ni (WMI) kullanma
 
@@ -84,4 +86,4 @@ Get-MpThreat
 ## <a name="related-articles"></a>İlgili makaleler
 
 - [Microsoft Defender Virüsten Koruma taramalarının ve düzeltmelerinin sonuçlarını özelleştirme, başlatma ve gözden geçirme](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Windows 10'da Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10'de virüsten koruma Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)

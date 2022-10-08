@@ -16,19 +16,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-firstincident
 - highpri
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: de77f14d998c0be2f174c74e4d95cc265ee94bfb
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: b2e10cd5e3d615495a688484dd8351cecb1564f4
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740521"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68080051"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Adım 1. İlk olayınızı önceliklendirme ve analiz etme
 
@@ -45,7 +46,7 @@ Güvenlik olayı algılandığında, Microsoft 365 Defender bir olayı veya olay
 
 Microsoft 365 Defender, tümsel bir resim ve kötü amaçlı etkinlik bağlamı oluşturmak için algılama kaynakları olarak birden çok Microsoft güvenlik platformundan uyarılar ve olaylar alır. Olası algılama kaynakları şunlardır:
 
-- [Uç Nokta için Microsoft Defender](../defender-endpoint/microsoft-defender-endpoint.md), Microsoft Defender virüsten koruma ve Microsoft Güvenlik Grafı kullanarak bulut özellikli gelişmiş tehdit koruması kullanan bir uç nokta algılama ve yanıt çözümüdür (EDR). Uç Nokta için Defender, önleyici koruma, ihlal sonrası algılama, otomatik araştırma ve yanıt için birleşik bir platformdur. Uç noktaları siber tehditlere karşı korur, gelişmiş saldırıları ve veri ihlallerini algılar, güvenlik olaylarını otomatikleştirir ve güvenlik duruşunu geliştirir.
+- [Uç Nokta için Microsoft Defender](../defender-endpoint/microsoft-defender-endpoint.md), Microsoft Güvenlik Grafı kullanarak Microsoft Defender virüsten koruma ve bulut özellikli gelişmiş tehdit koruması kullanan bir uç nokta algılama ve yanıt çözümüdür (EDR). Uç Nokta için Defender, önleyici koruma, ihlal sonrası algılama, otomatik araştırma ve yanıt için birleşik bir platformdur. Uç noktaları siber tehditlere karşı korur, gelişmiş saldırıları ve veri ihlallerini algılar, güvenlik olaylarını otomatikleştirir ve güvenlik duruşunu geliştirir.
 - [Kimlik için Microsoft Defender](/defender-for-identity/what-is), şirket içi Active Directory Etki Alanı Hizmetleri (AD DS) sinyallerinizi kullanarak gelişmiş tehditleri, güvenliği aşılmış kimlikleri ve kuruluşunuza yönelik kötü amaçlı insider eylemlerini tanımlamak, algılamak ve araştırmak için kullanılan bulut tabanlı bir güvenlik çözümüdür.
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/), kullanıcılarınızın bulunduğu her yerde ve kullandıkları cihazdan bağımsız olarak, kurumsal kullanıcılarınız ve kullandıkları bulut kaynakları arasında gerçek zamanlı olarak erişime aracılık etmek için bir ağ geçidi denetleyicisi görevi görür.
 - [Office 365 için Microsoft Defender](/microsoft-365/office-365-security/overview), kuruluşunuzu e-posta iletileri, bağlantılar (URL'ler) ve işbirliği araçlarındaki kötü amaçlı tehditlere karşı korur.

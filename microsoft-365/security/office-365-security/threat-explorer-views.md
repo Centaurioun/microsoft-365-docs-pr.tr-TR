@@ -9,20 +9,20 @@ ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-search.appverid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Microsoft 365 Defender portalında tehditleri araştırmak ve yanıtlamak için Tehdit Gezgini'ni ve gerçek zamanlı algılama raporunu kullanmayı öğrenin.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: d6d666285baa2e31c8e2099eb1359c370ac660ae
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: eddb1d30adcf2db443b615a693c6bf96d0d70605
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596577"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68054742"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Tehdit Gezgini'nde görünümler ve gerçek zamanlı algılamalar
 

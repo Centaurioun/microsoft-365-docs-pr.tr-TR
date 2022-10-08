@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Tayvan'da yerleşik sertifika (ARC/TARC) numarasına duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: 26719642f5cc937909c7357302f660a5a8610189
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 16e32c0fcfd9ae8be4f0dc7612329594b22ecc37
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948556"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472288"
 ---
 # <a name="taiwan-resident-certificate-arctarc-number"></a>Tayvan mukim sertifikası (ARC/TARC) numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -39,16 +42,16 @@ ms.locfileid: "66948556"
 - iki harf (büyük/küçük harfe duyarlı değil)
 - sekiz basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Normal ifade `Regex_taiwan_resident_certificate` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_taiwan_resident_certificate` bir anahtar sözcük bulunur.
+- `Keyword_taiwan_resident_certificate` içinden bir anahtar sözcük bulundu.
 
 ```xml
 <!-- Taiwan Resident Certificate (ARC/TARC) -->
@@ -69,7 +72,7 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandı�
 - Yerleşik Sertifika.
 - Kimlik kartı
 - Yabancı Yerleşik Sertifika
-- ARC
+- Arc
 - Tayvan Alan Yerleşik Sertifikası
 - TARC
 - 居留證

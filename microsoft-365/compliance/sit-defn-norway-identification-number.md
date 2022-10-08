@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Norveç kimlik numarasına duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: 9edce24b1fef475ce30b50d3703214d4388a1338
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: e75613600662b8d9ca38f7b484414de88fec84df
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948910"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68382809"
 ---
 # <a name="norway-identification-number"></a>Norveç kimlik numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -40,22 +43,22 @@ ms.locfileid: "66948910"
 - üç basamaklı tek tek sayı
 - iki denetim basamağı
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_norway_id_number` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_norway_id_number` bir anahtar sözcük bulunur.
-- Sağlama toplamı geçer.
+- İşlev `Func_norway_id_number`, desenle eşleşen içeriği bulur.
+- `Keyword_norway_id_number` içinden bir anahtar sözcük bulundu.
+- Sağlama toplamı başarılı.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_norway_id_number` , desenle eşleşen içeriği bulur.
-- Sağlama toplamı geçer.
+- İşlev `Func_norway_id_number`, desenle eşleşen içeriği bulur.
+- Sağlama toplamı başarılı.
 
 ```xml
 <!-- Norway Identification Number -->

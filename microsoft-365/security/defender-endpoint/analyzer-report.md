@@ -13,16 +13,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: c9ba1865710dbaaf0c35cfbd37c4985ad4fa1ad1
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 4628f6bdc5bd3b38665fa044150e38c756db0059
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702610"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68145787"
 ---
 # <a name="understand-the-client-analyzer-html-report"></a>İstemci çözümleyicisi HTML raporunu anlama
 

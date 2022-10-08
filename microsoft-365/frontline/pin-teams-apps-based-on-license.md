@@ -1,5 +1,5 @@
 ---
-title: Teams uygulamalarını ön cephe çalışanlarınız için uyarlayın
+title: Teams uygulamalarını ön saf çalışanları için uyarlama
 author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: aaglick
@@ -13,20 +13,18 @@ ms.localizationpriority: high
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 24393b11abc9bb7ba4c6736daca4dfa5969f94b8
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 7cf2adb04f27a01970eb516a82f5fbb35a5cc2f6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824787"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68082339"
 ---
-# <a name="tailor-teams-apps-for-your-frontline-workers"></a>Teams uygulamalarını ön cephe çalışanlarınız için uyarlayın
-
-> [!NOTE]
-> Bu özellik şu anda kullanıma sunuluyor ve henüz kuruluşunuzda kullanılamayabilir. Yaklaşan Teams özelliklerinden haberdar olmak için [Microsoft 365 Yol Haritası'na](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=microsoft%2Cteams) göz atın.
+# <a name="tailor-teams-apps-for-your-frontline-workers"></a>Teams uygulamalarını ön saf çalışanları için uyarlama
 
 ## <a name="overview"></a>Genel bakış
 
@@ -42,7 +40,7 @@ Uygulamalar, Teams mobil istemcilerinin (iOS ve Android) altındaki ve Teams mas
 
 - [Etkinlik](https://support.microsoft.com/office/explore-the-activity-feed-in-teams-91c635a1-644a-4c60-9c98-233db3e13a56)
 - [Sohbet](https://support.microsoft.com/office/get-started-with-chat-0b506ce2-eb6d-4fca-9668-e56980ba755e)
-- [Teams](https://support.microsoft.com/office/teams-and-channels-in-microsoft-teams-c6d0e61d-a61e-44a6-a972-04f2a8fa4155)
+- [Takım](https://support.microsoft.com/office/teams-and-channels-in-microsoft-teams-c6d0e61d-a61e-44a6-a972-04f2a8fa4155)
 - [Walkie Talkie](https://support.microsoft.com/office/get-started-with-teams-walkie-talkie-25bdc3d5-bbb2-41b7-89bf-650fae0c8e0c)
 - [Görevler](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070)
 - [Vardiya](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821)

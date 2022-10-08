@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Luxemburg ulusal kimlik numarası (gerçek kişiler) hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 3640f35086c72262013ad3e25b5aec1bfe8b6fa3
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: b6f718c25e79a6a59f30135e579c55d17ab06a2d
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67367235"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68381959"
 ---
 # <a name="luxemburg-national-identification-number-natural-persons"></a>Lüksemburg ulusal kimlik numarası (gerçek kişiler)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 

@@ -12,8 +12,10 @@ ms.service: microsoft-365-frontline
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 - m365solution-frontline
 - m365solution-scenario
+- highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -22,12 +24,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 021426853286f663d78a65aebee3925c8de3e8fc
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 721169ccb6d10205e556a6372c2ea18c2594aaf1
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739168"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68079611"
 ---
 # <a name="frontline-team-collaboration"></a>Ön saf ekip işbirliği
 
