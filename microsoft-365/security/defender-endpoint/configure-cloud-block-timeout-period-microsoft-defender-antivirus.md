@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Virüsten Koruma bulut blok zaman aşımı süresini yapılandırma
+title: Microsoft Defender Virüsten Koruma bulut bloğu zaman aşımı süresini yapılandırma
 description: Microsoft Defender Virüsten Koruma'nın bulut belirlemeyi beklerken bir dosyanın çalışmasını ne kadar süreyle engelleyeceklerini yapılandırabilirsiniz.
 keywords: Microsoft Defender Virüsten Koruma, kötü amaçlı yazılımdan koruma, güvenlik, defender, bulut, zaman aşımı, blok, nokta, saniye
 ms.service: microsoft-365-security
@@ -15,14 +15,16 @@ manager: dansimp
 ms.subservice: mde
 ms.topic: article
 ms.date: 10/18/2021
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 7dd4c18a9f35e1209ff47f003bc8bb523ff3a2f8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: db2bddee6bae8c314dfcb1d721f5742a00b04584
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696561"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68193135"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>Bulut engelleme zaman aşımı dönemini yapılandırın
 
@@ -52,9 +54,9 @@ Dosyanın [engellendiği](configure-block-at-first-sight-microsoft-defender-anti
 
 3. Virüsten koruma ilkesi seçin (veya oluşturun).
 
-4. **Yapılandırma ayarları** bölümünde **Bulut koruması'nı** genişletin. Ardından **, Microsoft Defender Virüsten Koruma Genişletilmiş Zaman Aşımı Saniye cinsinden** kutusunda, 1 saniyeden 50 saniyeye kadar olan süreyi saniye cinsinden belirtin. Belirttiğiniz her şey varsayılan 10 saniyeye eklenir.
+4. **Yapılandırma ayarları** bölümünde **Bulut koruması'nı** genişletin. Ardından **Microsoft Defender Virüsten Koruma Genişletilmiş Zaman Aşımı Saniye cinsinden** kutusunda, saniye cinsinden 1 saniye ile 50 saniye arasındadır. Belirttiğiniz her şey varsayılan 10 saniyeye eklenir.
 
-5. (Bu adım isteğe bağlıdır) Virüsten koruma ilkenizde başka değişiklikler yapın. (Yardıma mı ihtiyacınız var? Bkz[. Microsoft Intune'de Microsoft Defender Virüsten Koruma ilkesi ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
+5. (Bu adım isteğe bağlıdır) Virüsten koruma ilkenizde başka değişiklikler yapın. (Yardıma mı ihtiyacınız var? Bkz[. Microsoft Intune Microsoft Defender Virüsten Koruma ilkesi ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
 
 6. **İleri'yi** seçin ve ilkenizi yapılandırmayı tamamlayın.
 

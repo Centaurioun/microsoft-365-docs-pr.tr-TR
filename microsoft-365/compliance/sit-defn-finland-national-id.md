@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Finlandiya ulusal kimliği hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 7d196482051afb6a889d855c80616a4a15ce1df2
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 6c8c42d63610d91165c909f67845bf75aa182537
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948866"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68379675"
 ---
 # <a name="finland-national-id"></a>Finlandiya ulusal kimliği
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -34,26 +37,26 @@ altı basamak artı bir yüzyıl artı üç basamak artı bir onay basamağı g�
 
 ## <a name="pattern"></a>Desen
 
-Desen aşağıdakilerin tümünü içermelidir:
+Desen şu desenlerin tümünü içermelidir:
 
 - doğum tarihi olan DDMMYY biçiminde altı basamak
 - yüzyıl işaretçisi ('-', '+' veya 'a')
 - üç basamaklı kişisel kimlik numarası
 - denetim basamağı olan bir rakam veya harf (büyük/küçük harfe duyarsız)
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
 - işlevi `Func_finnish_national_id` , desenle eşleşen içeriği bulur
 - anahtar sözcüğü `Keyword_finnish_national_id` bulundu
 - sağlama toplamı geçer
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - işlevi `Func_finnish_national_id` , desenle eşleşen içeriği bulur
 - sağlama toplamı geçer

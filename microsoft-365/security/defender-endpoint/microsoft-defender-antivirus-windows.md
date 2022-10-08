@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
+ms.date: 10/03/2022
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -15,15 +16,15 @@ manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 77e59d2b27c95ad41bc6d1997aa70f86353b9e4e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0e58a119cfd6dae272d5eae18a284e928f99235b
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689701"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363661"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Windows’da Microsoft Defender Virüsten Koruma
 
@@ -82,9 +83,9 @@ Güvenlik sağlayıcıları sayfasında virüsten koruma/kötü amaçlı yazıl�
 
    - **Pasif mod**, Microsoft Defender Virüsten Koruma’nın çalıştığı ancak cihazınızda virüsten birincil koruma/kötü amaçlı yazılımdan koruma ürünü olmadığı anlamına gelir. Pasif mod, yalnızca Uç Nokta için Microsoft Defender'a eklenen ve belirli gereksinimleri karşılayan cihazlar için kullanılabilir. Daha fazla bilgi edinmek için [Microsoft Defender Virüsten Koruma’nın pasif modda çalıştırılması gereksinimlere](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode) bakın.
 
-   - **EDR Engelleme Modu**, Microsoft Defender Virüsten Koruma'nın çalıştığı ve Uç Nokta için Microsoft Defender’in bir özelliği olan [Uç nokta algılama ve yanıt’ın (EDR) engelleme modunda](edr-in-block-mode.md) etkinleştirildiği anlamına gelir.
+   - **EDR Engelleme Modu**, Microsoft Defender Virüsten Koruma'nın çalıştığı ve Uç Nokta için Microsoft Defender’in bir özelliği olan [Uç nokta algılama ve yanıt’ın (EDR) engelleme modunda](edr-in-block-mode.md) etkinleştirildiği anlamına gelir. **ForceDefenderPassiveMode** kayıt defteri anahtarını denetleyin. Değeri 0 ise normal modda çalışır; aksi takdirde pasif modda çalışır.
 
-   - **SxS Pasif Modu**, Microsoft Defender Virüsten Koruma’nın başka bir virüsten koruma/kötü amaçlı yazılımdan koruma ürünüyle birlikte çalıştığı ve [sınırlı düzenli taramanın kullanıldığı anlamına gelir](limited-periodic-scanning-microsoft-defender-antivirus.md).
+   - **SxS Pasif Modu**, Microsoft Defender Virüsten Koruma'nın başka bir virüsten koruma/kötü amaçlı yazılımdan koruma ürünüyle birlikte çalıştığı ve [sınırlı düzenli tarama kullanıldığı](limited-periodic-scanning-microsoft-defender-antivirus.md) anlamına gelir.
 
 > [!TIP]
 > Get-MpComputerStatus PowerShell cmdlet hakkında daha fazla bilgi edinmek için [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) başvuru makalesine bakın.

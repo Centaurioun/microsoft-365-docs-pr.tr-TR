@@ -12,18 +12,18 @@ ms.localizationpriority: high
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier1
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: f55b7941eb180f9e3a2af7448cb92349af7e3a9c
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 40450ed20daaa4c3520386aad7d6a416b8b84889
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67809749"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68234046"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender
 

@@ -7,9 +7,10 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Özel posta kutusunu yalnızca bir kişi yerine birkaç kişi tarafından erişilebilen paylaşılan posta kutusuna dönüştürmeyi öğrenin. '
-ms.openlocfilehash: 07b36e5c8b2cb7b2e88dfedd80b31353cb8f7e32
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 1cc60feb7729d2ad57749b58bc246b3478fcf342
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466228"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187283"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Kullanıcı posta kutusunu paylaşılan posta kutusuna dönüştürme
 
@@ -66,7 +67,7 @@ Kullanıcının posta kutusunu paylaşılan posta kutusuna dönüştürdüğün�
 
 3. Kullanıcı posta kutusunu seçin. **Paylaşılan Posta Kutusuna Dönüştür** altında **Dönüştür'ü** seçin.
 
-4. Posta kutusu 50 GB'tan küçükse, [kullanıcıdan lisansı](../manage/remove-licenses-from-users.md) kaldırabilir ve bunun için ödeme yapmayı durdurabilirsiniz. Kullanıcının hesabını silmeyin. Paylaşılan posta kutusunun yer işareti olarak orada olması gerekir. Kuruluşunuzdan ayrılan bir çalışanın posta kutusunu dönüştürüyorsanız, artık oturum açamayacaklarından emin olmak için ek adımlar uygulamanız gerekir. Daha fazla bilgi için bkz. [Eski çalışanı Microsoft 365 kaldırma](../add-users/remove-former-employee.md).
+4. Posta kutusu 50 GB'tan küçükse, [kullanıcıdan lisansı](../manage/remove-licenses-from-users.md) kaldırabilir ve bunun için ödeme yapmayı durdurabilirsiniz. Kullanıcının hesabını silmeyin. Paylaşılan posta kutusunun yer işareti olarak orada olması gerekir. Kuruluşunuzdan ayrılan bir çalışanın posta kutusunu dönüştürüyorsanız, artık oturum açamayacaklarından emin olmak için ek adımlar uygulamanız gerekir. Daha fazla bilgi için bkz. [Microsoft 365'ten eski bir çalışanı kaldırma](../add-users/remove-former-employee.md).
 
 Paylaşılan posta kutuları hakkında bilmeniz gereken diğer her şey için bkz. [Paylaşılan posta kutuları hakkında](about-shared-mailboxes.md) ve [Paylaşılan posta kutusu oluşturma](create-a-shared-mailbox.md).
 
@@ -78,7 +79,7 @@ Paylaşılan posta kutuları hakkında bilmeniz gereken diğer her şey için bk
 
 3. Kullanıcı posta kutusunu seçin. **Diğerleri** sekmesinde **Paylaşılan posta kutusuna dönüştür'ü** seçin.
 
-4. Posta kutusu 50 GB'tan küçükse, [kullanıcıdan lisansı](../manage/remove-licenses-from-users.md) kaldırabilir ve bunun için ödeme yapmayı durdurabilirsiniz. Kullanıcının hesabını silmeyin. Paylaşılan posta kutusunun yer işareti olarak orada olması gerekir. Kuruluşunuzdan ayrılan bir çalışanın posta kutusunu dönüştürüyorsanız, artık oturum açamayacağından emin olmak için ek adımlar uygulamanız gerekir. Lütfen bkz. [Eski çalışanı Microsoft 365 kaldırma](../add-users/remove-former-employee.md).
+4. Posta kutusu 50 GB'tan küçükse, [kullanıcıdan lisansı](../manage/remove-licenses-from-users.md) kaldırabilir ve bunun için ödeme yapmayı durdurabilirsiniz. Kullanıcının hesabını silmeyin. Paylaşılan posta kutusunun yer işareti olarak orada olması gerekir. Kuruluşunuzdan ayrılan bir çalışanın posta kutusunu dönüştürüyorsanız, artık oturum açamayacağından emin olmak için ek adımlar uygulamanız gerekir. Lütfen bkz. [Microsoft 365'ten eski bir çalışanı kaldırma](../add-users/remove-former-employee.md).
 
 Paylaşılan posta kutuları hakkında bilmeniz gereken diğer her şey için bkz. [Paylaşılan posta kutuları hakkında](about-shared-mailboxes.md) ve [Paylaşılan posta kutusu oluşturma](create-a-shared-mailbox.md).
 
@@ -112,13 +113,13 @@ Kullanıcı hesabını sildikten sonra, eski posta kutularını paylaşım posta
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>Karma ortamda kullanıcının posta kutusunu dönüştürme
 
-Exchange Karma ortamında kullanıcı posta kutusunu paylaşılan posta kutusuna dönüştürme hakkında daha fazla bilgi için bkz:
+Kullanıcı posta kutusunu Exchange Karma ortamında paylaşılan posta kutusuna dönüştürme hakkında daha fazla bilgi için bkz:
 
 - [Şirket içi Exchange ortamında uzak paylaşılan posta kutusu oluşturmak veya değiştirmek için cmdlet'ler](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
-- [Dizin eşitlemesi Exchange karma dağıtımda çalıştırıldıktan sonra paylaşılan posta kutuları beklenmedik şekilde kullanıcı posta kutularına dönüştürülür](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
+- [Exchange karma dağıtımında dizin eşitlemesi çalıştırıldıktan sonra paylaşılan posta kutuları beklenmedik şekilde kullanıcı posta kutularına dönüştürülür](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
 
 > [!NOTE]
-> Kuruluş Yönetimi veya Alıcı Yönetimi rol grubunun üyesiyseniz, kullanıcı posta kutusunu şirket içi paylaşılan posta kutusuna değiştirmek için Exchange Yönetim Kabuğu'nı kullanabilirsiniz. Örneğin, `Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`.
+> Kuruluş Yönetimi veya Alıcı Yönetimi rol grubunun üyesiyseniz, exchange yönetim kabuğunu kullanarak kullanıcı posta kutusunu şirket içi paylaşılan posta kutusuna değiştirebilirsiniz. Örneğin, `Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`.
 
 ## <a name="related-content"></a>İlgili içerik
 

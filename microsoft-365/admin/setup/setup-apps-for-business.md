@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -26,12 +27,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: İş için Microsoft 365 Uygulamaları aboneliğinizi ayarlamayı öğrenin.
-ms.openlocfilehash: 055f148617fb51a46739d61cc06ebb41be536649
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 50d31891632be6612e7fe18d0072b4965b16fec1
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664219"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186909"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>İş için Microsoft 365 Uygulamaları ayarlama
 
@@ -61,7 +62,7 @@ Sihirbaza kullanıcı ekleyebilirsiniz, ancak [daha sonra yönetim merkezinde de
 
 ## <a name="install-office"></a>Office'i yükleme
 
-İşletmenizdeki diğer kişilerin hesaplarını oluşturduktan sonra, ekip üyelerinizle birlikte Office'in tam masaüstü sürümünü (Word, Excel, Outlook vb.) yükleyebilirsiniz. Kişilerden her biri Office'i en çok 5 PC veya Mac bilgisayara yükleyebilir.
+Once you've created accounts for other people in your business, you and your team members will be able to install the full desktop version of Office (Word, Excel, Outlook, etc.). Each person can install Office on up to 5 PCs or Macs.
   
 ::: moniker range="o365-worldwide"
 

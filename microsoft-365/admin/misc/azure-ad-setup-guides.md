@@ -1,25 +1,27 @@
 ---
-title: kurulum kılavuzlarını Azure Active Directory
+title: Azure Active Directory kurulum kılavuzları
 ms.author: Kwekua
 author: Kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 description: Azure Active Directory kurulum kılavuzları hakkında bilgi edinin.
-ms.openlocfilehash: 58f7ed9a20580db742a773cb8a7874137f0cfc4c
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 1e1d78b79411a31f4d39ba9fe0268b5f821a5933
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128422"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187107"
 ---
-# <a name="azure-active-directory-setup-guides"></a>kurulum kılavuzlarını Azure Active Directory
+# <a name="azure-active-directory-setup-guides"></a>Azure Active Directory kurulum kılavuzları
 
-Azure Active Directory (Azure AD) özellikleri kuruluşunuzu yönetmenize ve güvenliğini sağlamanıza yardımcı olur. Bu kurulum kılavuzları, bu özellikleri basit bir şekilde tümleştirmenize yardımcı olur. Aşağıdaki bölümlerde kurulum kılavuzlarını kısaca açıklayacağız ve kılavuzların bağlantılarını paylaşacağız.
+Azure Active Directory (Azure AD) özellikleri, kuruluşunuzu yönetmenize ve güvenliğini sağlamanıza yardımcı olur. Bu kurulum kılavuzları, bu özellikleri basit bir şekilde tümleştirmenize yardımcı olur. Aşağıdaki bölümlerde kurulum kılavuzlarını kısaca açıklayacağız ve kılavuzların bağlantılarını paylaşacağız.
 
-## <a name="who-are-these-setup-guides-for"></a>Bu kurulum kılavuzları Who için?
+## <a name="who-are-these-setup-guides-for"></a>Bu kurulum kılavuzları kimler içindir?
 
 Bu kurulum kılavuzları, genellikle adanmış bir kimlik ekibine sahip olmayan küçük ve orta ölçekli kuruluşlar için tasarlanmıştır. Bunları kullanmak için kimlik uzmanı olmanız gerekmez.
 
@@ -37,25 +39,25 @@ Aşağıdaki yönetim rollerinin üyesi olmanız gerekir:
 
 ## <a name="identity-security-for-teams"></a>Teams için kimlik güvenliği
 
-Azure Active Directory (Azure AD), çalışanlarınızın oturum açmasına ve uygulamalara ve hizmetlere erişmesine yardımcı olan bulut tabanlı kimlik ve erişim yönetimi hizmetimizdir.
-Bu katalog, kullanıcılarınızın güvende olduğundan ve Teams kullanarak en verimli şekilde zaman geçirmesini sağlamak için kullanabileceğiniz bazı temel güvenlik özelliklerini içerir.
+Azure Active Directory (Azure AD), çalışanlarınızın oturum açmasına ve uygulama ve hizmetlere erişmesine yardımcı olan bulut tabanlı kimlik ve erişim yönetimi hizmetimizdir.
+Bu katalog, kullanıcılarınızın güvende olmasını ve Teams'i kullanarak en verimli şekilde zaman geçirmesini sağlamak için kullanabileceğiniz bazı temel güvenlik özelliklerini içerir.
 
 ### <a name="licensing"></a>Lisanslama
 
 Bu katalogdaki güvenlik özelliklerini kullanmak için bir Azure Active Directory P2 lisansı gereklidir.
 
-[Teams kataloğu için Kimlik güvenliği'ni açma](https://aka.ms/teamsidentity)
+[Teams için Kimlik güvenliği kataloğunu açma](https://portal.office.com/AdminPortal/home?Q=azuredocs#/teamsidentity)
 
 ## <a name="identity-governance"></a>Kimlik İdaresi
 
-Bu sihirbaz kataloğu, müşterilere Erişim İncelemeleri (AR), Privileged Identity Management (PIM) ve Yetkilendirme Yönetimi (ELM) dahil olmak üzere Azure Active Directory P2 işlevselliği konusunda yardımcı olmak üzere tasarlanmıştır. PIM ve ELM için, seçilmiş bir belge listesi ve yöneticinin bu işlevselliği yapılandırabileceği Azure Active Directory yönetim merkezine yönelik bir işaretçi sunuyoruz. AR için, yöneticilerin iki şablon arasından seçim yapmasına olanak tanıyan tam otomatik bir deneyim sunuyoruz. Bu şablonlar, grup sahiplerinin tüm Microsoft 365 gruplarında konuk kullanımını onaylamasına olanak tanıyan bir şablon içerir. Bu, müşterilerin bugün kullandığı en önemli ilkedir.  
+Bu sihirbaz kataloğu, müşterilerin Erişim Gözden Geçirmeleri (AR), Privileged Identity Management (PIM) ve Yetkilendirme Yönetimi (ELM) gibi Azure Active Directory P2 işlevlerine yardımcı olmak için tasarlanmıştır. PIM ve ELM için, seçilen bir belge listesi ve yöneticinin bu işlevselliği yapılandırabileceği Azure Active Directory yönetim merkezine yönelik bir işaretçi sunuyoruz. AR için, yöneticilerin iki şablon arasından seçim yapmasına olanak tanıyan tam otomatik bir deneyim sunuyoruz. Bu şablonlar, grup sahiplerinin tüm Microsoft 365 gruplarında konuk kullanımını onaylamasına olanak tanıyan bir şablon içerir. Bu, müşterilerin bugün kullandığı en önemli ilkedir.  
 
 Ardından, yöneticinin seçtikleri belirli bir grup için konukların gözden geçireni olduğu bir test şablonu sunuyoruz. Kiracının tüm Microsoft 365 grupları konuk kullanıcılarını kapsayan bir gözden geçirmesi zaten varsa, yönetici mevcut gözden geçirmeyi yönetmek için Azure Active Directory yönetim merkezine yönlendirilir ve otomatikleştirilmiş bir deneyim olmaz.
 
-[Kimlik İdaresi kurulum kılavuzunu açma](https://go.microsoft.com/fwlink/p/?linkid=386330)
+[Kimlik İdaresi kurulum kılavuzunu açma](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/identitygovernance)
 
 > [!NOTE]
-> Azure Active Directory P2 lisansı, bu katalogdaki güvenlik özelliklerini kullanmak için gereklidir.
+> Bu katalogdaki güvenlik özelliklerini kullanmak için Azure Active Directory P2 lisansı gereklidir.
 
 ## <a name="azure-active-directory-deployment"></a>Azure Active Directory dağıtımı  
 
@@ -63,27 +65,27 @@ Azure Active Directory kurulum kılavuzu, en yaygın Azure AD özelliklerini ön
 
 Kurulum kılavuzları, tamamlamanız gereken görevlerin denetim listesini içerir ve kılavuzlarda ilerlerken ilerleme durumunuzu izleyebilirsiniz. Kılavuzlar gerektiğinde diğer kurulum kılavuzlarına da bağlanır.
 
-[Azure Active Directory kurulum kılavuzunu açın](https://go.microsoft.com/fwlink/p/?linkid=2183427).
+[Azure Active Directory kurulum kılavuzunu açın](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/azureadsetup).
 
 ## <a name="add-or-sync-users-to-your-microsoft-account"></a>Microsoft hesabınıza kullanıcı ekleme veya eşitleme  
 
-Bu kılavuz, Azure'da ve Microsoft 365 kullanıcı hesaplarını ayarlamanıza yardımcı olur. Ortamınıza ve gereksinimlerinize göre kullanıcıları tek tek eklemeyi, şirket içi dizininizi Azure AD bulut eşitleme veya Azure AD Bağlan ile geçirmeyi veya mevcut eşitleme sorunlarını gidermeyi seçebilirsiniz.
+Bu kılavuz, Azure ve Microsoft 365'te kullanıcı hesapları kurulumunu ayarlamanıza yardımcı olur. Ortamınıza ve gereksinimlerinize göre kullanıcıları tek tek eklemeyi, şirket içi dizininizi Azure AD bulut eşitlemesi veya Azure AD Connect ile geçirmeyi veya mevcut eşitleme sorunlarını gidermeyi seçebilirsiniz.
 
 ### <a name="licensing"></a>Lisanslama
 
-Azure Active Directory eşitleme araçlarının kullanılması ücretsizdir ve tüm Microsoft 365 aboneliklere dahildir.
+Azure Active Directory eşitleme araçlarını kullanmak ücretsizdir ve tüm Microsoft 365 aboneliklerine dahildir.
 
-[Kullanıcı ekleme veya eşitleme kurulum kılavuzunu açın](https://go.microsoft.com/fwlink/?linkid=2183349).
+[Kullanıcı ekleme veya eşitleme kurulum kılavuzunu açın](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/identitywizard).
 
 ## <a name="secure-your-cloud-apps-with-single-sign-on-sso"></a>Çoklu Oturum Açma (SSO) ile bulut uygulamalarınızın güvenliğini sağlama
 
-Bu kılavuz, bulut uygulamalarını Microsoft 365 eklemenize yardımcı olmak için tasarlanmıştır. Kılavuzumuzda kiracınıza bir uygulama ekleyebilir, uygulamaya kullanıcı ekleyebilir, roller atayabilir ve daha fazlasını yapabilirsiniz.  Uygulama Tek Sign-On (SSO) destekliyorsa, bu yapılandırmada size de yol gösteririz.
+Bu kılavuz, Microsoft 365'e bulut uygulamaları eklemenize yardımcı olmak için tasarlanmıştır. Kılavuzumuzda kiracınıza bir uygulama ekleyebilir, uygulamaya kullanıcı ekleyebilir, roller atayabilir ve daha fazlasını yapabilirsiniz.  Uygulama Tek Sign-On (SSO) destekliyorsa, bu yapılandırmada size de yol gösteririz.
 
 ### <a name="licensing"></a>Lisanslama
 
-Microsoft 365 için her ücretli abonelik, Azure AD için ücretsiz bir abonelikle birlikte gelir. uygulamalarınızı yönetmek, kullanıcı ve grup hesapları oluşturup yönetmek için Azure AD kullanabilirsiniz.
+Microsoft 365'e yapılan her ücretli abonelik, Azure AD için ücretsiz bir abonelikle birlikte gelir. uygulamalarınızı yönetmek, kullanıcı ve grup hesapları oluşturup yönetmek için Azure AD kullanabilirsiniz.
 
-[Microsoft 365 kurulum kılavuzuna bulut uygulaması ekleme kılavuzunu açın](https://aka.ms/AzureAppSetup)
+[Microsoft 365'e bulut uygulaması ekleme kurulum kılavuzunu açın](https://portal.office.com/AdminPortal/home?Q=azuredocs#/azureadappintegration)
 
 ## <a name="azure-self-service-password-reset-sspr-guide"></a>Azure Self-Service parola sıfırlama (SSPR) kılavuzu
 
@@ -93,15 +95,15 @@ Bu kurulum kılavuzu self servis parola sıfırlamayı etkinleştirmenize ve yap
 
 SSPR aşağıdaki lisanslardan birini gerektirir:
 
-- P1 veya P2 Azure Active Directory
+- Azure Active Directory P1 veya P2
 
 - Microsoft 365 Business Premium
 
 - E3 veya E5 Microsoft 365 Kurumsal  
 
-- Enterprise Mobility ve Security E3 veya E5
+- Enterprise Mobility and Security E3 veya E5
 
-[Self servis parola sıfırlama kurulum kılavuzunu açın](https://go.microsoft.com/fwlink/p/?linkid=2183284).
+[Self servis parola sıfırlama kurulum kılavuzunu açın](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/ssprsetup).
 
 ## <a name="multi-factor-authentication-mfa"></a>Çok faktörlü kimlik doğrulaması (MFA)
 
@@ -109,16 +111,16 @@ Bu kılavuz geçerli MFA durumunu sağlar ve BT yöneticilerinin kuruluş gereks
 
 ### <a name="licensing"></a>Lisanslama
 
-Koşullu Erişim Azure Active Directory P1 veya P2 lisansı gerektirir, güvenlik varsayılanları ve kullanıcı başına MFA ücretsizdir ve tüm Microsoft 365 aboneliklerine dahildir.
+Koşullu Erişim bir Azure Active Directory P1 veya P2 lisansı gerektirir, güvenlik varsayılanları ve kullanıcı başına MFA ücretsizdir ve tüm Microsoft 365 aboneliklerine dahildir.
 
-[Çok faktörlü kimlik doğrulama (MFA) kılavuzunu açma](https://go.microsoft.com/fwlink/?linkid=2183506)
+[Çok faktörlü kimlik doğrulama (MFA) kılavuzunu açma](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/mfasetupguide)
 
 ## <a name="the-passwordless-setup-guide"></a>Parolasız kurulum kılavuzu
 
-Parolasız kurulum kılavuzu, ortamınız için en iyi parolasız yöntemi belirlemenize yardımcı olacak şekilde tasarlanmıştır. Yöntemler güvenlik anahtarlarını, İş İçin Windows Hello ve Microsoft Authenticator uygulamasını içerir. Öneri İş İçin Windows Hello ise, farklı seçeneklerde size yol gösteren bir bölüm vardır. Kılavuz, adım adım plan oluşturmanıza yardımcı olacak sorular sorar.
+Parolasız kurulum kılavuzu, ortamınız için en iyi parolasız yöntemi belirlemenize yardımcı olacak şekilde tasarlanmıştır. Yöntemler güvenlik anahtarları, İş İçin Windows Hello ve Microsoft Authenticator uygulamasını içerir. Öneri İş İçin Windows Hello ise, farklı seçeneklerde size yol gösteren bir bölüm vardır. Kılavuz, adım adım plan oluşturmanıza yardımcı olacak sorular sorar.
 
 ### <a name="licensing"></a>Lisanslama
 
-Microsoft 365 için her ücretli abonelik, Azure AD için ücretsiz bir abonelikle birlikte gelir. uygulamalarınızı yönetmek, kullanıcı ve grup hesapları oluşturup yönetmek için Azure AD kullanabilirsiniz.
+Microsoft 365'e yapılan her ücretli abonelik, Azure AD için ücretsiz bir abonelikle birlikte gelir. uygulamalarınızı yönetmek, kullanıcı ve grup hesapları oluşturup yönetmek için Azure AD kullanabilirsiniz.
 
-[Parolasız kurulum kılavuzunu açın](https://go.microsoft.com/fwlink/?linkid=2183427).
+[Parolasız kurulum kılavuzunu açın](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/passwordlesssetup).

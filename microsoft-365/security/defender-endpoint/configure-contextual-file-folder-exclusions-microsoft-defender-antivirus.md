@@ -1,6 +1,6 @@
 ---
 title: Bağlamsal dosya ve klasör dışlamaları
-description: Windows üzerinde Microsoft Defender Virüsten Koruma için bağlamsal dosya ve klasör dışlama özelliğini açıklar. Bu özellik, kısıtlamalar uygulayarak Microsoft Defender Virüsten Koruma'nın bir dosyayı veya klasörü taramaması gereken bağlamı tanımlarken daha belirgin olmanıza olanak tanır
+description: Windows'da Microsoft Defender Virüsten Koruma için bağlamsal dosya ve klasör dışlamaları özelliğini açıklar. Bu özellik, kısıtlama uygulayarak Virüsten Koruma Microsoft Defender hangi bağlam altında bir dosya veya klasörü taramaması gerektiğini tanımlarken daha belirgin olmanıza olanak tanır
 keywords: Microsoft Defender Virüsten Koruma, işlem, dışlama, dosyalar, taramalar
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -12,20 +12,22 @@ ms.localizationpriority: medium
 ms.date: 08/25/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 903cfb9e6a4bc618a6839b612cb3b15a840ebb8d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 377383cb959fd53accf98c80a8637c05bb7832ff
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699180"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200637"
 ---
 # <a name="contextual-file-and-folder-exclusions"></a>Bağlamsal dosya ve klasör dışlamaları
 
-Bu makalede/bölümde, Windows üzerinde Microsoft Defender Virüsten Koruma için bağlamsal dosya ve klasör dışlamaları özelliği açıklanmaktadır. Bu özellik, kısıtlamalar uygulayarak Microsoft Defender Virüsten Koruma'nın bir dosyayı veya klasörü taramaması gereken bağlamı tanımlarken daha belirgin olmanıza olanak tanır.
+Bu makalede/bölümde Windows'ta Microsoft Defender Virüsten Koruma için bağlamsal dosya ve klasör dışlamaları özelliği açıklanmaktadır. Bu özellik, kısıtlama uygulayarak Virüsten Koruma Microsoft Defender hangi bağlam altında bir dosyayı veya klasörü taramaması gerektiğini tanımlarken daha belirgin olmanıza olanak tanır.
 
 ## <a name="overview"></a>Genel bakış
 
@@ -54,7 +56,7 @@ Kısıtlamalar genellikle dosya veya klasör dışlama yoluna kısıtlama türü
 
 ### <a name="requirements"></a>Gereksinimler
 
-Bu özellik için Microsoft Defender Virüsten Koruma gerekir:
+Bu özellik Microsoft Defender Virüsten Koruma gerektirir:
 
 - Platform: **4.18.2205.7** veya üzeri
 - Motor: **1.1.19300.2** veya üzeri
