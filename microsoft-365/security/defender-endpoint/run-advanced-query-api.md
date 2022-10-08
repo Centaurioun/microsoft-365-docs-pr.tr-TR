@@ -12,17 +12,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: cc23d418fb75a132d0de510ae5035922b800ec5a
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 45765e6b848697bc960c0da363b2cc61659ae801
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67684398"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229294"
 ---
 # <a name="advanced-hunting-api"></a>Gelişmiş tehdit avcılığı API'si
 
@@ -71,6 +73,8 @@ Temsilci (iş veya okul hesabı)|AdvancedQuery.Read|'Gelişmiş sorgular çalı�
 >
 > - Kullanıcının 'Verileri Görüntüle' AD rolüne sahip olması gerekir
 > - Kullanıcının cihaz grubu ayarlarına göre cihaza erişimi olmalıdır (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md) )
+>
+> Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.  
 
 ## <a name="http-request"></a>HTTP isteği
 

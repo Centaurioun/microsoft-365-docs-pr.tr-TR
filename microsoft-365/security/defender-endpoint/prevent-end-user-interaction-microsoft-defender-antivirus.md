@@ -15,16 +15,18 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 6e507eb344f1dabc485bd89e68e9dcef8213419b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f168645b37f39edd9c8c6a0fdcc162fc33b81e24
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694005"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221464"
 ---
-# <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Kullanıcıların Microsoft Defender Virüsten Koruma kullanıcı arabirimini görmesini veya bu arabirimle etkileşim kurmasını engelleme
+# <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Kullanıcıların Microsoft Defender Virüsten Koruma kullanıcı arabirimini görmesini veya bunlarla etkileşim kurmasını engelleme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,7 +43,7 @@ Uç noktalardaki kullanıcıların Microsoft Defender Virüsten Koruma arabirimi
 
 ## <a name="hide-the-microsoft-defender-antivirus-interface"></a>Microsoft Defender Virüsten Koruma arabirimini gizleme
 
-Windows 10, sürüm 1703'te arabirimi gizlemek Microsoft Defender Virüsten Koruma bildirimlerini gizler ve Virüs & tehdit koruması kutucuğunun Windows Güvenliği uygulamasında görünmesini engeller.
+Windows 10, sürüm 1703'te arabirimi gizlemek virüsten koruma bildirimlerini Microsoft Defender gizler ve Virüs & tehdit koruması kutucuğunun Windows Güvenliği uygulamasında görünmesini engeller.
 
 Ayar **Etkin** olarak ayarlandığında:
 
@@ -66,7 +68,7 @@ Windows 10 önceki sürümlerinde, ayar Windows Defender istemci arabirimini giz
 
 3. **Yönetim şablonları'nı** tıklatın.
 
-4. **Ağacı Microsoft Defender Virüsten Koruma > İstemci arabirimi > Windows bileşenlerine** genişletin.
+4. Ağacı **Windows bileşenleri > Microsoft Defender Virüsten Koruma > İstemci arabirimine** genişletin.
 
 5. **Başsız UI modunu etkinleştir** ayarına çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. **Tamam**'a tıklayın.
 
@@ -87,7 +89,7 @@ Kullanıcıların taramaları duraklatmasını engelleyebilirsiniz. Bu, zamanlan
 
 3. **Yönetim şablonları'nı** tıklatın.
 
-4. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Taraması** olarak genişletin.
+4. Virüsten **Koruma** \> **Taraması** Microsoft Defender ağacı **Windows bileşenlerine** \> genişletin.
 
 5. **Kullanıcıların taramayı duraklatmasına izin ver ayarına** çift tıklayın ve seçeneği **Devre Dışı** olarak ayarlayın. **Tamam**'a tıklayın.
 
@@ -105,4 +107,4 @@ Kullanıcıların taramaları duraklatmasını engelleyebilirsiniz. Bu, zamanlan
 
 - [Uç noktalarda görünen bildirimleri yapılandırın](configure-notifications-microsoft-defender-antivirus.md)
 - [Microsoft Defender Virüsten Koruma ile son kullanıcı etkileşimlerini yapılandırma](configure-end-user-interaction-microsoft-defender-antivirus.md)
-- [Windows 10'da Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10'de virüsten koruma Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)

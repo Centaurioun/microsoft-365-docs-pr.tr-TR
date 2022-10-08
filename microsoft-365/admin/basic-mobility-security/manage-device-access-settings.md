@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -18,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility ve Security ile yönetemezseniz, e-postaya Exchange ActiveSync uygulama erişimini engelleyin ve kuruluş cihazlarıyla ilgili ayrıntıları almak için PowerShell'i Azure AD kullanın.
-ms.openlocfilehash: 4e66ee6aff2ce3df43eee0c6fa8a83699732378a
-ms.sourcegitcommit: 974922d1d8d9ce7bc2eb49ab80ecca9da4a911f9
+ms.openlocfilehash: 22b4afd36043c10b093e3afaf6ff76f337ad5a7d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67651370"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68190539"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Temel Mobilite ve Güvenlik'te cihaz erişim ayarlarını yönetme
 

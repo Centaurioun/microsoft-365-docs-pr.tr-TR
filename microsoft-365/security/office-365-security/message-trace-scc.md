@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
@@ -15,12 +15,13 @@ ms.custom:
 description: Yöneticiler, iletilere ne olduğunu öğrenmek için Microsoft 365 Defender portalındaki ileti izleme bağlantısını kullanabilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 66ec435e4776cbf52bcf3bbd262210d4dc77ef87
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 7412cade7e934ca7095e308a40558084a8404ddf
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597492"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68086973"
 ---
 # <a name="message-trace-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalında ileti izleme
 

@@ -8,10 +8,11 @@ manager: scotv
 ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: ''
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Yeni ayrılanlar özelliği hakkında bilgi edinin.
 ms.date: 05/12/2022
-ms.openlocfilehash: 20c2845fd0d0d475c21df626f0a33d62bc094d99
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: b475a8b42a0d6500c50ae18eb3ef07767daf277b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67111659"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68206310"
 ---
 # <a name="microsoft-365-license-allotment-basics"></a>Microsoft 365 lisans ayrılan temel bilgileri
 

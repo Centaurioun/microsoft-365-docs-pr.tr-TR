@@ -13,6 +13,7 @@ ms.custom:
 - Adm_O365
 - O365E_SetupDirSyncLocalDir
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:
@@ -22,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Şirket içi kullanıcı hesaplarınızla ilişkilendirilmiş yönlendirilemeyen bir etki alanınız varsa, bunları Microsoft 365 kiracınızla eşitlemeden önce ne yapacağınızı öğrenin.
-ms.openlocfilehash: 551cb50686742577f78649bddee824637e87fa5e
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: e88daebce6ae11ec8741a49894e15509471a5701
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672391"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68189747"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Dizin eşitlemesi için yönlendirilebilir olmayan bir etki alanını hazırlama
 

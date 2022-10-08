@@ -14,14 +14,16 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 search.appverid: met150
-ms.openlocfilehash: 28df68cefb8f559e270a6e3d5c0c43d34f9f4135
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f24b7bcbf884a5b2498e53d5d9667956d36b966f
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691903"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221356"
 ---
 # <a name="next-generation-protection-overview"></a>Yeni nesil korumaya genel bakış
 
@@ -46,7 +48,7 @@ Uç Nokta için Microsoft Defender, ağınızın güvenlik çevresini güçlendi
 
 ## <a name="configure-next-generation-protection-services"></a>Yeni nesil koruma hizmetlerini yapılandırma
 
-Yeni nesil koruma hizmetlerini yapılandırma hakkında bilgi için bkz. [Microsoft Defender Virüsten Koruma özelliklerini yapılandırma](configure-microsoft-defender-antivirus-features.md).
+Yeni nesil koruma hizmetlerini yapılandırma hakkında bilgi için bkz[. Microsoft Defender Virüsten Koruma özelliklerini yapılandırma](configure-microsoft-defender-antivirus-features.md).
 
 > [!NOTE]
 > Yapılandırma ve yönetim, Windows server'da Windows istemcilerindekiyle büyük ölçüde aynıdır. Ancak bazı farklılıklar vardır. 

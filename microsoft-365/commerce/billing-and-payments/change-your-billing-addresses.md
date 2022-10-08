@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: İşletmeler için Microsoft 365 fatura bildirimlerini almak için kullanılan fatura adreslerinizi veya e-posta adresinizi nasıl güncelleştireceğinizi öğrenin.
 ms.date: 01/24/2022
-ms.openlocfilehash: 3421cdfa1951d4bcde91d8b0eb97612054980ced
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 6a15d5e1b2f13f4cf7dd8f9757ff1616d9b4bc9b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493385"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68206267"
 ---
 # <a name="change-your-microsoft-365-for-business-billing-addresses"></a>İş için Microsoft 365 fatura adreslerinizi değiştirme
 
@@ -36,7 +37,7 @@ Faturanız veya faturanız üç adres içerir:
 
 - **Fatura adresi** Faturalandırma bölümünüzün adresidir ve genellikle **Alıcı Adresi** ile aynıdır.
 
-- **Hizmet Kullanım Adresi** Hizmetin kullanıldığı adrestir ve genellikle **Alıcı Adresi** ile aynıdır. Kuruluşunuzda uzak kullanıcılar veya birden fazla ofis varsa, kullanıcılarınızın çoğunluğunun bulunduğu adresi kullanın.
+- **Service Usage Address** The address where the service is being used, usually the same as the **Sold-To** address. If your organization has remote users or multiple offices, use the address where the majority of your users are located.
 
 Bu adresler çoğu durumda aynıdır. Gerekirse, adreslerinizden birini veya daha fazlasını değiştirebilirsiniz. Fatura bildirimlerini almak ve diğer yöneticiler için alternatif e-posta adresini değiştirmek için alternatif bir e-posta adresi de sağlayabilirsiniz.
 

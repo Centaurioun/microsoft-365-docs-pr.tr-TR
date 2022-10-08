@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-subscription-management
@@ -21,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Bu genel bakış adımları ağınızı ayarlamanıza, kimliklerinizi oluşturmanıza, Microsoft 365 Uygulamaları dağıtmanıza ve verilerinizi geçirmenize yardımcı olmak için tasarlanmıştır.
-ms.openlocfilehash: 1562e92c082c27ba349d0f5611cc7bbbc4d55035
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 572c9eb22d12af0de8ad300efa027823b8548232
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67673029"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68189703"
 ---
 # <a name="deploy-microsoft-365-enterprise-for-your-organization"></a>Kuruluşunuz için Microsoft 365 Kurumsal dağıtma
 

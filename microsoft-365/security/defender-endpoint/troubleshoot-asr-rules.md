@@ -18,14 +18,16 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 search.appverid: met150
-ms.openlocfilehash: 2c5b0858897f555757682c52f0310497c23fef54
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 96b7600931d78e6ad1ada5197a79393efb4f1abb
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699850"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229316"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-endpoint-asr-rules"></a>ASR Kuralları Uç Nokta için Microsoft Defender raporlama ve sorun giderme
 
@@ -111,9 +113,9 @@ Buna erişmek için Windows Olay Görüntüleyicisi açın ve **Microsoft** \> *
 
 :::image type="content" source="images/eventviewerscrnew.png" alt-text="Olay Görüntüleyicisi sayfası" lightbox="images/eventviewerscrnew.png":::
 
-## <a name="microsoft-defender-antimalware-protection-logs"></a>Microsoft Defender Kötü Amaçlı Yazılımdan Koruma Günlükleri
+## <a name="microsoft-defender-antimalware-protection-logs"></a>kötü amaçlı yazılımdan koruma günlüklerini Microsoft Defender
 
-Kural olaylarını, gerekirse görevleri yönetmek ve yapılandırmak ve otomatikleştirmek için kullanılabilen, adlı `*mpcmdrun.exe*`Microsoft Defender Virüsten Koruma ayrılmış komut satırı aracı aracılığıyla da görüntüleyebilirsiniz.
+Kural olaylarını, gerekirse görevleri yönetmek ve `*mpcmdrun.exe*`yapılandırmak ve otomatikleştirmek için kullanılabilen Microsoft Defender Virüsten Koruma ayrılmış komut satırı aracı aracılığıyla da görüntüleyebilirsiniz.
 
 Bu yardımcı programı *%ProgramFiles%\Windows Defender\MpCmdRun.exe* içinde bulabilirsiniz. Bunu yükseltilmiş bir komut isteminden çalıştırmanız gerekir (yani, Yönetici olarak çalıştır).
 

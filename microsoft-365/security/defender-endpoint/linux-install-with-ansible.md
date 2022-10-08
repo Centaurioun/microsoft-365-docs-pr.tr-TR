@@ -13,16 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: a15b15b5fabeb51a5ce3445ad3e98e9f7d843f3d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 5c0c5e4eea9a639364f1750c960102740d071163
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692475"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229492"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Ansible ile Linux'ta Uç Nokta için Microsoft Defender dağıtma
 
@@ -52,7 +53,7 @@ Ayrıca Ansible dağıtımı için Ansible yönetim görevleri hakkında bilgi s
 - SSH, denetim düğümü ile tüm yönetilen düğümler (uç nokta için Defender'ın yüklü olacağı cihazlar) arasında bir yönetici hesabı için yapılandırılmalıdır ve ortak anahtar kimlik doğrulaması ile yapılandırılması önerilir.
 - Aşağıdaki yazılım tüm yönetilen düğümlere yüklenmelidir:
   - Curl
-  - python-apt
+  - python-apt (apt'yi paket yöneticisi olarak kullanarak dağıtımlar üzerinde dağıtıyorsanız)
 
 - Tüm yönetilen düğümler veya ilgili dosyada `/etc/ansible/hosts` aşağıdaki biçimde listelenmelidir:
 

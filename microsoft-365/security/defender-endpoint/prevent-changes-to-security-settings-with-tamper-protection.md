@@ -9,8 +9,9 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
+ms.date: 09/23/2022
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom:
@@ -18,15 +19,15 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.subservice: mde
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 486b77e2f4c60508170bfe2f119880e4b30033b8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 5f2a87f1fa8ff8130e460f46c9ac94275ba0735d
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686789"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221334"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Değişiklik korumasıyla güvenlik ayarlarını koruyun
 
@@ -68,9 +69,14 @@ Bazı siber saldırılar sırasında kötü aktörler, makinelerinizde virüsten
 - Windows Güvenliği uygulamasında bildirimleri gizleme
 - Arşivlerin ve ağ dosyalarının taranmalarını devre dışı bırakma
 
+> [!IMPORTANT]
+> Yerleşik koruma (önizleme), kurcalama korumasını varsayılan olarak açmayı içerir. Yerleşik koruma hakkında daha fazla bilgi edinmek için bkz:
+> - [Yerleşik koruma fidye yazılımlarını korumaya yardımcı olur](built-in-protection.md) (makale)
+> - [Tüm kurumsal müşteriler için kurcalama koruması açılacaktır](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478) (Teknik Topluluk blog gönderisi)
+
 ### <a name="how-it-works"></a>Nasıl çalışır?
 
-Kurcalama koruması temelde Microsoft Defender Virüsten Koruma'yı güvenli, varsayılan değerlerine kilitler ve güvenlik ayarlarınızın uygulamalar ve yöntemler aracılığıyla değiştirilmesini önler:
+Kurcalama koruması temelde Microsoft Defender Virüsten Koruma'yı güvenli ve varsayılan değerlerine kilitler ve güvenlik ayarlarınızın uygulamalar ve yöntemler aracılığıyla değiştirilmesini önler:
 
 - Windows cihazınızda Kayıt Defteri Düzenleyicisi'nde ayarları yapılandırma
 - PowerShell cmdlet'leri aracılığıyla ayarları değiştirme

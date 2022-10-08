@@ -13,15 +13,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
+ms.custom: api
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: cc13b1fcb9c396133d63cb0019a49933d34e10f9
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 9086bae05ecfcea2bd055de23137fbe147e77be4
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585916"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221422"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-query-apis"></a>Desteklenen Uç Nokta için Microsoft Defender sorgu API'leri
 

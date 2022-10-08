@@ -11,19 +11,21 @@ ms.service: microsoft-365-security
 ms.subservice: other
 ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.collection: ''
+ms.collection:
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 description: Kullanıcılarınızın cihazlarında veya Windows bilgisayarlarında bulunan şirket verilerini kaldırmak için İş için Microsoft 365'i nasıl kullanacağınızı keşfedin.
-ms.openlocfilehash: 1b9da1fc53bbef1321118a9e7d554cb0a6a0b8d1
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 3b198e962f90cf7a0293bf8fe32f1ff2d511c111
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742837"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68093506"
 ---
 # <a name="remove-company-data-from-devices"></a>Şirket verilerini cihazlardan kaldırma
 

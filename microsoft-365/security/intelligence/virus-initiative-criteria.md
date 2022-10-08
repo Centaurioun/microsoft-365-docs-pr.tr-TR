@@ -11,15 +11,17 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: d309293425149252d45b686b9f8a74006f714cc1
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 11fa05644d5f65ee4f835027636d41da1dd37adc
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737180"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229536"
 ---
 # <a name="microsoft-virus-initiative"></a>Microsoft Virüs Girişimi
 
@@ -31,7 +33,7 @@ Kötü amaçlı yazılımdan koruma veya virüsten koruma teknolojisi geliştire
 
 MVI programına hak kazanmak için kuruluşunuzun aşağıdaki tüm gereksinimleri karşılaması gerekir:
 
-1. Güvenlik çözümünüz, Microsoft Defender Virüsten Koruma'nın yerini alır veya tamamlayıcıdır.
+1. Güvenlik çözümünüz Virüsten Koruma Microsoft Defender nın yerini alır veya tamamlayıcıdır.
 
 2. Kuruluşunuz, Windows ile uyumluluğu ele alan son müşterilere uygulama güncelleştirmeleri geliştirmek ve dağıtmakla sorumludur.
 

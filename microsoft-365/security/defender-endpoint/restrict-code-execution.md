@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: b93330f549089cd0a5252fa871a0ef63c8249a3b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: a50aa7c1771469f7ba55f93d02deaaee98824deb
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67684497"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229404"
 ---
 # <a name="restrict-app-execution-api"></a>Uygulama yürütme API'sini kısıtlama
 
@@ -70,6 +72,8 @@ Temsilci (iş veya okul hesabı)|Machine.RestrictExecution|'Kod yürütmeyi kıs
 >
 > - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Etkin düzeltme eylemleri' (Daha fazla bilgi için bkz [. Rolleri oluşturma ve yönetme](user-roles.md) )
 > - Kullanıcının cihaz grubu ayarlarına göre cihaza erişimi olmalıdır (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md) )
+>
+> Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.  
 
 ## <a name="http-request"></a>HTTP isteği
 

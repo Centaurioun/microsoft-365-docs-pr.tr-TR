@@ -13,16 +13,19 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 231fce344ef9b9b617f58bc3a355ea748283e8ba
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 73b5c3aa284d16ec57156d2e0fe8c39f5d54619e
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741268"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229206"
 ---
 # <a name="how-to-enable-dmarc-reporting-for-microsoft-online-email-routing-address-moera-and-parked-domains"></a>Microsoft Online Email Yönlendirme Adresi (MOERA) ve park edilmiş Etki Alanları için DMARC Raporlama'yı etkinleştirme
 

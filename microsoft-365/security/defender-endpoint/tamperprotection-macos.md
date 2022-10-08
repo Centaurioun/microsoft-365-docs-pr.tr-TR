@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: d27272464938b4dc3a5a53bc447fcb227614f345
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 1eea32f9f8844e89ce2572e856366a8de39b2f65
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689415"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229052"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>MacOS güvenlik ayarlarını kurcalama koruması ile koruma
 
@@ -79,7 +80,6 @@ Mod adını zorlama düzeyi olarak sağlayarak kurcalama koruma modunu yapıland
 
 - Desteklenen macOS sürümleri: Monterey (12), Big Sur (11), Catalina (10.15+).
 - Uç Nokta için Defender için gereken en düşük sürüm: 101.70.19.
-- Kurcalama Koruması özelliği önizleme aşamasındayken Üretim dışı bir güncelleştirme kanalında ([Önizleme veya Beta](/deployoffice/office-insider/deploy/microsoft-autoupdate)) olmanız gerekir. Üretim kanalındaysanız, yapılandırılmış kurcalama koruma modu yoksayılır.
 
 **Kesinlikle önerilen ayarlar:**
 

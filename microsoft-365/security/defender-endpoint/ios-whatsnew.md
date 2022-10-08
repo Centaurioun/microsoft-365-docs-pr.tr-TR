@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: sunasing
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 9892b5eafdbcbabf2038a287a7ae4e58081f72bc
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e7b7117703fccd95c40f2ec6ec979cca526d6319
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688825"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221202"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS'ta Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -33,6 +34,10 @@ ms.locfileid: "67688825"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="vulnerability-assessment-of-apps"></a>Uygulamaların güvenlik açığı değerlendirmesi
+
+iOS için Uç Nokta için Microsoft Defender üzerindeki uygulamaların güvenlik açığı değerlendirmesi artık genel önizleme aşamasındadır. iOS üzerinde Uç Nokta için Defender, yalnızca kayıtlı (MDM) cihazlar için uygulamaların güvenlik açığı değerlendirmelerini destekler. Diğer ayrıntılar için bkz. [Uygulamaların güvenlik açığı değerlendirmesini yapılandırma](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-vulnerability-assessment-of-apps). Önizlemeye katılmak istiyorsanız kiracı adınızı ve kimliğinizi bizimle paylaşın: mdatpmobile@microsoft.com.
 
 ## <a name="network-protection"></a>Ağ koruması
 
@@ -60,7 +65,7 @@ iOS'ta Uç Nokta için Microsoft Defender artık tek bir uygulamada güvenliği 
 
 iOS'ta Uç Nokta için Microsoft Defender artık bu tür cihazlarda platform tarafından sağlanan artan yönetim özellikleri göz önüne alındığında denetimli iOS/iPadOS cihazlarında özel yeteneklere sahiptir. Ayrıca **cihazda yerel BIR VPN ayarlamadan** Web Koruması sağlayabilir. Bu, son kullanıcılara kimlik avı ve diğer web tabanlı saldırılardan korunmaya devam ederken sorunsuz bir deneyim sunar. Ayrıntılar için [bu belgeleri ziyaret edin](ios-install.md#complete-deployment-for-supervised-devices)
 
-## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-app-store"></a>Uç Nokta için Microsoft Defender artık Uygulama mağazasında Microsoft Defender
+## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-app-store"></a>Uç Nokta için Microsoft Defender artık App Store'da Microsoft Defender
 
 Uç Nokta için Microsoft Defender artık uygulama mağazasında **Microsoft Defender** olarak kullanılabilir. Bu güncelleştirmeyle, uygulama **ABD bölgesindeki Tüketiciler** için önizleme olarak kullanıma sunulacaktır. uygulamada iş veya kişisel hesabınızla nasıl oturum açtığınıza bağlı olarak, Uç Nokta için Microsoft Defender veya kişiler için Microsoft Defender özelliklerine erişebilirsiniz. Daha fazla bilgi için [bu blog](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals) yazısına bakın.
 
@@ -91,7 +96,7 @@ Uç Nokta için Microsoft Defender artık uygulama mağazasında **Microsoft Def
 
 ## <a name="1120240103"></a>1.1.20240103
 - Cihaz Durumu kartı - Cihaz Durumu kartı, son kullanıcılara bekleyen yazılım güncelleştirmeleri hakkında bildirimde bulunur.
-- Kullanılabilirlik iyileştirmeleri - Son kullanıcılar artık Uç Nokta için Defender VPN'i Microsoft Defender uygulamasının kendisinden devre dışı bırakabilir. Bu güncelleştirmeden önce, son kullanıcıların VPN'i yalnızca Ayarlar uygulamasından devre dışı bırakması gerekiyordu.
+- Kullanılabilirlik iyileştirmeleri - Son kullanıcılar artık uç nokta için Defender VPN'i Microsoft Defender uygulamasının kendisinden devre dışı bırakabilir. Bu güncelleştirmeden önce, son kullanıcıların VPN'i yalnızca Ayarlar uygulamasından devre dışı bırakması gerekiyordu.
 - Hata düzeltmeleri.
 
 ## <a name="1120020101"></a>1.1.20020101

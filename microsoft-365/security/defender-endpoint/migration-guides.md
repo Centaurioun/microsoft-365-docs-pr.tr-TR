@@ -9,19 +9,20 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier1
 ms.custom: migrationguides
 ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 07/01/2022
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 46ac26b8351c4b0d85f6d34c196f49b230cd3726
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 473757482d95d2d3178326ede42e911ffe47638f
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67682999"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221180"
 ---
 # <a name="move-to-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender taşı
 
@@ -40,7 +41,7 @@ Uç Nokta için Defender'a geçmeyi düşünüyorsanız size yardımcı olacak y
 |---|---|
 |Henüz bir uç nokta koruma çözümünüz yok ve Uç Nokta için Defender hakkında daha fazla bilgi edinmek istiyorsunuz. Uç Nokta için Defender'ın ortamınızda kullanıma sunulmadan önce nasıl çalıştığını görmek istiyorsunuz.|[Uç Nokta için Microsoft Defender değerlendirme laboratuvarı](evaluation-lab.md)|
 |Uç Nokta için Defender zaten var ve her şeyi ayarlama ve yapılandırma konusunda yardım almak istiyorsunuz.|[Uç Nokta için Microsoft Defender dağıtım kılavuzu](deployment-phases.md)|
-|Microsoft dışı bir uç nokta koruma çözümünden Microsoft Defender Virüsten Koruma'yı içeren Uç Nokta için Defender'a geçmeyi planlıyorsunuz. Geçiş işlemine ve geçişi nasıl yapacağınıza genel bir bakış elde etmek istiyorsunuz.|[Uç Nokta için Microsoft Defender geçişini yapma](switch-to-mde-overview.md)|
+|Microsoft dışı bir uç nokta koruma çözümünden, Microsoft Defender Virüsten Koruma'yı içeren Uç Nokta için Defender'a geçmeyi planlıyorsunuz. Geçiş işlemine ve geçişi nasıl yapacağınıza genel bir bakış elde etmek istiyorsunuz.|[Uç Nokta için Microsoft Defender geçişini yapma](switch-to-mde-overview.md)|
 |Uç Nokta için Defender'a zaten geçiş veya ekleme işlemi yaptınız. Güvenlik ayarlarınızı yönetme, daha fazla özellik yapılandırma veya güvenlik ilkelerinizde ince ayarlama gibi sonraki adımlarla ilgili yardım almak istiyorsunuz.|[geçiş sonrası Uç Nokta için Microsoft Defender yönetme](manage-mde-post-migration.md)|
 
 

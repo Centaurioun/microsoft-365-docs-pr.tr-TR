@@ -11,14 +11,16 @@ ms.date: 05/30/2022
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance.
+ms.collection:
+- m365-security
+- tier1
 f1.keywords: NOCSH
-ms.openlocfilehash: f982c6771e165b42bf8e99876909608ca3200953
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 73c83b6a5880943793fc22bba84b3cc6b608aeac
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481976"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68087134"
 ---
 # <a name="detecting-human-operated-ransomware-attacks-with-microsoft-365-defender"></a>Microsoft 365 Defender ile insan tarafından işletilen fidye yazılımı saldırılarını algılama
 
@@ -136,7 +138,7 @@ Saldırgan bir kullanıcı hesabının, cihazın veya uygulamanın güvenliğini
 Saldırı yöntemi |Sinyal kaynağı |Alternatif güvenlik portalları
 |:---|:---|:---
 RDP deneme yanılma gücü|Uç Nokta için Defender|Bulut Uygulamaları için Defender
-İnternet'e yönelik güvenlik açığı olan sistem|Windows güvenlik özellikleri, Sunucular için Microsoft Defender|
+İnternet'e yönelik güvenlik açığı olan sistem|Sunucular için Microsoft Defender Windows güvenlik özellikleri|
 Zayıf uygulama ayarları      |Cloud Apps için Defender, uygulama idare eklentisiyle Cloud Apps için Defender|Bulut Uygulamaları için Defender |
 Kötü amaçlı uygulama etkinliği      |Cloud Apps için Defender, uygulama idare eklentisiyle Cloud Apps için Defender|Bulut Uygulamaları için Defender |
 Kimlik avı postası        |Office 365 için Defender

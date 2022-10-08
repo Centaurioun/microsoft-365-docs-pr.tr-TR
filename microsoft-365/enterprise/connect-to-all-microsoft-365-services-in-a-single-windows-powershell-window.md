@@ -8,7 +8,9 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -18,12 +20,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Özet: Tek bir PowerShell penceresinde tüm Microsoft 365 hizmetlerine bağlanın.'
-ms.openlocfilehash: b133a4d1535005cb48447037ee0ec04937143234
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: f252c963d0f3f654f116410f06be2401b2f8a4e0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851424"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68199075"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Tek bir PowerShell penceresinde tüm Microsoft 365 hizmetlerine bağlanma
 
@@ -55,7 +57,7 @@ PowerShell'in tek bir örneğinden tüm Microsoft 365'i yönetebilmeniz için a�
 - Azure Active Directory (Azure AD), Exchange Online, Office 365 için Defender, Microsoft Purview uyumluluğu, SharePoint Online ve Teams için gereken modülleri yüklemeniz gerekir:
 
   - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
-  - [SharePoint Online Yönetim Kabuğu](https://go.microsoft.com/fwlink/p/?LinkId=255251)
+  - [SharePoint Online Yönetim Kabuğu](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
   - [Teams PowerShell Modülü](/microsoftteams/teams-powershell-overview)
   - [Exchange Online PowerShell modülünü yükleme ve koruma](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module)
   - [Teams PowerShell'e Genel Bakış](/microsoftteams/teams-powershell-overview)

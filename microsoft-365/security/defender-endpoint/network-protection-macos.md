@@ -16,16 +16,16 @@ ms.custom: asr
 ms.subservice: mde
 ms.topic: overview
 ms.collection:
-- m365initiative-m365-defender
-- M365-security-compliance
+- m365-security
+- tier2
 ms.date: ''
 search.appverid: met150
-ms.openlocfilehash: 5c43ab315ccfc9778388410b1589d3b5fb290d4b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 3617ae81204d6c2e244d58868fad6fe7d315f29e
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687031"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229096"
 ---
 # <a name="network-protection-for-macos"></a>macOS için ağ koruması
 
@@ -249,6 +249,9 @@ plutil -lint com.microsoft.wdav.xml
    > [!NOTE]
    > Bir ilkeyi kaldırıyorsanız veya cihaz gruplarını aynı anda değiştiriyorsanız, bu durum ilke dağıtımında gecikmeye neden olabilir.
    > Profesyonel ipucu: Bir cihaz grubunda herhangi bir kategori seçmeden bir ilke dağıtabilirsiniz. Bu eylem, engelleme ilkesi oluşturmadan önce kullanıcı davranışını anlamanıza yardımcı olmak için yalnızca denetim ilkesi oluşturur.
+   >
+   > Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.  
+
 4. [Uç Nokta için Microsoft Defender Cloud Apps için Defender ile tümleştirin](/defender-cloud-apps/mde-integration) ve ağ koruması etkinleştirilmiş macOS cihazlarınız uç nokta ilkesi zorlama özelliklerine sahip olur.
    > [!NOTE]
    > Bulma ve diğer özellikler şu anda bu platformlarda desteklenmiyor.
@@ -277,7 +280,7 @@ Risk (ICS) eşleştirmesinin göstergesi, her uç nokta koruma çözümünde ön
 
 Varlıkların algılanmasını, önlenmesini ve dışlanmasını tanımlayan göstergeler oluşturun. Gerçekleştirilecek eylemin yanı sıra eylemin ne zaman uygulanacağı ve uygulanacağı cihaz grubunun kapsamını tanımlayabilirsiniz.
 
-Şu anda desteklenen kaynaklar Uç Nokta için Defender'ın bulut algılama altyapısı, otomatik araştırma ve düzeltme altyapısı ve uç nokta önleme altyapısıdır (Microsoft Defender Virüsten Koruma).
+Şu anda desteklenen kaynaklar Uç Nokta için Defender'ın bulut algılama altyapısı, otomatik araştırma ve düzeltme altyapısı ve uç nokta önleme altyapısıdır (virüsten koruma Microsoft Defender).
 
 :::image type="content" source="images/network-protection-add-url-domain-indicator.png" alt-text="Ağ koruması ekleme URL'sini veya etki alanı göstergesini gösterir." lightbox="images/network-protection-add-url-domain-indicator.png":::
 
@@ -297,7 +300,7 @@ Raporlama hakkında daha fazla bilgi için bkz [. Web içeriği filtreleme](web-
 
 ### <a name="microsoft-defender-for-cloud-applications"></a>Bulut Uygulamaları için Microsoft Defender
 
-Bulut Uygulamaları için Microsoft Defender / Bulut Uygulaması Kataloğu, uç nokta için Microsoft 365 Defender erişirken son kullanıcıların uyarılmasını istediğiniz uygulamaları tanımlar ve _bunları İzlendi_ olarak işaretler. İzlenen uygulamalar altında listelenen etki alanları daha sonra Uç Nokta için Microsoft 365 Defender eşitlenir:
+Bulut Uygulamaları /Bulut Uygulaması Kataloğu için Microsoft Defender, uç nokta için Microsoft 365 Defender erişirken son kullanıcıların uyarılmasını istediğiniz uygulamaları tanımlar ve _bunları İzlendi_ olarak işaretler. İzlenen uygulamalar altında listelenen etki alanları daha sonra Uç Nokta için Microsoft 365 Defender eşitlenir:
 
 :::image type="content" source="images/network-protection-macos-mcas-monitored-apps.png" alt-text="Ağ koruması izlenen uygulamaları gösterir.":::
 
@@ -319,10 +322,10 @@ Son kullanıcı bir _blokla_ karşılaşırsa, kullanıcının iki olası çöz�
 
 #### <a name="user-education"></a>Kullanıcı eğitimi
 
-- **Bildirim iletisi deneyimi için**: Bildirim iletisinin kendisine basın. Son kullanıcı, Bulut Uygulamaları için Microsoft Defender'da genel olarak ayarlanan özel bir yeniden yönlendirme URL'sine yönlendirilir (Bu sayfanın en altında daha fazla bilgi)
+- **Bildirim iletisi deneyimi için**: Bildirim iletisinin kendisine basın. Son kullanıcı, Bulut Uygulamaları için Microsoft Defender'de genel olarak ayarlanan özel bir yeniden yönlendirme URL'sine yönlendirilir (Bu sayfanın en altında daha fazla bilgi)
 
 > [!NOTE]
-> İzleme uygulama başına atlar** – Bulut Uygulamaları için Microsoft Defender'ın _Uygulama_ sayfasında kaç kullanıcının uyarıyı atlamış olduğunu izleyebilirsiniz.
+> İzleme uygulama başına atlamalar** – Bulut Uygulamaları için Microsoft Defender'daki _Uygulama_ sayfasında kaç kullanıcının uyarıyı atlamış olduğunu izleyebilirsiniz.
 
   :::image type="content" source="images/network-protection-macos-mcas-cloud-app-security.png" alt-text="Ağ koruması bulut uygulaması güvenliğine genel bakış bilgilerini gösterir.":::
 
@@ -330,7 +333,7 @@ Son kullanıcı bir _blokla_ karşılaşırsa, kullanıcının iki olası çöz�
 
 ### <a name="end-user-education-center-sharepoint-site-template"></a>Son kullanıcı eğitim merkezi SharePoint site şablonu
 
-Birçok kuruluş için, Bulut Uygulamaları için Microsoft Defender tarafından sağlanan bulut denetimlerini almak ve yalnızca gerektiğinde son kullanıcılarla ilgili sınırlamalar belirlemek değil, aynı zamanda onları aşağıdaki konularda eğitmek ve onlara koçluk yapmak da önemlidir:
+Birçok kuruluş için, Bulut Uygulamaları için Microsoft Defender tarafından sağlanan bulut denetimlerini almak ve yalnızca gerektiğinde son kullanıcılarla ilgili sınırlamalar belirlemek değil, aynı zamanda onları aşağıdaki konularda eğitmek ve onlara rehberlik etmek de önemlidir:
 
 - belirli bir olay
 - neden oldu?
@@ -349,18 +352,17 @@ Bu sayfa için, kuruluşunuzun temel bir SharePoint sitesi kullanmasını öneri
 
 1. Uygulama etki alanlarının yayılması ve uç nokta cihazlarında güncelleştirilerek _İzlendi_ olarak işaretlenmesi iki saate kadar (genellikle daha az) sürebilir.  
 2. Varsayılan olarak, kuruluştaki tüm eklenen uç noktalar için Bulut Uygulamaları için Microsoft Defender portalında İzlendi olarak işaretlenmiş tüm uygulamalar ve etki alanları için eylem gerçekleştirilir.  
-3. Tam URL'ler şu anda desteklenmemektedir ve Bulut Uygulamaları için Microsoft Defender'dan Uç Nokta için Microsoft 365 Defender'a gönderilmez. Bulut Uygulamaları için Microsoft Defender izlenen uygulamalar altında tam URL'ler listeleniyorsa, kullanıcı erişim girişimi konusunda uyarı almaz (örneğin, drive.google.com desteklenirken google.com/drive desteklenmez).  
+3. Tam URL'ler şu anda desteklenmiyor ve Microsoft Defender altında tam URL'ler listeleniyorsa, Bulut Uygulamaları için Microsoft Defender'den Uç Nokta için Microsoft 365 Defender gönderilmez Microsoft Defender  Bulut Uygulamaları tarafından izlenen uygulamalar için kullanıcı erişim girişimi konusunda uyarı almaz (örneğin, drive.google.com desteklenirken google.com/drive desteklenmez).  
 
 Üçüncü taraf tarayıcılarda son kullanıcı bildirimi yok mu? Bildirim iletisi ayarlarınızı denetleme
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Mac'te Uç Nokta için Microsoft 365 Defender](microsoft-defender-endpoint-mac.md)
-- [Bulut Uygulamaları için Microsoft Microsoft 365 Defender ile Uç Nokta tümleştirmesi için Microsoft 365 Defender](/defender-cloud-apps/mde-integration.md)
+- [Bulut Uygulamaları için Microsoft Microsoft 365 Defender ile Uç Nokta tümleştirmesi için Microsoft 365 Defender](/defender-cloud-apps/mde-integration)
 - [Microsoft Edge'deki yenilikçi özellikleri tanımaya başlama](https://www.microsoft.com/edge/features)
 - [Ağınızı koruyun](network-protection.md)
 - [Ağ korumasını açın](enable-network-protection.md)
 - [Web koruması](web-protection-overview.md)
 - [Göstergeleri oluşturun](manage-indicators.md)
 - [Web içeriği filtreleme](web-content-filtering.md)
-- [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)

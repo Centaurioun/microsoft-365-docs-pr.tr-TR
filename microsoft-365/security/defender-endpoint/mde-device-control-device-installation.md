@@ -11,16 +11,18 @@ ms.localizationpriority: medium
 ms.date: 08/11/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 349dd7812aedb533f48ed9c26c1cc4a82036901f
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: fa03a2b2d91598b65e523d520b4c87b708202d18
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67681637"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221497"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Cihaz Denetimi Cihazı Yüklemesini Uç Nokta için Microsoft Defender
 

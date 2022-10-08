@@ -13,16 +13,19 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: jarogers
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: a946611571d9698baac7df28e7e5f64508d05a02
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 021837ee81c52878ede801a44721d332789a9ff0
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742233"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229470"
 ---
 # <a name="how-to-handle-legitimate-emails-getting-blocked-false-positive-using-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender kullanarak Engellenen geçerli e-postaları işleme (Hatalı Pozitif)
 

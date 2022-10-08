@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -22,21 +23,21 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: Exchange yöneticileri kuruluşunuzun e-posta ve posta kutularını yönetir ve örneğin kullanıcının posta kutusunda silinen öğeleri kurtarır.
-ms.openlocfilehash: 375e2d6a1bf08ab310da28233deaf5dbbbae9be7
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: 4a70afe1a6b65926ce8afa2ac125d0dd18d6db79
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842267"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68190561"
 ---
 # <a name="about-the-exchange-administrator-role"></a>Exchange Yöneticisi rolü hakkında
 
-Microsoft 365 yönetmenize yardımcı olmak için, Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">yönetim merkezinden</a> kuruluşunuzun e-posta ve posta kutularını yönetmek için kullanıcılara [izinler atayabilirsiniz](assign-admin-roles.md). Bunu, bunları Exchange Yöneticisi rolüne atayarak yaparsınız.
+Microsoft 365'i yönetmenize yardımcı olmak için, <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange yönetim merkezinden</a> kuruluşunuzun e-posta ve posta kutularını yönetmek için kullanıcılara [izinler atayabilirsiniz](assign-admin-roles.md). Bunu, bunları Exchange Yöneticisi rolüne atayarak yaparsınız.
   
 > [!TIP]
 > Birini Exchange Yöneticisi rolüne atadığınızda, bu kişiyi Hizmet Desteği Yöneticisi rolüne atamanızı öneririz. Bu şekilde, Exchange Online hizmetinin durumu ve değişiklik ve yayın bildirimleri gibi önemli bilgileri Microsoft 365 yönetim merkezi görebilirler.
 
-Kullanıcıların Exchange Yöneticisi rolüne atandığında gerçekleştirebileceği bazı önemli görevler şunlardır:
+Kullanıcıların Exchange Yöneticisi rolüne atandığında gerçekleştirebilecekleri temel görevlerden bazıları şunlardır:
   
 - [Recover deleted items in a user mailbox - Admin Help](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -48,7 +49,7 @@ Kullanıcıların Exchange Yöneticisi rolüne atandığında gerçekleştirebil
 
 - Bir grup kişinin ortak [bir e-posta](../email/create-a-shared-mailbox.md) adresinden e-posta izleyebilmesi ve gönderebilmesi için paylaşılan bir posta kutusu oluşturun.
 
-- [E-posta istenmeyen posta önleme koruması](../../security/office-365-security/anti-spam-protection.md) ve kuruluş için kötü amaçlı yazılım filtreleri.
+- [kuruluş için istenmeyen posta önleme ve](../../security/office-365-security/anti-spam-protection.md) kötü amaçlı yazılım filtrelerini Email.
 
 - Grup Microsoft 365 yönetme
 

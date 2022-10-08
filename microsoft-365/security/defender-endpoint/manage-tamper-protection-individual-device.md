@@ -18,15 +18,15 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.subservice: mde
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 7762b68ea77a47b5f38aa523cde8456d4df4b7ae
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 250d82b4ab61a356c12cb8bee5d03f737c3d0a25
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812248"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221532"
 ---
 # <a name="manage-tamper-protection-on-an-individual-device"></a>Tek bir cihazda kurcalama korumasını yönetme
 

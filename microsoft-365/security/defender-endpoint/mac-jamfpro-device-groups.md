@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 7f3006896ccebdb40f720671427dfe76b3d53025
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ce8e999af9149f9b093420e8704162e11a526501
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687955"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229074"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>Jamf Pro'da macOS cihaz gruplarında Uç Nokta için Microsoft Defender ayarlama
 
@@ -33,6 +34,9 @@ ms.locfileid: "67687955"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+
+> [!NOTE]
+> Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.  
 
 Grup ilkesi kuruluş birimine (OU), Microsoft Endpoint Configuration Manager'ın cihaz koleksiyonuna ve Intune cihaz gruplarına benzer cihaz gruplarını ayarlayın.
 

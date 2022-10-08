@@ -11,15 +11,17 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 78118709bb503e13f15973b2283d6f756519c873
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 6d733c7b27528a25097bd8aa666f14a60989cbfc
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736442"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221048"
 ---
 # <a name="microsoft-safety-scanner-download"></a>Microsoft Güvenlik Tarayıcısı İndirme
 
@@ -40,7 +42,7 @@ Microsoft Güvenlik Tarayıcısı, Windows bilgisayarlarından kötü amaçlı y
 
 - Güvenlik tarayıcısı taşınabilir bir yürütülebilir dosyadır ve Windows Başlat menüsünde veya masaüstünde simge olarak görünmez. Bu indirmeyi kaydettiğiniz yeri not edin.
 
-- Bu araç kötü amaçlı yazılımdan koruma ürününüzün yerini almaz. Otomatik güncelleştirmelerle gerçek zamanlı koruma için [windows 7'de Windows 11, Windows 10 ve Windows 8](https://www.microsoft.com/windows/comprehensive-security) veya [Microsoft Security Essentials'ta Microsoft](https://support.microsoft.com/help/14210/security-essentials-download) Defender Virüsten Koruma'yı kullanın. Bu kötü amaçlı yazılımdan koruma ürünleri de güçlü kötü amaçlı yazılım temizleme özellikleri sağlar. Bu ürünlerle kötü amaçlı yazılımları kaldırmakta güçlük çekiyorsanız [, zor tehditleri kaldırma](https://www.microsoft.com/wdsi/help/troubleshooting-infection) yardımımıza başvurabilirsiniz.
+- Bu araç kötü amaçlı yazılımdan koruma ürününüzün yerini almaz. Otomatik güncelleştirmelerle gerçek zamanlı koruma için [Windows 7'de Windows 11, Windows 10 ve Windows 8](https://www.microsoft.com/windows/comprehensive-security) veya [Microsoft Security Essentials'ta](https://support.microsoft.com/help/14210/security-essentials-download) Microsoft Defender Virüsten Koruma'yı kullanın. Bu kötü amaçlı yazılımdan koruma ürünleri de güçlü kötü amaçlı yazılım temizleme özellikleri sağlar. Bu ürünlerle kötü amaçlı yazılımları kaldırmakta güçlük çekiyorsanız [, zor tehditleri kaldırma](https://www.microsoft.com/wdsi/help/troubleshooting-infection) yardımımıza başvurabilirsiniz.
 
 ## <a name="system-requirements"></a>Sistem gereksinimleri
 
