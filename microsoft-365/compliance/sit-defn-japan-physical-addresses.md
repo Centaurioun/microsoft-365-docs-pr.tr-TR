@@ -1,5 +1,5 @@
 ---
-title: Tıbbi uzmanlıklar varlık tanımı
+title: Japonya fiziksel adresleri varlık tanımı
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,20 +19,20 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Tıbbi uzmanlıklar hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: e298105f08cb36dd0064e66180f32ad8778df463
+description: Japonya fiziksel olarak hassas bilgi türü varlık tanımını ele alır.
+ms.openlocfilehash: 5df6e0af4ca78c52e972e30e8834845df625efe4
 ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/04/2022
-ms.locfileid: "68383919"
+ms.locfileid: "68383931"
 ---
-# <a name="medical-specialties"></a>Tıbbi uzmanlıklar
+# <a name="japan-physical-addresses"></a>Japonya fiziksel adresleri
 
-Bu unbundled adlandırılmış varlık, *dermatoloji* gibi tıbbi uzmanlıklarla ilgili terimleri algılar.  Yalnızca İngilizce terimleri destekler. Ayrıca entity SIT adlı [tüm tıbbi hüküm ve koşullar](sit-defn-all-medical-terms-conditions.md) paketinde yer alır.
+Bu unbundled adlandırılmış varlık, Japonya'dan gelen fiziksel adresle ilgili desenleri algılar. Ayrıca bu varlık [Tüm Fiziksel Adresler](sit-defn-all-physical-addresses.md) paketlenmiş adlandırılmış varlık hassas bilgi türüne dahildir.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="confidence-level"></a>Olasılık düzeyi
 
-Yüksek
+Orta

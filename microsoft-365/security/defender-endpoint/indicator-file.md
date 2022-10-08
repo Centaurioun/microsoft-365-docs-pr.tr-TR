@@ -13,16 +13,18 @@ ms.localizationpriority: medium
 ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: d3d533a3d4e1058eec5395c9f389926994b74e94
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: b32a565455a632aa411c2aca053755238862b2c3
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67700344"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228591"
 ---
 # <a name="create-indicators-for-files"></a>Dosyalar için göstergeler oluşturun
 
@@ -50,7 +52,7 @@ Dosyalar için gösterge oluşturmanın üç yolu vardır:
 
 Dosyalar için göstergeler oluşturmadan önce aşağıdaki önkoşulları anlamak önemlidir:
 
-- Kuruluşunuz **Microsoft Defender Virüsten Koruma kullanıyorsa (etkin modda)** ve **Bulut tabanlı koruma etkinleştirildiyse bu** özellik kullanılabilir. Daha fazla bilgi için bkz. [Bulut tabanlı korumayı yönetme](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- Kuruluşunuz **Microsoft Defender Virüsten Koruma (etkin modda)** kullanıyorsa ve **Bulut tabanlı koruma etkinleştirildiyse bu** özellik kullanılabilir. Daha fazla bilgi için bkz. [Bulut tabanlı korumayı yönetme](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 
 - Kötü amaçlı yazılımdan koruma istemcisi sürümü 4.18.1901.x veya üzeri olmalıdır. [Bkz. Aylık platform ve altyapı sürümleri](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
@@ -78,6 +80,8 @@ Bu özellik, şüpheli kötü amaçlı yazılımların (veya kötü amaçlı ola
     - Gösterge - Varlık ayrıntılarını belirtin ve göstergenin süre sonunu tanımlayın.
     - Eylem - Gerçekleştirilecek eylemi belirtin ve bir açıklama sağlayın.
     - Kapsam - Cihaz grubunun kapsamını tanımlayın (kapsam belirleme [, İş için Defender'da](../defender-business/mdb-overview.md) kullanılamaz).
+        > [!NOTE]
+        > Cihaz Grubu oluşturma hem Uç Nokta için Defender Plan 1 hem de Plan 2'de desteklenir
 
 5. Özet sekmesinde ayrıntıları gözden geçirin ve **Kaydet'i** seçin.
 
@@ -180,7 +184,7 @@ Microsoft Defender Güvenlik Açığı Yönetimi'ın engelleyici güvenlik açı
 |Saldırı yüzeyi azaltma kuralı|Engelle|İzin ver|İzin ver|
 |Uygulama Denetimini Windows Defender|İzin ver|Engelle|İzin ver|
 |Uygulama Denetimini Windows Defender|Engelle|İzin ver|Engelle|
-|Microsoft Defender Virüsten Koruma dışlaması|İzin ver|Engelle|İzin ver|
+|Microsoft Defender Virüsten Koruma hariç tutma|İzin ver|Engelle|İzin ver|
 |
 
 ## <a name="see-also"></a>Ayrıca bkz.

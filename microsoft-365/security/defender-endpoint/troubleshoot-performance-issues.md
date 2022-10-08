@@ -15,13 +15,15 @@ ms.date: 10/19/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.subservice: mde
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 3f8e259a1f1c98d545bf839e6da94a92ee7af51e
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.collection:
+- m365-security
+- tier3
+ms.openlocfilehash: 349111793185dc1508437e048c24cd00823f97e3
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67580325"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228240"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Gerçek zamanlı korumayla ilgili performans sorunlarını giderin
 
@@ -36,7 +38,7 @@ ms.locfileid: "67580325"
 **Platform**
 - Windows
 
-Sisteminizde Uç Nokta için Microsoft Defender'da gerçek zamanlı koruma hizmetiyle ilgili yüksek CPU kullanımı veya performans sorunları varsa Microsoft desteğine bir bilet gönderebilirsiniz. [Microsoft Defender Virüsten Koruma tanılama verilerini toplama](collect-diagnostic-data.md) başlığındaki adımları izleyin.
+Sisteminizde Uç Nokta için Microsoft Defender'da gerçek zamanlı koruma hizmetiyle ilgili yüksek CPU kullanımı veya performans sorunları varsa Microsoft desteğine bir bilet gönderebilirsiniz. [virüsten koruma tanılama verilerini Microsoft Defender toplama](collect-diagnostic-data.md) başlığındaki adımları izleyin.
 
 Yönetici olarak, bu sorunları kendi başınıza da giderebilirsiniz.
 

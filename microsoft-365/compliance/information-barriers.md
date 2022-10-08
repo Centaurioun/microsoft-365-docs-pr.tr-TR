@@ -1,6 +1,6 @@
 ---
 title: Bilgi engelleri hakkında daha fazla bilgi edinme
-description: Microsoft Purview'daki bilgi engelleri hakkında bilgi edinin.
+description: Microsoft Purview'daki bilgi engelleri hakkında bilgi edinin. Bilgi engelleri, çıkar çatışmalarını önlemeye ve kullanıcılarla kuruluş alanları arasındaki iç bilgileri korumaya yardımcı olabilir.
 keywords: Microsoft 365, Microsoft Purview, uyumluluk, bilgi engelleri
 ms.author: robmazz
 author: robmazz
@@ -10,19 +10,22 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- highpri
+- tier2
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4b2a45a667aa654a8ff3111313b542433e692f1f
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 2c9bee62d8484c5fe8f096fb432955d2d04c00ed
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823399"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68383892"
 ---
 # <a name="learn-about-information-barriers"></a>Bilgi engelleri hakkında daha fazla bilgi edinme
 
@@ -40,6 +43,8 @@ IB ilkeleri, aşağıdaki örnek senaryolar için gruplar ve kullanıcılar aras
 
 > [!IMPORTANT]
 > Bilgi engelleri **yalnızca** iki yönlü iletişim ve işbirliği kısıtlamalarını destekler. Örneğin, Pazarlama'nın Day Traders ile iletişim kurabileceği ve işbirliği yaptığı ancak Day **Traders'ın** Pazarlama ile iletişim kuramadığı ve işbirliği yapamayacağı bir senaryo desteklenmez.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="information-barriers-and-microsoft-teams"></a>Bilgi engelleri ve Microsoft Teams
 

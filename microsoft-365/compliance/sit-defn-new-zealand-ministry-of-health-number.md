@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Yeni Zelanda sağlık bakanlığı numarasına duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: 62a7b181626d36930da36451ccd109ecc6d04812
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 187b0e49f6710c0fcb906dc7ba1db3563e4fa109
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948917"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68383866"
 ---
 # <a name="new-zealand-ministry-of-health-number"></a>Yeni Zelanda sağlık bakanlığı numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -37,22 +40,22 @@ ms.locfileid: "66948917"
 - 'I' ve 'O' dışında üç harf (büyük/küçük harfe duyarlı değil)
 - dört basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_new_zealand_ministry_of_health_number` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_nz_terms` bir anahtar sözcük bulunur.
-- Sağlama toplamı geçer.
+- İşlev `Func_new_zealand_ministry_of_health_number`, desenle eşleşen içeriği bulur.
+- `Keyword_nz_terms` içinden bir anahtar sözcük bulundu.
+- Sağlama toplamı başarılı.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_new_zealand_ministry_of_health_number` , desenle eşleşen içeriği bulur.
-- Sağlama toplamı geçer.
+- İşlev `Func_new_zealand_ministry_of_health_number`, desenle eşleşen içeriği bulur.
+- Sağlama toplamı başarılı.
 
 ```xml
     <!-- New Zealand Health Number -->

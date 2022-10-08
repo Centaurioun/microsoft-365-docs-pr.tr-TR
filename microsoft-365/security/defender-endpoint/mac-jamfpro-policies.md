@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: cf892956a517591b8f55eb3b704056421c482a7c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: bafbce373ffdbdd8d5d7e4908f626d45282159c8
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67684121"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228635"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Jamf Pro'da macOS ilkelerinde Uç Nokta için Microsoft Defender ayarlama
 
@@ -813,7 +814,7 @@ Alternatif olarak, [netfilter.mobileconfig](https://github.com/microsoft/mdatp-x
 
     :::image type="content" source="images/1aa5aaa0a387f4e16ce55b66facc77d1.png" alt-text="Otomatik olarak oluşturulan paketin açıklamasını görüntüleyen bilgisayar ekranı" lightbox="images/1aa5aaa0a387f4e16ce55b66facc77d1.png":::
 
-7. **Aç**'ı seçin. **Görünen Ad'ı** **Microsoft Defender Gelişmiş Tehdit Koruması ve Microsoft Defender Virüsten Koruma** olarak ayarlayın.
+7. **Aç**'ı seçin. **Görünen Ad'ı** **Gelişmiş Tehdit Koruması ve Microsoft Defender Virüsten Koruma Microsoft Defender** olarak ayarlayın.
 
     **Bildirim Dosyası** gerekli değildir. Uç Nokta için Microsoft Defender Bildirim Dosyası olmadan çalışır.
 
@@ -856,7 +857,7 @@ Alternatif olarak, [netfilter.mobileconfig](https://github.com/microsoft/mdatp-x
 
     :::image type="content" source="images/8fb4cc03721e1efb4a15867d5241ebfb.png" alt-text="Paketleri yapılandırma seçeneği" lightbox="images/8fb4cc03721e1efb4a15867d5241ebfb.png":::
 
-15. **Microsoft Defender Gelişmiş Tehdit Koruması ve Microsoft Defender Virüsten Koruma'nın** yanındaki **Ekle** düğmesini seçin.
+15. **Gelişmiş Tehdit Koruması ve Microsoft Defender Virüsten Koruma Microsoft Defender** yanındaki **Ekle** düğmesini seçin.
 
     :::image type="content" source="images/526b83fbdbb31265b3d0c1e5fbbdc33a.png" alt-text="MDATP MDA'ya daha fazla ayar ekleme seçeneği" lightbox="images/526b83fbdbb31265b3d0c1e5fbbdc33a.png":::
 

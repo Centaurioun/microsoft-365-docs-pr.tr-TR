@@ -9,18 +9,20 @@ audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: ''
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
 recommendations: false
-description: dlp ilkesi koşulları ve özel durumları hakkında bilgi edinin
-ms.openlocfilehash: 9e1c27e8b4aa79da94fd035bbeb15912b1618be8
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: İlkenin uygulandığı hassas öğeleri tanımlayan dlp ilkesi koşulları ve özel durumları hakkında bilgi edinin.
+ms.openlocfilehash: e66b92e9ecabbda0b3cc8e1dc902ad092c82abe0
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629937"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68383953"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>DLP ilke koşulları, özel durumlar ve eylemler
 
@@ -34,6 +36,8 @@ DLP ilkelerindeki koşullar ve özel durumlar, ilkenin uygulandığı hassas ö�
 
 Eylemler genellikle ek özellikler gerektirir. Örneğin, DLP ilke kuralı bir iletiyi yeniden yönlendirdiğinde, iletinin nereye yönlendirileceğini belirtmeniz gerekir.
 <!-- Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.-->
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="conditions-and-exceptions-for-dlp-policies"></a>DLP ilkeleri için koşullar ve özel durumlar
 
