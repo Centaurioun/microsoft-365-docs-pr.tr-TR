@@ -1,26 +1,28 @@
 ---
 title: Uç Nokta için Microsoft Defender diğer Microsoft çözümleriyle tümleştirme
-description: Uç Nokta için Microsoft Defender Kimlik için Microsoft Defender ve Bulut için Microsoft Defender dahil olmak üzere diğer Microsoft çözümleriyle nasıl tümleştireceğinizi öğrenin.
+description: bulut için Kimlik için Microsoft Defender ve Microsoft Defender dahil olmak üzere Uç Nokta için Microsoft Defender diğer Microsoft çözümleriyle nasıl tümleştireceğinizi öğrenin.
 author: mjcaparas
 ms.author: macapara
 ms.service: microsoft-365-security
-keywords: microsoft 365 defender, koşullu erişim, office, Uç Nokta için Microsoft Defender, kimlik için microsoft defender, Office için Microsoft Defender, Bulut için Microsoft Defender, microsoft bulut uygulaması güvenliği, azure sentinel
+keywords: microsoft 365 defender, koşullu erişim, office, Uç Nokta için Microsoft Defender, kimlik için microsoft defender, Office için Microsoft Defender, Bulut için Microsoft Defender, Microsoft Bulut uygulaması güvenliği, azure sentinel
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 0aa33086c1db708d861351a2f4469f9bf3161a1d
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: ae0ab05a353100ef5572ab4079bbf3eb6678041e
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727998"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231670"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Uç Nokta için Microsoft Defender ve diğer Microsoft çözümleri
 

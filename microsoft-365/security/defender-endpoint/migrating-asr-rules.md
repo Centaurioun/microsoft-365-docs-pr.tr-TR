@@ -14,14 +14,16 @@ ms.author: dansimp
 manager: dansimp
 ms.custom: asr
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: aa00aa4652edb3fa253573c451292c199617410e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: edbf7121a23bd5effda50256fdc07a6d58e09493
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688451"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231648"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Üçüncü taraf HIPS'ten ASR kurallarına geçiş
 
@@ -39,7 +41,7 @@ Bu makale, ortak kuralları Uç Nokta için Microsoft Defender eşlemenize yard�
 - **İşlem**- Dosya Oluşturma
 - **Dosya/Klasörler, Kayıt Defteri Anahtarları/Değerleri, İşlemler, Hizmetler**- *.zepto, *.odin, *.locky, *.jaff, *.lukitus, *.wnry, *.krab örnekleri
 - **Saldırı Yüzeyi Azaltma kuralları**- ASR kuralları, Saldırı tekniklerini engeller ve Risk Altındaki Göstergeler'i (IOC) engellemez. Belirli bir dosya uzantısını engellemek her zaman kullanışlı değildir çünkü cihazın güvenliğinin aşılmasını engellemez. Saldırganlar yük için yeni bir uzantı türü oluşturana kadar yalnızca bir saldırıyı kısmen engeller.
-- **Önerilen diğer özellikler**- Bulut Koruması ve Davranış Analizi ile birlikte Microsoft Defender Virüsten Koruma'nın etkinleştirilmesi kesinlikle önerilir. ASR kuralı "Fidye yazılımına karşı gelişmiş koruma kullan" gibi başka bir önleme kullanmanızı öneririz. Bu, fidye yazılımı saldırılarına karşı daha yüksek bir koruma düzeyi sağlar. Ayrıca, bu kayıt defteri anahtarlarının çoğu, belirli uyarıları tetikleyecek ASEP teknikleri gibi Uç Nokta için Microsoft Defender tarafından izlenir. Kullanılan kayıt defteri anahtarları için en az Yerel Yönetici veya Güvenilen Yükleyici ayrıcalıkları değiştirilebilir. En düşük yönetim hesapları veya haklarıyla kilitli bir ortam kullanılması önerilir. Daha geniş güvenlik önerilerimizin bir parçası olan "Gerekli olmayan roller için SeDebug'ü devre dışı bırak" dahil olmak üzere diğer sistem yapılandırmaları etkinleştirilebilir.
+- **Önerilen diğer özellikler**: Bulut Koruması ve Davranış Analizi ile birlikte Microsoft Defender Virüsten Koruma'nın etkinleştirilmesi kesinlikle önerilir. ASR kuralı "Fidye yazılımına karşı gelişmiş koruma kullan" gibi başka bir önleme kullanmanızı öneririz. Bu, fidye yazılımı saldırılarına karşı daha yüksek bir koruma düzeyi sağlar. Ayrıca, bu kayıt defteri anahtarlarının çoğu, belirli uyarıları tetikleyecek ASEP teknikleri gibi Uç Nokta için Microsoft Defender tarafından izlenir. Kullanılan kayıt defteri anahtarları için en az Yerel Yönetici veya Güvenilen Yükleyici ayrıcalıkları değiştirilebilir. En düşük yönetim hesapları veya haklarıyla kilitli bir ortam kullanılması önerilir. Daha geniş güvenlik önerilerimizin bir parçası olan "Gerekli olmayan roller için SeDebug'ü devre dışı bırak" dahil olmak üzere diğer sistem yapılandırmaları etkinleştirilebilir.
 
 ### <a name="block-creation-of-specific-registry-keys"></a>Belirli kayıt defteri anahtarlarının oluşturulmasını engelle
 
@@ -48,7 +50,7 @@ Bu makale, ortak kuralları Uç Nokta için Microsoft Defender eşlemenize yard�
 - **operation**- Kayıt Defteri Değişiklikleri
 - **Dosya/Klasör, Kayıt Defteri Anahtarları/Değerleri, İşlemler, Hizmetler**-  Örnekleri *\* Software,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs *\StartExe, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options*\Debugger, HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcess
 - **Saldırı Yüzeyi Azaltma kuralları**- ASR kuralları, Saldırı tekniklerini engeller ve Risk Altındaki Göstergeler'i (IOC) engellemez. Belirli bir dosya uzantısını engellemek her zaman yararlı değildir çünkü cihazın güvenliğinin aşılmasını engellemez. Saldırganlar yük için yeni bir uzantı türü oluşturana kadar yalnızca bir saldırıyı kısmen engeller.
-- **Önerilen diğer özellikler**- Bulut Koruması ve Davranış Analizi ile birlikte Microsoft Defender Virüsten Koruma'nın etkinleştirilmesi kesinlikle önerilir. ASR kuralı "Fidye yazılımına karşı gelişmiş koruma kullan" gibi ek önleme kullanmanızı öneririz. Bu, fidye yazılımı saldırılarına karşı daha yüksek bir koruma düzeyi sağlar. Ayrıca, bu kayıt defteri anahtarlarının bazıları, belirli uyarıları tetikleyecek ASEP teknikleri gibi Uç Nokta için Microsoft Defender tarafından izlenir. Ayrıca, kullanılan kayıt defteri anahtarları için en az Yerel Yönetici veya Güvenilen Yükleyici ayrıcalıkları değiştirilebilir. En düşük yönetim hesapları veya haklarıyla kilitli bir ortam kullanılması önerilir. Daha geniş güvenlik önerilerimizin bir parçası olan "Gerekli olmayan roller için SeDebug'ü devre dışı bırak" dahil olmak üzere diğer sistem yapılandırmaları etkinleştirilebilir.
+- **Önerilen diğer özellikler**: Bulut Koruması ve Davranış Analizi ile birlikte Microsoft Defender Virüsten Koruma'nın etkinleştirilmesi kesinlikle önerilir. ASR kuralı "Fidye yazılımına karşı gelişmiş koruma kullan" gibi ek önleme kullanmanızı öneririz. Bu, fidye yazılımı saldırılarına karşı daha yüksek bir koruma düzeyi sağlar. Ayrıca, bu kayıt defteri anahtarlarının bazıları, belirli uyarıları tetikleyecek ASEP teknikleri gibi Uç Nokta için Microsoft Defender tarafından izlenir. Ayrıca, kullanılan kayıt defteri anahtarları için en az Yerel Yönetici veya Güvenilen Yükleyici ayrıcalıkları değiştirilebilir. En düşük yönetim hesapları veya haklarıyla kilitli bir ortam kullanılması önerilir. Daha geniş güvenlik önerilerimizin bir parçası olan "Gerekli olmayan roller için SeDebug'ü devre dışı bırak" dahil olmak üzere diğer sistem yapılandırmaları etkinleştirilebilir.
 
 ### <a name="block-untrusted-programs-from-running-from-removable-drives"></a>Güvenilmeyen programların çıkarılabilir sürücülerden çalıştırılmasını engelleme
 

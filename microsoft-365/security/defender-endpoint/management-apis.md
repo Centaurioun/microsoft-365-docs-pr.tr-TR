@@ -12,17 +12,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 447440dfb93d8e0c3814ae531c8feb7fc318d27f
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 3ef7c8890eb6027cdd45cf8b817b860e073710f3
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689809"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224502"
 ---
 # <a name="overview-of-management-and-apis"></a>Yönetim ve API'lere genel bakış
 
@@ -42,7 +44,7 @@ Müşteri ortamlarının ve yapılarının farklılık gösterebileceğini kabul
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>Uç nokta ekleme ve portal erişimi
 
-Cihaz ekleme, istemci cihazlar için Microsoft Endpoint Manager ve Microsoft Intune ve sunucu cihazları için Microsoft Defender ile tamamen tümleşiktir ve yapılandırma, dağıtım ve izleme konusunda uçtan uca eksiksiz bir deneyim sağlar. Ayrıca Uç Nokta için Microsoft Defender, cihaz yönetimi için kullanılan grup ilkesi ve diğer üçüncü taraf araçları destekler.
+Cihaz ekleme, istemci cihazlar için Microsoft Endpoint Manager ve Microsoft Intune ve sunucu cihazları için Microsoft Defender tamamen tümleşiktir ve uçtan uca yapılandırma, dağıtım ve izleme deneyimi sunar. Ayrıca Uç Nokta için Microsoft Defender, cihaz yönetimi için kullanılan grup ilkesi ve diğer üçüncü taraf araçları destekler.
 
 Uç Nokta için Defender, portala erişimi olan kullanıcıların rol tabanlı erişim denetimi (RBAC) esnekliği aracılığıyla görebilecekleri ve yapabilecekleri üzerinde ayrıntılı denetim sağlar. RBAC modeli, güvenlik ekipleri yapısının tüm çeşitlerini destekler:
 

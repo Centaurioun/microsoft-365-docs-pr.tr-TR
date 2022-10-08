@@ -13,16 +13,17 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: "Özet: Microsoft Azure'da Microsoft 365 test ortamı olarak sanal bir şirket içi sanal ağ oluşturma."
-ms.openlocfilehash: c4920976d8e817c260f95ba76aa15136b7c8266d
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: de27e1fa1de5c2fa107bb5dffa1c3d77c549299a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670255"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68207654"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Microsoft 365 test ortamında şirket içi sanal ağın benzetimi
 

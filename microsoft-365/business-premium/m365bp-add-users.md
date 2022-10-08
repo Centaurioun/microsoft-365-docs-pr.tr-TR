@@ -11,7 +11,8 @@ ms.service: microsoft-365-security
 ms.subservice: other
 ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.collection: ''
+ms.collection:
+- tier1
 ms.custom:
 - MiniMaven
 - OKR_SMB_M365
@@ -19,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Kuruluşunuzun ağına ve iç sistemlerine yeni bir çalışan veya kullanıcı ekleme. Şirketinize yeni bir çalışan katıldığında, bunları ağa güvenli bir şekilde eklemeniz gerekir.
-ms.openlocfilehash: 56635c487020133e5d71edc321b2762d41535881
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: f9a35302dd5f26d30aa1be84c5f6c01fee8e490d
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739002"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096555"
 ---
 # <a name="add-a-new-employee-in-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra'de yeni bir çalışan ekleme
 

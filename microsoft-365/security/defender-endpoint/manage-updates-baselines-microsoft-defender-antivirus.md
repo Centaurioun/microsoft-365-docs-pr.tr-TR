@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 09/13/2022
+ms.date: 09/27/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -17,15 +17,15 @@ ms.reviewer: pahuijbr, mkaminska, v-vutrieu
 manager: dansimp
 ms.subservice: mde
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: d4056a8c780b649c03980ec1cfa8d7ab9928b45f
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 317f2b6e59ee5c0a787dd78e23d7a96f7377efb5
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686955"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231846"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama
 
@@ -36,7 +36,7 @@ ms.locfileid: "67686955"
 **Platform**
 - Windows
 
-Microsoft Defender Virüsten Koruma'nın güncel tutulması, cihazlarınızın yeni kötü amaçlı yazılımlara ve saldırı tekniklerine karşı korunmak için gereken en son teknolojiye ve özelliklere sahip olduğundan emin olmak için kritik öneme sahiptir. Microsoft Defender Virüsten Koruma [pasif modda](microsoft-defender-antivirus-compatibility.md) çalışıyor olsa bile virüsten korumanızı güncelleştirdiğinden emin olun. Microsoft Defender Virüsten Koruma'nın güncel tutulmasıyla ilgili iki tür güncelleştirme vardır:
+Microsoft Defender Virüsten Koruma'nın güncel tutulması, cihazlarınızın yeni kötü amaçlı yazılımlara ve saldırı tekniklerine karşı korunmak için gereken en son teknolojiye ve özelliklere sahip olduğundan emin olmak için kritik öneme sahiptir. Microsoft Defender Virüsten Koruma [pasif modda](microsoft-defender-antivirus-compatibility.md) çalışıyor olsa bile virüsten korumanızı güncelleştirin. Microsoft Defender Virüsten Koruma'nın güncel tutulmasıyla ilgili iki tür güncelleştirme vardır:
 
 - [Güvenlik bilgileri güncelleştirmeleri](#security-intelligence-updates)
 - [Ürün güncelleştirmeleri](#product-updates)
@@ -46,7 +46,7 @@ Microsoft Defender Virüsten Koruma'nın güncel tutulması, cihazlarınızın y
 
 ## <a name="security-intelligence-updates"></a>Güvenlik bilgileri güncelleştirmeleri
 
-Microsoft Defender Virüsten Koruma [, bulut tabanlı korumayı](cloud-protection-microsoft-defender-antivirus.md) (Microsoft Gelişmiş Koruma Hizmeti veya MAPS olarak da adlandırılır) kullanır ve daha fazla koruma sağlamak için dinamik güvenlik bilgileri güncelleştirmelerini düzenli aralıklarla indirir. Bu dinamik güncelleştirmeler, KB2267602 güvenlik bilgileri güncelleştirmesi aracılığıyla düzenli güvenlik bilgileri güncelleştirmelerinin yerini almaz.
+Microsoft Defender Virüsten Koruma[, bulut tabanlı korumayı](cloud-protection-microsoft-defender-antivirus.md) (Microsoft Gelişmiş Koruma Hizmeti veya MAPS olarak da adlandırılır) kullanır ve daha fazla koruma sağlamak için dinamik güvenlik bilgileri güncelleştirmelerini düzenli aralıklarla indirir. Bu dinamik güncelleştirmeler, KB2267602 güvenlik bilgileri güncelleştirmesi aracılığıyla düzenli güvenlik bilgileri güncelleştirmelerinin yerini almaz.
 
 > [!NOTE]
 > Güncelleştirmeler aşağıdaki KB'ler altında yayınlanıyor:
@@ -55,7 +55,7 @@ Microsoft Defender Virüsten Koruma [, bulut tabanlı korumayı](cloud-protectio
 
 Bulut tabanlı koruma her zaman açıktır ve çalışması için İnternet'e etkin bir bağlantı gerektirir. Güvenlik bilgileri güncelleştirmeleri zamanlanmış bir tempoda gerçekleşir (ilke aracılığıyla yapılandırılabilir). Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma'da Microsoft bulut tarafından sağlanan korumayı kullanma](cloud-protection-microsoft-defender-antivirus.md).
 
-Son güvenlik bilgileri güncelleştirmelerinin listesi için bkz [. Microsoft Defender Virüsten Koruma ve diğer Microsoft kötü amaçlı yazılımdan koruma yazılımları için güvenlik bilgileri güncelleştirmeleri](https://www.microsoft.com/en-us/wdsi/defenderupdates).
+Son güvenlik bilgileri güncelleştirmelerinin listesi için bkz[. Microsoft Defender Virüsten Koruma ve diğer Microsoft kötü amaçlı yazılımdan koruma için güvenlik bilgileri güncelleştirmeleri](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 
 Altyapı güncelleştirmeleri güvenlik bilgileri güncelleştirmelerine dahil edilir ve aylık düzende yayımlar.
 
@@ -65,18 +65,18 @@ Microsoft Defender Virüsten Koruma, *platform* [güncelleştirmeleri olarak bil
 
 Güncelleştirmelerin dağıtımını aşağıdaki yöntemlerden biriyle yönetebilirsiniz:
 
-- [Windows Server Güncelleştirme Hizmeti (WSUS)](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
+- [Windows Server Update Services araçları](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
 - [Microsoft Uç Noktası Yapılandırma Yöneticisi](/configmgr/sum/understand/software-updates-introduction)
 - Ağınızdaki uç noktalara Microsoft ve Windows güncelleştirmelerini dağıtmak için kullandığınız olağan yöntem.
 
-Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma koruma güncelleştirmelerinin kaynaklarını yönetme](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
+Daha fazla bilgi için bkz[. Microsoft Defender Virüsten Koruma güncelleştirmeleri için kaynakları yönetme](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
 > [!NOTE]
 > - Aylık güncelleştirmeler aşamalar halinde yayımlanır ve [bu da Window Server Update Services'nizde](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) birden çok paketin görünmesine neden olarak ortaya çıkar.
 > - Bu makalede, geniş sürüm kanalında yer alan değişiklikler listelenmiştir. [En son geniş kanal sürümüne buradan bakın](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info).
-> - Aşamalı dağıtım işlemi hakkında daha fazla bilgi edinmek ve sonraki sürüm hakkında daha fazla bilgi edinmek için bkz. [Microsoft Defender güncelleştirmeleri için aşamalı dağıtım işlemini yönetme](manage-gradual-rollout.md).
-> - Güvenlik bilgileri güncelleştirmeleri hakkında daha fazla bilgi edinmek için bkz [. Microsoft Defender Virüsten Koruma ve diğer Microsoft kötü amaçlı yazılımdan koruma yazılımları için güvenlik bilgileri güncelleştirmeleri](https://www.microsoft.com/en-us/wdsi/defenderupdates).
-> - Microsoft Defender işlemlerinin listesini arıyorsanız **[mde-urls çalışma kitabını indirin](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)** ve **ardından Microsoft Defender İşlemleri** çalışma sayfasını seçin. mde-urls çalışma kitabı, [ara sunucudaki Uç Nokta için Microsoft Defender hizmet URL'lerine erişimi etkinleştirme](configure-proxy-internet.md) bölümünde açıklandığı gibi ağınızın bağlanabilmesi gereken hizmetleri ve bunların ilişkili URL'lerini de listeler.
+> - Aşamalı dağıtım işlemi hakkında daha fazla bilgi edinmek ve sonraki sürüm hakkında daha fazla bilgi edinmek için bkz. [Microsoft Defender güncelleştirmeleri için aşamalı dağıtım sürecini yönetme](manage-gradual-rollout.md).
+> - Güvenlik bilgileri güncelleştirmeleri hakkında daha fazla bilgi edinmek için bkz[. Microsoft Defender Virüsten Koruma ve diğer Microsoft kötü amaçlı yazılımdan koruma için güvenlik bilgileri güncelleştirmeleri](https://www.microsoft.com/en-us/wdsi/defenderupdates).
+> - Microsoft Defender işlemlerin listesini arıyorsanız **[, mde-urls çalışma kitabını indirin](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)** ve ardından **İşlemler çalışma sayfasını Microsoft Defender** seçin. mde-urls çalışma kitabı, [ara sunucudaki Uç Nokta için Microsoft Defender hizmet URL'lerine erişimi etkinleştirme](configure-proxy-internet.md) bölümünde açıklandığı gibi ağınızın bağlanabilmesi gereken hizmetleri ve bunların ilişkili URL'lerini de listeler.
 
 ## <a name="monthly-platform-and-engine-versions"></a>Aylık platform ve altyapı sürümleri
 
@@ -127,7 +127,7 @@ Güvenlik bilgileri güncelleştirme sürümü: 1.373.219.0 <br/>
 
 ### <a name="whats-new"></a>Yenilikler
 
-- Microsoft Defender Virüsten Koruma etkin olduğunda [karma uyku](/windows-hardware/customize/power-settings/sleep-settings-hybrid-sleep) gecikmesi için performans iyileştirmesi 
+- Microsoft Defender Virüsten Koruma etkinken [karma uyku](/windows-hardware/customize/power-settings/sleep-settings-hybrid-sleep) gecikmesi için performans iyileştirmesi 
 - [Güvenliğin aşılmasına ilişkin özel sertifika engelleme göstergeleriyle](indicator-certificates.md) ilgili istemci algılama davranışı düzeltildi 
 - [Kötü Amaçlı Yazılımdan Koruma Tarama Arabirimi (AMSI)](/windows/win32/amsi/antimalware-scan-interface-portal) önbelleğe alma için performans iyileştirmesi 
 - [Microsoft Visual Basic for Applications](/office/vba/language/concepts/getting-started/64-bit-visual-basic-for-applications-overview) (VBA) ile ilgili makrolar için geliştirilmiş algılama ve düzeltme 
@@ -137,7 +137,7 @@ Güvenlik bilgileri güncelleştirme sürümü: 1.373.219.0 <br/>
 - [Davranış izleme](configure-real-time-protection-microsoft-defender-antivirus.md) ile kilitlenme düzeltildi 
 - Geliştirilmiş güven doğrulaması 
 - Eski işletim platformlarında altyapı kilitlenme sorunu düzeltildi 
-- v3 güncelleştirmelerini Performans Analizi: En üst yol desteği, tarama atlama bilgileri ve OnDemand tarama desteği eklendi. Bkz. [Microsoft Defender Virüsten Koruma için performans çözümleyicisi](tune-performance-defender-antivirus.md). 
+- v3 güncelleştirmelerini Performans Analizi: En üst yol desteği, tarama atlama bilgileri ve OnDemand tarama desteği eklendi. [Microsoft Defender Virüsten Koruma için performans çözümleyicisi](tune-performance-defender-antivirus.md) bölümüne bakın. 
 - Dosya kopyalama işlemleri sırasında Defender performans geliştirmeleri
 - [Sorun giderme modu](enable-troubleshooting-mode.md) için iyileştirmeler eklendi  
 - Güncelleştirmeler/yeniden başlatmalar arasında Defender WINEVT kanalları için düzeltme eklendi. (WINEVT hakkında daha fazla ayrıntı için bkz [. Windows Olay Günlüğü](/windows/win32/api/_wes/) .)
@@ -188,7 +188,7 @@ Yeni bir paket sürümü yayımlandıktan sonra, önceki iki sürüme yönelik d
 <details>
 <summary>Mart-2022 *UPDATE* (Platform: 4.18.2203.5 | Motor: 1.1.19200.5)</summary>
 
-*Mart 2022 Microsoft Defender altyapı güncelleştirmesini (**1.1.19100.5**) uygulayan müşteriler yüksek kaynak kullanımıyla (CPU ve/veya bellek) karşılaşmış olabilir. Microsoft, önceki sürümde sunulan hataları gideren bir güncelleştirme (**1.1.19200.5**) yayımladı. Müşterilerin virüsten koruma altyapısının (**1.1.19200.5**) en azından bu yeni altyapı derlemesine güncelleştirmeleri önerilir. Performans sorunlarının tamamen düzeltildiğinden emin olmak için, güncelleştirme uygulandıktan sonra makinelerin yeniden başlatılması önerilir.*
+*Mart 2022 Microsoft Defender altyapısı güncelleştirmesini (**1.1.19100.5**) uygulayan müşteriler yüksek kaynak kullanımıyla (CPU ve/veya bellek) karşılaşmış olabilir. Microsoft, önceki sürümde sunulan hataları gideren bir güncelleştirme (**1.1.19200.5**) yayımladı. Müşterilerin virüsten koruma altyapısının (**1.1.19200.5**) en azından bu yeni altyapı derlemesine güncelleştirmeleri önerilir. Performans sorunlarının tamamen düzeltildiğinden emin olmak için, güncelleştirme uygulandıktan sonra makinelerin yeniden başlatılması önerilir.*
 
 &ensp;Güvenlik bilgileri güncelleştirme sürümü: **1.363.817.0**<br/>
 &ensp;Yayın tarihi: **22 Nisan 2022**<br/>
@@ -201,7 +201,7 @@ Güvenlik bilgileri güncelleştirme sürümü: 1.363.817.0<br/>
 
 ### <a name="whats-new"></a>Yenilikler
 
-- Önceki Mart 2022 Microsoft Defender altyapı güncelleştirmesi (1.1.19100.5) ile ilgili yüksek kaynak kullanımı (CPU ve/veya bellek) ile ilgili sorunları giderir
+- Mart 2022'nin başlarındaki Microsoft Defender altyapısı güncelleştirmesi (1.1.19100.5) ile ilgili yüksek kaynak kullanımı (CPU ve/veya bellek) ile ilgili sorunları giderir
 
 ### <a name="known-issues"></a>Bilinen Sorunlar
 
@@ -282,8 +282,8 @@ Güvenlik bilgileri güncelleştirme sürümü: 1.357.8.0 <br/>
 - `ScanScheduleTime` [Yerine Set-MpPreference](/powershell/module/defender/set-mppreference) içindeki yeni `ScanScheduleOffest` cmdlet'i eklendi. Bu ilke, zamanlanmış tarama gerçekleştirmek için gece yarısından sonraki dakika sayısını yapılandırıyor.
 - `-ServiceHealthReportInterval` [Set-MpPreference](/powershell/module/defender/set-mppreference) ayarı eklendi. Bu ilke zamanlanmış tarama gerçekleştirmek için zaman aralığını (dakika cinsinden) yapılandırıyor.
 - `AllowSwitchToAsyncInspection` [Set-MpPreference](/powershell/module/defender/set-mppreference) ayarı eklendi. Bu ilke, zaman uyumlu olarak denetlenen ağ akışlarının denetlenip doğrulandıktan sonra zaman uyumsuz denetime geçmesine olanak tanıyan bir performans iyileştirmesi sağlar.
-- v2 güncelleştirmelerini Performans Analizi: Uzak PowerShell ve PowerShell 7.x desteği eklendi. Bkz. [Microsoft Defender Virüsten Koruma için performans çözümleyicisi](tune-performance-defender-antivirus.md).
-- Microsoft Defender Virüsten Koruma ağ inceleme sistemi sürücüsündeki olası yinelenen paket hatası düzeltildi.
+- v2 güncelleştirmelerini Performans Analizi: Uzak PowerShell ve PowerShell 7.x desteği eklendi. [Microsoft Defender Virüsten Koruma için performans çözümleyicisi](tune-performance-defender-antivirus.md) bölümüne bakın.
+- Microsoft Defender Virüsten Koruma ağ denetleme sistemi sürücüsündeki olası yinelenen paket hatası düzeltildi.
 
 ### <a name="known-issues"></a>Bilinen Sorunlar
 
@@ -350,8 +350,8 @@ Bilinen sorun yok
 Altyapı sürümü: 1.1.18600.4 Güvenlik bilgileri güncelleştirme sürümü: 1.351.7.0
 
 ### <a name="whats-new"></a>Yenilikler
-- Microsoft Defender Virüsten Koruma altyapısı ve platform güncelleştirmeleri için yeni gecikme halkası. Bu halkayı tercih eden cihazlar, güncelleştirmeleri 48 saatlik bir gecikmeyle alır. Yeni gecikme halkası yalnızca kritik ortamlar için önerilir. Bkz. [Microsoft Defender güncelleştirmeleri için aşamalı dağıtım işlemini yönetme](manage-gradual-rollout.md).
-- Microsoft Defender güncelleştirme aşamalı dağıtım işleminde iyileştirmeler
+- Microsoft Defender Virüsten Koruma altyapısı ve platform güncelleştirmeleri için yeni gecikme halkası. Bu halkayı tercih eden cihazlar, güncelleştirmeleri 48 saatlik bir gecikmeyle alır. Yeni gecikme halkası yalnızca kritik ortamlar için önerilir. [Microsoft Defender güncelleştirmeleri için bkz. Aşamalı dağıtım işlemini yönetme](manage-gradual-rollout.md).
+- Aşamalı dağıtım işlemini Microsoft Defender güncelleştirme iyileştirmeleri
 
 ### <a name="known-issues"></a>Bilinen Sorunlar
 Bilinen sorun yok
@@ -369,7 +369,7 @@ Bilinen sorun yok
 - Davranış izleme altyapısında iyileştirmeler
 - [Microsoft Defender Virüsten Koruma için yeni performans çözümleyicisi](tune-performance-defender-antivirus.md) yayınlandı
 - Microsoft Defender Virüsten Koruma kötü amaçlı DLL'leri yüklemeye karşı sağlamlaştırılmış
-- Microsoft Defender Virüsten Koruma TrustedInstaller atlamalarına karşı sağlamlaştırılmış
+- Microsoft Defender Virüsten Koruma, TrustedInstaller atlamalarına karşı sağlamlaştırılmış
 - Dosya değişikliği bildirimlerini Human-Operated Ransomware (HumOR) için daha fazla veri içerecek şekilde genişletme
 
 ### <a name="known-issues"></a>Bilinen Sorunlar
@@ -404,7 +404,7 @@ Bilinen sorun yok
 &ensp;Destek aşaması: **Teknik yükseltme desteği (yalnızca)**<br/>
 
 ### <a name="whats-new"></a>Yenilikler
-- Microsoft Defender güncelleştirmelerinin aşamalı dağıtım sürecini yönetmek için yeni denetimler. Bkz. [Microsoft Defender güncelleştirmeleri için aşamalı dağıtım işlemini yönetme](manage-gradual-rollout.md).
+- Microsoft Defender güncelleştirmelerinin aşamalı dağıtım sürecini yönetmek için yeni denetimler. [Microsoft Defender güncelleştirmeleri için bkz. Aşamalı dağıtım işlemini yönetme](manage-gradual-rollout.md).
 - Davranış izleme altyapısında iyileştirme
 - Kötü amaçlı yazılımdan koruma tanımlarının dağıtımında iyileştirmeler
 - Genişletilmiş Edge ağ olay incelemeleri
@@ -784,22 +784,22 @@ Platform ve altyapı güncelleştirmeleri aylık tempoda sağlanır. Tam olarak 
 Teknik destek (yalnızca) aşamasında, ticari olarak makul destek olayları Microsoft Müşteri Hizmetleri & Desteği ve Microsoft'un yönetilen destek teklifleri (Premier Destek gibi) aracılığıyla sağlanacaktır. Destek olayı daha fazla rehberlik için geliştirmeye yükseltme gerektiriyorsa, güvenlikle ilgili olmayan bir güncelleştirme gerektiriyorsa veya bir güvenlik güncelleştirmesi gerektiriyorsa, müşterilerin en son platform sürümüne veya ara güncelleştirmeye (*) yükseltmesi istenir.
 
 > [!NOTE]
-> Microsoft Defender Virüsten Koruma Platformu Güncelleştirmesi'ni el ile dağıtıyorsanız veya Microsoft Defender Virüsten Koruma Platformu Güncelleştirmesi'ni dağıtmak için bir betik veya Microsoft dışı bir yönetim ürünü kullanıyorsanız Platform Güncelleştirmesi'nin (N-2) en son sürümü yüklenmeden önce sürümün [Microsoft Update Kataloğu'ndan](https://www.catalog.update.microsoft.com/Search.aspx?q=4.18.2001.10) yüklendiğinden emin olun`4.18.2001.10`.
+> Virüsten Koruma Platformu Güncelleştirmesi Microsoft Defender ni el ile dağıtıyorsanız veya Virüsten Koruma Platformu Güncelleştirmesi Microsoft Defender dağıtmak için bir betik veya Microsoft dışı bir yönetim ürünü kullanıyorsanız Platform Güncelleştirmesi'nin `4.18.2001.10` (N-2) en son sürümü yüklenmeden önce [sürümün Microsoft Update Kataloğu'ndan](https://www.catalog.update.microsoft.com/Search.aspx?q=4.18.2001.10) yüklendiğinden emin olun.
 
 ### <a name="platform-version-included-with-windows-10-releases"></a>Windows 10 sürümlerine dahil edilen platform sürümü
 
-Aşağıdaki tabloda, en son Windows 10 sürümleriyle birlikte gelen Microsoft Defender Virüsten Koruma platformu ve altyapı sürümleri sağlanır:<br/><br/>
+Aşağıdaki tabloda, en son Windows 10 sürümleriyle birlikte gönderilen Microsoft Defender Virüsten Koruma platformu ve altyapı sürümleri sağlanır:<br/><br/>
 
 |Windows 10 sürümü  |Platform sürümü  |Altyapı sürümü |Destek aşaması |
 |:---|:---|:---|:---|
-|2004 (20H1/20H2) |4.18.1909.6 |1.1.17000.2 | Teknik yükseltme desteği (yalnızca) |
-|1909 (19H2) |4.18.1902.5 |1.1.16700.3 | Teknik yükseltme desteği (yalnızca) |
-|1903 (19H1) |4.18.1902.5 |1.1.15600.4 | Teknik yükseltme desteği (yalnızca) |
-|1809 (RS5) |4.18.1807.18075 |1.1.15000.2 | Teknik yükseltme desteği (yalnızca) |
-|1803 (RS4) |4.13.17134.1 |1.1.14600.4 | Teknik yükseltme desteği (yalnızca) |
-|1709 (RS3) |4.12.16299.15 |1.1.14104.0 | Teknik yükseltme desteği (yalnızca) |
-|1703 (RS2) |4.11.15603.2 |1.1.13504.0 | Teknik yükseltme desteği (yalnızca) |
-|1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | Teknik yükseltme desteği (yalnızca) |
+|2004 (20H1/20H2) | `4.18.1909.6` | `1.1.17000.2` | Teknik yükseltme desteği (yalnızca) |
+|1909 (19H2) |`4.18.1902.5` |`1.1.16700.3` | Teknik yükseltme desteği (yalnızca) |
+|1903 (19H1) |`4.18.1902.5` |`1.1.15600.4` | Teknik yükseltme desteği (yalnızca) |
+|1809 (RS5) |`4.18.1807.1807`5 |`1.1.15000.2` | Teknik yükseltme desteği (yalnızca) |
+|1803 (RS4) |`4.13.17134.1` |`1.1.14600.4` | Teknik yükseltme desteği (yalnızca) |
+|1709 (RS3) |`4.12.16299.15` |`1.1.14104.0` | Teknik yükseltme desteği (yalnızca) |
+|1703 (RS2) |`4.11.15603.2` |`1.1.13504.0` | Teknik yükseltme desteği (yalnızca) |
+|1607 (RS1) |`4.10.14393.3683` |`1.1.12805.0` | Teknik yükseltme desteği (yalnızca) |
 
 Windows 10 sürüm bilgileri için [Windows yaşam döngüsü bilgi sayfasına](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet) bakın.
 
@@ -807,9 +807,24 @@ Windows 10 sürüm bilgileri için [Windows yaşam döngüsü bilgi sayfasına](
 
 Windows 10 (Enterprise, Pro ve Home sürümleri), Windows Server 2019, Windows Server 2022 ve Windows Server 2016 işletim sistemi yükleme görüntülerinizi en son virüsten koruma ve kötü amaçlı yazılımdan koruma güncelleştirmeleriyle güncelleştirmenizi öneririz. İşletim sistemi yükleme görüntülerinizi güncel tutmak, koruma boşluğu oluşmasını önlemeye yardımcı olur.
 
-Daha fazla bilgi için bkz. [Windows işletim sistemi yükleme görüntüleri için Microsoft Defender güncelleştirmesi](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
+Daha fazla bilgi için bkz. [Windows işletim sistemi yükleme görüntüleri için Microsoft Defender güncelleştirme](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220925.2</summary>
+
+&ensp;Paket sürümü: **20220925.2**<br/>
+&ensp;Platform sürümü: **4.18.2207.7**<br/>
+&ensp;Altyapı sürümü: **1.1.19600.3**<br/>
+&ensp;İmza sürümü: **1.373.1371.0**<br/>
+
+### <a name="fixes"></a>Giderir
+- Yok
+
+### <a name="additional-information"></a>Ek bilgiler
+- Yok
+
+<br/>
+</details><details>
 <summary>20220901.4</summary>
 
 &ensp;Paket sürümü: **20220901.4**<br/>
@@ -1136,7 +1151,7 @@ Daha fazla bilgi için bkz. [Windows işletim sistemi yükleme görüntüleri i�
 - Yok
 
 ### <a name="additional-information"></a>Ek bilgiler
-- Yenilenen Microsoft Defender Virüsten Koruma imzaları
+- Virüsten Koruma imzaları Microsoft Defender yenilendi
 <br/>
 </details><details>
 <summary>1.1.2011.01</summary>
@@ -1172,7 +1187,7 @@ Daha fazla bilgi için bkz. [Windows işletim sistemi yükleme görüntüleri i�
 
 | Makale | Açıklama  |
 |:---|:---|
-|[Windows işletim sistemi yükleme görüntüleri için Microsoft Defender güncelleştirmesi](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | İşletim sistemi yükleme görüntüleriniz (WIM ve VHD dosyaları) için kötü amaçlı yazılımdan koruma güncelleştirme paketlerini gözden geçirin. Windows 10 (Enterprise, Pro ve Home sürümleri), Windows Server 2019, Windows Server 2022 ve Windows Server 2016 yükleme görüntüleri için Microsoft Defender Virüsten Koruma güncelleştirmelerini alın.  |
+|[Windows işletim sistemi yükleme görüntüleri için Microsoft Defender güncelleştirme](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | İşletim sistemi yükleme görüntüleriniz (WIM ve VHD dosyaları) için kötü amaçlı yazılımdan koruma güncelleştirme paketlerini gözden geçirin. Windows 10 (Enterprise, Pro ve Home sürümleri), Windows Server 2019, Windows Server 2022 ve Windows Server 2016 yükleme görüntüleri için Microsoft Defender Virüsten Koruma güncelleştirmelerini edinin.  |
 |[Koruma güncelleştirmelerinin nasıl indirileceğini ve uygulanacağını yönetme](manage-protection-updates-microsoft-defender-antivirus.md) | Koruma güncelleştirmeleri birçok kaynak üzerinden teslim edilebilir. |
 |[Koruma güncelleştirmelerinin ne zaman indirileceğini ve uygulanacağını yönetme](manage-protection-update-schedule-microsoft-defender-antivirus.md) | Koruma güncelleştirmelerinin ne zaman indirilmesi gerektiğini zamanlayabilirsiniz. |
 |[Güncel olmayan uç noktalar için güncelleştirmeleri yönetme](manage-outdated-endpoints-microsoft-defender-antivirus.md) | Uç nokta bir güncelleştirmeyi veya zamanlanmış taramayı kaçırırsa, kullanıcı bir sonraki oturum açtığında güncelleştirmeyi zorlayabilir veya tarama yapabilirsiniz. |

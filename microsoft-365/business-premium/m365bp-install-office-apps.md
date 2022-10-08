@@ -14,6 +14,8 @@ ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: office'i Microsoft 365 İş Ekstra'deki tüm cihazlara yükleme.
-ms.openlocfilehash: a5e2dbd00066c30d70df6ee74575b2b3f72fed13
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: cb879c21b0b7c60536ed977305f727888b0bf560
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67735612"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096599"
 ---
 # <a name="install-office-apps-on-all-devices"></a>Office uygulamalarını tüm cihazlara yükleme
 
@@ -50,7 +52,7 @@ Aşağıdaki işlemleri gerçekleştirmelerini sağlayın:
 
 Office'i iPhone veya Android telefona yüklemek için aşağıdaki yönergeleri kullanın. Bu adımları izledikten sonra, Office uygulamalarında oluşturulan iş dosyalarınız İş için Microsoft 365 tarafından korunur.
 
-Örnek Outlook içindir, ancak yüklemek istediğiniz diğer Office uygulamalarını uygular.
+Örnek Outlook içindir, ancak yüklemek istediğiniz diğer Office uygulamaları için geçerlidir.
 
 ## <a name="iphone"></a>[Iphone](#tab/iPhone)
   

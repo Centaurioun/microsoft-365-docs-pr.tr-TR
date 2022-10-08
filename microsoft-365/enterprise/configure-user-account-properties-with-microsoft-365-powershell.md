@@ -9,7 +9,9 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -19,12 +21,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: Microsoft 365 kiracınızdaki bireysel veya birden çok kullanıcı hesabının özelliklerini yapılandırmak için Microsoft 365 için PowerShell'i kullanın.
-ms.openlocfilehash: 60b022a60334339f99c7fb767d7b68115ba1a2e5
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 7ded6fad753e5ee19c79f8ab4d715e5ce3b50765
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67556402"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68209216"
 ---
 # <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>PowerShell ile Microsoft 365 kullanıcı hesabı özelliklerini yapılandırma
 

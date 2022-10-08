@@ -14,18 +14,20 @@ ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 description: Outlook kullanarak şifrelenmiş e-posta göndermeyi öğrenin.
-ms.openlocfilehash: bb33bed554786a8879e861ff88a4f5f5de60179e
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 481f40321a56ba398c25601a1c5da1a91daae67b
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67738673"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097258"
 ---
 # <a name="encrypt-or-label-your-sensitive-email-in-microsoft-365"></a>Microsoft 365'te hassas e-postanızı şifreleme veya etiketleme
 

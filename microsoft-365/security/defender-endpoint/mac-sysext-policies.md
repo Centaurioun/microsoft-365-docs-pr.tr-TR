@@ -14,16 +14,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.subservice: mde
-ms.openlocfilehash: 1bf949f66e525504a9ef499a034093115d7f6db5
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 8c3f944c9297e9ba922e2dbdb5f55750bdc0e6a5
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521575"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68223166"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>macOS Catalina için yeni yapılandırma profilleri ve macOS'un daha yeni sürümleri
 

@@ -15,14 +15,15 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
-ms.openlocfilehash: f2a7f09807c4c17da30fab8fb3ca1eb2d6f4fa70
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+- tier1
+ms.openlocfilehash: 1ba8e1897e82feed3c3b7e7d585ad60534e2be31
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710619"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097390"
 ---
 # <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>İş için Microsoft Defender'da tehditlere yanıt verme ve tehditleri azaltma
 
@@ -51,7 +52,7 @@ Microsoft 365 Defender portalı, güvenlik ekibinizin algılanan tehditlere yan�
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout-menu.png" alt-text="Seçili cihaz için kullanılabilir eylemlerin ekran görüntüsü":::
 
-6. Kullanılabilir bir eylem seçin. Örneğin, Microsoft Defender Virüsten Koruma'nın cihazda hızlı bir tarama başlatmasına neden olacak **virüsten koruma taraması çalıştır'ı** seçebilirsiniz. Alternatif olarak, cihazda otomatik bir araştırma tetikleme için **Otomatik Araştırma Başlat'ı** da seçebilirsiniz.
+6. Kullanılabilir bir eylem seçin. Örneğin **Virüsten koruma taraması çalıştır'ı** seçebilirsiniz ve bu da virüsten koruma Microsoft Defender cihazda hızlı bir tarama başlatmasına neden olur. Alternatif olarak, cihazda otomatik bir araştırma tetikleme için **Otomatik Araştırma Başlat'ı** da seçebilirsiniz.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

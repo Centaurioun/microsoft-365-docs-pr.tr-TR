@@ -13,14 +13,16 @@ ms.author: deniseb
 ms.reviewer: mkaminska
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 0523ba3cd0e9d32cd58675ead39fdabc1718b5c0
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 99bf1ffbb7f356434eaaa469cf9e4b7201c7b6e0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742969"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200329"
 ---
 # <a name="turn-on-network-protection"></a>Ağ korumasını açın
 
@@ -98,7 +100,7 @@ Aşağıdaki yöntemlerden herhangi birini kullanarak ağ korumasını etkinleş
 
 Ağ korumasını etkinleştirmek veya devre dışı bırakmak ya da denetim modunu etkinleştirmek için [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) yapılandırma hizmet sağlayıcısını (CSP) kullanın.
 
-Ağ korumasını etkinleştirmeden veya devre dışı bırakmadan veya denetim modunu etkinleştirmeden önce [Microsoft Defender kötü amaçlı yazılımdan koruma platformunu en son sürüme güncelleştirin](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc).
+Ağ korumasını etkinleştirmeden veya devre dışı bırakmadan veya denetim modunu etkinleştirmeden önce Microsoft Defender [kötü amaçlı yazılımdan koruma platformunu en son sürüme güncelleştirin](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc).
 
 ### <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
 
@@ -134,7 +136,7 @@ Ağ korumasını etkinleştirmeden veya devre dışı bırakmadan veya denetim m
 
 4. **Uç nokta koruma** > **temelleri'ne** gidin, profiliniz için bir ad sağlayın ve **İleri'yi** seçin.
 
-5. **Yapılandırma ayarları** bölümünde **Microsoft Defender Exploit Guard** > **Ağ filtreleme** > **Ağ koruması** > **Etkinleştirme** veya **Denetleme'ye** gidin. **İleri**'yi seçin.
+5. **Yapılandırma ayarları** bölümünde **Exploit Guard** > **Ağ filtreleme ağ korumasını** >  > **etkinleştirme** veya **denetleme** Microsoft Defender gidin. **İleri**'yi seçin.
 
 6. Kuruluşunuzun gerektirdiği uygun **Kapsam etiketlerini**, **Atamaları** ve **Uygulanabilirlik kurallarını** seçin. Yöneticiler daha fazla gereksinim ayarlayabilir.
 
@@ -155,7 +157,7 @@ Etki alanına katılmış bilgisayarlarda veya tek başına bir bilgisayarda ağ
 3. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Windows Defender Exploit Guard** \> **Ağ koruması** olarak genişletin.
 
    > [!NOTE]
-   > Windows'un eski sürümlerinde, grup ilkesi yolu "Microsoft Defender Virüsten Koruma" yerine "Windows Defender Virüsten Koruma" diyebilir.
+   > Windows'un daha eski sürümlerinde, grup ilkesi yolu "Microsoft Defender Virüsten Koruma" yerine "Windows Defender Virüsten Koruma" diyebilir.
 
 4. **Kullanıcıların ve uygulamaların tehlikeli web sitelerine erişmesini engelle** ayarına çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. Seçenekler bölümünde aşağıdaki seçeneklerden birini belirtmeniz gerekir:
     - **Engelle** - Kullanıcılar kötü amaçlı IP adreslerine ve etki alanlarına erişemez.

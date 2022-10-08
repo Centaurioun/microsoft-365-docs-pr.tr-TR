@@ -14,15 +14,17 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 3c32a0bcde769084055b550431e14f80cff3d477
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: a4af85a358d51b039d9a8596bd911eaf12f3d54f
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691925"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231626"
 ---
 # <a name="onboard-windows-devices-in-azure-virtual-desktop"></a>Azure Sanal Masaüstü'ne Windows cihazları ekleme
 
@@ -58,7 +60,7 @@ AVD konak makinesini eklemenin birkaç yolu vardır:
 
 - Başlatma sırasında betiği altın görüntüde (veya paylaşılan bir konumdan) çalıştırın.
 - Betiği çalıştırmak için bir yönetim aracı kullanın.
-- [Bulut için Microsoft Defender ile tümleştirme aracılığıyla](azure-server-integration.md)
+- [Bulut için Microsoft Defender ile Tümleştirme](azure-server-integration.md) aracılığıyla
 
 #### <a name="scenario-1-using-local-group-policy"></a>*Senaryo 1: Yerel grup ilkesini kullanma*
 
@@ -157,7 +159,7 @@ Ayrıca, FSlogix kullanıcı profillerini kullanıyorsanız, aşağıdaki dosyal
 
 #### <a name="licensing-requirements"></a>Lisans gereksinimleri
 
-Lisanslamayla ilgili not: Windows Enterprise çoklu oturumunu kullanırken, gereksinimlerinize bağlı olarak tüm kullanıcıların Uç Nokta için Microsoft Defender (kullanıcı başına), Windows Enterprise E5, Microsoft 365 Güvenliği veya Microsoft 365 E5 aracılığıyla lisanslanması ya da VM'nin Bulut için Microsoft Defender aracılığıyla lisanslanması seçeneğini belirleyebilirsiniz.
+Lisanslamayla ilgili not: Windows Enterprise çoklu oturumunu kullanırken, gereksinimlerinize bağlı olarak tüm kullanıcıların Uç Nokta için Microsoft Defender (kullanıcı başına), Windows Enterprise E5, Microsoft 365 Güvenliği veya Microsoft 365 E5 aracılığıyla lisanslanması ya da VM'nin Microsoft Defender aracılığıyla lisanslanması seçeneğini belirleyebilirsiniz  bulut için.
 Uç Nokta için Microsoft Defender için lisanslama gereksinimleri şu konumda bulunabilir: [Lisans gereksinimleri](minimum-requirements.md#licensing-requirements).
 
 ### <a name="known-issues-and-limitations"></a>Bilinen sorunlar ve sınırlamalar

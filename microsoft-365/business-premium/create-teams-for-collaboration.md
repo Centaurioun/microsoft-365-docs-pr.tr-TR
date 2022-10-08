@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- tier1
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -25,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Küçük işletmenizin veya kampanyanızın işbirliği yapabilmesi için Microsoft Teams'de neden ve nasıl ekip oluşturacağınızı öğrenin.
-ms.openlocfilehash: d9a38f1f4e51778f8168571f159bd4ef4158222a
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 9037f58a0da8a690f9a7663292abb71474e0f51b
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736420"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097171"
 ---
 # <a name="use-microsoft-teams-for-collaboration"></a>İşbirliği için Microsoft Teams kullanma
 

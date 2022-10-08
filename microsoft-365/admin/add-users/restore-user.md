@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,16 +25,16 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Kullanıcı hesabını sildikten sonraki 30 gün içinde hesabı ve tüm verileri geri yükleyebilirsiniz ve kullanıcı aynı hesapla oturum açabilir.
-ms.openlocfilehash: 2f9a28e5000c1ba826b5458916f30c3e8a438253
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 126cb9ca4a9b74445aad2cc3f7cec4f6feab8eb7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436217"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200109"
 ---
 # <a name="restore-a-user-in-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezi bir kullanıcıyı geri yükleme
    
-Kullanıcı hesabını, sildikten sonra 30 gün içinde geri yüklerseniz, hesap ve tüm ilişkili veriler geri yüklenir. Kullanıcı aynı iş veya okul hesabı ile oturum açabilir. Posta kutusu tümüyle geri yüklenir. Belirli bir kullanıcı hesabının geri yüklenemez duruma gelmesine ne kadar süre kaldığını öğrenmeniz gerekiyorsa [bize ulaşın](../../business-video/get-help-support.md).
+When you restore a user account within 30 days after deleting it, the account and all associated data are restored. The user can sign in with the same work or school account. Their mailbox will be fully restored. To find out how much time remains before a specific user account can no longer be restored, [contact us](../../business-video/get-help-support.md).
   
 Birkaç ipucu:
   
@@ -59,14 +60,14 @@ Bir kullanıcıyı geri yükledikten sonra, parolasının değiştiğini bildird
 
 Bir kullanıcı hesabını silip aynı kullanıcı adıyla yeni bir kullanıcı hesabı oluşturup (aynı kullanıcı için veya benzer adlı başka bir kullanıcı için) daha sonra silinmiş hesabı geri yüklemeye çalıştığınızda, kullanıcı adı çakışması olur.
   
-Bu sorunu gidermek için, etkin kullanıcı hesabını geri yüklediğiniz hesapla değiştirin. Alternatif olarak, aynı kullanıcı adına sahip iki hesap olmaması için, geri yüklemekte olduğunuz hesaba farklı bir kullanıcı adı atayın. Adımları aşağıda görebilirsiniz.
+To fix this, replace the active user account with the one that you are restoring. Or, assign a different user name to the account that you are restoring so that there aren't two accounts with the same user name. Here are the steps.
 
 1. Yönetim merkezinde **Kullanıcılar** <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Silinmiş kullanıcılar</a> \> sayfasına gidin.
   
 2. **Silinmiş kullanıcılar** sayfasında, geri yüklemek istediğiniz kullanıcıların adlarını seçin ve ardından **Geri Yükle'yi** seçin.
     
     > [!NOTE]
-    > İki veya daha fazla kullanıcı geri yüklenemezse, geri yükleme işleminin bazı kullanıcılar için başarısız olduğu bir hata iletisiyle size bildirilir. Geri yüklenmeyen kullanıcıları görmek için günlüğe bakın ve sonra başarısız olunan hesapları tek tek geri yükleyin. 
+    > If two or more users fail to be restored, an error message advises you that the restore operation failed for some users. View the log to see which users were not restored, and then restore the failed accounts one at a time. 
   
 3. Parolayı ayarlamak için istemleri izleyin ve **Geri Yükle'yi** seçin.
     
@@ -80,9 +81,9 @@ Bu sorunu gidermek için, etkin kullanıcı hesabını geri yüklediğiniz hesap
     
 ## <a name="restore-a-user-that-has-a-proxy-address-conflict"></a>Proxy adresi çakışması olan bir kullanıcıyı geri yükleme
 
-Ara sunucu adresi bulunan bir kullanıcı hesabını silip aynı ara sunucu adresini başka bir hesaba atayıp silinen hesabı geri yüklemeye çalıştığınızda, ara sunucu adresi çakışması oluşur. Bu sorunu çözmek için aşağıdaki adımları izleyin.
+A proxy address conflict occurs when you delete a user account that contains a proxy address, assign the same proxy address to another account, and then try to restore the deleted account. Follow the steps below to fix this issue.
   
-Bunu yapmak için Microsoft 365 yönetici [izinlerine](about-admin-roles.md) sahip olmanız gerekir. 
+Bunu yapmak için Microsoft 365'te [yönetici izinlerine](about-admin-roles.md) sahip olmanız gerekir. 
 
 1. Yönetim merkezinde **Kullanıcılar** <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Silinmiş kullanıcılar</a> \> sayfasına gidin.
 

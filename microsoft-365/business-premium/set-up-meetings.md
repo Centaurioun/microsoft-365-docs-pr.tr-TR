@@ -14,6 +14,8 @@ ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Business Premium'da Microsoft Teams ile çevrimiçi toplantılar ayarlayın.
-ms.openlocfilehash: 643edb18a7918b01962d8fcd7eadf017bd2d73d8
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 1e00c4abd3f0df54a3621d6d30ff903039889f2d
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736838"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096511"
 ---
 # <a name="set-up-meetings-with-microsoft-teams"></a>Microsoft Teams ile toplantı ayarlama
 

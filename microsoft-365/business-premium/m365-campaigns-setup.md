@@ -14,6 +14,8 @@ ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Kampanyalar veya diğer işletmeler için Microsoft 365 İş kurulumuna genel bakış
-ms.openlocfilehash: 6ea72b060d97185dcd4607e911f087c8791916b1
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 8c88a1c519a4174342049b5c5dac85f24eac8d32
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739024"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096621"
 ---
 # <a name="setup-for-microsoft-365-business-for-campaigns"></a>Kampanyalar için Microsoft 365 İş kurulumu
 

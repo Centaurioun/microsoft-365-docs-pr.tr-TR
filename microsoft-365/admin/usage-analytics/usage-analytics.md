@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -21,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Kuruluşunuzun iletişim kurmak ve işbirliği yapmak için Microsoft 365 hizmetlerini nasıl benimsediği hakkında genel bir bakış edinin.
-ms.openlocfilehash: 92a6b1437fa092b54df5e10a6593d130e0808164
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: e36ab8cda0000ef285a84dff5c0dc430d61ba313
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467964"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68209348"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 kullanım analizi
 
-Kuruluşunuzun Microsoft 365 içindeki çeşitli hizmetleri nasıl benimsediği hakkında içgörüler elde etmek için Power BI içindeki Microsoft 365 kullanım analizini kullanın. Microsoft 365 kullanım verilerini görselleştirebilir ve analiz edebilir, özel raporlar oluşturabilir ve içgörüleri kuruluşunuzda paylaşabilirsiniz. Ayrıca belirli bölgelerin veya bölümlerin Microsoft 365 nasıl kullandığına ilişkin içgörüler elde edebilirsiniz.
+Kuruluşunuzun Microsoft 365'te çeşitli hizmetleri nasıl benimsediği hakkında içgörüler elde etmek için Power BI'da Microsoft 365 kullanım analizini kullanın. Microsoft 365 kullanım verilerini görselleştirebilir ve analiz edebilir, özel raporlar oluşturabilir ve içgörüleri kuruluşunuz içinde paylaşabilirsiniz. Ayrıca belirli bölgelerin veya bölümlerin Microsoft 365'i nasıl kullandığına ilişkin içgörüler elde edebilirsiniz.
   
 Microsoft 365 kullanım analizi, son 12 ayın ürün arası görünümünü sağlayan ve önceden oluşturulmuş bir dizi rapor içeren önceden oluşturulmuş bir panoya erişmenizi sağlar. Her rapor, size belirli kullanım bilgileri sağlar. Kullanıcıya özgü bilgiler son tam takvim ayı için kullanılabilir.
   
@@ -44,9 +45,9 @@ Veri tablolarını seçerek her alanın ayrıntılı raporlarına erişebilirsin
 
 ## <a name="executive-summary"></a>Yönetici özeti
 
-Yönetici özeti, İş için Microsoft 365 benimseme, kullanım, mobilite, iletişim, işbirliği ve depolama raporlarının üst düzey ve bir bakışta görünümüdür ve iş karar alıcılarına yöneliktir. Etkinleştirilen tüm kullanıcılara ve etkin olanlara göre bazı hizmetlerin nasıl kullanıldığına ilişkin bir görünüm sağlar. Raporda gösterilen ayın tüm değerleri en son tam aya başvurur. 
+Yönetici özeti, İş için Microsoft 365'i benimseme, kullanım, hareketlilik, iletişim, işbirliği ve depolama raporlarının üst düzey ve bir bakışta bir görünümüdür ve iş karar alıcılarına yöneliktir. Etkinleştirilen tüm kullanıcılara ve etkin olanlara göre bazı hizmetlerin nasıl kullanıldığına ilişkin bir görünüm sağlar. Raporda gösterilen ayın tüm değerleri en son tam aya başvurur. 
 
-Bu özet, Office'deki kullanım düzenlerini ve çalışanlarınızın nasıl ve nerede işbirliği içinde olduğunu hızlı bir şekilde anlamanıza olanak tanır.
+Bu özet, Office'teki kullanım düzenlerini ve çalışanlarınızın nasıl ve nerede işbirliği içinde olduğunu hızlı bir şekilde anlamanıza olanak tanır.
 
 ![Microsoft 365 kullanım yöneticisi özetinin resmi.](../../media/office365usage-exec-summary.png)
 
@@ -54,29 +55,29 @@ Bu özet, Office'deki kullanım düzenlerini ve çalışanlarınızın nasıl ve
 
 Microsoft 365 genel bakış raporu aşağıdaki raporları içerir. Rapor sayfasının üst kısmındaki sekmeyi seçerek bunları görüntüleyebilirsiniz. Raporun en üst bölümünde gösterilen ayın tüm değerleri en son tam aya başvurur.
 
-- **Evlat edinme** &ndash; Benimseme eğilimlerinin genel bir özetini sunar. Kullanıcılarınızın Microsoft 365 nasıl benimsediğini ve tek tek hizmetlerin genel kullanımının aylar içinde nasıl değiştiğini öğrenmek için bu bölümdeki raporları kullanın. Kullanıcıların nasıl etkinleştirildiğini, kuruluşunuzdaki kaç kişinin Microsoft 365 etkin olarak kullandığını, kaç kişinin geri dönen kullanıcı olduğunu ve kaç kişinin ürünü ilk kez kullandığını görebilirsiniz.
+- **Evlat edinme** &ndash; Benimseme eğilimlerinin genel bir özetini sunar. Kullanıcılarınızın Microsoft 365'i nasıl benimsediğini ve tek tek hizmetlerin genel kullanımının aylar içinde nasıl değiştiğini öğrenmek için bu bölümdeki raporları kullanın. Kullanıcıların nasıl etkinleştirildiğini, kuruluşunuzdaki kaç kişinin Microsoft 365'i etkin olarak kullandığını, kaç kullanıcının geri döndüğünü ve kaç kişinin ürünü ilk kez kullandığını görebilirsiniz.
 
-- **Kullanım** &ndash; Etkin kullanıcıların hacmine ve son 12 aydaki her ürün için önemli etkinliklere ilişkin bir detaya gitme görünümü sunar. Kuruluşunuzdaki kişilerin Microsoft 365 nasıl kullandığını öğrenmek için bu bölümdeki raporları kullanın.
+- **Kullanım** &ndash; Etkin kullanıcıların hacmine ve son 12 aydaki her ürün için önemli etkinliklere ilişkin bir detaya gitme görünümü sunar. Kuruluşunuzdaki kişilerin Microsoft 365'i nasıl kullandığını öğrenmek için bu bölümdeki raporları kullanın.
 
-- **Iletişim** &ndash; Kuruluşunuzdaki kişilerin Teams, Yammer, e-posta veya Skype aramaları kullanarak iletişimde kalmayı tercih edip etmediğini bir bakışta görebilirsiniz. Çalışanlarınız arasında iletişim araçlarının kullanımında desenlerde değişiklik olup olmadığını gözlemleyebilirsiniz. 
+- **Iletişim** &ndash; Kuruluşunuzdaki kişilerin Teams, Yammer, e-posta veya Skype aramalarını kullanarak iletişimde kalmayı tercih edip etmediğini bir bakışta görebilirsiniz. Çalışanlarınız arasında iletişim araçlarının kullanımında desenlerde değişiklik olup olmadığını gözlemleyebilirsiniz. 
 
-- **Işbirliği** &ndash; Kuruluşunuzdaki kişilerin belgeleri depolamak ve birbirleriyle işbirliği yapmak için OneDrive ve SharePoint nasıl kullandığını ve bu eğilimlerin aylar içinde nasıl geliştiğini görün. Ayrıca, şirket içinde veya dışında kaç kullanıcının belge paylaştığını ve site veya OneDrive hesapları SharePoint kullanan kullanıcıların sayısını, sahipler ve diğer ortak çalışanlar tarafından ayrılmış olarak da görebilirsiniz.
+- **Işbirliği** &ndash; Kuruluşunuzdaki kişilerin belgeleri depolamak ve birbirleriyle işbirliği yapmak için OneDrive ve SharePoint'i nasıl kullandığını ve bu eğilimlerin aylar içinde nasıl geliştiğini görün. Ayrıca, kaç kullanıcının belgeyi şirket içinde veya dışında paylaştığını ve kaç kullanıcının SharePoint sitelerini veya OneDrive hesaplarını kullandığını, sahipler ve diğer ortak çalışanlar tarafından ayrılmış olduğunu da görebilirsiniz.
 
--  &ndash; Depolama Posta kutuları, OneDrive ve SharePoint siteleri için bulut depolamayı izlemek için bu raporu kullanın.
+- **Depolama** &ndash; Posta kutuları, OneDrive ve SharePoint siteleri için bulut depolama alanını izlemek için bu raporu kullanın.
 
-- **Hareketli -lik** &ndash; Kişilerin e-posta, Teams, Skype veya Yammer bağlanmak için hangi istemcileri ve cihazları kullandığını izleyin.
+- **Hareketli -lik** &ndash; Kişilerin e-postaya, Teams'e, Skype'a veya Yammer'a bağlanmak için hangi istemcileri ve cihazları kullandığını izleyin.
 
 ## <a name="activation-and-licensing"></a>Etkinleştirme ve lisanslama
 
-Etkinleştirme ve lisans sayfası, Microsoft 365 etkinleştirmeyle ilgili raporlar sunar; başka bir ifadeyle, Office uygulamaları indiren ve etkinleştiren kullanıcı sayısı ve kuruluşunuz tarafından atanan lisans sayısı. Üste doğru ay değeri geçerli ayı ifade eder ve ölçümler ayın başından geçerli tarihe kadar toplanan değerleri yansıtır.
+Etkinleştirme ve lisans sayfası Microsoft 365 etkinleştirmesi ile ilgili raporlar sunar; başka bir ifadeyle, kaç kullanıcının Office uygulamalarını indirip etkinleştirdiği ve kuruluşunuz tarafından kaç lisans atandığı. Üste doğru ay değeri geçerli ayı ifade eder ve ölçümler ayın başından geçerli tarihe kadar toplanan değerleri yansıtır.
 
-- **Etkinleştirme** &ndash; Kuruluşunuzdaki hizmet planı (örneğin, Kurumlar için Microsoft 365 Uygulamaları, Project ve Visio) etkinleştirmelerini izleyin. Bir Office lisansı olan her kullanıcı beş adede kadar cihaza ürün yükleyebilir. Bu bölümdeki raporları, kullanıcıların Office uygulamalarını yüklediği cihazları görmek için de kullanabilirsiniz. Bir planı etkinleştirmek için kullanıcının uygulamayı yüklemesi ve hesabıyla oturum açması gerektiğini unutmayın.
+- **Etkinleştirme** &ndash; Kuruluşunuzdaki hizmet planı (örneğin, Kurumlar için Microsoft 365 Uygulamaları, Project ve Visio) etkinleştirmelerini izleyin. Bir Office lisansı olan her kullanıcı beş adede kadar cihaza ürün yükleyebilir. Kişilerin Office uygulamalarını yüklediği cihazları görmek için bu bölümdeki raporları da kullanabilirsiniz. Bir planı etkinleştirmek için kullanıcının uygulamayı yüklemesi ve hesabıyla oturum açması gerektiğini unutmayın.
 
 - **Lisans** &ndash; Bu rapor lisans türlerine, her lisans türüne atanan kullanıcıların sayısına ve her ay için lisans atama dağıtımına genel bir bakış içerir. Üste doğru ay değeri geçerli ayı ifade eder ve ölçümler ayın başından geçerli tarihe kadar toplanan değerleri yansıtır.
 
 ## <a name="product-usage"></a>Ürün kullanımı
 
-Bu rapor Exchange, Microsoft 365 grupları, OneDrive, SharePoint, Skype, Teams ve Yammer dahil olmak üzere her Microsoft 365 hizmeti için ayrı bir rapor içerir. Her rapor toplam etkin ve toplam etkin kullanıcı raporlarını, posta kutuları, siteler, gruplar ve hesaplar gibi varlıkların sayısını ve uygun yerlerde etkinlik türü raporlarını içerir. Raporun en üst bölümünde gösterilen ayın tüm değerleri en son tam aya başvurur.
+Bu rapor, Exchange, Microsoft 365 grupları, OneDrive, SharePoint, Skype, Teams ve Yammer dahil olmak üzere her Microsoft 365 hizmeti için ayrı bir rapor içerir. Her rapor toplam etkin ve toplam etkin kullanıcı raporlarını, posta kutuları, siteler, gruplar ve hesaplar gibi varlıkların sayısını ve uygun yerlerde etkinlik türü raporlarını içerir. Raporun en üst bölümünde gösterilen ayın tüm değerleri en son tam aya başvurur.
 
 ## <a name="user-activity"></a>Kullanıcı etkinliği
 
@@ -95,23 +96,23 @@ Panoları başkalarıyla paylaşmak için bkz. [Panoları ve raporları paylaşm
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>Microsoft 365 kullanım analizine kimler bağlanabilir?
 
-Şablon uygulamasıyla bağlantı kurmak için **Genel yönetici**, **Exchange yönetici**, **Skype Kurumsal yönetici****, SharePoint yönetici**, **Genel okuyucu**, **Rapor okuyucu**, **Kullanım Özeti Raporları Okuyucusu** olmanız gerekir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../add-users/about-admin-roles.md) . **Not:** **Genel Okuyucu** ve **Kullanım Özeti Raporları Okuyucusu** yalnızca Microsoft 365 kullanım analizinde kiracı düzeyindeki toplamalara erişime izin verir ve kullanıcı etkinliği raporlarını görüntüleme iznine sahip değildir. 
+Şablon uygulamasıyla bağlantı kurmak için **Genel yönetici**, **Exchange yöneticisi**, **Skype Kurumsal yöneticisi**, **SharePoint yöneticisi**, **Genel okuyucu**, **Rapor okuyucu**, **Kullanım Özeti Raporları Okuyucusu** olmanız gerekir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../add-users/about-admin-roles.md) . **Not:** **Genel Okuyucu** ve **Kullanım Özeti Raporları Okuyucusu** yalnızca Microsoft 365 kullanım analizinde kiracı düzeyi toplamlarına erişime izin verir ve kullanıcı etkinliği raporlarını görüntüleme iznine sahip değildir. 
 
-### <a name="who-can-customize-the-usage-analytics-reports"></a>Kullanım analizi raporlarını Who özelleştirebilirsiniz?
+### <a name="who-can-customize-the-usage-analytics-reports"></a>Kullanım analizi raporlarını kimler özelleştirebilir?
 
-Yalnızca şablon uygulamasıyla ilk bağlantıyı kuran kullanıcı raporları özelleştirebilir veya Power BI web arabiriminde yeni raporlar oluşturabilir. Yönergeler için bkz[. Microsoft 365 kullanım analizinde raporları özelleştirme](customize-reports.md).
+Yalnızca şablon uygulamasıyla ilk bağlantıyı kuran kullanıcı raporları özelleştirebilir veya Power BI web arabiriminde yeni raporlar oluşturabilir. Yönergeler için bkz. [Microsoft 365 kullanım analizinde raporları özelleştirme](customize-reports.md) .
 
 ### <a name="can-i-only-customize-the-reports-from-the-power-bi-web-interface"></a>Raporları yalnızca Power BI web arabiriminden özelleştirebilir miyim?
 
-Kullanıcılar, raporları Power BI web arabiriminden özelleştirmenin yanı sıra Power BI Desktop kullanarak kendi raporlarını oluşturmak için doğrudan Microsoft 365 raporlama hizmetine bağlanabilir.
+Kullanıcılar, Power BI web arabiriminden raporları özelleştirmenin yanı sıra Power BI Desktop kullanarak kendi raporlarını oluşturmak için doğrudan Microsoft 365 raporlama hizmetine bağlanabilir.
 
 ### <a name="how-can-i-get-the-pbit-file-that-this-dashboard-is-associated-with"></a>Bu panonun ilişkilendirildiği pbit dosyasını nasıl edinebilirim?
 
 [Pbit dosyasına Microsoft İndirme merkezinden](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit) erişebilirsiniz. 
 
-### <a name="who-can-view-the-dashboards-and-reports"></a>Panoları ve raporları Who görüntüleyebilir?
+### <a name="who-can-view-the-dashboards-and-reports"></a>Panoları ve raporları kimler görüntüleyebilir?
 
-Şablon uygulamasına bağlandıysanız [, paylaşım işlevini](/power-bi/collaborate-share/service-share-dashboards) kullanarak bunu herkesle paylaşabilirsiniz. Power BI lisanslama, hem kullanıcı paylaşımının hem de panonun paylaşıldığı kullanıcının Power BI Pro veya Power BI Premium olmasını gerektirir.
+Şablon uygulamasına bağlandıysanız [, paylaşım işlevini](/power-bi/collaborate-share/service-share-dashboards) kullanarak bunu herkesle paylaşabilirsiniz. Power BI lisanslama, hem kullanıcı paylaşımının hem de panonun paylaşıldığı kullanıcının Power BI Pro veya Power BI Premium gerektirir.
 
 ### <a name="can-anyone-share-the-dashboard-or-does-it-have-to-be-the-person-who-connected-to-the-dashboard"></a>Panoyu herkes paylaşabilir mi yoksa sadece panoya bağlı olan kişi mi paylaşabilir?
 
@@ -119,7 +120,7 @@ Panoyu paylaşırken, kullanıcıların panoyu başkalarıyla yeniden paylaşmas
 
 ### <a name="is-it-possible-to-work-on-and-customize-the-same-template-app-with-a-group-of-people"></a>Bir grup kişiyle aynı şablon uygulaması üzerinde çalışmak ve bunları özelleştirmek mümkün mü?
 
-Evet. Bir grup yöneticinin aynı şablon uygulamasında birlikte çalışmasını sağlamak için Power BI uygulama çalışma alanı işlevselliğinden yararlanabilirsiniz. Daha fazla bilgi için bkz. [Panolarla raporları nasıl işbirliği yapmalı ve paylaşmalıyım?](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
+Evet. Bir grup yöneticinin aynı şablon uygulamasında birlikte çalışmasını sağlamak için Power BI'ın uygulama çalışma alanı işlevselliğinden yararlanabilirsiniz. Daha fazla bilgi için bkz. [Panolarla raporları nasıl işbirliği yapmalı ve paylaşmalıyım?](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
 
 ### <a name="for-which-timeframe-is-data-available"></a>Hangi zaman aralığına ait veriler sunuluyor?
 
@@ -137,7 +138,7 @@ Ayrıca, şablon uygulamasındaki kullanıcı düzeyi ayrıntıları yalnızca �
 
 ### <a name="when-should-i-use-the-template-app-and-when-the-usage-reports"></a>Şablon uygulamasını ne zaman ve kullanım raporları ne zaman kullanmalıyım?
 
-[Etkinlik Raporları](../activity-reports/activity-reports.md), Microsoft 365 kullanımını ve benimsenmesini anlamak için iyi bir başlangıç noktasıdır. Şablon uygulaması, Microsoft 365 kullanım verilerini ve kuruluşunuzun Active Directory bilgilerini birleştirir ve yöneticilerin Power BI görsel analiz özelliklerini kullanarak veri kümesini analiz etmesini sağlar. Bu, yöneticilerin yalnızca Microsoft 365 kullanım verilerini görselleştirmesine ve çözümlemesine değil, aynı zamanda departmanlar, konum vb. Active Directory özelliklerine göre dilimlemesine olanak tanır. Ayrıca özel raporlar oluşturabilir ve içgörüleri kendi kuruluşlarında paylaşabilirler. 
+[Etkinlik Raporları](../activity-reports/activity-reports.md), Microsoft 365'in kullanımını ve benimsenmesini anlamak için iyi bir başlangıç noktasıdır. Şablon uygulaması, Microsoft 365 kullanım verilerini ve kuruluşunuzun Active Directory bilgilerini birleştirir ve yöneticilerin Power BI'ın görsel analiz özelliklerini kullanarak veri kümesini analiz etmelerini sağlar. Bu, yöneticilerin yalnızca Microsoft 365 kullanım verilerini görselleştirmesine ve analiz etmelerine değil, aynı zamanda departmanlar, konum vb. Active Directory özelliklerine göre dilimlemelerine olanak tanır. Ayrıca özel raporlar oluşturabilir ve içgörüleri kendi kuruluşlarında paylaşabilirler. 
 
 ### <a name="how-often-is-the-data-refreshed"></a>Veriler ne sıklıkta yenilenir? 
 
@@ -157,7 +158,7 @@ Etkin kullanıcı tanımı, etkinlik raporlarındaki [etkin kullanıcının](../
 
 ### <a name="which-groups-are-included-in-the-microsoft-365-groups-usage-report"></a>Microsoft 365 Grupları kullanım raporuna hangi gruplar dahil edilir?
 
-Şablon uygulamasının geçerli sürümü Outlook grupların, Yammer gruplarının ve SharePoint gruplarının kullanımını içerir. Microsoft Teams veya Planner ile ilgili grupları içermez.
+Şablon uygulamasının geçerli sürümü Outlook gruplarının, Yammer gruplarının ve SharePoint gruplarının kullanımını içerir. Microsoft Teams veya Planner ile ilgili grupları içermez.
 
 ### <a name="when-will-an-updated-version-of-the-template-app-become-available"></a>Şablon uygulamasının güncelleştirilmiş bir sürümü ne zaman kullanıma sunulacak?
 
@@ -165,7 +166,7 @@ Etkin kullanıcı tanımı, etkinlik raporlarındaki [etkin kullanıcının](../
 
 ### <a name="is-it-possible-to-integrate-the-data-from-the-template-app-into-existing-solutions"></a>Şablon uygulamasındaki verileri mevcut çözümlerle tümleştirmek mümkün mü? 
 
-Şablon uygulamasındaki veriler Microsoft 365 API'leri aracılığıyla alınabilir (önizlemede). Üretime gönderildiğinde [Microsoft Graph raporlama API'leri](https://go.microsoft.com/fwlink/p/?linkid=848843) içinde birleştirilirler. 
+Şablon uygulamasındaki veriler Microsoft 365 API'leri aracılığıyla alınabilir (önizlemede). Üretime gönderildiğinde [Microsoft Graph raporlama API'leri](https://go.microsoft.com/fwlink/p/?linkid=848843) içinde birleştirilir. 
 
 ### <a name="are-there-plans-to-expand-the-template-app-to-show-usage-data-from-other-microsoft-products"></a>Şablon uygulamasını diğer Microsoft ürünlerinden gelen kullanım verilerini gösterecek şekilde genişletme planları var mı?
 
@@ -177,7 +178,7 @@ Bu, gelecekteki geliştirmeler için dikkate alınır. Güncelleştirmeler için
 
 ### <a name="is-it-possible-to-bring-in-additional-fields-from-active-directory"></a>Active Directory'deki diğer alanları da kullanmak mümkün mü?
 
-Azure Active Directory ek alanları çekmek ve veri kümesine katılmak için [Microsoft Graph raporlama API'lerine](https://go.microsoft.com/fwlink/p/?linkid=848843) bağlanarak bu verilerde ek özelleştirme yapılabilir. 
+Azure Active Directory'den ek alanlar çekmek ve veri kümesine katılmak için [Microsoft Graph raporlama API'lerine](https://go.microsoft.com/fwlink/p/?linkid=848843) bağlanarak bu verilerde ek özelleştirme yapılabilir. 
 
 ### <a name="is-it-possible-to-aggregate-the-information-in-the-template-app-across-multiple-subscriptions"></a>Şablon uygulamasındaki bilgileri birden çok abonelikte toplamak mümkün mü?
 
@@ -189,7 +190,7 @@ Azure Active Directory ek alanları çekmek ve veri kümesine katılmak için [M
 
 ### <a name="is-it-possible-to-integrate-other-data-sets-into-the-template-app"></a>Diğer veri kümelerini şablon uygulamasıyla tümleştirmek mümkün mü?
 
-Power BI Desktop kullanarak Microsoft 365 API'lerine (önizlemede) bağlanarak şablon uygulama verileriyle birleştirebileceğiniz ek veri kaynakları getirebilirsiniz.
+Şablon uygulama verileriyle birleştirmek üzere ek veri kaynakları getirmek üzere Microsoft 365 API'lerine (önizlemede) bağlanmak için Power BI Desktop kullanabilirsiniz.
 
 Daha fazla bilgi için [bkz. Belgeyi özelleştirme](customize-reports.md).
 
@@ -201,7 +202,7 @@ Tüm kullanıcı düzeyi raporları, önceki aya ilişkin toplanan verileri suna
 
 Bu, şu anda yol haritasında yer almıyor.
 
-### <a name="i-have-a-specific-question-about-the-data-im-seeing-for-my-organization-who-can-i-reach-out-to"></a>Kuruluşumla ilgili gördüğüm veriler hakkında bir sorum var. Kiminle iletişime geçebilirim?
+### <a name="i-have-a-specific-question-about-the-data-im-seeing-for-my-organization-who-can-i-reach-out-to"></a>Kuruluşum için görmekte olduğum veriler hakkında belirli bir sorum var. Kime ulaşabilirim?
 
 Yönetim merkezi etkinliğine genel bakış sayfasındaki geri bildirim düğmesini kullanabilir veya bir destek olayı açabilirsiniz (Şablon uygulamasıyla ilgili yardım almak için [destek alın](../get-help-support.md) . 
 

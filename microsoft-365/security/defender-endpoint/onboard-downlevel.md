@@ -6,21 +6,23 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 9a06824d606cc84e5e552f99a2d2d0b9c0652e04
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ac09bb1478ea3b8a0dea18ad38388d5960a18240
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692057"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231780"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Windows'un önceki sürümlerini ekleyin
 
@@ -47,10 +49,10 @@ Uç Nokta için Defender'a alt düzey Windows istemci uç noktalarını eklemek 
 - [System Center Endpoint Protection istemcilerini yapılandırma ve güncelleştirme](#configure-and-update-system-center-endpoint-protection-clients)
 - [Algılayıcı verilerini raporlamak için Microsoft Monitoring Agent'ı (MMA) yükleme ve yapılandırma](#install-and-configure-microsoft-monitoring-agent-mma)
 
-Windows Server 2008 R2 SP1 [için Bulut için Microsoft Defender aracılığıyla ekleme](#onboard-windows-servers-through-microsoft-defender-for-cloud) seçeneğiniz vardır.
+Windows Server 2008 R2 SP1 [için Bulut için Microsoft Defender ekleme](#onboard-windows-servers-through-microsoft-defender-for-cloud) seçeneğiniz vardır.
 
 > [!NOTE]
-> Microsoft Monitoring Agent (Seçenek 1) aracılığıyla bir Windows sunucusu eklemek için düğüm başına Uç Nokta için Defender tek başına sunucu lisansı gereklidir. Alternatif olarak, Bulut için Microsoft Defender (Seçenek 2) aracılığıyla bir Windows sunucusu eklemek için düğüm başına sunucular için Microsoft Defender lisansı gerekir. Bkz. [Bulut için Microsoft Defender'da kullanılabilen desteklenen özellikler](/azure/defender-for-cloud/supported-machines-endpoint-solutions-clouds-servers).
+> Microsoft Monitoring Agent (Seçenek 1) aracılığıyla bir Windows sunucusu eklemek için düğüm başına Uç Nokta için Defender tek başına sunucu lisansı gereklidir. Alternatif olarak, Bulut için Microsoft Defender aracılığıyla bir Windows sunucusu eklemek için düğüm başına sunucu lisansı Microsoft Defender gerekir (Seçenek 2), bkz. [Bulut için Microsoft Defender'de kullanılabilen desteklenen özellikler](/azure/defender-for-cloud/supported-machines-endpoint-solutions-clouds-servers).
 
 > [!TIP]
 > Cihazı ekledikten sonra, hizmete düzgün şekilde eklendiğini doğrulamak için bir algılama testi çalıştırmayı seçebilirsiniz. Daha fazla bilgi için bkz. [Yeni eklenen Uç Nokta için Defender uç noktasında algılama testi çalıştırma](run-detection-test.md).
@@ -66,7 +68,7 @@ Bu tümleştirmeyi etkinleştirmek için aşağıdaki adımlar gereklidir:
 
 - [Endpoint Protection istemcileri için Ocak 2017 kötü amaçlı yazılımdan koruma platformu güncelleştirmesini](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) yükleme
 - **SCEP** istemcisi Bulut Koruma Hizmeti üyeliğini Gelişmiş ayarına yapılandırma
-- Ağınızı Microsoft Defender Virüsten Koruma bulutu bağlantılarına izin verecek şekilde yapılandırın. Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma ağ bağlantılarını yapılandırma ve doğrulama](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
+- Ağınızı Microsoft Defender Virüsten Koruma bulutu bağlantılarına izin verecek şekilde yapılandırın. Daha fazla bilgi için bkz[. Virüsten koruma ağ bağlantılarını yapılandırma ve doğrulama Microsoft Defender](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma"></a>Microsoft Monitoring Agent'ı (MMA) yükleme ve yapılandırma
 
@@ -137,9 +139,9 @@ Tamamlandıktan sonra, bir saat içinde portalda eklenen Windows sunucularını 
 
 2. İşletim sistemi olarak **Windows Server 2008 R2 SP1'i** seçin.
 
-3. **Bulut için Microsoft Defender'da Sunucuları Ekle'ye** tıklayın.
+3. **Bulut için Microsoft Defender'de Sunucuları Ekle'ye** tıklayın.
 
-4. [Bulut için Microsoft Defender ile Uç Nokta için Microsoft Defender](/azure/security-center/security-center-wdatp) ve Azure ARC kullanıyorsanız [Uç Nokta için Microsoft Defender tümleştirmesini etkinleştirme başlığı altında](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration) yer alan ekleme yönergelerini izleyin.
+4. [Bulut için Microsoft Defender ile Uç Nokta için Microsoft Defender](/azure/security-center/security-center-wdatp) ve Azure ARC kullanıyorsanız [Uç Nokta için Microsoft Defender tümleştirmesini etkinleştirme](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration) başlığı altında yer alan ekleme yönergelerini izleyin.
 
 Ekleme adımlarını tamamladıktan sonra, [System Center Endpoint Protection istemcilerini yapılandırmanız ve güncelleştirmeniz](#configure-and-update-system-center-endpoint-protection-clients) gerekir.
 
@@ -153,16 +155,16 @@ Ekleme adımlarını tamamladıktan sonra, [System Center Endpoint Protection is
 
 ## <a name="verify-onboarding"></a>Eklemeyi doğrulama
 
-Microsoft Defender Virüsten Koruma ve Uç Nokta için Microsoft Defender çalıştığını doğrulayın. 
+virüsten koruma ve Uç Nokta için Microsoft Defender Microsoft Defender çalıştığını doğrulayın. 
 
 > [!NOTE]
-> Microsoft Defender Virüsten Koruma'nın çalıştırılması gerekli değildir, ancak önerilir. Birincil uç nokta koruma çözümü başka bir virüsten koruma satıcısı ürünüyse Defender Virüsten Koruma'yı Pasif modda çalıştırabilirsiniz. Pasif modun açık olduğunu yalnızca Uç Nokta için Microsoft Defender algılayıcının (SENSE) çalıştığını doğruladıktan sonra onaylayabilirsiniz. 
+> Microsoft Defender Virüsten Koruma'nın çalıştırılması gerekmez, ancak önerilir. Birincil uç nokta koruma çözümü başka bir virüsten koruma satıcısı ürünüyse Defender Virüsten Koruma'yı Pasif modda çalıştırabilirsiniz. Pasif modun açık olduğunu yalnızca Uç Nokta için Microsoft Defender algılayıcının (SENSE) çalıştığını doğruladıktan sonra onaylayabilirsiniz. 
 
 1. Microsoft Defender Virüsten Koruma'nın yüklü olduğunu doğrulamak için aşağıdaki komutu çalıştırın:
 
    ```sc.exe query Windefend```
 
-    Sonuç 'Belirtilen hizmet yüklü bir hizmet olarak yok' ise Microsoft Defender Virüsten Koruma'yı yüklemeniz gerekir. Daha fazla bilgi için bkz. [Windows 10'de Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-windows.md).
+    Sonuç 'Belirtilen hizmet yüklü bir hizmet olarak yok' ise virüsten koruma Microsoft Defender yüklemeniz gerekir. Daha fazla bilgi için bkz. [Windows 10'da virüsten koruma Microsoft Defender](microsoft-defender-antivirus-windows.md).
 
     Windows sunucularınızda Microsoft Defender Virüsten Koruma'yı yapılandırmak ve yönetmek için grup ilkesi kullanma hakkında bilgi için bkz. [Microsoft Defender Virüsten Koruma'yı yapılandırmak ve yönetmek için grup ilkesi ayarlarını kullanma](use-group-policy-microsoft-defender-antivirus.md).
 

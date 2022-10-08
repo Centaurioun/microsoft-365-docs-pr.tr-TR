@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -23,12 +24,12 @@ ms.custom:
 search.appverid: MET150
 description: Ürün lisanslarının atamasını kaldırmak için kullandığınız yöntem, lisansları belirli kullanıcılardan mı yoksa belirli bir üründen mi kaldırdığınıza bağlıdır.
 ms.date: 07/12/2022
-ms.openlocfilehash: b6459030c376bb891ea32b9cb096d26449dfa0d1
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 667cc1167bbb3f479b7aab6ab6066f8b7448d948
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748395"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68199911"
 ---
 # <a name="unassign-microsoft-365-licenses-from-users"></a>Kullanıcılardan Microsoft 365 lisanslarının atamasını kaldırma
 

@@ -12,16 +12,18 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1d47b966ccce5a22a2d61f18353cefa77c7a58c3
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 221703cfa0161d0f0dfc18d7ee3da9dea67d0826
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689305"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224700"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>Tehdit analizinde analist raporu
 
@@ -75,11 +77,11 @@ Güvenlik duruşunuzu bir tehdide karşı değerlendirmek için **Risk Azaltmala
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>Her tehdidin nasıl algılanabilir olduğunu anlama
 
-Analist raporu ayrıca Microsoft Defender Virüsten Koruma ile _uç nokta algılama ve yanıt_ (EDR) özelliklerinden algılamalar sağlar.
+Analist raporu ayrıca Microsoft Defender Virüsten Koruma ve _uç nokta algılama ve yanıt_ (EDR) özelliklerinden algılamalar sağlar.
 
 ### <a name="antivirus-detections"></a>Virüsten koruma algılamaları
 
-Bu algılamalar [, Microsoft Defender Virüsten Koruma'nın](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) açık olduğu cihazlarda kullanılabilir. Bu algılamalar, Uç Nokta için Microsoft Defender eklenen cihazlarda gerçekleştiğinde, rapordaki grafikleri aydınlatan uyarılar da tetikler.
+Bu algılamalar[, Microsoft Defender Virüsten Koruma'nın](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) açık olduğu cihazlarda kullanılabilir. Bu algılamalar, Uç Nokta için Microsoft Defender eklenen cihazlarda gerçekleştiğinde, rapordaki grafikleri aydınlatan uyarılar da tetikler.
 
 > [!NOTE]
 > Analist raporu, izlenen tehdide özgü bileşenlere veya davranışlara ek olarak çok çeşitli tehditleri belirleyebilen **genel algılamaları** da listeler. Bu genel algılamalar grafiklere yansıtılamaz.

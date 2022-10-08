@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 3eab14df6abf321a1587d3684e18c158ca771980
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 280bac711494cd06d5fe54784e0f7d27b32e5945
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692717"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224546"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>Yönetilen güvenlik hizmeti sağlayıcısına (MSSP) erişim izni verme (önizleme)
 

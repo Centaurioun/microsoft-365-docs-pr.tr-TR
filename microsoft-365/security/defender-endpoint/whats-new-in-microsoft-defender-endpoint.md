@@ -11,19 +11,20 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/12/2022
+ms.date: 09/26/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier1
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: c80310343a56b0f317714e64061d6b371a2380bc
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 228c126f3355cb5e0435c9b2b83aa84fac176b42
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811735"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224744"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender’daki yenilikler
 
@@ -48,6 +49,8 @@ Aşağıdaki özellikler önizleme aşamasındadır veya Uç Nokta için Microso
 > https://learn.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
 
+Windows'da Uç Nokta için Microsoft Defender ile ilgili yenilikler hakkında daha fazla bilgi için bkz. [Windows'da Uç Nokta için Microsoft Defender'deki yenilikler](windows-whatsnew.md)
+
 Diğer Microsoft Defender güvenlik ürünleriyle ilgili yenilikler hakkında daha fazla bilgi için bkz:
 
 - [Microsoft 365 Defender'daki yenilikler](../defender/whats-new.md)
@@ -55,15 +58,22 @@ Diğer Microsoft Defender güvenlik ürünleriyle ilgili yenilikler hakkında da
 - [Kimlik için Microsoft Defender'deki yenilikler](/defender-for-identity/whats-new)
 - [Microsoft Defender for Cloud Apps'deki yenilikler](/cloud-app-security/release-notes)
 
-Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkında daha fazla bilgi için:
+Belirli işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkında daha fazla bilgi için:
 
+- [Windows'ta Uç Nokta için Defender'daki yenilikler](windows-whatsnew.md)
 - [macOS'ta Uç Nokta için Defender'daki yenilikler](mac-whatsnew.md)
 - [iOS'ta Uç Nokta için Defender'daki yenilikler](ios-whatsnew.md)
 - [Linux'ta Uç Nokta için Defender'daki yenilikler](linux-whatsnew.md)
 
 ## <a name="september-2022"></a>Eylül 2022
 
-- [Cihaz durumu raporlaması genel kullanıma sunuldu](device-health-reports.md). <br/>Cihaz durumu raporu, uç noktalarınızın durumu ve güvenliği hakkında bilgi sağlar. Rapor algılayıcı durumunu, virüsten koruma durumunu, işletim sistemi platformlarını, Windows 10 sürümlerini ve Microsoft Defender Virüsten Koruma güncelleştirme sürümlerini gösteren popüler bilgileri içerir.
+- [Saldırı yüzeyini azaltma (ASR) kuralları raporu artık Microsoft 365 Defender portalında kullanılabilir](attack-surface-reduction-rules-report.md). <br/>Saldırı yüzeyini azaltma (ASR) kuralları raporu artık Microsoft 365 Defender portalında kullanılabilir. Bu ASR raporu, kuruluşunuzdaki cihazlara uygulanan saldırı yüzeyi azaltma kuralları hakkında bilgi sağlar ve tehditleri algılamanıza, olası tehditleri engellemenize ve ASR ile cihaz yapılandırmasına görünürlük sağlamanıza yardımcı olur.
+
+- [Yerleşik koruma](built-in-protection.md) (önizleme) kullanıma sunuldu. Yerleşik koruma, cihazların fidye yazılımlarına ve diğer tehditlere karşı korunmasına yardımcı olmak için kurcalama korumasının açık olması gibi bir dizi varsayılan ayardır.
+
+- [Cihaz durumu raporlaması genel kullanıma sunuldu](device-health-reports.md). <br/>Cihaz durumu raporu, uç noktalarınızın durumu ve güvenliği hakkında bilgi sağlar. Rapor algılayıcı sistem durumunu, virüsten koruma durumunu, işletim sistemi platformlarını, Windows 10 sürümlerini ve virüsten koruma güncelleştirme sürümlerini Microsoft Defender gösteren popüler bilgileri içerir.
+
+- [Cihaz durumu bildirimi artık Uç Nokta için Defender kullanan ABD Kamu müşterileri tarafından kullanılabilir](device-health-reports.md). <br/>Cihaz durumu raporlaması artık GCC, GCC High ve DoD müşterileri tarafından kullanılabilir.
 
 - [Sorun giderme modu](enable-troubleshooting-mode.md) artık Windows Server 2012 R2 ve üzeri dahil olmak üzere daha fazla Windows işletim sistemi için kullanılabilir. Gerekli güncelleştirmeler hakkında daha fazla bilgi için makaleye bakın.
 
@@ -91,7 +101,7 @@ Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkınd
 ## <a name="may-2022"></a>Mayıs 2022
 - [macOS için kurcalama koruması (önizleme)](tamperprotection-macos.md)<br>Kurcalama koruması, macOS'ta Uç Nokta için Microsoft Defender yetkisiz olarak kaldırılmasını önlemeye yardımcı olur.
 - [Etki alanı denetleyicisi cihazları ekleme - Değerlendirme laboratuvarı geliştirmesi (önizleme)](evaluation-lab.md#add-a-domain-controller)<br>Birden çok cihazda yanal hareket ve çok aşamalı saldırılar gibi karmaşık senaryoları çalıştırmak için bir etki alanı denetleyicisi ekleyin.
-- [Uç Nokta için Microsoft Defender için sorun giderme modu genel kullanıma sunuldu](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/troubleshooting-mode-for-microsoft-defender-for-endpoint-now/ba-p/3347344)<br>Cihazlarınızdaki yapılandırmaları araştırmanın ve ayarlamanın benzersiz, yenilikçi ve güvenli bir yolu olan sorun giderme moduna giriş. Bu mod, cihazdaki yerel yöneticinin cihazda kurcalama koruması da dahil olmak üzere Microsoft Defender Virüsten Koruma güvenlik ilkesi yapılandırmalarını geçersiz kılabilmesini sağlar. 
+- [Uç Nokta için Microsoft Defender için sorun giderme modu genel kullanıma sunuldu](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/troubleshooting-mode-for-microsoft-defender-for-endpoint-now/ba-p/3347344)<br>Cihazlarınızdaki yapılandırmaları araştırmanın ve ayarlamanın benzersiz, yenilikçi ve güvenli bir yolu olan sorun giderme moduna giriş. Bu mod, cihazdaki yerel yöneticinin kurcalama koruması da dahil olmak üzere cihazdaki virüsten koruma Microsoft Defender güvenlik ilkesi yapılandırmalarını geçersiz kılabilmesini sağlar. 
 - [Android Kurumsal için Uç Nokta için Defender kişisel profilinin genel önizlemesi duyurulmaktadır](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-the-public-preview-of-defender-for-endpoint-personal/ba-p/3370979)<br>Kendi cihazlarını iş yerlerinin KCG programına kaydetmek isteyen kullanıcıların artık kişisel profillerinde de Uç Nokta için Microsoft Defender tarafından sağlanan korumadan yararlanabileceklerini duyurmaktan mutluluk duyuyoruz.
 - [Uç Nokta için Microsoft Defender'da Güvenlik Ayarları Yönetimi genel kullanıma sunuldu](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/security-settings-management-in-microsoft-defender-for-endpoint/ba-p/3356970)<br>2021'in sonlarında Uç Nokta için Microsoft Defender yapılandırma yönetimi özelliklerini genişlettik. Bu sürüm, güvenlik ekiplerine diğer araçları veya altyapıyı dağıtmaya ve uygulamaya gerek kalmadan cihazları istedikleri güvenlik ayarlarıyla yapılandırma gücü verdi.  Microsoft Endpoint Manager ile mümkün hale gelen kuruluşlar, tüm listeye alınan cihazlar için virüsten koruma (AV), uç nokta algılama ve yanıt (EDR) ve güvenlik duvarı (FW) ilkelerini tek bir görünümden yönetebildi. Bugün, bu özelliğin Windows 10, Windows 11 ve Windows Server 2012 R2 veya üzerini destekleyen Windows istemcisi ve Windows server için genel kullanıma sunulduğu duyurulmaktadır.
 
@@ -119,11 +129,11 @@ Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkınd
 
 - [Microsoft Defender Güvenlik Açığı Yönetimi, uygulamalardaki ve bileşenlerdeki Log4j güvenlik açıklarını tanımlamaya yardımcı olabilir](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM)<br>Tehdit ve güvenlik açığı yönetimi, Log4j güvenlik açıklarından ve ortamdaki ilgili riskten etkilenen cihazları otomatik olarak ve sorunsuz bir şekilde tanımlar ve azaltma süresini önemli ölçüde azaltır. Microsoft, tehdit manzarasındaki en son bilgilere göre bu özellikleri yinelemeye devam eder.
 - IoT cihazlarını bulma (önizleme): [Cihaz bulma](device-discovery.md) özelliği artık şirket ağınıza bağlı yönetilmeyen IoT cihazlarını bulmanıza yardımcı olabilir. Bu, ioT envanterinizin yanı sıra DIĞER BT cihazlarınızın (iş istasyonları, sunucular ve mobil) tek bir birleşik görünümünü sağlar.
-- [IoT için Microsoft Defender tümleştirmesi (önizleme):](enable-microsoft-defender-for-iot-integration.md)Bu tümleştirme, IoT için Microsoft Defender tarafından sağlanan aracısız izleme özellikleriyle cihaz bulma özelliklerinizi geliştirir. Bu, ağınızdaki IoT cihazlarının bulunmasına, tanımlanmasına ve güvenliğinin sağlanmasına yardımcı olmak için daha fazla görünürlük sağlar.
+- [IoT tümleştirmesi (önizleme) için Microsoft Defender](enable-microsoft-defender-for-iot-integration.md): Bu tümleştirme, IoT için Microsoft Defender tarafından sağlanan aracısız izleme özellikleriyle cihaz bulma özelliklerinizi geliştirir. Bu, ağınızdaki IoT cihazlarının bulunmasına, tanımlanmasına ve güvenliğinin sağlanmasına yardımcı olmak için daha fazla görünürlük sağlar.
 
 ## <a name="november-2021"></a>Kasım 2021
 
-- [Güvenlik yapılandırma yönetimi](security-config-management.md) <br/> Microsoft Intune veya Microsoft Endpoint Configuration Manager microsoft Endpoint Manager tarafından yönetilmeyen cihazların microsoft defender güvenlik yapılandırmalarını doğrudan Endpoint Manager alma özelliği.
+- [Güvenlik yapılandırma yönetimi](security-config-management.md) <br/> Microsoft Intune veya Microsoft Endpoint Configuration Manager microsoft Endpoint Manager tarafından yönetilmeyen cihazların Microsoft Defender güvenlik yapılandırmalarını doğrudan Endpoint Manager.
 - [Değerlendirme Laboratuvarı: Atomik Kırmızı Takım simülasyonları & genişletilmiş işletim sistemi desteği](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/evaluation-lab-expanded-os-support-amp-atomic-red-team/ba-p/2993927)<br>Değerlendirme Laboratuvarı artık Windows 11, Windows Server 2016 ve Linux cihazları eklemeyi destekliyor. Ayrıca, Red Canary'nin açık kaynak simülasyon kitaplığı Atomik Kırmızı Takım ile yeni bir ortaklığı duyurmak istiyoruz!
 - [Uç Nokta için Microsoft Defender Mobile - Kurcalama korumasının genel önizlemesini duyurma](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-the-public-preview-of-microsoft-defender-for-endpoint/ba-p/2971038)<br>Uç Nokta için Microsoft Defender mobil uygulamasında yedi günlük işlem yapılmadığında cihazı uyumsuz olarak işaretleyin.
 - [Davranış izleme, genişletilmiş dağıtım kapsamı ve daha fazlası ile Linux varlığınızın korumasını artırın](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/boost-protection-of-your-linux-estate-with-behavior-monitoring/ba-p/2909320)<br>Linux'ta yeni nesil koruma, uç nokta algılama ve yanıt (EDR), Tehdit ve Güvenlik Açığı Yönetimi (TVM) Uç Nokta için Microsoft Defender hakkında en son haberleri paylaşmak için heyecanlıyız. Linux varlığınız için Microsoft koruması, güvenlik paketinin tüm yelpazesinde etkileyici bir destek alıyor. Linux'ın Azure Güvenlik Merkezi tümleştirmesine yönelik son Uç Nokta için Microsoft Defender, Linux EDR ve TVM'nin avantajları artık Azure Defender müşterilerine de genişlemektedir.

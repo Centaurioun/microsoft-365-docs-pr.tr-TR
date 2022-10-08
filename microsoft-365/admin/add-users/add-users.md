@@ -7,9 +7,10 @@ author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365_Setup
@@ -25,12 +26,12 @@ search.appverid:
 - MET150
 description: Microsoft 365 lisanslarına, oturum açma kimlik bilgilerine ve Microsoft 365 posta kutularına sahip olabilmeleri için her ekip üyesine bir kullanıcı hesabı vermeyi öğrenin.
 ms.date: 07/01/2020
-ms.openlocfilehash: 4f96fb483ab38cc2ea20d80ba5e64592bf5c4c20
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 188e4def65212c775a32b9205db3ab14ce9a1bae
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662079"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200197"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Aynı anda kullanıcı ekleme ve lisans atama
 

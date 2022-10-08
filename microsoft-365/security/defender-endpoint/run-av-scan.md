@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+mms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: c1351c4a6e758666a9ff3f00f9e5a573b2bdf79d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 54f2c0941edeb7db8e0d2dd36f02145895673230
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704182"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68223078"
 ---
 # <a name="run-antivirus-scan-api"></a>Virüsten koruma tarama API'si çalıştırma
 
@@ -39,7 +41,7 @@ ms.locfileid: "67704182"
 
 ## <a name="api-description"></a>API açıklaması
 
-Cihazda Microsoft Defender Virüsten Koruma taraması başlatın.
+Bir cihazda virüsten koruma taraması Microsoft Defender başlatın.
 
 ## <a name="limitations"></a>Sınırlamalar
 
@@ -50,7 +52,7 @@ Cihazda Microsoft Defender Virüsten Koruma taraması başlatın.
 > [!IMPORTANT]
 >
 > - Bu eylem Windows 10, sürüm 1709 veya üzeri ve Windows 11 cihazlarda kullanılabilir.
-> - Microsoft Defender Virüsten Koruma taraması, Microsoft Defender Virüsten Koruma'nın etkin virüsten koruma çözümü olup olmadığına bakılmaksızın diğer virüsten koruma çözümleriyle birlikte çalıştırılabilir. Microsoft Defender Virüsten Koruma Pasif modda olabilir. Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma uyumluluğu](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+> - Microsoft Defender Virüsten Koruma taraması, Microsoft Defender Virüsten Koruma'nın etkin virüsten koruma çözümü olup olmadığına bakılmaksızın diğer virüsten koruma çözümleriyle birlikte çalıştırılabilir. Microsoft Defender Virüsten Koruma Pasif modda olabilir. Daha fazla bilgi için bkz[. virüsten koruma uyumluluğu Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 ## <a name="permissions"></a>İzinler
 
@@ -66,6 +68,8 @@ Temsilci (iş veya okul hesabı)|Machine.Scan|'Tarama makinesi'
 >
 > - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Etkin düzeltme eylemleri' (Daha fazla bilgi için bkz [. Rolleri oluşturma ve yönetme](user-roles.md) )
 > - Kullanıcının cihaz grubu ayarlarına göre cihaza erişimi olmalıdır (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md) )
+> 
+> Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.  
 
 ## <a name="http-request"></a>HTTP isteği
 

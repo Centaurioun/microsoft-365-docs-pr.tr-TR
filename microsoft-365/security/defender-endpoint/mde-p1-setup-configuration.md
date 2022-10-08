@@ -13,14 +13,14 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
-ms.openlocfilehash: bdc3d7c2f78b1f94c0f65950a8b36519a2e520a6
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+- m365-security
+- tier2
+ms.openlocfilehash: 7fa78f808bf8a49c32ddcc7b54b2174beeaaeac0
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521927"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68223122"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Uç Nokta için Microsoft Defender Plan 1'i ayarlama ve yapılandırma
 
@@ -54,8 +54,8 @@ Aşağıdaki tabloda, Uç Nokta Planı 1 için Defender'ın temel gereksinimleri
 |:---|:---|
 | Lisans gereksinimleri | Uç Nokta Planı 1 için Defender (tek başına veya Microsoft 365 E3 veya A3'ün bir parçası olarak) |
 | Tarayıcı gereksinimleri | Microsoft Edge <br/> Internet Explorer sürüm 11 <br/> Google Chrome |
-| İşletim sistemleri | Windows 11 veya Windows 10, sürüm 1709 veya üzeri <br/>macOS (en son üç sürüm desteklenir) <br/>iOS <br/>Android işletim sistemi <br/><br/>Uç Nokta Planı 1 için Defender'ın tek başına sürümünün sunucu lisanslarını içermediğini unutmayın. Sunucuları eklemek için Bulut için Defender teklifinin bir parçası olarak Sunucular için [Defender](/azure/defender-for-cloud/defender-for-cloud-introduction) Plan 1 veya Plan 2 gerekir. Daha fazla bilgi edinmek için. Bkz [. Sunucular için Microsoft Defender'a genel bakış](/azure/defender-for-cloud/defender-for-servers-introduction). |
-| Datacenter | Aşağıdaki veri merkezi konumlarından biri: <br/>- Avrupa Birliği <br/>- Birleşik Krallık <br/>- Birleşik Devletler |
+| İşletim sistemleri | Windows 11 veya Windows 10, sürüm 1709 veya üzeri <br/>macOS (en son üç sürüm desteklenir) <br/>iOS <br/>Android işletim sistemi <br/><br/>Uç Nokta Planı 1 için Defender'ın tek başına sürümünün sunucu lisanslarını içermediğini unutmayın. Sunucuları eklemek için Bulut için Defender teklifinin bir parçası olarak Sunucular için [Defender](/azure/defender-for-cloud/defender-for-cloud-introduction) Plan 1 veya Plan 2 gerekir. Daha fazla bilgi edinmek için. Bkz[. Sunucular için Microsoft Defender genel bakış](/azure/defender-for-cloud/defender-for-servers-introduction). |
+| Datacenter | Aşağıdaki veri merkezi konumlarından biri: <br/>- Avrupa Birliği <br/>-Birleşik Krallık <br/>- Birleşik Devletler |
 
 
 ## <a name="plan-your-deployment"></a>Dağıtımınızı planlayın
@@ -139,7 +139,7 @@ Microsoft Endpoint Manager'da yeni nesil korumanızı yapılandırmak için şu 
 
 3. Virüsten koruma yapılandırma ayarlarınızı ayarlayın veya değiştirin. Yardıma mı ihtiyacınız var? Aşağıdaki kaynaklara bakın: <br/>
 
-   - [Microsoft Intune Windows 10 Microsoft Defender Virüsten Koruma ilkesi ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
+   - [Microsoft Intune'da Windows 10 Microsoft Defender Virüsten Koruma ilkesi ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
    - [iOS özelliklerinde Uç Nokta için Defender'ı yapılandırma](ios-configure-features.md)
 
 4. Ayarlarınızı belirtmeyi bitirdiğinizde **Gözden geçir ve kaydet'i** seçin.
@@ -275,7 +275,7 @@ Ağ koruması sayesinde, kuruluşunuzun İnternet'te kimlik avı dolandırıcıl
 
 4. **Temel Bilgiler** sekmesinde ilkeyi adlandırın ve bir açıklama ekleyin. **İleri**'yi seçin. 
 
-5. **Yapılandırma ayarları** sekmesinde **Microsoft Defender Exploit Guard'ı** ve ardından **Ağ filtreleme'yi** genişletin.
+5. **Yapılandırma ayarları** sekmesinde Exploit **Guard Microsoft Defender** genişletin ve ardından **Ağ filtreleme'yi** genişletin.
 
    **Ağ korumasını** **Etkinleştir** olarak ayarlayın. (İlk başta ortamınızda ağ korumasının nasıl çalışacağını görmek için alternatif olarak **Denetim'i** seçebilirsiniz.)
 
