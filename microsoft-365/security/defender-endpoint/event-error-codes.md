@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.date: 05/21/2018
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: b7d69821615fed5923dd5e69bc4da823fabceae4
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 13285e39548f86dada8b13cc78d9f972ae80a8f1
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702764"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203607"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Olay Görüntüleyicisi kullanarak olayları ve hataları gözden geçirme
 
@@ -79,10 +81,10 @@ Olay kimliklerini tek tek [cihazlardaki Olay Görüntüleyicisi](https://msdn.mi
    |20|OOBE'nin (Windows'a Hoş Geldiniz) tamamlanması beklenemiyor. Hata kodu: `variable`.|İç hata.|Sistem yeniden başlatıldıktan sonra bu hata devam ederse tüm Windows güncelleştirmelerinin tam yüklü olduğundan emin olun.|
    |25|Uç Nokta için Microsoft Defender hizmeti kayıt defterinde sistem durumunu sıfırlayamadı. Hata kodu: `variable`.|Cihaz doğru şekilde eklemedi. Portala raporlanır, ancak hizmet SCCM'de veya kayıt defterinde kayıtlı olarak görünmeyebilir.|Ekleme ayarlarının ve betiklerinin düzgün dağıtılıp dağıtılmadığını denetleyin. Yapılandırma paketlerini yeniden dağıtmayı deneyin. <p> Bkz [. Windows istemci cihazlarını ekleme](configure-endpoints.md).|
    |26|Uç Nokta için Microsoft Defender hizmeti kayıt defterinde ekleme durumunu ayarlayamadı. Hata kodu: `variable`.|Cihaz doğru şekilde eklemedi. <p> Portala raporlanır, ancak hizmet SCCM'de veya kayıt defterinde kayıtlı olarak görünmeyebilir.|Ekleme ayarlarının ve betiklerinin düzgün dağıtılıp dağıtılmadığını denetleyin. Yapılandırma paketlerini yeniden dağıtmayı deneyin. <p> Bkz [. Windows istemci cihazlarını ekleme](configure-endpoints.md).|
-   |27|Uç Nokta için Microsoft Defender hizmeti Microsoft Defender Virüsten Koruma'da SENSE algılama modunu etkinleştiremedi. Ekleme işlemi başarısız oldu. Hata kodu: `variable`.|Normalde, cihazda başka bir gerçek zamanlı kötü amaçlı yazılımdan koruma ürünü düzgün çalışıyorsa ve cihaz Uç Nokta için Defender'a bildiriyorsa, Microsoft Defender Virüsten Koruma özel bir pasif duruma girer.|Ekleme ayarlarının ve betiklerinin düzgün dağıtılıp dağıtılmadığını denetleyin. Yapılandırma paketlerini yeniden dağıtmayı deneyin. <p> Bkz [. Windows istemci cihazlarını ekleme](configure-endpoints.md). <p> Gerçek zamanlı kötü amaçlı yazılımdan korumanın düzgün çalıştığından emin olun.|
+   |27|Uç Nokta için Microsoft Defender hizmeti, Microsoft Defender Virüsten Koruma'da SENSE algılama modunu etkinleştiremedi. Ekleme işlemi başarısız oldu. Hata kodu: `variable`.|Normalde Microsoft Defender Virüsten Koruma, cihazda başka bir gerçek zamanlı kötü amaçlı yazılımdan koruma ürünü düzgün çalışıyorsa ve cihaz Uç Nokta için Defender'a bildiriyorsa özel bir pasif duruma girer.|Ekleme ayarlarının ve betiklerinin düzgün dağıtılıp dağıtılmadığını denetleyin. Yapılandırma paketlerini yeniden dağıtmayı deneyin. <p> Bkz [. Windows istemci cihazlarını ekleme](configure-endpoints.md). <p> Gerçek zamanlı kötü amaçlı yazılımdan korumanın düzgün çalıştığından emin olun.|
    |28|Uç Nokta için Microsoft Defender Bağlı Kullanıcı Deneyimleri ve Telemetri hizmeti kaydı başarısız oldu. Hata kodu: `variable`.|Windows telemetri hizmetinde bir hata oluştu.|[Tanılama veri hizmetinin etkinleştirildiğinden emin olun](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy). <p> Ekleme ayarlarının ve betiklerinin düzgün dağıtılıp dağıtılmadığını denetleyin. Yapılandırma paketlerini yeniden dağıtmayı deneyin. <p> Bkz [. Windows istemci cihazlarını ekleme](configure-endpoints.md).|
    |29|Çıkarma parametreleri okunamadı. Hata türü: %1, Hata kodu: %2, Açıklama: %3|Bu olay, sistem çıkarma parametrelerini okuyamayınca oluşur.|Cihazın İnternet erişimi olduğundan emin olun, ardından tüm çıkarma işlemini yeniden çalıştırın. Çıkarma paketinin süresinin dolmadığından emin olun.|
-   |30|Uç Nokta için Microsoft Defender hizmeti Microsoft Defender Virüsten Koruma'da SENSE algılama modunu devre dışı bırakamadı. Hata kodu: `variable`.|Normalde, cihazda başka bir gerçek zamanlı kötü amaçlı yazılımdan koruma ürünü düzgün çalışıyorsa ve cihaz Uç Nokta için Defender'a bildiriyorsa, Microsoft Defender Virüsten Koruma özel bir pasif duruma girer.|Ekleme ayarlarının ve betiklerinin düzgün dağıtılıp dağıtılmadığını denetleyin. Yapılandırma paketlerini yeniden dağıtmayı deneyin. <p> Bkz [. Windows istemci cihazlarını ekleme](configure-endpoints.md). <p> Gerçek zamanlı kötü amaçlı yazılımdan korumanın düzgün çalıştığından emin olun.|
+   |30|Uç Nokta için Microsoft Defender hizmeti, Microsoft Defender Virüsten Koruma'da SENSE algılama modunu devre dışı bırakamadı. Hata kodu: `variable`.|Normalde Microsoft Defender Virüsten Koruma, cihazda başka bir gerçek zamanlı kötü amaçlı yazılımdan koruma ürünü düzgün çalışıyorsa ve cihaz Uç Nokta için Defender'a bildiriyorsa özel bir pasif duruma girer.|Ekleme ayarlarının ve betiklerinin düzgün dağıtılıp dağıtılmadığını denetleyin. Yapılandırma paketlerini yeniden dağıtmayı deneyin. <p> Bkz [. Windows istemci cihazlarını ekleme](configure-endpoints.md). <p> Gerçek zamanlı kötü amaçlı yazılımdan korumanın düzgün çalıştığından emin olun.|
    |31|Uç Nokta için Microsoft Defender Bağlı Kullanıcı Deneyimleri ve Telemetri hizmetinin kaydı silinemedi. Hata kodu: `variable`.|Ekleme sırasında Windows telemetri hizmetinde bir hata oluştu. Çıkarma işlemi devam eder.|[Windows telemetri hizmetiyle ilgili hataları denetleyin](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled).|
    |32|Uç Nokta için Microsoft Defender hizmeti, çıkarma işleminden sonra kendisini durdurma isteğinde bulunamadı. Hata kodu: %1|Çıkarma sırasında bir hata oluştu.|Cihazı yeniden başlatın.|
    |33|Uç Nokta için Microsoft Defender hizmeti SENSE GUID'sini kalıcı hale alamadı. Hata kodu: `variable`.|Portala rapor veren her cihazı temsil etmek için benzersiz bir tanımlayıcı kullanılır. <p> Tanımlayıcı kalıcı olmazsa aynı cihaz portalda iki kez görünebilir.|Hizmetin kayıt defterini güncelleştirediğinden emin olmak için cihazdaki kayıt defteri izinlerini denetleyin.|
@@ -127,7 +129,7 @@ Olay kimliklerini tek tek [cihazlardaki Olay Görüntüleyicisi](https://msdn.mi
    |74|Kayıt defterindeki cihaz etiketi uzunluk sınırını aşıyor. Etiket adı: %2. Uzunluk sınırı: %1.|Cihaz etiketi uzunluk sınırını aşıyor.|Daha kısa bir cihaz etiketi kullanın.|
    |81|ETW autologger Uç Nokta için Microsoft Defender oluşturulamadı. Hata kodu: %1|ETW oturumu oluşturulamadı.|Cihazı yeniden başlatın. Bu hata devam ederse Destek'e başvurun.|
    |82|ETW otomatik günlükçü Uç Nokta için Microsoft Defender kaldırılamadı. Hata kodu: %1|ETW oturumu silinemedi.|Desteğe başvurun.|
-   |84|Microsoft Defender Virüsten Koruma çalışma modunu ayarlayın. Pasif modu zorla: %1, sonuç kodu: %2.|Defender çalışma modunu (etkin veya pasif) ayarlayın.|Normal çalışma bildirimi; eyleme gerek yoktur.|
+   |84|virüsten koruma Microsoft Defender çalışma modunu ayarlayın. Pasif modu zorla: %1, sonuç kodu: %2.|Defender çalışma modunu (etkin veya pasif) ayarlayın.|Normal çalışma bildirimi; eyleme gerek yoktur.|
    |85|yürütülebilir Uç Nokta için Microsoft Defender tetiklemedi. Hata kodu: %1|Başrolde SenseIR yürütülebilir dosyası başarısız oldu.|Cihazı yeniden başlatın. Bu hata devam ederse Destek'e başvurun.|
    |86|Yeniden başlatma, başlatılması gereken dış hizmeti durdurdu. Ad: %1, çıkış kodu: %2|Dış hizmet yeniden başlatılıyor.|Normal çalışma bildirimi; eyleme gerek yoktur.|
    |87|Dış hizmet başlatılamıyor. Ad: %1|Dış hizmet başlatılamadı.|Desteğe başvurun.|

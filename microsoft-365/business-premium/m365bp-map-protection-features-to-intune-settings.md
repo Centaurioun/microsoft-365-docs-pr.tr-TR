@@ -11,19 +11,20 @@ ms.service: microsoft-365-security
 ms.subservice: other
 ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.collection: ''
+ms.collection:
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 İş Ekstra'deki koruma özelliklerinin Intune ayarlarıyla nasıl eş olduğunu öğrenin. Abonelik, Intune ayarlarını değiştirmek için size bir lisans sağlar.
-ms.openlocfilehash: b4a6740262705cad0934b999eaff89b7ed95bfc6
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 185eda9e5b5e214716608d4232a0ea81c00d6b4b
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741708"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096379"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Microsoft 365 İş Ekstra koruma özellikleri Intune ayarlarıyla nasıl eşler?
 
@@ -88,7 +89,7 @@ Intune ayarını bulmak için, Microsoft 365 İş Ekstra yönetici kimlik bilgil
   
 |**Windows 10 cihazı ilkesi ayarı**|**Intune ayarları**|
 |:-----|:-----|
-|Microsoft Defender Virüsten Koruma'yı kullanarak bilgisayarları virüslerden ve diğer tehditlerden korumaya yardımcı olun  |Gerçek Zamanlı İzlemeye İzin Ver = Açık  <br/> Bulut Korumasına İzin Ver = Açık  <br/> Kullanıcılardan Örnek Göndermelerini İste = Güvenli örnekleri otomatik olarak gönder (Varsayılan PII dışını otomatik gönder)  |
+|Microsoft Defender Virüsten Koruma kullanarak bilgisayarları virüslerden ve diğer tehditlerden korumaya yardımcı olun  |Gerçek Zamanlı İzlemeye İzin Ver = Açık  <br/> Bulut Korumasına İzin Ver = Açık  <br/> Kullanıcılardan Örnek Göndermelerini İste = Güvenli örnekleri otomatik olarak gönder (Varsayılan PII dışını otomatik gönder)  |
 |Bilgisayarları Microsoft Edge'de web tabanlı tehditlere karşı korumaya yardımcı ol  |**Edge Tarayıcı Ayarları**'nda **SmartScreen** seçeneği **Gerekli** olarak ayarlanır.  |
 |Cihaz şu kadar süreyle boşta kaldığında ekranı kapat (dakika)  |Ekran kilitlenmeden önce geçmesi gereken, işlem yapılmayan dakika sayısı  |
 |Kullanıcıların Microsoft Store'ndan uygulama indirmesine izin ver  |Özel URI ilkesi  |

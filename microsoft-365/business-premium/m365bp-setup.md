@@ -14,14 +14,15 @@ ms.localizationpriority: high
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier1
 ms.custom: intro-get-started
-ms.openlocfilehash: 04a1deb6666bec1f11264243c6dcc242bc48d0af
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 1a3d4ba96f7c470fc350ce212b6bb451f8ebdda0
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736078"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096357"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra'yı ayarlama
 

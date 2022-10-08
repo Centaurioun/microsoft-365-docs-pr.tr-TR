@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Yöneticiler, Office 365 için Microsoft Defender'da Güvenli Bağlantılar ilkelerini ve genel Güvenli Bağlantılar ayarlarını görüntülemeyi, oluşturmayı, değiştirmeyi ve silmeyi öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 7b251b20542762130aaeb25b49089a4a3e67cf58
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 56b9d03829771cdcc23dbf8dcbcf08881431f391
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67709233"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68066420"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de Güvenli Bağlantılar ilkelerini ayarlama
 

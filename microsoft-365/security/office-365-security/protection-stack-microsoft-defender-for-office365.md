@@ -13,14 +13,14 @@ ms.localizationpriority: medium
 description: Office 365 için Microsoft Defender'daki tehdit filtreleme yığını aracılığıyla gelen iletinin yolunu izleyin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 search.appverid: met150
-ms.openlocfilehash: 6fdd05c5a6afdb9736594c19ca447d8212269a7c
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 38fb204ed2155eebd8af95615268197e3ea10abb
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67709079"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68066398"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da adım adım tehdit koruması
 
@@ -93,7 +93,7 @@ Bu aşamada filtreleme yığını, köprüleri ve ekleri de dahil olmak üzere p
 
 1. **Aktarım kuralları** (posta akışı kuralları veya Exchange aktarım kuralları olarak da bilinir), bir yöneticinin bir ileti için eşit derecede geniş bir koşul aralığı karşılandığında çok çeşitli eylemler gerçekleştirmesine olanak tanır. Kuruluşunuzda akan tüm iletiler, etkin posta akışı kuralları/aktarım kurallarıyla değerlendirilir.
 
-2. **Microsoft Defender Virüsten Koruma** ve iki *üçüncü taraf Virüsten Koruma altyapısı* , eklerdeki bilinen tüm kötü amaçlı yazılımları algılamak için kullanılır.
+2. **Microsoft Defender Virüsten Koruma** ve iki *üçüncü taraf Virüsten Koruma altyapısı*, eklerdeki bilinen tüm kötü amaçlı yazılımları algılamak için kullanılır.
 
 3. Virüsten koruma (AV) altyapıları tüm ekleri doğru yazmak için de kullanılır, böylece **Tür engelleme** , yöneticinin belirttiği türlerdeki tüm ekleri engelleyebilir.
 

@@ -11,17 +11,19 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 0b1400dab104bdc76ddba50d324e526efaea9e42
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 06bdb86961a797b4ca30392e292101cc9e706f99
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702720"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203629"
 ---
 # <a name="export-security-baselines-assessment-per-device"></a>Cihaz başına güvenlik temelleri değerlendirmesini dışarı aktarma
 

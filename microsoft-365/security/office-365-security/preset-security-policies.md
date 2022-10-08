@@ -11,17 +11,18 @@ ms.date: ''
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Yöneticiler, Exchange Online Protection (EOP) ve Office 365 için Microsoft Defender koruma özellikleri arasında Standart ve Katı ilke ayarlarının nasıl uygulanacağını öğrenebilir
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 95880c0af06525610b3ad039c5bd7925d87e24b8
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+search.appverid: met150
+ms.openlocfilehash: afcbfb788644e2542d5c080eed881f2531558a02
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67614450"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68066552"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP ve Office 365 için Microsoft Defender'da önceden ayarlanmış güvenlik ilkeleri
 
