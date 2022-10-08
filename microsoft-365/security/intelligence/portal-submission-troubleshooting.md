@@ -11,15 +11,17 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: a26ce96ba8ffbea080baa941cff5258d186ed568
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 58a3280723c5473bb45b11bf86107883aeb02c37
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737278"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68222682"
 ---
 # <a name="troubleshooting-malware-submission-errors-caused-by-administrator-block"></a>Yönetici bloğunun neden olduğu kötü amaçlı yazılım gönderme hatalarını giderme
 

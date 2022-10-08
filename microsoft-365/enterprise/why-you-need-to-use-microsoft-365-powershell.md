@@ -8,18 +8,20 @@ audience: ITPro
 ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- scotvorg
 f1.keywords:
 - CSH
 ms.custom: admindeeplinkEXCHANGE
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: "Özet: Microsoft 365'i yönetmek için neden PowerShell'i kullanmanız gerektiğini, bazı durumlarda daha verimli ve diğer durumlarda gerekliliği anlayın."
-ms.openlocfilehash: 0ce4417a76acaa898e6d5a29c0763bb24f9d9de0
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: a0d63994739e2eed158e29bd0b204ca088025885
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670167"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191001"
 ---
 # <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>Microsoft 365 için PowerShell'i neden kullanmanız gerekiyor?
 

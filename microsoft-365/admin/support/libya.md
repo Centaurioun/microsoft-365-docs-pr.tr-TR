@@ -7,30 +7,32 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
-description: Ülkeniz veya bölgeniz için de destek ile nasıl bağlantı kuracaklarını öğrenin.
+description: Ülkeniz veya bölgeniz için desteğe nasıl başvuracağınızı öğrenin.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 785e30688bb361db9ed61dcafaa272790ba41684
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: f021085d30f22c890bc937f6038c08aae9f68917
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62996080"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68199581"
 ---
-# <a name="contact-support-for-libya"></a>Libya için destek ile iletişime geçin
+# <a name="contact-support-for-libya"></a>Libya için desteğe başvurun
 
 [Başka bir ülke veya bölge bulun](../get-help-support.md).
 
 ## <a name="phone-number"></a>Telefon numarası
 +965 2243 1071
 
-2. seçeneği belirleyin
+Seçenek 2'yi seçin
 
-9. seçeneği belirleyin
+9 seçeneğini belirleyin
 
-Kod 7701 girin
+7701 kodunu girin
 
 ## <a name="hours"></a>Saatler
 ### <a name="billing-support"></a>Faturalama Desteği:

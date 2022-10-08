@@ -7,9 +7,10 @@ author: MikePlumleyMSFT
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 Grup üyeleri konuşmalar, dosyalar ve takvim etkinlikleri, Stream ve Planner için bir grup e-postası ve paylaşılan çalışma alanı alır.
-ms.openlocfilehash: 7876acf9785de9c4630f83a804b700f5d1db6ff2
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 1065a9d8321f16391f01a2153c18ea11f7f52136
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084333"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191375"
 ---
 # <a name="compare-groups"></a>Grupları karşılaştırma
 

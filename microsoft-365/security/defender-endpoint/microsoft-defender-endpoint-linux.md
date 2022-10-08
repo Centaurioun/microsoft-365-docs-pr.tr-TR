@@ -13,17 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ff26e621da3b364bd96ad6ed8b95a6dc9d092dc2
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 429a3a1bdfe6e762f81f585612ab2c538539f778
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683043"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68222770"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender
 
@@ -197,7 +197,7 @@ Hizmeti etkinleştirdikten sonra, ağınızı veya güvenlik duvarınızı, bu h
 
 ### <a name="configuring-exclusions"></a>Dışlamaları Yapılandırma
 
-Microsoft Defender Virüsten Koruma'ya dışlama eklerken, [Microsoft Defender Virüsten Koruma için Yaygın Dışlama Hatalarına](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) dikkat etmelisiniz
+Microsoft Defender Virüsten Koruma'ya dışlamalar eklerken, [Microsoft Defender Virüsten Koruma için Yaygın Dışlama Hataları'na](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) dikkat etmelisiniz
 
 ### <a name="network-connections"></a>Ağ bağlantıları
 
@@ -239,7 +239,7 @@ Microsoft, performansı, güvenliği geliştirmek ve yeni özellikler sunmak iç
 
 ## <a name="common-applications-to-microsoft-defender-for-endpoint-can-impact"></a>Uç Nokta için Microsoft Defender için Yaygın Uygulamalar etkilenebilir
 
-Belirli uygulamaların yüksek G/Ç iş yükleri, Uç Nokta için Microsoft Defender yüklendiğinde performans sorunlarıyla karşılaşabilir. Bunlar Jenkins ve Jira gibi geliştirici senaryolarına yönelik uygulamaları ve OracleDB ve Postgres gibi veritabanı iş yüklerini içerir. Performans düşüşü yaşıyorsanız, [Microsoft Defender Virüsten Koruma için Yaygın Dışlama Hatalarını](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) göz önünde bulundurarak güvenilen uygulamalar için dışlamalar ayarlamayı göz önünde bulundurun. Ek yönergeler için üçüncü taraf uygulamalardan gelen virüsten koruma dışlamalarıyla ilgili danışmanlık belgelerini göz önünde bulundurun.
+Belirli uygulamaların yüksek G/Ç iş yükleri, Uç Nokta için Microsoft Defender yüklendiğinde performans sorunlarıyla karşılaşabilir. Bunlar Jenkins ve Jira gibi geliştirici senaryolarına yönelik uygulamaları ve OracleDB ve Postgres gibi veritabanı iş yüklerini içerir. Performans düşüşü yaşıyorsanız, Microsoft Defender [Virüsten Koruma için Yaygın Dışlama Hatalarını](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) göz önünde bulundurarak güvenilen uygulamalar için dışlamalar ayarlamayı göz önünde bulundurun. Ek yönergeler için üçüncü taraf uygulamalardan gelen virüsten koruma dışlamalarıyla ilgili danışmanlık belgelerini göz önünde bulundurun.
 
 ## <a name="resources"></a>Kaynaklar
 
@@ -248,5 +248,5 @@ Belirli uygulamaların yüksek G/Ç iş yükleri, Uç Nokta için Microsoft Defe
 ## <a name="related-articles"></a>İlgili makaleler
   
 - [Bulut için Defender'ın tümleşik EDR çözümüyle uç noktalarınızı koruyun: Uç Nokta için Microsoft Defender](/azure/defender-for-cloud/integration-defender-for-endpoint)
-- [Azure dışı makinelerinizi Bulut için Microsoft Defender'a bağlama](/azure/defender-for-cloud/quickstart-onboard-machines)
+- [Azure olmayan makinelerinizi Bulut için Microsoft Defender bağlama](/azure/defender-for-cloud/quickstart-onboard-machines)
 - [Linux için ağ korumasını açma](network-protection-linux.md)

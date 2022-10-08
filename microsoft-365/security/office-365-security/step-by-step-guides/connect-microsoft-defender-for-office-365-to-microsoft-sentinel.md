@@ -14,15 +14,18 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 search.appverid: met150
-ms.openlocfilehash: 019dd5ff70dae2041955882ed0c63b13f20015cd
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: dcc7d486b41d6a60a0fbda1c8398e81e8516d093
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799318"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68222880"
 ---
 # <a name="connect-microsoft-defender-for-office-365-to-microsoft-sentinel"></a>Office 365 için Microsoft Defender'ı Microsoft Sentinel'e bağlayın
 
@@ -48,7 +51,7 @@ Diğer Microsoft 365 kaynaklarından alınan verilerle birlikte zengin güvenlik
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-Yöneticiler artık Microsoft Sentinel'de olayları, uyarıları ve ham verileri görebilir ve microsoft Defender'daki mevcut ve yeni verileri özetleyerek *gelişmiş tehdit avcılığı* için bu verileri kullanabilir.
+Yöneticiler artık Microsoft Sentinel'de olayları, uyarıları ve ham verileri görebilir ve bu verileri *gelişmiş tehdit avcılığı* için kullanabilir, Microsoft Defender mevcut ve yeni verileri özetleyebilecek.
 
 ## <a name="more-information"></a>Daha Fazla Bilgi
 

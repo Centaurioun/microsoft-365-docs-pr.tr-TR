@@ -8,7 +8,9 @@ audience: ITPro
 ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 search.appverid:
 - MET150
 - LCC120
@@ -24,12 +26,12 @@ f1.keywords:
 - NOCSH
 description: Bu makalede, Office 2007'ye yönelik destek sona erdiği için Office 2007 sunucularından ve istemcilerinden yükseltmenize yardımcı olacak kaynaklar sağlanır.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a1bd2946afae086a634da8ae77b33099077ad5d1
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 1402656b8bd6e28c1ba4b451aac9f6c8d3cefca1
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670641"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191793"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Office 2007 sunucularından ve istemcilerinden yükseltmenize yardımcı olacak kaynaklar
 

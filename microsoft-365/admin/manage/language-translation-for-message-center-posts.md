@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -22,16 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: İleti merkezi gönderileri yalnızca İngilizcedir ancak Microsoft 365 için belirttiğiniz dilde otomatik olarak görüntülenebilir.
-ms.openlocfilehash: 23f94654e01697c3ebbc74df4f2409411ca14b9a
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 26f62d7579e2600b6fef3f6f53ffaff9cc22c74d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437601"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191177"
 ---
 # <a name="language-translation-for-microsoft-365-message-center-posts"></a>Microsoft 365 İleti merkezi gönderileri için dil çevirisi
 
-İleti merkezi gönderileri, gönderdiğimiz bilgilerin zamanından dolayı yalnızca İngilizce yazılmıştır, ancak Microsoft 365 için kişisel dil ayarlarınız tarafından belirtilen dilde otomatik olarak görüntülenebilir. Tercih ettiğiniz dili İngilizce dışında bir dil olarak ayarlarsanız, İleti merkezi'nde gönderileri otomatik olarak çevirme seçeneğini görürsünüz. İletiler makinede tercih ettiğiniz dile çevrilir; başka bir deyişle çeviriyi bir bilgisayar yapmıştır. Bu seçenek varsayılan görünümü denetler, ancak gönderileri çeviri için desteklediğimiz dillerden herhangi birinde çevirmek ve görüntülemek için açılan menüyü de kullanabilirsiniz. İngilizce'yi seçerseniz, iletiyi özgün İngilizce sürümüne geri döndüreceğiz.
+İleti merkezi gönderileri, göndermekte olduğumuz bilgilerin zamanından dolayı yalnızca İngilizce yazılır, ancak Microsoft 365 için kişisel dil ayarlarınız tarafından belirtilen dilde otomatik olarak görüntülenebilir. Tercih ettiğiniz dili İngilizce dışında bir dil olarak ayarlarsanız, İleti merkezi'nde gönderileri otomatik olarak çevirme seçeneğini görürsünüz. İletiler makinede tercih ettiğiniz dile çevrilir; başka bir deyişle çeviriyi bir bilgisayar yapmıştır. Bu seçenek varsayılan görünümü denetler, ancak gönderileri çeviri için desteklediğimiz dillerden herhangi birinde çevirmek ve görüntülemek için açılan menüyü de kullanabilirsiniz. İngilizce'yi seçerseniz, iletiyi özgün İngilizce sürümüne geri döndüreceğiz.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
   
@@ -42,13 +43,13 @@ ms.locfileid: "65437601"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 yönetim merkezi</a> veya giriş sayfasında, pencerenin sağ üst köşesindeki ayarlar simgesini seçin.
   
-2. Kullanılabilir seçenekleri göstermek için **Dil ve saat dilimi** altında **Tümünü görüntüle'yi** seçin. Açılan menüden istediğiniz dili seçin ve ardından **Kaydet'i** seçin. Microsoft 365 yeni dili yenilemeyi ve görüntülemeyi dener. Bu hemen gerçekleşmezse veya bu işlem fazla uzun sürüyor gibi görünürse, tarayıcınızı yenileyebilir veya oturumunuzu kapatabilir ve ardından yeniden oturum açabilirsiniz.
+2. Kullanılabilir seçenekleri göstermek için **Dil ve saat dilimi** altında **Tümünü görüntüle'yi** seçin. Açılan menüden istediğiniz dili seçin ve ardından **Kaydet'i** seçin. Microsoft 365 yeni dili yenilemeye ve görüntülemeye çalışır. Bu hemen gerçekleşmezse veya bu işlem fazla uzun sürüyor gibi görünürse, tarayıcınızı yenileyebilir veya oturumunuzu kapatabilir ve ardından yeniden oturum açabilirsiniz.
   
 ## <a name="machine-translation-in-message-center"></a>İleti merkezinde makine çevirisi
 
 Tercih edilen diliniz İngilizce olarak ayarlanmamışsa, İleti merkezinde çeviri seçenekleri sağlanır.
   
-İleti merkezinde gönderilere otomatik olarak makine çevirisi yapılmasını ve bunların tercih edilen dilde görüntülenmesini ayarlamak için, **Sistem Durumu** \> **İleti merkezi**'ne gidin. İleti listesi görünümünün en üstünde, otomatik çeviriyi açmak ve kapamak için bir anahtar görürsünüz. Bu ayar kapatıldığında gönderiler İngilizce gösterilir. Bu ayar açıldığında, iletiler tercih ettiğiniz dilde görüntülenir. Ayar seçiminiz, İleti merkezini her ziyaretinizde korunur. 
+To set Message center posts to automatically machine-translate and display in your preferred language, go to **Health** \> **Message center**. You'll see a switch at the top of the message list view to toggle automatic translation on or off. When this setting is off, posts are shown in English. When this setting is on, messages display in your preferred language. The setting you choose will persist for each visit to Message center. 
 
 ## <a name="related-content"></a>İlgili içerik
 

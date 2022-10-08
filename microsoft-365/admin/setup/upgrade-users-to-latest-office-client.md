@@ -1,14 +1,15 @@
 ---
-title: Office 2010 sürümüne yükseltme - Microsoft 365 yönetici Microsoft 365 yükseltme
+title: Office 2010'unuzu Microsoft 365'e yükseltme - Microsoft 365 yöneticisi
 f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekua
 manager: scotv
 audience: Admin
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Adm_O365
 - Adm_TOC
 search.appverid:
@@ -22,20 +23,20 @@ ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
-description: E-posta istemcisini Microsoft Office kullanıcılar için Office son istemciye yükseltmeyi öğrenin.
+description: Microsoft Office'i kuruluşunuzdaki kullanıcılar için en son Office istemcisine yükseltme hakkında bilgi edinin.
 ms.topic: article
-ms.openlocfilehash: 7994fb10d00484f2c211f4443d2030fa71003d5f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: af36da23a8de502b1ec4377d3477dce9a5eac446
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321705"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68199845"
 ---
-# <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Kurumsal kullanıcıları Microsoft 365 son istemciye yükseltme Office yükseltme
+# <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>İş için Microsoft 365 kullanıcılarınızı en son Office istemcisine yükseltme
 
-## <a name="office-2010-reaches-end-of-support"></a>Office 2010 destek sonuna ulaşır
+## <a name="office-2010-reaches-end-of-support"></a>Office 2010 destek sonuna ulaştı
 
-Office 2010, 13 Ekim 2020'de destek sonuna ulaştı. Microsoft artık şunları sağlamaz:
+Office 2010, 13 Ekim 2020'de destek sonuna ulaşmıştır. Microsoft artık aşağıdakileri sağlamayacaktır:
 
 - Sorunlar için teknik destek
 
@@ -43,93 +44,93 @@ Office 2010, 13 Ekim 2020'de destek sonuna ulaştı. Microsoft artık şunları 
 
 - Bulunan güvenlik açıkları için güvenlik düzeltmeleri
 
-Daha [Office için bkz. 2010](/deployoffice/endofsupport/office-2010-end-support-roadmap) destek sonu yol haritası.
+Daha fazla bilgi için bkz. [Office 2010 destek sonu yol haritası](/deployoffice/endofsupport/office-2010-end-support-roadmap) .
 
  **Bu sizin için doğru konu mu?**
   
- Kuruluşta iş Microsoft 365 yöneticiyseniz, doğru yerdesiniz. Yöneticiler tipik olarak kullanıcıları yönetme, parolaları sıfırlama, yüklemeleri yönetme ve lisansları Office kaldırma gibi görevlerden sorumlu olur.
+ Kuruluşunuzda İş için Microsoft 365 aboneliğinden sorumlu yöneticiyseniz, doğru yerdesiniz demektir. Yöneticiler genellikle kullanıcıları yönetme, parolaları sıfırlama, Office yüklemelerini yönetme ve lisans ekleme veya kaldırma gibi görevlerden sorumludur.
 
- Yönetici değilseniz ve bir Microsoft 365 Aile ürününe sahipseniz, [Office'un](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans) eski ve evde [](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350) kullanım sürümünü yükseltme hakkında bilgi için bkz. Office'i nasıl Office yükseltirim?.
+ Yönetici değilseniz ve [Microsoft 365 Aile](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans) bir ürününüz varsa, Office'in eski, evde kullanım sürümünü yükseltme hakkında bilgi için bkz. Office'i [yükseltme Nasıl yaparım?](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350).
 
-## <a name="get-ready-to-upgrade-to-microsoft-365"></a>Yeni sürüme yükseltmeye Microsoft 365
+## <a name="get-ready-to-upgrade-to-microsoft-365"></a>Microsoft 365'e yükseltmeye hazır olun
 
-Yönetici olarak, bazı kişilerin Office sürümünü yükleyebilirsiniz. Kuruluş içinde yer alan kullanıcıların güvenlik ve üretkenlik geliştirmelerinden yararlanmak için Office'in Office 2010, Office 2013 veya Office 2016 gibi eski sürümlerini en son sürüme yükseltmesine yardımcı öneririz.
+Yönetici olarak, kuruluşunuzdaki Office kullanıcılarının hangi sürümünü yükleyebileceğini denetlersiniz. Kuruluşunuzda Office'in Office 2010, Office 2013 veya Office 2016 gibi eski sürümlerini çalıştıran kullanıcıların güvenlik ve üretkenlik geliştirmelerinden yararlanmak için en son sürüme yükseltmelerine yardımcı olmanız kesinlikle önerilir.
 
 ## <a name="upgrade-steps"></a>Yükseltme adımları
 
-Aşağıdaki adımlar, kullanıcılarınızı en son masaüstü istemcisine yükseltme Office kılavuz olarak size yol göstermektedir. Yükseltme işleminin başlamasına başlamadan önce bu adımları okumanızı öneririz.
+Aşağıdaki adımlar, kullanıcılarınızı en son Office masaüstü istemcisine yükseltme işleminde size yol gösterir. Yükseltme işlemine başlamadan önce bu adımları okumanızı öneririz.
   
 ## <a name="step-1---check-system-requirements"></a>1. Adım - Sistem gereksinimlerini denetleme
 
-[Cihazlarınızı güncelleştirmelerin](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) en Office sürümüyle uyumlu olduğundan emin olmak için sistem gereksinimlerine Office. Örneğin, daha yeni Office sürümleri XP veya Vista çalıştıran Windows bilgisayarlara Windows.
+Cihazlarınızın Office'in en son sürümüyle uyumlu olduğundan emin olmak için Office'in [sistem gereksinimlerini denetleyin](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources). Örneğin, Office'in daha yeni sürümleri Windows XP veya Windows Vista çalıştıran bilgisayarlara yüklenemez.
   
 > [!TIP]
-> Kuruluşta bilgisayarlarında veya dizüstü bilgisayarlarında Windows eski sürümlerini çalıştıran kullanıcılarınız varsa, bilgisayarınıza veya dizüstü bilgisayarlarına yükseltmenizi Windows 10. Windows 7 destek sonuna ulaştı. Daha [fazla bilgi Windows 7 Destek Ocak 2020](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1) ile sona erer.
+> Kuruluşunuzda bilgisayarlarında veya dizüstü bilgisayarlarında Windows'un eski sürümlerini çalıştıran kullanıcılarınız varsa, Windows 10 yükseltmenizi öneririz. Windows 7 destek sonuna ulaştı. Daha fazla bilgi [için Windows 7 desteği Ocak 2020'de sona eriyor](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1) yazısını okuyun.
 
-İşletim sistemlerini [yükselt Windows 10 için sistem](https://www.microsoft.com/windows/windows-10-specifications) gereksinimlerini kontrol edin.
+İşletim sistemlerini yükseltip yükseltemediğini görmek için [Windows 10 sistem gereksinimlerini](https://www.microsoft.com/windows/windows-10-specifications) gözden geçirin.
 
 ### <a name="check-application-compatibility"></a>Uygulama uyumluluğunu denetleme
 
-Başarılı bir yükseltme sağlamak için VBA betikleri, makrolar, üçüncü taraf eklentileri ve karmaşık belgeler ile elektronik tablolar da dahil olmak üzere Office uygulamalarınızı tanımlamanızı ve bunların Office'un en son sürümüyle uyumluluğunu değerlendirmenizi öneririz.
+Yükseltmenin başarılı olmasını sağlamak için VBA betikleri, makrolar, üçüncü taraf eklentileri, karmaşık belgeler ve elektronik tablolar dahil olmak üzere Office uygulamalarınızı tanımlamanızı ve bunların Office'in en son sürümüyle uyumluluğunu değerlendirmenizi öneririz.
   
-Örneğin, geçerli eklenti yüklemenizle birlikte üçüncü taraf eklentileri kullanıyorsanız, ürünlerinizin en son sürümüyle uyumlu olduğundan emin olmak için Office ürünleriyle Office.
+Örneğin, geçerli Office yüklemenizde üçüncü taraf eklentileri kullanıyorsanız, office'in en son sürümüyle uyumlu olduklarından emin olmak için üreticiye başvurun.
   
 ## <a name="step-2---check-your-existing-subscription-plan"></a>2. Adım - Mevcut abonelik planınızı denetleme
 
-Bazı Microsoft 365 planları Office'in tam masaüstü sürümlerini içermez ve planınız yeni sürümler içermese de yükseltme Office.
+Bazı Microsoft 365 planları Office'in tam masaüstü sürümlerini içermez ve planınız Office'i içermiyorsa yükseltme adımları farklıdır.
   
-Hangi abonelik planına sahip olduğunuz emin değil misiniz? Bkz[. Microsoft 365 için hangi aboneliklere sahibim?](../admin-overview/what-subscription-do-i-have.md)
+Hangi abonelik planına sahip olduğunuzdan emin değil misiniz? Bkz [. hangi İş için Microsoft 365 aboneliğine sahibim?](../admin-overview/what-subscription-do-i-have.md)
   
-Var olan planınız yeni Office, [3. Adım -](#step-3---uninstall-office) Yüklemeden kaldırma Office.
+Mevcut planınız Office içeriyorsa [, 3. Adım - Office'i kaldırma'ya](#step-3---uninstall-office) geçin.
   
-Var olan planınız e-Office, aşağıdaki seçeneklerden birini seçin:
+Mevcut planınız Office içermiyorsa aşağıdaki seçeneklerden birini belirleyin:
   
-### <a name="upgrade-options-for-plans-that-dont-include-office"></a>Yükseltme seçenekleri arasında yer alan ve planlara dahil Office
+### <a name="upgrade-options-for-plans-that-dont-include-office"></a>Office içermeyen planlar için yükseltme seçenekleri
 
- **1. Seçenek: Abonelikleri Office değiştirme**
+ **Seçenek 1: Office aboneliklerini değiştirme**
 
-Aboneliğinizi içeren bir aboneliğe Office. Bkz[. Farklı bir iş Microsoft 365 planına geçme](../../commerce/subscriptions/switch-to-a-different-plan.md).
+Office içeren bir aboneliğe geçin. Bkz. [Farklı bir İş için Microsoft 365 planına geçme](../../commerce/subscriptions/switch-to-a-different-plan.md).
 
-**2. Seçenek: Bireysel, bir defalık satın Office veya toplu lisansla Office satın alma**
+**2. Seçenek: Bireysel, tek seferlik Office satın almaları satın alma veya toplu lisans aracılığıyla Office satın alma**
 
- - Tek ve tek satın alınan ürün Office. Bkz[. Office Ev &amp; İş](https://www.microsoft.com/microsoft-365/buy/compare-all-microsoft-365-products-b) veya [Office Profesyonel](https://www.microsoft.com/microsoft-365/p/office-professional-2019/CFQ7TTC0K7C5/)
+ - Tek seferlik bir Office satın alma işlemi satın alın. Bkz. [Office Ev &amp; İş](https://www.microsoft.com/microsoft-365/buy/compare-all-microsoft-365-products-b) veya [Office Profesyonel](https://www.microsoft.com/microsoft-365/p/office-professional-2019/CFQ7TTC0K7C5/)
 
      VEYA
 
- - Toplu lisans aracılığıyla Office kopyasını satın alın. Toplu [lisanslama aracılığıyla kullanılabilen Karşılaştırma paketlerine bakın](https://products.office.com/business/microsoft-office-volume-licensing-suites-comparison).
+ - Toplu lisans aracılığıyla Office'in birden çok kopyasını satın alın. Bkz. [Toplu lisanslama ile kullanılabilen paketleri karşılaştırma](https://products.office.com/business/microsoft-office-volume-licensing-suites-comparison).
 
-## <a name="step-3---uninstall-office"></a>3. Adım - Posta Office
+## <a name="step-3---uninstall-office"></a>3. Adım - Office'i kaldırma
 
-Office'in en son sürümünü yüklemeden önce, tüm eski sürümlerini kaldırmanızı Office. Bununla birlikte, yükseltme Office konusunda fikir değiştirirsiniz, kaldırdikten sonra yeniden yüklemenizi mümkün olmayacak olan Office unutmayın.
+Office'in en son sürümünü yüklemeden önce, Office'in tüm eski sürümlerini kaldırmanızı öneririz. Ancak, Office'i yükseltme konusunda fikrinizi değiştirirseniz, Office'i kaldırdıktan sonra yeniden yükleyemeyeceğiniz aşağıdaki örnekleri not edin.
   
-Üçüncü taraf eklentileriniz varsa, üreticiye başvurarak uygulamanın en son sürümüyle çalışacak bir güncelleştirme olup Office.
+Üçüncü taraf eklentileriniz varsa, Office'in en son sürümüyle çalışacak bir güncelleştirme olup olmadığını görmek için üreticiye başvurmanızı öneririz.
 
 > [!TIP]
-> Office'i kaldırırken sorun çıkarsanız, Microsoft Destek ve Kurtarma Yardımcısı aracını kullanarak microsoft Office uygulamasını indirme ve çalıştırma yardımcı [Destek ve Kurtarma Yardımcısı](https://go.microsoft.com/fwlink/?LinkID=2155008).
+> Office'i kaldırırken sorunlarla karşılaşırsanız, Office'i kaldırmanıza yardımcı olması için Microsoft Desteği ve Kurtarma Yardımcısı aracını kullanabilirsiniz: [Microsoft Desteği ve Kurtarma Yardımcısı'nı indirip çalıştırın](https://go.microsoft.com/fwlink/?LinkID=2155008).
 
 ### <a name="select-the-version-of-office-you-want-to-uninstall"></a>Kaldırmak istediğiniz Office sürümünü seçin
 
-- [Pc'den](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8)
+- [Bilgisayardan](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8)
 
-- [Mac'te bir](https://support.microsoft.com/office/eefa1199-5b58-43af-8a3d-b73dc1a8cae3)
+- [Mac'ten](https://support.microsoft.com/office/eefa1199-5b58-43af-8a3d-b73dc1a8cae3)
   
-### <a name="known-issues-trying-to-reinstall-older-versions-of-office-after-an-uninstall"></a>Kaldırma sonrasında eski Office sürümlerini yeniden Office bilinen sorunlar
+### <a name="known-issues-trying-to-reinstall-older-versions-of-office-after-an-uninstall"></a>Kaldırma sonrasında Office'in eski sürümlerini yeniden yüklemeye çalışırken karşılaşılan bilinen sorunlar
 
- **Office lisans aracılığıyla** yükleme Office'un bu toplu lisans sürümlerinin kaynak dosyalarına artık erişiminiz yoksa, yeniden yükemeyeceksiniz.
+ **Toplu lisans aracılığıyla Office** Office'in bu toplu lisans sürümlerinin kaynak dosyalarına artık erişiminiz yoksa, yeniden yükleyemezsiniz.
 
- **Office bilgisayarınıza önceden** yüklenmiş olmalıdır Disk veya ürün anahtarınız (Office birlikte gelmişse) artık yeniden yükleyemeyeceksiniz.
+ **Bilgisayarınızda önceden yüklenmiş Office** Artık disk veya ürün anahtarınız yoksa (Office bir diskle birlikte geldiyse) diski yeniden yükleyemezsiniz.
 
- **Desteklenen olmayan abonelikler** Office kopyanız Office 365 Küçük İşletme Ekstra veya Office 365 Orta Ölçekli İşletme gibi iptal edilen abonelikler aracılığıyla elde edildiyse, aboneliğiniz ile birlikte gelen ürün anahtarınız yoksa Office'in daha eski bir sürümünü yük yüklemeniz mümkün olmayacaktır.
+ **Desteklenmeyen abonelikler** Office kopyanız Office 365 Küçük İşletme Ekstra veya Orta Ölçekli İşletme Office 365 gibi kesintiye neden olan abonelikler aracılığıyla alındıysa, aboneliğinizle birlikte gelen ürün anahtarına sahip değilseniz Office'in eski bir sürümünü yükleyemezsiniz.
 
-Office'un eski sürümünü en son sürümle yan yana yüklemek isterseniz, bu sürümün destekte olduğu sürümlerin listesini görebilir, aynı pc'de Office'un farklı sürümlerini yükleyebilir ve [kullanabilirsiniz](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf). Yan yana yükleme, örneğin önceki Office sürümünüzle kullanmakta olduğunuz üçüncü taraf eklentileri yüklemiş ve bunların en son sürümle uyumlu olduğundan emin değilsanız, yan yana yükleme sizin için doğru seçenek olabilir.
+Office'in eski sürümünü en son sürümle yan yana yüklemeyi tercih ederseniz, bu sürümün desteklendiği sürümlerin listesini görebilir, [Aynı bilgisayarda Office'in farklı sürümlerini yükleyip kullanabilirsiniz](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf). Örneğin, eski Office sürümünüzle kullandığınız üçüncü taraf eklentileri yüklediyseniz ve bunların en son sürümle uyumlu olduğundan henüz emin değilseniz, yan yana yükleme sizin için doğru seçim olabilir.
 
-## <a name="step-4---assign-office-licenses-to-users"></a>4. Adım - Office lisansları atama
+## <a name="step-4---assign-office-licenses-to-users"></a>4. Adım - Kullanıcılara Office lisansları atama
 
-Henüz bunu yapmadıysanız, lisansları kuruluş içinde yüklemesi gereken kullanıcılara lisans atama Office bkz. İşletmeler için Microsoft 365 [kullanıcılara lisans atama](../manage/assign-licenses-to-users.md).
+Henüz yapmadıysanız, kuruluşunuzda Office'i yüklemesi gereken kullanıcılara lisans atayın, bkz. [İş için Microsoft 365'te kullanıcılara lisans atama](../manage/assign-licenses-to-users.md).
   
-## <a name="step-5---install-office"></a>5. Adım - Posta Office
+## <a name="step-5---install-office"></a>5. Adım - Office'i yükleme
 
-Yükseltmek istediğiniz tüm kullanıcıların lisansları olduğunu doğruladıktan sonra, son adım kullanıcıların Office yüklemesini almaktır. PC veya Mac'inize Office indirme ve yükleme veya yeniden yükleme[.](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
+Yükseltmek istediğiniz tüm kullanıcıların lisansları olduğunu doğruladıktan sonra, son adım Office'i yüklemelerini sağlamaktır. Bkz. [PC veya Mac bilgisayarınıza Office'i indirme ve yükleme veya yeniden yükleme](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
   
 > [!TIP]
-> Kullanıcılarınızı kendi kendilerine yüklemelerini istemiyorsanız, Office sayfasında [Yazılım indirme ayarlarını yönetme Office 365](/DeployOffice/manage-software-download-settings-office-365). [Office yazılımını yerel ağınıza](/DeployOffice/overview-office-deployment-tool) indirmek ve ardından Office normalde kullanmakta olduğunuz yazılım dağıtım yöntemini kullanarak Office dağıtımı yapmak için Office Dağıtım Aracı'nı kullanabilirsiniz.
+> Kullanıcılarınızın Office'i kendilerinin yüklemesini istemiyorsanız bkz. [Office 365'de yazılım indirme ayarlarını yönetme](/DeployOffice/manage-software-download-settings-office-365). [Office Dağıtım Aracı'nı kullanarak Office](/DeployOffice/overview-office-deployment-tool) yazılımını yerel ağınıza indirebilir ve ardından genellikle kullandığınız yazılım dağıtım yöntemini kullanarak Office'i dağıtabilirsiniz.

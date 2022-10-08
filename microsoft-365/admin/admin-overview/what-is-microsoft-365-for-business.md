@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 description: BT bölümünü sizin için halleden bir abonelik hizmeti olan İş için Microsoft 365 hakkında bilgi edinin.
 feedback_system: None
 ms.date: ''
-ms.openlocfilehash: a175149d1674b8614572bc3aa221a2a86266654a
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: cf3cda122bd81e1e9e5693cbfceb00f2cf43af96
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662970"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191529"
 ---
 # <a name="what-is-microsoft-365-for-business"></a>Microsoft 365 İş nedir?
 

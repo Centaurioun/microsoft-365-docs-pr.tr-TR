@@ -7,7 +7,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Sahipsiz bir Microsoft 365 grubunda veya Microsoft Teams'de bir ekipte sahip olmaya üyeleri otomatik olarak davet etmeyi öğrenin.
-ms.openlocfilehash: 3d140c7080feca76382e54049918d5e7866e29d5
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: b417634638142c749fad12b5e008f2f8d6ff5638
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67743098"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191353"
 ---
 # <a name="manage-ownerless-microsoft-365-groups-and-teams"></a>Sahipsiz Microsoft 365 gruplarını ve ekiplerini yönetme
 
@@ -69,4 +69,6 @@ Bildirimler, ilke oluşturulduktan sonraki 24 saat içinde haftalık olarak gön
 
 Grup başına en fazla iki grup üyesi, sahip olma davetini kabul edebilir. Hiçbir grup üyesi kabul etmediyse, yöneticinin [bir grup sahibi ataması](/admin/create-groups/add-or-remove-members-from-groups) gerekir.
 
+## <a name="related-topics"></a>İlgili konular
 
+[Sahipsiz grup hakkında SSS](/exchange/troubleshoot/groups-and-distribution-lists/ownerless-group-policy)

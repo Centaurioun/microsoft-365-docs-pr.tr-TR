@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,12 +22,12 @@ search.appverid:
 description: BT bölümünü sizin için halleden bir abonelik hizmeti olan Microsoft 365 İş Ekstra hakkında bilgi edinin.
 feedback_system: None
 ms.date: 10/20/2021
-ms.openlocfilehash: f127ac87d4f3886a623f1c81ef2cec6f53677434
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 71166b1307b69410afffcd54eed049bf5c5465a7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601596"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191463"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 

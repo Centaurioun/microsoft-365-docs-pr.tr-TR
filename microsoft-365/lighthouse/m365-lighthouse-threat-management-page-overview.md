@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Tehdit yönetimi sayfası hakkında bilgi edinin.
-ms.openlocfilehash: 5283ac1b4155db5d78e8cd96bbc686811c8aa29a
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: aeaa240e940e12782c194e0f718031f74b4ba867
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598835"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191661"
 ---
 # <a name="overview-of-the-threat-management-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'deki Tehdit yönetimi sayfasına genel bakış 
 
@@ -71,7 +72,7 @@ Aşağıdaki tabloda farklı tehdit durumları ve tanımları listeleniyor:<br><
 
 ## <a name="antivirus-protection-tab"></a>Virüsten koruma sekmesi
 
-Tehdit yönetimi sayfasındaki Virüsten Koruma sekmesi, tüm kiracılarınız genelindeki cihazları ve Microsoft Defender Virüsten Koruma koruma durumlarını gösterir. Durumu değerlendirebilir ve güvenlik açığı olabilecek bir veya daha fazla cihaz için işlem yapabilirsiniz. Ayrıca bir cihazı seçerek Cihaza Genel Bakış, Geçerli Tehditler ve Cihaz Eylemi durumları gibi daha fazla bilgi görüntüleyebilirsiniz.
+Tehdit yönetimi sayfasındaki Virüsten Koruma sekmesi, tüm kiracılarınız genelindeki cihazları ve Microsoft Defender Virüsten Koruma koruma durumunu gösterir. Durumu değerlendirebilir ve güvenlik açığı olabilecek bir veya daha fazla cihaz için işlem yapabilirsiniz. Ayrıca bir cihazı seçerek Cihaza Genel Bakış, Geçerli Tehditler ve Cihaz Eylemi durumları gibi daha fazla bilgi görüntüleyebilirsiniz.
 
 :::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-antivirus-tab.png" alt-text="Virüsten Koruma sekmesinin ekran görüntüsü.":::
 

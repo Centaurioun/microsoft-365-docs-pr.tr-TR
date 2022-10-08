@@ -10,7 +10,9 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - NOCSH
 ms.custom:
@@ -18,12 +20,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: Microsoft 365'e aşamalı geçiş kullanarak zaman içinde kaynak e-posta sisteminden içerik taşımak için PowerShell'i kullanmayı öğrenin.
-ms.openlocfilehash: 4fc95a075b377e89d7fcc186515ef852a0bb0c5a
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: be60b6469b8e432728ef174104403900e115e68f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67669155"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191705"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>Microsoft 365'e aşamalı geçiş gerçekleştirmek için PowerShell'i kullanma
 
@@ -59,7 +61,7 @@ Aşamalı geçiş kullanarak posta kutularını Microsoft 365'e geçirmeden önc
 - [Her Yerden Outlook'u Exchange 2003'le yapılandırma](/previous-versions/office/exchange-server-2007/aa996922(v=exchg.80))
 
 > [!IMPORTANT]
-> Her Yerden Outlook yapılandırmanızla, güvenilir bir sertifika yetkilisi (CA) tarafından verilmiş bir sertifika kullanmalısınız. Her Yerden Outlook, otomatik olarak imzalanan sertifikayla yapılandırılamaz. Daha fazla bilgi için bkz. [Her Yerden Outlook için SSL'yi yapılandırma](/previous-versions/office/exchange-server-2007/aa995982(v=exchg.80)).
+> You must use a certificate issued by a trusted certification authority (CA) with your Outlook Anywhere configuration. Outlook Anywhere can't be configured with a self-signed certificate. For more information, see [How to configure SSL for Outlook Anywhere](/previous-versions/office/exchange-server-2007/aa995982(v=exchg.80)).
 
  **İsteğe bağlı: Her Yerden Outlook kullanarak Exchange kuruluşunuza bağlanabildiğinizi doğrulama** Bağlantı ayarlarınızı test etmek için aşağıdaki yöntemlerden birini deneyin.
 
@@ -110,7 +112,7 @@ Oluşturulduktan sonra kullanıcıları lisanslamalısınız. Kullanıcılar olu
 
  **Desteklenen öznitelikler**
 
-Aşamalı geçiş için CSV dosyası aşağıdaki üç özniteliği destekler. CSV dosyasındaki her satır bir posta kutusuna karşılık gelir ve bu özniteliklerin her biri için bir değer içermelidir.
+The CSV file for a staged migration supports the following three attributes. Each row in the CSV file corresponds to a mailbox and must contain a value for each of these attributes.
 
 |**Öznitelik**|**Açıklama**|**Gerekli mi?**|
 |:-----|:-----|:-----|
@@ -122,7 +124,7 @@ Aşamalı geçiş için CSV dosyası aşağıdaki üç özniteliği destekler. C
 
 Aşağıda, CSV dosyasının biçimi için bir örnek verilmiştir. Bu örnekte, üç şirket içi posta kutusu Microsoft 365'e geçirilir.
 
-CSV dosyasının ilk satırında veya üst bilgi satırında, izleyen satırlarda belirtilen özniteliklerin veya alanların adları listelenir. Öznitelik adları birbirinden virgülle ayrılır.
+The first row, or header row, of the CSV file lists the names of the attributes, or fields, specified in the rows that follow. Each attribute name is separated by a comma.
 
 ```powershell
 EmailAddress,Password,ForceChangePassword
@@ -131,7 +133,7 @@ tobyn@contoso.com,Pa$$w0rd,False
 briant@contoso.com,Pa$$w0rd,False
 ```
 
-Üst bilgi satırın altındaki her satır bir kullanıcıyı temsil eder ve kullanıcının posta kutusu geçirilirken kullanılacak bilgileri sağlar. Her satırdaki öznitelik değerleri, üst bilgi satırındaki öznitelik adlarıyla aynı sırada olmalıdır.
+Each row under the header row represents one user and supplies the information that will be used to migrate the user's mailbox. The attribute values in each row must be in the same order as the attribute names in the header row.
 
 CSV dosyasını oluşturmak için herhangi bir metin düzenleyicisini veya Excel gibi bir uygulamayı kullanın. Dosyayı .csv veya .txt dosyası olarak kaydedin.
 

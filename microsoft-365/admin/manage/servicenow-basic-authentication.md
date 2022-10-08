@@ -1,5 +1,5 @@
 ---
-title: ServiceNow ile destek tümleştirmeyi yapılandırma - Temel Kimlik Doğrulama
+title: ServiceNow ile destek tümleştirmesini yapılandırma - Temel Kimlik Doğrulaması
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -7,88 +7,89 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
-description: ServiceNow için Kapsam Sertifikalı uygulama yükleme ve yapılandırma kılavuzu.
-ms.openlocfilehash: 23fab410b17cea9635c63b0ed0e4225d158dfdc8
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: ServiceNow için Kapsamlı Sertifikalı uygulama yükleme ve yapılandırma kılavuzu.
+ms.openlocfilehash: ed3e7340d91ad3ae997bb27400d81c46ace4773b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323857"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191309"
 ---
-# <a name="configure-support-integration-with-servicenow---basic-authentication"></a>ServiceNow ile destek tümleştirmeyi yapılandırma - Temel Kimlik Doğrulama
+# <a name="configure-support-integration-with-servicenow---basic-authentication"></a>ServiceNow ile destek tümleştirmesini yapılandırma - Temel Kimlik Doğrulaması
 
 ## <a name="prerequisites-basic-authentication"></a>Önkoşullar (Temel Kimlik Doğrulaması)
 
-Destek tümleştirmesi için bu önkoşullar **Microsoft 365 gereklidir**.
+Bu önkoşullar **, Microsoft 365 destek tümleştirmesini** ayarlamak için gereklidir.
 
-1. \[AAD Yönetici\] Kiracınız altında Azure AD Microsoft 365 oluşturun.
+1. \[AAD Yönetici\] Microsoft 365 kiracınızın altında Azure AD Uygulaması oluşturun.
 
-    1. Azure Portal'da oturum açmak için Microsoft 365 kimlik bilgilerinizle oturum açın ve [yeni bir uygulama oluşturmak için](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) Uygulama kayıtları sayfasına gidin.
+    1. Microsoft 365 kiracı kimlik bilgilerinizle Azure Portalı'nda oturum açın ve yeni bir uygulama oluşturmak için [Uygulama kayıtları sayfasına](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) gidin.
 
-    1. Yalnızca **bu kuruluş dizininde Hesaplar'ı (yalnızca {Microsoft-365-tenant-name} – Tek kiracı)** ve Ardından Kaydol'u **seçin**.
+    1. **Yalnızca bu kuruluş dizinindeki Hesaplar 'ı seçin ({Microsoft-365-tenant-name} yalnızca – Tek kiracı)** ve **Kaydet'i** seçin.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image3.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image3.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturulur":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image3.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image3.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturuldu":::
 
-1. Kimlik **Doğrulaması'na gidin** ve Platform **ekle'yi seçin**. Web seçeneğini **belirleyin** ve yeniden yönlendirme URL'sini girin: `https://{your-servicenow-instance``}.service-now.com/oauth_redirect.do`
+1. **Kimlik doğrulaması'na** gidin ve **Platform ekle'yi** seçin. **Web** seçeneğini belirleyin ve yeniden yönlendirme URL'sini girin:`https://{your-servicenow-instance``}.service-now.com/oauth_redirect.do`
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image4.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image4.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturulur":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image4.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image4.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturuldu":::
 
-1. Uygulama İstemci Kimliği'ne tıklayın ve bir İstemci sırrı oluşturun ve bu değeri elde oluşturun.
+1. Uygulama İstemcisi Kimliğini alın ve bir İstemci gizli dizisi oluşturun ve bu değeri alın.
 
-1. \[ServiceNow Yöneticisi\] ServiceNow içinde Giden OAuth Sağlayıcısını ayarlayın.
+1. \[ServiceNow Yönetici\] ServiceNow'da Giden OAuth Sağlayıcısını ayarlayın.
 
-    Kapsam Genel olarak ayarlanmazsa, **Geliştirici** Uygulamaları'Ayarlar **&gt; ve &gt; Genel'e** **geçin**.
+    Kapsam **Genel** olarak ayarlanmadıysa **Ayarlar &gt; Geliştirici &gt; Uygulamaları'na** gidin ve **Genel'e** geçin.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, sohbet veya metin mesajı Açıklama otomatik olarak oluşturulur":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, sohbet veya kısa mesaj Açıklama otomatik olarak oluşturuldu":::
 
-1. **System OAuth Application Registry'ye &gt; gidin**.
+1. **Sistem OAuth &gt; Uygulama Kayıt Defteri'ne** gidin.
 
-1. Üçüncü taraf **OAuth Provider seçeneğine Bağlan kullanarak ve** şu değerleri girerek yeni uygulama oluşturun:
+1. **Üçüncü taraf bir OAuth Sağlayıcısına bağlan** seçeneğini kullanarak ve şu değerleri girerek yeni bir uygulama oluşturun:
 
-    - İstemci Kimliği: Bu, 1. adımda oluşturulan uygulamanın İstemci \#Kimliği'dir.
+    - İstemci Kimliği: Bu, 1. adımda \#oluşturulan uygulamanın İstemci Kimliğidir.
 
-    - İstemci Sırrı: Bu, 1. adımda oluşturulan uygulamanın İstemci Sırrı \#değeridir.
+    - İstemci Gizli Anahtarı: Bu, 1. adımda \#oluşturulan uygulamanın İstemci Gizli Anahtarı değeridir.
 
-    - Varsayılan Grant türü: İstemci Kimlik Bilgileri
+    - Varsayılan Verme türü: İstemci Kimlik Bilgileri
 
     - Belirteç URL'si: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
     - Yeniden yönlendirme URL'si: `https://{service-now-instance-name``}.service-now.com/auth_redirect.do`
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image6.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image6.png" alt-text="Grafik kullanıcı arabirimi, uygulama açıklaması otomatik olarak oluşturulur":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image6.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image6.png" alt-text="Grafik kullanıcı arabirimi, uygulama açıklaması otomatik olarak oluşturuldu":::
 
-1. \[ServiceNow Admin\] Set up the Gelen OAuth Provider.
+1. \[ServiceNow Yönetici\] Gelen OAuth Sağlayıcısını ayarlayın.
 
-    Kapsam Genel olarak ayarlanmazsa, **bunu** Yapmak için Geliştirici Uygulamaları'Ayarlar'e **&gt; &gt;** geçin ve Genel'e **geçin**.
+    Kapsam **Genel** olarak ayarlanmadıysa, **Ayarlar &gt; Geliştirici &gt; Uygulamaları'na** gidip **Genel'e** geçerek bunu yapın.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, sohbet veya metin mesajı Açıklama otomatik olarak oluşturulur":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, sohbet veya kısa mesaj Açıklama otomatik olarak oluşturuldu":::
 
-1. **System OAuth Application Registry'ye &gt; gidin**.
+1. **Sistem OAuth &gt; Uygulama Kayıt Defteri'ne** gidin.
 
-1. Dış istemciler için **OAuth API uç noktası oluştur seçeneğini kullanarak yeni uygulama** oluşturun. Gelen OAuth sağlayıcısını bir adla yazın ve diğer tüm alanları varsayılan değerlerinde bırakın.
+1. **Dış istemciler için OAuth API uç noktası oluştur** seçeneğini kullanarak yeni bir uygulama oluşturun. Gelen OAuth sağlayıcısını adlandırın ve diğer tüm alanları varsayılan değerleriyle bırakın.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image7.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image7.png" alt-text="Grafik kullanıcı arabirimi, uygulama açıklaması otomatik olarak oluşturulur":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image7.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image7.png" alt-text="Grafik kullanıcı arabirimi, uygulama açıklaması otomatik olarak oluşturuldu":::
 
-1. \[ServiceNow Yöneticisi\] Tümleştirme kullanıcısı oluşturun.
+1. \[ServiceNow Yönetici\] Tümleştirme kullanıcısı oluşturma.
 
-    Bir tümleştirme kullanıcısı belirtmeniz gerekir. Mevcut tümleştirme kullanıcınız yoksa veya bu tümleştirme için özel olarak bir kullanıcı oluşturmaksanız, **&gt;** Kuruluş Kullanıcıları'nın gidin ve yeni kullanıcı oluşturun.
+    Bir tümleştirme kullanıcısı belirtmeniz gerekir. Mevcut bir tümleştirme kullanıcınız yoksa veya bu tümleştirme için özel olarak bir tümleştirme oluşturmak istiyorsanız Kuruluş **Kullanıcıları'na &gt;** giderek yeni bir kullanıcı oluşturun.
 
-    Yeni bir tümleştirme kullanıcısı oluşturuyorsanız, Yalnızca **Web hizmeti erişimi seçeneğini** işaretleyin. Bu kullanıcıya **olaymanager rolü de\_ verlisiniz** .
+    Yeni bir tümleştirme kullanıcısı oluşturuyorsanız **Yalnızca Web hizmeti erişimi** seçeneğini işaretleyin. Bu kullanıcıya **olay\_yöneticisi** rolü de vermelisiniz.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image8.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image8.png" alt-text="Grafik kullanıcı arabirimi, uygulama açıklaması otomatik olarak oluşturulur":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image8.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image8.png" alt-text="Grafik kullanıcı arabirimi, uygulama açıklaması otomatik olarak oluşturuldu":::
 
-## <a name="optional-allow-the-services-ip-addresses-to-microsoft-365-support-integration"></a>\[İsteğE\] BAĞLı Hizmetin IP adreslerinin destek tümleştirmesini Microsoft 365 izin ver
+## <a name="optional-allow-the-services-ip-addresses-to-microsoft-365-support-integration"></a>\[İsteğE BAĞLI\] Hizmetin IP adreslerinin Microsoft 365 destek tümleştirmesine izin verme
 
-Şirketiniz kendi ilkeleriniz ile İnternet erişimini sınırlandırıyorsa, hem gelen hem de giden API erişimi için aşağıdaki IP adreslerine izin vererek, Microsoft 365 desteği tümleştirmesi hizmeti için ağ erişimini etkinleştirin:
+Şirketiniz İnternet erişimini kendi ilkelerinizle sınırlandırıyorsa, hem gelen hem de giden API erişimi için aşağıdaki IP adreslerine izin vererek Microsoft 365 destek tümleştirmesi hizmeti için ağ erişimini etkinleştirin:
 
 - 52.149.152.32
 
@@ -103,114 +104,114 @@ Destek tümleştirmesi için bu önkoşullar **Microsoft 365 gereklidir**.
 - 20.105.151.142
 
 > [!NOTE]
-> Bu terminal komutu, destek tümleştirmesi için hizmetin tüm etkin MICROSOFT 365 listeler:`nslookup`` connector.rave.microsoft.com`
+> Bu terminal komutu, Microsoft 365 destek tümleştirmesi için hizmetin tüm etkin IP'lerini listeler: `nslookup`` connector.rave.microsoft.com`
 
-## <a name="configure-the-microsoft-365-support-integration-application"></a>Microsoft 365 Desteği Tümleştirme Uygulamasını yapılandırma
+## <a name="configure-the-microsoft-365-support-integration-application"></a>Microsoft 365 destek Tümleştirme Uygulamasını yapılandırma
 
-Microsoft 365 desteği tümleştirme uygulaması, Destek Hizmetleri altında Microsoft 365 ayarlanır.
+Microsoft 365 destek tümleştirme uygulaması Microsoft 365 desteği altında ayarlanabilir.
 
-Bu adımlar, ServiceNow örneğiniz ve destek hizmetleriniz arasında tümleştirmeyi Microsoft 365 gerekir.
+ServiceNow örneğinizle Microsoft 365 desteği arasındaki tümleştirmeyi ayarlamak için bu adımlar gereklidir.
 
-1. \[ServiceNow Yönetici\] Desteği tümleştirmeyi destekleme **Microsoft 365 kapsamını değiştirme**.
+1. \[ServiceNow Yönetici\] Kapsamı **Microsoft 365 destek tümleştirmesine** geçin.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image9.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image9.png" alt-text="Grafik kullanıcı arabirimi, tablo Açıklaması otomatik olarak oluşturulur":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image9.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image9.png" alt-text="Grafik kullanıcı arabirimi, tablo Açıklaması otomatik olarak oluşturuldu":::
 
-1. \[ServiceNow Yönetici\] Tümleştirme iş **Microsoft 365 için Destek &gt; Kurulumu'ne** gidin.
+1. \[ServiceNow Yönetici\] Tümleştirme iş akışını açmak için **Microsoft 365 Destek &gt; Kurulumu'na** gidin.
 
     > [!NOTE]
-    > 'xmiomsm365assis\_\_\_' kapsamından "'oauthentity\_' hatasına karşı okuma işlemi tablonun çapraz kapsam erişim ilkesinden dolayı reddedildi" hatasını görüyorsanız, bunun nedeni tablo erişim ilkenizdir. Tablo kimlik doğrulaması **için Tüm uygulama kapsamları &gt; Okunabilir'in** işaretli olduğundan emin\_ olun.
+    > "'x\_mioms\_m365\_assis' kapsamındaki 'oauth\_varlığına karşı okuma işlemi' tablonun kapsamlar arası erişim ilkesi nedeniyle reddedildi" hatasını görürseniz, bunun nedeni tablo erişim ilkenizdir. Tablo oauth\_varlığı için **Tüm uygulama kapsamları &gt; Okunabilir'in** işaretli olduğundan emin olmanız gerekir.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image10.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image10.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturulur":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image10.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image10.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturuldu":::
 
-1. \[ServiceNow Admin Select\] **Agree** to continue.
+1. \[ServiceNow Yönetici\] Devam etmek için **Kabul Et'i** seçin.
 
-    :::image type="content" source="../../media/ServiceNow-guide/snowbasic-1.png" lightbox="../../media/ServiceNow-guide/snowbasic-1.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturulur":::
+    :::image type="content" source="../../media/ServiceNow-guide/snowbasic-1.png" lightbox="../../media/ServiceNow-guide/snowbasic-1.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturuldu":::
 
-1. \[ServiceNow Yönetici\] Ortamı ve kurulum türünü yapılandır.
+1. \[ServiceNow Yönetici\] Ortamı ve kurulum türünü yapılandırın.
 
-    Bu yükleme bir test ortamında ise, Bu bir test ortamıdır seçeneğini belirtin. Kurulum ve tüm testlerinizi daha sonra tamamlandıktan sonra bu seçeneği hızla devre dışı abileceksiniz.
-    Örneğin, gelen bağlantılar için Temel Kimlik Doğrulamasına izin verdiyse Evet'i seçin, aksi takdirde lütfen Gelişmiş Kurulum ve Güvenlik [AAD.](servicenow-aad-oauth-token.md) :::image type="content" source="../../media/ServiceNow-guide/snowbasic-2.png" lightbox="../../media/ServiceNow-guide/snowbasic-2.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturulur":::
+    Bu yükleme bir test ortamındaysa Bu bir test ortamıdır seçeneğini belirleyin. Kurulumdan sonra ve tüm testleriniz daha sonra tamamlandıktan sonra bu seçeneği hızla devre dışı bırakabileceksiniz.
+    Örneğiniz gelen bağlantılar için Temel Kimlik Doğrulaması'na izin veriyorsa Evet'i seçin, aksi takdirde lütfen [AAD ile Gelişmiş Kurulum'a](servicenow-aad-oauth-token.md) bakın. :::image type="content" source="../../media/ServiceNow-guide/snowbasic-2.png" lightbox="../../media/ServiceNow-guide/snowbasic-2.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturuldu":::
 
-1. \[ServiceNow YöneticiDiyata\] kiracı Microsoft 365 etkinızı girin.
+1. \[ServiceNow Yönetici\] Microsoft 365 kiracı etki alanınızı girin.
 
-    :::image type="content" source="../../media/ServiceNow-guide/snowbasic-3.png" lightbox="../../media/ServiceNow-guide/snowbasic-3.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturulur":::
+    :::image type="content" source="../../media/ServiceNow-guide/snowbasic-3.png" lightbox="../../media/ServiceNow-guide/snowbasic-3.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturuldu":::
 
-1. \[ServiceNow Yönetici\] Giden ayarlarını yapılandır.
-    1. Azure Active Directory (AAD) uygulamasını kaydettirin.
-    1. Önkoşullar bölümündeki yönergeleri tamamladıktan sonra Bitti'ye **tıklayın**. Aksi takdirde, sihirbazda gerekli uygulama kaydını oluşturmak için sihirbazda verilen AAD.
-    :::image type="content" source="../../media/ServiceNow-guide/snowbasic-4.png" lightbox="../../media/ServiceNow-guide/snowbasic-4.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturulur":::
+1. \[ServiceNow Yönetici\] Giden ayarlarını yapılandırın.
+    1. Azure Active Directory (AAD) Uygulamasını kaydedin.
+    1. Önkoşullar bölümündeki yönergeleri tamamladıktan sonra **Bitti'ye** tıklayın. Aksi takdirde, AAD'de gerekli uygulama kaydını oluşturmak için sihirbazdaki yönergeleri izleyin.
+    :::image type="content" source="../../media/ServiceNow-guide/snowbasic-4.png" lightbox="../../media/ServiceNow-guide/snowbasic-4.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturuldu":::
 
-    1. ServiceNow OAuth Uygulamasını kaydettirin.
-    1. Önkoşullar bölümündeki yönergeleri tamamladıktan sonra, yeni oluşturulan OAuth uygulaması kaydını seçin ve Sonraki'ye tıklayın. Aksi takdirde, ServiceNow'da varlık oluşturmak için yönergeleri izleyin ve ardından yeni uygulama kaydını seçin.
-    :::image type="content" source="../../media/ServiceNow-guide/snowbasic-5.png" lightbox="../../media/ServiceNow-guide/snowbasic-5.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturulur":::
+    1. ServiceNow OAuth Uygulamasını kaydedin.
+    1. Önkoşullar bölümündeki yönergeleri tamamladıktan sonra, yeni oluşturulan OAuth uygulama kaydını seçin ve İleri'ye tıklayın. Aksi takdirde, ServiceNow'da varlığı oluşturmak için yönergeleri izleyin ve ardından yeni uygulama kaydını seçin.
+    :::image type="content" source="../../media/ServiceNow-guide/snowbasic-5.png" lightbox="../../media/ServiceNow-guide/snowbasic-5.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturuldu":::
 
-1. \[ServiceNow Yönetici\] Gelen ayarlarını yapılandır.
-    1. Gelen OAuth API uç noktasını yapılandırma.
-    1. Önkoşullar bölümündeki yönergeleri tamamladıktan sonra, yeni oluşturulan OAuth uygulaması kaydını seçin ve Bitti'ye tıklayın. Aksi takdirde, yönergeleri izleyerek yeni REST uç noktası kaydını seçin.
+1. \[ServiceNow Yönetici\] Gelen ayarlarını yapılandırın.
+    1. Gelen OAuth API'sinin uç noktasını yapılandırın.
+    1. Önkoşullar bölümündeki yönergeleri tamamladıktan sonra, yeni oluşturulan OAuth uygulama kaydını seçin ve Bitti'ye tıklayın. Aksi takdirde, içindeki varlığı oluşturmak için yönergeleri izleyin ve ardından yeni REST uç nokta kaydını seçin.
      
-    :::image type="content" source="../../media/ServiceNow-guide/snowbasic-6.png" lightbox="../../media/ServiceNow-guide/snowbasic-6.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturulur":::
+    :::image type="content" source="../../media/ServiceNow-guide/snowbasic-6.png" lightbox="../../media/ServiceNow-guide/snowbasic-6.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturuldu":::
 
-    1. Tümleştirme Kullanıcısı'nın ayarlarını yapılandırma.
-    1. Önkoşullar bölümündeki yönergeleri tamamladıktan sonra, yeni oluşturulan tümleştirme kullanıcılarını seçin ve Sonraki'ye tıklayın. Aksi takdirde, ServiceNow'da varlık oluşturmak için yönergeleri izleyin ve yeni tümleştirme kullanıcınızı seçin.
+    1. Tümleştirme Kullanıcısını yapılandırın.
+    1. Önkoşullar bölümündeki yönergeleri tamamladıktan sonra, yeni oluşturulan tümleştirme kullanıcısını seçin ve İleri'ye tıklayın. Aksi takdirde, ServiceNow'da varlığı oluşturmak için yönergeleri izleyin ve ardından yeni tümleştirme kullanıcısını seçin.
     
-    :::image type="content" source="../../media/ServiceNow-guide/snowbasic-7.png" lightbox="../../media/ServiceNow-guide/snowbasic-7.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturulur":::
+    :::image type="content" source="../../media/ServiceNow-guide/snowbasic-7.png" lightbox="../../media/ServiceNow-guide/snowbasic-7.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturuldu":::
 
 
-1. \[Microsoft 365 Kiracı Yöneticisi\] Portalda tümleştirmeyi Microsoft 365 Yönetici.
+1. \[Microsoft 365 Kiracı Yönetici\] Microsoft 365 Yönetici Portalında tümleştirmeyi tamamlayın.
 
-    Aşağıdaki bilgilerin doğru olduğunu doğrulayın. Şu anda **Sonraki'yi** SEÇMEYİN.
+    Aşağıdaki bilgilerin doğru olduğunu doğrulayın. Şu anda **İleri'yi** SEÇMEYİN.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image17.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image17.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama Açıklaması otomatik olarak oluşturulur":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image17.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image17.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama Açıklaması otomatik olarak oluşturuldu":::
 
-1. Kuruluş ayarları **Microsoft 365 Yönetici Portal &gt; Ayarlar &gt; Kuruluş profilleri'ne &gt; gidin**.
+1. **Microsoft 365 Yönetici Portal &gt; Ayarları &gt; Kuruluş ayarları &gt; Kuruluş profilleri'ne** gidin.
 
-1. Destek tümleştirme ayarlarını yapılandırma:
+1. Destek tümleştirme ayarlarını yapılandırın:
 
-    Temel bilgiler **sekmesini seçin** > **İç** >  destek **aracıServiceNow'ı** seçin ve Kimlik Doğrulaması Belirteci'ne sorun için Uygulama **Kimliği'ne Giden Uygulama Kimliği değerini** girin. Bu Giden Uygulama Kimliği, 6. Adım'dadır ve Önkoşul [(Temel Kimlik Doğrulama) adım 1'de oluşturulmuş olan Tümleştirmeyi \#Tamamlama'dır](#prerequisites-basic-authentication).
+    **ServiceNow** **dahili destek aracı** >  > **Temel bilgiler** sekmesini seçin ve **Kimlik Doğrulama Belirteci vermek için Uygulama Kimliği** alanına **Giden Uygulama** Kimliği değerini girin. Bu Giden Uygulama Kimliği, 6. Adım – [Önkoşul (Temel Kimlik Doğrulaması) adım 1'de oluşturulan Tümleştirmeyi Tamamlayın.\#](#prerequisites-basic-authentication)
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturulur":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturuldu":::
 
-1. Depolar **sekmesinde** Yeni **depo'ya tıklayın** ve aşağıdaki ayarlarla güncelleştirin:
+1. **Depolar** sekmesinde **Yeni depo'yu** seçin ve aşağıdaki ayarlarla güncelleştirin:
 
-    - Depo: 6 **. Adımdan** Gelen Depo Kimliği değeri – Tümleştirmeyi Tamamlama.
+    - Depo: 6. Adım – Tümleştirmeyi Tamamla'daki **Depo Kimliği** değeri.
 
-    - Uç nokta: **6.** Adımdan Bitiş Noktası değeri – Tümleştirmeyi Tamamlama.
+    - Uç Nokta: 6. Adım – Tümleştirmeyi Tamamla'dan **Uç Nokta** değeri.
 
-    - Kimlik doğrulama türü: Temel Kimlik **Doğrulaması'ı seçin**.
+    - Kimlik doğrulama türü: **Temel Kimlik Doğrulaması'ı** seçin.
 
-    - İstemci Kimliği: **6. Adımdan** itibaren İstemci Kimliği değeri – Tümleştirmeyi tamamlama.
+    - İstemci Kimliği: 6. Adım – Tümleştirmeyi Tamamla'dan **İstemci Kimliği** değeri.
 
-    - İstemci sırrı: Önkoşullar (Temel Kimlik Doğrulama) adım 3'te oluşturulmuş gelen OAuth sağlayıcısının \#sırrı.
+    - İstemci gizli anahtarı: Önkoşullar (Temel Kimlik Doğrulaması) 3. adımda oluşturulan gelen OAuth sağlayıcısının gizli dizisi \#.
 
-    - Yenileme belirteci son kullanma tarihi: 864000
+    - Yenileme belirteci süre sonu: 864000
 
-    - Rest kullanıcı adı: 6 **. Adımdan** itibaren Kullanıcı Adı değeri – Tümleştirmeyi tamamlama.
+    - Rest kullanıcı adı: 6. Adım – Tümleştirmeyi Tamamla'dan **Kullanıcı Adı** değeri.
 
-    - Kalan kullanıcı parolası: Önkoşullar (Temel Kimlik Doğrulama [) adım 4'te oluşturulan tümleştirme kullanıcılarının \#parolası](#prerequisites-basic-authentication).
+    - Kalan kullanıcı parolası: [Önkoşullar (Temel Kimlik Doğrulaması) 4. adımda \#](#prerequisites-basic-authentication)oluşturulan tümleştirme kullanıcısının parolası.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image19.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image19.png" alt-text="Grafik kullanıcı arabirimi, uygulama açıklaması otomatik olarak oluşturulur":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image19.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image19.png" alt-text="Grafik kullanıcı arabirimi, uygulama Açıklaması otomatik olarak oluşturur":::
 
-1. ServiceNow'a geri dönme.
+1. ServiceNow'a Geri dön.
 
-1. **Tümleştirmeyi tamamlamak** için Sonraki'yi seçin.
+1. Tümleştirmeyi tamamlamak için **İleri'yi** seçin.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image20.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image20.png" alt-text="Grafik kullanıcı arabirimi, uygulama, web sitesi Açıklaması otomatik olarak oluşturulur":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image20.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image20.png" alt-text="Grafik kullanıcı arabirimi, uygulama, web sitesi Açıklaması otomatik olarak oluşturuldu":::
 
-1. \[ServiceNow Admin\] Test the connection Önceki adımı tamamladıktan sonra, Bağlantıyı **sına'ya tıklayın**.
-    :::image type="content" source="../../media/ServiceNow-guide/snowbasic-8.png" lightbox="../../media/ServiceNow-guide/snowbasic-8.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturulur":::
-    En Microsoft 365 tümleştirme uygulaması, tümleştirmenin çalıştığını sağlamak için testler yürütür. Yapılandırmayla ilgili bir sorun varsa, neyin düzeltilecek şekilde olması gerektiğini bir hata iletisiyle açıklar. Aksi takdirde, uygulama hazır olur.
-     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-9.png" lightbox="../../media/ServiceNow-guide/snowbasic-9.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturulur":::
+1. \[ServiceNow Yönetici\] Bağlantıyı test edin Önceki adımı tamamladıktan sonra **Bağlantıyı test et'e** tıklayın.
+    :::image type="content" source="../../media/ServiceNow-guide/snowbasic-8.png" lightbox="../../media/ServiceNow-guide/snowbasic-8.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturuldu":::
+    Microsoft 365 destek tümleştirme uygulaması, tümleştirmenin çalıştığından emin olmak için testler yürütür. Yapılandırmayla ilgili bir sorun varsa, nelerin düzeltilmesi gerektiğini açıklayan bir hata iletisi görüntülenir. Aksi takdirde uygulama hazırdır.
+     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-9.png" lightbox="../../media/ServiceNow-guide/snowbasic-9.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama, e-posta Açıklaması otomatik olarak oluşturuldu":::
 
-1. \[ServiceNow Yönetici\] Var olan bir kullanıcı için Microsoft desteği tümleştirmesini etkinleştirin.
+1. \[ServiceNow Yönetici\] Var olan bir kullanıcı için Microsoft destek tümleştirmesini etkinleştirin.
 
-    Microsoft 365 rollerinden biri olan kullanıcı için destek tümleştirmesi etkinleştirilmiştir:
+    Microsoft 365 destek tümleştirmesi, şu rollerden birine sahip kullanıcı için etkinleştirilir:
 
-    - xmiomsm365assis.insightsuser\_\_\_\_
+    - x\_mioms\_m365\_assis.insights\_kullanıcısı
 
-    - xmiomsm365assis.administrator\_\_\_
+    - x\_mioms\_m365\_assis.administrator
 
-1. \[İsteğE\] BAĞLı [Role sahip x_mioms_m365_assis.administrator bağlantısı] Hesabı Microsoft 365 Yönetici.
+1. \[İSTEĞE BAĞLI\] [rol x_mioms_m365_assis.administrator bağlantısına sahip kullanıcı] Microsoft 365 Yönetici hesabı bağlayın.
 
-    Herhangi bir kullanıcı x_mioms_m365_assis.administrator rolüne sahipse ve bir Microsoft 365 destek vakasını yönetmek için farklı Microsoft 365 hesapları kullanıyorsa, bu kullanıcının Microsoft 365 yönetici e-postasını ayarlamak için Microsoft 365 > Bağlantı Hesabı Microsoft 365 e gitmeleri gerekir.
+    Herhangi bir kullanıcı x_mioms_m365_assis.administrator rolüne sahipse ve bir Microsoft 365 destek olayını yönetmek için farklı Microsoft 365 hesapları kullanıyorsa, Microsoft 365 yönetici e-postasını ayarlamak için Microsoft 365 destek > Bağlantı Hesabı'na gitmesi gerekir.
     
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama Açıklaması otomatik olarak oluşturulur":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama Açıklaması otomatik olarak oluşturuldu":::

@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: seemg, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -31,12 +32,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Office 365 kaydolma işlemine geçmeden önce Office programlarının en son sürümleri hakkında bilmeniz gerekenleri anlayın.
 ms.date: 03/17/2021
-ms.openlocfilehash: f3749dd8f97e2304173f5b47ed377fcfbb9c2d7a
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 455cb56535b3375547a0e408f6d338f4b0b49767
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662948"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191573"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Kaydolma - Yönetici Yardımı
 
@@ -97,7 +98,7 @@ Denemenizi iptal etmeniz gerekmez. Deneme aboneliğini satın almazsanız, denem
 
   - **Ülke**, hizmetin kullanılacağı ülkedir. **Kayıt işlemi** sırasında bile ülkeyi daha sonra değiştiremezsiniz; kaydolma sihirbazını yeniden başlatmanız gerekir.
 
-  - **E-posta** ve **telefon numarası**, aboneliğiniz hakkında gerektiğinde sizinle bağlantı kurabilmemiz için gereklidir. Örneğin, parolanızı unutursanız bu bilgileri kullanarak size geçici bir parola gönderebiliriz. Ayrıca, fatura bilgilerinizi de belirttiğiniz e-posta adresine göndeririz.
+  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
 
     > [!NOTE]
     > Buraya girdiğiniz e-posta adresi, Microsoft 365 e-posta adresinizden farklıdır (aşağıda oturum açma adınız). Fatura bilgilerinizi de bu adrese gönderdiğimizden, örneğin iş e-postası almaya uygun bir e-posta adresi kullanmanızı öneririz.

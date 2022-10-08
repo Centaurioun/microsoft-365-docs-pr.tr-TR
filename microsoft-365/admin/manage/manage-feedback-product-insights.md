@@ -7,9 +7,10 @@ author: Kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 search.appverid:
@@ -17,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft ürünleri ve hizmetleri hakkında ne hissettiklerini görmek için son kullanıcılarınızın Net promoter puanlarını (NPS) kullanın.
-ms.openlocfilehash: c7afd214359922c7946e3cb972ec6aced90857e0
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 228be483bf69f13573bbeb61f41a127d93a7de7d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66696216"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68207015"
 ---
 # <a name="microsoft-product-nps-feedback-and-insights-for-your-organization"></a>Kuruluşunuz için Microsoft ürünü NPS geri bildirimi ve içgörüleri
 

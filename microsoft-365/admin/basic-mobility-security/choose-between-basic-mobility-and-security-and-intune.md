@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -18,13 +19,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: Temel Mobilite ve Güvenlik Microsoft 365 planlarının bir parçasıdır, Microsoft Intune ise belirli Microsoft 365 planlara dahil olan tek başına bir üründür.
-ms.openlocfilehash: 01d2717aa0368e3d1dc5ed17f3adfd6313880dfe
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+description: Temel Mobilite ve Güvenlik, Microsoft 365 planlarının bir parçasıdır, Microsoft Intune ise belirli Microsoft 365 planlarıyla birlikte gelen tek başına bir üründür.
+ms.openlocfilehash: 9d45209ac45aeddb05ae7524683c32e74ac35132
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636118"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191441"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Temel Mobilite ve Güvenlik veya Intune arasında seçim yapma
 
@@ -43,7 +44,7 @@ Temel Mobilite ve Güvenlik ve Intune, aşağıdaki tabloda açıklanan çeşitl
 |Office 365 E3 |Evet|Hayır|
 |Office 365 E5 |Evet|Hayır|
 |Microsoft 365 Business Premium |Evet|Evet|
-|Microsoft 365 İlk Satır 3 |Evet|Evet|
+|Microsoft 365 Birinci Satır 3 |Evet|Evet|
 |Microsoft 365 Kurumsal E3 |Evet|Evet|
 |Microsoft 365 Kurumsal E5 |Evet|Evet|
 |A1 Microsoft 365 Eğitim |Evet|Evet|
@@ -67,11 +68,11 @@ Microsoft Intune ve yerleşik Temel Mobilite ve Güvenlik, kuruluşunuzdaki mobi
 
 | Özellik alanı | Öne çıkan özellikler | Temel Hareketlilik ve Güvenlik | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
-|Cihaz türleri|Farklı işletim sistemi platformlarını ve ana yönetim modu değişkenlerini yönetme. |Windows<br/>iOS<br/>Android<br/>samsung KNOX Android<br/>|Windows<br/>iOS<br/>Android<br/>samsung KNOX Android<br/>mac OS, iPad işletim sistemi|
-|Cihaz uyumluluğu|Cihaz düzeyinde PIN kilidi ve jailbreak algılama gibi güvenlik ilkelerini ayarlayın ve yönetin. |Android cihazlarla ilgili sınırlamalar. [Ayrıntılara](capabilities.md) bakın. |Evet|
-|Cihaz uyumluluğuna göre koşullu erişim |Uyumsuz cihazların buluttan şirket e-postalarına ve verilerine erişmesini önleyin. |Windows 10 desteklenmez.<br/>Exchange Online, SharePoint Online ve Outlook erişimi denetlemeyle sınırlıdır. |Evet |
+|Cihaz türleri|Farklı işletim sistemi platformlarını ve ana yönetim modu değişkenlerini yönetme. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS, iPad OS|
+|Cihaz uyumluluğu|Cihaz düzeyinde PIN kilidi ve jailbreak algılama gibi güvenlik ilkelerini ayarlayın ve yönetin. |Android cihazlarda sınırlamalar. [Ayrıntılara](capabilities.md) bakın. |Evet|
+|Cihaz uyumluluğuna göre koşullu erişim |Uyumsuz cihazların buluttan şirket e-postalarına ve verilerine erişmesini önleyin. |Windows 10 desteklenmez.<br/>Exchange Online, SharePoint Online ve Outlook'a erişimi denetlemeyle sınırlıdır. |Evet |
 |Cihaz yapılandırması  |Cihaz ayarlarını yapılandırma (örneğin, kamerayı devre dışı bırakma)|Sınırlı ayar kümesi.|Evet|
-|E-posta profilleri  |Cihazda yerel bir e-posta profili sağlayın. |Evet|Evet|
+|profilleri Email  |Cihazda yerel bir e-posta profili sağlayın. |Evet|Evet|
 |WiFi profilleri |Cihazda yerel bir WiFi profili sağlayın. |Hayır|Evet|
 |VPN profilleri |Cihazda yerel bir VPN profili sağlayın. |Hayır|Evet|
 |Mobil uygulama yönetimi  |dahili iş kolu uygulamalarınızı ve uygulama mağazalarından kullanıcılara dağıtın. |Hayır|Evet|
@@ -79,7 +80,7 @@ Microsoft Intune ve yerleşik Temel Mobilite ve Güvenlik, kuruluşunuzdaki mobi
 |Yönetilen tarayıcı  |Edge uygulamasını kullanarak daha güvenli web'e gözatmayı etkinleştirin. |Hayır|Evet|
 |Sıfır dokunma kayıt programı (AutoPilot) |Şirkete ait çok sayıda cihazı kaydederken kullanıcı kurulumunu basitleştirin. |Hayır|Evet|
 
-Yukarıdaki tabloda listelenen özelliklere ek olarak, Basic Mobility ve Security ve Intune her ikisi de İnternet üzerinden cihazlara komut gönderen bir dizi uzak eylem içerir. Örneğin, kişisel verileri yerinde bırakırken çalışanın cihazından Office verileri kaldırabilir (devre dışı bırakabilir), bir çalışanın cihazından Office uygulamaları kaldırabilir (temizleme) veya cihazı fabrika ayarlarına sıfırlayabilirsiniz (tam silme).
+Yukarıdaki tabloda listelenen özelliklere ek olarak, Basic Mobility ve Security ve Intune her ikisi de İnternet üzerinden cihazlara komut gönderen bir dizi uzak eylem içerir. Örneğin, kişisel verileri yerinde bırakırken bir çalışanın cihazından Office verilerini kaldırabilir (devre dışı bırakabilir), Bir çalışanın cihazından Office uygulamalarını kaldırabilir (temizleme) veya cihazı fabrika ayarlarına sıfırlayabilirsiniz (tam temizleme).
 
 Temel Mobilite ve Güvenlik uzaktan eylemleri devre dışı bırakma, silme ve tam silme işlemlerini içerir. Temel Mobilite ve Güvenlik eylemleri hakkında daha fazla bilgi için bkz. [Temel Mobilite ve Güvenlik özellikleri](capabilities.md).
 
@@ -97,9 +98,9 @@ Intune ile aşağıdaki eylemlere sahipsiniz:
 - [Uzaktan kilitleme](/mem/intune/remote-actions/device-remote-lock)
 - [Cihazı yeniden adlandırma](/mem/intune/remote-actions/device-rename)
 - [Geçiş kodunu sıfırlama](/mem/intune/remote-actions/device-passcode-reset) [Yeniden Başlatma](/mem/intune/remote-actions/device-restart) (yalnızca Windows)
-- [güncelleştirme Windows Defender Güvenlik Bilgileri](https://www.microsoft.com/en-us/wdsi/defenderupdates) (yalnızca Windows)
-- [PIN sıfırlamayı Windows 10](/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset) (yalnızca Windows)
-- [Özel bildirimler gönderme](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device) (Android, iOS iPad işletim sistemi)
+- [Güncelleştirme Windows Defender Güvenlik Bilgileri](https://www.microsoft.com/en-us/wdsi/defenderupdates) (yalnızca Windows)
+- [Windows 10 PIN sıfırlama](/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset) (yalnızca Windows)
+- [Özel bildirimler gönderme](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device) (Android, iOS, iPad OS)
 - [Cihazı eşitleme](/mem/intune/remote-actions/device-sync)
 
 Intune eylemleri hakkında daha fazla bilgi [için Microsoft Intune belgelerine bakın](/mem/intune/).

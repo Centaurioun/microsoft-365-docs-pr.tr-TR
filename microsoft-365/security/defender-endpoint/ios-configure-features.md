@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 66abe1f492ee5b79b1ee1ec8bff0942eacb5d4c2
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: c1d909699cdcbf993351a5232f2b12cbf84b5ca1
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687229"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68222924"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>iOS özelliklerinde Uç Nokta için Microsoft Defender’ı yapılandırın
 
@@ -102,12 +103,12 @@ Bu yapılandırma hem kayıtlı (MDM) cihazlar hem de kayıtlı olmayan (MAM) ci
 >[!NOTE]
 >Uç Nokta için Microsoft Defender'da Ağ Koruması artık genel önizleme aşamasındadır. Aşağıdaki bilgiler, ürünün ticari olarak piyasaya sürülmeden önce önemli ölçüde değiştirilebilen ön sürümüyle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
 
-Uç nokta için Microsoft Defender'da ağ koruması varsayılan olarak etkindir. Yöneticiler, iOS cihazlarında Ağ koruması için MAM desteğini yapılandırmak için aşağıdaki adımları kullanabilir.
+Uç nokta için Microsoft Defender ağ koruması varsayılan olarak etkindir. Yöneticiler, iOS cihazlarında Ağ koruması için MAM desteğini yapılandırmak için aşağıdaki adımları kullanabilir.
 
 1. Microsoft Endpoint Manager Yönetici'da Uygulamalar > Uygulama yapılandırma ilkeleri'ne gidin. Yeni bir Uygulama yapılandırma ilkesi oluşturun.
    :::image type="content" source="images/addiosconfig.png" alt-text="Yapılandırma ilkesi ekleyin." lightbox="images/addiosconfig.png":::
 
-2. İlkeyi benzersiz olarak tanımlamak için bir ad ve açıklama sağlayın. Ardından 'Genel uygulamaları seç'e tıklayın ve Platform iOS/IPadOS için 'Microsoft Defender'ı seçin :::image type="content" source="images/nameiosconfig.png" alt-text="Yapılandırmayı adlandırın." lightbox="images/nameiosconfig.png":::
+2. İlkeyi benzersiz olarak tanımlamak için bir ad ve açıklama sağlayın. Ardından 'Genel uygulamaları seç'e tıklayın ve Platform iOS/IPadOS için 'Microsoft Defender' öğesini seçin :::image type="content" source="images/nameiosconfig.png" alt-text="Yapılandırmayı adlandırın." lightbox="images/nameiosconfig.png":::
 
 3. Ayarlar sayfasında, Ağ Koruması'nı devre dışı bırakmak için anahtar olarak 'DefenderNetworkProtectionEnable' değerini ve 'false' olarak değerini ekleyin. (Ağ koruması varsayılan olarak etkindir) :::image type="content" source="images/addiosconfigvalue.png" alt-text="Yapılandırma değeri ekleyin." lightbox="images/addiosconfigvalue.png":::
 

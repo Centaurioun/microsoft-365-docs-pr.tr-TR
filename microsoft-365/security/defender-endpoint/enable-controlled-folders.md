@@ -14,15 +14,17 @@ ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.date: ''
 search.appverid: met150
-ms.openlocfilehash: c78b1af1166af73bfec05928cd9ee9982dd4f9f1
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: cab2e6b6031f91dfa21de44253f06ab7e1d58ddc
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694931"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68207434"
 ---
 # <a name="enable-controlled-folder-access"></a>Denetimli klasör erişimini etkinleştirin
 
@@ -57,7 +59,7 @@ Yerel yönetici listesi birleştirmeyi devre dışı bırakmayan grup ilkesi aya
 - Microsoft Defender Virüsten Koruma **Listeler için yerel yönetici birleştirme davranışını yapılandırma**
 - System Center Endpoint Protection **Kullanıcıların dışlamalar ve geçersiz kılmalar eklemesine izin ver**
 
-Yerel liste birleştirmeyi devre dışı bırakma hakkında daha fazla bilgi için bkz. [Kullanıcıların Microsoft Defender Virüsten Koruma ilkesi ayarlarını yerel olarak değiştirmesini engelleme veya izin verme](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus).
+Yerel liste birleştirmeyi devre dışı bırakma hakkında daha fazla bilgi için bkz. [Virüsten Koruma ilkesi ayarlarını Microsoft Defender kullanıcıların yerel olarak değiştirmesini engelleme veya izin verme](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus).
 
 ## <a name="windows-security-app"></a>Windows Güvenliği uygulaması
 
@@ -126,7 +128,7 @@ Uygulamaların korumalı klasörlerde değişiklik yapmasına izin vermek için 
 
 2. **Grup İlkesi Yönetimi Düzenleyicisi**'nde **Bilgisayar yapılandırması**'na gidin ve **Yönetim şablonları**'nı seçin.
 
-3. **Ağacı Microsoft Defender Virüsten Koruma > Windows Defender Exploit Guard > Denetimli klasör erişimi > Windows bileşenlerine** genişletin.
+3. Ağacı **Windows bileşenleri olarak genişletin > Microsoft Defender Virüsten Koruma > Windows Defender Exploit Guard > Denetimli klasör erişimi**.
 
 4. **Denetimli klasör erişimini yapılandır** ayarına çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. Seçenekler bölümünde aşağıdaki seçeneklerden birini belirtmeniz gerekir:
    - **Etkinleştir** - Kötü amaçlı ve şüpheli uygulamaların korumalı klasörlerdeki dosyalarda değişiklik yapmasına izin verilmez. Windows olay günlüğünde bir bildirim sağlanır.

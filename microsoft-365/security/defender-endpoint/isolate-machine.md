@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 727389e9d6b1d21662e7ca0b8a1753fa242ec56e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ea7c171a3c9c8f050b647b753addeee404a3bf94
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704688"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68222148"
 ---
 # <a name="isolate-machine-api"></a>Makine API'lerini yalıtma
 
@@ -54,7 +56,7 @@ Bir cihazı dış ağa erişmeye karşı yalıtıyor.
 >
 > - tam yalıtım, Windows 10, sürüm 1703 ve Windows 11 cihazlarda kullanılabilir.
 > - Seçmeli yalıtım, Windows 10, sürüm 1709 veya üzeri ve Windows 11 cihazlarda kullanılabilir.
-> - Bir cihazı yalıtırken yalnızca belirli işlemlere ve hedeflere izin verilir. Bu nedenle, tam VPN tünelinin arkasındaki cihazlar, cihaz yalıtıldıktan sonra Uç Nokta için Microsoft Defender bulut hizmetine erişemez. Uç Nokta için Microsoft Defender ve Microsoft Defender Virüsten Koruma bulut tabanlı korumayla ilgili trafik için bölünmüş tünel VPN kullanmanızı öneririz.
+> - Bir cihazı yalıtırken yalnızca belirli işlemlere ve hedeflere izin verilir. Bu nedenle, tam VPN tünelinin arkasındaki cihazlar, cihaz yalıtıldıktan sonra Uç Nokta için Microsoft Defender bulut hizmetine erişemez. Uç Nokta için Microsoft Defender ve Microsoft Defender Virüsten koruma ile ilgili trafik için bölünmüş tünel VPN kullanmanızı öneririz.
 
 ## <a name="permissions"></a>İzinler
 
@@ -70,6 +72,8 @@ Temsilci (iş veya okul hesabı)|Machine.Isolate|'Makineyi yalıt'
 >
 > - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Etkin düzeltme eylemleri' (Daha fazla bilgi için bkz [. Rolleri oluşturma ve yönetme](user-roles.md) )
 > - Kullanıcının cihaz grubu ayarlarına göre cihaza erişimi olmalıdır (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md) )
+>
+> Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir. 
 
 ## <a name="http-request"></a>HTTP isteği
 

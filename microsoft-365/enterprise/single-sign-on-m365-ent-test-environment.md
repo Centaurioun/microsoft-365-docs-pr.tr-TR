@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
@@ -18,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Özet: Microsoft 365 test ortamınız için Sorunsuz Çoklu Oturum Açma Azure AD yapılandırın ve test edin.'
-ms.openlocfilehash: 3c9445fb9f4c9f77f8b3a6b048bfc3948ac8a6ee
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 47fd4209a271875a1ae046a7315eda5ada6b7edf
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67669925"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68190935"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Microsoft 365 test ortamınız için Sorunsuz Çoklu Oturum Açma Azure AD
 

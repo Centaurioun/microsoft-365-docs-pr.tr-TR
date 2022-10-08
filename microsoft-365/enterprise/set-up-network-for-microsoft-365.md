@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 f1.keywords:
@@ -20,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Ağ bağlantısına genel bakış ve uç noktaların listesi de dahil olmak üzere Ağınızı Microsoft 365 için ayarlamanıza yardımcı olacak bilgiler içeren makalelerin bağlantılarını bulun.
-ms.openlocfilehash: c15935d2b3801bb072c2fdf189726545fa6700ce
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 64b8a73d3e069f095b4f9615151920f152b94325
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670873"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191903"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Microsoft 365 için ağınızı ayarlama
 

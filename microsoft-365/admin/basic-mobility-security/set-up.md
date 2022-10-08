@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Bir cihazı uzaktan silme gibi eylemler gerçekleştirerek kullanıcılarınızın mobil cihazlarının güvenliğini sağlamak ve yönetmek için Basic Mobility ve Security'yi ayarlayın.
-ms.openlocfilehash: 0146378e199c9ac805d8eeaafba59598dbc70f6c
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 73271d92996be6b2d29406f2a3738db050751860
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660783"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68207060"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Temel Hareketlilik ve Güvenlik'i ayarlama
 

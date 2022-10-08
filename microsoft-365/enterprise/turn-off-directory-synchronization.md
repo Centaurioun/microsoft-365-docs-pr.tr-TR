@@ -13,6 +13,7 @@ ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:
@@ -21,12 +22,12 @@ search.appverid:
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
 description: Bu makalede, Microsoft 365 için dizin eşitlemesini kapatmak için PowerShell kullanma hakkında bilgi bulabilirsiniz.
-ms.openlocfilehash: 90c4fb95aade8752f5be53db0163087b3a4f1d71
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 32609aafa42ece651064f4ea0b772b15409ea4ff
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671511"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191771"
 ---
 # <a name="turn-off-directory-synchronization-for-microsoft-365"></a>Microsoft 365 için dizin eşitlemeyi kapatma
 Dizin eşitlemesini kapatmak ve eşitlenen kullanıcılarınızı yalnızca buluta dönüştürmek için PowerShell'i kullanabilirsiniz. Ancak, sorun giderme adımı olarak dizin eşitlemesini kapatmanız önerilmez. Dizin eşitleme sorunlarını giderme konusunda yardıma ihtiyacınız varsa [Microsoft 365 için dizin eşitleme sorunlarını giderme](fix-problems-with-directory-synchronization.md) makalesine bakın. 

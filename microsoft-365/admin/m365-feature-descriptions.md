@@ -7,19 +7,20 @@ audience: ITPro
 ms.topic: reference
 f1_keywords:
 - microsoft-365-and-office-365-general-information
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.custom:
 - Adm_ServiceDesc
 - Adm_ServiceDesc_top
+ms.collection: scotvorg
 ms.assetid: 721676a0-5108-488e-ae0c-7316617d0006
 description: Microsoft 365 özellik açıklamaları için sağlanan bilgiler hakkında bilgi edinin.
-ms.openlocfilehash: b2594cdf869073730c5483f995b3ee13259c579b
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 95951203139fea31859b38faca6829acc70523f0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812040"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68191133"
 ---
 # <a name="microsoft-365-feature-descriptions"></a>Microsoft 365 hizmet açıklamaları
 

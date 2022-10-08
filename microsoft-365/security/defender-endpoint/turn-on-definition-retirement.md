@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender Virüsten Koruma için tanımı kullanımdan kaldırmayı açma
-description: Microsoft Defender Virüsten Koruma için tanımı kullanımdan kaldırmayı açın.
-keywords: Microsoft Defender Virüsten Koruma, kötü amaçlı yazılımdan koruma, güvenlik, defender, tanımı kullanımdan kaldırma
+title: Microsoft Defender Virüsten Koruma için tanımın kullanımdan kaldırılmasını açma
+description: Microsoft Defender Virüsten Koruma için tanımın kullanımdan kaldırılmasını açın.
+keywords: Microsoft Defender Virüsten Koruma, kötü amaçlı yazılımdan koruma, güvenlik, defender, tanımın kullanımdan kaldırılması
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.service: microsoft-365-security
@@ -16,14 +16,16 @@ manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
 ms.topic: article
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 search.appverid: met150
-ms.openlocfilehash: 1401c9b58ee91d51fbf4a37463fb1f75c542d154
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0507707d946ea14be53a12c7e45fc8f9b317e749
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67684287"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68222726"
 ---
 # <a name="turn-on-definition-retirement"></a>Tanım kullanımdan kaldırılmasını aç
 
