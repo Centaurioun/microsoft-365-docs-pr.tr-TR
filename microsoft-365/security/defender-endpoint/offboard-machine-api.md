@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 7ae846f536042b8b1e58635c7f68bab3d7b04352
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 33cbe799c9263fa6d5d403eafb08447f264358ea
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694115"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228020"
 ---
 # <a name="offboard-machine-api"></a>Makine API'sini çıkarma
 
@@ -67,6 +69,8 @@ Temsilci (iş veya okul hesabı)|Machine.Offboard|'Offboard machine'
 >
 > - Kullanıcının 'Genel Yönetici' AD rolüne ihtiyacı var
 > - Kullanıcının cihaz grubu ayarlarına göre cihaza erişimi olmalıdır (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md) )
+>
+> Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.  
 
 ## <a name="http-request"></a>HTTP isteği
 

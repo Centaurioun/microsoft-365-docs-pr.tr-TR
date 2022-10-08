@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Virüsten Koruma koruma özelliklerini etkinleştirme ve yapılandırma
+title: Microsoft Defender Virüsten Koruma özelliklerini etkinleştirme ve yapılandırma
 description: Davranış izleme, buluşsal yöntemler ve makine öğrenmesi gibi Microsoft Defender Virüsten Koruma gerçek zamanlı koruma özelliklerini etkinleştirme ve yapılandırma
 keywords: virüsten koruma, gerçek zamanlı koruma, rtp, makine öğrenmesi, davranış izleme, buluşsal yöntemler
 ms.service: microsoft-365-security
@@ -14,14 +14,16 @@ ms.topic: article
 ms.date: 10/22/2021
 manager: dansimp
 ms.custom: nextgen
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 9d86bdffb1a4560769b9eecac72ca41403894bfb
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: c304ac83f2036f5faaee37a36b7bc8acbe6e321c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67697967"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198912"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a> Grup İlkesinde sürekli korumayı Microsoft Defender Virüsten Koruma ile etkinleştirin ve yapılandırın
 
@@ -56,7 +58,7 @@ Her zaman açık korumayı etkinleştirmek ve yapılandırmak için:
 
 3. Microsoft Defender Virüsten Koruma kötü amaçlı yazılımdan koruma hizmeti ilke ayarını yapılandırın.
 
-   Sağ taraftaki **Microsoft Defender Virüsten Koruma** ayrıntıları bölmesinde Kötü **amaçlı yazılımdan koruma hizmetinin normal öncelikle başlatılmasına izin ver'e** çift tıklayın ve **Etkin** olarak ayarlayın.
+   Sağ taraftaki **Microsoft Defender Virüsten Koruma** ayrıntıları bölmesinde Kötü **amaçlı yazılımdan koruma hizmetinin normal öncelikle başlamasına izin ver'e** çift tıklayın ve **Etkin** olarak ayarlayın.
 
    Sonra **Tamam**’ı seçin.
 
@@ -111,7 +113,7 @@ Ana gerçek zamanlı koruma özelliği varsayılan olarak etkindir, ancak **Yere
    1. Windows 10 veya Windows 11 görev çubuğu arama kutunuza **gpedit** yazın.
    2. **En iyi eşleşme'nin** altında **Grup ilkesini düzenle'yi** seçerek **Yerel grup ilkesi Düzenleyicisi'ni** başlatın.
 
-2. **Yerel grup ilkesi Düzenleyicisi'nin** sol bölmesinde, ağacı **Bilgisayar Yapılandırması** \> **Yönetim Şablonları** \> **Windows Bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Gerçek Zamanlı Koruma** olarak genişletin.
+2. **Yerel grup ilkesi Düzenleyicisi'nin** sol bölmesinde, ağacı **Bilgisayar Yapılandırması** \> **Yönetim Şablonları** \> **Windows Bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Gerçek Zamanlı Koruması** olarak genişletin.
 
 3. Sağdaki **Gerçek Zamanlı Koruma** ayrıntıları bölmesinde **Gerçek zamanlı korumayı kapat'a** çift tıklayın.
 
@@ -134,4 +136,4 @@ Ana gerçek zamanlı koruma özelliği varsayılan olarak etkindir, ancak **Yere
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Davranışsal, buluşsal ve gerçek zamanlı korumayı yapılandırın](configure-protection-features-microsoft-defender-antivirus.md)
-- [Windows 10'da Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10'de virüsten koruma Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Virüsten Koruma ile düzenli hızlı ve tam tarama zamanlama
+title: Microsoft Defender Virüsten Koruma ile düzenli hızlı ve tam taramalar zamanlama
 description: Ne zaman çalıştırılmaları gerektiği ve tam veya hızlı tarama olarak çalıştırılıp çalıştırılmadıkları da dahil olmak üzere yinelenen (zamanlanmış) taramalar ayarlama
 keywords: hızlı tarama, tam tarama, hızlı ve tam, tarama zamanlama, günlük, haftalık, zaman, zamanlanmış, yinelenen, düzenli
 ms.service: microsoft-365-security
@@ -15,14 +15,16 @@ ms.reviewer: pauhijbr, ksarens, mkaminska
 manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 search.appverid: met150
-ms.openlocfilehash: 8335a7da5ebd37e572079ca75570b90dc40a45a7
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 8e3603887a7b4c1713c72bfe4640c63d71f44c1b
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689547"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68219112"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>Zamanlanmış hızlı veya tam Microsoft Defender Virüsten Koruma taramalarını yapılandırma
 
@@ -34,7 +36,7 @@ ms.locfileid: "67689547"
 **Platform**
 - Windows
 
-Her zaman açık, gerçek zamanlı koruma ve [isteğe bağlı virüsten koruma](run-scan-microsoft-defender-antivirus.md) taramalarına ek olarak, düzenli, zamanlanmış virüsten koruma taramaları da ayarlayabilirsiniz. Taramanın türünü, taramanın ne zaman gerçekleşebileceğini ve taramanın [bir koruma güncelleştirmesinin](manage-protection-updates-microsoft-defender-antivirus.md) ardından mı yoksa uç nokta kullanılmadığında mı gerçekleşip gerçekleşmeyeceğini yapılandırabilirsiniz. Gerekirse düzeltme eylemlerini tamamlamak için özel taramalar da ayarlayabilirsiniz.
+Her zaman açık, gerçek zamanlı koruma ve [isteğe bağlı virüsten koruma](run-scan-microsoft-defender-antivirus.md) taramalarına ek olarak, düzenli, zamanlanmış virüsten koruma taramaları da ayarlayabilirsiniz. Taramanın türünü, taramanın ne zaman gerçekleşebileceğini ve taramanın [bir koruma güncelleştirmesinin](manage-protection-updates-microsoft-defender-antivirus.md) ardından mı yoksa bir uç nokta kullanılmadığında mı gerçekleşebileceğini yapılandırabilirsiniz. Gerekirse düzeltme eylemlerini tamamlamak için özel taramalar da ayarlayabilirsiniz.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
@@ -47,7 +49,7 @@ Her zaman açık, gerçek zamanlı koruma ve [isteğe bağlı virüsten koruma](
 
 - Varsayılan olarak, Microsoft Defender Virüsten Koruma zamanlanmış taramaların zamanından 15 dakika önce bir güncelleştirme olup olmadığını denetler. [Bu varsayılanı geçersiz kılmak için koruma güncelleştirmelerinin ne zaman indirileceği ve uygulanacağı zamanlamayı yönetebilirsiniz](manage-protection-update-schedule-microsoft-defender-antivirus.md).
 
-- Bir cihazın fişi takılı değilse ve zamanlanmış bir tam tarama sırasında pille çalışıyorsa, zamanlanan tarama 1002 olayıyla durdurulur ve tarama tamamlanmadan önce durdurulur. Microsoft Defender Virüsten Koruma, bir sonraki zamanlanan zamanda tam tarama çalıştırır.
+- Bir cihazın fişi takılı değilse ve zamanlanmış bir tam tarama sırasında pille çalışıyorsa, zamanlanan tarama 1002 olayıyla durdurulur ve tarama tamamlanmadan önce durdurulur. Microsoft Defender Virüsten Koruma bir sonraki zamanlanan zamanda tam tarama çalıştırır.
 
 ## <a name="quick-scan-full-scan-and-custom-scan"></a>Hızlı tarama, tam tarama ve özel tarama
 
@@ -55,7 +57,7 @@ Zamanlanmış taramaları ayarlarken, taramanın tam tarama mı yoksa hızlı ta
 
 |Hızlı tarama|Tam tarama|Özel tarama|
 |---|---|---|
-|(Önerilen) Hızlı tarama, kayıt defteri anahtarları ve bilinen Windows başlangıç klasörleri gibi sistemle başlamak için kayıtlı kötü amaçlı yazılımların bulunabileceği tüm konumları gözden geçirin. <br/><br/>Her zaman açık, gerçek zamanlı koruma ile birlikte, dosyalar açıldığında ve kapatıldığında incelenir ve bir kullanıcı bir klasöre her gittiği zaman hızlı tarama, sistem ve çekirdek düzeyinde kötü amaçlı yazılımlarla başlayan kötü amaçlı yazılımlara karşı güçlü koruma sağlamaya yardımcı olur.<br/><br/>Çoğu durumda hızlı tarama yeterlidir ve zamanlanmış taramalar için önerilen seçenektir.|Tam tarama, hızlı bir tarama çalıştırarak başlar ve ardından tüm bağlı sabit disklerin ve çıkarılabilir/ağ sürücülerinin sıralı dosya taramasıyla devam eder (tam tarama bunu yapacak şekilde yapılandırılmışsa).<br/><br/>Taranması gereken verilerin miktarına ve türüne bağlı olarak tam taramanın tamamlanması birkaç saat veya gün sürebilir.<br/><br/>Tam tarama tamamlandığında, yeni güvenlik bilgileri kullanılabilir ve yeni güvenlik bilgileriyle başka bir tehdit algılandığından emin olmak için yeni bir tarama gerekir.<br/><br/>Tam taramada yer alan zaman ve kaynaklar nedeniyle, Genel olarak Microsoft tam taramaların zamanlamasını önermez.|Özel tarama, belirttiğiniz dosya ve klasörlerde çalışır. Örneğin, bir USB sürücüsünü veya cihazınızın yerel sürücüsündeki belirli bir klasörü taramayı seçebilirsiniz.|
+|(Önerilen) Hızlı tarama, kayıt defteri anahtarları ve bilinen Windows başlangıç klasörleri gibi sistemle başlamak için kayıtlı kötü amaçlı yazılımların bulunabileceği tüm konumları gözden geçirin. <br/><br/>Her zaman açık, gerçek zamanlı koruma ile birlikte, dosyalar açıldığında ve kapatıldığında incelendiğinde ve bir kullanıcı bir klasöre her gittiğinde hızlı tarama, sistem ve çekirdek düzeyinde kötü amaçlı yazılımlarla başlayan kötü amaçlı yazılımlara karşı güçlü koruma sağlamaya yardımcı olur.<br/><br/>Çoğu durumda hızlı tarama yeterlidir ve zamanlanmış taramalar için önerilen seçenektir.|Tam tarama, hızlı bir tarama çalıştırarak başlar ve ardından tüm bağlı sabit disklerin ve çıkarılabilir/ağ sürücülerinin sıralı dosya taramasıyla devam eder (tam tarama bunu yapacak şekilde yapılandırılmışsa).<br/><br/>Taranması gereken verilerin miktarına ve türüne bağlı olarak tam taramanın tamamlanması birkaç saat veya gün sürebilir.<br/><br/>Tam tarama tamamlandığında, yeni güvenlik bilgileri kullanılabilir ve yeni güvenlik bilgileriyle başka bir tehdit algılandığından emin olmak için yeni bir tarama gerekir.<br/><br/>Tam taramada yer alan zaman ve kaynaklar nedeniyle, Microsoft genel olarak tam tarama zamanlamanızı önermez.|Özel tarama, belirttiğiniz dosya ve klasörlerde çalışır. Örneğin, bir USB sürücüsünü veya cihazınızın yerel sürücüsündeki belirli bir klasörü taramayı seçebilirsiniz.|
 
 > [!NOTE]
 > Varsayılan olarak, hızlı taramalar USB sürücüleri gibi takılı çıkarılabilir cihazlarda çalışır.
@@ -67,11 +69,11 @@ Bir tarama türü seçmek için aşağıdaki tabloyu kullanın.
 
 |Senaryo|Önerilen tarama türü|
 |---|---|
-|Düzenli, zamanlanmış taramalar ayarlamak istiyorsunuz|Hızlı tarama <p> Hızlı tarama işlemi, belleği, profilleri ve cihazdaki belirli konumları denetler. [Her zaman açık gerçek zamanlı koruma](configure-real-time-protection-microsoft-defender-antivirus.md) ile birlikte, hızlı tarama hem sistemle başlayan kötü amaçlı yazılımlarda hem de çekirdek düzeyinde kötü amaçlı yazılımlarda güçlü bir kapsama sağlamaya yardımcı olur. Gerçek zamanlı koruma, dosyalar açıldığında ve kapatıldığında ve bir kullanıcı bir klasöre gittiği zaman dosyaları inceler.|
+|Düzenli, zamanlanmış taramalar ayarlamak istiyorsunuz|Hızlı tarama <p> Hızlı tarama işlemi, belleği, profilleri ve cihazdaki belirli konumları denetler. [Her zaman açık gerçek zamanlı koruma](configure-real-time-protection-microsoft-defender-antivirus.md) ile birlikte, hızlı tarama hem sistemle başlayan kötü amaçlı yazılımlarda hem de çekirdek düzeyinde kötü amaçlı yazılımlarda güçlü bir kapsama sağlamaya yardımcı olur. Gerçek zamanlı koruma, dosyalar açıldığında ve kapatıldığında ve bir kullanıcı bir klasöre her gittiğinde dosyaları inceler.|
 |Kötü amaçlı yazılım gibi tehditler tek bir cihazda algılanıyor|Hızlı tarama <p> Çoğu durumda, hızlı tarama algılanan kötü amaçlı yazılımları yakalar ve temizler.|
 |[İsteğe bağlı tarama](run-scan-microsoft-defender-antivirus.md) çalıştırmak istiyorsunuz|Hızlı tarama|
 |USB sürücüsü gibi taşınabilir bir cihazın kötü amaçlı yazılım içermediğinden emin olmak istiyorsunuz|Özel tarama <p> Özel tarama, belirli konumları, klasörleri veya dosyaları seçmenizi ve hızlı bir tarama çalıştırmanızı sağlar.|
-| Microsoft Defender Virüsten Koruma'yi yeni yüklediniz veya yeniden etkinleştirdiniz | Tam tarama <p>Microsoft Defender Virüsten Koruma'yi etkinleştirdikten veya yükledikten sonra tam tarama çalıştırmak, önbelleğin gelecekteki taramalar için doldurulmalarına yardımcı olur. Tam tarama, cihazdaki mevcut tehditleri algılamaya da yardımcı olabilir. |
+| Virüsten Koruma'Microsoft Defender yeni yüklediniz veya yeniden etkinleştirdiniz | Tam tarama <p>Virüsten Koruma'Microsoft Defender etkinleştirdikten veya yükledikten sonra tam tarama çalıştırmak, önbelleğin gelecekteki taramalar için doldurulmalarına yardımcı olur. Tam tarama, cihazdaki mevcut tehditleri algılamaya da yardımcı olabilir. |
 
 ## <a name="what-else-do-i-need-to-know-about-quick-and-full-scans"></a>Hızlı ve tam taramalar hakkında başka ne bilmem gerekiyor?
 
@@ -79,11 +81,31 @@ Bir tarama türü seçmek için aşağıdaki tabloyu kullanın.
 
 - [Bulut tabanlı koruma](cloud-protection-microsoft-defender-antivirus.md) ile erişim üzerinde koruma, sistemde erişilen tüm dosyaların en son güvenlik bilgileri ve bulut makine öğrenmesi modelleriyle taranmasını sağlamaya yardımcı olur.
 
-- Gerçek zamanlı koruma kötü amaçlı yazılım algıladığında ve etkilenen dosyaların kapsamı başlangıçta belirlenmediğinde, Microsoft Defender Virüsten Koruma düzeltme işleminin bir parçası olarak tam tarama başlatır.
+- Gerçek zamanlı koruma kötü amaçlı yazılım algıladığında ve etkilenen dosyaların kapsamı başlangıçta belirlenmediğinde Microsoft Defender Virüsten Koruma, düzeltme işleminin bir parçası olarak tam tarama başlatır.
 
-- Tam tarama, hızlı tarama gibi diğer taramalar tarafından algılanmayan kötü amaçlı dosyaları algılayabilir. Ancak, tam tarama biraz zaman alabilir ve tamamlamak için değerli sistem kaynaklarını kullanabilir.
+- Tam tarama, hızlı tarama gibi diğer taramalar tarafından algılanan kötü amaçlı dosyaları algılayabilir. Ancak, tam tarama biraz zaman alabilir ve tamamlamak için değerli sistem kaynaklarını kullanabilir.
 
 - Bir cihaz uzun süre çevrimdışı kalırsa, tam taramanın tamamlanması daha uzun sürebilir.
+
+## <a name="scheduled-quick-scan-performance-optimization"></a>Zamanlanmış Hızlı Tarama Performansı İyileştirmesi 
+
+Performans iyileştirmesi olarak Microsoft Defender Virüsten Koruma bazı durumlarda zamanlanmış hızlı taramaları çalıştırmayı atlar. Bu iyileştirme yalnızca bir zamanlama tarafından başlatıldığında hızlı tarama için geçerlidir; [isteğe bağlı virüsten koruma](run-scan-microsoft-defender-antivirus.md) taraması tarafından başlatılan hızlı taramayı etkilemez. Bu iyileştirme, gerekli olmadığında ve korumayı etkilemediğinde hızlı tarama çalıştırmaktan kaçınarak performans düşüşlerini azaltır.
+
+Varsayılan olarak, son yedi gün içinde nitelikli bir hızlı tarama çalıştırıldıysa yeni bir hızlı tarama başlatılmaz. Hızlı tarama, son [Güvenlik Bilgileri Güncelleştirmesi](manage-updates-baselines-microsoft-defender-antivirus.md) yüklendikten sonra gerçekleşirse, Real-Time Koruma bu süre boyunca devre dışı bırakılmadıysa ve makine yeniden başlatıldıysa uygun olarak kabul edilir.  
+
+Bu iyileştirme aşağıdaki koşullar için geçerli değildir: 
+
+- Uç Nokta için Microsoft Defender [Yönetiliyorsa](configuration-management-reference-microsoft-defender-antivirus.md)  
+
+- Microsoft Defender [Uç Nokta Algılama ve Yanıt (EDR)](overview-endpoint-detection-response.md) yüklüyse 
+
+- Bilgisayar son hızlı taramadan sonra yeniden başlatıldıysa
+
+- Uç Nokta için Microsoft Defender Real-Time Koruması son hızlı taramanın ardından devre dışı bırakıldıysa (şu anda devre dışı bırakılıp bırakılmadığı dahil) 
+
+- Son başlatılan hızlı tarama tamamlanmadıysa
+
+Bu iyileştirme, Windows 10 Yıldönümü Güncelleştirmesi (sürüm 1607) ve sonraki tüm Windows sürümlerinin yanı sıra Windows Server 2016 (sürüm 1607) ve sonraki Windows Server sürümleri çalıştıran makineler için geçerlidir, ancak Çekirdek Sunucu yüklemeleri için geçerli değildir.  
 
 > [!TIP]
 > Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:

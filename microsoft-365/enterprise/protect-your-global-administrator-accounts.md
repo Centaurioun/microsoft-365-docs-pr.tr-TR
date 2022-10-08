@@ -9,11 +9,13 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Strat_O365_IP
 - m365initiative-coredeploy
 - m365solution-m365-identity
 - m365solution-scenario
 - zerotrust-solution
+- highpri
 search.appverid:
 - MET150
 - MOE150
@@ -25,12 +27,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Bu makalede, Microsoft 365 kiracınıza ayrıcalıklı erişimi koruma hakkında bilgi sağlanır.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3639ca3ea132c900db38d5dd16278ce756a2cc24
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 8d8141ddda92f23a03cfe77c390b3a7c7b36a464
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671181"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68210316"
 ---
 # <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>Adım 2. Microsoft 365 ayrıcalıklı hesaplarınızı koruma
 

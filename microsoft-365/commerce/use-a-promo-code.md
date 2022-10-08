@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Fiyatı düşürmek için Microsoft 365 aboneliğinize promosyon kodu uygulamayı ve bir hata durumunda promosyon kodu sorunlarını gidermeyi öğrenin.
 ms.date: 03/17/2021
-ms.openlocfilehash: bff75666fc27895c3d4bdf08477aec677ccd927d
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 5f170655359aab2b10089cb67735e2a91409dbba
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489421"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68177536"
 ---
 # <a name="use-your-microsoft-365-for-business-promo-code-to-reduce-the-price"></a>Fiyatı düşürmek için İş için Microsoft 365 promosyon kodunuzu kullanın
 
@@ -45,13 +46,13 @@ Satın alma işleminizi tamamladıktan sonra, promosyon kodunuz tarafından olu�
 İş için Microsoft 365 aboneliklerine yönelik promosyon kodları için aşağıdaki yönergeler geçerlidir.
   
 - **Abonelik başına promosyon kodu sayısı** Aynı siparişte birden fazla aboneliğin promosyon kodunu kullanabilirsiniz, ancak aynı abonelik için birden fazla promosyon kodu kullanamazsınız.
-- **İndirim süresi** Siparişinize uygulandıktan sonra, promosyon kodu indirimi aboneliğinizin süresi boyunca geçerli olur. Aboneliğinizin süresi aydan aya ise, promosyon kodu indirimi kodu girdiğiniz fatura ayının sonuna kadar geçerlidir. Aboneliğinizin süresi yıllık ise (aylık ödeniyor olsa bile), promosyon kodu indirimi kodu girdiğiniz fatura yılının sonuna kadar geçerlidir.
-- **Promosyon kodu lisans sınırları** Bazı promosyon kodlarının üst sınırı vardır. Yalnızca bu üst sınıra kadar lisansta indirim yapılır. Hüküm ve Koşullarına bakarak promosyon kodunuzda bu sınırlamaların olup olmadığını onaylayabilirsiniz.
-- **Promosyon kodu bitiş tarihleri** Promosyon bitiş tarihi, bu kampanya için promosyon kodunun kullanılabileceği son gündür. Satın alma işleminiz tamamlandığında, aboneliğiniz için indirimli fiyat siparişin tüm süresi için geçerlidir.
+- **Length of discount** Once applied to your order, the promo code discount lasts for the length of your subscription's term. If your subscription's term is month-to-month, the promo code discount lasts until the end of the billing month you entered it in. If your subscription's term is yearly (even if it's paid monthly), the promo code discount lasts until the end of the billing year you entered it in.
+- **Promo code license limits** Some promo codes have a maximum level. Only licenses up to that maximum are discounted. You can confirm whether your promo code has these limitations by looking at its Terms and Conditions.
+- **Promo code end dates** The promo end date is the last day a promo code for that campaign can be redeemed. Once your purchase is completed, the discounted price for your subscription applies for the whole term of the order.
 
 ## <a name="troubleshooting-promo-codes"></a>Promosyon kodlarıyla ilgili sorunları giderme
 
-Promosyon kodunuzu girdikten sonra bir hata iletisi alırsanız, bunun birkaç nedeni olabilir. Aşağıdaki listede hata iletilerinin en yaygın nedenleri açıklanır.
+If you receive an error message after you enter your promo code, there may be a number of reasons. The following list describes the most common causes of error messages.
   
 - **Kodu girerken bir yazım hatası yaptınız.** Promosyon kodundaki kısa çizgilere, büyük veya küçük harflere veya özel sembollere dikkat edin. Promosyon kodları tamamen aynı girilmelidir.
 - **Yeni olmayan bir aboneliğe promosyon kodunu uygulamaya çalışıyorsunuz.** Promosyon kodları yeni abonelikler içindir. Zaten etkin olan bir abonelikte kullanmayı deniyorsanız, promosyon kodunuzu uygulama seçeneğini göremezsiniz. Satın alma işlemi tamamladıktan sonra promosyon kodunu uygulamanın yolu yoktur.

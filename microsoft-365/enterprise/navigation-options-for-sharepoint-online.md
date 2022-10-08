@@ -9,6 +9,7 @@ ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 f1.keywords:
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: Bu makalede, SharePoint Online'da SharePoint Yayımlama'nın etkinleştirildiği gezinti seçenekleri siteleri açıklanmaktadır.
-ms.openlocfilehash: d9790be9aa07c2fe8a13404aa0c52662c717ed93
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 7269aab053b234f46387eebdeeeb8096ba49dcad
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67705172"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68210426"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online için gezinti seçenekleri
 
@@ -99,7 +100,7 @@ Gezinti yapısı genellikle sitenin tüm kullanıcıları için tutarlı olduğu
 
 ### <a name="how-to-implement-managed-navigation-and-the-results"></a>Yönetilen gezintiyi ve sonuçları uygulama
 
-yönetilen gezintinin ayrıntıları hakkında Microsoft Docs hakkında birkaç makale vardır. Örneğin, bkz. [SharePoint Server'da yönetilen gezintiye genel bakış](/sharepoint/administration/overview-of-managed-navigation).
+Microsoft Learn'de yönetilen gezintinin ayrıntıları hakkında birkaç makale vardır. Örneğin, bkz. [SharePoint Server'da yönetilen gezintiye genel bakış](/sharepoint/administration/overview-of-managed-navigation).
 
 Yönetilen gezintiyi uygulamak için, sitenin gezinti yapısına karşılık gelen URL'lerle terimler ayarlarsınız. Yönetilen gezinti, çoğu durumda yapısal gezintiyi değiştirmek için el ile de kullanılabilir. Örneğin:
 
@@ -474,7 +475,7 @@ Nesneler daha sonra bir sonuç dizisine konur. Bu dizi, Knockout kullanılarak J
 
 [Yukarıdaki kod](#about-the-javascript-file) aşağıdaki bağımlılıklara sahiptir:
 
-- jQuery - https://jquery.com/
+- Jquery- https://jquery.com/
 - KnockoutJS - https://knockoutjs.com/
 - Linq.js - `https://linqjs.codeplex.com/`veya github.com/neuecc/linq.js
 

@@ -13,13 +13,15 @@ ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 41b76968dbaf868d200ab9841893300a36e80fc6
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.collection:
+- m365-security
+- tier1
+ms.openlocfilehash: 90217023d016e08844898fdd3b43955e4d86be35
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67514267"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228108"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>Uç Nokta için Microsoft Defender Plan 1'i yönetme
 
@@ -39,7 +41,7 @@ Microsoft Defender Virüsten Koruma'nın güncel tutulması, yeni kötü amaçl�
 - Güvenlik bilgileri güncelleştirmeleri
 - Ürün güncelleştirmeleri 
 
-Güvenlik zekanızı ve ürün güncelleştirmelerinizi yönetmek için bkz. [Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama](manage-updates-baselines-microsoft-defender-antivirus.md).
+Güvenlik bilgileri ve ürün güncelleştirmelerinizi yönetmek için bkz[. Virüsten koruma güncelleştirmelerini Microsoft Defender yönetme ve temelleri uygulama](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ## <a name="fine-tune-and-adjust-defender-for-endpoint"></a>Uç Nokta için Defender'da ince ayar yapma ve ayarlama
 

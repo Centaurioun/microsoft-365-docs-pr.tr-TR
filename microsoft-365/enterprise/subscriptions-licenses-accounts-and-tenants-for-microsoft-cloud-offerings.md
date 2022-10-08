@@ -10,6 +10,7 @@ ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
@@ -20,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: Microsoft bulut tekliflerindeki kuruluşların, aboneliklerin, lisansların, kullanıcı hesaplarının ve kiracıların ilişkilerini anlayın.
-ms.openlocfilehash: 9bb46712ba6d5794027915a12aa329dfa9c2d91f
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: d4bef70701919ea6444e8f627315297762e218bb
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67669837"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198217"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Microsoft'un bulut teklifleri için abonelikler, lisanslar, hesaplar ve kiracılar
 

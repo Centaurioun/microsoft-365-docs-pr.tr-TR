@@ -15,14 +15,16 @@ ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 3e98b12ab84729d6263ecf680ff244c93c208e72
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 505acc20e784a5110325f87eb96be656f5ea4e14
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704094"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227954"
 ---
 # <a name="schedule-antivirus-scans-using-group-policy"></a>grup ilkesi kullanarak virüsten koruma taramaları zamanlama
 
@@ -35,7 +37,7 @@ ms.locfileid: "67704094"
 **Platform**
 - Windows
 
-Bu makalede, grup ilkesi kullanarak zamanlanmış taramaların nasıl yapılandırıldığı açıklanır. Taramaları zamanlama ve tarama türleri hakkında daha fazla bilgi edinmek için bkz [. Zamanlanmış hızlı veya tam Microsoft Defender Virüsten Koruma taramalarını yapılandırma](schedule-antivirus-scans.md). 
+Bu makalede, grup ilkesi kullanarak zamanlanmış taramaların nasıl yapılandırıldığı açıklanır. Taramaları zamanlama ve tarama türleri hakkında daha fazla bilgi edinmek için bkz[. Zamanlanmış hızlı veya tam Microsoft Defender Virüsten Koruma taramalarını yapılandırma](schedule-antivirus-scans.md). 
 
 ## <a name="configure-antivirus-scans-using-group-policy"></a>grup ilkesi kullanarak virüsten koruma taramalarını yapılandırma
 

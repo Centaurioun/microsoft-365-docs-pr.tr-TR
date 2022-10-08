@@ -11,16 +11,17 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: admindeeplinkMAC
 description: Microsoft 365 Ağ Bağlantısı Konum Hizmetleri
-ms.openlocfilehash: 68569be7de9924ada4c2323d00630cdf084525e4
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 9900a26441111dc3d2aeb5e589e9a1aa22ed703c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670807"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198305"
 ---
 # <a name="microsoft-365-network-connectivity-location-services"></a>Microsoft 365 Ağ Bağlantısı Konum Hizmetleri
 

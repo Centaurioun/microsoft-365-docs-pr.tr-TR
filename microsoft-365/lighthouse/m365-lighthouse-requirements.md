@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Yönetilen Hizmet Sağlayıcıları (MSP' ler) için Microsoft 365 Lighthouse kullanmak için gereksinimlerin listesini alın.
-ms.openlocfilehash: 8fa936e453c4ae61d92591c2b3320b246cb5bd3b
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 224b5dcb1eb77fac1d582b75a75f10aa527cd247
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599252"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68297760"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse için gereksinimler
 
@@ -36,7 +37,7 @@ Ayrıca, her MSP müşteri kiracısının aşağıdaki gereksinimleri karşılay
 - En az bir Microsoft 365 İş Ekstra, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business veya İş için Microsoft Defender lisansı olmalıdır
 - En fazla 2500 lisanslı kullanıcı olmalıdır
 
- \*Müşterileri Lighthouse'a eklemek için Ayrıntılı Temsilcili Yönetici Ayrıcalıkları (GDAP) ve dolaylı bayi ilişkisi ya da Temsilci Yönetici Ayrıcalıkları (DAP) ilişkisi gerekir. MÜŞTERI kiracısında DAP ve GDAP birlikte varsa, GDAP özellikli güvenlik gruplarındaki MSP teknisyenleri için GDAP izinleri önceliklidir. Yakında yalnızca GDAP ilişkilerine (dolaylı kurumsal bayi ilişkileri olmadan) sahip müşteriler Lighthouse'a eklenecek.
+\*Müşterileri Lighthouse'a eklemek için Ayrıntılı Temsilcili Yönetici Ayrıcalıkları (GDAP veya Temsilci Yönetici Ayrıcalıkları (DAP) ilişkisi gereklidir. Lighthouse'a eklemek için dolaylı kurumsal bayi ilişkisi artık gerekli değildir. MÜŞTERI kiracısında DAP ve GDAP birlikte varsa, GDAP özellikli güvenlik gruplarındaki MSP teknisyenleri için GDAP izinleri önceliklidir.
 
 ## <a name="requirements-for-enabling-device-management"></a>Cihaz yönetimini etkinleştirme gereksinimleri
 
@@ -58,7 +59,7 @@ Daha fazla bilgi için bkz[. Cihazları Microsoft Intune kaydetme](/mem/intune/e
 Microsoft Defender Virüsten Koruma, Windows işletim sisteminin bir parçasıdır ve Windows 10 çalıştıran cihazlarda varsayılan olarak etkindir.
 
 > [!NOTE]
-> Microsoft Defender Virüsten Koruma değil de Microsoft dışı bir virüsten koruma çözümü kullanıyorsanız, Microsoft Defender Virüsten Koruma otomatik olarak devre dışı bırakılır. Microsoft dışı virüsten koruma çözümünü kaldırdığınızda Microsoft Defender Virüsten Koruma, Windows cihazlarınızı tehditlere karşı korumak için otomatik olarak etkinleştirilir.
+> Virüsten Koruma Microsoft Defender değil Microsoft dışı bir virüsten koruma çözümü kullanıyorsanız Microsoft Defender Virüsten Koruma otomatik olarak devre dışı bırakılır. Microsoft dışı virüsten koruma çözümünü kaldırdığınızda, Windows cihazlarınızı tehditlerden korumak için virüsten koruma Microsoft Defender otomatik olarak etkinleştirilir.
 
 ## <a name="related-content"></a>İlgili içerik
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Virüsten Koruma'nın yapılandırılması ve çalıştırılması için PowerShell cmdlet'lerini kullanma
+title: Microsoft Defender Virüsten Koruma'Microsoft Defender yapılandırmak ve çalıştırmak için PowerShell cmdlet'lerini kullanma
 description: Windows 10 ve Windows 11'da Taramalar çalıştırmak, Güvenlik zekasını güncelleştirmek ve Microsoft Defender Virüsten Koruma'da ayarları değiştirmek için PowerShell cmdlet'lerini kullanabilirsiniz.
 keywords: tarama, komut satırı, mpcmdrun, defender
 ms.service: microsoft-365-security
@@ -16,16 +16,18 @@ manager: dansimp
 ms.subservice: mde
 audience: ITPro
 ms.topic: how-to
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 6214a8bdfd3f2d5e3fcd05ac06bc99699bf4b7a8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 217f7e06fa7ded119750611197147bb1610902f6
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691529"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227030"
 ---
-# <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma'nın yapılandırılması ve yönetilmesi için PowerShell cmdlet'lerini kullanma
+# <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma'Microsoft Defender yapılandırmak ve yönetmek için PowerShell cmdlet'lerini kullanma
 
 **Şunlar için geçerlidir:**
 - [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -42,7 +44,7 @@ Cmdlet'lerin, işlevlerinin ve kullanılabilir parametrelerin listesi için [Def
 PowerShell cmdlet'leri en çok, yazılımı yapılandırmak için grafik kullanıcı arabirimine (GUI) güvenmeyen Windows Server ortamlarında kullanışlıdır.
 
 > [!NOTE]
-> PowerShell cmdlet'leri [Microsoft Endpoint Configuration Manager, grup ilkesi](/configmgr) [Yönetim Konsolu](use-group-policy-microsoft-defender-antivirus.md) veya [Microsoft Defender Virüsten Koruma grup ilkesi ADMX şablonları](https://www.microsoft.com/download/101445) gibi tam ağ ilkesi yönetim altyapısının yerine kullanılmamalıdır.
+> PowerShell cmdlet'leri [Microsoft Endpoint Configuration Manager, grup ilkesi](/configmgr) [Yönetim Konsolu](use-group-policy-microsoft-defender-antivirus.md) veya Microsoft Defender [Virüsten Koruma grup ilkesi ADMX şablonları](https://www.microsoft.com/download/101445) gibi tam ağ ilkesi yönetim altyapısının yerine kullanılmamalıdır.
 
 PowerShell ile yapılan değişiklikler, değişikliklerin dağıtıldığı veya yapıldığı uç noktadaki yerel ayarları etkiler. Bu, grup ilkesi, Microsoft Endpoint Configuration Manager veya Microsoft Intune ile ilke dağıtımlarının PowerShell ile yapılan değişikliklerin üzerine yazabileceği anlamına gelir.
 
@@ -80,5 +82,5 @@ Yerel olarak önbelleğe `-online` alınmış yardım almak için parametresini 
 ## <a name="related-topics"></a>İlgili konular
 
 - [Yönetim ve yapılandırma araçları için başvuru konuları](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Windows 10'da Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-in-windows-10.md)
-- [Microsoft Defender Virüsten Koruma Cmdlet'leri](/powershell/module/defender)
+- [Windows 10'de virüsten koruma Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)
+- [virüsten koruma cmdlet'lerini Microsoft Defender](/powershell/module/defender)

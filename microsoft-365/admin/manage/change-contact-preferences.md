@@ -7,48 +7,50 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.custom: AdminSurgePortfolio
+ms.collection:
+- scotvorg
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 ms.assetid: 6f70de1b-a64d-4498-bfbd-be8c83a9c0fc
-description: Kuruluşun iletişim bilgilerini güncelleştirin ve Microsoft 365 ilgili iletişim bilgilerini seçin.
-ms.openlocfilehash: eeda3d78dcc4b33995a78e1dc5763fee07109caa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Kuruluşunuzun iletişim bilgilerini güncelleştirin ve almak istediğiniz Microsoft 365 ürünle ilgili iletişimleri seçin.
+ms.openlocfilehash: 9975cb0d7c0c68ea9619d1ecf1963ba4de0f985e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62973587"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198811"
 ---
 # <a name="change-your-contact-preferences-for-communications-from-microsoft"></a>Microsoft'tan gelen iletişim bilgileri için iletişim tercihlerinizi değiştirme
 
-Kuruluşlarının **iletişim bilgilerini** güncelleştirmek için İletişim tercihleri sayfasını kullanın ve Microsoft 365 ilgili iletişim bilgilerini seçin.
+Kuruluşunuzun iletişim bilgilerini güncelleştirmek için **İletişim tercihleri** sayfasını kullanın ve almak istediğiniz Microsoft 365 ürünle ilgili iletişimleri seçin.
   
-Yönetici [cep telefonu numarası ve e-posta adresinizi değiştirme hakkında bilgi](update-phone-number-and-email-address.md) Microsoft 365 için genel ağ sayfasında yönetici telefon numaranızı ve e-posta adresinizi güncelleştirme makalesini okuyun.
+[Yönetici cep telefonu numaranızı ve e-posta adresinizi değiştirme hakkında bilgi için Microsoft 365'te](update-phone-number-and-email-address.md) yönetici telefon numaranızı ve e-posta adresinizi güncelleştirme makalesini okuyun.
   
 Kuruluşun adı ve adresi, şirketin birincil telefon numarası ve teknik konularla ilgili iletişim bilgileri gibi şirket profil bilgilerini nasıl değiştireceğinizi öğrenmek istiyorsanız bkz. [Kuruluşunuzun adresini, teknik konularla ilgili iletişim bilgilerini ve diğer bilgilerini değiştirme](change-address-contact-and-more.md).
   
 ## <a name="to-update-your-information"></a>Bilgilerinizi güncelleştirmek için
   
-1. Yönetim merkezinde, üst **Ayarlar** Sağ Üst Bilgi simgesini seçin.
+1. Yönetim merkezinde üst bilginin sağ üst kısmındaki **Ayarlar** simgesini seçin.
 
-2. İletişim **tercihleri'ne seçin**.
+2. **Kişi tercihleri'ne tıklayın**.
 
 3. Ürünle ilgili olarak almak istediğiniz iletişim malzemesi türlerini seçin.
 
 4. Bu iletişimleri almak istediğiniz iş telefonu, iş cep telefonu veya iş e-postasını yazın.
-    Bu iletişimleri almak için Microsoft e-posta adresiniz de dahil herhangi bir e-posta adresini kullanabilirsiniz. İletişim tercihleri için e-posta adresi eklemezseniz, alternatif e-posta adresiniz ( **Kişisel Bilgiler** sayfasındaki) kullanılır.
+    Bu iletişimleri almak için Microsoft e-posta adresiniz de dahil olmak üzere herhangi bir e-posta adresini kullanabilirsiniz. İletişim tercihleri için e-posta adresi eklemezseniz, alternatif e-posta adresiniz ( **Kişisel Bilgiler** sayfasındaki) kullanılır.
 
 5. **Kaydet**'i seçin.
   
-Daha Office 365 Kurumsal, Microsoft 365 İş Standart ve Microsoft 365 İş Temel için yönetici olarak ilk kez Microsoft 365 , kullanıcılarınız, ülke veya bölgenize bağlı olarak, ürünle ilgili iletişimleri almak için otomatik olarak oturum açık olabilir.
+Office 365 Kurumsal, Microsoft 365 İş Standart ve Microsoft 365 İş Temel için, kuruluşunuzdaki kullanıcıların ülkesine veya bölgesine bağlı olarak Microsoft 365'e ilk kez yönetici olarak kaydolduğunda, kullanıcılarınız ürünle ilgili iletişimleri almak için otomatik olarak kaydolabilir .
   
 Faturalama ile ilgili soruların yanıtları için:
   
-- [İşletmeler için Microsoft 365 adreslerinizi değiştirme](../../commerce/billing-and-payments/change-your-billing-addresses.md)
+- [İş için Microsoft 365 fatura adreslerinizi değiştirme](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
 - [Ödeme yöntemlerini yönetme](../../commerce/billing-and-payments/manage-payment-methods.md)

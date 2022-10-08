@@ -7,19 +7,21 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
-description: Ülkeniz veya bölgeniz için de destek ile nasıl bağlantı kuracaklarını öğrenin.
+description: Ülkeniz veya bölgeniz için desteğe nasıl başvuracağınızı öğrenin.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fdb700613e622f47a75c0e04f3e17ce7a5efff4b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b9aebeebf7c0bb4365d58908686fc1a480428c85
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62996170"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68210822"
 ---
-# <a name="contact-support-for-saba"></a>Saba için destek ile iletişime geçin
+# <a name="contact-support-for-saba"></a>Saba için desteğe başvurun
 
 [Başka bir ülke veya bölge bulun](../get-help-support.md).
 

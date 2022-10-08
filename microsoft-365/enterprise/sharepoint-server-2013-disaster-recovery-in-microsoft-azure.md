@@ -10,7 +10,9 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -18,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: Bu makalede, şirket içi SharePoint grubunuz için olağanüstü durum kurtarma ortamı oluşturmak üzere Azure'ın nasıl kullanılacağı açıklanmaktadır.
-ms.openlocfilehash: cf02ce13373a20d091e71c5a3b36ae0caa6be1f3
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 8f3e0f41b1201f7a7dd01bba33df2c3d644fe9d2
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67673007"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198261"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure'da SharePoint Server 2013 Olağanüstü Durum Kurtarma
 

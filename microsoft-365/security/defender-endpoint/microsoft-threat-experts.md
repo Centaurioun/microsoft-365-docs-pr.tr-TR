@@ -14,17 +14,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier1
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4f33a3ca0355d661566d9f1d3b95dc1f14bf9c77
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 08ab7a523b13620403931fd0b28e7d51a370ebe1
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688531"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227624"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft Tehdit Uzmanları
 

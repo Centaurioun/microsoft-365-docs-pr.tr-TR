@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Virüsten Koruma koruma güncelleştirmelerini zamanlama
+title: virüsten koruma güncelleştirmelerini Microsoft Defender zamanlama
 description: Koruma güncelleştirmelerinin indirileceği gün, saat ve aralığı zamanlama
 keywords: güncelleştirmeler, güvenlik temelleri, güncelleştirmeleri zamanlama
 ms.service: microsoft-365-security
@@ -15,18 +15,20 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 6222ea1102fd57a9cba3cfca5d4f2f8bc90bd20b
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.collection:
+- m365-security
+- tier2
+ms.openlocfilehash: 433ecbe6bef2b6af770a2572c7878e4ee2aabc42
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521169"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228152"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>Koruma güncelleştirmelerinin indirilme ve kullanılma zamanlamasını yönetin
 
 > [!IMPORTANT]
-> Mart 2022 Microsoft Defender altyapı güncelleştirmesini (**1.1.19100.5**) uygulayan müşteriler yüksek kaynak kullanımıyla (CPU ve/veya bellek) karşılaşmış olabilir. Microsoft, önceki sürümde sunulan hataları gideren bir güncelleştirme (**1.1.19200.5**) yayımladı. Müşterilerin Virüsten Koruma Altyapısı'nın bu yeni altyapı derlemesine (**1.1.19200.5**) güncelleştirmeleri önerilir. Performans sorunlarının tamamen düzeltildiğinden emin olmak için, güncelleştirme uygulandıktan sonra makinelerin yeniden başlatılması önerilir. Daha fazla bilgi için bkz. [Aylık platform ve altyapı sürümleri](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).
+> Mart 2022 Microsoft Defender altyapısı güncelleştirmesini (**1.1.19100.5**) uygulayan müşteriler yüksek kaynak kullanımıyla (CPU ve/veya bellek) karşılaşmış olabilir. Microsoft, önceki sürümde sunulan hataları gideren bir güncelleştirme (**1.1.19200.5**) yayımladı. Müşterilerin Virüsten Koruma Altyapısı'nın bu yeni altyapı derlemesine (**1.1.19200.5**) güncelleştirmeleri önerilir. Performans sorunlarının tamamen düzeltildiğinden emin olmak için, güncelleştirme uygulandıktan sonra makinelerin yeniden başlatılması önerilir. Daha fazla bilgi için bkz. [Aylık platform ve altyapı sürümleri](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).
 
 **Şunlar için geçerlidir:**
 - [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -63,7 +65,7 @@ Ayrıca, her uç noktanın koruma güncelleştirmelerini denetleyebileceği ve i
 ## <a name="use-group-policy-to-schedule-protection-updates"></a>Koruma güncelleştirmelerini zamanlamak için grup ilkesi kullanma
 
 > [!IMPORTANT]
-> Varsayılan olarak, "SignatureScheduleDay" "8" olarak, "SignatureUpdateInterval" ise "0" olarak ayarlandığından Microsoft Defender Virüsten Koruma koruma güncelleştirmelerini zamanlamaz.
+> Varsayılan olarak, "SignatureScheduleDay" "8" olarak, "SignatureUpdateInterval" ise "0" olarak ayarlanır, bu nedenle virüsten koruma güncelleştirmelerini zamanlamaz Microsoft Defender.
 Bu ayarların etkinleştirilmesi bu varsayılanı geçersiz kılar.
 
 1. grup ilkesi yönetim makinenizde [grup ilkesi Yönetim Konsolu'nu](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) açın, yapılandırmak istediğiniz grup ilkesi Nesnesine sağ tıklayın ve **Düzenle'ye** tıklayın.
@@ -90,7 +92,7 @@ Set-MpPreference -SignatureScheduleTime
 Set-MpPreference -SignatureUpdateInterval
 ```
 
-[PowerShell'i Microsoft Defender Virüsten Koruma ile](use-powershell-cmdlets-microsoft-defender-antivirus.md) kullanma hakkında daha fazla bilgi için bkz. Microsoft Defender [Virüsten Koruma ve Defender Virüsten Koruma cmdlet'lerini](/powershell/module/defender/) yapılandırmak ve çalıştırmak için PowerShell cmdlet'lerini kullanma.
+[PowerShell'i Microsoft Defender Virüsten Koruma](use-powershell-cmdlets-microsoft-defender-antivirus.md) ile kullanma hakkında daha fazla bilgi için bkz. Microsoft Defender [Virüsten Koruma ve Defender Virüsten Koruma cmdlet'lerini](/powershell/module/defender/) yapılandırmak ve çalıştırmak için PowerShell cmdlet'lerini kullanma.
 
 ## <a name="use-windows-management-instruction-wmi-to-schedule-protection-updates"></a>Koruma güncelleştirmelerini zamanlamak için Windows Yönetim Yönergesi'ni (WMI) kullanma
 
@@ -118,7 +120,7 @@ Daha fazla bilgi ve izin verilen parametreler için aşağıdakilere bakın:
 
 ## <a name="related-articles"></a>İlgili makaleler
 
-- [Microsoft Defender Virüsten Koruma'yi dağıtma](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Microsoft Defender Virüsten Koruma Dağıtma](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [Güncel olmayan uç noktalar için güncelleştirmeleri yönetme](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [Olay tabanlı zorunlu güncelleştirmeleri yönetin](manage-event-based-updates-microsoft-defender-antivirus.md)

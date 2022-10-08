@@ -14,15 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: aa942a8751986ea7b9ed8e64c7772c9d62000375
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 87f73410cfe5eef6d6e161f1943d5af3737cc087
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583076"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227360"
 ---
 # <a name="troubleshooting-mode-scenarios-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de sorun giderme modu senaryoları 
 
@@ -37,7 +38,7 @@ Uç Nokta için Microsoft Defender sorun giderme modu, çeşitli Microsoft Defen
 
 ## <a name="scenario-1-unable-to-install-application"></a>Senaryo 1: Uygulama yüklenemiyor
 
-Bir uygulama yüklemek istiyorsanız ancak Microsoft Defender Virüsten Koruma ve kurcalama korumasının açık olduğunu belirten bir hata iletisi alıyorsanız, sorunu gidermek için aşağıdaki adımları izleyin.
+Bir uygulama yüklemek istiyorsanız ancak Virüsten Koruma ve kurcalama korumasının açık Microsoft Defender bir hata iletisi alıyorsanız, sorunu gidermek için aşağıdaki adımları izleyin.
 
 1. Güvenlik yöneticisinden sorun giderme modunu açmasını isteyin. Sorun giderme modu başladıktan sonra Windows Güvenliği bildirimi alırsınız.  
 
@@ -81,7 +82,7 @@ Windows Defender taramaları ve güncelleştirmeleri için Set-MpPreference cmdl
 
 ## <a name="scenario-3-application-taking-longer-to-perform-an-action"></a>Senaryo 3: Uygulamanın eylem gerçekleştirmesi daha uzun sürüyor
 
-Microsoft Defender Virüsten Koruma gerçek zamanlı koruma açık olduğunda, uygulamanın temel görevleri gerçekleştirmesi uzun sürer. Gerçek zamanlı korumayı kapatmak ve sorunu gidermek için aşağıdaki adımları izleyin. 
+Microsoft Defender Virüsten Koruma gerçek zamanlı koruma etkinleştirildiğinde uygulamanın temel görevleri gerçekleştirmesi uzun sürer. Gerçek zamanlı korumayı kapatmak ve sorunu gidermek için aşağıdaki adımları izleyin. 
 
 1. Güvenlik yöneticisinden cihazda sorun giderme modunu açmasını isteyin. 
 

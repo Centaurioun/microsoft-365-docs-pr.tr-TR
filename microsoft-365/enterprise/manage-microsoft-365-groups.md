@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.prod: office-online-server
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -13,6 +13,7 @@ ms.custom:
 - Adm_O365
 - seo-marvel-mar2020
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 search.appverid:
@@ -22,22 +23,22 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: Microsoft 365 gruplarını yönetme hakkında bilgi edinin.
-ms.openlocfilehash: 0e7cef7d1b55f695af9a33f22393172f6eee6485
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 28af0d9581753e1852c0274feb92123ec70b23fd
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100511"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185479"
 ---
 # <a name="manage-microsoft-365-groups"></a>Grup Microsoft 365 yönetme
 
 *Bu makale hem Microsoft 365 Kurumsal hem de Office 365 Kurumsal için geçerlidir.*
 
-yapılandırmanıza bağlı olarak Microsoft 365 gruplarını çeşitli yollarla yönetebilirsiniz. Microsoft 365 yönetim merkezi, PowerShell, [Active Directory Domain Services](/admin) (AD DS) veya [Azure Active Directory (Azure AD) yönetim merkezinde](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) kullanıcı hesaplarını yönetebilirsiniz. 
+Yapılandırmanıza bağlı olarak Microsoft 365 gruplarını çeşitli yollarla yönetebilirsiniz. Microsoft 365 yönetim merkezi, PowerShell, [Active Directory Domain Services](/admin) (AD DS) veya [Azure Active Directory (Azure AD) yönetim merkezinde](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) kullanıcı hesaplarını yönetebilirsiniz. 
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-groups"></a>Gruplarınızı nerede ve nasıl yönetebileceğinizi planlama
 
-Kullanıcı hesaplarınızı nerede ve nasıl yönetebileceğiniz, Microsoft 365 için kullanmak istediğiniz kimlik modeline bağlıdır. İki genel model yalnızca bulut ve hibrit modeldir.
+Kullanıcı hesaplarınızı nerede ve nasıl yönetebileceğiniz, Microsoft 365'iniz için kullanmak istediğiniz kimlik modeline bağlıdır. İki genel model yalnızca bulut ve hibrit modeldir.
   
 ### <a name="cloud-only"></a>Yalnızca bulut
 
@@ -64,14 +65,14 @@ Azure AD, BT yöneticileri yerine grup sahipleri tarafından yönetilebilen grup
 Kullanıcılar bir güvenlik grubunda üyelik isteyebilir ve bu istek BT yöneticisi yerine grup sahibine gider. Bu, grup üyeliğinin günlük denetiminin, grubun iş kullanımını anlayan ve üyeliğini yönetebilen ekip, proje veya işletme sahiplerine temsilci olarak atanmasını sağlar.
 
 >[!Note]
->Self servis grup yönetimi yalnızca Azure AD güvenliği ve Microsoft 365 grupları için kullanılabilir. Posta etkin gruplar, dağıtım listeleri veya AD DS'den eşitlenmiş herhangi bir grup için kullanılamaz.
+>Self servis grup yönetimi yalnızca Azure AD güvenlik ve Microsoft 365 grupları için kullanılabilir. Posta etkin gruplar, dağıtım listeleri veya AD DS'den eşitlenmiş herhangi bir grup için kullanılamaz.
 >
 
-Daha fazla bilgi [için self servis yönetimi için Azure AD grubu yapılandırma yönergelerine](/azure/active-directory/active-directory-accessmanagement-self-service-group-management) bakın.
+Daha fazla bilgi [için self servis yönetimi için bir Azure AD grubu yapılandırma yönergelerine](/azure/active-directory/active-directory-accessmanagement-self-service-group-management) bakın.
 
 ## <a name="set-up-dynamic-group-membership"></a>Dinamik grup üyeliğini ayarlama
 
-Azure AD, bir Azure AD grubunun üyesi olarak kullanıcı hesaplarını otomatik olarak ekleyen veya kaldıran bir dizi kuralın yapılandırılmasını destekler. Bu, *dinamik grup üyeliği* olarak bilinir. Kurallar, Departman veya Ülke gibi kullanıcı hesabı özniteliklerini temel alır.
+Azure AD, kullanıcı hesaplarını otomatik olarak bir Azure AD grubunun üyesi olarak ekleyen veya kaldıran bir dizi kuralın yapılandırılmasını destekler. Bu, *dinamik grup üyeliği* olarak bilinir. Kurallar, Departman veya Ülke gibi kullanıcı hesabı özniteliklerini temel alır.
 
 Kurallar şu şekilde uygulanır:
 
@@ -80,7 +81,7 @@ Kurallar şu şekilde uygulanır:
 - Bir kullanıcı hesabı grubun tüm kurallarıyla eşleşmiyorsa gruba eklenmez.
 - Bir kullanıcı hesabı grubun üyesiyse ancak öznitelikleri artık grubun tüm kurallarıyla eşleşmemesi için değişirse, grubun üyesi olarak kaldırılır.
 
-Dinamik üyeliği kullanmak için öncelikle ortak kullanıcı hesabı öznitelikleri kümesine sahip grup kümelerini belirlemeniz gerekir. Örneğin, Satış departmanının tüm üyeleri, Departman kullanıcı hesabı özniteliğinin "Satış" olarak ayarlanmasına bağlı olarak Sales Azure AD grubunda olmalıdır.
+Dinamik üyeliği kullanmak için öncelikle ortak kullanıcı hesabı öznitelikleri kümesine sahip grup kümelerini belirlemeniz gerekir. Örneğin, Satış departmanının tüm üyeleri, Departman'ın "Satış" olarak ayarlanmış kullanıcı hesabı özniteliğine bağlı olarak Sales Azure AD grubunda olmalıdır.
 
 [Dinamik bir Azure AD grubu için kurallar oluşturma ve yapılandırma yönergelerine](/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal) bakın.
 
@@ -88,7 +89,7 @@ Dinamik üyeliği kullanmak için öncelikle ortak kullanıcı hesabı özniteli
 
 Azure AD'de güvenlik gruplarını, bir abonelik kümesindeki lisansları grubun tüm üyelerine otomatik olarak atayacak şekilde yapılandırabilirsiniz. Bu, *grup tabanlı lisanslama* olarak bilinir. Gruba bir kullanıcı hesabı eklenirse veya gruptan kaldırılırsa, grup abonelikleri için lisanslar otomatik olarak atanır veya kullanıcı hesabından atanmamış olur.
 
-Microsoft 365 Kurumsal için Azure AD güvenlik gruplarını uygun Microsoft 365 Kurumsal lisansını atayacak şekilde yapılandıracaksınız.
+Microsoft 365 Kurumsal için uygun Microsoft 365 Kurumsal lisansını atamak için Azure AD güvenlik gruplarını yapılandıracaksınız.
 
 Tüm grup üyeleri için yeterli lisansa sahip olduğunuzdan emin olun. Lisanslar tükenirse, lisanslar kullanılabilir duruma gelene kadar yeni kullanıcılara lisans atanamaz.
 

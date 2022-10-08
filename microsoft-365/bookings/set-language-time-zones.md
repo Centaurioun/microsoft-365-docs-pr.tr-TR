@@ -1,5 +1,5 @@
 ---
-title: Bookings dili ve saat dilimlerini ayarlama
+title: Bookings dilini ve saat dilimlerini ayarlama
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -7,14 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: Microsoft Bookings dil ve saat dilimi ayarlarınızı değiştirin. Rezervasyonlar yanlış zamanda oluşturulduysa, Bookings yanlış saat dilimi için ayarlanmış olabilir.
-ms.openlocfilehash: 13ff4f81bae50e390f8f7475147e335bf010683f
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: da95c0e31ac906112e92c409f617be340d8cc80d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637571"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68210756"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>Microsoft Bookings'da dil ve saat dilimlerini ayarlama
 
@@ -28,19 +30,19 @@ Rezervasyon takviminde oturum açan kullanıcının dili ve saat dilimi ayarlar�
 
 Rezervasyon takviminin dilini ve saat dilimini ayarlamak için:
 
-1. Microsoft 365 oturum açın ve giriş sayfasındaki (aşağıdaki ekran görüntüsünde gösterildiği gibi) veya Microsoft 365 Uygulama Başlatıcısı'ndaki Outlook kutucuğunu seçin.
+1. Microsoft 365'te oturum açın ve giriş sayfasındaki (aşağıdaki ekran görüntüsünde gösterildiği gibi) veya Microsoft 365 Uygulama Başlatıcısı'ndaki Outlook kutucuğunu seçin.
 
-   :::image type="content" source="../media/bookings-outlook-tile.png" alt-text="Microsoft 365 giriş sayfasında kutucuğu Outlook.":::
+   :::image type="content" source="../media/bookings-outlook-tile.png" alt-text="Microsoft 365 giriş sayfasındaki Outlook kutucuğu.":::
 
-1. Outlook açıldıktan sonra, kişisel ve hesap ayarlarınızı açmak için ekranın sağ üst köşesindeki **dişli simgesini** seçin, ardından **Ayarlar** paneli arama kutusunda "saat dilimi" araması yapın. Panel, bu hesap için geçerli kişisel dil ve saat dilimi ayarlarınızı gösterecek şekilde güncelleştirilir. Yukarıda belirtildiği gibi, bu ayar rezervasyon takviminin dilini ve saat dilimini de denetler.
+1. Outlook açıldıktan sonra, kişisel ayarlarınızı ve hesap ayarlarınızı açmak için ekranın sağ üst köşesindeki **dişli simgesini** seçin, ardından **Ayarlar** paneli arama kutusunda "saat dilimi" araması yapın. Panel, bu hesap için geçerli kişisel dil ve saat dilimi ayarlarınızı gösterecek şekilde güncelleştirilir. Yukarıda belirtildiği gibi, bu ayar rezervasyon takviminin dilini ve saat dilimini de denetler.
 
 1. Dil veya Geçerli saat dilimi kutusunda açılan oku seçip istediğiniz ayarı seçerek **dili veya saat dilimini** değiştirin.
 
-1. **Kaydet**'e tıklayın. Ayarlar paneli kapanır, Web üzerinde Outlook yeniden başlatılır ve yeni dil ve saat dilimi ayarları uygulanır.
+1. **Kaydet**'e tıklayın. Ayarlar paneli kapanır Web üzerinde Outlook yeniden başlatılır ve yeni dil ve saat dilimi ayarları uygulanır.
 
 ## <a name="setting-the-language-and-time-zone-for-the-booking-page"></a>Rezervasyon sayfasının dilini ve saat dilimini ayarlama
 
-1. Microsoft 365'da uygulama başlatıcıyı ve ardından **Bookings'ı** seçin.
+1. Microsoft 365'te uygulama başlatıcıyı ve ardından **Bookings'i** seçin.
 
 1. Gezinti bölmesinde **Rezervasyon sayfası'nı** ve **ardından Dil ve saat dilimi ayarlarını değiştir'i** seçin.
 

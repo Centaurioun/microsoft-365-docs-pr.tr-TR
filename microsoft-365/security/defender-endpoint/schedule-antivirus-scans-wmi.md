@@ -15,14 +15,16 @@ ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 search.appverid: met150
-ms.openlocfilehash: 19612e81aad9b7437b677e6d48a0a2a05d48f83e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0d5e1e94e0e9b3535164dbfaa1b6399255718c1c
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686625"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227844"
 ---
 # <a name="schedule-antivirus-scans-using-windows-management-instrumentation-wmi"></a>Windows Yönetim Araçları'nı (WMI) kullanarak virüsten koruma taramaları zamanlama
 
@@ -34,7 +36,7 @@ ms.locfileid: "67686625"
 **Platform**
 - Windows
 
-Bu makalede WMI kullanılarak zamanlanmış taramaların nasıl yapılandırıldığı açıklanır. Taramaları zamanlama ve tarama türleri hakkında daha fazla bilgi edinmek için bkz [. Zamanlanmış hızlı veya tam Microsoft Defender Virüsten Koruma taramalarını yapılandırma](schedule-antivirus-scans.md). 
+Bu makalede WMI kullanılarak zamanlanmış taramaların nasıl yapılandırıldığı açıklanır. Taramaları zamanlama ve tarama türleri hakkında daha fazla bilgi edinmek için bkz[. Zamanlanmış hızlı veya tam Microsoft Defender Virüsten Koruma taramalarını yapılandırma](schedule-antivirus-scans.md). 
 
 ## <a name="use-windows-management-instruction-wmi-to-schedule-scans"></a>Taramaları zamanlamak için Windows Yönetim Yönergesi'ni (WMI) kullanma
 

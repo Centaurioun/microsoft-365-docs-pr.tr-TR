@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: b5c9fa30dacc0527e91c6288f5b6104e44e60ef0
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 1a8eaf8afc7b9d583618d48d5f0b556c23e16348
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683632"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68210206"
 ---
 # <a name="create-alert-api"></a>Uyarı API'si oluşturma
 
@@ -67,6 +69,8 @@ Temsilci (iş veya okul hesabı) | Alert.ReadWrite | 'Uyarıları okuma ve yazma
 >
 > - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Uyarılar araştırması' (Daha fazla bilgi için bkz. [Rolleri oluşturma ve yönetme](user-roles.md) )
 > - Kullanıcının, cihaz grubu ayarlarına göre uyarıyla ilişkilendirilmiş cihaza erişimi olmalıdır (Daha fazla bilgi için bkz. [Cihaz grupları oluşturma ve yönetme](machine-groups.md)
+>
+> Cihaz Grubu oluşturma hem Uç Nokta için Defender Plan 1 hem de Plan 2'de desteklenir
 
 ## <a name="http-request"></a>HTTP isteği
 

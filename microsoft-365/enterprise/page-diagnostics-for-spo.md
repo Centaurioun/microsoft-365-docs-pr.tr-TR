@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 06/03/2020
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 search.appverid:
@@ -19,12 +20,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: SharePoint Online modern portalını ve klasik yayımlama sayfalarını önceden tanımlanmış bir performans ölçütleri kümesine göre çözümlemek için SharePoint için Sayfa Tanılama aracını kullanın.
-ms.openlocfilehash: 0d89d16ead05a5a683fbfbf7b1dde35cde4dcde9
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: c97a2a62cd75bdfe153f4794962c0f5f1ad22669
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670211"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68300486"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>SharePoint için Sayfa Tanılama aracını kullanma
 
@@ -38,7 +39,10 @@ SharePoint için Sayfa Tanılama aracı aşağıdakiler için yüklenebilir:
 >[!TIP]
 >Sürüm **2.0.0** ve üzeri, klasik site sayfalarına ek olarak modern sayfalar için destek içerir. Aracın hangi sürümünü kullandığınızdan emin değilseniz, sürümünüzü doğrulamak için **Hakkında** bağlantısını veya üç noktayı (...) seçebilirsiniz. Aracı kullanırken **her zaman en son sürüme güncelleştirin**.
 
-SharePoint için Sayfa Tanılama aracı, hem SharePoint Online modern portalını hem de klasik yayımlama sitesi sayfalarını analiz eden yeni Microsoft Edge (https://www.microsoft.com/edge) ve Chrome tarayıcıları için bir tarayıcı uzantısıdır. Bu araç yalnızca SharePoint Online için çalışır ve SharePoint sistem sayfasında kullanılamaz.
+SharePoint için Sayfa Tanılama aracı, hem SharePoint Online modern portalını hem de klasik yayımlama sitesi sayfalarını analiz eden yeni Microsoft Edge (https://www.microsoft.com/edge) ve Chrome tarayıcıları için bir tarayıcı uzantısıdır. 
+
+> [!IMPORTANT]
+> Bu araç yalnızca SharePoint Online için çalışır ve SharePoint sistem sayfasında veya SharePoint Uygulaması sayfasında kullanılamaz. Uygulama sayfa türü, portallar için değil SharePoint Online'da belirli iş uygulamaları için kullanılacak şekilde tasarlanmıştır. Araç, portal sayfalarını ve Teams site sayfalarını iyileştirmek için tasarlanmıştır.
 
 Araç, analiz edilen her sayfa için sayfanın önceden tanımlanmış bir kural kümesine göre nasıl performans gösterdiğini gösteren bir rapor oluşturur ve test sonuçları temel değerin dışında olduğunda ayrıntılı bilgiler görüntüler. SharePoint Online yöneticileri ve tasarımcıları, performans sorunlarını gidermek ve yayımlamadan önce yeni sayfaların iyileştirildiğinden emin olmak için aracı kullanabilir.
 

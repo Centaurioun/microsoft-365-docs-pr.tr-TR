@@ -10,19 +10,20 @@ ms.topic: reference
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 09/15/2022
+ms.date: 09/26/2022
 ms.reviewer: shlomiakirav
 ms.collection:
 - SMB
 - m365-initiative-defender-business
-- m365-security-compliance
+- m365-security
+- tier1
 f1.keywords: NOCSH
-ms.openlocfilehash: e3255ed8e5e3d8a7d1ba1dcf34286a8c663da5f6
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: a944ed80c6fc5473fe2011dab05492c7cf122ebb
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736464"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097280"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>Küçük ve orta ölçekli işletmeler için Microsoft 365 planlarındaki güvenlik özelliklerini karşılaştırma
 
@@ -39,8 +40,11 @@ Microsoft, küçük ve orta ölçekli işletmelere yönelik planlar da dahil olm
 
 ## <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>İş için Microsoft Defender Microsoft 365 İş Ekstra ile karşılaştırma
 
-> [!NOTE]
-> Bu makalede, İş için Microsoft Defender (tek başına plan olarak) ve Microsoft 365 İş Ekstra (İş için Defender'ı içerir) dahil edilen özelliklere ve özelliklere üst düzey bir genel bakış sağlanır. Hizmet açıklaması veya lisans sözleşmesi belgesi olarak tasarlanmamıştır. Daha ayrıntılı bilgi için bkz. [Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> [!IMPORTANT]
+> Bu makalede, İş için Microsoft Defender (tek başına plan olarak) ve Microsoft 365 İş Ekstra (İş için Defender'ı içerir) dahil edilen özelliklere ve özelliklere üst düzey bir genel bakış sağlanır. Hizmet açıklaması veya lisans sözleşmesi belgesi olarak tasarlanmamıştır. Daha ayrıntılı bilgi için aşağıdaki kaynaklara bakın:
+> - [Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+> - [Microsoft 365 Eğitim](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-education)
+
 
 | Plan | Açıklama |
 |:---|:---|
@@ -93,7 +97,7 @@ Microsoft, küçük ve orta ölçekli işletmelere yönelik planlar da dahil olm
 (<a id="fn8">8</a>) Uç Nokta için Defender'ı kullanarak kiracılar arasında olayları görüntüleme özelliği yeni!
 
 > [!TIP]
-> Ayrıca bkz. [Microsoft uç nokta güvenlik planlarını karşılaştırma](../defender-endpoint/defender-endpoint-plan-1-2.md).
+> Ayrıca bkz. Güvenlik & uyumluluğu için [Microsoft uç nokta güvenlik planlarını](../defender-endpoint/defender-endpoint-plan-1-2.md) ve [Microsoft 365 lisanslama kılavuzlarını](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) karşılaştırma.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -18,15 +18,15 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.subservice: mde
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 1a9ad60b4a095ad4c642484e4f28344cb948b728
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 467c415f7912d0e02d3468d842f8cb8e3f871455
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689743"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227139"
 ---
 # <a name="manage-tamper-protection-for-your-organization-using-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalını kullanarak kuruluşunuz için kurcalama korumasını yönetme
 

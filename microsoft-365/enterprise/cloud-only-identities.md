@@ -1,12 +1,12 @@
 ---
-title: Yalnızca bulut kimliğini Microsoft 365
+title: Microsoft 365 yalnızca bulut kimliği
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -17,6 +17,7 @@ ms.custom:
 - O365E_HRCSetupAADConnectAboutLM617031
 - O365E_AddUsersWithDirSync
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:
@@ -25,15 +26,15 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: Microsoft 365 aboneliğiniz yalnızca bulut kimliği kullanırken kullanıcı ve grup oluşturmayı açıklar.
-ms.openlocfilehash: 7b2ad2cee32f075302ea591806214b697fa9b206
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Microsoft 365 aboneliğiniz yalnızca bulut kimliğini kullanırken kullanıcı ve grup oluşturmayı açıklar.
+ms.openlocfilehash: 17298d6f6c07ddfa571610d6038326bcf9ec91cf
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091379"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198503"
 ---
-# <a name="microsoft-365-cloud-only-identity"></a>Yalnızca bulut kimliğini Microsoft 365
+# <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 yalnızca bulut kimliği
 
 *Bu makale hem Microsoft 365 Kurumsal hem de Office 365 Kurumsal için geçerlidir.*
 
@@ -53,12 +54,12 @@ Kuruluşunuzdaki kullanıcı türlerinin stokunu alın. Gruplandırmalar nelerdi
 
 Ayrıca, bazı bulut hizmetleri herhangi bir kullanıcı hesabı olmadan kuruluşunuzun dışındaki kullanıcılarla paylaşılabilir. Bu kullanıcı gruplarını da tanımlamanız gerekir.
 
-Bulut ortamınızın yönetimini basitleştiren çeşitli amaçlar için Azure AD'deki grupları kullanabilirsiniz. Örneğin, Azure AD gruplarıyla şunları yapabilirsiniz:
+bulut ortamınızın yönetimini basitleştiren çeşitli amaçlar için Azure AD grupları kullanabilirsiniz. Örneğin, Azure AD gruplarla şunları yapabilirsiniz:
 
-- Microsoft 365 lisanslarını üye olarak eklendikleri anda otomatik olarak kullanıcı hesaplarınıza atamak için grup tabanlı lisanslama kullanın.
+- Microsoft 365 lisanslarını üye olarak eklendikleri anda kullanıcı hesaplarınıza otomatik olarak atamak için grup tabanlı lisanslama kullanın.
 - Bölüm adı gibi kullanıcı hesabı özniteliklerine göre belirli gruplara kullanıcı hesaplarını dinamik olarak ekleyin.
 - Hizmet Olarak Yazılım (SaaS) uygulamaları için kullanıcıları otomatik olarak sağlayın ve bu uygulamalara erişimi çok faktörlü kimlik doğrulaması (MFA) ve diğer Koşullu Erişim ilkeleriyle koruyun.
-- Ekipler ve SharePoint Çevrimiçi ekip siteleri için izinler ve erişim düzeyleri sağlayın.
+- Ekipler ve SharePoint Online ekip siteleri için izinler ve erişim düzeyleri sağlayın.
 
 ## <a name="next-steps-for-cloud-only-identity"></a>Yalnızca bulut kimliği için sonraki adımlar
 

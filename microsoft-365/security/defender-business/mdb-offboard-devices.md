@@ -15,14 +15,15 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
-ms.openlocfilehash: 055cd0e6e6f2d3279d028e2af210f40b62f329ee
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+- tier1
+ms.openlocfilehash: 06e3e116886ef719f6c57c9711ef770704a53bfb
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598593"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096445"
 ---
 # <a name="offboard-a-device-from-microsoft-defender-for-business"></a>cihazı İş için Microsoft Defender'dan çıkarma
 
@@ -51,7 +52,7 @@ Bir cihazı boşaltmak istiyorsanız aşağıdaki yordamlardan birini kullanın:
 
 1. **Bulucu** > **Uygulamaları'na** gidin. 
 
-2. **İş için Microsoft Defender** sağ tıklayın ve ardından **Çöp Kutusuna Taşı'yı** seçin. <br/>--- veya --- <br/> Şu komutu kullanın: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.
+2. **İş için Microsoft Defender** sağ tıklayın ve ardından **Çöp Kutusuna Taşı'yı** seçin. <br/>---Veya--- <br/> Şu komutu kullanın: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.
 
 > [!IMPORTANT]
 > Cihazı kullanıma almak, cihazların İş için Defender'a veri göndermeyi durdurmasına neden olur. Ancak, çıkarmadan önce alınan veriler altı (6) aya kadar saklanır.

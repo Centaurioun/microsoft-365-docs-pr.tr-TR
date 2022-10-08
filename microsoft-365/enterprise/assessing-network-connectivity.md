@@ -8,7 +8,9 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -20,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Microsoft 365, tüm dünyadaki müşterilerin İnternet bağlantısı kullanarak hizmete bağlanmasını sağlamak için tasarlanmıştır. Hizmet geliştikçe Microsoft 365'in güvenliği, performansı ve güvenilirliği, hizmetle bağlantı kurmak için İnternet'i kullanan müşterilere göre geliştirilir.
-ms.openlocfilehash: e2ee363f1e421eed89f3b72ff206dda3000e0c84
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 576f7c1e35a13e7fe6473b73e648a80c261876a8
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560779"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198481"
 ---
 # <a name="assessing-microsoft-365-network-connectivity"></a>Microsoft 365 ağ bağlantısını değerlendirme
 

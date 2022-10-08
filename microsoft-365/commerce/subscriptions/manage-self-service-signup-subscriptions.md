@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: mijeffer, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -19,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Kuruluşunuz için ücretsiz self servis kaydolma aboneliklerini yönetmeyi öğrenin.
 ms.date: 03/17/2021
-ms.openlocfilehash: 58c58c849b72c170e0ccf10de54389bd1245bced
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: ba7bfabd55f1b5d92cd4906c3be9f915255aa697
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102360"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185611"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Self servis kaydolma aboneliklerini yönetme
 
@@ -58,4 +59,4 @@ Kullanıcıların self servis kayıt aboneliklerine kaydolup kaydolamayacağın�
 
 ## <a name="i-have-a-self-service-sign-up-subscription-that-blocks-directory-deletion"></a>Dizin silmeyi engelleyen bir self servis kaydolma aboneliğim var
 
-Bireysel kullanıcıların kaydolabileceği self servis kaydolma ürünleri, Azure AD dizininizde kimlik doğrulaması için bir konuk kullanıcı da oluşturur. Veri kaybını önlemek için, bu self servis ürünleri dizinden tamamen silinene kadar dizin silmelerini engeller. Bunlar yalnızca Azure AD yöneticisi tarafından silinebilir. Daha fazla bilgi için bkz. [Azure Active Directory dizinini silme](/azure/active-directory/users-groups-roles/directory-delete-howto).
+Bireysel kullanıcıların kaydolabileceği self servis kaydolma ürünleri, Azure AD dizininizde kimlik doğrulaması için bir konuk kullanıcı da oluşturur. Veri kaybını önlemek için, bu self servis ürünleri dizinden tamamen silinene kadar dizin silmelerini engeller. Bunlar yalnızca Azure AD yöneticisi tarafından silinebilir. Daha fazla bilgi için bkz. [Azure Active Directory'de dizin silme](/azure/active-directory/users-groups-roles/directory-delete-howto).

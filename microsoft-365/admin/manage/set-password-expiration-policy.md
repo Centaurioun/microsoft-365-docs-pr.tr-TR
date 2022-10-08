@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -28,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Bir yöneticinin Microsoft 365 yönetim merkezi'da işletmeniz, okuluniz veya kar amacı gütmeyen kuruluşunuz için parola süre sonu ilkesi ayarlamayı öğrenin.
-ms.openlocfilehash: 71174355dbc01d03fb64ad261dc058d901fafb20
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 92fb8a20bbd05aa25b0935acfd26e1df3484207a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660488"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68206702"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Kuruluşunuzun parola süre sonu ilkesini belirleyin
 
@@ -47,7 +48,7 @@ Güncel araştırma, zorunlu parola değişikliklerinin kesinlikle yarardan çok
 
 Bu adımları gerçekleştirmek için [genel yönetici](../add-users/about-admin-roles.md) olmanız gerekir.
 
-Kullanıcıysanız, parolanızı süresi hiç dolmayacak şekilde ayarlamak için gereken izinleriniz yoktur. İş veya okulunuzun teknik desteğinden, bu makaledeki adımları sizin için uygulamalarını isteyin.
+If you're a user, you don't have the permissions to set your password to never expire. Ask your work or school technical support to do the steps in this article for you.
 
 > [!TIP]
 > Bu konuda verilen adımlarla ilgili yardıma ihtiyacınız varsa[bir Microsoft küçük işletme uzmanıyla çalışmayı](https://go.microsoft.com/fwlink/?linkid=2186871) göz önünde bulundurun. İşletme Yardımı ile, işletmenizi büyütürken katılımdan gündelik kullanıma kadar her aşamada siz ve çalışanlarınız günün 24 saati küçük işletme uzmanlarına erişebilirsiniz.

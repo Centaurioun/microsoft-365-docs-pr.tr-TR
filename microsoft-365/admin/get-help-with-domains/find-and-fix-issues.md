@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -27,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: DNS kayıtlarının doğru ayarlandığından emin olarak özel bir etki alanı ayarlarken karşılaştığınız sorunları izlemeyi öğrenin.
-ms.openlocfilehash: 89eca074425581b7e939bc4599ec86b7d7cdd2f6
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: f6c311926952d955813d2c45f688634c2c38fc01
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660497"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198833"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Kendi etki alanınızı veya DNS kayıtlarınızı ekledikten sonra sorunları bulma ve düzeltme
 
@@ -43,7 +44,7 @@ Etki alanınızı Microsoft 365 ile çalışacak şekilde ayarlamak zor olabilir
 > [!NOTE]
 > Etki alanınızın durumunu denetleyerek etki alanınızla ilgili sorunları de kontrol edebilirsiniz. **Kurulum** > **Etki Alanları'na** gidin ve **Durum** sütunundaki bildirimleri görüntüleyin. Bir sorun görürseniz üç noktayı (diğer eylemler) seçin ve ardından **Sistem durumunu denetle'yi** seçin. Açılan bölmede etki alanınızda oluşan sorunlar açıklanır.
   
-## <a name="whats-going-on"></a>Ne var ne yok?
+## <a name="whats-going-on"></a>Neler oluyor?
 
 - [Etki alanınızı doğrulayamaz mısınız?](#cant-verify-your-domain)
     
@@ -61,7 +62,7 @@ Etki alanınızı Microsoft 365 ile çalışacak şekilde ayarlamak zor olabilir
 
 Etki alanı doğrulamasının gerektiği gibi çalışmamasının birkaç yaygın nedeni vardır:
   
-1. **Doğrulama kaydı değeri doğru olmayabilir.** DNS barındırıcınızda, değeri TXT doğrulama kaydına aynı şekilde kopyalayıp yapıştırdığınızı tekrar gözden geçirin. Yaygın sorunlardan biri de kaydın "MS=" kısmının dahil edilmemesidir. Bu kısmı da belirtmeniz gerekir! 
+1. **The verification record value isn't quite correct.** Doublecheck that you've copied and pasted the exact value into the TXT verification record at your DNS host. One common issue is not including the "MS=" part of the record. We need that too! 
     
 2. **Kayıt kaydedilmemiş olabilir.** Bazı DNS barındırıcılarında, İnternet'te güncelleştirilebilmesi için bölge dosyasını kaydetmek (DNS kaydının bulunduğu konuma) üzere ek bir adım uygulamanız gerekir. Microsoft 365'in kaydı görebilmesi ve doğrulayabilmesi için değişikliklerinizi kaydettiğinizden emin olun. 
     

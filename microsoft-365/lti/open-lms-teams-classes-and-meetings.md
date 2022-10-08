@@ -6,18 +6,18 @@ manager: serdars
 ms.reviewer: amitman
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Açık LMS için Microsoft Öğrenme Araçları Birlikte Çalışabilirliği ile Teams sınıflarını ve toplantılarını oluşturun ve yönetin.
-ms.openlocfilehash: 264f9a2129d36b1d6ab3dae2afdb14973f3deac5
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 034aa9924798b7e284665713e6d8fe2809c1e70f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086461"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203826"
 ---
 # <a name="integrate-microsoft-teams-classes-and-meetings-within-open-lms"></a>Microsoft Teams sınıflarını ve toplantılarını Open LMS ile tümleştirme
 

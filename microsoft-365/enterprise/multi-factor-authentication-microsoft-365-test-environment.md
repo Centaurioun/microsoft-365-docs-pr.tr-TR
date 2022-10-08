@@ -10,19 +10,21 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: M365-identity-device-management
+ms.collection:
+- scotvorg
+- M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Kurumsal test ortamınız için Microsoft 365'te akıllı telefona gönderilen kısa mesajları kullanarak çok faktörlü kimlik doğrulamasını yapılandırın.
-ms.openlocfilehash: 0100f6a7ea6844943f15420a722a471279bc9746
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 561ca1eced827dab00f5c8ae29163f90724d03c7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694469"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198393"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>Kurumsal test ortamınız için Microsoft 365 için çok faktörlü kimlik doğrulaması
 
