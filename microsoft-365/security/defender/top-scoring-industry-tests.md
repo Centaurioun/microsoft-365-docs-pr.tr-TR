@@ -2,7 +2,7 @@
 title: Endüstri testlerinde en iyi puanlama - Microsoft 365 Defender
 ms.reviewer: ''
 description: En son puanları ve Microsoft 365 Defender analizini görüntüleyin. Bağımsız testlerde (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK) tutarlı olarak yüksek puanlar elde eder. En son puanları ve analizi görüntüleyin.
-keywords: Microsoft Defender Virüsten Koruma, Windows Defender Virüsten Koruma, av incelemeleri, virüsten koruma testi, av testi, en son av puanları, algılama puanları, güvenlik ürünü testi, güvenlik sektörü testleri, endüstri virüsten koruma testleri, en iyi virüsten koruma, av-test, av-comparatives, SE laboratuvarları, MITRE ATT&CK, uç nokta koruma platformu, EPP, uç nokta algılama ve yanıt, EDR, Windows 10, Windows 11 Microsoft Defender Virüsten Koruma, WDAV, Uç Nokta için Microsoft Defender, Microsoft 365 Defender, güvenlik, kötü amaçlı yazılım, av, virüsten koruma, puanlama, puanlama, yeni nesil koruma, derecelendirme, başarı
+keywords: Microsoft Defender Virüsten Koruma, Windows Defender Virüsten Koruma, av incelemeleri, virüsten koruma testi, av testi, en son av puanları, algılama puanları, güvenlik ürün testi, güvenlik sektörü testleri, endüstri virüsten koruma testleri, en iyi virüsten koruma, av-test, av-comparatives, SE laboratuvarları, MITRE ATT&CK, uç nokta koruma platformu, EPP, uç nokta algılama ve yanıt, EDR, Windows 10, Windows 11 Microsoft Defender Virüsten Koruma, WDAV, Uç Nokta için Microsoft Defender, Microsoft 365 Defender, güvenlik, kötü amaçlı yazılım, av, virüsten koruma, puanlama, puanlama, yeni nesil koruma, derecelendirme, başarı
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.mktglfcycl: secure
@@ -12,15 +12,15 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: -m365-security-compliance - tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 02d996e9e2da6083b228a55bb4a173601a378dcb
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 5e126c1e912e2e0575d23d486908cb2b1da7cd29
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67474698"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68069545"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Sektör testlerinde en iyi puanlama
 
@@ -46,7 +46,7 @@ MITRE'nin test yaklaşımının temeli, çözümlerin bunları yeterli şekilde 
 
 [Microsoft Defender Virüsten Koruma](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) sürekli olarak bağımsız testlerde yüksek performans sergileyerek virüsten koruma pazarında en iyi seçenek olduğunu gösterir. Unutmayın, bu testler yalnızca virüsten koruma için sonuç sağlar ve ek güvenlik korumaları için test etmez.
 
-Microsoft Defender Virüsten Koruma, [Uç Nokta için Microsoft Defender Windows güvenlik yığınında](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) en son ve en gelişmiş tehditleri ele alan yeni [nesil koruma](https://www.youtube.com/watch?v=Xy3MOxkX_o4) özelliğidir. Bazı durumlarda, bir [kampanya başladıktan sonra milisaniyeler içinde](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign) siber saldırı durdurulduğundan müşteriler koruma altında olduklarını bile bilmeyebilir. Bunun nedeni, Uç Nokta için Defender'daki Microsoft Defender Virüsten Koruma ve diğer [uç nokta koruma platformu (EPP)](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/) özelliklerinin ilk bakışta kötü amaçlı yazılımları algılaması ve durdurmasıdır. [Makine öğrenmesi](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering), [yapay zeka](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak), davranış analizi ve diğer gelişmiş teknolojileri kullanır.
+Microsoft Defender Virüsten Koruma, [Uç Nokta için Microsoft Defender Windows güvenlik yığınındaki](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) en son ve en gelişmiş tehditleri ele alan yeni [nesil koruma](https://www.youtube.com/watch?v=Xy3MOxkX_o4) özelliğidir. Bazı durumlarda, bir [kampanya başladıktan sonra milisaniyeler içinde](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign) siber saldırı durdurulduğundan müşteriler koruma altında olduklarını bile bilmeyebilir. Bunun nedeni, Uç Nokta için Defender'da Microsoft Defender Virüsten Koruma ve diğer [uç nokta koruma platformu (EPP)](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/) özelliklerinin ilk bakışta kötü amaçlı yazılımları algılaması ve durdurmasıdır. [Makine öğrenmesi](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering), [yapay zeka](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak), davranış analizi ve diğer gelişmiş teknolojileri kullanır.
 
 ### <a name="av-test-protection-score-of-6060-in-the-latest-test"></a>AV-TEST: En son testte 6.0/6.0 koruma puanı
 
@@ -54,7 +54,7 @@ AV-TEST Ürün İnceleme ve Sertifikasyon Raporu üç kategoride test eder: koru
 
 - Kasım - Aralık 2021 AV-TEST İş Kullanıcı testi: [Koruma puanı 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2021/microsoft-defender-antivirus-4.18-212622/) <sup>**En Son**</sup>
 
-    Microsoft Defender Virüsten Koruma, Kasım ve Aralık aylarında %100 ile mükemmel bir Koruma puanı olan 6.0/6.0'a ulaştı. 18.870 kötü amaçlı yazılım örneği kullanıldı.
+    Microsoft Defender Antivirus, Kasım ve Aralık aylarında %100 ile 6.0/6.0 ile mükemmel bir Koruma puanı elde etti. 18.870 kötü amaçlı yazılım örneği kullanıldı.
 
 - Eylül - Ekim 2021 AV-TEST İş Kullanıcı testi: [Koruma puanı 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2021/microsoft-defender-antivirus-4.18-212518/)
 
@@ -112,7 +112,7 @@ Uç Nokta için Microsoft Defender'ın EDR ve uç nokta koruma özellikleri, sek
 
 Bağımsız güvenlik sektörü testleri, en iyi virüsten koruma ve güvenlik ürünlerini tarafsız bir şekilde değerlendirmeyi hedefler. Ancak Microsoft, bu makalede vurgulanan değerlendirmelerde test edilenlerin ötesinde daha geniş ve daha geniş bir tehdit kümesi görür. Ortalama bir ay içinde Microsoft'un güvenlik ürünleri 100 milyondan fazla yeni tehdit tanımlar. Bağımsız bir test eden kişi bu tehditlerin %1'ini alıp test etse bile, bu 20 veya 30 üründe bir milyon testtir. Başka bir deyişle, kötü amaçlı yazılım ortamının genişliği gerçek dünya tehditlerine karşı koruma kalitesini değerlendirmeyi zorlaştırır.
 
-Uç Nokta için Microsoft Defender içindeki özellikler, endüstri virüsten koruma testlerine dahil olmayan [ek koruma katmanları](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses) sağlar ve en son ve en gelişmiş tehditlerden bazılarını ele alır. AV'yi Uç Nokta için Defender'ın geri kalanından yalıtarak Microsoft'un güvenlik yığınının gerçek dünyada nasıl çalıştığına ilişkin kısmi bir resim oluşturulur. Örneğin, saldırı yüzeyi azaltma ve uç nokta algılama & yanıt özellikleri, kötü amaçlı yazılımların cihazlara girmesini önlemeye yardımcı olabilir. Uç Nokta için Microsoft Defender bileşenlerinin Microsoft Defender Virüsten Koruma'nın bu endüstri testlerinde kaçırdığı [örnekleri yakaladığını](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA) kanıtladık. Microsoft'un güvenlik paketinin gerçek dünyadaki müşterileri ne kadar etkili bir şekilde koruduğu daha temsil eder.
+Uç Nokta için Microsoft Defender içindeki özellikler, endüstri virüsten koruma testlerine dahil olmayan [ek koruma katmanları](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses) sağlar ve en son ve en gelişmiş tehditlerden bazılarını ele alır. AV'yi Uç Nokta için Defender'ın geri kalanından yalıtarak Microsoft'un güvenlik yığınının gerçek dünyada nasıl çalıştığına ilişkin kısmi bir resim oluşturulur. Örneğin, saldırı yüzeyi azaltma ve uç nokta algılama & yanıt özellikleri, kötü amaçlı yazılımların cihazlara girmesini önlemeye yardımcı olabilir. Uç Nokta için Microsoft Defender bileşenlerinin virüsten koruma Microsoft Defender bu sektör testlerinde kaçırdığı [örnekleri yakaladığını](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA) kanıtladık. Microsoft'un güvenlik paketinin gerçek dünyadaki müşterileri ne kadar etkili bir şekilde koruduğu daha temsil eder.
 
 [90 günlük deneme](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) sürümüne kaydolarak veya [mevcut kiracılarda Önizleme özelliklerini etkinleştirerek](/windows/security/threat-protection/microsoft-defender-atp/preview) Uç Nokta için Microsoft Defender [hakkında daha fazla bilgi edinin](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) ve bunu kendi ağınızda değerlendirin.
 

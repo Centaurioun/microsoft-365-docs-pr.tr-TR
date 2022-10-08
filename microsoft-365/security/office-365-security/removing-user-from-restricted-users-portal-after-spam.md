@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Yöneticiler, Microsoft 365 Defender portalındaki Kısıtlı kullanıcılar sayfasından kullanıcıları kaldırmayı öğrenebilir. Kullanıcılar, genellikle hesap güvenliğinin aşılmasına bağlı olarak giden istenmeyen posta göndermek için Kısıtlı kullanıcılar portalına eklenir.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 688fb910aa292e65b84d7142487fc8541b5445f4
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: e374ea3733110002f50319affe7e5d86afb5c77e
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496669"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68068995"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Engellenen kullanıcıları Microsoft 365'teki Kısıtlı kullanıcılar portalından kaldırma
 

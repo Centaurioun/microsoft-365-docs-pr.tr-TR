@@ -17,13 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- tier1
 ms.topic: conceptual
-ms.openlocfilehash: 09c07fe5947d370c6641fac7b589dc96974d7b7d
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 77dd7dd7442e5e3bf585f9c6d52f194714a7d722
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811713"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68069567"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender'daki yenilikler
 
@@ -45,11 +46,11 @@ Diğer Microsoft Defender güvenlik ürünleriyle ilgili yenilikler hakkında da
 Ayrıca, ürün güncelleştirmelerini ve önemli bildirimleri [ileti merkezi](https://admin.microsoft.com/Adminportal/Home#/MessageCenter) üzerinden de alabilirsiniz.
 
 ## <a name="august-2022"></a>Ağustos 2022
-- (GA) [Avlanma için Microsoft Defender Uzmanları](defender-experts-for-hunting.md) artık genel kullanıma sunulmuştur. Güçlü bir güvenlik operasyonları merkezi olan Microsoft 365 Defender müşterisiyseniz ancak Microsoft'un Microsoft Defender verilerini kullanarak uç noktalar, Office 365, bulut uygulamaları ve kimlik genelinde tehditleri proaktif olarak avlamanıza yardımcı olmasını istiyorsanız, hizmeti uygulama, ayarlama ve kullanma hakkında daha fazla bilgi edinin. Avcılık için Defender Uzmanları diğer Microsoft 365 Defender ürünlerden ayrı olarak satılır.
+- (GA) [Microsoft Defender Avcılık Uzmanları](defender-experts-for-hunting.md) artık genel kullanıma sunulmuştur. Güçlü bir güvenlik operasyonları merkezi olan Microsoft 365 Defender müşterisiyseniz ancak Microsoft'un Microsoft Defender verileri kullanarak uç noktalar, Office 365, bulut uygulamaları ve kimlikler arasında tehditleri proaktif olarak avlamanıza yardımcı olmasını istiyorsanız hizmeti uygulama, ayarlama ve kullanma hakkında daha fazla bilgi edinin. Avcılık için Defender Uzmanları diğer Microsoft 365 Defender ürünlerden ayrı olarak satılır.
 - (Önizleme) [Destekli mod](advanced-hunting-modes.md#get-started-with-guided-hunting-mode) artık gelişmiş avcılıkta genel önizleme için kullanılabilir. Analistler artık *Kusto Sorgu Dili (KQL) bilmeden* uç nokta, kimlikler, e-posta & işbirliği ve bulut uygulamaları verilerini sorgulamaya başlayabilir.  Kılavuzlu mod, kullanılabilir filtreler ve koşullar içeren açılan menüler aracılığıyla sorgu oluşturmanın kolay, kullanımı kolay, yapı taşı stiline sahiptir. Bkz. [Sorgu oluşturucuyu kullanmaya başlama](advanced-hunting-query-builder.md).
 
 ## <a name="july-2022"></a>Temmuz 2022
-- (Önizleme) Tehdit Avcılığı için Microsoft Defender Uzmanları genel önizlemesi katılımcıları artık, av hizmetinin ortamlarında ortaya çıkan tehditleri ve Microsoft 365 Defender ürünleri tarafından oluşturulan uyarıları anlamalarına yardımcı olmak için aylık raporlar almayı dört gözle bekliyor. Ayrıntılar için bkz. [Microsoft 365 Defender'da Avcılık için Defender Uzmanlarını Anlama raporu](defender-experts-report.md).
+- (Önizleme) Microsoft Defender Uzmanları genel önizlemesi katılımcıları artık Microsoft 365 Defender ürünleri tarafından oluşturulan uyarılarla birlikte, av hizmetinin ortamlarında ortaya çıkan tehditleri anlamalarına yardımcı olmak için aylık raporlar almayı dört gözle bekliyor. Ayrıntılar için bkz. [Microsoft 365 Defender'da Avcılık için Defender Uzmanlarını Anlama raporu](defender-experts-report.md).
 
 ## <a name="june-2022"></a>Haziran 2022
 - (Önizleme) [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) ve [DeviceTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) tabloları artık gelişmiş tehdit avcılığı şemasında kullanılabilir. Çeşitli yapılandırmaların durumu ve cihazların saldırı yüzeyi alanı durumları dahil olmak üzere Defender Güvenlik Açığı Yönetimi'ndeki değerlendirme olaylarını aramak için bu tabloları kullanın.
@@ -59,7 +60,7 @@ Güvenlik operasyonları ekibi onay bekleyen tüm eylemleri ve bu eylemlerin kar
 
 
 ## <a name="may-2022"></a>Mayıs 2022
-- (Önizleme) Yakın zamanda duyurulan [Microsoft Güvenlik Uzmanları](https://aka.ms/MicrosoftSecurityExperts) adlı yeni bir hizmet kategorisine genişletilmesine uygun olarak, genel önizleme [için Microsoft Defender Experts for Hunting (Avcılık](defenderexpertsforhuntingprev.md) için Defender Uzmanları) kullanıma sunulmuştur. Tehdit Avcılığı için Defender Uzmanları, güçlü bir güvenlik operasyonları merkezine sahip olan ancak Microsoft'un uç noktalar, Office 365, bulut uygulamaları ve kimlik gibi Microsoft Defender verilerinde tehditleri proaktif olarak avlamalarına yardımcı olmasını isteyen müşterilere yöneliktir. 
+- (Önizleme) Yakın zamanda duyurulan [Microsoft Güvenlik Uzmanları](https://aka.ms/MicrosoftSecurityExperts) adlı yeni bir hizmet kategorisine genişletilmesine uygun olarak, genel önizleme [için Microsoft Defender Uzmanları (Avlanma için](defenderexpertsforhuntingprev.md) Defender Uzmanları) kullanıma sunuyoruz. Tehdit Avcılığı için Defender Uzmanları, güçlü bir güvenlik operasyonları merkezine sahip olan ancak Microsoft'un uç noktalar, Office 365, bulut uygulamaları ve kimlik gibi Microsoft Defender verileri genelinde tehditleri proaktif olarak avlamalarına yardımcı olmasını isteyen müşterilere yöneliktir. 
 
 ## <a name="april-2022"></a>Nisan 2022
 - (Önizleme) Artık doğrudan tehdit avcılığı sorgu sonuçlarından e-posta iletilerinde [eylemler](advanced-hunting-take-action.md) yapılabilir. E-postalar diğer klasörlere taşınabilir veya kalıcı olarak silinebilir. 
@@ -148,7 +149,7 @@ Güvenlik operasyonları ekibi onay bekleyen tüm eylemleri ve bu eylemlerin kar
 
 - [Microsoft 365 Defender tehdit analizi raporu](threat-analytics.md)
 
-  Tehdit analizi, etkin saldırıların etkisini yanıtlamanıza ve en aza indirmenize yardımcı olur. Ayrıca Microsoft 365 Defender çözümleri tarafından engellenen saldırı girişimleri hakkında bilgi edinebilir ve daha fazla maruz kalma riskini azaltan ve dayanıklılığı artıran önleyici eylemler gerçekleştirebilirsiniz. Birleşik güvenlik deneyiminin bir parçası olarak tehdit analizi artık Uç Nokta için Microsoft Defender ve Office E5 için Microsoft Defender lisans sahipleri tarafından kullanılabilir.
+  Tehdit analizi, etkin saldırıların etkisini yanıtlamanıza ve en aza indirmenize yardımcı olur. Ayrıca Microsoft 365 Defender çözümleri tarafından engellenen saldırı girişimleri hakkında bilgi edinebilir ve daha fazla maruz kalma riskini azaltan ve dayanıklılığı artıran önleyici eylemler gerçekleştirebilirsiniz. Birleşik güvenlik deneyiminin bir parçası olarak tehdit analizi artık Office E5 lisans sahipleri için Uç Nokta için Microsoft Defender ve Microsoft Defender kullanılabilir.
 
 ## <a name="march-2021"></a>Mart 2021
 

@@ -12,9 +12,10 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 ms.collection:
-- M365-security-compliance
+- m365-security
 - Strat_O365_IP
 - m365initiative-defender-office365
+- EngageScoreSep2022
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
@@ -22,12 +23,12 @@ ms.localizationpriority: high
 description: Yöneticiler, kimlik sahtekarlığı yapan gönderenlerden ve etki alanlarından gelen kimlik avı saldırılarına karşı azaltmaya yardımcı olabilecek Exchange Online Protection (EOP) içinde bulunan kimlik sahtekarlığı önleme özellikleri hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 57e7f0c599262270f25c1258bb36a19ae4b07963
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 2ad4ab1bb3a3cdd4eb4cd05f4fefc0deedb326b1
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482680"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68069193"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP'de kimlik sahtekarlığına karşı koruma
 

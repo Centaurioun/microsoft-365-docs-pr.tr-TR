@@ -7,21 +7,22 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - VSBFY23
 description: Microsoft 365 İş Standart satın alın ve kuruluşunuzu ayarlayın.
-ms.openlocfilehash: f97d2d28b4ca85cacbbfa9cb02d27b1620c85269
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 6a413f63c79a900d9f1e3f1cd6d634689a5de2c5
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661091"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68196941"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Microsoft 365 İş Standart aboneliğine kaydolma
 

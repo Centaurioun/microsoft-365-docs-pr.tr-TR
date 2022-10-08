@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -25,12 +26,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 İş Temel aboneliğine kaydolmayı öğrenin.
-ms.openlocfilehash: 98509d92d8f89633f166cd85496af08075e5bb2a
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: 6b21646cf04d22133fd0cf90b3ae7813bf715156
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67644395"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197007"
 ---
 # <a name="sign-up-for-microsoft-365-business-basic"></a>Microsoft 365 İş Temel için kaydolun
 

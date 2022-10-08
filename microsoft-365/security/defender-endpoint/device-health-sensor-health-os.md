@@ -14,16 +14,18 @@ localization_priority: Normal
 ms.date: 09/06/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 ms.reviewer: mkaminska
-ms.openlocfilehash: dd5b773ffb3d658e3943a4351b905af43504436c
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 611fa76162094b8dd24a56c92f7f3b9b6e75a635
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731696"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68168412"
 ---
 # <a name="device-health-sensor-health--os-report"></a>Cihaz durumu, Algılayıcı sistem durumu & işletim sistemi raporu
 
@@ -37,7 +39,7 @@ ms.locfileid: "67731696"
 
 > Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Cihaz Durumu raporu, kuruluşunuzdaki cihazlar hakkında bilgi sağlar. Rapor algılayıcı durumunu, virüsten koruma durumunu, işletim sistemi platformlarını, Windows 10 sürümlerini ve Microsoft Defender Virüsten Koruma güncelleştirme sürümlerini gösteren popüler bilgileri içerir.
+Cihaz Durumu raporu, kuruluşunuzdaki cihazlar hakkında bilgi sağlar. Rapor algılayıcı sistem durumunu, virüsten koruma durumunu, işletim sistemi platformlarını, Windows 10 sürümlerini ve virüsten koruma güncelleştirme sürümlerini Microsoft Defender gösteren popüler bilgileri içerir.
 
 > [!IMPORTANT]
 > Windows&nbsp;Server&nbsp;2012&nbsp;R2 ve Windows&nbsp;Server&nbsp;2016'nın cihaz durumu raporlarında görünmesi için bu cihazların modern birleşik çözüm paketi kullanılarak eklenmesi gerekir. Daha fazla bilgi için bkz. [Windows Server 2012 R2 ve 2016 için modern birleşik çözümde yeni işlevler](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
@@ -133,4 +135,4 @@ Windows sürümü eğilim grafiği, Windows 10 en son ve en güvenli sürümleri
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft Defender Virüsten Koruma sistem durumu](device-health-microsoft-defender-antivirus-health.md#microsoft-defender-antivirus-health-tab)
+[virüsten koruma durumunu Microsoft Defender](device-health-microsoft-defender-antivirus-health.md#microsoft-defender-antivirus-health-tab)

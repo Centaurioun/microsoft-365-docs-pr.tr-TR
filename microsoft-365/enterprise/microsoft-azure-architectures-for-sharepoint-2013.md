@@ -8,7 +8,9 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -16,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: Microsoft Azure sanal makinelerinde hangi tür SharePoint 2013 çözümlerinin barındırılabileceğini ve Azure'ı bir çözümü barındıracak şekilde nasıl ayarlayacağınızı öğrenin.
-ms.openlocfilehash: 3f593c9ed2c95e4f837dae79b8575ec8a28b36f7
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d483f65dfec4828900cf980e3d788efa6619dc6a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701114"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68196171"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013 için Microsoft Azure Mimarileri
 

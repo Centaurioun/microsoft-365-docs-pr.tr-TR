@@ -2,14 +2,15 @@
 title: Microsoft 365 OneDrive İş etkinlik raporları
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -20,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Kuruluşunuz için OneDrive kullanım raporunu alın ve her OneDrive kullanıcısının etkinliğini, paylaşılan dosya sayısını ve depolama kullanımını öğrenin.
-ms.openlocfilehash: 02290333af41ee5e5773c0979fef1c282f2e0e21
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 840e7ea1aec87273940294aaf30c362f1a80dd83
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662646"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68196963"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Yönetim merkezinde Microsoft 365 Raporları - OneDrive İş etkinliği
 
 Microsoft 365 Raporları panosu, kuruluşunuzdaki ürünler genelindeki etkinliğe genel bakışı gösterir. Bu pano sayesinde ürünlerin her birindeki etkinliklerle ilgili daha ayrıntılı bilgi edinmek için ürün düzeyinde raporları ayrıntılı olarak inceleyebilirsiniz. [Raporlara genel bakış konusuna](activity-reports.md) göz atın.
   
-Örneğin, OneDrive kullanma lisansı olan her kullanıcının etkinliğini anlamak için OneDrive'da dosyalarla etkileşimlerine bakabilirsiniz. Ayrıca, paylaşılan dosya sayısına bakarak işbirliği düzeyini anlamanıza da yardımcı olabilir.
+For example, you can understand the activity of every user licensed to use OneDrive by looking at their interaction with files on OneDrive. It also helps you to understand the level of collaboration going on by looking at the number of files shared.
 
 ## <a name="how-do-i-get-to-the-onedrive-activity-report"></a>OneDrive Etkinlik raporuna nasıl ulaşabilirim?
 

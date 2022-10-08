@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 11/10/2021
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 f1.keywords:
@@ -22,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Office 365 dağıtımı planlarken kullanılacak dış Etki Alanı Adı Sistemi kayıtlarının başvuru listesi.
-ms.openlocfilehash: 47a8bfe283041ad0350cfdf1db0b9e97bfa18b60
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 12549d107d875a036da306ad99fbdf165be27ec8
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824838"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68196193"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 için Dış Etki Alanı Adı Sistemi kayıtları
 
@@ -60,24 +61,24 @@ CNAME kaydı yalnızca [21Vianet tarafından sağlanan Office 365](/microsoft-36
 ## <a name="external-dns-records-required-for-email-in-office-365-exchange-online"></a>Office 365 e-posta için gerekli dış DNS kayıtları (Exchange Online)
 <a name="BKMK_ReqdCore"> </a>
 
-Office 365'da e-posta birkaç farklı kayıt gerektirir. Tüm müşterilerin kullanması gereken üç birincil kayıt Autodiscover, MX ve SPF kayıtlarıdır.
+Office 365'da Email birkaç farklı kayıt gerektirir. Tüm müşterilerin kullanması gereken üç birincil kayıt Autodiscover, MX ve SPF kayıtlarıdır.
 
-- **Otomatik Bulma kaydı**, istemci bilgisayarların Exchange otomatik olarak bulmasına ve istemciyi düzgün yapılandırmasına olanak tanır.
+- **Otomatik Bulma kaydı** , istemci bilgisayarların Exchange'i otomatik olarak bulmasına ve istemciyi düzgün yapılandırmasına olanak tanır.
 
 - **MX kaydı** , diğer posta sistemlerine etki alanınız için e-postanın nereye gönderileceği bildirir. **Not:** E-postanızı Office 365 olarak değiştirdiğinizde, etki alanınızın MX kaydını güncelleştirerek bu etki alanına gönderilen TÜM e-postalar Office 365 gelmeye başlar.
 Yalnızca birkaç e-posta adresini Office 365 olarak değiştirmek mi istiyorsunuz? [Özel etki alanınızda birkaç e-posta adresiyle Pilot Office 365](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7) yapabilirsiniz.
 
 - **SPF için TXT kaydı** , alıcı e-posta sistemleri tarafından e-postanızı gönderen sunucunun sizin onayladığınız bir sunucu olduğunu doğrulamak için kullanılır. Bu, e-posta kimlik sahtekarlığı ve kimlik avı gibi sorunları önlemeye yardımcı olur. Kaydınıza nelerin dahil edileceklerini anlamanıza yardımcı olması için bu makaledeki [SPF için gereken Dış DNS kayıtlarına](external-domain-name-system-records.md#BKMK_SPFrecords) bakın.
 
-Exchange Federasyonu kullanan e-posta müşterileri, tablonun en altında listelenen ek CNAME ve TXT kaydına da ihtiyaç duyar.
+Exchange Federasyon kullanan Email müşterilerin tablonun en altında listelenen ek CNAME ve TXT kaydına da ihtiyacı olacaktır.
 
 |DNS kaydı|Amaç|Kullanılacak değer|
 |---|---|---|
-|**CNAME** <br/> **(Exchange Online)**|Outlook istemcilerinin Otomatik Bulma hizmetini kullanarak Exchange Online hizmetine kolayca bağlanmasına yardımcı olur. Otomatik bulma doğru Exchange Server konağı otomatik olarak bulur ve kullanıcılar için Outlook yapılandırılır.|**Diğer ad:** Autodiscover <br/> **Target:** autodiscover.outlook.com|
+|**CNAME** <br/> **(Exchange Online)**|Outlook istemcilerinin Otomatik Bulma hizmetini kullanarak Exchange Online hizmetine kolayca bağlanmasına yardımcı olur. Otomatik bulma, doğru Exchange Server konağı otomatik olarak bulur ve kullanıcılar için Outlook'u yapılandırılır.|**Diğer ad:** Autodiscover <br/> **Target:** autodiscover.outlook.com|
 |**MX** <br/> **(Exchange Online)**|Etki alanınız için gelen postayı Office 365'deki Exchange Online hizmetine gönderir. <br/> **Not:** E-posta Exchange Online aktarıldıktan sonra, eski sisteminize işaret eden MX kayıtlarını kaldırmanız gerekir. |**Etki alanı:** Örneğin, contoso.com <br/> **Hedef e-posta sunucusu:**\<MX token\>. mail.protection.outlook.com <br/> **Yaşam Süresi (TTL) Değeri:** 3600 <br/> **Tercih/Öncelik:** Diğer MX kayıtlarından daha düşük (bu, postanın Exchange Online teslim edilmesini sağlar) - örneğin 1 veya 'düşük' <br/> Aşağıdaki adımları izleyerek bilgilerinizi \<MX token\> bulun: <br/> Office 365 oturum açın, Office 365 yönetici \> Etki Alanları'na gidin. <br/> Etki alanınızın Eylem sütununda Sorunları düzelt'i seçin. <br/> MX kayıtları bölümünde Neyi düzeltebilirim? <br/> MX kaydınızı güncelleştirmek için bu sayfadaki yönergeleri izleyin. <br/> [MX önceliği nedir?](../admin/setup/domains-faq.yml)|
 |**SPF (TXT)** <br/> **(Exchange Online)**|Başkalarının istenmeyen posta veya başka kötü amaçlı e-postalar göndermek için etki alanınızı kullanmasını önlemeye yardımcı olur. Gönderen ilkesi çerçevesi (SPF) kayıtları, etki alanınızdan e-posta gönderme yetkisine sahip sunucuları tanımlayarak çalışır.|[SPF için gereken dış DNS kayıtları](external-domain-name-system-records.md#BKMK_SPFrecords)|
-|**TXT** <br/> **(federasyon Exchange)**|Karma dağıtım için Exchange federasyon için kullanılır.|**TXT kaydı 1:** Örneğin, contoso.com ve özel olarak oluşturulan, etki alanına dayanıklı karma metin (örneğin, Y96nu89138789315669824) <br/> **TXT kaydı 2:** Örneğin, exchangedelegation.contoso.com ve özel olarak oluşturulan, etki alanına dayanıklı karma metin (örneğin, Y3259071352452626169)|
-|**CNAME** <br/> **(federasyon Exchange)**|şirketiniz Exchange federasyonu kullanırken otomatik bulma hizmetini kullanarak Outlook istemcilerinin Exchange Online hizmetine kolayca bağlanmasına yardımcı olur. Otomatik bulma doğru Exchange Server konağı otomatik olarak bulur ve kullanıcılarınız için Outlook yapılandırılır.|**Diğer ad:** Örneğin, Autodiscover.service.contoso.com <br/> **Target:** autodiscover.outlook.com|
+|**TXT** <br/> **(Exchange federasyonu)**|Karma dağıtım için Exchange federasyonu için kullanılır.|**TXT kaydı 1:** Örneğin, contoso.com ve özel olarak oluşturulan, etki alanına dayanıklı karma metin (örneğin, Y96nu89138789315669824) <br/> **TXT kaydı 2:** Örneğin, exchangedelegation.contoso.com ve özel olarak oluşturulan, etki alanına dayanıklı karma metin (örneğin, Y3259071352452626169)|
+|**CNAME** <br/> **(Exchange federasyonu)**|Şirketiniz Exchange federasyonu kullanırken Otomatik Bulma hizmetini kullanarak Outlook istemcilerinin Exchange Online hizmetine kolayca bağlanmasına yardımcı olur. Otomatik bulma, doğru Exchange Server konağı otomatik olarak bulur ve kullanıcılarınız için Outlook'u yapılandırılır.|**Diğer ad:** Örneğin, Autodiscover.service.contoso.com <br/> **Target:** autodiscover.outlook.com|
 
 ## <a name="external-dns-records-required-for-skype-for-business-online"></a>Skype Kurumsal Online için gereken dış DNS kayıtları
 <a name="BKMK_ReqdCore"> </a>
@@ -89,8 +90,8 @@ Ağınızın doğru yapılandırıldığından emin olmak için [Office 365 URL'
 
 |DNS kaydı|Amaç|Kullanılacak değer|
 |---|---|---|
-|**SRV** <br/> **(Skype Kurumsal Online)**|SIP federasyonunu etkinleştirerek Office 365 etki alanınızın anlık ileti (IM) özelliklerini dış istemcilerle paylaşmasına izin verir. [Office 365 URL'leri ve IP adresi aralıkları](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO) hakkında daha fazla bilgi edinin.|**Hizmet:** sipfederationtls <br/> **Protokolü:** TCP <br/> **Öncelik:** 100 <br/> **Ağırlık:** 1 <br/> **Bağlantı noktası:** 5061 <br/> **Hedef:** sipfed.online.lync.com <br/> **Not:** Güvenlik duvarı veya ara sunucu dış DNS'de SRV aramalarını engelliyorsa, bu kaydı iç DNS kaydına eklemeniz gerekir. |
-|**SRV** <br/> **(Skype Kurumsal Online)**|lync istemcileri arasındaki bilgi akışını koordine etmek için Skype Kurumsal tarafından kullanılır.|**Hizmet:** sip <br/> **Protokolü:** TLS <br/> **Öncelik:** 100 <br/> **Ağırlık:** 1 <br/> **Bağlantı noktası:** 443 <br/> **Hedef:** sipdir.online.lync.com|
+|**SRV** <br/> **(Skype Kurumsal Online)**|SIP federasyonunu etkinleştirerek Office 365 etki alanınızın anlık ileti (IM) özelliklerini dış istemcilerle paylaşmasına izin verir. [Office 365 URL'leri ve IP adresi aralıkları](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO) hakkında daha fazla bilgi edinin.|**Hizmet:** sipfederationtls <br/> **Protokolü:** Tcp <br/> **Öncelik:** 100 <br/> **Ağırlık:** 1 <br/> **Bağlantı noktası:** 5061 <br/> **Hedef:** sipfed.online.lync.com <br/> **Not:** Güvenlik duvarı veya ara sunucu dış DNS'de SRV aramalarını engelliyorsa, bu kaydı iç DNS kaydına eklemeniz gerekir. |
+|**SRV** <br/> **(Skype Kurumsal Online)**|lync istemcileri arasındaki bilgi akışını koordine etmek için Skype Kurumsal tarafından kullanılır.|**Hizmet:** sip <br/> **Protokolü:** Tls <br/> **Öncelik:** 100 <br/> **Ağırlık:** 1 <br/> **Bağlantı noktası:** 443 <br/> **Hedef:** sipdir.online.lync.com|
 |**CNAME** <br/> **(Skype Kurumsal Online)**|Skype Kurumsal Online hizmetini bulmanıza ve oturum açmanıza yardımcı olması için Lync istemcisi tarafından kullanılır.|**Diğer ad:** sip <br/> **Hedef:** sipdir.online.lync.com <br/> Daha fazla bilgi için bkz. [URL'leri ve IP adresi aralıklarını Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO).|
 |**CNAME** <br/> **(Skype Kurumsal Online)**|Skype Kurumsal Online hizmetini bulmanıza ve oturum açmanıza yardımcı olması için Lync mobil istemcisi tarafından kullanılır.|**Diğer ad:** lyncdiscover <br/> **Hedef:** webdir.online.lync.com|
 
@@ -124,7 +125,7 @@ Etki alanınızdan e-posta alan bir e-posta sistemi SPF kaydına bakar ve iletiy
 
 ### <a name="choose-the-spf-record-structure-you-need"></a>İhtiyacınız olan SPF kayıt yapısını seçin
 
-Yalnızca Office 365 için Exchange Online e-posta kullanmadığınız senaryolar için (örneğin, SharePoint Online'dan gelen e-postayı kullandığınızda), kaydın değerine ne ekleneceğini belirlemek için aşağıdaki tabloyu kullanın.
+Yalnızca Office 365 için Exchange Online e-posta kullanmadığınız senaryolar için (örneğin, SharePoint Online'dan gelen e-postayı da kullandığınızda), kaydın değerine ne ekleneceğini belirlemek için aşağıdaki tabloyu kullanın.
 
 > [!NOTE]
 > Güvenlik duvarınız genelinde e-posta trafiğini yönetmek için uç e-posta sunucuları gibi karmaşık bir senaryonuz varsa, ayarlamanız gereken daha ayrıntılı bir SPF kaydına sahip olursunuz. Nasıl yapılacağını öğrenin: Kimlik [sahtekarlıklarını önlemeye yardımcı olmak için Office 365'da SPF kayıtlarını ayarlama](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md). Ayrıca, Office 365 [sahtekarlık önlemeye yardımcı olmak için Sender Policy Framework'ün (SPF) nasıl kullanıldığına ilişkin bilgi edinerek SPF'nin](../security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md) Office 365 ile nasıl çalıştığı hakkında daha fazla bilgi edinebilirsiniz.
@@ -135,7 +136,7 @@ Yalnızca Office 365 için Exchange Online e-posta kullanmadığınız senaryola
 |2|Exchange Online (ortak)|Yalnızca Exchange Online ile kullanın|include:spf.protection.outlook.com|
 |3|Üçüncü taraf e-posta sistemi (daha az yaygın)||Içerir:\<email system like mail.contoso.com\>|
 |4|Şirket içi posta sistemi (daha az yaygın)|Exchange Online Protection veya Exchange Online artı başka bir posta sistemi kullanıyorsanız kullanın|ip4:\<0.0.0.0\> <br/> ip6:\< : : \> <br/> Içerir:\<mail.contoso.com\> <br/> Köşeli ayraç\<\> () içindeki değer, etki alanınız için e-posta gönderecek diğer posta sistemleri olmalıdır.|
-|5|Tüm e-posta sistemleri (gerekli)||-tümü|
+|5|Tüm e-posta sistemleri (gerekli)||-Tüm|
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>Örnek: Mevcut bir SPF kaydına ekleme
 <a name="bkmk_addtospf"> </a>
@@ -176,7 +177,7 @@ TXT Name @
 Values: v=spf1 include:spf.protection.outlook.com include:servers.mcsv.net -all
 ```
 
-Alternatif olarak, hem Office 365 hem de şirket içi posta sisteminizden e-postanın gönderileceği Exchange Karma yapılandırmanız varsa, contoso.com'deki SPF kaydınız şöyle görünebilir:
+Alternatif olarak, e-postanın hem Office 365 hem de şirket içi posta sisteminizden gönderileceği bir Exchange Karma yapılandırmanız varsa, contoso.com'deki SPF kaydınız şöyle görünebilir:
 
 ``` dns
 TXT Name @

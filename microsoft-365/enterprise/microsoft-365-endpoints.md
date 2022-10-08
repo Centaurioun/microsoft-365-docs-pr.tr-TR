@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 f1.keywords:
@@ -19,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Microsoft 365 trafiği için hedef IP adresleri ve URL'ler için, farklı Microsoft 365 bulutlarının İnternet uç noktaları için bu makale listesini kullanın.
-ms.openlocfilehash: 978dd6f2901c2b965a43a273d647830e2e9e0bc9
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+ms.openlocfilehash: 94728e43d219f9f36fd0a7d535b225c8b49f2024
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67570083"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68196149"
 ---
 # <a name="microsoft-365-endpoints"></a>Microsoft 365 uç noktaları
 

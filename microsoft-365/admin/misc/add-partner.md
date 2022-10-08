@@ -7,9 +7,10 @@ author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -22,26 +23,26 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: Satın alma, iş ortağı değiştirme veya Microsoft 365 iş ortağını abonelikten silme gibi bir sırada kayıt ortağı ekleme.
-ms.openlocfilehash: abd82531e503e37370b12f881ea2744d7da0ff32
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+description: Microsoft 365 satın alma sırasında bir kayıt iş ortağı ekleyin, iş ortağını değiştirin veya abonelikten bir iş ortağı silin.
+ms.openlocfilehash: 670eb31679f7ca3a704fef32102be9de8c19e74f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62996153"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187129"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Abonelik danışmanı iş ortağı ekleme, değiştirme veya silme
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Bu makale, Çin'Office 365 21Vianet tarafından çalıştırılan diğer etki alanlarında geçerlidir. 21Vianet İş Ortağının kendi kullanıcı aboneliklerini yönetmesine izin vermek Office 365 kuruluşlara göredir.
+> Bu makale, Çin'de 21Vianet tarafından sağlanan Office 365 için geçerlidir. 21Vianet İş Ortağının kendileri için Office 365 aboneliğini yönetmesine izin vermek isteyen kuruluşlar içindir.
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-Abonelik danışmanınız olarak hizmet veren yetkili bir Microsoft iş ortağı, aboneliğinizi ayarlamak ve sürdürmek için gereken satış, destek ve teknik uzmanlık hizmetlerini sunar. Satın aldığınız veya istediğiniz zaman bir abonelik danışmanı iş ortağını kayıt Microsoft 365 iş ortağı olarak  eklersiniz. Hâlen birlikte çalıştığınız bir iş ortağı yoksa, [Microsoft Pinpoint](https://pinpoint.microsoft.com) web sitesinden de bir ortak bulabilirsiniz.
+Abonelik danışmanınız olarak hizmet veren yetkili bir Microsoft iş ortağı, aboneliğinizi ayarlamak ve sürdürmek için gereken satış, destek ve teknik uzmanlık hizmetlerini sunar. Microsoft 365'i satın aldığınızda veya başka bir zamanda kayıt iş ortağı olarak abonelik danışmanı iş ortağı ekleyebilirsiniz. Hâlen birlikte çalıştığınız bir iş ortağı yoksa, [Microsoft Pinpoint](https://pinpoint.microsoft.com) web sitesinden de bir ortak bulabilirsiniz.
 
 ::: moniker-end
 
@@ -49,13 +50,13 @@ Abonelik danışmanınız olarak hizmet veren yetkili bir Microsoft iş ortağı
 
 ::: moniker range="o365-worldwide"
 
-Seçtiğiniz iş ortağı, Microsoft hizmetleri iş ortağına ve bu hizmetleri kullandığınız ülke veya bölgeye bağlıdır. İş ortağı ekleyecekseniz veya aboneliğinizle ilgili iş ortağını değiştirecekseniz, önce iş ortağından Microsoft İş Ortağı Kimliğini öğrenmeniz gerekir.
+Seçtiğiniz iş ortağı, kullandığınız Microsoft hizmetlerine ve bu hizmetleri kullanacağınız ülkeye veya bölgeye bağlıdır. İş ortağı ekleyecekseniz veya aboneliğinizle ilgili iş ortağını değiştirecekseniz, önce iş ortağından Microsoft İş Ortağı Kimliğini öğrenmeniz gerekir.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Office 365 yöneticisi olarak kullanıcıları oluşturabilir veya düzenleyebilir, kullanıcı parolalarını sıfırlayabilirsiniz, kullanıcı lisanslarını yönetebilir, etki alanlarını yönetebilir ve başka şeylerin yanı sıra organizasyon deki diğer kullanıcılara yönetici izinleri atabilirsiniz. Bununla birlikte, başka birinin bu yönetim görevlerini gerçekleştirmesi için bir iş ortağı ilişkisi oluşturarak bu rolü yetkili bir 21Vianet iş ortağına temsilci olarak devredebilirsiniz.
+Office 365 yöneticisi olarak kullanıcıları oluşturabilir veya düzenleyebilir, kullanıcı parolalarını sıfırlayabilir, kullanıcı lisanslarını yönetebilir, etki alanlarını yönetebilir ve kuruluşunuzdaki diğer kullanıcılara yönetici izinleri atayabilirsiniz. Ancak, bu yönetim görevlerini başka birinin gerçekleştirmesini istiyorsanız, bir iş ortağı ilişkisi oluşturarak bu rolü 21Vianet'in yetkili bir iş ortağına devredebilirsiniz.
 
 ::: moniker-end
 
@@ -63,12 +64,12 @@ Office 365 yöneticisi olarak kullanıcıları oluşturabilir veya düzenleyebil
 
 ## <a name="add-a-partner-at-the-time-of-purchase"></a>Satın alırken iş ortağı ekleme
 
-1. Yönetim merkezinde Faturalama Satın Alma **hizmetleri** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**sayfasına**</a> gidin.
-2. Satın almak istediğiniz ürünü seçin ve ardından Satın Al'ı **seçin**.
-3. Yeni bir iş ortağı eklemek için **Siparişiniz için yardım** mı gerekiyor? öğesini genişletin ve Bir **Microsoft İş Ortağından yardım al'ı seçin**.<br>
-İş ortağı aramak veya bir iş ortağıyla eşleşme yapmak için sağlayıcılar sayfasındaki adımları izleyin.
-4. Zaten bir iş ortağınız varsa, ödeme sihirbazının ikinci adımlarında, sağ bölmede İş ortağı bilgileri'nin altında Ekle'yi **seçin**.
-5. Ekleyeceğiniz iş ortağının Microsoft İş Ortağı Kimliğini girin. İş ortağının Microsoft İş Ortağı Kimliğini kendisinden öğrenebilirsiniz.
+1. Yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**Satın Alma hizmetleri**</a> sayfasına gidin.
+2. Satın almak istediğiniz ürünü seçin ve ardından **Satın Al'ı** seçin.
+3. Yeni iş ortağı eklemek için **Siparişinizle ilgili yardım mı gerekiyor?** seçeneğini genişletin ve **Microsoft İş Ortağından yardım alın'ı** seçin.<br>
+Bir iş ortağı aramak veya bir iş ortağıyla eşleşmek için sağlayıcılar sayfasındaki adımları izleyin.
+4. Zaten bir iş ortağınız varsa, ödeme sihirbazının ikinci adımında, sağ bölmedeki İş ortağı bilgileri'nin altında **Ekle'yi** seçin.
+5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
 6. Aboneliklerinizi satın alma işlemini gerçekleştirmek için sihirbazın kalan kısmını tamamlayın.
 
 ::: moniker-end
@@ -77,23 +78,23 @@ Office 365 yöneticisi olarak kullanıcıları oluşturabilir veya düzenleyebil
 
 ::: moniker range="o365-worldwide"
 
-1. Yönetim merkezinde Ürünlerinizi Faturalandırma **sayfasına** \> gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a>
-2. Ürünler **sekmesinde** , düzenlemek istediğiniz aboneliği seçin.
-3. Abonelik ayrıntıları sayfasında, İş ortağı **bilgileri'nin** altında İş Ortağı Ağı **Kimliği'ne tıklayın**. İş ortağının Microsoft İş Ortağı Ağı Kimliğini, iş ortağının Microsoft İş Ortağı Ağı Kimliğini sorarak eldeebilirsiniz.
+1. Yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ürünleriniz</a> sayfasına gidin.
+2. **Ürünler** sekmesinde, düzenlemek istediğiniz aboneliği seçin.
+3. Abonelik ayrıntıları sayfasındaki **İş ortağı bilgileri'nin** altında **İş Ortağı Ağ Kimliği'ni** yazın. İş ortağından isteyerek iş ortağının Microsoft İş Ortağı Ağ Kimliğini alabilirsiniz.
 4. **Ekle**'yi seçin.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Bu süreç yetkili iş ortağınız tarafından başlatılır. İş ortağı size bir e-posta gönderarak, iş ortağına kayıt ortağı olarak hareket izni vermek mi istediğinize sorar.
+Bu işlem yetkili iş ortağınız tarafından başlatılır. İş ortağı, kayıt ortağı olarak hareket etme izni vermek isteyip istemediğinizi sormak için size bir e-posta gönderir.
   
 Bu teklifi kabul etmek için
   
-1. İş ortağının koşullarını e-postada okuyun.
-2. Sözleşmeyi yetkilendirmek için, ilgili sözleşmede yetkilendirme sayfasına giden Office 365.
-3. İş **Ortağı İlişkileri'nin** altında, iş **ortağını temsilci** yöneticiniz olarak yetkilendirmek için Evet'i seçin ve sonra da Sonraki'yi **seçin**.
-4. İş ortağı ilişkisi teklifi bir deneme aboneliğiyle veya bir satın alma teklifiyle birlikte gelmişse, deneme veya abonelik hesabını oluşturun.
+1. E-postada iş ortağının koşullarını okuyun.
+2. Sözleşmeyi yetkilendirmek için, Office 365 yetkilendirme sayfasına giden bağlantıyı seçin.
+3. **İş Ortağı İlişkileri'nin** altında, iş ortağını temsilci yöneticiniz olarak yetkilendirmek için **Evet'i** seçin ve ardından **İleri'yi** seçin.
+4. İş ortağı ilişkisi teklifi bir deneme aboneliği veya satın alma teklifiyle geldiyse deneme veya abonelik hesabınızı oluşturun.
 
 ::: moniker-end
 
@@ -101,36 +102,36 @@ Bu teklifi kabul etmek için
 
 ::: moniker range="o365-worldwide"
 
-1. Yönetim merkezinde Ürünlerinizi Faturalandırma **sayfasına** \> gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a>
+1. Yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ürünleriniz</a> sayfasına gidin.
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Yönetim merkezinde Ürünlerinizi Faturalandırma **sayfasına** \> gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a>
+1. Yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Ürünleriniz</a> sayfasına gidin.
 ::: moniker-end
-2. Abonelik ayrıntıları sayfasında, İş ortağı **bilgileri'nin altında Kaldır'ı** **seçin**.
-3. Yeni iş **ortağının Microsoft İş** Ortağı Ağı Kimliğini yazın. Ortağınıza sorarak Microsoft İş Ortağı Kimliğini alabilirsiniz.
+2. Abonelik ayrıntıları sayfasındaki **İş ortağı bilgileri'nin** altında **Kaldır'ı** seçin.
+3. Yeni **iş ortağı için Microsoft İş Ortağı Ağ Kimliğini** yazın. Ortağınıza sorarak Microsoft İş Ortağı Kimliğini alabilirsiniz.
 4. **Ekle**'yi seçin.
   
 ## <a name="view-your-partner-relationships"></a>İş ortağı ilişkilerini görüntüleme
 
-- Yönetim merkezinde Ayarlar  > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner ilişkileri sayfasına</a> gidin. İş ortaklarınız bu sayfada listelenir.
+- Yönetim merkezinde **Ayarlar** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">İş Ortağı ilişkileri</a> sayfasına gidin. İş ortaklarınız bu sayfada listelenir.
 
-  İş ortağınız yoksa "Burada bir şey yok" ifadesinin yer alan bir iletiyle karşı karşılasınız.
+  İş ortağınız yoksa "Burada hiçbir şey yok" iletisini görürsünüz.
   
 ## <a name="delete-a-partner-from-a-subscription"></a>İş ortağını abonelikten silme
 
 ::: moniker range="o365-worldwide"
 
-1. Yönetim merkezinde Ürünlerinizi Faturalandırma **sayfasına** \> gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a>
+1. Yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ürünleriniz</a> sayfasına gidin.
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Yönetim merkezinde Ürünlerinizi Faturalandırma **sayfasına** \> gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a>
+1. Yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Ürünleriniz</a> sayfasına gidin.
 ::: moniker-end
-2. Ürünler **sekmesinde** , düzenlemek istediğiniz aboneliği seçin.
-3. Abonelik ayrıntıları sayfasında, İş ortağı **bilgileri'nin altında Kaldır'ı** **seçin**.
+2. **Ürünler** sekmesinde, düzenlemek istediğiniz aboneliği seçin.
+3. Abonelik ayrıntıları sayfasındaki **İş ortağı bilgileri'nin** altında **Kaldır'ı** seçin.
 
 ## <a name="remove-a-reseller-relationship"></a>Bayi ilişkisi kaldırma
 
@@ -144,11 +145,11 @@ Bayi ilişkisi kaldırıyorsanız **Sil** seçeneği gri hâle gelir ve bayi ort
 
 ::: moniker range="o365-21vianet"
   
-Bayi iş ortağınıza şu yönergeleri izlemelerini istemeniz gerekir: [İş ortağıyla bayi ilişkisini kaldırma](/partner-center/remove-a-relationship).
+Bayi iş ortağınızdan şu yönergeleri izlemesini istemeniz gerekir: [İş ortağıyla kurumsal bayi ilişkisini kaldırma](/partner-center/remove-a-relationship).
   
 ::: moniker-end
 
 ## <a name="related-content"></a>İlgili içerik
 
-[İş ortağınızı Microsoft 365 satıcınızı bulma](../manage/find-your-partner-or-reseller.md) (makale)\
-[İşletmeler için Microsoft 365 kurulumlarınızı planlama](../setup/plan-your-setup.md) (makale)
+[Microsoft 365 iş ortağınızı veya kurumsal bayinizi bulma](../manage/find-your-partner-or-reseller.md) (makale)\
+[İş için Microsoft 365 kurulumunuzu planlama](../setup/plan-your-setup.md) (makale)

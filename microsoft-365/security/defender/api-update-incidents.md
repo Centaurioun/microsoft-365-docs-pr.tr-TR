@@ -15,18 +15,20 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.custom: api
-ms.openlocfilehash: d15f7a580964736ebc81bd0dbeed534c4965426b
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 37460a3d0f0f67ee907b8e7b214f859dc60e8dfe
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480986"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68066860"
 ---
 # <a name="update-incidents-api"></a>Güvenlik olayları API'sini güncelleştirme
 
@@ -83,13 +85,13 @@ Yetkilendirme|Dize|Taşıyıcı {token}. **Gerekli**.
 ---|---|---
 Durum|Enum|Olayın geçerli durumunu belirtir. Olası değerler şunlardır: `Active`, `Resolved`ve `Redirected`.
 Atanan|Dize|Olayın sahibi.
-Sınıflandırma|Enum|Olayın belirtimi. Olası değerler şunlardır: `Unknown`, `FalsePositive`, `TruePositive`.
-Belirlenmesi|Enum|Olayın belirlenmesini belirtir. Olası değerler şunlardır: `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, , `UnwantedSoftware`. `Other`
-Etiketler|dize Listesi|Olay etiketlerinin listesi.
+Sınıflandırma|Enum|Olayın belirtimi. Olası değerler şunlardır: `TruePositive`, `Informational, expected activity`ve `FalsePositive`.
+Belirlenmesi|Enum|Olayın belirlenmesini belirtir. <p>Her sınıflandırma için olası belirleme değerleri şunlardır: <br><li> <b>Doğru pozitif</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) – genel api'de sabit listesi adını uygun şekilde değiştirmeyi göz önünde bulundurun, `Malware` (Kötü Amaçlı Yazılım), `Phishing` (Kimlik Avı), `Unwanted software` (İstenmeyenSoftware) ve `Other` (Diğer). <li> <b>Bilgilendirici, beklenen etkinlik:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity) - genel API'deki sabit listesi adını buna göre ve `Other` (Diğer) değiştirmeyi göz önünde bulundurun. <li>  <b>Hatalı pozitif:</b> `Not malicious` (Temiz) - genel API'deki sabit listesi adını uygun şekilde değiştirmeyi göz önünde bulundurun, `Not enough data to validate` (InsufficientData) ve `Other` (Diğer).
+Etiketler|dize listesi|Olay etiketlerinin listesi.
 Yorum|Dize|Olaya eklenecek açıklama.
 
 >[!NOTE]
->29 Ağustos 2022'de daha önce desteklenen uyarı belirleme değerleri ('Apt' ve 'SecurityPersonnel') kullanım dışı bırakılacak ve artık API aracılığıyla kullanılamayacak.
+>29 Ağustos 2022'de daha önce desteklenen uyarı belirleme değerleri ('Apt' ve 'SecurityPersonnel') kullanım dışı bırakılacak ve artık API aracılığıyla kullanılamayacaktır.
 
 ## <a name="response"></a>Yanıt
 

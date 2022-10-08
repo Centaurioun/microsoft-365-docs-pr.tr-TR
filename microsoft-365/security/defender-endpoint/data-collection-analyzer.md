@@ -13,16 +13,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 225466eb1e022ebbea7602ed073ee4e201e65714
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 444f28eac9243aa5aca42b8584d910fbeed94971
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742540"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68168385"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>Windows'da gelişmiş sorun giderme için veri toplama
 
@@ -37,7 +39,7 @@ Microsoft destek uzmanlarıyla işbirliği yaparken, daha karmaşık senaryolard
 :::image type="content" source="images/d89a1c04cf8441e4df72005879871bd0.png" alt-text="MDEClientAnalyzer.cmd parametreleri" lightbox="images/d89a1c04cf8441e4df72005879871bd0.png":::
 
 > [!NOTE]
-> Gelişmiş sorun giderme parametreleri kullanıldığında çözümleyici, Microsoft Defender Virüsten Koruma ile ilgili destek günlüklerini toplamak için [MpCmdRun.exe](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) da çağırır.
+> Gelişmiş sorun giderme parametreleri kullanıldığında çözümleyici, Virüsten Koruma ile ilgili [ Microsoft Defender ](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) destek günlüklerini toplamak içinMpCmdRun.exeda çağırır.
 
 **-h** - Standart günlük kümesine ek olarak ayrıntılı bir genel performans izlemesi toplamak için [Windows Performans Kaydedicisi'ne](/windows-hardware/test/wpt/wpr-command-line-options) çağrılar.
 
@@ -82,4 +84,4 @@ Microsoft destek uzmanlarıyla işbirliği yaparken, daha karmaşık senaryolard
 >
 >   - **-r** - Aracın uzak (veya etkileşimli olmayan bağlamdan) çalıştırıldığını gösterir
 >   - **-i** - Diğer ilgili günlüklerle birlikte ağ izlemesinin toplanması için senaryo bayrağı
->   - **-m** \# - Çalıştırılacak dakika sayısı (yukarıdaki örnekte 5 dakika)
+>   - **-M** \# - Çalıştırılacak dakika sayısı (yukarıdaki örnekte 5 dakika)

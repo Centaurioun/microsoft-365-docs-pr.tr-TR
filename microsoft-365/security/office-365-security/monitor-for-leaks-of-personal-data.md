@@ -12,19 +12,19 @@ ms.collection:
 - Strat_O365_Enterprise
 - Ent_O365
 - GDPR
-- M365-security-compliance
+- m365-security
 ms.localizationpriority: high
 search.appverid:
 - MET150
 description: Kişisel veri sızıntılarını izlemek için kullanabileceğiniz üç araç hakkında bilgi edinin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 2ce8dcae988e99d7697ba14f296704ffaaeafd5d
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: dd25ee58f219a18544b05969e2c0a51eb7788a13
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598944"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68069017"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Kişisel veri sızıntılarını izleme
 
