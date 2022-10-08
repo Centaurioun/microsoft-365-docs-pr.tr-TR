@@ -16,15 +16,17 @@ ms.custom:
 - edr
 - admindeeplinkDEFENDER
 ms.date: 08/19/2022
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 8a0b8ebb8d839afd5417499fc010c829a6e33d99
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 4abed10794df5fe4e1789bff7014e32ea304e937
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67698992"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186447"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Blok modunda uç nokta algılama ve yanıt (EDR)
 
@@ -42,17 +44,17 @@ ms.locfileid: "67698992"
 
 ## <a name="what-is-edr-in-block-mode"></a>Blok modunda EDR nedir?
 
-Blok modunda [uç nokta algılama ve yanıt](overview-endpoint-detection-response.md) (EDR), Microsoft Defender Virüsten Koruma (MDAV) birincil virüsten koruma ürünü olmadığında ve pasif modda çalıştığında kötü amaçlı yapıtlara karşı ek koruma sağlar. Blok modundaki EDR, EDR özellikleri tarafından algılanan kötü amaçlı yapıtları düzeltmek için arka planda çalışır. Bu tür yapıtlar birincil, Microsoft dışı virüsten koruma ürünü tarafından kaçırılmış olabilir. Blok modunda EDR, Microsoft Defender Virüsten Koruma'nın ihlal sonrası, davranışsal EDR algılamaları üzerinde eylemler gerçekleştirmesine olanak tanır. **Sık sorulan sorular** bölümündeki [Microsoft Defender Virüsten Koruma'm varsa blok modunda EDR'yi açmam gerekiyor mu?](#do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices) bölümüne bakın.
+Blok modunda [uç nokta algılama ve yanıt](overview-endpoint-detection-response.md) (EDR), Microsoft Defender Virüsten Koruma (MDAV) birincil virüsten koruma ürünü olmadığında ve pasif modda çalıştığında kötü amaçlı yapıtlara karşı ek koruma sağlar. Blok modundaki EDR, EDR özellikleri tarafından algılanan kötü amaçlı yapıtları düzeltmek için arka planda çalışır. Bu tür yapıtlar birincil, Microsoft dışı virüsten koruma ürünü tarafından kaçırılmış olabilir. Blok modunda EDR, Microsoft Defender Virüsten Koruma'nın ihlal sonrası, davranışsal EDR algılamaları üzerinde eylemler gerçekleştirmesine olanak tanır. **Sık sorulan sorular** bölümündeki [Virüsten Koruma Microsoft Defender EDR'yi blok modunda açmam gerekiyor mu?](#do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices) bölümüne bakın.
 
 > [!IMPORTANT]
 > Blok modundaki EDR, Microsoft Defender Virüsten Koruma gerçek zamanlı koruması etkinleştirildiğinde kullanılabilen tüm korumayı sağlamaz. Microsoft Defender Virüsten Koruma'nın etkin virüsten koruma çözümü olması gereken bazı özellikler çalışmaz, örneğin aşağıdaki örnekler:
 >
-> - Microsoft Defender Virüsten Koruma pasif moddayken erişim tarama dahil olmak üzere gerçek zamanlı koruma kullanılamaz. Gerçek zamanlı koruma ilkesi ayarları hakkında daha fazla bilgi edinmek için bkz. **[Microsoft Defender Virüsten Koruma'yı her zaman açık korumayı etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)**.
+> - Microsoft Defender Virüsten Koruma pasif moddayken, erişim içi tarama da dahil olmak üzere gerçek zamanlı koruma kullanılamaz. Gerçek zamanlı koruma ilkesi ayarları hakkında daha fazla bilgi edinmek için bkz. **[Microsoft Defender Virüsten Koruma'yı her zaman açık korumayı etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)**.
 > - **[Ağ koruması](network-protection.md)** ve **[saldırı yüzeyi azaltma kuralları](attack-surface-reduction.md)** gibi özellikler yalnızca Microsoft Defender Virüsten Koruma etkin modda çalışırken kullanılabilir.
 >
 > Microsoft dışı virüsten koruma çözümünüzün bu özellikleri içermesi beklenir.
 
-Blok modundaki EDR, [tehdit & güvenlik açığı yönetimi](next-gen-threat-and-vuln-mgt.md) özellikleriyle tümleşiktir. Kuruluşunuzun güvenlik ekibi, henüz etkinleştirilmemişse EDR'yi blok modunda açmak için bir [güvenlik önerisi](tvm-security-recommendation.md) alır. Bu öneri öncelikli olarak etkin bir Microsoft dışı virüsten koruma çözümü kullanan cihazlara yöneliktir (Pasif modda Microsoft Defender Virüsten Koruma ile). Microsoft Defender Virüsten Koruma, cihazlarda birincil virüsten koruma çözümü olduğunda blok modunda EDR'yi etkinleştirmenin çok az avantajı vardır.
+Blok modundaki EDR, [tehdit & güvenlik açığı yönetimi](next-gen-threat-and-vuln-mgt.md) özellikleriyle tümleşiktir. Kuruluşunuzun güvenlik ekibi, henüz etkinleştirilmemişse EDR'yi blok modunda açmak için bir [güvenlik önerisi](tvm-security-recommendation.md) alır. Bu öneri öncelikli olarak etkin bir Microsoft dışı virüsten koruma çözümü kullanan cihazlara yöneliktir (pasif modda Microsoft Defender Virüsten Koruma ile). Microsoft Defender Virüsten Koruma, cihazlarda birincil virüsten koruma çözümü olduğunda blok modunda EDR'yi etkinleştirmenin çok az avantajı vardır.
 
 :::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="Blok modunda EDR'yi açma önerisi" lightbox="images/edrblockmode-TVMrecommendation.png":::
 
@@ -76,6 +78,9 @@ Blok modunda EDR açık olduğunda ve kötü amaçlı bir yapıt algılandığı
 > [!TIP]
 > Blok modunda EDR'yi açmadan önce [gereksinimlerin](#requirements-for-edr-in-block-mode) karşılandığından emin olun.
 
+> [!NOTE]
+> Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.
+
 ### <a name="security-portal"></a>Güvenlik Portalı
 
 1. Microsoft 365 Defender portalına ([https://security.microsoft.com/](https://security.microsoft.com/)) gidin ve oturum açın.
@@ -98,14 +103,14 @@ Aşağıdaki tabloda blok modunda EDR gereksinimleri listelenmiştir:
 |İşletim sistemi|Cihazların Windows'un aşağıdaki sürümlerinden birini çalıştırıyor olması gerekir: <ul><li>Windows 11</li><li>Windows 10 (tüm sürümler)</li><li>Windows Server 2019 veya üzeri</li><li>Windows Server, sürüm 1803 veya üzeri</li><li>[Yeni birleşik istemci çözümüyle](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) R2'yi \(Windows Server 2016 ve Windows Server 2012\)</li></ul>|
 |Uç Nokta için Microsoft Defender|Cihazların Uç Nokta için Defender'a eklenmelidir. Aşağıdaki makalelere bakın: <br/>- [Uç Nokta için Microsoft Defender için en düşük gereksinimler](minimum-requirements.md)<br/>- [Cihazları ekleme ve Uç Nokta için Microsoft Defender özelliklerini yapılandırma](onboard-configure.md)<br/>- [Windows sunucularını Uç Nokta için Defender hizmetine ekleme](configure-server-endpoints.md)<br/>- [Modern birleşik çözümde yeni Windows Server 2012 R2 ve 2016 işlevselliği (Önizleme)](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) |
 |Microsoft Defender Virüsten Koruma|Cihazlarda Microsoft Defender Virüsten Koruma'nın yüklü olması ve etkin modda veya pasif modda çalıştırılması gerekir. [Microsoft Defender Virüsten Koruma'nın etkin veya pasif modda olduğunu onaylayın](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode).|
-|Bulut tabanlı koruma|Microsoft Defender Virüsten Koruma [, bulut tabanlı koruma etkinleştirilecek](enable-cloud-protection-microsoft-defender-antivirus.md) şekilde yapılandırılmalıdır.|
+|Bulut tabanlı koruma|Microsoft Defender Virüsten Koruma[, bulut tabanlı koruma etkinleştirilecek](enable-cloud-protection-microsoft-defender-antivirus.md) şekilde yapılandırılmalıdır.|
 |Microsoft Defender Virüsten Koruma platformu|Cihazların güncel olması gerekir. Onaylamak için PowerShell kullanarak [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) cmdlet'ini yönetici olarak çalıştırın. **AMProductVersion** satırında **4.18.2001.10** veya üzerini görmeniz gerekir. <p> Daha fazla bilgi için [Microsoft Defender Virüsten Koruma güncelleştirmelerine bakın ve temelleri uygulayın](manage-updates-baselines-microsoft-defender-antivirus.md).|
 |Microsoft Defender Virüsten Koruma altyapısı|Cihazların güncel olması gerekir. Onaylamak için PowerShell kullanarak [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) cmdlet'ini yönetici olarak çalıştırın. **AMEngineVersion** satırında **1.1.16700.2** veya üzerini görmeniz gerekir. <p> Daha fazla bilgi için [Microsoft Defender Virüsten Koruma güncelleştirmelerine bakın ve temelleri uygulayın](manage-updates-baselines-microsoft-defender-antivirus.md).|
 
 (<a id="fn1">1</a>) Bkz. [EDR Windows Server 2016 ve Windows Server 2012 R2'de blok modunda destekleniyor mu?](#is-edr-in-block-mode-supported-on-windows-server-2016-and-windows-server-2012-r2)
 
 > [!IMPORTANT]
-> En iyi koruma değerini elde etmek için virüsten koruma çözümünüzün düzenli güncelleştirmeleri ve temel özellikleri alacak şekilde yapılandırıldığından ve [dışlamalarınızın yapılandırıldığından](configure-exclusions-microsoft-defender-antivirus.md) emin olun. Blok modundaki EDR, Microsoft Defender Virüsten Koruma için tanımlanan dışlamalara saygı gösterir, ancak Uç Nokta için Microsoft Defender için tanımlanan [göstergelere](manage-indicators.md) dikkat etmemektedir.
+> En iyi koruma değerini elde etmek için virüsten koruma çözümünüzün düzenli güncelleştirmeleri ve temel özellikleri alacak şekilde yapılandırıldığından ve [dışlamalarınızın yapılandırıldığından](configure-exclusions-microsoft-defender-antivirus.md) emin olun. Blok modunda EDR, Microsoft Defender Virüsten Koruma için tanımlanan dışlamaları dikkate alır, ancak Uç Nokta için Microsoft Defender için tanımlanan [göstergelere](manage-indicators.md) dikkat etmemektedir.
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 
@@ -113,19 +118,19 @@ Aşağıdaki tabloda blok modunda EDR gereksinimleri listelenmiştir:
 
 Hatalı pozitif sonuç aldığınızda, dosyayı [Microsoft Güvenlik Zekası gönderim sitesinde](https://www.microsoft.com/en-us/wdsi/filesubmission) analiz için gönderebilirsiniz.
 
-Microsoft Defender Virüsten Koruma için bir dışlama da tanımlayabilirsiniz. Bkz [. Microsoft Defender Virüsten Koruma taramaları için dışlamaları yapılandırma ve doğrulama](configure-exclusions-microsoft-defender-antivirus.md).
+Microsoft Defender Virüsten Koruma için bir dışlama da tanımlayabilirsiniz. Bkz[. Microsoft Defender Virüsten Koruma taramaları için dışlamaları yapılandırma ve doğrulama](configure-exclusions-microsoft-defender-antivirus.md).
 
-### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>Cihazlarda Microsoft Defender Virüsten Koruma çalıştırılıyorsa EDR'yi blok modunda açmam gerekiyor mu?
+### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>Cihazlarda çalışan Microsoft Defender Virüsten Koruma özelliğine sahipsem EDR'yi blok modunda açmam gerekiyor mu?
 
-Blok modunda EDR'nin birincil amacı, Microsoft dışı bir virüsten koruma ürünü tarafından kaçırılan ihlal sonrası algılamaları düzeltmektir. Gerçek zamanlı korumanın önce algılamaları yakalaması ve düzeltmesi beklendiğinden, Microsoft Defender Virüsten Koruma etkin moddayken blok modunda EDR'yi etkinleştirmenin en düşük avantajı vardır. Virüsten Koruma için Microsoft Defender'ın pasif modda çalıştığı uç noktalarda EDR'yi blok modunda etkinleştirmenizi öneririz. EDR algılamaları [PUA koruması](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) veya blok modunda [otomatik araştırma & düzeltme özellikleriyle](automated-investigations.md) otomatik olarak düzeltilebilir.
+Blok modunda EDR'nin birincil amacı, Microsoft dışı bir virüsten koruma ürünü tarafından kaçırılan ihlal sonrası algılamaları düzeltmektir. Microsoft Defender Virüsten Koruma etkin moddayken blok modunda EDR'yi etkinleştirmenin en düşük avantajı vardır çünkü gerçek zamanlı korumanın önce algılamaları yakalaması ve düzeltmesi beklenir. Virüsten Koruma için Microsoft Defender pasif modda çalıştığı uç noktalarda EDR'yi blok modunda etkinleştirmenizi öneririz. EDR algılamaları [PUA koruması](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) veya blok modunda [otomatik araştırma & düzeltme özellikleriyle](automated-investigations.md) otomatik olarak düzeltilebilir.
 
 ### <a name="will-edr-in-block-mode-affect-a-users-antivirus-protection"></a>Blok modundaki EDR, kullanıcının virüsten korumasını etkiler mi?
 
-Blok modundaki EDR, kullanıcıların cihazlarında çalışan üçüncü taraf virüsten korumasını etkilemez. Blok modunda EDR, birincil virüsten koruma çözümü bir şeyi kaçırırsa veya ihlal sonrası algılama varsa çalışır. Blok modunda EDR, blok modundaki EDR'nin algılanan kötü amaçlı yapıtları veya davranışları da engellemesi ve düzeltmesi dışında pasif modda Microsoft Defender Virüsten Koruma gibi çalışır.
+Blok modundaki EDR, kullanıcıların cihazlarında çalışan üçüncü taraf virüsten korumasını etkilemez. Blok modunda EDR, birincil virüsten koruma çözümü bir şeyi kaçırırsa veya ihlal sonrası algılama varsa çalışır. Blok modundaki EDR, pasif modda Microsoft Defender Virüsten Koruma gibi çalışır; blok modundaki EDR'nin algılanan kötü amaçlı yapıtları veya davranışları da engellemesi ve düzeltmesi dışında.
 
-### <a name="why-do-i-need-to-keep-microsoft-defender-antivirus-up-to-date"></a>Microsoft Defender Virüsten Koruma'nın neden güncel kalmasını istiyorum?
+### <a name="why-do-i-need-to-keep-microsoft-defender-antivirus-up-to-date"></a>Virüsten Koruma'Microsoft Defender neden güncel tutmam gerekiyor?
 
-Microsoft Defender Virüsten Koruma kötü amaçlı öğeleri algılayıp düzeltdiğinden, bu öğeleri güncel tutmak önemlidir. Blok modundaki EDR'nin etkili olması için en son cihaz öğrenmesi modellerini, davranış algılamalarını ve buluşsal yöntemleri kullanır. [Uç Nokta için Defender](microsoft-defender-endpoint.md) özellik yığını tümleşik bir şekilde çalışır. En iyi koruma değerini elde etmek için Microsoft Defender Virüsten Koruma'yı güncel tutmanız gerekir. Bkz [. Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama](manage-updates-baselines-microsoft-defender-antivirus.md).
+Microsoft Defender Virüsten Koruma kötü amaçlı öğeleri algılayıp düzeltdiğinden, bu öğeleri güncel tutmak önemlidir. Blok modundaki EDR'nin etkili olması için en son cihaz öğrenmesi modellerini, davranış algılamalarını ve buluşsal yöntemleri kullanır. [Uç Nokta için Defender](microsoft-defender-endpoint.md) özellik yığını tümleşik bir şekilde çalışır. En iyi koruma değerini elde etmek için virüsten koruma Microsoft Defender güncel tutmalısınız. Bkz[. Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ### <a name="why-do-we-need-cloud-protection-maps-on"></a>Neden bulut korumasına (MAPS) ihtiyacımız var?
 
@@ -138,9 +143,9 @@ Microsoft Defender Virüsten Koruma etkin moddayken Windows 10, Windows 11, Wind
 > [!NOTE]
 > Microsoft Defender Virüsten Koruma yalnızca cihaz Uç Nokta için Microsoft Defender eklendiğinde pasif modda çalıştırılabilir.
 
-Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma uyumluluğu](microsoft-defender-antivirus-compatibility.md).
+Daha fazla bilgi için bkz[. virüsten koruma uyumluluğu Microsoft Defender](microsoft-defender-antivirus-compatibility.md).
 
-### <a name="how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode"></a>Microsoft Defender Virüsten Koruma'nın etkin veya pasif modda olduğunu onaylıyor Nasıl yaparım??
+### <a name="how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode"></a>Virüsten Koruma'nın etkin veya pasif modda Microsoft Defender onaylıyor Nasıl yaparım??
 
 Microsoft Defender Virüsten Koruma'nın etkin veya pasif modda çalışıp çalışmadığını onaylamak için, Windows çalıştıran bir cihazda Komut İstemi veya PowerShell kullanabilirsiniz.
 
@@ -151,7 +156,7 @@ Microsoft Defender Virüsten Koruma'nın etkin veya pasif modda çalışıp çal
 
 ### <a name="how-do-i-confirm-that-edr-in-block-mode-is-turned-on-with-microsoft-defender-antivirus-in-passive-mode"></a>Nasıl yaparım? pasif modda Microsoft Defender Virüsten Koruma ile blok modunda EDR'nin açık olduğunu onaylıyor musunuz?
 
-PowerShell'i kullanarak, pasif modda çalışan Microsoft Defender Virüsten Koruma ile blok modunda EDR'nin açık olduğunu onaylayabilirsiniz.
+PowerShell'i kullanarak pasif modda çalışan Microsoft Defender Virüsten Koruma ile blok modunda EDR'nin açık olduğunu onaylayabilirsiniz.
 
 1. Başlat menüsünü seçin, yazmaya `PowerShell`başlayın ve sonuçlarda Windows PowerShell açın.
 

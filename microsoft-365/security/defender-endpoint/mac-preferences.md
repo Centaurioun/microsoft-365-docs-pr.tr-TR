@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 64b6db32974a7755c46ff4cd87eea87512d8bfc5
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 93d113959b138b1b4477fe779c0ce61fd6540634
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683307"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68231890"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın
 
@@ -588,9 +589,9 @@ Kullanıcıların adresine giderek `Help` > `Send Feedback`Microsoft'a geri bild
 
 
 
-#### <a name="control-sign-in-to-consumer-version-of-microsoft-defender"></a>Microsoft Defender'ın tüketici sürümünde oturum açmayı denetleme
+#### <a name="control-sign-in-to-consumer-version-of-microsoft-defender"></a>Microsoft Defender tüketici sürümünde oturum açmayı denetleme
 
-Kullanıcıların Microsoft Defender'ın tüketici sürümünde oturum açıp açamayacağını belirtin.
+Kullanıcıların Microsoft Defender tüketici sürümünde oturum açıp açamayacağını belirtin.
 
 <br>
 

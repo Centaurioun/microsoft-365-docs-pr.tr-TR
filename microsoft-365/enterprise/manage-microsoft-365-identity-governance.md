@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.prod: office-online-server
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -13,6 +13,7 @@ ms.custom:
 - Adm_O365
 - seo-marvel-mar2020
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 search.appverid:
@@ -22,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: Microsoft 365 kimlik idaresi özelliklerini kullanma hakkında bilgi edinin.
-ms.openlocfilehash: 4b24ec8b68763689ee073821a4a638c196b98c9b
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 5e233d1a72bcbdfcf3ccdf8dec82e6f03a0bd63b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67343119"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201011"
 ---
 # <a name="manage-microsoft-365-identity-governance"></a>Microsoft 365 kimlik idaresini yönetme
 

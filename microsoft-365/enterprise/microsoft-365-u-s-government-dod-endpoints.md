@@ -3,12 +3,13 @@ title: US Government DOD uç noktalarını Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/29/2022
+ms.date: 09/29/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 search.appverid:
@@ -22,12 +23,12 @@ f1.keywords:
 description: Office 365, İnternet bağlantısı gerektirir. Aşağıdaki uç noktalara yalnızca OFFICE 365 ABD Kamu DoD planlarını kullanan müşteriler erişebilir.
 hideEdit: true
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7328fce563dccae912125696c60aba0247718910
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 83b6bf838ee4422a4b54f2e6f7df73a3a987bcdd
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611880"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201054"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>ABD Kamu DoD uç noktalarını Office 365
 
@@ -42,7 +43,7 @@ Office 365, İnternet bağlantısı gerektirir. Aşağıdaki uç noktalara yaln�
 
 |Notlar|İndir|
 |---|---|
-|**Son güncelleştirme:** 29.08.2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Günlük aboneliğini değiştir](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**İndir:** [JSON biçimindeki](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) tam liste|
+|**Son güncelleştirme:** 29.09.2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Günlük aboneliğini değiştir](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**İndir:** [JSON biçimindeki](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) tam liste|
 |
 
 Bu verileri kullanarak ağ bağlantısını yönetmeye yönelik önerilerimizi anlamak için [Office 365 uç noktalarını yönetme](managing-office-365-endpoints.md) ile başlayın. Uç nokta verileri, etkin olmadan 30 gün önce yayınlanan yeni IP Adresleri ve URL'ler ile her ayın başında gerektiği gibi güncelleştirilir. Bu, henüz otomatik güncelleştirmeleri olmayan müşterilerin yeni bağlantı gerekmeden önce işlemlerini tamamlamalarına olanak tanır. Destek artışlarını, güvenlik olaylarını veya diğer acil operasyonel gereksinimleri ele almak için gerekirse uç noktalar da ay boyunca güncelleştirilebilir. Aşağıdaki bu sayfada gösterilen verilerin tümü REST tabanlı web hizmetlerinden oluşturulmuştur. Bu verilere erişmek için bir betik veya bir ağ cihazı kullanıyorsanız, doğrudan [Web hizmetine](microsoft-365-ip-web-service.md) gitmelisiniz.

@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
@@ -18,12 +19,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Uzak kullanıcılar için bağlantıyı iyileştirmek için Microsoft 365 ile VPN bölünmüş tüneline genel bakış.
-ms.openlocfilehash: bec540182e72c40d5229afe8b35f092da4c5797e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ab719109756da721ac46a1ecba069a02ce85fb68
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696649"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200989"
 ---
 # <a name="overview-vpn-split-tunneling-for-microsoft-365"></a>Genel bakış: Microsoft 365 için VPN bölünmüş tüneli
 
@@ -151,7 +152,7 @@ Daha sonra bu ilkelere göre onaylama, MFA'yı tetikleme veya kimlik doğrulamas
 
 Microsoft 365, hizmetin kendisindeki çeşitli katmanlarda işaretlenen uç noktaları en iyi duruma getirme için [bu belgede açıklanan](/office365/Enterprise/office-365-malware-and-ransomware-protection) korumayı da sağlar. Belirtildiği gibi, bu güvenlik öğelerini protokolleri/trafiği tam olarak anlamayabilecek cihazlara uygun olarak yapmaya çalışmak yerine hizmetin kendisinde sağlamak çok daha verimlidir. Varsayılan olarak, SharePoint Online bilinen kötü amaçlı yazılım için [dosya yüklemelerini otomatik olarak tarar](../security/office-365-security/virus-detection-in-spo.md)
 
-Yukarıda listelenen Exchange uç noktaları için [Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) ve [Microsoft 365 için Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), hizmete yönelik trafiğin güvenliğini sağlamak için mükemmel bir iş yapar.
+Yukarıda listelenen Exchange uç noktaları [için, Microsoft 365 için Exchange Online Protection ve Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) hizmet trafiğinin güvenliğini sağlamak için mükemmel bir iş yapar. [](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
 
 ### <a name="can-i-send-more-than-just-the-optimize-traffic-direct"></a>Yalnızca Trafiği en iyi duruma getirme doğrudanından fazlasını gönderebilir miyim?
 

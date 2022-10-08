@@ -7,19 +7,21 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
-description: Ülkeniz veya bölgeniz için de destek ile nasıl bağlantı kuracaklarını öğrenin.
+description: Ülkeniz veya bölgeniz için desteğe nasıl başvuracağınızı öğrenin.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 68073b5117c6938e866ded2f6efb476be4ae170d
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 5508c205a4191e9f638a8bb0b4a916671851e1f0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62999001"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68192145"
 ---
-# <a name="contact-support-for-saint-martin"></a>Saint Martin için destek ile iletişime geçin
+# <a name="contact-support-for-saint-martin"></a>Saint Martin için desteğe başvurun
 
 [Başka bir ülke veya bölge bulun](../get-help-support.md).
 
@@ -29,9 +31,9 @@ ms.locfileid: "62999001"
 ## <a name="hours"></a>Saatler
 ### <a name="billing-support"></a>Faturalama Desteği:
 
-Fransızca: Mon-Fri 04:00
+Fransızca: Mon-Fri 04:00-04:00
 
-İngilizce: Mon-Fri saat 04:00
+İngilizce: Mon-Fri 04:00
 
 ### <a name="technical-support"></a>Teknik Destek:
 

@@ -11,15 +11,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 bilgilendirilmiş ağ yönlendirmesi
-ms.openlocfilehash: d20406b75b76fcab5748560f6e0f23c2cd3ad011
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 8d561987bc9922829e98e37f72e4e024ca6086d5
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670465"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200967"
 ---
 # <a name="microsoft-365-informed-network-routing"></a>Microsoft 365 bilgilendirilmiş ağ yönlendirmesi
 

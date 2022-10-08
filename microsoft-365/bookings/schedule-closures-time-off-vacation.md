@@ -7,14 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: Çalışanların belirtilen zamanlarda rezervasyon için uygun değil olarak işaretlenmesi için, Bookings takviminden ofis kapanışlarını ve çalışan izinlerini planlayın.
-ms.openlocfilehash: bc119e3d45c625ec89cc4edccbeea34508b6b012
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.openlocfilehash: 8af013fe6aff3d70c00b28204a66afd367ca2db2
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185203"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68192123"
 ---
 # <a name="schedule-bookings-business-closures-time-off-and-vacation-time"></a>Bookings iş kapanışlarını, izin ve tatil zamanını zamanlama
 
@@ -28,7 +30,7 @@ Bazen tatiller veya ekip etkinlikleri için işletmenizi kapatmak istersiniz ya 
 
 ## <a name="schedule-ad-hoc-business-closures"></a>Geçici iş kapanışlarını zamanlama
 
-1. Microsoft 365'da uygulama başlatıcıyı ve ardından **Bookings'i** seçin.
+1. Microsoft 365'te uygulama başlatıcıyı ve ardından **Bookings'i** seçin.
 
 1. Takviminizi seçin.
 
@@ -50,7 +52,7 @@ Müşteri ofisin kapalı olduğu bir günde hizmet zamanlamayı denediğinde rez
 
 ## <a name="schedule-employee-time-off"></a>Çalışana izin zamanlaması zamanlama
 
-1. Microsoft 365'da uygulama başlatıcıyı ve ardından **Bookings'i** seçin.
+1. Microsoft 365'te uygulama başlatıcıyı ve ardından **Bookings'i** seçin.
 
    :::image type="content" source="../media/bookings-applauncher.png" alt-text="Uygulama başlatıcı.":::
 

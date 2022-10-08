@@ -15,14 +15,16 @@ ms.date: 10/22/2021
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 20ba75d7d3cf7b9b2921b14ee902ed6ff1f272b2
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 47ad4df4995aad0889ad220b4c7a8b77853a382e
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67690991"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68229668"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>İsteğe bağlı Microsoft Defender Virüsten Koruma taramalarını yapılandırın ve çalıştırın
 
@@ -64,7 +66,7 @@ Aşağıdaki `-scan` parametreyi kullanın:
 mpcmdrun.exe -scan -scantype 1
 ```
 
-Aracın ve tam tarama başlatma veya yol tanımlama gibi ek parametrelerin nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma'yı yapılandırmak ve yönetmek için mpcmdrun.exe komut satırı aracını kullanma](command-line-arguments-microsoft-defender-antivirus.md).
+Aracın nasıl kullanılacağı hakkında daha fazla bilgi ve tam tarama başlatma veya yol tanımlama gibi ek parametreler için bkz. [Microsoft Defender Virüsten Koruma'yı yapılandırmak ve yönetmek için mpcmdrun.exe komut satırı aracını kullanma](command-line-arguments-microsoft-defender-antivirus.md).
 
 ## <a name="use-microsoft-intune-to-run-a-scan"></a>Tarama çalıştırmak için Microsoft Intune kullanma
 

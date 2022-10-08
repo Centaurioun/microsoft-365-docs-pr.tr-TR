@@ -7,7 +7,9 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 - NOCSH
@@ -16,12 +18,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: Microsoft 365 Ağ İş Ortağı Programı, cihazınızın Microsoft 365 ile çalıştığını onaylar.
 hideEdit: true
-ms.openlocfilehash: ad862e4415749a07470f0151e8f6966cc184954c
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+ms.openlocfilehash: 9733432ac7c8e5e168df1b3fc9335f44b981886c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67570303"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200923"
 ---
 # <a name="microsoft-365-networking-partner-program"></a>Microsoft 365 Ağ İş Ortağı Programı
 
