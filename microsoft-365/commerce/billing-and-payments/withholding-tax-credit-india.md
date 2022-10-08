@@ -1,5 +1,5 @@
 ---
-title: Hesabınıza Stoping Tax (Hindistan müşterileri) için kredi talepte bulundurabilirsiniz
+title: Hesabınızdaki Stopaj Vergisi için kredi isteme (Hindistan müşterileri)
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -8,86 +8,87 @@ manager: scotv
 ms.reviewer: jkinma, jmueller, martinl, melmar
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: ''
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
-description: Ödediğiniz Stopaj Vergisi için hesabınıza nasıl kredi talep etmeyi öğrenin. Bu makale yalnızca Hindistan'daki müşteriler için geçerlidir.
+description: Ödediğiniz Stopaj Vergisi için hesabınızda kredi isteme hakkında bilgi edinin. Bu makale yalnızca Hindistan'daki müşteriler için geçerlidir.
 ms.custom:
 - commerce_billing
 - AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: bd1f9af95d28ab8204c53afbe47c7def3230dbda
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5cfdced996567eabf4194fa55d5d2edb25bf072d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327889"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68179669"
 ---
-# <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>Hesabınıza Stoping Tax (Hindistan müşterileri) için kredi talepte bulundurabilirsiniz
+# <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>Hesabınızdaki Stopaj Vergisi için kredi isteme (Hindistan müşterileri)
 
 > [!NOTE]
 >
-> Organizasyonunız Hindistan'da değilse, lütfen Hesabınıza [Stoping](withholding-tax-credit-global.md) Tax (Global müşteriler) için kredi talep edin.
+> Kuruluşunuz Hindistan'da yüklü değilse lütfen [hesabınızdaki Stopaj Vergisi için kredi isteme (Genel müşteriler) konusuna](withholding-tax-credit-global.md) bakın.
 
-Hindistan'daki müşteriler Microsoft Regional Sales Pte Ltd. (MRS) tarafından faturalandırilen Web Direct (Azure ve Microsoft 365) faturaları alırlar ve faturayı yerleşim için Singapur'a çapraz ödemeler yapmaları gerekir. Ödemeyi geri hesaplarken yardımlı vergiler kullandıysanız, bu makalede, MRS'ye sahip olan hesabınıza Stoping Tax (WHT) için kredi talep ed süreci açıklanmıştır.
+Hindistan'daki müşteriler, Microsoft Regional Sales Pte Ltd. Singapore (MRS) tarafından faturalandırılan Web Direct (Azure ve Microsoft 365) faturalarını alır ve faturayı kapatmak için Singapur'a sınır ötesi ödemeler yapar. Ödemeyi tutarken vergileri sakladıysanız, bu makalede MRS hesabınızda Stopaj Vergisi (WHT) için kredi talep etme işlemi açıklanmaktadır.
 
-## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>Fatura ödemesi için çek veya kabloyla ödeme yapan müşterilere
+## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>Çek veya havale ile ödeme yapan fatura ödeme müşterileri için
 
-Ödemeyi MRS'ye hesaplarken ve yardım vergisini Gelir Vergisi Bölümü'ne yatırmışsanız, hesabınıza yardımlı vergi tutarının ödenmesi için bir WHT isteği göndermeniz gerekir.
+MRS'ye ödeme yaparken vergiyi geri aldıysanız ve vergiyi Vergi Dairesi'ne yatırdıysanız, hesabınızda tutulan vergi tutarının ödenmesi için bir WHT isteği göndermeniz gerekir.
 
-WHT isteğiniz aşağıdaki öğeleri içermeli:
+WHT isteğiniz aşağıdaki öğeleri içermelidir:
 
-- Stoping Tax [Credit Form (](https://download.microsoft.com/download/a/2/a/a2a35969-2d54-4faa-ba41-6a50525eba70/WHT%20Credit%20Form%20-%20India.docx) müşteri tarafından doldurulmuş) tamamlanmış bir kopyası
-- Hindistan Geliri Vergi Bölümü tarafından verilen (müşteri tarafından sağlanan) dijital imzalı bir TDS Sertifikası (Form 16A)
+- [Stopaj Vergisi Kredi Formunun](https://download.microsoft.com/download/a/2/a/a2a35969-2d54-4faa-ba41-6a50525eba70/WHT%20Credit%20Form%20-%20India.docx) tamamlanmış bir kopyası (müşteri tarafından doldurulur)
+- Hindistan Gelir Vergisi Departmanı (müşteri tarafından sağlanır) tarafından verilen dijital olarak imzalanmış bir TDS Sertifikası (Form 16A)
 
 Microsoft desteğiyle bir bilet açarak WHT isteğini gönderin.
 
 ## <a name="for-customers-who-pay-by-credit-card"></a>Kredi kartıyla ödeme yapan müşteriler için
 
-Ödeme yönteminiz kredi kartı ise ve MRS'ye tam ödeme yaptıysanız ve aynı zamanda Gelir Vergisi Bölümü'ne WHT ödemişse, vergi tutarının geri ödemesini talep etmek için bir WHT isteği göndermeniz gerekir.
+Ödeme yönteminiz kredi kartıysa ve MRS'ye tam ödeme yaptıysanız ve ayrıca Gelir Vergisi Departmanı'na WHT ödediyseniz, vergi tutarının iadesini talep etmek için bir WHT isteği göndermeniz gerekir.
 
-WHT isteğiniz aşağıdaki öğeleri içermeli:
+WHT isteğiniz aşağıdaki öğeleri içermelidir:
 
-- Stoping Tax [Credit Form (](https://download.microsoft.com/download/a/2/a/a2a35969-2d54-4faa-ba41-6a50525eba70/WHT%20Credit%20Form%20-%20India.docx) müşteri tarafından doldurulmuş) tamamlanmış bir kopyası
-- Hindistan Geliri Vergi Bölümü tarafından verilen (müşteri tarafından sağlanan) dijital imzalı bir TDS Sertifikası (Form 16A)
+- [Stopaj Vergisi Kredi Formunun](https://download.microsoft.com/download/a/2/a/a2a35969-2d54-4faa-ba41-6a50525eba70/WHT%20Credit%20Form%20-%20India.docx) tamamlanmış bir kopyası (müşteri tarafından doldurulur)
+- Hindistan Gelir Vergisi Departmanı (müşteri tarafından sağlanır) tarafından verilen dijital olarak imzalanmış bir TDS Sertifikası (Form 16A)
 
-Microsoft desteğiyle bir bilet açarak WHT isteğini gönderme
+Microsoft desteğiyle bir bilet açarak WHT isteğini gönderin
 
-## <a name="timelines-to-submit-the-tds-certificate-together-with-the-withholding-tax-credit-form"></a>TDS Sertifikasını Stopaj Vergi Kredisi Formu ile birlikte göndermek için zaman çizelgeleri
+## <a name="timelines-to-submit-the-tds-certificate-together-with-the-withholding-tax-credit-form"></a>TDS Sertifikasını Stopaj Vergisi Kredi Formu ile birlikte göndermek için zaman çizelgeleri
 
-Aşağıdaki tabloda, her çeyrek için dijital olarak imzalanmış TDS Sertifikası (Form 16A) formları göndermek için son tarihler ve zaman çizelgeleri görüntülenir.
+Aşağıdaki tabloda, her üç aylık dönem için dijital olarak imzalanan TDS Sertifikası (Form 16A) formlarını göndermek için son tarihler ve zaman çizelgeleri gösterilmektedir.
 
-| Çeyrek | Nokta | TDS Sertifikası'nın verme son tarihi (Form 16A) | Stoping Tax Credit Form ile birlikte Form 16A göndermek için genişletilmiş zaman çizelgeleri |
+| Çeyrek | Nokta | TDS Sertifikasının verilmesi için son tarih (Form 16A) | Form 16A'nın Stopaj Vergisi Kredi Formu ile birlikte gönderilmesi için genişletilmiş zaman çizelgeleri |
 |-|-|-|-|
-| 1 | Nisan - Haziran | 15.01.2010 | 31 Ağu |
-| 2 | Temmuz - Eylül | 15.11.2015 | 30.12.2010 |
-| 3 | Ekim - Aralık | 15.02.2007 | 28.02.2007 |
-| 4 | Ocak - Mart | 15-Haz | 30 Haz |
+| 1 | Nisan - Haziran | 15 Ağustos | 31 Ağustos |
+| 2 | Temmuz - Eylül | 15-Yv | 30-Yv |
+| 3 | Ekim - Aralık | 15 Şubat | 28 Şubat |
+| 4 | Ocak - Mart | 15-Haz | 30-Haz |
 
 > [!IMPORTANT]
 >
-> - Müşteriler yalnızca faturayı ödedikten sonra WHT tutarı için geri ödeme isteği gönderebilirsiniz.
-> - Stoping Tax Credit Form'daki fatura tutarı, TDS sertifikasında tanımlanan fatura tutarıyla eşleşmeli. Fatura tutarı iki form arasında farklı olursa, Stoping Tax Credit Form'daki farkın nedenini belirtebilirsiniz. Bu bilgiler inceleme ekibi tarafından denetlenir ve gerekirse netleştirme soruları sorabilir.
-> - TDS sertifika dosyaları aşağıdaki dosya biçimlerinden biri olmalı: Yalnızca .PDF ( resim. JPEG, .PNG veya .GIF). Buna ek olarak, dosya adları boşluk veya özel karakter içermemalıdır. Dosya boyutu 1 MB'yi aşıyor olamaz.
+> - Müşteriler yalnızca faturayı ödedikten sonra WHT tutarı için para iadesi isteği gönderebilir.
+> - Stopaj Vergisi Alacak Formu'ndaki fatura tutarı, TDS sertifikasında tanımlanan fatura tutarıyla eşleşmelidir. Fatura tutarı iki form arasında farklıysa, Stopaj Vergisi Alacak Formu'ndaki farkın nedenini belirtmeniz gerekir. Bu bilgiler, gerekirse netleştirici sorular sorabilecek inceleme ekibi tarafından denetlenmektedir.
+> - TDS sertifika dosyaları şu dosya biçimlerinden birinde olmalıdır: .PDF veya Yalnızca görüntü (. JPEG, .PNG veya .GIF). Ayrıca, dosya adları boşluk veya özel karakter içermemelidir. Dosya boyutu 1 MB'ı aşamaz.
 
-İsteği gönderdikten sonra, onay işleminin tamamlanması için onaylandırın veya düzeltme için size geri gönderilir.
+İsteği gönderdikten sonra, tamamlanmak üzere onaylandığı veya düzeltme için size geri gönderildiği onay işlemine geçer.
 
-İsteğiniz ile ilgili bir sorun varsa gözden geçirme ekibi TDS sertifikasının stoping miktarında veya yerine yenisinde düzeltmeler yapmak gerekli olabilir. Onaylanmadan önce isteği yeniden geri isteği geri isteğin. gözden geçirme ekibi isteği onaylar veya daha fazla değişiklik ister.
+İsteğinizle ilgili bir sorun varsa, inceleme ekibi TDS sertifikasının stopaj miktarında veya değiştirilmesinde düzeltmeler yapılmasını gerektirebilir. İsteğin onaylanması için önce yeniden göndermeniz gerekir. Gözden geçirme ekibi isteği onaylar veya daha fazla değişiklik ister.
 
 ## <a name="approved-requests"></a>Onaylanan istekler
 
-**Çek ve kabloyla ödemesi yapılan müşteriler için:** Onaylanan WHT istekleri, Stoping Vergi Kredisi Formu'nda, fatura tutarının ödenmemiş kısmına yansıtıldı.
+**Çek ve havale ile ödeme yapılan müşteriler için:** Onaylanan WHT istekleri, fatura tutarının Stopaj Vergisi Alacak Formu'na yansıtılan ödenmemiş kısmıyla karşılanır.
 
-Talebiniz onaylandıktan sonra bir sonraki fatura döngüsüne yansıtlanır. Ödenen WHT tutarı sonraki faturanın ödeme bölümüne dahil edilir. Tutar, müşteri portalında ödenen tutarın altında da görüntülenir.
+Talebiniz onaylandıktan sonra bir sonraki faturalama dönemine yansıtılır. Ödenen WHT tutarı, sonraki faturanızın ödeme bölümüne eklenir. Tutar, müşteri portalında ödenen tutarın altında da görüntülenir.
 
-**Kredi kartıyla ödemesi yapılan müşteriler için:** Talebiniz onaylandıktan sonra, fazla ödemeniz kredi kartınıza iade edilir.
+**Kredi kartıyla ödeme yapılan müşteriler için:** Talebiniz onaylandıktan sonra fazla ödemeniz kredi kartınıza iade edilir.
 
 > [!IMPORTANT]
 >
-> - Değişiklikler gerekirse, yapılacak düzeltmeler ve ardından yeniden atlanmış düzeltmeler nedeniyle onay işlemi daha uzun sürebilir.
-> - WHT isteği işlemi hakkında sorularınız varsa lütfen Microsoft desteği ile bir bilet açın.
+> - Değişiklikler gerekiyorsa, yapılması ve sonra yeniden yayımlanması gereken düzeltmeler nedeniyle onay işlemi daha uzun sürebilir.
+> - WHT isteği işlemiyle ilgili sorularınız varsa lütfen Microsoft desteğiyle bir bilet açın.

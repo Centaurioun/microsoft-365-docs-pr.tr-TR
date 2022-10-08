@@ -9,7 +9,9 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - NOCSH
 ms.custom:
@@ -17,12 +19,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: Microsoft 365'e tam geçiş gerçekleştirerek PowerShell'i kullanarak kaynak e-posta sistemindeki içerikleri aynı anda taşımayı öğrenin.
-ms.openlocfilehash: 726834521f369b4720903709835bc668794306e3
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 798c47584143c108395f14f57ed9c6494c42565f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67669771"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68177514"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Microsoft 365'e geçiş geçişi gerçekleştirmek için PowerShell'i kullanma
 

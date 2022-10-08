@@ -10,16 +10,17 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: Microsoft 365 için kiracılarınızı ayarlamaya yönelik yol haritası.
-ms.openlocfilehash: 679d88d00bd0b806ec5b1be098ddad7bee2d82d0
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 2dc0a6ba5c85fb7866789381ca170e324b834f24
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672017"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178569"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Microsoft 365 için kiracı yol haritası
 

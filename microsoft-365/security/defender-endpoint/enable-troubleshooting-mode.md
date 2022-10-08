@@ -14,15 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 2ffe38f5c2bbd248968df709644972d2468b4826
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: d1aca56b87d037a90498baba9a6151ec3878d0f2
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672347"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68175028"
 ---
 # <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de sorun giderme modunu kullanmaya başlama 
 
@@ -39,14 +40,14 @@ Uç Nokta için Microsoft Defender sorun giderme modu, çeşitli Microsoft Defen
 
 - Kurcalama koruma ayarını devre dışı bırakmak/değiştirmek için sorun giderme modunu kullanın:
 
-  - Microsoft Defender Virüsten Koruma işlevsel sorun giderme /uygulama uyumluluğu (hatalı pozitif uygulama blokları).
-  - Microsoft Defender Virüsten Koruma performans sorunlarını giderme, sorun giderme modunu kullanarak ve kurcalama korumasını ve diğer virüsten koruma ayarlarını değiştirerek.
+  - Microsoft Defender Virüsten koruma işlevsel sorun giderme /uygulama uyumluluğu (hatalı pozitif uygulama blokları).
+  - Sorun giderme modunu kullanarak ve kurcalama korumasını ve diğer virüsten koruma ayarlarını değiştirerek Virüsten Koruma performansı sorunlarını gidermeyi Microsoft Defender.
 
 - Bir kurcalama olayı oluşursa (örneğin, `MpPreference` anlık görüntü değiştirilir veya silinir), sorun giderme modu sona erer ve cihazda kurcalama koruması etkinleştirilir.
 
-- Uygun izinlere sahip yerel yöneticiler, genellikle ilke tarafından kilitlenen tek tek uç noktalarda yapılandırmaları değiştirebilir. Bir cihazın sorun giderme modunda olması, Microsoft Defender Virüsten Koruma performans ve uyumluluk senaryolarını tanılarken yararlı olabilir.
+- Uygun izinlere sahip yerel yöneticiler, genellikle ilke tarafından kilitlenen tek tek uç noktalarda yapılandırmaları değiştirebilir. Microsoft Defender Virüsten Koruma performans ve uyumluluk senaryolarını tanılamak için bir cihazın sorun giderme modunda olması yararlı olabilir.
 
-  - Yerel yöneticiler Microsoft Defender Virüsten Koruma'yı kapatamaz veya kaldıramaz.
+  - Yerel yöneticiler virüsten koruma Microsoft Defender kapatamaz veya kaldıramaz.
   - Yerel yöneticiler Microsoft Defender Virüsten Koruma paketindeki diğer tüm güvenlik ayarlarını yapılandırabilecektir (örneğin, bulut koruması, kurcalama koruması).
 
 - "Güvenlik ayarlarını yönetme" izinlerine sahip yöneticilerin sorun giderme modunu açma erişimi olacaktır.
@@ -95,7 +96,7 @@ Uç Nokta için Microsoft Defender sorun giderme modu, çeşitli Microsoft Defen
 
 - Sorun giderme modunun uygulanabilmesi için Uç Nokta için Microsoft Defender cihazda kiracıya kaydedilmiş ve etkin olmalıdır.
 
-- Cihazın etkin olarak Microsoft Defender Virüsten Koruma, sürüm 4.18.2203 veya üzerini çalıştırıyor olması gerekir.
+- Cihazın virüsten koruma Microsoft Defender 4.18.2203 veya sonraki bir sürümü etkin olarak çalıştırıyor olması gerekir.
 
 ## <a name="enable-the-troubleshooting-mode"></a>Sorun giderme modunu etkinleştirme
 

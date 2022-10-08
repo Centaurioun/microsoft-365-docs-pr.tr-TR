@@ -11,18 +11,20 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.date: 09/09/2022
 ms.reviewer: tewchen
 search.appverid: met150
-ms.openlocfilehash: 6a08865d6be1db39d25a4eab4259a6307a2a8418
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 947388cd2840c94e7faeb956d3fcaac309303307
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736750"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68174940"
 ---
 # <a name="deploy-and-manage-removable-storage-access-control-using-group-policy"></a>Grup ilkesini kullanarak Çıkarılabilir Depolama Access Control dağıtma ve yönetme
 
@@ -51,7 +53,7 @@ ms.locfileid: "67736750"
 
    Cihaz denetimini aşağıdaki gibi etkinleştirebilir veya devre dışı bırakabilirsiniz:
 
-   - **Bilgisayar Yapılandırması** > **Yönetim Şablonları** > **Windows Bileşenleri** > **Microsoft Defender Virüsten Koruma** > **Özellikleri** > **Cihaz Denetimi'ne** gidin.
+   - **Bilgisayar Yapılandırması** > **Yönetim Şablonları** > **Windows Bileşenleri** >  **Microsoft Defender Virüsten Koruma** >  Özellikleri **Cihaz Denetimi'ne** >  gidin.
    - **Cihaz Denetimi** penceresinde **Etkin'i** seçin.
 
    :::image type="content" source="images/enable-rsac-gp.png" alt-text="grup ilkesi kullanarak RSAC'yi etkinleştirme işleminin ekran görüntüsü " lightbox="images/enable-rsac-gp.png":::
@@ -65,7 +67,7 @@ ms.locfileid: "67736750"
 
    Örneğin, Bir Deny veya Allow policy for RemovableMediaDevices olabilir, ancak CdRomDevices veya WpdDevices için sahip olmayabilirsiniz. Bu ilke aracılığıyla Varsayılan Reddetme'yi ayarlarsınız, ardından CdRomDevices veya WpdDevices'e Okuma/Yazma/Yürütme erişimi engellenir. Yalnızca depolama alanını yönetmek istiyorsanız Yazıcı için İzin Ver ilkesi oluşturduğunuzdan emin olun. Aksi takdirde, bu Varsayılan Zorlama Yazıcıya da uygulanır.
 
-   - **Bilgisayar Yapılandırması** > **Yönetim Şablonları** > **Windows Bileşenleri** > **Microsoft Defender Virüsten Koruma** > **Özellikleri** > **Cihaz Denetimi** > **Seç Cihaz Denetimi Varsayılan Zorlama'ya** gidin
+   - **Bilgisayar Yapılandırması** > **Yönetim Şablonları** > **Windows Bileşenleri** >  **Microsoft Defender Virüsten Koruma** > **Özellikleri** > **Cihaz Denetimi** > **Seç Cihaz Denetimi Varsayılan Zorlama'ya** gidin
 
    - **Cihaz Denetimi Varsayılan Zorlamasını Seç** bölmesinde **Varsayılan Reddetme'yi** seçin:
 
@@ -75,7 +77,7 @@ ms.locfileid: "67736750"
 
    Çıkarılabilir depolama grubundaki özellikleri kullanarak Çıkarılabilir depolama grupları için bir XML dosyası oluşturun, XML dosyasını ağ paylaşımına kaydedin ve ayarı aşağıdaki gibi tanımlayın:
 
-   - **Bilgisayar Yapılandırması** \> **Yönetim Şablonları** \> **Windows Bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Cihaz Denetimi** \> **Cihaz denetimi ilke gruplarını tanımlama'ya** gidin.
+   - **Bilgisayar Yapılandırması** \> **Yönetim Şablonları** \> **Windows Bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Cihaz Denetimi** \> **Cihaz denetimi ilke gruplarını tanımla'ya** gidin.
 
     :::image type="content" source="images/define-device-control-policy-grps-gp.png" alt-text="Cihaz denetimi ilke gruplarını tanımlama ekran görüntüsü" lightbox="images/define-device-control-policy-grps-gp.png":::
 
@@ -88,7 +90,7 @@ ms.locfileid: "67736750"
 
    Her grubun çıkarılabilir depolama erişim ilkesi kuralı için bir XML oluşturmak, XML dosyasını ağ paylaşımına kaydetmek ve ayar ayarını aşağıdaki gibi geliştirmek için çıkarılabilir depolama erişim ilkesi kurallarındaki özellikleri kullanın:
 
-   - **Bilgisayar Yapılandırması** > **Yönetim Şablonları** > **Windows Bileşenleri** > **Microsoft Defender Virüsten Koruma** > **Cihaz Denetimi** > **Cihaz denetimi ilkesi kurallarını tanımlama'ya** gidin.
+   - **Bilgisayar Yapılandırması** > **Yönetim Şablonları** > **Windows Bileşenleri** >  **Microsoft Defender Virüsten Koruma** > **Cihaz Denetimi** > **Cihaz denetimi ilkesi kurallarını tanımla'ya** gidin.
 
      :::image type="content" source="images/define-device-cntrl-policy-rules-gp.png" alt-text="Cihaz denetimi ilkesi kurallarını tanımlama ekran görüntüsü" lightbox="images/define-device-cntrl-policy-rules-gp.png":::
 
@@ -101,7 +103,7 @@ ms.locfileid: "67736750"
 
     Yazma erişimi gerçekleştiğinde dosyanın bir kopyasına (kanıt) sahip olmak istiyorsanız, XML dosyasında çıkarılabilir depolama birimi erişim ilkesi kuralınızda sağ **Seçenekler'i** ayarlayın ve ardından sistemin kopyayı kaydedebileceği konumu belirtin.
 
-    - **Bilgisayar Yapılandırması** > **Yönetim Şablonları** > **Windows Bileşenleri** > **Microsoft Defender Virüsten Koruma** > **Cihaz Denetimi****Cihaz Denetimi** >  kanıt verilerini uzak konumu tanımla'ya gidin.
+    - **Bilgisayar Yapılandırması** > **Yönetim Şablonları** > **Windows Bileşenleri** >  **Microsoft Defender Virüsten Koruma** > **Cihaz Denetimi****Cihaz Denetimi** >  kanıt verilerini uzak konumu tanımla'ya gidin.
 
     - **Cihaz Denetimi kanıt verilerini uzak konum tanımla** bölmesinde **Etkin'i** seçin ve ardından yerel veya ağ paylaşımı klasör yolunu belirtin.
 

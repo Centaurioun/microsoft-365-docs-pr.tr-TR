@@ -6,16 +6,16 @@ manager: serdars
 ms.reviewer: amitman
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.collection: m365initiative-edu
 ms.localizationpriority: medium
 description: Yeni Blackboard için Microsoft OneDrive Öğrenme Araçları Birlikte Çalışabilirliği ile ödevler oluşturun ve notlayın, kurs içeriğini derleyin ve dosyalar üzerinde gerçek zamanlı olarak işbirliği yapın.
-ms.openlocfilehash: 2fd03732a9426bb13176dbfc16a7c996767f5430
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: d5a1b4f08b3507af176c7dd145520767ecdb752f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388363"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68177646"
 ---
 # <a name="use-microsoft-onedrive-lti-with-blackboard"></a>Blackboard ile Microsoft OneDrive LTI kullanma
 

@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 1e2f98c115797225ff05a04a89e034bd542077fc
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 789f77a693d3190c0918f6d09809e615eb9701c8
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67695373"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180087"
 ---
 # <a name="find-devices-by-internal-ip-api"></a>Cihazları iç IP API'lerine göre bulma
 
@@ -64,6 +66,8 @@ Temsilci (iş veya okul hesabı)|Machine.ReadWrite|'Makine bilgilerini okuma ve 
 > - Yanıt yalnızca kullanıcının cihaz grubu ayarlarına göre erişimi olan cihazları içerir (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md) )
 > - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz [. Rolleri oluşturma ve yönetme](user-roles.md) )
 > - Yanıt yalnızca kullanıcının cihaz grubu ayarlarına göre erişimi olan cihazları içerir (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md) )
+>
+> Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.
 
 ## <a name="http-request"></a>HTTP isteği
 

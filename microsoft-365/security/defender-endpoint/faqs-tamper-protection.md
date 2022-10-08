@@ -18,15 +18,15 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.subservice: mde
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: b9e9a094e6a9deeb2121aa0048a902a2f21d410b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f316687fc0a894cc72578d8e556dc1e1ab322fed
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67697505"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180035"
 ---
 # <a name="frequently-asked-questions-on-tamper-protection"></a>Kurcalama koruması hakkında sık sorulan sorular
 
@@ -54,7 +54,7 @@ Hayır. Microsoft dışı virüsten koruma teklifleri Windows Güvenliği uygula
 
 ## <a name="what-happens-if-microsoft-defender-antivirus-isnt-active-on-a-device"></a>Microsoft Defender Virüsten Koruma bir cihazda etkin değilse ne olur?
 
-Uç Nokta için Microsoft Defender eklenen cihazlarda Microsoft Defender Virüsten Koruma pasif modda çalışır. Bu durumlarda, kurcalama koruması hizmeti ve özelliklerini korumaya devam eder.
+Uç Nokta için Microsoft Defender eklenen cihazlarda pasif modda çalışan Microsoft Defender Virüsten Koruma bulunur. Bu durumlarda, kurcalama koruması hizmeti ve özelliklerini korumaya devam eder.
 
 ## <a name="how-do-i-turn-tamper-protection-on-or-off"></a>Kurcalama korumasını açmak veya kapatmak Nasıl yaparım??
 
@@ -65,11 +65,11 @@ Ev kullanıcısıysanız bkz. [Tek bir cihazda kurcalama korumasını yönetme](
 - [Microsoft Endpoint Manager kullanarak kurcalama korumasını yönetme](manage-tamper-protection-microsoft-endpoint-manager.md)
 - [Microsoft 365 Defender kullanarak kurcalama korumasını yönetme](manage-tamper-protection-microsoft-365-defender.md)
 
-## <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-with-group-policy"></a>Intune'de kurcalama korumasını yapılandırmak, microsoft defender virüsten korumayı grup ilkesi ile yönetme şeklimi nasıl etkiler?
+## <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-with-group-policy"></a>Intune'de kurcalama korumasının yapılandırılması, grup ilkesi ile Microsoft Defender Virüsten Koruma'nın nasıl yönetileceğini nasıl etkiler?
 
 Şu anda 'kurcalama koruması' yapılandırmak ve yönetmek için Intune kullanıyorsanız, Intune kullanmaya devam etmelisiniz. 
 
-Grup ilkesi kurcalama koruması için geçerli değildir. grup ilkesi kullanılarak Microsoft Defender Virüsten Koruma ayarlarında yapılan değişiklikler, kurcalama koruması açık olduğunda veya Intune ile kurcalama koruması yapılandırıldığında yoksayılır.
+Grup ilkesi kurcalama koruması için geçerli değildir. grup ilkesi kullanarak Microsoft Defender Virüsten Koruma ayarlarında yapılan değişiklikler, kurcalama koruması açıldığında veya Intune ile kurcalama koruması yapılandırıldığında yoksayılır.
 
 ## <a name="if-we-use-microsoft-intune-to-configure-tamper-protection-does-it-apply-only-to-the-entire-organization"></a>'Kurcalama korumasını' yapılandırmak için Microsoft Intune kullanırsak, bu yalnızca kuruluşun tamamı için geçerli mi?
 

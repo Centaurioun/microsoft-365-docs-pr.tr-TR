@@ -17,18 +17,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: conceptual
-ms.openlocfilehash: 800410fe4faecde9a104242d5d4a1821ad8de86a
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: e549c9c080e420f0b9aaf9fb18ac6552d7385a7f
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482262"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68059294"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Kimlik için Microsoft Defender için değerlendirme ortamını etkinleştirme
 

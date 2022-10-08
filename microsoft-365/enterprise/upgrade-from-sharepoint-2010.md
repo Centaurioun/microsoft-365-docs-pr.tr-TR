@@ -9,6 +9,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 search.appverid:
@@ -20,12 +21,12 @@ f1.keywords:
 - NOCSH
 description: SharePoint 2010 ve SharePoint Server 2010'dan yükseltecek bilgileri ve kaynakları bulun. Her iki destek de 13 Nisan 2021'de sona erer.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a40f64fff001e8dbbc96b20039b2bd578f4e44a0
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 847e74174ca90e21c6a15865b4b2c0efc4f28979
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672853"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68179317"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010'dan yükseltme
 

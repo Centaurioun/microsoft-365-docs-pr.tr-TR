@@ -16,19 +16,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-firstincident
 - highpri
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 76df56c3d1200e8657f288f0b696e8ace3f8ea28
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 2a80a353b78a447cba5124a7b6e6241e3b3eb223
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480854"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68059250"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Adım 3. İlk olayınızın olay sonrası gözden geçirmesini gerçekleştirme
 

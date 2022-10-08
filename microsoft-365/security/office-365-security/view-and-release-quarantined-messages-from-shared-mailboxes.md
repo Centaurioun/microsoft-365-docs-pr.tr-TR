@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Kullanıcılar, izinlerine sahip oldukları paylaşılan posta kutularına gönderilen karantinaya alınmış iletileri görüntülemeyi ve üzerinde işlem yapmayı öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 65e26cfe0fbe12967fbf08b8c12ef81b0b687843
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 933a61c75177d5df114aea0241a05a2614fa47f4
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599527"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68057666"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Paylaşılan posta kutularından karantinaya alınan iletileri görüntüleme ve bırakma
 
@@ -38,7 +38,13 @@ Daha önce, kullanıcıların paylaşılan posta kutusuna gönderilen karantinay
 
 Artık kullanıcıların paylaşılan posta kutularına gönderilen karantinaya alınan iletileri yönetmesi için otomatik eşleme gerekli değildir. Sadece işe yarıyor. Paylaşılan posta kutusuna gönderilen karantinaya alınmış iletilere erişmek için iki farklı yöntem vardır:
 
-- Yönetici karantina bildirimlerine (eski adıyla son kullanıcı istenmeyen posta bildirimleri) izin vermek için [karantina ilkelerini](quarantine-policies.md) yapılandırdıysa, paylaşılan posta kutusunda karantina bildirimlerine erişimi olan tüm kullanıcılar Microsoft 365 Defender portalında karantinaya gitmek için bildirimdeki **Gözden Geçir** düğmesine tıklayabilir. Bu yöntemin kullanıcıların yalnızca paylaşılan posta kutusuna gönderilen karantinaya alınmış iletileri yönetmesine izin verdiğine dikkat edin. Kullanıcılar bu bağlamda kendi karantina iletilerini yönetemez.
+- Aşağıdaki deyimlerin tümü doğruysa:
+  - Yönetici [, karantina](quarantine-policies.md) bildirimlerine (eski adıyla son kullanıcı istenmeyen posta bildirimleri) izin vermek için karantina ilkelerini yapılandırdı.
+  - Kullanıcının paylaşılan posta kutusunun karantina bildirimlerine erişimi vardır.
+  - Kullanıcının paylaşılan posta kutusu (doğrudan veya bir güvenlik grubu aracılığıyla) için Tam Erişim izinleri vardır.
+
+  Kullanıcı, Microsoft 365 Defender portalında karantinaya gitmek için bildirimdeki **Gözden Geçir** düğmesine tıklayabilir. Bu yöntem yalnızca paylaşılan posta kutusuna gönderilen karantinaya alınmış iletilere erişime izin verir. Kullanıcılar bu bağlamda kendi karantina iletilerini yönetemez.
+
 - Kullanıcı [Microsoft 365 Defender portalında karantinaya alabilir](find-and-release-quarantined-messages-as-a-user.md) ve sonuçları **Alıcı adresine** (paylaşılan posta kutusunun e-posta adresi) göre filtrelemek için **Filtre'ye** tıklayabilir. Ana **Karantina** sayfasında, paylaşılan posta kutusuna gönderilen iletilere göre sıralamak için **Alıcı** sütununa tıklayabilirsiniz.
 
 ## <a name="things-to-keep-in-mind"></a>Akılda tutulması gerekenler

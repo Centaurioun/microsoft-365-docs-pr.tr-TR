@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams kullanan sağlık kuruluşları için güvenli Microsoft Mesajlaşma
+title: Microsoft Teams kullanan sağlık kuruluşları için Güvenli Mesajlaşma
 author: samanro
 ms.author: samanro
 manager: pamgreen
@@ -18,30 +18,31 @@ ms.collection:
 - Teams_ITAdmin_Healthcare
 - microsoftcloud-healthcare
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 ms.reviewer: ''
-description: Microsoft Teams için okundu bilgileri ve öncelik bildirimleri içerebilen güvenli Microsoft Mesajlaşma ilkesini özelleştirmeyi öğrenin.
+description: Microsoft Teams için okundu bilgileri ve öncelik bildirimleri içerebilen bir Güvenli Mesajlaşma ilkesini özelleştirmeyi öğrenin.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2116434f4149a8fdb7985ecaa7b5cf67eb686a81
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 59e6690e7ff9eb36e531d4a1254503ba98bb07e6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824893"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68057271"
 ---
-# <a name="secure-messaging-for-healthcare-organizations"></a>Sağlık kuruluşları için güvenli Microsoft Mesajlaşma
+# <a name="secure-messaging-for-healthcare-organizations"></a>Sağlık kuruluşları için Güvenli Mesajlaşma
 
-Microsoft Mesajlaşma ilkeleri, Microsoft Teams'de kullanıcıların kullanabileceği sohbet ve kanal mesajlaşması özelliklerini denetlemek için kullanılır ve Hastaneler, klinikler veya doktor ofisleri gibi sağlık kuruluşları için Güvenli Microsoft Mesajlaşma dağıtımının bir parçasıdır. Burada, kritik iletilerin ne zaman okunduğu konusunda bilgi sahibi olmak çok önemlidir.
+Mesajlaşma ilkeleri, Microsoft Teams'de kullanıcıların kullanabileceği sohbet ve kanal mesajlaşması özelliklerini denetlemek için kullanılır ve Hastaneler, klinikler veya doktor ofisleri gibi sağlık kuruluşları için Güvenli Mesajlaşma'nın genel dağıtımının bir parçasıdır. Burada, kritik iletilerin ne zaman okunduğu konusunda bilgi sahibi olmak çok önemlidir.
 
 Genel (Kuruluş genelinde varsayılan) ilkesini kullanabilir veya kuruluşunuzdaki kişiler için bir veya daha fazla özel mesajlaşma ilkesi oluşturabilirsiniz. Özel ilke oluşturup atamadığınız sürece kuruluşunuzdaki kullanıcılar genel ilkeyi otomatik olarak alır. Özel bir ilke oluşturduktan sonra, bu ilkeye bir kullanıcı veya kuruluşunuzdaki kullanıcı grupları atayın. Örneğin, daha sınırlı bir özellik kümesi elde etmek için yalnızca belirli iş rollerinin bu özellikleri (belki de yalnızca doktorlar ve hemşireler) ve diğer çalışanları (janitorial veya mutfak personeli gibi) kullanmasına izin vermeyi seçebilirsiniz. Kuruluşunuzun neye ihtiyaç duyduğuna kendiniz karar verin. Buradaki kılavuz en çok bir öneridir.
 
-İlkeler, yönetici kimlik bilgileriyle oturum açıp sol gezinti bölmesinde **Microsoft Mesajlaşma ilkeleri** seçilerek [Microsoft Teams yönetim merkezinde](https://admin.teams.microsoft.com) kolayca yönetilebilir.
+İlkeler, yönetici kimlik bilgileriyle oturum açıp sol gezinti bölmesinde **Mesajlaşma ilkeleri'ni** seçerek [Microsoft Teams yönetim merkezinde](https://admin.teams.microsoft.com) kolayca yönetilebilir.
 
- :::image type="content" source="media/hc-messaging-policy-admin-center-new.png" alt-text="Microsoft Mesajlaşma ilkeleri sayfasının ekran görüntüsü." lightbox="media/hc-messaging-policy-admin-center-new.png":::
+ :::image type="content" source="media/hc-messaging-policy-admin-center-new.png" alt-text="Mesajlaşma ilkeleri sayfasının ekran görüntüsü." lightbox="media/hc-messaging-policy-admin-center-new.png":::
  
- Kuruluşunuz için mevcut varsayılan Microsoft Mesajlaşma ilkesini düzenlemek için **Genel 'e (Kuruluş genelinde varsayılan)** tıklayın ve değişikliklerinizi yapın. Yeni bir özel mesajlaşma ilkesi oluşturmak için **Ekle'ye** tıklayın ve ayarlarınızı seçin. İşiniz bittiğinde **Kaydet'i** seçin.
+ Kuruluşunuz için mevcut varsayılan Mesajlaşma ilkesini düzenlemek için **Genel (Kuruluş genelinde varsayılan)** seçeneğine tıklayın ve değişikliklerinizi yapın. Yeni bir özel mesajlaşma ilkesi oluşturmak için **Ekle'ye** tıklayın ve ayarlarınızı seçin. İşiniz bittiğinde **Kaydet'i** seçin.
 
 ![Mesajlaşma ilkesi ayarlarının ekran görüntüsü.](media/hc-messaging-policy.png)
 

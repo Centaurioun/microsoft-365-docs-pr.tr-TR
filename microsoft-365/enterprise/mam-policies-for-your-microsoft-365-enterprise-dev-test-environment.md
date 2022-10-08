@@ -1,5 +1,5 @@
 ---
-title: Kurumsal test ortamınız için Microsoft 365 cihaz uyumluluk ilkeleri
+title: Kurumsal test ortamınız için Microsoft 365'e yönelik cihaz uyumluluk ilkeleri
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -8,35 +8,37 @@ manager: scotv
 ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: M365-identity-device-management
+ms.collection:
+- scotvorg
+- M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Kurumsal test ortamınıza Microsoft 365 Intune cihaz uyumluluk ilkeleri eklemek için bu Test Laboratuvarı Kılavuzu'nu kullanın.
-ms.openlocfilehash: 3037ca846fe74fb8de51c78799e69c510821a034
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Kurumsal test ortamınız için Microsoft 365'e Intune cihaz uyumluluk ilkeleri eklemek için bu Test Laboratuvarı Kılavuzu'nu kullanın.
+ms.openlocfilehash: 6d75721bd8b4fa6e707111ffd383c20770da0cda
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099465"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178789"
 ---
-# <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>Kurumsal test ortamınız için Microsoft 365 cihaz uyumluluk ilkeleri
+# <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>Kurumsal test ortamınız için Microsoft 365'e yönelik cihaz uyumluluk ilkeleri
 
 *Bu Test Laboratuvarı Kılavuzu yalnızca kurumsal test ortamları için Microsoft 365 için kullanılabilir.*
 
-Bu makalede, Windows 10 cihazlar için Intune cihaz uyumluluk ilkesinin nasıl ekleneceği ve kurumsal test ortamı için Microsoft 365 Kurumlar için Microsoft 365 Uygulamaları nasıl ekleneceği açıklanır.
+Bu makalede, kurumsal test ortamınız için Microsoft 365'e Windows 10 cihazlar ve Kurumlar için Microsoft 365 Uygulamaları için Intune cihaz uyumluluk ilkesinin nasıl ekleneceği açıklanır.
 
 Intune cihaz uyumluluk ilkesi eklemek iki aşamayı içerir:
-- [1. Aşama: Kurumsal test ortamı için Microsoft 365 oluşturma](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [1. Aşama: Kurumsal test ortamı için Microsoft 365'inizi oluşturma](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [2. Aşama: Windows 10 cihazlar için cihaz uyumluluk ilkesi oluşturma](#phase-2-create-a-device-compliance-policy-for-windows-10-devices)
 
 ![Microsoft bulutu için Test Laboratuvarı Kılavuzları.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Kurumsal Test Laboratuvarı Kılavuzu yığınındaki Microsoft 365 tüm makalelere yönelik görsel bir harita için [kurumsal Test Laboratuvarı Kılavuzu Yığını için Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf) bölümüne gidin.
+> Microsoft 365 kurumsal Test Laboratuvarı Kılavuzu yığınındaki tüm makalelere yönelik görsel bir harita için [, Kurumsal Test Laboratuvarı Kılavuz Yığını için Microsoft 365'e](../downloads/Microsoft365EnterpriseTLGStack.pdf) gidin.
 
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>1. Aşama: Kurumsal test ortamı için Microsoft 365 oluşturma
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>1. Aşama: Kurumsal test ortamı için Microsoft 365'inizi oluşturma
 
 MAM ilkelerini en düşük gereksinimlerle yalnızca basit bir şekilde yapılandırmak istiyorsanız [, Basit temel yapılandırma](lightweight-base-configuration-microsoft-365-enterprise.md) yönergelerini izleyin.
   
@@ -54,15 +56,15 @@ Bu aşamada, Windows 10 cihazlar için bir cihaz uyumluluk ilkesi oluşturursunu
 
     **Henüz cihaz yönetimini etkinleştirmediğinize** benzer bir ileti gösteriliyorsa, MDM yetkilisi olarak Intune seçin. Belirli adımlar için bkz. [Mobil cihaz yönetimi yetkilisini ayarlama](/mem/intune/fundamentals/mdm-authority-set).
 
-    Endpoint Manager yönetim merkezi, cihaz yönetimine ve uygulama yönetimine odaklanır. Bu yönetim merkezi turu için bkz[. Öğretici: Microsoft Endpoint Manager'da İzlenecek yol Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager).
+    Endpoint Manager yönetim merkezi, cihaz yönetimine ve uygulama yönetimine odaklanır. Bu yönetim merkezi turu için bkz[. Öğretici: Microsoft Endpoint Manager'de izlenecek yol Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager).
 
-2. **Gruplar'da**, **Atanmış** üyelik türüne sahip **Yönetilen Windows 10 cihaz kullanıcıları** adlı yeni bir Microsoft 365 veya **Güvenlik** grubu ekleyin. Sonraki adımlarda uyumluluk ilkenizi bu gruba atayacaksınız. 
+2. **Gruplar'da**, **Atanan** üyelik türüne sahip **Yönetilen Windows 10 cihaz kullanıcıları** adlı yeni bir **Microsoft 365** veya **Güvenlik** grubu ekleyin. Sonraki adımlarda uyumluluk ilkenizi bu gruba atayacaksınız. 
 
     Belirli adımlar ve **Microsoft 365** veya **Güvenlik** grupları hakkında bilgi için bkz. [Kullanıcıları ve cihazları düzenlemek için grup ekleme](/mem/intune/fundamentals/groups-add).
 
 3. **Cihazlar'da** bir Windows 10 uyumluluk ilkesi oluşturun. Bu ilkeyi, oluşturduğunuz **Yönetilen Windows 10 cihaz kullanıcıları** grubuna atayın.
 
-    İlkenizde basit parolaları engelleyebilir, güvenlik duvarı gerektirebilir, Microsoft Defender Kötü Amaçlı Yazılımdan Koruma hizmetinin çalışmasını gerektirebilir ve daha fazlasını yapabilirsiniz. Uyumluluk ilkesi genellikle temel ayarları veya her cihazın sahip olması gereken minimum ayarları içerir.
+    İlkenizde basit parolaları engelleyebilir, güvenlik duvarı gerektirebilir, Microsoft Defender Kötü amaçlı yazılımdan koruma hizmetinin çalışmasını gerektirebilir ve daha fazlasını yapabilirsiniz. Uyumluluk ilkesi genellikle temel ayarları veya her cihazın sahip olması gereken minimum ayarları içerir.
 
     Belirli adımlar ve yapılandırabileceğiniz kullanılabilir uyumluluk ayarları hakkında bilgi için bkz. [Yönettiğiniz cihazlar için kurallar ayarlamak için uyumluluk ilkelerini kullanma](/mem/intune/protect/device-compliance-get-started).
 
@@ -76,7 +78,7 @@ Test ortamınızdaki ek [mobil cihaz yönetimi](m365-enterprise-test-lab-guides.
 
 [Kurumsal Test Laboratuvarı Kılavuzları için Microsoft 365](m365-enterprise-test-lab-guides.md).
   
-[Kurumsal test ortamınız için iOS ve Android cihazları Microsoft 365 kaydetme](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+[Kurumsal test ortamınız için Microsoft 365'e iOS ve Android cihazları kaydetme](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
   
 [Microsoft 365 Kurumsal’a genel bakış](microsoft-365-overview.md)
 

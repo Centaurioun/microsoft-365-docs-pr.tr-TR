@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 11/19/2021
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 f1.keywords:
@@ -19,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: Bu makalede, Internet Explorer geliştirici araçlarını kullanarak SharePoint Online sitenizdeki yaygın sorunları nasıl tanılayabileceğiniz gösterilmektedir.
-ms.openlocfilehash: 041619991fdbdcb3e953fe2a06fd63dff0e9201f
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 800cdce53e3c80c1d1a385e6671b1dd710a70592
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753814"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68179383"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>SharePoint Online ile ilgili performans sorunlarını tanılama
 
 Bu makalede, Internet Explorer geliştirici araçlarını kullanarak SharePoint Online sitenizdeki yaygın sorunları nasıl tanılayabileceğiniz gösterilmektedir.
   
-SharePoint Online sitesindeki bir sayfada özelleştirmelerle ilgili performans sorunu olduğunu belirlemenin dört farklı yolu vardır.
+SharePoint Online sitesindeki bir sayfanın özelleştirmelerle ilgili performans sorunu olduğunu belirlemenin dört farklı yolu vardır.
 
 - Site ve Sayfa performansı tanılaması
   
@@ -38,19 +39,19 @@ SharePoint Online sitesindeki bir sayfada özelleştirmelerle ilgili performans 
 
 - Özelleştirilmemiş taban çizgisiyle karşılaştırma
 
-- çevrimiçi yanıt üst bilgisi ölçümlerini SharePoint
+- SharePoint Online yanıt üst bilgisi ölçümleri
 
-Bu konuda, performans sorunlarını tanılamak için bu yöntemlerin her birinin nasıl kullanılacağı açıklanmaktadır. Sorunun nedenini bulduktan sonra, üzerinde bulabileceğiniz SharePoint performansını iyileştirme hakkındaki makaleleri kullanarak bir çözüm üzerinde https://aka.ms/tuneçalışabilirsiniz.  
+Bu konuda, performans sorunlarını tanılamak için bu yöntemlerin her birinin nasıl kullanılacağı açıklanmaktadır. Sorunun nedenini bulduktan sonra, üzerinde https://aka.ms/tunebulabileceğiniz SharePoint performansını iyileştirme hakkındaki makaleleri kullanarak bir çözüm üzerinde çalışabilirsiniz.  
 
 ## <a name="use-the-site-and-page-performance-diagnostic-from-the-microsoft-365-admin-center"></a>Microsoft 365 Yönetici Merkezi'nden Site ve Sayfa performansı tanılamasını kullanma
 
 > [!NOTE]
-> Yöneticiyseniz ve SharePoint performansıyla ilgili sorun yaşıyorsanız, aşağıdaki **Testleri Çalıştır'ı** seçerek Microsoft 365 Yönetici Merkezi'ndeki Site ve Sayfa Performansı tanılamasını doldurun. Bu testler, yapılandırmanızı denetler ve kiracınızın SharePoint performansını iyileştirmeye yardımcı olmak için hızlı bir şekilde sonraki adımları önerir.
+> Yöneticiyseniz ve SharePoint'te performansla ilgili sorun yaşıyorsanız aşağıdaki **Testleri Çalıştır'ı** seçin; bu, Microsoft 365 Yönetici Merkezi'ndeki Site ve Sayfa Performansı tanılamasını doldurur. Bu testler, yapılandırmanızı denetler ve kiracınızın SharePoint performansını iyileştirmeye yardımcı olmak için sonraki adımları hızla önerir.
 >> [!div class="nextstepaction"]
 >> [Testleri Çalıştırma: SharePoint Performansını Denetleme](https://aka.ms/PillarSiteandPagePerf)
 
 > [!NOTE] 
-> Bu özellik Microsoft 365 Kamu, 21Vianet veya Microsoft 365 Almanya tarafından sağlanan Microsoft 365 için kullanılamaz.
+> Bu özellik Microsoft 365 Kamu, 21Vianet tarafından sağlanan Microsoft 365 veya Microsoft 365 Germany için kullanılamaz.
   
 ## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>SharePoint Online'da performansı tanılamak için F12 araç çubuğunu kullanma
 <a name="F12ToolInfo"> </a>
@@ -71,7 +72,7 @@ Geliştirici araçlarını açmak için **F12 tuşuna** basın ve ardından Wi-F
   
 Bu ekran görüntüsünde gösterildiği gibi dosyaların indirme zamanlarını da sağ tarafta görebilirsiniz.
   
-![İstenen sayfaların SharePoint yüklenmesi için geçen süreyi gösteren diyagram.](../media/d71ad1fa-9018-4fae-82eb-c1838e7db0ff.png)
+![İstenen sayfaların SharePoint'ten yüklenmesi için geçen süreyi gösteren diyagram.](../media/d71ad1fa-9018-4fae-82eb-c1838e7db0ff.png)
   
 Bu, dosyanın yüklenmesinin ne kadar sürdüğünü görsel olarak gösterir. Yeşil çizgi, sayfanın tarayıcı tarafından işlenmeye hazır olduğu zamanları temsil eder. Bu, sitenizde yavaş sayfa yüklemelerine neden olabilecek farklı dosyaların hızlı bir görünümünü sağlayabilir.
   
@@ -102,7 +103,7 @@ SharePoint Online'da, her dosyanın yanıt üst bilgisinde tarayıcıya geri gö
 ## <a name="whats-causing-performance-issues-in-sharepoint-online"></a>SharePoint Online'da performans sorunlarına neden olan nedir?
 <a name="F12ToolInfo"> </a>
 
-[SharePoint Online için Gezinti seçenekleri](navigation-options-for-sharepoint-online.md) makalesi, karmaşık yapısal gezintinin sayfanın sunucuda işlenmesinin uzun sürmesine neden olduğunu belirlemek için SPRequestDuration değerinin kullanılmasına ilişkin bir örnek gösterir. Temel site için bir değer alarak (özelleştirme olmadan), belirli bir dosyanın yüklenmesinin uzun zaman alıp almadığını belirlemek mümkündür. [SharePoint Online için Gezinti seçeneklerinde](navigation-options-for-sharepoint-online.md) kullanılan örnek ana .aspx dosyasıdır. Bu dosya, sayfa yükünüz için çalışan ASP.NET kodunun çoğunu içerir. Kullandığınız site şablonuna bağlı olarak, giriş sayfasını özelleştirdiğinizde bu start.aspx, home.aspx, default.aspx veya başka bir ad olabilir. Bu sayı temel sitenizden çok daha yüksekse, sayfanızda performans sorunlarına neden olan karmaşık bir şey olduğunu iyi bir göstergedir.
+[SharePoint Online için gezinti seçenekleri](navigation-options-for-sharepoint-online.md) makalesi, karmaşık yapısal gezintinin sayfanın sunucuda işlenmesinin uzun sürmesine neden olduğunu belirlemek için SPRequestDuration değerini kullanma örneğini gösterir. Temel site için bir değer alarak (özelleştirme olmadan), belirli bir dosyanın yüklenmesinin uzun zaman alıp almadığını belirlemek mümkündür. [SharePoint Online için gezinti seçeneklerinde](navigation-options-for-sharepoint-online.md) kullanılan örnek ana .aspx dosyasıdır. Bu dosya, sayfa yükünüz için çalışan ASP.NET kodunun çoğunu içerir. Kullandığınız site şablonuna bağlı olarak, giriş sayfasını özelleştirdiğinizde bu start.aspx, home.aspx, default.aspx veya başka bir ad olabilir. Bu sayı temel sitenizden çok daha yüksekse, sayfanızda performans sorunlarına neden olan karmaşık bir şey olduğunu iyi bir göstergedir.
   
 Sitenize özgü bir sorun olduğunu belirledikten sonra, kötü performansa neyin neden olduğunu anlamanın önerilen yolu, sayfa özelleştirmeleri gibi olası tüm nedenleri ortadan kaldırmak ve ardından bunları siteye tek tek yeniden eklemektir. Sayfanın iyi performans göstermesini sağlayan yeterli özelleştirmeyi kaldırdıktan sonra, belirli özelleştirmeleri tek tek geri ekleyebilirsiniz.
   

@@ -17,6 +17,7 @@ ms.custom:
 - O365E_ServiceHealthModern
 - seo-marvel-apr2020
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 search.appverid:
@@ -26,12 +27,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Etkin bir hizmet kesintisi olup olmadığını görmek için desteği aramadan önce Microsoft 365 hizmetlerinin sistem durumunu görüntüleyin.
-ms.openlocfilehash: f4440457246c4fa509914ea06c8d9986aef68e91
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 210afaa3fc9a3fb247d56baf9172221ad24cced7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671533"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68179273"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Microsoft 365 hizmet durumunu denetleme
 
@@ -116,20 +117,20 @@ Ayrıca, bir hizmet için her olay yerine tek tek olaylar için e-posta bildirim
 
 | Simge | Açıklama |
 |:-----|:-----|
-|![Danışmanlık için bilgi simgesi.](../media/a7f5fd21-c760-4948-9bc1-50f7c8070e28.png)|Hizmet için bir öneri gösteriliyorsa, bazı kullanıcıları etkileyen sorunun farkındayız ama hizmet hala kullanılabilir durumda demektir. Öneride, genellikle sorun için geçici bir çözüm vardır ve sorun aralıklı olarak ortaya çıkıyor veya kapsamı ve kullanıcı etkisi sınırlı olabilir.  <br/> |
-|![Olay için ünlem işareti simgesi.](../media/a636db57-6083-44dc-bbd5-556850804f17.png)|Hizmet için etkin bir olay gösteriliyorsa, bu kritik bir sorundur ve hizmetin kendisi veya önemli bir işlevi kullanılamıyordur. Örneğin, kullanıcı e-posta gönderip alamıyor veya oturum açamıyor olabilir. Olayların kullanıcılar üzerinde göze çarpan bir etkisi olur. Devam eden bir olayda, Hizmet durumu panosunda incelemeyle, etkiyi azaltma çabalarıyla ve çözümün onayıyla ilgili güncelleştirmeler sağlarız.  <br/> |
+|![Danışmanlık için bilgi simgesi.](../media/a7f5fd21-c760-4948-9bc1-50f7c8070e28.png)|If a service has an advisory shown, we are aware of a problem that is affecting some users, but the service is still available. In an advisory, there is often a workaround to the problem and the problem may be intermittent or is limited in scope and user impact.  <br/> |
+|![Olay için ünlem işareti simgesi.](../media/a636db57-6083-44dc-bbd5-556850804f17.png)|If a service has an active incident shown, it's a critical issue and the service or a major function of the service is unavailable. For example, users may be unable to send and receive email or unable to sign-in. Incidents will have noticeable impact to users. When there is an incident in progress, we will provide updates regarding the investigation, mitigation efforts, and confirmation of resolution in the Service health dashboard.  <br/> |
 
 ### <a name="status-definitions"></a>Durum tanımları
 
 | Durum | Tanım |
 |:-----|:-----|
 |**Araştırı** | Olasın bir sorun olduğunun farkındayız; neler olup bittiği ve bunun etkisinin kapsamı konusunda daha fazla bilgi topluyoruz. |
-|**Hizmet performansında düşüş** | Bir hizmetin veya özelliğin kullanımını etkileyebilecek bir sorun olduğunu doğruladık. Örneğin, hizmet her zamankinden daha yavaş performans gösteriyorsa, aralıklı kesintiler oluyorsa veya bir özellik çalışmıyorsa, bu durum bilgisini görebilirsiniz. |
-|**Hizmette kesinti** | Kullanıcıların hizmete erişimini etkileyen bir sorun olduğunu saptarsak, bu durum bilgisini görürsünüz. Bu durum gösterildiğinde, sorun önemlidir ve tutarlı olarak yeniden üretiliyor olabilir. |
+|**Hizmet performansında düşüş** | We've confirmed that there is an issue that may affect use of a service or feature. You might see this status if a service is performing more slowly than usual, there are intermittent interruptions, or if a feature isn't working, for example. |
+|**Hizmette kesinti** | You'll see this status if we determine that an issue affects the ability for users to access the service. In this case, the issue is significant and can be reproduced consistently. |
 |**Hizmet geri yükleniyor** | Sorunun nedeni belirlenmiştir, düzeltmek için yapılacak işlemleri biliyoruz ve hizmeti sağlam duruma döndürme çalışmalarımız sürüyor demektir. |
-|**Genişletilmiş kurtarma** | Bu durum, hizmeti çoğu kullanıcı için geri yüklemeye yönelik düzeltme çalışmalarının sürdüğünü ancak tüm etkilenen sistemlere ulaşmanın biraz zaman alacağını gösterir. Kalıcı bir düzeltme uygulamayı beklerken geçici bir çözüm sağladığımızda da bu durum bilgisini görebilirsiniz. |
-|**İnceleme askıya alındı** | Olası bir sorunla ilgili yaptığımız ayrıntılı inceleme sonunda, incelemeye devam etmek için müşterilerden ek bilgi istenmişse, bu durum bilgisini görürsünüz. Sizin işlem yapmanız gerekirse, bize hangi verilerin veya günlüklerin gerektiğini size bildiririz. |
-|**Hizmet geri yüklendi** | Düzeltme işlemlerinin temel sorunu çözdüğünü ve hizmetin sağlam duruma geri yüklendiğini doğruladık anlamına gelir. Nerede sorun çıktığını öğrenmek için, sorunun ayrıntılarını görüntüleyin. |
+|**Genişletilmiş kurtarma** | This status indicates that corrective action is in progress to restore service to most users but will take some time to reach all the affected systems. You might also see this status if we've made a temporary fix to reduce impact while we wait to apply a permanent fix. |
+|**İnceleme askıya alındı** | If our detailed investigation of a potential issue results in a request for additional information from customers to allow us to investigate further, you'll see this status. If we need you to act, we'll let you know what data or logs we need. |
+|**Hizmet geri yüklendi** | We've confirmed that corrective action has resolved the underlying problem and the service has been restored to a healthy state. To find out what went wrong, view the issue details. |
 |**Hatalı pozitif** | Ayrıntılı bir araştırmadan sonra hizmetin iyi durumda olduğunu ve tasarlandığı şekilde çalıştığını doğruladık. Hizmet üzerinde herhangi bir etki gözlemlenmedi veya olayın nedeni hizmetin dışından kaynaklandı. Bu duruma sahip olaylar ve öneriler, süresi dolana kadar geçmiş görünümünde görünür (bu olay için son gönderide belirtilen süreden sonra). |
 |**Olay sonrası rapor yayımlandı** | Benzer bir sorunun yeniden oluşmamasını sağlamak için kök neden bilgilerini ve sonraki adımları içeren belirli bir sorun için Olay Sonrası Raporu yayımladık. |
 

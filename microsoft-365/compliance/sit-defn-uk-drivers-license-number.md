@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: BK sürücü lisansı numarasına duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: 7608cb8e4ffd16be6e381ff8a38ceb6f559ab36d
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 813fa073465e31f2bdd11ac53a6b5e59ec4ae8b4
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948385"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472946"
 ---
 # <a name="uk-drivers-license-number"></a>BK ehliyet numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -42,22 +45,22 @@ Belirtilen biçimdeki 18 harf ve basamak birleşimi
 - Harf yerine iki harf (büyük/küçük harfe duyarlı değil) veya "9" rakamı.
 - Beş basamak.
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_uk_drivers_license` , desenle eşleşen içeriği bulur.
-- 'den `Keywords_eu_driver's_license_number` bir anahtar sözcük bulunur.
-- Sağlama toplamı geçer.
+- İşlev `Func_uk_drivers_license`, desenle eşleşen içeriği bulur.
+- `Keywords_eu_driver's_license_number` içinden bir anahtar sözcük bulundu.
+- Sağlama toplamı başarılı.
 
 DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının güvenilirliği düşüktür:
 
-- İşlev `Func_uk_drivers_license` , desenle eşleşen içeriği bulur.
-- Sağlama toplamı geçer.
+- İşlev `Func_uk_drivers_license`, desenle eşleşen içeriği bulur.
+- Sağlama toplamı başarılı.
 
 ```xml
     <!-- U.K. Driver's License Number -->

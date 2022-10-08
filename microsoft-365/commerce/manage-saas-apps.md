@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: jamitche, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 365 yönetim merkezi'da üçüncü taraf uygulamaları etkinleştirmeyi ve yönetmeyi öğrenin.
 ms.date: 04/15/2021
-ms.openlocfilehash: c85a0c93ee7f17953f7877cc1fd97765e0e63afd
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: fa4afd0b6b5e26c29c26277b236302081a55a9f0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713877"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68179603"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Kuruluşunuz için üçüncü taraf uygulama aboneliklerini yönetme
 
@@ -67,9 +68,9 @@ Bu bölgelerde üçüncü taraf uygulamalar için destek sağlanır:
 
 Yöneticilerin üçüncü taraf uygulamaları kullanıcılara atamadan önce etkinleştirmesi gerekir. Bu uygulamalar üçüncü taraf yayımcının portalında etkinleştirilir.
 
-1. Yönetim merkezinde **BillingYour** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">productsApps</a> >  sayfasına gidin.
+1. Yönetim merkezinde **Ürünlerinizi** >  **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Uygulamaları</a> sayfasına gidin.
 2. Yönetmek istediğiniz uygulamayı bulun ve seçin.
-3. **Ayarlar & eylemleri'nin** **altında Yayımcının portalında Yönet'i** seçin.
+3. **Ayarlar &** **eylemleri'nin altında Yayımcının portalında Yönet'i** seçin.
 
 Uygulamayı etkinleştirebileceğiniz uygulama yayımcısının sitesine yönlendirilirsiniz.
 
@@ -87,17 +88,17 @@ Uygulama etkinleştirildikten sonra iptal edilmediği, süresi dolmadığı veya
 
 ## <a name="assign-licenses"></a>Lisans atama
 
-Yöneticilerin üçüncü taraf uygulamaları kullanıcılara atamadan önce etkinleştirmesi gerekir. Üçüncü taraf yayımcının portalında etkinleştirilirler. Uygulama sayfasındaki **Ayarlar & eylemlerin** altında lisans atama bağlantısını seçin.
+Yöneticilerin üçüncü taraf uygulamaları kullanıcılara atamadan önce etkinleştirmesi gerekir. Üçüncü taraf yayımcının portalında etkinleştirilirler. Uygulama sayfasındaki **Ayarlar & eylemleri'nin** altında lisans atama bağlantısını seçin.
 
-1. Yönetim merkezinde **BillingYour** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">productsApps</a> >  sayfasına gidin.
+1. Yönetim merkezinde **Ürünlerinizi** >  **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Uygulamaları</a> sayfasına gidin.
 2. Yönetmek istediğiniz uygulamayı bulun ve seçin.
-3. **Ayarlar & eylemleri'nin** altında **Yayımcının portalında yönet** bağlantısını seçin.
+3. **Ayarlar & eylemleri'nin** **altında Yayımcının portalında yönet** bağlantısını seçin.
 
 ## <a name="change-license-quantity"></a>Lisans miktarını değiştirme
 
 Yöneticiler, kuruluşlarının sahip olduğu lisansların sayısını değiştirebilir. Bu yalnızca lisans tabanlı fiyatlandırmayla satın alınan uygulamalar için geçerlidir.
 
-1. Yönetim merkezinde **BillingYour** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">productsApps</a> >  sayfasına gidin.
+1. Yönetim merkezinde **Ürünlerinizi** >  **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Uygulamaları</a> sayfasına gidin.
 2. Yönetmek istediğiniz uygulamayı bulun ve seçin.
 3. **Lisans miktarını değiştir'i** seçin.
 
@@ -113,7 +114,7 @@ Faturalama profilleri hakkında daha fazla bilgi için bkz. [Faturalama profille
 
 ### <a name="change-the-billing-profile-on-a-software-as-a-service-app-subscription"></a>Hizmet olarak yazılım uygulaması aboneliğinde faturalama profilini değiştirme
 
-1. Yönetim merkezinde **BillingYour** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">productsApps</a> >  sayfasına gidin.
+1. Yönetim merkezinde **Ürünlerinizi** >  **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Uygulamaları</a> sayfasına gidin.
 2. Yönetmek istediğiniz uygulamayı bulun ve seçin.
 3. **Faturalama profili'nin** yanındaki **Düzenle'yi** seçin.
 
@@ -123,6 +124,6 @@ Faturalar hakkında daha fazla bilgi için bkz. [Faturanızı veya faturanızı 
 
 Hizmet olarak yazılım uygulamasını uygulama sayfasından iptal edebilirsiniz.
 
-1. Yönetim merkezinde **BillingYour** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">productsApps</a> >  sayfasına gidin.
+1. Yönetim merkezinde **Ürünlerinizi** >  **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Uygulamaları</a> sayfasına gidin.
 2. Yönetmek istediğiniz uygulamayı bulun ve seçin.
 3. **Ayarlar & eylemleri'nin** altında **Aboneliği iptal et'i** seçin.

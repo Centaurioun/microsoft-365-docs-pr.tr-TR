@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için güvenlik risklerini görüntülemeyi öğrenin.
-ms.openlocfilehash: 81a5b09f28d00bcde0915534e604429954774319
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 13ba0100a2daef57228e45cdd3f1a2e5f8fa9447
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731110"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178503"
 ---
 # <a name="overview-of-the-device-security-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'da Cihaz güvenliği sayfasına genel bakış
 

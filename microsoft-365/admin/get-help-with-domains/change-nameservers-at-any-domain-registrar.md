@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -28,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: E-posta ve Skype Kurumsal Online gibi hizmetlerinizin kendi etki alanı adınızı kullanması için Microsoft 365'te etki alanınızı eklemeyi ve ayarlamayı öğrenin.
-ms.openlocfilehash: 7904006377f27f53edde9e654a6d44bffd145e5e
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: a1275d14426f69fc96498772e2fc5aa041d497c6
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661543"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178217"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Microsoft 365'i herhangi bir etki alanı kayıt şirketiyle ayarlamak için ad sunucularını değiştirme
 
@@ -48,12 +49,12 @@ E-posta ve Teams gibi hizmetlerinizin kendi etki alanı adınızı kullanması i
 ## <a name="add-a-txt-or-mx-record-for-verification"></a>Doğrulama için bir TXT veya MX kaydı ekleyin
 
 > [!NOTE]
-> Bu kayıtlardan yalnızca birini veya diğerini oluşturacaksınız. Tercih edilen kayıt türü TXT'dir, ancak bazı DNS barındırma hizmet sağlayıcıları bunu desteklemez. Bu durumda, bir MX kaydı oluşturabilirsiniz.
+> You will create only one or the other of these records. TXT is the preferred record type, but some DNS hosting providers don't support it, in which case you can create an MX record instead.
 
 Etki alanınızı Microsoft 365 ile kullanmadan önce, etki alanına sahip olduğunuzdan emin olmamız gerekir. Etki alanı kayıt şirketinizde hesabınızda oturum açıp DNS kaydını oluşturabilmek, Microsoft 365'e etki alanının sahibi olduğunuzu kanıtlar.
 
 > [!NOTE]
-> Bu kayıt yalnızca etki alanının sahibi olduğunuzu doğrulamak için kullanılır; başka hiçbir şeyi etkilemez. Dilerseniz bu kaydı daha sonra silebilirsiniz.
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
 ### <a name="find-the-area-on-your-dns-hosting-providers-website-where-you-can-create-a-new-record"></a>DNS barındırma sağlayıcınızın web sitesinde yeni kayıt oluşturabileceğiniz alanı bulun
 
@@ -104,7 +105,7 @@ Microsoft 365 doğru TXT kaydını bulduğunda etki alanınız doğrulanır.
 4. **Etki alanını doğrula** sayfasında **Doğrula'yı** seçin.
 
 > [!NOTE]
-> Genellikle, DNS değişikliklerinin etkili olması yaklaşık 15 dakika sürer. Bununla birlikte, yaptığınız değişikliğin İnternet'in DNS sistemi genelinde güncelleştirilmesi bazen daha uzun sürebilir. DNS kayıtlarını ekledikten sonra posta akışı sorunlarıyla veya başka sorunlarla karşılaşırsanız, [Etki alanı adınızı veya DNS kayıtlarınızı değiştirdikten sonra sorunları giderme](../get-help-with-domains/find-and-fix-issues.md) konusuna bakın.
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="change-your-domains-nameserver-ns-records"></a>Etki alanınızın ad sunucusu (NS) kayıtlarını değiştirin
 
@@ -177,7 +178,7 @@ Etki alanı kayıt şirketinizin web sitesinde etki alanınızın ad sunucuları
 
 8. Kaydın TTL ayarını değiştirmek istiyorsanız, **TTL** açılan listesinden yeni bir süre seçin. Aksi takdirde 9. adıma geçin.
 
-9. **Kaydet** 'i seçin.
+9. **Kaydet**'i seçin.
 
 Buna ek olarak, müşterilerin web sitenizi bulmalarına yardım etmek için bir CNAME kaydı da oluşturabilirsiniz.
 

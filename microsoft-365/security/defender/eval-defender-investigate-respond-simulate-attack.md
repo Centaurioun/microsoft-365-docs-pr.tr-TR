@@ -17,19 +17,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-pilotmtpproject
 - zerotrust-solution
 - highpri
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.openlocfilehash: 59a227cc03a751e73470aff99e3fa04f490f7b7b
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 15645d8058ef9508f1ed6bf08617ca3c9c5b3e9e
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67473908"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68059426"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Microsoft 365 Defender pilot ortamında saldırı simülasyonu çalıştırma
 
@@ -120,7 +121,7 @@ Bu isteğe bağlı olay yanıtı alıştırmasında, bir PowerShell betiği kull
 
    - Windows 10 sürüm 1903 veya sonraki bir sürümü çalıştırır.
    - AD DS etki alanı denetleyicisi etki alanına katılır.
-   - [Microsoft Defender Virüsten Koruma](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) etkinleştirildi. Microsoft Defender Virüsten Koruma'yı etkinleştirme konusunda sorun yaşıyorsanız bu [sorun giderme konusuna bakın](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+   - [Microsoft Defender Virüsten Koruma](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) etkindir. virüsten koruma Microsoft Defender etkinleştirme konusunda sorun yaşıyorsanız bu [sorun giderme konusuna bakın](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
    - [Uç Nokta için Microsoft Defender'a eklenir](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 Kiracı ve cihaz grupları kullanıyorsanız test cihazı için ayrılmış bir cihaz grubu oluşturun ve en üst düzeye itin.

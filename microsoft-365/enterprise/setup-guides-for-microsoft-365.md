@@ -8,6 +8,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 - SPO_Content
@@ -21,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Kiracınızın lisanslarındaki özellikleri planlamak, geçirmek ve uygulamak için adım adım araçlar edinin. Çalıştırmanız gereken bir hizmeti veya uygulamayı ayarlamaya yönelik bir kılavuz bulun.
-ms.openlocfilehash: 0f81170270b509cd0da66aafba585a8da8b7a2eb
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 350b13242d457309f7d81c2ca710d64af42dd12b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671577"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68179361"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 ve Office 365 hizmetleri için kurulum kılavuzları
 

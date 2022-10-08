@@ -12,16 +12,18 @@ description: Ön cephe çalışanlarınız için ihtiyacınız olan hizmetler ve
 ms.localizationpriority: high
 ms.collection:
 - m365-frontline
+- highpri
 - m365solution-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: ad81e7f7f04247be406d77cc54f8d31bd44c187f
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: fe5610387744c9a9a0dcfa9c87e82741b0847a8d
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497637"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68057337"
 ---
 # <a name="set-up-microsoft-365-for-frontline-workers"></a>Ön cephe çalışanları için Microsoft 365'i ayarlama
 

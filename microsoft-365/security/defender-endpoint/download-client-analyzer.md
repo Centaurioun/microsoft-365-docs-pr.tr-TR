@@ -13,16 +13,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 656a8df157ee7a229dfdff52686957c457a07c1d
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: dd788dad6dd0e1b77a063b2765665f34618a94ad
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741027"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180153"
 ---
 # <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>Uç Nokta için Microsoft Defender istemci çözümleyicisini indirme
 

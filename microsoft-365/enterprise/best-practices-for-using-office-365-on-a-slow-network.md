@@ -6,9 +6,11 @@ manager: scotv
 ms.date: 12/29/2016
 audience: End User
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 search.appverid:
 - MET150
 - MET150
@@ -20,12 +22,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Bu makale, yavaş bir ağda Office 365 kullanmak için benimseyebileceğiniz en iyi yöntemler konusunda size yol gösterir.
-ms.openlocfilehash: 5ed3a9dfc665d5067fb3f310fc74aa4b100190f2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3c150552add1423418953d53feb9a51e73c370bf
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091643"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178921"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Yavaş bir ağda Office 365 kullanmaya yönelik en iyi yöntemler
 
@@ -60,7 +62,7 @@ Performans sorunlarıyla karşılaştığınızda öncelikle sorunun kök nedeni
 
 - Mümkünse daha fazla bellek satın alın. Bellek eklemek, cihazınızda performansı artırmanın en basit ve çoğunlukla en etkili yoludur. Özellikle büyük dosya ve videolarla çalışırken yararlıdır.
 
-Daha fazla bilgi için bkz[. Windows Performans ve bakım](https://windows.microsoft.com/windows/performance-maintenance-help#performance-maintenance-help) ve [Windows 10 bilgisayar performansını geliştirmek için İpuçları](https://support.microsoft.com/help/4002019/windows-10-improve-pc-performance).
+Daha fazla bilgi için bkz. [Windows Performansı ve bakımı](https://windows.microsoft.com/windows/performance-maintenance-help#performance-maintenance-help) ve [Windows 10'da bilgisayar performansını geliştirmek için ipuçları](https://support.microsoft.com/help/4002019/windows-10-improve-pc-performance).
 
 ## <a name="best-practices-for-using-your-browser"></a>Tarayıcınızı kullanmak için en iyi yöntemler
 
@@ -97,35 +99,35 @@ Belirli tarayıcınız için bazı öneriler şunlardır:
 
 E-posta okumak, yazmak ve düzenlemek herkesin gününün önemli bir parçasıdır. Hem Outlook hem de Outlook Web App (OWA) çevrimdışı destek sunar. Akıllı telefonunuzda e-posta uygulaması kullanmak da başka bir yararlı alternatiftir. Gereksinimlerinize en uygun aşağıdaki seçenekleri kullanın:
 
-- Önceki sürümlere göre önemli performans geliştirmeleri için Outlook en son sürümüne yükseltin.
+- Önceki sürümlere göre önemli performans geliştirmeleri için Outlook'un en son sürümüne yükseltin.
 
 - Outlook Web App, OWA bir sonraki Office 365 bağlanabildiğinde karşıya yüklenen çevrimdışı iletiler, kişiler ve takvim olayları oluşturmanıza olanak tanır. OWA'yı çevrimdışı modda ayarlama ve kullanma hakkında daha fazla bilgi için bkz. [Çevrimdışı Outlook Web App kullanma](https://support.office.com/article/3214839c-0604-4162-8a97-6856b4c27b36).
 
-- Outlook, mümkün olduğunda otomatik olarak bağlandığı önbelleğe alınmış modda çalışmanızı sağlar. Posta kutunuzun tamamını veya yalnızca bir bölümünü Outlook indirmeniz gerekir. Daha fazla bilgi için bkz. [Önbelleğe Alınmış Exchange Modu'nu açma](https://support.office.com/article/7885af08-9a60-4ec3-850a-e221c1ed0c1c) ve [Outlook çevrimdışı çalışma](https://support.office.com/article/f3a1251c-6dd5-4208-aef9-7c8c9522d633).
+- Outlook, mümkün olduğunda otomatik olarak bağlandığı önbelleğe alınmış modda çalışmanızı sağlar. Outlook'un posta kutunuzun tamamını veya yalnızca bir bölümünü indirmesini sağlayabilirsiniz. Daha fazla bilgi için bkz. [Önbelleğe Alınmış Exchange Modu'nu açma](https://support.office.com/article/7885af08-9a60-4ec3-850a-e221c1ed0c1c) ve [Outlook'ta çevrimdışı çalışma](https://support.office.com/article/f3a1251c-6dd5-4208-aef9-7c8c9522d633).
 
-- Outlook çevrimdışı mod da sunar. Bunu kullanmak için, önce hesabınızdaki bilgilerin bilgisayarınıza kopyalanacağı önbelleğe alınmış modu ayarlamanız gerekir. Çevrimdışı modda Outlook gönderme ve alma ayarlarını kullanarak veya çevrimiçi çalışacak şekilde el ile ayarladığınızda bağlanmayı dener. Daha fazla bilgi için bkz [. Veri bağlantısı ücretlerinden kaçınmak için çevrimdışı çalışma](https://support.office.com/article/827fe51f-5609-4062-82b4-3578057f9282), [Çevrimdışı çalışırken gönderme ve alma ayarlarını değiştirme](https://support.office.com/article/f681ec10-cb14-40cb-8709-1909a13c304a) ve [Çevrimdışı çalışmadan çevrimiçine geçme](https://support.office.com/article/2460e4a8-16c7-47fc-b204-b1549275aac9).
+- Outlook ayrıca çevrimdışı mod da sunar. Bunu kullanmak için, önce hesabınızdaki bilgilerin bilgisayarınıza kopyalanacağı önbelleğe alınmış modu ayarlamanız gerekir. Çevrimdışı modda, Outlook gönderme ve alma ayarlarını kullanarak veya çevrimiçi çalışacak şekilde el ile ayarladığınızda bağlanmayı dener. Daha fazla bilgi için bkz [. Veri bağlantısı ücretlerinden kaçınmak için çevrimdışı çalışma](https://support.office.com/article/827fe51f-5609-4062-82b4-3578057f9282), [Çevrimdışı çalışırken gönderme ve alma ayarlarını değiştirme](https://support.office.com/article/f681ec10-cb14-40cb-8709-1909a13c304a) ve [Çevrimdışı çalışmadan çevrimiçine geçme](https://support.office.com/article/2460e4a8-16c7-47fc-b204-b1549275aac9).
 
 - Akıllı telefonunuz varsa, e-postanızı ve takviminizi telefon operatörünüzün ağı üzerinden önceliklendirmek için kullanabilirsiniz.
 
 > [!NOTE]
-> Outlook veya OWA'nın ne zaman kullanılacağına ilişkin bazı yönergeler aşağıda verilmiştir. Cihazınızda disk alanı sorun değilse, Outlook tam bir özellik kümesine sahiptir ve sizin için en iyi sonucu verebilir. Cihazınızda disk alanı sorunu varsa, özelliklerin bir alt kümesine sahip olan ama aynı zamanda çevrimiçi bir durumda en iyi şekilde çalışan OWA'yı kullanmayı göz önünde bulundurun. Elbette, birlikte iyi çalıştıkları için ikisini de kullanabilirsiniz.
+> Outlook veya OWA'nın ne zaman kullanılacağına ilişkin bazı yönergeler aşağıda verilmiştir. Cihazınızda disk alanı sorun değilse, Outlook'un tam bir özellik kümesi vardır ve sizin için en iyi sonucu verebilir. Cihazınızda disk alanı sorunu varsa, özelliklerin bir alt kümesine sahip olan ama aynı zamanda çevrimiçi bir durumda en iyi şekilde çalışan OWA'yı kullanmayı göz önünde bulundurun. Elbette, birlikte iyi çalıştıkları için ikisini de kullanabilirsiniz.
 
 ## <a name="best-practices-for-using-onedrive-for-business"></a>OneDrive İş kullanmak için en iyi yöntemler
 
 OneDrive İş, dosyalarınızı çevrimiçi ve çevrimdışı olarak kullanmak için sıfırdan tasarlanmıştır. Bunu ayarladıktan sonra, değişiklikleri yaptığınız her yerde ve her zaman otomatik ve güvenilir bir şekilde eşitler. Ağ yavaşsa, dosyaların çevrimdışı sürümüyle çalışabilirsiniz.
 
-OneDrive İş eşitleme uygulaması SharePoint Online ve Office 365 iş aboneliğiyle birlikte gelir veya OneDrive İş eşitleme uygulamasını ücretsiz [olarak indirebilirsiniz](https://support.microsoft.com/kb/2903984). Bu uygulama, **Gezginde Aç** veya **Upload** komutlarını kullanmaktan da daha hızlıdır. Daha fazla bilgi için bkz. [Office 365'da OneDrive İş dosyalarınızı eşitlemek için bilgisayarınızı ayarlama](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16).
+OneDrive İş eşitleme uygulaması bir SharePoint Online ve Office 365 iş aboneliğiyle birlikte gelir veya OneDrive İş eşitleme uygulamasını ücretsiz [olarak indirebilirsiniz](https://support.microsoft.com/kb/2903984). Bu uygulama, **Gezginde Aç** veya **Karşıya Yükle** komutlarını kullanmaktan da daha hızlıdır. Daha fazla bilgi için bkz. [Office 365'da OneDrive İş dosyalarınızı eşitlemek için bilgisayarınızı ayarlama](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16).
 
 OneDrive İş eşitleme uygulamasını kullanmaya yönelik bazı ek yönergeler aşağıda verilmiştir:
 
 - Büyük bir kitaplığı ilk kez eşitlüyorsanız, eşitlemeyi çalışma saatleri dışında (örneğin, gece) başlatın.
 - Güncelleştirmeleri eşitlemeyi geçici olarak durdurmak için [Kitaplığı OneDrive İş uygulamasıyla](https://support.office.com/article/a7e41f1f-3a98-4ca7-9443-f10250688330) eşitlemeyi durdur özelliğini kullanabilirsiniz. Ancak bu özelliği, çok sayıda güncelleştirmesi kuyruğa almaktan kaçınmak ve aynı belge üzerinde birkaç kişi çalışıyorsa birleştirme çakışması riskini en aza indirmek için birkaç saat gibi kısa süreler için kullanın.
 
-## <a name="best-practices-for-using-onenote"></a>OneNote kullanmak için en iyi yöntemler
+## <a name="best-practices-for-using-onenote"></a>OneNote'u kullanmak için en iyi yöntemler
 
-Her SharePoint ekip sitesinde yerleşik bir OneNote not defteri vardır ve kolayca kendi not defterinizi oluşturabilirsiniz. OneNote, görevleri yerine getirmek için her gün ihtiyacınız olan zamanında bilgileri toplamanın harika bir yoludur. Örneğin, birçok ekip haftalık toplantılar, proje notları, fikirler, planlar ve durum raporları için koleksiyon noktası olarak OneNote kullanır. Sayfalar, bölümler ve sekmeler kullanarak bu farklı bilgileri düzgün bir şekilde düzenleyebilirsiniz.
+Her SharePoint ekip sitesinin yerleşik bir OneNote not defteri vardır ve kolayca kendi not defterinizi oluşturabilirsiniz. OneNote, görevleri yerine getirmek için her gün ihtiyacınız olan zamanında bilgi toplamanın harika bir yoludur. Örneğin, birçok ekip onenote'u haftalık toplantılar, proje notları, fikirler, planlar ve durum raporları için toplama noktası olarak kullanır. Sayfalar, bölümler ve sekmeler kullanarak bu farklı bilgileri düzgün bir şekilde düzenleyebilirsiniz.
 
-OneNote güzelliği, içeriğe masaüstü, dizüstü bilgisayar, tablet veya akıllı telefon gibi hemen her cihazdan erişebilmenizdir. Kaydetme veya eşitleme konusunda endişelenmenize gerek yoktur çünkü OneNote sizin için yapar.
+OneNote'un güzelliği, içeriğe masaüstü, dizüstü bilgisayar, tablet veya akıllı telefon gibi hemen her cihazdan erişebilmenizdir. OneNote bunu sizin için yaptığı için kaydetme veya eşitleme konusunda endişelenmenize gerek yoktur.
 
 Daha fazla bilgi için bkz. [Microsoft OneNote](https://office.microsoft.com/onenote).
 
@@ -139,15 +141,15 @@ Ağınız yavaşken Skype Kurumsal veya Lync Online kullanmaya yönelik genel y�
 
 - Ses cihazınızın onaylandığından emin olun. Daha fazla bilgi için bkz. [Microsoft Lync için Uygun Telefonlar ve Cihazlar](/skypeforbusiness/lync-cert/ip-phones).
 
-- Çevrimiçi sunuda PowerPoint kullanırken slaytların boyutunu ve karmaşıklığını azaltın. Daha fazla bilgi için bkz. [Sununuzun performansını geliştirmek için İpuçları](https://support.office.com/article/34c82835-5f23-4bf0-98cc-72235bbd2949).
+- PowerPoint'i çevrimiçi sunuda kullanırken slaytların boyutunu ve karmaşıklığını azaltın. Daha fazla bilgi için bkz. [Sununuzun performansını geliştirmeye yönelik ipuçları](https://support.office.com/article/34c82835-5f23-4bf0-98cc-72235bbd2949).
 
 - Video performansı ağ performansına çok bağlıdır. Ağınız yavaşsa video kullanmaktan kaçının.
 
 Daha fazla bilgi için bkz. [Lync Online'da düşük ses veya video kalitesi](https://support.microsoft.com/kb/2386655) veya [Skype Kurumsal bağlantı sorunlarını giderme](https://support.office.com/article/troubleshoot-connection-issues-in-skype-for-business-ca302828-783f-425c-bbe2-356348583771).
 
-## <a name="best-practices-for-using-sharepoint-lists"></a>SharePoint listelerini kullanmaya yönelik en iyi yöntemler
+## <a name="best-practices-for-using-sharepoint-lists"></a>SharePoint listelerini kullanmak için en iyi yöntemler
 
-Verileri "temizlemek", analiz etmek veya raporlamak için liste verileriyle çevrimdışı çalışmak, yavaş bir ağın etkisini en aza indirmenin harika bir yoludur. Microsoft Access 2019 ve Microsoft Access 2016 listelerinin çoğunu bunlara bağlanarak okuyabilir ve yazabilirsiniz. Ayrıca, listeyi Excel tablosuyla liste arasında tek yönlü bir veri bağlantısı oluşturan Excel Tablosuna da aktarabilirsiniz. [SharePoint listelerine bağlı tablolarla çevrimdışı çalışmayı](https://support.office.com/article/work-offline-with-tables-that-are-linked-to-sharepoint-lists-5d66594a-6176-4a25-a198-320f13ccf41e) öğrenin.
+Verileri "temizlemek", analiz etmek veya raporlamak için liste verileriyle çevrimdışı çalışmak, yavaş bir ağın etkisini en aza indirmenin harika bir yoludur. Microsoft Access 2019 ve Microsoft Access 2016 listelerinin çoğunu bunlara bağlanarak okuyabilir ve yazabilirsiniz. Ayrıca, excel tablosuyla liste arasında tek yönlü bir veri bağlantısı oluşturan bir listeyi Excel Tablosuna da aktarabilirsiniz. [SharePoint listelerine bağlı tablolarla çevrimdışı çalışmayı](https://support.office.com/article/work-offline-with-tables-that-are-linked-to-sharepoint-lists-5d66594a-6176-4a25-a198-320f13ccf41e) öğrenin.
 
 Daha fazla bilgi için Office 365'de [büyük listeleri ve kitaplıkları yönetme bölümündeki "Büyük listeleri](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784) yönetme hakkında daha fazla bilgi" bölümüne bakın.
 
@@ -155,19 +157,19 @@ Daha fazla bilgi için Office 365'de [büyük listeleri ve kitaplıkları yönet
 
 Bir web sayfasını özelleştirdiğinizde, istemeden sayfada düşük performansa neden olabilirsiniz. Sayfanın karmaşıklığı ve boyutu, eklenen web bölümü sayısı, başlangıçta kaç liste veya kitaplık öğesinin görüntülendiği ve sayfayı nasıl kodladığınız gibi bir dizi etkenin etkisi olabilir.
 
-Daha fazla bilgi için bkz[. Çevrimiçi performans SharePoint ayarlama](tune-sharepoint-online-performance.md).
+Daha fazla bilgi için bkz [. SharePoint Online performansını ayarlama](tune-sharepoint-online-performance.md).
 
 ## <a name="best-practices-for-using-project-online"></a>Project Online kullanmak için en iyi yöntemler
 
 Aşağıdaki yönergeler ağ performansını artırmaya yardımcı olabilir.
 
-- Project Online ve SharePoint Online, zaman alıcı olabilecek eşitleme gerektirir. Proje ekiplerinizin cirosu düşükse, Project Yayımlama ve Ayrıntı Sayfaları performansını Project geliştirmek için Site Eşitleme Project devre dışı bırakın. Active Directory eşitlemesini sistemi kullanması gereken kaynak gruplarıyla sınırlayın ve büyük grupların eşitlenmesinden sonra olası izin sorunlarını izleyin.
+- Project Online ve SharePoint Online zaman alıcı olabilecek eşitleme gerektirir. Proje ekiplerinizin cirosu düşükse, Proje Yayımlama ve Proje Ayrıntı Sayfaları performansını geliştirmek için Project Site Sync'i devre dışı bırakın. Active Directory eşitlemesini sistemi kullanması gereken kaynak gruplarıyla sınırlayın ve büyük grupların eşitlenmesinden sonra olası izin sorunlarını izleyin.
 
 - Kuruluşunuz proje sitelerini kullanıyorsa, bunları otomatik olarak değil isteğe bağlı olarak oluşturun. Bu, ilk yayımlama deneyimini hızlandırır ve gereksiz siteler ve içerik oluşturmaktan kaçınır.
 
-- Project Ayrıntı Sayfaları (PDP), projenin tamamının yeniden hesaplanması tetiklenebilir ve her ikisi de yoğun performans gerektiren işlemler olabilecek iş akışı eylemlerini başlatabilir. Aynı PDP'de aynı anda iki güncelleştirme işlemini tetiklememek için takvim alanlarını (Başlangıç tarihi, Bitiş tarihi, Durum tarihi ve Geçerli tarih) ve zamanlanmamış alanları (proje adı, açıklama ve sahip) güncelleştirmekten kaçının.
+- Proje Ayrıntı Sayfaları (PDP), projenin tamamının yeniden hesaplanması tetiklenebilir ve her ikisi de yoğun performans gerektiren işlemler olabilecek iş akışı eylemlerini başlatabilir. Aynı PDP'de aynı anda iki güncelleştirme işlemini tetiklememek için takvim alanlarını (Başlangıç tarihi, Bitiş tarihi, Durum tarihi ve Geçerli tarih) ve zamanlanmamış alanları (proje adı, açıklama ve sahip) güncelleştirmekten kaçının.
 
-- Her PDP'de görüntülenen Web Bölümleri ve özel alanların sayısını azaltın. Yükü geliştirmek ve zaman kazanmak için güncelleştirme gerektiren tek alanlara sahip ayrılmış bir PDP oluşturun.
+- Her PDP'de görüntülenen Web Bölümlerinin ve özel alanların sayısını azaltın. Yükü geliştirmek ve zaman kazanmak için güncelleştirme gerektiren tek alanlara sahip ayrılmış bir PDP oluşturun.
 
 - Raporlama için OData kullandığınızda, sunucu tarafı filtrelemeyi kullanarak çalışma zamanında sorguladığınız veri miktarını sınırlayın.
 

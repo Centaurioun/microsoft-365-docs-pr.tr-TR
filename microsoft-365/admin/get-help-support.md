@@ -7,9 +7,10 @@ author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - Adm_O365
 - Adm_TOC
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: İş için Microsoft 365 aboneliğiniz için çevrimiçi veya telefon desteği almayı öğrenin. Destek almak için bir iş aboneliği yöneticisi olmanız gerekir.
-ms.openlocfilehash: 4684daccf74e54a16c61a9a6f5982cee3f61659b
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 0dd352b8c4cc4399805a80132ba288bc76949e5d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661573"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178261"
 ---
 # <a name="get-support-for-microsoft-365-for-business"></a>İş için Microsoft 365 desteği alma
 
@@ -54,9 +55,9 @@ Hizmetlerinizin [mevcut durumunu kontrol ederek](../enterprise/view-service-heal
 
 Servis isteğinizi çevrimiçi başlatarak zaman kazanın. Bir çözüm bulmanıza yardımcı oluruz veya sizi teknik desteğe bağlarız.
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a> adresinde yönetim merkezine gidin. Bu sayfaya erişim veya bu işlemi gerçekleştirme izniniz olmadığını söyleyen bir ileti alırsanız yönetici değilsiniz demektir. Daha fazla bilgi için bkz. [İşletmemde kimin yönetici izinleri var?](../admin/admin-overview/admin-center-overview.md#who-has-admin-permissions-in-my-business).
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, you aren't an admin. For more information, see [Who has admin permissions in my business?](../admin/admin-overview/admin-center-overview.md#who-has-admin-permissions-in-my-business).
 2. Sayfanın sağ alt tarafında, **Yardım ve destek** seçeneğini belirtin.
-3. Metin kutusuna bir soru veya anahtar sözcük girin. Açılan liste ile karşılaşırsanız sorunuza en yakın olanı seçin veya sorunuzu yazmaya devam edin, ardından **Enter** tuşuna basın.
+3. Type a question or keyword into the text box. If you get a drop-down list, select the one closest to your question, or continue typing your question, then press **Enter**.
 4. Sonuçlar yardımcı olmazsa en alttaki **Desteğe Başvurun** seçeneğini belirtin.
 5. Sorunuz için bir açıklama girin, iletişim numaranız ve e-posta adresinizi onaylayın, tercih ettiğiniz iletişim yöntemini seçin ve ardından **Bana ulaşın**'ı seçin. Tahmini bekleme süresi,**Desteğe Başvurun** bölmesinde gösterilir.
 
@@ -88,7 +89,7 @@ Yöneticiyseniz desteği ararken hesap ayrıntılarınızı hazır bulundurun.
 
 Küçük işletme uzmanlarından uzman tavsiyeleriyle aboneliğinizden en iyi şekilde yararlanın.
 
-Microsoft 365 için İşletme Yardımı, küçük işletmeler için tasarlanmıştır. İşletmenizi büyütürken, işe alımdan günlük kullanıma kadar her aşamada sizin ve çalışanlarınızın günün 24 saati küçük işletme uzmanlarına erişebilmenizi sağlar. Daha fazla bilgi için bkz. [İşletme Yardımı](../admin/misc/business-assist.md).
+Business Assist for Microsoft 365 is designed for small businesses to give you and your employees around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. To learn more, see [Business Assist](../admin/misc/business-assist.md).
 
 ::: moniker-end
 
@@ -96,13 +97,13 @@ Microsoft 365 için İşletme Yardımı, küçük işletmeler için tasarlanmı�
 
 21Vianet tarafından sağlanan her Office 365 aboneliğiyle, 21Vianet desteği teknik, satış öncesi, faturalandırma ve abonelik desteği sağlar. Destek, hem 21Vianet tarafından sağlanan Office 365 portalı üzerinden çevrimiçi olarak hem de ücretli abonelikler ve deneme sürümü abonelikleri için telefonla kullanılabilir.
 
-Yetkili yöneticiler, 21Vianet tarafından sağlanan Office 365 portalını kullanarak servis isteklerini çevrimiçi olarak gönderebilir ve destek telefon numaralarına erişebilir. Talimatlar için bkz. [Destek ekibiyle iletişime geçme](#contact-support).
+Authorized administrators can use the Office 365 operated by 21Vianet portal to submit service requests online and access support telephone numbers. For instructions, see [Contact support](#contact-support).
 
 21Vianet tarafından sağlanan Office 365 teknik destek ekibi, yalnızca 21Vianet tarafından sağlanan Office 365 ile ilgili sorunları giderir. Müşteri ağlarından kaynaklanan sorunlar, Office 365 desteğinin kapsamı dışındadır. Bu durumlarda müşterilerin yardım için kendi ağ ekipleriyle çalışmaları gerekir.
 
 ## <a name="community-and-self-service-support-options"></a>Topluluk desteği ve kendi kendine destek seçenekleri
 
-Kendi kendine destek, tüm 21Vianet tarafından sağlanan Office 365 kullanıcıları tarafından kullanılabilir. Sorun giderme araçları ve videoları, yardım makaleleri ve videolarının yanı sıra [Office 365 topluluğundaki](https://go.microsoft.com/fwlink/p/?linkid=842838) forumlar ve wiki'ler de bu destek kapsamındadır. Kendi kendine yardımla ilgili daha fazla kaynak için bkz. [21Vianet tarafından sağlanan Office 365 hakkında bilgi edinin](../admin/services-in-china/services-in-china.md).
+Self-service support is available for all Office 365 operated by 21Vianet users, and includes troubleshooting tools and videos, help articles and videos, as well as forums and wikis in the [Office 365 community](https://go.microsoft.com/fwlink/p/?linkid=842838). For more self-help resources, see [Learn about Office 365 operated by 21Vianet](../admin/services-in-china/services-in-china.md).
 
 ## <a name="pre-sales-support"></a>Satış öncesi desteği
 
@@ -175,7 +176,7 @@ Servis isteğinizi çevrimiçi başlatarak zaman kazanın. <a href="https://go.m
 
 ### <a name="call-support"></a>Destek birimini arayın
 
-Destek ekibini arayın. Çevrimiçi istekle ilgili herhangi bir sorunla karşılaşırsanız telefonla destek almak için (86) 400-089-0365'i arayın.
+Call support. If you encounter any problem with online request, phone support is available at (86) 400-089-0365.
 
 ### <a name="shared-support-responsibilities"></a>Paylaşılan destek sorumlulukları
 

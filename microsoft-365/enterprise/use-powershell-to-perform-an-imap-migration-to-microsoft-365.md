@@ -10,7 +10,9 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - NOCSH
 ms.custom:
@@ -18,12 +20,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: PowerShell kullanarak Microsoft 365'e İnternet Posta Erişim Protokolü (IMAP) geçişi gerçekleştirmeyi öğrenin.
-ms.openlocfilehash: 7189eba0df7cb89a55f323b69fec0050965e48a2
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: e34a4afd18a0e3234d61261ed7504b25b389aacf
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851380"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68179251"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>Microsoft 365'e IMAP geçişi gerçekleştirmek için PowerShell'i kullanma
 

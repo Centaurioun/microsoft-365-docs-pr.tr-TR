@@ -9,6 +9,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - SPO_Content
@@ -19,12 +20,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online hizmet uç noktalarına yapılan çağrı sayısını sınırlayarak SharePoint Online'da modern ve klasik yayımlama sitesi sayfalarını iyileştirmeyi öğrenin.
-ms.openlocfilehash: b5a1830d9dbd10aa950150c9b66d2fffb179ae9b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 7b29d4c2a4978d1b8e740ab6a203fedf69fe4259
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702104"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178679"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>SharePoint Online modern ve klasik yayımlama sitesi sayfalarında sayfa çağrılarını iyileştirme
 

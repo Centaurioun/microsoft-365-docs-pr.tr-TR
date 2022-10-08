@@ -14,6 +14,7 @@ ms.custom:
 - Adm_O365
 - ms.lync.lac.ProviderManagedFeature
 - seo-marvel-apr2020
+ms.collection: scotvorg
 search.appverid:
 - MET150
 - MOE150
@@ -22,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
 description: Yönetici olarak, Skype Kurumsal Online'ın ağınız, toplantılarınız ve anlık iletiniz ve kullanıcılar için dış erişimi dahil olmak üzere bölümlerini ayarlama konusunda yardım bulun.
-ms.openlocfilehash: 05fbf45bd54f0a8a1c1d19fdaf376885a1e306d9
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: f9c325ea31a6fa54ee3be91a3d2e097742ec2031
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67669749"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68179295"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Office 365'te Skype Kurumsal Çevrimiçi Sürüm - Yönetici Yardımı
 
@@ -37,7 +38,7 @@ ms.locfileid: "67669749"
   
 ## <a name="let-your-users-contact-external-skype-or-skype-for-business-users"></a>Kullanıcılarınızın dış Skype veya Skype Kurumsal kullanıcılarına izin verme
 
-Skype Kurumsal kullanıcılarının kuruluşunuzun dışındaki kullanıcılara erişmelerine ve kullanıcıları Skype Kurumsal kişi listelerine eklemelerine izin verebilirsiniz. Kendi kişi listelerine ekledikten sonra bu kişilerin çevrimiçi olup olmadıklarını görebilir ve bu kişilerle anında ileti ile iletişim kurabilir, toplantı yapabilir ve masaüstlerini paylaşabilirler. Yönergeler için bkz.:
+You can let people who are using Skype for Business contact users from outside your organization and add them to their list of Skype for Business contacts. After they add them to their contact list, they can see if they are online and IM with them, hold meetings and share desktops. For instructions see:
   
 - [Kullanıcıların kuruluş dışındaki Skype Kurumsal kullanıcılarıyla bağlantı kurmasına izin verme](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94)
     
@@ -45,7 +46,7 @@ Skype Kurumsal kullanıcılarının kuruluşunuzun dışındaki kullanıcılara 
     
 ## <a name="improve-call-and-video-quality"></a>Çağrı ve görüntü kalitesini geliştirin
 
-Kullanıcılarınız çağrıların kesilmesiyle ilgili sorunlar mı yaşıyor? Ses kalitesi, görüntü kalitesi ve uygulama paylaşma kalitesi düşük mü? Uçtan uca ağ bağlantısının kalitesi, Skype Kurumsal'ı önemli ölçüde etkiler. En iyi deneyimi elde etmek için, şirket ağınızla Skype Kurumsal Çevrimiçi arasındaki bağlantı kalitesinin yüksek olması önemlidir. Daha fazla bilgi edinmek için bkz. **[Tune Skype for Business Online performance](tune-skype-for-business-online-performance.md)**. 
+Are your users experiencing dropped calls? Is the quality of audio, video, and application sharing poor? Skype for Business is greatly impacted by the quality of end-to-end network connectivity. For the best experience, it is important to make sure there is a high-quality connection between your company network and Skype for Business Online. To learn more, see **[Tune Skype for Business Online performance](tune-skype-for-business-online-performance.md)**. 
   
 Ayrıca bkz.:
   

@@ -1,6 +1,6 @@
 ---
-title: Uç Nokta için Microsoft Defender ile IoT için Microsoft Defender'a ekleme
-description: IoT cihazlarına odaklanan görünürlük ve güvenlik değerlendirmeleri elde etmek için IoT için Microsoft Defender'a ekleyin.
+title: Uç Nokta için Microsoft Defender ile IoT için Microsoft Defender ekleme
+description: IoT cihazlarına odaklanan görünürlük ve güvenlik değerlendirmeleri elde etmek için IoT için Microsoft Defender ekleyin.
 keywords: siem bağlayıcısını, siem'i, bağlayıcıyı, güvenlik bilgilerini ve olayları etkinleştirme
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -13,15 +13,17 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 645f9cbd39c9c5a26108f564d8b91cfd3086041e
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 2beb52d4d307bf9fab3e8f9e9857f82bb281e586
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523346"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68174918"
 ---
 # <a name="onboard-with-microsoft-defender-for-iot"></a>IoT için Microsoft Defender ile ekleme
 
@@ -47,7 +49,7 @@ IoT için Defender tümleştirmesi, bt cihazlarınızın (iş istasyonları, sun
 Uç Nokta için Defender tümleştirmenizin ayarlarını değiştirmek için kullanıcının aşağıdaki rollere sahip olması gerekir:
 
 - Azure Active Directory'de Kiracı Genel Yöneticisi
-- IoT için Microsoft Defender tümleştirmesi için kullanılacak Azure aboneliğinin Güvenlik Yöneticisi
+- IoT tümleştirmesi için Microsoft Defender kullanılacak Azure aboneliğinin Güvenlik Yöneticisi
 
 ## <a name="onboard-a-defender-for-iot-plan"></a>IoT için Defender planı ekleme
 
@@ -57,9 +59,9 @@ Uç Nokta için Defender tümleştirmenizin ayarlarını değiştirmek için kul
 
    - Azure Active Directory kiracınızda plan eklemek istediğiniz kullanılabilir abonelikler listesinden Azure aboneliğini seçin.
 
-   - Aylık veya yıllık taahhüt ya da deneme sürümü olmak üzere bir fiyatlandırma planı seçin. IoT için Microsoft Defender, değerlendirme amacıyla ilk 1.000 taahhüt edilen cihaz için 30 günlük ücretsiz deneme sunar.
+   - Aylık veya yıllık taahhüt ya da deneme sürümü olmak üzere bir fiyatlandırma planı seçin. IoT için Microsoft Defender, değerlendirme amacıyla ilk 1.000 cihaz için 30 günlük ücretsiz deneme sağlar.
 
-      Daha fazla bilgi [için IoT için Microsoft Defender fiyatlandırma sayfasına](https://azure.microsoft.com/pricing/details/iot-defender/) bakın.
+      Daha fazla bilgi [için IoT fiyatlandırması Microsoft Defender sayfasına](https://azure.microsoft.com/pricing/details/iot-defender/) bakın.
 
    - İzlemek istediğiniz kaydedilmiş cihaz sayısını seçin. Bir deneme sürümü seçtiyseniz, varsayılan olarak 1000 cihazınız olduğundan bu bölüm görünmez.
 
@@ -88,7 +90,7 @@ Uç Nokta için Defender müşterileri, kurumsal ağın daha önce Uç Nokta iç
 Ağ algılayıcısı eklemek için portalın gezinti bölmesinde [https://security.microsoft.com](https://security.microsoft.com/) :
 
 1. **Ayarlar** \> **Cihaz bulma** **Kurumsal IoT'yi** \> seçin
-2. **Ağ algılayıcılarını ayarlama** bölümünde **IoT için Microsoft Defender** bağlantısını seçin
+2. **Ağ algılayıcılarını ayarlama** bölümünde **IoT bağlantısı için Microsoft Defender** seçin
 
 Bu sizi Azure portal algılayıcı kurulum işlemine getirir. Daha fazla bilgi için bkz. [Kurumsal IoT'yi kullanmaya başlama](/azure/defender-for-iot/organizations/tutorial-getting-started-eiot-sensor).
 

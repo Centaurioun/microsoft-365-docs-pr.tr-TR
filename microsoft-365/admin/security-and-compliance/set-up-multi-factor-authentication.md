@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -30,12 +31,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Kuruluşunuz için çok faktörlü kimlik doğrulamasını ayarlamayı öğrenin.
 monikerRange: o365-worldwide
-ms.openlocfilehash: a7c7734488247dc4d329c384c62817410761e824
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 7ca863f6cd4cce21d00edad4025d60d4e71cb5c9
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661289"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68179933"
 ---
 # <a name="set-up-multifactor-authentication-for-microsoft-365"></a>Microsoft 365 için çok faktörlü kimlik doğrulamasını ayarlama
 

@@ -6,20 +6,22 @@ manager: scotv
 ms.date: 07/16/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 'Özet: Skype Kurumsal Online ilkeleriyle kullanıcı başına iletişim ayarlarını atamak için Microsoft 365 için PowerShell kullanın.'
-ms.openlocfilehash: 70120f6d296f958f44906a3526a7dcaa36b7eb04
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: "Özet: Skype Kurumsal Çevrimiçi ilkeleriyle kullanıcı başına iletişim ayarları atamak için Microsoft 365 için PowerShell'i kullanın."
+ms.openlocfilehash: db23a3d4a16355a6bf1d9e0f8a8c1daffda7eb63
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091401"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178965"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Microsoft 365 için PowerShell ile kullanıcı başına Skype Kurumsal Çevrimiçi ilkeleri atama
 
@@ -32,7 +34,7 @@ Microsoft 365 için PowerShell kullanmak, Skype Kurumsal Çevrimiçi ilkeleriyle
 Komutları çalıştıracak şekilde ayarlamak için bu yönergeleri kullanın (daha önce tamamlamış olduğunuz adımları atlayın):
   
   > [!Note]
-   > Skype Kurumsal Online Connector şu anda en son Teams PowerShell modülünün bir parçasıdır. PowerShell genel sürümünün en son Teams kullanıyorsanız, Skype Kurumsal Çevrimiçi Bağlayıcı'yı yüklemeniz gerekmez.
+   > Skype Kurumsal Online Connector şu anda en son Teams PowerShell modülünün bir parçasıdır. En son Teams PowerShell genel sürümünü kullanıyorsanız Skype Kurumsal Çevrimiçi Bağlayıcısı'nı yüklemeniz gerekmez.
 
 1. [Teams PowerShell modülünü](/microsoftteams/teams-powershell-install) yükleyin.
     
@@ -47,7 +49,7 @@ Komutları çalıştıracak şekilde ayarlamak için bu yönergeleri kullanın (
     
 ## <a name="updating-external-communication-settings-for-a-user-account"></a>Kullanıcı hesabı için dış iletişim ayarlarını güncelleştirme
 
-Bir kullanıcı hesabındaki dış iletişim ayarlarını değiştirmek istediğinizi varsayalım. Örneğin, Alex'in federasyon kullanıcılarıyla iletişim kurmasına izin vermek istiyorsunuz (EnableFederationAccess True'ya eşittir) ancak Windows Canlı kullanıcılarla iletişim kurmazsınız (EnablePublicCloudAccess eşittir False). Bunu yapmak için iki şey yapmanız gerekir:
+Bir kullanıcı hesabındaki dış iletişim ayarlarını değiştirmek istediğinizi varsayalım. Örneğin, Alex'in federasyon kullanıcılarıyla iletişim kurmasına izin vermek istiyorsunuz (EnableFederationAccess True'ya eşittir) ancak Windows Live kullanıcılarıyla iletişim kurmaz (EnablePublicCloudAccess eşittir False). Bunu yapmak için iki şey yapmanız gerekir:
   
 1. Ölçütlerimizi karşılayan bir dış erişim ilkesi bulun.
     
@@ -79,7 +81,7 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly
 
 İlke atamak oldukça basittir: Yalnızca kullanıcının kimliğini ve atanacak ilkenin adını belirtirsiniz. 
   
-İlkeler ve ilke atamaları söz konusu olduğunda, kullanıcı hesaplarıyla tek tek çalışmakla sınırlı değilsiniz. Örneğin, federasyon iş ortaklarıyla ve Windows Canlı kullanıcılarla iletişim kurmasına izin verilen tüm kullanıcıların listesine ihtiyacınız olduğunu varsayalım. Bu kullanıcılara FederationAndPICDefault dış kullanıcı erişim ilkesi atandığını zaten biliyoruz. Bunu bildiğimiz için, tek bir basit komut çalıştırarak tüm bu kullanıcıların listesini görüntüleyebilirsiniz. Komut şu şekildedir:
+İlkeler ve ilke atamaları söz konusu olduğunda, kullanıcı hesaplarıyla tek tek çalışmakla sınırlı değilsiniz. Örneğin, federasyon iş ortaklarıyla ve Windows Live kullanıcılarıyla iletişim kurmasına izin verilen tüm kullanıcıların listesine ihtiyacınız olduğunu varsayalım. Bu kullanıcılara FederationAndPICDefault dış kullanıcı erişim ilkesi atandığını zaten biliyoruz. Bunu bildiğimiz için, tek bir basit komut çalıştırarak tüm bu kullanıcıların listesini görüntüleyebilirsiniz. Komut şu şekildedir:
   
 ```powershell
 Get-CsOnlineUser -Filter {ExternalAccessPolicy -eq "FederationAndPICDefault"} | Select-Object DisplayName

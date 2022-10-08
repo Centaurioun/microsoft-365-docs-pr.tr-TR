@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -26,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: Microsoft 365 genel yöneticisinin, adı değiştiğinde kullanıcının e-posta adresini ve görünen adını nasıl değiştirebileceğini öğrenin.
-ms.openlocfilehash: 420a25df1383bccd4fe93b2ea79d0eeb6f91d982
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 261d853465897159f5a7c9a7dc8903eeccb27ef8
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601124"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68179185"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Kullanıcı adı ve e-posta adresi değiştirme
 
@@ -153,7 +154,7 @@ Bu değişikliğin tüm hizmetlerde geçerli olması 24 saat kadar sürebilir. D
 
 ## <a name="what-to-do-with-old-email-addresses"></a>Eski e-posta adresleriyle ne yapmalı?
 
-Kullanıcının önceki birincil e-posta adresi, ek e-posta adresi olarak tutulur. **Eski e-posta adresini kesinlikle kaldırmamanızı öneririz.**
+A person's previous primary email address is retained as an additional email address. **We strongly recommend that you don't remove the old email address.**
 
 Bazı kişiler kişinin eski e-posta adresine e-posta göndermeye devam edebilir ve silindiğinde NDR hataları oluşabilir. Microsoft bunu otomatik olarak yenisine yönlendirir. Ayrıca, eski SMTP e-posta adreslerini yeniden kullanmayın ve yeni hesaplara uygulamayın. Bu da NDR hatasına veya postaların istenmeyen posta kutusuna gitmesine neden olabilir.
 
@@ -170,7 +171,7 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
 ```
 
 > [!TIP]
-> Bu, kişinin **userPrincipalName** özniteliğini değiştirir ve Microsoft Çevrimiçi E-posta Yönlendirme Adresi (MOERA) e-posta adresi üzerinde hiçbir etkisi yoktur. Ancak kullanıcının oturum açma UPN'sinin, birincil SMTP adresiyle eşleşmesi önerilir.
+> Bu, kişinin **userPrincipalName** özniteliğini değiştirir ve Microsoft Online Email Yönlendirme Adresi (MOERA) e-posta adresinin bir etkisi yoktur. Ancak kullanıcının oturum açma UPN'sinin, birincil SMTP adresiyle eşleşmesi önerilir.
 
 Windows Server 2003 ve önceki sürümlerde Active Directory'de kullanıcı adının nasıl değiştirileceğini öğrenmek için bkz. [Kullanıcı hesabını yeniden adlandırma](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10)).
 

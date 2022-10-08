@@ -9,23 +9,23 @@ f1.keywords: NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.localizationpriority: medium
-ms.date: 08/30/2022
+ms.date: 09/20/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 7a8efc09e296914307bfd8b8003c09eb8f25bada
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 7ad14ea93944cf7f754006c4e934049061d1b29d
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671775"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68057578"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender’daki yenilikler
 
@@ -63,10 +63,11 @@ Diğer Microsoft Defender güvenlik ürünleriyle ilgili yenilikler hakkında da
 - Office 365 Güvenlik ve Uyumluluk Merkezi'ndeki güvenlikle ilgili olmayan öğeler Microsoft 365 Defender yeniden yönlendirılmaz. Uyumluluk çözümlerinin Microsoft 365 Uyumluluk Merkezi'ne yeniden yönlendirilmesi için bkz. 244886 sonrası İleti Merkezi. 
 - Bu, mart 2022'de duyurulan [Microsoft Tech Community GCC, GCC High ve DoD müşterilerine birleşik XDR deneyimi sunan Microsoft 365 Defender](https://techcommunity.microsoft.com/t5/public-sector-blog/microsoft-365-defender-delivers-unified-xdr-experience-to-gcc/ba-p/3263702) devamıdır.
 - Bu değişiklik, kullanıcıların ek Microsoft 365 Defender güvenlik çözümlerini tek bir portalda görüntülemesine ve yönetmesine olanak tanır.
-- Bu değişiklik, Office için Microsoft Defender (Plan 1 veya Plan 2), Microsoft 365 E3 / E5, Office 365 E3/ E5 ve Exchange Online Protection dahil olmak üzere Office 365 Güvenlik ve Uyumluluk Merkezi'ni (protection.office.com) kullanan tüm müşterileri etkiler. Tam liste için bkz[. Güvenlik & Uyumluluk Merkezi - Hizmet Açıklamaları | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
-- Bu değişiklik, Email Karantina deneyimine erişen güvenlik ekipleri ve son kullanıcılar da dahil olmak üzere Office 365 Güvenlik ve Uyumluluk portalında (protection.office.com) oturum açan tüm kullanıcıları **Microsoft Defender Portalı** > **Karantina İncelemesi'nde** >  etkiler.
+- Bu değişiklik, Office için Microsoft Defender (Plan 1 veya Plan 2), Microsoft 365 E3/E5, Office 365 E3/E5 ve Office 365 Güvenlik ve Uyumluluk Merkezi'ni (protection.office.com) kullanan tüm müşterileri etkiler ve Exchange Online Protection. Tam liste için bkz[. Güvenlik & Uyumluluk Merkezi - Hizmet Açıklamaları | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+- Bu değişiklik, Email Karantina deneyimine erişen güvenlik ekipleri ve son kullanıcılar da dahil olmak üzere Office 365 Güvenlik ve Uyumluluk portalında (protection.office.com) **Microsoft Defender Portalı** > **Gözden Geçirme** > **Karantinası'nda** oturum açan tüm kullanıcıları etkiler.
 - Yeniden yönlendirme varsayılan olarak etkindir ve Kiracının tüm kullanıcılarını etkiler.
 - Genel Yöneticiler ve Güvenlik Yöneticileri, Microsoft 365 Defender portalında **Ayarlar** >  **Email & işbirliği** > **Portalı yeniden yönlendirme** ve yeniden yönlendirme geçişine giderek yeniden yönlendirmeyi açabilir veya kapatabilir.
+- **Yerleşik koruma**: Tüm Office 365 için Defender müşterileri için varsayılan olarak açık olan temel düzeyde Güvenli Bağlantılar ve Güvenli Ekler koruması sağlayan profil. Bu yeni ilke ve öncelik sırası hakkında daha fazla bilgi edinmek için [bkz. Önceden ayarlanmış güvenlik ilkeleri](preset-security-policies.md) ve belirli Güvenli Bağlantılar ve Güvenli Ek denetimleri kümesi hakkında bilgi edinmek için bkz. [Güvenli Ekler ayarları](recommended-settings-for-eop-and-office365.md#safe-attachments-settings) ve [Güvenli Bağlantılar ayarları](recommended-settings-for-eop-and-office365.md#safe-links-settings).
 
 ## <a name="july-2022"></a>Temmuz 2022
 
@@ -87,6 +88,8 @@ Diğer Microsoft Defender güvenlik ürünleriyle ilgili yenilikler hakkında da
   - Önceden Belirlenmiş Katı/Standart ilkeler içindeki özel kullanıcılar ve özel etki alanları için kimliğe bürünme koruma ayarlarını yapılandırın ve hedeflenen kullanıcılarınızı ve hedeflenen etki alanınızı kimliğe bürünme saldırılarına karşı otomatik olarak koruyun.
 
 - [Office 365 için Microsoft 365 Defender'de karantina deneyimini (ikinci bölüm) basitleştirme](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687): Karantina deneyiminin kullanımını daha da kolaylaştırmak için ek özellikleri vurgular.
+
+- [Office 365 için Microsoft Defender'da öncelik hesapları için farklı koruma tanıtımı: Öncelik hesapları için](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-differentiated-protection-for-priority-accounts-in/ba-p/3283838) farklı korumanın GCC, GCC-H ve DoD kullanılabilirliğine giriş.
 
 ## <a name="april-2022"></a>Nisan 2022
 

@@ -1,5 +1,5 @@
 ---
-title: Ghana için destek bilgileri
+title: Gana için destek bilgileri
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -7,28 +7,30 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
-description: Ülkeniz veya bölgeniz için de destek ile nasıl bağlantı kuracaklarını öğrenin.
+description: Ülkeniz veya bölgeniz için desteğe nasıl başvuracağınızı öğrenin.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ad3960ba3e0141397da9f024b340baff80bc427d
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 9f5b9ecb326dc1c4c1cbfde9ca562fbd4bf61ab2
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "63009326"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68179031"
 ---
-# <a name="contact-support-for-ghana"></a>Gan gan gantesi için destek ile iletişime geçin
+# <a name="contact-support-for-ghana"></a>Gana için desteğe başvurun
 
 [Başka bir ülke veya bölge bulun](../get-help-support.md).
 
 ## <a name="phone-number"></a>Telefon numarası
 +234 1 271 0156
 
-9. seçeneği belirleyin
+9 seçeneğini belirleyin
 
-Kod 7704 girin
+7704 kodunu girin
 
 ## <a name="hours"></a>Saatler
 ### <a name="billing-support"></a>Faturalama Desteği:

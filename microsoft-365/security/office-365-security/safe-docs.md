@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Microsoft 365 A5 veya E5 Güvenliğinde Güvenli Belgeler hakkında bilgi edinin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: e89a9194956334877e6c85d73afca44dd5d25759
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 05f337652b0cd08ac930b1439b3f2415bb697e1e
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496779"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060438"
 ---
 # <a name="safe-documents-in-microsoft-365-a5-or-e5-security"></a>Microsoft 365 A5 veya E5 Güvenliğinde Güvenli Belgeler
 
@@ -30,7 +30,7 @@ ms.locfileid: "67496779"
 **Uygulandığı öğe**
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Güvenli Belgeler, açık Office belgelerini [Korumalı Görünüm'de](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) veya Office [için Application Guard'da](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46) taramak için [Uç Nokta için Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) bulut arka ucu kullanan premium bir özelliktir.
+Güvenli Belgeler, Uç Nokta için Microsoft Defender bulut arka ucu kullanarak Açık Office belgelerini [Korumalı Görünüm'de](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) veya [](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) [Office için Application Guard](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46) taramak için kullanılan premium bir özelliktir.
 
 Kullanıcıların Güvenli Belgeler korumasını almak için yerel cihazlarında Uç Nokta için Defender'ın yüklü olması gerekmez. Kullanıcılar, aşağıdaki gereksinimlerin tümü karşılanırsa Güvenli Belgeler korumasına sahiptir:
 

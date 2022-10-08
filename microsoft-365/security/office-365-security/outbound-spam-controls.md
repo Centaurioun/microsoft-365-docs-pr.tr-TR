@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Yöneticiler, Exchange Online Protection(EOP) içindeki giden istenmeyen posta denetimleri hakkında bilgi edinebilir ve toplu posta göndermeniz gerekirse ne yapmanız gerektiğini öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 76e9e11d0b49237ff3a29dcb9eadf113f9db112e
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 3fd225db90d245f03be3b7f5a8c5846c1c96cd25
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598329"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68060416"
 ---
 # <a name="outbound-spam-protection-in-eop"></a>EOP'de giden istenmeyen posta koruması
 

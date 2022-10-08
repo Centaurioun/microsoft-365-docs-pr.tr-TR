@@ -15,17 +15,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 53d458fdd15a403984fd6636a3b0c3cb54d0398d
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 2dbc3bc965a1c975b354a5698b3fa0c67e2cd39c
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711158"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68055446"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender'daki olayları araştırma
 
@@ -123,7 +124,7 @@ Cihazın ayrıntılarını, dizin verilerini, etkin uyarıları ve oturum açmı
 Cihaz sayfasından cihaz hakkında tüm uyarıları, zaman çizelgesi ve güvenlik önerileri gibi ek bilgiler toplayabilirsiniz. Örneğin, **Zaman Çizelgesi** sekmesinde makine zaman çizelgesinde gezinebilir ve makinede gözlemlenen tüm olayları ve davranışları, tetiklenen uyarılarla birlikte kronolojik sırayla görüntüleyebilirsiniz.
 
 > [!TIP]
-> Bir cihaz sayfasında isteğe bağlı taramalar yapabilirsiniz. Microsoft 365 Defender portalında **Uç Noktalar > Cihaz envanteri'ni** seçin. Uyarıları olan bir cihaz seçin ve ardından virüsten koruma taraması çalıştırın. Virüsten koruma taramaları gibi eylemler izlenir ve **Cihaz envanteri** sayfasında görünür. Daha fazla bilgi için bkz. [Cihazlarda Microsoft Defender Virüsten Koruma taraması çalıştırma](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
+> Bir cihaz sayfasında isteğe bağlı taramalar yapabilirsiniz. Microsoft 365 Defender portalında **Uç Noktalar > Cihaz envanteri'ni** seçin. Uyarıları olan bir cihaz seçin ve ardından virüsten koruma taraması çalıştırın. Virüsten koruma taramaları gibi eylemler izlenir ve **Cihaz envanteri** sayfasında görünür. Daha fazla bilgi için bkz. [Cihazlarda virüsten koruma taraması Microsoft Defender çalıştırma](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
 
 ## <a name="users"></a>Kullanıcılar
 

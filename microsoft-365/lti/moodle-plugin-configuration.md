@@ -6,18 +6,18 @@ manager: serdars
 ms.reviewer: amitman
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Moodle LMS eklentilerini ayarlayıp yapılandırarak Moodle ve Microsoft Teams'i tümleştirmeye hazır olun.
-ms.openlocfilehash: 5c986022923fe2322ad0e24f2e455d6fc502154e
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 854a4d261f0848d3a33040b9bf9b90d6bafd09b7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084795"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68177620"
 ---
 # <a name="set-up-the-moodle-lms-plugins"></a>Moodle LMS eklentilerini ayarlama
 

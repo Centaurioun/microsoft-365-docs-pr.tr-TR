@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 description: Microsoft 365 yönetim merkezi bağımsız yazılım satıcısı (ISV) uygulamalarının lisanslarını yönetmeyi öğrenin.
 ms.date: 06/08/2022
-ms.openlocfilehash: 0e83335c7130e3ae42c648ee680cf8137a7b1244
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 7c27c4b1188990426868f86be052d8304eaf7da7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011748"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68179647"
 ---
 # <a name="manage-isv-app-licenses-in-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezi ISV uygulama lisanslarını yönetme
 
