@@ -6,18 +6,18 @@ manager: serdars
 ms.reviewer: amitman
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Edge, Chrome, Firefox ve Safari tarayıcılarında LMS URL'leri için tanımlama bilgilerine nasıl izin vereceğinizi öğrenin.
-ms.openlocfilehash: 84ba252f9d3854fad4e89bd6e9dac8d0b020cf3a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: fcaae51c9cdbab3a052a3c29d24e5386f4f852ee
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "66861603"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167373"
 ---
 # <a name="allow-cookies-for-lms-urls-in-your-browser"></a>Tarayıcınızda LMS URL'leri için tanımlama bilgilerine izin ver
 

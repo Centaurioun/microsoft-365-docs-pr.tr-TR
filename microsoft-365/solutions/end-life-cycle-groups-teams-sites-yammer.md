@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Gruplar, ekipler ve Yammer için yaşam döngüsü sonu seçenekleri.
-ms.openlocfilehash: a3b5ec7a0a15c2bd5dc5e19420adbbd7503dc8dd
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 80092ae3d8c843778de6be5cdc3d784415ddbfd8
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730163"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986916"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Gruplar, ekipler ve Yammer için yaşam döngüsü sonu seçenekleri
 

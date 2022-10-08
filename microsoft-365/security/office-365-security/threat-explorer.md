@@ -13,19 +13,19 @@ search.appverid:
 - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Tehditleri verimli bir şekilde araştırmak ve yanıtlamak için Microsoft 365 Defender portalında Gezgin ve Gerçek zamanlı algılamaları kullanın.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 7710b2eb156845ccc0e79550a76a9b61ac90327f
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: a8f0c4267c915930da60887540b1d58aaa65b4bb
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597271"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68298045"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Tehdit Gezgini ve Gerçek zamanlı algılamalar
 
@@ -35,7 +35,7 @@ ms.locfileid: "67597271"
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Kuruluşunuzun [Office 365 için Microsoft Defender](defender-for-office-365.md) varsa ve [gerekli izinlere](#required-licenses-and-permissions) sahipseniz **, Gezgin** veya **Gerçek zamanlı algılamalarınız** (eski *adıyla Gerçek zamanlı raporlar*— [yeniliklere bakın](#new-features-in-threat-explorer-and-real-time-detections)!) vardır. Güvenlik & Uyumluluk Merkezi'nde **Tehdit yönetimi'ne** gidin ve **gezgin** _veya_ **gerçek zamanlı algılamalar'ı** seçin.
+Kuruluşunuzun [Office 365 için Microsoft Defender](defender-for-office-365.md) varsa ve [gerekli izinlere](#required-licenses-and-permissions) sahipseniz **, Gezgin** veya **Gerçek zamanlı algılamalarınız** (eski *adıyla Gerçek zamanlı raporlar*— [yeniliklere bakın](#new-features-in-threat-explorer-and-real-time-detections)!) vardır. **Tehdit yönetimi'ne** gidin ve **Gezgin** _veya_ **Gerçek zamanlı algılamalar'ı** seçin.
 
 |Office 365 için Microsoft Defender Plan 2 ile şunları görürsünüz:|Office 365 için Microsoft Defender Plan 1 ile şunları görürsünüz:|
 |---|---|
@@ -43,7 +43,7 @@ Kuruluşunuzun [Office 365 için Microsoft Defender](defender-for-office-365.md)
 
 Explorer veya Gerçek zamanlı algılamalar, güvenlik operasyonları ekibinizin tehditleri verimli bir şekilde araştırmasına ve yanıtlamasına yardımcı olur. Rapor aşağıdaki görüntüye benzer:
 
-:::image type="content" source="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png" alt-text="Güvenlik & Uyumluluk portalındaki Gezgin menü öğesi" lightbox="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png":::
+:::image type="content" source="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png" alt-text="Gezgin menü öğesini gösteren ekran görüntüsü." lightbox="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png":::
 
 Bu raporla şunları yapabilirsiniz:
 
@@ -58,8 +58,6 @@ Bu raporla şunları yapabilirsiniz:
 
 Bugün bir uyarıdan Tehdit Gezgini'ne giderseniz, gezgin içinde, görünüm Uyarı ilkesi kimliğine göre filtrelenmiş bir görünüm açar (ilke kimliği, Uyarı ilkesi için benzersiz bir tanımlayıcıdır).
 Tehdit Gezgini'nde uyarı kimliğini (aşağıdaki uyarı kimliği örneğine bakın) ve belirli bir uyarıyla ilgili iletileri ve e-posta sayısını görebilmeniz için gerçek zamanlı algılamaları tanıtarak bu tümleştirmeyi daha uygun hale getiriyoruz. Ayrıca bir iletinin bir uyarının parçası olup olmadığını görebilir ve bu iletiden belirli bir uyarıya gidebilirsiniz.
-
-Uyarı kimliği, tek bir uyarıyı görüntülerken URL'nin içinde kullanılabilir; örneğidir `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/AlertID-Filter.png" alt-text="Uyarı Kimliği için Filtreleme" lightbox="../../media/AlertID-Filter.png":::
@@ -325,7 +323,7 @@ Kimlik avı iletilerini gözden geçirmek ve kimliğine bürünülen kullanıcı
 
 Bu örnekte Tehdit Gezgini kullanılır.
 
-1. [Güvenlik & Uyumluluk Merkezi'nde](https://protection.office.com) (https://protection.office.com)Tehdit yönetimi > Gezgini'ni (veya Gerçek zamanlı algılamalar) seçin.
+1. Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ) **Tehdit yönetimi** > **Gezgini'ni** (veya **Gerçek zamanlı algılamalar**) seçin.
 
 2. Görünüm menüsünde Kimlik Avı'nı Email > seçin.
 
@@ -419,7 +417,7 @@ Gerçek zamanlı algılamalar raporunda aynı konuma ulaşmak için bu yolu izle
 
 Microsoft 365 teknolojisine göre sıralanmış e-postada kötü amaçlı yazılım algılanmasını istediğinizi varsayalım. Bunu yapmak için Explorer'ın [Email > Kötü Amaçlı Yazılım](threat-explorer-views.md#email--malware) görünümünü (veya gerçek zamanlı algılamaları) kullanın.
 
-1. Güvenlik & Uyumluluk Merkezi'nde (<https://protection.office.com> ) **Tehdit yönetimi** \> **Gezgini'ni** (veya **Gerçek zamanlı algılamalar**) seçin. (Bu örnekte Gezgin kullanılır.)
+1. Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ) **Tehdit yönetimi** \> **Gezgini'ni** (veya **Gerçek zamanlı algılamalar**) seçin. (Bu örnekte Gezgin kullanılır.)
 
 2. **Görünüm** menüsünde **Kötü Amaçlı Yazılım** **Email'ı** \> seçin.
 
@@ -446,7 +444,7 @@ Rapor, seçtiğiniz teknoloji seçeneğini kullanarak kötü amaçlı yazılıml
 
 İletilerdeki kimlik avı URL'lerini gözden geçirmek ve kimlik avı iletilerindeki URL'lere tıklamak için Explorer veya Gerçek zamanlı algılamaların [**Email** >  **Fark**](threat-explorer-views.md#email--phish) görünümünü kullanın.
 
-1. Güvenlik & Uyumluluk Merkezi'nde (<https://protection.office.com> ) **Tehdit yönetimi** \> **Gezgini'ni** (veya **Gerçek zamanlı algılamalar**) seçin. (Bu örnekte Gezgin kullanılır.)
+1. Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ) **Tehdit yönetimi** \> **Gezgini'ni** (veya **Gerçek zamanlı algılamalar**) seçin. (Bu örnekte Gezgin kullanılır.)
 
 2. **Görünüm** menüsünde **Kimlik Avı'nı Email** \> seçin.
 
@@ -493,7 +491,7 @@ Email veya URL açılır listelerinde, İlk Tıklamalar'da ve filtreleme deneyim
 
 Kuruluşunuzdaki kullanıcıların [Rapor İletisi eklentisi veya Rapor](enable-the-report-message-add-in.md) [Kimlik Avı eklentisi](enable-the-report-phish-add-in.md) aracılığıyla *Gereksiz*, *Gereksiz Değil* veya *Kimlik Avı* olarak bildirdiği e-posta iletilerini görmek istediğinizi varsayalım. Bunları görmek için [**Explorer'ın** >  (veya Gerçek zamanlı **algılamaların) Email Submissions**](threat-explorer-views.md#email--submissions) görünümünü kullanın.
 
-1. Güvenlik & Uyumluluk Merkezi'nde (<https://protection.office.com> ) **Tehdit yönetimi** \> **Gezgini'ni** (veya **Gerçek zamanlı algılamalar**) seçin. (Bu örnekte Gezgin kullanılır.)
+1. Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ) **Tehdit yönetimi** \> **Gezgini'ni** (veya **Gerçek zamanlı algılamalar**) seçin. (Bu örnekte Gezgin kullanılır.)
 
 2. **Görünüm** menüsünde **Email** \> **Gönderimler'i** seçin.
 
@@ -536,7 +534,7 @@ Explorer veya Gerçek zamanlı algılamaları kullanmak için [Office 365 için 
 
 Gezgin veya Gerçek zamanlı algılamaları görüntülemek ve kullanmak için, güvenlik yöneticisine veya güvenlik okuyucuya verilen izinler gibi uygun izinlere sahip olmanız gerekir.
 
-- Güvenlik & Uyumluluk Merkezi için aşağıdaki rollerden birine atanmış olmanız gerekir:
+- Microsoft 365 Defender portalı için aşağıdaki rollerden birine atanmış olmanız gerekir:
 
   - Kuruluş Yönetimi
   - Güvenlik Yöneticisi (bu, Azure Active Directory yönetim merkezinde (<https://aad.portal.azure.com>) atanabilir

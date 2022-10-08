@@ -11,7 +11,7 @@ manager: dougeby
 audience: ITPro
 description: Uç Nokta için Defender'a Microsoft Intune bağlamayı ve erişim koşulu olarak cihaz riskini izlemeyi öğrenin.
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -22,12 +22,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 10b6e23042b777e2e747899999b093bd7d26e689
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: a532477d25d0eb3de07af08033f13c7a8112454c
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730737"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986564"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>6. Adım. Cihaz riskini ve güvenlik temel hatlarına uyumluluğu izleyin
 

@@ -6,33 +6,35 @@ manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: "Özet: Microsoft Azure'da Microsoft 365 için yüksek kullanılabilirlik federasyon kimlik doğrulamanız için web uygulaması proxy sunucularını yapılandırın."
-ms.openlocfilehash: 2200d4f7c0aafbaff11dd5d9b5b5b414fae06b5f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a2de5878fcc3d8de194331cd5f1b220d79b501ab
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091291"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167505"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Yüksek kullanılabilirlik federasyon kimlik doğrulaması 4. Aşama: Web uygulaması proxy'lerini yapılandırma
 
 Azure altyapı hizmetlerinde Microsoft 365 federasyon kimlik doğrulaması için yüksek kullanılabilirlik dağıtmanın bu aşamasında, bir iç yük dengeleyici ve iki AD FS sunucusu oluşturursunuz.
   
-[5. Aşama: Microsoft 365 için federasyon kimlik doğrulamasını yapılandırma](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) aşamasına geçmeden önce bu aşamayı tamamlamanız gerekir. Tüm aşamalar için bkz. [Azure'da Microsoft 365 için yüksek kullanılabilirlik federasyon kimlik doğrulamasını dağıtma](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md).
+[5. Aşama: Microsoft 365 için federasyon kimlik doğrulamasını yapılandırma](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) aşamasına geçmeden önce bu aşamayı tamamlamanız gerekir. Tüm aşamalar için bkz. [Azure'da Microsoft 365 için yüksek kullanılabilirlik federasyon kimlik doğrulamasını dağıtma](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) .
   
 ## <a name="create-the-internet-facing-load-balancer-in-azure"></a>Azure'da İnternet'e yönelik yük dengeleyici oluşturma
 
 Azure'ın İnternet'ten gelen istemci kimlik doğrulama trafiğini iki web uygulaması ara sunucusu arasında eşit bir şekilde dağıtması için İnternet'e yönelik bir yük dengeleyici oluşturmanız gerekir.
   
 > [!NOTE]
-> Aşağıdaki komut kümeleri Azure PowerShell en son sürümünü kullanır. Bkz. [Azure PowerShell ile Kullanmaya başlayın](/powershell/azure/get-started-azureps). 
+> Aşağıdaki komut kümeleri Azure PowerShell en son sürümünü kullanır. Bkz[. Azure PowerShell kullanmaya başlama](/powershell/azure/get-started-azureps). 
   
 Konum ve kaynak grubu değerlerini sağladığınızda, elde edilen bloğu Azure PowerShell komut isteminde veya PowerShell ISE'de çalıştırın.
   
@@ -60,7 +62,7 @@ Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgNam
 
 ## <a name="determine-your-federation-service-fqdn-and-create-dns-records"></a>Federasyon hizmeti FQDN'nizi belirleme ve DNS kayıtları oluşturma
 
-İnternet'te federasyon hizmeti adınızı tanımlamak için DNS adını belirlemeniz gerekir. Azure AD Bağlan, Microsoft 365 bir güvenlik belirteci almak için bağlanan istemcilere gönderdiği URL'nin bir parçası olacak olan 5. Aşamada bu adla Microsoft 365 yapılandıracaktır. Örnek olarak fs.contoso.com (fs, federasyon hizmeti anlamına gelir).
+İnternet'te federasyon hizmeti adınızı tanımlamak için DNS adını belirlemeniz gerekir. Azure AD Connect, Microsoft 365'i 5. Aşama'da bu adla yapılandıracak ve bu, Microsoft 365'in bir güvenlik belirteci almak için istemcilere gönderdiği URL'nin bir parçası olacaktır. Örnek olarak fs.contoso.com (fs, federasyon hizmeti anlamına gelir).
   
 Federasyon hizmeti FDQN'nizi aldıktan sonra, federasyon hizmeti FDQN için Azure İnternet'e yönelik yük dengeleyicinin genel IP adresine çözümlenen bir genel DNS etki alanı A kaydı oluşturun.
   
@@ -150,17 +152,17 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> Bu sanal makineler bir intranet uygulamasına ait olduğundan, bunlara bir genel IP adresi veya DNS etki alanı adı etiketi atanıp İnternet'e sunulmaz. Ancak bu, bunlara Azure portal bağlanamayacağınız anlamına da gelir. sanal makinenin özelliklerini görüntülediğinizde **Bağlan** seçeneği kullanılamaz. Özel IP adresini veya intranet DNS adını ve yerel yönetici hesabının kimlik bilgilerini kullanarak sanal makineye bağlanmak için Uzak Masaüstü Bağlantısı aksesuarını veya başka bir Uzak Masaüstü aracını kullanın.
+> Bu sanal makineler bir intranet uygulamasına ait olduğundan, bunlara bir genel IP adresi veya DNS etki alanı adı etiketi atanıp İnternet'e sunulmaz. Ancak bu, bunlara Azure portal bağlanamayacağınız anlamına da gelir. Sanal makinenin özelliklerini görüntülediğinizde **Bağlan** seçeneği kullanılamaz. Özel IP adresini veya intranet DNS adını ve yerel yönetici hesabının kimlik bilgilerini kullanarak sanal makineye bağlanmak için Uzak Masaüstü Bağlantısı aksesuarını veya başka bir Uzak Masaüstü aracını kullanın.
   
 Yer tutucu bilgisayar adlarıyla bu aşamanın başarıyla tamamlanmasından kaynaklanan yapılandırma aşağıdadır.
   
 **4. Aşama: Azure'daki yüksek kullanılabilirlik federasyon kimlik doğrulama altyapınız için İnternet'e yönelik yük dengeleyici ve web uygulaması proxy sunucuları**
 
-![Web uygulaması proxy sunucularıyla Azure'da federasyon kimlik doğrulama altyapısı Microsoft 365 yüksek kullanılabilirlik aşaması 4. aşama.](../media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
+![Web uygulaması proxy sunucularıyla Azure'da yüksek kullanılabilirlik Microsoft 365 federasyon kimlik doğrulama altyapısının 4. aşaması.](../media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
 ## <a name="next-step"></a>Sonraki adım
 
-5. Aşama: Bu iş yükünü yapılandırmaya devam etmek [için Microsoft 365 için federasyon kimlik doğrulamasını](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) yapılandırın.
+5. Aşama: Bu iş yükünü yapılandırmaya devam etmek [için Microsoft 365 için federasyon kimlik doğrulamasını yapılandırın](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) .
   
 ## <a name="see-also"></a>Ayrıca Bkz
 

@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -19,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
 description: Microsoft Teams, SharePoint ve e-posta da dahil olmak üzere GDPR ve California Tüketici Gizliliği Yasası (CCPA) gibi veri gizliliği düzenlemeleri için Microsoft 365'te bilgi korumayı yapılandırın.
-ms.openlocfilehash: 2152d3dd78eba3803d06f7d9fa8f2a863de6196e
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 30482b5640f155da4947f7d29623880faead2ca7
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812172"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986784"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Microsoft 365 ile veri gizliliği düzenlemeleri için bilgi koruma dağıtma
 

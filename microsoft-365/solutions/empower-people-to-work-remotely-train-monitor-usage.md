@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Kullanıcılarınızı eğitin ve sorunların hızlı bir şekilde ele alındığından emin olun.
-ms.openlocfilehash: dafa404395f9b494121ea8086cc1f68576350cdf
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: bc56961228413f319f4f38ad4b218f82107d2229
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728504"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986938"
 ---
 # <a name="step-6-train-your-workers-and-address-usage-feedback"></a>6. Adım: Çalışanlarınızı eğitin ve kullanım geri bildirimlerini ele alın
 

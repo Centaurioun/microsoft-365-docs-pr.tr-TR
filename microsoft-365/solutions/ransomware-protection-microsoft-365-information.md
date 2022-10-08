@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, HumOR, gasp saldırısı, fidye yazılımı saldırısı, şifreleme, kriptoviroloji, sıfır güven
 description: Microsoft 365 hassas verilerinizi korumak için denetimli klasör erişimi, Microsoft Purview Bilgi Koruması, DLP ve Microsoft Defender for Cloud Apps kullanın.
-ms.openlocfilehash: a52d06198f8a3cf4ea7e35cc569b8fa1d705d0d3
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 4200d7bdf5acb71710047478704f9083d83579aa
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728110"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986058"
 ---
 # <a name="step-5-protect-information"></a>Adım 5. Bilgileri koruma
 

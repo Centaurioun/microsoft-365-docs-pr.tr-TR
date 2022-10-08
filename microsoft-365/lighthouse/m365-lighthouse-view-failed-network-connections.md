@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP' ler) için kurumsal bulut bilgisayarı başarısız ağ bağlantısını görüntülemeyi öğrenin.
-ms.openlocfilehash: 0d4c2c535da22199c2667b08e3a0f0c1c13928e3
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 594727cf50ea8eb5424d939eaf8401221568ad33
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67590710"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167439"
 ---
 # <a name="view-an-enterprise-cloud-pc-failed-network-connection-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'da kurumsal bir Cloud PC başarısız ağ bağlantısını görüntüleme
 

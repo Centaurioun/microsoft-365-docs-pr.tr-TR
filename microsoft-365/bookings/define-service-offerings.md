@@ -7,14 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: Hizmet adı, açıklama, konum, süre ve fiyatlandırma gibi hizmet teklifleri bilgilerini girme yönergeleri. Hizmeti sağlamak için uygun çalışanları da etiketleyebilirsiniz.
-ms.openlocfilehash: 2daae2139e3d2d4107f4aaed1b94ca655877000a
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.openlocfilehash: a97155f4639fb89773520a51f85cdd4518c45ff3
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185093"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167747"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Bookings'te hizmet tekliflerinizi tanımlama
 
@@ -28,7 +30,7 @@ Ayrıca, birisi rezervasyon sayfanız aracılığıyla bir hizmet rezervasyonu y
 
 ## <a name="steps"></a>Adımlar
 
-1. Microsoft 365'da Uygulama başlatıcıyı ve ardından **Bookings'i** seçin.
+1. Microsoft 365'te Uygulama başlatıcıyı ve ardından **Bookings'i** seçin.
 
 2. **Takvim** > **Hizmetleriniz'e** gidin ve **Yeni hizmet ekle'yi** seçin.
 
@@ -40,7 +42,7 @@ Ayrıca, birisi rezervasyon sayfanız aracılığıyla bir hizmet rezervasyonu y
 
    **Varsayılan konum**: Bu konum, hem personel hem de müşteriler için onay ve anımsatıcı e-postalarında görüntülenecek konumdur ve rezervasyon için oluşturulan takvim etkinliğinde görüntülenir.
 
-   **Çevrimiçi toplantı ekle**: Bu ayar, personel üyesi için varsayılan istemci olarak yapılandırdığınıza bağlı olarak, Teams veya Skype aracılığıyla her randevu için çevrimiçi toplantıları etkinleştirir veya devre dışı bırakır.
+   **Çevrimiçi toplantı ekle**: Bu ayar, personel üyesi için varsayılan istemci olarak yapılandırdığınız toplantıya bağlı olarak Teams veya Skype aracılığıyla her randevu için çevrimiçi toplantıları etkinleştirir veya devre dışı bırakır.
 
    - Etkin:
      - Rezervasyona özgü bir Teams veya Skype toplantısının bağlantısı, arayarak bağlanma bilgilerinin yanı sıra hem personelin hem de müşterilerin takvimlerindeki takvim etkinliğine eklenir.
@@ -49,7 +51,7 @@ Ayrıca, birisi rezervasyon sayfanız aracılığıyla bir hizmet rezervasyonu y
        :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Bookings'te Teams toplantısına katılma bağlantısı örneği.":::
 
        > [!NOTE]
-       > Teams toplantılara Teams mobil uygulaması, Teams masaüstü uygulaması, Web tarayıcısında veya telefonla arayarak bağlanma yoluyla katılabilirsiniz. Sanal randevuları ayırma konusunda en iyi deneyimi sağlamak için Teams kiracınız için varsayılan çevrimiçi toplantı hizmeti olarak etkinleştirmenizi kesinlikle öneririz.
+       > Teams toplantıları Teams mobil uygulaması, Teams masaüstü uygulaması, Web tarayıcısında veya telefonla arayarak bağlanarak eklenebilir. Sanal randevuları ayırma konusunda en iyi deneyim için Teams'i kiracınız için varsayılan çevrimiçi toplantı hizmeti olarak etkinleştirmenizi kesinlikle öneririz.
 
    - Devre dışı:
      - Randevular bir toplantı seçeneği içermez ve Çevrimiçi toplantı ekle etkinleştirildiğinde görüntülenen **toplantıyla** ilgili tüm alanlar gösterilmez.
@@ -102,17 +104,17 @@ Ayrıca, birisi rezervasyon sayfanız aracılığıyla bir hizmet rezervasyonu y
 
    :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="Bookings'ten bir onay e-postası.":::
 
-   Yeniden zamanlama veya müşterilerin randevu için getirmesi gerekenler gibi istediğiniz ek metinleri buraya ekleyebilirsiniz. Aşağıda, **E-posta Onayı için ek bilgiler** alanında görülen özgün onay e-postasına eklenen özelleştirilmiş metin örneği verilmiştir:
+   Yeniden zamanlama veya müşterilerin randevu için getirmesi gerekenler gibi istediğiniz ek metinleri buraya ekleyebilirsiniz. Aşağıda, Email **Onayı için ek bilgiler** alanında görülen özgün onay e-postasına eklenen özelleştirilmiş metin örneği verilmiştir:
 
    :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Bookings e-postasında ek bilgiler.":::
 
-9. **Müşteriniz için kısa mesaj bildirimlerini etkinleştirme** Seçilirse, SMS iletiler müşteriye gönderilir, ancak yalnızca kabul ederlerse gönderilir.
+9. **Müşteriniz için kısa mesaj bildirimlerini etkinleştirme** Seçilirse, sms mesajları müşteriye gönderilir, ancak yalnızca kabul ederse gönderilir.
 
    - El ile rezervasyon ve Self-Service Sayfasında kabul etme kutusu:
 
      :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Bookings'teki kabul etme kutusu.":::
 
-   - Kısa mesaj bildirimleri aşağıdaki gibi görünür (SMS bildirimlerinin şu anda yalnızca Kuzey Amerika'da kullanılabildiğini unutmayın):
+   - Kısa mesaj bildirimleri aşağıdaki gibi görünür (SMS bildirimlerinin şu anda yalnızca Kuzey Amerika'de kullanılabildiğini unutmayın):
 
      :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Bookings'ten kısa mesaj bildirimi.":::
 

@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Kullanıcılarınızın Teams, Exchange, SharePoint ve diğer Microsoft 365 hizmetleriyle üretken olmasını sağlayın.
-ms.openlocfilehash: 315058c31b221411ba8df81041e6dc4178128cb0
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: b79e5c19b6f5176d1d079da5438846ccec19c19a
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728548"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986982"
 ---
 # <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>Adım 5. Karma çalışan üretkenliği uygulamalarını ve hizmetlerini dağıtma
 

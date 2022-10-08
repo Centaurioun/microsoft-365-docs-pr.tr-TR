@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Karma çalışanlara yönelik uygulamalarınızı, verilerinizi ve cihazlarınızı korumak için Microsoft 365 güvenlik ve uyumluluk hizmetlerini kullanın.
-ms.openlocfilehash: e049955a9db5ff649e806da04ecb94f70ca54ff0
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 9ca828e25f77d370e68b32e8d7da18a159255a75
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727314"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987004"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>3. Adım: Karma çalışanlar için güvenlik ve uyumluluk dağıtma
 

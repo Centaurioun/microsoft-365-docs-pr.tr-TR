@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
@@ -20,12 +21,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: Microsoft ürünlerini veya hizmetlerini satın alırken kayıt numaraları ve gözden geçirme bildirimleri hakkında bilgi edinin.
 ms.date: 02/02/2022
-ms.openlocfilehash: f287903ae9cded49a81e1c775388e579f2a4f0b8
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 70177ab7b8129e9623912b9d24360d7e28cd98f5
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714207"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167725"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>Kayıt numaraları ve inceleme bildirimleri hakkında
 
@@ -51,7 +52,7 @@ Geçerli bir kayıt numaranız yoksa bkz. [Vergi Kimlik Numaraları](https://www
 
 ## <a name="what-should-i-do-if-i-get-an-under-review-notification"></a>Gözden geçirme bildirimi alırsam ne yapmalıyım?  
 
-Satın alma işlemini tamamladığınızda hesabınızın gözden geçirildiğini belirten bir bildirim alabilirsiniz. Gözden geçirme işlemi sırasında <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">BillingBilling</a>  >  hesapları sayfasına gidip satın alma işleminizi tamamlamak için kullandığınız hesabı seçerek durumu de kontrol edebilirsiniz.
+Satın alma işlemini tamamladığınızda hesabınızın gözden geçirildiğini belirten bir bildirim alabilirsiniz. Gözden geçirme işlemi sırasında **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Hesapları</a> sayfasına gidip satın alma işleminizi tamamlamak için kullandığınız hesabı seçerek durumu de kontrol edebilirsiniz.
 
 Gözden geçirme işleminin tamamlanması normalde yaklaşık bir gün sürer ancak daha uzun sürebilir.
 

@@ -8,7 +8,7 @@ manager: serdars
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkSPO
 description: Çalışanlarınızın her yerden ve her zaman uzaktan çalışmasını sağlayan güvenlik ve altyapıyı yapılandırın.
-ms.openlocfilehash: d38a9459def8603322d32abc46b3802172fb811d
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 97ceafca28ec3ac56c7b5dd7a4daec420046f24a
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731342"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986410"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Geliştirme/test ortamında bir ekibi güvenlik yalıtımıyla yapılandırma
 

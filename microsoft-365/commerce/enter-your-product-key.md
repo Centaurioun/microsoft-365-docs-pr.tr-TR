@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ ms.custom:
 - AdminTemplateSet
 description: Perakende satış mağazasından Microsoft 365 İş Standart satın aldıysanız ürün anahtarını kullanmayı ve aboneliğinizi etkinleştirmeyi öğrenin.
 ms.date: 08/18/2022
-ms.openlocfilehash: d5af4dc5ccb82e738c6419e5831760aa5e9c0cc2
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 2e786fe7299c91272b69f15820aa7174e6c020ae
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660211"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167593"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Microsoft 365 İş Standart için ürün anahtarınızı girin
 

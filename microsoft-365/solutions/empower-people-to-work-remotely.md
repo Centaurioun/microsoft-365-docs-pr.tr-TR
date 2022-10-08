@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: evden çalışma, evden çalışma, hibrit, uzaktan çalışan, hibrit iş, uzak çalışanlar, hibrit bağlantı, uzaktan erişim, uzaktan erişim, uzaktan çalışma, telework, teleworking, mobil iş, uzak iş, her yerden çalışma, esnek çalışma alanı
 description: Hibrit çalışanlarınızın şirket içi ve Microsoft 365 kaynaklarına güvenli bir şekilde erişebilmesi için altyapı katmanlarında ilerleyin.
-ms.openlocfilehash: 63d87eaeb1860d9d9e4860cd186f921b4e8138d5
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: b79c0096139633a2ff151adce71f69aea9780b6b
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728526"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986960"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Microsoft 365 ile karma çalışma için altyapınızı ayarlama
 

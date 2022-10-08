@@ -12,15 +12,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: b00a9f02f4cd370985dfa5c094c6be36aa34ab1e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 9b153af03780b5803f622ee53faedc15ba20413c
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67679525"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363683"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>SIEM araçlarınızı Uç Nokta için Microsoft Defender ile tümleştirme
 
@@ -72,7 +74,7 @@ Splunk için aşağıdakileri destekleyen Microsoft 365 Defender Eklentisini kul
 - Uç Nokta için Microsoft Defender uyarıları alma
 - Splunk içinden Uç Nokta için Microsoft Defender uyarıları güncelleştirme
 
-Splunk için Microsoft 365 Defender Eklentisi hakkında daha fazla bilgi için bkz. [splunkbase](https://splunkbase.splunk.com/app/4959/).
+Splunk için Microsoft 365 Defender Eklentisi hakkında daha fazla bilgi için bkz. [splunkbase](https://splunkbase.splunk.com/app/6207/).
 
 ### <a name="datadog"></a>Datadog
 
@@ -96,7 +98,7 @@ SmartConnector, Microsoft 365 Defender için önceki FlexConnector'ın yerini al
 >[!NOTE]
 >Uç Nokta için Microsoft Defender içeren IBM QRadar Microsoft 365 Defender tümleştirmesi Microsoft 365 Defender [artık Uç Nokta için Microsoft Defender](../defender/streaming-api.md) dahil olmak üzere Microsoft 365 Defender ürünlerden akış olayı verilerinin alımına olanak tanıyan Microsoft 365 Defender Akış API'si. Yeni QRadar Microsoft 365 Defender DSM hakkında daha fazla bilgi için bkz. [IBM QRadar Ürün Belgeleri](https://www.ibm.com/docs/en/dsm?topic=microsoft-365-defender) ve Akış API'sinin desteklediği olay türleri hakkında daha fazla bilgi için bkz[. Desteklenen olay türleri](../defender/supported-event-types.md).
 
-Yeni müşteriler artık önceki QRadar Microsoft Defender ATP Cihaz Destek Modülü (DSM) kullanılarak eklenmemektedir ve mevcut müşterilerin tüm Microsoft 365 Defender ürünleriyle tek tümleştirme noktası olarak yeni Microsoft 365 Defender DSM'yi benimsemeleri teşvik edilir.
+Yeni müşteriler artık önceki QRadar Microsoft Defender ATP Cihaz Destek Modülü (DSM) kullanılarak eklenmemektedir ve mevcut müşterilerin tüm Microsoft 365 Defender ürünleriyle tek bir tümleştirme noktası olarak yeni Microsoft 365 Defender DSM'yi benimsemeleri teşvik edilir.
 
 ## <a name="ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api"></a>Microsoft 365 Defender olay akış API'sinden Uç Nokta için Microsoft Defender olayları alma
 

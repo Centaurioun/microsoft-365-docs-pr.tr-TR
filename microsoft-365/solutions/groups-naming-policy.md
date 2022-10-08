@@ -7,7 +7,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 recommendations: false
 description: Microsoft 365 grupları için adlandırma ilkesi oluşturmayı öğrenin.
-ms.openlocfilehash: 00a1a6cae02b6ddbff784f0151cee4257818841e
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: fd48c975a812eaf015dd5afe0e808103b7fa6d1e
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731276"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986828"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 grupları adlandırma ilkesi
 

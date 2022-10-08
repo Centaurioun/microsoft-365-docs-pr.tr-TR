@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Virüsten Koruma ile istenmeyebilecek uygulamaları engelleme
 description: Adware gibi istenmeyen yazılımları engellemek için istenmeyebilecek uygulama (PUA) virüsten koruma özelliğini etkinleştirin.
-keywords: pua, enable, istenmeyen yazılım, istenmeyen uygulamalar, adware, tarayıcı araç çubuğu, algılama, engelleme, Microsoft Defender Virüsten Koruma
+keywords: pua, etkinleştirme, istenmeyen yazılım, istenmeyen uygulamalar, adware, tarayıcı araç çubuğu, algılama, engelleme, Microsoft Defender Virüsten Koruma
 ms.service: microsoft-365-security
 ms.mktglfcycl: detect
 ms.sitesec: library
@@ -14,14 +14,16 @@ ms.reviewer: mimilone, julih
 manager: dansimp
 ms.subservice: mde
 ms.topic: article
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: fa5fdf8b7da64de21c8c984431a9caafdef56240
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d77f369e6247e1adf72fa060f38fe7efaa365572
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701202"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167175"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>İstenmeyen olası uygulamaları tespit edin ve engelleyin
 
@@ -64,24 +66,24 @@ Microsoft Edge'de istenmeyebilecek uygulama koruması (Chromium tabanlı sürüm
 3. **Güvenlik** bölümünün altında **İstenmeyebilecek uygulamaları engelle'yi** açın.
 
 > [!TIP]
-> Microsoft Edge (Chromium tabanlı) çalıştırıyorsanız, [Microsoft Defender SmartScreen tanıtım sayfalarımızdan](https://demo.smartscreen.msft.net/) birinde test ederek PUA korumasının URL engelleme özelliğini güvenle keşfedebilirsiniz.
+> Microsoft Edge (Chromium tabanlı) çalıştırıyorsanız, Microsoft Defender [SmartScreen tanıtım sayfalarımızdan](https://demo.smartscreen.msft.net/) birinde test ederek PUA korumasının URL engelleme özelliğini güvenle keşfedebilirsiniz.
 
 ### <a name="block-urls-with-microsoft-defender-smartscreen"></a>Microsoft Defender SmartScreen ile URL'leri engelleme
 
-PUA koruması açık Chromium tabanlı Edge'de Microsoft Defender SmartScreen sizi PUA ile ilişkili URL'lerden korur.
+PUA koruması açık Chromium tabanlı Edge'de, SmartScreen Microsoft Defender sizi PUA ile ilişkili URL'lerden korur.
 
-Güvenlik yöneticileri, kullanıcı gruplarını PUA ile ilişkili URL'lerden korumak için Microsoft Edge ve Microsoft Defender SmartScreen'in birlikte nasıl çalışabileceğini [yapılandırabilir](/DeployEdge/configure-microsoft-edge) . Microsoft Defender SmartScreen için [pua'yı engelleme](/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled) de dahil olmak üzere açıkça kullanılabilen çeşitli [grup ilkesi ayarları](/DeployEdge/microsoft-edge-policies#smartscreen-settings) vardır. Ayrıca, yöneticiler [Microsoft Defender SmartScreen'i bir bütün olarak yapılandırarak Microsoft Defender SmartScreen'i](/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) açmak veya kapatmak için grup ilkesi ayarlarını kullanabilir.
+Güvenlik yöneticileri, kullanıcı gruplarını PUA ile ilişkili URL'lerden korumak için Microsoft Edge ve Microsoft Defender SmartScreen'in birlikte nasıl çalışabileceğini [yapılandırabilir](/DeployEdge/configure-microsoft-edge). Microsoft Defender SmartScreen için [pua'yı engelleme](/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled) de dahil olmak üzere açıkça kullanılabilen çeşitli [grup ilkesi ayarları](/DeployEdge/microsoft-edge-policies#smartscreen-settings) vardır. Ayrıca, yöneticiler [SmartScreen'i Microsoft Defender](/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) açmak veya kapatmak için grup ilkesi ayarlarını kullanarak Microsoft Defender SmartScreen'i bir bütün olarak yapılandırabilir.
 
-Uç Nokta için Microsoft Defender, Microsoft tarafından yönetilen bir veri kümesini temel alan kendi blok listesine sahip olsa da, bu listeyi kendi tehdit bilgilerinize göre özelleştirebilirsiniz. Uç Nokta için Microsoft Defender portalında [göstergeler oluşturur ve yönetirseniz](manage-indicators.md), Microsoft Defender SmartScreen yeni ayarlara dikkat eder.
+Uç Nokta için Microsoft Defender, Microsoft tarafından yönetilen bir veri kümesini temel alan kendi blok listesine sahip olsa da, bu listeyi kendi tehdit bilgilerinize göre özelleştirebilirsiniz. Uç Nokta için Microsoft Defender portalında [göstergeler oluşturup yönetiyorsanız](manage-indicators.md), smartscreen Microsoft Defender yeni ayarları dikkate alır.
 
-## <a name="microsoft-defender-antivirus-and-pua-protection"></a>Microsoft Defender Virüsten Koruma ve PUA koruması
+## <a name="microsoft-defender-antivirus-and-pua-protection"></a>virüsten koruma ve PUA koruması Microsoft Defender
 
 Microsoft Defender Virüsten Koruma'daki istenmeyebilecek uygulama (PUA) koruma özelliği, ağınızdaki uç noktalarda PUA'yi algılayabilir ve engelleyebilir.
 
 > [!NOTE]
 > Bu özellik Windows 11, Windows 10, Windows Server 2022, Windows Server 2019 ve Windows Server 2016 kullanılabilir.
 
-Microsoft Defender Virüsten Koruma algılanan PUA dosyalarını ve bunları indirme, taşıma, çalıştırma veya yükleme girişimlerini engeller. Engellenen PUA dosyaları karantinaya taşınır. Bir uç noktada PUA dosyası algılandığında, Microsoft Defender Virüsten Koruma kullanıcıya bir bildirim gönderir (bildirimler diğer tehdit [algılamalarıyla aynı biçimde devre dışı bırakılmadığı sürece](configure-notifications-microsoft-defender-antivirus.md) ). Bildirimin içeriği belirtilmesi için ile `PUA:` önsözü oluşturulur.
+Microsoft Defender Virüsten Koruma, algılanan PUA dosyalarını ve bunları indirme, taşıma, çalıştırma veya yükleme girişimlerini engeller. Engellenen PUA dosyaları karantinaya taşınır. Bir uç noktada PUA dosyası algılandığında, Microsoft Defender Virüsten Koruma kullanıcıya bir bildirim gönderir (bildirimler diğer tehdit algılamalarıyla aynı biçimde [devre dışı bırakılmadığı sürece](configure-notifications-microsoft-defender-antivirus.md)). Bildirimin içeriği belirtilmesi için ile `PUA:` önsözü oluşturulur.
 
 Bildirim, [Windows Güvenliği uygulamasındaki normal karantina listesinde](microsoft-defender-security-center-antivirus.md) görünür.
 
@@ -93,7 +95,7 @@ PUA korumasını [Microsoft Intune](/mem/intune/protect/device-protect), [Micros
 
 ### <a name="use-intune-to-configure-pua-protection"></a>PUA korumasını yapılandırmak için Intune kullanma
 
-Daha fazla bilgi için bkz[. Microsoft Intune'de cihaz kısıtlama ayarlarını yapılandırma](/intune/device-restrictions-configure) ve [Intune Windows 10 için Microsoft Defender Virüsten Koruma cihaz kısıtlama ayarları](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
+Daha fazla bilgi için bkz[. Microsoft Intune'de cihaz kısıtlama ayarlarını yapılandırma](/intune/device-restrictions-configure) ve [Intune Windows 10 için Virüsten koruma cihaz kısıtlama ayarlarını Microsoft Defender](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
 ### <a name="use-configuration-manager-to-configure-pua-protection"></a>PUA korumasını yapılandırmak için Configuration Manager kullanma
 
@@ -104,7 +106,7 @@ Bkz. [Kötü amaçlı yazılımdan koruma ilkeleri oluşturma ve dağıtma:](/co
 System Center 2012 Configuration Manager için bkz. [Configuration Manager'de Endpoint Protection için İstenmeyebilecek Uygulama Koruma İlkesiNi Dağıtma](/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#BKMK_PUA).
 
 > [!NOTE]
-> Microsoft Defender Virüsten Koruma tarafından engellenen PUA olayları, Microsoft Endpoint Configuration Manager değil Windows Olay Görüntüleyicisi bildirilir.
+> Microsoft Defender Virüsten Koruma tarafından engellenen PUA olayları Microsoft Endpoint Configuration Manager değil Windows Olay Görüntüleyicisi bildirilir.
 
 ### <a name="use-group-policy-to-configure-pua-protection"></a>PUA korumasını yapılandırmak için grup ilkesi kullanma
 
@@ -116,7 +118,7 @@ System Center 2012 Configuration Manager için bkz. [Configuration Manager'de En
 
 4. **Grup İlkesi Yönetimi Düzenleyicisi**'nde **Bilgisayar yapılandırması**'na gidin ve **Yönetim şablonları**'nı seçin.
 
-5. Ağacı **Windows Bileşenleri** \> **Microsoft Defender Virüsten Koruma** olarak genişletin.
+5. Ağacı **Windows Bileşenleri** \> **Microsoft Defender Virüsten Koruma'ya** genişletin.
 
 6. **İstenmeyebilecek uygulamalar için algılamayı yapılandır'a** çift tıklayın.
 
@@ -154,11 +156,11 @@ Set-MpPreference -PUAProtection Disabled
 
 Bu cmdlet'in değeri, etkinleştirildiyse özelliği kapatacak `Disabled` şekilde ayarlanır.
 
-Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma ve Defender Virüsten Koruma cmdlet'lerini yapılandırmak ve çalıştırmak için PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) [cmdlet'lerini](/powershell/module/defender/index) kullanma.
+Daha fazla bilgi için bkz. Microsoft Defender Virüsten Koruma ve [Defender Virüsten Koruma cmdlet'lerini](/powershell/module/defender/index) [yapılandırmak ve çalıştırmak için PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) cmdlet'lerini kullanma.
 
 ## <a name="view-pua-events-using-powershell"></a>PowerShell kullanarak PUA olaylarını görüntüleme
 
-PUA olayları Windows Olay Görüntüleyicisi bildirilir, ancak Microsoft Endpoint Manager veya Intune'da raporlanmaz. Microsoft Defender Virüsten Koruma'nın `Get-MpThreat` işlediği tehditleri görüntülemek için cmdlet'ini de kullanabilirsiniz. İşte bir örnek:
+PUA olayları Windows Olay Görüntüleyicisi bildirilir, ancak Microsoft Endpoint Manager veya Intune'da raporlanmaz. Microsoft Defender Virüsten `Get-MpThreat` Koruma'nın işlediği tehditleri görüntülemek için cmdlet'ini de kullanabilirsiniz. İşte bir örnek:
 
 ```console
 CategoryID       : 27
@@ -179,7 +181,7 @@ PSComputerName   :
 
 PUA algılamaları hakkında posta almak için e-posta bildirimlerini açabilirsiniz.
 
-Microsoft Defender Virüsten Koruma olaylarını görüntülemeyle ilgili ayrıntılar için bkz. [Olay kimlikleriyle ilgili sorunları giderme](troubleshoot-microsoft-defender-antivirus.md) . PUA olayları **1160** olay kimliği altında kaydedilir.
+Microsoft Defender Virüsten Koruma olaylarını görüntülemeyle ilgili ayrıntılar için bkz. [Olay kimlikleriyle ilgili sorunları giderme](troubleshoot-microsoft-defender-antivirus.md). PUA olayları **1160** olay kimliği altında kaydedilir.
 
 ## <a name="view-pua-events-using-advanced-hunting"></a>Gelişmiş avcılığı kullanarak PUA olaylarını görüntüleme
 

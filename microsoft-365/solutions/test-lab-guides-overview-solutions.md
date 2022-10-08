@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 02/09/2021
 audience: ITPro
 ms.topic: overview
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Architecture
 description: Geliştirme/test ortamında Microsoft 365 çözümleri ve senaryoları oluşturmak için Test Laboratuvarı Kılavuzlarını kullanın.
-ms.openlocfilehash: 5d3caf0bc24652921c9d78de24fb3e4dba111bd0
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 6d3e5b04cb58753fe7e79dee185cd0f383551fd3
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730319"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986366"
 ---
 # <a name="test-lab-guides-for-solutions-and-scenarios"></a>Çözümler ve senaryolar için Test Laboratuvarı Kılavuzları
 

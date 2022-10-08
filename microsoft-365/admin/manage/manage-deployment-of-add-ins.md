@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -25,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Yönetim merkezindeki Merkezi Dağıtım'ı kullanarak kuruluşunuzdaki kullanıcılara ve gruplara eklenti dağıtmayı öğrenin.
-ms.openlocfilehash: f833f5d87981f012af9584fa8fe42b409da8ebf0
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: ffcbd345edc53b38938eb2f7713786f8843a44f9
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281673"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167791"
 ---
 # <a name="deploy-add-ins-in-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezi eklentileri dağıtma
 
@@ -119,18 +120,18 @@ Office Eklentileri, eklentiyle ilgili bazı meta verileri içeren bir XML bildir
 
 Office Eklentilerinin türleri ve özellikleri hakkında daha fazla bilgi için, özellikle de "Office Eklentisinin Anatomisi" bölümü olmak üzere [Office Eklentileri platformuna genel bakış](/office/dev/add-ins/overview/office-add-ins) bölümüne bakın.
   
-Eklentilerin kullanıcının belgeleriyle etkileşim kurabilmesi için, ihtiyaç duyduğu izinleri bildirim kısmında belirtmesi gerekir. Beş düzeyli JavaScript API erişim-izinler modeli, görev bölmesi eklentilerini kullananların gizliliğini ve güvenliğini sağlar. Office Mağazası eklentilerinin çoğu, ReadWriteDocument seviyesindedir ve neredeyse tüm eklentiler en az ReadDocument düzeyini destekler. İzin düzeyleri hakkında daha fazla bilgi için bkz. [İçerikte API kullanımı ve görev bölmesi eklentileri için izin isteme](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins).
+To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. The majority of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins).
   
-Bildirim güncelleştirmeleri sırasında genellikle eklentinin simgesinde ve metninde değişiklik yapılır. Bazen eklenti komutları da değişebilir. Ancak eklenti izinleri değiştirilmez. Eklentiye dair tüm kod ve mantığın bulunduğu web uygulaması, tüm web uygulamalarında olduğu gibi, her an değişebilir.
+When updating a manifest, the typical changes are to an add-in's icon and text. Occasionally, add-in commands change. However, the permissions of the add-in do not change. The web application where all the code and logic for the add-in runs can change at any time, which is the nature of web applications.
   
 Eklentilerin güncelleştirmeleri aşağıdaki gibi olur:
   
-- **İş kolu eklentisi:** Yönetici karşıya açık olarak bir bildirim yüklediğinde, eklentinin meta veri değişikliklerini destekleyebilmesi için yeni bir bildirim dosyasının da yönetici tarafından karşıya yüklenmesi gerekir. İlgili Office uygulamalarını tekrar başlattığınızda eklenti güncelleştirilir. Web uygulaması her an değişebilir.
+- **Line-of-business add-in:** In this case, where an admin explicitly uploaded a manifest, the add-in requires that the admin upload a new manifest file to support metadata changes. The next time the relevant Office applications start, the add-in will update. The web application can change at any time.
 
     > [!NOTE]
     > Yönetici güncelleştirme yapmak için LOB Eklentisini kaldırması gerekmez.   Eklentiler bölümünde Yönetici LOB Eklentisi'ne tıklayıp sağ alt köşedeki **Güncelleştir Düğmesi'ni** seçebilirsiniz. Güncelleştirme yalnızca yeni eklentinin sürümü mevcut eklentiden daha büyükse çalışır.
 
-- **Office Mağazası eklentisi:** Yönetici, Office Mağazası'ndan bir eklentiyi seçtiğinde Office Mağazası üzerinde bir eklenti güncelleştirmesi yapılıyorsa, seçilen eklenti daha sonra Merkezi Dağıtımda güncelleştirilir. İlgili Office uygulamalarını tekrar başlattığınızda eklenti güncelleştirilir. Web uygulaması her an değişebilir.
+- **Office Store add-in:** When an admin selected an add-in from the Office Store, if an add-in updates in the Office Store, the add-in will update later in Centralized Deployment. The next time the relevant Office applications start, the add-in will update. The web application can change at any time.
   
 ## <a name="related-content"></a>İlgili içerik
 

@@ -13,16 +13,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 62a00f3ebfd981d2263c5adc2028983c68499125
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 6a238f3c6c4161326e02681a5336699fee6da586
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736354"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68167219"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Cihaz bulma hakkında sık sorulan sorular
 
