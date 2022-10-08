@@ -11,15 +11,17 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: dda1cd5d25d75132cb6e04ad5dd7c365c4bb15ed
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: bb007a11f45742834f06d7b450272f7bdf16cbea
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739046"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233782"
 ---
 # <a name="how-to-protect-against-phishing-attacks"></a>Kimlik avı saldırılarına karşı koruma
 

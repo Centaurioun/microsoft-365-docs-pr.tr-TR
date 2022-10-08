@@ -13,16 +13,19 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 19804b1bf83dd2ef6f763e14a80f8784d07a942a
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: f0c7e1b9556407135fd2467c50c06b5e1513c152
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740839"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221686"
 ---
 # <a name="how-to-setup-automated-attacks-and-training-within-attack-simulation-training"></a>Saldırı simülasyon eğitiminde otomatik saldırılar ve eğitim nasıl kurulur?
 

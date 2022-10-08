@@ -11,17 +11,20 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.date: 09/26/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 106bdd9deafe172ce31085cfee0f30f8a61bac0c
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 549cf88fe713b54ad3a37eb32deddda39cbe9e9a
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520401"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233694"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Kamu görevlisi müşterilere yönelik Uç Nokta için Microsoft Defender
 
@@ -119,12 +122,13 @@ macOS|![Evet.](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Eve
 Android|![Evet.](images/svg/check-yes.svg) <br /> |![Evet](images/svg/check-yes.svg) <br /> |![Evet](images/svg/check-yes.svg) <br /> 
 iOS|![Evet.](images/svg/check-yes.svg) <br /> |![Evet](images/svg/check-yes.svg) <br /> |![Evet](images/svg/check-yes.svg) <br /> 
 
-> [!NOTE]
-> <sup>1</sup> Uç Nokta için Defender'ı doğru ortama yapılandırmak için cihaz eklemeden önce düzeltme ekinin dağıtılması gerekir.
->
-> <sup>2</sup> [Windows 2016 ve 2012 R2 için birleşik modern çözüm](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) hakkında bilgi edinin. Sunucularınızı daha önce MMA kullanarak yüklediyseniz, yeni çözüme geçiş yapmak için [Sunucu geçişi](server-migration.md) bölümünde sağlanan yönergeleri izleyin.
->
-> <sup>3</sup> [Microsoft Monitoring Agent'ı](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) kullanırken [kurulum sihirbazını](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard) kullanıyorsanız veya [komut satırı](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) veya [betik](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) kullanıyorsanız "Azure Bulutu" altında "Azure ABD Kamu" seçeneğini belirlemeniz gerekir. "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parametresini 1 olarak ayarlayın. <br /> Desteklenen en düşük MMA sürümü 10.20.18029 'dir (Mart 2020).
+**Dipnotlar**
+
+<sup>1</sup> Uç Nokta için Defender'ı doğru ortama yapılandırmak için cihaz eklemeden önce düzeltme ekinin dağıtılması gerekir.
+
+<sup>2</sup> [Windows 2016 ve 2012 R2 için birleşik modern çözüm](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) hakkında bilgi edinin. Sunucularınızı daha önce MMA kullanarak yüklediyseniz, yeni çözüme geçiş yapmak için [Sunucu geçişi](server-migration.md) bölümünde sağlanan yönergeleri izleyin.
+
+<sup>3</sup> [Microsoft Monitoring Agent'ı](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) kullanırken [kurulum sihirbazını](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard) kullanıyorsanız veya [komut satırı](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) veya [betik](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) kullanıyorsanız "Azure Bulutu" altında "Azure ABD Kamu" seçeneğini belirlemeniz gerekir. "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parametresini 1 olarak ayarlayın. <br /> Desteklenen en düşük MMA sürümü 10.20.18029 'dir (Mart 2020).
 
 ### <a name="os-versions-when-using-microsoft-defender-for-servers"></a>Sunucular için Microsoft Defender kullanırken işletim sistemi sürümleri
 
@@ -184,20 +188,18 @@ Bilinen boşluklar şunlardır:
 ****
 
 |Özellik adı|Gcc|GCC Yüksek|Dod|
-|---|:---:|:---:|:---:|
-|Raporlar: Cihaz durumu|![Hayır](images/svg/check-no.svg) Geliştirme aşamasında|![Hayır](images/svg/check-no.svg) Geliştirme aşamasında|![Hayır](images/svg/check-no.svg) Geliştirme aşamasında|
-|Raporlar: Web içeriği filtreleme|![Evet](images/svg/check-yes.svg)|![Hayır](images/svg/check-no.svg) Geliştirme aşamasında|![Hayır](images/svg/check-no.svg) Geliştirme aşamasında|
+|----|:---:|:---:|:---:|
+|Raporlar: Web içeriği filtreleme|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|
+|Raporlar: Cihaz durumu|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|
 |Microsoft Güvenlik Puanı|![Evet](images/svg/check-yes.svg) <sup>1</sup>|![Hayır](images/svg/check-no.svg)|![Hayır](images/svg/check-no.svg)|  
 |Microsoft Tehdit Uzmanları|![Hayır](images/svg/check-no.svg)|![Hayır](images/svg/check-no.svg)|![Hayır](images/svg/check-no.svg)|  
-> [!NOTE]
-> <sup>1</sup> GCC müşterileri için Microsoft Güvenli Puanı kullanılabilir olsa da, kullanılamayabilecek bazı güvenlik önerileri vardır.
+
+**Dipnot**
+
+<sup>1</sup> GCC müşterileri için Microsoft Güvenli Puanı kullanılabilir olsa da, kullanılamayabilecek bazı güvenlik önerileri vardır.
 
 
 [Mobile Threat Defense (Android & iOS'ta Uç Nokta için Microsoft Defender)](mtd.md) için özellikler ve bilinen boşluklar şunlardır:
-
-<br />
-
-****
 
 |Özellik adı|Gcc|GCC Yüksek|Dod|
 |---|:---:|:---:|:---:|

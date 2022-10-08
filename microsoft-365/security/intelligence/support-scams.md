@@ -11,15 +11,17 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 9af3446010f213beba72a894af8b7c6cad862ec0
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 34f06ca8b76d2dc701ced3d20976d19e6d90e929
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737246"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233364"
 ---
 # <a name="tech-support-scams"></a>Teknik destek dolandırıcılığı
 
@@ -57,7 +59,7 @@ Aşağıdakileri göz önünde bulundurmak da önemlidir:
 
 * Dolandırıcıların yüklenmesini istediği uygulamaları kaldırın. Erişim verildiyse cihazı sıfırlamayı göz önünde bulundurun
 
-* Tüm kötü amaçlı yazılımları kaldırmak için Microsoft Defender Virüsten Koruma ile tam tarama çalıştırın. Tüm güvenlik güncelleştirmelerini kullanılabilir oldukları anda uygulayın.
+* Kötü amaçlı yazılımları kaldırmak için Microsoft Defender Virüsten Koruma ile tam tarama çalıştırın. Tüm güvenlik güncelleştirmelerini kullanılabilir oldukları anda uygulayın.
 
 * Parolaları değiştirin.
 

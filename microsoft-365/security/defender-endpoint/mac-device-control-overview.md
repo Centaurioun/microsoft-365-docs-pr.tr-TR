@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ffd814f3cbb90a072ce8dbe21aa3f3793cfa9c01
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 947fd5b5a490bcd8041c05632ad11ae98fb47ec8
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687119"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68226679"
 ---
 # <a name="device-control-for-macos"></a>macOS için cihaz denetimi
 

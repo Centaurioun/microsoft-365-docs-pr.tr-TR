@@ -13,15 +13,17 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 search.appverid: met150
-ms.openlocfilehash: d4a14519e296cedafe4179eaeb79320ec862fda4
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e2ffc8a81fcd52ac254e022c80455bc3b3d91d53
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702346"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68226305"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender’da güvenlik duvarı raporlama oturumu düzenleyin
 

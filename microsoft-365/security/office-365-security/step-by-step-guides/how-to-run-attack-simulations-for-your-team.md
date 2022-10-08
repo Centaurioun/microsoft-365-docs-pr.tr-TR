@@ -13,16 +13,19 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 1b483c75137d3731afbc507e67960201da2ce328
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: a76e73e5b602fef3dbd6820483a47c2ef32c9833
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737994"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233848"
 ---
 # <a name="how-to-run-attack-simulations-for-your-team"></a>Ekibiniz için saldırı simülasyonları nasıl çalıştırılır?
 

@@ -13,15 +13,17 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: d116c933414f52e9158ad20f07d98406a1032737
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: d7cf54a1808ae323ea96d2dcae6d8ade2063edc1
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740873"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233958"
 ---
 # <a name="software-developer-resources"></a>Yazılım geliştirici kaynakları
 
@@ -46,4 +48,4 @@ Microsoft, kötü amaçlı yazılımları ve tanımlanamayan yazılımları nesn
 
 ### <a name="scan-your-software"></a>Yazılımınızı tarama
 
-Yazılımınızı Microsoft'un en son Güvenlik bilgilerine ve bulut korumasına karşı denetlemek için Microsoft [Defender Virüsten Koruma'nı](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) kullanın.
+Yazılımınızı Microsoft'un en son Güvenlik bilgilerine ve bulut korumasına karşı denetlemek için [Microsoft Defender Virüsten Koruma'yi](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) kullanın.

@@ -13,17 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-ms.custom: admindeeplinkDEFENDER
+- m365-security
+- tier2
 ms.topic: article
 ms.reviewer: chventou
 search.appverid: met150
-ms.openlocfilehash: 0a859003a0f66f3a7259ab4e9cacf7692ce07670
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 9d70c8f58bd49335ec6c2071a13efad62070d8d8
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67796774"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233650"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>PowerShell, WMI ve MPCmdRun.exe ile Uç Nokta için Microsoft Defender yönetme
 
@@ -40,23 +40,23 @@ ms.locfileid: "67796774"
 > - [Configuration Manager ve Intune ile Windows 10 ve Windows 11 cihazlarda Uç Nokta için Microsoft Defender birlikte yönetme](manage-mde-post-migration-intune.md)
 > - [Intune ile Uç Nokta için Microsoft Defender yönetme](manage-mde-post-migration-intune.md)
 
-[PowerShell](#configure-microsoft-defender-for-endpoint-with-powershell), [Windows Yönetim Araçları](#configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi) (WMI) ve [Microsoft Kötü Amaçlı Yazılımdan Koruma Komut Satırı Yardımcı Programı](#configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe) (MPCmdRun.exe) bulunan cihazlarda bazı Microsoft Defender Virüsten Koruma ayarlarını yönetebilirsiniz. Örneğin, bazı Microsoft Defender Virüsten Koruma ayarlarını yönetebilirsiniz. Bazı durumlarda saldırı yüzeyi azaltma kurallarınızı ve yararlanma koruma ayarlarınızı özelleştirebilirsiniz.
+[PowerShell](#configure-microsoft-defender-for-endpoint-with-powershell), [Windows Yönetim Araçları](#configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi) (WMI) ve [Microsoft Kötü Amaçlı Yazılımdan Koruma Komut Satırı Yardımcı Programı](#configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe) (MPCmdRun.exe) ile cihazlarda bazı Microsoft Defender Virüsten Koruma ayarlarını yönetebilirsiniz. Örneğin, bazı Microsoft Defender Virüsten Koruma ayarlarını yönetebilirsiniz. Bazı durumlarda saldırı yüzeyi azaltma kurallarınızı ve yararlanma koruma ayarlarınızı özelleştirebilirsiniz.
 
 > [!IMPORTANT]
 > PowerShell, WMI veya MCPmdRun.exe kullanarak yapılandırdığınız tehdit koruma özelliklerinin üzerine Intune veya Configuration Manager ile dağıtılan yapılandırma ayarları yazılabilir.
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-powershell"></a>PowerShell ile Uç Nokta için Microsoft Defender yapılandırma
 
-PowerShell'i kullanarak Microsoft Defender Virüsten Koruma' yı, yararlanma korumasını ve saldırı yüzeyi azaltma kurallarınızı yönetebilirsiniz.
+Microsoft Defender Virüsten Koruma, yararlanma koruması ve saldırı yüzeyi azaltma kurallarınızı yönetmek için PowerShell'i kullanabilirsiniz.
 
 |Görev|Daha fazla bilgi edinmek için kaynaklar|
 |---|---|
-|**Microsoft Defender Virüsten Koruma'ya yönetme** <br/><br/> Kötü amaçlı yazılımdan koruma durumunu görüntüleyin, virüsten koruma taramaları & güncelleştirmeler için tercihleri yapılandırın ve virüsten korumanızda başka değişiklikler yapın.*|[Microsoft Defender Virüsten Koruma'nın yapılandırılması ve yönetilmesi için PowerShell cmdlet'lerini kullanma](/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus) <br/><br/> [Bulut tabanlı korumayı etkinleştirmek için PowerShell cmdlet'lerini kullanma](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-powershell-cmdlets-to-enable-cloud-delivered-protection)|
+|**Microsoft Defender Virüsten Koruma'Microsoft Defender yönetme** <br/><br/> Kötü amaçlı yazılımdan koruma durumunu görüntüleyin, virüsten koruma taramaları & güncelleştirmeler için tercihleri yapılandırın ve virüsten korumanızda başka değişiklikler yapın.*|[Microsoft Defender Virüsten Koruma'Microsoft Defender yapılandırmak ve yönetmek için PowerShell cmdlet'lerini kullanma](/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus) <br/><br/> [Bulut tabanlı korumayı etkinleştirmek için PowerShell cmdlet'lerini kullanma](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-powershell-cmdlets-to-enable-cloud-delivered-protection)|
 |Kuruluşunuzun cihazlarında tehditleri azaltmak için **açıklardan yararlanma korumasını yapılandırma** <br/><br/> *İlk olarak [denetim modunda](/microsoft-365/security/defender-endpoint/evaluate-exploit-protection#powershell) açık koruması kullanmanızı öneririz. Bu şekilde, yararlanma korumasının kuruluşunuzun kullandığı uygulamaları nasıl etkilediğini görebilirsiniz.*|[Exploit Protection'i özelleştirin](/microsoft-365/security/defender-endpoint/customize-exploit-protection) <br/><br/> [Yararlanma koruması için PowerShell cmdlet'leri](/microsoft-365/security/defender-endpoint/customize-exploit-protection#powershell-reference)|
 |PowerShell ile **saldırı yüzeyi azaltma kurallarını yapılandırma** <br/><br/> *Dosyaları ve klasörleri saldırı yüzeyi azaltma kurallarının dışında tutmak için PowerShell'i kullanabilirsiniz.*|[Saldırı yüzeyi azaltma kurallarını özelleştirme: Dosyaları & klasörleri hariç tutmak için PowerShell kullanma](/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction) <br/><br/> Ayrıca [PowerShell ile saldırı yüzeyi azaltma kurallarını ayarlamak için antónio Vasconcelo'nun grafik kullanıcı arabirimi aracına](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI) bakın.|
 |PowerShell ile **Ağ Korumasını Etkinleştirme** <br/><br/> *Ağ Koruması'nı etkinleştirmek için PowerShell'i kullanabilirsiniz.*|[PowerShell ile Ağ Koruması'nı açma](/microsoft-365/security/defender-endpoint/enable-network-protection#powershell)|
 |Fidye yazılımlarına karşı korunmak için **denetimli klasör erişimini yapılandırma** <br/><br/> *[Denetimli klasör erişimi](/microsoft-365/security/defender-endpoint/controlled-folders) , antiransomware koruması olarak da adlandırılır.*|[PowerShell ile denetimli klasör erişimini etkinleştirme](/microsoft-365/security/defender-endpoint/enable-controlled-folders#powershell)|
-|**Microsoft Defender Güvenlik Duvarı'nı** kuruluşunuzun cihazlarına gelen veya giden yetkisiz ağ trafiğini engelleyecek şekilde yapılandırma|[Windows PowerShell kullanan Gelişmiş Güvenlik Yönetimi ile Microsoft Defender Güvenlik Duvarı](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell)|
+|Microsoft Defender **Güvenlik Duvarı'nı**, kuruluşunuzun cihazlarına veya cihazlarına gelen yetkisiz ağ trafiğini engelleyecek şekilde yapılandırma|[Windows PowerShell kullanarak Gelişmiş Güvenlik Yönetimi ile Güvenlik Duvarı'nı Microsoft Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell)|
 |Kuruluşunuzun Windows çalıştıran cihazlarındaki bilgileri korumak için **şifrelemeyi ve BitLocker'ı yapılandırma**|[BitLocker PowerShell başvuru kılavuzu](/powershell/module/bitlocker/)|
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi"></a>Windows Yönetim Araçları (WMI) ile Uç Nokta için Microsoft Defender yapılandırma
@@ -66,13 +66,13 @@ WMI, ayarları almanıza, değiştirmenize ve güncelleştirmenize olanak tanıy
 |Görev|Daha fazla bilgi edinmek için kaynaklar|
 |---|---|
 |Bir cihazda **bulut tabanlı korumayı etkinleştirme**|[Bulut tabanlı korumayı etkinleştirmek için Windows Yönetim Yönergesi'ni (WMI) kullanma](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-windows-management-instruction-wmi-to-enable-cloud-delivered-protection)|
-|Microsoft Defender Virüsten Koruma **için ayarları alma, değiştirme ve güncelleştirme**|[Microsoft Defender Virüsten Koruma'nın yapılandırılması ve yönetilmesi için WMI kullanma] (/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus <br/><br/> [Kullanılabilir WMI sınıflarının ve örnek betiklerin listesini gözden geçirin](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) <br/><br/> Ayrıca [WMIv2 Sağlayıcısı başvuru bilgilerine Windows Defender arşivlenenlere](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal?redirectedfrom=MSDN) bakın|
+|Microsoft Defender Virüsten Koruma **ayarlarını alma, değiştirme ve güncelleştirme**|[Microsoft Defender Virüsten Koruma'Microsoft Defender yapılandırmak ve yönetmek için WMI kullanın](/windows/security/threat-protection/microsoft-defender-antivirus/use-wmi-microsoft-defender-antivirus <br/><br/> [Kullanılabilir WMI sınıflarının ve örnek betiklerin listesini gözden geçirin](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) <br/><br/> Ayrıca [WMIv2 Sağlayıcısı başvuru bilgilerine Windows Defender arşivlenenlere](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal?redirectedfrom=MSDN) bakın|
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe"></a>Microsoft Kötü Amaçlı Yazılımdan Koruma Command-Line Yardımcı Programı (MPCmdRun.exe) ile Uç Nokta için Microsoft Defender yapılandırma
 
 Tek bir cihazda tarama çalıştırabilir, tanılama izlemeyi başlatabilir, güvenlik bilgileri güncelleştirmelerini denetleyebilir ve mpcmdrun.exe komut satırı aracını kullanarak daha fazlasını yapabilirsiniz. yardımcı programını içinde `%ProgramFiles%\Windows Defender\MpCmdRun.exe`bulabilirsiniz. Komut isteminden çalıştırın.
 
-Daha fazla bilgi için bkz. [mpcmdrun.exeile Microsoft Defender Virüsten Koruma'yı yapılandırma ve yönetme ](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus).
+Daha fazla bilgi için bkz[. mpcmdrun.exeile Microsoft Defender Virüsten Koruma'yı yapılandırma ve yönetme](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus).
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalınızı yapılandırma
 

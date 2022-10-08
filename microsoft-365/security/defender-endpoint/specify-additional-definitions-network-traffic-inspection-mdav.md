@@ -16,14 +16,16 @@ manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 6d997c609666ef306bc5595583d608f1190604b7
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 53bf1b15e2d9b76e755c3c8484c0b1f1b7ad5043
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689569"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221752"
 ---
 # <a name="specify-additional-definition-sets-for-network-traffic-inspection"></a>Ağ trafiği denetimi için ek tanım kümeleri belirtin
 
@@ -39,7 +41,7 @@ grup ilkesi kullanarak ağ trafiği denetimi için ek tanım kümeleri belirtebi
 
 1. grup ilkesi yönetim uç noktanızda [grup ilkesi Yönetim Konsolu'nu](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) açın.
 
-2. **Windows Bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Ağ İnceleme Sistemi'ne** gidin.
+2. **Virüsten Koruma** \> **Ağ İnceleme Sistemi** Microsoft Defender **Windows Bileşenleri'ne** \> gidin.
 
 3. **Ağ trafiği denetimi için ek tanım kümeleri belirtin'i** seçin. Varsayılan olarak, bu ilke **Yapılandırılmadı** olarak ayarlanır.
 
@@ -58,6 +60,6 @@ grup ilkesi kullanarak ağ trafiği denetimi için ek tanım kümeleri belirtebi
 
 ## <a name="related-articles"></a>İlgili makaleler
 
-- [Windows 10'da Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10'de virüsten koruma Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)
 - [Bulut tabanlı korumayı etkinleştirme](enable-cloud-protection-microsoft-defender-antivirus.md)
 - [Kötü amaçlı yazılımdan koruma ilkeleri oluşturma ve dağıtma: Bulut koruma hizmeti](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)

@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: troubleshooting
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: eabaf627d882544d377e0cea61d83c5858fe3ac7
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 94e4fc6130e35097c7cae1f01ef00b5b706977d7
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67690820"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233804"
 ---
 # <a name="troubleshoot-service-issues"></a>Hizmet sorunlarını giderin
 
@@ -57,7 +59,7 @@ Uç Nokta için Microsoft Defender hizmeti tarafından bildirilen olay kimlikler
 
 Ekleme cihazları başarıyla tamamlanırsa ancak Uç Nokta için Microsoft Defender yeniden başlatmadan sonra başlamıyorsa ve hata 577 gösteriyorsa, Windows Defender bir ilke tarafından devre dışı bırakılmadığını denetleyin.
 
-Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma'nın ilke tarafından devre dışı bırakılmadığından emin olun](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+Daha fazla bilgi için bkz[. Microsoft Defender Virüsten Koruma'nın ilke tarafından devre dışı bırakılmadığından emin olun](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## <a name="known-issues-with-regional-formats"></a>Bölgesel biçimlerle ilgili bilinen sorunlar
 
@@ -85,7 +87,7 @@ Sayılarda ayırıcı olarak virgül kullanımı desteği desteklenmez. Bir say�
 
 ## <a name="microsoft-defender-for-endpoint-tenant-was-automatically-created-in-europe"></a>Uç Nokta için Microsoft Defender kiracı Avrupa'da otomatik olarak oluşturuldu
 
-Sunucuları izlemek için Bulut için Microsoft Defender'ı kullandığınızda, otomatik olarak bir Uç Nokta için Microsoft Defender kiracısı oluşturulur. Uç Nokta için Microsoft Defender verileri varsayılan olarak Avrupa'da depolanır.
+Sunucuları izlemek için Bulut için Microsoft Defender kullandığınızda otomatik olarak bir Uç Nokta için Microsoft Defender kiracısı oluşturulur. Uç Nokta için Microsoft Defender verileri varsayılan olarak Avrupa'da depolanır.
 
 ## <a name="related-topics"></a>İlgili konular
 

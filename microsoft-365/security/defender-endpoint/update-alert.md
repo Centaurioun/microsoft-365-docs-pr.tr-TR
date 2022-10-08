@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: d397d17214f4a8ee4c58ef66ed7b8c0c37c287eb
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 99f17d9aacb67214703a4af2647385fa1778e88a
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686669"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221774"
 ---
 # <a name="update-alert"></a>Uyarıyı güncelleştirme
 
@@ -64,6 +66,8 @@ Temsilci (iş veya okul hesabı)|Alert.ReadWrite|'Uyarıları okuma ve yazma'
 >
 > - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Uyarı araştırması' (Daha fazla bilgi için bkz. [Rol oluşturma ve yönetme](user-roles.md) )
 > - Kullanıcının, cihaz grubu ayarlarına göre uyarıyla ilişkilendirilmiş cihaza erişimi olmalıdır (Daha fazla bilgi için bkz. [Cihaz grupları oluşturma ve yönetme](machine-groups.md)
+>
+> Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -86,16 +90,16 @@ Yetkilendirme|Dize|Taşıyıcı {token}. **Gerekli**.
 
 En iyi performans için değişmemiş mevcut değerleri eklememelisiniz.
 
-Özellik|Tür|Açıklama
+Özellik|Tür|Açıklama|
 :---|:---|:---
-Durum|Dize|Uyarının geçerli durumunu belirtir. Özellik değerleri şunlardır: 'New', 'InProgress' ve 'Resolved'.
-Atanan|Dize|Uyarının sahibi
-Sınıflandırma|Dize|Uyarının belirtimini belirtir. Özellik değerleri şunlardır: 'Unknown', 'FalsePositive', 'TruePositive'.
-Belirlenmesi|Dize|Uyarının belirlenmesini belirtir. Özellik değerleri şunlardır: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'İstenmeyenSoftware', 'Diğer'
-Açıklama ekleme|Dize|Uyarıya eklenecek açıklama.
+Durum|Dize|Uyarının geçerli durumunu belirtir. Özellik değerleri şunlardır: 'New', 'InProgress' ve 'Resolved'.|
+Atanan|Dize|Uyarının sahibi|
+Sınıflandırma|Dize|Uyarının belirtimini belirtir. Özellik değerleri şunlardır: `TruePositive`, `Informational, expected activity`ve `FalsePositive`.|
+Belirlenmesi|Dize|Uyarının belirlenmesini belirtir. <p>Her sınıflandırma için olası belirleme değerleri şunlardır: <br><li> <b>Doğru pozitif</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) – genel api'de sabit listesi adını uygun şekilde değiştirmeyi göz önünde bulundurun, `Malware` (Kötü Amaçlı Yazılım), `Phishing` (Kimlik Avı), `Unwanted software` (İstenmeyenSoftware) ve `Other` (Diğer). <li> <b>Bilgilendirici, beklenen etkinlik:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity) - genel API'deki sabit listesi adını buna göre ve `Other` (Diğer) değiştirmeyi göz önünde bulundurun. <li>  <b>Hatalı pozitif:</b> `Not malicious` (Temiz) - genel API'deki sabit listesi adını uygun şekilde değiştirmeyi göz önünde bulundurun, `Not enough data to validate` (InsufficientData) ve `Other` (Diğer).|
+Açıklama ekleme|Dize|Uyarıya eklenecek açıklama.|
 
 >[!NOTE]
->29 Ağustos 2022'de daha önce desteklenen uyarı belirleme değerleri ('Apt' ve 'SecurityPersonnel') kullanım dışı bırakılacak ve artık API aracılığıyla kullanılamayacak.
+>29 Ağustos 2022'de daha önce desteklenen uyarı belirleme değerleri ('Apt' ve 'SecurityPersonnel') kullanım dışı bırakılacak ve artık API aracılığıyla kullanılamayacaktır.
 
 ## <a name="response"></a>Yanıt
 

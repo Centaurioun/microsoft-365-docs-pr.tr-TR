@@ -17,14 +17,16 @@ ms.custom:
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 6d059ffd745d0013e6e9e61ca22f12250a309bd8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ea28a3f60be9fa27032e9f3273a3f6ad29fe56b1
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704314"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68226130"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>Birlikte daha iyi: Microsoft Defender Virüsten Koruma ve Office 365
 
@@ -42,7 +44,7 @@ ms.locfileid: "67704314"
 
 Bunu zaten biliyor olabilirsiniz:
 
-- **Microsoft Defender Virüsten Koruma, Windows cihazınızı virüs, kötü amaçlı yazılım ve casus yazılım gibi yazılım tehditlerine karşı korur**. Microsoft Defender Virüsten Koruma, Windows 10 ve Windows 11 yerleşik ve kullanıma hazır eksiksiz ve sürekli korumanızdır. [Microsoft Defender Virüsten Koruma, yeni nesil korumanızdır](./microsoft-defender-antivirus-in-windows-10.md). 
+- **Microsoft Defender Virüsten Koruma, Windows cihazınızı virüs, kötü amaçlı yazılım ve casus yazılım gibi yazılım tehditlerinden korur**. Microsoft Defender Virüsten Koruma, Windows 10 ve Windows 11 yerleşik ve kullanıma hazır eksiksiz ve sürekli korumanızdır. [Microsoft Defender Virüsten Koruma, yeni nesil korumanızdır](./microsoft-defender-antivirus-in-windows-10.md). 
 
 - **Office 365 antiphishing, antispam ve kötü amaçlı yazılımdan koruma içerir**. Office 365 aboneliğinizle tüm cihazlarınızda premium e-posta ve takvimler, Office uygulamaları, 1 TB bulut depolama alanı (OneDrive aracılığıyla) ve gelişmiş güvenlik elde edersiniz. Bu, ev ve iş kullanıcıları için geçerlidir. İş kullanıcısıysanız ve kuruluşunuz Office 365 E5 kullanıyorsa, Office 365 [tehditlere karşı koruma](/microsoft-365/security/office-365-security/protect-against-threats) Office 365 için Microsoft Defender aracılığıyla daha da fazla koruma elde edersiniz.
 
@@ -58,11 +60,11 @@ Daha fazla bilgi edinmek için aşağıdaki bölümleri okuyun.
 
 ## <a name="ransomware-protection-and-recovery"></a>Fidye yazılımı koruması ve kurtarma
 
-Dosyalarınızı [OneDrive'a](/onedrive) kaydettiğinizde ve [Microsoft Defender Virüsten Koruma](./microsoft-defender-antivirus-in-windows-10.md) cihazınızda bir fidye yazılımı tehdidi algıladığında aşağıdaki işlemler gerçekleşir:
+Dosyalarınızı [OneDrive'a](/onedrive) kaydettiğinizde ve [Virüsten Koruma Microsoft Defender](./microsoft-defender-antivirus-in-windows-10.md) cihazınızda bir fidye yazılımı tehdidi algıladığında aşağıdaki işlemler gerçekleşir:
 
 1. **Tehdit size anlatılıyor**. (Kuruluşunuz [Uç Nokta için Microsoft Defender](microsoft-defender-endpoint.md) kullanıyorsa güvenlik operasyonları ekibinize de bildirim gönderilir.)
 
-2. **Microsoft Defender Virüsten Koruma, fidye yazılımını cihazınızdan (ve kuruluşunuzun güvenlik ekibinden) kaldırmanıza yardımcı olur** . (Kuruluşunuz Uç Nokta için Microsoft Defender kullanıyorsa, güvenlik operasyonları ekibiniz diğer cihazlara virüs bulaşıp bulaşmadığını belirleyebilir ve uygun eylemi de gerçekleştirebilir.)
+2. **Microsoft Defender Virüsten Koruma, fidye yazılımını cihazınızdan (ve kuruluşunuzun güvenlik ekibinden) kaldırmanıza yardımcı olur**. (Kuruluşunuz Uç Nokta için Microsoft Defender kullanıyorsa, güvenlik operasyonları ekibiniz diğer cihazlara virüs bulaşıp bulaşmadığını belirleyebilir ve uygun eylemi de gerçekleştirebilir.)
 
 3. **OneDrive'da dosyalarınızı kurtarma seçeneğine sahip olursunuz**. OneDrive Dosyaları Geri Yükleme özelliğiyle, OneDrive'daki dosyalarınızı fidye yazılımı saldırısı gerçekleşmeden önceki durumuna kurtarabilirsiniz. Bkz [. Fidye yazılımı algılama ve dosyalarınızı kurtarma](https://support.office.com/article/0d90ec50-6bfd-40f4-acc7-b8c12c73637f).
 

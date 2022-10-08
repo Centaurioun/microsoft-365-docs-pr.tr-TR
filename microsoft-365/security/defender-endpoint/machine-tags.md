@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1e1317826b208411536dcf79d71a29b3ae514aea
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: ffbadd821aa533b870c9e2c7b612a0ea930c5474
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67796881"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68226261"
 ---
 # <a name="create-and-manage-device-tags"></a>Cihaz etiketlerini oluşturun ve yönetin
 
@@ -33,6 +35,9 @@ ms.locfileid: "67796881"
 > Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Mantıksal bir grup ilişkisi oluşturmak için cihazlara etiketler ekleyin. Cihaz etiketleri, ağın uygun şekilde eşlenmesini destekleyerek bağlamı yakalamak için farklı etiketler eklemenize ve bir olayın parçası olarak dinamik liste oluşturmayı etkinleştirmenizi sağlar. Etiketler **, Cihaz envanteri** görünümünde filtre olarak veya cihazları gruplandırmak için kullanılabilir. Cihaz gruplandırma hakkında daha fazla bilgi için bkz. [Cihaz gruplarını oluşturma ve yönetme](machine-groups.md).
+
+> [!NOTE]
+> Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.  
 
 Cihazlara etiket eklemek için aşağıdaki yöntemleri kullanabilirsiniz:
 

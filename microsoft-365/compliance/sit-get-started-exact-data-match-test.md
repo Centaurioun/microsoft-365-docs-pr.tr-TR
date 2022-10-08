@@ -11,20 +11,23 @@ ms.service: O365-seccomp
 ms.date: ''
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
-description: hizmetleri yapılandırma
+description: Uyumluluk merkezindeki hassas bilgi türleri bölümündeki test işlevini kullanarak bir EDM'yi test edin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0c8e43e9d732535bc15b7c231cc7ac91dabe3898
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: d3d94eeb9fadf4fa28c6a149606bcfb445250976
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67359853"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68381498"
 ---
 # <a name="test-an-exact-data-match-sensitive-information-type"></a>Tam veri eşleşmesi hassas bilgi türünü test etme
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="applies-to"></a>Uygulandığı öğe
 

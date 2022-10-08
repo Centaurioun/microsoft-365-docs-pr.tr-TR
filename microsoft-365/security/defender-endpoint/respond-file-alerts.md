@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4ade60286c1869f70716528e13f12b2632fd1870
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 686e1d90bab02909b0275aa6cfd8eca9108f627b
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699992"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221818"
 ---
 # <a name="take-response-actions-on-a-file"></a>Dosyada yanıt eylemleri gerçekleştirin
 
@@ -70,7 +72,7 @@ Kötü amaçlı işlemi durdurarak ve dosyanın gözlemlendiği yerde durarak ku
 >
 > - Üzerinde işlem yaptığınız cihaz Windows 10, sürüm 1703 veya üzerini çalıştırıyor ve Windows 11
 > - Dosya güvenilen üçüncü taraf yayımcılara ait değil veya Microsoft tarafından imzalanmaz
-> - Microsoft Defender Virüsten Koruma en azından Pasif modda çalışıyor olmalıdır. Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma uyumluluğu](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+> - Microsoft Defender Virüsten Koruma en azından Pasif modda çalışıyor olmalıdır. Daha fazla bilgi için bkz[. virüsten koruma uyumluluğu Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 **Dosyayı Durdur ve Karantinaya Al** eylemi, çalışan işlemleri durdurmayı, dosyaları quarantining'i ve kayıt defteri anahtarları gibi kalıcı verileri silmeyi içerir.
 
@@ -152,7 +154,7 @@ Varsayılan olarak, karantinadaki dosyaları indirebilmeniz gerekir.
 
 ### <a name="download-quarantined-files"></a>Karantinaya alınan dosyaları indirme
 
-Microsoft Defender Virüsten Koruma veya güvenlik ekibiniz tarafından karantinaya alınan dosyalar [, örnek gönderim yapılandırmalarınıza](enable-cloud-protection-microsoft-defender-antivirus.md) göre uyumlu bir şekilde kaydedilir. Güvenlik ekibiniz dosyaları doğrudan dosyanın ayrıntı sayfasından "Dosyayı indir" düğmesi aracılığıyla indirebilir. **Bu özellik varsayılan olarak 'Açık'tır**.
+Microsoft Defender Virüsten Koruma veya güvenlik ekibiniz tarafından karantinaya alınan dosyalar[, örnek gönderim yapılandırmalarınıza](enable-cloud-protection-microsoft-defender-antivirus.md) göre uyumlu bir şekilde kaydedilir. Güvenlik ekibiniz dosyaları doğrudan dosyanın ayrıntı sayfasından "Dosyayı indir" düğmesi aracılığıyla indirebilir. **Bu özellik varsayılan olarak 'Açık'tır**.
 
 Konum, kuruluşunuzun coğrafi ayarlarına (AB, Birleşik Krallık veya ABD) bağlıdır. Karantinaya alınan bir dosya kuruluş başına yalnızca bir kez toplanır. Hizmet Güveni Portalı'ndan https://aka.ms/STPMicrosoft'un veri koruması hakkında daha fazla bilgi edinin.
 
@@ -185,7 +187,7 @@ Kötü amaçlı olabilecek dosyaları veya şüpheli kötü amaçlı yazılımla
 
 > [!IMPORTANT]
 >
-> - Kuruluşunuz Microsoft Defender Virüsten Koruma kullanıyorsa ve Bulut tabanlı koruma etkinleştirildiyse bu özellik kullanılabilir. Daha fazla bilgi için bkz. [Bulut tabanlı korumayı yönetme](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+> - Kuruluşunuz virüsten koruma Microsoft Defender kullanıyorsa ve Bulut tabanlı koruma etkinleştirildiyse bu özellik kullanılabilir. Daha fazla bilgi için bkz. [Bulut tabanlı korumayı yönetme](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 >
 > - Kötü amaçlı yazılımdan koruma istemcisi sürümü 4.18.1901.x veya üzeri olmalıdır.
 > - Bu özellik, şüpheli kötü amaçlı yazılımların (veya kötü amaçlı olabilecek dosyaların) web'den indirilmesini önlemek için tasarlanmıştır. Şu anda _.exeve.dll_ dosyaları da dahil olmak üzere taşınabilir yürütülebilir (PE) __ dosyaları destekler. Kapsam zaman içinde uzatılır.

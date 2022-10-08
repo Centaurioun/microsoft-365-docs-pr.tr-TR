@@ -12,16 +12,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: c964b8def27e13c93a4742cccdce03e02ae777b0
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 9be832edc5a5bce12a63e78ea9daeb75932b5807
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797182"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221884"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>Uç nokta algılama ve yanıta genel bakış
 

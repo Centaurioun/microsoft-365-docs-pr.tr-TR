@@ -14,22 +14,25 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Laboratuvar testi terimleri hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 8f264c2aca1670a14fac742c8cd19d9b6d57cc97
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 430be8261928c5968866f2f03a855cd0a2cfaca5
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66952658"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68381932"
 ---
-# <a name="lab-test-terms"></a>Laboratuvar test terimleri
+# <a name="lab-test-terms"></a>Laboratuvar testi koşulları
 
 Bu unbundled adlandırılmış varlık *, İnsülin C-peptid* gibi laboratuvar testleriyle ilgili terimleri algılar. Yalnızca İngilizce terimleri destekler. Ayrıca entity SIT adlı [tüm tıbbi hüküm ve koşullar](sit-defn-all-medical-terms-conditions.md) paketinde yer alır.
 
-## <a name="confidence-level"></a>Güvenilirlik düzeyi
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## <a name="confidence-level"></a>Olasılık düzeyi
 
 Yüksek

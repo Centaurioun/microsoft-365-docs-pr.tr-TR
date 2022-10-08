@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Malta ehliyet numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: af50ea8bd508053b922cd55d26f299aa080e2bc3
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: dc6ebef773d306ba69f880d309bb64b086e45575
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949001"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68382259"
 ---
-# <a name="malta-drivers-license-number"></a>Malta sürücü lisans numarası
+# <a name="malta-drivers-license-number"></a>Malta ehliyet numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -42,13 +45,13 @@ iki karakter ve altı basamak birleşimi:
 - boşluk (isteğe bağlı)
 - üç basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Normal ifade `Regex_malta_eu_driver's_license_number` , desenle eşleşen içeriği bulur.
 - veya `Keywords_malta_eu_driver's_license_number` anahtar `Keywords_eu_driver's_license_number` sözcüğü bulunur.

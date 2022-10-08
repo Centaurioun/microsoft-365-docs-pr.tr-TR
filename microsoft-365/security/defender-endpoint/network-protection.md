@@ -17,15 +17,15 @@ ms.custom: asr
 ms.subservice: mde
 ms.topic: overview
 ms.collection:
-- m365initiative-m365-defender
-- M365-security-compliance
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 3114dbd6d94d425c8117f24631dc65f8762fedf7
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 94a1e3646a8b10f6569d03d23becb0b683913a79
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687880"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68226239"
 ---
 # <a name="protect-your-network"></a>Ağınızı koruyun
 
@@ -45,7 +45,7 @@ Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz den
 
 ## <a name="overview-of-network-protection"></a>Ağ korumasına genel bakış
 
-Ağ koruması, cihazların İnternet tabanlı olaylardan korunmasına yardımcı olur. Ağ koruması bir saldırı yüzeyi azaltma özelliğidir. Çalışanların uygulamalar aracılığıyla tehlikeli etki alanlarına erişmesini önlemeye yardımcı olur. İnternette kimlik avı dolandırıcılığı, açıklardan yararlanma ve diğer kötü amaçlı içerikleri barındıran etki alanları tehlikeli olarak kabul edilir. Ağ koruması, düşük saygınlıklı kaynaklara (etki alanı veya konak adına göre) bağlanmaya çalışan tüm giden HTTP trafiğini engellemek için [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) kapsamını genişletir.
+Ağ koruması, cihazların İnternet tabanlı olaylardan korunmasına yardımcı olur. Ağ koruması bir saldırı yüzeyi azaltma özelliğidir. Çalışanların uygulamalar aracılığıyla tehlikeli etki alanlarına erişmesini önlemeye yardımcı olur. İnternette kimlik avı dolandırıcılığı, açıklardan yararlanma ve diğer kötü amaçlı içerikleri barındıran etki alanları tehlikeli olarak kabul edilir. Ağ koruması[, Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) kapsamını genişleterek düşük saygınlık kaynaklarına bağlanmaya çalışan tüm giden HTTP(ler) trafiğini engeller (etki alanı veya konak adına göre).
 
 Ağ koruması [, Web korumasındaki](web-protection-overview.md) korumayı işletim sistemi düzeyine genişletir. Microsoft Edge'de bulunan web koruma işlevselliğini desteklenen diğer tarayıcılara ve tarayıcı olmayan uygulamalara sağlar. Ağ koruması ayrıca [Uç nokta algılama ve yanıt](overview-endpoint-detection-response.md) ile kullanıldığında güvenliğin aşılmasına ilişkin göstergelerin (ICS) görünürlüğünü ve engellenmesini de sağlar. Örneğin, ağ koruması belirli etki alanlarını veya konak adlarını engellemek için kullanabileceğiniz [özel göstergelerinizle](manage-indicators.md) birlikte çalışır.
 
@@ -69,7 +69,7 @@ Ağ koruması Windows 10 veya 11 (Pro veya Enterprise), Windows Server sürüm 1
 
 | Windows sürümü | Microsoft Defender Virüsten Koruma |
 |:---|:---|
-| Windows 10 sürüm 1709 veya üzeri <br/> Windows 11 <br/> Windows Server 1803 veya üzeri | [Microsoft Defender Virüsten Koruma'nın gerçek zamanlı koruma](configure-real-time-protection-microsoft-defender-antivirus.md) ve [bulut tabanlı korumanın](enable-cloud-protection-microsoft-defender-antivirus.md) etkinleştirildiğinden (etkin) emin olun. |
+| Windows 10 sürüm 1709 veya üzeri <br/> Windows 11 <br/> Windows Server 1803 veya üzeri | [Microsoft Defender Virüsten Koruma gerçek zamanlı koruma](configure-real-time-protection-microsoft-defender-antivirus.md) ve [bulut tabanlı korumanın](enable-cloud-protection-microsoft-defender-antivirus.md) etkinleştirildiğinden (etkin) emin olun. |
 
 ## <a name="why-network-protection-is-important"></a>Ağ koruması neden önemlidir?
 
@@ -170,7 +170,7 @@ Uç Nokta için Microsoft Defender Yöneticiler, aşağıdaki yapılandırma ara
 Ağ koruması cihaz başına etkinleştirilir ve bu genellikle yönetim altyapınız kullanılarak gerçekleştirilir. Desteklenen yöntemler için bkz [. Ağ korumasını açma](enable-network-protection.md).
 
 > [!NOTE]
-> Ağ korumasını etkinleştirmek için Microsoft Defender Virüsten Koruma'nın etkin olması gerekir.
+> Microsoft Defender Virüsten Koruma'nın ağ korumasını etkinleştirmek için etkin olması gerekir.
 
 Ağ korumasını **Denetim** modunda veya **Blok** modunda etkinleştirebilirsiniz. IP adreslerini veya URL'leri engellemeden önce ağ korumasını etkinleştirmenin etkisini değerlendirmek istiyorsanız, engellenecek veriler hakkında veri toplamak için bir süre denetim modunda ağ korumasını etkinleştirebilirsiniz. Son kullanıcılar ağ koruması tarafından engellenecek bir adrese veya siteye bağlandığında denetim modu günlükleri.
 
@@ -295,7 +295,7 @@ Bunun nasıl çalıştığına dair bir örnek aşağıda verilmişti:
 
 1. Bir kullanıcının cihazında bir web sitesine erişmeye çalıştığı varsayılmaktadır. Site tehlikeli bir etki alanında barındırılacak ve ağ koruması tarafından engellenmelidir.  
 
-2. TCP/IP aracılığıyla üç yönlü el sıkışması başlar. İşlem tamamlanmadan önce bir `NetworkConnectionEvents` eylem günlüğe kaydedilir ve eylemi `ActionType` olarak `ConnectionSuccess`listelenir. Ancak, üç yönlü el sıkışma işlemi tamamlandığında ağ koruması siteye erişimi engeller. Tüm bunlar hızlı bir şekilde gerçekleşir. Benzer bir işlem [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) ile gerçekleşir; üç yönlü el sıkışması tamamlandığında bir belirleme yapılır ve siteye erişim engellenir veya izin verilir.
+2. TCP/IP aracılığıyla üç yönlü el sıkışması başlar. İşlem tamamlanmadan önce bir `NetworkConnectionEvents` eylem günlüğe kaydedilir ve eylemi `ActionType` olarak `ConnectionSuccess`listelenir. Ancak, üç yönlü el sıkışma işlemi tamamlandığında ağ koruması siteye erişimi engeller. Tüm bunlar hızlı bir şekilde gerçekleşir. Benzer bir işlem [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) ile gerçekleşir; üç yönlü el sıkışması tamamlandığında belirleme yapılır ve siteye erişim engellenir veya izin verilir.
 
 3. Microsoft 365 Defender portalında, [uyarılar kuyruğunda bir uyarı](alerts-queue.md) listelenir. Bu uyarının ayrıntıları hem hem `AlertEvents`de `NetworkConnectionEvents` içerir. ActionType içeren bir `NetworkConnectionEvents` öğeniz de olsa, sitenin `ConnectionSuccess`engellendiğini görebilirsiniz.
 

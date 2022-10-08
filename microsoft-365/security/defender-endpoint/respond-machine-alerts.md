@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1714469bcfaa35db17f7ad771aa2701d5e66d2d7
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 6c1af9c31add2d02886bab36e72ec3650dbebae7
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799120"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233606"
 ---
 # <a name="take-response-actions-on-a-device"></a>Cihazda yanıt eylemleri gerçekleştirin
 
@@ -139,7 +141,7 @@ Araştırma veya yanıt sürecinin bir parçası olarak, güvenliği aşılmış
 
 > [!IMPORTANT]
 > - Bu eylem şu anda macOS ve Linux için desteklenmiyor. Eylemi çalıştırmak için canlı yanıtı kullanın. Canlı yanıt hakkında daha fazla bilgi için bkz [. Canlı yanıt kullanarak cihazlarda varlıkları araştırma](live-response.md)
-> - Microsoft Defender Virüsten Koruma taraması, Microsoft Defender Virüsten Koruma'nın etkin virüsten koruma çözümü olup olmadığına bakılmaksızın diğer virüsten koruma çözümleriyle birlikte çalıştırılabilir. Microsoft Defender Virüsten Koruma Pasif modda olabilir. Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma uyumluluğu](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+> - Microsoft Defender Virüsten Koruma taraması, Microsoft Defender Virüsten Koruma'nın etkin virüsten koruma çözümü olup olmadığına bakılmaksızın diğer virüsten koruma çözümleriyle birlikte çalıştırılabilir. Microsoft Defender Virüsten Koruma Pasif modda olabilir. Daha fazla bilgi için bkz[. virüsten koruma uyumluluğu Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 **Virüsten koruma taraması çalıştır'ı** seçtikten sonra, çalıştırmak istediğiniz tarama türünü seçin (hızlı veya tam) ve taramayı onaylamadan önce bir açıklama ekleyin.
 
@@ -148,7 +150,7 @@ Araştırma veya yanıt sürecinin bir parçası olarak, güvenliği aşılmış
 İşlem merkezi tarama bilgilerini gösterir ve cihaz zaman çizelgesinde cihazda bir tarama eylemi gönderildiğini yansıtan yeni bir olay yer alır. Microsoft Defender Virüsten Koruma uyarıları, tarama sırasında ortaya çıkacak tüm algılamaları yansıtır.
 
 > [!NOTE]
-> Uç Nokta için Defender yanıt eylemini kullanarak tarama tetiklerken, Microsoft Defender virüsten koruma 'ScanAvgCPULoadFactor' değeri yine de geçerli olur ve taramanın CPU etkisini sınırlar.
+> Uç Nokta için Defender yanıt eylemini kullanarak tarama tetiklerken, 'ScanAvgCPULoadFactor' virüsten koruma Microsoft Defender değeri yine de geçerli olur ve taramanın CPU etkisini sınırlar.
 > ScanAvgCPULoadFactor yapılandırılmamışsa, varsayılan değer tarama sırasında %50 maksimum CPU yükü sınırıdır.
 > Daha fazla bilgi için bkz. [configure-advanced-scan-types-microsoft-defender-antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus).
 
@@ -187,7 +189,7 @@ Saldırının önem derecesine ve cihazın duyarlılığına bağlı olarak, cih
 > - Cihazları ağdan yalıtmak şu anda macOS veya Linux çalıştıran cihazlar için desteklenmiyor. macOS için eylemi çalıştırmak için canlı yanıtı kullanın. Canlı yanıt hakkında daha fazla bilgi için bkz [. Canlı yanıt kullanarak cihazlarda varlıkları araştırma](live-response.md).
 > - Windows 11, Windows 10, sürüm 1703 veya üzeri, Windows Server 2022, Windows Server 2019 ve Windows Server 2016 çalıştıran cihazlar için tam yalıtım kullanılabilir.
 > - Seçmeli yalıtım, Windows 10, sürüm 1709 veya üzeri ve Windows 11 çalıştıran cihazlar için kullanılabilir.
-> - Bir cihazı yalıtırken yalnızca belirli işlemlere ve hedeflere izin verilir. Bu nedenle, tam VPN tünelinin arkasındaki cihazlar, cihaz yalıtıldıktan sonra Uç Nokta için Microsoft Defender bulut hizmetine erişemez. Uç Nokta için Microsoft Defender ve Microsoft Defender Virüsten Koruma bulut tabanlı korumayla ilgili trafik için bölünmüş tünel VPN kullanmanızı öneririz.
+> - Bir cihazı yalıtırken yalnızca belirli işlemlere ve hedeflere izin verilir. Bu nedenle, tam VPN tünelinin arkasındaki cihazlar, cihaz yalıtıldıktan sonra Uç Nokta için Microsoft Defender bulut hizmetine erişemez. Uç Nokta için Microsoft Defender ve Microsoft Defender Virüsten koruma ile ilgili trafik için bölünmüş tünel VPN kullanmanızı öneririz.
 
 Bu cihaz yalıtımı özelliği, cihazı izlemeye devam eden Uç Nokta için Defender hizmetine bağlantıyı korurken güvenliği aşılmış cihazın ağ bağlantısını keser.
 

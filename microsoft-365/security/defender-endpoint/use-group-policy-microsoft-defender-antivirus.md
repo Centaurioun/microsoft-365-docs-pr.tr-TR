@@ -1,5 +1,5 @@
 ---
-title: microsoft defender virüsten korumayı grup ilkesi ile yapılandırma
+title: Microsoft Defender Virüsten Koruma'grup ilkesi yapılandırma
 description: Uç Nokta için Microsoft Defender uç noktalarınızda Microsoft Defender Virüsten Koruma'nın yapılandırılması ve yönetilmesi için grup ilkesi kullanmayı öğrenin.
 keywords: grup ilkesi, GPO, yapılandırma, ayarlar
 ms.service: microsoft-365-security
@@ -15,16 +15,18 @@ manager: dansimp
 ms.subservice: mde
 audience: ITPro
 ms.topic: how-to
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: f455ecdbb8ff337ef7521f5c814a9bb7613741ba
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f095b376ffd49661271666211b491c0cdab49ec8
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689119"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68225954"
 ---
-# <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma'nın yapılandırılması ve yönetilmesi için grup ilkesi ayarlarını kullanma
+# <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma'grup ilkesi ayarlarını kullanarak yapılandırma ve yönetme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,11 +40,11 @@ ms.locfileid: "67689119"
 **Platform**
 - Windows
 
-Uç noktalarınızda Microsoft Defender Virüsten Koruma'nın yapılandırılması ve yönetilmesi için [grup ilkesi](/windows/win32/srvnodes/group-policy) kullanabilirsiniz.
+[grup ilkesi](/windows/win32/srvnodes/group-policy) kullanarak uç noktalarınızda virüsten koruma Microsoft Defender yapılandırabilir ve yönetebilirsiniz.
 
-## <a name="configure-microsoft-defender-antivirus-using-group-policy"></a>grup ilkesi kullanarak Microsoft Defender Virüsten Koruma'yi yapılandırma
+## <a name="configure-microsoft-defender-antivirus-using-group-policy"></a>Microsoft Defender Virüsten Koruma'grup ilkesi kullanarak yapılandırma
 
-Genel olarak, Microsoft Defender Virüsten Koruma grup ilkesi ayarlarını yapılandırmak veya değiştirmek için aşağıdaki yordamı kullanabilirsiniz:
+Genel olarak, Virüsten Koruma grup ilkesi ayarlarını yapılandırmak veya değiştirmek Microsoft Defender aşağıdaki yordamı kullanabilirsiniz:
 
 1. grup ilkesi yönetim makinenizde [grup ilkesi Yönetim Konsolu'nu](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) açın, yapılandırmak istediğiniz grup ilkesi Nesnesine (GPO) sağ tıklayın ve **Düzenle'ye** tıklayın.
 
@@ -50,7 +52,7 @@ Genel olarak, Microsoft Defender Virüsten Koruma grup ilkesi ayarlarını yapı
 
 3. **Yönetim şablonları'nı** tıklatın.
 
-4. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma'ya** genişletin.
+4. Ağacı **Virüsten Koruma Microsoft Defender** **Windows bileşenlerine** \> genişletin.
 
 5. Yapılandırmak istediğiniz ayarı içeren bölümü (bu konudaki tabloda **Konum** olarak adlandırılır) genişletin, açmak için ayara çift tıklayın ve yapılandırma değişiklikleri yapın.
 
@@ -69,7 +71,7 @@ Aşağıdaki tabloda, Windows 10'de yaygın olarak kullanılan grup ilkesi ayarl
 
 |Konum|Ayar|Makale|
 |---|---|---|
-|İstemci arabirimi|Başsız kullanıcı arabirimi modunu etkinleştirme|[Kullanıcıların Microsoft Defender Virüsten Koruma kullanıcı arabirimini görmesini veya bu arabirimle etkileşim kurmasını engelleme](prevent-end-user-interaction-microsoft-defender-antivirus.md)|
+|İstemci arabirimi|Başsız kullanıcı arabirimi modunu etkinleştirme|[Kullanıcıların Microsoft Defender Virüsten Koruma kullanıcı arabirimini görmesini veya bunlarla etkileşim kurmasını engelleme](prevent-end-user-interaction-microsoft-defender-antivirus.md)|
 |İstemci arabirimi|Bir eylem gerçekleştirmeleri gerektiğinde istemcilere ek metin görüntüleme|[Uç noktalarda görünen bildirimleri yapılandırın](configure-notifications-microsoft-defender-antivirus.md)|
 |İstemci arabirimi|Tüm bildirimleri gizleme|[Uç noktalarda görünen bildirimleri yapılandırın](configure-notifications-microsoft-defender-antivirus.md)|
 |İstemci arabirimi|Yeniden başlatma bildirimlerini gizler|[Uç noktalarda görünen bildirimleri yapılandırın](configure-notifications-microsoft-defender-antivirus.md)|
@@ -93,19 +95,19 @@ Aşağıdaki tabloda, Windows 10'de yaygın olarak kullanılan grup ilkesi ayarl
 |Gerçek zamanlı koruma|İndirilen tüm dosya ve ekleri taramak için yerel ayarı geçersiz kılmayı yapılandırma|[Kullanıcıların ilke ayarlarını yerel olarak değiştirmesini engelleme veya izin verme](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Gerçek zamanlı koruma|Davranış izlemeyi açmak için yerel ayarı geçersiz kılmayı yapılandırma|[Kullanıcıların ilke ayarlarını yerel olarak değiştirmesini engelleme veya izin verme](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Gerçek zamanlı koruma|Gerçek zamanlı korumayı açmak için yerel ayarı geçersiz kılmayı yapılandırma|[Kullanıcıların ilke ayarlarını yerel olarak değiştirmesini engelleme veya izin verme](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|Gerçek zamanlı koruma|Taranacak indirilen dosyaların ve eklerin en büyük boyutunu tanımlama|[Microsoft Defender Virüsten Koruma'yı her zaman açık koruma ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)|
-|Gerçek zamanlı koruma|Bilgisayarınızda dosya ve program etkinliğini izleme|[Microsoft Defender Virüsten Koruma'yı her zaman açık koruma ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)|
-|Gerçek zamanlı koruma|İndirilen tüm dosyaları ve ekleri tara|[Microsoft Defender Virüsten Koruma'yı her zaman açık koruma ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)|
-|Gerçek zamanlı koruma|Gerçek zamanlı korumayı kapatma|[Microsoft Defender Virüsten Koruma'yı her zaman açık koruma ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)|
-|Gerçek zamanlı koruma|Davranış izlemeyi açma|[Microsoft Defender Virüsten Koruma'yı her zaman açık koruma ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)|
-|Gerçek zamanlı koruma|Gerçek zamanlı koruma etkinleştirildiğinde işlem taramasını açma|[Microsoft Defender Virüsten Koruma'yı her zaman açık koruma ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)|
-|Gerçek zamanlı koruma|Ham birim yazma bildirimlerini açma|[Microsoft Defender Virüsten Koruma'yı her zaman açık koruma ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)|
-|Gerçek zamanlı koruma|Gelen ve giden dosya ve program etkinliği için izlemeyi yapılandırma|[Microsoft Defender Virüsten Koruma'yı her zaman açık koruma ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)|
+|Gerçek zamanlı koruma|Taranacak indirilen dosyaların ve eklerin en büyük boyutunu tanımlama|[Microsoft Defender Virüsten Koruma her zaman açık korumayı ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)|
+|Gerçek zamanlı koruma|Bilgisayarınızda dosya ve program etkinliğini izleme|[Microsoft Defender Virüsten Koruma her zaman açık korumayı ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)|
+|Gerçek zamanlı koruma|İndirilen tüm dosyaları ve ekleri tara|[Microsoft Defender Virüsten Koruma her zaman açık korumayı ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)|
+|Gerçek zamanlı koruma|Gerçek zamanlı korumayı kapatma|[Microsoft Defender Virüsten Koruma her zaman açık korumayı ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)|
+|Gerçek zamanlı koruma|Davranış izlemeyi açma|[Microsoft Defender Virüsten Koruma her zaman açık korumayı ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)|
+|Gerçek zamanlı koruma|Gerçek zamanlı koruma etkinleştirildiğinde işlem taramasını açma|[Microsoft Defender Virüsten Koruma her zaman açık korumayı ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)|
+|Gerçek zamanlı koruma|Ham birim yazma bildirimlerini açma|[Microsoft Defender Virüsten Koruma her zaman açık korumayı ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)|
+|Gerçek zamanlı koruma|Gelen ve giden dosya ve program etkinliği için izlemeyi yapılandırma|[Microsoft Defender Virüsten Koruma her zaman açık korumayı ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)|
 |Düzeltme|Düzeltmeyi tamamlamak için zamanlanmış bir tam tarama çalıştırmak üzere günün saati için yerel ayarı geçersiz kılmayı yapılandırma|[Kullanıcıların ilke ayarlarını yerel olarak değiştirmesini engelleme veya izin verme](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Düzeltme|Düzeltmeyi tamamlamak için zamanlanmış bir tam tarama çalıştırmak için haftanın gününü belirtin|[Zamanlanmış Microsoft Defender Virüsten Koruma taramalarını yapılandırma](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |Düzeltme|Düzeltmeyi tamamlamak için zamanlanmış bir tam tarama çalıştırmak için günün saatini belirtin|[Zamanlanmış Microsoft Defender Virüsten Koruma taramalarını yapılandırma](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |Raporlama|Gelişmiş bildirimleri kapatma|[Uç noktalarda görünen bildirimleri yapılandırın](configure-notifications-microsoft-defender-antivirus.md)
-|Kök|Microsoft Defender Virüsten Koruma'nın kapatılması|Kullanılmıyor. Microsoft dışı bir virüsten koruma ürünü kullanıyorsanız veya kullanmayı planlıyorsanız bkz. [Microsoft Defender Virüsten Koruma'nın diğer güvenlik ürünleriyle uyumluluğu](microsoft-defender-antivirus-compatibility.md).|
+|Kök|Microsoft Defender Virüsten Koruma'Microsoft Defender kapatma|Kullanılmıyor. Microsoft dışı bir virüsten koruma ürünü kullanıyorsanız veya kullanmayı planlıyorsanız diğer [güvenlik ürünleriyle virüsten koruma uyumluluğu Microsoft Defender](microsoft-defender-antivirus-compatibility.md) bölümüne bakın.|
 |Kök|Proxy sunucusunu atlamak için adresleri tanımlama|[Cihaz ara sunucusu ve İnternet bağlantısı ayarlarını yapılandırma](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
 |Kök|Ağa bağlanmak için ara sunucu otomatik yapılandırması (.pac) tanımlama|[Cihaz ara sunucusu ve İnternet bağlantısı ayarlarını yapılandırma](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
 |Kök|Ağa bağlanmak için ara sunucu tanımlama|[Cihaz ara sunucusu ve İnternet bağlantısı ayarlarını yapılandırma](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
@@ -114,7 +116,7 @@ Aşağıdaki tabloda, Windows 10'de yaygın olarak kullanılan grup ilkesi ayarl
 |Kök|Kötü amaçlı yazılımdan koruma hizmetinin her zaman çalışır durumda kalmasına izin ver|[Microsoft Defender Virüsten Koruma taramaları için düzeltmeyi yapılandırma](configure-remediation-microsoft-defender-antivirus.md)|
 |Kök|Rutin düzeltmeyi kapatma|[Microsoft Defender Virüsten Koruma taramaları için düzeltmeyi yapılandırma](configure-remediation-microsoft-defender-antivirus.md)|
 |Kök|Zamanlanmış görev sürelerini rastgele belirleme|[Microsoft Defender Virüsten Koruma için zamanlanmış taramaları yapılandırma](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
-|Tarama|Kullanıcıların taramayı duraklatmasına izin ver|[Kullanıcıların Microsoft Defender Virüsten Koruma kullanıcı arabirimini görmesini veya bu arabirimle etkileşim kurmasını engelleme](prevent-end-user-interaction-microsoft-defender-antivirus.md) (Windows 10 desteklenmez)|
+|Tarama|Kullanıcıların taramayı duraklatmasına izin ver|[Kullanıcıların Microsoft Defender Virüsten Koruma kullanıcı arabirimini görmesini veya etkileşim kurmasını engelleme](prevent-end-user-interaction-microsoft-defender-antivirus.md) (Windows 10 desteklenmez)|
 |Tarama|Zamanlanmış tarama çalıştırmadan önce en son virüs ve casus yazılım tanımlarını denetleyin|[Olay tabanlı zorunlu güncelleştirmeleri yönetin](manage-event-based-updates-microsoft-defender-antivirus.md)|
 |Tarama|Yakalama taramasının zorlandığı gün sayısını tanımlama|[Güncel olmayan uç noktalar için güncelleştirmeleri yönetme](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
 |Tarama|Tam taramayı yakalama özelliğini açma|[Güncel olmayan uç noktalar için güncelleştirmeleri yönetme](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
@@ -126,7 +128,7 @@ Aşağıdaki tabloda, Windows 10'de yaygın olarak kullanılan grup ilkesi ayarl
 |Tarama|Zamanlanmış tarama için kullanılacak tarama türü için yerel ayarı geçersiz kılmayı yapılandırma|[Kullanıcıların ilke ayarlarını yerel olarak değiştirmesini engelleme veya izin verme](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Tarama|Sistem geri yükleme noktası oluşturma|[Microsoft Defender Virüsten Koruma taramaları için düzeltmeyi yapılandırma](configure-remediation-microsoft-defender-antivirus.md)|
 |Tarama|Tarama geçmişi klasöründeki öğelerin kaldırılmasını açma|[Microsoft Defender Virüsten Koruma taramaları için düzeltmeyi yapılandırma](configure-remediation-microsoft-defender-antivirus.md)|
-|Tarama|Buluşsal yöntemleri açma|[Microsoft Defender Virüsten Koruma'yı her zaman açık koruma ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)|
+|Tarama|Buluşsal yöntemleri açma|[Microsoft Defender Virüsten Koruma her zaman açık korumayı ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)|
 |Tarama|E-posta taramayı açma|[Microsoft Defender Virüsten Koruma'da tarama seçeneklerini yapılandırma](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
 |Tarama|Yeniden ayrıştırma noktası taramayı açma|[Microsoft Defender Virüsten Koruma'da tarama seçeneklerini yapılandırma](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
 |Tarama|Eşlenen ağ sürücülerinde tam tarama çalıştırma|[Microsoft Defender Virüsten Koruma'da tarama seçeneklerini yapılandırma](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
@@ -149,11 +151,11 @@ Aşağıdaki tabloda, Windows 10'de yaygın olarak kullanılan grup ilkesi ayarl
 |Güvenlik bilgileri güncelleştirmeleri|Tanım tabanlı raporları Microsoft MAPS'e devre dışı bırakmak için bildirimlere izin ver|[Olay tabanlı zorunlu güncelleştirmeleri yönetin](manage-event-based-updates-microsoft-defender-antivirus.md)|
 |Güvenlik bilgileri güncelleştirmeleri|Microsoft MAPS raporlarına göre gerçek zamanlı güvenlik bilgileri güncelleştirmelerine izin ver|[Olay tabanlı zorunlu güncelleştirmeleri yönetin](manage-event-based-updates-microsoft-defender-antivirus.md)|
 |Güvenlik bilgileri güncelleştirmeleri|Başlangıçta en son virüs ve casus yazılım tanımlarını denetleyin|[Olay tabanlı zorunlu güncelleştirmeleri yönetin](manage-event-based-updates-microsoft-defender-antivirus.md)|
-|Güvenlik bilgileri güncelleştirmeleri|Güvenlik bilgileri güncelleştirmelerini indirmek için dosya paylaşımlarını tanımlama|[Microsoft Defender Virüsten Koruma koruma ve güvenlik bilgileri güncelleştirmelerini yönetme](manage-protection-updates-microsoft-defender-antivirus.md)|
+|Güvenlik bilgileri güncelleştirmeleri|Güvenlik bilgileri güncelleştirmelerini indirmek için dosya paylaşımlarını tanımlama|[Microsoft Defender Virüsten koruma ve güvenlik bilgileri güncelleştirmelerini yönetme](manage-protection-updates-microsoft-defender-antivirus.md)|
 |Güvenlik bilgileri güncelleştirmeleri|Güvenlik bilgileri güncelleştirmesinin gerekli olduğu gün sayısını tanımlayın|[Güncel olmayan uç noktalar için güncelleştirmeleri yönetme](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
 |Güvenlik bilgileri güncelleştirmeleri|Casus yazılım tanımlarının güncel olmayan olarak değerlendirilmeden önce geçmesi gereken gün sayısını tanımlayın|[Güncel olmayan uç noktalar için güncelleştirmeleri yönetme](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
 |Güvenlik bilgileri güncelleştirmeleri|Virüs tanımlarının güncel olmayan olarak kabul edilmesinden önceki gün sayısını tanımlama|[Güncel olmayan uç noktalar için güncelleştirmeleri yönetme](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|Güvenlik bilgileri güncelleştirmeleri|Güvenlik bilgileri güncelleştirmelerini indirmek için kaynakların sırasını tanımlama|[Microsoft Defender Virüsten Koruma koruma ve güvenlik bilgileri güncelleştirmelerini yönetme](manage-protection-updates-microsoft-defender-antivirus.md)|
+|Güvenlik bilgileri güncelleştirmeleri|Güvenlik bilgileri güncelleştirmelerini indirmek için kaynakların sırasını tanımlama|[Microsoft Defender Virüsten koruma ve güvenlik bilgileri güncelleştirmelerini yönetme](manage-protection-updates-microsoft-defender-antivirus.md)|
 |Güvenlik bilgileri güncelleştirmeleri|Başlangıçta güvenlik bilgileri güncelleştirmesini başlatma|[Olay tabanlı zorunlu güncelleştirmeleri yönetin](manage-event-based-updates-microsoft-defender-antivirus.md)|
 |Güvenlik bilgileri güncelleştirmeleri|Güvenlik bilgileri güncelleştirmelerini denetlemek için haftanın gününü belirtin|[Koruma güncelleştirmelerinin ne zaman indirileceğini ve uygulanacağını yönetme](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
 |Güvenlik bilgileri güncelleştirmeleri|Güvenlik bilgileri güncelleştirmelerinin denetlenme aralığını belirtin|[Koruma güncelleştirmelerinin ne zaman indirileceğini ve uygulanacağını yönetme](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
@@ -175,4 +177,4 @@ Aşağıdaki tabloda, Windows 10'de yaygın olarak kullanılan grup ilkesi ayarl
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Yönetim ve yapılandırma araçları için başvuru konuları](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Windows 10'da Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10'de virüsten koruma Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)

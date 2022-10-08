@@ -12,17 +12,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 58e259b0388aa33e5b457599c085dd0c6c74ee1f
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 55325d10fd444d34664ed11c63effd7b4e8b6aff
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704644"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233760"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender için el ile dağıtım
 
@@ -112,7 +113,7 @@ Bu işlemi tamamlamak için cihazda yönetici ayrıcalıklarına sahip olmanız 
 
    :::image type="content" source="images/monterey-install-4.png" alt-text="Sistem uzantısı güvenlik tercihleri2" lightbox="images/monterey-install-4.png":::
 
-7. **Sistem Tercihleri** \> **Güvenliği & Gizlilik'i** açın ve **Gizlilik** sekmesine gidin. **Microsoft Defender ve Microsoft Defenders** **Endpoint Security Uzantısı'na** **Tam Disk Erişimi** izni verin.
+7. **Sistem Tercihleri** \> **Güvenliği & Gizlilik'i** açın ve **Gizlilik** sekmesine gidin. **Microsoft Defender** ve **Microsoft Defenders Endpoint Security Uzantısı** için **Tam Disk Erişimi** izni verin.
 
    :::image type="content" source="images/monterey-install-5.png" alt-text="Tam disk erişimi" lightbox="images/monterey-install-5.png":::
 
@@ -138,7 +139,7 @@ Bu işlemi tamamlamak için cihazda yönetici ayrıcalıklarına sahip olmanız 
     mdatp health --field org_id
     ```
 
-    Yüklemeden sonra, sağ üst köşedeki macOS durum çubuğunda Microsoft Defender simgesini görürsünüz.
+    Yüklemeden sonra sağ üst köşedeki macOS durum çubuğunda Microsoft Defender simgesini görürsünüz.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="Durum çubuğundaki Microsoft Defender simgesi" lightbox="images/mdatp-icon-bar.png":::

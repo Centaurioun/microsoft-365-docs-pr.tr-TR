@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Fransa ulusal kimlik kartı (CNI) hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 35a6481e657d20a83ed1b80a6d06ad8ebf1c9cdf
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: fae2db81a39de5ff583a363ce426484f54a52230
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989579"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68379600"
 ---
 # <a name="france-national-id-card-cni"></a>Fransa ulusal kimlik kartı (CNI)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -36,7 +39,7 @@ ms.locfileid: "66989579"
 
 12 basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
@@ -45,7 +48,7 @@ Hayır
 DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının güvenilirliği düşüktür:
 
 - Normal ifade `Regex_france_cni` , desenle eşleşen içeriği bulur.
-- 'den `Keywords_france_eu_national_id_card` bir anahtar sözcük bulunur.
+- `Keywords_france_eu_national_id_card` içinden bir anahtar sözcük bulundu.
 
 ```xml
     <!-- France CNI -->

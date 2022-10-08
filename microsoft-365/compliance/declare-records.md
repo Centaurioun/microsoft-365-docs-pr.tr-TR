@@ -11,18 +11,19 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
-description: Bekletme etiketlerini kullanarak kayıtları bildirin.
-ms.openlocfilehash: 6a68f63c3f304ed4a5f3d79445cd713125327bd2
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Belgeleri ve e-postaları kayıt olarak bildirmek için, öğeleri kayıt veya mevzuat kaydı olarak işaretleyen Microsoft 365 bekletme etiketlerini kullanın.
+ms.openlocfilehash: 53ff0da40f3c7b8916d3dd70cbb0fc0e4d9aaeb9
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624299"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68382061"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Saklama etiketleri kullanarak kayıtları beyan etme
 
@@ -33,6 +34,8 @@ Belgeleri ve e-postaları [kayıt](records-management.md#records) olarak bildirm
 Kayıt mı yoksa mevzuat kaydı mı kullanacağınızdan emin değilseniz bkz. [İzin verilen veya engellenen eylemler için kısıtlamaları karşılaştırma](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked). Mevzuat kayıtlarını kullanmanız gerekiyorsa, sonraki bölümde açıklandığı gibi önce bir PowerShell komutu çalıştırmanız gerekir.
 
 Daha sonra bu etiketleri bir bekletme etiketi ilkesinde yayımlayarak kullanıcıların ve yöneticilerin bunları içeriğe uygulayabilmesini sağlayabilir veya öğeleri kayıt olarak işaretleyen etiketler için (düzenleyici kayıt değil), bu etiketleri kayıt bildirmek istediğiniz içeriğe otomatik olarak uygulayabilirsiniz.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a>İçeriği mevzuat kaydı olarak işaretleme seçeneğini görüntüleme
 

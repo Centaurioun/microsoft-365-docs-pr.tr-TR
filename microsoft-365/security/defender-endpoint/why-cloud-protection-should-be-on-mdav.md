@@ -16,15 +16,15 @@ ms.subservice: mde
 ms.topic: article
 ms.date: 10/22/2021
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: c999380c35ac8bad59c35fa73d6430f4110ce0a7
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 856bb2ac16e3b0e96a76c596e6ef1234ef0e3fd7
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67682591"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233430"
 ---
 # <a name="why-cloud-protection-should-be-enabled-for-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma için bulut korumasının neden etkinleştirilmesi gerekir?
 
@@ -50,9 +50,9 @@ Aşağıdaki tabloda, bulut korumasına bağlı olan özellikler ve özellikler 
 | Kurcalama koruması | Uç Nokta için Microsoft Defender Plan 2 (Tek başına veya Microsoft 365 E5 gibi bir plana dahil) | Kurcalama koruması, kuruluşunuzun güvenlik ayarlarında istenmeyen değişikliklere karşı korumaya yardımcı olur. Microsoft 365 Defender portalında kurcalama korumasını zorunlu kılmak için bulut korumasının etkinleştirilmesi gerekir. <br/><br/>Daha fazla bilgi için bkz [. Kurcalama koruması ile güvenlik ayarlarını koruma](prevent-changes-to-security-settings-with-tamper-protection.md).        |
 | İlk görüşte engelle | Uç Nokta için Microsoft Defender Plan 1 veya Plan 2 (Tek başına veya Microsoft 365 E3 veya E5 gibi bir plana dahil) | İlk bakışta engelle yeni kötü amaçlı yazılımları algılar ve saniyeler içinde engeller. Şüpheli veya kötü amaçlı bir dosya algılandığında, ilk bakışta engelleme özellikleri bulut koruma arka ucu sorgular ve dosyanın bir tehdit olup olmadığını belirlemek için buluşsal yöntemler, makine öğrenmesi ve otomatik analiz uygular.<br/><br/>Daha fazla bilgi edinmek için bkz. ["İlk bakışta engelle" nedir?](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight)   |
 | Acil durum imza güncelleştirmeleri | Uç Nokta için Microsoft Defender Plan 2 (Tek başına veya Microsoft 365 E5 gibi bir plana dahil) | Kötü amaçlı içerik algılandığında, acil durum imza güncelleştirmeleri ve düzeltmeleri dağıtılır. Bir sonraki normal güncelleştirmeyi beklemek yerine, bu düzeltmeleri ve güncelleştirmeleri dakikalar içinde alabilirsiniz.   |
-| Blok modunda uç nokta algılama ve yanıt (EDR) | Uç Nokta için Microsoft Defender Plan 2 (Tek başına veya Microsoft 365 E5 gibi bir plana dahil) | Blok modundaki EDR, Microsoft Defender Virüsten Koruma bir cihazdaki birincil virüsten koruma ürünü olmadığında ek koruma sağlar. Blok modundaki EDR, Microsoft olmayan birincil virüsten koruma çözümünün atlamış olabileceği EDR tarafından oluşturulan taramalar sırasında bulunan yapıtları düzeltiyor. Birincil virüsten koruma çözümü olarak Microsoft Defender Virüsten Koruma ile cihazlar için etkinleştirildiğinde, blok modundaki EDR, EDR tarafından oluşturulan taramalar sırasında tanımlanan yapıtları otomatik olarak düzeltmenin ek avantajını sağlar. <br/><br/>Daha fazla bilgi için bkz. [Blok modunda EDR](edr-in-block-mode.md).|
+| Blok modunda uç nokta algılama ve yanıt (EDR) | Uç Nokta için Microsoft Defender Plan 2 (Tek başına veya Microsoft 365 E5 gibi bir plana dahil) | Blok modundaki EDR, Microsoft Defender Virüsten Koruma bir cihazdaki birincil virüsten koruma ürünü olmadığında ek koruma sağlar. Blok modundaki EDR, Microsoft olmayan birincil virüsten koruma çözümünün atlamış olabileceği EDR tarafından oluşturulan taramalar sırasında bulunan yapıtları düzeltiyor. Birincil virüsten koruma çözümü olarak Microsoft Defender Virüsten Koruma'ya sahip cihazlar için etkinleştirildiğinde, blok modundaki EDR, EDR tarafından oluşturulan taramalar sırasında tanımlanan yapıtları otomatik olarak düzeltmenin ek avantajını sağlar. <br/><br/>Daha fazla bilgi için bkz. [Blok modunda EDR](edr-in-block-mode.md).|
 | Saldırı yüzeyini azaltma kuralları | Uç Nokta için Microsoft Defender Plan 1 veya Plan 2 (Tek başına veya Microsoft 365 E3 veya E5 gibi bir plana dahil) | Saldırı yüzeyinin azaltılması, kuruluşunuzun uç noktalarının siber saldırılara karşı savunmasız olduğu yerleri ve yolları azaltmakla alakalıdır. Saldırı yüzeyi azaltma kuralları, kötü amaçlı yazılımları durdurmaya yardımcı olmak için yapılandırabileceğiniz akıllı kurallardır. Belirli kuralların tam olarak çalışması için bulut korumasının açık olması gerekir. Bu kurallar şunlardır: <br/>- Yaygınlık, yaş veya güvenilen liste ölçütlerini karşılamadığı sürece yürütülebilir dosyaların çalışmasını engelleyin <br/>- Fidye yazılımlara karşı gelişmiş koruma kullanın <br/>- Güvenilmeyen programların çıkarılabilir sürücülerden çalıştırılmasını engelle <br/><br/>Daha fazla bilgi edinmek için bkz. [Kötü amaçlı yazılım bulaşmasını önlemek için saldırı yüzeyi azaltma kurallarını kullanma](attack-surface-reduction.md).  |
-| Güvenliğin aşılmasına ilişkin göstergeler (ICS) | Uç Nokta için Microsoft Defender Plan 2 (Tek başına veya Microsoft 365 E5 gibi bir plana dahil) | Uç Nokta için Defender'daki IoC'ler varlıkların algılanmasını, önlenmesini ve dışlanmasını tanımlayacak şekilde yapılandırılabilir. Örneğin, "izin ver" göstergeleri, Uç Nokta için Defender'da Microsoft Defender Virüsten Koruma taramaları ve düzeltme eylemleri için özel durumlar tanımlamak için kullanılabilir. Başka bir örnek olarak, dosyaların veya işlemlerin yürütülmesini önlemek ve bu etkinlikleri Microsoft 365 Defender portalında görüntülenebilen uyarılarla izlemek için "uyarı ve engelleme" göstergeleri kullanılabilir. <br/><br/>Daha fazla bilgi için bkz. [Gösterge oluşturma](manage-indicators.md).    |
+| Güvenliğin aşılmasına ilişkin göstergeler (ICS) | Uç Nokta için Microsoft Defender Plan 2 (Tek başına veya Microsoft 365 E5 gibi bir plana dahil) | Uç Nokta için Defender'daki IoC'ler varlıkların algılanmasını, önlenmesini ve dışlanmasını tanımlayacak şekilde yapılandırılabilir. Örneğin, Uç Nokta için Defender'da Virüsten Koruma taramalarını ve düzeltme eylemlerini Microsoft Defender özel durumları tanımlamak için "izin ver" göstergeleri kullanılabilir. Başka bir örnek olarak, dosyaların veya işlemlerin yürütülmesini önlemek ve bu etkinlikleri Microsoft 365 Defender portalında görüntülenebilen uyarılarla izlemek için "uyarı ve engelleme" göstergeleri kullanılabilir. <br/><br/>Daha fazla bilgi için bkz. [Gösterge oluşturma](manage-indicators.md).    |
 
 > [!TIP]
 > Uç Nokta için Defender planları hakkında daha fazla bilgi edinmek için bkz. [Plan 1 ve Plan 2 Uç Nokta için Microsoft Defender](defender-endpoint-plan-1-2.md).

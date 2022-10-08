@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 0ff6d8074131e1595ee651c40e59a0b9b03eb063
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: cfd86b27acfa359e4446d608c276601daf46e623
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692607"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233408"
 ---
 # <a name="investigate-agent-health-issues"></a>Sistem durumu sorunlarını araştırın
 
@@ -40,7 +42,7 @@ Aşağıdaki tabloda, komutu çalıştırdığınızda `mdatp health` döndürü
 |---|---|
 |automatic_definition_update_enabled|Otomatik virüsten koruma tanımı güncelleştirmeleri etkinse true, aksi takdirde false.|
 |cloud_automatic_sample_submission_consent|Geçerli örnek gönderim düzeyi. Aşağıdaki değerlerden biri olabilir: <ul><li>**Hiçbiri**: Microsoft'a şüpheli örnek gönderilmez.</li><li>**Güvenli**: Yalnızca kişisel bilgiler (PII) içermeyen şüpheli örnekler otomatik olarak gönderilir. Bu ayar için varsayılan değer budur.</li><li>**Tümü**: Tüm şüpheli örnekler Microsoft'a gönderilir.</li></ul>|
-|cloud_diagnostic_enabled|İsteğe bağlı tanılama veri toplama etkinse true, aksi takdirde false. Uç Nokta için Defender ve Microsoft Defender Virüsten Koruma ve Windows gibi diğer ürün ve hizmetlerle ilgili daha fazla bilgi için bkz. [Microsoft Gizlilik Bildirimi](https://go.microsoft.com/fwlink/?linkid=827576).|
+|cloud_diagnostic_enabled|İsteğe bağlı tanılama veri toplama etkinse true, aksi takdirde false. Uç Nokta için Defender ile Microsoft Defender Virüsten Koruma ve Windows gibi diğer ürün ve hizmetlerle ilgili daha fazla bilgi için bkz. [Microsoft Gizlilik Bildirimi](https://go.microsoft.com/fwlink/?linkid=827576).|
 |cloud_enabled|Bulut tabanlı koruma etkinleştirildiyse true, aksi takdirde false.|
 |conflicting_applications|Uç Nokta için Microsoft Defender ile çakışan uygulamaların listesi. Bu liste, uyumluluk sorunlarına neden olduğu bilinen diğer güvenlik ürünlerini ve diğer uygulamaları içerir ancak bunlarla sınırlı değildir.|
 |definitions_status|Virüsten koruma tanımlarının durumu.|

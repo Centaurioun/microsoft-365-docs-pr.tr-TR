@@ -14,15 +14,15 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier1
 ms.custom: intro-get-started
-ms.openlocfilehash: 9e046c877eab1c422d660ba24b7ec2da45c2006a
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 8ac45a98d31ff8ae1751104a78f3e2746b9afb03
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731088"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233672"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Uç Nokta için Microsoft Defender Plan 1'i kullanmaya başlama
 

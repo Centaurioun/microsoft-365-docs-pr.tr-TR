@@ -11,17 +11,19 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4097a916e83905f717e24df0b3c6e0b6b9a24be9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 3f4108bb160b814f584f42b0cbbd08cea504cfd9
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687559"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68225910"
 ---
 # <a name="web-content-filtering"></a>Web içeriği filtreleme
 
@@ -34,11 +36,15 @@ ms.locfileid: "67687559"
 > [!TIP]
 > Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
+
 ## <a name="what-is-web-content-filtering"></a>Web içeriği filtreleme nedir?
 
 Web içeriği filtreleme, Uç Nokta için Microsoft Defender ve [İş için Microsoft Defender'daki Web koruma](web-protection-overview.md) özelliklerinin bir parçasıdır. Web içeriği filtreleme, kuruluşunuzun web sitelerine erişimi içerik kategorilerine göre izlemesine ve düzenlemesine olanak tanır. Bu web sitelerinin çoğu (kötü amaçlı olmasalar bile) uyumluluk düzenlemeleri, bant genişliği kullanımı veya diğer endişeler nedeniyle sorunlu olabilir.
 
 Belirli kategorileri engellemek için cihaz gruplarınız genelinde ilkeleri yapılandırın. Kategorinin engellenmesi, belirtilen cihaz grupları içindeki kullanıcıların kategoriyle ilişkili URL'lere erişmesini engeller. Engellenmeyen tüm kategoriler için URL'ler otomatik olarak denetlenür. Kullanıcılarınız URL'lere kesinti olmadan erişebilir ve daha özel bir ilke kararı oluşturmaya yardımcı olmak için erişim istatistiklerini toplarsınız. Görüntüledikleri sayfadaki bir öğe engellenen bir kaynağa çağrı yapıyorsa kullanıcılarınız bir engelleme bildirimi görür.
+
+> [!NOTE]
+> Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.
 
 Web içeriği filtreleme, Windows Defender SmartScreen (Microsoft Edge) ve Ağ Koruması (Chrome, Firefox, Brave ve Opera) tarafından gerçekleştirilen bloklarla büyük web tarayıcılarında kullanılabilir. Tarayıcı desteği hakkında daha fazla bilgi için [önkoşullar](#prerequisites) bölümüne bakın.
 

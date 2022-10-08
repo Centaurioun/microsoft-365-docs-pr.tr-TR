@@ -13,16 +13,19 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: jarogers
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection:
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 1a15aa2549b13edf8bbdddb389d1c358154394e5
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: fe12a267f4d2ea6419d4121f152fde41b8f2878e
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740236"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68226437"
 ---
 # <a name="set-up-a-digest-notification-of-changes-to-microsoft-defender-for-office-365-using-the-message-center"></a>İleti merkezini kullanarak Office 365 için Microsoft Defender yapılan değişikliklerin özet bildirimini ayarlama
 

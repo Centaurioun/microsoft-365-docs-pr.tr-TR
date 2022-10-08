@@ -12,17 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier1
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4239ffe6d9560514eb3e5d5123340c97dbc7d296
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 23c02b6df071c8eabd21ecce48d5d0ec2c33e3a2
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67738630"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232220"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender için en düşük gereksinimler
 
@@ -44,7 +44,7 @@ Cihazları hizmete eklemek için bazı minimum gereksinimler vardır. Cihazları
 
 ## <a name="licensing-requirements"></a>Lisans gereksinimleri
 
-[Uç Nokta Plan 1 ve Plan 2 için Defender'ın](defender-endpoint-plan-1-2.md) tek başına sürümleri, diğer Microsft 365 planlarına dahil edildiğinde bile sunucu lisanslarını içermez. Sunucuları bu planlara eklemek için Bulut için Defender teklifinin bir parçası olarak Sunucular için [Defender](/azure/defender-for-cloud/defender-for-cloud-introduction) Plan 1 veya Plan 2 gerekir. Daha fazla bilgi edinmek için bkz [. Sunucular için Microsoft Defender'a](/azure/defender-for-cloud/defender-for-servers-introduction) genel bakış.
+[Uç Nokta Plan 1 ve Plan 2 için Defender'ın](defender-endpoint-plan-1-2.md) tek başına sürümleri, diğer Microsft 365 planlarına dahil edildiğinde bile sunucu lisanslarını içermez. Sunucuları bu planlara eklemek için Bulut için Defender teklifinin bir parçası olarak Sunucular için [Defender](/azure/defender-for-cloud/defender-for-cloud-introduction) Plan 1 veya Plan 2 gerekir. Daha fazla bilgi edinmek [için bkz. Sunucular için Microsoft Defender](/azure/defender-for-cloud/defender-for-servers-introduction) genel bakış.
 
 Uç Nokta için Microsoft Defender için lisanslama gereksinimleri hakkında bilgi için bkz. [lisanslama bilgileri Uç Nokta için Microsoft Defender](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
@@ -108,7 +108,7 @@ Desteklenen Windows 10 sürümleri hakkında daha fazla bilgi için Windows 10 [
 >
 > - Sanal ortamlar için Windows 10 Enterprise LTSC 2019 veya üzerini kullanmanızı öneririz.
 >
-> - [Uç Nokta Plan 1 ve Plan 2 için Defender'ın](defender-endpoint-plan-1-2.md) tek başına sürümleri sunucu lisanslarını içermez. Sunucuları bu planlara eklemek için Bulut için Defender teklifinin bir parçası olarak Sunucular için [Defender](/azure/defender-for-cloud/defender-for-cloud-introduction) Plan 1 veya Plan 2 gerekir. Daha fazla bilgi edinmek için. Bkz [. Sunucular için Microsoft Defender'a genel bakış](/azure/defender-for-cloud/defender-for-servers-introduction).
+> - [Uç Nokta Plan 1 ve Plan 2 için Defender'ın](defender-endpoint-plan-1-2.md) tek başına sürümleri sunucu lisanslarını içermez. Sunucuları bu planlara eklemek için Bulut için Defender teklifinin bir parçası olarak Sunucular için [Defender](/azure/defender-for-cloud/defender-for-cloud-introduction) Plan 1 veya Plan 2 gerekir. Daha fazla bilgi edinmek için. Bkz[. Sunucular için Microsoft Defender genel bakış](/azure/defender-for-cloud/defender-for-servers-introduction).
 
 Bileşenler Microsoft Windows işletim sistemlerinde güncel olduğunda, Uç Nokta için Microsoft Defender destek ilgili işletim sisteminin yaşam döngüsünü izler. Daha fazla bilgi için bkz [. Yaşam Döngüsü SSS](/lifecycle/faq/general-lifecycle). Yeni özellikler veya özellikler genellikle yalnızca yaşam döngülerinin sonuna henüz ulaşmamış işletim sistemlerinde sağlanır. Güvenlik bilgileri güncelleştirmeleri (tanım ve altyapı güncelleştirmeleri) ve algılama mantığı en azından aşağıdakilere kadar sağlanmaya devam edecektir:
 
@@ -192,13 +192,13 @@ Cihazları eklemeden önce tanılama veri hizmetinin etkinleştirilmesi gerekir.
 
 Uç Nokta için Defender aracısı, Microsoft Defender Virüsten Koruma'nın dosyaları tarayabilmesine ve bunlar hakkında bilgi sağlamasına bağlıdır.
 
-Microsoft Defender Virüsten Koruma'nın etkin kötü amaçlı yazılımdan koruma yazılımı olup olmadığına bakılmaksızın Uç Nokta için Defender cihazlarında Güvenlik bilgileri güncelleştirmelerini yapılandırın. Daha fazla bilgi için bkz [. Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
+Etkin kötü amaçlı yazılımdan koruma yazılımı olup olmadığını Microsoft Defender Uç Nokta için Defender cihazlarında Güvenlik bilgileri güncelleştirmelerini yapılandırın. Daha fazla bilgi için bkz[. Virüsten koruma güncelleştirmelerini Microsoft Defender yönetme ve temelleri uygulama](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
 
-Microsoft Defender Virüsten Koruma kuruluşunuzdaki etkin kötü amaçlı yazılımdan koruma yazılımı değilse ve Uç Nokta için Defender hizmetini kullandığınızda, Microsoft Defender Virüsten Koruma pasif moda geçer.
+Microsoft Defender Virüsten Koruma, kuruluşunuzdaki etkin kötü amaçlı yazılımdan koruma yazılımı değilse ve Uç Nokta için Defender hizmetini kullandığınızda Microsoft Defender Virüsten Koruma pasif moda geçer.
 
-Kuruluşunuz Microsoft Defender Virüsten Koruma'yı grup ilkesi veya diğer yöntemler aracılığıyla kapattıysa, eklenen cihazlar bu grup ilkesi dışında tutulmalıdır.
+Kuruluşunuz Microsoft Defender Virüsten Koruma'yı grup ilkesi veya diğer yöntemler aracılığıyla kapattıysa, eklenen cihazlar bu grup ilkesinin dışında tutulmalıdır.
 
-Sunucuları ekliiyorsanız ve Microsoft Defender Virüsten Koruma sunucularınızdaki etkin kötü amaçlı yazılımdan koruma yazılımı değilse, Microsoft Defender Virüsten Koruma'nın pasif moda geçmek için yapılandırılması veya kaldırılması gerekir. Yapılandırma sunucu sürümüne bağlıdır. Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma uyumluluğu](microsoft-defender-antivirus-compatibility.md).
+Sunucuları ekliiyorsanız ve Microsoft Defender Virüsten Koruma sunucularınızdaki etkin kötü amaçlı yazılımdan koruma yazılımı değilse, Microsoft Defender Virüsten Koruma'nın pasif moda geçmek için yapılandırılması veya kaldırılması gerekir. Yapılandırma sunucu sürümüne bağlıdır. Daha fazla bilgi için bkz[. virüsten koruma uyumluluğu Microsoft Defender](microsoft-defender-antivirus-compatibility.md).
 
 > [!NOTE]
 > Normal grup ilkeniz Kurcalama Koruması için geçerli değildir ve Kurcalama Koruması açıkken Microsoft Defender Virüsten Koruma ayarlarında yapılan değişiklikler yoksayılır.
@@ -207,7 +207,7 @@ Sunucuları ekliiyorsanız ve Microsoft Defender Virüsten Koruma sunucularını
 
 Cihazlarınızda birincil kötü amaçlı yazılımdan koruma ürünü olarak Microsoft Defender Virüsten Koruma çalıştırıyorsanız, Uç Nokta için Defender aracısı başarıyla eklenecektir.
 
-Üçüncü taraf kötü amaçlı yazılımdan koruma istemcisi çalıştırıyorsanız ve Mobil Cihaz Yönetimi çözümleri veya Microsoft Endpoint Manager (geçerli dal) kullanıyorsanız, Microsoft Defender Virüsten Koruma ELAM sürücüsünün etkinleştirildiğinden emin olmanız gerekir. Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma'nın ilke tarafından devre dışı bırakılmadığından emin olun](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+Üçüncü taraf kötü amaçlı yazılımdan koruma istemcisi çalıştırıyorsanız ve Mobil Cihaz Yönetimi çözümleri veya Microsoft Endpoint Manager (geçerli dal) kullanıyorsanız, Virüsten Koruma ELAM sürücüsünün etkinleştirildiğinden Microsoft Defender emin olmanız gerekir. Daha fazla bilgi için bkz[. Microsoft Defender Virüsten Koruma'nın ilke tarafından devre dışı bırakılmadığından emin olun](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## <a name="related-topics"></a>İlgili konular
 

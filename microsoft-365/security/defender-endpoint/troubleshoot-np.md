@@ -14,14 +14,16 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 search.appverid: met150
-ms.openlocfilehash: fe09d845a4362e00603f947dbee076aca8e6d902
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ae2bfcf887f0cf643f9ad4eaaab80ac7d0821c44
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703984"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68221730"
 ---
 # <a name="troubleshoot-network-protection"></a>Ağ koruması sorunlarını giderme
 
@@ -54,7 +56,7 @@ Ağ koruması yalnızca aşağıdaki koşullara sahip cihazlarda çalışır:
 > [!div class="checklist"]
 >
 > - Uç noktalar Windows 10 Pro veya Enterprise sürümü, sürüm 1709 veya üzerini çalıştırıyor.
-> - Uç noktalar, tek virüsten koruma uygulaması olarak Microsoft Defender Virüsten Koruma kullanıyor. [Microsoft dışı bir virüsten koruma çözümü kullandığınızda neler olduğunu görün](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+> - Uç noktalar tek virüsten koruma uygulaması olarak Microsoft Defender Virüsten Koruma kullanıyor. [Microsoft dışı bir virüsten koruma çözümü kullandığınızda neler olduğunu görün](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 > - [Gerçek zamanlı koruma](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) etkindir.
 > - [Bulut tabanlı koruma](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) etkindir.
 > - Denetim modu etkinleştirilmedi. Kuralı **Devre Dışı** olarak ayarlamak için [grup ilkesi](enable-network-protection.md#group-policy) kullanın (değer: **0**).
@@ -91,7 +93,7 @@ Geçerli dışlama seçenekleri şunlardır:
 
 1. Özel bir izin verme göstergesi ayarlama.
 2. IP dışlamalarını kullanma: `Add-MpPreference -ExclusionIpAddress 192.168.1.1`
-3. İşlemin tamamını dışlama. Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma dışlamaları](configure-exclusions-microsoft-defender-antivirus.md). 
+3. İşlemin tamamını dışlama. Daha fazla bilgi için bkz[. virüsten koruma dışlamaları Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md). 
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>Dosya gönderimleri için tanılama verilerini toplama
 
@@ -119,7 +121,7 @@ Ağ korumasının çalıştığı ortam nedeniyle Microsoft, işletim sistemi ar
 Set-MpPreference -ProxyServer <proxy IP address: Port>
 ```
 
----OR---
+---VEYA---
 
 ```powershell
 Set-MpPreference -ProxyPacUrl <Proxy PAC url>
