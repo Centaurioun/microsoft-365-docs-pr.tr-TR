@@ -5,9 +5,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -22,18 +23,18 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Yönetim merkezindeki Microsoft 365 Raporları panosunu kullanarak Bir Etkin Kullanıcılar raporu almayı ve kaç ürün lisansının kullanıldığını öğrenin.
-ms.openlocfilehash: 7326c42bf95f930258b9638c2344e9c2284a8e46
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 60dea51bf1b9a9411f2f6f277d32207cbdacbb8b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662206"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170101"
 ---
 # <a name="assess-the-microsoft-365-active-users-report"></a>Microsoft 365 Etkin Kullanıcılar raporunu değerlendirme
 
 Microsoft 365 Raporları panosu, kuruluşunuzdaki ürünler genelindeki etkinliğe genel bakışı gösterir. Bu pano sayesinde her bir üründeki etkinliklerle ilgili daha ayrıntılı bilgi edinmek için ürün düzeyinde raporları ayrıntılı olarak inceleyebilirsiniz. [Raporlara genel bakış konusuna](activity-reports.md) göz atın.
   
-Örneğin, kuruluşunuzdaki bireyler tarafından kaç ürün lisansının kullanımda olduğunu öğrenmek için **Etkin Kullanıcılar** raporunu kullanabilir ve hangi kullanıcıların hangi lisansları kullandığı konusunda bilgi edinmek için detaya gidebilirsiniz. Bu rapor yöneticilerin kapasitenin altında kullanılan ürünleri ya da ek eğitime veya bilgiye ihtiyacı olan kullanıcıları belirlemesine yardımcı olabilir. 
+For example, you can use the **Active Users** report to find out how many product licenses are being used by individuals in your organization, and drill down for information about which users are using what products. This report can help administrators identify underutilized products or users that might need additional training or information. 
 
 ## <a name="how-to-get-to-the-active-users-report"></a>Etkin Kullanıcılar raporunu alma
 

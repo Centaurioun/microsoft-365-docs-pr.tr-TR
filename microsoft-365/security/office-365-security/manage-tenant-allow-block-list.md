@@ -12,17 +12,17 @@ ms.date: 08/11/2022
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde izin verme ve blokları yönetmeyi öğrenin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 1eae7f137d9457ca507efb592414127223af4f87
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 5d26a013199156b5aeff9ca21dcbebea5c64ebbf
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598988"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68092434"
 ---
 # <a name="manage-your-allows-and-blocks-in-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesinde izinlerinizi ve bloklarınızı yönetin
 
@@ -37,7 +37,7 @@ posta kutuları olmayan Exchange Online veya tek başına Exchange Online Protec
 
 Microsoft 365 Defender portalındaki Kiracı İzin Ver/Engelle Listesi, Microsoft 365 filtreleme kararlarını el ile geçersiz kılmanın bir yolunu sunar. Kiracı İzin Ver/Engelle Listesi, gelen iletiler için posta akışı sırasında dış gönderenler (kuruluş içi iletiler için geçerli değildir) ve kullanıcı tıklamaları sırasında kullanılır.
 
-Kiracı İzin Ver/Engelle listesi, kurallar & **kurallar** \> **Tehdit İlkeleri** **Kiracı İzin Ver/Engelle Listelerinin** \> **Kurallar** bölümündeki Microsoft 365 Defender portalında <https://security.microsoft.com> \> bulunabilir. **Doğrudan Kiracı İzin Ver/Listeleri Engelle** sayfasına gitmek için kullanın<https://security.microsoft.com/tenantAllowBlockList>.
+Kiracı İzin Ver/Engelle listesi Microsoft 365 Defender portalında <https://security.microsoft.com> \> **kurallar & Kurallar** \> **bölümündeki** **Tehdit İlkeleri** \> **Kiracı İzin Ver/Engelle Listelerinde** bulunabilir. **Doğrudan Kiracı İzin Ver/Listeleri Engelle** sayfasına gitmek için kullanın<https://security.microsoft.com/tenantAllowBlockList>.
 
 Giriş oluşturma ve yapılandırma yönergeleri için aşağıdaki konulara bakın:
 
@@ -53,7 +53,7 @@ Microsoft'a hatalı pozitifler olarak bildirirken aşağıdaki öğe türleri i�
 
 - **Etki alanları ve e-posta adresleri**:
   - Bu gönderenlerden gelen Email iletileri *yüksek güvenilirlikli istenmeyen posta* olarak işaretlenir (SCL = 9). İletilere ne olacağı, alıcı için iletiyi algılayan [istenmeyen posta önleme ilkesi](configure-your-spam-filter-policies.md) tarafından belirlenir. Varsayılan istenmeyen posta önleme ilkesinde ve yeni özel ilkelerde, yüksek güvenilirlikli istenmeyen posta olarak işaretlenmiş iletiler varsayılan olarak Gereksiz Email klasörüne teslim edilir. Standart ve Katı [önceden ayarlanmış güvenlik ilkelerinde](preset-security-policies.md) yüksek güvenilirlikli istenmeyen posta iletileri karantinaya alınır.
-  - Kuruluştaki kullanıcılar bu engellenen etki alanlarına ve adreslere e-posta gönderemez. Aşağıdaki teslim edilmedi raporunu (NDR veya geri dönen ileti olarak da bilinir) alırlar: `5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy.`
+  - Kuruluştaki kullanıcılar bu engellenen etki alanlarına ve adreslere e-posta gönderemez. Şu teslim edilmedi raporunu (NDR veya geri dönen ileti olarak da bilinir) alırlar: `5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy.` Listedeki girdilerden herhangi birine e-posta gönderilirse iletinin tamamı tüm alıcılar tarafından engellenir.
 
 - **Dosyalar**: Bu engellenen dosyaları içeren Email iletiler *kötü amaçlı yazılım* olarak engellenir.
 
@@ -85,11 +85,11 @@ Aşağıdaki listede, Gönderimler portalında Bir şeyi Microsoft'a hatalı poz
 
   - İleti kimlik [sahtekarlığına](learn-about-spoof-intelligence.md) karşı engellenmişse, gönderen için bir izin girdisi oluşturulur ve Kiracı İzin Ver Engelleme Listesi'ndeki Kimlik **Sahtekarı gönderenler** sekmesinde görüntülenir.
 
-  - İleti [Office 365 için Defender'da etki alanı veya kullanıcı kimliğe bürünme koruması](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) tarafından engellendiyse, Kiracı İzin Ver/Engelle Listesi'nde izin verme girdisi oluşturulmaz. Bunun yerine, etki alanı veya gönderen, iletiyi algılayan [kimlik avı önleme ilkesinin](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) **Güvenilen gönderenler ve etki alanları bölümüne** eklenir.
+  - İleti [Office 365 için Defender'da etki alanı veya kullanıcı kimliğe bürünme koruması](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) tarafından engellendiyse, Kiracı İzin Ver/Engelle Listesinde izin verme girdisi oluşturulmaz. Bunun yerine, etki alanı veya gönderen, iletiyi algılayan [kimlik avı önleme ilkesinin](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) **Güvenilen gönderenler ve etki alanları bölümüne** eklenir.
 
   - İleti başka nedenlerle engellendiyse, gönderen için bir izin verme girdisi oluşturulur ve Kiracı İzin Verme Engelleme Listesi'ndeki **Etki Alanları & adresleri** sekmesinde görüntülenir.
 
-  - İleti engellenmediyse ve gönderen için izin ver girişi oluşturulmazsa, bu nedenle Sahte **gönderenler** sekmesinde veya **Etki Alanları & adresleri** sekmesinde oluşturulmaz.
+  - İleti engellenmediyse ve gönderen için izin ver girişi oluşturulmazsa, Kimlik **sahtekarı gönderenler** sekmesinde veya **Etki Alanları & adresleri** sekmesinde olmaz.
 
 Varsayılan olarak, **etki alanları ve e-posta adresleri**, **dosyalar** ve **URL'ler** için girişlerin süresi 30 gün sonra dolar ve bu da maksimum değerdir. **Sahte gönderenler için girişlerin** süresi hiçbir zaman dolmaz.
 
@@ -104,6 +104,6 @@ Varsayılan olarak, **etki alanları ve e-posta adresleri**, **dosyalar** ve **U
 
 ## <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>İzin ver veya engelle girdisi ekledikten sonra beklenmesi gerekenler
 
-Gönderimler portalı aracılığıyla bir izin girişi veya Kiracı İzin Ver/Engelle Listesi'ne bir blok girişi ekledikten sonra, girdi hemen çalışmaya başlamalıdır.
+Gönderimler portalı aracılığıyla izin verme girdisi veya Kiracı İzin Ver/Engelle Listesi'ne bir blok girişi ekledikten sonra, girişin zamanın %99,999'unda hemen çalışmaya başlaması gerekir. Geri kalanlar için 24 saat kadar sürebilir.
 
 Sistemin izin verme veya engelleme hakkında bilgi edinip öğrenmediğini görmek için girişlerin 30 gün sonra otomatik olarak süresinin dolmasına izin vermenizi öneririz. Aksi takdirde, sisteme öğrenmesi için 30 gün daha vermek için başka bir giriş yapmanız gerekir.

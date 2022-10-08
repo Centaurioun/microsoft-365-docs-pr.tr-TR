@@ -23,14 +23,15 @@ search.appverid:
 - BCS160
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
+- scotvorg
 - M365-security-compliance
 description: Microsoft 365 modern kimlik doğrulama özelliklerinin Office 2013 ve 2016 istemci uygulamalarında nasıl farklı çalıştığını öğrenin.
-ms.openlocfilehash: 36bd7252394cb23b2e1f8d4999e4c09095734716
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 365a08db64e01274ff815ee908176878b64f68cc
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67690498"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170233"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>Modern kimlik doğrulaması Office 2013, Office 2016 ve Office 2019 istemci uygulamalarında nasıl çalışır?
 
@@ -58,7 +59,7 @@ Microsoft 365 hizmetleri için modern kimlik doğrulamasının varsayılan durum
 
 Office 2013 istemci uygulamaları varsayılan olarak eski kimlik doğrulamasını destekler. Eski, Microsoft Çevrimiçi Oturum Açma Yardımcısı'nı veya temel kimlik doğrulamasını desteklediği anlamına gelir. Bu istemcilerin modern kimlik doğrulama özelliklerini kullanabilmesi için Windows istemcisinde kayıt defteri anahtarlarının ayarlanmış olması gerekir. Yönergeler için bkz. [Windows cihazlarında Office 2013 için Modern Kimlik Doğrulamasını Etkinleştirme](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
 
-Windows çalıştıran ve Microsoft Office 2013'ün yüklü olduğu herhangi bir cihazda (örneğin, dizüstü bilgisayar veya tablet) modern kimlik doğrulamayı etkinleştirmek için, aşağıdaki kayıt defteri anahtarlarını ayarlamanız gerekir. Bu anahtarlar, modern kimlik doğrulamayı etkinleştirmek istediğiniz her cihazda ayarlanmalıdır.
+To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
 
 |**Kayıt defteri anahtarı**|**Tür**|**Değer** |
 |:-------|:------:|--------:|

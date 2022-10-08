@@ -10,16 +10,18 @@ ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 search.appverid: MET150
 description: Kuruluşunuzdaki ön cephe çalışanları için mobil cihazları yönetmeye genel bir bakış edinin.
-ms.collection: m365-frontline
+ms.collection:
+- m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: e0da7bf29865520507d9355fe25115700c3d8e28
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 9c776de6300c3b2b58b5d2778f351829a1c183f3
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824656"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68063540"
 ---
 # <a name="manage-mobile-devices-for-frontline-workers"></a>Ön cephe çalışanları için mobil cihazları yönetme
 

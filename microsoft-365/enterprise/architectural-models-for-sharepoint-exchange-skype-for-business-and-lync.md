@@ -9,6 +9,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - SPO_Content
@@ -20,12 +21,12 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: SharePoint, Exchange, Skype Kurumsal ve Lync için mimari modelleri, dağıtım ve platform seçeneklerini açıklayan BT posterleri edinin.
-ms.openlocfilehash: 8a1c89376872d21f65203fd8ca859e12c039a5bf
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: de9e3346c8956ba3a809e4931b4302706753adb3
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560801"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198657"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>SharePoint, Exchange, Skype Kurumsal ve Lync için mimari modeller
 
@@ -102,7 +103,7 @@ SharePoint 2016 ve Skype Kurumsal 2015 için BT posterleri, dağıtım yöntemle
 
 |Öğe|Açıklama|
 |---|---|
-|[![SharePoint Server 2016 Veritabanları posterinin küçük resmi.](../media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [Diğer diller](https://www.microsoft.com/download/details.aspx?id=55041)|Bu BT posteri, SharePoint Server 2016 veritabanları için hızlı bir başvurudur. Her veritabanının ayrıntılarını görürsünüz: <br/><br/> - Boyut <br/> - Ölçeklendirme kılavuzu <br/> - G/Ç desenleri <br/> - Gereksinimler <br/><br/>  İlk sayfada SharePoint sistem veritabanları ve birden çok veritabanı olan hizmet uygulamaları gösterilir. İkinci sayfada, tek veritabanları olan tüm hizmet uygulamaları gösterilir. <br/><br/>  Daha fazla bilgi için bkz. [SharePoint Server 2016'da veritabanı türleri ve açıklamaları](/SharePoint/technical-reference/database-types-and-descriptions).|
+|[![SharePoint Server 2016 Veritabanları posterinin küçük resmi.](../media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [Diğer diller](https://www.microsoft.com/download/details.aspx?id=55041)|Bu BT posteri, SharePoint Server 2016 veritabanları için hızlı bir başvurudur. Her veritabanının ayrıntılarını görürsünüz: <br/><br/> -Boyutu <br/> - Ölçeklendirme kılavuzu <br/> - G/Ç desenleri <br/> -Gereksinim -leri <br/><br/>  İlk sayfada SharePoint sistem veritabanları ve birden çok veritabanı olan hizmet uygulamaları gösterilir. İkinci sayfada, tek veritabanları olan tüm hizmet uygulamaları gösterilir. <br/><br/>  Daha fazla bilgi için bkz. [SharePoint Server 2016'da veritabanı türleri ve açıklamaları](/SharePoint/technical-reference/database-types-and-descriptions).|
    
 <a name="SfB2015_ArchModel"> </a>
 ### <a name="microsoft-skype-for-business-2015-architectural-models"></a>Microsoft Skype Kurumsal 2015 Mimari Modelleri

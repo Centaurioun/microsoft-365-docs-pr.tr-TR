@@ -8,7 +8,9 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -17,12 +19,12 @@ ms.custom:
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Bu makalede, uygulamaların Office Mac hangi uç noktalara ve URL'lere erişmeye çalıştığı ve sağlanan hizmetler açıklanmaktadır.
-ms.openlocfilehash: 81567f823226adf66bbe7c4eea5b87dca5bcb786
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e42f5c8f9878ebd3e4ac40d77f96aa115c875e54
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67700828"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68189769"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Mac için Office'te ağ istekleri
 

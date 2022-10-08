@@ -11,16 +11,17 @@ ms.localizationpriority: medium
 ms.service: microsoft-365-security
 ms.collection:
 - M365-security-compliance
+- tier3
 search.appverid:
 - MET150
 ROBOTS: NOINDEX,NOFOLOW
 description: Yöneticiler, Office belgelerindeki etkin içeriği engellemek için ilke oluşturmayı öğrenebilir
-ms.openlocfilehash: 000e306fd2120fa2980d384ecdeda039f8d717f8
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: b9eba7b71c34b38ba40cd63d824026d1ae28a182
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736398"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68063430"
 ---
 # <a name="manage-active-content-in-office-documents"></a>Office belgelerinde etkin içeriği yönetme
 

@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Office 365 için Microsoft Defender'de otomatik araştırma ve yanıt özelliklerini kullanmaya başlayın.
 ms.custom:
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 9d7a486e97356ca960ad0ac519445e30a997750e
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 0e0d0366f3d66d8dddaa1457ece8fbc88542f6ab
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596368"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68092280"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de otomatik araştırma ve yanıt (AIR)
 
@@ -108,7 +108,7 @@ Microsoft 365, Exchange yönetici izinlerinin kötüye kullanımı, kötü amaç
 |Görev|Gerekli rol veya rol|
 |---|---|
 |AIR özelliklerini ayarlama|Aşağıdaki rollerden biri: <ul><li>Genel Yönetici</li><li>Güvenlik Yöneticisi</li></ul> <p> Bu roller [Azure Active Directory'de](/azure/active-directory/roles/permissions-reference) veya [Microsoft 365 Defender portalında](permissions-microsoft-365-security-center.md) atanabilir.|
-|Otomatik araştırma başlatın <p> --- veya --- <p> Önerilen eylemleri onaylama veya reddetme|[Azure Active Directory'de](/azure/active-directory/roles/permissions-reference) veya [Microsoft 365 Defender portalında](permissions-microsoft-365-security-center.md) atanan aşağıdaki rollerden biri: <ul><li>Genel Yönetici</li><li>Güvenlik Yöneticisi</li><li>Güvenlik İşleci</li><li>Güvenlik Okuyucusu <br> --- ve --- </li><li>Arama ve Temizleme (bu rol yalnızca [Microsoft 365 Defender portalında](permissions-microsoft-365-security-center.md) atanır. Orada yeni bir **Email & işbirliği** rol grubu oluşturmanız ve arama ve temizleme rolünü bu yeni rol grubuna eklemeniz gerekebilir.</li></ul>|
+|Otomatik araştırma başlatın <p> ---Veya--- <p> Önerilen eylemleri onaylama veya reddetme|[Azure Active Directory'de](/azure/active-directory/roles/permissions-reference) veya [Microsoft 365 Defender portalında](permissions-microsoft-365-security-center.md) atanan aşağıdaki rollerden biri: <ul><li>Genel Yönetici</li><li>Güvenlik Yöneticisi</li><li>Güvenlik İşleci</li><li>Güvenlik Okuyucusu <br> ---Ve--- </li><li>Arama ve Temizleme (bu rol yalnızca [Microsoft 365 Defender portalında](permissions-microsoft-365-security-center.md) atanır. Orada yeni bir **Email & işbirliği** rol grubu oluşturmanız ve arama ve temizleme rolünü bu yeni rol grubuna eklemeniz gerekebilir.</li></ul>|
 
 ## <a name="required-licenses"></a>Gerekli lisanslar
 

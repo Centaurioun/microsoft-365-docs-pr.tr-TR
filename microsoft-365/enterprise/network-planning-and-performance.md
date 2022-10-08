@@ -8,7 +8,9 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- scotvorg
+- Strat_O365_Enterprise
 f1.keywords:
 - CSH
 search.appverid:
@@ -18,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Adm_O365
 description: Bu makale, Microsoft 365 için ağ bant genişliği gereksinimlerinizi planlamanıza ve performansa ince ayar yapıp sorun gidermenize yardımcı olur.
-ms.openlocfilehash: 090bfb41675089e5c9014e35ddf58e1e51bad311
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: fa335ebd3e4193357a8c4694e996cc04e1e7bd24
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694491"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68189901"
 ---
 # <a name="network-planning-and-performance-tuning-for-microsoft-365"></a>Microsoft 365 için ağ planlama ve performans ayarlama
 İlk kez dağıtmadan veya Microsoft 365'e geçirmeden önce, ihtiyacınız olan bant genişliğini tahmin etmek ve ardından Microsoft 365'i dağıtmak veya microsoft 365'e geçirmek için yeterli bant genişliğine sahip olduğunuzu test etmek ve doğrulamak için bu konulardaki bilgileri kullanabilirsiniz. Genel bakış için bkz. [Microsoft 365 için ağ ve geçiş planlaması](network-and-migration-planning.md).

@@ -2,15 +2,16 @@
 title: Microsoft Benimseme Puanı - Gizlilik
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 monikerRange: o365-worldwide
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: AdminSurgePortfolio
@@ -18,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gizlilik, Benimseme Puanı ile nasıl korunur?
-ms.openlocfilehash: 36c71ae05cc4f8c19557a94b8788e3ab19e2a4d9
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 5dc0d1852941769f07dce587fc664d37fc193f89
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67469079"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68173071"
 ---
 # <a name="privacy-controls-for-adoption-score"></a>Benimseme Puanı için gizlilik denetimleri
 

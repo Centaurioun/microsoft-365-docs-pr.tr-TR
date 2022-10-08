@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -20,63 +21,63 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: Gezinti sekmelerini ve filtreleri kullanarak raporları görüntülemeyi öğrenin.
-ms.openlocfilehash: be41b6c677dff3faa349dea489ba55217868e5b9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 68be2af843cd887deb53e9170363a855be4272c4
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988579"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68190165"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Microsoft 365 kullanım analizinde raporlarda gezinin ve raporları kullanın
 
-Panoda ana kullanım ve benimseme ölçümlerine ilişkin hızlı bir genel bakış sağlanır. En üst düzey ölçümleri seçerek, daha fazla ayrıntı ve içgörü sağlayan raporlara erişebilirsiniz. Her rapor sekmesi, kuruluşunuz için kullanım ve benimsemeye ilişkin verilerin belirli bir açıdan görselleştirmesini içerir. Toplanan veriler her raporun başlığında açıklanmıştır ve görüntülemekte olduğu rapor sekmesindeki görselleştirmeler hakkında daha fazla bilgi içeren bir kutucuk görüntülenir.
+Panoda ana kullanım ve benimseme ölçümlerine ilişkin hızlı bir genel bakış sağlanır. En üst düzey ölçümleri seçerek daha fazla ayrıntı ve içgörü sağlayan raporlara erişebilirsiniz. Her rapor sekmesi, kuruluşunuz için kullanım ve benimsemeye ilişkin verilerin belirli bir açıdan görselleştirmesini içerir. Toplanan veriler her raporun başlığında açıklanır ve görüntülemekte olduğunuz rapor sekmesindeki görselleştirmeler hakkında daha fazla bilgi içeren bir kutucuk görüntülenir.
 
 Raporlarınızla çalışmaya başlamak için birkaç ipucunu burada bulabilirsiniz:
 
-- Her üst düzey rapora gitmek için Yönetim Özeti sayfasında sol veya ilgili bir  metrik üzerinde gezinti sekmelerini kullanın.
+- Her üst düzey rapora gitmek için soldaki veya **Yönetici Özeti** sayfasındaki ilgili ölçümdeki gezinti sekmelerini kullanın.
 
-    ![Sol tarafta gezinti sekmelerini gösterir.](../../media/navigate-usage-analytics1.png)
+    ![Sol taraftaki gezinti sekmelerini gösterir.](../../media/navigate-usage-analytics1.png)
 
-- Bu düzeydeki farklı raporlara gitmek için, her üst düzey raporun üst kısmında bulunan gezinti sekmelerini kullanın.
+- Bu düzey içindeki farklı raporlara gitmek için her üst düzey raporun en üstündeki gezinti sekmelerini kullanın.
 
-    ![Her raporun en üstünde gezinti sekmelerini gösterir.](../../media/navigate-usage-analytics2.png)
+    ![Her raporun üst kısmındaki gezinti sekmelerini gösterir.](../../media/navigate-usage-analytics2.png)
 
-- Çoğu rapor, görüntülemek istediğiniz ürün, özellik özniteliği veya AAD üzerinde filtre uygulamanız gereken bir dilimleyici içerir. Bunlar tekli veya çoklu seçim olabilir.
+- Çoğu rapor, görüntülemek istediğiniz ürüne, AAD özniteliğine veya etkinliğe göre filtreleyebileceğiniz bir dilimleyici içerir. Bunlar tek seçim veya çoklu seçim olabilir.
 
-    ![Bir dilimleyiciyi gösterir.](../../media/navigate-usage-analytics3.png)
+    ![Dilimleyiciyi gösterir.](../../media/navigate-usage-analytics3.png)
 
-    ![Bir dilimleyiciyi gösterir.](../../media/navigate-usage-analytics4.png)
+    ![Dilimleyiciyi gösterir.](../../media/navigate-usage-analytics4.png)
 
 
 - Ayrıntıları içeren bir açıklama balonunu görüntülemek için veri noktalarının üzerine gelin.
 
-    ![Vurgu örneğini gösterir.](../../media/navigate-usage-analytics6.png)
+    ![Vurgulama örneğini gösterir.](../../media/navigate-usage-analytics6.png)
 
-Şablon uygulamasının örneğini alan kullanıcı, raporu ihtiyaçlarına göre özelleştirebilme olanağına sahip olur. Şablon uygulamasını özelleştirmek için:
+Şablon uygulamasının örneğini oluşturan kullanıcı, raporu ihtiyaçlarına göre özelleştirebilecektir. Şablon uygulamasını özelleştirmek için:
 
-- Raporun **en üstünde** Raporu düzenle'yi seçin.
+- **Raporun üst kısmındaki Raporu düzenle'yi** seçin.
 
     ![Raporu düzenle'yi gösterir.](../../media/navigate-usage-analytics7.png)
 
 
 - Temeldeki [veri kümelerini](usage-analytics-data-model.md) kullanarak kendi görsellerinizi oluşturun.
 
-- Kendi Power BI Desktop için başka kaynaklar kullanın.
+- Kendi veri kaynaklarınızı getirmek için Power BI Desktop kullanın.
 
-Raporlarınızı paylaşmak için paylaş düğmesini seçmeniz ![Power BI Paylaş simgesini seçin.](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) seçin.
+Raporlarınızı paylaşmak için paylaş düğmesini seçmeniz yeterlidir ![Power BI Paylaş simgesi.](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) öğesini seçin.
 
 Raporları nasıl özelleştireceğinizi öğrenmek için bkz: [Microsoft 365 kullanım analizinde raporları özelleştirme](customize-reports.md).
 
 Power BI yardım belgelerinde çok daha fazla bilgi bulabilirsiniz:
 
-- [Power BI kavramlar](/power-bi/service-basic-concepts)
+- [Power BI temel kavramları](/power-bi/service-basic-concepts)
 
-    Pano, veri kümeleri, raporlar ve diğer kavramları Power BI öğrenin.
+    Pano, veri kümeleri, raporlar ve diğer Power BI kavramları hakkında bilgi edinin.
 
 - [Power BI ile çalışmaya başlama](/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
 
-    Power BI'daki temel işlevleri öğrenin. Power BI Masaüstü uygulamasının nasıl kullanılacağı ile ilgili bağlantılar bulun.
+    Learn the basic functionality in Power BI. Find links to how to use Power BI Desktop.
 
 - [Panoları ve raporları paylaşma](/power-bi/service-share-dashboards)
 
-    Raporları iş arkadaşlarınızla veya kuruluş dışındaki çalışanlarla nasıl paylaşabilirsiniz? Raporu veya raporun filtrelenmiş sürümünü de paylaşabilirsiniz.
+    Raporları iş arkadaşlarınızla veya kuruluşunuzun dışındaki kişilerle paylaşmayı öğrenin. Raporu veya raporun filtrelenmiş bir sürümünü de paylaşabilirsiniz.

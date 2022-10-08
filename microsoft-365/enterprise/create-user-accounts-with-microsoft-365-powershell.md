@@ -5,11 +5,13 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -19,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: PowerShell'i kullanarak bireysel veya birden çok Microsoft 365 kullanıcı hesabı oluşturma.
-ms.openlocfilehash: 9f96c5a96e014055622deb34c37cb8523f0041f8
-ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
+ms.openlocfilehash: 7cdeaa3f88736d4444e2dd1d45cf73055c4b569f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65930251"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68168781"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>PowerShell ile Microsoft 365 kullanıcı hesapları oluşturma
 
@@ -42,10 +44,10 @@ PowerShell'de kullanıcı hesapları oluşturduğunuzda, belirli hesap özellikl
 |**Soyadı** <br/> |Hayır  <br/> ||
 |**LicenseAssignment** <br/> |Hayır  <br/> |Bu, kullanıcı hesabına kullanılabilir bir lisansın atandığı lisans [planıdır (lisans planı veya SKU](/azure/active-directory/enterprise-users/licensing-service-plan-reference) olarak da bilinir). Lisans, hesaba sağlanan Microsoft 365 hizmetlerini tanımlar. Hesabı oluştururken kullanıcıya lisans atamanız gerekmez, ancak hesabın Microsoft 365 hizmetlerine erişmek için bir lisansı olmalıdır. Kullanıcı hesabını oluşturduktan sonra lisans vermek için 30 gününüz vardır. |
 |**Password** <br/> |Hayır  <br/> | Parola belirtmezseniz kullanıcı hesabına rastgele bir parola atanır ve parola komutun sonuçlarında görünür. Parola belirtirseniz, şu türlerde 8 ile 16 ASCII metin karakteri olmalıdır: küçük harfler, büyük harfler, sayılar ve simgeler.<br/> |
-|**UsageLocation** <br/> |Hayır  <br/> |Bu geçerli bir ISO 3166-1 alfa-2 ülke kodudur. Örneğin, *ABD için ABD* ve Fransa için *FR* . Bazı Microsoft 365 hizmetleri belirli ülkelerde kullanılamadığından bu değeri sağlamak önemlidir. Hesapta bu değer yapılandırılmadığı sürece kullanıcı hesabına lisans atayamazsınız. Daha fazla bilgi için bkz. [Lisans kısıtlamaları hakkında](https://go.microsoft.com/fwlink/p/?LinkId=691730).<br/> |
+|**UsageLocation** <br/> |Hayır  <br/> |Bu geçerli bir ISO 3166-1 alfa-2 ülke kodudur. Örneğin, Birleşik Devletler için *ABD* ve Fransa için *FR*. Bazı Microsoft 365 hizmetleri belirli ülkelerde kullanılamadığından bu değeri sağlamak önemlidir. Hesapta bu değer yapılandırılmadığı sürece kullanıcı hesabına lisans atayamazsınız. Daha fazla bilgi için bkz. [Lisans kısıtlamaları hakkında](https://go.microsoft.com/fwlink/p/?LinkId=691730).<br/> |
 
 >[!Note]
->Microsoft 365 yönetim [merkezini kullanarak kullanıcı hesapları oluşturmayı öğrenin](../admin/add-users/add-users.md).
+>Microsoft 365 yönetim merkezi kullanarak [kullanıcı hesapları oluşturmayı öğrenin](../admin/add-users/add-users.md).
 > 
 > Ek kaynakların listesi için bkz. [Kullanıcıları ve grupları yönetme](/admin).
 >   
@@ -83,7 +85,7 @@ New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last
 ```
 
 >[!Note]
->PowerShell Core, Windows PowerShell modülü ve adında *Msol* bulunan cmdlet'ler için Microsoft Azure Active Directory Modülünü desteklemez. Bu cmdlet'leri Windows PowerShell'den çalıştırın.
+>PowerShell Core, Windows PowerShell modülü için Microsoft Azure Active Directory Modülünü ve adında *Msol* bulunan cmdlet'leri desteklemez. Bu cmdlet'leri Windows PowerShell çalıştırın.
 >
 
 Kullanılabilir [lisans planı adlarını](/azure/active-directory/enterprise-users/licensing-service-plan-reference) listelemek için şu komutu kullanın:

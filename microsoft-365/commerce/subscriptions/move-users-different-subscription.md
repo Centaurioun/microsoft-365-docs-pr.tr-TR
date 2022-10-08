@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Kullanıcıları abonelikler arasında taşımayı öğrenin.
 ms.date: 05/12/2022
-ms.openlocfilehash: c3450cecf4219f825740d5777cebeb05782b3dc4
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: b0a69cb06f180facfc002fe5e33b6042966708e7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67322639"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68189989"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Kullanıcıları farklı bir aboneliğe taşıma
 

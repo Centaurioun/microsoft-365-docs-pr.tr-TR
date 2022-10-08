@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: mijeffer, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -21,14 +22,14 @@ ms.custom:
 - admindeeplinkMAC
 description: Bulut Çözümü Sağlayıcısı (CSP) programı aracılığıyla satın alınan kalıcı yazılımlar için yazılım ve ürün lisans anahtarlarını indirmeyi öğrenin.
 ms.date: 01/27/2021
-ms.openlocfilehash: 58b35335e1d00207be664700694edfb46cc8fdec
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 1864715638d9b6deb5574442e925eda93255291e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101898"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170123"
 ---
-# <a name="download-perpetual-software-and-product-license-keys-in-microsoft-365"></a>Microsoft 365'da kalıcı yazılım ve ürün lisans anahtarlarını indirme
+# <a name="download-perpetual-software-and-product-license-keys-in-microsoft-365"></a>Microsoft 365'te kalıcı yazılım ve ürün lisans anahtarlarını indirme
 
 Bu makalede, Bulut Çözümü Sağlayıcısı (CSP) programı aracılığıyla satın alınan kalıcı yazılımlar için yazılım ve ürün lisans anahtarlarını indirme işlemi açıklanmaktadır.
 

@@ -7,14 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 4b2c84ec-64d3-4027-af4c-40f69e7b37c9
 description: İşletmeniz için zamanlama ilkeleri ayarlamayı öğrenin. Zamanlama ilkeleri randevuların uzunluğunun yanı sıra kabul edilebilir müşteri adayı ve iptal sürelerini içerir.
-ms.openlocfilehash: 39d6ab31d7bfda8f2686ed232402c1b98e6a56db
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: ebc3441b73efabb7122f48282118fb466a71ede5
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637549"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198745"
 ---
 # <a name="set-your-microsoft-bookings-scheduling-policies"></a>Microsoft Bookings zamanlama ilkelerinizi ayarlama
 
@@ -35,7 +37,7 @@ Bu tabloda, rezervasyon sayfasında bulunan çeşitli zamanlama ilkeleri açıkl
 
 ## <a name="set-your-policies"></a>İlkelerinizi ayarlama
 
-1. Microsoft 365'da uygulama başlatıcıyı ve ardından Bookings'ı seçin.
+1. Microsoft 365'te uygulama başlatıcıyı ve ardından Bookings'i seçin.
 
 1. Gezinti bölmesinde **Rezervasyon sayfası'nı** seçin.
 

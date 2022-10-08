@@ -7,8 +7,9 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.collection:
+- scotvorg
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
@@ -17,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: Bu makalede, kullanıcılarınız için ayarları yönetme hakkında bilgi verilmektedir.
-ms.openlocfilehash: ec83579e5a3c4a264f5030db1cdbf1ac6aa915fe
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 7084210b34c29e2b1b83b6a00fda1e226f732a2a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67470263"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68190363"
 ---
 # <a name="user-email-settings-in-microsoft-365"></a>Microsoft 365'te kullanıcı e-posta ayarları
 

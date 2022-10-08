@@ -1,5 +1,5 @@
 ---
-title: Çalışma belgesinde görevleri veya belgeleri Microsoft 365 yönetim merkezi
+title: Microsoft 365 yönetim merkezi görevleri veya belgeleri arama
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
@@ -17,85 +18,85 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Daha iyi ve daha hızlı sonuçlar elde etmek için yönetim merkezinde arama özelliğini kullanmayı öğrenin.
-ms.openlocfilehash: 026fe9ed40f44f01a056cc7c6af281c5ce46c6c1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Daha iyi ve daha hızlı sonuçlar elde etmek için yönetim merkezindeki arama özelliğini kullanmayı öğrenin.
+ms.openlocfilehash: d20ed5a641a373eafc7209991810963050b97f04
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985546"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68173181"
 ---
-# <a name="search-in-the-microsoft-365-admin-center"></a>Arama sonuçlarında Microsoft 365 yönetim merkezi
+# <a name="search-in-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezinde arama yapma
 
-Kuruluşta bir Microsoft 365 yöneticisi olarak, kullanıcıları bulmak, eylemler gerçekleştirmek, farklı ayarlara gitmek ve belgeleri okumak için arama kullanabilirsiniz. Yeni arama işlevselliği ile arama hızı geliştirildi ve artık yönetim merkezinin her sayfasından aramaabilirsiniz. Arama kutusu yönetim merkezinin üst kısmında bulunan başlık alanına taşınmıştır. Herhangi bir **sayfadan arama yapmak için Alt+S** kısayolunu kullanabilirsiniz.
+Microsoft 365 kuruluşunun yöneticisi olarak, kullanıcıları bulmak, eylemler gerçekleştirmek, farklı ayarlara gitmek ve belgeleri okumak için aramayı kullanabilirsiniz. Yeni arama işlevselliği sayesinde arama hızı iyileştirildi ve artık yönetim merkezindeki her sayfadan arama yapabilirsiniz. Arama kutusu, yönetim merkezinin üst kısmındaki başlık alanına taşındı. Herhangi bir sayfadan arama yapmak için **Alt+S kısayolunu** kullanabilirsiniz.
 
-:::image type="content" source="../../media/search-bar.png" alt-text="Ekran görüntüsü: Açıklama çubuğundaki Microsoft 365 yönetim merkezi":::
+:::image type="content" source="../../media/search-bar.png" alt-text="Ekran görüntüsü: Microsoft 365 yönetim merkezi arama çubuğu":::
 
-Arama sonuçları farklı kategorilere ayrılır. Kategorilerin çoğu yönetim merkezinde yer alan öğelerdir. Örneğin, kullanıcılar, gruplar, paylaşılan posta kutuları veya etki alanları. Diğer kategoriler, gezinebilirsiniz yerleri, gerçekleştirebilirsiniz eylemleri veya değiştirebilirsiniz uygulama düzeyi ayarlarını gösterir. Ayrıca belgelerle ilgili bir kategori de var.
+Arama sonuçları farklı kategorilere ayrılmıştır. Kategorilerin çoğu yönetim merkezindeki öğelerdir. Örneğin, kullanıcılar, gruplar, paylaşılan posta kutuları veya etki alanları. Diğer kategoriler, gezinebileceğiniz yerleri, gerçekleştirebileceğiniz eylemleri veya değiştirebileceğiniz uygulama düzeyi ayarlarını gösterir. Ayrıca belgelerle ilgili bir kategori de vardır.
 
-Aşağıdaki bölümlerde, yönetim merkezinde aranabilir olan farklı alanlar ve kategoriler açıklanmaktadır.
+Aşağıdaki bölümlerde, yönetim merkezindeki aranabilir farklı alanlar ve kategoriler açıklanmaktadır.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Yönetim merkezinde arama yapmak için yönetici olmak gerekir. Arama sonuçları, oturum açan kullanıcının sahip olduğu yönetici izinlerini içerir. Örneğin, SharePoint yönetim merkezinde bir alanı veya kategoriyi görmüyorsa, aramada bu alanı veya kategoriyi görmez.
+Yönetim merkezinde arama yapmak için yönetici olmanız gerekir. Arama sonuçlarının kapsamı, oturum açmış kullanıcının sahip olduğu yönetici izinleri olarak belirlenmiştir. Örneğin, SharePoint yöneticisi yönetim merkezinde bir alan veya kategori görmüyorsa, aramada görmez.
 
 ## <a name="users"></a>Kullanıcılar
 
-Kullanıcılar görünen ad, soyadı, ad, kullanıcı adı, birincil e-posta adresi veya e-posta diğer adları ile bulunabilir. Kullanıcının ayrıntılarını düzenlemek için kullanıcının adını düzenle'yi seçin.
+Kullanıcılar görünen ad, soyadı, ad, kullanıcı adı, birincil e-posta adresi veya e-posta diğer adlarına göre bulunabilir. Kullanıcının ayrıntılarını düzenlemek için kullanıcının adını düzenlemeyi seçin.
 
-:::image type="content" source="../../media/User-search-stock-picture-domain-blanked.png" alt-text="Ekran görüntüsü: Bir kullanıcı Her Henderson'ı arama":::
+:::image type="content" source="../../media/User-search-stock-picture-domain-blanked.png" alt-text="Ekran görüntüsü: Felix Henderson kullanıcısını arama":::
 
-Adının yanındaki üç nokta (diğer eylemler) menüsünü seçerseniz, parolalarını sıfırlayabilirsiniz.
+Adlarının yanındaki üç nokta (daha fazla eylem) menüsünü seçerseniz, parolalarını sıfırlayabilirsiniz.
 
-:::image type="content" source="../../media/User-search-stock-picture-reset-password-domain-blanked.png" alt-text="Ekran görüntüsü: Arama sonuçlarından parola sıfırlama seçeneğiyle kullanıcı araması":::
+:::image type="content" source="../../media/User-search-stock-picture-reset-password-domain-blanked.png" alt-text="Ekran görüntüsü: Arama sonucundan parola sıfırlama seçeneğiyle kullanıcı araması":::
 
-**İpuçları arama sonuçlarını iyileştirmek için daha fazla bilgi**
+**Kullanıcı arama sonuçlarını iyileştirmeye yönelik ipuçları**
 
-- Kullanıcı aramaları önceki özelliklerle tam olarak eş olduysa, kullanıcıların adlarını doğru yazıldığından emin olun. Örneğin yukarıdaki örnekte, Jus veya Malz çalışır ancak Hüsne yerine Jostin gibi bir yanlış yazım bu kullanıcıyı bulamaz.
-- Tam eşleşme elde etmek için birincil e-posta adresine veya kullanıcıadına göre arama yapın.
+- Kullanıcı aramaları daha önce bahsedilen özelliklerle tam olarak eşleştiğinden, kullanıcıların adlarını doğru yazdığınızdan emin olun. Örneğin, yukarıdaki örnekte Jus veya Malz çalışır ancak Justin yerine Jostin gibi bir yanlış yazım bu kullanıcıyı bulamaz.
+- Tam eşleşme elde etmek için birincil e-posta adresine veya kullanıcı adına göre arama.
 
 ## <a name="groups"></a>Gruplar
 
-Grupları grup adına veya grup e-posta adresine göre arayabilirsiniz. Herhangi bir sayfada Grubu seçerek grubu düzenleyebilirsiniz.
+Gruplar için grup adına veya grup e-posta adresine göre arama yapabilirsiniz. Grubu seçebilir ve grubu herhangi bir sayfadan düzenleyebilirsiniz.
 
-:::image type="content" source="../../media/search-for-groups-mac.png" alt-text="Ekran görüntüsü: Yönetim merkezinde grupları arama sonuçları":::
+:::image type="content" source="../../media/search-for-groups-mac.png" alt-text="Ekran görüntüsü: Yönetim merkezindeki gruplar için arama sonuçları":::
 
-**İpuçları arama sonuçlarını iyileştirmek için daha fazla bilgi**
+**Grup arama sonuçlarını iyileştirmeye yönelik ipuçları**
 
-Grup adını doğru yazıldığından emin olun.
+Grup adını doğru yazdığınızdan emin olun.
 
-## <a name="actions"></a>Eylemler
+## <a name="actions"></a>Eylem
 
-Eylemler kategorisi, M365 Yönetim Merkezi'nde sık kullanılan eylemleri içerir. Eylemleri sistemde eylem olarak düşünabilirsiniz. Örneğin, herhangi bir sayfada "parolayı sıfırla" araması ve sonra kullanıcılar için bir veya birden çok parolayı sıfırlamanız da olabilir. "Kullanıcı sil" ifadesini arayabilir ve Kullanıcı sil sayfasından kullanıcı silebilirsiniz.
+M365 Yönetici Center'da Eylemler kategorisinin sık kullanılan eylemler içerdiğini arayabilirsiniz. Eylemleri sistemde fiil olarak düşünün. Örneğin, herhangi bir sayfadan "parola sıfırlama" araması yapabilir ve ardından kullanıcılar için bir veya daha fazla parolayı sıfırlayabilirsiniz. "Kullanıcıyı sil" araması yapabilir ve Kullanıcıyı Sil sayfasından silebilirsiniz.
 
-:::image type="content" source="../../media/search-for-actions-mac.png" alt-text="Ekran görüntüsü: Yönetim merkezinde gerçekleştirebilirsiniz eylemleri gösteren arama sonuçları":::
+:::image type="content" source="../../media/search-for-actions-mac.png" alt-text="Ekran görüntüsü: Yönetim merkezinde gerçekleştirebileceğiniz eylemleri gösteren arama sonuçları":::
 
 ## <a name="navigation"></a>Gezinti
 
-Sonuçlar, yönetim merkezinde belirli bir sayfaya hızla gitmek için bir yol sağlar. Örneğin, RBAC aranarak Azure AD rolleri için Roller sayfasına gidin.
+Sonuçlar, yönetim merkezindeki belirli bir sayfaya hızla gitmek için bir yol sağlar. Örneğin, RBAC araması sizi Azure AD roller için Roller sayfasına götürür.
 
 :::image type="content" source="../../media/search-for-navigation-mac.png" alt-text="Ekran görüntüsü: Yönetim merkezinde gezinti yolunu gösteren arama sonuçları":::
 
 ## <a name="settings"></a>Ayarlar
 
-Organizasyonuyla ilgili desteklenen uygulama düzeyi ayarları, abone olunan hizmetler ve güvenlik ve gizlilik ayarları için arama yapın.
+Kuruluşunuzla, abone olduğunuz hizmetlerle ve güvenlik ve gizlilik ayarlarıyla ilgili desteklenen uygulama düzeyi ayarlarını arayın.
 
-:::image type="content" source="../../media/search-for-settings-mac.png" alt-text="Ekran görüntüsü: Yönetim merkezinde ayarları gösteren arama sonuçları":::
+:::image type="content" source="../../media/search-for-settings-mac.png" alt-text="Ekran görüntüsü: Yönetim merkezindeki ayarları gösteren arama sonuçları":::
 
 ## <a name="domain"></a>Etki alanı
 
-Etki alanlarınızı içeren hızlı bağlantılar bulabilirsiniz, ardından bağlantı sizi bu etki alanının genel bakış sayfasına götürmenizi sağlar.
+Etki alanlarınızın hızlı bağlantılarını bulabilirsiniz ve bağlantı sizi bu etki alanının genel bakış sayfasına götürür.
 
 :::image type="content" source="../../media/search-for-domains-mac.png" alt-text="Yönetim merkezinde sahip olunan etki alanlarını gösteren arama sonuçları.":::
 
-## <a name="documentation"></a>Belgeler
+## <a name="documentation"></a>Belge
 
-Belge araması, arama tümceciğinize göre ilgili yardım belgeleri sağlar. Daha fazla bilgi edinmek için konuya tıklayın.
+Belge arama, arama tümceciğinize göre ilgili yardım belgeleri sağlar. Daha fazla bilgi edinmek için konuya tıklayın.
 
 :::image type="content" source="../../media/search-for-docs-mac.png" alt-text="Ekran görüntüsü: Yönetim merkezinde belge sonuçlarını gösteren arama":::
 
-## <a name="send-us-feedback"></a>Bize geri bildirim gönderin
+## <a name="send-us-feedback"></a>Görüşlerinizi bize gönderin
 
-Arama deneyimiyle ilgili geri bildirim göndermek için bu bölümü kullanın. Tüm geri bildirimleri yanıtlayamamız devam ediyor, ancak bunların hepsini okuyoruz ve arama deneyimini geliştirmek için geri bildiriminizi kullanıyoruz. Geri bildiriminiz için mümkün olan en fazla ayrıntıyı sağlamayı sağlar.
+Arama deneyimi hakkında geri bildirim göndermek için bu bölümü kullanın. Tüm geri bildirimleri yanıtlayamıyoruz, ancak hepsini okuyoruz ve geri bildiriminizi kullanarak arama deneyimini iyileştiriyoruz. Geri bildiriminizde olabildiğince fazla ayrıntı sağladığınızdan emin olun.
 
 :::image type="content" source="../../media/search-feedback-mac.png" alt-text="Ekran görüntüsü: Yönetim merkezinde aramayla ilgili geri bildirim gönderme":::

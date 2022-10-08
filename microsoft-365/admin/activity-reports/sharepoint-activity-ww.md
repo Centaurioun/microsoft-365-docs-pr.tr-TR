@@ -2,14 +2,15 @@
 title: SharePoint etkinlik raporlarını Microsoft 365 yönetim merkezi
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -20,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: SharePoint lisanslı kullanıcı dosyası etkileşimleri, paylaşılan dosya sayısı ve depolama kullanımı hakkında bilgi edinmek için SharePoint etkinlik kullanım raporunu alın.
-ms.openlocfilehash: 4c330c45d3d6a0c906c3ad7e1b4d2391e3be4697
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 709a22a3e1b7105ccf10b9b735dc2a499d0fda19
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662641"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170145"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Yönetim merkezinde Microsoft 365 Raporları - SharePoint etkinliği
 
 Microsoft 365 yöneticisi olarak Raporlar panosu, kuruluşunuzdaki çeşitli ürünlerde etkinliğe genel bakış bilgilerini gösterir. Bu pano size, her ürüne özgü etkinlikler hakkında daha ayrıntılı bilgi edinmek için detaya gitme olanağı tanır. [Microsoft 365 yönetim merkezi etkinlik raporlarına](activity-reports.md) göz atın.
   
-Örneğin, SharePoint kullanma lisansı olan her kullanıcının etkinliğini anlamak için dosyalarla etkileşimlerine bakabilirsiniz. Ayrıca, paylaşılan dosya sayısına bakarak işbirliği düzeyini anlamanıza da yardımcı olabilir.
+For example, you can understand the activity of every user licensed to use SharePoint by looking at their interaction with files. It also helps you to understand the level of collaboration going on by looking at the number of files shared.
   
 ## <a name="how-do-i-get-to-the-sharepoint-activity-report"></a>SharePoint etkinlik raporuna Nasıl yaparım? ulaşabilirsiniz?
 
