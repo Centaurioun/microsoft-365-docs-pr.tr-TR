@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: other
 ms.date: 09/15/2022
@@ -15,6 +15,8 @@ ms.collection:
 - highpri
 - Adm_O365
 - Adm_TOC
+- m365-security
+- tier1
 ms.custom:
 - VSBFY23
 - MSStore_Link
@@ -30,15 +32,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: İşletmenizi fidye yazılımlarından, kimlik avından ve kötü amaçlı URL'lerden veya eklerden korumaya yönelik en iyi yöntemler.
-ms.openlocfilehash: f9f28ec270a17761e7fd6fe1f7a06dfcc42f6946
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+description: Küçük veya orta ölçekli işletmenizi fidye yazılımlarından, kimlik avından ve kötü amaçlı URL'lerden veya eklerden korumak için en iyi yöntemler.
+ms.openlocfilehash: d90e2cf8f85ba812c59aac5033c2fb8c9bee8ab1
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742793"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68117517"
 ---
-# <a name="top-10-ways-to-secure-your-business---best-practices-to-follow"></a>İşletmenizin güvenliğini sağlamanın en iyi 10 yolu - İzleyebileceğiniz en iyi yöntemler
+# <a name="top-10-ways-to-secure-your-data---best-practices-for-small-and-medium-sized-businesses"></a>Verilerinizin güvenliğini sağlamanın en iyi 10 yolu - Küçük ve orta ölçekli işletmeler için en iyi yöntemler
 
 **Uygulandığı öğe**
 
@@ -49,7 +51,7 @@ ms.locfileid: "67742793"
 > [!NOTE]
 > Bu makale, 300'e kadar kullanıcısı olan küçük ve orta ölçekli işletmeler için tasarlanmıştır. Kurumsal bir kuruluşsanız bkz. [Microsoft 365 kiracınız için fidye yazılımı koruması dağıtma](../../solutions/ransomware-protection-microsoft-365.md).
 
-İş için Microsoft 365 planları, antiphishing, antispam ve kötü amaçlı yazılım koruması gibi güvenlik özelliklerini içerir. Microsoft 365 İş Ekstra cihaz güvenliği, gelişmiş tehdit koruması ve bilgi koruması gibi daha da fazla özellik içerir. Bu makalede işletmenizin güvenliğini sağlama açıklanır ve [microsoft 365 İş planlarının özellikleri karşılaştırılmaktadır](#comparing-microsoft-365-for-business-plans).
+İş için Microsoft 365 planları, antiphishing, antispam ve kötü amaçlı yazılım koruması gibi güvenlik özelliklerini içerir. Microsoft 365 İş Ekstra cihaz güvenliği, gelişmiş tehdit koruması ve bilgi koruması gibi daha da fazla özellik içerir. Bu makalede, microsoft 365 İş ile verilerinizin güvenliğini sağlama açıklanmaktadır. Bu makale, [microsoft 365 İş planları genelindeki özellikleri karşılaştırabileceğiniz](#comparing-microsoft-365-for-business-plans) bir bölüm de içerir.
 
 :::image type="content" source="../../media/top-10-ways-secure-data.png" alt-text="İş verilerinin güvenliğini sağlamanın en iyi 10 yolunu listeleyen diyagram.":::
 

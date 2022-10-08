@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365'te yalıtım ve Access Control
-ms.author: robmazz
-author: robmazz
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: article
@@ -10,18 +10,19 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
 f1.keywords:
 - NOCSH
 description: "Özet: Microsoft 365'in çeşitli uygulamalarındaki yalıtım ve erişim denetiminin açıklaması."
-ms.openlocfilehash: 7d978a4b5d864c9130fae3a61c11c0becb5e6870
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+ms.openlocfilehash: b85e61f8fc47fa0dd613ee0f054db6df4028f8d9
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67570325"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186645"
 ---
 # <a name="isolation-and-access-control-in-microsoft-365"></a>Microsoft 365'te yalıtım ve Access Control
 

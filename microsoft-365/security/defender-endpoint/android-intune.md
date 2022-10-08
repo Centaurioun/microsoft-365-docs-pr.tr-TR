@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 389912b3df98ad23c553f3f24d2c55859116bc4c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 69dbf0631750f90c63d4d21b034e4594b2bfafa6
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683835"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68157556"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Android’de Uç Nokta için Defender’ı Microsoft Intune ile dağıtın
 
@@ -127,12 +128,12 @@ Yönetilen Google Play'inize Uç Nokta için Microsoft Defender uygulama eklemek
     Varsayılan olarak, yönetilen Google Play **, uygulama yeni izinler istediğinde Onaylı tut'ı** seçer.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/ffecfdda1c4df14148f1526c22cc0236.png" alt-text=" Microsoft Defender 365 portalındaki onay ayarları yapılandırma tamamlama sayfası" lightbox="images/ffecfdda1c4df14148f1526c22cc0236.png":::
+    > :::image type="content" source="images/ffecfdda1c4df14148f1526c22cc0236.png" alt-text="Microsoft Defender 365 portalındaki onay ayarları yapılandırma tamamlama sayfası" lightbox="images/ffecfdda1c4df14148f1526c22cc0236.png":::
 
 6. İzinleri işleme seçimi yapıldıktan sonra, Uç Nokta için Microsoft Defender uygulama listenize eşitlemek için **Eşitle'yi** seçin.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/34e6b9a0dae125d085c84593140180ed.png" alt-text="Microsoft Defender 365 portalındaki Eşitleme bölmesi" lightbox="images/34e6b9a0dae125d085c84593140180ed.png":::
+    > :::image type="content" source="images/34e6b9a0dae125d085c84593140180ed.png" alt-text="Microsoft Defender 365 portalındaki Eşitle bölmesi" lightbox="images/34e6b9a0dae125d085c84593140180ed.png":::
 
 7. Eşitleme birkaç dakika içinde tamamlanır.
 
@@ -152,8 +153,8 @@ Yönetilen Google Play'inize Uç Nokta için Microsoft Defender uygulama eklemek
 
         - Ad: Uç Nokta için Microsoft Defender.
         - **Platform olarak Android Kurumsal'ı** seçin.
-        - **Yalnızca Profil Türü olarak İş Profili'ni** seçin.
-        - **Uygulama Seç'e** tıklayın, **Microsoft Defender ATP'yi** seçin, **Tamam'ı** ve ardından **İleri'yi** seçin.
+        - **Yalnızca Kişisel İş Profili'ni veya Yalnızca** Profil Türü olarak **Tam Olarak Yönetilen, Ayrılmış ve Şirkete ait iş profilini** seçin.
+        - **Uygulama Seç'e** tıklayın, **Microsoft Defender** seçin, **Tamam'ı** ve ardından **İleri'yi** seçin.
 
         :::image type="content" source="images/android-create-app.png" alt-text=" İlişkili uygulama ayrıntıları bölmesinin ekran görüntüsü." lightbox="images/android-create-app.png":::
      
@@ -164,7 +165,7 @@ Yönetilen Google Play'inize Uç Nokta için Microsoft Defender uygulama eklemek
        - **Otomatik verme** - Kullanıcıya bildirmeden otomatik olarak onaylar.
        - **Otomatik reddetme** - Kullanıcıya bildirmeden otomatik olarak reddeder. 
 
-    1. **Ayarlar** sayfasında Yapılandırma ayarları bölümüne gidin ve **Yapılandırma ayarları** biçiminde **'Yapılandırma tasarımcısını kullan'ı** seçin. 
+    1. Yapılandırma ayarları bölümüne gidin ve **Yapılandırma ayarları** biçiminde **'Yapılandırma tasarımcısını kullan'ı** seçin. 
 
        :::image type="content" alt-text="Android oluşturma uygulama yapılandırma ilkesinin görüntüsü." source="images/configurationformat.png" lightbox="images/configurationformat.png":::
 
@@ -182,12 +183,10 @@ Yönetilen Google Play'inize Uç Nokta için Microsoft Defender uygulama eklemek
 
     1. Ardından gelen **Gözden Geçir + Oluştur** sayfasında tüm bilgileri gözden geçirin ve **Oluştur'u** seçin.
 
-        Depolama iznini otomatik olarak alan Uç Nokta için Defender uygulama yapılandırma ilkesi artık seçili kullanıcı grubuna atanır.
+        Uç Nokta için Defender uygulama yapılandırma ilkesi artık seçili kullanıcı grubuna atanmıştır.
 
-        > [!div class="mx-imgBorder"]
-        > :::image type="content" source="images/android-review-create.png" alt-text="Uygulama yapılandırma ilkesi oluştur sayfasındaki Gözden Geçir + oluştur sekmesi" lightbox="images/android-review-create.png":::
 
-10. **Özellikler** \> **Atamalarını** \> **Düzenle** listesinden \> **Microsoft Defender ATP** uygulaması'nı seçin.
+10. **Özellikler** \> **Atamaları** \> **Düzenle** listesinden \> **Microsoft Defender** uygulamayı seçin.
 
     :::image type="content" source="images/mda-properties.png" alt-text="Özellikler sayfasındaki Düzenle seçeneği" lightbox="images/mda-properties.png":::
 
@@ -265,28 +264,28 @@ Cihaz yapılandırma profili artık seçili kullanıcı grubuna atanır.
 
     :::image type="content" source="images/9fe378a1dce0f143005c3aa53d8c4f51.png" alt-text="Uç Nokta için Microsoft Defender portalı" lightbox="images/9fe378a1dce0f143005c3aa53d8c4f51.png":::
 
-## <a name="set-up-microsoft-defender-in-personal-profile-on-android-enterprise-in-byod-mode"></a>KCG modunda Android Kurumsal'da Kişisel Profil'de Microsoft Defender'ı ayarlama
+## <a name="set-up-microsoft-defender-in-personal-profile-on-android-enterprise-in-byod-mode"></a>KCG modunda Android Kurumsal'da Kişisel Profil'de Microsoft Defender ayarlama
 
-### <a name="set-up-microsoft-defender-in-personal-profile"></a>Kişisel Profilde Microsoft Defender'ın ayarlanması
+### <a name="set-up-microsoft-defender-in-personal-profile"></a>Kişisel Profilde Microsoft Defender ayarlama
 
-Yöneticiler, kişisel profillerde Microsoft Defender desteğini ayarlamak ve yapılandırmak için şu adımları izleyerek [Microsoft Endpoint Management yönetim merkezine](https://endpoint.microsoft.com) gidebilir:
+Yöneticiler, aşağıdaki adımları izleyerek kişisel profillerde Microsoft Defender desteğini ayarlamak ve yapılandırmak için [Microsoft Endpoint Management yönetim merkezine](https://endpoint.microsoft.com) gidebilir:
 
 1. **Uygulamalar> Uygulama yapılandırma ilkeleri'ne** gidin ve **Ekle'ye** tıklayın. **Yönetilen Cihazlar'ı** seçin.
 
     > [!div class="mx-imgBorder"]
     > ![Uygulama yapılandırma ilkesi ekleme resmi.](images/addpolicy.png)
 
-1. Yapılandırma ilkesini benzersiz olarak tanımlamak için **Ad** ve **Açıklama** girin. Platformu **'Android Kurumsal'**, Profil türü **'Yalnızca kişisel iş profili'** ve Hedeflenen uygulama'yı **'Microsoft Defender'** olarak seçin.
+1. Yapılandırma ilkesini benzersiz olarak tanımlamak için **Ad** ve **Açıklama** girin. **Platformu 'Android Enterprise'** olarak, Profil türü **'Yalnızca kişisel iş profili'** olarak ve Hedeflenen uygulama **'Microsoft Defender'** olarak seçin.
 
     > [!div class="mx-imgBorder"]
     > ![Adlandırma yapılandırma ilkesinin görüntüsü.](images/selectapp.png)
 
-1. Ayarlar sayfasındaki **'Yapılandırma ayarları biçimi'** bölümünde **'Yapılandırma tasarımcısını kullan'ı** seçin ve **Ekle'ye** tıklayın. Görüntülenen yapılandırmalar listesinden **'Kişisel profilde Microsoft Defender'ı** seçin.
+1. Ayarlar sayfasındaki **'Yapılandırma ayarları biçimi'** bölümünde **'Yapılandırma tasarımcısını kullan'ı** seçin ve **Ekle'ye** tıklayın. Görüntülenen yapılandırmalar listesinden **'Kişisel profilde Microsoft Defender'** öğesini seçin.
 
     > [!div class="mx-imgBorder"]
     > ![Kişisel profili yapılandırma resmi.](images/addconfiguration.png)
 
-1. Seçilen yapılandırma listelenir. Microsoft Defender'ın kişisel profilleri desteklemesini sağlamak için **yapılandırma değerini 1** olarak değiştirin. Yöneticiyi aynı konuda bilgilendiren bir bildirim görüntülenir. **İleri'ye** tıklayın.
+1. Seçilen yapılandırma listelenir. Kişisel profilleri desteklemek Microsoft Defender etkinleştirmek için **yapılandırma değerini 1** olarak değiştirin. Yöneticiyi aynı konuda bilgilendiren bir bildirim görüntülenir. **İleri'ye** tıklayın.
 
     > [!div class="mx-imgBorder"]
     > ![Yapılandırma değerini değiştirme görüntüsü.](images/changeconfigvalue.png)
@@ -300,11 +299,11 @@ Yöneticiler, Defender mobil istemcisi tarafından güvenlik portalına hangi ve
 
 Kuruluşlar, kayıtlı KCG cihazlarında Microsoft Defender ile Kişisel profili korumak için kullanıcılarıyla iletişim kurabilir.
 
-- Ön koşul: Microsoft Defender'ın kişisel profillerde etkinleştirilmesi için Microsoft Defender'ın iş profilinde zaten yüklü ve etkin olması gerekir.
+- Ön koşul: Microsoft Defender, kişisel profillerde Microsoft Defender etkinleştirmek için iş profilinde zaten yüklü ve etkin olmalıdır.
 
 ### <a name="to-complete-onboarding-a-device"></a>Cihaz ekleme işlemini tamamlamak için
 
-1. Microsoft Defender uygulamasını kişisel bir Google Play mağazası hesabıyla kişisel bir profile yükleyin.
+1. Microsoft Defender uygulamasını kişisel bir Google Play mağaza hesabıyla kişisel bir profile yükleyin.
 2. Şirket portalı uygulamasını kişisel profile yükleyin. Oturum açma gerekmez.
 3. Kullanıcı uygulamayı başlattığında oturum açma ekranını görür. **Yalnızca kurumsal hesabı kullanarak oturum açın**.
 4. Başarılı bir oturum açmada kullanıcılar aşağıdaki ekranları görür:
@@ -316,7 +315,7 @@ Kuruluşlar, kayıtlı KCG cihazlarında Microsoft Defender ile Kişisel profili
 > **Ön koşul:**
 >
 > 1. Şirket portalının kişisel profilde etkinleştirilmesi gerekir.
-> 2. Microsoft Defender'ın zaten yüklü ve iş profilinde etkin olması gerekir.
+> 2. Microsoft Defender zaten yüklü ve iş profilinde etkin olmalıdır.
 
 ## <a name="related-topics"></a>İlgili konular
 

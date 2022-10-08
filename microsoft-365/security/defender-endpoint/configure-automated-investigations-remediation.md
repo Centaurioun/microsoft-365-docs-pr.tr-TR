@@ -12,16 +12,18 @@ ms.author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 search.appverid: met150
-ms.openlocfilehash: 428ceefa6b8921782864eac8f42105a44cc06c72
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: a1dd1d4439a2ba0b4f0b822f0a943392bbaedd0a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67695747"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186491"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de otomatik araştırma ve düzeltme özelliklerini yapılandırma
 
@@ -38,6 +40,9 @@ Otomatik araştırma ve düzeltmeyi yapılandırmak için:
 
 1. [Özellikleri açın](#turn-on-automated-investigation-and-remediation); Ve
 2. [Cihaz gruplarını ayarlayın](#set-up-device-groups).
+
+> [!NOTE]
+> - Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.
 
 ## <a name="turn-on-automated-investigation-and-remediation"></a>Otomatik araştırmayı ve düzeltmeyi açma
 

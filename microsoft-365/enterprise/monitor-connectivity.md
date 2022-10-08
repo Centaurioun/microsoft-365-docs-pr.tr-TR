@@ -8,7 +8,9 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -20,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: Bu makalede, Microsoft 365 bağlantısını izlemek ve sürdürmek için kullanabileceğiniz araçlar ve teknikler hakkında bilgi edineceksiniz.
-ms.openlocfilehash: db2997db354e1650882a63c7198ea248e4e90c1c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 8388e9d354a7ff87b8a585c2a22ecf7edf473bf8
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702038"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186579"
 ---
 # <a name="monitor-microsoft-365-connectivity"></a>Microsoft 365 bağlantısını izleyin
 

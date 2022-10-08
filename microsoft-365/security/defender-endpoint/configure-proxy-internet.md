@@ -14,16 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
-ms.topic: article
+- m365-security
+- tier1
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 4ec9f997cca5b118745a82ea11e7557383303ba5
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 7d76deeb278e460a2518cb922b0a087273e16d6b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702940"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186601"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Cihaz ara sunucusu ve İnternet bağlantısı ayarlarını yapılandırma
 
@@ -96,7 +96,7 @@ Statik proxy, grup ilkesi (GP) aracılığıyla yapılandırılabilir; grup ilke
 | Bağlı kullanıcı deneyimlerini ve telemetriyi yapılandırma | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> Örneğin: ```10.0.0.6:8080``` (REG_SZ) |
 
 > [!NOTE]
-> Aksi halde **tamamen çevrimdışı** olan cihazlarda 'TelemetryProxyServer' ayarını kullanıyorsanız, değerine `1`sahip ek kayıt defteri ayarını `PreferStaticProxyForHttpRequest` eklemeniz önerilir.<br>
+> Tamamen **çevrimdışı** olan cihazlarda 'TelemetryProxyServer' ayarını kullanıyorsanız, yani işletim sistemi çevrimiçi sertifika iptal listesi veya Windows Update için bağlanamıyorsa, değeriyle `1`ek kayıt defteri ayarını `PreferStaticProxyForHttpRequest` eklemeniz önerilir.<br>
 > "PreferStaticProxyForHttpRequest" için üst kayıt defteri yolu konumu "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"<br>
 > Kayıt defteri değerini doğru konuma eklemek için aşağıdaki komut kullanılabilir:<br>
 > ```reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f```<br>
@@ -106,13 +106,13 @@ Statik proxy, grup ilkesi (GP) aracılığıyla yapılandırılabilir; grup ilke
 
 ## <a name="configure-a-static-proxy-for-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma için statik proxy yapılandırma
 
-Microsoft Defender Virüsten Koruma [bulut tabanlı koruma](cloud-protection-microsoft-defender-antivirus.md) , yeni ve yeni tehditlere karşı neredeyse anında, otomatik koruma sağlar. Defender Virüsten Koruma etkin kötü amaçlı yazılımdan koruma çözümünüz olduğunda [özel göstergeler](manage-indicators.md) için bağlantının gerekli olduğunu unutmayın. [Blok modundaki EDR için](edr-in-block-mode.md) Microsoft dışı bir çözüm kullanılırken birincil kötü amaçlı yazılımdan koruma çözümü vardır.
+Microsoft Defender Virüsten Koruma [bulut tabanlı koruma](cloud-protection-microsoft-defender-antivirus.md), yeni ve yeni tehditlere karşı neredeyse anında, otomatik koruma sağlar. Defender Virüsten Koruma etkin kötü amaçlı yazılımdan koruma çözümünüz olduğunda [özel göstergeler](manage-indicators.md) için bağlantının gerekli olduğunu unutmayın. [Blok modundaki EDR için](edr-in-block-mode.md) Microsoft dışı bir çözüm kullanılırken birincil kötü amaçlı yazılımdan koruma çözümü vardır.
 
 Yönetim Şablonları'nda bulunan grup ilkesi kullanarak statik proxy'yi yapılandırın:
 
 1. **Yönetim Şablonları > Windows Bileşenleri > Microsoft Defender Virüsten Koruma > Ağa bağlanmak için ara sunucu tanımlayın**. 
 
-2. **Etkin** olarak ayarlayın ve proxy sunucusunu tanımlayın. URL'nin http:// veya https:// olması gerektiğini unutmayın. https:// için desteklenen sürümler için bkz. [Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme](manage-updates-baselines-microsoft-defender-antivirus.md).
+2. **Etkin** olarak ayarlayın ve proxy sunucusunu tanımlayın. URL'nin http:// veya https:// olması gerektiğini unutmayın. https:// için desteklenen sürümler için bkz[. Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme](manage-updates-baselines-microsoft-defender-antivirus.md).
 
    :::image type="content" source="images/proxy-server-mdav.png" alt-text="Microsoft Defender Virüsten Koruma için ara sunucu" lightbox="images/proxy-server-mdav.png":::
 
@@ -132,7 +132,7 @@ Yönetim Şablonları'nda bulunan grup ilkesi kullanarak statik proxy'yi yapıla
 >
 > Microsoft Defender Virüsten Koruma, güncelleştirmeleri indirmek üzere Windows Update veya Microsoft Update'e bağlanmak için statik ara sunucuyu kullanmaz. Bunun yerine, Windows Update kullanacak şekilde yapılandırılmışsa sistem genelinde bir ara sunucu veya yapılandırılmış [geri dönüş sırasına](manage-protection-updates-microsoft-defender-antivirus.md) göre yapılandırılmış iç güncelleştirme kaynağı kullanır. 
 >
-> Gerekirse, Ağa bağlanmak **için Ara sunucu otomatik yapılandırmasını (.pac) tanımlama > Microsoft Defender Virüsten Koruma > Windows Bileşenleri > Yönetim Şablonları'nı** kullanabilirsiniz. Birden çok proxy ile gelişmiş yapılandırmalar ayarlamanız gerekiyorsa, Microsoft **Defender Virüsten Koruma > Adresleri tanımlama > Microsoft Defender Virüsten Koruma > Windows Bileşenleri > Yönetim Şablonları'nı** kullanarak proxy sunucusunu atlayın ve Microsoft Defender Virüsten Koruma'nın bu hedefler için ara sunucu kullanmasını engelleyin. 
+> Gerekirse, **Ağa bağlanmak için Windows Bileşenleri > Microsoft Defender Virüsten Koruma > Ara sunucu otomatik yapılandırmasını (.pac) tanımlama > Yönetim Şablonları'nı** kullanabilirsiniz. Birden çok ara sunucuyla gelişmiş yapılandırmalar ayarlamanız gerekiyorsa, Proxy sunucusunu atlamak ve Microsoft Defender Virüsten Koruma'nın bu hedefler için ara sunucu kullanmasını önlemek **için Windows Bileşenleri > Microsoft Defender Virüsten Koruma > Adresleri tanımlama > Yönetim Şablonları'nı** kullanın. 
 >
 > PowerShell'i cmdlet'iyle `Set-MpPreference` birlikte kullanarak şu seçenekleri yapılandırabilirsiniz: 
 >
@@ -293,6 +293,6 @@ Ancak, bağlantı denetimi sonuçları bir hata gösteriyorsa, bir HTTP hatası 
 
 ## <a name="related-articles"></a>İlgili makaleler
 
-- [Microsoft Defender Virüsten Koruma'nın yapılandırılması ve yönetilmesi için grup ilkesi ayarlarını kullanma](use-group-policy-microsoft-defender-antivirus.md)
+- [Microsoft Defender Virüsten Koruma'grup ilkesi ayarlarını kullanarak yapılandırma ve yönetme](use-group-policy-microsoft-defender-antivirus.md)
 - [Windows cihazlarını ekleme](configure-endpoints.md)
 - [Uç Nokta için Microsoft Defender ekleme sorunlarını giderme](troubleshoot-onboarding.md)

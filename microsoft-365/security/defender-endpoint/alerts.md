@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 9b30c6180bbdffa2538bb78f2a4d0a75bdc8266b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 551c29054747498a1728399b280381cfa7331f23
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701685"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68157512"
 ---
 # <a name="alert-resource-type"></a>Uyarı kaynak türü
 
@@ -72,8 +74,8 @@ ms.locfileid: "67701685"
 |relatedUser|Dize|Belirli bir uyarıyla ilgili kullanıcının ayrıntıları.|
 |Önem|Enum|Uyarının önem derecesi. Olası değerler şunlardır: 'Belirtilmemiş', 'Bilgilendirici', 'Düşük', 'Orta' ve 'Yüksek'.|
 |Durum|Enum|Uyarının geçerli durumunu belirtir. Olası değerler şunlardır: 'Unknown', 'New', 'InProgress' ve 'Resolved'.|
-|Sınıflandırma|Null Atanabilir Sabit Listesi|Uyarının belirtimi. Olası değerler şunlardır: 'Unknown', 'FalsePositive', 'TruePositive'.|
-|Belirlenmesi|Null Atanabilir Sabit Listesi|Uyarının belirlenmesini belirtir. Olası değerler şunlardır: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'İstenmeyenSoftware', 'Diğer'.|
+|Sınıflandırma|Null Atanabilir Sabit Listesi|Uyarının belirtimi. Olası değerler şunlardır: `TruePositive`, `Informational, expected activity`ve `FalsePositive`.|
+|Belirlenmesi|Null Atanabilir Sabit Listesi|Uyarının belirlenmesini belirtir. <p>Her sınıflandırma için olası belirleme değerleri şunlardır: <br><li> <b>Doğru pozitif</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) – genel api'de sabit listesi adını uygun şekilde değiştirmeyi göz önünde bulundurun, `Malware` (Kötü Amaçlı Yazılım), `Phishing` (Kimlik Avı), `Unwanted software` (İstenmeyenSoftware) ve `Other` (Diğer). <li> <b>Bilgilendirici, beklenen etkinlik:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity) - genel API'deki sabit listesi adını buna göre ve `Other` (Diğer) değiştirmeyi göz önünde bulundurun. <li>  <b>Hatalı pozitif:</b> `Not malicious` (Temiz) - genel API'deki sabit listesi adını uygun şekilde değiştirmeyi göz önünde bulundurun, `Not enough data to validate` (InsufficientData) ve `Other` (Diğer).|
 |Kategori|Dize|Uyarı kategorisi.|
 |detectionSource|Dize|Algılama kaynağı.|
 |threatFamilyName|Dize|Tehdit ailesi.|
@@ -86,7 +88,7 @@ ms.locfileid: "67701685"
 |Kanıt|Uyarı kanıtı listesi|Uyarıyla ilgili kanıt. Aşağıdaki örniğe bakın.|
 
 >[!NOTE]
->29 Ağustos 2022'de daha önce desteklenen uyarı belirleme değerleri ('Apt' ve 'SecurityPersonnel') kullanım dışı bırakılacak ve artık API aracılığıyla kullanılamayacak.
+>29 Ağustos 2022'de daha önce desteklenen uyarı belirleme değerleri ('Apt' ve 'SecurityPersonnel') kullanım dışı bırakılacak ve artık API aracılığıyla kullanılamayacaktır.
 
 ### <a name="response-example-for-getting-single-alert"></a>Tek bir uyarı almak için yanıt örneği:
 

@@ -1,6 +1,6 @@
 ---
 title: Dışlamaları tanımlarken kaçınılması gereken yaygın hatalar
-description: Microsoft Defender Virüsten Koruma taramaları için dışlamaları tanımlarken sık karşılaşılan hatalardan kaçının.
+description: Microsoft Defender Virüsten Koruma taramaları için dışlamalar tanımlarken sık karşılaşılan hatalardan kaçının.
 keywords: dışlamalar, dosyalar, uzantı, dosya türü, klasör adı, dosya adı, taramalar
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
@@ -15,14 +15,16 @@ manager: dansimp
 ms.subservice: mde
 ms.topic: article
 ms.date: 06/16/2022
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 348015a6ffd9b3263aa8358023a30ceb2b906cfe
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f1941346e4cff7853db34cbb11e938fe2dd77816
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703082"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68157402"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Dışlamaları tanımlarken kaçınılması gereken yaygın hatalar
 
@@ -193,7 +195,7 @@ Birden çok sunucu iş yükü için dışlamaları tanımlamak için tek bir dı
 
 ## <a name="using-incorrect-environment-variables-as-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>Dosya adı ve klasör yolu veya uzantı dışlama listelerinde joker karakter olarak yanlış ortam değişkenlerini kullanma
 
-Microsoft Defender Virüsten Koruma Hizmeti, LocalSystem hesabını kullanarak sistem bağlamında çalışır. Bu, bilgileri kullanıcı ortamı değişkeninden değil sistem ortam değişkeninden aldığı anlamına gelir. Dışlama listelerinde ortam değişkenlerinin joker karakter olarak kullanılması, sistem değişkenleriyle ve NT AUTHORITY\SYSTEM hesabı olarak çalışan işlemler için geçerli olanlarla sınırlıdır. Bu nedenle, Microsoft Defender Virüsten Koruma klasörü ve işlem dışlamaları eklerken joker karakter olarak kullanıcı ortamı değişkenlerini kullanmayın. [Sistem ortamı değişkenlerinin tam listesi için Sistem ortamı değişkenleri](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) altındaki tabloya bakın.
+Microsoft Defender Virüsten Koruma Hizmeti, LocalSystem hesabını kullanarak sistem bağlamında çalışır. Bu, kullanıcı ortam değişkeninden değil sistem ortam değişkeninden bilgi aldığı anlamına gelir. Dışlama listelerinde ortam değişkenlerinin joker karakter olarak kullanılması, sistem değişkenleriyle ve NT AUTHORITY\SYSTEM hesabı olarak çalışan işlemler için geçerli olanlarla sınırlıdır. Bu nedenle, Microsoft Defender Virüsten Koruma klasörü ve işlem dışlamaları eklerken joker karakter olarak kullanıcı ortamı değişkenlerini kullanmayın. [Sistem ortamı değişkenlerinin tam listesi için Sistem ortamı değişkenleri](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) altındaki tabloya bakın.
 
 Dışlama listelerinde joker karakterleri kullanma hakkında bilgi için bkz. [Dosya adı ve klasör yolu veya uzantı dışlama listelerinde](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) joker karakterler kullanma.
 

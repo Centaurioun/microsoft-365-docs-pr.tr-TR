@@ -16,14 +16,16 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 0cf46c7cdb7b36d07fafb87e1ad5b114e66ec51b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ac85a1860fa86a05cf4aed6db6ced0e2ce84b904
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703192"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68157446"
 ---
 # <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>Microsoft Defender Virüsten Koruma değerlendirmesi için güncelleştirme uyumluluğu tanılama verilerini toplama
 
@@ -35,7 +37,7 @@ ms.locfileid: "67703192"
 
 Bu makalede, Güncelleştirme Uyumluluğu eklentisinin Microsoft Defender Virüsten Koruma Değerlendirmesi bölümünü kullanırken karşılaşabileceğiniz sorunları gidermeye yardımcı olmak için Microsoft destek ve mühendislik ekipleri tarafından kullanılabilecek tanılama verilerinin nasıl toplandığı açıklanır.
 
-Bu işlemi denemeden önce [Microsoft Defender Virüsten Koruma raporlama sorunlarını giderme](troubleshoot-reporting.md) makalesini okuduğunuzdan, önkoşulların tümünü karşıladığınızdan ve önerilen diğer sorun giderme adımlarını uyguladığınızı doğrulayın.
+Bu işlemi denemeden önce [Virüsten Koruma raporlama Microsoft Defender sorun giderme](troubleshoot-reporting.md) makalesini okuduğunuzdan, tüm önkoşulları karşıladığınızdan ve önerilen diğer sorun giderme adımlarını uyguladığınızı doğrulayın.
 
 Güncelleştirme Uyumluluğu'nda raporlamayan veya görünmeyen en az iki cihazda, aşağıdaki adımları uygulayarak .cab tanılama dosyasını alın:
 
@@ -73,4 +75,4 @@ Güncelleştirme Uyumluluğu'nda raporlamayan veya görünmeyen en az iki cihazd
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Microsoft Defender Virüsten Koruma raporlama sorunlarını giderme](troubleshoot-reporting.md)
+- [Virüsten Koruma raporlama Microsoft Defender sorunlarını giderme](troubleshoot-reporting.md)

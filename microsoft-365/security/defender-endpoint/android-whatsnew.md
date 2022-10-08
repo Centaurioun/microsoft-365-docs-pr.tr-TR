@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: bf5e73b8e382d392673a8f82616089c8990ea2a8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 5cac34b5ee0e6cc0d40755aef920040d621c49af
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67695791"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68157490"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Android'de Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -37,9 +39,12 @@ Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz den
 >
 > Kullanıcılar play store'a erişemiyorsa uygulama şirket portalı üzerinden güncelleştirilebilir. 
 
+## <a name="microsoft-defender-for-endpoint-on-company-owned-personally-enabled-devices"></a>Şirkete ait kişisel cihazlarda Uç Nokta için Microsoft Defender
+MDE artık AE COPE cihazlarında genel kullanıma sunulmuştur. Kuruluşlar CIHAZLARı COPE moduna ekleyebilir ve [Microsoft Endpoint Manager Yönetici merkezi](https://endpoint.microsoft.com) aracılığıyla MDE'yi kullanıcının cihazlarına gönderebilir. Bu destekle Android Enterprise COPE cihazları, Microsoft Endpoint Manager ve Koşullu Erişim ile tümleştirme yoluyla kimlik avı ve web koruması, kötü amaçlı yazılım taraması, Ağ koruması (önizleme) ve ek ihlal önleme dahil olmak üzere Android'de sunduğumuz teklifin tüm özelliklerini edinecektir. Duyuruyu [buradan](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-is-now-available-on-android/ba-p/3626100) okuyun.
+
 ## <a name="privacy-controls"></a>Gizlilik Denetimleri
 
-Android'de Uç Nokta için Microsoft Defender hem Yöneticiler hem de Son Kullanıcılar için Gizlilik Denetimleri'ni etkinleştirir. Bu, kayıtlı (MDM) ve kaydı kaldırılmış (MAM) cihazlar (önizlemede) denetimlerini içerir. Yöneticiler uyarı raporunda gizliliği yapılandırırken, Son Kullanıcılar da kendi kuruluşlarıyla paylaşılan bilgileri yapılandırabilir. Daha fazla bilgi için bkz [. gizlilik denetimleri (MDM)](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) ve [gizlilik denetimleri (MAM)](/microsoft-365/security/defender-endpoint/android-configure-mam#configure-privacy-controls).
+Android'de Uç Nokta için Microsoft Defender hem Yöneticiler hem de Son Kullanıcılar için Gizlilik Denetimleri'ni etkinleştirir. Bu, kayıtlı (MDM) ve kaydı kaldırılmış (MAM) cihazlar için denetimleri içerir. Yöneticiler uyarı raporunda gizliliği yapılandırırken, Son Kullanıcılar da kendi kuruluşlarıyla paylaşılan bilgileri yapılandırabilir. Daha fazla bilgi için bkz [. gizlilik denetimleri (MDM)](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) ve [gizlilik denetimleri (MAM)](/microsoft-365/security/defender-endpoint/android-configure-mam#configure-privacy-controls).
 
 ## <a name="optional-permissions-and-disable-web-protection"></a>İsteğe Bağlı İzinler ve Web Korumasını Devre Dışı Bırakma
 
@@ -65,7 +70,7 @@ Güncelleştirmek için kullanıcılar aşağıdaki adımları kullanabilir:
 >
 >Herhangi bir sorunla karşılaşırsanız [uygulama içi geri bildirim gönderin](/security/defender-endpoint/android-support-signin#send-in-app-feedback).
 
-## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-play-store"></a>Uç Nokta için Microsoft Defender artık Play store'da Microsoft Defender'dır
+## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-play-store"></a>Uç Nokta için Microsoft Defender artık Play store'da Microsoft Defender
 
 Uç Nokta için Microsoft Defender artık play store'da **Microsoft Defender** olarak kullanılabilir. Bu güncelleştirmeyle, uygulama **ABD bölgesindeki Tüketiciler** için önizleme olarak kullanıma sunulacaktır. Uygulamada iş veya kişisel hesabınızla nasıl oturum açtığınıza bağlı olarak, Uç Nokta için Microsoft Defender özelliklerine veya kişiler için Microsoft Defender özelliklerine erişebilirsiniz. Daha fazla ayrıntı için [lütfen bu bloga](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals) bakın.
 
