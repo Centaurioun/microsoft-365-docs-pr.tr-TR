@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için standart kiracı yapılandırmalarını dağıtmak için temelleri kullanma hakkında bilgi edinin.
-ms.openlocfilehash: 85a2e035ce2aae2b7e343d03f19a266cc3a08df5
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 301ceb0176075f4d79a6f3f1f539704f2db17e0d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599461"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187745"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Standart kiracı yapılandırmalarını dağıtmak için Microsoft 365 Lighthouse temellerini kullanmaya genel bakış 
 
@@ -46,7 +47,7 @@ Lighthouse temel yapılandırmaları, tüm yönetilen kiracıların güvenli ve 
 | Cihaz kaydını ayarlama | Kiracı cihazlarınızın Microsoft Endpoint Manager'a kaydolmasına izin vermek için cihaz kaydı. Bu, Azure Active Directory ile Microsoft Endpoint Manager arasında Otomatik Kayıt ayarlanarak gerçekleştirilir. Bu temel hakkında daha fazla bilgi için bkz. [Windows cihazları için kaydı ayarlama](/mem/intune/enrollment/windows-enroll). |
 | İş için Microsoft Defender ayarlama | kiracıyı İş için Microsoft Defender için sağlar ve Microsoft Endpoint Manager'a kayıtlı cihazları İş için Microsoft Defender ekler. Daha fazla bilgi için bkz. [İş için Microsoft Defender nedir?](../security/defender-business/mdb-overview.md) |
 | Exchange Online Protection ve Office 365 için Microsoft Defender ayarlama | Önerilen istenmeyen posta önleme, kötü amaçlı yazılımdan koruma, kimlik avı önleme, güvenli bağlantılar ve güvenli ek ilkelerini kiracılarınıza Exchange Online posta kutularına uygulama ilkesi. |
-| microsoft defender virüsten korumayı Windows 10 ve üzeri için yapılandırma | Önceden yapılandırılmış Microsoft Defender Virüsten Koruma ayarlarına sahip Windows cihazları için bir cihaz yapılandırma profili. Bu temel hakkında daha fazla bilgi için bkz[. Intune'da Uç Nokta için Microsoft Defender yapılandırma](/mem/intune/protect/advanced-threat-protection-configure).|
+| Microsoft Defender Virüsten Koruma'Windows 10 ve üzeri için yapılandırma | Virüsten koruma ayarları Microsoft Defender önceden yapılandırılmış Windows cihazları için bir cihaz yapılandırma profili. Bu temel hakkında daha fazla bilgi için bkz[. Intune'da Uç Nokta için Microsoft Defender yapılandırma](/mem/intune/protect/advanced-threat-protection-configure).|
 | Windows 10 ve üzeri için Microsoft Defender Güvenlik Duvarı'nı yapılandırma | İstenmeyen ve yetkisiz ağ trafiğini engelleyerek cihazların güvenliğini sağlamaya yardımcı olan bir güvenlik duvarı ilkesi. Bu temel hakkında daha fazla bilgi için bkz. [Windows Defender Güvenlik Duvarı'nı yapılandırmaya yönelik en iyi yöntemler](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
 | Windows 10 ve üzeri için cihaz uyumluluk ilkesi yapılandırma | Temel uyumluluk gereksinimlerini karşılamak için önceden yapılandırılmış ayarlara sahip bir Windows cihaz ilkesi. Bu temel hakkında daha fazla bilgi için bkz[. Koşullu Erişim: Uyumlu veya karma Azure AD birleştirilmiş cihaz gerektirme](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |
 | Microsoft Edge’i yapılandırma  | Kimlik avı dolandırıcılığına ve kötü amaçlı yazılımlara karşı korunmak için önceden yapılandırılmış ayarlara sahip Windows 10 veya üzeri için bir Microsoft Edge tarayıcı ilkesi. Bu ilke, Microsoft Edge'in parolaları güvenli bir şekilde kaydedip izlemesine ve gerektiğinde güçlü parolalar önermesine de olanak tanır. |

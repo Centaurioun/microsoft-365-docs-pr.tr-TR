@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, HumOR, gasp saldırısı, fidye yazılımı saldırısı, şifreleme, kriptoviroloji, sıfır güven
 description: Microsoft 365 kaynaklarınızı fidye yazılımı saldırılarına karşı korumak için Microsoft 365 Defender ve güvenlik sinyali kaynaklarını kullanın.
-ms.openlocfilehash: e539bd15b3388c3fe9eae043a84441e514269c03
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 882e138717e7bad8e71db3914d034edf5bc0b6c2
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728132"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986476"
 ---
 # <a name="step-2-deploy-attack-detection-and-response"></a>Adım 2. Saldırı algılama ve yanıt dağıtın
 

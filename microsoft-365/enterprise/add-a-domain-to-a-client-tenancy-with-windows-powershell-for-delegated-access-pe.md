@@ -5,11 +5,12 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 f1.keywords:
@@ -19,23 +20,23 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Özet: Mevcut bir müşteri kiracısına alternatif bir etki alanı adı eklemek için Microsoft 365 için PowerShell kullanın.'
-ms.openlocfilehash: c4dcdb34f9065009ccaa77d23222601506b537b5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ad9633964066852acccd03700bd3e1164de19827
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099048"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197183"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>TemsilciLi Erişim İzni (DAP) iş ortakları için Windows PowerShell ile istemci kiracısına etki alanı ekleme
 
 *Bu makale hem Microsoft 365 Kurumsal hem de Office 365 Kurumsal için geçerlidir.*
 
-Microsoft 365 yönetim merkezi kullanmaktan daha hızlı Microsoft 365 için yeni etki alanları oluşturabilir ve müşterinizin kiracısıyla PowerShell ile ilişkilendirebilirsiniz.
+Yeni etki alanları oluşturabilir ve müşterinizin kiracısıyla Microsoft 365 için PowerShell'i Microsoft 365 yönetim merkezi kullanmaktan daha hızlı ilişkilendirebilirsiniz.
 
-Temsilci Erişim İzni (DAP) iş ortakları, Dağıtım ve Bulut Çözümü Sağlayıcıları (CSP) İş Ortaklarıdır. Bunlar genellikle diğer şirketlerin ağ veya telekom sağlayıcılarıdır. Microsoft 365 aboneliklerini müşterilerine sunulan hizmet tekliflerine paketlemektedir. bir Microsoft 365 aboneliği sattıklarında, müşteri kiracılarını yönetebilmeleri ve raporlamaları için otomatik olarak müşteri kiracılarına Adına Yönetme (AOBO) izinleri verilir.
+Temsilci Erişim İzni (DAP) iş ortakları, Dağıtım ve Bulut Çözümü Sağlayıcıları (CSP) İş Ortaklarıdır. Bunlar genellikle diğer şirketlerin ağ veya telekom sağlayıcılarıdır. Microsoft 365 aboneliklerini müşterilerine sunulan hizmet tekliflerine paketlemektedir. Bir Microsoft 365 aboneliği sattıklarında, müşteri kiracılarını yönetebilmeleri ve müşteri kiracıları hakkında rapor verebilmeleri için müşteri kiracıları için otomatik olarak Adına Yönetme (AOBO) izinleri verilir.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Başlamadan önce bilmeniz gerekenler
 
-Bu konudaki yordamlar[, PowerShell ile Microsoft 365 için Bağlan](connect-to-microsoft-365-powershell.md) bağlanmanızı gerektirir.
+Bu konudaki yordamlar, [PowerShell ile Microsoft 365'e bağlanmanızı](connect-to-microsoft-365-powershell.md) gerektirir.
 
 Ayrıca iş ortağı kiracı yöneticisi kimlik bilgilerinize de ihtiyacınız vardır.
 
@@ -56,9 +57,9 @@ Ayrıca aşağıdaki bilgilere de ihtiyacınız vardır:
 > [!NOTE]
 > Bu işlemlerden bazılarını gerçekleştirmek için, Microsoft 365 yönetim merkezi yönetici hesabının ayrıntılarında bulunan **Desteklediğiniz şirketlere yönetim erişimi ata** ayarı için oturum açabileceğiniz iş ortağı yönetici hesabının **Tam yönetim** olarak ayarlanması <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">gerekir.</a> İş ortağı yöneticisi rollerini yönetme hakkında daha fazla bilgi için bkz [. İş ortakları: Temsilcili yönetim teklifi](https://go.microsoft.com/fwlink/p/?LinkId=532435).
 
-### <a name="create-the-domain-in-azure-active-directory"></a>etki alanını Azure Active Directory'de oluşturma
+### <a name="create-the-domain-in-azure-active-directory"></a>Azure Active Directory'de etki alanı oluşturma
 
-Bu komut etki alanını Azure Active Directory oluşturur ancak genel olarak kayıtlı etki alanıyla ilişkilendirmez. Bu, kuruluşlar için Microsoft Microsoft 365 genel olarak kayıtlı etki alanının sahibi olduğunuzu kanıtladığınızda ortaya çıkar.
+Bu komut, etki alanını Azure Active Directory'de oluşturur ancak genel olarak kayıtlı etki alanıyla ilişkilendirmez. Bu, kuruluşlar için Microsoft Microsoft 365'e genel olarak kayıtlı etki alanının sahibi olduğunuzu kanıtladığınızda ortaya çıkar.
 
 ```powershell
 New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
@@ -104,9 +105,9 @@ Bu size aşağıdaki gibi bir çıkış verir:
 
  `text=MS=ms########`
 
-### <a name="validate-domain-ownership-in-microsoft-365"></a>Microsoft 365'de etki alanı sahipliğini doğrulama
+### <a name="validate-domain-ownership-in-microsoft-365"></a>Microsoft 365'te etki alanı sahipliğini doğrulama
 
-Bu son adımda, genel olarak kayıtlı etki alanının sahibi olduğunuzu Microsoft 365 doğrularsınız. Bu adımdan sonra, Microsoft 365 yeni etki alanı adına yönlendirilen trafiği kabul etmeye başlar. Etki alanı oluşturma ve kayıt işlemini tamamlamak için bu komutu çalıştırın.
+Bu son adımda, Microsoft 365'e genel olarak kayıtlı etki alanının sahibi olduğunuzu doğrularsınız. Bu adımdan sonra, Microsoft 365 yeni etki alanı adına yönlendirilen trafiği kabul etmeye başlar. Etki alanı oluşturma ve kayıt işlemini tamamlamak için bu komutu çalıştırın.
 
 ```powershell
 Confirm-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>

@@ -12,17 +12,17 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Bir kuruluştaki kritik kişileri tanımlamayı ve onlara ek koruma sağlamak için öncelik hesabı etiketini eklemeyi öğrenin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 342c23269d3cc7f1c4ee3dd90148de4f14a275d5
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 0133a684780ab59514d576bf619ebe2c4aa45099
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596126"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68066618"
 ---
 # <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de Öncelik hesaplarını yapılandırma ve gözden geçirme
 

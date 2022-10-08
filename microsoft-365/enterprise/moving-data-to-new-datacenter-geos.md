@@ -3,7 +3,7 @@ title: Temel verileri yeni Microsoft 365 veri merkezi coğrafi bölgelerine taş
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/02/2022
+ms.date: 09/23/2022
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -15,12 +15,13 @@ f1.keywords:
 - NOCSH
 description: Yeni Office 365 veri merkezi coğrafi alanları ve çekirdek verilerinizin yeni bir coğrafi bölgeye taşınmasını istemek için veri yerleşimi seçeneğini kullanmayı öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d17c0906d26b8b5ff0d1758255cb9f74ab94c82
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.collection: scotvorg
+ms.openlocfilehash: 084753e838f02eccd228603cbb6540c1b01d85bc
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702258"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172433"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Temel verileri yeni Microsoft 365 veri merkezi coğrafi bölgelerine taşıma
 
@@ -68,6 +69,8 @@ Genel olarak çalıştırılan ve otomatikleştirilmiş bir ortamda veri taşım
 Veri taşıma, son kullanıcılar üzerinde en az etkiye sahip bir arka uç hizmeti işlemidir. Etkilenebilen özellikler [, Verilerinizi taşıma sırasında ve sonrasında](during-and-after-your-data-move.md) sayfasında listelenir. Kullanılabilirlik için [Microsoft Online Services Hizmet Düzeyi Sözleşmesi'ne (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) bağlıyız, dolayısıyla taşıma sırasında müşterilerin hazırlaması veya izlemesi gereken hiçbir şey yoktur. Gerekirse herhangi bir hizmet bakımı bildirimi yapılır.
 
 Yeni veri merkezine taşınan veriler müşteriye ek ücret ödemeden tamamlanır.
+
+Geçiş işlemi sırasında Microsoft, adres defteri verilerinizi geçici olarak şifrelenmiş ve yalnızca iş sürekliliği ve olağanüstü durum kurtarma işlemlerini (BCDR) desteklemek için kullanılan Microsoft genel kaynaklarına kopyalar. Microsoft posta kutusu verilerinin taşınmasını tamamladıktan sonra, Microsoft bu geçici verileri genel kaynaklardan siler. Microsoft düzenli aralıklarla küresel ve bölgesel kaynaklara yatırım yapmaya devam ediyor. Microsoft, 2023 takvim yılında, geçiş işlemi sırasında BCDR amacıyla bölgesel kaynakları kullanmayı planlıyor.
 
 ## <a name="related-topics"></a>İlgili konular
 

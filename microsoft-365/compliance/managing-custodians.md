@@ -1,29 +1,31 @@
 ---
 title: eBulma'da koruyucularla çalışma (Premium)
+description: Yasal bir davaya ilişkin verileri yönetmek için eBulma'da (Premium) koruyucu yönetim aracını kullanmayı öğrenin.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Yasal bir davaya ilişkin verileri yönetmek için eBulma'da (Premium) koruyucu yönetim aracını kullanmayı öğrenin.
-ms.openlocfilehash: fedd968cdb8a1926e3cf3c1ea747a021c018c32f
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: b0b5291a2a0114111447a103208e91c6dcc80737
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67824101"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68129573"
 ---
 # <a name="work-with-custodians-and-non-custodial-data-sources-in-ediscovery-premium"></a>eKeşif (Premium) içerisinde yedieminler ve velayet dışı veri kaynaklarıyla çalışma
 

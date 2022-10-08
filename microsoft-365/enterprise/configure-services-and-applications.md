@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 search.appverid:
@@ -19,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: SharePoint, Exchange ve Microsoft Teams gibi Microsoft 365 Kurumsal hizmetleri ve uygulamaları yapılandırın.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 225270166b4c88be945adc35474f39a71de52f4a
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 9328cab334ad7fb3f4d02a224d9e993cea6241a8
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67556270"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197139"
 ---
 # <a name="configure-microsoft-365-enterprise-services-and-applications"></a>Microsoft 365 Kurumsal hizmetlerini ve uygulamalarını yapılandırma
 

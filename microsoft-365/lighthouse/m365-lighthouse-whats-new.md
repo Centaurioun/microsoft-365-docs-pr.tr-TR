@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP' ler) için her ay Microsoft 365 Lighthouse eklenen, değiştirilen ve düzeltilmiş olanlara bakın.
-ms.openlocfilehash: 97692ae5d8520d0a6d228c0f80c685a6c45c7b78
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 65fba4d7cdef2b1afc8935f6833e10e04dee616f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597558"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197051"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'daki yenilikler
 
@@ -30,6 +31,20 @@ ms.locfileid: "67597558"
 
 > [!NOTE]
 > Bazı özellikler müşterilerimiz için farklı hızlarda kullanıma sunulur. Henüz bir özellik görmüyorsanız, yakında görmeniz gerekir.
+
+## <a name="september-2022"></a>Eylül 2022
+
+### <a name="fully-automated-setup-of-microsoft-defender-for-business"></a>İş için Microsoft Defender tam otomatik kurulumu
+
+İş için Microsoft Defender ile müşteri kiracılarınızı ayarlamanıza yardımcı olan varsayılan taban çizgisine tam otomatik bir adım ekledik. Bu adım, kiracınızı İş için Microsoft Defender için otomatik olarak sağlar ve İş için Microsoft Defender Intune kayıtlı cihazları otomatik olarak ekler.
+
+### <a name="capability-to-filter-the-multifactor-authentication-mfa-list-to-show-relevant-user-accounts"></a>Çok Faktörlü Kimlik Doğrulaması (MFA) listesini ilgili kullanıcı hesaplarını gösterecek şekilde filtreleme özelliği
+
+Çok Faktörlü Kimlik Doğrulaması sayfası artık kullanıcı hesabı listesini hesap türüne göre (örneğin Yönetici, Üye veya Konuk) filtrelemeyi destekliyor. Hizmet hesapları veya acil durum erişim hesapları gibi diğer hesapları da listeden dışlayabilirsiniz. Bu işleve erişmek için **Kullanıcılar** > **Çok Faktörlü kimlik doğrulaması'na** gidin, kiracı ayrıntıları bölmesini açmak için listeden bir kiracı seçin ve ardından **MFA için kayıtlı olmayan kullanıcılar** sekmesini seçin. Bu filtreleme ve dışlama özellikleri, ilgili kullanıcı hesaplarına odaklanmanıza yardımcı olur. 
+
+### <a name="capability-to-act-on-security-incidents-and-alerts"></a>Güvenlik olayları ve uyarıları üzerinde işlem yapma özelliği
+
+Artık **Cihaz güvenliği** >  Olaylar ve uyarılar sayfasında gösterilen olaylar **ve uyarılar** üzerinde işlem yapabilirsiniz. Şu anda desteklenen eylemler arasında olayı veya uyarıyı kendinize atamak ya da olayı ya da uyarıyı çözümlemek yer alır. 
 
 ## <a name="august-2022"></a>Ağustos 2022
 
@@ -137,13 +152,13 @@ Bu yeni işlevsellik, yönettiğiniz müşteri kiracıları içindeki mevcut ilk
 
 ### <a name="deployment-step-to-configure-microsoft-defender-firewall"></a>Microsoft Defender Güvenlik Duvarı'nı yapılandırmak için dağıtım adımı
 
-Microsoft 365 Lighthouse, Microsoft Defender Güvenlik Duvarı dağıtımını yapılandırma adımını varsayılan temeline eklemiştir. Bu adım, MSP'lerin Windows 10 (ve üzeri) cihazlar için varsayılan güvenlik duvarı yapılandırması aracılığıyla müşteri kiracı cihazlarının güvenliğini sağlamasını sağlar. Microsoft Defender Güvenlik Duvarı, müşteri kiracı cihazlarına gelen veya giden yetkisiz ağ trafiğini engeller ve ağ güvenlik tehditleri riskini azaltır. Microsoft Defender Güvenlik Duvarı Kuralları özelliği şu anda geliştirme aşamasındadır.
+Microsoft 365 Lighthouse, Microsoft Defender Güvenlik Duvarı dağıtımını yapılandır adımını varsayılan temeline eklemiştir. Bu adım, MSP'lerin Windows 10 (ve üzeri) cihazlar için varsayılan güvenlik duvarı yapılandırması aracılığıyla müşteri kiracı cihazlarının güvenliğini sağlamasını sağlar. Microsoft Defender Güvenlik Duvarı, müşteri kiracı cihazlarına veya dışına gelen yetkisiz ağ trafiğini engeller ve ağ güvenlik tehditleri riskini azaltır. Microsoft Defender Güvenlik Duvarı Kuralları özelliği şu anda geliştiriliyor.
 
 Microsoft Defender Güvenlik Duvarı, Windows 10 (ve üzeri) cihazlarda varsayılan olarak açıktır. Müşteri kiracınızda bu yapılandırma yoksa şu adımları izleyin:
 
 1. Microsoft 365 Lighthouse'deki **Kiracılar** sayfasında, kiracının **Genel Bakış** sayfasını açmak için müşteri kiracısını seçin.
 2. **Dağıtım Planı** sekmesini seçin.
-3. Dağıtım adımları **listesinden Microsoft Defender Güvenlik Duvarını Yapılandır'ı** seçin.
+3. Dağıtım adımları listesinden **Microsoft Defender Güvenlik Duvarını Yapılandır'ı** seçin.
 4. Bu yapılandırmayı müşteri kiracısına dağıtmak için **Gözden geçir ve dağıt'ı** seçin. 
 
 ### <a name="increase-in-maximum-license-limit"></a>En yüksek lisans sınırında artış

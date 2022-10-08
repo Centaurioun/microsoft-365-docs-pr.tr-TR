@@ -11,18 +11,19 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
 f1.keywords:
 - NOCSH
 description: VPN ortamlarında Akış ve canlı etkinlikler için özel dikkat edilmesi gerekenler
-ms.openlocfilehash: e0a31ee619ecc072ce62b7e893526d48b37078fd
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 7325c228c3b9bd7ffb808a56da09415709d3fdfb
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67681919"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187899"
 ---
 # <a name="special-considerations-for-stream-and-live-events-in-vpn-environments"></a>VPN ortamlarında Akış ve canlı etkinlikler için özel dikkat edilmesi gerekenler
 

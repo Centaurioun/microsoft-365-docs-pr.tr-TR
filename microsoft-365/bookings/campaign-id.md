@@ -7,13 +7,15 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 description: Bookings sayfası URL'sine kampanya kimliği ekleme
-ms.openlocfilehash: 003f7665faa03070c8b608afc778528420cba8e8
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: dfa7d057b7d3d3ae135d48832d8c9595a0bf06a3
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "66861670"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172719"
 ---
 # <a name="add-a-marketing-campaign-id-to-a-bookings-page-url"></a>Bookings sayfası URL'sine pazarlama kampanyası kimliği ekleme
 

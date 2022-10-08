@@ -11,6 +11,7 @@ ms.topic: landing-page
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
@@ -18,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Kuruluş için Microsoft 365'e yönelik tanıtım, kavram kanıtı veya geliştirme/test ortamları ayarlamak için bu Test Laboratuvarı Kılavuzlarını kullanın.
-ms.openlocfilehash: 8c0d66e0a3ee2cfee3d387d2aa233e0d6a6d40c6
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 3463ab0fd1506578a7ae67a2d435524ea7e68295
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560295"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172697"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Kurumsal test laboratuvarı kılavuzları için Microsoft 365
 

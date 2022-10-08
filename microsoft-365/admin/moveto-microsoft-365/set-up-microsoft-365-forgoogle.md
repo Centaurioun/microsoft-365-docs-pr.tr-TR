@@ -7,9 +7,10 @@ author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365'i Google Çalışma Alanı'ndan geçişe hazır olacak şekilde ayarlamayı öğrenin.
-ms.openlocfilehash: 17c34a06709167360ee2177307361882567195ae
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: f98c41818f2080af3952885e728f413cec8fee88
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602104"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188383"
 ---
 # <a name="set-up-microsoft-365-for-google-workspace-migration"></a>Google Workspace için Microsoft 365 geçişini ayarlama
 

@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 06/09/2020
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -19,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Microsoft 365 güvenlik ve uyumluluk özelliklerini dağıtın ve kişisel bilgilerinizi koruyun.
-ms.openlocfilehash: a75533e3417a2afa38d9904e62b93bb0f54f5c39
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 3bd59720680802928ad259354f74d2b4829766ef
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731606"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986212"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Veri gizliliği düzenlemesine tabi bilgileri koruma
 

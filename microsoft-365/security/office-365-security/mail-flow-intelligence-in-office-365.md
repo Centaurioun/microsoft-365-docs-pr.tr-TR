@@ -15,13 +15,13 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Yöneticiler, bağlayıcıları (posta akışı zekası olarak da bilinir) kullanarak ileti teslimiyle ilişkili hata kodları hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.collection: M365-security-compliance
-ms.openlocfilehash: b83b2011af516359d219061ee88f06c7ac170369
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.collection: m365-security
+ms.openlocfilehash: 2083054dba1792570d155647c3a3b38d7a76e4a6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599010"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68066640"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>EOP'de posta akışı zekası
 

@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, HumOR, gasp saldırısı, fidye yazılımı saldırısı, şifreleme, kriptoviroloji, sıfır güven
 description: Microsoft 365 kaynaklarınızı fidye yazılımı saldırılarına karşı koruma adımlarını uygulayın.
-ms.openlocfilehash: 04cce5e1001e456a1e590e5abcc7cef8138f0084
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 6196feca7236fa98513e0d735d91cfbd2a6bd2ea
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730934"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986014"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>Microsoft 365 kiracınız için fidye yazılımı koruması dağıtın
 
@@ -198,7 +198,7 @@ Windows 11 veya 10 cihaz için:
 |:-------|:-----|:-------|:-------|
 | Microsoft Defender Güvenlik Duvarı | Konak tabanlı bir güvenlik duvarı sağlar.  | Gelen ve istenmeyen ağ trafiğinden gelen saldırıları önleyin. | Microsoft 365 E3 veya Microsoft 365 E5 |
 | Microsoft Defender Virüsten Koruma | Makine öğrenmesi, büyük veri analizi, derinlemesine tehdit direnci araştırması ve Microsoft bulut altyapısını kullanarak cihazların (uç noktalar) kötü amaçlı yazılımdan korumasını sağlar. | Kötü amaçlı yazılımların yüklenmesini ve çalıştırılmasını önleyin. | Microsoft 365 E3 veya Microsoft 365 E5 |
-| Microsoft Defender SmartScreen | Kimlik avına veya kötü amaçlı yazılım web sitelerine ve uygulamalarına ve kötü amaçlı olabilecek dosyaların indirilmesine karşı koruma sağlar. | Siteleri, indirmeleri, uygulamaları ve dosyaları denetlerken engelleyin veya uyarın. | Microsoft 365 E3 veya Microsoft 365 E5 |
+| SmartScreen'i Microsoft Defender | Kimlik avına veya kötü amaçlı yazılım web sitelerine ve uygulamalarına ve kötü amaçlı olabilecek dosyaların indirilmesine karşı koruma sağlar. | Siteleri, indirmeleri, uygulamaları ve dosyaları denetlerken engelleyin veya uyarın. | Microsoft 365 E3 veya Microsoft 365 E5 |
 | Uç Nokta için Microsoft Defender | Cihazlar (uç noktalar) genelindeki gelişmiş tehditleri önlemeye, algılamaya, araştırmaya ve yanıtlamaya yardımcı olur. | Ağ üzerinde oynanmaya karşı koruma sağlayın. | Microsoft 365 E5 Güvenlik eklentisiyle Microsoft 365 E5 veya Microsoft 365 E3 |
 |  |  |  |  |
 

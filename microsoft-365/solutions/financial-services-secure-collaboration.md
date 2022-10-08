@@ -8,17 +8,17 @@ ms.topic: article
 ms.collection:
 - highpri
 - M365-security-compliance
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.custom: seo-marvel-jun2020
 ms.localizationpriority: high
 description: Finansal hizmet kurumlarının Microsoft 365 ve Teams'i kullanarak finansal güvenlik uyumluluğunu nasıl koruyabileceğini ve etkili bir şekilde işbirliği yapabileceklerini öğrenin.
 f1.keywords: NOCSH
-ms.openlocfilehash: 0b4ad914bf18de7d3cef36f35c6cb3a161ebe13a
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: d547e6b8c15716eb63baf748572640f844f1b1c5
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730956"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986872"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>ABD bankacılık ve sermaye piyasaları için temel uyumluluk ve güvenlik konuları
 

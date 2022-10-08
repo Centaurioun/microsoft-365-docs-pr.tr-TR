@@ -10,23 +10,26 @@ metadata:
   ms.topic: faq
   ms.service: O365-seccomp
   ms.localizationpriority: medium
-  ms.collection: M365-security-compliance
+  ms.collection:
+  - tier1
+  - purview-compliance
+  - import
   search.appverid:
   - MOE150
   - MED150
   - MET150
   ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
   ms.custom: seo-marvel-apr2020
-  description: Bu makale, Office 365 İçeri Aktarma Hizmeti'ni kullanarak PST dosyalarını Microsoft 365 aktarma hakkında yöneticilere yönelik sık sorulan bazı soruların yanıtlarını içerir.
-  ms.openlocfilehash: 664cf078d891bf1e40dc79ddb1dc009527ba0dd6
-  ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+  description: Bu makale, Office 365 İçeri Aktarma Hizmeti'ni kullanarak PST dosyalarını Microsoft 365'e aktarma hakkında yöneticilere yönelik sık sorulan bazı soruların yanıtlarını içerir.
+  ms.openlocfilehash: dddd1fcfc5bce7a6169f46f33d85a6fd0cb920ff
+  ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
   ms.translationtype: MT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 04/27/2022
-  ms.locfileid: "65098030"
+  ms.lasthandoff: 09/29/2022
+  ms.locfileid: "68150605"
 title: PST dosyalarını içe aktarma hakkında SSS
 summary: >
-  **Bu makale yöneticilere yöneliktir. PST dosyalarını kendi posta kutunuza aktarmak istiyor musunuz? Bkz [. Outlook .pst dosyasından e-postayı, kişileri ve takvimi içeri aktarma](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
+  **Bu makale yöneticilere yöneliktir. PST dosyalarını kendi posta kutunuza aktarmak istiyor musunuz? Bkz. [Outlook .pst dosyasından e-postayı, kişileri ve takvimi içeri aktarma](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
 
 
   PST dosyalarını Microsoft 365 posta kutularına toplu olarak aktarmak için Office 365 İçeri Aktarma Hizmeti'ni kullanma hakkında sık sorulan bazı sorular aşağıdadır. PST dosyalarını içeri aktarma hakkında daha fazla bilgi için bkz. [PST dosyalarını Office 365 içeri aktarma hakkında bilgi edinin](./importing-pst-files-to-office-365.md).
@@ -42,7 +45,7 @@ sections:
   - question: >
       Office 365 İçeri Aktarma Hizmeti'nde içeri aktarma işleri oluşturmak için hangi izinler gereklidir?
     answer: >
-      Microsoft Purview uyumluluk portalında içeri aktarma işleri oluşturmak ve PST dosyalarını kullanıcı posta kutularına aktarmak için Exchange Online'da Posta Kutusu İçeri Aktarma rolüne atanmış olmanız gerekir. Varsayılan olarak, bu rol Exchange Online'daki hiçbir rol grubuna atanmaz. Posta Kutusu İçeri Aktarma Dışarı Aktarma rolünü Kuruluş Yönetimi rol grubuna ekleyebilirsiniz. Ya da yeni bir rol grubu oluşturabilir, Posta Kutusu İçeri Aktarma Dışarı Aktarma rolünü atayabilir ve ardından kendinizi veya diğer kullanıcıları üye olarak ekleyebilirsiniz. Daha fazla bilgi için, Exchange Online rol gruplarını yönetme bölümündeki "Rol grubuna rol ekleme" veya "[Rol](/Exchange/permissions-exo/role-groups) grubu oluşturma" bölümlerine bakın.
+      Microsoft Purview uyumluluk portalı içeri aktarma işleri oluşturmak ve PST dosyalarını kullanıcı posta kutularına aktarmak için Exchange Online'da Posta Kutusu İçeri Aktarma rolüne atanmış olmanız gerekir. Varsayılan olarak, bu rol Exchange Online'daki hiçbir rol grubuna atanmaz. Posta Kutusu İçeri Aktarma Dışarı Aktarma rolünü Kuruluş Yönetimi rol grubuna ekleyebilirsiniz. Ya da yeni bir rol grubu oluşturabilir, Posta Kutusu İçeri Aktarma Dışarı Aktarma rolünü atayabilir ve ardından kendinizi veya diğer kullanıcıları üye olarak ekleyebilirsiniz. Daha fazla bilgi için, Exchange Online rol gruplarını yönetme bölümündeki "Rol grubuna rol ekleme" veya "[Rol](/Exchange/permissions-exo/role-groups) grubu oluşturma" bölümlerine bakın.
 
 
       Posta Kutusu İçeri Aktarma Dışarı Aktarma rolüne ek olarak, Exchange Online'de Posta Alıcıları rolüne de atanmış olmanız gerekir. Varsayılan olarak, bu rol Exchange Online'deki Kuruluş Yönetimi ve Alıcı Yönetimi rol gruplarına atanır.
@@ -61,14 +64,14 @@ sections:
       PST dosyalarını içeri aktarmak için ağ yüklemesini kullanmak ücretsizdir.
 
 
-      Bu, PST dosyalarının Azure Depolama alanından silindikten sonra artık Microsoft 365 yönetim merkezi tamamlanmış bir içeri aktarma işi için dosya listesinde görüntülenmediği anlamına gelir. İçeri aktarma işi **verileri Office 365 içeri aktarma** sayfasında yine de listelense de, eski içeri aktarma işlerinin ayrıntılarını görüntülediğinizde PST dosyalarının listesi boş olabilir.
+      Bu, PST dosyalarının Azure Depolama alanından silindikten sonra Microsoft 365 yönetim merkezi tamamlanmış bir içeri aktarma işinin dosya listesinde görüntülenmeydikleri anlamına da gelir. İçeri aktarma işi **verileri Office 365 içeri aktarma** sayfasında yine de listelense de, eski içeri aktarma işlerinin ayrıntılarını görüntülediğinizde PST dosyalarının listesi boş olabilir.
   - question: >
       pst dosya biçiminin Office 365 içeri aktarma için hangi sürümü desteklenir?
     answer: >
       PST dosya biçiminin iki sürümü vardır: ANSI ve Unicode. Unicode PST dosya biçimini kullanan dosyaları içeri aktarmanızı öneririz. Ancak, çift baytlık karakter kümesi (DBCS) kullanan diller gibi ANSI PST dosya biçimini kullanan dosyalar da Office 365'a aktarılabilir. ANSI PST dosyalarını içeri aktarma hakkında daha fazla bilgi için bkz. [Kuruluşunuzun PST dosyalarını Office 365 aktarmak için ağ yüklemeyi kullanma](use-network-upload-to-import-pst-files.md#step-4-create-the-pst-import-mapping-file) konusundaki 4. Adım.
 
 
-      Ayrıca, Outlook 2007 ve sonraki sürümlerden PST dosyaları Office 365'a aktarılabilir.
+      Ayrıca, Outlook 2007 ve sonraki sürümlerden PST dosyaları Office 365'e aktarılabilir.
   - question: >
       PST dosyalarımı Azure Depolama alanına yükledikten sonra silinmeden önce Azure'da ne kadar süreyle tutulurlar?
     answer: >
@@ -79,7 +82,7 @@ sections:
   - question: >
       PST dosyasının posta kutusuna aktarılması ne kadar sürer?
     answer: >
-      Ağınızın kapasitesine bağlıdır, ancak her terabayt (TB) verinin kuruluşunuzun Azure Depolama alanına yüklenmesi genellikle birkaç saat sürer. PST dosyaları Azure Depolama alanına kopyalandıktan sonra, pst dosyası bir Microsoft 365 posta kutusuna günde<sup>\*</sup> yaklaşık 24 GB hızında içeri aktarılır. Bu oran gereksinimlerinizi karşılamıyorsa, e-posta verilerini Office 365 geçirmek için diğer yöntemleri göz önünde bulundurabilirsiniz. Daha fazla bilgi için bkz. [Birden çok e-posta hesabını Office 365 geçirmenin yolları](/Exchange/mailbox-migration/mailbox-migration).
+      Ağınızın kapasitesine bağlıdır, ancak her terabayt (TB) verinin kuruluşunuzun Azure Depolama alanına yüklenmesi genellikle birkaç saat sürer. PST dosyaları Azure Depolama alanına kopyalandıktan sonra, bir PST dosyası günde<sup>\*</sup> yaklaşık 24 GB hızında bir Microsoft 365 posta kutusuna aktarılır. Bu oran gereksinimlerinizi karşılamıyorsa, e-posta verilerini Office 365 geçirmek için diğer yöntemleri göz önünde bulundurabilirsiniz. Daha fazla bilgi için bkz. [Birden çok e-posta hesabını Office 365 geçirmenin yolları](/Exchange/mailbox-migration/mailbox-migration).
 
 
       <sup>\*</sup> Bu oran garanti değildir. Sunucu iş yükü ve geçici performans sorunları bu hızı düşürebilir.
@@ -95,7 +98,7 @@ sections:
     answer: >
       Evet. PST dosyası 150 MB'tan büyük bir posta kutusu öğesi içeriyorsa, öğe atlanır ve içeri aktarma işlemi sırasında içeri aktarılmaz. 150 MB'tan büyük öğeler, Exchange Online ileti boyutu sınırı olduğundan içeri aktarılamaz. Daha fazla bilgi için bkz. [Exchange Online'de ileti sınırları](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).
   - question: >
-      İletinin gönderildiği veya alındığı zaman, alıcı listesi ve diğer özellikler gibi ileti özellikleri PST dosyaları Microsoft 365 posta kutusuna aktarıldığında korunur mu?
+      İletinin gönderildiği veya alındığı zaman, alıcı listesi ve diğer özellikler gibi ileti özellikleri PST dosyaları bir Microsoft 365 posta kutusuna aktarıldığında korunur mu?
     answer: >
       Evet. İçeri aktarma işlemi sırasında özgün ileti meta verileri değiştirilmez.
   - question: >
@@ -107,7 +110,7 @@ sections:
     answer: >
       Evet, bu özellik artık kullanılabilir.
   - question: >
-      PST dosyalarını Exchange karma dağıtımdaki bir çevrimiçi arşiv posta kutusuna aktarmak için ağ yükleme özelliğini kullanabilir miyim?
+      Pst dosyalarını Exchange karma dağıtımındaki çevrimiçi arşiv posta kutusuna aktarmak için ağ yükleme özelliğini kullanabilir miyim?
     answer: >
       Evet, bu özellik artık kullanılabilir.
   - question: >
@@ -146,9 +149,9 @@ sections:
   - question: >
       Hangi ticari lisans sözleşmeleri sürücü gönderimini destekler?
     answer: >
-      PST dosyalarını Microsoft 365'a aktarmak için sürücü gönderimi bir Microsoft Kurumsal Anlaşma (EA) aracılığıyla kullanılabilir. Sürücü gönderimi, Microsoft Ürün ve Hizmet Sözleşmesi (MPSA) aracılığıyla kullanılamaz.
+      PST dosyalarını Microsoft 365'e aktarmak için sürücü gönderimi bir Microsoft Kurumsal Anlaşma (EA) aracılığıyla sağlanır. Sürücü gönderimi, Microsoft Ürün ve Hizmet Sözleşmesi (MPSA) aracılığıyla kullanılamaz.
   - question: >
-      PST dosyalarını Microsoft 365 aktarmak için sürücü gönderimini kullanmanın fiyatlandırması nedir?
+      PST dosyalarını Microsoft 365'e aktarmak için sürücü gönderimini kullanma fiyatlandırması nedir?
     answer: >
       PST dosyalarını Microsoft 365 posta kutularına aktarmak için sürücü gönderimini kullanmanın maliyeti, GB veri başına 2 ABD Doları'dır. Örneğin, 1.000 GB (1 TB) PST dosyası içeren bir sabit sürücü gönderirseniz, maliyet 2.000 ABD dolarıdır. İthalat ücretini ödemek için bir iş ortağıyla çalışabilirsiniz. İş ortağı bulma hakkında bilgi için bkz. [Microsoft iş ortağınızı veya kurumsal bayinizi bulma](../admin/manage/find-your-partner-or-reseller.md).
   - question: >
@@ -175,7 +178,7 @@ sections:
   - question: >
       PST dosyasının posta kutusuna aktarılması ne kadar sürer?
     answer: >
-      PST dosyaları Azure Depolama alanına yüklendikten sonra, Microsoft 365 öğelerin yaşını ve PST dosyalarına dahil edilen farklı ileti türlerini tanımlamak için PST dosyalarındaki verileri analiz eder (güvenli ve güvenli bir şekilde). Bu analiz tamamlandığında, PST dosyalarındaki tüm verileri içeri aktarma veya hangi verilerin içeri aktarılacağını denetleyebilen filtreler ayarlama seçeneğiniz olur. İçeri aktarma işini başlattıktan sonra, pst dosyası bir Microsoft 365 posta kutusuna günde yaklaşık 24 GB hızında içeri aktarılır.<sup>\*</sup> Bu oran gereksinimlerinizi karşılamıyorsa, e-posta verilerini Office 365 içeri aktarmaya yönelik diğer yöntemleri göz önünde bulundurabilirsiniz. Daha fazla bilgi için bkz. [Birden çok e-posta hesabını Office 365 geçirmenin yolları](/Exchange/mailbox-migration/mailbox-migration).
+      PST dosyaları Azure Depolama alanına yüklendikten sonra, Microsoft 365 öğelerin yaşını ve PST dosyalarına dahil edilen farklı ileti türlerini belirlemek için PST dosyalarındaki verileri (güvenli ve güvenli bir şekilde) analiz eder. Bu analiz tamamlandığında, PST dosyalarındaki tüm verileri içeri aktarma veya hangi verilerin içeri aktarılacağını denetleyebilen filtreler ayarlama seçeneğiniz olur. İçeri aktarma işini başlattıktan sonra, pst dosyası bir Microsoft 365 posta kutusuna günde yaklaşık 24 GB hızında içeri aktarılır.<sup>\*</sup> Bu oran gereksinimlerinizi karşılamıyorsa, e-posta verilerini Office 365 içeri aktarmaya yönelik diğer yöntemleri göz önünde bulundurabilirsiniz. Daha fazla bilgi için bkz. [Birden çok e-posta hesabını Office 365 geçirmenin yolları](/Exchange/mailbox-migration/mailbox-migration).
 
 
       <sup>\*</sup> Bu oran garanti değildir. Sunucu iş yükü ve geçici performans sorunları bu hızı düşürebilir.
@@ -190,12 +193,12 @@ sections:
 
       Bu, PST dosyalarının Azure Depolama alanından silindikten sonra uyumluluk portalında tamamlanmış bir içeri aktarma işinin dosya listesinde görüntülenmediği anlamına da gelir. Uyumluluk portalındaki **PST dosyalarını içeri aktar** sayfasında bir içeri aktarma işi listelenmeye devam ediyor olsa da, eski içeri aktarma işlerinin ayrıntılarını görüntülediğinizde PST dosyalarının listesi boş olabilir.
   - question: >
-      pst dosya biçiminin Microsoft 365 içeri aktarma için hangi sürümü desteklenir?
+      Pst dosya biçiminin Microsoft 365'e aktarmak için hangi sürümü desteklenir?
     answer: >
-      PST dosya biçiminin iki sürümü vardır: ANSI ve Unicode. Unicode PST dosya biçimini kullanan dosyaları içeri aktarmanızı öneririz. Ancak, çift baytlık karakter kümesi (DBCS) kullanan diller gibi ANSI PST dosya biçimini kullanan dosyalar da Microsoft 365'a aktarılabilir. ANSI PST dosyalarını içeri aktarma hakkında daha fazla bilgi için bkz. [PST dosyalarını Office 365 aktarmak için sürücü gönderimi kullanma](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file) konusundaki 3. Adım.
+      PST dosya biçiminin iki sürümü vardır: ANSI ve Unicode. Unicode PST dosya biçimini kullanan dosyaları içeri aktarmanızı öneririz. Ancak, çift baytlık karakter kümesi (DBCS) kullanan diller gibi ANSI PST dosya biçimini kullanan dosyalar da Microsoft 365'e aktarılabilir. ANSI PST dosyalarını içeri aktarma hakkında daha fazla bilgi için bkz. [PST dosyalarını Office 365 aktarmak için sürücü gönderimi kullanma](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file) konusundaki 3. Adım.
 
 
-      Ayrıca, Outlook 2007 ve sonraki sürümlerden PST dosyaları Office 365'a aktarılabilir.
+      Ayrıca, Outlook 2007 ve sonraki sürümlerden PST dosyaları Office 365'e aktarılabilir.
   - question: >
       PST dosyalarını içeri aktarırken ileti boyutu sınırı var mı?
     answer: >
@@ -205,7 +208,7 @@ sections:
     answer: >
       PST içeri aktarma işlemi yinelenen öğeleri denetler ve hedef posta kutusunda veya hedef arşivde hedef klasörde eşleşen bir öğe varsa öğeleri PST dosyasından posta kutusuna veya arşive kopyalamaz. Aynı PST dosyasını yeniden içeri aktarır ve önceki içeri aktarma işinde belirttiğinizden farklı bir hedef klasör (PST içeri aktarma eşleme dosyasında TargetRootFolder özelliğini kullanarak) belirtirseniz, PST dosyasındaki tüm öğeler yeniden içeri aktarılır.
   - question: >
-      İletinin gönderildiği veya alındığı zaman, alıcı listesi ve diğer özellikler gibi ileti özellikleri PST dosyaları Microsoft 365 posta kutusuna aktarıldığında korunur mu?
+      İletinin gönderildiği veya alındığı zaman, alıcı listesi ve diğer özellikler gibi ileti özellikleri PST dosyaları bir Microsoft 365 posta kutusuna aktarıldığında korunur mu?
     answer: >
       Evet. İçeri aktarma işlemi sırasında özgün ileti meta verileri değiştirilmez
   - question: >
@@ -213,11 +216,11 @@ sections:
     answer: >
       Evet. 300 veya daha fazla iç içe klasör düzeyine sahip bir PST dosyasını içeri aktaramazsınız.
   - question: >
-      PST dosyalarını Microsoft 365'deki etkin olmayan bir posta kutusuna aktarmak için sürücü gönderimi kullanabilir miyim?
+      PST dosyalarını Microsoft 365'te etkin olmayan bir posta kutusuna aktarmak için sürücü gönderimi kullanabilir miyim?
     answer: >
       Evet, bu özellik artık kullanılabilir.
   - question: >
-      PST dosyalarını Exchange karma dağıtımdaki çevrimiçi arşiv posta kutusuna aktarmak için sürücü gönderimi kullanabilir miyim?
+      Pst dosyalarını Exchange karma dağıtımındaki çevrimiçi arşiv posta kutusuna aktarmak için sürücü gönderimi kullanabilir miyim?
     answer: >
       Evet, bu özellik artık kullanılabilir.
   - question: >

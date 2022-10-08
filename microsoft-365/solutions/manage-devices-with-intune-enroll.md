@@ -10,7 +10,7 @@ manager: dougeby
 audience: ITPro
 description: Intune ve Autopilot kullanarak cihazları yönetime kaydederek üzerinde çalışan uygulamaların uyumlu olduğundan emin olun ve kurumsal veri sızıntılarını önleyin.
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -20,12 +20,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 54e98ff38791b914467fe2dc97bf6f59f491190a
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 0c6e49b3a654f29b76016487f88126ae77a2630c
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727248"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986608"
 ---
 # <a name="step-2-enroll-devices-to-intune"></a>Adım 2. Cihazları Intune kaydetme
 

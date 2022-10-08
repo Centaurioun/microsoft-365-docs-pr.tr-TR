@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Etki alanınızı doğrulamayı ve Microsoft için Amazon Web Services'te (AWS) e-posta, Skype Kurumsal Online ve diğer hizmetler için DNS kayıtlarını ayarlamayı öğrenin.
-ms.openlocfilehash: 2f14bb3234ca48f61cf3fabc0942d35f44b61b60
-ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
+ms.openlocfilehash: 7450eabe057eb5abea67d7902d494b0e40bebf6e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66563263"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172081"
 ---
 # <a name="connect-your-dns-records-at-amazon-web-services-aws-to-microsoft-365"></a>Amazon Web Services'teki (AWS) DNS kayıtlarınızı Microsoft 365'e bağlama
 
@@ -44,7 +45,7 @@ AWS'de bu kayıtları ekledikten sonra etki alanınız Microsoft hizmetleriyle �
 Etki alanınızı Microsoft ile kullanmadan önce, etki alanına sahip olduğunuzdan emin olmamız gerekir. Etki alanı kayıt şirketinizde hesabınızda oturum açıp DNS kaydını oluşturabilmek, Microsoft'a etki alanının sahibi olduğunuzu kanıtlar.
 
 > [!NOTE]
-> Bu kayıt yalnızca etki alanının sahibi olduğunuzu doğrulamak için kullanılır; başka hiçbir şeyi etkilemez. Dilerseniz bu kaydı daha sonra silebilirsiniz.
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
 1. Başlamak için [bu bağlantıyı](https://console.aws.amazon.com/route53/home) kullanarak AWS'deki etki alanları sayfanıza gidin. İlk önce oturum açmanız istenir.
 
@@ -135,7 +136,7 @@ Microsoft 365'te kaydı doğrulamak için:
 
     |Kayıt adı|Kayıt türü|Değer|TTL (Saniye)|Yönlendirme ilkesi|
     |:-----|:-----|:-----|:-----|:-----|
-    |(Bu alanı boş bırakın.)|MX - Posta sunucularını belirtir|0.mail.protection.outlook.com *\<domain-key\>*. <br/> Burada 0, MX öncelik değeridir. Bu değeri MX değerinin başına ekleyin ve değerin kalan bölümünden bir boşlukla ayırın.  <br/> **Bu değer nokta (.) ile bitmelidir.** <br/> **Not:** Microsoft 365 hesabınızdan alın \<*domain-key*\> . [Bunu nasıl bulabilirim?](../get-help-with-domains/information-for-dns-records.md)|300|Basit yönlendirme|
+    |(Bu alanı boş bırakın.)|MX - Posta sunucularını belirtir|0.mail.protection.outlook.com *\<domain-key\>*. <br/> The 0 is the MX priority value. Add it to the beginning of the MX value, separated from the remainder of the value by a space. <br/> **Bu değer nokta (.) ile bitmelidir.** <br/> **Not:** Microsoft 365 hesabınızdan alın \<*domain-key*\> . [Bunu nasıl bulabilirim?](../get-help-with-domains/information-for-dns-records.md)|300|Basit yönlendirme|
 
 1. **Kayıt oluştur'u** seçin.
 
@@ -212,7 +213,7 @@ Microsoft 365'te kaydı doğrulamak için:
 
     |Kayıt türü|Değer|
     |:-----|:-----|
-    |TXT- E-posta gönderenleri doğrulamak ve uygulamaya özgü değerler için kullanılır|v=spf1 include:spf.protection.outlook.com -all <br/> (Ekrandaki yönergeler için gereken tırnak işaretleri otomatik olarak gelir. Bunları el ile yazmanız gerekmez.)  <br/> **Not:** Tüm aralıkların doğru kalması için bu girdiyi kopyalayıp yapıştırmanızı öneririz.|
+    |TXT- E-posta gönderenleri doğrulamak ve uygulamaya özgü değerler için kullanılır|v=spf1 include:spf.protection.outlook.com -all <br/> (Ekrandaki yönergeler için gereken tırnak işaretleri otomatik olarak gelir. Bunları el ile yazmanız gerekmez.) <br/> **Not:** Tüm aralıkların doğru kalması için bu girdiyi kopyalayıp yapıştırmanızı öneririz.|
 
 1. **Kayıt oluştur'u** seçin.
 
@@ -302,7 +303,7 @@ Bu seçeneği yalnızca kuruluşunuz Microsoft Teams'in yanı sıra sohbet, konf
    :::image type="content" source="../../media/dns-aws/aws-domains-cname-create-records.png" alt-text="Kayıt oluştur'u seçin.":::
 
 > [!NOTE]
-> Genellikle, DNS değişikliklerinin etkili olması yaklaşık 15 dakika sürer. Bununla birlikte, yaptığınız değişikliğin İnternet'in DNS sistemi genelinde güncelleştirilmesi bazen daha uzun sürebilir. DNS kayıtlarını ekledikten sonra posta akışı sorunlarıyla veya başka sorunlarla karşılaşırsanız, [Etki alanı adınızı veya DNS kayıtlarınızı değiştirdikten sonra sorunları giderme](../get-help-with-domains/find-and-fix-issues.md) konusuna bakın.
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Gelişmiş seçenek: Microsoft 365 için Intune ve Mobil Cihaz Yönetimi
 
@@ -348,4 +349,4 @@ Bu hizmet, etki alanınıza bağlanan mobil cihazları güvenli ve uzaktan yöne
    :::image type="content" source="../../media/dns-aws/aws-domains-cname-create-records.png" alt-text="Kayıt oluştur'u seçin.":::
 
 > [!NOTE]
-> Genellikle, DNS değişikliklerinin etkili olması yaklaşık 15 dakika sürer. Bununla birlikte, yaptığınız değişikliğin İnternet'in DNS sistemi genelinde güncelleştirilmesi bazen daha uzun sürebilir. DNS kayıtlarını ekledikten sonra posta akışı sorunlarıyla veya başka sorunlarla karşılaşırsanız, [Etki alanı adınızı veya DNS kayıtlarınızı değiştirdikten sonra sorunları giderme](../get-help-with-domains/find-and-fix-issues.md) konusuna bakın.
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).

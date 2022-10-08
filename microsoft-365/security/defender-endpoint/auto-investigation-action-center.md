@@ -13,18 +13,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 search.appverid: met150
-ms.openlocfilehash: 022c1311cd7ad95534de996baa14db2307bad64c
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 84a25963943102ea33049e22fda334292a0aa3e4
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811318"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68142179"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Düzeltme eylemlerini görmek için İşlem merkezini ziyaret edin
 

@@ -12,16 +12,17 @@ ms.reviewer: pandrew1
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Microsoft 365 Yönetici Merkezi'nde ağ bağlantısına genel bakış
-ms.openlocfilehash: 07f4de193d9e7545895b030cfb77d8244c3cee05
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 5d9ed3634523de53dee73cfee53c621d62afdf89
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672193"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172521"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Microsoft 365 Yönetici Merkezi'nde ağ bağlantısı
 

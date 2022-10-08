@@ -7,14 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: Ekipmanı temizlemek veya sıfırlamak için zaman sağlamak için Microsoft Bookings randevudan önce veya sonra arabellek süresi ayarlayın.
-ms.openlocfilehash: 49e58d53cec466c824a40281e3199f1544e74744
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 963add3016240e5c774eaf58c7f1418663b7f659
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637593"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197293"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>Microsoft Bookings'de arabellek süresini ayarlama
 
@@ -24,11 +26,11 @@ Randevular başlamadan önce, randevular sona erdikten sonra arabelleğe alma s�
 
 ## <a name="set-buffer-time-defaults"></a>Arabellek süresi varsayılanlarını ayarlama
 
-Arabellek süresi varsayılanları Bookings **Hizmet ayrıntıları** sayfasında ayarlanır. Bu sayfada ayarlanan tüm hizmet varsayılanları gibi, bu varsayılanlar da belirli bir rezervasyon için sizin tarafınızdan belirli müşteri gereksinimlerini karşılayacak şekilde düzenlenebilir.
+Arabellek süresi varsayılanları Bookings'in **Hizmet ayrıntıları** sayfasında ayarlanır. Bu sayfada ayarlanan tüm hizmet varsayılanları gibi, bu varsayılanlar da belirli bir rezervasyon için sizin tarafınızdan belirli müşteri gereksinimlerini karşılayacak şekilde düzenlenebilir.
 
 Arabellek süresi ayarı **Hizmet ayrıntıları** sayfasında bulunabilir. Belirli bir hizmet için ayarlanabilmesi için önce arabellek süresi düğmesini seçerek arabellek süresi ayarını etkinleştirmeniz gerekir. Bu, burada gösterildiği gibi her rezervasyondan önce ve sonra tutulacak varsayılan süreyi seçmek için kullanılan **Önce** ve **Sonra** açılan listelerinin görünmesine neden olur:
 
-   ![Arabellek süresi etkin Bookings görüntüsü.](../media/bookings-buffertime.png)
+   ![Arabellek süresi etkin Bookings'in görüntüsü.](../media/bookings-buffertime.png)
 
 <!--## Buffer time and appointment timing
 

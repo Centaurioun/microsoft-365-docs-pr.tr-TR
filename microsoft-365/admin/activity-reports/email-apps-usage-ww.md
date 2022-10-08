@@ -5,9 +5,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -19,30 +20,30 @@ search.appverid:
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: Exchange Online bağlanan e-posta uygulamalarının sayısını ve Outlook kullanıcılarının hangi sürümünü kullandığını öğrenmek için e-posta uygulamaları kullanım raporunu nasıl alacağınızı öğrenin.
-ms.openlocfilehash: c4918b818cad5479b787528fece2c74412a5cfa4
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: f0ac5a7dc862117784d3691cc616a70314d4f1f3
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662116"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197029"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>Yönetim merkezinde Microsoft 365 Raporları - E-posta uygulamaları kullanımı
+# <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>Yönetim merkezinde Microsoft 365 Raporları - Email uygulama kullanımı
 
 Microsoft 365 Raporları panosu, kuruluşunuzdaki ürünler genelindeki etkinliğe genel bakışı gösterir. Bu pano sayesinde her bir üründeki etkinliklerle ilgili daha ayrıntılı bilgi edinmek için ürün düzeyinde raporları ayrıntılı olarak inceleyebilirsiniz. [Raporlara genel bakış konusuna](activity-reports.md) göz atın. E-posta uygulamaları kullanım raporunda, Exchange Online bağlanan e-posta uygulamalarının sayısını görebilirsiniz. Kullanıcıların kullandığı Outlook uygulamalarının sürüm bilgilerini de görebilirsiniz. Bu bilgiler, desteklenen Outlook sürümlerini yüklemek için desteklenmeyen sürümleri kullananlarla iletişim kurmanızı sağlar.
   
 ## <a name="how-to-get-to-the-email-apps-report"></a>E-posta uygulamaları raporuna erişme
 
 1. Yönetim merkezinde, **Raporlar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Kullanımı</a> sayfasına gidin.
-2. **E-posta etkinliği** altında **Daha Fazla Görüntüle'yi** seçin. 
-3. **E-posta etkinliği** açılan listesinde **Exchange** \> **E-posta uygulamaları kullanımı'nı** seçin.
+2. **etkinlik Email** altında **Daha Fazla Görüntüle'yi** seçin. 
+3. **Email etkinlik** açılan **listesinden Exchange** \> **Email uygulamaları kullanımını** seçin.
   
 ## <a name="interpret-the-email-apps-report"></a>E-posta uygulamaları raporunu yorumlama
 
 **Kullanıcılar** ve **İstemciler** grafiklerine bakarak e-posta uygulamaları etkinliğine ilişkin bir görünüm elde edebilirsiniz. 
   
-![Kullanılan e-posta istemcileri.](../../media/d78af7db-2b41-4d37-8b6e-bc7e47edd1dd.png)
+![kullanılan Email istemcileri.](../../media/d78af7db-2b41-4d37-8b6e-bc7e47edd1dd.png)
 
-**E-posta uygulamaları kullanım** raporu son 7 gün, 30 gün, 90 gün veya 180 günlük eğilimler için görüntülenebilir. Ancak raporda belirli bir gün seçerseniz, tablo geçerli tarihten itibaren (raporun oluşturulduğu tarihten değil) 28 güne kadar olan verileri gösterir. Her rapordaki veriler genellikle son 24-48 saati kapsar.
+**Email uygulamaları kullanım** raporu son 7 gün, 30 gün, 90 gün veya 180 günlük eğilimler için görüntülenebilir. Ancak raporda belirli bir gün seçerseniz, tablo geçerli tarihten itibaren (raporun oluşturulduğu tarihten değil) 28 güne kadar olan verileri gösterir. Her rapordaki veriler genellikle son 24-48 saati kapsar.
 
 **Kullanıcılar** görünümü, herhangi bir e-posta uygulamasını kullanarak Exchange Online'a bağlanan benzersiz kullanıcıların sayısını gösterir. 
 
@@ -68,6 +69,6 @@ Kuruluşunuzun ilkeleri nedeniyle kişisel kullanıcı bilgilerinin bulunduğu r
 
 Rapora sütun eklemek veya rapordan sütun kaldırmak için Sütunları **seç'i** seçin.  
 
-![E-posta uygulamaları kullanım raporu - sütunları seçin.](../../media/041bd6ff-27e8-409d-9608-282edcfa2316.png)
+![Uygulama kullanım raporunu Email - sütunları seçin.](../../media/041bd6ff-27e8-409d-9608-282edcfa2316.png)
 
 Dışarı **Aktar bağlantısını** seçerek rapor verilerini bir Excel .csv dosyasına da aktarabilirsiniz. Bu işlem tüm kullanıcıların verilerini dışarı aktarır ve daha fazla çözümleme yapmak için basit sıralama ve filtreleme işlemlerini kullanmanıza olanak tanır. 

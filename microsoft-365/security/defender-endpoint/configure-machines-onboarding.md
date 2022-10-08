@@ -6,21 +6,23 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1ce8e10269e90c7b48a541e806847cc5f896e971
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: eced2495ce75faa78fd7923b871b3a3b00f5fc3a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67695725"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172257"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>cihazları Uç Nokta için Microsoft Defender ekleme
 
@@ -65,7 +67,7 @@ Uç Nokta için Defender [, Windows cihazlarını eklemeye](onboard-configure.md
 *Intune cihaz yönetiminde cihaz uyumluluk sayfasını Uç Nokta için Microsoft Defender*
 
 > [!TIP]
-> Alternatif olarak, [Microsoft](https://portal.azure.com/) Defender **ATP'> Tüm hizmetler > Intune > Cihaz uyumluluğu bölümünden Microsoft Azure portal Uç Nokta için Defender ekleme uyumluluk** sayfasına gidebilirsiniz.
+> Alternatif olarak, [Microsoft Azure portal](https://portal.azure.com/) Uç Nokta için Defender ekleme uyumluluğu sayfasına Tüm **hizmetler > Intune > Cihaz uyumluluğu > Microsoft Defender ATP'den** gidebilirsiniz.
 
 > [!NOTE]
 > En güncel cihaz verilerini görüntülemek istiyorsanız **ATP algılayıcısı olmayan cihazlar listesi'ne** tıklayın.

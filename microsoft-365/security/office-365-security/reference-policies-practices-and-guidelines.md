@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Microsoft, kullanıcılarımızı kötü amaçlı, istenmeyen veya kötü amaçlı e-postalara karşı korumaya yardımcı olmak için çeşitli ilkeler, yordamlar geliştirmiş ve sektördeki en iyi yöntemleri benimsemiştir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a2b047b7a7c528f76131f84ecf34203cb7be2352
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 8cea8a26c318c7832f28f9ffaa0a740837d5894c
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67594199"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68091707"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Başvuru: İlkeler, uygulamalar ve yönergeler
 

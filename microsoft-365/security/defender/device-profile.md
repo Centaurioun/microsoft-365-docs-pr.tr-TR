@@ -10,15 +10,17 @@ ms.author: dansimp
 author: martyav
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: b701d93aefcab19ff352830815c7894fc062140a
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: e84e53a2883348c7a233d2225058aed2b495b07d
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67466975"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68091267"
 ---
 # <a name="device-profile-page"></a>Cihaz profili sayfası
 
@@ -78,7 +80,7 @@ Cihaz profili sayfasında kullanılabilen eylemler şunlardır:
 * **Cihazı yalıtma** - Cihazı kuruluşunuzun ağından yalıtırken Uç Nokta için Microsoft Defender bağlı kalmasını sağlar. İletişim amacıyla cihaz yalıtılmış durumdayken Outlook, Teams ve Skype Kurumsal çalışmasına izin vermeyi seçebilirsiniz.
 * **İşlem merkezi** - Gönderilen eylemlerin durumunu görüntüleyin. Yalnızca başka bir eylem seçilmişse kullanılabilir.
 * **Uygulama yürütmeyi kısıtla** - Microsoft tarafından imzalanmayan uygulamaların çalışmasını engeller.
-* **Virüsten koruma taraması çalıştırma** - Microsoft Defender Virüsten Koruma tanımlarını Güncelleştirmeler ve hemen bir virüsten koruma taraması çalıştırır. Hızlı tarama veya Tam tarama arasında seçim yapın.
+* **Virüsten koruma taraması çalıştırma** - Virüsten koruma tanımlarını Güncelleştirmeler Microsoft Defender ve hemen bir virüsten koruma taraması çalıştırır. Hızlı tarama veya Tam tarama arasında seçim yapın.
 * **Araştırma paketi toplama** - Cihaz hakkında bilgi toplar. Araştırma tamamlandığında indirebilirsiniz.
 * **Canlı Yanıt Oturumu Başlatma** - [Ayrıntılı güvenlik araştırmaları](/microsoft-365/security/defender-endpoint/live-response) için cihaza uzak bir kabuk yükler.
 * **Otomatik araştırma başlatma** - [Tehditleri otomatik olarak araştırır ve düzelter](../office-365-security/office-365-air.md). Otomatik araştırmaların bu sayfadan çalıştırılmasını el ile tetikleyebilmenize rağmen, [bazı uyarı ilkeleri](../../compliance/alert-policies.md#default-alert-policies) otomatik araştırmaları kendi başlarına tetikler.

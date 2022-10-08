@@ -11,18 +11,20 @@ ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection:
 - m365-frontline
+- highpri
 - m365solution-frontline
 - m365solution-scenario
+- highpri
 ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: d654a94fc508ee109bdeeba97684d5f7636a3a6d
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: cfa44bdccad320ba0b9e0bb3593d7b8cf3bfe9c1
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613170"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68068767"
 ---
 # <a name="choose-your-scenarios-for-microsoft-365-for-frontline-workers"></a>Ön cephe çalışanları için Microsoft 365 senaryolarınızı seçin
 

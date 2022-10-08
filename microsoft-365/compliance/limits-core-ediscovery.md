@@ -1,5 +1,6 @@
 ---
 title: eBulma (Standart) durumundaki sınırlar
+description: Bu makalede, Microsoft 365'teki eBulma (Standart) durumundaki sınırlar açıklanmaktadır.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,19 +11,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-description: Bu makalede, Microsoft 365'teki eBulma (Standart) durumundaki sınırlar açıklanmaktadır.
-ms.openlocfilehash: 3bab813811277c516357066e3878283024e8dfa9
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 6dac70d326f6d6c0480797bf7a7b00ec0ea2be7f
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67825664"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68131993"
 ---
 # <a name="limits-in-ediscovery-standard"></a>eBulma sınırları (Standart)
 

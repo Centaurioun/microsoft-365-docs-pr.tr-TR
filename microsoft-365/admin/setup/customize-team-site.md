@@ -7,9 +7,10 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - SPO_Content
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: Belge kitaplıkları, listeler ve hub'larla SharePoint ekip sitenizi özelleştirmeyi, düzenlemeyi ve yönetmeyi öğrenin.
-ms.openlocfilehash: 77f19ff44488b7e993dd2893ebf619b5bcc69127
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: e253881009df6fb6fb8ee713da1688a84b585bf4
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811536"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172939"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Ekip sitenizi dosya depolama ve dosya paylaşımı için özelleştirme
 
@@ -82,7 +83,7 @@ Sitenize takvim ekleme hakkında bir video görüntüleyin, bkz. [Paylaşılan t
 
 ## <a name="organize-sites-into-hubs"></a>Siteleri hub'lar halinde düzenleme
 
-Ekip siteniz, siteyle ilişkili grubun tüm üyeleriyle neredeyse her şeyi paylaşır. Belirli kullanıcılar için ayrı bir siteye sahip olmak istiyorsanız, başka ekip siteleri oluşturabilir ve SharePoint merkezi sitelerini kullanarak bunları yönetebilirsiniz. Bu konuyla ilgili daha fazla bilgiyi aşağıda bulabilirsiniz.
+Your team site shares almost everything with all members of the group associated with the site. If you want to have a separate site for specific customers, you can create additional team sites, and manage them using SharePoint hub sites. Here's more information.
   
 Hub siteleri, siteleri eklemenize ve ilişkilendirmenize olanak sağlar. Daha fazla bilgi için bkz. [SharePoint hub sitesi nedir?](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f).
   
@@ -100,7 +101,7 @@ Dosya depolama ve belge yönetimi bir başlangıç olsa da, ekibinizle ve dış 
   
 ## <a name="managing-users-and-groups"></a>Kullanıcıları ve grupları yönetme
 
-Ekip sitenizi yönetirken kullanıcı ekleyip çıkarmanız gerekebilir. Ekip sitenize kullanıcı ekleme, kullanıcıları anlama ve yönetme hakkındaki bazı bilgileri burada bulabilirsiniz.
+As you manage your team site, you may have to add or remove users. Here's information to help you understand, add, and manage users on your team site.
   
 [Grupları anlama ve yönetme](/training/m365/) bölümünde gruplarla ilgili bir video izleyin. 
   

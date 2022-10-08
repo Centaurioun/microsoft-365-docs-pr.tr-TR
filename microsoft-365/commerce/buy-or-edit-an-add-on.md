@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: sgautam, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
@@ -21,12 +22,12 @@ ms.custom:
 - AdminTemplateSet
 description: İş için Microsoft 365 aboneliğiniz için eklentileri satın almayı ve yönetmeyi öğrenin.
 ms.date: 04/02/2021
-ms.openlocfilehash: 4fbb4cc9277c4f4a6ddc3c780388d0ebd8d492ad
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: d5c1803bf4c28f1f020d0008f7d5ba870be8f683
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492092"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188009"
 ---
 # <a name="buy-or-manage-add-ons-for-microsoft-365-business-plans"></a>Microsoft 365 iş planları için eklentileri satın alma veya yönetme
 
@@ -39,7 +40,7 @@ ms.locfileid: "66492092"
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Bu makalede açıklanan adımları gerçekleştirmek için Genel yönetici veya Faturalandırma yöneticisi olmanız gerekir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../admin/add-users/about-admin-roles.md).
+Bu makalede açıklanan adımları yerine getirmek için Genel yönetici veya Fatura yöneticisi olmalısınız. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../admin/add-users/about-admin-roles.md).
 
 ## <a name="buy-an-add-on"></a>Eklenti satın alma
 

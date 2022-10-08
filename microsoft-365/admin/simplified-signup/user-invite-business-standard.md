@@ -7,21 +7,22 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - Adm_TOC
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 description: İş için Microsoft 365 kuruluşuna katılma daveti kabul etme
-ms.openlocfilehash: ba17c55e62d24717fd7a3cd978e85be32de99065
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: df8288afe3b7fd94e4044ece9cc0dc2a9e8b93cf
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660981"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172829"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-for-business-subscription-user"></a>İş için Microsoft 365 aboneliğine e-posta daveti kabul etme (Kullanıcı)
 

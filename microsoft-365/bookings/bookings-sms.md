@@ -7,13 +7,15 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 description: Microsoft Bookings'da istemciler, müşteriler ve iş ortakları için SMS metin bildirimlerini yapılandırmayı öğrenin.
-ms.openlocfilehash: 6a3c777f786ae62ec4a40f2609bf80d73c5629f1
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: aec0b59618d1c271972fed067c7ced386c140b8b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737598"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188097"
 ---
 # <a name="configure-sms-text-notifications-and-reminders-in-microsoft-bookings"></a>Microsoft Bookings'de SMS metin bildirimlerini ve anımsatıcılarını yapılandırma
 

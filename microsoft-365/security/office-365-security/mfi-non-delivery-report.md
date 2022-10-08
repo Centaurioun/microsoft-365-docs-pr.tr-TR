@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
@@ -15,12 +15,13 @@ ms.custom:
 description: Yöneticiler, kuruluşunuzdaki gönderenlerden gelen teslim dışı raporlarda (NDR'ler veya geri dönen iletiler olarak da bilinir) en sık karşılaşılan hata kodlarını izlemek için Güvenlik & Uyumluluk Merkezi'ndeki Posta akışı panosundaki Teslim edilmedi ayrıntıları raporunu kullanmayı öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a9b7b12ece4f860051e2c6f2b7800370a64062c7
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 6c2069a0896fc77191602b9df8b6c24cc2bdb007
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597448"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68091795"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Güvenlik & Uyumluluk Merkezi'nde teslim edilmedi raporu
 

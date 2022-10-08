@@ -12,16 +12,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Yöneticiler, Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde e-postalara ve sahte gönderen girişlerine izin verme veya bunları engelleme hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 752877aab39ce6c06b10b76c192b2188a9fb138d
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: 9a954b820b584d9fdb6b210971423e9f17c15de6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67644015"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68066816"
 ---
 # <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesini kullanarak e-postalara izin verme veya e-postaları engelleme
 
@@ -512,7 +512,7 @@ Yalnızca bu etki alanından gelen *ve* altyapı çifti gönderen iletilerin kim
 
 Office 365 için Microsoft Defender olan kuruluşlarda, [etki alanı veya gönderen kimliğe bürünme koruması](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) tarafından kimliğe bürünme olarak algılanan iletiler için Kiracı/İzin Ver/Engelle Listesinde izin verme girdileri oluşturamazsınız.
 
-Gönderiler portalında <https://security.microsoft.com/reportsubmission>  kimliğine bürünme olarak yanlış engellenmiş bir iletinin bildirilmesi, göndereni veya etki alanını Kiracı İzin Ver/Engelle Listesi'ne izin verme girdisi olarak eklemez.
+Gönderiler portalında <https://security.microsoft.com/reportsubmission> kimliğine bürünme olarak yanlış engellenmiş bir iletinin bildirilmesi, göndereni veya etki alanını Kiracı İzin Ver/Engelle Listesi'ne izin verme girdisi olarak eklemez.
 
 Bunun yerine, etki alanı veya gönderen, iletiyi algılayan [kimlik avı önleme ilkesinin](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) **Güvenilen gönderenler ve etki alanları bölümüne** eklenir.
 

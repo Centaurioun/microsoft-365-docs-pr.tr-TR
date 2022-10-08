@@ -1,5 +1,6 @@
 ---
 title: Denetim günlüğündeki ayrıntılı özellikler
+description: Bu makalede, bir Office 365 denetim günlüğü kaydının sonuçlarını dışarı aktarırken eklenen ek özelliklerin açıklamaları sağlanır.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,21 +11,20 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
+- audit
 search.appverid:
 - MOE150
 - BCS160
 - MET150
-ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
-description: Bu makalede, bir Office 365 denetim günlüğü kaydının sonuçlarını dışarı aktarırken eklenen ek özelliklerin açıklamaları sağlanır.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ba8f8df40edf484389a5a7e9cec789ab8a3fc7fe
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 59e5e3b5317cd2497563a1b0842361eb387e43a1
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67817344"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68129771"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>Denetim günlüğündeki ayrıntılı özellikler
 

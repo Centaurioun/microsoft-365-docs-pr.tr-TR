@@ -15,16 +15,18 @@ ms.custom: nextgen
 ms.date: 08/02/2022
 ms.reviewer: ''
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 8e6ad128b16ba548672b805bef1db06a9891e9db
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 5d1857105c8043a38b486f435506a4dca017fee4
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701862"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172235"
 ---
-# <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Kullanıcıların Microsoft Defender Virüsten Koruma ilke ayarlarını yerel olarak değiştirmesini engelleme veya izin verme
+# <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Kullanıcıların Microsoft Defender Virüsten Koruma ilkesi ayarlarını yerel olarak değiştirmesini engelleme veya izin verme
 
 
 **Şunlar için geçerlidir:**
@@ -36,7 +38,7 @@ ms.locfileid: "67701862"
 **Platform**
 - Windows
 
-Varsayılan olarak, ağınızdaki uç noktalara bir grup ilkesi Nesnesi aracılığıyla dağıtılan Microsoft Defender Virüsten Koruma ayarları, kullanıcıların ayarları yerel olarak değiştirmesini engeller. Bazı durumlarda bu yapılandırmayı değiştirebilirsiniz. Örneğin, güvenlik araştırmacıları ve tehdit araştırmacıları gibi belirli kullanıcı gruplarının kullandıkları uç noktalarda tek tek ayarlar üzerinde daha fazla denetim sahibi olmalarına izin vermek gerekebilir.
+Varsayılan olarak, ağınızdaki uç noktalara bir grup ilkesi Nesnesi aracılığıyla dağıtılan virüsten koruma ayarlarını Microsoft Defender, kullanıcıların ayarları yerel olarak değiştirmesini engeller. Bazı durumlarda bu yapılandırmayı değiştirebilirsiniz. Örneğin, güvenlik araştırmacıları ve tehdit araştırmacıları gibi belirli kullanıcı gruplarının kullandıkları uç noktalarda tek tek ayarlar üzerinde daha fazla denetim sahibi olmalarına izin vermek gerekebilir.
 
 ## <a name="configure-local-overrides-for-microsoft-defender-antivirus-settings"></a>Microsoft Defender Virüsten Koruma ayarları için yerel geçersiz kılmaları yapılandırma
 
@@ -52,7 +54,7 @@ Bu ayarları yapılandırmak için:
 
 2. **Grup İlkesi Yönetimi Düzenleyicisi**'nde **Bilgisayar yapılandırması**'na gidin ve **Yönetim şablonları**'nı seçin.
 
-3. Ağacı **Windows bileşenleri** > **Microsoft Defender Virüsten Koruma'ya** ve ardından [ayarlar tablosunda](#table-of-settings) belirtilen **Konum** bölümüne (bu makalede) genişletin.
+3. Ağacı **Windows bileşenleri** >  **Microsoft Defender Virüsten Koruma** ve ardından [ayarlar tablosunda](#table-of-settings) belirtilen **Konum** bölümüne (bu makalede) genişletin.
 
 4. Aşağıdaki tabloda belirtilen ilke **Ayarı'na** çift tıklayın ve seçeneği istediğiniz yapılandırmaya ayarlayın. **Tamam'ı** seçin ve diğer ayarlar için yineleyin.
 
@@ -64,11 +66,11 @@ Bu ayarları yapılandırmak için:
 |---|---|---|---|
 | HARİTALAR |Microsoft MAPS'e raporlama için yerel ayarı geçersiz kılmayı yapılandırma|[Bulut tabanlı korumayı etkinleştirme](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | Karantina|Öğelerin Karantina klasöründen kaldırılması için yerel ayarı geçersiz kılmayı yapılandırma|[Taramalar için düzeltmeyi yapılandırma](configure-remediation-microsoft-defender-antivirus.md) |
-| Gerçek zamanlı koruma|Bilgisayarınızda dosya ve program etkinliğini izlemek için yerel ayarı geçersiz kılmayı yapılandırma|[Microsoft Defender Virüsten Koruma'yı her zaman açık koruma ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| Gerçek zamanlı koruma|Gelen ve giden dosya etkinliği için izleme için yerel ayarı geçersiz kılmayı yapılandırma | [Microsoft Defender Virüsten Koruma'yı her zaman açık koruma ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| Gerçek zamanlı koruma|İndirilen tüm dosya ve ekleri taramak için yerel ayarı geçersiz kılmayı yapılandırma|[Microsoft Defender Virüsten Koruma'yı her zaman açık koruma ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| Gerçek zamanlı koruma|Davranış izlemeyi açmak için yerel ayarı geçersiz kılmayı yapılandırma|[Microsoft Defender Virüsten Koruma'yı her zaman açık koruma ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md) |
-| Gerçek zamanlı koruma|Gerçek zamanlı korumayı açmak için yerel ayarı geçersiz kılmayı yapılandırma|[Microsoft Defender Virüsten Koruma'yı her zaman açık koruma ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Gerçek zamanlı koruma|Bilgisayarınızda dosya ve program etkinliğini izlemek için yerel ayarı geçersiz kılmayı yapılandırma|[Microsoft Defender Virüsten Koruma her zaman açık korumayı ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Gerçek zamanlı koruma|Gelen ve giden dosya etkinliği için izleme için yerel ayarı geçersiz kılmayı yapılandırma | [Microsoft Defender Virüsten Koruma her zaman açık korumayı ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Gerçek zamanlı koruma|İndirilen tüm dosya ve ekleri taramak için yerel ayarı geçersiz kılmayı yapılandırma|[Microsoft Defender Virüsten Koruma her zaman açık korumayı ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Gerçek zamanlı koruma|Davranış izlemeyi açmak için yerel ayarı geçersiz kılmayı yapılandırma|[Microsoft Defender Virüsten Koruma her zaman açık korumayı ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Gerçek zamanlı koruma|Gerçek zamanlı korumayı açmak için yerel ayarı geçersiz kılmayı yapılandırma|[Microsoft Defender Virüsten Koruma her zaman açık korumayı ve izlemeyi etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md) |
 | Düzeltme|Düzeltmeyi tamamlamak için zamanlanmış bir tam tarama çalıştırmak üzere günün saati için yerel ayarı geçersiz kılmayı yapılandırma|[Taramalar için düzeltmeyi yapılandırma](configure-remediation-microsoft-defender-antivirus.md) |
 | Tarama|Cpu kullanım yüzdesi üst sınırı için yerel ayarı geçersiz kılmayı yapılandırma|[Taramaları yapılandırma ve çalıştırma](run-scan-microsoft-defender-antivirus.md) |
 | Tarama|Zamanlama tarama günü için yerel ayarı geçersiz kılmayı yapılandırma|[Zamanlanmış taramaları yapılandırma](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
@@ -90,7 +92,7 @@ Varsayılan olarak, yerel grup ilkesinde yapılandırılan listeler ve Windows G
 
 2. **Grup İlkesi Yönetimi Düzenleyicisi**'nde **Bilgisayar yapılandırması**'na gidin ve **Yönetim şablonları**'nı seçin.
 
-3. Ağacı **Windows bileşenleri** > **Microsoft Defender Virüsten Koruma'ya** genişletin.
+3. Ağacı **Windows bileşenleri** >  **Microsoft Defender Virüsten Koruma** olarak genişletin.
 
 4. **Listeler için yerel yönetici birleştirme davranışını yapılandır'a** çift tıklayın ve seçeneği **Devre Dışı** olarak ayarlayın. Sonra **Tamam**’ı seçin.
 
@@ -98,7 +100,7 @@ Varsayılan olarak, yerel grup ilkesinde yapılandırılan listeler ve Windows G
 
 1. [Microsoft Endpoint Manager yönetim merkezinde](https://endpoint.microsoft.com) **Uç nokta güvenliği** > **Virüsten Koruma'yı** seçin.
 
-2. **İlke Oluştur'u** seçin veya mevcut bir Microsoft Defender Virüsten Koruma ilkesini değiştirin.
+2. **İlke Oluştur'u** seçin veya mevcut Microsoft Defender Virüsten Koruma ilkesini değiştirin.
 
 3. **Yapılandırma ayarları'nın** altında Yerel **Yönetici Birleştirmeyi Devre Dışı Bırak'ın** yanındaki açılan listeyi seçin ve **Yerel Yönetici Birleştirmeyi Devre Dışı Bırak'ı** seçin.
 

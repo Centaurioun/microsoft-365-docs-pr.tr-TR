@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Microsoft 365 kiracılarınız için cihaz ve uygulama yönetimi için doğru seçeneği dağıtın.
-ms.openlocfilehash: 5650c4e11258c621a420927a73aaba380802b07e
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 0fd7edc164f951a26cb5af84a8e5eb5adb10353f
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730253"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985421"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Adım 5. Kurumsal kiracılar için Microsoft 365 kiracılarınız için cihaz ve uygulama yönetimi
 

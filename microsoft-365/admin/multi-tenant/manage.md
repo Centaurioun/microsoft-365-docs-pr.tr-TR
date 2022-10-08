@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -22,16 +23,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Kiracı değiştiricisini ve kiracıları tek bir konumdan yönetme olanağı sağlayan çok kiracılı görünümleri kullanmayı öğrenin.
-ms.openlocfilehash: 4a1168b1c2676bf25f0bb4ad7f3353a5e65f8caa
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 3702cc5cc4e9d2ab6babf666c91b86675d01cb8c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468096"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188427"
 ---
 # <a name="multi-tenant-management-for-microsoft-365-partner-admins"></a>Microsoft 365 iş ortağı yöneticileri için çok kiracılı yönetim
 
-Çok kiracılı yönetim, Microsoft 365 iş ortağı yöneticilerinin tek bir konumdan yönetdikleri tüm kiracıları yönetmesine olanak tanıyan birleşik bir yönetim biçimi sunar. Yönetici temsilcisi rolüne sahip ve birden çok kiracıyı yöneten bir iş ortağıysanız şunları yapabilirsiniz:
+Çok kiracılı yönetim, Microsoft 365 iş ortağı yöneticilerinin yönettiği tüm kiracıları tek bir konumdan yönetmesine olanak tanıyan birleşik bir yönetim biçimi sunar. Yönetici temsilcisi rolüne sahip ve birden çok kiracıyı yöneten bir iş ortağıysanız şunları yapabilirsiniz:
 
 - Yönettiğiniz kiracılar arasında hızla hareket edin.
 - Birden çok kiracıda hizmet durumunu, ürünleri ve faturalamayı değerlendirin.
