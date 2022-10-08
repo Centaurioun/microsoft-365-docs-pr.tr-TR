@@ -7,7 +7,9 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 search.appverid:
 - MET150
 - MOE150
@@ -17,12 +19,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Bu makalede, kuruluş verilerinizi Microsoft 365'e geçirmenize yardımcı olacak kaynakları bulacaksınız.
-ms.openlocfilehash: ac7f3251c7a3a077e071de4e7441b988eb2db87b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 83483fac13e219279815dd09aee33057324d2bcf
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702324"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68165326"
 ---
 # <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>Kuruluş verilerinizi Microsoft 365 Kurumsal geçirme
 

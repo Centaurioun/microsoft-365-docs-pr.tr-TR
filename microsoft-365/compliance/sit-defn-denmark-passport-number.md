@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Danimarka pasaport numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: fec977abcdb4a942910a1d2ccbbb948348ef0119
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: b0ccef6edb192cf9f759c65de92fe603e7294c0e
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948354"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363221"
 ---
 # <a name="denmark-passport-number"></a>Danimarka pasaport numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -36,19 +39,19 @@ boşluk ve sınırlayıcı içermeyen dokuz basamak
 
 dokuz basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
 - Normal ifade `Regex_denmark_eu_passport_number` , desenle eşleşen içeriği bulur.
 - veya `Keywords_denmark_eu_passport_number` anahtar `Keywords_eu_passport_number` sözcüğü bulunur.
 - Normal ifade `Regex_eu_passport_date2` tarihi DD AA YY biçiminde bulur veya bir anahtar sözcük `Keywords_eu_passport_date` bulunur
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Normal ifade `Regex_denmark_eu_passport_number` , desenle eşleşen içeriği bulur.
 - veya `Keywords_denmark_eu_passport_number` anahtar `Keywords_eu_passport_number` sözcüğü bulunur.

@@ -18,15 +18,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier1
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f54bc1b1f3569be0267e49971eae2ed4a84e213b
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 9a47884f4918359278b192c3314e5b2374d64f3f
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67680251"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68362848"
 ---
 # <a name="understand-the-defender-experts-for-hunting-report-in-microsoft-365-defender"></a>Microsoft 365 Defender'da Avcılık için Defender Uzmanları raporunu anlama
 
@@ -36,7 +37,7 @@ ms.locfileid: "67680251"
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Avcılık için Microsoft Defender Uzmanları, Microsoft 365 Defender müşterilerin karşılaştıkları önemli tehditleri anlamasına yardımcı olmak için insan zekasını ve uzman tarafından eğitilmiş teknolojiyi katmanlar. Defender Uzman'ın tehdit avcılığı becerileri, tehdit ortamının kapsamlı bir şekilde anlaşılması ve yeni ortaya çıkan tehditlerle ilgili bilgilerin ortamınızdaki bu tehditleri belirlemenize, önceliklendirmenize ve ele almanıza nasıl yardımcı olabileceğini gösterir. 
+Microsoft Defender Uzmanlar, Microsoft 365 Defender müşterilerin karşılaştıkları önemli tehditleri anlamasına yardımcı olmak için insan zekasını ve uzman tarafından eğitilmiş teknolojiyi katmanlıyor. Defender Uzman'ın tehdit avcılığı becerileri, tehdit ortamının kapsamlı bir şekilde anlaşılması ve yeni ortaya çıkan tehditlerle ilgili bilgilerin ortamınızdaki bu tehditleri belirlemenize, önceliklendirmenize ve ele almanıza nasıl yardımcı olabileceğini gösterir. 
 
 Avcılık için Defender Uzmanları, Microsoft 365 Defender ürünleriniz tarafından oluşturulan uyarıların yanı sıra, ortamınızda ortaya çıkan tüm tehditleri anlamanıza yardımcı olmak için aylık raporlar yayımlar.
 
@@ -56,7 +57,7 @@ Raporun her bölümü, Defender Uzmanlarımızın ortamınızda bulduğu tehditl
 
 Örnek raporun aşağıdaki ekran görüntüsüne bakın:
 
-![Microsoft 365 Defender portalında Tehdit Avcılığı için Microsoft Defender Uzmanları raporunun ekran görüntüsü.](../../media/mte/defenderexperts/defender-experts-report.png)
+![Microsoft 365 Defender portalında Microsoft Defender Uzmanlar raporunun ekran görüntüsü.](../../media/mte/defenderexperts/defender-experts-report.png)
 
 ## <a name="view-defender-experts-notifications"></a>Defender Uzman Bildirimlerini Görüntüleme
 
@@ -73,20 +74,20 @@ Bu bağlantı sizi Microsoft 365 Defender olaylar sayfasına yönlendirir. Avcı
 
 MITRE ATT&CK taktikleri, her saldırı aşamasında ulaşmaya çalıştıkları saldırgan hedefleri temsil eder. Raporun **bölümünde gözlemlenen MITRE ATT&CK taktikleri** , ulaştıkları aşamaya karşı saldırının ilerleme durumunu izler:
 
-1.  Keşif
-2.  Kaynak Geliştirme
-3.  İlk erişim
-4.  Yürütme
-3.  Kalıcılık
-4.  Ayrıcalık yükseltme
-5.  Savunma kaçamak
-6.  Kimlik bilgisi erişimi
-7.  Keşif
-8.  Yanal hareket
-9.  Koleksiyon
-10. Komut ve denetim
-11. Sızdırma
-12. Etki
+1. Keşif
+2. Kaynak Geliştirme
+3. İlk erişim
+4. Yürütme
+5. Kalıcılık
+6. Ayrıcalık yükseltme
+7. Savunma kaçamak
+8. Kimlik bilgisi erişimi
+9. Keşif
+10. Yanal hareket
+11. Koleksiyon
+12. Komut ve denetim
+13. Sızdırma
+14. Etki
 
 Avcılık için Defender Uzmanları tarafından yapılan Microsoft 365 Defender ve araştırmalardan gelen sinyaller, çubuk grafikte gösterilen bu taktiklerin tanımlanmasına yardımcı olur. Bu grafik, dalgalanmanın nerede olduğunu görselleştirmenize yardımcı olur ve ilgili kapsama ve düzeltme eylemlerini planlamak için ihtiyacınız olan bilgileri sağlar.
 
@@ -103,4 +104,3 @@ Kullanılabilir çeşitli tehdit kategorileri arasında, MITRE ATT&CK çerçeves
 - Teslim
 
 Düzeltmeye, çubuk grafikte gösterildiği gibi en çok etkilenen kategoriye göre öncelik vekleyebilirsiniz.
-

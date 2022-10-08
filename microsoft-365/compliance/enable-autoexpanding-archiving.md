@@ -11,26 +11,28 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier2
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Yöneticiler için: Kullanıcılarınıza Exchange Online posta kutuları için ek depolama alanı sağlayan otomatik genişletme arşivlemeyi etkinleştirmeyi öğrenin. Otomatik genişletme arşivlemeyi tüm kuruluşunuz için veya yalnızca belirli kullanıcılar için etkinleştirebilirsiniz.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7edb246d2a2b9f765bcce6db8f8afa0485c423b3
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 1714954d04f821bacd7ae28a9e10b81a30438b03
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67359590"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476011"
 ---
 # <a name="enable-auto-expanding-archiving"></a>Otomatik genişleyen arşivlemeyi etkinleştirme
 
 >*[Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Arşiv posta kutuları için ek depolama alanı etkinleştirmek için Exchange Online otomatik genişletme arşivleme özelliğini kullanabilirsiniz. Arşivleme otomatik olarak genişletildiğinde, 1,5 TB depolama sınırına ulaşana kadar kullanıcının arşiv posta kutusuna otomatik olarak ek depolama alanı eklenir. Otomatik genişletme arşivlemeyi kuruluşunuzdaki herkes veya yalnızca belirli kullanıcılar için açabilirsiniz. Arşivlemenin otomatik olarak genişletilmesi hakkında daha fazla bilgi için bkz. [Arşivlemeyi otomatik genişletme hakkında bilgi edinin](autoexpanding-archiving.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-enable-auto-expanding-archiving"></a>Otomatik genişletme arşivlemeyi etkinleştirmeden önce
 
@@ -137,3 +139,7 @@ Otomatik genişletme arşivlemeyi etkinleştirdikten sonra aşağıdakileri göz
 
 > [!IMPORTANT]
 > Otomatik genişletme arşivleme yalnızca tek tek kullanıcılar tarafından kullanılan posta kutuları veya günlük 1 GB'ı aşmayan bir büyüme oranına sahip paylaşılan posta kutuları için desteklenir. Arşivleme amacıyla iletileri arşiv posta kutusuna kopyalamak için günlüğe kaydetme, taşıma kuralları veya otomatik iletme kurallarının kullanılmasına izin verilmez. Kullanıcının arşiv posta kutusu yalnızca o kullanıcıya yöneliktir. Microsoft, kullanıcının arşiv posta kutusunun diğer kullanıcıların arşiv verilerini depolamak için kullanıldığı veya uygunsuz kullanım durumlarında ek arşivlemeyi reddetme hakkını saklıdır.
+
+## <a name="next-steps"></a>Sonraki adımlar
+
+Arşivleri otomatik olarak genişletmek için posta kutularını etkinleştirdikten sonra son kullanıcıları bekleyebilecekleri değişikliklere hazırladığınızdan emin olun.

@@ -10,19 +10,19 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
+- tier2
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Exchange Online posta kutuları için ek arşiv depolama alanı sağlayan arşivlemeyi otomatik olarak genişletme hakkında bilgi edinin.
-ms.openlocfilehash: 1eb2aaf2593e9b5d2c1e254f7fa8e207cbc848d4
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: de8e581a814f33cf73740fc597bd0a6001e4494f
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67359985"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476077"
 ---
 # <a name="learn-about-auto-expanding-archiving"></a>Otomatik genişleyen arşivleme hakkında daha fazla bilgi edinme
 
@@ -36,6 +36,8 @@ Otomatik genişletme arşivlemeyi açmayla ilgili adım adım yönergeler için 
 
 > [!NOTE]
 > Otomatik genişletme arşivleme, paylaşılan posta kutularını da destekler.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="how-auto-expanding-archiving-works"></a>Otomatik genişletme arşivleme nasıl çalışır?
 
@@ -58,7 +60,9 @@ bu işlemle ilgili hızlı bir genel bakış aşağıda verilmiştir.
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>Ek arşiv depolama alanına ne taşınır?
 
-Otomatik olarak genişleten arşiv depolama alanını verimli bir şekilde kullanmak için klasörler taşınabilir. Microsoft Purview, arşive ek depolama alanı eklendiğinde hangi klasörlerin taşındığını belirler. Bazen bir klasör taşındığında, bir veya daha fazla alt klasör otomatik olarak oluşturulur ve taşıma işlemini kolaylaştırmak için özgün klasördeki öğeler bu klasörlere dağıtılır. Outlook'ta klasör listesinin arşiv bölümünü görüntülerken, bu alt klasörler özgün klasörün altında görüntülenir. Microsoft 365'in bu alt klasörleri adlandırmak **\<folder name\>için kullandığı adlandırma kuralı _yyyy (Mmm dd, yy h_mm üzerinde oluşturulur)**; burada:
+Otomatik olarak genişleten arşiv depolama alanını verimli bir şekilde kullanmak için klasörler taşınabilir. Microsoft Purview, arşive ek depolama alanı eklendiğinde hangi klasörlerin taşındığını belirler. Bazen bir klasör taşındığında, bir veya daha fazla alt klasör otomatik olarak oluşturulur ve taşıma işlemini kolaylaştırmak için özgün klasördeki öğeler bu klasörlere dağıtılır. Beklentilerin ayarlanmasına yardımcı olmak için posta kutularını otomatik olarak genişleten arşivler için etkinleştirdikten sonra bu davranışı son kullanıcılara iletmeniz gerekebilir.
+
+Outlook'ta klasör listesinin arşiv bölümünü görüntülerken, bu alt klasörler özgün klasörün altında görüntülenir. Microsoft 365'in bu alt klasörleri adlandırmak **\<folder name\>için kullandığı adlandırma kuralı _yyyy (Mmm dd, yy h_mm üzerinde oluşturulur)**; burada:
 
 - **yyyy** , klasördeki iletilerin alındığı yıldır.
 
@@ -91,17 +95,19 @@ Otomatik genişletilmiş arşivde depolanan iletilere erişmek için kullanıcı
 
 - mac için Outlook 2016 veya Outlook 2019
 
-Otomatik genişletilmiş arşivde depolanan iletilere erişmek için Outlook veya Web üzerinde Outlook kullanırken göz önünde bulundurmanız gereken bazı noktalar şunlardır.
+Arşivleri otomatik olarak genişletmek için posta kutusunu etkinleştirmeden önce göz önünde bulundurmanız gereken bazı noktalar şunlardır:
 
-- Arşiv posta kutunuzda, otomatik olarak genişletilmiş depolama alanına taşınanlar da dahil olmak üzere herhangi bir klasöre erişebilirsiniz.
+- Kullanıcılar, otomatik olarak genişletilmiş depolama alanına taşınmış olanlar da dahil olmak üzere arşiv posta kutularındaki herhangi bir klasöre erişebilir.
 
-- Arşiv posta kutusunun en az bir otomatik genişletilmiş depolama alanı varsa, bir klasörü arşiv posta kutusundan veya yardımcı arşivden silemezsiniz. Başka bir deyişle, otomatik genişletilmiş bir depolama alanı sağlandıktan sonra arşivdeki hiçbir klasörü silemezsiniz.
+- Arşiv posta kutusunun en az bir otomatik genişletilmiş depolama alanı varsa, kullanıcılar arşiv posta kutusundan veya yardımcı arşivden bir klasörü silemez. Başka bir deyişle, otomatik genişletilmiş bir depolama alanı sağlandıktan sonra arşivdeki hiçbir klasörü silemez.
 
-- Otomatik olarak genişletilmiş depolama alanındaki öğeleri silebilirsiniz. Ancak, bir posta kutusu için otomatik genişletme arşivleme etkinleştirildikten sonra bir öğeyi kurtarmak için Silinmiş Öğeleri Kurtar özelliğini kullanamazsınız.
+- Kullanıcılar otomatik olarak genişletilmiş depolama alanındaki öğeleri silebilir. Ancak, posta kutuları için otomatik genişletme arşivleme etkinleştirildikten sonra bir öğeyi kurtarmak için [Silinmiş Öğeleri Kurtar özelliğini](https://support.microsoft.com/office/recover-deleted-items-in-outlook-for-windows-49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) kullanamazlar.
 
-- Otomatik genişletilmiş arşivleme araması web için Outlook'ta (OWA) kullanılabilir. Çevrimiçi Arşiv'e benzer şekilde, ek bir depolama alanına taşınan öğeleri de arayabilirsiniz. OWA'da arama kapsamı olarak arşiv seçildiğinde, tüm arşivler (otomatik genişletilmiş arşivler dahil) ve bunlara karşılık gelen alt klasörler aranacaktır.
+- Otomatik genişletilmiş arşivleme araması web için Outlook'ta (OWA) kullanılabilir. Çevrimiçi Arşiv'e benzer şekilde, kullanıcılar ek bir depolama alanına taşınan öğeleri arayabilir. OWA'da arama kapsamı olarak arşiv seçildiğinde, tüm arşivler (otomatik genişletilmiş arşivler dahil) ve bunlara karşılık gelen alt klasörler aranacaktır.
 
-- Otomatik genişletilmiş arşiv araması, Windows için Outlook'ta Aylık Kurumsal Kanal'da kullanılabilir. Bu güncelleştirme ile Geçerli Posta Kutusu kapsamı kullanılabilir, böylece otomatik genişletilmiş arşivde arama yapmanızı sağlar. Yalnızca bulutta arşiv durumunda (birincil posta kutusu hala şirket içinde) otomatik genişletilmiş arşiv özelliği için aramanın desteklenmediğini unutmayın. Bu ve diğer Microsoft Search destek özellikleri hakkında daha fazla bilgi için bkz. [Windows için Outlook'un Exchange Online'a bağlı olması Microsoft Search'ün nasıl kullanıldığı](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
+- Windows için Outlook'u Aylık Kurumsal Kanal, derleme 16.0.13519+ ile kullandığınızda otomatik genişletilmiş arşiv araması kullanılabilir. Bu güncelleştirme ile Geçerli Posta Kutusu kapsamı kullanılabilir, böylece kullanıcılar otomatik genişletilmiş arşivde arama yapabilir. Ancak, arama her arşiv klasörü içindeki iç içe alt klasörler için özyinelemeli değildir.
+
+- Yalnızca bulutta arşiv durumunda (birincil posta kutusu hala şirket içinde) otomatik olarak genişletilmiş arşiv özelliği için arama desteklenmez. Bu ve diğer Microsoft Search destek özellikleri hakkında daha fazla bilgi için bkz. [Windows için Outlook'un Exchange Online'a bağlı olması Microsoft Search'ün nasıl kullanıldığı](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
 
 - Outlook'taki öğe sayıları ve otomatik genişletilmiş arşivdeki Okundu/Okunmadı sayıları (Outlook'ta ve Web üzerinde Outlook) doğru olmayabilir.
 

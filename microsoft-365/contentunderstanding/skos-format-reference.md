@@ -7,15 +7,17 @@ audience: admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 ms.localizationpriority: high
 description: SharePoint taksonomisi için SKOS biçim başvurusu
-ms.openlocfilehash: b3e0e60345e46fde8f82af536101f4f8b09daf24
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 0c40109f11d904db399effc874c24d3efd776a39
+ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67575855"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68026062"
 ---
 # <a name="skos-format-reference-for-sharepoint-taxonomy"></a>SharePoint taksonomisi için SKOS biçim başvurusu
 

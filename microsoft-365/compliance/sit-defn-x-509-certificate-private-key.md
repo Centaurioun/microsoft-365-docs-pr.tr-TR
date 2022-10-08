@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: X.509 sertifikası özel anahtar hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: bdf6666060e62312ecfaa260ea2521161e2db7a6
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 144eff9826dcbb3bcfc03930442a4d4e3a36e22c
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989353"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476143"
 ---
 # <a name="x509-certificate-private-key-preview"></a>X.509 sertifika özel anahtarı (önizleme)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -53,7 +56,7 @@ En fazla iki eşittir işareti (==)
 
 veya
 
-5 tire (-)
+beş tire (-)
 
 En fazla 30 karakterden oluşan bir birleşim:
 
@@ -66,7 +69,7 @@ En fazla 30 karakterden oluşan bir birleşim:
 `-----BEGIN PRIVATE KEY-----`
 
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
@@ -88,7 +91,7 @@ Desenler, gerçek kimlik bilgileriyle makul bir güvenle eşleşecek şekilde ta
 
 ### <a name="keyword_base64encodedstringliteral"></a>Keyword_Base64EncodedStringLiteral:
 
-- MII
+- Mıı
 
 ### <a name="keyword_certificateprivatekeyheader"></a>Keyword_CertificatePrivateKeyHeader:
 

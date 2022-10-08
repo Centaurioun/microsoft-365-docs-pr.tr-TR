@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -27,12 +28,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Etki alanı adı sistemi bilgisayar ana bilgisayar adlarını IP adresleriyle eşler ve DNS ve etki alanı kayıt şirketi temellerini anlamak etki alanlarını yönetmenize yardımcı olabilir.
-ms.openlocfilehash: f0f70c39b465437f49b2a833779e8597b25fe433
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: d2399c7e5fa739fe36d4893db8653d0e70d92bcb
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67663988"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68166669"
 ---
 # <a name="dns-basics"></a>DNS ile ilgili temel bilgiler
 

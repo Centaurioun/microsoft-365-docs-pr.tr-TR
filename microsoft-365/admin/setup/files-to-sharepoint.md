@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Şirket dosyalarını SharePoint'e taşımayı öğrenin.
-ms.openlocfilehash: eece04f28d6544c509fa8757dee2491c38a518ee
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 356be1b98e9eb09869a056a9a4405e8519fec211
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661135"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68166405"
 ---
 # <a name="move-files-to-sharepoint"></a>Dosyaları SharePoint'e taşıma
 

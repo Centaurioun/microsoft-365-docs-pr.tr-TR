@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Yöneticiler, Microsoft 365 Defender portalında bulunan e-posta güvenlik raporlarını bulmayı ve kullanmayı öğrenebilir.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 6b34ab2617fdae4c57d3b40ab919668dd6b6ac2e
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 11d416108842bc15fc825af3068358b46eae36d3
+ms.sourcegitcommit: 0380a7cd5adb710b80a0ed6fcd349199f1571080
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851137"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "68337496"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalında e-posta güvenlik raporlarını görüntüleme
 
@@ -344,7 +344,7 @@ Office 365 için Defender'daki **Posta gecikme süresi raporu**, kuruluşunuzda 
 
 **Kimlik sahtekarlık algılamaları** raporu, sahtekarlık nedeniyle engellenen veya izin verilen iletiler hakkındaki bilgileri gösterir. Kimlik sahtekarlığı hakkında daha fazla bilgi için bkz. [EOP'de kimlik sahtekarlığı önleme koruması](anti-spoofing-protection.md).
 
-Raporun toplam görünümü 90 günlük filtrelemeye izin verirken, ayrıntı görünümü yalnızca on günlük filtrelemeye izin verir.
+Raporun toplam ve ayrıntı görünümleri 90 günlük filtrelemeye olanak tanır.
 
 Raporu Microsoft 365 Defender portalında görüntülemek için **Raporlar** \> **Email & işbirliği** **Email & işbirliği**\> raporları'na gidin. **Email & işbirliği raporları** sayfasında Kimlik **sahtekarı algılamalarını** bulun ve **Ayrıntıları görüntüle'ye** tıklayın. Doğrudan rapora gitmek için dosyasını açın <https://security.microsoft.com/reports/SpoofMailReport>.
 

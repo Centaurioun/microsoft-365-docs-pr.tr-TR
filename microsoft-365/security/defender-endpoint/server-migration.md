@@ -14,15 +14,17 @@ ms.localizationpriority: medium
 ms.date: 09/19/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 602b80f93d4c2c9b0f204eaa347a5f5e75941147
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: c97abc6cd41354ca76952f321672e69039f63909
+ms.sourcegitcommit: 0380a7cd5adb710b80a0ed6fcd349199f1571080
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67850396"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "68342952"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Önceki MMA tabanlı Uç Nokta için Microsoft Defender çözümünden sunucu geçişi senaryoları
 
@@ -34,11 +36,11 @@ ms.locfileid: "67850396"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > [!NOTE]
-> Yükleme veya yükseltme işlemine devam etmeden önce her zaman işletim sisteminin ve Windows Server 2016'da Microsoft Defender Virüsten Koruma'nın tamamen güncelleştirildiğinden emin olun. EDR Algılayıcı bileşenine yönelik düzenli ürün iyileştirmeleri ve düzeltmeleri almak için[, Windows Update KB5005292'nin](https://go.microsoft.com/fwlink/?linkid=2168277) yüklendiğinden veya yüklendikten sonra onay aldığından emin olun. Ayrıca, koruma bileşenlerini güncel tutmak için lütfen [Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama makalesine](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) başvurun.
+> Yükleme veya yükseltme işlemine devam etmeden önce her zaman işletim sisteminin ve Windows Server 2016 virüsten koruma Microsoft Defender tam olarak güncelleştirildiğinden emin olun. EDR Algılayıcı bileşenine yönelik düzenli ürün iyileştirmeleri ve düzeltmeleri almak için[, Windows Update KB5005292'nin](https://go.microsoft.com/fwlink/?linkid=2168277) yüklendiğinden veya yüklendikten sonra onay aldığından emin olun. Ayrıca, koruma bileşenlerini güncel tutmak için lütfen [Virüsten koruma güncelleştirmelerini yönetme ve temelleri uygulama Microsoft Defender](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) başvurun.
 
 Bu yönergeler, Windows Server 2012 R2 ve Windows Server 2016 için Uç Nokta için Microsoft Defender yeni birleşik çözüm ve yükleyici (MSI) paketi için geçerlidir. Bu makale, öncekinden geçerli çözüme çeşitli olası geçiş senaryoları için üst düzey yönergeler içerir. Bu üst düzey adımlar, ortamınızda bulunan dağıtım ve yapılandırma araçlarına ayarlanacak yönergeler olarak tasarlanmıştır. 
 
-**Dağıtım gerçekleştirmek için Bulut için Microsoft Defender kullanıyorsanız, yüklemeyi ve yükseltmeyi otomatikleştirebilirsiniz. Bkz [. Sunucular için Defender Plan 2 artık MDE birleşik çözümüyle tümleşiyor](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)**
+**Dağıtımı gerçekleştirmek için Bulut için Microsoft Defender kullanıyorsanız, yüklemeyi ve yükseltmeyi otomatikleştirebilirsiniz. Bkz [. Sunucular için Defender Plan 2 artık MDE birleşik çözümüyle tümleşiyor](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)**
 
 > [!NOTE]
 > Uç Nokta için Microsoft Defender yüklü işletim sistemi yükseltmeleri desteklenmez. Lütfen çıkarma ve kaldırma, işletim sistemini yükseltme ve ardından yükleme işlemine devam edin.
@@ -51,7 +53,7 @@ Bu yönergeler, Windows Server 2012 R2 ve Windows Server 2016 için Uç Nokta i�
 >[!NOTE]
 >Betiği çalıştırdığınız makinelerin betiğin yürütülmesini engellemediğinden emin olun. PowerShell için önerilen yürütme ilkesi ayarı Allsigned'dır. Betik uç noktada SYSTEM olarak çalışıyorsa bu, betiğin imzalama sertifikasının Yerel Bilgisayar Güvenilen Yayımcılar deposuna aktarılmasını gerektirir.
 
-Microsoft Endpoint Configuration Manager henüz kullanılabilir olmadığında veya otomatik yükseltmeyi gerçekleştirecek şekilde güncelleştirilmediğinde yükseltmeleri kolaylaştırmak için bu [yükseltme betiğini](https://github.com/microsoft/mdefordownlevelserver) kullanabilirsiniz. "Kod" düğmesini seçip .zip dosyasını indirdikten sonra install.ps1 ayıklayarak indirin. Aşağıdaki gerekli adımları otomatikleştirmeye yardımcı olabilir:
+Microsoft Endpoint Configuration Manager henüz kullanılabilir olmadığında veya otomatik yükseltmeyi gerçekleştirecek şekilde güncelleştirilmediğinde yükseltmeleri kolaylaştırmak için bu [yükseltme betiğini](https://github.com/microsoft/mdefordownlevelserver/archive/refs/heads/main.zip) kullanabilirsiniz. "Kod" düğmesini seçip .zip dosyasını indirdikten sonra install.ps1 ayıklayarak indirin. Aşağıdaki gerekli adımları otomatikleştirmeye yardımcı olabilir:
 
 1. Uç Nokta için Microsoft Defender için OMS çalışma alanını kaldırın (İsteğE BAĞLI).
 2. Yüklüyse System Center Endpoint Protection (SCEP) istemcisini kaldırın.
@@ -77,7 +79,7 @@ Betiği kullanma hakkında daha fazla bilgi için PowerShell komutunu "get-help 
 1. [Önkoşulların](configure-server-endpoints.md#prerequisites) karşılandığından emin olmak için Microsoft Defender Virüsten Koruma (Windows Server 2016) dahil olmak üzere makineyi tam olarak güncelleştirin. Karşılanması gereken önkoşullar hakkında daha fazla bilgi için bkz. [Windows Server 2016 önkoşulları](configure-server-endpoints.md#prerequisites-for-windows-server-2016).
 2. Üçüncü taraf virüsten koruma yönetiminin artık virüsten koruma aracılarını bu makinelere göndermediğinden emin olun.*
 3. Uç Nokta için Microsoft Defender koruma özellikleri için ilkelerinizi yazın ve bunları istediğiniz araçta makineye hedefleyin.*
-4. Windows Server 2012 R2 ve 2016 paketi için Uç Nokta için Microsoft Defender yükleyin ve **pasif modu etkinleştirin**. Bkz. [Komut satırını kullanarak Microsoft Defender Virüsten Koruma yükleme](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line).
+4. Windows Server 2012 R2 ve 2016 paketi için Uç Nokta için Microsoft Defender yükleyin ve **pasif modu etkinleştirin**. Bkz[. Komut satırını kullanarak Microsoft Defender Virüsten Koruma yükleme](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line).
    a. [Microsoft 365 Defender'dan indirilen](https://security.microsoft.com) **grup ilkesi kullanmak için** ekleme betiğini uygulayın.
 5. Güncelleştirmeleri uygulama.
 6. Microsoft olmayan virüsten koruma konsolunu veya uygun şekilde Microsoft Endpoint Configuration Manager kullanarak Microsoft dışı virüsten koruma yazılımınızı kaldırın. Pasif mod yapılandırmasını kaldırdığınızdan emin olun.*
@@ -85,7 +87,7 @@ Betiği kullanma hakkında daha fazla bilgi için PowerShell komutunu "get-help 
 > [!TIP]
 > Yukarıdaki adımları otomatikleştirmek için [yükleyici betiğini](server-migration.md#installer script) uygulamanızın bir parçası olarak kullanabilirsiniz. Pasif modu etkinleştirmek için -Passive bayrağını uygulayın. Örneğin, .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive
 
-*Bu adımlar yalnızca Microsoft dışı virüsten koruma çözümünüzü değiştirmek istiyorsanız geçerlidir. [Bkz. Birlikte daha iyi: Microsoft Defender Virüsten Koruma ve Uç Nokta için Microsoft Defender](why-use-microsoft-defender-antivirus.md).
+*Bu adımlar yalnızca Microsoft dışı virüsten koruma çözümünüzü değiştirmek istiyorsanız geçerlidir. [Bkz. Birlikte daha iyi: Virüsten koruma ve Uç Nokta için Microsoft Defender Microsoft Defender](why-use-microsoft-defender-antivirus.md).
 
 Bir makineyi pasif moddan çıkarmak için aşağıdaki anahtarı 0 olarak ayarlayın:
 
@@ -103,7 +105,7 @@ Yol: HKLM\SOFTWARE\Policies\Microsoft\Windows Gelişmiş Tehdit Koruması Adı: 
 > [!TIP]
 > Yukarıdaki adımları otomatikleştirmek için yükleyici betiğini kullanabilirsiniz.
 
-## <a name="microsoft-defender-for-cloud-scenarios"></a>Bulut için Microsoft Defender senaryoları
+## <a name="microsoft-defender-for-cloud-scenarios"></a>Bulut senaryoları için Microsoft Defender
 
 ### <a name="youre-using-microsoft-defender-for-cloud-the-microsoft-monitoring-agent-mma-andor-microsoft-antimalware-for-azure-scep-are-installed-and-you-want-to-upgrade"></a>Bulut için Microsoft Defender kullanıyorsunuz. Azure için Microsoft Monitoring Agent (MMA) ve/veya Microsoft Antimalware (SCEP) yüklüdür ve yükseltmek istiyorsunuz.
 Bulut için Microsoft Defender kullanıyorsanız otomatik yükseltme işleminden yararlanabilirsiniz. Bkz. [Bulut için Defender'ın tümleşik EDR çözümüyle uç noktalarınızı koruma: Uç Nokta için Microsoft Defender](/azure/security-center/security-center-wdatp#enable-the-microsoft-defender-for-endpoint-integration).

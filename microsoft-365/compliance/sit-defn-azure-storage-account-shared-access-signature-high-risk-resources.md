@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Yüksek riskli kaynaklar için Azure Depolama hesabı paylaşılan erişim imzası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 007016f38f0aa6409cd81c317653cb0acc71a881
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: a3413afd4bb397750f75646a7f1d4ba61e8888cc
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948503"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476913"
 ---
 # <a name="azure-storage-account-shared-access-signature-for-high-risk-resources-preview"></a>Yüksek riskli kaynaklar için Azure Depolama hesabı paylaşılan erişim imzası (önizleme)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -63,7 +66,7 @@ veya
 
 `abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDE%3D`
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 

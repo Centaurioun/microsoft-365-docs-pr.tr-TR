@@ -1,13 +1,14 @@
 ---
 title: Uygulama kullanım raporlarını Microsoft 365 yönetim merkezi
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -18,12 +19,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Uygulamalar genelinde lisanslı kullanıcı etkinliğini ve uygulamaların platformlar arasında nasıl kullanıldığını görmek için Microsoft 365 Uygulamaları kullanım raporu almayı öğrenin.
-ms.openlocfilehash: 0a3545c71627c666249b91f2080603ea32ae30f0
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: f8d9baf29089b7dd37a3655dec4c33dfb873bb67
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662734"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68165239"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Yönetim merkezinde Microsoft 365 Raporları - Microsoft 365 Uygulamaları kullanımı
 

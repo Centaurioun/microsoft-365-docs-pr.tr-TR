@@ -6,23 +6,25 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 873a9e471324b0c987bfb34e4798dc4b3b679fd2
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 2cfbb87d3ce2edad9156f73898fd7765f2aad3f3
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699224"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363331"
 ---
 # <a name="onboard-windows-devices-using-configuration-manager"></a>Configuration Manager kullanarak Windows cihazları ekleme
 
@@ -38,6 +40,11 @@ ms.locfileid: "67699224"
 
 > Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
+## <a name="prerequisites"></a>Önkoşullar
+- [Endpoint Protection noktası site sistemi rolü](/mem/configmgr/protect/deploy-use/endpoint-protection-site-role)
+
+> [!IMPORTANT]
+> Virüsten koruma ve saldırı yüzeyi azaltma ilkelerinin hedeflenen uç noktalara düzgün dağıtılabilmesi için Endpoint Protection noktası site sistemi rolü gereklidir.  Bu rol olmadan, cihaz koleksiyonundaki uç noktalar yapılandırılmış virüsten koruma ve saldırı yüzeyi azaltma ilkelerini almaz.
 
 Uç noktaları Uç Nokta için Microsoft Defender hizmetine eklemek için Configuration Manager kullanabilirsiniz. 
 
@@ -68,7 +75,7 @@ Her cihaz için, ayrıntılı analiz için bir dosya göndermek üzere Microsoft
 
 Bir cihazdaki örnek paylaşım ayarını değiştirmek için Configuration Manager'da yapılandırma öğesi için bir uyumluluk kuralı ayarlayabilirsiniz.
 
-Bu kural, şikayette olduklarından emin olmak için hedeflenen cihazlarda bir kayıt defteri anahtarının değerini ayarlayan *düzeltici* bir uyumluluk kuralı yapılandırma öğesi olmalıdır.
+Bu kural, uyumlu olduklarından emin olmak için hedeflenen cihazlarda kayıt defteri anahtarının değerini ayarlayan *düzeltici* bir uyumluluk kuralı yapılandırma öğesi olmalıdır.
 
 Yapılandırma aşağıdaki kayıt defteri anahtarı girdisi aracılığıyla ayarlanır:
 
@@ -119,7 +126,7 @@ Denetim için tüm kullanılabilir kuralları yapılandırın.
 > [!NOTE]
 > Bu etkinliklerin engellenmesi meşru iş süreçlerini kesintiye uğratabilir. En iyi yaklaşım, her şeyi denetime ayarlamak, hangilerinin güvenli olduğunu belirlemek ve ardından hatalı pozitif algılamaları olmayan uç noktalarda bu ayarları etkinleştirmektir.
 
-MICROSOFT System Center Configuration Manager (SCCM) aracılığıyla AV ve ASR ilkelerini dağıtmak için aşağıdaki adımları izleyin:
+Microsoft Endpoint Configuration Manager (SCCM) aracılığıyla Virüsten Koruma (AV) ve Saldırı Yüzeyi Azaltma (ASR) ilkelerini dağıtmak için aşağıdaki adımları izleyin:
 
 - Endpoint Protection'ı etkinleştirin ve özel istemci ayarlarını yapılandırın.
 - Endpoint Protection istemcisini bir komut isteminden yükleyin.

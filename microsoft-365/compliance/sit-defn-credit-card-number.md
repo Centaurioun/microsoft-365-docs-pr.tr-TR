@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Kredi kartı numarasına duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: 0d75c0af6c67c1d617db9f7f28fbc63c27e4d05a
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d86612e539055bb33806c7ec8bdf893755ce4877
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948456"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476055"
 ---
 # <a name="credit-card-number"></a>Kredi kartı numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -34,27 +37,27 @@ Biçimlendirilebilen veya biçimlendirilemeyen 14 ile 19 basamak (dddddd) ve luh
 
 ## <a name="pattern"></a>Desen
 
-Visa, MasterCard, Discover Card, JCB, American Express, hediye kartları, restoran kartları, Rupay ve China UnionPay dahil olmak üzere dünya çapındaki tüm büyük markaların kartlarını algılar.
+Visa, MasterCard, Discover Card, JCB, American Express, hediye kartları, restoran kartları, Rupay ve China UnionPay dahil olmak üzere tüm büyük markaların kartlarını algılar.
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet, Luhn çeki
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_credit_card` , desenle eşleşen içeriği bulur.
+- İşlev `Func_credit_card`, desenle eşleşen içeriği bulur.
 - Aşağıdaki koşullardan biri doğrudur:
-  - 'den `Keyword_cc_verification` bir anahtar sözcük bulunur.
-  - 'den `Keyword_cc_name` bir anahtar sözcük bulunur.
-  - İşlev `Func_expiration_date` doğru tarih biçiminde bir tarih bulur.
-- Sağlama toplamı geçer.
+  - `Keyword_cc_verification` içinden bir anahtar sözcük bulundu.
+  - `Keyword_cc_name` içinden bir anahtar sözcük bulundu.
+  - İşlev `Func_expiration_date`, doğru tarih biçiminde bir tarih bulur.
+- Sağlama toplamı başarılı.
 
 DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının güvenilirliği düşüktür:
 
-- İşlev `Func_credit_card` , desenle eşleşen içeriği bulur.
-- Sağlama toplamı geçer.
+- İşlev `Func_credit_card`, desenle eşleşen içeriği bulur.
+- Sağlama toplamı başarılı.
 
 ```xml
 <!-- Credit Card Number -->
@@ -77,18 +80,18 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandı�
 
 ### <a name="keyword_cc_verification"></a>Keyword_cc_verification
 
-- kart doğrulama
+- kart doğrulaması
 - kart kimlik numarası
-- Cvn
-- Cid
+- cvn
+- cid
 - cvc2
 - cvv2
-- raptiye bloğu
+- pin engeli
 - güvenlik kodu
 - güvenlik numarası
 - güvenlik no
-- sorun numarası
-- sorun yok
+- düzenleme numarası
+- düzenleme no
 - cryptogramme
 - numéro de sécurité
 - numero de securite
@@ -101,20 +104,20 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandı�
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- Cod. sicurezza
+- cod. sicurezza
 - cod sicurezza
 - n autorizzazione
 - código
 - codigo
-- Cod. Sönmez
+- cod. seg
 - cod seg
 - código de segurança
 - codigo de seguranca
 - codigo de segurança
 - código de seguranca
 - cód. segurança
-- Cod. seguranca
-- Cod. segurança
+- cod. seguranca
+- cod. segurança
 - cód. seguranca
 - cód segurança
 - cod seguranca
@@ -129,7 +132,7 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandı�
 - gultigkeitsdatum
 - scadenza
 - data scad
-- fecha de süre sonu
+- fecha de expiracion
 - fecha de venc
 - vencimiento
 - válido hasta
@@ -139,7 +142,7 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandı�
 - data de expiracao
 - data em que expira
 - validade
-- Cesaret
+- valor
 - vencimento
 - Işlem
 - işlem numarası
@@ -152,34 +155,34 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandı�
 
 ### <a name="keyword_cc_name"></a>Keyword_cc_name
 
-- Amex
+- amex
 - american express
 - americanexpress
 - americano espresso
 - Vize
-- Mastercard
-- ana kart
-- Mc
-- Mastercard
-- ana kartlar
+- mastercard
+- master card
+- mc
+- mastercards
+- master cards
 - diner's Club
 - diners club
 - dinersclub
-- Keşfetmek
-- kartı bulma
+- discover
+- discover card
 - discovercard
-- kartları bulma
-- JCB
+- discover cards
+- Jcb
 - BrandSmart
-- japon kart bürosu
+- japanese card bureau
 - carte blanche
 - carteblanche
 - kredi kartı
-- Cc #
+- cc#
 - cc#:
 
 - son kullanma tarihi
-- exp tarihi
+- son kullanma tarihi
 - süre sonu tarihi
 - d'süre sonu tarihi
 - date d'exp
@@ -188,25 +191,25 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandı�
 - Bankcard
 - kart numarası
 - kart numarası
-- kartsayısı
-- kartsayıları
+- cardnumber
+- cardnumbers
 - kart numaraları
-- kredi kartı
+- creditcard
 - kredi kartları
-- kredi kartları
-- Ccn
-- kart tutucu
-- Kart
-- kart tutucular
-- Kart
-- onay kartı
-- onay kartı
-- onay kartları
-- onay kartları
+- creditcards
+- ccn
+- kart sahibi
+- cardholder
+- kart sahipleri
+- cardholders
+- çek kartı
+- checkcard
+- çek kartları
+- checkcards
 - banka kartı
-- banka kartı
+- debitcard
 - banka kartları
-- banka kartları
+- debitcards
 - atm kartı
 - atmcard
 - atm kartları
@@ -247,15 +250,15 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandı�
 - kreditkarten-nummer
 - carta di credito
 - carta credito
-- n. Carta
+- n. carta
 - n carta
-- Nr. Carta
+- nr. carta
 - nr carta
-- çok sayıda carta
+- numero carta
 - numero della carta
 - numero di carta
 - tarjeta credito
-- tarjeta de credito
+- scoprono le schede
 - tarjeta crédito
 - tarjeta de crédito
 - tarjeta de atm
@@ -265,7 +268,7 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandı�
 - tarjeta débito
 - tarjeta de débito
 - nº de tarjeta
-- No. de tarjeta
+- no. de tarjeta
 - no de tarjeta
 - numero de tarjeta
 - número de tarjeta
@@ -284,7 +287,7 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandı�
 - número do cartão
 - numero do cartão
 - número do cartao
-- çok sayıda do cartao
+- numero do cartao
 - número de cartão
 - numero de cartão
 - número de cartao
@@ -293,9 +296,9 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandı�
 - nº do cartao
 - nº. do cartão
 - no do cartão
-- hayır cartao
-- No. do cartão
-- No. cartao yapma
+- no do cartao
+- no. do cartão
+- no. do cartao
 - rupay
 - sendika ödemesi
 - unionpay

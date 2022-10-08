@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Azure COSMOS DB hesabı erişim anahtarına duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: 7912a02ea7b041603955ab4d88fe00966ae9cf94
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: dccc5018c5d3a27f188f496cd0d13790b78707d2
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948453"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68475989"
 ---
 # <a name="azure-cosmos-db-account-access-key-preview"></a>Azure COSMOS DB hesabı erişim anahtarı (önizleme)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -46,7 +49,7 @@ Harf, rakam ve özel karakterlerden oluşan 88 karakterden oluşan bir birleşim
 
 `abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==`
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
@@ -57,11 +60,11 @@ Bu SIT, [Azure COSMOS Veritabanı](/azure/cosmos-db/secure-access-to-data) hesap
 Birkaç birincil kaynak kullanır:
 
 - Base64 kodlu 512 bit simetrik anahtarın desenleri.
-- CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id, AccountName desenleri.
+- CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, ID, AccountName desenleri.
 - Mockup değerlerinin, redaction'ların ve yer tutucuların desenleri.
 - Sözlük sözlüğü.
 
-Desenler, gerçek kimlik bilgileriyle makul bir güvenle eşleşecek şekilde tasarlanmıştır. Desenler örnek olarak biçimlendirilmiş kimlik bilgileriyle eşleşmiyor. Sahte değerler, yeniden düzenlenmiş değerler ve kimlik bilgisi türü veya kullanım açıklamaları gibi yer tutucular, gerçek bir gizli dizi değerinin bulunmaması gereken konumda eşleştirilmeyecektir.
+Desenler, gerçek kimlik bilgileriyle makul bir güvenle eşleşecek şekilde tasarlanmıştır. Desenler örnek olarak biçimlendirilmiş kimlik bilgileriyle eşleşmiyor. Gerçek bir gizli dizi değerinin bulunmaması gereken konumdaki sahte değerler, yeniden düzenlenmiş değerler ve kimlik bilgisi türü veya kullanım açıklamaları gibi yer tutucular.
 
 ## <a name="keywords"></a>Anahtar Sözcükler
 

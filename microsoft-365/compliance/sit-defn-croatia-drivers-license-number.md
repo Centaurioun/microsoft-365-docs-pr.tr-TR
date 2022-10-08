@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Hırvatistan ehliyet numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: aa67477f729829e1eb4b43f2b038dde8d6f367d5
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9287cc770130a00d389e5586b72fd1dcc83a473a
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948969"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363463"
 ---
-# <a name="croatia-drivers-license-number"></a>Hırvatistan sürücü lisans numarası
+# <a name="croatia-drivers-license-number"></a>Hırvatistan ehliyet numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -36,13 +39,13 @@ boşluk ve sınırlayıcı içermeyen sekiz basamak
 
 sekiz basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ### <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Normal ifade `Regex_croatia_eu_driver's_license_number` , desenle eşleşen içeriği bulur.
 - veya `Keywords_croatia_eu_driver's_license_number` anahtar `Keywords_eu_driver's_license_number` sözcüğü bulunur.

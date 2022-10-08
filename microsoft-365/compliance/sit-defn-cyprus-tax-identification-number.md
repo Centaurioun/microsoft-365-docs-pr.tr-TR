@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Kıbrıs vergi kimlik numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: fb24f1841483e48b6cfec5167772be13743297e0
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: 7fc56c9ddc21e85d7471d8f270af81d0723d7e78
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67367609"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363309"
 ---
 # <a name="cyprus-tax-identification-number"></a>Kıbrıs vergi kimlik numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 

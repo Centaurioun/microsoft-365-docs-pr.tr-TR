@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Genel parolaya duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: ea800d6798a2068eb90ff02e1550e48606e7b1ea
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 39a789fed5d0cf1467da4be0e05324dea3d5a12d
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948344"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476759"
 ---
 # <a name="general-password-preview"></a>Genel Parola (önizleme)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -223,13 +226,13 @@ veya
 
 `abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==`
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="description"></a>Açıklama
 
-Bu SIT, genel oturum açma işlemi kullanıcı [oturum açma işleminde](/azure/key-vault/quick-create-portal) kullanılan kullanıcı adları ve parolalar gibi güvenlik bilgileriyle eşleşecek şekilde tasarlanmıştır. Birkaç birincil kaynak kullanır:
+Bu SIT, genel oturum açma işlemi [kullanıcı oturum açma işleminde](/azure/key-vault/quick-create-portal) kullanılan kullanıcı adları ve parolalar gibi güvenlik bilgileriyle eşleşecek şekilde tasarlanmıştır. Birkaç birincil kaynak kullanır:
 
 - Base64 kodlanmış dize değişmez değeri desenleri.
 - Komut satırında Parola bağlamı desenleri.
@@ -252,7 +255,7 @@ Desenler, gerçek kimlik bilgileriyle makul bir güvenle eşleşecek şekilde ta
 
 ### <a name="keyword_base64encodedstringliteral"></a>Keyword_Base64EncodedStringLiteral
 
-- MII
+- Mıı
 
 ### <a name="keyword_passwordcontextincmdline"></a>Keyword_PasswordContextInCmdLine
 
@@ -263,12 +266,12 @@ Desenler, gerçek kimlik bilgileriyle makul bir güvenle eşleşecek şekilde ta
 - Curl
 - PowerShell
 - ps1
-- -u
+- -U
 - Smc
 - Otomatik Oturum Açma
 - Ldifde
 - Rclone
-- --env
+- --Env
 - SignTool
 - Winexe
 - Net
@@ -319,7 +322,7 @@ Desenler, gerçek kimlik bilgileriyle makul bir güvenle eşleşecek şekilde ta
 ### <a name="keyword_symmetrickey192"></a>Keyword_SymmetricKey192
 
 - Parola
-- -p
+- -P
 - azurecr
 
 ### <a name="keyword_symmetrickey256"></a>Keyword_SymmetricKey256

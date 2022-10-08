@@ -13,16 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 16b02f80d7475200229ddffb0ab8b4ac50a770f5
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 89720a8f0a2fa98bd98c4d950ac0f41540f1ba7d
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688153"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363002"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>iOS'ta Uç Nokta için Microsoft Defender dağıtma
 
@@ -56,7 +57,7 @@ Intune Şirket Portalı aracılığıyla iOS'ta Uç Nokta için Defender'ı dağ
 
     > :::image type="content" source="images/ios-deploy-1.png" alt-text="Microsoft Endpoint Manager Yönetici Center'da Uygulama ekle sekmesi" lightbox="images/ios-deploy-1.png":::
 
-1. **Uygulama ekle** sayfasında **App Store ara'ya** tıklayın ve arama çubuğuna **Microsoft Defender** yazın. Arama sonuçları bölümünde *Microsoft Defender'a* tıklayın ve **Seç'e** tıklayın.
+1. **Uygulama ekle** sayfasında, **App Store ara'ya** tıklayın ve arama çubuğuna **Microsoft Defender** yazın. Arama sonuçları bölümünde *Microsoft Defender* ve **Seç'e** tıklayın.
 
 1. En düşük işletim sistemi olarak **iOS 11.0'ı** seçin. Uygulama hakkındaki diğer bilgileri gözden geçirin ve **İleri'ye** tıklayın.
 
@@ -104,7 +105,7 @@ Uygulama yapılandırma ilkesi ve Cihaz yapılandırma profili aracılığıyla 
 1. Sonraki ekranda **Yapılandırma tasarımcısını** biçim olarak kullan'ı seçin. Aşağıdaki özelliği belirtin:
     - Yapılandırma Anahtarı: `issupervised`
     - Değer türü: Dize
-    - Yapılandırma Değeri: `issupervised`
+    - Yapılandırma Değeri: `{{issupervised}}`
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager Yönetici Center6 görüntüsü.](images/ios-deploy-6.png)
@@ -135,6 +136,9 @@ Uygulama yapılandırma ilkesi ve Cihaz yapılandırma profili aracılığıyla 
 
 1. Profilin adını belirtin. Yapılandırma profili dosyasını içeri aktarmanız istendiğinde, önceki adımdan indirilen dosyayı seçin.
 1. **Atama** bölümünde, bu profili uygulamak istediğiniz cihaz grubunu seçin. En iyi uygulama olarak, bu tüm yönetilen iOS cihazlarına uygulanmalıdır. **İleri**'yi seçin.
+    > [!NOTE]
+    > Cihaz Grubu oluşturma hem Uç Nokta için Defender Plan 1 hem de Plan 2'de desteklenir
+
 1. **Gözden Geçir + oluştur** sayfasında, işiniz bittiğinde, **Oluştur**'u seçin. Yeni profil, yapılandırma profilleri listesinde görüntülenir.
 
 
@@ -242,7 +246,7 @@ Intune, bir Uygulama Yapılandırması ilkesi aracılığıyla iOS için Defende
 1. Sonraki ekranda **Yapılandırma tasarımcısını** biçim olarak kullan'ı seçin. Aşağıdaki özelliği belirtin:
     - Yapılandırma Anahtarı: `issupervised`
     - Değer türü: Dize
-    - Yapılandırma Değeri: `issupervised`
+    - Yapılandırma Değeri: `{{issupervised}}`
 
     > :::image type="content" source="images/ios-deploy-6.png" alt-text="İlke yapılandırması ayarlarının biçiminin seçileceği sayfa" lightbox="images/ios-deploy-6.png":::
 

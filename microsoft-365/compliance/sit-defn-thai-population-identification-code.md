@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Tay nüfus tanımlama kodu hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: ee1e4c5989a3c60ac07bf3f0fef8159413251185
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 6d39a5a95a4969af61b32bec474d8d3b025f8f8a
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948415"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68471980"
 ---
 # <a name="thai-population-identification-code"></a>Tay nüfus kimlik kodu
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -39,20 +42,20 @@ ms.locfileid: "66948415"
 - ilk basamak sıfır veya dokuz değil
 - 12 basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_Thai_Citizen_Id` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_Thai_Citizen_Id` bir anahtar sözcük bulunur.
+- İşlev `Func_Thai_Citizen_Id`, desenle eşleşen içeriği bulur.
+- `Keyword_Thai_Citizen_Id` içinden bir anahtar sözcük bulundu.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_Thai_Citizen_Id` , desenle eşleşen içeriği bulur.
+- İşlev `Func_Thai_Citizen_Id`, desenle eşleşen içeriği bulur.
 
 ```xml
 <!-- Thai Citizen ID -->

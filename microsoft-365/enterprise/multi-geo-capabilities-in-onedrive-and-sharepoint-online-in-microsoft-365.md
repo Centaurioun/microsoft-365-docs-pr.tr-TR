@@ -15,15 +15,16 @@ ms.collection:
 - SPO_Content
 - m365solution-scenario
 - m365solution-spintranet
+- highpri
 ms.localizationpriority: medium
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: OneDrive Online'da çok coğrafi özelliklerle Microsoft 365 iletişim durumunuzu birden çok coğrafi bölgeye genişletin.
-ms.openlocfilehash: b25d74c76673c8fcaf2de0e8bbbd1c73ba371856
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 9095aa419d234d3e00c608f866eeaee56a07a4d7
+ms.sourcegitcommit: 674dfa2cb2f20546d2f7822e09bacf0e12e2718b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694369"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68043779"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>OneDrive ve SharePoint Online’da Multi-Geo Özellikleri
 

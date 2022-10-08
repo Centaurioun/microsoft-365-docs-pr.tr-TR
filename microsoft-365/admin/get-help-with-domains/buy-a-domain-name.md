@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Microsoft 365'te etki alanı adı satın almayı öğrenin.
-ms.openlocfilehash: 78e43b13731839d791d00b93000567b12bd07a80
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: e43b71e0a88abd2755de6d0ca5871c39e694dbcf
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661925"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68164865"
 ---
 # <a name="buy-a-domain-name"></a>Etki alanı adı satın alma
 
@@ -52,19 +53,19 @@ Etki alanınız için aşağıdaki üst düzey etki alanları arasından seçim 
   
 - .biz
     
-- .com
+- .Com
     
-- .info
+- .Bilgi
     
-- .me
+- .Beni
     
-- .mobi
+- .Mobi
     
-- .net
+- .Net
     
-- .org
+- .Org
     
-- .tv
+- .Tv
     
 - .co.uk
     
@@ -86,7 +87,7 @@ Bir etki alanı satın alma ile ücretsiz bir Etki Alanı Gizlilik Aboneliği su
    
 ## <a name="transfer-your-domain-to-a-different-domain-registrar"></a>Etki alanınızı başka bir etki alanı kayıt şirketine aktarma
 
-Etki alanınız gerekli tüm DNS kayıtlarını desteklemeyen bir sağlayıcı tarafından yönetiliyorsa, bunu başka bir etki alanı kayıt şirketine aktarabilirsiniz. Etki alanını aktardığınızda, etki alanınızı yenilemek ve etki alanı adını elinizde tutmak için ödemeleri gönderdiğiniz şirketi değiştirmiş olursunuz.
+If your domain is managed by a provider that doesn't support all the necessary DNS records, you can transfer it to a different registrar. When you transfer the domain, you change who you send payments to in order to renew and keep your domain name.
   
 Etki alanınızı taşımak istediğiniz hedef kayıt şirketinde aktarma isteğinde bulunun. Şirketin Web sitesinde **Transfer DNS (DNS'yi Aktar)** gibi bir seçenek bulunup bulunmadığına bakın. Değişiklikleri yaptıktan sonra, İnternet genelinde güncelleştirilmeleri birkaç gün sürebilir.
 
@@ -94,7 +95,7 @@ Etki alanınızı taşımak istediğiniz hedef kayıt şirketinde aktarma isteğ
 
 ## <a name="how-to-buy-a-domain-for-office-365-operated-by-21vianet"></a>21Vianet tarafından sağlanan Office 365 için etki alanı satın alma
 
-Henüz kendi etki alanınız yoksa, çevrimiçi ortamda bir etki alanı kayıt şirketinden, etki alanı satıcısından, hatta mevcut İnternet sağlayıcınızdan bile kolayca satın alabilirsiniz. 21Vianet tarafından sağlanan Office 365'e kaydolduğunuzda, contoso.partner.onmschina.cn gibi bir etki alanı adınız olur. Bununla birlikte, fourthcoffee.com gibi özel bir etki alanı adı kullanmak da isteyebilirsiniz.
+If you don't already have your own domain, you can easily buy one online at a domain name registrar, domain reseller, or even at your current Internet provider. You get a domain name when you sign up for Office 365 operated by 21Vianet, for example, contoso.partner.onmschina.cn. But you may want to use a custom domain name, like fourthcoffee.com.
   
 Microsoft 365'te etki alanı ayarlamak için bir etki alanına sahip olmanız ve etki alanınızın DNS kayıtlarından bazılarını değiştirmeniz gerekir.
   

@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: ABD / BK pasaport numarasına duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: 88caf63983d6f459f5ff201ae695f909489569cb
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 96e3f270cfa49cc63a263b54960afb19c27aa3df
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989393"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68471892"
 ---
 # <a name="usuk-passport-number"></a>ABD / BK pasaport numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -37,21 +40,21 @@ dokuz basamak
 - bir harf veya rakam
 - sekiz basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ### <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_usa_uk_passport` , desenle eşleşen içeriği bulur.
+- İşlev `Func_usa_uk_passport`, desenle eşleşen içeriği bulur.
 - veya `Keywords_uk_eu_passport_number` anahtar `Keywords_eu_passport_number` sözcüğü bulunur.
 - 'den `Keywords_eu_passport_date` bir anahtar sözcük bulundu
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_usa_uk_passport` , desenle eşleşen içeriği bulur.
+- İşlev `Func_usa_uk_passport`, desenle eşleşen içeriği bulur.
 - veya `Keywords_uk_eu_passport_number` anahtar `Keywords_eu_passport_number` sözcüğü bulunur.
 
 ```xml

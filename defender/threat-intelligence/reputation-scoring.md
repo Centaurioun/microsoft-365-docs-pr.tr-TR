@@ -8,16 +8,16 @@ ms.service: threat-intelligence
 ms.topic: overview
 ms.date: 08/02/2022
 ms.custom: template-overview
-ms.openlocfilehash: 5563358e108c6461f44f777b5f2473b4f0bca0c7
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: bdb1acd3ca60042978710b8e59f28865530213ae
+ms.sourcegitcommit: 0380a7cd5adb710b80a0ed6fcd349199f1571080
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737928"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "68339718"
 ---
 # <a name="reputation-scoring"></a>İtibar puanlaması
 
-Microsoft Defender Tehdit Analizi (Defender TI), herhangi bir Ana Bilgisayar, Etki Alanı veya IP Adresi için özel itibar puanları sağlar. Bu puan, bilinen veya bilinmeyen bir varlığın itibarını doğrulayarak kullanıcıların kötü amaçlı veya şüpheli altyapıyla ilgili algılanan tüm bağları hızla anlamasına yardımcı olur. Platform, bu varlıkların etkinliği hakkında hızlı bilgiler (örneğin, İlk ve Son Görülen zaman damgaları, ASN, ülke, ilişkili altyapı) ve uygun olduğunda saygınlık puanını etkileyen kuralların bir listesi sağlar.
+Microsoft Defender Tehdit Analizi (Defender TI), herhangi bir Ana Bilgisayar, Etki Alanı veya IP Adresi için özel itibar puanları sağlar. Bu puan, bilinen veya bilinmeyen bir varlığın itibarını doğrulayarak kullanıcıların kötü amaçlı veya şüpheli altyapıyla ilgili algılanan tüm bağları hızla anlamasına yardımcı olur. Platform, bu varlıkların etkinliği hakkında hızlı bilgiler (örneğin, İlk ve Son Görülen zaman damgaları, ASN, ilişkili altyapı) ve uygun olduğunda saygınlık puanını etkileyen kuralların bir listesi sağlar.
 
 Saygınlık verileri, kendi saldırı yüzeyinizin güvenilirliğini anlamak için önemlidir ve araştırmalarda görünen bilinmeyen konakları, etki alanlarını veya IP adreslerini değerlendirirken de yararlıdır. Bu puanlar, daha önce varlığı etkilemiş kötü amaçlı veya şüpheli etkinlikleri veya dikkate alınması gereken diğer bilinen güvenlik ihlali göstergelerini ortaya çıkarır.
 
@@ -54,7 +54,6 @@ Aşağıdaki örnek saygınlık puanlama kurallarına bakın:
 |------------------------------------|--------------------------------------------------------------------------------------------------------|
 |     SSL-Certificate Self-Signed    |     Otomatik olarak imzalanan sertifikalar kötü amaçlı davranışa işaret edebilir                                         |
 |     Kötü Amaçlı Olarak Etiketlenmiş            |     Kuruluşunuzdaki bir üye tarafından kötü amaçlı olarak etiketlendi                                         |
-|     Ülke                        |     Bu ülkede barındırılan altyapının kötü amaçlı olma olasılığı daha yüksektir                             |
 |     Gözlemlenen web bileşenleri        |     Gözlemlenen web bileşeni sayısı kötü amaçlılığa işaret edebilir                                 |
 |     Ad sunucusu                    |     Etki alanı, kötü amaçlı altyapı tarafından kullanılma olasılığı daha yüksek olan bir ad sunucusu kullanıyor         |
 |     Kayıt                      |     Bu kayıt şirketine kayıtlı etki alanlarının kötü amaçlı olma olasılığı daha yüksektir                           |

@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: landing-page
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -27,12 +28,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Microsoft Business Premium, Microsoft 365 İş Standart, Microsoft 365 İş Temel, İş için Microsoft 365 Uygulamaları veya Office 365 Eğitim aboneliğinizi ayarlamayı öğrenin.
-ms.openlocfilehash: fa1f117cd00c4d40689d606e1ec7582c18a7e7fd
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 820e01972fe071e2d2026fe65b907fd8bf409329
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660607"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68164469"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>İş için Microsoft 365'i ayarlama
 

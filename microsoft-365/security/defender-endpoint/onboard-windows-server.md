@@ -6,23 +6,23 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 0cf8152af40bb356940cb7ccaf1c8a1831252589
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 8f691e01cb1ddafd3f968d931e03c49832e67419
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704270"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68362056"
 ---
 # <a name="defender-for-endpoint-onboarding-windows-server"></a>Uç Nokta için Defender Windows Server'a ekleme
 
@@ -51,6 +51,9 @@ Windows sunucuları için Windows Güvenliği Taban Çizgilerini indirme ve kull
 ## <a name="license-requirement"></a>Lisans gereksinimi
 
 Uç Nokta için Microsoft Defender Server SKU'su satın almaya uygun olmak için, aşağıdakilerden en az birini zaten satın almış olmanız gerekir: Windows E5/A5, Microsoft 365 E5/A5 veya Microsoft 365 E5 Güvenlik abonelik lisansları. Lisanslama hakkında daha fazla bilgi için bkz. [Ürün Koşulları](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).
+
+> [!NOTE]
+> Eylül 2022 itibarıyla Uç Nokta için Microsoft Defender Server artık yeni müşteriler tarafından genel kullanıma sunulmamaktadır.
 
 ## <a name="windows-server-onboarding-overview"></a>Windows Server eklemeye genel bakış
 

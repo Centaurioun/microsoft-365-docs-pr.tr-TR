@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Microsoft 365 grupları, Teams ve SharePoint işbirliği için uyumluluk seçenekleri hakkında bilgi edinin.
-ms.openlocfilehash: b7a350a8f41d0a4f19ed345bc62dab0014ad7b10
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 428413ce876a1718f1237d3bce0d543aa5d47c62
+ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731254"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68026281"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Microsoft 365 grupları, Teams ve SharePoint işbirliği için uyumluluk seçenekleri
 
@@ -41,7 +41,7 @@ Aşağıdaki tabloda, Microsoft 365'te bulunan uyumluluk denetimleri için hızl
 ||Hassas içeriği şifreleme|[Şifreleme uygulamak için hassasiyet etiketleri kullanarak içeriğe erişimi kısıtlama](../compliance/encryption-sensitivity-labels.md)|
 |Bilgi koruması|||
 ||Hassas bilgilerin kaybını önleme|[Microsoft Purview Veri Kaybı Önleme hakkında bilgi edinin](../compliance/dlp-learn-about-dlp.md)|
-||Sohbetteki hassas bilgileri koruyun.|[Microsoft Purview Veri kaybı önleme ve Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
+||Sohbetteki hassas bilgileri koruyun.|[Microsoft Purview Veri Kaybı Önleme ve Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
 ||Kuruluşunuzun hassas bilgilerini tanımlama|[Özel hassas bilgi türleri](../compliance/sensitive-information-type-learn-about.md)|
 |Kullanıcı segmentasyonu|||
 ||Kullanıcı kesimleri arasındaki iletişimi kısıtlama|[Bilgi engelleri](../compliance/information-barriers.md)|
@@ -64,7 +64,7 @@ Kullanıcı hesabı silinse bile kullanıcı sohbetleri süresiz olarak korunur.
 
 - [Microsoft Teams'de bekletme ilkeleri](/microsoftteams/retention-policies)
 
-Teams sohbetine ve Teams kanal iletilerine uygulanacak tek bir bekletme ilkesi ayarlanabilir. 
+Tek bir bekletme ilkesi, Teams sohbetine ve Teams kanal iletilerine (paylaşılan kanal iletileri dahil) uygulanacak şekilde ayarlanabilir. Teams özel kanal iletilerinin kendi bekletme ilkesinde yer alması gerekir.
 
 Ek kaynaklar:
 
@@ -109,7 +109,7 @@ Proje kodu adları gibi kuruluşunuza özgü hassas bilgileriniz varsa, kendi ha
 
 ## <a name="user-segmentation"></a>Kullanıcı segmentasyonu
 
-Bilgi engelleriyle, gruplar arasındaki istenmeyen iletişimi ve işbirliğini kısıtlamak ve kuruluşunuzdaki çıkar çakışmalarını önlemek için verilerinizi ve kullanıcılarınızı segmentlere ayırabilirsiniz. Bilgi engelleri, kuruluşunuzdaki kişi grupları arasında dosya işbirliğine, sohbete, aramaya veya toplantı davetlerine izin veren veya engelleyen ilkeler oluşturmanıza olanak tanır.
+Bilgi engelleriyle, gruplar arasındaki istenmeyen iletişimi ve işbirliğini kısıtlamak ve kuruluşunuzdaki çıkar çakışmalarını önlemek için verilerinizi ve kullanıcılarınızı segmentlere ayırabilirsiniz. Bilgi engelleri, kuruluşunuzdaki kişi grupları arasında dosya işbirliğine, sohbete, aramaya veya toplantı davetlerine izin veren veya engelleyen ilkeler oluşturmanıza olanak sağlar.
 
 - [Bilgi engelleri](../compliance/information-barriers.md)
 
@@ -126,6 +126,8 @@ Microsoft 365 Multi-Geo ile bekleyen verileri, veri yerleşimi gereksinimlerini 
 - [Microsoft 365 Multi-Geo planı](/microsoft-365/enterprise/plan-for-multi-geo)
 
 ## <a name="related-topics"></a>İlgili konular
+
+[Güvenlik & uyumluluğu için Microsoft 365 kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 [İşbirliği idaresi planlama önerileri](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 

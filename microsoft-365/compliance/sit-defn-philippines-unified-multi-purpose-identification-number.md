@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Filipinler birleşik çok amaçlı tanımlama numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: d5e880ff8c021cdcee195077f419f3b7ab87ed36
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d3d19524e8eefa5549ea5a461a5dee7c9fe0d59c
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948902"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68471705"
 ---
 # <a name="philippines-unified-multi-purpose-identification-number"></a>Filipinler birleşik çok amaçlı kimlik numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -42,16 +45,16 @@ Kısa çizgilerle ayrılmış 12 basamak
 - kısa çizgi
 - bir basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Normal ifade `Regex_philippines_unified_id` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_philippines_id` bir anahtar sözcük bulunur.
+- `Keyword_philippines_id` içinden bir anahtar sözcük bulundu.
 
 ```xml
 <!-- Philippines Unified Multi-Purpose ID number -->

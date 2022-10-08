@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +26,12 @@ ms.custom:
 - AdminTemplateSet
 - business_assist
 - admindeeplinkMAC
-ms.openlocfilehash: 8382324c537c5cdc6b34c71354636535f0f20de6
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 708a153f0af5bb4a8e43fd48a34401d127b40d73
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664032"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68164799"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Etki alanınızı bağlamak için DNS kayıtları ekleme
 
@@ -181,7 +182,7 @@ Barındırma sağlayıcınız SRV kayıtları için bu alanları sağlamıyorsa,
 
 Barındırma sağlayıcınız SRV kayıtları için bu alanları sağlamıyorsa, bunları kaydın **Hedef** alanında belirtmeniz gerekir. (Not: Barındırma sağlayıcınıza bağlı olarak **Hedef** alanının adı farklı olabilir. Örneğin, **İçerik**, **IP Adresi** veya **Hedef Ana Bilgisayar**.)
 
-Bu değerleri eklemek için tek bir dize oluşturup değerleri boşluklarla ayırın ve *bazı durumlarda sonuna bir nokta koyun* (emin değilseniz sağlayıcınıza danışın). Değerler şu sırayla eklenmelidir: Öncelik, Ağırlık, Bağlantı Noktası, Hedef.
+To add these values, create a single string, separating the values with spaces and *sometimes ending with a dot* (check with your provider if you are unsure). The values must be included in this order: Priority, Weight, Port, Target.
 
 - 1. Örnek: `100 1 443 sipdir.online.lync.com.`
 - 2. Örnek: `100 1 443 sipdir.online.lync.com`

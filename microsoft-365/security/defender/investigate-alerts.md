@@ -15,19 +15,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-m365-defender
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - met150
-ms.openlocfilehash: 08028611b6be37843a9653b8837a3f55400115b9
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 3b3d5b9105db25d6d723961fab26f146d15aef1f
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710817"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68361990"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Microsoft 365 Defender'da uyarıları araştırma
 
@@ -50,7 +51,7 @@ Microsoft 365 Defender'da, ilgili uyarılar [olayları](incidents-overview.md) o
 
 Uç Nokta için Microsoft Defender, Office 365 için Microsoft Defender ve Microsoft 365 Defender gibi farklı Microsoft güvenlik çözümlerinden uyarılar burada görünür.
 
-Varsayılan olarak, Microsoft 365 Defender portalındaki uyarılar kuyruğu son 30 güne ait yeni ve devam eden uyarıları görüntüler. En son uyarı listenin en üstündedir, böylece önce siz görebilirsiniz. 
+Varsayılan olarak, Microsoft 365 Defender portalındaki uyarılar kuyruğu son 30 güne ait yeni ve devam eden uyarıları görüntüler. En son uyarı listenin en üstündedir, böylece önce siz görebilirsiniz.
 
 Varsayılan uyarılar kuyruğundan **Filtre'yi** seçerek bir **Filtre** bölmesi görebilirsiniz. Bu bölmeden uyarıların bir alt kümesini belirtebilirsiniz. İşte bir örnek.
 
@@ -69,22 +70,15 @@ Uyarıları şu ölçütlere göre filtreleyebilirsiniz:
 Office 365 için Microsoft Defender uyarılarına erişmek için aşağıdaki rollerden birine sahip olmanız gerekir:
 
 - Azure Active Directory (Azure AD) genel rolleri için:
-
-   - Genel yönetici
-
-   - Güvenlik yöneticisi
-
-   - Güvenlik İşleci
-
-   - Genel Okuyucu
-
-   - Güvenlik Okuyucusu
+  - Genel yönetici
+  - Güvenlik yöneticisi
+  - Güvenlik İşleci
+  - Genel Okuyucu
+  - Güvenlik Okuyucusu
 
 - Office 365 Güvenlik & Uyumluluk Rol Grupları
-
-   - Uyumluluk Yöneticisi
-
-   - Kuruluş Yönetimi 
+  - Uyumluluk Yöneticisi
+  - Kuruluş Yönetimi
 
 - [Özel bir rol](custom-roles.md)
 
@@ -96,7 +90,7 @@ Ana uyarı sayfasını görmek için uyarının adını seçin. İşte bir örne
 
 Uyarıyı **yönet** **bölmesinden Ana uyarı sayfasını aç** eylemini de seçebilirsiniz.
 
-Uyarı sayfası şu bölümlerden oluşur: 
+Uyarı sayfası şu bölümlerden oluşur:
 
 - Bu uyarıyla ilgili olayların ve uyarıların kronolojik sırada zinciri olan uyarı hikayesi
 - Özet ayrıntıları
@@ -108,6 +102,7 @@ Uyarı sayfası boyunca, uyarıyı başka bir olaya bağlama gibi kullanılabili
 Microsoft 365 Defender uyarılar Uç Nokta için Microsoft Defender, Office 365 için Microsoft Defender gibi çözümlerden gelebilir Microsoft Defender for Cloud Apps ve Microsoft Defender for Cloud Apps için uygulama idare eklentisi. Uyarıda önceden eklenmiş karakterler içeren uyarılar fark edebilirsiniz. Aşağıdaki tabloda uyarının ekli karakterine göre uyarı kaynaklarının eşlemesini anlamanıza yardımcı olacak yönergeler sağlanmaktadır.
 
 > [!NOTE]
+>
 > - Önceden eklenen GUID'ler yalnızca birleşik uyarılar kuyruğu, birleşik uyarılar sayfası, birleşik araştırma ve birleştirilmiş olay gibi birleşik deneyimlere özeldir.
 > - Ekli karakter uyarının GUID değerini değiştirmez. GUID'de yapılan tek değişiklik, önceden eklenen bileşendir.
 
@@ -120,13 +115,13 @@ Microsoft 365 Defender uyarılar Uç Nokta için Microsoft Defender, Office 365 
 
 ### <a name="analyze-affected-assets"></a>Etkilenen varlıkları analiz etme
 
-**Gerçekleştirilen eylemler** bölümünde posta kutuları, cihazlar ve bu uyarıdan etkilenen kullanıcılar gibi etkilenen varlıkların listesi bulunur. 
+**Gerçekleştirilen eylemler** bölümünde posta kutuları, cihazlar ve bu uyarıdan etkilenen kullanıcılar gibi etkilenen varlıkların listesi bulunur.
 
 ayrıca **, Microsoft 365 Defender portalında İşlem merkezinin** **Geçmiş** sekmesini görüntülemek için **İşlem merkezinde** görüntüle'yi de seçebilirsiniz.
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>Uyarı yazısında uyarının rolünü izleme
 
-Uyarı hikayesi, bir işlem ağacı görünümünde uyarıyla ilgili tüm varlıkları veya varlıkları görüntüler. Başlıktaki uyarı, seçtiğiniz uyarının sayfasına ilk kez girdiğinizde odakta olan uyarıdır. Uyarı hikayesindeki varlıklar genişletilebilir ve tıklanabilir. Ek bilgiler sağlar ve uyarı sayfası bağlamında işlem yapmanıza olanak tanıyarak yanıtınızı hızlandırırlar. 
+Uyarı hikayesi, bir işlem ağacı görünümünde uyarıyla ilgili tüm varlıkları veya varlıkları görüntüler. Başlıktaki uyarı, seçtiğiniz uyarının sayfasına ilk kez girdiğinizde odakta olan uyarıdır. Uyarı hikayesindeki varlıklar genişletilebilir ve tıklanabilir. Ek bilgiler sağlar ve uyarı sayfası bağlamında işlem yapmanıza olanak tanıyarak yanıtınızı hızlandırırlar.
 
 > [!NOTE]
 > Uyarı hikayesi bölümünde birden fazla uyarı bulunabilir ve seçtiğiniz uyarıdan önce veya sonra aynı yürütme ağacıyla ilgili ek uyarılar görüntülenir.
@@ -148,18 +143,19 @@ Uyarıyı yönetmek için uyarı sayfasının özet ayrıntıları bölümünde 
 - Uyarı durumu (Yeni, Çözüldü, Sürüyor).
 - Uyarıya atanan kullanıcı hesabı.
 - Uyarının sınıflandırması:
-     - **Ayarlanmadı** (varsayılan).
-     - Bir tehdit türüyle **gerçek pozitif**. Gerçek bir tehdidi doğru şekilde gösteren uyarılar için bu sınıflandırmayı kullanın. Bu tehdit türünü belirterek güvenlik ekibiniz tehdit desenlerini görür ve kuruluşunuzu onlardan korumak için harekete geçebilirsiniz.
-     - Bir etkinlik türüyle **bilgilendirici, beklenen** etkinlik. Teknik olarak doğru olan ancak normal davranışı veya sanal tehdit etkinliğini temsil eden uyarılar için bu seçeneği kullanın. Genellikle bu uyarıları yoksaymak istersiniz ancak gelecekte etkinliklerin gerçek saldırganlar veya kötü amaçlı yazılımlar tarafından tetiklendiği benzer etkinlikler için beklemeniz gerekir. Güvenlik testlerine, kırmızı ekip etkinliğine ve güvenilen uygulama ve kullanıcılardan beklenen olağan dışı davranışlara yönelik uyarıları sınıflandırmak için bu kategorideki seçenekleri kullanın.
-     - **Kötü** amaçlı bir etkinlik olmadığında veya yanlış alarm için bile oluşturulan uyarı türleri için hatalı pozitif. Yanlışlıkla normal olaylar veya etkinlikler olarak tanımlanan uyarıları kötü amaçlı veya şüpheli olarak sınıflandırmak için bu kategorideki seçenekleri kullanın. Gerçek tehditleri yakalamak için de yararlı olabilecek 'Bilgilendirici, beklenen etkinlik' uyarılarından farklı olarak, genellikle bu uyarıları yeniden görmek istemezsiniz. Uyarıları hatalı pozitif olarak sınıflandırmak Microsoft 365 Defender algılama kalitesini artırmaya yardımcı olur.
+  - **Ayarlanmadı** (varsayılan).
+  - Bir tehdit türüyle **gerçek pozitif**. Gerçek bir tehdidi doğru şekilde gösteren uyarılar için bu sınıflandırmayı kullanın. Bu tehdit türünü belirterek güvenlik ekibiniz tehdit desenlerini görür ve kuruluşunuzu onlardan korumak için harekete geçebilirsiniz.
+  - Bir etkinlik türüyle **bilgilendirici, beklenen** etkinlik. Teknik olarak doğru olan ancak normal davranışı veya sanal tehdit etkinliğini temsil eden uyarılar için bu seçeneği kullanın. Genellikle bu uyarıları yoksaymak istersiniz ancak gelecekte etkinliklerin gerçek saldırganlar veya kötü amaçlı yazılımlar tarafından tetiklendiği benzer etkinlikler için beklemeniz gerekir. Güvenlik testlerine, kırmızı ekip etkinliğine ve güvenilen uygulama ve kullanıcılardan beklenen olağan dışı davranışlara yönelik uyarıları sınıflandırmak için bu kategorideki seçenekleri kullanın.
+  - **Kötü** amaçlı bir etkinlik olmadığında veya yanlış alarm için bile oluşturulan uyarı türleri için hatalı pozitif. Yanlışlıkla normal olaylar veya etkinlikler olarak tanımlanan uyarıları kötü amaçlı veya şüpheli olarak sınıflandırmak için bu kategorideki seçenekleri kullanın. Gerçek tehditleri yakalamak için de yararlı olabilecek 'Bilgilendirici, beklenen etkinlik' uyarılarından farklı olarak, genellikle bu uyarıları yeniden görmek istemezsiniz. Uyarıları hatalı pozitif olarak sınıflandırmak Microsoft 365 Defender algılama kalitesini artırmaya yardımcı olur.
 - Uyarıyla ilgili bir açıklama.
 
->[!NOTE]
+> [!NOTE]
 > 29 Ağustos 2022'de daha önce desteklenen uyarı belirleme değerleri ('Apt' ve 'SecurityPersonnel') kullanım dışı bırakılacak ve artık API aracılığıyla kullanılamayacak.
 
 > [!NOTE]
-> Etiketleri kullanarak uyarıları yönetmenin bir yolu. Office 365 için Microsoft Defender etiketleme özelliği artımlı olarak kullanıma sunulmuştur ve şu anda önizleme aşamasındadır. <br>
-> Şu anda değiştirilen etiket adları yalnızca *güncelleştirmeden sonra* oluşturulan uyarılara uygulanır. Değişiklik öncesinde oluşturulan uyarılar güncelleştirilmiş etiket adını yansıtmaz. 
+> Etiketleri kullanarak uyarıları yönetmenin bir yolu. Office 365 için Microsoft Defender etiketleme özelliği artımlı olarak kullanıma sunulmuştur ve şu anda önizleme aşamasındadır.
+>
+> Şu anda değiştirilen etiket adları yalnızca *güncelleştirmeden sonra* oluşturulan uyarılara uygulanır. Değişiklik öncesinde oluşturulan uyarılar güncelleştirilmiş etiket adını yansıtmaz.
 
 *Belirli bir uyarıya benzer bir uyarı kümesini yönetmek için* uyarı sayfasının özet ayrıntıları bölümündeki **INSIGHT** kutusunda **Benzer uyarıları görüntüle'yi** seçin.
 
@@ -177,92 +173,106 @@ Benzer uyarılar geçmişte zaten sınıflandırıldıysa, diğer uyarıların n
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="Uyarı önerileri örneği":::
 
- 
 ## <a name="suppress-an-alert"></a>Uyarıyı gizleme
 
 Güvenlik operasyonları merkezi (SOC) analisti olarak en önemli sorunlardan biri, günlük tetiklenen daha fazla uyarı sayısını önceliklendirmektir. Düşük öncelikli uyarılar için, bir analistin el ile gerçekleştirilen bir işlem olma eğiliminde olan uyarıyı önceliklendirmesi ve çözümlemesi gerekir. SoC analistlerinin zamanı değerlidir ve yalnızca yüksek önem derecesine ve yüksek öncelikli uyarılara odaklanmak ister.
 
-Uyarı gizleme, uyarıları önceden ayarlama ve yönetme olanağı sağlar. Bu, uyarı kuyruğunun kolay hale getirilmesini sağlar ve beklenen her kuruluş davranışı gerçekleştiğinde ve kural koşulları karşılandığında uyarıları otomatik olarak gizleyerek veya çözümleyerek önceliklendirme süresinden tasarruf sağlar. 
+Uyarı gizleme, uyarıları önceden ayarlama ve yönetme olanağı sağlar. Bu, uyarı kuyruğunun kolay hale getirilmesini sağlar ve beklenen her kuruluş davranışı gerçekleştiğinde ve kural koşulları karşılandığında uyarıları otomatik olarak gizleyerek veya çözümleyerek önceliklendirme süresinden tasarruf sağlar.
 
-Dosyalar, işlemler, zamanlanmış görevler ve uyarıyı tetikleyen diğer birçok kanıt türü gibi 'kanıt türlerine' dayalı kural koşulları oluşturabilirsiniz. Kural oluşturulduktan sonra, kullanıcı seçilen uyarıya veya uyarıyı gizlemeye yönelik kural koşullarını karşılayan herhangi bir uyarı türüne kuralı uygulayabilir. 
+Dosyalar, işlemler, zamanlanmış görevler ve uyarıyı tetikleyen diğer birçok kanıt türü gibi 'kanıt türlerine' dayalı kural koşulları oluşturabilirsiniz. Kural oluşturulduktan sonra, kullanıcı seçilen uyarıya veya uyarıyı gizlemeye yönelik kural koşullarını karşılayan herhangi bir uyarı türüne kuralı uygulayabilir.
 
 > [!NOTE]
-> Uyarıların bastırılması önerilmez. Ancak bazı durumlarda, bilinen bir iç iş uygulaması veya güvenlik testleri beklenen bir etkinliği tetikler ve bu uyarıları görmek istemezsiniz. Bu nedenle, uyarı için bir gizleme kuralı oluşturabilirsiniz. 
+> Uyarıların bastırılması önerilmez. Ancak bazı durumlarda, bilinen bir iç iş uygulaması veya güvenlik testleri beklenen bir etkinliği tetikler ve bu uyarıları görmek istemezsiniz. Bu nedenle, uyarı için bir gizleme kuralı oluşturabilirsiniz.
 
 ### <a name="create-rule-conditions-to-suppress-alerts"></a>Uyarıları engellemek için kural koşulları oluşturma
 
 Uyarılar için bir gizleme kuralı oluşturmak için:
 
-1. Araştırılan uyarıyı seçin. Ana uyarı sayfasında, uyarı sayfasının özet ayrıntıları bölümünde **Gizleme kuralı oluştur'u** seçin. 
+1. Araştırılan uyarıyı seçin. Ana uyarı sayfasında, uyarı sayfasının özet ayrıntıları bölümünde **Gizleme kuralı oluştur'u** seçin.
 
     :::image type="content" source="../../media/investigate-alerts/suppression-click.png" lightbox="../../media/investigate-alerts/suppression-click.png" alt-text="Ayırma kuralı oluştur eyleminin ekran görüntüsü.":::
 
 2. Kuralı seçili **uyarıya uygulamak için Gizleme kuralı oluştur** bölmesinde **Yalnızca bu uyarı türünü** seçin.
 
     Ancak kuralı kural koşullarına uyan herhangi bir uyarı türüne uygulamak için **IOC koşullarına göre herhangi bir uyarı türü'nü** seçin.
- 
+
     GÇC'ler dosyalar, işlemler, zamanlanmış görevler ve uyarıyı tetikleyen diğer kanıt türleri gibi göstergelerdir.
-    
+
     > [!NOTE]
     > Artık "özel algılama" kaynağı tarafından tetiklenen bir uyarıyı gizleyemezsiniz. Bu uyarı için bir gizleme kuralı oluşturamazsınız.
-     
-3. **IOC'ler** bölümünde, uyarıya hangi 'kanıt' neden olursa olsun uyarıyı engellemek için **Herhangi bir IOC'yi** seçin. 
 
-    Birden çok kural koşulu ayarlamak için **GÇ Seçin'i** seçin. Uyarıya neden olan bu birden çok 'kanıt türü' arasında ilişki oluşturmak için **VE**, **VEYA** ve gruplandırma seçeneklerini kullanın.
- 
-    1. Örneğin, **Koşullar** bölümünde tetikleyici kanıt **Varlık Rolü: Tetikleyici**, **Eşittir'i** seçin ve açılan listeden kanıt türünü seçin. 
+3. **IOC'ler** bölümünde, uyarıya hangi 'kanıt' neden olursa olsun uyarıyı engellemek için **Herhangi bir IOC'yi** seçin.
 
-    :::image type="content" source="../../media/investigate-alerts/evidence-types-drop-down-list.png" alt-text="Kanıt türleri açılan listesinin ekran görüntüsü." lightbox="../../media/investigate-alerts/evidence-types-drop-down-list.png":::
+   Birden çok kural koşulu ayarlamak için **GÇ Seçin'i** seçin. Uyarıya neden olan bu birden çok 'kanıt türü' arasında ilişki oluşturmak için **VE**, **VEYA** ve gruplandırma seçeneklerini kullanın.
 
-    2. Bu 'kanıtın' tüm özellikleri, aşağıdaki ilgili alanlarda yeni bir alt grup olarak otomatik olarak doldurulur.
-    :::image type="content" source="../../media/investigate-alerts/properties-evidence.png" alt-text="Otomatik olarak doldurulan kanıtın özelliklerinin ekran görüntüsü." lightbox="../../media/investigate-alerts/properties-evidence.png" :::
+   1. Örneğin, **Koşullar** bölümünde tetikleyici kanıt **Varlık Rolü: Tetikleyici**, **Eşittir'i** seçin ve açılan listeden kanıt türünü seçin.
 
-    > [!NOTE]
-    > Koşul değerleri büyük/küçük harfe duyarlı değildir. 
+      :::image type="content" source="../../media/investigate-alerts/evidence-types-drop-down-list.png" alt-text="Kanıt türleri açılan listesinin ekran görüntüsü." lightbox="../../media/investigate-alerts/evidence-types-drop-down-list.png":::
 
-    3. Bu 'kanıtın' özelliklerini gereksinimlerinize göre düzenleyebilir ve/veya silebilirsiniz (desteklendiğinde joker karakterler kullanarak).
+   2. Bu 'kanıtın' tüm özellikleri, aşağıdaki ilgili alanlarda yeni bir alt grup olarak otomatik olarak doldurulur.
 
-    4. Dosya ve işlemler dışında Kötü Amaçlı Yazılımdan Koruma Tarama Arabirimi (AMSI) betiği, Windows Yönetim Araçları (WMI) olayı ve zamanlanmış görevler, kanıt türleri açılan listesinden seçebileceğiniz yeni eklenen kanıt türlerinden bazılarıdır.
-    :::image type="content" source="../../media/investigate-alerts/other-evidence-types.png" alt-text="Diğer kanıt türlerinin ekran görüntüsü." lightbox="../../media/investigate-alerts/other-evidence-types.png":::
-    
-    5. Başka bir IOC eklemek için **Filtre ekle'ye** tıklayın. 
-    > [!NOTE]
-    > Herhangi bir uyarı türünü engellemek için kural koşuluna en az bir IOC eklenmesi gerekir.
-    
+      :::image type="content" source="../../media/investigate-alerts/properties-evidence.png" alt-text="Otomatik olarak doldurulan kanıtın özelliklerinin ekran görüntüsü." lightbox="../../media/investigate-alerts/properties-evidence.png" :::
+
+      > [!NOTE]
+      > Koşul değerleri büyük/küçük harfe duyarlı değildir.
+
+   3. Bu 'kanıtın' özelliklerini gereksinimlerinize göre düzenleyebilir ve/veya silebilirsiniz (desteklendiğinde joker karakterler kullanarak).
+
+   4. Dosya ve işlemler dışında Kötü Amaçlı Yazılımdan Koruma Tarama Arabirimi (AMSI) betiği, Windows Yönetim Araçları (WMI) olayı ve zamanlanmış görevler, kanıt türleri açılan listesinden seçebileceğiniz yeni eklenen kanıt türlerinden bazılarıdır.
+
+      :::image type="content" source="../../media/investigate-alerts/other-evidence-types.png" alt-text="Diğer kanıt türlerinin ekran görüntüsü." lightbox="../../media/investigate-alerts/other-evidence-types.png":::
+
+   5. Başka bir IOC eklemek için **Filtre ekle'ye** tıklayın.
+
+      > [!NOTE]
+      > Herhangi bir uyarı türünü engellemek için kural koşuluna en az bir IOC eklenmesi gerekir.
+
 4. Alternatif olarak, **Koşullar** bölümünde uyarıyla ilgili tüm kanıt türlerini ve bunların özelliklerini aynı anda eklemek için **IOC** bölümünde tüm uyarı **7 ilgili GÇ'leri otomatik doldur'u** seçebilirsiniz.
-    :::image type="content" source="../../media/investigate-alerts/autofill-iocs.png" alt-text="Uyarıyla ilgili tüm GÇ'leri otomatik doldurma işleminin ekran görüntüsü." lightbox="../../media/investigate-alerts/autofill-iocs.png":::
+
+   :::image type="content" source="../../media/investigate-alerts/autofill-iocs.png" alt-text="Uyarıyla ilgili tüm GÇ'leri otomatik doldurma işleminin ekran görüntüsü." lightbox="../../media/investigate-alerts/autofill-iocs.png":::
 
 5. **Kapsam** bölümünde, belirli bir cihazı, birden çok cihazı, cihaz grubunu, kuruluşun tamamını veya kullanıcıya göre seçerek **Koşullar** alt bölümünde Kapsamı ayarlayın.
-    > [!NOTE]
-    > **Kapsam** yalnızca **Kullanıcı** için ayarlandığında Yönetici izniniz olmalıdır.  Yönetici izni, Kullanıcı **için** **Cihaz**, **Cihaz gruplarıyla** birlikte ayarlandığında gerekli değildir.
 
-:::image type="content" source="../../media/investigate-alerts/suppression-choose-scope.png" lightbox="../../media/investigate-alerts/suppression-choose-scope.png" alt-text="Gizleme kuralı oluşturma bölmesinin ekran görüntüsü: Koşullar, Kapsam, Eylem.":::
- 
+   > [!NOTE]
+   > **Kapsam** yalnızca **Kullanıcı** için ayarlandığında Yönetici izniniz olmalıdır.  Yönetici izni, Kullanıcı **için** **Cihaz**, **Cihaz gruplarıyla** birlikte ayarlandığında gerekli değildir.
+
+   :::image type="content" source="../../media/investigate-alerts/suppression-choose-scope.png" lightbox="../../media/investigate-alerts/suppression-choose-scope.png" alt-text="Gizleme kuralı oluşturma bölmesinin ekran görüntüsü: Koşullar, Kapsam, Eylem.":::
+
 6. **Eylem** bölümünde Uyarıyı **gizle veya Uyarıyı** **çöz'ün uygun eylemini** gerçekleştirin.
-    **Ad**, **Açıklama** girin ve **Kaydet'e** tıklayın.
 
-7. **IoC'lerin gelecekte engellenmesini önleyin:**<br>
-Gizleme kuralını kaydettikten sonra, görüntülenen **Başarılı gizleme kuralı oluşturma** sayfasında, seçilen GÇ'leri gösterge olarak "izin ver listesine" ekleyebilir ve gelecekte engellenmelerini önleyebilirsiniz. <br>
-Uyarıyla ilgili tüm GÇ'ler listede gösterilir. <br>
-Gizleme koşullarında seçilen GÇ'ler varsayılan olarak seçilir.
-      1. Örneğin, izin verilen dosyaları İzin vermek için **Kanıt seçin (IOC) bölümüne** ekleyebilirsiniz. Varsayılan olarak uyarıyı tetikleyen dosya seçilidir.
-      1. **Uygulanacak kapsamı seç kapsamına** girin. İlgili uyarının varsayılan kapsamı seçilidir.
-      1. **Kaydet**'e tıklayın. Artık dosya izin ver listesinde olduğu için engellenmez.
+   **Ad**, **Açıklama** girin ve **Kaydet'e** tıklayın.
 
-    :::image type="content" source="../../media/investigate-alerts/suppression-2-choose-iocs.png" lightbox="../../media/investigate-alerts/suppression-2-choose-iocs.png" alt-text="Başarılı gizleme kuralı oluşturma işleminin ekran görüntüsü. ":::
+7. **IoC'lerin gelecekte engellenmesini önleyin:**
 
-8.  Yeni gizleme uyarısı işlevselliği varsayılan olarak kullanılabilir. <br> Ancak, Microsoft 365 Defender portalında **Ayarlar > Uç Noktalar > Uyarı gizleme'ye** gidip **Yeni gizleme kuralları oluşturma etkin iki durumlu** düğmesini kapatarak önceki deneyime dönebilirsiniz. 
+   Gizleme kuralını kaydettikten sonra, görüntülenen **Başarılı gizleme kuralı oluşturma** sayfasında, seçilen GÇ'leri gösterge olarak "izin ver listesine" ekleyebilir ve gelecekte engellenmelerini önleyebilirsiniz.
 
- 
-    :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="Gizleme kuralı oluşturma özelliğini açmak/kapatmak için iki durumlu düğmenin ekran görüntüsü.":::
-    > [!NOTE]
-    > Yakında yalnızca yeni uyarı engelleme deneyimi kullanıma sunulacaktır. Önceki deneyime geri dönemeyeceksiniz.
+   Uyarıyla ilgili tüm GÇ'ler listede gösterilir.
 
-9.  **Mevcut kuralları düzenleyin:** <br> Microsoft Defender portalında ilgili kuralı seçip Kuralı **düzenle'ye** tıklayarak istediğiniz zaman kural koşullarını ve yeni veya mevcut kuralların kapsamını ekleyebilir veya değiştirebilirsiniz.    
-    Mevcut kuralları düzenlemek için **Yeni gizleme kuralları oluşturma etkin iki durumlu** düğmesinin etkinleştirildiğinden emin olun.         
+   Gizleme koşullarında seçilen GÇ'ler varsayılan olarak seçilir.
 
-    :::image type="content" source="../../media/investigate-alerts/suppression-toggle-on-edit.png" lightbox="../../media/investigate-alerts/suppression-toggle-on-edit.png" alt-text="Engelleme kuralını düzenlemenin ekran görüntüsü.":::
-  
+   1. Örneğin, izin verilen dosyaları İzin vermek için **Kanıt seçin (IOC) bölümüne** ekleyebilirsiniz. Varsayılan olarak uyarıyı tetikleyen dosya seçilidir.
+   2. **Uygulanacak kapsamı seç kapsamına** girin. İlgili uyarının varsayılan kapsamı seçilidir.
+   3. **Kaydet**'e tıklayın. Artık dosya izin ver listesinde olduğu için engellenmez.
+
+   :::image type="content" source="../../media/investigate-alerts/suppression-2-choose-iocs.png" lightbox="../../media/investigate-alerts/suppression-2-choose-iocs.png" alt-text="Başarılı gizleme kuralı oluşturma işleminin ekran görüntüsü. ":::
+
+8. Yeni gizleme uyarısı işlevselliği varsayılan olarak kullanılabilir.
+
+   Ancak, Microsoft 365 Defender portalında **Ayarlar > Uç Noktalar > Uyarı gizleme'ye** gidip **Yeni gizleme kuralları oluşturma etkin iki durumlu** düğmesini kapatarak önceki deneyime dönebilirsiniz.
+
+   :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="Gizleme kuralı oluşturma özelliğini açmak/kapatmak için iki durumlu düğmenin ekran görüntüsü.":::
+
+   > [!NOTE]
+   > Yakında yalnızca yeni uyarı engelleme deneyimi kullanıma sunulacaktır. Önceki deneyime geri dönemeyeceksiniz.
+
+9. **Mevcut kuralları düzenleyin:**
+
+   Microsoft Defender portalında ilgili kuralı seçip Kuralı **düzenle'ye** tıklayarak kural koşullarını ve yeni veya mevcut kuralların kapsamını istediğiniz zaman ekleyebilir veya değiştirebilirsiniz.
+
+   Mevcut kuralları düzenlemek için **Yeni gizleme kuralları oluşturma etkin iki durumlu** düğmesinin etkinleştirildiğinden emin olun.
+
+   :::image type="content" source="../../media/investigate-alerts/suppression-toggle-on-edit.png" lightbox="../../media/investigate-alerts/suppression-toggle-on-edit.png" alt-text="Engelleme kuralını düzenlemenin ekran görüntüsü.":::
+
 ## <a name="resolve-an-alert"></a>Uyarıyı çözme
 
 Bir uyarıyı çözümlemeyi tamamladıktan ve çözümlenebildiğiniz zaman, uyarı veya benzer uyarılar için **Uyarıyı yönet** bölmesine gidin ve durumu **Çözüldü** olarak işaretleyin ve ardından bir tehdit **türü,** **Bilgilendirici,** etkinlik türüyle beklenen etkinlik veya **Hatalı pozitif** olarak sınıflandırın.
@@ -271,12 +281,11 @@ Uyarıları sınıflandırmak Microsoft 365 Defender algılama kalitesini artır
 
 ## <a name="use-power-automate-to-triage-alerts"></a>Uyarıları önceliklendirmek için Power Automate'i kullanma
 
-Modern güvenlik operasyonları (SecOps) ekiplerinin etkili bir şekilde çalışması için otomasyon gerekir. SecOps ekipleri, gerçek tehditleri avlamaya ve araştırmaya odaklanmak için Power Automate'i kullanarak uyarı listesini önceliklendirmek ve tehdit olmayanları ortadan kaldırır.  
+Modern güvenlik operasyonları (SecOps) ekiplerinin etkili bir şekilde çalışması için otomasyon gerekir. SecOps ekipleri, gerçek tehditleri avlamaya ve araştırmaya odaklanmak için Power Automate'i kullanarak uyarı listesini önceliklendirmek ve tehdit olmayanları ortadan kaldırır.
 
 ### <a name="criteria-for-resolving-alerts"></a>Uyarıları çözümleme ölçütleri
 
 - Kullanıcının İşyeri Dışında iletisi açık
-
 - Kullanıcı yüksek riskli olarak etiketlenmemiş
 
 Her ikisi de doğruysa, SecOps uyarıyı geçerli seyahat olarak işaretler ve çözer. Uyarı çözümlendikten sonra Microsoft Teams'de bir bildirim gönderilir.
@@ -291,7 +300,8 @@ Otomasyonu oluşturmak için Power Automate'i Microsoft Defender for Cloud Apps 
 
 ### <a name="create-an-automated-flow"></a>Otomatik akış oluşturma
 
-Otomasyonun sorunsuz bir iş akışı oluşturmak için verimli bir şekilde nasıl çalıştığını ve Power Automate'i Cloud Apps için Defender'a nasıl bağlayacağınızı öğrenmek için bu kısa videoyu izleyin. 
+Otomasyonun sorunsuz bir iş akışı oluşturmak için verimli bir şekilde nasıl çalıştığını ve Power Automate'i Cloud Apps için Defender'a nasıl bağlayacağınızı öğrenmek için bu kısa videoyu izleyin.
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn]
 
 ## <a name="next-steps"></a>Sonraki adımlar

@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: aa6176e74b74d2b3fa8a259b9c8d129bb2a9715f
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: e5736296499cdf9ce63ead7b57505c9751c8c436
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483464"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68051794"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -33,7 +35,7 @@ ms.locfileid: "67483464"
 - Microsoft 365 Defender
 - Uç Nokta için Microsoft Defender
 
-[Gelişmiş tehdit avcılığı](advanced-hunting-overview.md) şemasındaki çeşitli cihaz olayları veya `DeviceEvents` tablosu, Microsoft Defender Virüsten Koruma ve açıklardan yararlanma koruması gibi güvenlik denetimleri tarafından tetiklenen olaylar da dahil olmak üzere çeşitli olay türleri hakkında bilgi içerir. Bu tablodan bilgi döndüren sorgular oluşturmak için bu başvuruyu kullanın.
+[Gelişmiş tehdit avcılığı](advanced-hunting-overview.md) şemasındaki çeşitli cihaz olayları veya `DeviceEvents` tablosu, Microsoft Defender Virüsten Koruma ve yararlanma koruması gibi güvenlik denetimleri tarafından tetiklenen olaylar da dahil olmak üzere çeşitli olay türleri hakkında bilgi içerir. Bu tablodan bilgi döndüren sorgular oluşturmak için bu başvuruyu kullanın.
 
 >[!TIP]
 > Bir tablo tarafından desteklenen olay türleri (`ActionType` değerler) hakkında ayrıntılı bilgi için Bulut için Defender'da bulunan yerleşik şema başvurusunu kullanın.
@@ -97,7 +99,7 @@ Gelişmiş tehdit avcılığı şemasındaki diğer tablolar hakkında bilgi iç
 | `InitiatingProcessParentCreationTime` | `datetime` | Olaydan sorumlu işlemin üst öğesinin başlatıldığı tarih ve saat |
 | `InitiatingProcessLogonId` | `string` | Olayı başlatan işlemin oturum açma oturumunun tanımlayıcısı. Bu tanımlayıcı aynı makinede yalnızca yeniden başlatmalar arasında benzersizdir |
 | `ReportId` | `long` | Yinelenen sayacı temel alan olay tanımlayıcısı. Benzersiz olayları tanımlamak için bu sütunun DeviceName ve Timestamp sütunlarıyla birlikte kullanılması gerekir |
-| `AppGuardContainerId` | `string` | Application Guard tarafından tarayıcı etkinliğini yalıtmak için kullanılan sanallaştırılmış kapsayıcının tanımlayıcısı |
+| `AppGuardContainerId` | `string` | tarayıcı etkinliğini yalıtmak için Application Guard tarafından kullanılan sanallaştırılmış kapsayıcının tanımlayıcısı |
 | `AdditionalFields` | `string` | JSON dizi biçimindeki olay hakkında ek bilgi |
 
 ## <a name="related-topics"></a>İlgili konular

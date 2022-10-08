@@ -1,7 +1,7 @@
 ---
 title: Linux'ta Uç Nokta için Microsoft Defender ile ilgili Denetimli performans sorunlarını giderme
 ms.reviewer: ''
-description: Linux için Microsoft Defender ile karşılaşabileceğiniz AuditD ile ilgili performans sorunlarının nasıl giderildiğini açıklar.
+description: Linux için Microsoft Defender karşılaşabileceğiniz AuditD ile ilgili performans sorunlarının nasıl giderildiğini açıklar.
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, linux, sorun giderme, AuditD, XMDEClientAnalyzer, yükleme, dağıtma, kaldırma
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -13,17 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 03548e71f73259f241b77656e94958d22266538a
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 7d5056470331bc52318ca4a5e433edbe37cabf03
+ms.sourcegitcommit: 0380a7cd5adb710b80a0ed6fcd349199f1571080
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691551"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "68337320"
 ---
 # <a name="troubleshoot-auditd-performance-issues-with-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender ile ilgili Denetimli performans sorunlarını giderme 
 
@@ -54,10 +54,14 @@ Bu tür sorunları gidermek için, etkilenen örnek sunucuda [MDEClientAnalyzer 
 > [!NOTE]
 > Genel bir en iyi uygulama olarak, [Uç Nokta için Microsoft Defender aracısını en son kullanılabilir sürüme](linux-whatsnew.md) güncelleştirmeniz ve daha fazla araştırma yapmadan önce sorunun devam edip etmediğini onaylamanız önerilir.
 
+> [!NOTE]
+> AuditD alt sistem CPU zorluğunu etkileyebilecek ek yapılandırmalar olduğunu. <BR>
+> Özellikle [auditd.conf](https://linux.die.net/man/8/auditd.conf) dosyasında yüksek CPU tüketimini azaltmak için **disp_qos** değeri "kayıplı" olarak ayarlanabilir. <BR>
+> Ancak bu, yoğun CPU tüketimi sırasında bazı olayların bırakılabileceği anlamına gelir. <BR>
 
 ## <a name="xmdeclientanalyzer"></a>XMDEClientAnalyzer 
 
-XMDEClientAnalyzer kullandığınızda, aşağıdaki dosyalar sorunları gidermenize yardımcı olacak içgörüler sağlayan bir çıktı görüntüler.
+[XMDEClientAnalyzer](run-analyzer-macos-linux.md) kullandığınızda, aşağıdaki dosyalar sorunları gidermenize yardımcı olacak içgörüler sağlayan bir çıktı görüntüler.
 - auditd_info.txt
 - auditd_log_analysis.txt
 

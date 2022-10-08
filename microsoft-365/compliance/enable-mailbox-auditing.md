@@ -11,7 +11,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Posta kutusu denetim günlüğü Microsoft 365'te varsayılan olarak açıktır ('varsayılan posta kutusu denetimi' veya 'posta kutusu denetimi varsayılan olarak açık' olarak da adlandırılır). Bu yapılandırma, posta kutusu sahipleri, temsilciler ve yöneticiler tarafından gerçekleştirilen belirli eylemlerin otomatik olarak posta kutusu denetim günlüğüne kaydedildiği ve burada posta kutusunda gerçekleştirilen etkinlikleri arayabileceğiniz anlamına gelir.
-ms.openlocfilehash: edf73e41d5f8f2f977d9f1256ac9a2299be182d6
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: 542d3e40d97834ffa2fed6e7bd17a8152b5765d7
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037215"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476473"
 ---
 # <a name="manage-mailbox-auditing"></a>Posta kutusu denetimini yönetme
 
@@ -41,7 +41,9 @@ Posta kutusu denetiminin varsayılan olarak bazı avantajları şunlardır:
 > [!NOTE]
 >
 > - Posta kutusu denetiminin varsayılan olarak açık olarak yayımlanması hakkında hatırlamanız gereken önemli şey şudur: Posta kutusu denetimini yönetmek için hiçbir şey yapmanız gerekmez. Ancak, daha fazla bilgi edinmek, posta kutusu denetimini varsayılan ayarlardan özelleştirmek veya tamamen kapatmak için bu makale size yardımcı olabilir.
-> - Varsayılan olarak, Microsoft Purview uyumluluk portalı veya Office 365 Yönetim Etkinliği API'sinde denetim günlüğü aramalarında yalnızca E5 kullanıcıları için posta kutusu denetim olayları kullanılabilir. Daha fazla bilgi için bu makalenin [Daha fazla bilgi](#more-information) bölümüne bakın.
+> - Varsayılan olarak, Microsoft Purview uyumluluk portalı veya Office 365 Yönetim Etkinliği API'sinde denetim günlüğü aramalarında yalnızca [Microsoft Purview Denetim (Premium)](advanced-audit.md) içeren lisanslara sahip kullanıcılar için posta kutusu denetim olayları kullanılabilir. Bu lisanslar [burada](auditing-solutions-overview.md#audit-premium-1) açıklanmıştır. Kısa bir süre için bu makale, Denetim (Premium) içeren lisansları *topluca E5/A5/G5 lisansları olarak adlandıracaktır*.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>Posta kutusu denetiminin varsayılan olarak açık olduğunu doğrulama
 
@@ -319,7 +321,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 ## <a name="more-information"></a>Daha fazla bilgi
 
-- Posta kutusu denetim günlüğü tüm kuruluşlar için varsayılan olarak etkin olsa da, yalnızca E5 lisansına sahip kullanıcılar Microsoft Purview uyumluluk portalı veya [Office 365 Yönetim Etkinliği](/office/office-365-management-api/office-365-management-activity-api-reference) [API'sindeki denetim günlüğü aramalarında posta kutusu denetim günlüğü olaylarını](search-the-audit-log-in-security-and-compliance.md) **varsayılan olarak** döndürür.
+- Daha önce belirtildiği gibi, posta kutusu denetim günlüğü tüm kuruluşlar için varsayılan olarak etkin olsa da, yalnızca [Denetim (Premium) (](auditing-solutions-overview.md#audit-premium-1)bu makalede toplu olarak *E5/A5/G5 lisansları* olarak adlandırılır) içeren lisanslara sahip kullanıcılar [, Microsoft Purview uyumluluk portalı veya Office 365 aracılığıyla denetim günlüğü aramalarında posta kutusu denetim günlüğü olaylarını](search-the-audit-log-in-security-and-compliance.md) döndürür [  Yönetim Etkinliği](/office/office-365-management-api/office-365-management-activity-api-reference) **API'si varsayılan olarak**.
 
   E5/A5/G5 lisansı olmayan kullanıcıların posta kutusu denetim günlüğü girdilerini almak için aşağıdaki geçici çözümlerden birini kullanabilirsiniz:
 

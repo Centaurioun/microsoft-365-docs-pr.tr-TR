@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ROBOTS: ''
-ms.openlocfilehash: 0dc389f498587c0895399c2a2f2eee4624e1ee3d
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 1171c30edc22df889973ac45d7c7f5905f5c2233
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799011"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476869"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender deneyin
 
@@ -80,7 +80,7 @@ Office 365 için Defender deneyiminizin etkin mi yoksa pasif mi olmasını istiy
 
 - **Denetim modu**: Kimlik avı önleme (kimliğe bürünme koruması, Güvenli Ekler ve Güvenli Bağlantılar dahil) için özel *değerlendirme ilkeleri* oluşturulur. Bu değerlendirme ilkeleri yalnızca tehditleri *algılamak* için yapılandırılır. Office 365 için Defender, raporlama için zararlı iletileri algılar, ancak iletiler üzerinde işlem gerçekleştirilmiyor (örneğin, algılanan iletiler karantinaya alınmıyor). Bu değerlendirme ilkelerinin ayarları, bu makalenin devamında [denetim modunda ilkeler](#policies-in-audit-mode) bölümünde açıklanmaktadır.
 
-  Denetim modu, konumundaki **Değerlendirme modu** sayfasında<https://security.microsoft.com/atpEvaluation> Office 365 için Defender tarafından algılanan tehditler için özelleştirilmiş raporlara erişim sağlar.
+  Denetim modu, konumundaki **Değerlendirme modu** sayfasında <https://security.microsoft.com/atpEvaluation>Office 365 için Defender tarafından algılanan tehditler için özelleştirilmiş raporlara erişim sağlar.
 
 - **Engelleme modu**: [Önceden ayarlanmış güvenlik ilkeleri](preset-security-policies.md) için Standart şablon açılır ve deneme sürümü için kullanılır ve deneme sürümüne dahil etmek için belirttiğiniz kullanıcılar Standart önceden ayarlanmış güvenlik ilkesine eklenir. Office 365 için Defender zararlı iletileri *algılar* ve *üzerinde işlem uygular* (örneğin, algılanan iletiler karantinaya alınır).
 

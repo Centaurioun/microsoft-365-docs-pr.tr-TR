@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: lishepar, vikdesai
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -24,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 365 yönetim merkezinde mevcut bir ödeme yöntemini kullanarak ya da yeni bir ödeme yöntemi ekleyerek Microsoft’tan iş ürünleri veya hizmetleri satın alın.
 ms.date: 06/01/2022
-ms.openlocfilehash: e92ceaadd61b90ac2357543eb97f8a16eeb65597
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
-ms.translationtype: HT
+ms.openlocfilehash: 695c0f3ee6b71db303508165659d38875b759cbb
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102536"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68163546"
 ---
 # <a name="manage-payment-methods"></a>Ödeme yöntemlerini yönetme
 
@@ -58,7 +59,7 @@ Microsoft 365 İş aboneliğinizin ödeme yöntemini kolaylıkla güncelleyebili
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Bu makaledeki görevleri yerine getirmek için Genel yönetici veya Fatura yöneticisi olmalısınız. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
+Bu makaledeki görevleri yerine getirmek için Genel yönetici veya Fatura yöneticisi olmalısınız. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md)
 
 ## <a name="add-a-payment-method"></a>Ödeme yöntemi ekleme
 

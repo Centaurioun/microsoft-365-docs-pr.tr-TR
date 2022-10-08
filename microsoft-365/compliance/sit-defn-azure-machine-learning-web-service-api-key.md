@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Azure Machine Learning web hizmeti API'sinde anahtara duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: 99c99425fcba49f59adf7dcaf1baba88e13f0118
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 531befbda54224cddc4a1d4d391469a2ef1b2ff8
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948439"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476935"
 ---
 # <a name="azure-machine-learning-web-service-api-key-preview"></a>Azure Machine Learning web hizmeti API anahtarı (önizleme) 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -45,7 +48,7 @@ ms.locfileid: "66948439"
 
 `abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==`
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
@@ -56,11 +59,11 @@ Bu SIT, [Azure Machine Learning Web hizmetlerine](/azure/machine-learning/classi
 Birkaç birincil kaynak kullanır:
 
 - Base64 kodlu 512 bit simetrik anahtarın desenleri.
-- CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id, AccountName desenleri.
+- CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, ID, AccountName desenleri.
 - Mockup değerlerinin, redaction'ların ve yer tutucuların desenleri.
 - Sözlük sözlüğü.
 
-Desenler, gerçek kimlik bilgileriyle makul bir güvenle eşleşecek şekilde tasarlanmıştır. Desenler örnek olarak biçimlendirilmiş kimlik bilgileriyle eşleşmiyor. Sahte değerler, yeniden düzenlenmiş değerler ve kimlik bilgisi türü veya kullanım açıklamaları gibi yer tutucular, gerçek bir gizli dizi değerinin bulunmaması gereken konumda eşleştirilmeyecektir.
+Desenler, gerçek kimlik bilgileriyle makul bir güvenle eşleşecek şekilde tasarlanmıştır. Desenler örnek olarak biçimlendirilmiş kimlik bilgileriyle eşleşmiyor. Gerçek bir gizli dizi değerinin bulunmaması gereken konumdaki sahte değerler, yeniden düzenlenmiş değerler ve kimlik bilgisi türü veya kullanım açıklamaları gibi yer tutucular.
 
 ## <a name="keywords"></a>Anahtar Sözcükler
 

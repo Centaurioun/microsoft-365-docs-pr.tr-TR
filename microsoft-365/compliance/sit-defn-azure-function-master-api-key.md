@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Azure İşlev Yöneticisi / API anahtarına duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: 3a2fd12125d220bb0de3d0f4217ca6e11f58ea56
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 78a4af95c6390cc16f6a60bd3874be660e3cfa5c
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989489"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476397"
 ---
 # <a name="azure-function-master--api-key-preview"></a>Azure İşlev Yöneticisi / API anahtarı (önizleme)  
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -64,7 +67,7 @@ veya
 abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDEF0123456789%3D%3D
 
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
@@ -80,7 +83,7 @@ Birkaç birincil kaynak kullanır:
 - Mockup değerlerinin, redaction'ların ve yer tutucuların desenleri.
 - Sözlük sözlüğü.
 
-Desenler, gerçek kimlik bilgileriyle makul bir güvenle eşleşecek şekilde tasarlanmıştır. Desenler örnek olarak biçimlendirilmiş kimlik bilgileriyle eşleşmiyor. Sahte değerler, yeniden düzenlenmiş değerler ve kimlik bilgisi türü veya kullanım açıklamaları gibi yer tutucular, gerçek bir gizli dizi değerinin bulunmaması gereken konumda eşleştirilmeyecektir.
+Desenler, gerçek kimlik bilgileriyle makul bir güvenle eşleşecek şekilde tasarlanmıştır. Desenler örnek olarak biçimlendirilmiş kimlik bilgileriyle eşleşmiyor. Gerçek bir gizli dizi değerinin bulunmaması gereken konumdaki sahte değerler, yeniden düzenlenmiş değerler ve kimlik bilgisi türü veya kullanım açıklamaları gibi yer tutucular.
 
 
 ## <a name="keywords"></a>Anahtar Sözcükler

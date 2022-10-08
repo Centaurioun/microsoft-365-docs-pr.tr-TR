@@ -7,19 +7,21 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
-description: Ülkeniz veya bölgeniz için de destek ile nasıl bağlantı kuracaklarını öğrenin.
+description: Ülkeniz veya bölgeniz için desteğe nasıl başvuracağınızı öğrenin.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cf092a0c5b98aeaf622edfe8c399569a0e1fd9ab
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 4595757e63e5251d65d3cf13303c9f1dc3db16d0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "63009289"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68163950"
 ---
-# <a name="contact-support-for-switzerland"></a>İsviçre için destek ile iletişime geçin
+# <a name="contact-support-for-switzerland"></a>İsviçre için desteğe başvurun
 
 [Başka bir ülke veya bölge bulun](../get-help-support.md).
 
@@ -39,9 +41,9 @@ Almanca: Mon-Fri 09:00-17:00
 
 ### <a name="technical-support"></a>Teknik Destek:
 
-Fransızca: Mon-Fri 08:00-17:00
+Fransızca: Mon-Fri 08:00-21:00
 
-Almanca: Mon-Fri 08:00 -17:00
+Almanca: Mon-Fri 08:00-21:00
 
 İtalyanca: Mon-Fri 08:00-21:00
 

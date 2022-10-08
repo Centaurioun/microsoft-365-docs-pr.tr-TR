@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Kıbrıs pasaport numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: abfb7b7ce3365b6f65c8e639250e4bebd7f02f48
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 8c45d9988cf56a0add6e12c1e58aa2bfe2469c53
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948761"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68361792"
 ---
 # <a name="cyprus-passport-number"></a>Kıbrıs pasaport numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -36,19 +39,19 @@ bir harf ve ardından boşluk veya sınırlayıcı içermeyen 6-8 basamak
 
 bir harf ve ardından altı ila sekiz basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
 - Normal ifade `Regex_cyprus_eu_passport_number` , desenle eşleşen içeriği bulur.
 - veya `Keywords_cyprus_eu_passport_number` anahtar `Keywords_eu_passport_number` sözcüğü bulunur.
 - Normal ifade `Regex_cyprus_eu_passport_date` tarihi DD/AA/YYYY biçiminde bulur veya bir anahtar sözcük `Keywords_cyprus_eu_passport_date` bulunur
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Normal ifade `Regex_cyprus_eu_passport_number` , desenle eşleşen içeriği bulur.
 - veya `Keywords_cyprus_eu_passport_number` anahtar `Keywords_eu_passport_number` sözcüğü bulunur.

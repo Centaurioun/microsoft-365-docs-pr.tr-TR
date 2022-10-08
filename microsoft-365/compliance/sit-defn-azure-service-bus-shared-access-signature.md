@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Azure service bus paylaşılan erişim imzası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: f9464bb2700bc4e4e186d33e451a2b286acca54f
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: e477900557087f5ed4383af8b7cc8d2c26d7bf2d
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948509"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476709"
 ---
 # <a name="azure-service-bus-shared-access-signature-preview"></a>Azure service bus paylaşılan erişim imzası (önizleme)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -63,7 +66,7 @@ veya
 
 `abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDE%3D`
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
@@ -74,12 +77,12 @@ Bu SIT, kullanıcıya belirli haklara sahip [Azure Service Bus kaynaklara](/azur
 Birkaç birincil kaynak kullanır:
 
 - Base64 kodlu 256 bit simetrik anahtarın desenleri.
-- URL Kodlanmış 256 bit simetrik anahtar desenleri.
-- CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id desenleri.
+- URL Kodlanmış 256 bit simetrik anahtarın desenleri.
+- CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, ID desenleri.
 - Mockup değerlerinin, redaction'ların ve yer tutucuların desenleri.
 - Sözlük sözlüğü.
 
-Desenler, gerçek kimlik bilgileriyle makul bir güvenle eşleşecek şekilde tasarlanmıştır. Desenler örnek olarak biçimlendirilmiş kimlik bilgileriyle eşleşmiyor. Sahte değerler, yeniden düzenlenmiş değerler ve kimlik bilgisi türü veya kullanım açıklamaları gibi yer tutucular, gerçek bir gizli dizi değerinin bulunmaması gereken konumda eşleştirilmeyecektir.
+Desenler, gerçek kimlik bilgileriyle makul bir güvenle eşleşecek şekilde tasarlanmıştır. Desenler örnek olarak biçimlendirilmiş kimlik bilgileriyle eşleşmiyor. Gerçek bir gizli dizi değerinin bulunmaması gereken konumdaki sahte değerler, yeniden düzenlenmiş değerler ve kimlik bilgisi türü veya kullanım açıklamaları gibi yer tutucular.
 
 ## <a name="keywords"></a>Anahtar Sözcükler
 

@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Singapur ulusal kayıt kimlik kartı (NRIC) numarasına duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: b2dfa68f3d69134f7d4eca67648c64075b5d1c44
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: f77564f85444f3928a3ed6d3437d04e19774c411
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948525"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68471804"
 ---
 # <a name="singapore-national-registration-identity-card-nric-number"></a>Singapur ulusal kayıt kimlik kartı (NRIC) numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -40,22 +43,22 @@ dokuz harf ve rakam
 - yedi basamak
 - alfabetik denetim basamalı
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
 - Normal ifade `Regex_singapore_nric` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_singapore_nric` bir anahtar sözcük bulunur.
-- Sağlama toplamı geçer.
+- `Keyword_singapore_nric` içinden bir anahtar sözcük bulundu.
+- Sağlama toplamı başarılı.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Normal ifade `Regex_singapore_nric` , desenle eşleşen içeriği bulur.
-- Sağlama toplamı geçer.
+- Sağlama toplamı başarılı.
 
 ```xml
 <!-- Singapore National Registration Identity Card (NRIC) Number -->
@@ -77,7 +80,7 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandı�
 - Ulusal Kayıt Kimlik Kartı
 - Kimlik Kartı Numarası
 - NRIC
-- IC
+- Ic
 - Yabancı Kimlik Numarası
 - FIN
 - 身份证

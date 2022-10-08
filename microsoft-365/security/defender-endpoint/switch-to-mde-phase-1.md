@@ -13,9 +13,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-migratetomdatp
 - highpri
+- tier1
 ms.topic: article
 ms.custom:
 - migrationguides
@@ -23,12 +24,12 @@ ms.custom:
 ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
-ms.openlocfilehash: 4ad0f36147682c1a6453941e148876b0246d8e1f
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 34bd2b66705114ad2bba8739cfae98ac8556e85e
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689459"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363287"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Uç Nokta için Microsoft Defender Geçiş - 1. Aşama: Hazırlama
 
@@ -52,7 +53,7 @@ Bu geçiş aşaması aşağıdaki adımları içerir:
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>Güncelleştirmeleri kuruluşunuzun cihazlarına alma ve dağıtma
 
-En iyi uygulama olarak, kuruluşunuzun cihazlarını ve uç noktalarını güncel tutun. Mevcut uç nokta koruma ve virüsten koruma çözümünüzün güncel olduğundan ve kuruluşunuzun işletim sistemleriyle uygulamalarının da en son güncelleştirmelere sahip olduğundan emin olun. Bunu şimdi yapmak, daha sonra Uç Nokta için Defender ve Microsoft Defender Virüsten Koruma'ya geçiş yaparken sorunların önlenmesine yardımcı olabilir.
+En iyi uygulama olarak, kuruluşunuzun cihazlarını ve uç noktalarını güncel tutun. Mevcut uç nokta koruma ve virüsten koruma çözümünüzün güncel olduğundan ve kuruluşunuzun işletim sistemleriyle uygulamalarının da en son güncelleştirmelere sahip olduğundan emin olun. Bunu şimdi yapmak, daha sonra Uç Nokta için Defender'a geçiş yaparken ve Virüsten Koruma'Microsoft Defender sorunları önlemeye yardımcı olabilir.
 
 ### <a name="make-sure-your-existing-solution-is-up-to-date"></a>Mevcut çözümünüzün güncel olduğundan emin olun
 
@@ -116,10 +117,10 @@ Cihazlarınız ile Uç Nokta için Defender arasında iletişimi etkinleştirmek
 |Yetenek -lerini|İşletim Sistemi|Kaynaklar|
 |---|---|---|
 |[Uç nokta algılama ve yanıt](overview-endpoint-detection-response.md) (EDR)|[Windows 10](/windows/release-health/release-information) veya üzeri<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>[Windows Server 1803 veya üzeri](/windows-server/get-started/whats-new-in-windows-server-1803)<br/><br/>[Windows Server 2016*](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2*](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)|[Makine ara sunucusu ve internet bağlantısı ayarlarını yapılandırma](configure-proxy-internet.md)|
-|EDR[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Ara sunucu ve internet bağlantısı ayarlarını yapılandırma](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
-|Edr|macOS (bkz [. Sistem gereksinimleri](microsoft-defender-endpoint-mac.md)|[macOS'ta Uç Nokta için Defender: Ağ bağlantıları](microsoft-defender-endpoint-mac.md#network-connections)|
+|Edr |[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Ara sunucu ve internet bağlantısı ayarlarını yapılandırma](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
+|Edr|macOS (bkz [. Sistem gereksinimleri](microsoft-defender-endpoint-mac.md))|[macOS'ta Uç Nokta için Defender: Ağ bağlantıları](microsoft-defender-endpoint-mac.md#network-connections)|
 |[Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windows Server 1803 veya üzeri](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)<br/><br/>[Windows Server 2012 R2*](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)|[Microsoft Defender Virüsten Koruma ağ bağlantılarını yapılandırın ve doğrulayın](configure-network-connections-microsoft-defender-antivirus.md)|
-|Antivirus|macOS (bkz [. Sistem gereksinimleri](microsoft-defender-endpoint-mac.md)|[macOS'ta Uç Nokta için Defender: Ağ bağlantıları](microsoft-defender-endpoint-mac.md#network-connections)|
+|Antivirus|macOS (bkz [. Sistem gereksinimleri](microsoft-defender-endpoint-mac.md))|[macOS'ta Uç Nokta için Defender: Ağ bağlantıları](microsoft-defender-endpoint-mac.md#network-connections)|
 |Antivirus|Linux (bkz [. Sistem gereksinimleri](microsoft-defender-endpoint-linux.md#system-requirements))|[Linux'ta Uç Nokta için Defender: Ağ bağlantıları](microsoft-defender-endpoint-linux.md#network-connections)|
 
 *Windows Server 2012 R2 ve 2016 için modern, birleşik çözümün yüklenmesini gerektirir. Daha fazla bilgi için bkz. [Windows sunucularını Uç Nokta için Microsoft Defender hizmetine ekleme](/microsoft-365/security/defender-endpoint/configure-server-endpoints).

@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Polonya ulusal kimliği (PESEL) hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 1efb99b67cbe6fe035ad6da3538ac0a8e070a441
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: c88b36d71339e28d2c6954c0c1a266c0696f2996
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948777"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68470095"
 ---
 # <a name="poland-national-id-pesel"></a>Polonya ulusal kimliği (PESEL)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -38,22 +41,22 @@ ms.locfileid: "66948777"
 - dört basamak
 - bir denetim basamalı
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_pesel_identification_number` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_pesel_identification_number` bir anahtar sözcük bulunur.
-- Sağlama toplamı geçer.
+- İşlev `Func_pesel_identification_number`, desenle eşleşen içeriği bulur.
+- `Keyword_pesel_identification_number` içinden bir anahtar sözcük bulundu.
+- Sağlama toplamı başarılı.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_pesel_identification_number` , desenle eşleşen içeriği bulur.
-- Sağlama toplamı geçer.
+- İşlev `Func_pesel_identification_number`, desenle eşleşen içeriği bulur.
+- Sağlama toplamı başarılı.
 
 ```xml
       <!-- Poland National ID (PESEL) -->

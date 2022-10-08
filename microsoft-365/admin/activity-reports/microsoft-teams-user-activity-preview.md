@@ -1,14 +1,15 @@
 ---
 title: Teams kullanıcı etkinlik raporlarını Microsoft 365 yönetim merkezi
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams kullanıcı etkinliği raporunu almayı ve kuruluşunuzdaki Teams etkinliğiyle ilgili içgörüler kazanmayı öğrenin.
-ms.openlocfilehash: a799ef42fb0ecfd3b1c6aae6d4daa8a8da8415ab
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: c913c3969c5784f34cd8a1ca4644834eaf96f0a6
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662756"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68165371"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Yönetim merkezinde Microsoft 365 Raporları - Microsoft Teams kullanıcı etkinliği
 
@@ -53,8 +54,9 @@ Veri kalitesini sağlamak için son üç güne ilişkin günlük veri doğrulama
 |Öğe|Açıklama|
 |:-----|:-----|
 |**Metrik**|**Tanım**|
-|Kullanıcı adı  <br/> |Kullanıcının e-posta adresi. Asıl e-posta adresini görüntüleyebilir veya bu alanın anonim olmasını sağlayabilirsiniz.   <br/> |
+|Kullanıcı Adı  <br/> |Kullanıcının e-posta adresi. Asıl e-posta adresini görüntüleyebilir veya bu alanın anonim olmasını sağlayabilirsiniz.   <br/> |
 |Kiracı adı  <br/> |Kullanıcının ait olduğu iç veya dış kiracının adı.   <br/> <br/> Bir kullanıcı dış kiracıya aitse, ilgili veri ölçümleri (örneğin, posta iletileri, yanıt iletileri vb.) yöneticinin kiracısının paylaşılan kanallarındaki etkileşimlerine göre hesaplanır. Kullanıcı tarafından kendi kiracısında (belirli bir kiracının paylaşılan kanalları dışında) yapılan etkileşimler, belirli bir kiracının yönetici kullanım raporu için dikkate alınmaz.  |
+|Dış   <br/> |Kullanıcının dış kullanıcı olup olmadığını gösterir.   <br/> |
 |Paylaşılan kanal kiracı adları   <br/> |Kullanıcının katıldığı paylaşılan kanalların iç veya dış kiracılarının adları.   <br/> |
 |Kanal iletileri   <br/> |Kullanıcının belirtilen zaman aralığında bir ekip sohbetinde yayınladığı benzersiz iletilerin sayısı. Buna özgün gönderiler ve yanıtlar dahildir.   <br/> |
 |Mesaj   <br/> |Belirtilen zaman aralığındaki tüm kanallardaki posta iletilerinin sayısı. Gönderi, teams sohbetindeki özgün iletidir.<br/> |

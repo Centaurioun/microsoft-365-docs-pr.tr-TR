@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Suudi Arabistan Ulusal Kimliği hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: c5bfa2560959caa0aa6115f4e25e8d09c8dffb5e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 864e175c4d1b8410e26bbd1c39a2f588cce07f2e
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948511"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68470266"
 ---
 # <a name="saudi-arabia-national-id"></a>Suudi Arabistan Ulusal Kimliği
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -36,16 +39,16 @@ ms.locfileid: "66948511"
 
 Ardışık 10 basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Normal ifade `Regex_saudi_arabia_national_id` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_saudi_arabia_national_id` bir anahtar sözcük bulunur.
+- `Keyword_saudi_arabia_national_id` içinden bir anahtar sözcük bulundu.
 
 ```xml
 <!-- Saudi Arabia National ID -->

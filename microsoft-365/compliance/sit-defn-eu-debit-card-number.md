@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: AB banka kartı numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: dc5d633255b534fc0da217f42766c2d34d9d6180
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 6ed7607d59a9cfe53687b023fb2adbbafee42041
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67322815"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363397"
 ---
 # <a name="eu-debit-card-number"></a>AB banka kartı numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -45,7 +48,7 @@ Evet
 DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
 - İşlev `Func_eu_debit_card`, desenle eşleşen içeriği bulur.
-- Aşağıdakilerden en az biri doğrudur:
+- Aşağıdaki durumlardan en az biri doğrudur:
     - `Keyword_eu_debit_card` içinden bir anahtar sözcük bulundu.
     - `Keyword_card_terms_dict` içinden bir anahtar sözcük bulundu.
     - `Keyword_card_security_terms_dict` içinden bir anahtar sözcük bulundu.

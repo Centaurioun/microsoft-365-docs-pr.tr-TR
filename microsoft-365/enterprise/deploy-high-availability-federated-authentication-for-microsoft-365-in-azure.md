@@ -6,11 +6,12 @@ manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150s
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 f1.keywords:
@@ -19,16 +20,16 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: "Özet: Microsoft Azure'da Microsoft 365 aboneliğiniz için yüksek kullanılabilirlik federasyon kimlik doğrulamasını yapılandırın."
-ms.openlocfilehash: 64fc02e6ecaa400da6d6130cb9ae630279102fcc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 48352219ce6029c980cb09157feec652c446508d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093426"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68165833"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>Azure'da Microsoft 365 için yüksek kullanılabilirlik federasyon kimlik doğrulamasını dağıtma
 
-Bu makalede, şu sanal makinelerle Azure altyapı hizmetlerinde Microsoft Microsoft 365 için yüksek kullanılabilirlik federasyon kimlik doğrulaması dağıtmaya yönelik adım adım yönergelere bağlantılar bulunur:
+Bu makalede, şu sanal makinelerle Azure altyapı hizmetlerinde Microsoft Microsoft 365 için yüksek kullanılabilirlik federasyon kimlik doğrulaması dağıtmaya yönelik adım adım yönergelerin bağlantıları bulunur:
   
 - İki web uygulaması proxy sunucusu
     
@@ -36,7 +37,7 @@ Bu makalede, şu sanal makinelerle Azure altyapı hizmetlerinde Microsoft Micros
     
 - İki çoğaltma etki alanı denetleyicisi
     
-- Azure AD Bağlan çalıştıran bir dizin eşitleme sunucusu
+- Azure AD Connect çalıştıran bir dizin eşitleme sunucusu
     
 Her sunucu için yer tutucu adları içeren yapılandırma aşağıdadır.
   
@@ -52,9 +53,9 @@ Tüm sanal makineler tek bir şirket içi Azure sanal ağında (VNet) bulunur.
 Belirli bir rol için her sanal makine çifti kendi alt ağı ve kullanılabilirlik kümesindedir.
   
 > [!NOTE]
-> Bu sanal ağ şirket içi ağa bağlı olduğundan, bu yapılandırma bir yönetim alt ağında sıçrama kutusu veya izleme sanal makinelerini içermez. Daha fazla bilgi için bkz[. N katmanlı mimari için Windows VM'leri çalıştırma](/azure/guidance/guidance-compute-n-tier-vm). 
+> Bu sanal ağ şirket içi ağa bağlı olduğundan, bu yapılandırma bir yönetim alt ağında sıçrama kutusu veya izleme sanal makinelerini içermez. Daha fazla bilgi için bkz [. N katmanlı mimari için Windows VM'lerini çalıştırma](/azure/guidance/guidance-compute-n-tier-vm). 
   
-Bu yapılandırmanın sonucu, tüm Microsoft 365 kullanıcılarınız için federasyon kimlik doğrulamasına sahip olmanızdır. Bu kimlik doğrulamasında, Microsoft 365 hesapları yerine oturum açmak için AD DS kimlik bilgilerini kullanabilirler. Federasyon kimlik doğrulama altyapısı, şirket içi uç ağınız yerine Azure altyapı hizmetlerinde daha kolay dağıtılan yedekli bir sunucu kümesi kullanır.
+Bu yapılandırmanın sonucu, tüm Microsoft 365 kullanıcılarınız için federasyon kimlik doğrulamasına sahip olmanızdır ve bu kullanıcılar Microsoft 365 hesapları yerine AD DS kimlik bilgilerini kullanarak oturum açabilirler. Federasyon kimlik doğrulama altyapısı, şirket içi uç ağınız yerine Azure altyapı hizmetlerinde daha kolay dağıtılan yedekli bir sunucu kümesi kullanır.
   
 ## <a name="bill-of-materials"></a>Ürün reçetesi
 
@@ -76,7 +77,7 @@ Bu yapılandırma için sanal makineler ve bunların varsayılan boyutları aşa
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |İlk etki alanı denetleyicisi  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
 |2.  <br/> |İkinci etki alanı denetleyicisi  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
-|3.  <br/> |Azure AD Bağlan sunucusu  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
+|3.  <br/> |Azure AD Connect sunucusu  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
 |4.  <br/> |İlk AD FS sunucusu  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
 |5.  <br/> |İkinci AD FS sunucusu  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
 |6.  <br/> |İlk web uygulaması ara sunucusu  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
@@ -98,7 +99,7 @@ Bu iş yükünü aşağıdaki aşamalarda dağıtırsınız:
     
 - [5. Aşama: Microsoft 365 için federasyon kimlik doğrulamasını yapılandırın](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Microsoft 365 aboneliğiniz için federasyon kimlik doğrulamasını yapılandırın.
     
-Bu makaleler, Azure altyapı hizmetlerinde Microsoft 365 için işlevsel, yüksek kullanılabilirliğe sahip federasyon kimlik doğrulaması oluşturmak üzere önceden tanımlanmış bir mimari için açıklayıcı, aşama aşama kılavuz sağlar. Aşağıdakileri unutmayın:
+Bu makaleler, Azure altyapı hizmetlerinde Microsoft 365 için işlevsel, yüksek kullanılabilirlik federasyon kimlik doğrulaması oluşturmak üzere önceden tanımlanmış bir mimari için açıklayıcı, aşama aşama kılavuz sağlar. Aşağıdakileri unutmayın:
   
 - Deneyimli bir AD FS uygulayıcısıysanız, 3. ve 4. aşamalardaki yönergeleri uyarlamak ve ihtiyaçlarınıza en uygun sunucu kümesini oluşturmaktan çekinmeyin.
     

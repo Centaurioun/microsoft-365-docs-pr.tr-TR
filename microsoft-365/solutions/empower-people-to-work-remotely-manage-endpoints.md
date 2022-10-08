@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Cihazlarınızı, bilgisayarlarınızı ve diğer uç noktalarınızı yönetmek için Microsoft Endpoint Manager kullanın.
-ms.openlocfilehash: 70377db41b9a35dd20d217bb207299cacf441b67
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 16b17ab284e40e0276b3704287d3316749f0cfc0
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731298"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987048"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Adım 4. Cihazlarınız, bilgisayarlarınız ve diğer uç noktalarınız için uç nokta yönetimi dağıtma
 

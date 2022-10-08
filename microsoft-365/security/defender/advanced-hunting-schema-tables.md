@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: 11b0c3e76b7f14396ea2bd2b133d1b5a34ec0624
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 53de014dd9b299c0e6a3d356b7c919c4d0a47379
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67477307"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68049044"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Gelişmiş tehdit avcılığı şemasını anlama
 

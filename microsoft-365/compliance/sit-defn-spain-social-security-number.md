@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: İspanya sosyal güvenlik numarası (SSN) hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 4a531f0548aba2caa330423d493cf8e524c4ed73
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 8a87fcc82af413e074e7e37302bb72de0f9a501a
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948629"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68470574"
 ---
 # <a name="spain-social-security-number-ssn"></a>İspanya sosyal güvenlik numarası (SSN)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -42,22 +45,22 @@ ms.locfileid: "66948629"
 - eğik çizgi (isteğe bağlı)
 - iki basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_spanish_social_security_number` , desenle eşleşen içeriği bulur.
-- Sağlama toplamı geçer.
-    - 'den `Keywords_spain_eu_ssn_or_equivalent` bir anahtar sözcük bulunur.
+- İşlev `Func_spanish_social_security_number`, desenle eşleşen içeriği bulur.
+- Sağlama toplamı başarılı.
+    - `Keywords_spain_eu_ssn_or_equivalent` içinden bir anahtar sözcük bulundu.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_spanish_social_security_number` , desenle eşleşen içeriği bulur.
-- Sağlama toplamı geçer.
+- İşlev `Func_spanish_social_security_number`, desenle eşleşen içeriği bulur.
+- Sağlama toplamı başarılı.
 
 ```xml
     <!-- Spain SSN -->

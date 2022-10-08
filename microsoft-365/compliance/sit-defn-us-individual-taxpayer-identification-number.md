@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: ABD bireysel vergi mükellefi kimlik numarası (ITIN) hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: c99635c29bb5b720ecc2d70577fe66d508ce9d9c
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 56f57421d3a35e32c1b86d93feb670a57484275e
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948845"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68469985"
 ---
 # <a name="us-individual-taxpayer-identification-number-itin"></a>ABD bireysel vergi mükellefi kimlik numarası (ITIN)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -51,21 +54,21 @@ Biçimlendir -ilmemiş:
 - "7" veya "8"
 - beş basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_formatted_itin` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_itin` bir anahtar sözcük bulunur.
+- İşlev `Func_formatted_itin`, desenle eşleşen içeriği bulur.
+- `Keyword_itin` içinden bir anahtar sözcük bulundu.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_unformatted_itin` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_itin` bir anahtar sözcük bulunur.
+- İşlev `Func_unformatted_itin`, desenle eşleşen içeriği bulur.
+- `Keyword_itin` içinden bir anahtar sözcük bulundu.
 
 DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının güvenilirliği düşüktür:
 

@@ -10,8 +10,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Olası tehditleri, veri kaybını ve izin sorunlarını izlemek için Microsoft Purview uyumluluk portalı veya Microsoft 365 Defender portalında uyarı ilkeleri oluşturun.
-ms.openlocfilehash: 638675b77e09391ff0f5a4af0ab8d477e94693e9
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 6b2383e95d814f676698e4a30bde5b0c5b38e6bf
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67818885"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68470178"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Microsoft 365'te uyarı ilkeleri
 
@@ -38,6 +38,8 @@ Uyarı ilkeleri, bir ilke tarafından tetiklenen uyarıları kategorilere ayırm
 
 > [!NOTE]
 > Uyarı ilkeleri ABD Kamu E1/F1/G1, E3/F3/G3 veya E5/G5 aboneliğine sahip Microsoft 365 Kurumsal, Office 365 Kurumsal veya Office 365 kuruluşlar için kullanılabilir. Gelişmiş işlevler yalnızca E5/G5 aboneliği olan kuruluşlarda ya da E1/F1/G1 veya E3/F3/G3 aboneliğine sahip kuruluşlarda ve Office 365 için Microsoft Defender P2 veya Microsoft 365 E5 Uyumluluk ya da E5 eBulma ve Denetim eklentisi aboneliğine sahip kuruluşlar için kullanılabilir. E5/G5 veya eklenti aboneliği gerektiren işlevler bu konuda vurgulanır. Uyarı ilkelerinin Office 365 GCC, GCC High ve DoD ABD kamu ortamlarında kullanılabildiğini de unutmayın.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="how-alert-policies-work"></a>Uyarı ilkeleri nasıl çalışır?
 
@@ -185,7 +187,6 @@ Tablolar ayrıca her biri için gereken Office 365 Kurumsal ve Office 365 ABD Ka
 |**Email gönderme sınırı aşıldı**|Kuruluşunuzdaki biri giden istenmeyen posta ilkesi tarafından izin verilenden daha fazla posta gönderdiğinde bir uyarı oluşturur. Bu genellikle kullanıcının çok fazla e-posta gönderdiğinin veya hesabın gizliliğinin tehlikeye girmiş olabileceğinin göstergesidir. Bu uyarı ilkesi tarafından oluşturulan bir uyarı alırsanız [, kullanıcı hesabının gizliliğinin ihlal edilip edilmediğini denetlemek iyi bir fikirdir](../security/office-365-security/responding-to-a-compromised-email-account.md).|Orta|Hayır|E1/F1/G1, E3/F3/G3 veya E5/G5|
 |**Olası kimlik avı girişimi nedeniyle form engellendi**|Kuruluşunuzdaki birinin formları paylaşması ve yinelenen kimlik avı girişimi davranışı algılanması nedeniyle Microsoft Forms kullanarak yanıt toplaması kısıtlandığında bir uyarı oluşturur.|Yüksek|Hayır|E1, E3/F3 veya E5|
 |**Kimlik avı olarak işaretlenen ve onaylanan form**|Kuruluşunuzun içinden Microsoft Forms oluşturulan bir form, Kötüye Kullanım Raporu aracılığıyla olası kimlik avı olarak tanımlandığında ve Microsoft tarafından kimlik avı olarak onaylandığında bir uyarı oluşturur.|Yüksek|Hayır|E1, E3/F3 veya E5|
-|**HVE Kötü amaçlı olabilecek bir URL tıklaması algılandı**|[Öncelik hesabı](../admin/setup/priority-accounts.md) olarak etiketlenen bir kişi kötü amaçlı bir bağlantıya tıkladığında bir uyarı oluşturur. Bu olay, kullanıcı kötü amaçlı olarak tanımlanan veya doğrulamayı bekleyen bir URL'ye tıkladığında tetiklenir ve özgün URL'ye veya içeriğe devam etmek için Güvenli Bağlantılar uyarı sayfasını geçersiz kılar (kuruluşunuzun Güvenli Bağlantılar ilke ayarlarına göre). Bu olay, Office 365 için Microsoft Defender tarafından url kararı değişiklik tanımlaması tetikler. <br/><br/> Office 365 için Defender P2, E5, G5 müşterileri için bu uyarı otomatik [araştırma ve yanıtı](/microsoft-365/security/office-365-security/office-365-air) otomatik olarak tetikler. Daha fazla bilgi için bkz. [Office 365 için Microsoft Defender kullanıcı etiketleri](../security/office-365-security/user-tags.md) ve [Güvenli Bağlantılar ilkelerini ayarlama](/microsoft-365/security/office-365-security/set-up-safe-links-policies).|Yüksek|Hayır|E1/F1, E3/F3 veya E5|
 |**Teslimden sonra kötü amaçlı yazılım kampanyası algılandı**|Kötü amaçlı yazılım içeren çok sayıda ileti kuruluşunuzdaki posta kutularına teslim edildiğinde bir uyarı oluşturur. Bu olay oluşursa, Microsoft virüslü iletileri Exchange Online posta kutularından kaldırır.|Yüksek|Hayır|E5/G5 veya Office 365 için Microsoft Defender P2 eklenti aboneliği|
 |**Kötü amaçlı yazılım kampanyası algılandı ve engellendi**|Birisi kuruluşunuzdaki kullanıcılara belirli bir tür kötü amaçlı yazılım içeren olağan dışı derecede çok sayıda e-posta iletisi göndermeye çalıştığında bir uyarı oluşturur. Bu olay oluşursa, virüslü iletiler Microsoft tarafından engellenir ve posta kutularına teslim edilmez.|Düşük|Hayır|E5/G5 veya Office 365 için Defender P2 eklenti aboneliği|
 |**SharePoint ve OneDrive'da kötü amaçlı yazılım kampanyası algılandı**|SharePoint sitelerinde veya kuruluşunuzdaki OneDrive hesaplarında bulunan dosyalarda olağan dışı derecede yüksek miktarda kötü amaçlı yazılım veya virüs algılandığında bir uyarı oluşturur.|Yüksek|Hayır|E5/G5 veya Office 365 için Defender P2 eklenti aboneliği|
@@ -282,7 +283,7 @@ Varsayılan uyarı ilkesinin atandığı kategoriyi görmek için [Varsayılan u
 |Rol|Bilgi<br>Yönetim|Veri kaybı<br>Önleme|Posta<br>Akışı|İzinler|Tehdit<br>Yönetimi|Diğer|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |Uyumluluk Yöneticisi|✔|✔||✔||✔|
-|<!---X--->DLP Uyumluluk Yönetimi||✔|||||
+|DLP Uyumluluk Yönetimi||✔|||||
 |Information Protection Yönetici||✔|||||
 |Information Protection Analisti||✔|||||
 |Information Protection Araştırmacısı||✔|||||
@@ -290,24 +291,25 @@ Varsayılan uyarı ilkesinin atandığı kategoriyi görmek için [Varsayılan u
 |Kuruluş Yapılandırması||||||✔|
 |Gizlilik Yönetimi|||||||
 |Karantina|||||||
-|<!---X--->Kayıt Yönetimi|✔||||||
+|Kayıt Yönetimi|✔||||||
 |Bekletme Yönetimi|✔||||||
 |Rol Yönetimi||||✔|||
 |Güvenlik Yöneticisi||✔||✔|✔|✔|
 |Güvenlik Okuyucusu||✔||✔|✔|✔|
 |Taşıma Hijyeni|||||||
-|<!---X--->View-Only DLP Uyumluluk Yönetimi||✔|||||
+|View-Only DLP Uyumluluk Yönetimi||✔|||||
 |View-Only Yapılandırması|||||||
 |Uyarıları View-Only Yönetme||||||✔|
 |alıcıları View-Only|||✔||||
-|<!---X--->View-Only Kayıt Yönetimi|✔||||||
-|<!---X--->View-Only Bekletme Yönetimi|✔||||||
+|View-Only Kayıt Yönetimi|✔||||||
+|View-Only Bekletme Yönetimi|✔||||||
 
 > [!TIP]
 > Varsayılan rol gruplarının her birine atanan rolleri görüntülemek için Güvenlik & Uyumluluk PowerShell'de aşağıdaki komutları çalıştırın:
 >
 > ```powershell
 > $RoleGroups = Get-RoleGroup
+>
 > $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,("-"*25); Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
 > ```
 >

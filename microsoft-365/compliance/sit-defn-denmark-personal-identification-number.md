@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Danimarka kişisel kimlik numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 8fbdd3fc2bd273b34fcf3625fa9f021d1f948358
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: a9e47db57f98ab2ad06ba34dee3bc73d3b558863
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948613"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363133"
 ---
 # <a name="denmark-personal-identification-number"></a>Danimarka kişisel kimlik numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -40,22 +43,22 @@ Kısa çizgi içeren 10 basamak
 - isteğe bağlı bir boşluk veya kısa çizgi
 - son basamağın bir denetim basamağı olduğu dört basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Normal ifade `Func_denmark_eu_tax_file_number` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_denmark_id` bir anahtar sözcük bulunur.
-- Sağlama toplamı geçer.
+- `Keyword_denmark_id` içinden bir anahtar sözcük bulundu.
+- Sağlama toplamı başarılı.
 
 DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının güvenilirliği düşüktür:
 
 - Normal ifade `Func_denmark_eu_tax_file_number` , desenle eşleşen içeriği bulur.
-- Sağlama toplamı geçer.
+- Sağlama toplamı başarılı.
 
 ```xml
 <!-- Denmark Personal Identification Number -->

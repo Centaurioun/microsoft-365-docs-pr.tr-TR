@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 6/23/2020
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 search.appverid: MET150
@@ -17,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: Bu makalede, Microsoft 365 ağ bağlantısını güvenli bir şekilde iyileştirmeye yönelik en son yönergeler sağlanmaktadır.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 76bbad1b392966f9140db36cf4adbbfff7b62b2b
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: afb67e94c42385dea6d02e923e1025cc8d703c3e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940964"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68165459"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Microsoft 365 ağ bağlantısı ilkeleri
 
@@ -38,7 +39,7 @@ Bu makalede şunları öğreneceksiniz:
   
 - Buluta müşteri bağlantısı için geçerli olan [Microsoft 365 mimarisi](microsoft-365-network-connectivity-principles.md#BKMK_Architecture)
 - Ağ trafiğini ve son kullanıcı deneyimini iyileştirmeye yönelik [Microsoft 365 bağlantı ilkeleri](microsoft-365-network-connectivity-principles.md#BKMK_Principles) ve stratejileri güncelleştirildi
-- Ağ yöneticilerinin ağ iyileştirmesinde kullanmak üzere yapılandırılmış uç noktaların listesini kullanmasına olanak tanıyan [Office 365 Uç Noktaları web hizmeti](microsoft-365-network-connectivity-principles.md#BKMK_WebSvc)
+- Ağ yöneticilerinin ağ iyileştirmesinde kullanmak üzere yapılandırılmış uç noktaların listesini kullanmasına olanak tanıyan [Office 365 Endpoints web hizmeti](microsoft-365-network-connectivity-principles.md#BKMK_WebSvc)
 - [Yeni Office 365 uç nokta kategorileri](microsoft-365-network-connectivity-principles.md#BKMK_Categories) ve iyileştirme kılavuzu
 - [Ağ çevre güvenliğini uç nokta güvenliğiyle karşılaştırma](microsoft-365-network-connectivity-principles.md#BKMK_SecurityComparison)
 - Microsoft 365 trafiği için [artımlı iyileştirme](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt) seçenekleri
@@ -47,7 +48,7 @@ Bu makalede şunları öğreneceksiniz:
 ## <a name="microsoft-365-architecture"></a>Microsoft 365 mimarisi
 <a name="BKMK_Architecture"> </a>
 
-Microsoft 365; Exchange Online, SharePoint Online, Skype Kurumsal Çevrimiçi Sürüm, Microsoft Teams, Exchange Online Koruması, Tarayıcıda Office gibi çeşitli mikro hizmetler ve uygulamalar aracılığıyla üretkenlik ve işbirliği senaryoları sağlayan dağıtılmış bir Hizmet Olarak Yazılım (SaaS) bulutudur. Belirli Microsoft 365 uygulamalarının benzersiz özellikleri müşteri ağı ve bulut bağlantısı için geçerli olsa da, hepsi bazı temel sorumluları, hedefleri ve mimari desenlerini paylaşır. Bu bağlantı ilkeleri ve mimari desenleri, diğer birçok SaaS bulutu için tipiktir ve aynı zamanda Microsoft Azure gibi Hizmet Olarak Platform ve Hizmet Olarak Altyapı bulutlarının tipik dağıtım modellerinden farklıdır.
+Microsoft 365, Exchange Online, SharePoint Online, Skype Kurumsal Online, Microsoft Teams, Exchange Online Protection, Tarayıcıda Office ve çok sayıda mikro hizmet ve uygulama aracılığıyla üretkenlik ve işbirliği senaryoları sağlayan dağıtılmış bir Hizmet Olarak Yazılım (SaaS) bulutudur Diğer. Belirli Microsoft 365 uygulamalarının benzersiz özellikleri müşteri ağı ve bulut bağlantısı için geçerli olsa da, hepsi bazı temel sorumluları, hedefleri ve mimari desenlerini paylaşır. Bu bağlantı ilkeleri ve mimari desenleri, diğer birçok SaaS bulutu için tipiktir ve aynı zamanda Microsoft Azure gibi Hizmet Olarak Platform ve Hizmet Olarak Altyapı bulutlarının tipik dağıtım modellerinden farklıdır.
   
 Microsoft 365'in (genellikle ağ mimarları tarafından kaçırılan veya yanlış yorumlanan) en önemli mimari özelliklerinden biri, kullanıcıların ona nasıl bağlandığı bağlamında gerçekten genel bir dağıtılmış hizmet olmasıdır. Hedef Microsoft 365 kiracısının konumu, müşteri verilerinin bulutta depolandığı konumu anlamak için önemlidir, ancak Microsoft 365 ile kullanıcı deneyimi, verileri içeren disklere doğrudan bağlanmayı içermez. Microsoft 365 ile kullanıcı deneyimi (performans, güvenilirlik ve diğer önemli kalite özellikleri dahil) dünya çapında yüzlerce Microsoft konumunda ölçeği genişletilen yüksek oranda dağıtılmış hizmet ön kapılarından bağlantıyı içerir. Çoğu durumda en iyi kullanıcı deneyimi, müşteri ağının kullanıcı isteklerini merkezi bir konum veya bölgedeki bir çıkış noktası üzerinden Microsoft 365'e bağlanmak yerine en yakın Microsoft 365 hizmet giriş noktasına yönlendirmesine izin vererek elde edilir.
   
@@ -71,7 +72,7 @@ Microsoft 365 ağ trafiğini tanımlamak, trafiği genel İnternet'e bağlı ağ
   
 Microsoft 365 uç nokta kategorileri ve iyileştirme yöntemleri hakkında daha fazla bilgi için [Yeni Office 365 uç nokta kategorileri](microsoft-365-network-connectivity-principles.md#BKMK_Categories) bölümüne bakın.
   
-Microsoft artık tüm Microsoft 365 uç noktalarını bir web hizmeti olarak yayımlar ve bu verileri en iyi şekilde kullanma konusunda rehberlik sağlar. Microsoft 365 uç noktalarını getirme ve bunlarla çalışma hakkında daha fazla bilgi için [Office 365 URL'leri ve IP adresi aralıkları](https://support.office.com/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US) makalesine bakın.
+Microsoft artık tüm Microsoft 365 uç noktalarını bir web hizmeti olarak yayımlar ve bu verileri en iyi şekilde kullanma konusunda rehberlik sağlar. Microsoft 365 uç noktalarını getirme ve bunlarla çalışma hakkında daha fazla bilgi için [URL'ler ve IP adresi aralıkları Office 365](https://support.office.com/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US) makalesine bakın.
   
 <a name="BKMK_P2"> </a>
 ### <a name="egress-network-connections-locally"></a>Yerel olarak çıkış ağ bağlantıları
@@ -131,9 +132,9 @@ Kurumsal müşteriler, özellikle Microsoft 365'e bağlı trafik için ağ güve
 Çoğu kurumsal ağ, proxy'ler, SSL denetimi, paket denetimi ve veri kaybı önleme sistemleri gibi teknolojileri kullanarak İnternet trafiği için ağ güvenliğini zorunlu kmaktadır. Bu teknolojiler, genel İnternet istekleri için önemli risk azaltma sağlar, ancak Microsoft 365 uç noktalarına uygulandığında performansı, ölçeklenebilirliği ve son kullanıcı deneyiminin kalitesini önemli ölçüde azaltabilir.
   
 <a name="BKMK_WebSvc"> </a>
-#### <a name="office-365-endpoints-web-service"></a>Office 365 Uç Noktaları web hizmeti
+#### <a name="office-365-endpoints-web-service"></a>uç noktalar web hizmetini Office 365
 
-Microsoft 365 yöneticileri, Office 365 Uç Noktaları web hizmetinden yapılandırılmış uç noktaların listesini kullanmak ve çevre güvenlik duvarlarının ve diğer ağ cihazlarının yapılandırmalarını güncelleştirmek için bir betik veya REST çağrısı kullanabilir. Bu, Microsoft 365'e yönelik trafiğin tanımlanmasını, uygun şekilde işlenmesini ve genel ve genellikle bilinmeyen İnternet web siteleri için ağ trafiğinden farklı yönetilmesini sağlar. Office 365 Uç Noktaları web hizmetini kullanma hakkında daha fazla bilgi için [Office 365 URL'leri ve IP adresi aralıkları](https://support.office.com/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US) makalesine bakın.
+Microsoft 365 yöneticileri, Office 365 Endpoints web hizmetinden yapılandırılmış uç noktaların listesini kullanmak ve çevre güvenlik duvarlarının ve diğer ağ cihazlarının yapılandırmalarını güncelleştirmek için bir betik veya REST çağrısı kullanabilir. Bu, Microsoft 365'e yönelik trafiğin tanımlanmasını, uygun şekilde işlenmesini ve genel ve genellikle bilinmeyen İnternet web siteleri için ağ trafiğinden farklı yönetilmesini sağlar. Office 365 Uç Noktaları web hizmetini kullanma hakkında daha fazla bilgi için [URL'ler ve IP adresi aralıkları Office 365](https://support.office.com/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US) makalesine bakın.
   
 #### <a name="pac-proxy-automatic-configuration-scripts"></a>PAC (Ara Sunucu Otomatik Yapılandırma) betikleri
 <a name="BKMK_WebSvc"> </a>
@@ -143,23 +144,23 @@ Microsoft 365 yöneticileri, WPAD veya GPO aracılığıyla kullanıcı bilgisay
 #### <a name="microsoft-365-security-features"></a>Microsoft 365 güvenlik özellikleri
 <a name="BKMK_WebSvc"> </a>
 
-Microsoft, Microsoft 365 sunucuları ve temsil ettikleri ağ uç noktaları çevresinde veri merkezi güvenliği, operasyonel güvenlik ve risk azaltma konusunda şeffaftır. Microsoft Purview Veri Kaybı Önleme, Virüsten Koruma, Multi-Factor Authentication, Müşteri Kilit Kutusu, Office 365 için Defender, Microsoft 365 Tehdit Bilgileri, Microsoft 365 Güvenli Puanı, Exchange Online Protection ve Ağ DDOS Güvenliği gibi ağ güvenlik riskini azaltmak için Microsoft 365 yerleşik güvenlik özellikleri kullanılabilir.
+Microsoft, Microsoft 365 sunucuları ve temsil ettikleri ağ uç noktaları çevresinde veri merkezi güvenliği, operasyonel güvenlik ve risk azaltma konusunda şeffaftır. Microsoft Purview Veri Kaybı Önleme, Virüsten Koruma, Multi-Factor Authentication, Müşteri Kilit Kutusu, Office 365 için Defender, Microsoft 365 Tehdit Bilgileri, Microsoft 365 Güvenlik Puanı, Exchange Online Protection ve Ağ DDOS Güvenliği.
   
 Microsoft veri merkezi ve Genel Ağ güvenliği hakkında daha fazla bilgi için bkz. [Microsoft Güven Merkezi](https://www.microsoft.com/trustcenter/security).
   
 ## <a name="new-office-365-endpoint-categories"></a>Yeni Office 365 uç nokta kategorileri
 <a name="BKMK_Categories"> </a>
 
-Office 365 uç noktaları çeşitli ağ adresleri ve alt ağlar kümesini temsil eder. Uç noktalar URL'ler, IP adresleri veya IP aralıkları olabilir ve bazı uç noktalar belirli TCP/UDP bağlantı noktalarıyla listelenir. URL'ler *account.office.net* gibi bir FQDN veya *.office365.com gibi\** bir joker karakter URL'si olabilir.
+Office 365 uç noktaları, çeşitli ağ adresleri ve alt ağlar kümesini temsil eder. Uç noktalar URL'ler, IP adresleri veya IP aralıkları olabilir ve bazı uç noktalar belirli TCP/UDP bağlantı noktalarıyla listelenir. URL'ler *account.office.net* gibi bir FQDN veya *.office365.com gibi\** bir joker karakter URL'si olabilir.
   
 > [!NOTE]
-> Office 365 uç noktalarının ağ içindeki konumları, Microsoft 365 kiracı verilerinin konumuyla doğrudan ilişkili değildir. Bu nedenle müşteriler Microsoft 365'e dağıtılmış ve genel bir hizmet olarak bakmalı ve coğrafi ölçütlere göre Office 365 uç noktalarına ağ bağlantılarını engellemeye çalışmamalıdır.
+> Ağ içindeki Office 365 uç noktalarının konumları, Microsoft 365 kiracı verilerinin konumuyla doğrudan ilişkili değildir. Bu nedenle müşteriler Microsoft 365'e dağıtılmış ve genel bir hizmet olarak bakmalı ve coğrafi ölçütlere göre Office 365 uç noktalarına yönelik ağ bağlantılarını engellemeye çalışmamalıdır.
   
 Microsoft 365 trafiğini yönetmeye yönelik önceki kılavuzumuzda uç noktalar **Gerekli** ve **İsteğe Bağlı** olarak iki kategoride düzenlenmişti. Her kategorideki uç noktalar, hizmetin kritikliğine bağlı olarak farklı iyileştirmeler gerektiriyor ve birçok müşteri aynı ağ iyileştirmelerinin uygulanmasını Office 365 URL'lerinin ve IP adreslerinin tam listesine gerekçelendirme konusunda zorluklarla karşılaştı.
   
 Yeni modelde uç noktalar **İyileştir**, **İzin Ver** ve **Varsayılan** olmak üzere üç kategoriye ayrılmıştır ve en iyi performans iyileştirmelerini gerçekleştirmek ve yatırım getirisi elde etmek için ağ iyileştirme çalışmalarına odaklanmak için öncelik tabanlı bir özet sağlar. Uç noktalar, etkili kullanıcı deneyiminin senaryoların ağ kalitesine, hacmine ve performans zarfı ile uygulama kolaylığına duyarlılığına bağlı olarak yukarıdaki kategorilerde birleştirilir. Önerilen iyileştirmeler, belirli bir kategorideki tüm uç noktalara aynı şekilde uygulanabilir.
   
-- **İyileştirme** uç noktaları her Office 365 hizmetine bağlantı için gereklidir ve Office 365 bant genişliğinin, bağlantılarının ve veri hacminin %75'inden fazlasını temsil eder. Bu uç noktalar ağ performansı, gecikme süresi ve kullanılabilirlik açısından en hassas olan Office 365 senaryolarını temsil eder. Tüm uç noktalar Microsoft veri merkezlerinde barındırılır. Bu kategorideki uç noktalarda değişiklik oranının diğer iki kategorideki uç noktalardan çok daha düşük olması beklenir. Bu kategoride küçük bir anahtar URL kümesi (~10 sırasıyla) ve Exchange Online, SharePoint Online, Skype Kurumsal Çevrimiçi Sürüm ve Microsoft Teams gibi temel Office 365 iş yüklerine ayrılmış tanımlı bir IP alt ağları kümesi bulunur.
+- **İyileştirme** uç noktaları her Office 365 hizmetine bağlantı için gereklidir ve Office 365 bant genişliğinin, bağlantıların ve veri hacminin %75'inden fazlasını temsil eder. Bu uç noktalar ağ performansı, gecikme süresi ve kullanılabilirlik açısından en hassas Office 365 senaryoları temsil eder. Tüm uç noktalar Microsoft veri merkezlerinde barındırılır. Bu kategorideki uç noktalarda değişiklik oranının diğer iki kategorideki uç noktalardan çok daha düşük olması beklenir. Bu kategoride küçük bir anahtar URL kümesi (~10 sırasına göre) ve Exchange Online, SharePoint Online, Skype Kurumsal Online ve Microsoft Teams gibi temel Office 365 iş yüklerine ayrılmış tanımlı bir IP alt ağları kümesi bulunur.
 
     İyi tanımlanmış kritik uç noktaların yoğun bir listesi, bu hedefler için yüksek değerli ağ iyileştirmelerini daha hızlı ve daha kolay planlamanıza ve uygulamanıza yardımcı olmalıdır.
 
@@ -175,9 +176,9 @@ Yeni modelde uç noktalar **İyileştir**, **İzin Ver** ve **Varsayılan** olma
   - DNS ad çözümlemesi tarafından döndürülen IP adreslerinin bu uç noktaların yönlendirme çıkış yoluyla eşleştiğinden emin olun.
   - Microsoft genel ağının en yakın İnternet eşleme noktasına doğrudan ve en düşük gecikme süresi yönlendirmesi için SD-WAN tümleştirmesi için bu uç noktaların önceliklerini belirleyin.
 
-- Belirli Office 365 hizmetleri ve özelliklerine bağlantı için **izin ver** uç noktaları gereklidir, ancak *en iyi duruma getirme* kategorisindekiler kadar ağ performansına ve gecikme süresine duyarlı değildir. Bant genişliği ve bağlantı sayısı açısından bu uç noktaların genel ağ ayak izi de daha küçüktür. Bu uç noktalar Office 365'e ayrılmıştır ve Microsoft veri merkezlerinde barındırılır. Geniş bir Office 365 mikro hizmetlerini ve bağımlılıklarını (yaklaşık 100 URL sırasına göre) temsil eder ve İyileştir kategorisindekilerden daha yüksek bir oranda değişmesi  *beklenir*  . Bu kategorideki tüm uç noktalar tanımlı ayrılmış IP alt ağlarıyla ilişkilendirilmemiştir.
+- belirli Office 365 hizmetlerine ve özelliklerine bağlantı için **izin ver** uç noktaları gereklidir, ancak en *iyi duruma getirme* kategorisindekiler kadar ağ performansına ve gecikme süresine duyarlı değildir. Bant genişliği ve bağlantı sayısı açısından bu uç noktaların genel ağ ayak izi de daha küçüktür. Bu uç noktalar Office 365 ayrılmıştır ve Microsoft veri merkezlerinde barındırılır. Geniş bir Office 365 mikro hizmetlerini ve bağımlılıklarını (yaklaşık 100 URL sırasına göre) temsil eder ve İyileştir kategorisindekilerden daha yüksek bir oranda değişmesi *beklenir*. Bu kategorideki tüm uç noktalar tanımlı ayrılmış IP alt ağlarıyla ilişkilendirilmemiştir.
 
-    *İzin ver* uç noktaları için ağ iyileştirmeleri Office 365 kullanıcı deneyimini geliştirebilir, ancak bazı müşteriler ağlarındaki değişiklikleri en aza indirmek için bu iyileştirmelerin kapsamını daha daraltmayı tercih edebilir.
+    *İzin ver* uç noktaları için ağ iyileştirmeleri Office 365 kullanıcı deneyimini geliştirebilir, ancak bazı müşteriler ağlarındaki değişiklikleri en aza indirmek için bu iyileştirmelerin kapsamını daha dar bir şekilde daraltmayı tercih edebilir.
 
     *İzin Ver* uç noktalarına örnek olarak *https://\*.protection.outlook.com* ve *https://accounts.accesscontrol.windows.net* verilebilir.
 
@@ -189,7 +190,7 @@ Yeni modelde uç noktalar **İyileştir**, **İzin Ver** ve **Varsayılan** olma
   - DNS ad çözümlemesi tarafından döndürülen IP adreslerinin bu uç noktaların yönlendirme çıkış yoluyla eşleştiğinden emin olun.
   - Microsoft genel ağının en yakın İnternet eşleme noktasına doğrudan ve en düşük gecikme süresi yönlendirmesi için SD-WAN tümleştirmesi için bu uç noktaların önceliklerini belirleyin.
 
-- **Varsayılan** uç noktalar, herhangi bir iyileştirme gerektirmeyen ve müşteri ağları tarafından normal İnternet'e bağlı trafik olarak ele alınabilen Office 365 hizmetlerini ve bağımlılıklarını temsil eder. Bu kategorideki bazı uç noktalar Microsoft veri merkezlerinde barındırılamayabilir. Örnek olarak ve *`https://appexsin.stb.s-msn.com`* verilebilir *https://odc.officeapps.live.com*.
+- **Varsayılan** uç noktalar, iyileştirme gerektirmeyen ve müşteri ağları tarafından normal İnternet'e bağlı trafik olarak ele alınabilen Office 365 hizmetleri ve bağımlılıkları temsil eder. Bu kategorideki bazı uç noktalar Microsoft veri merkezlerinde barındırılamayabilir. Örnek olarak ve *`https://appexsin.stb.s-msn.com`* verilebilir *https://odc.officeapps.live.com*.
 
 Office 365 ağ iyileştirme teknikleri hakkında daha fazla bilgi için [Office 365 uç noktalarını yönetme](managing-office-365-endpoints.md) makalesine bakın.
   
@@ -206,13 +207,13 @@ Microsoft, çok çeşitli Microsoft 365 güvenlik özellikleri sunar ve Microsof
   
 - **Çok faktörlü kimlik doğrulamasını (MFA) kullanma** MFA, kullanıcıların parolalarını doğru girdikten sonra akıllı telefonlarında telefon aramasını, kısa mesajı veya uygulama bildirimini kabul etmelerini gerektirerek güçlü bir parola stratejisine ek bir koruma katmanı ekler.
 
-- **Cloud Apps için Microsoft Defender'u kullanma** Anormal etkinlikleri izlemek ve üzerinde işlem yapmak için ilkeleri yapılandırın. Yöneticilerin büyük miktarda veri indirme, birden fazla başarısız oturum açma girişimi veya bilinmeyen veya tehlikeli bir IP adreslerinden bağlantılar gibi olağan dışı veya riskli kullanıcı etkinliklerini gözden geçirebilmesi için Cloud Apps için Microsoft Defender ile uyarılar ayarlayın.
+- Anormal etkinlikleri izlemek ve üzerinde işlem yapmak için Microsoft Defender for Cloud Apps yapılandırma ilkelerini **kullanın**. Yöneticilerin büyük miktarda veri indirme, birden fazla başarısız oturum açma girişimi veya bilinmeyen veya tehlikeli bir IP adreslerinden bağlantılar gibi olağan dışı veya riskli kullanıcı etkinliklerini gözden geçirebilmesi için Microsoft Defender for Cloud Apps ile uyarılar ayarlayın.
 
-- **Veri Kaybı Önlemeyi Yapılandırma (DLP)** DLP, hassas verileri belirlemenize ve kullanıcılarınızın verileri yanlışlıkla veya kasıtlı olarak paylaşmasını önlemeye yardımcı olan ilkeler oluşturmanıza olanak tanır. DLP, kullanıcılarınızın iş akışlarını kesintiye uğratmadan uyumlu kalabilmeleri için Exchange Online, SharePoint Online ve OneDrive dahil olmak üzere Microsoft 365 genelinde çalışır.
+- **Veri Kaybı Önlemeyi Yapılandırma (DLP)** DLP, hassas verileri belirlemenize ve kullanıcılarınızın verileri yanlışlıkla veya kasıtlı olarak paylaşmasını önlemeye yardımcı olan ilkeler oluşturmanıza olanak tanır. DLP, kullanıcılarınızın iş akışlarını kesintiye uğratmadan uyumlu kalabilmesi için Exchange Online, SharePoint Online ve OneDrive dahil olmak üzere Microsoft 365 genelinde çalışır.
 
 - **Müşteri Kasası kullanma** Microsoft 365 yöneticisi olarak, bir Microsoft destek mühendisinin yardım oturumu sırasında verilerinize nasıl erişebileceğini denetlemek için Müşteri Kasası'nu kullanabilirsiniz. Mühendisin bir sorunu gidermek ve düzeltmek için verilerinize erişmesi gereken durumlarda, Müşteri Kasası erişim isteğini onaylamanıza veya reddetmenize olanak tanır.
 
-- **Office 365 Güvenli Puanını kullanma** Riski daha da azaltmak için neler yapabileceğinizi öneren bir güvenlik analizi aracı. Güvenli Puan, Microsoft 365 ayarlarınıza ve etkinliklerinize bakar ve bunları Microsoft tarafından oluşturulan bir temelle karşılaştırır. En iyi güvenlik uygulamalarıyla ne kadar uyumlu olduğunuzu temel alan bir puan alırsınız.
+- **Güvenli Puan Office 365** Riski daha da azaltmak için neler yapabileceğinizi öneren bir güvenlik analizi aracı kullanın. Güvenli Puan, Microsoft 365 ayarlarınıza ve etkinliklerinize bakar ve bunları Microsoft tarafından oluşturulan bir temelle karşılaştırır. En iyi güvenlik uygulamalarıyla ne kadar uyumlu olduğunuzu temel alan bir puan alırsınız.
 
 Gelişmiş güvenlik için bütünsel bir yaklaşım aşağıdakileri dikkate almalıdır:
   
@@ -261,7 +262,7 @@ Microsoft 365 trafiğini iyileştirmek için kullanacağınız yöntemler, ağ t
 
 [Microsoft 365 için ağ planlama ve performans ayarlama](network-planning-and-performance.md)
 
-[Temelleri ve performans geçmişini kullanarak Office 365 performans ayarlama](performance-tuning-using-baselines-and-history.md)
+[Temelleri ve performans geçmişini kullanarak performans ayarlamayı Office 365](performance-tuning-using-baselines-and-history.md)
 
 [Office 365 için performans sorunlarını giderme planı](performance-troubleshooting-plan.md)
 

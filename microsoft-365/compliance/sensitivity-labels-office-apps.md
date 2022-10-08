@@ -10,18 +10,20 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: M365-security-compliance
+ms.collection:
+- purview-compliance
+- tier1
 search.appverid:
 - MOE150
 - MET150
 description: MASAÜSTÜ, mobil ve web için Office uygulamalarında duyarlılık etiketlerini yönetmek için BT yöneticilerine yönelik bilgiler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2062f1d03d23c3a2de029c862a332a089f2dabcc
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 06c3ba12cbea34b4b81acf84b579c56cfc50cd22
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851622"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68362870"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office uygulamalarında duyarlılık etiketlerini yönetme
 
@@ -30,6 +32,8 @@ ms.locfileid: "67851622"
 Microsoft Purview uyumluluk portalı duyarlılık etiketlerini [yayımladığınızda](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy), kullanıcılar verileri oluşturuldukça veya düzenlendiklerinde sınıflandırmak ve korumak için Office uygulamalarında görünmeye başlarlar.
 
 Office uygulamalarında duyarlılık etiketlerini başarıyla yönetmenize yardımcı olması için bu makaledeki bilgileri kullanın. Örneğin, yerleşik etiketlemeye özgü özellikler için ihtiyacınız olan en düşük uygulama sürümlerini, bu özellikler için ek yapılandırma bilgilerini belirleyin ve Azure Information Protection birleşik etiketleme istemcisi ve diğer uygulamalar ve hizmetlerle etkileşimleri anlayın.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="labeling-client-for-desktop-apps"></a>Masaüstü uygulamaları için istemci etiketleme
 
@@ -71,7 +75,7 @@ Listelenen sayılar, her özellik için gereken en düşük Office uygulaması s
 |[Değişkenlerle dinamik işaretler](#dynamic-markings-with-variables)                                              | Güncel Kanal: 2010+ <br /><br> Aylık Kurumsal Kanal: 2010+ <br /><br> Semi-Annual Enterprise Channel: 2102+ | 16.42+     | 2.42+ | 16.0.13328+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[İzinleri şimdi atayın](encryption-sensitivity-labels.md#assign-permissions-now)                                 | Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Kullanıcıların izin atamasına izin ver: <br /> - Kullanıcılardan özel izinler (kullanıcılar ve gruplar) isteme](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |Güncel Kanal: 2004+ <br /><br> Aylık Kurumsal Kanal: 2004+ <br /><br> Semi-Annual Enterprise Channel: 2008+ | 16.35+   | İnceleme altında   | İnceleme altında         | İnceleme altında                                                        |
-|[Kullanıcıların izin atamasına izin ver: <br /> - Kullanıcılardan özel izinler (kullanıcılar, gruplar ve kuruluşlar) isteme](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım  | İnceleme altında   | İnceleme altında   | İnceleme altında         | İnceleme altında                                                        |
+|[Kullanıcıların izin atamasına izin ver: <br /> - Kullanıcılardan özel izinler (kullanıcılar, gruplar ve kuruluşlar) isteme](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions)                     |Önizleme: [Geçerli Kanala Dağıtım (Önizleme)](https://office.com/insider)  | İnceleme altında   | İnceleme altında   | İnceleme altında         | İnceleme altında                                                        |
 |[Etiketle ilgili kullanıcı etkinliğini denetleme](#auditing-labeling-activities)                      | Güncel Kanal: 2011+ <br /><br> Aylık Kurumsal Kanal: 2011+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ | 2.46+ | 16.0.13628+ | Evet |
 |[Kullanıcıların e-postalarına ve belgelerine etiket uygulamasını gerektirme](#require-users-to-apply-a-label-to-their-email-and-documents)   | Güncel Kanal: 2101+ <br /><br> Aylık Kurumsal Kanal: 2101+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.45+         | 2.47+ | 16.0.13628+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[İçeriğe otomatik olarak bir hassasiyet etiketi uygulama](apply-sensitivity-label-automatically.md) <br /> - Hassas bilgi türlerini kullanma                    | Güncel Kanal: 2009+ <br /><br> Aylık Kurumsal Kanal: 2009+ <br /><br> Semi-Annual Enterprise Channel: 2102+ | 16.44+ | İnceleme altında | İnceleme altında | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -105,7 +109,7 @@ Listelenen sayılar, her özellik için gereken en düşük Office uygulaması s
 |[İçeriğe otomatik olarak bir hassasiyet etiketi uygulama](apply-sensitivity-label-automatically.md) <br /> - Eğitilebilir sınıflandırıcıları kullanma                    | Güncel Kanal: 2105+ <br /><br> Aylık Kurumsal Kanal: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | İnceleme altında           | İnceleme altında               | Evet |
 |[Varsayılan etiket ve zorunlu etiketleme için farklı ayarlar](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Güncel Kanal: 2105+ <br /><br> Aylık Kurumsal Kanal: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Evet |
 |[PDF desteği](#pdf-support) | Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım|  İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
-|[S/MIME koruması uygulama](#configure-a-label-to-apply-smime-protection-in-outlook) | Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım | Kullanıma sunulacak: 16.61+ <sup>\*</sup>                   | Kullanıma sunulacak: 4.2226+ | Kullanıma sunulacak: 4.2203+ | İnceleme altında |
+|[S/MIME koruması uygulama](#configure-a-label-to-apply-smime-protection-in-outlook) | Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım | 16.61+ <sup>\*</sup>                   | 4.2226+ | 4.2203+ | İnceleme altında |
 |[Duyarlılık çubuğu](#sensitivity-bar) ve [görüntü etiketi rengi](#label-colors) | İnceleme altında |  İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
 
 **Dipnot:**
@@ -388,9 +392,9 @@ Outlook uygulaması zorunlu etiketlemeyi kapatmayı desteklemediğinde: **Kullan
 ## <a name="configure-a-label-to-apply-smime-protection-in-outlook"></a>Outlook'ta S/MIME koruması uygulamak için etiket yapılandırma
 
 > [!NOTE]
-> Bu özellik şu anda yerleşik etiketleme için kullanıma sunulacaktır. Bu sayfadaki Outlook [için capabilities tablosunu](#sensitivity-label-capabilities-in-outlook) ve **S/MIME koruması uygula** satırını kullanarak Outlook'un bu özelliği destekleyen en düşük sürümlerini belirleyin.
+> Bu özellik şu anda yerleşik etiketleme için ve platformlar genelinde yayının çeşitli aşamalarında kullanıma sunulmuştur. Bu sayfadaki Outlook [için capabilities tablosunu](#sensitivity-label-capabilities-in-outlook) ve **S/MIME koruması uygula** satırını kullanarak Outlook'un bu özelliği destekleyen en düşük sürümlerini belirleyin.
 > 
-> Bir etiketi S/MIME koruması uygulamak için yapılandırıyorsanız ancak Outlook uygulaması henüz bunu desteklemiyorsa, etiket Outlook'ta görüntülenmeye devam eder ve uygulanabilir, ancak S/MIME ayarları yoksayılır. Exchange otomatik etiketleme ilkeleri için bu etiketi seçemezsiniz.
+> Bir etiketi S/MIME koruması uygulamak üzere yapılandırıyorsanız ancak Windows üzerinde Outlook henüz bunu desteklemiyorsa etiket görüntülenmeye devam eder ve uygulanabilir, ancak S/MIME ayarları yoksayılır. Exchange otomatik etiketleme ilkeleri için bu etiketi seçemezsiniz.
 
 Bu yapılandırma Microsoft Purview uyumluluk portalı kullanılamaz. Office 365 [Güvenlik & Uyumluluk Merkezi PowerShell'e bağlandıktan sonra PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) gelişmiş ayarlarını [Etiket Ayarla](/powershell/module/exchange/set-label) veya [Yeni Etiket](/powershell/module/exchange/new-label) cmd ile kullanmanız gerekir.
 
@@ -466,7 +470,7 @@ Bu yüksek görünürlüğün bir parçası olarak, bu etiketler renkleri de des
 > [!IMPORTANT]
 > Etiketleme uygulamalarınız bu özelliği desteklemiyorsa, yapılandırılan etiket renklerini görüntülemez.
 > 
-> Azure Information Protection birleşik etiketleme istemcisi etiket renklerini destekler. Office'te yerleşik etiketleme için, etiket renkleri şu anda Windows ve macOS üzerinde Word, Excel ve PowerPoint için önizlemede desteklenir ancak Outlook veya Web için Office için desteklenmez. Daha fazla bilgi için bu sayfadaki [özellikler](#support-for-sensitivity-label-capabilities-in-apps) bölümündeki tablolara bakın.
+> Azure Information Protection birleşik etiketleme istemcisi etiket renklerini destekler. Office'te yerleşik etiketleme için, etiket renkleri şu anda Windows üzerinde Word, Excel ve PowerPoint için önizleme aşamasında desteklenir, ancak henüz Outlook, macOS veya Web için Office için desteklenmez. Daha fazla bilgi için bu sayfadaki [özellikler](#support-for-sensitivity-label-capabilities-in-apps) bölümündeki tablolara bakın.
 
 Yeni oluşturulan etiketlerin varsayılan olarak bir rengi yoktur. Etiketleriniz [Azure Information Protection'dan geçirildiyse](/azure/information-protection/configure-policy-migrate-labels) veya Azure Information Protection birleşik etiketleme istemcisi için etiket renkleri yapılandırdıysanız, bu etiket renkleri artık bunları destekleyen uygulamalarda görüntülenir.
 

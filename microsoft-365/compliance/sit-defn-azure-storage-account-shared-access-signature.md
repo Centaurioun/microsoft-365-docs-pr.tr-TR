@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Azure Depolama hesabı paylaşılan erişim imzası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 5affa9a8b31afa006f38949834df9d852d57394b
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 5db8f87ce50f45ed5ce50d4f9badaee7e56d3346
+ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989435"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68476699"
 ---
 # <a name="azure-storage-account-shared-access-signature-preview"></a>Azure Depolama hesabı paylaşılan erişim imzası (önizleme)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -64,7 +67,7 @@ veya
 
 `abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDE%3D`
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
@@ -75,8 +78,8 @@ Bu SIT, [Azure Depolama kaynaklarına](/rest/api/storageservices/delegate-access
 Birkaç birincil kaynak kullanır:
 
 - Base64 kodlu 256 bit simetrik anahtarın desenleri.
-- URL Kodlanmış 256 bit simetrik anahtar desenleri.
-- CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id desenleri.
+- URL Kodlanmış 256 bit simetrik anahtarın desenleri.
+- CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, ID desenleri.
 - Mockup değerlerinin, redaction'ların ve yer tutucuların desenleri.
 - Sözlük sözlüğü.
 

@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 6e83ffcac675f8a2ed0df789c9017d194b8de2aa
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 8f75da0a4eac19ce74ac26c5cdd38fc8e3644a19
+ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692277"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68363199"
 ---
 # <a name="device-inventory"></a>Cihaz envanteri
 
@@ -86,7 +88,7 @@ Bulunan cihazlara ve zaten Uç Nokta için Microsoft Defender eklenen cihazlara 
 ![Ağ cihazları listesinin görüntüsü.](images/device-inventory-networkdevices.png)
 
 > [!NOTE]
-> [IoT için Microsoft Defender](/azure/defender-for-iot/organizations/) ve [Corelight](https://corelight.com/integrations/iot-security) ile cihaz bulma tümleştirmeleri, ot/IOT varlık envanterinizin tamamını bulmanıza, tanımlamanıza ve güvenliğini sağlamaya yardımcı olmak için kullanılabilir. Bu tümleştirmelerle bulunan **cihazlar IoT cihazları** sekmesinde görünür. Daha fazla bilgi için bkz [. Cihaz bulma tümleştirmeleri](device-discovery.md#device-discovery-integrations).
+> IoT ve [Corelight](https://corelight.com/integrations/iot-security) [için Microsoft Defender](/azure/defender-for-iot/organizations/) ile cihaz bulma tümleştirmeleri, tam OT/IOT varlık envanterinizi bulmanıza, tanımlamanıza ve güvenliğini sağlamaya yardımcı olmak için kullanılabilir. Bu tümleştirmelerle bulunan **cihazlar IoT cihazları** sekmesinde görünür. Daha fazla bilgi için bkz [. Cihaz bulma tümleştirmeleri](device-discovery.md#device-discovery-integrations).
 >
 > IoT için Defender yapılandırıldığında, cihazları orada da görüntüleyebilirsiniz. Bkz. [Kuruluşlar için cihaz envanteri ile IoT cihazlarınızı yönetme](/azure/defender-for-iot/organizations/how-to-manage-device-inventory-for-organizations).
 
@@ -130,7 +132,7 @@ Filtrele | Açıklama
 **Ekleme durumu** </br> | Ekleme durumu, cihazın şu anda Uç Nokta için Microsoft Defender eklenip eklenmediğini gösterir. Aşağıdaki durumlara göre filtreleyebilirsiniz: </br> - **Eklenen**: Uç nokta Uç Nokta için Microsoft Defender eklenir.  </br> - **Eklenebilir**: Uç nokta ağdaki desteklenen bir cihaz olarak bulundu, ancak şu anda eklenmemiş. Microsoft bu cihazları eklemenizi kesinlikle önerir. </br> - **Desteklenmeyen**: Uç nokta ağda bulundu, ancak Uç Nokta için Microsoft Defender tarafından desteklenmiyor. </br> - **Yetersiz bilgi**: Sistem cihazın desteklenebilirliğini belirleyemedi.</br></br> (_Yalnızca bilgisayarlar ve mobil_ cihazlar)
 **Virüsten koruma durumu** </br> | Virüsten koruma durumunun devre dışı, güncelleştirilmemiş veya bilinmiyor olmasına göre görünümü filtreleyin.</br></br> (_Yalnızca bilgisayarlar ve mobil_ cihazlar)
 **Grup** </br> | Listeyi araştırmak istediğiniz gruba göre filtreleyin. </br></br> (_Yalnızca bilgisayarlar ve mobil_ cihazlar)
-**Tarafından yönetilir** </br> | Tarafından yönetilir, cihazın nasıl yönetildiğini gösterir. Filtre ölçütü:</br> - Uç Nokta için Microsoft Defender</br> - Kiracı ekleme yoluyla Microsoft Configuration Manager ile ortak yönetim de dahil olmak üzere Microsoft Endpoint Manager (MEM)</br>- Microsoft Configuration manager (ConfigMgr)</br> - Bilinmiyor: Bunun nedeni eski bir Windows sürümünün, GPO yönetiminin veya başka bir üçüncü taraf MDM'nin çalıştırılması olabilir.</br></br> (_Yalnızca bilgisayarlar ve mobil_ cihazlar) 
+**Tarafından yönetilir** </br> | Tarafından yönetilir, cihazın nasıl yönetildiğini gösterir. Filtre ölçütü:</br> - Uç Nokta için Microsoft Defender</br> - Kiracı ekleme yoluyla Microsoft Configuration Manager ile ortak yönetim de dahil olmak üzere Microsoft Endpoint Manager (MEM)</br>- Microsoft Configuration manager (ConfigMgr)</br> - Bilinmiyor: Bunun nedeni eski bir Windows sürümünün, GPO yönetiminin veya başka bir üçüncü taraf MDM'nin çalıştırılması olabilir.</br></br> (_Yalnızca bilgisayarlar ve mobil_ cihazlar)
 **Cihaz Türü** </br> | Araştırmak istediğiniz cihaz türüne göre filtreleyin.</br></br> (_Yalnızca IoT cihazları_)
 
 ## <a name="use-columns-to-customize-the-device-inventory-views"></a>Cihaz envanter görünümlerini özelleştirmek için sütunları kullanma

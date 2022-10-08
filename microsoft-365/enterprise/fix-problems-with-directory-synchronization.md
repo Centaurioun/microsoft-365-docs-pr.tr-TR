@@ -13,6 +13,7 @@ ms.custom:
 - Adm_O365
 - admindeeplinkMAC
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:
@@ -21,12 +22,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Office 365 dizin eşitlemesiyle ilgili sorunların yaygın nedenlerini açıklar ve bunları gidermeye ve çözmeye yardımcı olacak birkaç yöntem sağlar.
-ms.openlocfilehash: 175230057460785669d2667f74e8e9bc76aeafe6
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 79484dc0c948a842c25cf0026b9e13849edb80f1
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560603"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68165613"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Microsoft 365 için dizin eşitleme sorunlarını düzeltme
 

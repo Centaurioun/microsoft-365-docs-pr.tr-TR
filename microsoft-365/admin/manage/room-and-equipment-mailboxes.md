@@ -7,9 +7,10 @@ author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -22,22 +23,22 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'Kuruluşunuzdaki herkesin Outlook kullanarak toplantılar ya da etkinlikler için saklayabilmesi için, bir oda veya donanım posta kutusu oluşturun. '
-ms.openlocfilehash: 654bd8779d7d66db5324e62c1397c3251da11945
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 505aefa5a809f3e4d4c2dfc37f68b8df844e74bb
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469161"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68166647"
 ---
 # <a name="create-microsoft-365-room-and-equipment-mailboxes"></a>Microsoft 365 oda ve donanım posta kutuları oluşturma
 
-Herkesin kullanması gereken bir konferans odanız, şirket aracınız veya donanımınız varsa, bu kaynakların herkes tarafından ayrılabilmesini sağlayacak bir yol bulmanız gerekir. Bunu yapmak için en iyi yol, her kaynak için Microsoft 365 bir oda veya donanım posta kutusu oluşturmaktır. Birinci kattaki konferans odanız, medya donanımınız veya nakliye aracınız için bir posta kutusu oluşturabilirsiniz.
+Herkesin kullanması gereken bir konferans odanız, şirket aracınız veya donanımınız varsa, bu kaynakların herkes tarafından ayrılabilmesini sağlayacak bir yol bulmanız gerekir. Bunu yapmak için en iyi yol, Microsoft 365'te her kaynak için bir oda veya donanım posta kutusu oluşturmaktır. Birinci kattaki konferans odanız, medya donanımınız veya nakliye aracınız için bir posta kutusu oluşturabilirsiniz.
   
-Bir oda veya donanım posta kutusu oluşturduğunuzda, şirketteki herkes Outlook’u kullanarak toplantılar veya etkinlikler için rezervasyon gerçekleştirebilir. Sonraki iki sekmede **nasıl kullanılacağını** ve **nasıl ayarlanacağını** öğrenebilirsiniz. Oda ve donanım posta kutularıyla ilgili diğer yaygın sorulardan bazıları aşağıda açıklanmıştır.
+Once you create a room or equipment mailbox, everyone in the company can reserve it for meetings or events using Outlook. Learn **how to use it** and **how to set it up** on the next two tabs. Here are some other common questions about room and equipment mailboxes.
   
 ## <a name="use-room-and-equipment-mailboxes"></a>Oda ve donanım posta kutuları kullanma
 
-Oda veya donanım posta kutularını kullanmak için bilgisayarınızdan Outlook’u açın veya web üzerinde Outlook’ta oturum açın. Yeni bir toplantı zamanlayın ve odayı veya donanımı, diğer çalışanları ya da müşterileri davet eder gibi toplantıya ekleyin. Rezervasyon yaptınız.
+To use room or equipment mailboxes, open Outlook from your computer or sign in to Outlook on the web. Schedule a new meeting and add the room or equipment to the meeting like you would when inviting other employees or customers. You've now reserved it.
   
 1. Bilgisayarınızda **Outlook**’u açın.
 
@@ -51,7 +52,7 @@ Oda veya donanım posta kutularını kullanmak için bilgisayarınızdan Outlook
 
    **Kime** alanını seçip ardından listeden konferans odası veya donanıma çift tıklayın. Sonra **Tamam**’ı seçin.
 
-   ![Outlook'da oda posta kutusunu rezerve edin.](../../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
+   ![Outlook'ta oda posta kutusunu rezerve edin.](../../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
   
 4. 
             **Konu** satırına, rezervasyon veya toplantının amacını yazın. 
@@ -64,7 +65,7 @@ Oda veya donanım posta kutularını kullanmak için bilgisayarınızdan Outlook
   
 7. Amacı açıklayan bir ileti yazın ve gerekirse dosya ekleyin.
     
-8. Başkalarının çevrimiçi olarak katılmasına veya toplantıya arayarak katılmalarına izin vermek için **Toplantı'yı Teams** seçin.
+8. Başkalarının çevrimiçi olarak katılmalarına veya toplantıya arayarak katılmalarına izin vermek için **Teams Toplantısı'nı** seçin.
     
 9. Davet ettiğiniz oda, donanım ve kişilerin uygun olduğundan emin olmak için üst taraftan **Zamanlama Yardımcısı**'nı seçin. Sonra takvimden uygun bir saati seçin.
 
@@ -85,13 +86,13 @@ Oda veya donanım posta kutusu ayarlamak için <a href="https://go.microsoft.com
     
 3. Oda veya donanım alanlarını doldurun:
 
-   ![Microsoft 365 bir oda posta kutusu ekleyin.](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)
+   ![Microsoft 365'te oda posta kutusu ekleme.](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)
   
    - **Oda** veya **Donanım**: Oluşturmak istediğiniz posta kutusunun türü.
     
    - **Ad**: Kolay bir ad veya kısa bir açıklama.
     
-   - **E-posta**: Oda veya donanımın e-posta diğer adı. Oda veya donanıma toplantı isteği gönderilmesi için bu gereklidir.
+   - **Email**: the email alias of the room or equipment. This is necessary to send a meeting request to the room or equipment.
     
    - **Kapasite**: Tek seferde odaya sığabilecek veya donanımı kullanabilecek insan sayısı.
     
@@ -116,15 +117,15 @@ Outlook’u açın ve yeni bir toplantı oluşturun. Oda veya donanımı kişi e
   
 ### <a name="how-do-you-cancel-a-room-or-equipment-request"></a>Bir oda veya donanım isteği nasıl iptal edilir?
 
-Outlook’ta zamanladığınız toplantıyı açın ve oda veya donanımı, bir katılımcıyı kaldırdığınız gibi toplantıdan kaldırın. Bunu yaptığınızda, oda diğerlerinin ayırması için uygun hale gelir.
+Open the meeting you scheduled in Outlook and then remove the room or equipment from the meeting like you would an attendee. This will free up the room for others to reserve.
   
 ### <a name="does-someone-have-to-accept-or-decline-every-room-or-equipment-request"></a>Birisinin tüm oda veya donanım isteklerini kabul etmesi veya reddetmesi gerekir mi?
 
-Hayır, istekleri kabul eden veya reddeden bir kişiye ihtiyacınız yoktur. Oda veya donanımın otomatik olarak rezerve edilmesine izin verebilir ya da şirketinizdeki bir kişi tarafından yönetilmesini tercih edebilirsiniz. 
+No, you don't need someone to accept or decline requests. You can decide whether you want to let the room or equipment be automatically booked or managed by someone in your company. 
   
 ### <a name="does-a-room-mailbox-or-equipment-mailbox-need-a-product-license"></a>Oda posta kutusu veya donanım posta kutusu ürün lisansı gerektirir mi?
 
-Hayır. Kuruluşunuzdaki çoğu kişinin Microsoft 365 kullanmak için lisansa ihtiyacı olsa da, kaynak posta kutusunun boyutu 50 GB'tan büyük olmaması veya bazı özelliklere gerek kalmaması durumunda (Güvenlik ve Uyumluluk'tan elde tutma ilkeleri veya Exchange Online'dan saklama ilkeleri) oda posta kutusuna veya donanım posta kutusuna lisans atamanız gerekmez ) veya kaynak posta kutusunun ekli bir Çevrimiçi Arşive ihtiyaç duymaması durumunda.
+Hayır. Kuruluşunuzdaki çoğu kişinin Microsoft 365'i kullanmak için lisansa ihtiyacı olsa da, kaynak posta kutusunun boyutu 50 GB'tan büyük olmaması veya bazı özelliklerin gerekli olmaması durumunda (Güvenlik ve Uyumluluk'tan elde tutma ilkeleri veya  Exchange Online) öğesini basılı tutun veya kaynak posta kutusunun ekli bir Çevrimiçi Arşive ihtiyacı olmaması durumunda.
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>Oda veya donanım rezervasyonunu yönetmesi için bir sahibe mi ihtiyacım var?
 

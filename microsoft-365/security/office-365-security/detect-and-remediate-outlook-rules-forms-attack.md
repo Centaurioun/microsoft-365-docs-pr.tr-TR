@@ -10,7 +10,7 @@ audience: ITPro
 ms.topic: article
 ms.collection:
 - o365_security_incident_response
-- M365-security-compliance
+- m365-security
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -18,12 +18,12 @@ description: Office 365'de Outlook kurallarını ve özel form ekleme saldırıl
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 55ecde2b4ded073e53b27abb72ebe22e25006c1b
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 372959b1522f65a41ed0bd936dd3f4bf93227e2e
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67850161"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68048758"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Outlook Kurallarını ve Özel Form Ekleme Saldırılarını Algılama ve Düzeltme
 

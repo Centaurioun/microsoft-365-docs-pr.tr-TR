@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection:
 - highpri
 - SPO_Content
@@ -20,12 +20,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Teams, OneDrive ve SharePoint gibi Microsoft 365 uygulamalarını kuruluşunuz dışındaki kişilerle işbirliği için yapılandırmayı öğrenin.
-ms.openlocfilehash: 3151f6c00795a9cab6de253869e2c9a82a2fb611
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 98ebf62386b948b97c888db23ae887635404ca6c
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730978"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67987312"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Kuruluşunuzun dışındaki kişilerle işbirliği
 
