@@ -7,21 +7,22 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - Adm_TOC
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 description: İş için Microsoft 365 Uygulamaları için kaydolun.
-ms.openlocfilehash: b9b0e3c0725137218c8fb82e94acfdbccb9b32ab
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 5e5f98970e82d40f8eeb81adf12e16eb68108cc7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660277"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68202947"
 ---
 # <a name="sign-up-for-a-microsoft-365-apps-for-business-subscription"></a>İş için Microsoft 365 Uygulamaları aboneliğine kaydolma
 

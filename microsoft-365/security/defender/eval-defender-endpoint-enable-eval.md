@@ -12,23 +12,24 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-ms.date: 07/09/2021
+ms.date: 09/22/2022
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: conceptual
-ms.openlocfilehash: d441c2c5d985ebf19a20af68ce9924106b5259c6
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 2d4de8ce1507635187c140830e92fd50ad8ec3e6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480393"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68084825"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Uç Nokta için Microsoft Defender değerlendirme ortamını etkinleştirme
 
@@ -81,13 +82,13 @@ Ekleme işlemine hızlı bir genel bakış için bu videoyu izleyin ve kullanıl
 
 Aşağıdaki tabloda, eklemeniz gereken uç noktayı temel alan kullanılabilir araçlar listelenir.
 
-Uç nokta | Araç seçenekleri
-:---|:---
-**Windows** | [Yerel betik (en fazla 10 cihaz)](../defender-endpoint/configure-endpoints-script.md), [grup ilkesi](../defender-endpoint/configure-endpoints-gp.md), [Microsoft Endpoint Manager/ Mobil Aygıt Yöneticisi](../defender-endpoint/configure-endpoints-mdm.md), [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md), [VDI betikleri](../defender-endpoint/configure-endpoints-vdi.md), [Bulut için Microsoft Defender ile tümleştirme](../defender-endpoint/configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)
-**macOS** | [Yerel betikler](../defender-endpoint/mac-install-manually.md), [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md), [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md), [Mobile Cihaz Yönetimi](../defender-endpoint/mac-install-with-other-mdm.md)
-**Linux Server** | [Yerel betik](../defender-endpoint/linux-install-manually.md),  [Puppet](../defender-endpoint/linux-install-with-puppet.md),  [Ansible](../defender-endpoint/linux-install-with-ansible.md)
-**iOS** | [Uygulama tabanlı](../defender-endpoint/ios-install.md)
-**Android** | [Microsoft Endpoint Manager](../defender-endpoint/android-intune.md)
+| Uç nokta | Araç seçenekleri |
+|:---|:---|
+| **Windows** |- [Yerel betik (en fazla 10 cihaz)](../defender-endpoint/configure-endpoints-script.md)<br/>- [grup ilkesi](../defender-endpoint/configure-endpoints-gp.md)<br/>- [Microsoft Endpoint Manager/ Mobile Aygıt Yöneticisi](../defender-endpoint/configure-endpoints-mdm.md)<br/>- [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md)<br/>- [VDI betikleri](../defender-endpoint/configure-endpoints-vdi.md) |
+| **macOS** | - [Yerel betikler](../defender-endpoint/mac-install-manually.md)<br/>- [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md)<br/>- [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md)<br/>- [Mobil Cihaz Yönetimi](../defender-endpoint/mac-install-with-other-mdm.md) |
+| **Linux Server** | - [Yerel betik](../defender-endpoint/linux-install-manually.md)<br/>- [Kukla](../defender-endpoint/linux-install-with-puppet.md)<br/>- [Ansible](../defender-endpoint/linux-install-with-ansible.md) |
+| **iOS** | [Uygulama tabanlı](../defender-endpoint/ios-install.md) |
+| **Android** | [Microsoft Endpoint Manager](../defender-endpoint/android-intune.md) |
 
 
 

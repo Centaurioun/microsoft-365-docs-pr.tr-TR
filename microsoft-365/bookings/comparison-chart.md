@@ -7,22 +7,24 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ms.assetid: d586eb28-b752-4c46-bf92-00a0c5ad781d
 description: Bookings web uygulaması ile Bookings Teams uygulaması arasındaki özellik farklarını gösteren bir karşılaştırma grafiği.
-ms.openlocfilehash: 8ceaddf1d7cd8124ab8e4d1e0cd2f19c5779cb1b
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 40c7f3ce90287a2c86ba4a5e6f16e3720978f71e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637284"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68202308"
 ---
 # <a name="comparison-chart-bookings-web-app-vs-bookings-teams-app"></a>Karşılaştırma grafiği: Bookings web uygulaması ile Bookings Teams uygulaması karşılaştırması
 
-Teams'daki Bookings uygulaması, zamanlayıcıların ana görevlerini işlemesine ve bazı ayarları değiştirmesine olanak tanır. Ancak Bookings web, Teams uygulamasında henüz kullanılamayan gelişmiş özellikler ve ayarlar içerir.
+Teams'deki Bookings uygulaması, zamanlayıcıların ana görevlerini işlemesine ve bazı ayarları değiştirmesine olanak tanır. Ancak Bookings web'i, Teams uygulamasında henüz kullanılamayan gelişmiş özellikler ve ayarlar içerir.
 
-Teams uygulama özellikleri sürekli ekleniyor ve bu listeyi güncelleştirmeye devam edeceğiz. Daha fazla bilgi için [SSS'nin](bookings-faq.yml) **özgün Bookings Web uygulamasının tüm işlevleri Microsoft Teams'de kullanılabilir mi?** bölümüne bakın.
+Teams uygulama özellikleri sürekli ekleniyor ve bu listeyi güncelleştirmeye devam edeceğiz. Daha fazla ayrıntı için [SSS'nin](bookings-faq.yml) **Orijinal Bookings Web uygulamasının tüm işlevleri Microsoft Teams'de kullanılabilir mi?** bölümüne bakın.
 
-| Özellik | web uygulamasını Bookings | Bookings Teams uygulaması |
+| Özellik | Bookings web uygulaması | Bookings Teams uygulaması |
 |:---|:---|:---|
 | Yeni rezervasyon takvimleri oluşturma | Evet | Evet |
 | Rezervasyon takvimine personel ekleme ve kaldırma | Evet | Evet |

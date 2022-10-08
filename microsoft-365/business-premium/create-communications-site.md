@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- tier1
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -26,12 +27,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Kampanyanız veya işletmeniz için bir SharePoint iletişim sitesi oluşturun ve yanlış dosya paylaşımı nedeniyle ekibinizi siber saldırılara ve kötü amaçlı yazılımlara ve diğer tehditlere karşı koruyun.
-ms.openlocfilehash: b70d2726a983d02ce5157815623936472077ad2b
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: c4cd224eb127063453d080a8db8a645e4b4e468b
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67738104"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097741"
 ---
 # <a name="create-a-communications-site"></a>İletişim sitesi oluşturma
 

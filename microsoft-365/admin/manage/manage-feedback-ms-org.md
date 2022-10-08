@@ -7,9 +7,10 @@ author: Kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Kullanıcılarınızın Microsoft ürünleri hakkında Microsoft'a gönderebileceği geri bildirimleri yönetin.
-ms.openlocfilehash: b6c54780277cf57a66aa3064f4222a360c270486
-ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
+ms.openlocfilehash: 1b062f445558d94a5abca4fa6184ffb49009c79b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67631438"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68192717"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Kuruluşunuz için Microsoft geri bildirimlerini yönetme
 
@@ -53,7 +54,7 @@ Aşağıdaki tablo, aşağıdaki geri bildirim ilkeleri tablosunda gösterilen g
 |**Project**|Evet|Evet|Evet|Evet|
 |**Publisher**|Evet|Evet|Evet|Evet|
 |**SharePoint**|[Şu anda diğer denetimler tarafından yönetilen bazı ayarlar.](/powershell/module/sharepoint-online/set-spotenant)||||
-|**Teams**|[Şu anda diğer denetimler tarafından yönetilen bazı ayarlar.](/microsoftteams/manage-feedback-policies-in-teams)||||
+|**Takım**|[Şu anda diğer denetimler tarafından yönetilen bazı ayarlar.](/microsoftteams/manage-feedback-policies-in-teams)||||
 |**Yapılacaklar**|Evet|Evet|Evet|Evet|
 |**Word**|Evet|Evet|Evet|Evet|
 |**Visio**|Evet|Evet|Evet|Evet|

@@ -14,6 +14,8 @@ ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - MiniMaven
 - MSB365
@@ -22,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 İş Ekstra ile kimlik avına ve diğer saldırılara karşı koruma sağlayın.
-ms.openlocfilehash: 52ac788459c84d63c097662f62f4f684e7a9fa94
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 7f04c8ce1ef81239a4e8ab2babb0a253dcb2155f
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67738959"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097719"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Kendinizi kimlik avına ve diğer saldırılara karşı koruma
 

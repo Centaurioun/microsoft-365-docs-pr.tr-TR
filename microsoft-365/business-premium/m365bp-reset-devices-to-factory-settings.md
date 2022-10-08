@@ -11,18 +11,21 @@ ms.service: microsoft-365-security
 ms.subservice: other
 ms.date: 09/15/2022
 ms.localizationpriority: high
+ms.collection:
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 description: yönettiğiniz Windows cihazlarını satın alma sırasında orijinal ayarlarına geri döndürerek fabrika ayarlarına sıfırlamak için Microsoft 365 İş Ekstra kullanmayı öğrenin.
-ms.openlocfilehash: ab7a78f9b222b068bc8c0ef7d574533565c50f38
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 9a2eb9d68ccdb323651cfd3ab0b45e4e3aeb8a2e
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741730"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097939"
 ---
 # <a name="reset-windows-devices-to-factory-settings"></a>Windows cihazlarını fabrika ayarlarına sıfırlama
 

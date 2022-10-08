@@ -7,33 +7,35 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
-description: Ülkeniz veya bölgeniz için de destek ile nasıl bağlantı kuracaklarını öğrenin.
+description: Ülkeniz veya bölgeniz için desteğe nasıl başvuracağınızı öğrenin.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d28c8a67d5d1153aa2ab34c2682c7ed4c26a99d3
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 2370352e8bccb56fb7903e46288d7c695c998f0a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62999096"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68202441"
 ---
-# <a name="contact-support-for-macau-sar"></a>Macau SAR için destek ile iletişime geçin
+# <a name="contact-support-for-macau-sar"></a>Macau SAR için desteğe başvurun
 
 [Başka bir ülke veya bölge bulun](../get-help-support.md).
 
 ## <a name="phone-number"></a>Telefon numarası
 0800 111
 
-Aramadan sonra
+Çevirdikten sonra
 
 877 860 4890
 
 ## <a name="hours"></a>Saatler
 ### <a name="billing-support"></a>Faturalama Desteği:
 
-Kantonca: Mon-Fri 09:00-17:00
+Canton dili: Mon-Fri 09:00-17:00
 
 Mandarin: Mon-Fri 09:00-17:00
 
@@ -41,7 +43,7 @@ Mandarin: Mon-Fri 09:00-17:00
 
 ### <a name="technical-support"></a>Teknik Destek:
 
-Kantonca: Mon-Fri 09:00-17:00
+Canton dili: Mon-Fri 09:00-17:00
 
 Mandarin: Mon-Fri 09:00-17:00
 

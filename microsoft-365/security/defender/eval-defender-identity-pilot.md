@@ -17,18 +17,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: conceptual
-ms.openlocfilehash: b6cf54408fff8139f1cd06a303f91c9785cca98a
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: c5ca701732bd76eff22eeeadf64502f11e2ca5cc
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481294"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68086101"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Pilot Kimlik için Microsoft Defender
 
@@ -40,7 +41,7 @@ Bu makale, Kimlik için Microsoft Defender için değerlendirme ortamını ayarl
 
 Kimlik için Microsoft Defender pilotunu ayarlamak ve yapılandırmak için aşağıdaki adımları kullanın. Önerilerin pilot grubu ayarlamayı içermediğini unutmayın. En iyi yöntem, algılayıcıyı Active Directory Domain Services (AD DS) ve Active Directory Federasyon Hizmetleri (AD FS) çalıştıran tüm sunucularınıza yüklemektir.
 
-:::image type="content" source="../../media/defender/m365-defender-identity-pilot-steps.png" alt-text="Microsoft Defender değerlendirme ortamında Kimlik için Microsoft Defender pilot uygulama adımları" lightbox="../../media/defender/m365-defender-identity-pilot-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-identity-pilot-steps.png" alt-text="Microsoft Defender değerlendirme ortamında Kimlik için Microsoft Defender pilot oluşturma adımları" lightbox="../../media/defender/m365-defender-identity-pilot-steps.png":::
 
 Aşağıdaki tabloda çizimdeki adımlar açıklanmaktadır.
 

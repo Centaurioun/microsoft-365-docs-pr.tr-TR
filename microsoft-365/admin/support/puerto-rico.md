@@ -7,19 +7,21 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
-description: Ülkeniz veya bölgeniz için de destek ile nasıl bağlantı kuracaklarını öğrenin.
+description: Ülkeniz veya bölgeniz için desteğe nasıl başvuracağınızı öğrenin.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e9a4337b5af77c95571be192896e65e6d7a0f26b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 141809be3e2722d8065b4701866563a97554c0ba
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "63012854"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201275"
 ---
-# <a name="contact-support-for-puerto-rico"></a>Porto Riko için destek ile iletişime geçin
+# <a name="contact-support-for-puerto-rico"></a>Porto Riko için desteğe başvurun
 
 [Başka bir ülke veya bölge bulun](../get-help-support.md).
 
@@ -35,6 +37,6 @@ ms.locfileid: "63012854"
 
 ### <a name="technical-support"></a>Teknik Destek:
 
-İspanyolca: Haftanın 7 günü, günde 24 saat
+İspanyolca: Günde 24 saat, haftada 7 gün
 
 İngilizce: Haftanın 7 günü, günde 24 saat

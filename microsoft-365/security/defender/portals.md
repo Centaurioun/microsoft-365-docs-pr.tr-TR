@@ -13,15 +13,16 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f0ca8e03bf89afd148611c0af26c9ad4ca30f269
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: dd22c4dd782cf4fed54b7c61dc3c68bc0a0da640
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67479764"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68084671"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft güvenlik portalları ve yönetim merkezleri
 
@@ -42,7 +43,7 @@ Güvenlik operatörleri ve yöneticiler, güvenlikle ilgili ayarları yönetmek,
 | Microsoft 365 Defender portalı | Tehdit etkinliğini izleme ve yanıtlama ve [Microsoft 365 Defender](microsoft-365-defender.md) ile kimlikleriniz, e-postanız, verileriniz, uç noktalarınız ve uygulamalarınız genelinde güvenlik duruşunuzu güçlendirme | [security.microsoft.com](https://security.microsoft.com/) |
 | Microsoft Defender Güvenlik Merkezi | [Uç Nokta için Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) ile sağlanan özellikleri kullanarak uç noktalarınızdaki tehdit etkinliğini izleyin ve yanıt verin.  **NOT:** Çoğu kiracı artık [security.microsoft.com Microsoft 365 Defender](https://security.microsoft.com/) portalına yönlendirilmelidir.  | [securitycenter.windows.com](https://securitycenter.windows.com) |
 | Office 365 Güvenlik & Uyumluluk Merkezi | E-posta [ve işbirliği](../office-365-security/exchange-online-protection-overview.md) hizmetlerinizi korumak ve çeşitli veri işleme düzenlemelerine uyumluluğu sağlamak için Exchange Online Protection ve [Office 365 için Microsoft Defender](/microsoft-365/security/office-365-security/defender-for-office-365) yönetin.  **NOT:** Office 365 Güvenlik & Uyumluluk Merkezi'nin güvenlik bölümlerini kullanan kiracıların çoğu artık [security.microsoft.com'daki](https://security.microsoft.com/) Microsoft 365 Defender portalına yeniden yönlendirilmelidir. | [protection.office.com](https://protection.office.com) |
-| Bulut için Defender portalı | [Bulut için Microsoft Defender'ı](/azure/security-center/security-center-intro) kullanarak veri merkezlerinizin ve buluttaki hibrit iş yüklerinizin güvenlik duruşunu güçlendirin | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
+| Bulut için Defender portalı | Bulut [için Microsoft Defender](/azure/security-center/security-center-intro) kullanarak veri merkezlerinizin ve buluttaki hibrit iş yüklerinizin güvenlik duruşunu güçlendirin | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
 | Kimlik için Microsoft Defender portalı | Kimlik için Microsoft Defender [ile Active](/azure-advanced-threat-protection/what-is-atp) Directory sinyallerini kullanarak gelişmiş tehditleri, güvenliği aşılmış kimlikleri ve kötü amaçlı insider eylemlerini tanımlama, algılama ve araştırma | [portal.atp.azure.com](https://portal.atp.azure.com/) |
 | Cloud Apps için Defender portalı | Bulut hizmetlerindeki siber tehditleri belirlemek ve mücadele etmek için zengin görünürlük, veri seyahati üzerinde denetim ve gelişmiş analiz elde etmek için [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) kullanın | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |
 | Microsoft Güvenlik Zekası portalı | Uç Nokta için Microsoft Defender için güvenlik bilgileri güncelleştirmeleri alın, örnekler gönderin ve tehdit ansiklopedisini keşfedin | [microsoft.com/wdsi](https://microsoft.com/wdsi) |

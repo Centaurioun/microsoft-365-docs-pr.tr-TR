@@ -14,18 +14,21 @@ ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 description: Yönetilen cihazları güvenlik tehditlerine ve siber saldırılara karşı ayarlamaya ve güvenli bir şekilde korumaya yönelik genel bakış. Tüm cihazları kaydedip ekleme yoluyla siber güvenlik savunmalarını ve uç nokta korumasını uygulayın. Cihaz ilkelerini ayarlamayı ve cihaz gruplarını yönetmeyi öğrenin.
-ms.openlocfilehash: 031e4cea2493d9c24ff7df5e5d6a6c687e80dc9c
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: c93d8bc41be59b370ec67c2807aa02c10c87fea8
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742947"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097983"
 ---
 # <a name="set-up-and-secure-managed-devices"></a>Yönetilen cihazları ayarlama ve güvenliğini sağlama
 

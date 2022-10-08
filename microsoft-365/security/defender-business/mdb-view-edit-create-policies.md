@@ -15,14 +15,15 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
-ms.openlocfilehash: 1e0070cf8d5e99ef6b9133cb38f4387255b78a5a
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+- tier1
+ms.openlocfilehash: 626287dcd8c1bed6dac91d55f020d9f5a5780cff
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595573"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097763"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>İş için Microsoft Defender'de ilkeleri görüntüleme veya düzenleme
 

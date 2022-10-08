@@ -15,14 +15,15 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
-ms.openlocfilehash: 5ed8c50ffba73504b572d8a316ccffbb4f7b91ae
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+- tier1
+ms.openlocfilehash: 1ae134f0c6a00fa00d5a5196b9dc20b9419033da
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737686"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097961"
 ---
 # <a name="review-remediation-actions-in-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra'de düzeltme eylemlerini gözden geçirme
 

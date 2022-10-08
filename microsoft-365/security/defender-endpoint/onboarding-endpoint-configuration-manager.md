@@ -6,25 +6,27 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-endpointprotect
 - m365solution-scenario
+- highpri
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: bc950e1f850dab3a5d3474566145979be34b6ab9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d213154ded15187e5041b6dda55a30245b0b34fe
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688671"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68223556"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager aracılığı ile katılım
 
@@ -137,7 +139,7 @@ Microsoft 365 Defender portalından, ilkeyi `.onboarding` System Center Configur
 4. Paketi erişilebilir bir konuma kaydedin.
 5. Microsoft Endpoint Configuration Manager'da: **Varlıklar ve Uyumluluk > Genel Bakış > Endpoint Protection > Microsoft Defender ATP İlkeleri'ne** gidin.
 
-6. **Microsoft Defender ATP İlkeleri'ne** sağ tıklayın ve **Microsoft Defender ATP İlkesi Oluştur'u** seçin.
+6. **ATP İlkeleri'Microsoft Defender** sağ tıklayın ve **ATP İlkesi Microsoft Defender Oluştur'u** seçin.
 
     :::image type="content" source="images/configmgr-create-policy.png" alt-text="Microsoft Endpoint Configuration Manager sihirbazı12" lightbox="images/configmgr-create-policy.png":::
 
@@ -210,7 +212,7 @@ Tamamlandıktan sonra, bir saat içinde portalda eklenen uç noktaları görmeni
 
 ### <a name="next-generation-protection"></a>Yeni nesil koruma
 
-Microsoft Defender Virüsten Koruma, masaüstleri, taşınabilir bilgisayarlar ve sunucular için yeni nesil koruma sağlayan yerleşik bir kötü amaçlı yazılımdan koruma çözümüdür.
+Microsoft Defender Virüsten Koruma, masaüstü bilgisayarlar, taşınabilir bilgisayarlar ve sunucular için yeni nesil koruma sağlayan yerleşik bir kötü amaçlı yazılımdan koruma çözümüdür.
 
 1. Microsoft Endpoint Configuration Manager konsolunda **Varlıklar ve Uyumluluğa \> Genel Bakış \> Endpoint Protection \> Kötü Amaçlı Yazılımdan Koruma İlkeleri'ne** gidin ve **Kötü Amaçlı Yazılımdan Koruma İlkesi Oluştur'u** seçin.
 
@@ -250,7 +252,7 @@ Microsoft Defender Virüsten Koruma, masaüstleri, taşınabilir bilgisayarlar v
 
     :::image type="content" source="images/configmgr-select-collection.png" alt-text="Yeni nesil koruma bölmesi11" lightbox="images/configmgr-select-collection.png":::
 
-Bu görevi tamamladıktan sonra Microsoft Defender Virüsten Koruma'yı başarıyla yapılandırmış oldunuz.
+Bu görevi tamamladıktan sonra virüsten koruma Microsoft Defender başarıyla yapılandırmış oldunuz.
 
 ### <a name="attack-surface-reduction"></a>Saldırı yüzeyini azaltma
 

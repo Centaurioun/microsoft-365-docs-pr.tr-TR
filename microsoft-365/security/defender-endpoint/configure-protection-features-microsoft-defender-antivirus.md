@@ -14,14 +14,16 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 0bbaacb6dfb58c416a93ab72bc91eccd945014eb
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: b9b2bd120e622238d681e6208361bd58f02e16f0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701334"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68202661"
 ---
 # <a name="configure-behavioral-heuristic-and-real-time-protection"></a>Davranışsal, buluşsal ve gerçek zamanlı korumayı yapılandırın
 
@@ -45,14 +47,14 @@ Microsoft Defender Virüsten Koruma'nın grup ilkesi, System Center Yapılandır
 
 Bu bölüm, güvenli olmadığı kabul edilen ancak kötü amaçlı yazılım olarak algılanamayan uygulamaları algılama ve engelleme de dahil olmak üzere her zaman açık tarama için yapılandırmayı kapsar.
 
-[Microsoft Defender Virüsten Koruma bulut korumasını](cloud-protection-microsoft-defender-antivirus.md) etkinleştirme ve yapılandırma için bkz. Bulut koruması aracılığıyla yeni nesil Microsoft Defender Virüsten Koruma teknolojilerini kullanma.
+Microsoft Defender [Virüsten Koruma bulut korumasını etkinleştirme ve yapılandırma için bkz. Bulut koruması aracılığıyla yeni nesil Microsoft Defender Virüsten Koruma teknolojilerini kullanma](cloud-protection-microsoft-defender-antivirus.md).
 
 ## <a name="in-this-section"></a>Bu bölümde
 
 | Konu|Açıklama |
 |---|---|
 | [İstenmeyen olası uygulamaları tespit edin ve engelleyin](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)| Ağınızda reklam yazılımı, tarayıcı değiştiricileri ve araç çubukları ve sahte veya sahte virüsten koruma uygulamaları gibi istenmeyen uygulamaları algılama ve engelleme |
-| [Microsoft Defender Virüsten Koruma koruma özelliklerini etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)|Gerçek zamanlı korumayı, buluşsal yöntemleri ve diğer her zaman açık Microsoft Defender Virüsten Koruma izleme özelliklerini etkinleştirme ve yapılandırma |
+| [Microsoft Defender Virüsten Koruma özelliklerini etkinleştirme ve yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md)|Gerçek zamanlı korumayı, buluşsal yöntemleri ve diğer her zaman açık Microsoft Defender Virüsten Koruma izleme özelliklerini etkinleştirme ve yapılandırma |
 
 > [!TIP]
 > Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:

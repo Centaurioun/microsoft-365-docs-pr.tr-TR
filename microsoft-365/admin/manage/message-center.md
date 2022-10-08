@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Microsoft 365 İleti merkezi'ne ve yeni ve değiştirilmiş özellikleri ve diğer önemli duyuruları izlemedeki rolüne genel bakış edinin.
-ms.openlocfilehash: 8368e86e0ab4431aeb07c387daf0a57f89ea1827
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: c7ebc03e1420a2fea66018f68aa7465ad419142d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67322925"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68208534"
 ---
 # <a name="track-new-and-changed-features-in-the-microsoft-365-message-center"></a>Microsoft 365 İleti merkezinde yeni ve değiştirilmiş özellikleri izleme
 

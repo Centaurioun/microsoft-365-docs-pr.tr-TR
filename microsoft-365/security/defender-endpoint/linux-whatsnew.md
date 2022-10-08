@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: f1a77d7889411d5455140db68a5af4016747ee49
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 90e6977d6660cb475a4172d863080878957407f5
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797822"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68223710"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -50,7 +51,7 @@ Bu makale, Linux'ta Uç Nokta için Microsoft Defender'nin en son sürümlerinde
 
 - mdatp sürüm 101.75.43 çalıştıran belirli müşteri iş yüklerinde gözlemlenen çekirdek kilitlenmesini düzeltir. RCA'nın ardından bu, bir algılayıcı dosya tanımlayıcısının sahipliğini serbest bırakırken bir yarış durumuna atfedildi. Kapatma yolundaki son ürün değişikliği nedeniyle yarış durumu ortaya çıktı. Daha yeni Çekirdek sürümleri (5.1+) üzerindeki müşteriler bu sorundan etkilenmez.
 
-- mdatp sürüm 101.75.43'ten yükseltme yaparken, 101.80.97 sürümüne yükseltmeyi denemeden önce aşağıdaki komutları çalıştırın
+- mdatp sürüm 101.75.43 veya 101.78.13'ten yükseltme yaparken, 101.80.97 sürümüne yükseltmeyi denemeden önce aşağıdaki komutları çalıştırın
 
 ```
 sudo mdatp config real-time-protection --value=disabled
@@ -60,6 +61,25 @@ sudo systemctl disable mdatp
 
 <br/><br/>
 </details>
+
+<details>
+   <summary>Ağustos 2022 (Derleme: 101.78.13, | Sürüm: 30.122072.17813.0)</summary>
+
+ &ensp;Yayın tarihi: **24 Ağustos 2022**<br/>
+ &ensp;Yayımlanma Tarihi: **24 Ağustos 2022**<br/>
+ &ensp;Derleme: **101.78.13**<br/>
+ &ensp;Sürüm: **30.122072.17813.0**<br/>
+ &ensp;Altyapı sürümü: **1.1.19300.3**<br/>
+ &ensp;İmza sürümü: **1.369.395.0**<br/>
+
+ **Yenilikler**
+
+ - Güvenilirlik sorunları nedeniyle geri alma
+
+ </br>
+
+ <br/><br/>
+ </details>
 
 <details>
   <summary>Ağustos 2022 (Derleme: 101.75.43 | Sürüm: 30.122071.17543.0)</summary>

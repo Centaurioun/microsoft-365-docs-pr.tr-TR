@@ -10,18 +10,18 @@ ms.topic: how-to
 ms.localizationpriority: medium
 search.appverid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 - MET150
 description: Yöneticiler, Microsoft 365'te kimlik avı iletisinin neden ve nasıl geçtiğini ve gelecekte daha fazla kimlik avı iletisini önlemek için yapılması gerekenleri belirlemeyi öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: cb33889abf59900d7840590930386b0253d0b57e
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: f206894cee57a497506a6dce1a652e52140f1028
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67590622"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68086497"
 ---
 # <a name="tune-anti-phishing-protection"></a>Kimlik avından korumayı ayarlama
 

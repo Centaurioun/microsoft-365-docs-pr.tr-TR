@@ -11,17 +11,18 @@ ms.date: ''
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Yöneticiler, Exchange Online posta kutuları olan veya olmayan Exchange Online Protection (EOP) kuruluşlarında kullanılabilen kimlik avı önleme ilkelerini oluşturmayı, değiştirmeyi ve silmeyi öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 5bbd66a87da2f95823f8d75e0e9350c060b4f176
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+search.appverid: met150
+ms.openlocfilehash: ab0bd1d6cf273fa9ea5f620c1d3b740ba090c4b0
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613065"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68086013"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>EOP'de kimlik avı önleme ilkelerini yapılandırma
 

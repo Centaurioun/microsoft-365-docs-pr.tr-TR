@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,16 +18,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için karantinaya alınan iletileri yönetmeyi öğrenin.
-ms.openlocfilehash: beead122e36f7282e1857bec32d0a1be8d09a473
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 90e77f972b40c43ea707824f46443f7126425ebf
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599395"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68202045"
 ---
 # <a name="overview-of-quarantined-messages-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'da Karantinaya Alınan İletilere Genel Bakış
 
-Microsoft 365 Lighthouse, tüm müşteri kiracılarınızda karantinaya alınan e-postalarla ilgili içgörüleri ve bilgileri görmenizi sağlar. Tek bir görünümden, karantinaya alınmış e-postaları önceliklendileyebilir ve uygun eylemleri gerçekleştirebilirsiniz. Kiracı Exchange Online Protection (EOP) ve Office365 Plan 1 (MDO) için Microsoft Defender'ı uyguladıysa veriler kullanılabilir.
+Microsoft 365 Lighthouse, tüm müşteri kiracılarınızda karantinaya alınan e-postalarla ilgili içgörüleri ve bilgileri görmenizi sağlar. Tek bir görünümden, karantinaya alınmış e-postaları önceliklendileyebilir ve uygun eylemleri gerçekleştirebilirsiniz. Kiracı Office365 Plan 1 (MDO) için Exchange Online Protection (EOP) ve Microsoft Defender uyguladıysa veriler kullanılabilir.
 
 Sol gezinti bölmesinde **Giriş'i** seçerek veya karantinaya alınan iletiler sayfasını açmak için sol gezinti bölmesinde **Veri Koruması'nı** seçerek bilgilere erişebilirsiniz.
 
@@ -44,7 +45,7 @@ Bu sayfadan, müşteri kiracılarınız genelinde birleştirilmiş istatistikler
 
 Veriler son 30 günü yansıtır; ancak, görünümü değiştirmek için **Zaman aralığı** filtresini kullanabilirsiniz.
 
-**Karantina nedeni** bölümü, Exchange Online Protection (EOP) ve Office365 için Microsoft Defender Plan 1 (MDO) ilke türüne göre karantina sayılarının dökümünü içerir. Bu türler şunlardır:
+**Karantina nedeni** bölümü, Office365 Plan 1 (MDO) ilke türü için Exchange Online Protection (EOP) ve Microsoft Defender göre karantina sayılarının dökümünü içerir. Bu türler şunlardır:
 
 - Malware
 - Kimlik Avı

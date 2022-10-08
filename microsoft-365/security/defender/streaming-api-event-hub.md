@@ -14,15 +14,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.openlocfilehash: 0db123c351b875eda789e1d9d69e87ee167031f4
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 8ac541d976d491f0a3a919b0d938d92e3a9fd849
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67678548"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68084627"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Gelişmiş Tehdit Avcılığı olaylarını Azure Olay Hub'ınıza akışla aktaracak şekilde Microsoft 365 Defender yapılandırma
 

@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_IP
-- M365-security-compliance
+- m365-security
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
@@ -21,12 +21,12 @@ ms.custom:
 description: Bu konu, Microsoft 365 ortamınızın güvenliğini etkileyen kiracı genelindeki ayarlar için önerilen yapılandırmada size yol gösterir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: d855d5307ded135fdb583f5fb498d0114f8da5ab
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 196ef4299f371e00a662b6e6bd0a38cc04955bb5
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851534"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68086541"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Daha fazla güvenlik için Microsoft 365 kiracınızı yapılandırma
 

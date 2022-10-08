@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için yardım ve destek almayı öğrenin.
-ms.openlocfilehash: 5648c17aa87f41164c89113f35615a0226d6d433
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 8a9a032d0838119a478924382d06586f19b35b9f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599308"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68202133"
 ---
 # <a name="get-help-and-support-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse için yardım ve destek alma 
 
