@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 ms.collection:
-- M365-security-compliance
+- m365-security
 - SPO_Content
 description: Yöneticiler SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler'i açmayı ve algılanan dosyalar için uyarı ayarlamayı öğrenebilir.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 8814ad4b2ae1cddf53efd85b3eb2f6174224f2de
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 005168ba9f450b78b08714bb322f9f0cc52303b0
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598229"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68075130"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekleri açma
 

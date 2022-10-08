@@ -15,14 +15,14 @@ ms.custom: nextgen
 ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 search.appverid: met150
-ms.openlocfilehash: e42b70ba1f963b687111aad77af6eef66c21a270
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 30c21e93f4370025a3dd4dba9bd14d96a2deeaae
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702390"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68061736"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Microsoft Defender Virüsten Koruma algılamaları için düzeltmeleri yapılandırın
 
@@ -48,7 +48,7 @@ Bu ayarları yapılandırmak için [PowerShell cmdlet'ini veya WMI sınıfını 
 
 2. **Grup İlkesi Yönetimi Düzenleyicisi**'nde **Bilgisayar yapılandırması**'na gidin ve **Yönetim şablonları**'nı seçin.
 
-3. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma'ya** genişletin.
+3. Ağacı **Virüsten Koruma Microsoft Defender** **Windows bileşenlerine** \> genişletin.
 
 4. Aşağıdaki tabloyu kullanarak bir konum seçin ve ilkeyi gerektiği gibi düzenleyin.
 
@@ -68,11 +68,11 @@ Bu ayarları yapılandırmak için [PowerShell cmdlet'ini veya WMI sınıfını 
 > [!IMPORTANT]
 > Microsoft Defender Virüsten Koruma birçok faktöre göre dosyaları algılar ve düzelter. Bazen bir düzeltmenin tamamlanması için yeniden başlatma gerekir. Algılamanın daha sonra hatalı pozitif olduğu belirlense bile, tüm ek düzeltme adımlarının tamamlandığından emin olmak için yeniden başlatmanın tamamlanması gerekir.
 >
-> Microsoft Defender Virüsten Koruma'nın bir dosyayı hatalı pozitif sonuç temelinde karantinaya olduğundan eminseniz, cihaz yeniden başlatıldıktan sonra dosyayı karantinadan geri yükleyebilirsiniz. Bkz. [Microsoft Defender Virüsten Koruma'da karantinaya alınan dosyaları geri yükleme](restore-quarantined-files-microsoft-defender-antivirus.md).
+> Microsoft Defender Virüsten Koruma'nın bir dosyayı hatalı pozitife göre karantinaya olduğundan eminseniz, cihaz yeniden başlatıldıktan sonra dosyayı karantinadan geri yükleyebilirsiniz. Bkz. [Microsoft Defender Virüsten Koruma'da karantinaya alınan dosyaları geri yükleme](restore-quarantined-files-microsoft-defender-antivirus.md).
 >
-> Gelecekte bu sorundan kaçınmak için dosyaları taramaların dışında tutabilirsiniz. Bkz [. Microsoft Defender Virüsten Koruma taramaları için dışlamaları yapılandırma ve doğrulama](configure-exclusions-microsoft-defender-antivirus.md).
+> Gelecekte bu sorundan kaçınmak için dosyaları taramaların dışında tutabilirsiniz. Bkz[. Microsoft Defender Virüsten Koruma taramaları için dışlamaları yapılandırma ve doğrulama](configure-exclusions-microsoft-defender-antivirus.md).
 
-Ayrıca düzeltmeyle ilgili daha fazla ayar için düzeltme [gerekli zamanlanmış tam Microsoft Defender Virüsten Koruma taramalarını](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) yapılandırma bölümüne bakın.
+Ayrıca düzeltmeyle ilgili daha fazla ayar için bkz. Düzeltme [gerekli zamanlanmış tam Microsoft Defender Virüsten Koruma taramalarını](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) yapılandırma.
 
 > [!TIP]
 > Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
@@ -92,4 +92,4 @@ Ayrıca düzeltmeyle ilgili daha fazla ayar için düzeltme [gerekli zamanlanmı
 - [Uç noktalarda görünen bildirimleri yapılandırın](configure-notifications-microsoft-defender-antivirus.md)
 - [Son kullanıcı Microsoft Defender Virüsten Koruma etkileşimlerini yapılandırma](configure-end-user-interaction-microsoft-defender-antivirus.md)
 - [Microsoft Defender Virüsten Koruma taramalarının ve düzeltmelerinin sonuçlarını özelleştirme, başlatma ve gözden geçirme](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Windows 10'da Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10'de virüsten koruma Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)

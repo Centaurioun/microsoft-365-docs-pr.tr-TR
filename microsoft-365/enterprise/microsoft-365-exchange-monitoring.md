@@ -1,64 +1,65 @@
 ---
-title: Exchange Online için izleme Microsoft 365
+title: Microsoft 365 için Exchange Online izleme
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
-description: E Exchange Online ta e-posta olayları veya danışmalar hakkında bilgi için izleme Microsoft 365.
-ms.openlocfilehash: 07d43a6f61ffe3e38f927d47e09d0a9685925f73
-ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
+description: Microsoft 365'te e-posta olayları veya önerileri hakkında bilgi için Exchange Online izlemeyi kullanın.
+ms.openlocfilehash: 97500a7ad2eb801d4bbcad622cce8ca222ae363e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64520726"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180571"
 ---
-# <a name="exchange-online-monitoring-for-microsoft-365"></a>Exchange Online için izleme Microsoft 365
+# <a name="exchange-online-monitoring-for-microsoft-365"></a>Microsoft 365 için Exchange Online izleme
 
-Exchange Online izleme aşağıdaki kuruluş düzeyi senaryoları destekler:
+Exchange Online izleme, aşağıdaki kuruluş düzeyinde senaryoları destekler:
 
-- **E-posta** istemcileri: E-posta okuma etkinliğine dayalı olarak aşağıdaki e-posta istemcilerinin durumunu görüntüebilirsiniz:
+- **Email istemcileri**: E-posta okuma etkinliğine göre aşağıdaki e-posta istemcilerinin durumunu görüntüleyebilirsiniz:
 
   - Outlook masaüstü
   - Web üzerinde Outlook
   - iOS ve Android'in yerel posta istemcileri
-  - iOS Outlook Android'de Outlook Mobile uygulaması
+  - iOS ve Android'de Outlook Mobile uygulaması
   - Outlook Mac istemcisi
 
-   Bu istemciler için, e-postayı okuyan kullanıcılara dayalı olarak son 30 dakika içinde etkin kullanıcı sayısını, ayrıca panoda yer alan olay ve tavsiyeleri görebilirsiniz. Bu veriler, bir sorun olup olduğunu görmek için önceki haftanın aynı aralığıyla karşılaştırıldı.
+   Bu istemciler için, son 30 dakikada e-postayı okuyan kullanıcılara bağlı olarak etkin kullanıcıların sayısını ve panodaki olay ve öneri sayısını görebilirsiniz. Bu veriler, bir sorun olup olmadığını görmek için önceki haftanın aralığıyla karşılaştırılır.
 
    >[!Note]
-   > Etkin kullanıcı sayısı, örneğin kullanıcı e-postayı okuduğunda tek bir etkinlikle ölçülür. Yalnızca son 30 etkinliklerin dakikalarını hesaplar.
+   > Etkin kullanıcı sayısı, örneğin bir kullanıcı bir e-postayı okuduğunda tek bir etkinlikle ölçülür. Yalnızca son 30 dakikalık etkinliği hesaplar.
 
-- **Uygulama bağlantısı**: Tahmini bağlantı, kuruluş cihazları ve Exchange Online cihazları arasındaki başarılı, yapay bağlantı yüzdesine dayalıdır ve Microsoft'un kontrolü dışındaki sorunları içerebilir. Daha fazla bilgi edinmek için Bağlantı [Microsoft 365'lara bakın](microsoft-365-connectivity-optics.md).
+- **Uygulama bağlantısı**: Tahmini bağlantı, kuruluşunuzun cihazlarıyla Exchange Online arasındaki başarılı ve yapay bağlantı yüzdesini temel alır ve Microsoft'un denetimi dışındaki sorunları içerebilir. Daha fazla bilgi için bkz. [Microsoft 365 Bağlantı Optikleri](microsoft-365-connectivity-optics.md).
 
-- **Temel Kimlik Doğrulama ve Modern** Kimlik Doğrulama: Hizmette başarıyla doğrulanmış Exchange Online sayısı.
+- **Temel Kimlik Doğrulaması ve Modern Kimlik Doğrulaması**: Exchange Online hizmetinde başarıyla doğrulanan kullanıcı sayısı.
 
-- **Posta akışı**: İletinin posta kutusuna ulaşana kadar herhangi bir gecikme olmadan posta kutusuna başarıyla teslim edilen ileti Microsoft 365.
+- **Posta akışı**: İleti Microsoft 365 ağına ulaştıktan sonra herhangi bir gecikme olmadan posta kutusuna başarıyla teslim edilen ileti sayısı.
 
-- **Web Outlook Oturum Açma**: Oturum açıp başarıyla başlatan kullanıcıların Web üzerinde Outlook.
+- **Web için Outlook'u açın**: Başarıyla oturum açan ve Web üzerinde Outlook başlatılan kullanıcıların sayısı.
   
-Burada, ana panoda yer alan diğer tüm posta Exchange Online senaryolara bir örnek ve almaktadır.
+Aşağıda, ana panodaki Exchange Online için kuruluş düzeyinde senaryolara bir örnek verilmiştir.
 
-![Denetim İzleme için kuruluş Exchange Online senaryoları.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-org-scenarios.png)
+![Exchange Online İzleme için kuruluş düzeyinde senaryolar.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-org-scenarios.png)
 
-Bu senaryolarda, ana panoda son 30 dakika için anahtar sayılardır. Bu senaryoların her biri için ayrıntılı görünümler, önceki haftayla karşılaştırıldığında 30 dakikalık toplamayla yedi günlük yakın gerçek zamanlı eğilimi gösterir.
+Bu senaryolar için ana panodaki son 30 dakika için önemli numaralar bulunur. Bu senaryoların her biri için ayrıntılı görünümler, önceki haftaya kıyasla 30 dakikalık toplamayla yedi güne yakın gerçek zamanlı eğilimi gösterir.
 
-![Posta teslimi için Exchange durumu izleme örneği.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
+![Posta teslimi için Exchange sistem durumunu izleme örneği.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
 
-"Sorunun kaynağı" olarak etiketlenen iletişimde, "Kendi kuruluşunuz" olarak etiketlenmiş, sizin için oluşturulmuş olayları veya tavsiyeleri fark edebilirsiniz. Bunlar, azaltma ve çözüm için dikkat çekmenizi gerektiren tek tek kuruluşa yönelik olan bildirimlerdir. Hizmet durumu altında oluşturulacak ve kuruma olası etki konusunda bilgi sağlandı bilgisi sağlayan çeşitli türlerde sorunlar hakkında daha fazla bilgi için, aşağıdaki makalelere bakın:
+Kuruluşunuz için oluşturulan ve "Kuruluşunuz" olarak etiketlenen iletişimde "Sorun kaynağı" olan olayları veya danışmanlıkları fark edeceksiniz. Bunlar, azaltma ve çözüm için dikkatinizi gerektiren sorunlarla birlikte kuruluşunuza yönelik tek tek bildirimlerdir. Kuruluşunuzu olası etki hakkında bilgilendirmek üzere hizmet durumu içinde oluşturulan ve iletilebilen çeşitli sorun türleri hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
-- [Posta kutusu kullanımıyla ilgili hizmet uyarıları](microsoft-365-mailbox-utilization-service-alerts.md)
+- [Posta kutusu kullanımı için hizmet uyarıları](microsoft-365-mailbox-utilization-service-alerts.md)
 
 - [MRS kaynak gecikmeleri için hizmet uyarıları](microsoft-365-mrs-source-delays-service-alerts.md)
 
@@ -66,9 +67,9 @@ Bu senaryolarda, ana panoda son 30 dakika için anahtar sayılardır. Bu senaryo
 
 ## <a name="priority-accounts-monitoring-scenarios"></a>Öncelik hesapları izleme senaryoları
 
-Gelişmiş Exchange Online hesabı izlemeyle, öncelik hesaplarını yapılandırdikten sonra aşağıdaki senaryoların durumunu [görüntüebilirsiniz](/microsoft-365/admin/setup/priority-accounts):
+Exchange Online öncelik hesabı izlemesiyle, [öncelik hesaplarını](/microsoft-365/admin/setup/priority-accounts) yapılandırdıktan sonra aşağıdaki senaryoların durumunu görüntüleyebilirsiniz:
 
-- Exchange lisansı
+- Exchange lisanslama
 
 - Posta Kutusu depolama alanı
 
@@ -80,34 +81,34 @@ Gelişmiş Exchange Online hesabı izlemeyle, öncelik hesaplarını yapılandı
 
 - Kurtarılabilir öğeler
 
-Lisans Exchange, kiracı yöneticisi tarafından ele alınabilecek geçersiz lisans sorunları nedeniyle öncelik hesabının oturum aç olup olmadığını denetler.
+Exchange lisans senaryosu, kiracı yöneticisi tarafından giderilebilen geçersiz lisans sorunları nedeniyle öncelik hesabının oturum açıp açamayacağını denetler.
 
-Yukarıdaki kalan beş senaryo, öncelik hesabı posta kutunuzu bu sınırlarda açıklanan sınırlara ulaşarak veya bu sınırlarda açıklanan sınırlara [ulaşarak Exchange Online kontrol edin](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits).
+Yukarıdaki kalan beş senaryo, öncelik hesabınızın posta kutusunun ulaşılmaya yakın olup olmadığını veya [Exchange Online sınırları](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits) içinde açıklanan sınırlara ulaşıp ulaşmadığını denetler.
 
-Bu senaryolarda, öncelik hesaplarınızı etkileyen etkin ve çözümlenmiş tavsiyeleri ve olayları görebilirler. Öncelik hesapları için tanımlayıcı bilgiler öneri veya olay ayrıntılarında önerilerle birlikte görüntülenir. İşte, Health **> Hizmet durumu > Exchange Online sayfasından bir > Hizmet durumu > Exchange Online**.
+Bu senaryolar için, etkin ve çözümlenmiş önerileri ve öncelik hesaplarınızı etkileyen olayları görebilirsiniz. Öncelik hesapları için tanımlanabilir bilgiler önerilerle birlikte danışmanlık veya olay ayrıntılarında görüntülenir. Sistem Durumu > Hizmet durumu > Exchange Online sayfasından bir örnek aşağıda **verilmiştır**.
 
-:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-priority-accounts-example.png" alt-text="Öncelik hesaplarınızı etkileyen etkin ve çözümlenmiş tavsiyelere ve olaylara örnek":::
+:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-priority-accounts-example.png" alt-text="Öncelikli hesaplarınızı etkileyen etkin ve çözümlenmiş öneriler ve olaylar örneği":::
 
-Etkilenen hesap bölmesinde Durum sütunu **şu** değerlere sahiptir:
+Etkilenen hesap bölmesinde **Durum** sütununda şu değerler vardır:
 
-- Düzeltildi: Öncelik hesabı için danışmaya veya olayın neden olduğu sorun giderildi. Artık bir sorun yok. 
+- Düzeltildi: Öncelik hesabı için öneriye veya olaya neden olan sorun giderildi. Artık bir sorun yok. 
 
-- Etkin: Öncelik hesabı için danışmaya veya olayın neden olduğu sorun devam ediyor. Sorun devam ediyor. 
+- Etkin: Öncelik hesabı için danışmanlık veya olaya neden olan sorun devam ediyor. Sorun devam ediyor. 
 
-- Gecikmeli: Danışmaya veya olayına neden olan sorun 96 saat içinde öncelik hesabına yönelik olarak ele alınamamıştır ve bu nedenle askıya alınır. Sorun devam ediyor. 
+- Gecikmeli: Danışmanlık veya olaya neden olan sorun 96 saat içinde öncelik hesabı için giderilmediğinden askıya alındı. Sorun devam ediyor. 
 
 İşte bir örnek.
 
-:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-status-column-example.png" alt-text="Etkilenen hesap bölmesinde durum sütunu örneği":::
+:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-status-column-example.png" alt-text="Etkilenen hesap bölmesindeki durum sütunu örneği":::
 
-Hiçbir hesap Etkin durumda kalmadan danışma veya olay **çözülür** .
+**Etkin** durumda hiçbir hesap kalmadıktan sonra bir danışmanlık veya olay çözülür.
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 
-### <a name="1-the-active-user-count-in-the-dashboard-for-each-client-appears-to-be-low-we-have-a-lot-of-active-licenses-assigned-to-users-what-does-this-mean"></a>1. Her istemci için panoda etkin kullanıcı sayısı düşük gibi görünür. Kullanıcılara atanmış çok sayıda etkin lisansımız var. Bu ne anlama geliyor?
+### <a name="1-the-active-user-count-in-the-dashboard-for-each-client-appears-to-be-low-we-have-a-lot-of-active-licenses-assigned-to-users-what-does-this-mean"></a>1. Her istemci için panodaki etkin kullanıcı sayısı düşük görünüyor. Kullanıcılara atanmış çok sayıda etkin lisansımız var. Bu ne anlama geliyor?
 
-İzlemede gösterilen etkin kullanıcı sayısı, kullanıcıların özellikte etkinliği gerçekleştirilen 30 dakikalık bir pencereye dayalıdır. Bu, kullanım sayılarıyla karıştırılmamalıdır. Kullanım numaralarını görüntülemek için raporlarda etkinlik raporlarını kullanın Microsoft 365 yönetim merkezi **Raporları** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">**.**</a>
+İzlemede gösterilen etkin kullanıcı sayısı, kullanıcıların özellikte belirtilen etkinliği gerçekleştirdiği 30 dakikalık bir pencereyi temel alır. Bu durum kullanım numaralarıyla karıştırılmamalıdır. Kullanım numaralarını görüntülemek için Microsoft 365 yönetim merkezi (**Rapor** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">**Kullanımı**</a>) içindeki etkinlik raporlarını kullanın.
 
-### <a name="2-where-is-the-data-instrumented-for-the-scenarios-that-show-activity-trends"></a>2. Etkinlik eğilimlerini gösterecek senaryolar için veriler nerede kullanılabilir?
+### <a name="2-where-is-the-data-instrumented-for-the-scenarios-that-show-activity-trends"></a>2. Etkinlik eğilimlerini gösteren senaryolar için veriler nerede izlenmektedir?
 
-Veriler, Veri Kaynağı Exchange Online araç Exchange Online. İstek Exchange Online ulaşmadan önce bir hata Exchange Online, etkinlik sinyalinde bir hata olduğunu varsa.
+Veriler Exchange Online hizmetinde izlenmiştir. İstek Exchange Online ulaşmadan önce gerçekleşen bir hata varsa veya Exchange Online'de bir hata varsa etkinlik sinyalinde bir düşüş görürsünüz.

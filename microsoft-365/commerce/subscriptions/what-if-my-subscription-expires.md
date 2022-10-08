@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: sgautam, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: İş için Microsoft 365 aboneliğinizin süresi dolduğunda, devre dışı bırakıldığında veya iptal ettiğinizde verilerinize ne olacağını öğrenin.
 ms.date: 09/16/2021
-ms.openlocfilehash: 74d2ff2a2df4ed24a0fb13512d1f320bf24d6b42
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 556d1b1128f774d455f01b9dffa0a74669248b76
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67325737"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68189065"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Microsoft 365 İş aboneliğim sona erdiğinde verilerime ve erişimime ne olur?
 

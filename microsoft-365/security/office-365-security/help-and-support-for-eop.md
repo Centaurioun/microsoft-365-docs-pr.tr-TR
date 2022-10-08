@@ -13,13 +13,14 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft, EOP için kendi kendine destek ve yardımlı destek de dahil olmak üzere çeşitli yer ve yöntemler için yardım sağlar.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 8b1b96df91081f2fd8bff3f4d80f8c4c8e016b46
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.collection: m365-security
+search.appverid: met150
+ms.openlocfilehash: f7bf32eec4a29a242c8783f248955ec7546fa75d
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595795"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68075086"
 ---
 # <a name="help-and-support-for-eop"></a>EOP için yardım ve destek
 

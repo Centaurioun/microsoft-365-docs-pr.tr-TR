@@ -17,15 +17,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.openlocfilehash: 90ddf53090f79c3d372aa2119330e71919849bc0
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 3f7d7bab51a8dfb29b25701ccc87e49b437529ab
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67479984"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072623"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-microsoft-365-defender"></a>Hesapları Uç Nokta için Microsoft Defender'dan Microsoft 365 Defender'a yönlendirme
 
@@ -35,7 +36,7 @@ ms.locfileid: "67479984"
 - Microsoft 365 Defender
 - Uç Nokta için Defender
 
-Microsoft'un SIEM ve Genişletilmiş algılama ve yanıt (XDR) ile tehdit korumasına olan etki alanları arası yaklaşımına uygun olarak, Microsoft Defender Gelişmiş Tehdit Koruması'nın Uç Nokta için Microsoft Defender olarak yeniden benimsedik ve tek bir tümleşik portalda birleştirdik: Microsoft 365 Defender.
+Microsoft'un SIEM ve Genişletilmiş algılama ve yanıt (XDR) ile tehdit korumasına olan etki alanları arası yaklaşımına uygun olarak Gelişmiş Tehdit Koruması'Microsoft Defender Uç Nokta için Microsoft Defender olarak yeniden Uç Nokta için Microsoft Defender ve tek bir tümleşik portalda birleştirdik: Microsoft 365 Defender.
 
 Bu kılavuzda, eski Uç Nokta için Microsoft Defender portalından (securitycenter.windows.com veya securitycenter.microsoft.com) Microsoft 365 Defender otomatik yeniden yönlendirmeyi etkinleştirerek <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">hesapların Microsoft 365 Defender</a> nasıl yönlendirildiği açıklanır.
 

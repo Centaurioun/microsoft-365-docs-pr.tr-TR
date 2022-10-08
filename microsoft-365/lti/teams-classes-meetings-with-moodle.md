@@ -6,18 +6,18 @@ manager: serdars
 ms.reviewer: amitman
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Moodle için Microsoft OneDrive Öğrenme Araçları Birlikte Çalışabilirliği ile Teams sınıflarını ve toplantılarını oluşturun ve yönetin.
-ms.openlocfilehash: e570b35f80203268a947a22ec8bdbc023a90854b
-ms.sourcegitcommit: 9a4b0bc6a3ba076ecc392260efe7d2e1b655cde8
+ms.openlocfilehash: 4ee2d08a3f437679179e642725660dbf528236c2
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67420034"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188735"
 ---
 # <a name="integrate-microsoft-teams-classes-and-meetings-within-moodle"></a>Microsoft Teams sınıflarını ve toplantılarını Moodle ile tümleştirme
 

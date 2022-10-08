@@ -10,17 +10,19 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
-ms.collection: M365-subscription-management
+ms.collection:
+- scotvorg
+- M365-subscription-management
 ms.custom:
 - it-pro
 - intro-overview
 description: Kuruluş için Microsoft 365 bileşenlerine, planlarına ve dağıtım yollarına giriş sağlar.
-ms.openlocfilehash: a900a50738cb4e44b8be2e62cb8cfd7bc1d51ede
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: fc9d2e5bda348300245062875143a96c8f876ac0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812084"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180439"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 Kurumsal’a genel bakış
 

@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: sgautam, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ ms.custom:
 search.appverid: MET150
 description: Yinelenen faturalamayı kapatarak veya açarak iş için Microsoft 365 aboneliklerinin çoğunu yenilemeyi öğrenin.
 ms.date: 08/18/2022
-ms.openlocfilehash: c89ed2ca68eebe061aebef9d7ca937611477f195
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: c5f8fbaa743f75e4db3d0c38a6868f282c6e4dda
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664625"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180747"
 ---
 # <a name="renew-microsoft-365-for-business"></a>İş için Microsoft 365'i yenileme
 

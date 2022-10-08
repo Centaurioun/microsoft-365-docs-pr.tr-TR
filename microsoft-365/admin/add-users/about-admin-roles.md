@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -26,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Genel yönetici rolü veya hizmet yöneticisi rolü gibi yönetici rolleri hakkında bilgi edinin. Roller, belirli iş işlevleriyle eşlenir ve Microsoft 365 yönetim merkezinde belirli görevleri yapmak için izinler verir.
-ms.openlocfilehash: df4f980237a25ee23b9f629f2db92e908797553a
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
-ms.translationtype: HT
+ms.openlocfilehash: fd4acef676aba9556dd32db758c3126fe21bad77
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67111637"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188713"
 ---
 # <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezinde, yönetici rolleri
 
@@ -86,7 +87,7 @@ Muhtemelen kuruluşunuzda yalnızca aşağıdaki rolleri atamanız gerekecek. Va
 |Faturalama yöneticisi     |   Satın alma işlemi yapan, abonelikleri ve hizmet isteklerini yöneten ve hizmet durumunu izleyen kullanıcılara Faturalama yöneticisi rolünü atayın. <br><br> Faturalama yöneticileri şunları da yapabilir:<br> - Faturalamanın tüm özelliklerini yönetme <br> - Azure portalında destek bileti oluşturma ve yönetme <br>  |
 |Exchange yöneticisi     |   Kullanıcılarınızın e-posta kutularını, Microsoft 365 gruplarını ve Exchange Online'ı görüntüleyip yönetmesi gereken kullanıcılara Exchange yöneticisi rolünü atayın. <br><br> Exchange yöneticileri aynı zamanda şunları da yapabilir:<br> - Bir kullanıcının posta kutusundaki silinen öğeleri kurtarma <br> -"Olarak Gönder" ve "Adına gönder" temsilcilerini ayarlama <br>  |
 |Genel yönetici     |   Genel yönetici rolünü, Microsoft çevrimiçi hizmetlerindeki çoğu yönetim özellikleri ve verilere ulaşması gereken kullanıcılara atayın. <br><br> Gereğinden fazla sayıda kullanıcıya genel erişim vermek bir güvenlik riskidir ve 2 ila 4 arasında Genel yönetici belirlemenizi tavsiye ediyoruz. <br><br> Sadece genel yöneticiler şunları yapabilir:<br> - Tüm kullanıcılar için parola sıfırlama <br> - Etki alanları ekleme ve yönetme <br> - Başka bir genel yöneticinin engellemesini kaldırma <br> <br> **Not:**   Microsoft çevrimiçi hizmetler’e kaydolan kullanıcı otomatik olarak genel yönetici olur. |
-|Genel gözetmen    |   Genel bir yöneticinin görüntüleyebileceği yönetim merkezlerinde yönetici özelliklerini ve ayarlarını görüntülemeye gerek duyan kullanıcılara genel gözetmen rolünü atayın. Genel gözetmen yönetici, hiçbir ayarı düzenleyemez.   |
+|Genel gözetmen    |   Assign the global reader role to users who need to view admin features and settings in admin centers that the global admin can view. The global reader admin can't edit any settings.   |
 |Gruplar yöneticisi     |   Microsoft 365 yönetim merkezi ve Azure Active Directory portalı da dahil olmak üzere, tüm grup ayarlarını yönetici merkezlerinde yönetmesi gereken kullanıcılara gruplar yöneticisi rolünü atayın. <br><br> Grup yöneticileri şunları yapabilir:<br> - Microsoft 365 grupları oluşturma, düzenleme, silme ve geri yükleme <br> -Grup oluşturma, süre sonu ve adlandırma ilkeleri oluşturma ve güncelleştirme <br> -Azure Active Directory güvenlik gruplarını oluşturma, düzenleme, silme ve geri yükleme| 
 |Yardım Masası Yöneticisi     |   Aşağıdaki işlemi yapmasına gerek duyan kullanıcılara yardım masası yönetici rolünü atayın:<br> - Parolaları sıfırlama <br> - Kullanıcıları oturumu kapatmaya zorlama <br> - Hizmet isteklerini yönetme  <br> - Hizmet durumunu görüntüleme <br> <br> **Not**: Yardım Masası Yöneticisi yalnızca yönetici olmayan kullanıcılara ve kullanıcılara şu rollere sahip olmak için yardım edebilir: Dizin gözetmeni, Konuk davetli, Yardım masası Yöneticisi, İleti merkezi gözetmeni ve Rapor gözetmeni.      |
 |Lisans yöneticisi    |   Kullanıcılara lisans ataması, kullanıcıların lisanslarını kaldırması ve kullanım konumlarını düzenlemesi gereken kullanıcılara Lisans yöneticisi rolünü atayın. <br/><br/> Lisans yöneticileri şunları da yapabilir: <br> - Grup tabanlı lisanslama için lisans atamalarını yeniden işleme <br> - Grup tabanlı lisanslama için gruplara ürün lisansları atama  |
@@ -103,7 +104,7 @@ Muhtemelen kuruluşunuzda yalnızca aşağıdaki rolleri atamanız gerekecek. Va
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Microsoft İş ortakları için temsilci yönetim
 
-Bir Microsoft iş ortağıyla çalışıyorsanız, onlara yönetici rolleri atayabilirsiniz. Onlar da şirketinizdeki kullanıcılara veya şirketlerine yönetici rolleri atayabilir. Örneğin, çevrimiçi organizasyonunuzu sizin için ayarlayıp yönetiyorlarsa, bunu yapmalarını isteyebilirsiniz.
+If you're working with a Microsoft partner, you can assign them admin roles. They, in turn, can assign users in your company, or their company, admin roles. You might want them to do this, for example, if they're setting up and managing your online organization for you.
   
 Bir iş ortağı şu rolleri atayabilir: 
   
@@ -111,7 +112,7 @@ Bir iş ortağı şu rolleri atayabilir:
 
 - Bir yardım masası yöneticisine eşdeğer **Yardım Masası Temsilcisi** Ayrıcalıkları.
 
-İş ortağının kullanıcılara bu rolleri atamadan önce, iş ortağını hesabınıza yönetici temsilcisi olarak eklemeniz gerekir. Bu süreç yetkili bir iş ortağı tarafından başlatılır. İş ortağı, kendisine yönetici temsilcisi olarak hareket etme izni vermek isteyip istemediğinizi sormak için size bir e-posta gönderir. Yönergeler için bkz. [İş ortağı ilişkilerini yetkilendirme veya kaldırma](../misc/add-partner.md).
+Before the partner can assign these roles to users, you must add the partner as a delegated admin to your account. This process is initiated by an authorized partner. The partner sends you an email to ask you if you want to give them permission to act as a delegated admin. For instructions, see [Authorize or remove partner relationships](../misc/add-partner.md).
   
 ## <a name="related-content"></a>İlgili içerik
 

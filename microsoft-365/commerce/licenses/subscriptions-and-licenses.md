@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -22,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Aldığınız uygulamalar ve hizmetler, İş için Microsoft 365 Uygulamaları gibi satın aldığınız Microsoft 365 ürününe bağlıdır.
 ms.date: 05/12/2022
-ms.openlocfilehash: 2d5b35bd4696e25aa1372dea0ac1bdd0371f0ef5
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: c097905050bdbe285e83b31008b9ff7f53f32e1f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281322"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180769"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>İş için Microsoft 365'teki abonelikleri ve lisansları anlama
 
@@ -63,7 +64,7 @@ Aşağıdaki tabloda birine lisans atadığınızda otomatik olarak nelerin ger�
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Kullanıcıya ait olmayan posta kutularına yönelik lisansları anlama
 
-Kaynak posta kutuları, oda posta kutuları ve paylaşılan posta kutuları 50 gigabaytlık (GB) depolama kotalarını aşmadıkları sürece bunlara lisans atamanız gerekmez. Kullanıcıya ait olmayan posta kutuları hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
+You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about non-user mailboxes, see the following articles:
   
 - [Paylaşılan posta kutusu oluşturma](../../admin/email/create-a-shared-mailbox.md)
 - [Paylaşılan posta kutusundan lisans kaldırma](../../admin/email/remove-license-from-shared-mailbox.md)
@@ -71,7 +72,7 @@ Kaynak posta kutuları, oda posta kutuları ve paylaşılan posta kutuları 50 g
 
 ## <a name="who-can-assign-licenses"></a>Kimler lisans atayabilir?
 
-Farklı türdeki yöneticiler, rollerine bağlı olarak lisanslarla farklı şekillerde çalışabilir. Aşağıdaki tabloda en yaygın seçenekler listelenmiştir. Yönetici rollerinin ve ayrıcalıklarının tam listesi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
+Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   
 |Yönetici rolü|Lisans atama|Lisansın atamasını kaldırma|Daha fazla lisans satın alma|Hesabı silme|
 |---|:---:|:---:|:---:|:---:|

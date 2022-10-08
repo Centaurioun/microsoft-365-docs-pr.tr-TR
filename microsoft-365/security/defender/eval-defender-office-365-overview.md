@@ -16,18 +16,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: conceptual
-ms.openlocfilehash: 2d8fbd7c36fd789855dca13917177ee3fd985ebf
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+ms.openlocfilehash: c448d5b469573c96ebb8d2b2aec2fee01de931c0
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67566222"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072843"
 ---
 # <a name="step-3-enable-and-pilot-microsoft-defender-for-office-365"></a>Adım 3. Office 365 için Microsoft Defender etkinleştirme ve pilot uygulama
 
@@ -38,7 +39,7 @@ Bu makalede, Office 365 için Microsoft Defender etkinleştirme ve pilot işleml
 
 Office 365 için Microsoft Defender etkinleştirmek ve pilot uygulamak için aşağıdaki adımları kullanın.
 
-:::image type="content" source="../../media/defender/m365-defender-office-eval-steps.png" alt-text="Office için Microsoft Defender'ı Microsoft Defender değerlendirme ortamına ekleme adımları." lightbox="../../media/defender/m365-defender-office-eval-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-office-eval-steps.png" alt-text="Microsoft Defender değerlendirme ortamına Office için Microsoft Defender ekleme adımları." lightbox="../../media/defender/m365-defender-office-eval-steps.png":::
 
 Aşağıdaki tabloda çizimdeki adımlar açıklanmaktadır.
 

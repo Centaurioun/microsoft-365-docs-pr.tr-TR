@@ -6,23 +6,25 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 12/07/2021
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 0afaf3d635e04a4592f2cadb24ab582da3a94727
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 3aa8872609f07e9382c9b7e2040a417a99221c63
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683703"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180527"
 ---
 # <a name="onboard-windows-devices-using-group-policy"></a>Windows araçlarını Grup İlkesi kullanarak ekleyin 
 
@@ -132,7 +134,7 @@ Ilkesi|Ayar
 
 <br>
 
-**İlke konumu:**  \Windows Components\Microsoft Defender Virüsten Koruma
+**İlke konumu:** \Windows Components\Microsoft Defender Virüsten Koruma
 
 Ilkesi|Ayar
 ---|---
@@ -140,7 +142,7 @@ Ilkesi|Ayar
 
 <br>
 
-**İlke konumu:** \Windows Components\Microsoft Defender Virüsten Koruma\MAPS
+**İlke konumu:** \Windows Components\Microsoft Defender Antivirus\MAPS
 
 Ilkesi|Ayar
 ---|---
@@ -149,7 +151,7 @@ Daha fazla analiz gerektiğinde dosya örnekleri gönderme | Etkin, Güvenli ör
 
 <br>
 
-**İlke konumu:** \Windows Components\Microsoft Defender Virüsten Koruma\Gerçek Zamanlı Koruma
+**İlke konumu:** \Windows Components\Microsoft Defender Antivirus\Gerçek Zamanlı Koruma
 
 Ilkesi|Ayar
 ---|---
@@ -160,7 +162,7 @@ Bilgisayarınızda dosya ve program etkinliğini izleme|Etkin
 
 <br>
 
-**İlke konumu:**  \Windows Components\Microsoft Defender Virüsten Koruma\Tarama
+**İlke konumu:** \Windows Components\Microsoft Defender Antivirus\Scan
 
 Bu ayarlar, uç noktanın düzenli taramalarını yapılandırıyor. Performansa izin verilen haftalık bir hızlı tarama gerçekleştirmenizi öneririz.
 
@@ -170,7 +172,7 @@ Zamanlanmış tarama çalıştırmadan önce en son virüs ve casus yazılım g�
 
 <br>
 
-**İlke konumu:** \Windows Components\Microsoft Defender Virüsten Koruma\Microsoft Defender Exploit Guard\Saldırı Yüzeyi Azaltma
+**İlke konumu:** \Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Attack Surface Reduction
 
 Saldırı yüzeyi azaltma kuralları GUID'lerinin geçerli listesini [Saldırı yüzeyi azaltma kuralları dağıtımı 3. Adım: ASR kurallarını uygulama bölümünden](attack-surface-reduction-rules-deployment-implement.md) alın. Kural ayrıntılarına göre ek bilgi için bkz [. Saldırı yüzeyi azaltma kuralları başvurusu](attack-surface-reduction-rules-reference.md)
 
@@ -247,11 +249,11 @@ grup ilkesi ile cihazlarda ilkelerin dağıtımını izleme seçeneği yoktur. �
 
 ## <a name="setup-defender-av-policies"></a>Defender AV ilkelerini ayarlama
 
-Yeni bir grup ilkesi oluşturun veya bu ayarları diğer ilkelerle birlikte gruplandırın. Bu, müşterilerin ortamına ve farklı kuruluş birimlerini (OU) hedefleyerek hizmeti nasıl kullanıma sunmak istediklerine bağlıdır.
+Yeni bir grup ilkesi oluşturun veya bu ayarları diğer ilkelerle birlikte gruplandırın. Bu, müşterinin ortamına ve farklı kuruluş birimlerini (OU) hedefleyerek hizmeti kullanıma sunma şekline bağlıdır.
 
 1. GP'yi seçtikten veya yeni bir tane oluşturduktan sonra GP'yi düzenleyin.
 
-2. **Bilgisayar Yapılandırma** > **İlkeleri** > **Yönetim Şablonları** > **Windows Bileşenleri** > **Microsoft Defender Virüsten Koruma** > **Gerçek Zamanlı Koruma'ya** göz atın.
+2. **Bilgisayar Yapılandırma** > **İlkeleri** > **Yönetim Şablonları** > **Windows Bileşenleri** >  **Microsoft Defender Virüsten Koruma** > **Gerçek Zamanlı Koruma'ya** göz atın.
 
     :::image type="content" source="images/realtime-protect.png" alt-text="Gerçek zamanlı koruma" lightbox="images/realtime-protect.png":::
 
@@ -305,11 +307,11 @@ Yeni bir grup ilkesi oluşturun veya bu ayarları diğer ilkelerle birlikte grup
 > **Tüm örnekleri gönder** seçeneği, güvenlik duruşunu artıran ikili dosyalar/betikler/belgeler için en fazla çözümlemeyi sağlar.
 **Güvenli örnekler gönder** seçeneği analiz edilen ikili dosyaların/betiklerin/belgelerin türünü sınırlar ve güvenlik duruşunu azaltır. 
 
-Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma'da bulut korumasını açma ve Microsoft Defender Virüsten](enable-cloud-protection-microsoft-defender-antivirus.md) [Koruma'da bulut koruması ve örnek gönderme.](cloud-protection-microsoft-antivirus-sample-submission.md)
+Daha fazla bilgi için bkz[. Microsoft Defender Virüsten Koruma'da bulut korumasını açma](enable-cloud-protection-microsoft-defender-antivirus.md) ve [Microsoft Defender Virüsten Koruma'da bulut koruması ve örnek gönderme.](cloud-protection-microsoft-antivirus-sample-submission.md)
 
 ### <a name="check-for-signature-update"></a>İmza güncelleştirmesini denetleme
 
-**Bilgisayar Yapılandırma** \> **İlkeleri** \> **Yönetim Şablonları** \> **Windows Bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Güvenlik Bilgileri Güncelleştirmeler'ne** göz atın.
+Virüsten Koruma \> Güvenlik Bilgileri **Güncelleştirmeler Microsoft Defender** **Bilgisayar Yapılandırma** \> **İlkeleri** \> **Yönetim Şablonları** \> **Windows** **Bileşenleri'ne**\> göz atın.
 
 :::image type="content" source="images/signature-update-1.png" alt-text="İmza güncelleştirmesi" lightbox="images/signature-update-1.png":::
 

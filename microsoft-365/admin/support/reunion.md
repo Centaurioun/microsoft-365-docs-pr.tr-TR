@@ -7,19 +7,21 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
-description: Ülkeniz veya bölgeniz için de destek ile nasıl bağlantı kuracaklarını öğrenin.
+description: Ülkeniz veya bölgeniz için desteğe nasıl başvuracağınızı öğrenin.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 846010db0660dab4ebed6bcfbccac52365b83063
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 7bd2ce8ede1c56632ddfa14808fda943569b4c35
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62996078"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170805"
 ---
-# <a name="contact-support-for-reunion"></a>Reunion için destek ile iletişime geçin
+# <a name="contact-support-for-reunion"></a>Reunion için desteğe başvurun
 
 [Başka bir ülke veya bölge bulun](../get-help-support.md).
 
@@ -29,13 +31,13 @@ ms.locfileid: "62996078"
 ## <a name="hours"></a>Saatler
 ### <a name="billing-support"></a>Faturalama Desteği:
 
-Fransızca: Mon-Fri saat 8:00
+Fransızca: Mon-Fri öğlen-20:00
 
-İngilizce: Mon-Fri-20:00
+İngilizce: Mon-Fri öğlen-20:00
 
 ### <a name="technical-support"></a>Teknik Destek:
 
-Fransızca: Mon-Fri 11:00 -11
+Fransızca: Mon-Fri 11:00-11:00
 
 İngilizce: Haftanın 7 günü, günde 24 saat
 

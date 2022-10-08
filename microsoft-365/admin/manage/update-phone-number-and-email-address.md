@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -23,16 +24,16 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Kendi yönetici parolanızı sıfırlamak istiyorsanız yönetici telefon numaranızı ve e-posta adresinizi yönetim merkezinde güncelleştirin.
-ms.openlocfilehash: 8e20aa49bc5d48ebf4e3434f2d5c294bfba5a08f
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 0bc1f019b3eea8e7e89d84303447725b9801278f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468448"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188603"
 ---
 # <a name="update-your-microsoft-365-admin-phone-number-and-email-address"></a>Microsoft 365 yönetici telefon numaranızı ve e-posta adresinizi güncelleştirme
 
-Bu makalede, yönetici olarak iş telefonunuzu ve e-posta adresinizi Microsoft 365'da nasıl değiştirebileceğiniz açıklanmaktadır.
+Bu makalede, yönetici olarak microsoft 365'te iş telefonunuzu ve e-posta adresinizi nasıl değiştirebileceğiniz açıklanmaktadır.
   
 Şirket adı ve adresi, şirket telefon numarası ve teknik konular ilgili kişisi bilgileri gibi şirket profil bilgilerini nasıl değiştireceğinizi öğrenmek istiyorsanız bkz. [Kuruluşunuzun adresini ve diğer profil bilgilerini değiştirme](change-address-contact-and-more.md).
 
@@ -46,7 +47,7 @@ Cep telefonu numaranızı ve alternatif e-posta adresinizi değiştirmek için *
 
 2. Üst bilgide profil simgenizi **hesabım** \> **Güvenlik Bilgileri'ni**\> seçin.
 
-3. **Güvenlik bilgileri** sekmesinde, ayrıntıları eklemek için **Yöntem** \> Ekle **Telefon** \> **Alternatif Telefon** veya **E-posta'yı** seçin. Cep telefonu, telefon ve alternatif e-posta adresi ayrıntılarınızı güncelleştirmek için **Değiştir'i** seçin. Alternatif e-posta adresiniz için Microsoft e-posta adresiniz dışında bir şey kullandığınızdan emin olun.
+3. **Güvenlik bilgileri** sekmesinde Yöntem \> **Telefonu** **Alternatif Telefon** \> **Ekle'yi** seçin veya ayrıntıları eklemek için **Email**. Cep telefonu, telefon ve alternatif e-posta adresi ayrıntılarınızı güncelleştirmek için **Değiştir'i** seçin. Alternatif e-posta adresiniz için Microsoft e-posta adresiniz dışında bir şey kullandığınızdan emin olun.
 
     > [!IMPORTANT]
     > Yönetici parolanızı sıfırlamak için alternatif e-posta adresi ve cep telefonu numarası gereklidir (bilgisayar yönetici parolanızı sıfırlamak için değil).
@@ -55,7 +56,7 @@ Cep telefonu numaranızı ve alternatif e-posta adresinizi değiştirmek için *
   
 Faturalama ile ilgili soruların yanıtları için:
   
-- [İşletmeler için Microsoft 365 fatura adreslerinizi değiştirme](../../commerce/billing-and-payments/change-your-billing-addresses.md)
+- [İş için Microsoft 365 fatura adreslerinizi değiştirme](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
 - [Ödeme yöntemlerini yönetme](../../commerce/billing-and-payments/manage-payment-methods.md)
 

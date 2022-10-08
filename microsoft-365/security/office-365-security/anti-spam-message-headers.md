@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Yöneticiler, Exchange Online Protection (EOP) tarafından iletilere eklenen üst bilgi alanları hakkında bilgi edinebilir. Bu üst bilgi alanları, ileti ve nasıl işlendiği hakkında bilgi sağlar.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 89cd21e947923602d2c268a99d2a4a1fc1fba28e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 0405f5dcfda0e480dfd57c11f60e7c59969106a8
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483244"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68090929"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365'te istenmeyen postadan koruma iletisi üst bilgileri
 
@@ -63,7 +63,7 @@ Tek tek alanlar ve değerler aşağıdaki tabloda açıklanmıştır.
 |Alan|Açıklama|
 |---|---|
 |`ARC`|Protokol `ARC` aşağıdaki alanlara sahiptir: <ul><li>`AAR`: DMARC'den **Authentication-results** üst bilgisinin içeriğini kaydeder.</li><li>`AMS`: İletinin şifreleme imzalarını içerir.</li><li>`AS`: İleti üst bilgilerinin şifreleme imzalarını içerir. Bu alan, zincir doğrulamasının **sonucunu yok**, **geçti** veya **başarısız** olarak içeren adlı `"cv="`bir zincir doğrulaması etiketi içerir.</li></ul>|
-|`CAT:`|İletiye uygulanan koruma ilkesi kategorisi: <ul><li>`BULK`: Toplu</li><li>`DIMP`: Etki Alanı Kimliğe Bürünme</li><li>`GIMP`: [Posta kutusu zekası tabanlı kimliğe bürünme](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>`HPHSH` veya `HPHISH`: Yüksek güvenilirlikli kimlik avı</li><li>`HSPM`: Yüksek güvenilirlikli istenmeyen posta</li><li>`MALW`: Kötü amaçlı yazılım</li><li>`PHSH`: Kimlik avı</li><li>`SPM`: İstenmeyen posta</li><li>`SPOOF`: Sahtekarlık</li><li>`UIMP`: Kullanıcı Kimliğe Bürünme</li><li>`AMP`: Kötü amaçlı yazılımdan koruma</li><li>`SAP`: Güvenli ekler</li><li>`FTBP`: Kötü amaçlı yazılımdan koruma dosya türü ilkesi</li><li>`OSPM`: Giden istenmeyen posta</li></ul> <p> Bir gelen ileti, birden çok koruma biçimi ve birden çok algılama taraması ile işaretlenebilir. İlkelerin farklı öncelikleri vardır ve önce en yüksek önceliğe sahip ilke uygulanır. Daha fazla bilgi için bkz [. E-postanızda birden çok koruma yöntemi ve algılama taraması çalıştırıldığında hangi ilke geçerli](how-policies-and-protections-are-combined.md) olur?|
+|`CAT:`|İletiye uygulanan koruma ilkesi kategorisi: <ul><li>`BULK`:Toplu</li><li>`DIMP`: Etki Alanı Kimliğe Bürünme</li><li>`GIMP`: [Posta kutusu zekası tabanlı kimliğe bürünme](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>`HPHSH` veya `HPHISH`: Yüksek güvenilirlikli kimlik avı</li><li>`HSPM`: Yüksek güvenilirlikli istenmeyen posta</li><li>`MALW`:Malware</li><li>`PHSH`:Kimlik avı</li><li>`SPM`:Spam</li><li>`SPOOF`:Sızdırma</li><li>`UIMP`: Kullanıcı Kimliğe Bürünme</li><li>`AMP`: Kötü amaçlı yazılımdan koruma</li><li>`SAP`: Güvenli ekler</li><li>`FTBP`: Kötü amaçlı yazılımdan koruma dosya türü ilkesi</li><li>`OSPM`: Giden istenmeyen posta</li></ul> <p> Bir gelen ileti, birden çok koruma biçimi ve birden çok algılama taraması ile işaretlenebilir. İlkelerin farklı öncelikleri vardır ve önce en yüksek önceliğe sahip ilke uygulanır. Daha fazla bilgi için bkz [. E-postanızda birden çok koruma yöntemi ve algılama taraması çalıştırıldığında hangi ilke geçerli](how-policies-and-protections-are-combined.md) olur?|
 |`CIP:[IP address]`|Bağlanan IP adresi. Bu IP adresini IP İzin Ver Listesi'nde veya IP Engelleme Listesi'nde kullanabilirsiniz. Daha fazla bilgi için bkz. [Bağlantı filtrelemeyi yapılandırma](configure-the-connection-filter-policy.md).|
 |`CTRY`|Kaynak ülke, bağlanan IP adresi tarafından belirlenen ve kaynak gönderen IP adresiyle aynı olmayabilir.|
 |`H:[helostring]`|Bağlanan e-posta sunucusunun HELO veya EHLO dizesi.|

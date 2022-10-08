@@ -1,8 +1,8 @@
 ---
-title: Tehdit Avcılığı için Microsoft Defender Uzmanları hizmetine kaydolmadan önce temel altyapı gereksinimleri
+title: Microsoft Defender Uzmanları'na kaydolmadan önce temel altyapı gereksinimleri
 ms.reviewer: ''
 description: Bu bölümde karşılamanız gereken temel altyapı gereksinimleri ve veri erişimi ve uyumluluğuyla ilgili önemli bilgiler özetlenmiştir
-keywords: yönetilen tehdit avcılığı hizmeti, yönetilen tehdit avcılığı, yönetilen algılama ve yanıt (MDR) hizmeti, MTE, Microsoft Tehdit Uzmanları, MTE-TAN, defender uzmanları bildirimi, Hedefli Saldırı Bildirimi, tehdit avcılığı ve analiz için Microsoft Defender Uzmanları.
+keywords: yönetilen tehdit avcılığı hizmeti, yönetilen tehdit avcılığı, yönetilen algılama ve yanıt (MDR) hizmeti, MTE, Microsoft Tehdit Uzmanları, MTE-TAN, savunma uzmanları bildirimi, Hedefli Saldırı Bildirimi, tehdit avcılığı ve analiz için Microsoft Defender Uzmanlar.
 search.product: Windows 10
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -15,16 +15,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
+- tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: 05b88bdb0d77f1844d70d3d1954dff192fe43135
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 24518a28165b18c3afe26fff397095178252ad95
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687471"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68062099"
 ---
 # <a name="before-you-begin-using-defender-experts-for-hunting"></a>Avcılık için Defender Uzmanlarını kullanmaya başlamadan önce
 
@@ -34,11 +35,11 @@ ms.locfileid: "67687471"
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Bu belge, karşılamanız gereken temel altyapı gereksinimlerini ve Tehdit Avcılığı için Microsoft Defender Uzmanları hizmetine kaydolmadan önce bilmeniz gereken veri erişimi ve uyumluluğu hakkında önemli bilgileri özetler. Microsoft, yönetilen hizmetlerimizi kullanan müşterilerin bize en değerli varlıklarını ve verilerini emanet ettiğini anlar.
+Bu belge, karşılamanız gereken temel altyapı gereksinimlerini ve Microsoft Defender Uzmanları'na kaydolmadan önce bilmeniz gereken veri erişimi ve uyumluluğu hakkında önemli bilgileri özetler. Microsoft, yönetilen hizmetlerimizi kullanan müşterilerin bize en değerli varlıklarını ve verilerini emanet ettiğini anlar.
 
 ## <a name="check-if-your-environment-meets-licensing-and-access-prerequisites"></a>Ortamınızın lisanslama ve erişim önkoşullarını karşılayıp karşılamadiğini denetleyin
 
-Tehdit Avcılığı için Microsoft Defender Uzmanları, mevcut Defender ürünlerinizden ayrı bir hizmettir. Bu hizmete kaydolmadan önce gerekli lisansa ve erişime sahip olduğunuzdan emin olun. 
+Microsoft Defender Uzmanları, mevcut Defender ürünlerinizden ayrı bir hizmettir. Bu hizmete kaydolmadan önce gerekli lisansa ve erişime sahip olduğunuzdan emin olun. 
 
 ### <a name="eligibility-and-licensing"></a>Uygunluk ve lisanslama
 
@@ -48,13 +49,13 @@ Microsoft'un ticari lisans koşulları hakkında daha fazla bilgi için [bu sayf
 
 ### <a name="access-requirements"></a>Erişim gereksinimleri
 
-Kuruluşunuzdaki herkes, Tehdit Avcılığı hizmeti için Microsoft Defender Uzmanları için müşteri ilgi formunu doldurabilir, ancak SKU'yu işleme almak için Ticari Yöneticinizle birlikte çalışmanız gerekir. Hizmet özelliklerine tam olarak erişmek için belirli rollere ve izinlere ihtiyacınız olabilir. Ayrıntılar için [Microsoft 365 Defender için rol tabanlı erişim denetiminde özel roller](custom-roles.md) bölümüne bakın.
+Kuruluşunuzdaki herkes Microsoft Defender Uzmanlar için müşteri ilgi formunu doldurabilir, ancak SKU'yu işleme almak için Ticari Yöneticinizle birlikte çalışmanız gerekir. Hizmet özelliklerine tam olarak erişmek için belirli rollere ve izinlere ihtiyacınız olabilir. Ayrıntılar için [Microsoft 365 Defender için rol tabanlı erişim denetiminde özel roller](custom-roles.md) bölümüne bakın.
 
 ## <a name="understand-the-services-availability-and-data-access-requirements"></a>Hizmetin kullanılabilirlik ve veri erişim gereksinimlerini anlama
 
 Avcılık için Defender Uzmanları uç noktalar, e-posta, kimlik ve bulut uygulamaları genelinde tehditleri proaktif olarak avlayan yönetilen bir tehdit avcılığı hizmetidir. Sizin yerinize avcılık yapmak için Microsoft uzmanlarının Microsoft 365 Defender gelişmiş tehdit avcılığı verilerinize erişmesi gerekir. Bu hizmete kaydolmak, Söz konusu verilere erişmek için Microsoft uzmanlarına izin verdiğiniz anlamına gelir.
 
-Aşağıdaki bölümlerde hizmetin veri kullanımı, uyumluluğu ve kullanılabilirliği hakkında ek bilgiler listelenir. Microsoft'un verilerinizi değerlendirme ve koruma taahhüdü hakkında daha fazla bilgi için [Güven Merkezi'ni](https://aka.ms/trustcenter-dex4hunting) ziyaret edin > **Ek ürün ve hizmetler** > **Yönetilen Güvenlik Hizmetleri** > [**Tehdit Avcılığı için Microsoft Defender Uzmanı'na**](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE51fRH) gidin.
+Aşağıdaki bölümlerde hizmetin veri kullanımı, uyumluluğu ve kullanılabilirliği hakkında ek bilgiler listelenir. Microsoft'un verilerinizi değerlendirme ve koruma taahhüdü hakkında daha fazla bilgi için [Güven Merkezi'ni](https://aka.ms/trustcenter-dex4hunting) ziyaret edin > Aşağı kaydırarak **Ek ürünler ve hizmetler** > **Yönetilen Güvenlik Hizmetleri** >  [**Microsoft Defender Tehdit Avcılığı Uzmanı'na**](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE51fRH) gidin.
 
 ### <a name="data-collection-usage-and-retention"></a>Veri toplama, kullanım ve saklama
 
@@ -78,7 +79,7 @@ Bu hizmet, ticari genel bulutlarımızdaki müşteriler için dünya çapında k
 
 Bu hizmet şu anda yalnızca İngilizce dilinde teslim edilir.
 
-## <a name="apply-for-microsoft-defender-experts-for-hunting-service"></a>Avlanma hizmeti için Microsoft Defender Uzmanlarına başvurun
+## <a name="apply-for-microsoft-defender-experts-for-hunting-service"></a>Avcılık hizmeti için Microsoft Defender Uzmanlarına başvurun
 
 Henüz yapmadıysanız, Avcılık için Defender Uzmanları için müşteri ilgi formunu doldurabilirsiniz:
 

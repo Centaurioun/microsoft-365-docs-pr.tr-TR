@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Yöneticiler, Microsoft 365 Defender portalında bulunan Office 365 için Defender raporlarını bulmayı ve kullanmayı öğrenebilir.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 8f0a7b8a13ebe47a7b95fa52ed06147f166d6d15
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 28b0f31b59d7707e37d47982ee67a85e80adfe5a
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851028"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68075152"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalında Office 365 için Defender raporları görüntüleme
 
@@ -189,7 +189,7 @@ Ana rapor sayfasında Zamanlama ![oluştur simgesi.](../../media/m365-cc-sc-crea
 
 - **Email istemcisi**
 - **Office belgesi**
-- **Teams**
+- **Takım**
 
 **Filtreler'e** tıklarsanız, görüntülenen açılır öğede aşağıdaki değerlerden birini veya daha fazlasını seçerek raporu ve ayrıntılar tablosunu değiştirebilirsiniz:
 

@@ -6,8 +6,10 @@ manager: scotv
 ms.date: 06/02/2022
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
-ms.collection: SPO_Content
+ms.service: microsoft-365-enterprise
+ms.collection:
+- scotvorg
+- SPO_Content
 search.appverid:
 - MET150
 ms.localizationpriority: medium
@@ -16,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: Veri taşıma işlemleri, Microsoft kiracınız için hizmetleri ve ilişkili verileri yeni bir veri merkezi coğrafi alanına taşırken gerçekleşen arka uç işlemleridir.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9c8b22665fec704ae9cb74bb2fe218e0b2e4a00f
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 9df2cbbf802dcba692bbd3e4033e15128ee2a1a9
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67478607"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68171333"
 ---
 # <a name="during-and-after-your-data-move"></a>Verilerinizi taşıma sırasında ve sonrasında
 

@@ -11,7 +11,7 @@ ms.topic: article
 audience: Admin
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- m365-security
 search.appverid:
 - MOE150
 - MET150
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: cd1150b32d717e87482155febaf819460c1a022f
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: a968a74ab113b79148dfb502091e0c84b485d54a
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595507"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68090585"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalındaki izinler
 

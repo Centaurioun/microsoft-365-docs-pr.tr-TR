@@ -2,25 +2,25 @@
 title: Kurumsal test ortamınız için Microsoft 365 için ayrıcalıklı erişim yönetimi
 f1.keywords:
 - NOCSH
-ms.author: robmazz
-author: robmazz
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
-- Ent_O365
-- Strat_O365_Enterprise
+- scotvorg
+- tier3
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Kurumsal test ortamı için Microsoft 365'inizde ayrıcalıklı erişim yönetimini etkinleştirmek için bu Test Laboratuvarı Kılavuzu'nu kullanın.
-ms.openlocfilehash: e55fcc13c4a86db7b507ad28e61c37df3ab156ab
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 39c7a9bd2d964e40d7dea410fd91a2fb912e2c03
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670299"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188955"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>Kurumsal test ortamınız için Microsoft 365 için ayrıcalıklı erişim yönetimi
 

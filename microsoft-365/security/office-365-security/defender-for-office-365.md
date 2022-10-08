@@ -12,7 +12,7 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
@@ -20,12 +20,12 @@ ms.custom:
 description: Office 365 için Microsoft Defender Güvenli Ekler, Güvenli Bağlantılar, gelişmiş kimlik avı önleme araçları, raporlama araçları ve tehdit bilgileri özelliklerini içerir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a67dd69c4b533fc63536a43f40921dfe0babde12
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: a7dd841c3d74f123d6fdadf152b36afe4be3a825
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851710"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072513"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender
 

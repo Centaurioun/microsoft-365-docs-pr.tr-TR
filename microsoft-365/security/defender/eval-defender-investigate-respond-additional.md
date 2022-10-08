@@ -18,19 +18,20 @@ ms.date: 07/09/2021
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.openlocfilehash: 5dbda4df04d47d4069a60fd7925dde2390708aba
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 5250120aeca42aeed0670a1c4e5dcd1696a1459f
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67473645"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68061120"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Pilot ortamda olay yanıtı özelliklerini Microsoft 365 Defender deneyin
 
@@ -158,7 +159,7 @@ Bu benzetim için tek bir iç posta kutusu ve cihaz gereklidir. Test iletisini g
 
     b. Test cihazını test etki alanına ekleyin.
 
-    c. [Microsoft Defender Virüsten Koruma'nı açın](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Microsoft Defender Virüsten Koruma'yı etkinleştirme konusunda sorun yaşıyorsanız [bu sorun giderme konusuna bakın](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+    c. [virüsten koruma Microsoft Defender açın](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). virüsten koruma Microsoft Defender etkinleştirme konusunda sorun yaşıyorsanız [bu sorun giderme konusuna bakın](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
     d. [Uç Nokta için Microsoft Defender'a ekleme](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 

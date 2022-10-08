@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Bu makalede, Microsoft 365 müşterilerine toplu posta göndermek için en iyi yöntemler & Microsoft 365'te gelen kutularına e-posta göndermeyle ilgili sorun giderme bilgileri sağlanır.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 661cdbb58b7ce0b8d7f77cfbea4677ad3af6a42d
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 7e9410da7ddf8fc8d125d97601a7bc57db50583a
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597746"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68075064"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Microsoft 365'e gönderilen posta sorunlarını giderme
 

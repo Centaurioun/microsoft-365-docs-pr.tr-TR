@@ -6,9 +6,11 @@ manager: scotv
 ms.date: 11/13/2020
 audience: ITPro
 ms.topic: landing-page
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -17,18 +19,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: PowerShell ile Microsoft 365 kullanıcı hesaplarını, lisanslarını ve gruplarını yönetmeyi öğrenin.
-ms.openlocfilehash: 0ec87f23f154cdd01d196419dbd087c4e14077fa
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0f96fe142179ba2f5be1b340a3d0d67c09564ae7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092127"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68180593"
 ---
 # <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>PowerShell ile Microsoft 365 kullanıcı hesaplarını, lisanslarını ve gruplarını yönetme
 
 *Bu makale hem Microsoft 365 Kurumsal hem de Office 365 Kurumsal için geçerlidir.*
 
-Microsoft 365 yöneticilerin kullanıcı hesaplarını, lisanslarını ve gruplarını yönetmesi gerekir. Bu görevlerin çoğunu Microsoft 365 yönetim merkezi gerçekleştirebilirsiniz ancak bazıları PowerShell'de daha kolaydır.
+Microsoft 365 yöneticilerinin kullanıcı hesaplarını, lisanslarını ve gruplarını yönetmesi gerekir. Bu görevlerin çoğunu Microsoft 365 yönetim merkezi gerçekleştirebilirsiniz ancak bazıları PowerShell'de daha kolaydır.
 
 Daha fazla bilgi için aşağıdaki makalelere bakın.
 

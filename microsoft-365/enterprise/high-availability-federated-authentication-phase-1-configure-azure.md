@@ -6,24 +6,26 @@ manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: 'Özet: Microsoft 365 için yüksek kullanılabilirlikli federasyon kimlik doğrulamasını barındırmak için Microsoft Azure altyapısını yapılandırın.'
-ms.openlocfilehash: f83aa494fcdead8f29810dea06193934b8ef26b9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 'Özet: Microsoft Azure altyapısını, Microsoft 365 için yüksek kullanılabilirlik federasyon kimlik doğrulamasını barındıracak şekilde yapılandırın.'
+ms.openlocfilehash: ee8e3d22f97bf26479d8aa4013e98b2d62d15cd7
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098394"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68171135"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Yüksek kullanılabilirlik federasyon kimlik doğrulaması 1. Aşama: Azure'ı yapılandırma
 
-Bu aşamada, Azure'da sanal makineleri 2, 3 ve 4. aşamalarda barındıracak kaynak gruplarını, sanal ağı (VNet) ve kullanılabilirlik kümelerini oluşturursunuz. [2. Aşama: Etki alanı denetleyicilerini yapılandırma](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) aşamasına geçmeden önce bu aşamayı tamamlamanız gerekir. Tüm aşamalar için bkz. [Azure'da Microsoft 365 için yüksek kullanılabilirlik federasyon kimlik doğrulamasını dağıtma](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md).
+Bu aşamada, Azure'da sanal makineleri 2, 3 ve 4. aşamalarda barındıracak kaynak gruplarını, sanal ağı (VNet) ve kullanılabilirlik kümelerini oluşturursunuz. [2. Aşama: Etki alanı denetleyicilerini yapılandırma](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) aşamasına geçmeden önce bu aşamayı tamamlamanız gerekir. Tüm aşamalar için bkz. [Azure'da Microsoft 365 için yüksek kullanılabilirlik federasyon kimlik doğrulamasını dağıtma](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) .
   
 Azure şu temel bileşenlerle sağlanmalıdır:
   
@@ -109,7 +111,7 @@ Yerel ağ adres alanları kümesi için Tablo L'yi doldurun. Üç boş girdinin 
 Şimdi Microsoft 365 için federasyon kimlik doğrulamanızı barındıracak Azure altyapısını oluşturmaya başlayalım.
   
 > [!NOTE]
-> Aşağıdaki komut kümeleri Azure PowerShell en son sürümünü kullanır. Bkz. [Azure PowerShell ile Kullanmaya başlayın](/powershell/azure/get-started-azureps). 
+> Aşağıdaki komut kümeleri Azure PowerShell en son sürümünü kullanır. Bkz[. Azure PowerShell kullanmaya başlama](/powershell/azure/get-started-azureps). 
   
 İlk olarak bir Azure PowerShell istemi başlatın ve hesabınızda oturum açın.
   
@@ -300,9 +302,9 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 Bu, bu aşamanın başarıyla tamamlanmasından kaynaklanan yapılandırmadır.
   
-**1. Aşama: Microsoft 365 için yüksek kullanılabilirliğe yönelik federasyon kimlik doğrulaması için Azure altyapısı**
+**1. Aşama: Microsoft 365 için yüksek kullanılabilirlik federasyon kimlik doğrulaması için Azure altyapısı**
 
-![Azure altyapısıyla Azure'da federasyon kimlik doğrulaması Microsoft 365 yüksek kullanılabilirlik aşamasının 1. aşaması.](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Azure altyapısıyla Azure'da yüksek kullanılabilirlik Microsoft 365 federasyon kimlik doğrulamasının 1. aşaması.](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>Sonraki adım
 

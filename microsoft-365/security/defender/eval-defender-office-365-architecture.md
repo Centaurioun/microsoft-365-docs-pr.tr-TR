@@ -17,18 +17,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: conceptual
-ms.openlocfilehash: 59486fdc30fa512f10126313076fc0be7ff257f5
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 4a3b105213aaca6d91e25df9b292b728de3b0cd8
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67796796"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072887"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Office 365 için Microsoft Defender mimarisi gereksinimlerini ve temel kavramları gözden geçirin
 
@@ -41,7 +42,7 @@ Office 365 için Defender etkinleştirmeden önce mimariyi anladığınızdan ve
 
 ## <a name="understand-the-architecture"></a>Mimariyi anlama
 
-Aşağıdaki diyagramda Office için Microsoft Defender'ın üçüncü taraf SMTP ağ geçidi veya şirket içi tümleştirme içerebilen temel mimarisi gösterilmektedir. Karma birlikte kullanım senaryoları (yani üretim posta kutuları hem şirket içi hem de çevrimiçidir) daha karmaşık yapılandırmalar gerektirir ve bu makalede veya değerlendirme kılavuzunda ele alınmaz.
+Aşağıdaki diyagramda, office için Microsoft Defender için üçüncü taraf SMTP ağ geçidi veya şirket içi tümleştirme içerebilen temel mimari gösterilmektedir. Karma birlikte kullanım senaryoları (yani üretim posta kutuları hem şirket içi hem de çevrimiçidir) daha karmaşık yapılandırmalar gerektirir ve bu makalede veya değerlendirme kılavuzunda ele alınmaz.
 
 :::image type="content" source="../../media/defender/m365-defender-office-architecture.png" alt-text="Office 365 için Microsoft Defender mimarisi." lightbox="../../media/defender/m365-defender-office-architecture.png":::
 
@@ -74,7 +75,7 @@ Aşağıdaki tabloda, Office 365 için Defender değerlendirilirken, yapılandı
 |SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler|Ayrıca, SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler, bulut depolama depolarına yüklenmiş dosyalar için ek bir koruma katmanı sunar.|[SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler](../office-365-security/mdo-for-spo-odb-and-teams.md)|
 |Güvenli Bağlantılar|Güvenli Bağlantılar, gelen e-posta iletilerinde URL taraması ve yeniden yazma sağlayan ve bu bağlantıların teslim veya tıklanmadan önce doğrulanmasını sağlayan bir özelliktir.|[Office 365 için Microsoft Defender'da Güvenli Bağlantılar](../office-365-security/safe-links.md)|
 
-Office için Microsoft Defender'da bulunan özellikler hakkında daha ayrıntılı bilgi için bkz. [Office 365 için Microsoft Defender hizmet açıklaması](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+Office için Microsoft Defender özellikleri hakkında daha ayrıntılı bilgi için bkz. [Office 365 için Microsoft Defender hizmet açıklaması](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 ## <a name="review-architecture-requirements"></a>Mimari gereksinimleri gözden geçirin
 

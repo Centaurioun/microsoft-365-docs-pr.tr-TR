@@ -14,7 +14,7 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-overview
 - m365solution-protecthve
 - highpri
@@ -22,12 +22,12 @@ ms.custom: ''
 description: Yöneticiler, Microsoft 365 kuruluşlarında güvenlik ayarlarını yükseltmeyi ve öncelikli hesaplar için raporları, uyarıları ve araştırmaları kullanmayı öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 61a8dd68635c3ef71ca8573ce4d08451a581ba95
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 621f1e2f3048d6f013cf8e668de6b83a49b3d163
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811340"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68090497"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Microsoft 365'te öncelikli hesaplar için güvenlik önerileri
 

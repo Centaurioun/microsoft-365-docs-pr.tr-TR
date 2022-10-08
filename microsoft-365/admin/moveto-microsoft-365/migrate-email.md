@@ -7,9 +7,10 @@ author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: E-postayı, kişileri ve takvimi Google Çalışma Alanı'ndan İş için Microsoft 365'e geçirmeyi öğrenin.
-ms.openlocfilehash: b0e2350c91b19e8a4097723efcfb6a34e674448b
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 1a15f7581f8b0be8a5e4841cfc67d6614a07a0ba
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661375"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188515"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Google Workspace'ten iş e-postası ve takvimini geçirme
 
