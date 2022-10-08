@@ -16,15 +16,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier3
 ms.topic: reference
 ms.subservice: mde
-ms.openlocfilehash: b130a3166db16d36c43e15545cf0f6c14d432e08
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: bf9c43caf1dc520b14d923b78a8696be258f2439
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736816"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68226701"
 ---
 #  <a name="live-response-library-methods-and-properties"></a>Canlı yanıt kitaplığı yöntemleri ve özellikleri
 

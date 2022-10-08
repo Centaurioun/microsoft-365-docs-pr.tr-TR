@@ -14,31 +14,34 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: IP adresi hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 19c883cccdc45682514bcd553f1b8e4a09d90e12
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 35ef4b8715fb7d49e40aa83bfacb75a817f88bab
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948686"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68380458"
 ---
 # <a name="ip-address"></a>IP adresi
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="format"></a>Biçim
 
-### <a name="ipv4"></a>IPv4:
+### <a name="ipv4"></a>IPv4: 
 IPv4 adreslerinin biçimlendirilmiş (dönemler) ve biçimlendirilmemiş (noktasız) sürümlerini hesaplayan karmaşık desen
 
-### <a name="ipv6"></a>IPv6:
+### <a name="ipv6"></a>IPv6: 
 Biçimlendirilmiş IPv6 sayılarını (iki nokta üst üste dahil) hesaplayan karmaşık desen
 
 ## <a name="pattern"></a>Desen
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
@@ -52,7 +55,7 @@ IPv6 için bir DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgil
 IPv4 için, bir DLP ilkesi, 300 karaktere yakınsa bu tür hassas bilgiler algılamıştır:
 
 - Normal ifade `Regex_ipv4_address` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_ipaddress` bir anahtar sözcük bulunur.
+- `Keyword_ipaddress` içinden bir anahtar sözcük bulundu.
 
 IPv6 için bir DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının yüksek güveni vardır:
 

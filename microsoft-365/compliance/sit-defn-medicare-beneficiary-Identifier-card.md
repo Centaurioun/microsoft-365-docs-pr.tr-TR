@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Medicare Beneficiary Identifier (MBI) karta duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: 601c34adcb0f9b19ab2c23a3df7d1c574cdd5031
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7ee3545a7a0eb177f7cf8cbb6581aa43546c8f88
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989540"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68382501"
 ---
 # <a name="medicare-beneficiary-identifier-mbi-card"></a>Medicare (Tıbbi Bakım Sigortası) Faydalanıcı Kimlik (MBI) kartı
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -46,18 +49,18 @@ ms.locfileid: "66989540"
 - S, L, O, I, B, Z hariç iki harf
 - iki basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
 - Normal ifade `Regex_mbi_card` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_mbi_card` bir anahtar sözcük bulunur.
+- `Keyword_mbi_card` içinden bir anahtar sözcük bulundu.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Normal ifade `Regex_mbi_card` , desenle eşleşen içeriği bulur.
 

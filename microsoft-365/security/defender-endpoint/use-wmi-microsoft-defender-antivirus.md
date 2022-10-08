@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Virüsten Koruma'yi WMI ile yapılandırma
+title: WMI ile Microsoft Defender Virüsten Koruma'yi yapılandırma
 description: Uç Nokta için Microsoft Defender'da ayarları almak, değiştirmek ve güncelleştirmek için WMI betiklerini kullanarak Microsoft Defender Virüsten Koruma'yı yapılandırmayı ve yönetmeyi öğrenin.
 keywords: wmi, betikler, windows yönetim araçları, yapılandırma
 ms.service: microsoft-365-security
@@ -16,16 +16,18 @@ manager: dansimp
 ms.subservice: mde
 audience: ITPro
 ms.topic: how-to
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 search.appverid: met150
-ms.openlocfilehash: 9930e9bce4c5b5de3a4508ace82dd04562026d2c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: b12c7fa681d62b531aad4655a3daa7cd652696d3
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699784"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68228766"
 ---
-# <a name="use-windows-management-instrumentation-wmi-to-configure-and-manage-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma'nın yapılandırılması ve yönetilmesi için Windows Yönetim Araçları'nın (WMI) kullanılması
+# <a name="use-windows-management-instrumentation-wmi-to-configure-and-manage-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma'Microsoft Defender yapılandırmak ve yönetmek için Windows Yönetim Araçları'nın (WMI) kullanılması
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -63,4 +65,4 @@ WMI ile yapılan değişiklikler, değişikliklerin dağıtıldığı veya yapı
 ## <a name="related-topics"></a>İlgili konular
 
 - [Yönetim ve yapılandırma araçları için başvuru konuları](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Windows 10'da Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10'de virüsten koruma Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)

@@ -1,6 +1,6 @@
 ---
 title: İçeriden risk yönetimi
-description: Insider risk yönetimini yapılandırmayı öğrenin.
+description: Insider risk yönetimini yapılandırmayı öğrenin. Insider risk yönetimi, risk göstergelerini tanımlamak için belirli ilkeler tanımlamanızı sağlar.
 keywords: Microsoft 365, Microsoft Purview, insider riski, risk yönetimi, uyumluluk
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -12,16 +12,18 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: efa2872d7dbece729bd45cfc890fead44b8162d3
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+- highpri
+ms.openlocfilehash: 64fd0ea78218e822dceee801749b4f80862cd5b3
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621149"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68382523"
 ---
 # <a name="insider-risk-management"></a>İçeriden risk yönetimi
 
@@ -39,6 +41,8 @@ Insider risk yönetiminin kuruluşunuzun riskleri engellemesine, algılamasına 
 
 **Insider risk yönetimi iş akışı**:
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="configure-insider-risk-management"></a>Insider risk yönetimini yapılandırma
 
