@@ -1,5 +1,6 @@
 ---
 title: eBulma'daki işleme hatalarıyla çalışma (Premium)
+description: eBulma'da (Premium) çeşitli veri biçimlerini işlemeye genel bakış.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,21 @@ audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: eBulma'da (Premium) çeşitli veri biçimlerini işlemeye genel bakış.
-ms.openlocfilehash: 8677eedc5a56b8b3c68f8529fd5bc6cc2b1b7c6f
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
+ms.openlocfilehash: e0d36079cc9095a022a2db2c0cb87f4d05f1d94f
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67817170"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68109577"
 ---
 # <a name="work-with-processing-errors-in-ediscovery-premium"></a>eBulma'daki işleme hatalarıyla çalışma (Premium)
 

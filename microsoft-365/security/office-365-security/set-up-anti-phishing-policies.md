@@ -11,18 +11,19 @@ ms.date: ''
 ms.localizationpriority: medium
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Yöneticiler, Exchange Online Protection (EOP) ve Office 365 için Microsoft Defender'de kullanılabilen kimlik avı önleme ilkeleri hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 1833f5394b5604685aad63b42c6623b6efc125b5
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+search.appverid: met150
+ms.openlocfilehash: 1c49e13e6942de8947b69e2bcb236cbe5ba6b493
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613460"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072359"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365'te kimlik avı önleme ilkeleri
 
@@ -239,11 +240,13 @@ Aşağıdaki kimliğe bürünme ayarları yalnızca Office 365 için Defender ki
 - **Güvenilen gönderenler ve etki alanları ekleme**: Kimliğe bürünme koruması ayarlarına özel durumlar. Belirtilen gönderenlerden ve gönderen etki alanlarından gelen iletiler hiçbir zaman ilke tarafından kimliğe bürünme tabanlı saldırılar olarak sınıflandırılmamaktadır. Başka bir deyişle, korumalı gönderenler, korumalı etki alanları veya posta kutusu zekası koruması eylemi bu güvenilir gönderenlere veya gönderen etki alanlarına uygulanmaz. Bu listeler için en yüksek sınır 1024 giriştir.
 
   > [!NOTE]
-  > Aşağıdaki gönderenlerden gelen Microsoft 365 sistem iletileri kimliğe bürünme girişimi olarak tanımlanırsa, gönderenleri güvenilen gönderenler listesine ekleyebilirsiniz:
   >
-  > - `⁠noreply@email.teams.microsoft.com`
-  > - `noreply@emeaemail.teams.microsoft.com`
-  > - `no-reply@sharepointonline.com`
+  > - Aşağıdaki gönderenlerden gelen Microsoft 365 sistem iletileri kimliğe bürünme girişimi olarak tanımlanırsa, gönderenleri güvenilen gönderenler listesine ekleyebilirsiniz:
+  >   - `⁠noreply@email.teams.microsoft.com`
+  >   - `noreply@emeaemail.teams.microsoft.com`
+  >   - `no-reply@sharepointonline.com`
+  >
+  > - Güvenilen etki alanı girdileri, belirtilen etki alanının alt etki alanları içermez. Her alt etki alanı için bir giriş eklemeniz gerekir.
 
 ### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender kimlik avı önleme ilkelerindeki gelişmiş kimlik avı eşikleri
 

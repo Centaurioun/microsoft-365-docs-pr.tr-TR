@@ -15,14 +15,16 @@ ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 4eef4374a9ec528204ea3ba9431e2cbe105a5104
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 6a58cef549f8a3e9453d923f5db08503eb8e727d
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740192"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68151595"
 ---
 # <a name="client-behavioral-blocking"></a>İstemci davranışsal engelleme
 
@@ -46,7 +48,7 @@ Virüsten koruma, bulut korumasıyla eşleştirildiğinde en iyi şekilde çalı
 
 ## <a name="how-client-behavioral-blocking-works"></a>İstemci davranış engellemesi nasıl çalışır?
 
-[Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-in-windows-10.md) şüpheli davranışları, kötü amaçlı kodları, dosyasız ve bellek içi saldırıları ve bir cihazda daha fazlasını algılayabilir. Şüpheli davranışlar algılandığında, Microsoft Defender Virüsten Koruma bu şüpheli davranışları ve işlem ağaçlarını izler ve bulut koruma hizmetine gönderir. Makine öğrenmesi, kötü amaçlı uygulamalarla iyi davranışları milisaniyeler içinde ayırt eder ve her yapıtı sınıflandırır. Neredeyse gerçek zamanlı olarak, bir yapıt kötü amaçlı olarak bulunduğunda cihazda engellenir.
+[Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-in-windows-10.md) şüpheli davranışları, kötü amaçlı kodları, dosyasız ve bellek içi saldırıları ve bir cihazdaki daha fazlasını algılayabilir. Şüpheli davranışlar algılandığında Virüsten Koruma Microsoft Defender bu şüpheli davranışları ve işlem ağaçlarını izler ve bulut koruma hizmetine gönderir. Makine öğrenmesi, kötü amaçlı uygulamalarla iyi davranışları milisaniyeler içinde ayırt eder ve her yapıtı sınıflandırır. Neredeyse gerçek zamanlı olarak, bir yapıt kötü amaçlı olarak bulunduğunda cihazda engellenir.
 
 Şüpheli bir davranış algılandığında bir [uyarı](alerts-queue.md) oluşturulur ve saldırı algılanıp durdurulurken görünür; gibi uyarılar tetiklenir ve [Microsoft 365 Defender portalında](/microsoft-365/security/defender/microsoft-365-defender) (eski adıyla Microsoft 365 Defender) görüntülenir.
 

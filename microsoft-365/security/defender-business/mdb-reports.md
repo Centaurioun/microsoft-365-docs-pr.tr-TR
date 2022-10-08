@@ -15,13 +15,14 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
-ms.openlocfilehash: 0f8810ef2892be0c5e17f96ebd115dd1e4d6b578
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+- m365-security
+- tier1
+ms.openlocfilehash: 66b8cd43b12b61c6539370c92df3db2a4acfe1dc
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711334"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68114153"
 ---
 # <a name="reports-in-microsoft-defender-for-business"></a>İş için Microsoft Defender raporları
 

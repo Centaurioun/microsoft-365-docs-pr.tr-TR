@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Virüsten Koruma için tarama seçeneklerini yapılandırma
-description: E-posta depolama dosyalarını, yedekleme veya yeniden ayrıştırma noktalarını, ağ dosyalarını ve arşivlenmiş dosyaları (.zip dosyaları gibi) taramak için Microsoft Defender Virüsten Koruma'yı yapılandırabilirsiniz.
+description: Microsoft Defender Virüsten Koruma'yı e-posta depolama dosyalarını, yedekleme veya yeniden ayrıştırma noktalarını, ağ dosyalarını ve arşivlenmiş dosyaları (.zip dosyaları gibi) tarayabilecek şekilde yapılandırabilirsiniz.
 keywords: gelişmiş taramalar, tarama, e-posta, arşiv, zip, rar, arşiv, yeniden ayrıştırma taraması
 ms.pagetype: security
 ms.service: microsoft-365-security
@@ -14,15 +14,17 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.date: 12/03/2021
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: how-to
 search.appverid: met150
-ms.openlocfilehash: 8e169a8b63d0e19ccc4e199500ff93a562f7a792
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 9280bb06c6701c05b42be5fa5c5686bfedfaf434
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67697945"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68151485"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Microsoft Defender Virüsten Koruma tarama seçeneklerini yapılandırın
 
@@ -36,7 +38,7 @@ ms.locfileid: "67697945"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>Tarama seçeneklerini yapılandırmak için Microsoft Intune kullanma
 
-Daha fazla bilgi için bkz[. Microsoft Intune cihaz kısıtlama ayarlarını yapılandırma](/intune/device-restrictions-configure) ve [Intune'de Windows 10 için Microsoft Defender Virüsten Koruma cihaz kısıtlama ayarları](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
+Daha fazla bilgi için bkz. [Microsoft Intune cihaz kısıtlama ayarlarını yapılandırma](/intune/device-restrictions-configure) ve [Intune Windows 10 için Virüsten koruma cihaz kısıtlama ayarlarını Microsoft Defender](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>Tarama seçeneklerini yapılandırmak için Microsoft Endpoint Manager kullanma
 
@@ -55,7 +57,7 @@ Microsoft Endpoint Manager (geçerli dal) yapılandırmasıyla ilgili ayrıntıl
 
 3. **grup ilkesi Yönetim Düzenleyicisi'nde** **Bilgisayar yapılandırması'na** gidin ve **Yönetim şablonları'na** tıklayın.
 
-4. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma'ya** genişletin ve bir konum seçin (bu makaledeki [Ayarlar ve konumlar](#settings-and-locations) bölümüne bakın).
+4. Ağacı **Virüsten Koruma Microsoft Defender** **Windows bileşenlerine** \> genişletin ve bir konum seçin (bu makaledeki [Ayarlar ve konumlar](#settings-and-locations) bölümüne bakın).
 
 5. İlke nesnesini düzenleyin.
 
@@ -85,8 +87,8 @@ Microsoft Endpoint Manager (geçerli dal) yapılandırmasıyla ilgili ayrıntıl
 
 PowerShell'i Microsoft Defender Virüsten Koruma ile kullanma hakkında daha fazla bilgi için bkz.
 
-- [Microsoft Defender Virüsten Koruma'nın PowerShell cmdlet'lerini yönetme](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Microsoft Defender Virüsten Koruma cmdlet'leri](/powershell/module/defender/)
+- [PowerShell cmdlet'leriyle Microsoft Defender Virüsten Koruma'ya yönetme](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+- [virüsten koruma cmdlet'lerini Microsoft Defender](/powershell/module/defender/)
 
 ## <a name="use-wmi-to-configure-scanning-options"></a>Tarama seçeneklerini yapılandırmak için WMI kullanma
 
@@ -100,9 +102,9 @@ Email tarama, outlook ve diğer posta istemcileri tarafından isteğe bağlı ve
 - Mbx
 - MIME
 
-Outlook 2003 veya daha eski bir sürümü tarafından kullanılan PST dosyaları da taranır (arşiv türü unicode olmayan olarak ayarlanır), ancak Microsoft Defender Virüsten Koruma PST dosyalarının içinde algılanan tehditleri düzeltemez.
+Outlook 2003 veya daha eski bir sürümü (arşiv türünün unicode olmayan olarak ayarlandığı) tarafından kullanılan PST dosyaları da taranır, ancak Microsoft Defender Virüsten Koruma PST dosyalarının içinde algılanan tehditleri gideremez.
 
-Microsoft Defender Virüsten Koruma bir e-posta iletisinde bir tehdit algılarsa, tehdidi el ile düzeltebilmeniz için güvenliği aşılmış e-postayı tanımlamanıza yardımcı olacak aşağıdaki bilgileri gösterir:
+Microsoft Defender Virüsten Koruma bir e-posta iletisinde bir tehdit algılarsa, güvenliği aşılmış e-postayı tanımlamanıza yardımcı olması için aşağıdaki bilgileri gösterir; böylece tehdidi el ile düzeltebilirsiniz:
 
 - Email konu
 - Ek adı
@@ -126,4 +128,4 @@ Herhangi bir işletim sisteminde, yalnızca sistem düzeyinde eşlenen ağ sür�
 - [Microsoft Defender Virüsten Koruma taramalarının ve düzeltmelerinin sonuçlarını özelleştirme, başlatma ve gözden geçirme](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [İsteğe bağlı Microsoft Defender Virüsten Koruma taramalarını yapılandırın ve çalıştırın](run-scan-microsoft-defender-antivirus.md)
 - [Zamanlanmış Microsoft Defender Virüsten Koruma taramalarını yapılandırma](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-- [Windows 10'da Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10'de virüsten koruma Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)

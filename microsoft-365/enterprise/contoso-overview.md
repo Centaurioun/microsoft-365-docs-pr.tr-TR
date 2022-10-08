@@ -7,19 +7,20 @@ ms.author: kvice
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso Corporation'ı bir işletme olarak ve dünya çapındaki ofislerinin katmanlı yapısını anlayın.
-ms.openlocfilehash: ec9df867252fe672f73dc7387c996f23ba476726
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: dbaac2a60e47843d74ec13effe95a87049b8c9ea
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093470"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178899"
 ---
 # <a name="overview-of-contoso-corporation"></a>Contoso Corporation'a genel bakış
 
@@ -55,9 +56,9 @@ Contoso'nun üç ofis katmanı vardır:
 
 Contoso iş gücünün yaklaşık yüzde 25'i yalnızca mobildir. Bölgesel merkezlerde ve uydu ofislerde bu çalışanların yüzdesi daha yüksektir. Yalnızca mobil çalışanlara daha iyi destek sağlamak Contoso için önemli bir iş hedefidir.
 
-## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>Kuruluş için Microsoft 365 tasarım konuları
+## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>Kuruluş için Microsoft 365'e yönelik tasarım konuları
 
-Contoso BT mimarları, kuruluş için Microsoft 365 dağıtmak için aşağıdaki tasarım gereksinimi faktörlerini tanımladı:
+Contoso BT mimarları, kuruluş için Microsoft 365'i dağıtmak için aşağıdaki tasarım gereksinimi faktörlerini tanımladı:
 
 - Yerel düzenlemelere ve uyumluluk gereksinimlerine sahip birden çok coğrafi konum
 - Şirket içi iş kolu uygulamalarını barındıran merkez ofis ve bölgesel uygulama sunucularında merkezi intranet veri merkezi
@@ -71,7 +72,7 @@ Contoso BT mimarları, kuruluş için Microsoft 365 dağıtmak için aşağıdak
 
 ## <a name="next-step"></a>Sonraki adım
 
-Contoso Corporation [şirket içi BT altyapısı](contoso-infra-needs.md) ve kuruluşun Microsoft 365 ile şirketin iş gereksinimlerinin nasıl karşılandığı hakkında bilgi edinin.
+Contoso Corporation [şirket içi BT altyapısı](contoso-infra-needs.md) ve şirket için Microsoft 365 kurumsal gereksinimlerinin nasıl karşılandığı hakkında bilgi edinin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

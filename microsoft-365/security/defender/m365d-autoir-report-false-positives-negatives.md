@@ -16,19 +16,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: how-to
 ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: cab16efa7f5118a4b9fce44713536dc043dd6b7b
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: a262927b45a1f24f0f3aa93de9521a1d9ed0d124
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482394"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68069699"
 ---
 # <a name="address-false-positives-or-false-negatives-in-microsoft-365-defender"></a>Microsoft 365 Defender hatalı pozitif sonuçları veya hatalı negatifleri ele alın
 

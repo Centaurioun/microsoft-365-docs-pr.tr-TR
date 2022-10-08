@@ -15,19 +15,19 @@ ms.custom:
 - goldenconfig
 ms.collection:
 - M365-identity-device-management
-- M365-security-compliance
+- m365-security
 - m365solution-identitydevice
 - m365solution-scenario
 - zerotrust-solution
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 5ef7d48943ab33e9b148d51a651884f9b62943e5
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0d7a51a8afb51265a63954749370f4939557a11b
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687405"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68088673"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Konuk erişimine ve B2B dış kullanıcı erişimine izin verme ilkeleri
 

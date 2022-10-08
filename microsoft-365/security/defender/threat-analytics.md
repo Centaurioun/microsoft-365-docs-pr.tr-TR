@@ -16,17 +16,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-m365-defender
+- tier1
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 search.appverid: met150
-ms.openlocfilehash: 951fd10307b1ceff61285f2a006845339d9d90d4
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 2e88c8ba70f966a63d734f07249250c708b772ca
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67740038"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68069809"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>Microsoft 365 Defender'de tehdit analizi
 
@@ -245,14 +246,14 @@ Tehdit analizi raporlarına yönelik e-posta bildirimlerini ayarlamak için aşa
 ## <a name="additional-report-details-and-limitations"></a>Ek rapor ayrıntıları ve sınırlamaları
 
 > [!NOTE]
-> Birleşik güvenlik deneyiminin bir parçası olarak tehdit analizi artık yalnızca Uç Nokta için Microsoft Defender için değil, Office E5 için Microsoft Defender lisans sahipleri için de kullanılabilir.
+> Birleşik güvenlik deneyiminin bir parçası olarak tehdit analizi artık yalnızca Uç Nokta için Microsoft Defender için değil, Office E5 lisans sahipleri için Microsoft Defender için de kullanılabilir.
 >
-> Microsoft 365 güvenlik portalını (Microsoft 365 Defender) kullanmıyorsanız, rapor ayrıntılarını (Office için Microsoft Defender verileri olmadan) Microsoft Defender Güvenlik Merkezi portalında da görebilirsiniz (Uç Nokta için Microsoft Defender).
+> Microsoft 365 güvenlik portalını (Microsoft 365 Defender) kullanmıyorsanız, rapor ayrıntılarını (Office verileri için Microsoft Defender olmadan) Microsoft Defender Güvenlik Merkezi portalında da görebilirsiniz ( Uç Nokta için Microsoft Defender).
 
 Tehdit analizi raporlarına erişmek için belirli rollere ve izinlere ihtiyacınız vardır. Ayrıntılar için Microsoft 365 Defender için bkz. [Rol tabanlı erişim denetiminde özel roller](custom-roles.md).
 
-- Uyarıları, olayları veya etkilenen varlık verilerini görüntülemek için, Office için Microsoft Defender veya Uç Nokta için Microsoft Defender uyarı verilerini ya da her ikisini birden görüntüleme izinlerine sahip olmanız gerekir.
-- Engellenen e-posta girişimlerini görüntülemek için Office için Microsoft Defender tehdit avcılığı verilerine yönelik izinlere sahip olmanız gerekir.
+- Uyarıları, olayları veya etkilenen varlık verilerini görüntülemek için, Office için Microsoft Defender veya uyarı verilerini Uç Nokta için Microsoft Defender ya da her ikisini birden görüntüleme izniniz olmalıdır.
+- Engellenen e-posta girişimlerini görüntülemek için Office tehdit avcılığı verilerini Microsoft Defender izinlerinizin olması gerekir.
 - Risk azaltmaları görüntülemek için Uç Nokta için Microsoft Defender'de Defender Güvenlik Açığı Yönetimi verilerine yönelik izinlere sahip olmanız gerekir.
 
 Tehdit analizi verilerine bakarken aşağıdaki faktörleri unutmayın:

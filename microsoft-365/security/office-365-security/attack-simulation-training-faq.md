@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ''
-ms.collection: m365-security-compliance
+ms.collection: m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Yöneticiler, Microsoft 365 E5 Office 365 için Microsoft Defender veya Plan 2 kuruluşlarında saldırı simülasyonu ve eğitimiyle ilgili dağıtım konuları ve sık sorulan sorular hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: f0a4bf3f408b48a4feb48ae4fad39cfe1e11420d
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 75dfa3281785dc06906ed66384e63d3867f617b2
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480613"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68088717"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Saldırı simülasyonu eğitimi dağıtımıyla ilgili dikkat edilmesi gerekenler ve SSS
 
@@ -95,7 +95,7 @@ Denetim günlüğü aramasını açmak için bkz [. Denetim günlüğü araması
 
 ### <a name="simulation-reports-are-not-updated-immediately"></a>Simülasyon raporları hemen güncelleştirilmez
 
-Ayrıntılı simülasyon raporları, bir kampanya başlattıktan hemen sonra güncelleştirilmez. Endişelenmeyin; bu davranış beklenir.
+Ayrıntılı simülasyon raporları, bir kampanya başlattıktan hemen sonra güncelleştirilmez. Merak etme; bu davranış beklenir.
 
 Her simülasyon kampanyasının bir yaşam döngüsü vardır. İlk oluşturulduğunda simülasyon **Zamanlanmış** durumunda olur. Simülasyon başlatıldığında Devam ediyor durumuna geçiş **yapılır** . Tamamlandığında, simülasyon **Tamamlandı** durumuna geçiş yapılır.
 
@@ -185,7 +185,7 @@ C: Hayır. Şu anda kiracılar arası simülasyonlar desteklenmemektedir. Hedefl
 
 ### <a name="q-how-does-region-aware-delivery-work"></a>S: Bölge tanımalı teslim nasıl çalışır?
 
-Y: Bölge algılamalı teslim, iletinin ne zaman teslim edileceğini belirlemek için hedeflenen kullanıcının posta kutusunun TimeZone özniteliğini ve 'önce değil' mantığını kullanır. Örneğin, aşağıdaki senaryoyu göz önünde bulundurun:
+Y: Bölge algılamalı teslim, iletinin ne zaman teslim edileceğini belirlemek için hedeflenen kullanıcının posta kutusunun TimeZone özniteliğini ve 'önce değil' mantığını kullanır. Örneğin, şu senaryoyu inceleyin:
 
 - Pasifik saat diliminde (UTC-8) saat 07:00'de bir yönetici bir kampanya oluşturur ve aynı gün saat 09:00'da başlayacak şekilde zamanlar.
 - UserA, Doğu saat diliminde (UTC-5) yer alır.

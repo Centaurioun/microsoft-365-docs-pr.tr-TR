@@ -8,22 +8,24 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 04/15/2022
 ms.subservice: mde
-ms.openlocfilehash: ca5e4ac05df410f15c12acc8254c782cdda4f042
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 75077f656b9e15850f46509ee5c3705461638033
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67850424"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68177624"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Microsoft 365 Defender kalıcı olmayan sanal masaüstü altyapısı (VDI) cihazlarını ekleme
 
@@ -146,7 +148,7 @@ Aşağıdaki adımlar VDI cihazlarını ekleme konusunda size yol gösterir ve t
 
 Güncelleştirmeleri VDI'lerde çalışan VM'lere kolayca dağıtabilme özelliği sayesinde, makinelerinizde güncelleştirmeleri hızlı ve kolay bir şekilde nasıl edinebileceğinize odaklanmak için bu kılavuzu kısaltdık. Güncelleştirmeler konak sunucusundaki bileşen bitlerine genişletildiğinden ve açıldığında doğrudan VM'ye indirildiğinden, artık düzenli aralıklarla altın renkli görüntüler oluşturmanız ve mühürlemeniz gerekmez.
 
-Daha fazla bilgi [için, Sanal Masaüstü Altyapısı (VDI) ortamında Microsoft Defender Virüsten Koruma için dağıtım kılavuzundaki yönergeleri](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus) izleyin.
+Daha fazla bilgi [için Sanal Masaüstü Altyapısı (VDI) ortamında virüsten koruma Microsoft Defender için dağıtım kılavuzundaki yönergeleri](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus) izleyin.
 
    > [!NOTE]
    > VDI ortamınızın ana görüntüsünü (SENSE hizmeti çalışıyor) dahil ettiyseniz, görüntüyü üretime geri döndürmeden önce bazı verileri çıkarmanız ve temizlemeniz gerekir.
@@ -230,7 +232,7 @@ Aşağıdaki yapılandırma ayarları önerilir:
 - Microsoft Defender uygulamasına kullanıcı erişimine izin ver: Yapılandırılmadı
 
 #### <a name="enable-tamper-protection"></a>Kurcalama korumasını etkinleştirme
-- Microsoft Defender'ın devre dışı bırakılmasını önlemek için kurcalama korumasını etkinleştirme: Etkinleştir
+- Microsoft Defender devre dışı bırakılmasını önlemek için kurcalama korumasını etkinleştirin: Etkinleştir
 
 #### <a name="attack-surface-reduction"></a>Saldırı yüzeyini azaltma
 

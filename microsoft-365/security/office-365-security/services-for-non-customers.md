@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Microsoft, e-posta kullanımında kullanıcı güvenini korumaya yardımcı olmak için kullanıcılarımızın korunmasına yardımcı olmak için çeşitli ilkeler ve teknolojiler getirmiştir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 8fb45e71d79458c6d990f226d8c2d81d7efe3681
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 428e1c0096811fa13674a47fec2cdf777642e12f
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496757"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68088475"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Microsoft 365'e posta gönderen müşteri olmayanlara yönelik hizmetler
 

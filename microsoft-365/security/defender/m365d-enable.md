@@ -16,19 +16,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-getstarted
 - highpri
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: cac5660ca9ee61aa11fffe61cc67e1d2a6594231
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: ebdba814c93ee4262c6d1861f4239281d5d3cef6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67475988"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68088893"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Microsoft 365 Defender’ı açın
 

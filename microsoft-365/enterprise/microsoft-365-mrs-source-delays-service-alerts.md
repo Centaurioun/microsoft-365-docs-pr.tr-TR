@@ -6,26 +6,27 @@ manager: scotv
 ms.date: ''
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appveyor:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 f1.keywords:
 - NOCSH
 description: Kuruluşunuzdaki posta kutusu geçiş isteklerindeki gecikmeleri izlemek için posta kutusu geçiş hizmeti önerilerini kullanın.
-ms.openlocfilehash: fe6f60b75fb7d27781d442faf82ff981ac54808a
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 1be39c430b790a63263d668edd198ccd80401799
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810747"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169441"
 ---
 # <a name="service-advisories-for-mrs-source-delays-in-exchange-online-monitoring"></a>Exchange Online izlemedeki MRS kaynak gecikmeleri için hizmet önerileri
 
-Posta Kutusu Çoğaltma Hizmeti (MRS) kaynak gecikme hizmeti önerileri, kiracı tarafında (geçiş kaynağı) Microsoft 365 kuruluşunuzda posta kutusu geçişlerini geciktirebilecek depolama sınırlamaları veya yüksek işlemci kullanımı sorunları hakkında sizi bilgilendirmektedir. Bu hizmet önerileri, bu sorunları çözmenize yardımcı olmak için Microsoft kaynaklarına bağlantılar da içerir.
+Posta Kutusu Çoğaltma Hizmeti (MRS) kaynak gecikme hizmeti önerileri, Microsoft 365 kuruluşunuzda posta kutusu geçişlerini geciktirebilecek kiracı tarafında (geçiş kaynağı) depolama sınırlamaları veya yüksek işlemci kullanımı sorunları hakkında sizi bilgilendirmektedir. Bu hizmet önerileri, bu sorunları çözmenize yardımcı olmak için Microsoft kaynaklarına bağlantılar da içerir.
 
 Bu hizmet önerileri Microsoft 365 yönetim merkezi görüntülenir. Bu hizmet önerilerini görüntülemek için **Sistem Durumu** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Hizmet durumu Exchange Online'na**</a> >  gidin ve **Etkin sorunlar** sekmesine tıklayın.
 
@@ -60,12 +61,12 @@ Aşağıdaki listede, önceki örnekteki her sütun açıklanmaktadır.
 
 MRS ve posta kutusu geçişleri hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
-- [posta kutusu Exchange](/exchange/recipients/mailbox-moves)
+- [Exchange'de posta kutusu taşımaları](/exchange/recipients/mailbox-moves)
 
-- [Geçiş performansını ve en iyi yöntemlerini Microsoft 365 ve Office 365](/exchange/mailbox-migration/office-365-migration-best-practices)
+- [Microsoft 365 ve Office 365 geçiş performansı ve en iyi yöntemler](/exchange/mailbox-migration/office-365-migration-best-practices)
 
 - [Posta kutusu geçişi performans analizi](https://techcommunity.microsoft.com/t5/exchange-team-blog/mailbox-migration-performance-analysis/ba-p/587134)
 
 - [Yavaş geçiş sorunlarını giderme](https://techcommunity.microsoft.com/t5/exchange-team-blog/troubleshooting-slow-migrations/ba-p/1795706)
 
-- [Birden çok e-posta hesabını Microsoft 365 geçirmenin yolları](/exchange/mailbox-migration/mailbox-migration)
+- [Birden çok e-posta hesabını Microsoft 365'e geçirmenin yolları](/exchange/mailbox-migration/mailbox-migration)

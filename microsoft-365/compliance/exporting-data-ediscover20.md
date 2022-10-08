@@ -1,5 +1,6 @@
 ---
 title: eBulma'da servis talebi verilerini dışarı aktarma (Premium)
+description: eBulma (Premium) durumunda sunular veya dış incelemeler için bir gözden geçirme kümesinden içeriği dışarı aktarmayı veya indirmeyi öğrenin.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,19 +11,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
-description: eBulma (Premium) durumunda sunular veya dış incelemeler için bir gözden geçirme kümesinden içeriği dışarı aktarmayı veya indirmeyi öğrenin.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 083fe6cd67bd3d15a7343f18545d75ebca9054a4
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 7d562d9d9b2259fc235af584cc8fff2c4d6fdf0d
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67820337"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68113031"
 ---
 # <a name="export-case-data-in-ediscovery-premium"></a>eBulma'da servis talebi verilerini dışarı aktarma (Premium)
 

@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 73e87075f17413e361f380d7556dc3988ac4a7f7
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 8adada0278a8cdc59d17f487f8b34f5f10dafb21
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67693333"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68152101"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android'de Uç Nokta için Microsoft Defender sorunlarını giderme
 
@@ -44,7 +45,7 @@ Bu makalede, oturum açma sorunlarını gidermeye yardımcı olacak çözümler 
 
 **Oturum açılamadı:** *Beklenmeyen hata, daha sonra deneyin*
 
-:::image type="content" source="images/f9c3bad127d636c1f150d79814f35d4c.png" alt-text="Oturum açma başarısız oldu hatası Microsoft Defender 365 portalının oturum açma sayfasında beklenmeyen hata." lightbox="images/f9c3bad127d636c1f150d79814f35d4c.png":::
+:::image type="content" source="images/f9c3bad127d636c1f150d79814f35d4c.png" alt-text="Microsoft Defender 365 portalının oturum açma sayfasında oturum açma başarısız oldu hatası beklenmeyen bir hata." lightbox="images/f9c3bad127d636c1f150d79814f35d4c.png":::
 
 **İleti:**
 
@@ -62,7 +63,7 @@ Google Play Store'dan en son sürümü ve [Microsoft Authenticator'ı](https://p
 
 **Oturum açılamadı:** *Geçersiz lisans, lütfen yöneticiye başvurun*
 
-:::image type="content" source="images/920e433f440fa1d3d298e6a2a43d4811.png" alt-text="Microsoft Defender 365 portalının oturum açma sayfasındaki yönerge iletişim ayrıntıları" lightbox="images/920e433f440fa1d3d298e6a2a43d4811.png":::
+:::image type="content" source="images/920e433f440fa1d3d298e6a2a43d4811.png" alt-text="Microsoft Defender 365 portalının oturum açma sayfasındaki yönerge iletişim bilgileri" lightbox="images/920e433f440fa1d3d298e6a2a43d4811.png":::
 
 **İleti:** *Geçersiz lisans, lütfen yöneticiye başvurun*
 

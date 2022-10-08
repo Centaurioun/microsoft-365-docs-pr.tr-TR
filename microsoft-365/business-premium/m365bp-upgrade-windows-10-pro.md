@@ -6,21 +6,24 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: other
+ms.collection:
+- tier1
+- m365-security
 ms.date: 09/15/2022
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 description: Windows cihazlarınızı Microsoft 365 İş Ekstra ile Windows 10 Pro yükseltmeyi öğrenin.
-ms.openlocfilehash: c2108d6ddaac381ccf5598d09974dad247b71809
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: f79a60e745c62a5855a32480634d1d1a14ea8991
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67738236"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68110589"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Windows cihazlarını Windows 10 Pro yükseltme
 

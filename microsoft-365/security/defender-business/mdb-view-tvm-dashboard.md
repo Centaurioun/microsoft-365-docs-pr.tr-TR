@@ -6,7 +6,7 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
@@ -15,21 +15,22 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
+- tier1
 ms.custom: intro-get-started
-ms.openlocfilehash: b0b14216737eea49c7a5875b62d2ba93c1fc422e
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: d3bfaa93e390a61d7c70e3763929247398a59481
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597966"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68110611"
 ---
 # <a name="use-your-vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>İş için Microsoft Defender'de güvenlik açığı yönetimi panonuzu kullanma
 
 İş için Defender, güvenlik ekibinize zaman ve çaba kazandırmak için tasarlanmış bir güvenlik açığı yönetim panosu içerir. Bu pano, bir maruz kalma puanı sağlamanın yanı sıra kullanıma sunulan cihazlar hakkındaki bilgileri görüntülemenize ve ilgili güvenlik önerilerini görmenize olanak tanır. Defender Güvenlik Açığı Yönetimi panonuzu kullanarak:
 
 - Şirketinizdeki cihazlarla ilişkili olan poz puanınızı görüntüleyin.
-- Cihazlarla ilgili engelli iletişimleri ele alma, güvenlik duvarı korumasını açma veya Microsoft Defender Virüsten Koruma tanımlarını güncelleştirme gibi en önemli güvenlik önerilerinizi görüntüleyin.
+- Cihazlarla ilgili engelli iletişimleri ele alma, güvenlik duvarı korumasını açma veya Virüsten Koruma tanımlarını Microsoft Defender güncelleştirme gibi en önemli güvenlik önerilerinizi görüntüleyin.
 - Karantinaya gönderilen dosyalar veya cihazlarda bulunan güvenlik açıkları gibi düzeltme etkinliklerini görüntüleyin.
 
 ## <a name="vulnerability-management-features-and-capabilities"></a>Güvenlik açığı yönetimi özellikleri ve özellikleri

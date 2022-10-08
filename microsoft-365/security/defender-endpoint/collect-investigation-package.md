@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 31b8f1a7e4a4def4641d5330ad16d05318192828
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: abd9d821c60655c9df5f632dd45bed77772b16ac
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701906"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68151639"
 ---
 # <a name="collect-investigation-package-api"></a>Araştırma paketi API'lerini toplama
 
@@ -65,6 +67,8 @@ Temsilci (iş veya okul hesabı)|Machine.CollectForensics|'Adli tıp topla'
 >
 > - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Uyarı Araştırması' (Daha fazla bilgi için bkz [. Rol oluşturma ve yönetme](user-roles.md) )
 > - Kullanıcının cihaz grubu ayarlarına göre cihaza erişimi olmalıdır (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md) )
+>
+> Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.
 
 ## <a name="http-request"></a>HTTP isteği
 

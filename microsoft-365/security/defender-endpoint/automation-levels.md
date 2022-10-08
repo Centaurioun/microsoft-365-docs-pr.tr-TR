@@ -14,18 +14,18 @@ ms.date: 08/22/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
 search.appverid: met150
-ms.openlocfilehash: 1113bfe2707a92601317d6d5d7508226d953f264
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 4f00523c62846f5341fe2c17a5fd26ea255d60b5
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812578"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68151617"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Otomatik araştırma ve düzeltme özelliklerindeki otomasyon düzeyleri
 
@@ -43,6 +43,9 @@ ms.locfileid: "67812578"
 
 > [!TIP]
 > En iyi sonuçlar için [, AIR'i yapılandırırken](configure-automated-investigations-remediation.md) tam otomasyon kullanmanızı öneririz. Geçen yıl toplanan ve analiz edilen veriler, tam otomasyon kullanan müşterilerin daha düşük otomasyon düzeylerini kullanan müşterilere kıyasla %40 daha yüksek güvenilirlikli kötü amaçlı yazılım örneklerinin kaldırıldığını gösteriyor. Tam otomasyon, stratejik girişimlerinize daha fazla odaklanmak için güvenlik operasyonları kaynaklarınızın serbestleştirilmesine yardımcı olabilir.
+
+> [!NOTE]
+> Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.
 
 ## <a name="levels-of-automation"></a>Otomasyon düzeyleri
 

@@ -1,5 +1,5 @@
 ---
-title: 21Vianet Office uygulaması tarafından Office 365 Android için Office 365'i indirme
+title: 21Vianet tarafından sağlanan Office 365 için Android için Office uygulamasını indirme
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -7,9 +7,10 @@ author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -18,46 +19,46 @@ search.appverid:
 - MET150
 - GEU150
 - GEA150
-description: 21Vianet tarafından Office 365 Android için Microsoft Office uygulaması ve Çin'deki müşteriler için nasıl indirildi hakkında daha fazla bilgi edinebilirsiniz.
+description: 21Vianet tarafından sağlanan Office 365 için Android için Microsoft Office uygulaması ve Çin'deki müşteriler için nasıl indirebileceğiniz hakkında daha fazla bilgi edinin.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 7351fb9c63250a0207d45f767a409e7953c93103
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 92f674c311a1527d671c4e86a2a9921403384e28
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62986510"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169089"
 ---
-# <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>Office uygulaması için Android için Office 365 21Vianet tarafından işletilen Uygulama
+# <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>21Vianet tarafından sağlanan Office 365 için Android için Office uygulaması
 
-Android için Microsoft Office uygulaması Word, Excel ve PowerPoint uygulamalarını Android telefonlar için indirilebilir tek bir uygulamada birleştirir. Android Office uygulaması ile Word, Office 365 Excel ve PowerPoint uygulamalarına olduğu gibi Android'e PowerPoint bağlanabilirsiniz. Android Office uygulaması yüklemesi, var olan Word, Excel ve PowerPoint yüklemelerini etkilemez.
+Android için Microsoft Office uygulaması, Word, Excel ve PowerPoint mobil uygulamalarını Android telefonlar için indirilebilen tek bir uygulamada birleştirir. Android için Office uygulamasıyla, Word, Excel ve PowerPoint mobil uygulamalarında olduğu gibi Office 365 bağlanabilirsiniz. Android için Office uygulaması indirme, Word, Excel ve PowerPoint'in mevcut yüklemelerini etkilemez.
 
-Android Office uygulaması birkaç özellik 21Vianet müşterileri Office 365 bazı cihazlarda kullanılamaz:
+21Vianet müşterileri tarafından sağlanan Office 365 android için birkaç Office uygulaması kullanılamaz:
 
 - Görüntüden metne ve Görüntüden tabloya 
-- Fotoğrafları Lens'in Word belgelerine dönüştürme 
+- Lens'ten fotoğrafları Word belgelerine dönüştürme 
 - Dosya aktarma eylemi 
-- Notlar yerel olarak kalır ve sunucuyla eşitz
-- QR Tarama içinde bağlantı önizlemesi
-- Ben bölümündeki canlı persona kartları
+- Notlar yerel kalır ve sunucuyla eşitlenmez
+- Tarama QR'sinde bağlantı önizlemesi
+- Ben bölümündeki canlı kişilik kartları
 - Sınıflandırma, etiketleme ve koruma (CLP)
 
 
-## <a name="download-the-office-app-for-android"></a>Android için Office uygulaması'i indirme
+## <a name="download-the-office-app-for-android"></a>Android için Office uygulamasını indirme
 
-Şu Office uygulaması mağazalarından Android telefonlar için cep telefonlarını indirin:
+Android telefonlar için Office uygulamasını şu Çin mağazalarından herhangi birinden indirin:
 - [Baidu](https://shouji.baidu.com/software/26842919.html)
 - [Xiaomi](http://app.mi.com/details?id=com.microsoft.office.officehub&ref=search)
 - [Lenovo](https://www.lenovomm.com/appdetail/com.microsoft.office.officehub/43003745)
 - [360](http://zhushou.360.cn/detail/index/soft_id/708682?recrefer=SE_D_office%20mobile)
-- [tencent](https://sj.qq.com/myapp/detail.htm?apkName=com.microsoft.office.officehub)
+- [Tencent](https://sj.qq.com/myapp/detail.htm?apkName=com.microsoft.office.officehub)
 - [wandoujia](https://www.wandoujia.com/apps/1502895)
 
 > [!NOTE]
-> Android Office uygulaması sürümü şu anda yalnızca telefonlarda kullanılabilir. Tabletler için destek daha sonra eklenecektir. 
+> Android için Office uygulaması şu anda yalnızca telefonlarda kullanılabilir. Tabletler için destek daha sonra eklenecektir. 
 
 
-## <a name="security-considerations"></a>Güvenlikle ilgili dikkat edilmesi gereken noktalar
+## <a name="security-considerations"></a>Güvenlikle ilgili dikkat edilmesi gerekenler
 
-Organizasyonunız uygulamaları çalışanların mobil cihazlarına iletirse Word, Excel ve PowerPoint uygulamalarını Android için Office uygulaması ile değiştirmenizi öneririz.  
+Kuruluşunuz uygulamaları çalışan mobil cihazlarına gönderirse Word, Excel ve PowerPoint uygulamalarını Android için Office uygulamasıyla değiştirmenizi öneririz.  
 
 

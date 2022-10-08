@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Bir Etki Alanı Adı Hizmeti (DNS) kaydını, Office 365'daki özel etki alanınızla Sender Policy Framework (SPF) kullanacak şekilde nasıl güncelleştireceğinizi öğrenin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 14e66008c159a042df8ea14af039276d97c7f622
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 506e23b7dd3441da49fdd48b6772eb280caafd70
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497213"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072231"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Kimlik sahtekarlığını önlemeye yardımcı olmak için SPF'yi ayarlama
 

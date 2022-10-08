@@ -1,8 +1,8 @@
 ---
-title: Tehdit Avcılığı için Microsoft Defender Uzmanlarına abone olma
+title: Avcılık için Microsoft Defender Uzmanlarına abone olma
 ms.reviewer: ''
 description: Microsoft 365 Defender ve Avcılık için Defender Uzmanları'na yeniyseniz, abone olma yönteminiz budur
-keywords: yönetilen tehdit avcılığı hizmeti, yönetilen tehdit avcılığı, yönetilen algılama ve yanıt (MDR) hizmeti, MTE, Microsoft Tehdit Uzmanları, MTE-TAN, hedefli saldırı bildirimi, defender uzmanları bildirimleri, uç nokta saldırı bildirimleri, tehdit avcılığı ve analiz için Microsoft Defender Uzmanları.
+keywords: yönetilen tehdit avcılığı hizmeti, yönetilen tehdit avcılığı, yönetilen algılama ve yanıt (MDR) hizmeti, MTE, Microsoft Tehdit Uzmanları, MTE-TAN, hedefli saldırı bildirimi, savunma uzmanları bildirimleri, uç nokta saldırı bildirimleri, Microsoft Defender Tehdit avcılığı ve analiz uzmanları.
 search.product: Windows 10
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -15,18 +15,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: e8aa0cab5f3b7c756b2b4baf5cab046cf35287e0
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 8b13a000f40cc7728716b6121767996b305f2db6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67684055"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68088937"
 ---
-# <a name="start-using-microsoft-defender-experts-for-hunting"></a>Avlanmak için Microsoft Defender Uzmanlarını kullanmaya başlama
+# <a name="start-using-microsoft-defender-experts-for-hunting"></a>Avcılık için Microsoft Defender Uzmanlarını kullanmaya başlayın
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,7 +41,7 @@ Microsoft 365 Defender ve Avcılık için Defender Uzmanları'na yeniyseniz:
 1. Hoş geldiniz e-postanızı aldıktan sonra **Microsoft 365 Defender oturum aç'ı** seçin.
 2. Zaten bir Microsoft hesabınız varsa oturum açın. Yoksa bir tane oluşturun.
 3. Microsoft 365 Defender hızlı tur güvenlik paketini, özelliklerin nerede olduğunu ve ne kadar önemli olduğunu öğreneceksiniz. **Hızlı bir tura katılın'ı** seçin.  
-4. Microsoft Defender Uzmanlar hizmetinin ne olduğu ve sağladığı özellikler hakkında kısa açıklamaları okuyun. **İleri**'yi seçin. Hoş geldiniz sayfasını görürsünüz:
+4. Microsoft Defender Uzmanları hizmetinin ne olduğu ve sağladığı özellikler hakkında kısa açıklamaları okuyun. **İleri**'yi seçin. Hoş geldiniz sayfasını görürsünüz:
 
 ![Avcılık için Defender Uzmanları hizmeti için bir kart içeren Microsoft 365 Defender karşılama sayfasının ekran görüntüsü.](../../media/mte/defenderexperts/start-using-defender-experts-for-hunting.png)
 
@@ -127,11 +127,11 @@ Tehdit avcılığıyla ilgili tüm sorularınıza hızlı ve doğru yanıtlar al
 - Kısa süre önce sektörümüzü hedefleyen bir tehditle ilgili bir blog gönderisi gördük. Microsoft 365 Defender bu tehdit aktörü karşısında hangi korumayı sağladığını anlamamıza yardımcı olabilir misiniz?
 - Kısa süre önce kuruluşumuza karşı yürütülen bir kimlik avı kampanyası gözlemledik. Bunun özel olarak şirketimize mi yoksa dikey mi hedeflendiğini söyleyebilir misiniz?
 
-### <a name="microsoft-defender-experts-for-hunting-alert-communications"></a>Tehdit Avcılığı için Microsoft Defender Uzmanları uyarı iletişimleri
+### <a name="microsoft-defender-experts-for-hunting-alert-communications"></a>Microsoft Defender Uzmanları: Tehdit Avcılığı uyarı iletişimleri
 
 - Olay yanıtı ekibiniz, aldığımız Defender Uzmanlar Bildirimi'ni ele almamıza yardımcı olabilir mi?
-- Bu Defender Uzmanlar Bildirimini Avcılık için Microsoft Defender Uzmanlarından aldık. Kendi olay müdahale ekibimiz yok. Şimdi ne yapabiliriz ve olayı nasıl kapsayabiliriz?
-- Avcılık için Microsoft Defender Uzmanlarından Bir Defender Uzmanları Bildirimi aldık. Olay yanıtı ekibimize geçirebileceğimiz hangi verileri bize sağlayabilirsiniz?
+- Avcılık için Microsoft Defender Uzmanlarından bu Defender Uzmanlar Bildirimi'ni aldık. Kendi olay müdahale ekibimiz yok. Şimdi ne yapabiliriz ve olayı nasıl kapsayabiliriz?
+- Avcılık için Microsoft Defender Uzmanlarından Defender Uzmanlar Bildirimi aldık. Olay yanıtı ekibimize geçirebileceğimiz hangi verileri bize sağlayabilirsiniz?
 
 ### <a name="next-step"></a>Sonraki adım
 

@@ -12,17 +12,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 0b90fd4ecade2f79cac895c61a4a7327de8aaf66
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: eea3d1b8adb1a89072b741dba6314e5287777e32
+ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701972"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68151881"
 ---
 # <a name="how-to-use-power-automate-connector-to-set-up-a-flow-for-events"></a>Olaylar için Akış ayarlamak için Power Automate Bağlayıcısı'nı kullanma
 
@@ -52,11 +54,11 @@ Aşağıdaki örnekte, kiracınızda yeni bir Uyarı oluştuğunda tetiklenen bi
 
 2. **Akışlarım** \> **Yeni** \> **Otomatikleştirilmiş- boş bölümüne** gidin.
 
-    :::image type="content" source="images/api-flow-1.png" alt-text="Microsoft Defender 365 portalında Akışlarım menü öğesinin altındaki Yeni akış bölmesi" lightbox="images/api-flow-1.png":::
+    :::image type="content" source="images/api-flow-1.png" alt-text="Microsoft Defender 365 portalındaki Akışlarım menü öğesinin altındaki Yeni akış bölmesi" lightbox="images/api-flow-1.png":::
 
 3. Akışınız için bir ad seçin, tetikleyici olarak "Microsoft Defender ATP Tetikleyicileri" ifadesini arayın ve ardından yeni Uyarılar tetikleyicisini seçin.
 
-    :::image type="content" source="images/api-flow-2.png" alt-text=" Microsoft Defender 365 portalında Akışınızın tetikleyicisini seçin bölümü" lightbox="images/api-flow-2.png" :::
+    :::image type="content" source="images/api-flow-2.png" alt-text="Microsoft Defender 365 portalındaki Akışınızın tetikleyicisini seçin bölümü" lightbox="images/api-flow-2.png" :::
 
 Artık her yeni Uyarı gerçekleştiğinde tetiklenen bir Akışa sahipsiniz.
 
@@ -82,7 +84,7 @@ Uyarı tetikleyicisi yalnızca Uyarı Kimliği ve Makine Kimliği sağlar. Bu va
 
 2. Uyarı önem derecesinin **Yüksek'e eşit** olup olmadığını denetleyin.
 
-   Evet ise, Makine Kimliği ve açıklama ile **Microsoft Defender ATP - Makineyi yalıt** eylemini ekleyin.
+   Evet ise, **Microsoft Defender ATP - Makine kimliğini** ve açıklamayı kullanarak makine yalıt eylemini ekleyin.
 
     :::image type="content" source="images/api-flow-5.png" alt-text="Eylemler bölmesi"  lightbox="images/api-flow-5.png":::
 

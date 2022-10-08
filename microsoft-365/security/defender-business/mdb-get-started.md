@@ -6,7 +6,7 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
@@ -15,15 +15,16 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
+- tier1
 ms.custom: intro-get-started
-ms.openlocfilehash: 7d15b3fad4e9cb05fd49ae977e66206314a71235
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 7f23c0aa6ee3db1b549484b69bbc49907d13d4ed
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736486"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68110831"
 ---
 # <a name="visit-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalını ziyaret edin
 

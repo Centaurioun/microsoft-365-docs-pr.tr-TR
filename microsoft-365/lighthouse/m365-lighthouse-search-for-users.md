@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için kullanıcıları nasıl arayacağınızı öğrenin.
-ms.openlocfilehash: b538cab60f165841c55345b497c0291f716c9d95
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 0823a42436836bc0fe5e6d4475066b68d48ab901
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597139"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178371"
 ---
 # <a name="search-for-users-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'de kullanıcıları arama
 

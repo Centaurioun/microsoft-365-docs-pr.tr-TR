@@ -9,6 +9,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - SPO_Content
@@ -21,12 +22,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online modern site sayfalarında web bölümlerinin performansını iyileştirmek için Sayfa Tanılama'yı kullanmayı öğrenin.
-ms.openlocfilehash: 83cea5056e25d1743d22cc90fea0bedb16427ca9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: bd3243152c8405fc5a151e44e6f26bd19d5c45ca
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67700872"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169463"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>SharePoint Online modern site sayfalarında web bölümü performansını iyileştirme
 

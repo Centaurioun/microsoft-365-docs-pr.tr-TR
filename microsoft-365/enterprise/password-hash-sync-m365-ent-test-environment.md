@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
@@ -19,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 'Özet: Microsoft 365 test ortamınız için parola karması eşitlemesini ve oturum açmayı yapılandırın ve gösterin.'
-ms.openlocfilehash: 35dcaa6cf4612283a7e1890345c5b5d99ba798e0
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 7972c3e8443b7b42a466fe18303d25618f5c6633
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67669991"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68169353"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Microsoft 365 test ortamınız için parola karması eşitlemesi
 

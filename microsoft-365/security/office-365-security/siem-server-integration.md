@@ -10,7 +10,7 @@ ms.topic: article
 ms.date: 11/18/2019
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - Ent_Solutions
 - SIEM
@@ -18,12 +18,13 @@ ms.custom:
 description: Microsoft 365 bulut hizmetleriniz ve uygulamalarınızla Güvenlik Bilgileri ve Olay Yönetimi (SIEM) sunucusu tümleştirmesine genel bakış edinin
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 9f76a4d80844b491a5896db489a23b58db9bb153
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 172cf340817b5afc212c2f8296e374e99a6125e1
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595971"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68072293"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Microsoft 365 hizmetleri ve uygulamalarıyla Güvenlik Bilgileri ve Olay Yönetimi (SIEM) sunucusu tümleştirmesi
 
@@ -82,12 +83,12 @@ Geçerli planınızın Microsoft Sentinel tümleştirmesine izin verdiğinden (�
     1. Seçili olan ürünler için tüm Microsoft olay oluşturma kurallarını kapatın.
 1. Sayfayı kaydırarak sayfanın **Olayları bağlama** bölümünde **Office 365 için Microsoft Defender**.
 
-Son adımı tamamlarken yararlı ve uygulanabilir bulduğunuz *diğer tüm Microsoft Defender ürünlerinden* tablo seçebileceğinizi unutmayın (aşağıda).
+Son adımı tamamlarken yararlı ve uygulanabilir bulduğunuz *diğer Microsoft Defender ürünlerden* tablo seçebileceğinizi unutmayın (aşağıda).
 
 7. **EmailEvents**, **EmailUrlInfo**, **EmailAttachmentInfo** ve **EmailPostDeliveryEvents** > ve **Değişiklikleri Uygula'yı** seçin.
 
 ## <a name="more-resources"></a>Diğer kaynaklar
 
-[Bulut için Microsoft Defender'da güvenlik çözümlerini tümleştirme](/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
+[Bulut için Microsoft Defender'de güvenlik çözümlerini tümleştirme](/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
 
 [Microsoft Graph Güvenlik API'si uyarılarını SIEM ile tümleştirme](/graph/security-integration)
