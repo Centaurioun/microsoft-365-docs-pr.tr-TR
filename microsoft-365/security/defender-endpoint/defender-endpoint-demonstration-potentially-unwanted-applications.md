@@ -8,21 +8,25 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 4c5b0fe9af369db36829a4becc637e07cd40fdb9
-ms.sourcegitcommit: 55672e44de74209f2e23b4bd9ca74a2ee7e88cd9
+ms.openlocfilehash: 56162c639b858a1ba255794e0b6fde03cddd5b14
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2022
-ms.locfileid: "68319729"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542661"
 ---
+<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
+
 # <a name="potentially-unwanted-applications-pua-demonstration"></a>İstenmeyebilecek uygulamalar (PUA) gösterimi
 
 Microsoft Defender Virüsten Koruma'daki İstenmeyebilecek Uygulamalar (PUA) koruma özelliği, PUA'ların ağınızdaki uç noktaları indirip yüklemesini tanımlayıp engelleyebilir. Bu uygulamalar virüs, kötü amaçlı yazılım veya diğer tehdit türleri olarak kabul edilmez, ancak uç noktalarda performanslarını veya kullanımlarını olumsuz yönde etkileyen eylemler gerçekleştirebilir.

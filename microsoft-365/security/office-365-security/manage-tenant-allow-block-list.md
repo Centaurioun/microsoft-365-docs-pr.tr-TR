@@ -17,12 +17,12 @@ ms.custom: ''
 description: Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde izin verme ve blokları yönetmeyi öğrenin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 5d26a013199156b5aeff9ca21dcbebea5c64ebbf
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: e46cabba3e2d0f765937a8ff34bbcea918204974
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68092434"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542485"
 ---
 # <a name="manage-your-allows-and-blocks-in-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesinde izinlerinizi ve bloklarınızı yönetin
 
@@ -57,7 +57,7 @@ Microsoft'a hatalı pozitifler olarak bildirirken aşağıdaki öğe türleri i�
 
 - **Dosyalar**: Bu engellenen dosyaları içeren Email iletiler *kötü amaçlı yazılım* olarak engellenir.
 
-- **URL'ler**: Bu engellenen URL'leri içeren Email iletiler *yüksek güvenilirlikli kimlik avı* olarak engellenir.
+- **URL'ler**: Bu engellenen URL'leri içeren Email iletiler *yüksek güvenilirlikli kimlik avı* olarak engellenir. Engellenen URL'leri içeren iletiler karantinaya alınır.
 
 Kiracı İzin Ver/Engelle Listesi'nde, aşağıdaki öğe türleri için doğrudan blok girdileri de oluşturabilirsiniz:
 

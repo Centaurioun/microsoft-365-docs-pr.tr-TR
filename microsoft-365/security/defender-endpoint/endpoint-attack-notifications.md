@@ -14,17 +14,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 3ad9976614ee45b55b3c2570c1d3090c2259377e
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: fbe9bc01c5006d45a3f3a55c36525294009eb5ba
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68506843"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542507"
 ---
 # <a name="endpoint-attack-notifications"></a>Uç Nokta Saldırısı Bildirimleri
 

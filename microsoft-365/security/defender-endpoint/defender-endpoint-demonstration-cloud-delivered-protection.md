@@ -8,21 +8,25 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 97ec2b7422a90fac95547cf5a3c05d125a14fbd7
-ms.sourcegitcommit: 55672e44de74209f2e23b4bd9ca74a2ee7e88cd9
+ms.openlocfilehash: feecc22cdeaa64be65c7570e3a89b087c77195a7
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2022
-ms.locfileid: "68319608"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68543255"
 ---
+<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
+
 # <a name="cloud-delivered-protection-demonstration"></a>Bulut tabanlı koruma tanıtımı
 
 Microsoft Gelişmiş Koruma Hizmeti (MAPS) olarak da adlandırılan Microsoft Defender Virüsten Koruma için bulut tabanlı koruma, standart gerçek zamanlı korumamıza ek olarak güçlü ve hızlı koruma sağlar.

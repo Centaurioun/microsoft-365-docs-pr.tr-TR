@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Paylaşılan posta kutuları, birden çok kişinin aynı posta kutusuna erişmesi gerektiğinde kullanılır. Paylaşılan posta kutusu oluşturmadan önce bilmeniz gerekenleri öğrenin.
-ms.openlocfilehash: d7d4bf06fa9e91bca7a3847a9db99aee0a6ca97f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 9c34cf0658f9028a14d8fa37380b7df812089495
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68204969"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542529"
 ---
 # <a name="about-shared-mailboxes"></a>Paylaşılan posta kutuları hakkında
 
@@ -67,7 +67,7 @@ Eğer yönetici kullanıcıya bunu yapma yetkisi verdiyse, grup posta kutusu izn
 
 
 > [!NOTE]
-> Paylaşılan posta kutusuna erişmek için kullanıcının Exchange Online lisansı olması gerekir, ancak paylaşılan posta kutusu ayrı bir lisans gerektirmez. Her paylaşılan posta kutusunun karşılık gelen bir kullanıcı hesabı vardır. Paylaşılan posta kutusunu oluştururken parola girmenizin nasıl istendiğini fark ettin mi? Hesabın parolası var, ancak sistem tarafından oluşturulmuş (bilinmiyor). Paylaşılan posta kutusunda oturum açmak için hesabı kullanmamalısınız. Lisans olmadan paylaşılan posta kutuları 50 GB ile sınırlıdır. Boyut sınırını 100 GB'a yükseltmek için paylaşılan posta kutusuna Exchange Online Plan 2 lisansı atanmalıdır. Exchange Online Arşivleme eklenti lisansına sahip Exchange Online Plan 1 lisansı yalnızca arşiv posta kutusunun boyutunu artırır. Bu, ek arşiv depolama kapasitesi için otomatik genişletme arşivlemeyi etkinleştirmenize de olanak tanır. Benzer şekilde, paylaşılan posta kutusunu dava ayrı tutmaya yerleştirmek istiyorsanız, paylaşılan posta kutusunun Exchange Online Plan 2 lisansına veya Exchange Online Arşivleme eklenti lisansına sahip bir Exchange Online Plan 1 lisansına sahip olması gerekir. Office 365 için Microsoft Defender, eKeşif (Premium) veya otomatik saklama ilkeleri gibi gelişmiş özellikleri uygulamak istiyorsanız, paylaşılan posta kutusunun bu özellikler için lisanslanması gerekir.
+> Paylaşılan posta kutusuna erişmek için kullanıcının Exchange Online lisansı olması gerekir, ancak paylaşılan posta kutusu ayrı bir lisans gerektirmez. Her paylaşılan posta kutusunun karşılık gelen bir kullanıcı hesabı vardır. Paylaşılan posta kutusunu oluştururken parola girmenizin nasıl istendiğini fark ettin mi? Hesabın parolası var, ancak sistem tarafından oluşturulmuş (bilinmiyor). Paylaşılan posta kutusunda oturum açmak için hesabı kullanmamalısınız. Lisans olmadan paylaşılan posta kutuları 50 GB ile sınırlıdır. Boyut sınırını 100 GB'a yükseltmek için paylaşılan posta kutusuna Exchange Online Plan 2 lisansı atanmalıdır. Exchange Online Arşivleme eklenti lisansına sahip Exchange Online Plan 1 lisansı yalnızca arşiv posta kutusunun boyutunu artırır. Bu, ek arşiv depolama kapasitesi için otomatik genişletme arşivlemeyi etkinleştirmenize de olanak tanır. Benzer şekilde, paylaşılan posta kutusunu dava ayrı tutmaya yerleştirmek istiyorsanız, paylaşılan posta kutusunun Exchange Online Plan 2 lisansına veya Exchange Online Arşivleme eklenti lisansına sahip bir Exchange Online Plan 1 lisansına sahip olması gerekir. Office 365 için Microsoft Defender, eBulma (Premium) veya bekletme ilkeleri gibi gelişmiş özellikleri uygulamak istiyorsanız, paylaşılan posta kutusunun bu özellikler için lisanslanması gerekir.
 
 > [!NOTE]
 > Temmuz 2018'e kadar tüm lisanssız paylaşılan posta kutuları 100 GB boyutunda sağlandı. Daha fazla bilgi için bkz. [Paylaşılan Posta Kutusu sağlama ve boyutlandırmayı düzeltme](https://techcommunity.microsoft.com/t5/exchange-team-blog/correcting-shared-mailbox-provisioning-and-sizing/ba-p/607991).
