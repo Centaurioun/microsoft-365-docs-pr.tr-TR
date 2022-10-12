@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: MASAÜSTÜ, mobil ve web için Office uygulamalarında duyarlılık etiketlerini yönetmek için BT yöneticilerine yönelik bilgiler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d11bd5a8128b4fe3e9cb14901f2c7ce1e5e1bfed
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 46008cae997bd71a9c5d165226a728a011d7f058
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68504314"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542551"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office uygulamalarında duyarlılık etiketlerini yönetme
 
@@ -476,19 +476,17 @@ Bu yüksek görünürlüğün bir parçası olarak, bu etiketler renkleri de des
 
 Yeni oluşturulan etiketlerin varsayılan olarak bir rengi yoktur. Etiketleriniz [Azure Information Protection'dan geçirildiyse](/azure/information-protection/configure-policy-migrate-labels) veya Azure Information Protection birleşik etiketleme istemcisi için etiket renkleri yapılandırdıysanız, bu etiket renkleri artık bunları destekleyen uygulamalarda görüntülenir.
 
-Duyarlılık etiketleri için 10 standart renkten birini seçmek için Microsoft Purview uyumluluk portalı kullanın. Bu yapılandırma, etiket adı ve açıklamasından sonra etiket yapılandırmasının ilk sayfasındadır.
+Duyarlılık etiketleri için 10 standart renkten birini seçmek için Microsoft Purview uyumluluk portalı kullanın. **Etiket rengi** yapılandırması, etiket adı ve açıklamasından sonra etiket yapılandırmasının ilk sayfasındadır.
 
 Alt etiketler için renkleri seçemezsiniz çünkü bunlar etiket rengini üst etiketlerinden otomatik olarak devralır.
 
-Etiket 10 renkten birinden farklı bir renk için yapılandırılmışsa **, Özel renk** seçeneğinin seçili olduğunu ve standart renk seçeneklerinin kullanılabilir olmadığını görürsünüz:
+Bir etiket varsayılan 10 renkten birinden farklı bir renk için yapılandırılmışsa **, Önceden atanmış müşteri rengi kullan** onay kutusunun seçili olduğunu ve standart renk seçeneklerinin kullanılamaz olduğunu görürsünüz. Önce onay kutusunu temizleyerek özel rengi standart renklerden biriyle değiştirebilir ve ardından standart renklerden birini seçebilirsiniz. 
 
-![Etiket özel bir renge sahip olduğunda duyarlılık etiketi renk yapılandırması.](../media/label-custom-color-configuration.png)
-
-Önce özel renk seçimini kaldırıp ardından standart renklerden birini seçerek özel rengi standart renklerden biriyle değiştirebilirsiniz. Ancak uyumluluk portalını kullanarak farklı bir özel renk yapılandıramazsınız. Bunun yerine, sonraki bölümde açıklandığı gibi PowerShell kullanın.
+Uyumluluk portalını kullanarak farklı bir özel renk yapılandıramazsınız. Bunun yerine, sonraki bölümde açıklandığı gibi PowerShell kullanın.
 
 #### <a name="configuring-custom-colors-by-using-powershell"></a>PowerShell kullanarak özel renkleri yapılandırma 
 
-Duyarlılık etiketi için renk ayarlamak için [Güvenlik & Uyumluluk Merkezi PowerShell](/powershell/exchange/scc-powershell) gelişmiş ayar **rengini** kullanabilirsiniz. Bu yapılandırma, Microsoft Purview uyumluluk portalı yapılandıramazsınız renkleri destekler.
+Duyarlılık etiketi için bir renk ayarlamak için [Güvenlik & Uyumluluğu PowerShell](/powershell/exchange/scc-powershell) gelişmiş ayar **rengini** kullanabilirsiniz. Bu yapılandırma, Microsoft Purview uyumluluk portalı yapılandıramazsınız renkleri destekler.
 
 Renk seçiminizi belirtmek için rengin kırmızı, yeşil ve mavi (RGB) bileşenleri için onaltılık üçlü kod kullanın. Örneğin #40e0d0 turkuaz için RGB onaltılık değeridir.
 

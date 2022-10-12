@@ -10,15 +10,16 @@ ms.service: O365-seccomp
 ms.date: ''
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 ms.topic: article
 description: SharePoint ve OneDrive'da etiketlenmiş ve şifrelenmiş belgeler için masaüstü uygulamalarında birlikte yazma ve Otomatik Kaydetme'yi etkinleştiren bir ayarı açın.
-ms.openlocfilehash: bc405ee52ba469b342c143ba720e0dc027a0addd
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: ccff4f54a26ec02249a524eacaa1ac8edf52a0cf
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67408385"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542573"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Duyarlılık etiketleriyle şifrelenmiş dosyalar için birlikte yazmayı etkinleştirme
 
@@ -31,6 +32,8 @@ Kiracınız için bu ayar etkinleştirilmeden, kullanıcıların Office masaüst
 Ayrıca, bu işlevselliğin etkinleştirilmesi, etiketlenmiş ve şifrelenmiş dosyalar için [Otomatik Kaydetme](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) işlevinin desteklenmesine neden olur.
 
 Yayın duyurusunu okumak için [şifrelenmiş Microsoft Bilgi Koruması belgelerde birlikte yazma genel kullanıma sunuldu](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/co-authoring-on-microsoft-information-protection-encrypted/ba-p/2693718) blog gönderisine bakın.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="metadata-changes-for-sensitivity-labels"></a>Duyarlılık etiketleri için meta veri değişiklikleri
 
@@ -84,6 +87,7 @@ Bu özelliği açmadan önce aşağıdaki önkoşulları anladığınızdan emin
     - **Azure Information Protection birleşik etiketleme istemcisi ve tarayıcısı:**
         - [Microsoft İndirme Merkezi'nden](https://www.microsoft.com/en-us/download/details.aspx?id=53018) yükleyebileceğiniz en düşük sürüm [2.12.62.0](/information-protection/rms-client/unifiedlabelingclient-version-release-history#version-212620)
         - Office uygulamaları için, Kurumlar için Microsoft 365 Uygulamaları için listelenen en düşük sürümler gerekir
+        - Ayrıca, aynı kiracıda [Çift Anahtar Şifrelemesi](double-key-encryption.md) kullanmıyorsunuz
     
     - **Windows veya macOS için OneDrive eşitleme uygulaması:**
         - En düşük 19.002.0121.0008 sürümü
@@ -111,12 +115,11 @@ Duyarlılık etiketleriyle şifrelenmiş dosyalar için birlikte yazma için kir
     
     Excel'e özgü: Birisi duyarlılık etiketleri için meta veri değişikliklerini desteklemeyen bir Excel sürümünü kullanarak dosyayı düzenler ve kaydederse, şifreleme uygulanmayan bir duyarlılık etiketine ait meta veriler dosyadan silinebilir.
 
-- Birlikte yazma ve Otomatik Kaydetme desteklenmez ve [şifreleme için aşağıdaki yapılandırmalardan](encryption-sensitivity-labels.md#configure-encryption-settings) herhangi birini kullanan etiketli ve şifrelenmiş Office belgeleri için çalışmaz:
+- Birlikte yazma ve Otomatik Kaydetme desteklenmez ve [şifreleme için aşağıdaki yapılandırmalardan](encryption-sensitivity-labels.md#configure-encryption-settings) birini kullanan etiketli ve şifrelenmiş Office belgeleri için çalışmaz:
     - Word, PowerPoint ve Excel'de kullanıcıların etiketi ve onay kutusunu **uyguladığında izin atamasına izin verin****, kullanıcılardan izinleri belirtmelerini iste** seçeneğini belirleyin. Bu yapılandırma bazen "kullanıcı tanımlı izinler" olarak adlandırılır.
     - **İçeriğe kullanıcı erişiminin süresi doluyor** , **Hiçbir Zaman** dışında bir değere ayarlanır.
-    - **Çift Anahtar Şifrelemesi** seçildi.
     
-    Bu şifreleme yapılandırmalarından herhangi birine sahip etiketler için etiketler Office uygulamalarında görüntülenir. Ancak, kullanıcılar bu etiketleri seçtiğinde ve belgeyi başka kimse düzenlemediğinde, birlikte yazma ve Otomatik Kaydetme'nin kullanılamayacağı konusunda uyarılırlar. Belgeyi başka biri düzenliyorsa, kullanıcılar etiketlerin uygulanamadığını belirten bir ileti görür.
+    Bu şifreleme yapılandırmalarından herhangi birini içeren etiketler için etiketler Office uygulamalarında görüntülenir. Ancak, kullanıcılar bu etiketleri seçtiğinde ve belgeyi başka kimse düzenlemediğinde, birlikte yazma ve Otomatik Kaydetme'nin kullanılamayacağı konusunda uyarılırlar. Belgeyi başka biri düzenliyorsa, kullanıcılar etiketlerin uygulanamadığını belirten bir ileti görür.
 
 - Azure Information Protection birleşik etiketleme istemcisini kullanıyorsanız: [Daha fazla gereksinim veya sınırlama](/azure/information-protection/known-issues#known-issues-for-co-authoring) için bu etiketleme istemcisinin belgelerine bakın. 
     > [!NOTE]

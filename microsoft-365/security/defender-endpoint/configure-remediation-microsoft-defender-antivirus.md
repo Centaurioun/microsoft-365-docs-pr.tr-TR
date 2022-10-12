@@ -15,14 +15,16 @@ ms.custom: nextgen
 ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
-ms.collection: m365-security
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 30c21e93f4370025a3dd4dba9bd14d96a2deeaae
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 0de06bfabf8ab592807cf81e21f69475fde5a4ae
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68061736"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542925"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Microsoft Defender Virüsten Koruma algılamaları için düzeltmeleri yapılandırın
 

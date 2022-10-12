@@ -8,21 +8,25 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: b4a7a7b313b45871962b1babf710410e79db7d7b
-ms.sourcegitcommit: 55672e44de74209f2e23b4bd9ca74a2ee7e88cd9
+ms.openlocfilehash: 1eb7b12c77231a475d745903d1b665da77430cf0
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2022
-ms.locfileid: "68319621"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542947"
 ---
+<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
+
 # <a name="microsoft-defender-for-endpoint---demonstration-scenarios"></a>Uç Nokta için Microsoft Defender - tanıtım senaryoları
 
 Aşağıdaki tanıtım senaryoları, Windows'ta Uç Nokta için Microsoft Defender özellikleri hakkında bilgi edinmenize yardımcı olur (Mac ve Linux kapsam dışındadır). Aşağıdaki Uç Nokta için Microsoft Defender koruma alanları için gösterim senaryoları sağlanır:

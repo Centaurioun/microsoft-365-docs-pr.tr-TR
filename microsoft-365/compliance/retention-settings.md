@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Kuruluşunuzun verilerini tutmak veya silmek için Microsoft 365 bekletme ilkeleri ve bekletme etiketleri için yapılandırabileceğiniz ayarları anlayın.
-ms.openlocfilehash: a9741c9dd993bcbdf9718535d7e182c13acaca15
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: cd48e941cfece12812b91927090acfdaf7d05ab3
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68504534"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68543167"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Bekletme ilkeleri ve bekletme etiketi ilkeleri için yaygın ayarlar
 
@@ -272,9 +272,7 @@ Exchange için bekletme ayarlarını yapılandırırken hangi posta kutusu öğe
 
 Hassas bilgi türlerini kullanan bir otomatik uygulama ilkesi yapılandırdığınızda ve **Exchange e-posta** konumunu seçtiğinizde:
 
-- Microsoft 365 grup posta kutuları dahil edilir.
-
-- Belirli posta kutularını tanımlamak için uyarlamalı bir kapsam yapılandırsanız bile tüm posta kutuları otomatik olarak eklenir. Statik bir ilke kapsamı seçtiyseniz, dahil edilecek veya dışlanacak alıcıları belirtemezsiniz.
+- [Belirli türde hassas bilgilere sahip içeriğe etiketleri otomatik uygulama](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information) için önemli açıklama balonunu inceleyin.
 
 ### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>SharePoint siteleri ve OneDrive hesapları için yapılandırma bilgileri
 

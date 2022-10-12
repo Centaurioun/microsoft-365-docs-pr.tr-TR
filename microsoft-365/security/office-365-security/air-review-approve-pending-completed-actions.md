@@ -20,12 +20,12 @@ description: Office 365 için Microsoft Defender Plan 2'de otomatik araştırma 
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 0342ad8b4319d82205889785cd243b0a6aa5d9e2
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 82a81a4b34fb5842fe21ec61321fd6d592472ba3
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68086057"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68543123"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Office 365'de düzeltme eylemlerini gözden geçirme ve yönetme
 
@@ -39,7 +39,9 @@ E-posta & işbirliği içeriğiyle ilgili otomatik araştırmalar *Kötü Amaçl
 - E-posta iletilerini veya kümeleri geçici silme
 - Dış posta iletmeyi kapatma
 
-Bu düzeltme eylemleri, güvenlik operasyonları ekibiniz tarafından onaylanmadıkça ve onaylanana kadar yapılmaz. Otomatik araştırmalarınızın zamanında tamamlanması için bekleyen eylemleri en kısa sürede gözden geçirmenizi ve onaylamanızı öneririz. Bazı durumlarda, gönderilen eylemleri yeniden gözden geçirebilirsiniz.  Herhangi bir eylem gerçekleştirmeden önce Arama & temizleme rolünün parçası olmanız gerekir.
+Bu düzeltme eylemleri, güvenlik operasyonları ekibiniz tarafından onaylanmadıkça ve onaylanana kadar yapılmaz. Otomatik araştırmalarınızın zamanında tamamlanması için bekleyen eylemleri en kısa sürede gözden geçirmenizi ve onaylamanızı öneririz. Herhangi bir eylem gerçekleştirmeden önce Arama & temizleme rolünün parçası olmanız gerekir.
+
+Aynı kümelerle yinelenen veya çakışan araştırmalara yönelik ek denetimler ekledik. Aynı araştırma kümesi önceki saat içinde zaten onaylandıysa, yeni yinelenen düzeltme yeniden işlenmez. Bu davranış yinelenen araştırmaları veya araştırma kanıtlarını kaldırmaz; düzeltme işleme hızını artırmak için onaylanan eylemlerin yinelenenlerini kaldırır. Yinelenen onaylanan küme araştırmalarında [işlem merkezi](https://security.microsoft.com/action-center/history) yan panelinde eylem ayrıntılarını görmezsiniz. 
 
 ## <a name="approve-or-reject-pending-actions"></a>Bekleyen eylemleri onaylama (veya reddetme)
 

@@ -18,12 +18,12 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 7d76deeb278e460a2518cb922b0a087273e16d6b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 51f50014c5a937223ca2ada3f8bf0dac851f5e9a
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68186601"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68543189"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Cihaz ara sunucusu ve İnternet bağlantısı ayarlarını yapılandırma
 
@@ -35,7 +35,7 @@ ms.locfileid: "68186601"
 
 > Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-Uç Nokta için Defender algılayıcısı, algılayıcı verilerini raporlamak ve Uç Nokta için Defender hizmetiyle iletişim kurmak için Microsoft Windows HTTP (WinHTTP) gerektirir. Ekli Uç Nokta için Defender algılayıcısı LocalSystem hesabını kullanarak sistem bağlamında çalışır. Algılayıcı, Uç Nokta için Defender bulut hizmetiyle iletişimi etkinleştirmek için Microsoft Windows HTTP Hizmetleri'ni (WinHTTP) kullanır.
+Uç Nokta için Defender algılayıcısı, algılayıcı verilerini raporlamak ve Uç Nokta için Defender hizmetiyle iletişim kurmak için Microsoft Windows HTTP (WinHTTP) gerektirir. Ekli Uç Nokta için Defender algılayıcısı LocalSystem hesabını kullanarak sistem bağlamında çalışır.
 
 > [!TIP]
 > İleri proxy'leri İnternet'e ağ geçidi olarak kullanan kuruluşlarda, [ileriye doğru ara sunucuların arkasında gerçekleşen bağlantı olaylarını araştırmak](investigate-behind-proxy.md) için ağ korumasını kullanabilirsiniz.

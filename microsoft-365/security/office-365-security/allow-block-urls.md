@@ -16,12 +16,12 @@ ms.collection:
 description: Yöneticiler, Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde URL'lere nasıl izin vereceğinizi veya url'leri nasıl engelleyebileceğinizi öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 399bf9b5747a62759959b42dc986b1ab525d2c15
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: a30ccde16fb52f672ecc0643b2c8c24d682b3bd9
+ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68060592"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68542793"
 ---
 # <a name="allow-or-block-urls-using-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesini kullanarak URL'lere izin verme veya URL’leri engelleme
 
@@ -34,7 +34,7 @@ ms.locfileid: "68060592"
 
 Bu makalede, Kiracı İzin Ver/Engelle Listesinde bulunan URL izin verme ve engelleme girdilerinin nasıl oluşturulacağı ve yönetileceğini açıklanmaktadır. Kiracı İzin Ver/Engelle Listesi hakkında daha fazla bilgi için bkz. [Kiracı İzin Ver/Engelle Listesi'nde izin verme ve bloklarınızı yönetme](manage-tenant-allow-block-list.md).
 
-URL'ler için izin verme ve engelleme girdilerini Microsoft 365 Defender Portalı'nda veya Exchange Online PowerShell'de yönetirsiniz.
+URL'ler için izin verme ve engelleme girdilerini Microsoft 365 Defender Portalı'nda veya Exchange Online PowerShell'de yönetirsiniz. Engellenen URL'leri içeren iletiler karantinaya alınır.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Başlamadan önce bilmeniz gerekenler
 
