@@ -7,8 +7,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 08/30/2022
-ms.topic: article
+ms.date: 10/03/2022
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 3f27053cd822d265e509f694312e8b5a518d3805
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 1bcbaf6d0be4ae12fddb959b82bcbd63723eafec
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68225030"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536356"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender Virüsten Koruma'nın diğer güvenlik ürünleriyle uyumluluğu
 
@@ -187,6 +187,14 @@ Microsoft Defender Virüsten Koruma'nın durumunu onaylamak için çeşitli yön
 - [Microsoft Defender Virüsten Koruma'nın çalıştığını onaylamak için Görev Yöneticisi'ni kullanın](#use-task-manager-to-confirm-that-microsoft-defender-antivirus-is-running).
 - [Microsoft Defender Virüsten Koruma'nın çalıştığını onaylamak için Windows PowerShell kullanın](#use-windows-powershell-to-confirm-that-microsoft-defender-antivirus-is-running).
 - [Virüsten korumanın çalıştığını onaylamak için Windows PowerShell kullanın](#use-windows-powershell-to-confirm-that-antivirus-protection-is-running).
+
+> [!IMPORTANT]
+> [Platform sürümü 4.18.2208.0 ve sonraki](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions) sürümlerle başlayarak: Bir sunucu Uç Nokta için Microsoft Defender eklendiyse, "Windows Defender kapat" [grup ilkesi](configure-endpoints-gp.md#update-endpoint-protection-configuration) ayarı artık virüsten koruma Windows Defender tamamen devre dışı bırakmaz R2 ve üzerini Windows Server 2012. Bunun yerine pasif moda yerleştirir. Buna ek olarak, [kurcalama koruması](prevent-changes-to-security-settings-with-tamper-protection.md) özelliği etkin moda geçişe izin verir ancak pasif moda geçmez.
+> 
+> - Uç Nokta için Microsoft Defender'a eklemeden önce "Windows Defender kapat" zaten varsa, değişiklik olmaz ve Defender Virüsten Koruma devre dışı kalır.
+> - Defender Virüsten Koruma'yı eklemeden önce devre dışı bırakılmış olsa bile pasif moda geçmek için [ForceDefenderPassiveMode yapılandırmasını](switch-to-mde-phase-2.md#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) değeriyle `1`uygulayabilirsiniz. Etkin moda yerleştirmek için bunun yerine bu değeri olarak `0` değiştirin.
+> 
+> Kurcalama korumasının etkinleştirildiği zaman için `ForceDefenderPassiveMode` değiştirilen mantığa dikkat edin: Microsoft Defender Virüsten Koruma etkin moda geçirildikten sonra, kurcalama koruması olarak ayarlandığında `1`bile `ForceDefenderPassiveMode` pasif moda geri dönmesini engeller.
 
 ### <a name="use-the-windows-security-app-to-identify-your-antivirus-app"></a>Virüsten koruma uygulamanızı tanımlamak için Windows Güvenliği uygulamasını kullanma
 

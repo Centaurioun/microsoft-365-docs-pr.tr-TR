@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 09/27/2022
+ms.date: 10/10/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 317f2b6e59ee5c0a787dd78e23d7a96f7377efb5
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 48fb6a2e4ec0c77a17e1ea0fedd95244485232bc
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68231846"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536466"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama
 
@@ -89,6 +89,37 @@ Tüm güncelleştirmelerimiz
 - Tümleştirme geliştirmeleri (Bulut, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>Eylül-2022 (Platform: 4.18.2209.x | Motor: 1.1.19700.3)</summary>
+
+&ensp;Güvenlik bilgileri güncelleştirme sürümü: **1.377.8.0**<br/>
+&ensp;Sürüm tarihi: **10 Ekim 2022**<br/>
+&ensp;Platform: **4.18.2209.x**<br/>
+&ensp;Motor: **1.1.19700.3**<br/>
+&ensp;Destek aşaması: **Güvenlik ve Kritik Güncelleştirmeler**<br/>
+
+Altyapı sürümü: 1.1.19700.3<br/>
+Güvenlik bilgileri güncelleştirme sürümü: 1.377.8.0<br/>
+
+### <a name="whats-new"></a>Yenilikler
+
+- Sunucu SKU'su üzerinde Defender geri dönüş sırasının işlenmesi geliştirildi
+- OOBE işlemi sırasında Defender güncelleştirmeleri düzeltildi
+- Güvenilen Yükleyici güvenlik tanımlayıcısı güvenlik açığı düzeltildi
+- [Virüsten Koruma Microsoft Defender dışlama görünürlüğü](configure-exclusions-microsoft-defender-antivirus.md) düzeltildi
+- PowerShell cmdlet'inin geri dönüş sırasının çıkışı düzeltildi
+- Server Core 2019 SKU'larında Defender Platformu güncelleştirme hatası düzeltildi
+- Sunucu SKU'larında Defender devre dışı bırakma yapılandırmaları için geliştirilmiş sağlamlaştırma desteği
+- Sunucularda [kurcalama koruması](prevent-changes-to-security-settings-with-tamper-protection.md) için geliştirilmiş Defender yapılandırma mantığı
+- [ASR kuralı](attack-surface-reduction-rules-reference.md) için geliştirilmiş WARN modu
+- OSX'in iyileştirilmiş sertifika işlemesi  
+- FilesStash konumunu taramak için geliştirilmiş günlük kaydı
+- Platform sürümü 4.18.2208.0 ve sonraki sürümlerle başlayarak: Bir sunucu [Uç Nokta için Microsoft Defender](onboard-configure.md#onboard-devices-to-the-service) eklendiyse, "Windows Defender kapat" [grup ilkesi ayarı](configure-endpoints-gp.md#update-endpoint-protection-configuration) artık virüsten koruma Windows Defender tamamen devre dışı bırakmaz R2 ve üzeri işletim sistemlerini Windows Server 2012. Bunun yerine yoksayılır ([ForceDefenderPassiveMode](switch-to-mde-phase-2.md#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) açıkça yapılandırılmışsa) veya Microsoft Defender Virüsten Koruma'yı [pasif moda](microsoft-defender-antivirus-windows.md#comparing-active-mode-passive-mode-and-disabled-mode) yerleştirir (`ForceDefenderPassiveMode`yapılandırılmadıysa). Ayrıca, [kurcalama koruması](prevent-changes-to-security-settings-with-tamper-protection.md) olarak değiştirerek `ForceDefenderPassiveMode` `0`etkin moda geçmenizi sağlar, ancak pasif moda geçmez. Bu değişiklikler yalnızca Uç Nokta için Microsoft Defender eklenen sunucular için geçerlidir. Daha fazla bilgi için lütfen [Microsoft Defender Virüsten Koruma'nın diğer güvenlik ürünleriyle uyumluluğuna](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions) bakın
+
+### <a name="known-issues"></a>Bilinen Sorunlar
+
+- Bazı müşteriler önizlemeden 4.18.2209.2 platform güncelleştirmelerini almış olabilir. Güncelleştirmeden sonra hizmetin başlangıç durumunda takılmasına neden olabilir.  
+<br/><br/>
+</details><details>
 <summary>Ağustos-2022 (Platform: 4.18.2207.7 | Motor: 1.1.19600.3)</summary>
 
 &ensp;Güvenlik bilgileri güncelleştirme sürümü: **1.373.1647.0**<br/>
@@ -132,7 +163,7 @@ Güvenlik bilgileri güncelleştirme sürümü: 1.373.219.0 <br/>
 - [Kötü Amaçlı Yazılımdan Koruma Tarama Arabirimi (AMSI)](/windows/win32/amsi/antimalware-scan-interface-portal) önbelleğe alma için performans iyileştirmesi 
 - [Microsoft Visual Basic for Applications](/office/vba/language/concepts/getting-started/64-bit-visual-basic-for-applications-overview) (VBA) ile ilgili makrolar için geliştirilmiş algılama ve düzeltme 
 - AMSI dışlamalarının işlenmesi iyileştirildi 
-- Konak İzinsiz Giriş Önleme Sistemi (HIPS) kural işlemesinde kilitlenme algılama düzeltildi. (HIPS ve Uç Nokta için Defender hakkında ek bilgi için bkz. [Üçüncü taraf HIPS'den ASR kurallarına geçiş](migrating-asr-rules.md).) 
+- Konak İzinsiz Giriş Önleme Sistemi (HIPS) kural işlemesinde kilitlenme algılama düzeltildi. (HIPS ve Uç Nokta için Defender hakkında daha fazla bilgi için bkz. [Üçüncü taraf HIPS'den ASR kurallarına geçiş](migrating-asr-rules.md).) 
 - Özel baytların kullanıldığı `MsMpEng.exe` bellek sızıntısı düzeltildi. (Yüksek CPU kullanımı da sorun oluyorsa bkz. [Microsoft Defender Virüsten Koruma nedeniyle yüksek CPU kullanımı](troubleshooting-mode-scenarios.md)) 
 - [Davranış izleme](configure-real-time-protection-microsoft-defender-antivirus.md) ile kilitlenme düzeltildi 
 - Geliştirilmiş güven doğrulaması 
@@ -151,14 +182,21 @@ Güvenlik bilgileri güncelleştirme sürümü: 1.373.219.0 <br/>
 - Platform güncelleştirmesi 4.18.2207.5'i dağıtan müşteriler, uygulamaları etkileyebilecek gecikmeli ağ performansıyla karşılaşabilir.
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Önceki sürüm güncelleştirmeleri: Yalnızca teknik yükseltme desteği
+
+Yeni bir paket sürümü yayımlandıktan sonra, önceki iki sürüme yönelik destek yalnızca teknik desteğe indirgener. Bu bölümde listelenen sürümlerden eski sürümler ve yalnızca teknik yükseltme desteği için sağlanır.<br/><br/>
+
+<details>
 <summary>Mayıs 2022 (Platform: 4.18.2205.7 | Motor: 1.1.19300.2)</summary>
 
 &ensp;Güvenlik bilgileri güncelleştirme sürümü: **1.369.88.0**<br/>
 &ensp;Yayın tarihi: **22 Haziran 2022**<br/>
 &ensp;Platform: **4.18.2205.7**<br/>
 &ensp;Motor: **1.1.19300.2**<br/>
-&ensp;Destek aşaması: **Güvenlik ve Kritik Güncelleştirmeler**<br/>
+&ensp;Destek aşaması: **Teknik yükseltme desteği (yalnızca)**<br/>
 
 Altyapı sürümü: 1.1.19300.2<br/>
 Güvenlik bilgileri güncelleştirme sürümü: 1.369.88.0<br/>
@@ -178,14 +216,7 @@ Güvenlik bilgileri güncelleştirme sürümü: 1.369.88.0<br/>
 Bilinen sorun yok
 
 <br/><br/>
-</details>
-
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Önceki sürüm güncelleştirmeleri: Yalnızca teknik yükseltme desteği
-
-Yeni bir paket sürümü yayımlandıktan sonra, önceki iki sürüme yönelik destek yalnızca teknik desteğe indirgener. Bu bölümde listelenen sürümlerden eski sürümler ve yalnızca teknik yükseltme desteği için sağlanır.<br/><br/>
-
-<details>
+</details><details>
 <summary>Mart-2022 *UPDATE* (Platform: 4.18.2203.5 | Motor: 1.1.19200.5)</summary>
 
 *Mart 2022 Microsoft Defender altyapısı güncelleştirmesini (**1.1.19100.5**) uygulayan müşteriler yüksek kaynak kullanımıyla (CPU ve/veya bellek) karşılaşmış olabilir. Microsoft, önceki sürümde sunulan hataları gideren bir güncelleştirme (**1.1.19200.5**) yayımladı. Müşterilerin virüsten koruma altyapısının (**1.1.19200.5**) en azından bu yeni altyapı derlemesine güncelleştirmeleri önerilir. Performans sorunlarının tamamen düzeltildiğinden emin olmak için, güncelleştirme uygulandıktan sonra makinelerin yeniden başlatılması önerilir.*
@@ -407,7 +438,7 @@ Bilinen sorun yok
 - Microsoft Defender güncelleştirmelerinin aşamalı dağıtım sürecini yönetmek için yeni denetimler. [Microsoft Defender güncelleştirmeleri için bkz. Aşamalı dağıtım işlemini yönetme](manage-gradual-rollout.md).
 - Davranış izleme altyapısında iyileştirme
 - Kötü amaçlı yazılımdan koruma tanımlarının dağıtımında iyileştirmeler
-- Genişletilmiş Edge ağ olay incelemeleri
+- Genişletilmiş Microsoft Edge ağ olay incelemeleri
 
 ### <a name="known-issues"></a>Bilinen Sorunlar
 Bilinen sorun yok
@@ -810,6 +841,21 @@ Windows 10 (Enterprise, Pro ve Home sürümleri), Windows Server 2019, Windows S
 Daha fazla bilgi için bkz. [Windows işletim sistemi yükleme görüntüleri için Microsoft Defender güncelleştirme](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220929.1</summary>
+
+&ensp;Paket sürümü: **20220929.1**<br/>
+&ensp;Platform sürümü: **4.18.2207.7**<br/>
+&ensp;Altyapı sürümü: **1.1.19600.3**<br/>
+&ensp;İmza sürümü: **1.373.1243.0**<br/>
+
+### <a name="fixes"></a>Giderir
+- Yok
+
+### <a name="additional-information"></a>Ek bilgiler
+- Yok
+
+<br/>
+</details><details>
 <summary>20220925.2</summary>
 
 &ensp;Paket sürümü: **20220925.2**<br/>

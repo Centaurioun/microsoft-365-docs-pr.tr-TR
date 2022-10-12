@@ -1,5 +1,6 @@
 ---
 title: Twitter verilerini arşivleye bir bağlayıcı ayarlama
+description: Yöneticilerin Twitter verilerini Microsoft 365'e aktarmak için yerel bağlayıcıyı nasıl ayarlayıp kullanabileceğini öğrenin.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,15 +13,17 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ms.custom: seo-marvel-apr2020
-description: Yöneticilerin Twitter verilerini Microsoft 365'e aktarmak için yerel bağlayıcıyı nasıl ayarlayıp kullanabileceğini öğrenin.
-ms.openlocfilehash: 210ceed7b629ae1a71981f15b4606418a6fc0873
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: c32fe8046a5ec067e405e6d0e0a097eb71b7351e
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67823507"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68533870"
 ---
 # <a name="set-up-a-microsoft-connector-to-archive-twitter-data-preview"></a>Twitter verilerini arşivleme (önizleme) için Bir Microsoft bağlayıcısı ayarlama
 
@@ -31,6 +34,8 @@ Twitter verileri içeri aktarıldıktan sonra, Twitter verilerine Dava Tutma, İ
 Twitter verileri içeri aktarıldıktan sonra, posta kutusunda depolanan verilere Dava Tutma, İçerik Arama, In-Place Arşivleme, Denetim, İletişim uyumluluğu ve Microsoft 365 bekletme ilkeleri gibi Microsoft Purview özelliklerini uygulayabilirsiniz. Örneğin, İçerik Arama'yı kullanarak Twitter verilerinde arama yapabilir veya verilerin depolandığı posta kutusunu eBulma (Premium) durumundaki bir koruyucuyla ilişkilendirebilirsiniz. Microsoft 365'te Twitter verilerini içeri aktarmak ve arşivlerken bağlayıcı kullanmak, kuruluşunuzun kamu ve mevzuat ilkeleriyle uyumlu kalmasına yardımcı olabilir.
 
 Önizlemeye katılmak isterseniz lütfen dcfeedback@microsoft.com ekibine ulaşın.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-set-up-a-connector"></a>Bağlayıcıyı ayarlamadan önce
 
@@ -73,7 +78,7 @@ Twitter bağlayıcı uygulamasının kaynak kodunu dağıtmak için:
 
 1. [Bu GitHub sitesine](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet) gidin.
 
-2. **Azure'a Dağıt'a** tıklayın.
+2. **Azure'a Dağıt'ı** seçin.
 
 Adım adım yönergeler için bkz. [GitHub'dan Azure hesabınıza bağlayıcı web hizmetini dağıtma](deploy-twitter-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account).
 

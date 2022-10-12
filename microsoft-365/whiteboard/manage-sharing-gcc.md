@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: GCC ortamlarında Microsoft Whiteboard için paylaşımı yönetmeyi öğrenin.
-ms.openlocfilehash: 2e22e55920f3ea8518ead6d117f0ac090690eb54
-ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+ms.openlocfilehash: 48b1b517bb75977f2537d8365b3a00d01e077858
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68297818"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536994"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard-in-gcc-environments"></a>GCC ortamlarında Microsoft Whiteboard için paylaşımı yönetme
 
@@ -52,6 +52,8 @@ Bu ayar yalnızca beyaz tahtalar için geçerlidir ve önceden paylaşılan ayar
 
 > [!NOTE]
 > Varsayılan olarak, **Anonim kullanıcılar toplantılardaki uygulamalarla etkileşimde bulunabilir Teams toplantı** ayarı varsayılan olarak etkindir. Devre dışı bırakdıysanız, toplantı sırasında hiçbir anonim kullanıcı (konuklar veya federasyon kullanıcıları yerine) beyaz tahtaya erişemez
+>
+> Paylaşılan cihaz hesaplarının Teams toplantılarında Whiteboard'a erişmesini istiyorsanız ancak anonim kullanıcılara erişim sağlamak istemiyorsanız, **AllowAnonymousMeetingParticipantsToAccessWhiteboards** etkinken **Anonim kullanıcıların toplantılardaki uygulamalarla etkileşim kurabilmesini** devre dışı bırakabilirsiniz
 
 Bu değişikliklerin kiracınız genelinde uygulanması yaklaşık 60 dakika sürmelidir.
 

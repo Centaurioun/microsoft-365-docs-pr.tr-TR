@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 2fbe3a21762f6bf048d5f35485a359389df93ce2
-ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
+ms.openlocfilehash: 4ebfff151c96752af0bca757c43f3df49a3d2ede
+ms.sourcegitcommit: 893add1e40c3e26e5624663eaf272d12a72d0141
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67315996"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68540037"
 ---
 # <a name="test-your-intune-application-on-test-base"></a>Test Tabanında Intune uygulamanızı test edin 
   > [!Note] 
@@ -71,14 +71,49 @@ zaten Intune portalına eklenmiş olan bir Intune paketine sahip Intune müşter
 4. **Guid** klasörünün altına **yüklenen** bağımlılık ikili dosyalarını denetleyin.
 5. Betikleri gerektiği gibi düzenleyebilir ve kaydedebilirsiniz.
     > [!Note] 
-    > Bağımlılık paketi karşıya yüklenmediyse, Test Temeli bunun için yükleme/kaldırma komutları oluşturmaz.
+    > Bağımlılık paketi karşıya yüklenmediyse, Test Temeli bunun için yükleme/kaldırma komutları oluşturmaz.  
 
 
-**4. Adım: Test Matrisi**
-1. İlgili test türleri için işletim sistemi listesinde bulunan varsayılan seçimleri denetleyin.
-    - Test tabanı **, Windows 10 2004 dışında Windows 10 1909'dan** birden çok Windows toplu güncelleştirmesi seçmeyi destekler, ancak Intune Win **uygulamasına Windows 10 1607'ye** eşit veya daha yüksek sürümlerden bir sürüm atanabilir.
-    - İşletim sistemi listesi, Intune Win uygulaması için belirtilen en düşük işletim sisteminden daha yüksek olan Test tabanı tarafından desteklenen tüm işletim sistemini içerecek şekilde varsayılan olarak kullanılır.
-2. Kullanıcıların işletim sistemi seçimini gerektiği gibi değiştirmesine izin verilir.
+**4. Adım. Test matrisini ayarlama**
+
+Test matrisi sekmesi, testinizin yürütülmesini isteyebileceğiniz belirli Windows güncelleştirme programını veya Windows ürününü belirtmenize yöneliktir.
+
+   > [!div class="mx-imgBorder"]
+   > ![Test matrisi yeni paketini ayarlama](Media/settestmatrix01-newpackage.png)
+
+1. **İşletim sistemi güncelleştirme türünü** seçin
+   - Test Tabanı, uygulamalarınızın performansının en son Windows güncelleştirmelerine göre bozulmamasını sağlamak için zamanlanmış test sağlar. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Test matrisini ayarla osupdate'i seçin](Media/settestmatrix02-chooseosupdate.png)
+
+   - Kullanılabilir 2 seçenek vardır:
+   
+     - **Güvenlik güncelleştirmeleri**, paketinizin Windows aylık güvenlik güncelleştirmelerinin artımlı değişim sıklığına karşı test edilmesine olanak tanır.
+     - **Özellik güncelleştirmeleri**, paketinizin Windows Insider Programı'ndaki en son Windows Insider Preview Derlemelerindeki yeni özelliklere karşı test edilmesine olanak tanır.
+
+2. **Güvenlik Güncelleştirmesini** Yapılandırma Güvenlik güncelleştirmelerini ayarlamak için, "Test etmek için işletim sistemi sürümleri" açılan listesinden test etmek istediğiniz Windows ürünlerini belirtmeniz gerekir.
+
+   > [!div class="mx-imgBorder"]
+   > ![Test matrisini ayarlama securityupdate'i yapılandırma](Media/settestmatrix03-configuresecurityupdate.png)
+
+   - Seçiminiz, seçilen ürünler için Windows aylık kalite güncelleştirmelerinin B sürümüne karşı otomatik test çalıştırmaları için uygulamanızı kaydeder.
+     - Test Temeli'ne Varsayılan Erişim müşterileri olan müşteriler için uygulamaları, Salı Düzeltme Eki'nden başlayarak B sürümü güvenlik güncelleştirmelerinin son sürümüne göre doğrulanır.
+     - Test Temeli'ne Tam Erişim müşterileri olan müşteriler için, uygulamaları B yayın güvenlik güncelleştirmelerinin yayın öncesi sürümlerine göre doğrulanır ve Bu sürümLer, Düzeltme Eki Salı'dan 3 hafta öncesine kadar başlar. Bu, Tam Erişim müşterilerinin Yama Salı'daki son sürümden önce test sırasında bulunan sorunları çözmek için proaktif adımlar atmasına olanak tanır.  
+       (Tam Erişim müşterisi nasıl olunur? Erişim [düzeyini değiştirme isteğine bakın | Microsoft Docs](accesslevel.md))
+
+3. **Özellik Güncelleştirmesini** Yapılandırma
+   - Özellik güncelleştirmelerini ayarlamak için hedef ürünü ve "Insider Kanalı" açılan listesinden önizleme kanalını belirtmeniz gerekir.
+
+   > [!div class="mx-imgBorder"]
+   > ![Test matrisini ayarlama featureupdate'i yapılandırma](Media/settestmatrix04-configurefeatureupdate.png)
+
+   - Seçiminiz, uygulamanızı seçtiğiniz ürün kanalının en son özellik güncelleştirmelerine ve seçiminizin en son Windows Insider Preview Derlemelerinde gelecekteki tüm yeni güncelleştirmelere karşı otomatik test çalıştırmaları için kaydeder.
+
+   - Geçerli işletim sisteminizi "İçgörüler için işletim sistemi temeli" bölümünde de ayarlayabilirsiniz. Olduğu gibi işletim sistemi ortamınızın ve en son hedef işletim sisteminizin regresyon analizini yaparak size daha fazla test içgörüleri sağlarız.
+
+   > [!div class="mx-imgBorder"]
+   > ![Test matrisi kümesi işletim sistemi ayarlama](Media/settestmatrix05-setos.png)  
 
 
 **5. Adım: Gözden Geçirme + Yayımlama** <br/>

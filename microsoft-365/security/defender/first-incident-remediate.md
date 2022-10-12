@@ -24,12 +24,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 9352f54e54966850484caf2b3a116710c41b248a
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: bdb13779935290840e81211e69f54cf2d05fbe86
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68060878"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536158"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Adım 2. İlk olayınızı düzeltme
 
@@ -50,7 +50,7 @@ Microsoft 365 Defender analistlerin el ile başlatabileceği çeşitli düzeltme
 - **Otomatik araştırma başlatma** - Cihazda yeni bir genel amaçlı otomatik araştırma başlatabilirsiniz. Bir araştırma çalışırken, cihazdan oluşturulan diğer tüm uyarılar, araştırma tamamlanana kadar devam eden bir otomatik araştırmaya eklenir. Ayrıca, aynı tehdit diğer cihazlarda görülürse, bu cihazlar araştırmaya eklenir.
 - **Canlı yanıt başlatma** - Canlı yanıt, uzak kabuk bağlantısı kullanarak bir cihaza anında erişim sağlayan bir özelliktir. Bu sayede ayrıntılı araştırma çalışmaları yapabilir ve belirlenen tehditleri anında gerçek zamanlı olarak içermek için anında yanıt eylemleri gerçekleştirebilirsiniz. Canlı yanıt, adli veri toplamanıza, betik çalıştırmanıza, analiz için şüpheli varlıklar göndermenize, tehditleri düzeltmenize ve yeni ortaya çıkan tehditleri proaktif olarak avlamanıza olanak tanıyarak araştırmalarını geliştirmek için tasarlanmıştır.
 - **Araştırma paketini toplama** - Araştırma veya yanıt sürecinin bir parçası olarak bir cihazdan araştırma paketi toplayabilirsiniz. Araştırma paketini toplayarak cihazın geçerli durumunu belirleyebilir ve saldırgan tarafından kullanılan araç ve teknikleri daha iyi anlayabilirsiniz. 
-- **Bir tehdit uzmanına başvurun** (cihazlarda ve dosyalarda hem Eylemler'de bulunur) - Güvenliği aşılmış olabilecek cihazlar veya zaten güvenliği aşılmış cihazlarla ilgili daha fazla içgörü için bir Microsoft tehdit uzmanına başvurabilirsiniz. Microsoft tehdit uzmanları, zamanında ve doğru bir yanıt için doğrudan Microsoft 365 Defender içinden etkileşime geçirilebilir. 
+- **Defender Uzmanlarına Sorun** (cihazlarda ve dosyalarda hem Eylemler'de kullanılabilir) - Tehlikeye girmiş olabilecek cihazlar veya zaten güvenliği aşılmış cihazlar hakkında daha fazla içgörü için Microsoft Defender uzmanına başvurabilirsiniz. Microsoft Defender uzmanları, zamanında ve doğru bir yanıt için doğrudan Microsoft 365 Defender içinden devreye eklenebilir.
 
 ## <a name="actions-on-files"></a>Dosyalardaki eylemler
 

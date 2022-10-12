@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 73caa31accca7af22600ab13bc602690baaf17eb
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: b20933e98870ffaca7dee5c46922cec49dbaed13
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68063584"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68535960"
 ---
 # <a name="deploy-teams-at-scale-for-frontline-workers"></a>Teams'i ön cephe çalışanları için uygun ölçekte dağıtma
 
@@ -45,8 +45,8 @@ Bu makale, Teams'i uygun ölçekte dağıtma konusunda size yol gösterir.
 
 ## <a name="set-up-and-deploy-your-teams"></a>Ekiplerinizi ayarlama ve dağıtma
 
-> [!NOTE]
-> Ekiplerinizi dağıtmadan önce tüm ekip sahiplerinin Teams lisansına sahip olduğundan emin olun.
+> [!IMPORTANT]
+> Ekip sahiplerinin Teams lisansı olmalıdır. Ekiplerinizi dağıtmak için bu adımları kullanmadan önce tüm ekip sahiplerinin bir lisansı olduğundan emin olun.
 
 Aynı anda en fazla 500 ekip dağıtmak için bu adımları izleyin.
 

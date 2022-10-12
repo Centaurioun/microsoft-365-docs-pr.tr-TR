@@ -13,17 +13,18 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - SPO_Content
 search.appverid:
 - MET150
 description: Uç nokta veri kaybı önleme (DLP) merkezi ayarlarını yapılandırmayı öğrenin.
-ms.openlocfilehash: 454b99ea771f1d3059123534aa57c4a763706c87
-ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
+ms.openlocfilehash: b0593bb5ada76274a4fa53ec2877087352bf6afb
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/27/2022
-ms.locfileid: "67450047"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68533474"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Uç noktada veri kaybı önleme ayarlarını yapılandırma
 
@@ -39,6 +40,8 @@ Uç nokta veri kaybı önleme (DLP) davranışının birçok yönü merkezi olar
 - Tarayıcı ve etki alanı kısıtlamaları.
 - İlkeleri geçersiz kılmaya yönelik iş gerekçeleri ilke ipuçlarında nasıl görünür?
 - Office, PDF ve CSV dosyalarındaki etkinlikler otomatik olarak denetleniyorsa.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="dlp-settings"></a>DLP ayarları
 
@@ -111,16 +114,16 @@ Windows 10 cihazlara benzer şekilde, macOS cihazları için kendi dışlamalar�
 
 - Joker değerler desteklenir. Bu nedenle yol tanımı, yolun ortasında veya sonunda bir `*` içerebilir. Örneğin: `/Users/*/Library/Application Support/Microsoft/Teams/*`
 
-#####  <a name="recommended-file-path-exclusions-preview"></a>Önerilen dosya yolu dışlamaları (önizleme)
+##### <a name="recommended-file-path-exclusions-preview"></a>Önerilen dosya yolu dışlamaları (önizleme)
 
 Performans nedenleriyle Endpoint DLP, macOS cihazları için önerilen dosya yolu dışlamalarının listesini içerir. Bu dışlamalar varsayılan olarak açıktır. **Mac için önerilen dosya yolu dışlamalarını ekle iki durumlu** düğmesini açarak bunları devre dışı bırakabilirsiniz. Liste şunları içerir:
 
-- /Applications/*
-- /System/*
-- /usr/*
-- /Library/*
-- /private/*
-- /opt/*
+- /Uygulama/*
+- /Sistem/*
+- /Usr/*
+- /Kitaplığı/*
+- /Özel/*
+- /Tercih/*
 - /Users/*/Library/Application Support/Microsoft/Teams/*
 
 ### <a name="restricted-apps-and-app-groups"></a>Kısıtlı uygulamalar ve uygulama grupları
@@ -164,7 +167,7 @@ Kısıtlı uygulama grupları, DLP ayarlarında oluşturduğunuz ve ardından il
 
 İşte bir örnek:
 
-**Kısıtlı uygulamalar'a** Notepad.exe eklenirse ve **Tüm uygulamalar için Dosya etkinlikleri** **Belirli etkinliklere kısıtlama uygula** olarak yapılandırılırsa ve her ikisi de şu şekilde yapılandırılır:
+**Kısıtlı uygulamalar'a** Notepad.exe eklenirse ve **Tüm uygulamalar için Dosya etkinlikleri** **belirli etkinliklere kısıtlama uygula** olarak yapılandırılmışsa ve her ikisi de aşağıdaki gibi yapılandırılır:
 
 |İlkedeki ayar  |Uygulama adı  |Kullanıcı etkinliği  |Yürütülecek DLP eylemi  |
 |---------|---------|---------|---------|
@@ -183,7 +186,7 @@ A kullanıcısı, Not Defteri'nin kullanıldığı DLP korumalı bir dosyayı a�
    
 ##### <a name="file-activities-for-all-apps-only"></a>Yalnızca tüm uygulamalar için dosya etkinlikleri
 
-Bir uygulama **kısıtlanmış uygulama gruplarındaki uygulamalar için Dosya etkinliklerinde** değilse veya **Kısıtlı uygulama etkinlikleri** listesinde değilse veya eylemiyle `Audit only`**Kısıtlanmış uygulama etkinlikleri** listesindeyse veya 'Geçersiz kılmayla engelle' durumundaysa, **tüm uygulamalar için Dosya etkinliklerinde** tanımlanan tüm kısıtlamalar aynı kuralda uygulanır.  
+Bir uygulama **kısıtlı uygulama gruplarındaki uygulamalar için Dosya etkinliklerinde** değilse veya **Kısıtlanmış uygulama etkinlikleri** listesinde değilse veya bir eylemiyle `Audit only`**Kısıtlanmış uygulama etkinlikleri** listesindeyse veya 'Geçersiz kılmayla engelle' durumundaysa, **tüm uygulamalar için Dosya etkinliklerinde** tanımlanan tüm kısıtlamalar aynı kuralda uygulanır.  
 
 #### <a name="macos-devices"></a>macOS cihazları
 
@@ -223,7 +226,7 @@ Kişilerin ilkeleriniz tarafından korunan dosyaları belirli Bluetooth uygulama
 
 #### <a name="unallowed-browsers"></a>İzin verilmeyen tarayıcılar
 
-Windows cihazları için, yürütülebilir adlarıyla tanımlanan ve bulut hizmetlerine yükleme kısıtlamasının geçersiz kılmayı engelleyecek veya engelleyecek şekilde ayarlandığı zorunlu bir DLP ilkesinin koşullarına uyan dosyalara erişimi engellenecek tarayıcılar eklersiniz. Bu tarayıcıların bir dosyaya erişimi engellendiğinde, son kullanıcılar dosyayı Microsoft Edge aracılığıyla açmalarını isteyen bir bildirim görür.
+Windows cihazları için, yürütülebilir adlarıyla tanımlanan ve bulut hizmetlerine yükleme kısıtlamasının geçersiz kılmayı engelleyecek veya engelleyecek şekilde ayarlandığı zorunlu bir DLP ilkesinin koşullarıyla eşleşen dosyalara erişimi engellenecek tarayıcılar eklersiniz. Bu tarayıcıların bir dosyaya erişimi engellendiğinde, son kullanıcılar dosyayı Microsoft Edge aracılığıyla açmalarını isteyen bir bildirim görür.
 
 macOS cihazları için tam dosya yolunu eklemeniz gerekir. Mac uygulamalarının tam yolunu bulmak için:
 
@@ -240,7 +243,7 @@ macOS cihazları için tam dosya yolunu eklemeniz gerekir. Mac uygulamalarının
 
 İlkeleriniz tarafından korunan hassas dosyaların Microsoft Edge'den belirli hizmet etki alanlarına yüklenip yüklenemeyeceğini denetleyebilirsiniz.
 
-Liste modu **Engelle** olarak ayarlanırsa, kullanıcı hassas öğeleri bu etki alanlarına yükleyemez. Bir öğe bir DLP ilkesiyle eşleştiği için karşıya yükleme eylemi engellendiğinde, DLP bir uyarı oluşturur veya hassas öğenin karşıya yüklenmesini engeller.
+Liste modu **Engelle** olarak ayarlanırsa, kullanıcı bu etki alanlarına hassas öğeleri karşıya yükleyemez. Bir öğe bir DLP ilkesiyle eşleştiği için karşıya yükleme eylemi engellendiğinde, DLP bir uyarı oluşturur veya hassas öğenin karşıya yüklenmesini engeller.
 
 Liste modu **İzin Ver** olarak ayarlanırsa, kullanıcılar **_hassas öğeleri yalnızca_** bu etki alanlarına yükleyebilir ve diğer tüm etki alanlarına erişime izin verilmez.
 
@@ -255,7 +258,7 @@ Hizmet etki alanının FQDN biçimini bitiş olmadan kullanın `.`
 | Giriş | URL eşleştirme davranışı |
 |---|---|
 | **CONTOSO.COM** |**Belirtilen etki alanı adıyla ve herhangi bir alt siteyle eşleşir**: <p>*://contoso.com<p>*:/ /contoso.com/ <p>*://contoso.com/anysubsite1 <p>*:/ /contoso.com/anysubsite1/anysubsite2 (vb.) <p>**Alt etki alanları veya belirtilmemiş etki alanlarıyla eşleşmiyor**: <p>*://anysubdomain.contoso.com <p>*:/ /anysubdomain.contoso.com.AU |
-| ***.CONTOSO.COM** |**Belirtilen etki alanı adı, herhangi bir alt etki alanı ve herhangi bir siteyle eşleşir**: <p>*://contoso.com <p>*:/ /contoso.com/anysubsite <p>*://contoso.com/anysubsite1/anysubsite2 <p>*:/ /anysubdomain.contoso.com/ <p>*://anysubdomain.contoso.com/anysubsite/ <p>*:/ /anysubdomain1.anysubdomain2.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite1/anysubsite2 (vb) <p>**Belirtilmemiş etki alanlarıyla eşleşmiyor** <p>*://anysubdomain.contoso.com.AU/ |
+| ***.CONTOSO.COM** |**Belirtilen etki alanı adı, herhangi bir alt etki alanı ve herhangi bir siteyle eşleşir**: <p>*://contoso.com <p>*:/ /contoso.com/anysubsite <p>*://contoso.com/anysubsite1/anysubsite2 <p>*:/ /anysubdomain.contoso.com/ <p>*://anysubdomain.contoso.com/anysubsite/ <p>*:/ /anysubdomain1.anysubdomain2.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite1/anysubsite2 (vb.) <p>**Belirtilmemiş etki alanlarıyla eşleşmiyor** <p>*://anysubdomain.contoso.com.AU/ |
 | **`www.contoso.com`** |**Belirtilen etki alanı adıyla eşleşir**: <p>`www.contoso.com` <p>**Belirtilmemiş etki alanları veya alt etki alanlarıyla eşleşmiyor** <p>*://anysubdomain.contoso.com/, bu durumda FQDN etki alanı adının kendisini koymanız gerekir `www.contoso.com`|
 
 #### <a name="sensitive-service-domains"></a>Hassas hizmet etki alanları
@@ -265,8 +268,9 @@ Hassas hizmetler etki alanlarında bir web sitesini listelediğinizde şunları 
 - web sitesinden yazdırma
 - web sitesinden veri kopyalama
 - web sitesini yerel dosyalar olarak kaydetme
+- hariç tutulan bir web sitesine hassas bir dosya yükleme (bu ilkede yapılandırılır)
 
-Her web sitesinin bir web sitesi grubunda listelenmiş olması ve kullanıcının Microsoft Edge üzerinden web sitesine erişmesi gerekir. Hassas hizmet etki alanları, Cihazlar için DLP ilkesiyle birlikte kullanılır. Daha fazla bilgi için bkz [. Senaryo 6 Hassas hizmet etki alanlarında kullanıcı etkinliklerini izleme veya kısıtlama](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) .
+Yazdırma, veri kopyalama ve kaydetme eylemleri için her web sitesinin bir web sitesi grubunda listelenmiş olması ve kullanıcının Microsoft Edge üzerinden web sitesine erişmesi gerekir. Karşıya yükleme eylemi için kullanıcı Purview uzantısıyla Microsoft Edge veya Google Chrome kullanıyor olabilir. Hassas hizmet etki alanları, Cihazlar için DLP ilkesiyle birlikte kullanılır. İlke eylemleri atamak istediğiniz ve genel web sitesi grubu eylemlerinden farklı web sitesi grupları da tanımlayabilirsiniz. Daha fazla bilgi için bkz [. Senaryo 6 Hassas hizmet etki alanlarında kullanıcı etkinliklerini izleme veya kısıtlama](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) .
 
 
 ### <a name="additional-settings-for-endpoint-dlp"></a>Uç nokta DLP'leri için ek ayarlar
@@ -297,6 +301,200 @@ Kullanıcılar ilke bildirim ipucuyla etkileşime geçtiğinde seçenekleri **ö
 Varsayılan olarak, cihazlar eklendiğinde Office, PDF ve CSV dosyalarına yönelik etkinlik otomatik olarak denetlenip etkinlik gezgininde gözden geçirilebilir. Bu etkinliğin yalnızca eklenen cihazlar etkin bir ilkeye dahil edildiğinde denetlenmesini istiyorsanız bu özelliği kapatın.
 
 Dosya etkinliği, etkin bir ilkeye dahil olup olmadıklarına bakılmaksızın eklenen cihazlar için her zaman denetlenecektir.
+
+> [!IMPORTANT]
+> [Yazıcı gruplarını (önizleme)](#printer-groups-preview), [Çıkarılabilir depolama cihazı gruplarını](#removable-storage-device-groups-preview), [Ağ paylaşım gruplarını](#network-share-groups-preview) ve [VPN ayarlarını](#vpn-settings-preview) kullanabilmeniz için [buraya](https://forms.office.com/r/GNVTFvxuZv) kaydetmeniz gerekir.
+
+### <a name="printer-groups-preview"></a>Yazıcı grupları (önizleme)
+
+İlke eylemleri atamak istediğiniz ve genel yazdırma eylemlerinden farklı yazıcı gruplarını tanımlamak için bu ayarı kullanın. Örneğin, DLP ilkenizin hukuk departmanındaki yazıcılar dışında tüm yazıcılara sözleşme yazdırmayı engellemesini istediğinizi varsayalım.
+
+Bu özellik, aşağıdaki Windows sürümlerinden herhangi birini çalıştıran cihazlarda kullanılabilir:  
+
+- Windows 10 ve üzeri (20H2, 21H1, 21H2) 
+- Win 11 21H2, 22H2
+- Windows Server 2022
+
+Yazıcıyı şu parametrelerle tanımlarsınız:
+
+- Kolay yazıcı adı - Cihaz yöneticisindeki yazıcı cihazı özellik ayrıntılarından Kolay yazıcı adı değerini alın.
+- USB ürün kimliği - Cihaz yöneticisindeki yazıcı cihazı özellik ayrıntılarından Cihaz Örneği yol değerini alın. Ürün Kimliği ve Satıcı Kimliği biçimine dönüştürün, bkz. [Standart USB tanımlayıcıları](/windows-hardware/drivers/install/standard-usb-identifiers).
+- USB satıcı kimliği - Cihaz yöneticisindeki yazıcı cihazı özellik ayrıntılarından Cihaz Örneği yol değerini alın. Ürün Kimliği ve Satıcı Kimliği biçimine dönüştürün, bkz. [Standart USB tanımlayıcıları](/windows-hardware/drivers/install/standard-usb-identifiers).
+- IP aralığı
+- Dosyaya yazdır - Örneğin, Microsoft PDF'ye Yazdır veya Microsoft XPS Belge Yazıcısı.
+- Yazıcıda dağıtılan evrensel yazdırma - Evrensel yazıcılar hakkında daha fazla bilgi için bkz. [Evrensel Yazdırmayı Ayarlama](/universal-print/fundamentals/universal-print-getting-started.md)
+- Şirket yazıcısı - etki alanınızdaki şirket içi Windows yazdırma sunucusu aracılığıyla paylaşılan bir yazdırma kuyruğudur. Yolu print-server\contoso.com\legal_printer_001 gibi  \\görünebilir
+- Yerel ortama yazdır
+
+Gruptaki her yazıcıya bir **Görünen ad** atarsınız. Ad yalnızca Purview konsolunda görünür. Bu nedenle, örneğe devam ederek **Legal printers** adlı bir yazıcı grubu oluşturur ve kolay adlarına göre tek tek yazıcılar (diğer adla) eklersiniz, örneğin `legal_printer_001`, `legal_printer_002` ve `legal_color_printer`.
+
+Belirli bir yazıcıyı kesin olarak tanımlamanıza yardımcı olması için parametreleri birden çok kez seçebilirsiniz.
+
+Bu ilke eylemlerini bir DLP ilkesinde gruba atayabilirsiniz:
+
+- İzin ver (kullanıcı bildirimleri veya uyarıları olmadan denetim)
+- Yalnızca denetim (bildirim ve uyarı ekleyebilirsiniz)
+- Geçersiz kılma ile engelle (eylemi engeller, ancak kullanıcı geçersiz kılabilir)
+- Engelle (ne olursa olsun bloklar)
+
+#### <a name="create-a-printer-group"></a>Yazıcı grubu oluşturma
+
+1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) >  **Veri kaybı önleme** > **Uç Nokta DLP ayarları** > **Yazıcı gruplarını** açın.
+1. **Yazıcı grubu oluştur'u** seçin.
+1. Gruba bir ad verin.
+1. **Yazıcı ekle'yi** seçin.
+1. Yazıcıya yalnızca burada görünecek bir **Diğer ad verin.
+1. Parametreleri seçin ve belirli bir yazıcıyı kesin olarak tanımlamak için değerleri sağlayın.
+1. **Ekle**'yi seçin.
+1. Gerektiğinde diğer yazıcıları ekleyin.
+1. **Kapat**'ı seçin.
+
+En yaygın kullanım örneği, sözleşmelerin yalnızca hukuk departmanındaki yazıcılara yazdırılması için yukarıdaki örnekte olduğu gibi yazıcı gruplarını izin verilenler listesi olarak kullanmaktır. Burada bir yazıcı grubu tanımladıktan sonra, kapsamı **Cihazlar** olarak belirlenmiş ilkelerinizde kullanılabilir. [İlke eylemlerini yetkilendirme gruplarını](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) kullanacak şekilde yapılandırma hakkında daha fazla bilgi için bkz. Senaryo 7 Yetkilendirme grupları.
+
+### <a name="removable-storage-device-groups-preview"></a>Çıkarılabilir depolama cihazı grupları (önizleme)
+
+Genel yazdırma eylemlerinden farklı ilke eylemleri atamak istediğiniz USB başparmak sürücüleri gibi çıkarılabilir depolama cihazı gruplarını tanımlamak için bu ayarı kullanın. Örneğin, DLP ilkenizin verileri yedeklemek için kullanılan ve ardından site dışına gönderilen USB bağlantılı sabit sürücüler dışında mühendislik belirtimlerine sahip öğelerin tüm kaldırılabilir depolama cihazlarına kopyalanmasını engellemesini istediğinizi varsayalım.
+
+Bu özellik, aşağıdaki Windows sürümlerinden herhangi birini çalıştıran cihazlarda kullanılabilir:  
+
+- Windows 10 ve üzeri (20H2, 21H1, 21H2) 
+- Win 11 21H2, 22H2
+- Windows 10 RS5 (KB 5006744) ve Windows Server 2022 
+
+Kaldırılabilir depolama cihazlarını şu parametrelerle tanımlayabilirsiniz:
+
+- Depolama cihazı kolay adı - Cihaz yöneticisindeki depolama cihazı özellik ayrıntılarından Kolay ad değerini alın.
+- USB ürün kimliği - Cihaz yöneticisindeki yazıcı cihazı özellik ayrıntılarından Cihaz Örneği yol değerini alın. Ürün Kimliği ve Satıcı Kimliği biçimine dönüştürün, bkz. [Standart USB tanımlayıcıları](/windows-hardware/drivers/install/standard-usb-identifiers).
+- USB satıcı kimliği - Cihaz yöneticisindeki yazıcı cihazı özellik ayrıntılarından Cihaz Örneği yol değerini alın. Ürün Kimliği ve Satıcı Kimliği biçimine dönüştürün, bkz. [Standart USB tanımlayıcıları](/windows-hardware/drivers/install/standard-usb-identifiers).
+- Seri numarası kimliği - Cihaz yöneticisindeki depolama cihazı özellik ayrıntılarından seri numarası kimliği değerini alın.
+- Cihaz Kimliği - Cihaz yöneticisindeki depolama cihazı özellik ayrıntılarından cihaz kimliği değerini alın.
+- Örnek yolu kimliği - Cihaz yöneticisindeki depolama cihazı özellik ayrıntılarından cihaz kimliği değerini alın.
+- Donanım Kimliği - Cihaz yöneticisindeki depolama cihazı özellik ayrıntılarından donanım kimliği değerini alın.
+
+Gruptaki her çıkarılabilir depolama cihazına bir **Diğer Ad** atarsınız. Diğer ad, yalnızca Purview konsolunda görünen bir addır. Bu nedenle, örneğe devam ederek **Backup** adlı çıkarılabilir bir depolama cihazı grubu oluşturup , ve `backup_drive_002`gibi `backup_drive_001`kolay adlarına göre tek tek cihazları (diğer adla) ekleyebilirsiniz.
+
+Parametreleri birden çok kez seçebilirsiniz ve yazıcı grubu bu parametreleri karşılayan tüm cihazları içerir.
+
+Bu ilke eylemlerini bir DLP ilkesinde gruba atayabilirsiniz:
+
+- İzin ver (kullanıcı bildirimleri veya uyarıları olmadan denetim)
+- Yalnızca denetim (bildirim ve uyarı ekleyebilirsiniz)
+- Geçersiz kılma ile engelle (eylemi engeller, ancak kullanıcı geçersiz kılabilir)
+- Engelle (ne olursa olsun bloklar)
+
+#### <a name="create-a-removable-storage-device-group"></a>Çıkarılabilir depolama cihazı grubu oluşturma
+
+1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) >  **Veri kaybı önleme** > **Uç Nokta DLP ayarları** > **Çıkarılabilir depolama cihazı gruplarını** açın.
+1. **Çıkarılabilir depolama cihazı grubu oluştur'u** seçin.
+1. **Bir Grup adı** girin.
+1. **Çıkarılabilir depolama cihazı ekle'yi** seçin.
+1. **Diğer ad sağlayın**.
+1. Parametreleri seçin ve belirli bir cihazı kesin olarak tanımlamak için değerleri sağlayın.
+1. **Ekle**'yi seçin.
+1. Gerektiğinde gruba başka cihazlar ekleyin.
+1. **Kapat**'ı seçin.
+
+En yaygın kullanım örneği, dosyaların yalnızca **Yedekleme** grubundaki cihazlara kopyalanmasını sağlamak için yukarıdaki örnekte olduğu gibi çıkarılabilir depolama cihazları gruplarını izin verilenler listesi olarak kullanmaktır. Burada çıkarılabilir bir depolama cihazı grubu tanımladıktan sonra, kapsamı **Cihazlar** olarak belirlenmiş ilkelerinizde kullanılabilir. [İlke eylemlerini yetkilendirme gruplarını](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) kullanacak şekilde yapılandırma hakkında daha fazla bilgi için bkz. Senaryo 7 Yetkilendirme grupları. Senaryo 7 örnek olarak yazıcı yetkilendirme gruplarını kullansa da, ilkeler aynıdır. Değişen tek şey grupların adları ve seçtiğiniz eylemlerdir.
+
+### <a name="network-share-groups-preview"></a>Ağ paylaşımı grupları (önizleme)
+
+İlke eylemleri atamak istediğiniz ve genel ağ paylaşım yolu eylemlerinden farklı ağ paylaşım yolu gruplarını tanımlamak için bu ayarı kullanın. Örneğin, kullanıcılar korumalı dosyaları bu gruptaki ağ paylaşımları dışında ağ paylaşımlarına kaydetmeye veya kopyalamaya çalıştığında DLP ilkenizin engellemesini istediğinizi varsayalım.
+
+
+Bu özellik, aşağıdaki Windows sürümlerinden herhangi birini çalıştıran cihazlarda kullanılabilir:  
+
+- Windows 10 ve üzeri (20H2, 21H1, 21H2) 
+- Win 11 21H2, 22H2
+- Windows 10 RS5 (KB 5006744) ve Windows Server 2022 
+
+
+Ağ paylaşımı yollarını, hepsinin başlangıç ön ekini tanımlayarak eklersiniz. Örneğin:
+
+- '\\Kitaplık' şu şekilde eşleşecektir:
+    -  \Kitaplık klasörü ve tüm alt klasörleri.
+
+- Joker karakterler kullanabilirsiniz, örneğin '\\Kullanıcılar\*\Masaüstü' aşağıdakilerle eşleşecektir:
+    - '\\USers\user1\Desktop'
+    - '\\USers\user1\user2\Desktop'
+    - '\\Users\*\Desktop'
+
+- Ortam değişkenlerini kullanabilirsiniz, örneğin:
+    - %AppData%\app123
+
+Bu ilke eylemlerini bir DLP ilkesinde gruba atayabilirsiniz:
+
+- İzin ver (kullanıcı bildirimleri veya uyarıları olmadan denetim)
+- Yalnızca denetim (bildirim ve uyarı ekleyebilirsiniz)
+- Geçersiz kılma ile engelle (eylemi engeller, ancak kullanıcı geçersiz kılabilir)
+- Engelle (ne olursa olsun bloklar)
+
+#### <a name="create-a-network-share-group"></a>Ağ Paylaşımı grubu oluşturma
+
+1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) >  **Veri kaybı önleme** > **Uç Noktası DLP ayarları** > **Ağ paylaşımı gruplarını** açın.
+**1.Ağ paylaşım grubu oluştur'u** seçin.
+1. **Bir Grup adı** girin.
+1. Dosya yolunu paylaşıma ekleyin.
+1. **Ekle**'yi seçin.
+1. Gerektiğinde gruba diğer paylaşım yollarını ekleyin.
+1. **Kapat**'ı seçin.
+
+
+En yaygın kullanım örneği, kullanıcıların korumalı dosyaları yalnızca grupta tanımlanan ağ paylaşımlarına kaydetmesine veya kopyalamasına izin vermek için ağ paylaşımı grubunu yukarıdaki örnekte olduğu gibi izin verilenler listesi olarak kullanmaktır. Burada bir ağ paylaşım grubu tanımladıktan sonra, kapsamı **Cihazlar** olarak belirlenmiş ilkelerinizde kullanılabilir. [İlke eylemlerini yetkilendirme gruplarını](endpoint-dlp-using.md#scenario-7-authorization-groups-preview) kullanacak şekilde yapılandırma hakkında daha fazla bilgi için bkz. Senaryo 7 Yetkilendirme grupları.
+
+### <a name="vpn-settings-preview"></a>VPN ayarları (önizleme)
+
+YALNıZCA bu VPN üzerinden gerçekleştirilen eylemleri denetlemek için VPN listesini kullanın.
+
+Bu özellik, şu Windows sürümlerinden herhangi birini çalıştıran cihazlarda kullanılabilir:  
+    
+- Windows 10 ve üzeri (20H2, 21H1, 21H2) 
+- Windows 11 21H2, 22H2
+- Windows 10 RS5 (KB 5006744)
+
+**VPN Ayarları'nda bir VPN'yi** listelediğinizde, bu ilke eylemlerini bunlara atayabilirsiniz:
+
+- İzin ver (kullanıcı bildirimleri veya uyarıları olmadan denetim)
+- Yalnızca denetim (bildirim ve uyarı ekleyebilirsiniz)
+- Geçersiz kılma ile engelle (eylemi engeller, ancak kullanıcı geçersiz kılabilir)
+- Engelle (ne olursa olsun bloklar)
+
+Bu eylemler, bu kullanıcı etkinliklerine tek tek veya toplu olarak uygulanabilir:
+
+- Panoya kopyala
+- USB çıkarılabilir cihaza kopyalama
+- Ağ paylaşımına kopyalama
+- Yazdırma
+- İzin verilmeyen Bluetooth uygulamasını kullanarak kopyalama veya taşıma
+- RDP kullanarak kopyalama veya taşıma
+
+Cihazlarda etkinliği kısıtlamak için bir DLP ilkesi yapılandırırken, kullanıcılar listelenen VPN'lerden herhangi biri içinde kuruluşunuza bağlandığında gerçekleştirilen her etkinliğe ne olacağını denetleyebilirsiniz.
+
+VPN'i bu Sunucu **adresi** veya **Ağ adresi** parametreleriyle tanımlarsınız. 
+
+#### <a name="get-the-server-address-or-network-address"></a>Sunucu adresini veya Ağ adresini alma
+
+1. DLP tarafından izlenen bir Windows cihazında yönetici olarak **bir Windows PowerShell** penceresi açın.
+1. Bu cmdlet'i çalıştırın
+
+```powershell-interactive
+Get-VpnConnection
+```
+3. Bu cmdlet'i çalıştırmak birden çok alan ve değer döndürür.
+1. **ServerAddress** alanını bulun ve bu değeri kaydedin. VPN listesinde bir VPN girişi oluşturduğunuzda bunu kullanacaksınız.
+1. **Ad** alanını bulun ve bu değeri kaydedin. **AD** alanı, VPN listesinde bir VPN girişi oluşturduğunuzda **Ağ adresi** alanına eşler.
+
+#### <a name="add-a-vpn"></a>VPN ekleme
+
+1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) >  **Veri kaybı önleme** > **Uç Noktası DLP ayarları****VPN ayarlarını** >  açın.
+1. **VPN adresleri ekle veya düzenle'yi** seçin.
+1. Get-VpnConnection'ı çalıştırmak için **Sunucu adresini** veya **Ağ adresini** belirtin.
+1. **Kaydet**'i seçin.
+1. Öğeyi kapatın.
+
+> [!IMPORTANT]
+> bir ilkenin eylemlerini tanımlarken VPN listesini kullandığınızda, seçenek olarak **Kurumsal ağ** seçeneğini de görürsünüz. **Kurumsal ağ** bağlantıları, kuruluşunuzun kaynaklarına yönelik bağlantılardır. Bu bağlantılar VPN'leri içerebilir. 
+
+İlke [eylemlerini ağ özel durumlarını](endpoint-dlp-using.md#scenario-8-network-exceptions-preview)kullanacak şekilde yapılandırma hakkında daha fazla bilgi için bkz. Senaryo 8 Ağ özel durumları.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

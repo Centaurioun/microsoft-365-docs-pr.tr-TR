@@ -18,12 +18,12 @@ ms.collection:
 description: Kuruluşunuzdan gönderilen iletileri doğrulamak için Etki Alanı Tabanlı İleti Kimlik Doğrulaması, Raporlama ve Uyumluluk (DMARC) yapılandırmayı öğrenin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: c81843c9d8ed40cdd14d854e05f9d7b50de35229
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: f6f460e0a0252f938e351ead0f44e0987fa78359
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68072315"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536422"
 ---
 # <a name="use-dmarc-to-validate-email"></a>E-postayı doğrulamak için DMARC kullanma
 
@@ -215,7 +215,7 @@ DMARC'yi posta akışınızın geri kalanını etkilemeden aşamalı olarak uygu
 
 4. Alt etki alanı için DMARC nasıl ayarlanır?
 
-   DMARC, DNS'de bir ilkeyi TXT kaydı olarak yayımlayarak uygulanır ve hiyerarşiktir (örneğin, alt etki alanı için farklı bir ilke açıkça tanımlanmadığı sürece sub.domain.contonos.com için contoso.com için yayımlanan bir ilke geçerli olur). Kuruluşlar daha geniş kapsamlı bir kapsama için daha az sayıda üst düzey DMARC kaydı belirtebildiğinden bu yararlı olur. Alt etki alanının en üst düzey etki alanının DMARC kaydını devralmasını istemediğiniz açık alt etki alanı DMARC kayıtlarını yapılandırmaya özen gösterilmelidir.
+   DMARC, DNS'de bir ilkeyi TXT kaydı olarak yayımlayarak uygulanır ve hiyerarşiktir (örneğin, contoso.com için yayımlanan bir ilke, alt etki alanı için açıkça farklı bir ilke tanımlanmadığı sürece sub.domain.contoso.com için geçerli olur). Kuruluşlar daha geniş kapsamlı bir kapsama için daha az sayıda üst düzey DMARC kaydı belirtebildiğinden bu yararlı olur. Alt etki alanının en üst düzey etki alanının DMARC kaydını devralmasını istemediğiniz açık alt etki alanı DMARC kayıtlarını yapılandırmaya özen gösterilmelidir.
 
    Ayrıca, değeri ekleyerek alt etki alanları e-posta göndermemesi gerektiğinde DMARC için joker karakter türü ilkesi `sp=reject` ekleyebilirsiniz. Örneğin:
 

@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 16d8dd96b9fef1aaa01437f3c1175021a1f9f33d
-ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
+ms.openlocfilehash: 4f0cc33e562494ceaf5abc6ffb39c700f6545c91
+ms.sourcegitcommit: 893add1e40c3e26e5624663eaf272d12a72d0141
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67315712"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68540059"
 ---
 # <a name="creating-and-testing-binary-files-on-test-base"></a>Test Tabanında İkili Dosyalar Oluşturma ve Test Etme
 
@@ -129,28 +129,46 @@ Sol taraftaki menüde **Paket kataloğu** altında **Yeni paket'i** seçin. Ard�
 
 4. Gerekli tüm bilgiler doldurulduktan sonra, alttaki İleri düğmesine tıklayarak 4. adıma geçebilirsiniz.
 
-### <a name="step-4-test-matrix"></a>Adım 4. Test matrisi
+### <a name="step-4-set-test-matrix"></a>Adım 4. Test matrisini ayarlama
 
-1. Test matrisi sekmesinde işletim **sistemi güncelleştirme türünü** seçin. Desteklenen iki işletim sistemi güncelleştirme türü vardır.
-   - **Güvenlik güncelleştirmeleri**, paketinizin Windows yayın öncesi aylık güvenlik güncelleştirmelerinin artımlı değişim sıklığına karşı test edilmesine olanak tanır.
-   - **Özellik güncelleştirmeleri**, paketinizin Windows Insider Programı'ndan windows yayın öncesi iki yıllık özellik güncelleştirmeleri derlemelerine karşı test edilmesine olanak tanır.
-
-2. Güvenlik güncelleştirme testleri için işletim sistemi sürümlerini seçin.
-
-   **İşletim sistemi güncelleştirme türünde Güvenlik güncelleştirmeleri** seçilirse paketinizin test edeceği Windows işletim sistemi sürümlerini seçmeniz gerekir.
-
-   > [!NOTE]
-   > Paketinizi hem Sunucu hem de İstemci işletim sistemiyle sınamayı seçerseniz, lütfen paketin uyumlu olduğundan ve her iki işletim sisteminde de çalıştırılabilir olduğundan emin olun.
-
-3. Özellik güncelleştirme testleri seçeneklerini belirleyin.
-   - **İşletim sistemi güncelleştirme türünde Özellik güncelleştirmeleri** seçiliyse, aşağıdaki seçenekleri tamamlamanız gerekir.
-   - **Insider Kanalı** için, paketlerinizin test edilmesi gereken derleme olarak Windows Insider Program Kanalı'nı seçin. Şu anda **Insider Beta Kanalında** sunulan derlemeleri kullanıyoruz.
-   - **insight işletim sistemi temeli için**, test sonuçlarınızı karşılaştırmak için temel olarak kullanılacak Windows işletim sistemi sürümünü seçin.
+Test matrisi sekmesi, testinizin yürütülmesini isteyebileceğiniz belirli Windows güncelleştirme programını veya Windows ürününü belirtmenize yöneliktir.
 
    > [!div class="mx-imgBorder"]
-   > ![Windows işletim sistemi sürümünü seçin](Media/testapplication14.png)
+   > ![Test matrisi yeni paketini ayarlama](Media/settestmatrix01-newpackage.png)
 
-4. Gerekli tüm bilgiler doldurulduktan sonra, en alttaki İleri düğmesine tıklayarak 5. adıma (son adım) geçebilirsiniz.
+1. **İşletim sistemi güncelleştirme türünü** seçin
+   - Test Tabanı, uygulamalarınızın performansının en son Windows güncelleştirmelerine göre bozulmamasını sağlamak için zamanlanmış test sağlar. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Test matrisini ayarla osupdate'i seçin](Media/settestmatrix02-chooseosupdate.png)
+
+   - Kullanılabilir 2 seçenek vardır:
+   
+     - **Güvenlik güncelleştirmeleri**, paketinizin Windows aylık güvenlik güncelleştirmelerinin artımlı değişim sıklığına karşı test edilmesine olanak tanır.
+     - **Özellik güncelleştirmeleri**, paketinizin Windows Insider Programı'ndaki en son Windows Insider Preview Derlemelerindeki yeni özelliklere karşı test edilmesine olanak tanır.
+
+2. **Güvenlik Güncelleştirmesini** Yapılandırma Güvenlik güncelleştirmelerini ayarlamak için, "Test etmek için işletim sistemi sürümleri" açılan listesinden test etmek istediğiniz Windows ürünlerini belirtmeniz gerekir.
+
+   > [!div class="mx-imgBorder"]
+   > ![Test matrisini ayarlama securityupdate'i yapılandırma](Media/settestmatrix03-configuresecurityupdate.png)
+
+   - Seçiminiz, seçilen ürünler için Windows aylık kalite güncelleştirmelerinin B sürümüne karşı otomatik test çalıştırmaları için uygulamanızı kaydeder.
+     - Test Temeli'ne Varsayılan Erişim müşterileri olan müşteriler için uygulamaları, Salı Düzeltme Eki'nden başlayarak B sürümü güvenlik güncelleştirmelerinin son sürümüne göre doğrulanır.
+     - Test Temeli'ne Tam Erişim müşterileri olan müşteriler için, uygulamaları B yayın güvenlik güncelleştirmelerinin yayın öncesi sürümlerine göre doğrulanır ve Bu sürümLer, Düzeltme Eki Salı'dan 3 hafta öncesine kadar başlar. Bu, Tam Erişim müşterilerinin Yama Salı'daki son sürümden önce test sırasında bulunan sorunları çözmek için proaktif adımlar atmasına olanak tanır.  
+       (Tam Erişim müşterisi nasıl olunur? Erişim [düzeyini değiştirme isteğine bakın | Microsoft Docs](accesslevel.md))
+
+3. **Özellik Güncelleştirmesini** Yapılandırma
+   - Özellik güncelleştirmelerini ayarlamak için hedef ürünü ve önizleme kanalını "Insider Kanalı" açılan listesinden belirtmeniz gerekir.
+
+   > [!div class="mx-imgBorder"]
+   > ![Test matrisini ayarlama featureupdate'i yapılandırma](Media/settestmatrix04-configurefeatureupdate.png)
+
+   - Seçiminiz, uygulamanızı seçtiğiniz ürün kanalının en son özellik güncelleştirmelerine ve seçiminizin en son Windows Insider Preview Derlemelerinde gelecekteki tüm yeni güncelleştirmelere karşı otomatik test çalıştırmaları için kaydeder.
+
+   - Geçerli işletim sisteminizi "İçgörüler için işletim sistemi temeli" bölümünde de ayarlayabilirsiniz. Olduğu gibi işletim sistemi ortamınızın ve en son hedef işletim sisteminizin regresyon analizini yaparak size daha fazla test içgörüleri sağlarız.
+
+   > [!div class="mx-imgBorder"]
+   > ![Test matrisi kümesi işletim sistemi ayarlama](Media/settestmatrix05-setos.png)
 
 ### <a name="step-5-review--publish"></a>Adım 5. Gözden geçirme + yayımlama
 

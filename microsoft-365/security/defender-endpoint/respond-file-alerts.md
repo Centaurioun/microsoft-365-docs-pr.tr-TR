@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 686e1d90bab02909b0275aa6cfd8eca9108f627b
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 319a6c63e88e250020d275c2b311eaff8500d3c7
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221818"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536312"
 ---
 # <a name="take-response-actions-on-a-file"></a>Dosyada yanıt eylemleri gerçekleştirin
 
@@ -47,7 +47,7 @@ Yanıt eylemleri dosya sayfasının üst kısmında çalışır ve şunları iç
 - Dosyayı Durdur ve Karantinaya Al
 - Gösterge Ekle
 - Dosyayı indirme
-- Tehdit uzmanına danışın
+- Defender Uzmanlarına Sorun
 - İşlem merkezi
 
 Dosyayı güvenli bir bulut korumalı alanında çalıştırmak için ayrıntılı analiz için de dosya gönderebilirsiniz. Analiz tamamlandığında, dosyanın davranışı hakkında bilgi sağlayan ayrıntılı bir rapor alırsınız. **Derin** analiz sekmesini seçerek derin analiz için dosya gönderebilir ve geçmiş raporları okuyabilirsiniz. Dosya bilgi kartlarının altında bulunur.
@@ -85,7 +85,7 @@ Bu eylem, dosyanın son 30 gün içinde gözlemlendiği Windows 10, sürüm 1703
 
 1. Durdurmak ve karantinaya almak istediğiniz dosyayı seçin. Aşağıdaki görünümlerden herhangi birinden bir dosya seçebilir veya Arama kutusunu kullanabilirsiniz:
 
-   - **Uyarılar** - Uyarı Hikayesi zaman çizelgesindeki Açıklama veya Ayrıntılar'dan ilgili bağlantılara tıklayın
+   - **Uyarılar** - Uyarı Hikayesi zaman çizelgesindeki Açıklama veya Ayrıntılar'dan ilgili bağlantıları seçin
    - **Arama kutusu** - Açılan menüden **Dosya'yı** seçin ve dosya adını girin
 
    > [!NOTE]
@@ -110,7 +110,7 @@ Bu eylem, dosyanın son 30 gün içinde gözlemlendiği Windows 10, sürüm 1703
 
 4. Eylem hakkında daha fazla bilgi görüntülemek için durum göstergelerinden herhangi birini seçin. Örneğin, eylemin nerede başarısız olduğunu görmek için **Başarısız'ı** seçin.
 
-#### <a name="notification-on-device-userf"></a>Cihaz userf'sinde bildirim
+#### <a name="notification-on-device-user"></a>Cihaz kullanıcıda bildirim
 
 Dosya bir cihazdan kaldırıldığında aşağıdaki bildirim gösterilir:
 
@@ -158,7 +158,7 @@ Microsoft Defender Virüsten Koruma veya güvenlik ekibiniz tarafından karantin
 
 Konum, kuruluşunuzun coğrafi ayarlarına (AB, Birleşik Krallık veya ABD) bağlıdır. Karantinaya alınan bir dosya kuruluş başına yalnızca bir kez toplanır. Hizmet Güveni Portalı'ndan https://aka.ms/STPMicrosoft'un veri koruması hakkında daha fazla bilgi edinin.
 
-Bu ayarın açık olması, güvenlik ekiplerinin kötü olabilecek dosyaları incelemesine ve olayları hızlı ve daha az riskli bir şekilde araştırmalarına yardımcı olabilir. Ancak, bu ayarı kapatmanız gerekiyorsa **Ayarlar** \> **Uç Noktalar** \> **Gelişmiş özellikler** \> **Karantinaya alınan dosyaları indir'e** giderek ayarı ayarlayın. [Gelişmiş özellikler hakkında daha fazla bilgi edinin](advanced-features.md)
+Bu ayarın açık olması, güvenlik ekiplerinin kötü olabilecek dosyaları incelemesine ve olayları hızlı ve daha az riskli bir şekilde araştırmalarına yardımcı olabilir. Ancak, bu ayarı kapatmanız gerekiyorsa **Ayarlar** \> **Uç Noktaları** \> **Gelişmiş özellikler** \> **Karantinaya alınan dosyaları indir'e** giderek ayarı ayarlayın. [Gelişmiş özellikler hakkında daha fazla bilgi edinin](advanced-features.md)
 
 #### <a name="backing-up-quarantined-files"></a>Karantinaya alınan dosyaları yedekleme
 
@@ -217,9 +217,9 @@ Ayrıca **, Ayarlar** sayfasında, **Kural** \> **Göstergeleri'nin** altında g
 
 ## <a name="consult-a-threat-expert"></a>Tehdit uzmanına danışın
 
-Güvenliği aşılmış olabilecek bir cihaz veya güvenliği aşılmış cihazlar hakkında daha fazla içgörü için bir Microsoft tehdit uzmanına başvurun. Microsoft Tehdit Uzmanları, zamanında ve doğru yanıt için doğrudan Microsoft 365 Defender portalından devreye girer. Uzmanlar, tehlikeye girmiş olabilecek bir cihaz hakkında içgörüler sağlar ve karmaşık tehditleri ve hedeflenen saldırı bildirimlerini anlamanıza yardımcı olur. Ayrıca, portal panonuzda gördüğünüz uyarılar veya tehdit bilgileri bağlamı hakkında bilgi de sağlayabilirler.
+Güvenliği aşılmış olabilecek bir cihaz veya zaten güvenliği aşılmış cihazlar hakkında Microsoft uzmanlarından daha fazla içgörü almak için Defender Uzmanlarından isteyin'i seçin. Microsoft Defender Uzmanları, zamanında ve doğru yanıt için doğrudan Microsoft 365 Defender portalından devreye girer. Uzmanlar, tehlikeye girmiş olabilecek bir cihaz hakkında içgörüler sağlar ve karmaşık tehditleri ve hedeflenen saldırı bildirimlerini anlamanıza yardımcı olur. Ayrıca, portal panonuzda gördüğünüz uyarılar veya tehdit bilgileri bağlamı hakkında bilgi de sağlayabilirler.
 
-Ayrıntılar için bkz. [Microsoft Tehdit Uzmanına Başvurun](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) .
+Ayrıntılar için bkz [. Defender Uzmanlarına sorun](experts-on-demand.md) .
 
 ## <a name="check-activity-details-in-action-center"></a>İşlem merkezinde etkinlik ayrıntılarını denetleyin
 

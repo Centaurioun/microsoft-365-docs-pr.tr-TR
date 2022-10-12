@@ -1,5 +1,6 @@
 ---
 title: Microsoft 365'te Bloomberg verilerini arşivleye bir bağlayıcı ayarlama
+description: Microsoft 365'te Bloomberg verilerini içeri aktarmak ve arşivlemek için 17a-4 Bloomberg DataParser bağlayıcısını ayarlamayı ve kullanmayı öğrenin.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Microsoft 365'te Bloomberg verilerini içeri aktarmak ve arşivlemek için 17a-4 Bloomberg DataParser bağlayıcısını ayarlamayı ve kullanmayı öğrenin.
-ms.openlocfilehash: 4795a3b3e3eeb53359f6bd42aedcca404264f77e
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: 403ca598e8df93dc13fc7adbba231fc9672fa171
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67824740"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68533430"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-data"></a>Bloomberg verilerini arşivleye bağlayıcı ayarlama
 
 17a-4 LLC'deki [Bloomberg DataParser'ı](https://www.17a-4.com/Bloomberg-dataparser/) kullanarak Verileri Bloomberg'den Microsoft 365 kuruluşunuzdaki kullanıcı posta kutularına aktarın ve arşivleyebilirsiniz. DataParser, üçüncü taraf veri kaynağından öğeleri yakalamak ve bu öğeleri Microsoft 365'e aktarmak için yapılandırılmış bir Bloomberg bağlayıcısı içerir. Bloomberg DataParser bağlayıcısı, Bloomberg verilerini e-posta iletisi biçimine dönüştürür ve ardından bu öğeleri Microsoft 365'teki kullanıcı posta kutularına aktarır.
 
 Bloomberg verileri kullanıcı posta kutularında depolandıktan sonra, Dava Tutma, eBulma, bekletme ilkeleri ve bekletme etiketleri ve iletişim uyumluluğu gibi Microsoft Purview özelliklerini uygulayabilirsiniz. Microsoft 365'te verileri içeri aktarmak ve arşivlerken Bloomberg bağlayıcısı kullanmak, kuruluşunuzun kamu ve mevzuat ilkeleriyle uyumlu kalmasına yardımcı olabilir.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-bloomberg-data"></a>Bloomberg verilerini arşivlemeyle ilgili genel bakış
 
@@ -45,19 +50,19 @@ Aşağıdaki genel bakış, Microsoft 365'te Bloomberg verilerini arşivlerken v
 
 - 1. Adımda Bloomberg DataParser bağlayıcısını oluşturan (ve 3. Adımda tamamlayan) kullanıcıya Veri Bağlayıcısı Yönetici rolü atanmalıdır. Bu rol, uyumluluk portalındaki **Veri bağlayıcıları sayfasına bağlayıcı** eklemek için gereklidir. Bu rol varsayılan olarak birden çok rol grubuna eklenir. Bu rol gruplarının listesi için Güvenlik [& Uyumluluk Merkezi'ndeki İzinler bölümündeki "Güvenlik ve uyumluluk merkezlerindeki](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center) roller" bölümüne bakın. Alternatif olarak, kuruluşunuzdaki bir yönetici özel bir rol grubu oluşturabilir, Veri Bağlayıcısı Yönetici rolünü atayabilir ve ardından uygun kullanıcıları üye olarak ekleyebilir. Yönergeler için, [Microsoft Purview uyumluluk portalı İzinler](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group) bölümündeki "Özel rol grubu oluşturma" bölümüne bakın.
 
-- Bu 17a-4 veri bağlayıcısı, Microsoft 365 US Government bulutundaki GCC ortamlarında kullanılabilir. Üçüncü taraf uygulamalar ve hizmetler, kuruluşunuzun müşteri verilerini Microsoft 365 altyapısının dışındaki üçüncü taraf sistemlerde depolamayı, iletmeyi ve işlemeyi içerebilir ve bu nedenle Microsoft Purview ve veri koruma taahhütleri kapsamında değildir. Microsoft, üçüncü taraf uygulamalara bağlanmak için bu ürünün kullanıldığının, bu üçüncü taraf uygulamaların FEDRAMP uyumlu olduğunu ifade ettiğini ifade etmemektedir.
+- Bu 17a-4 veri bağlayıcısı, Microsoft 365 US Government bulutundaki GCC ortamlarında kullanılabilir. Üçüncü taraf uygulamalar ve hizmetler, kuruluşunuzun müşteri verilerini Microsoft 365 altyapısının dışında olan ve bu nedenle Microsoft Purview ve veri koruma taahhütleri kapsamında olmayan üçüncü taraf sistemlerde depolamayı, iletmeyi ve işlemeyi içerebilir. Microsoft, üçüncü taraf uygulamalara bağlanmak için bu ürünün kullanıldığının, bu üçüncü taraf uygulamaların FEDRAMP uyumlu olduğunu ifade ettiğini ifade etmemektedir.
 
 ## <a name="step-1-set-up-a-bloomberg-dataparser-connector"></a>1. Adım: Bloomberg DataParser bağlayıcısı ayarlama
 
 İlk adım, uyumluluk portalındaki Veri bağlayıcıları sayfasına erişmek ve Bloomberg verileri için bir 17a-4 bağlayıcısı oluşturmaktır.
 
-1. **Veri bağlayıcıları****Bloomberg DataParser'a**<https://compliance.microsoft.com> >  gidin ve tıklayın.
+1. <https://compliance.microsoft.com> Adresine gidin ve **Veri bağlayıcıları** > **Bloomberg DataParser'ı** seçin.
 
-2. **Bloomberg DataParser** ürün açıklaması sayfasında **Bağlayıcı ekle'ye** tıklayın.
+2. **Bloomberg DataParser** ürün açıklaması sayfasında **Bağlayıcı ekle'yi** seçin.
 
-3. **Hizmet koşulları** sayfasında **Kabul Et'e** tıklayın.
+3. **Hizmet koşulları** sayfasında **Kabul Et'i** seçin.
 
-4. Bağlayıcıyı tanımlayan benzersiz bir ad girin ve **İleri'ye** tıklayın.
+4. Bağlayıcıyı tanımlayan benzersiz bir ad girin ve **İleri'yi** seçin.
 
 5. 17a-4 hesabınızda oturum açın ve Bloomberg DataParser bağlantı sihirbazındaki adımları tamamlayın.
 
@@ -73,11 +78,11 @@ Bloomberg DataParser bağlayıcısı, verileri Microsoft 365'e aktarmadan önce 
 
 Bloomberg DataParser bağlayıcısı oluşturduktan sonra bağlayıcının durumunu uyumluluk portalında görüntüleyebilirsiniz.
 
-1. Sol gezinti bölmesinde **Veri bağlayıcıları'na** <https://compliance.microsoft.com> gidin ve tıklayın.
+1. Sol gezinti **bölmesinden Veri bağlayıcıları'na** <https://compliance.microsoft.com> gidin ve bunu seçin.
 
-2. **Bağlayıcılar** sekmesine tıklayın ve ardından bağlayıcının özelliklerini ve bilgilerini içeren açılır sayfayı görüntülemek için oluşturduğunuz Bloomberg DataParser bağlayıcısını seçin.
+2. **Bağlayıcılar** sekmesini seçin ve ardından bağlayıcının özelliklerini ve bilgilerini içeren açılır sayfayı görüntülemek için oluşturduğunuz Bloomberg DataParser bağlayıcısını seçin.
 
-3. Bağlayıcının durum günlüğünü açmak (veya kaydetmek) için **Kaynakla bağlayıcı durumu** altında **Günlüğü indir** bağlantısına tıklayın. Bu günlük, Microsoft buluta aktarılan veriler hakkında bilgi içerir. Daha fazla bilgi için bkz. [Veri bağlayıcıları için yönetici günlüklerini görüntüleme](data-connector-admin-logs.md).
+3. Bağlayıcının durum günlüğünü açmak (veya kaydetmek) için **Kaynakla bağlayıcı durumu** altında **Günlüğü indir** bağlantısını seçin. Bu günlük, Microsoft buluta aktarılan veriler hakkında bilgi içerir. Daha fazla bilgi için bkz. [Veri bağlayıcıları için yönetici günlüklerini görüntüleme](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Bilinen sorunlar
 

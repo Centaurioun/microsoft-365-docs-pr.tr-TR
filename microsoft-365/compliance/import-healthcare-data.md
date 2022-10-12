@@ -1,5 +1,6 @@
 ---
 title: Genel sağlık denetim verilerini içeri aktarmak için bağlayıcı ayarlama
+description: Yöneticiler, elektronik sağlık kayıtlarını (EHR) sağlık sisteminden Microsoft 365'e aktarmak için bir veri bağlayıcısı ayarlayabilir. Bu, çalışanlarınız tarafından hasta verilerine yetkisiz erişim etkinliğini algılamanıza yardımcı olmak için iç risk yönetimi ilkelerinde EHR verilerini kullanmanıza olanak tanır.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,14 +13,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
-description: Yöneticiler, elektronik sağlık kayıtlarını (EHR) sağlık sisteminden Microsoft 365'e aktarmak için bir veri bağlayıcısı ayarlayabilir. Bu, çalışanlarınız tarafından hasta verilerine yetkisiz erişim etkinliğini algılamanıza yardımcı olmak için iç risk yönetimi ilkelerinde EHR verilerini kullanmanıza olanak tanır.
-ms.openlocfilehash: c78d5c686bb8e3894363dd60818fb6ec011004fb
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: e3863d0d08c5881212e6765a9772fd1c9b19435b
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67823023"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68537390"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Sağlık EHR denetim verilerini içeri aktarmak için bağlayıcı ayarlama (önizleme)
 
@@ -38,6 +41,8 @@ Healthcare bağlayıcısının ayarlanması aşağıdaki görevlerden oluşur:
 - İsteğe bağlı olarak, denetim verilerini içeri aktarmak için betiği otomatik olarak çalışacak şekilde zamanlama.
 
 Önizlemeye katılmak isterseniz lütfen dcfeedback@microsoft.com ekibine ulaşın.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-set-up-the-connector"></a>Bağlayıcıyı ayarlamadan önce
 
@@ -83,23 +88,23 @@ Aşağıdaki tabloda, insider risk yönetimi senaryolarını etkinleştirmek iç
 
 Sonraki adım, uyumluluk portalında bir Healthcare bağlayıcısı oluşturmaktır. 4. Adımda betiği çalıştırdıktan sonra, 2. Adımda oluşturduğunuz metin dosyası işlenir ve 1. Adımda ayarladığınız API uç noktasına iletilir. Bu adımda, bağlayıcıyı oluştururken oluşturulan JobId değerini kopyaladığınızdan emin olun. Betiği çalıştırdığınızda JobId değerini kullanacaksınız.
 
-1. Sol gezinti bölmesinde **Veri bağlayıcıları'na** <https://compliance.microsoft.com> gidin ve tıklayın.
+1. Sol gezinti **bölmesinden Veri bağlayıcıları'na** <https://compliance.microsoft.com> gidin ve bunu seçin.
 
-2. **Genel Bakış** sekmesinde **Sağlık (önizleme)** seçeneğine tıklayın.
+2. **Genel Bakış** sekmesinde **Sağlık (önizleme)** öğesini seçin.
 
-3. **Healthcare (önizleme)** sayfasında **Bağlayıcı ekle'ye** tıklayın.
+3. **Healthcare (önizleme)** sayfasında **Bağlayıcı ekle'yi** seçin.
 
 4. Hizmet koşullarını kabul edin.
 
-5. **Kimlik doğrulama kimlik bilgileri** sayfasında aşağıdakileri yapın ve **İleri'ye** tıklayın:
+5. **Kimlik doğrulaması kimlik bilgileri** sayfasında aşağıdakileri yapın ve **İleri'yi** seçin:
 
     1. 1. Adımda oluşturduğunuz Azure uygulamasının Azure AD uygulama kimliğini yazın veya yapıştırın.
 
     2. Sağlık bağlayıcısı için bir ad yazın.
 
-6. **Dosya eşleme yöntemi** sayfasında, aşağıdaki seçeneklerden birini seçin ve **İleri'ye** tıklayın.
+6. **Dosya eşleme yöntemi** sayfasında, aşağıdaki seçeneklerden birini seçin ve ardından **İleri'yi** seçin.
 
-   - **Örnek bir dosyayı karşıya yükleyin**. Bu seçeneği seçerseniz, 2. Adımda hazırladığınız dosyayı karşıya yüklemek için **Örnek dosyayı karşıya yükle'ye** tıklayın. Bu seçenek, sütunları sağlık bağlayıcısı için gerekli şemaya eşlemek için bir açılan listeden metin dosyanızdaki sütun adlarını hızla seçmenize olanak tanır. 
+   - **Örnek bir dosyayı karşıya yükleyin**. Bu seçeneği seçerseniz Örnek **dosyayı karşıya yükle'yi** seçerek 2. Adımda hazırladığınız dosyayı karşıya yükleyin. Bu seçenek, sütunları sağlık bağlayıcısı için gerekli şemaya eşlemek için bir açılan listeden metin dosyanızdaki sütun adlarını hızla seçmenize olanak tanır. 
 
     Veya
 
@@ -113,23 +118,23 @@ Sonraki adım, uyumluluk portalında bir Healthcare bağlayıcısı oluşturmakt
 
    - Her alan için, 2. Adımda hazırladığınız ve sağlık bağlayıcısı alanına karşılık gelen dosyadan sütun adını yazın.
 
-8. **Gözden Geçir** sayfasında ayarlarınızı gözden geçirin ve ardından **Son'a** tıklayarak bağlayıcıyı oluşturun.
+8. **Gözden Geçir** sayfasında ayarlarınızı gözden geçirin ve ardından **Son'u** seçerek bağlayıcıyı oluşturun.
 
    Bağlayıcının oluşturulduğunu onaylayan bir durum sayfası görüntülenir. Bu sayfa, sağlık hizmetleri EHR denetim verilerinizi karşıya yüklemek için örnek betiği çalıştırmak için bir sonraki adımı tamamlamanız gereken iki önemli öğe içerir.
 
     - **İş Kimliği.** Sonraki adımda betiği çalıştırmak için bu iş kimliğine ihtiyacınız olacaktır. Bu sayfadan veya bağlayıcı açılır sayfasından kopyalayabilirsiniz.
 
-    - **Örnek betiğin bağlantısı.** Örnek betike erişmek için GitHub sitesine gitmek için **buraya** tıklayın (bağlantı yeni bir pencere açar). 4. Adım'da betiği kopyalayabilmeniz için bu pencereyi açık tutun. Alternatif olarak, betiği çalıştırdığınızda yeniden erişebilmek için hedefe yer işareti ekleyebilir veya URL'yi kopyalayabilirsiniz. Bu bağlantı bağlayıcı açılır sayfasında da kullanılabilir.
+    - **Örnek betiğin bağlantısı.** Örnek betike erişmek için GitHub sitesine gitmek için **buradaki** bağlantıyı seçin (bağlantı yeni bir pencere açar). 4. Adım'da betiği kopyalayabilmeniz için bu pencereyi açık tutun. Alternatif olarak, betiği çalıştırdığınızda yeniden erişebilmek için hedefe yer işareti ekleyebilir veya URL'yi kopyalayabilirsiniz. Bu bağlantı bağlayıcı açılır sayfasında da kullanılabilir.
 
-9. **Bitti'ye** tıklayın.
+9. **Bitti'yi** seçin.
 
    Yeni bağlayıcı **Bağlayıcılar** sekmesindeki listede görüntülenir.
 
-10. Bağlayıcıyla ilgili özellikleri ve diğer bilgileri içeren açılır sayfayı görüntülemek için yeni oluşturduğunuz Healthcare bağlayıcısına tıklayın.
+10. Bağlayıcıyla ilgili özellikleri ve diğer bilgileri içeren açılır sayfayı görüntülemek için yeni oluşturduğunuz Healthcare bağlayıcısını seçin.
 
 Henüz yapmadıysanız **, Azure Uygulaması Kimliği** ve **Bağlayıcı iş kimliği** değerlerini kopyalayabilirsiniz. Sonraki adımda betiği çalıştırmak için bunlara ihtiyacınız olacaktır. Betiği açılır sayfadan da indirebilirsiniz (veya sonraki adımda bağlantıyı kullanarak indirebilirsiniz.)
 
-**Dosya eşleme** sayfasında tanımladığınız Azure Uygulaması kimliğini veya sütun üst bilgisi adlarını değiştirmek için **Düzenle'ye** de tıklayabilirsiniz.
+**Dosya eşleme** sayfasında tanımladığınız Azure Uygulaması kimliğini veya sütun üst bilgisi adlarını değiştirmek için **Düzenle'yi** de seçebilirsiniz.
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-healthcare-ehr-auditing-data"></a>4. Adım: Sağlık ehr denetim verilerinizi karşıya yüklemek için örnek betiği çalıştırın
 
@@ -140,7 +145,7 @@ Healthcare bağlayıcısını ayarlamanın son adımı, metin dosyasındaki (1. 
 
 1. GitHub sitesine örnek betikle erişmek için önceki adımda açık bıraktığınız pencereye gidin. Alternatif olarak, yer işaretli siteyi açın veya kopyaladığınız URL'yi kullanın. Betike [buradan](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/sample_script.ps1) da erişebilirsiniz.
 
-2. Betiği metin görünümünde görüntülemek için **Ham** düğmesine tıklayın.
+2. Betiği metin görünümünde görüntülemek için **Ham** düğmesini seçin.
 
 3. Örnek betikteki tüm satırları kopyalayın ve bir metin dosyasına kaydedin.
 
@@ -182,11 +187,11 @@ Karşıya yükleme başarılı olursa, betik **Karşıya Yükleme Başarılı** 
 
 Healthcare bağlayıcısını oluşturduktan ve EHR denetim verilerinizi gönderdikten sonra bağlayıcıyı görüntüleyebilir ve uyumluluk portalında karşıya yükleme durumunu karşıya yükleyebilirsiniz. Betiği düzenli olarak otomatik olarak çalışacak şekilde zamanlarsanız, betiğin son çalıştırıldığından sonra geçerli durumu da görüntüleyebilirsiniz.
 
-1. Sol gezinti bölmesinde **Veri bağlayıcıları'na** <https://compliance.microsoft.com> gidin ve tıklayın.
+1. Sol gezinti **bölmesinden Veri bağlayıcıları'na** <https://compliance.microsoft.com> gidin ve bunu seçin.
 
-2. **Bağlayıcılar** sekmesine tıklayın ve açılan sayfayı görüntülemek için Healthcare bağlayıcısını seçin. Bu sayfa, bağlayıcı hakkındaki özellikleri ve bilgileri içerir.
+2. Açılan sayfayı görüntülemek için **Bağlayıcılar** sekmesini ve ardından Healthcare bağlayıcısını seçin. Bu sayfa, bağlayıcı hakkındaki özellikleri ve bilgileri içerir.
 
-3. **Son içeri aktarma'nın** altında Günlüğü **indir** bağlantısına tıklayarak bağlayıcının durum günlüğünü açın (veya kaydedin). Bu günlük, betiğin her çalıştırıldığında ve metin dosyasındaki verileri Microsoft buluta yükleyişiyle ilgili bilgileri içerir.
+3. **Son içeri aktarma'nın** altında Günlüğü **indir** bağlantısını seçerek bağlayıcının durum günlüğünü açın (veya kaydedin). Bu günlük, betiğin her çalıştırıldığında ve metin dosyasındaki verileri Microsoft buluta yükleyişiyle ilgili bilgileri içerir.
 
     alanı, `RecordsSaved` karşıya yüklenen metin dosyasındaki satır sayısını gösterir. Örneğin, metin dosyası dört satır içeriyorsa, betik metin dosyasındaki `RecordsSaved` tüm satırları başarıyla karşıya yüklediyse alanların değeri 4 olur.
 
@@ -198,11 +203,11 @@ Sağlık hizmetleri EHR sisteminizdeki en son denetim verilerinin insider risk y
 
 Betiği her gün otomatik olarak çalıştırmak için Windows'ta Görev Zamanlayıcı uygulamasını kullanabilirsiniz.
 
-1. Yerel bilgisayarınızda, Windows **Başlat** düğmesine tıklayın ve görev **zamanlayıcı** yazın.
+1. Yerel bilgisayarınızda Windows **Başlat** düğmesini seçin ve **görev zamanlayıcı** yazın.
 
-2. **Görev Zamanlayıcı** uygulamasına tıklayarak uygulamayı açın.
+2. **Görev Zamanlayıcı** uygulamasını seçerek açın.
 
-3. **Eylemler** bölümünde **Görev Oluştur'a** tıklayın.
+3. **Eylemler** bölümünde **Görev Oluştur'u** seçin.
 
 4. **Genel** sekmesinde, zamanlanan görev için açıklayıcı bir ad yazın; örneğin, **Healthcare bağlayıcı betiği**. İsteğe bağlı bir açıklama da ekleyebilirsiniz.
 
@@ -212,34 +217,34 @@ Betiği her gün otomatik olarak çalıştırmak için Windows'ta Görev Zamanla
 
     2. **En yüksek ayrıcalıklarla çalıştır** onay kutusunun seçili olduğundan emin olun.
 
-6. **Tetikleyiciler** sekmesini seçin, **Yeni'ye** tıklayın ve aşağıdaki işlemleri yapın:
+6. **Tetikleyiciler** sekmesini seçin, **Yeni'yi** seçin ve ardından aşağıdaki işlemleri yapın:
 
     1. **Ayarlar'ın** altında **Günlük** seçeneğini belirleyin ve ardından betiği ilk kez çalıştırmak için bir tarih ve saat seçin. Betik her gün belirtilen saatte çalıştırılır.
 
     2. **Gelişmiş ayarlar'ın** altında **Etkin** onay kutusunun seçili olduğundan emin olun.
 
-    3. **Tamam'a** tıklayın.
+    3. **Tamam**'ı seçin.
 
-7. **Eylemler** sekmesini seçin, **Yeni'ye** tıklayın ve ardından aşağıdaki işlemleri yapın:
+7. **Eylemler** sekmesini seçin, **Yeni'yi** seçin ve ardından aşağıdaki işlemleri yapın:
 
    ![Sağlık bağlayıcısı betiği için yeni bir zamanlanmış görev oluşturmak için eylem ayarları.](../media/GenericHealthCareConnectorScheduleTask1.png)
 
     1. **Eylem** açılan listesinde **Program başlat'ın** seçili olduğundan emin olun.
 
-    2. **Program/betik** kutusunda **Gözat'a** tıklayın ve aşağıdaki konuma gidin ve yolu kutuda görüntülenecek şekilde seçin: C:.0.exe.
+    2. **Program/betik** kutusunda **Gözat'ı** seçin ve aşağıdaki konuma gidin ve yolun kutuda görüntülenmesi için seçin: C:.0.exe.
 
     3. **Bağımsız değişken ekle (isteğe bağlı)** kutusunda, 4. Adımda çalıştırdığınız betik komutunu yapıştırın. Örneğin, `.\HealthcareConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Healthcare\audit\records.txt"`
 
     4. Başlangıç yeri **(isteğe bağlı)** kutusuna, 4. Adımda çalıştırdığınız betiğin klasör konumunu yapıştırın. Örneğin, C:\Healthcare\audit.
 
-    5. Yeni eylemin ayarlarını kaydetmek için **Tamam'a** tıklayın.
+    5. Yeni eylemin ayarlarını kaydetmek için **Tamam'ı** seçin.
 
-8. **Görev Oluştur** penceresinde **Tamam'a** tıklayarak zamanlanmış görevi kaydedin. Kullanıcı hesabı kimlik bilgilerinizi girmeniz istenebilir.
+8. **Görev Oluştur** penceresinde **Tamam'ı** seçerek zamanlanmış görevi kaydedin. Kullanıcı hesabı kimlik bilgilerinizi girmeniz istenebilir.
 
    Yeni görev Görev Zamanlayıcı Kitaplığı'nda görüntülenir.
 
    ![Sağlık bağlayıcısı betiği için yeni görev Görev Zamanlayıcı Kitaplığı'nda görüntülenir.](../media/HealthcareConnectorTaskSchedulerLibrary.png)
 
-   Betiğin en son çalıştırıldığı ve bir sonraki çalıştırma zamanlaması görüntülenir. Görevi düzenlemek için çift tıklayabilirsiniz.
+   Betiğin en son çalıştırıldığı ve bir sonraki çalıştırma zamanlaması görüntülenir. Görevi düzenlemek için çift seçebilirsiniz.
 
    Ayrıca, uyumluluk merkezindeki ilgili Healthcare bağlayıcısının açılır sayfasında betiğin en son ne zaman çalıştığını da doğrulayabilirsiniz.

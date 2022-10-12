@@ -12,16 +12,16 @@ ms.author: deniseb
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.topic: article
-ms.date: 10/06/2022
+ms.date: 10/10/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 9d48ab6fe41fe3a4ac2c3ad247248cca590f10c1
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 74d56fe8f7c2ceeee23017a7932cd642438a3a69
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68506900"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536202"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server'da virüsten koruma Microsoft Defender
 
@@ -100,6 +100,14 @@ sc query state= all
 ```
 
 ## <a name="update-antimalware-security-intelligence"></a>Kötü amaçlı yazılımdan koruma güvenlik bilgilerini güncelleştirme
+
+> [!IMPORTANT]
+> [Platform sürümü 4.18.2208.0 ve sonraki](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions) sürümlerle başlayarak: Bir sunucu Uç Nokta için Microsoft Defender eklendiyse, "Windows Defender kapat" [grup ilkesi](configure-endpoints-gp.md#update-endpoint-protection-configuration) ayarı artık virüsten koruma Windows Defender tamamen devre dışı bırakmaz R2 ve üzerini Windows Server 2012. Bunun yerine pasif moda yerleştirir. Buna ek olarak, [kurcalama koruması](prevent-changes-to-security-settings-with-tamper-protection.md) özelliği etkin moda geçişe izin verir ancak pasif moda geçmez.
+> 
+> - Uç Nokta için Microsoft Defender'a eklemeden önce "Windows Defender kapat" zaten varsa, değişiklik olmaz ve Defender Virüsten Koruma devre dışı kalır.
+> - Defender Virüsten Koruma'yı eklemeden önce devre dışı bırakılmış olsa bile pasif moda geçmek için [ForceDefenderPassiveMode yapılandırmasını](switch-to-mde-phase-2.md#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) değeriyle `1`uygulayabilirsiniz. Etkin moda yerleştirmek için bunun yerine bu değeri olarak `0` değiştirin.
+> 
+> Kurcalama korumasının etkinleştirildiği zaman için `ForceDefenderPassiveMode` değiştirilen mantığa dikkat edin: Microsoft Defender Virüsten Koruma etkin moda geçirildikten sonra, kurcalama koruması olarak ayarlandığında `1`bile `ForceDefenderPassiveMode` pasif moda geri dönmesini engeller.
 
 Normal güvenlik bilgileri güncelleştirmelerinizi almak için Windows Update hizmetinin çalışıyor olması gerekir. Windows Server Update Services (WSUS) gibi bir güncelleştirme yönetimi hizmeti kullanıyorsanız, Microsoft Defender Virüsten Koruma Güvenliği zekası güncelleştirmelerinin yönettiğiniz bilgisayarlar için onaylandığından emin olun.
 

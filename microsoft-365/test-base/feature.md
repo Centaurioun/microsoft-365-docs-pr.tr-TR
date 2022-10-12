@@ -14,42 +14,38 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: 02693d1dc9637b97d6d567a6bc362eaef24adc5d
-ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
+ms.openlocfilehash: bd681f6dceec9182d3fbe80e6bb3beeae510c65a
+ms.sourcegitcommit: 893add1e40c3e26e5624663eaf272d12a72d0141
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67315514"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68540015"
 ---
 # <a name="windows-feature-update-validation"></a>Windows Özellik güncelleştirme doğrulaması
 
-Yeni Windows özelliklerini doğrulamak için bir ortamı korumadan uygulamalarınızın bir sonraki Windows 10 veya Windows 11 sürümüyle nasıl performans göstereceği hakkında içgörülere mi ihtiyacınız var? 
+Uygulamalarınızın en son Windows özellikleriyle nasıl performans göstereceğiyle ilgili içgörülere mi ihtiyacınız var? 
 
-Doğrulama testlerinizi Azure ortamımızda Windows Insider Programı derlemelerinde çalıştırmak istiyor musunuz?
+Doğrulama testlerinizi Azure ortamımızda Windows Insider Programı derlemelerinde çalıştırmak istiyor musunuz? 
 
-M365 için Test Tabanı'nda **özellik güncelleştirme** doğrulaması, tüm bunları ve daha fazlasını başarmanıza yardımcı olabilir!
+Microsoft 365 için Test Tabanı'nda **özellik güncelleştirme** doğrulaması, tüm bunları ve daha fazlasını başarmanıza yardımcı olabilir! 
 
-M365 hizmeti için Test Temeli'nde bu yeni özelliğe nasıl erişeceklerini öğrenmek için aşağıdaki adım adım ana hattı gözden geçirin.
+Microsoft 365 hizmeti için Test Temeli'nde bu yeni özelliğe nasıl erişeceklerini öğrenmek için aşağıdaki adım adım ana hattı gözden geçirin. 
 
-M365 için Test Temeli'ni kullanmaya başlamak ```Feature update validation``` için self servis ekleme portalı aracılığıyla uygulamalarınızı (ve ilgili dosyaları) karşıya yükleyin. 
+Microsoft 365 için Test Temeli'nde Özellik güncelleştirme doğrulamasını kullanmaya başlamak için self servis ekleme portalı aracılığıyla uygulamalarınızı (ve ilgili dosyaları) karşıya yükleyin. 
 
-**Aşağıda, Test ayrıntılarını** doldururken izlenmeniz gereken adımlar vurgulanır:
+**Aşağıda, Test Matrisi'ni** doldururken atılması gereken adımlar vurgulanır: 
 
-1. İşletim sistemi güncelleştirme türünüz olarak **Özellik Güncelleştirmesi'ni** seçin:
+Özellik güncelleştirmelerini ayarlamak için hedef ürünü ve önizleme kanalını "Insider Kanalı" açılan listesinden belirtmeniz gerekir. 
 
-![Özellik güncelleştirmesi doğrulama işletim sistemi türü.](Media/Feature-update-validation-01.png)
+![Özellik güncelleştirmesi doğrulama işletim sistemi türü.](Media/windowsfeatureupdatevalidation01-featureupdate.png)
 
-2. Uygulamanızın doğrulanmasını istediğiniz Windows Insider Kanalı'nı seçin.  
+Seçiminiz, uygulamanızı seçtiğiniz ürün kanalının en son özellik güncelleştirmelerine ve seçiminizin en son Windows Insider Preview Derlemelerinde gelecekteki tüm yeni güncelleştirmelere karşı otomatik test çalıştırmaları için kaydeder. 
 
-![Özellik güncelleştirme doğrulaması. Insider beta kanalını seçme.](Media/Feature-update-validation-02.png)
+Geçerli işletim sisteminizi "İçgörüler için işletim sistemi temeli" bölümünde de ayarlayabilirsiniz. Olduğu gibi işletim sistemi ortamınızın ve en son hedef işletim sisteminizin regresyon analizini yaparak size daha fazla test içgörüleri sağlarız. 
 
-3. Testinizin temeli olarak pazar içi bir Windows 10 veya Windows 11 sürümü seçin (ve elde edilen içgörüler!) ve paketinizi başarıyla eklemek için gereken diğer ayrıntıları sağlayın.
+![Özellik güncelleştirme doğrulaması. Insider beta kanalını seçme.](Media/windowsfeatureupdatevalidation02-osbaseline.png) 
 
-![Windows 10 ve Windows 11 sürümleriyle özellik güncelleştirme doğrulaması.](Media/Feature-update-validation-03.png)
-
-4. Uygulamanızın önceden yayımlanan Windows 10 özellik güncelleştirmelerine karşı doğrulamasının sonuçlarını görüntülemek için adresini ziyaret edin```Feature Updates Test Results```.
-
-![Özellik güncelleştirme doğrulaması, sonuçları hızlı bir şekilde gözden geçirmenizi sağlar.](Media/Feature-update-validation-04.png)
+Windows Insider Preview derlemeleriyle ilgili diğer ayrıntıları denetlemek için [bkz. Flight Hub - Windows Insider Programı | Microsoft Docs](/../../../../MicrosoftDocs/windows-insider/tree/public/wip/flight-hub/index.md).
 
 
 ## <a name="next-steps"></a>Sonraki adımlar

@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 description: Self servis satın alma özelliğini açmak veya kapatmak için AllowSelfServicePurchase PowerShell cmdlet'ini kullanmayı öğrenin.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 4/7/2022
-ms.openlocfilehash: 8bc0771c259df759ecf900872db048b86a338443
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.date: 10/10/2022
+ms.openlocfilehash: 77e1fa8fe85861381c4eb5128148c08f0997bcfc
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68163524"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68533312"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>MSCommerce PowerShell modülü için AllowSelfServicePurchase kullanma
 
@@ -35,9 +35,10 @@ ms.locfileid: "68163524"
 
 **MSCommerce** PowerShell modülünü kullanarak şunları yapabilirsiniz:
 
-- **AllowSelfServicePurchase** parametre değerinin varsayılan durumunu (etkin veya devre dışı) görüntüleyin
-- Geçerli ürünlerin listesini ve self servis satın alma özelliğinin etkinleştirilip etkinleştirilmediğini görüntüleme
+- **AllowSelfServicePurchase** parametre değerinin varsayılan durumunu (etkin, devre dışı veya ödeme yöntemi olmadan denemelere izin ver) görüntüleyin
+- Geçerli ürünlerin listesini ve self servis satın alma özelliğinin etkinleştirilip etkinleştirilmediğini, devre dışı bırakılıp bırakılmadığını veya ödeme yöntemi olmadan denemelere izin verilip verilmediğini görüntüleyin
 - Belirli bir ürünü etkinleştirmek veya devre dışı bırakmak için geçerli ayarı görüntüleme veya değiştirme
+- Ödeme yöntemleri olmadan denemeler için ayarı görüntüleme veya değiştirme
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -92,33 +93,44 @@ Kullanılabilir tüm self servis satın alma ürünlerinin listesini ve her biri
 Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 ```
 
-Aşağıdaki tabloda, kullanılabilir ürünler ve **bunların ProductId'leri** listelenir.
+Aşağıdaki tabloda, kullanılabilir ürünler ve **bunların ProductId'leri** listelenir. Ayrıca hangi ürünlerin deneme sürümü olduğunu ve ödeme yöntemi gerektirmediğini gösterir. Uygunsa, diğer tüm denemeler için bir ödeme yöntemi gerekir. Ödeme yöntemi etkinleştirilmeden deneme sürümü etkin olan ürünler için deneme sürümünü etkinleştirebilir ve ürünü satın alma özelliğini devre dışı bırakabilirsiniz. Örnek komutlar için bkz. **AllowSelfServicePurchase** durumunu görüntüleme veya ayarlama.
 
-| Ürün | Productıd |
-|-----------------------------|--------------|
-| Kullanıcı başına Power Apps* | CFQ7TTC0LH2H |
-| Kullanıcı başına Power Automate | CFQ7TTC0KP0N |
-| Power Automate RPA | CFQ7TTC0KXG6  |
-| Power BI Premium (tek başına) | CFQ7TTC0KXG7  |
-| Power BI Pro | CFQ7TTC0L3PB |
-| Project Plan 1* | CFQ7TTC0HDB1 |
-| Project Plan 3* | CFQ7TTC0HDB0 |
-| Visio Plan 1* | CFQ7TTC0HD33 |
-| Visio Plan 2* | CFQ7TTC0HD32 |
-| Windows 365 Enterprise | CFQ7TTC0HHS9 |
-| Windows 365 Business | CFQ7TTC0J203 |
-| Windows Hibrit Avantajı ile Windows 365 Business | CFQ7TTC0HX99 |
-| Microsoft 365 F3 | CFQ7TTC0LH05 |
-| Dynamics 365 Marketing | CFQ7TTC0LH3N |
-| Dynamics 365 Marketing Attach | CFQ7TTC0LHWP | 
-| Dynamics 365 Marketing Ek Uygulaması | CFQ7TTC0LHVK |
-| Dynamics 365 Marketing Ek Üretim Dışı Uygulama | CFQ7TTC0LHWM |
+| Ürün | Productıd | Ödeme yöntemi olmadan deneme etkin mi? |
+|-----------------------------|--------------|--------------|
+| Kullanıcı başına Power Apps* | CFQ7TTC0LH2H | Hayır |
+| Kullanıcı başına Power Automate | CFQ7TTC0KP0N | Hayır |
+| Power Automate RPA | CFQ7TTC0KXG6  | Hayır |
+| Power BI Premium (tek başına) | CFQ7TTC0KXG7  | Hayır |
+| Power BI Pro | CFQ7TTC0L3PB | Hayır |
+| Project Plan 1* | CFQ7TTC0HDB1 | Evet |
+| Project Plan 3* | CFQ7TTC0HDB0 | Hayır |
+| Visio Plan 1* | CFQ7TTC0HD33 | Hayır |
+| Visio Plan 2* | CFQ7TTC0HD32 | Hayır |
+| Windows 365 Enterprise | CFQ7TTC0HHS9 | Hayır |
+| Windows 365 Business | CFQ7TTC0J203 | Hayır |
+| Windows Hibrit Avantajı ile Windows 365 Business | CFQ7TTC0HX99 | Hayır |
+| Microsoft 365 F3 | CFQ7TTC0LH05 | Hayır |
+| Dynamics 365 Marketing | CFQ7TTC0LH3N | Hayır |
+| Dynamics 365 Marketing Attach | CFQ7TTC0LHWP | Hayır |
+| Dynamics 365 Marketing Ek Uygulaması | CFQ7TTC0LHVK | Hayır |
+| Dynamics 365 Marketing Ek Üretim Dışı Uygulama | CFQ7TTC0LHWM | Hayır |
 
-*Bu kimlikler değişti. Eski kimlikleri kullanan ürünleri daha önce engellediyseniz, yeni kimlikler kullanılarak otomatik olarak engellenir. Ek çalışma gerekmez.
+*Bu kimlikler değişti. Eski kimlikleri kullanan ürünleri daha önce engellediyseniz, yeni kimlikler kullanılarak otomatik olarak engellenir. Başka bir çalışma gerekmez.
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>AllowSelfServicePurchase durumunu görüntüleme veya ayarlama
 
-Self servis satın alma için kullanılabilen ürünlerin listesini görüntüledikten sonra, belirli bir ürünün ayarını görüntüleyebilir veya değiştirebilirsiniz.
+Kullanıcıların self servis satın alma işlemi yapmalarına izin vermek veya bunları engellemek için **AllowSelfServicePurchase** **için Value** parametresini ayarlayabilirsiniz. Kullanıcıların ödemeye gerek duymadan denemeleri olan ürünleri denemesine izin vermek için **OnlyTrialsWithoutPaymentMethod** değerini de kullanabilirsiniz. Bu deneme sürümlerinin etkinleştirildiği ürünleri görmek için yukarıdaki ürün listesine bakın. Kullanıcılar ürünü yalnızca **AllowSelfServicePurchase** etkinleştirildiğinde deneme süresi sona erdikten sonra satın alabilir.
+
+> [!NOTE]
+> **AllowSelfServicePurchase** veya **OnlyTrialsWithoutPaymentMethod** değerinin değiştirilmesi yalnızca belirtilen ürün için bu noktadan sonra yapılan denemeleri veya satın almaları etkiler. Belirtilen ürün için mevcut denemeler veya satın almalar etkilenmez.
+
+Aşağıdaki tabloda **Value** parametresinin ayarları açıklanmaktadır.
+
+| **Ayar** | **Etki** |
+|---|---|
+| Etkin | Kullanıcılar self servis satın alma işlemleri yapabilir ve ürün için denemeler alabilir. |
+| OnlyTrialsWithoutPaymentMethod | Kullanıcılar self servis satın alma işlemi yapamaz ancak ödeme yöntemi eklemelerini gerektirmeyen ürünler için ücretsiz denemeler alabilir. Deneme süresi dolduktan sonra, kullanıcı ürünün ücretli sürümünü satın alamaz. |
+| Devre dışı | Kullanıcılar self servis satın alma işlemi yapamaz veya ürün için deneme sürümü edinemez. |
 
 Belirli bir ürünün ilke ayarını almak için aşağıdaki komutu çalıştırın:
 
@@ -129,13 +141,19 @@ Get-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TT
 Belirli bir ürün için ilke ayarını etkinleştirmek için aşağıdaki komutu çalıştırın:
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $True
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "Enabled"
 ```
 
 Belirli bir ürünün ilke ayarını devre dışı bırakmak için aşağıdaki komutu çalıştırın:
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $False
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "Disabled"
+```
+
+Kullanıcıların ödeme yöntemi olmadan belirli bir ürünü denemesine izin vermek için aşağıdaki komutu çalıştırın:
+
+```powershell
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "OnlyTrialsWithoutPaymentMethod" 
 ```
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>AllowSelfServicePurchase'ı devre dışı bırakmak için örnek betik
@@ -146,14 +164,14 @@ Aşağıdaki örnekte **MSCommerce** modülünü içeri aktarma, hesabınızla o
 Import-Module -Name MSCommerce
 Connect-MSCommerce #sign-in with your global or billing administrator account when prompted
 $product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | where {$_.ProductName -match 'Power Automate per user'}
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Value "Disabled"
 ```
 
 Ürün için birden çok değer varsa, aşağıdaki örnekte gösterildiği gibi komutu her değer için ayrı ayrı çalıştırabilirsiniz:
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Enabled $false
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Enabled $false
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Value "Disabled"
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Value "Disabled"
 ```
 
 ## <a name="troubleshooting"></a>Sorun giderme
@@ -164,14 +182,14 @@ Aşağıdaki hata iletisini görürsünüz:
 
 > HandleError: policyId 'AllowSelfServicePurchase' ile alınamadı, ErrorMessage - Temel alınan bağlantı kapatıldı: Gönderme sırasında beklenmeyen bir hata oluştu.
 
-Bunun nedeni Aktarım Katmanı Güvenliği'nin (TLS) eski bir sürümü olabilir. Bu hizmeti bağlamak için TLS 1.2 veya üzerini kullanmanız gerekir
+Bunun nedeni Aktarım Katmanı Güvenliği'nin (TLS) eski bir sürümü olabilir. Bu hizmete bağlandığınızda TLS 1.2 veya üzerini kullanmanız gerekir
 
 ### <a name="solution"></a>Çözüm
 
 TLS 1.2'ye yükseltin. Aşağıdaki söz dizimi, ServicePointManager Güvenlik Protokolü'ni TLS1.2'ye izin verecek şekilde güncelleştirir:
 
 ```powershell
- [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
+[Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
 ```
 
 Daha fazla bilgi için bkz. [TLS 1.2'yi etkinleştirme](/mem/configmgr/core/plan-design/security/enable-tls-1-2).
@@ -189,6 +207,5 @@ Uninstall-Module -Name MSCommerce
 
 ## <a name="related-content"></a>İlgili içerik
 
-[Self servis satın almaları yönetme (Yönetici)](manage-self-service-purchases-admins.md) (makale)
-
+[Self servis satın almaları yönetme (Yönetici)](manage-self-service-purchases-admins.md) (makale)\
 [Self servis satın alma hakkında SSS](self-service-purchase-faq.yml) (makale)

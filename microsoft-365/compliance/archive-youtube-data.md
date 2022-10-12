@@ -1,5 +1,6 @@
 ---
 title: Microsoft 365'te YouTube verilerini arşivleye bir bağlayıcı ayarlama
+description: Yöneticiler, YouTube verilerini Veritas'tan Microsoft 365'e aktarmak ve arşivlemek için bir bağlayıcı ayarlayabilir. Bu bağlayıcı, Microsoft 365'teki üçüncü taraf veri kaynaklarından verileri arşivlenizi sağlar. Bu verileri arşivledikten sonra, üçüncü taraf verilerini yönetmek için yasal tutma, eBulma ve saklama ilkeleri gibi uyumluluk özelliklerini kullanabilirsiniz.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Yöneticiler, YouTube verilerini Veritas'tan Microsoft 365'e aktarmak ve arşivlemek için bir bağlayıcı ayarlayabilir. Bu bağlayıcı, Microsoft 365'teki üçüncü taraf veri kaynaklarından verileri arşivlenizi sağlar. Bu verileri arşivledikten sonra, üçüncü taraf verilerini yönetmek için yasal tutma, eBulma ve saklama ilkeleri gibi uyumluluk özelliklerini kullanabilirsiniz.
-ms.openlocfilehash: c75cbf5de29586af65ef9e0506a4bdcb56c9e54d
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: 862251025dcfc0495a8538b2bf8ab99e6461778f
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67822121"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68532882"
 ---
 # <a name="set-up-a-connector-to-archive-youtube-data"></a>YouTube verilerini arşivleye bağlayıcı ayarlama
 
 Microsoft 365 kuruluşunuzdaki kullanıcı posta kutularına YouTube'dan verileri içeri aktarmak ve arşivlemek için Microsoft Purview uyumluluk portalı bir Veritas bağlayıcısı kullanın. Veritas, üçüncü taraf veri kaynağından öğeleri yakalamak ve bu öğeleri Microsoft 365'e aktarmak için yapılandırılmış bir bağlayıcı sağlar. Bağlayıcı, YouTube'daki sohbetler, ekler, görevler, notlar ve gönderiler gibi içerikleri e-posta iletisi biçimine dönüştürür ve ardından bu öğeleri Microsoft 365'teki kullanıcı posta kutularına aktarır.
 
 YouTube verileri kullanıcı posta kutularında depolandıktan sonra, Dava Tutma, eBulma, bekletme ilkeleri ve bekletme etiketleri gibi Microsoft Purview özelliklerini uygulayabilirsiniz. Microsoft 365'te verileri içeri aktarmak ve arşivlerken YouTube bağlayıcısı kullanmak, kuruluşunuzun kamu ve mevzuat ilkeleriyle uyumlu kalmasına yardımcı olabilir.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-youtube-data"></a>YouTube verilerini arşivlemeyle ilgili genel bakış
 
@@ -51,13 +56,13 @@ Aşağıdaki genel bakış, Microsoft 365'te YouTube verilerini arşivlerken ba�
 
 İlk adım, uyumluluk portalındaki **Veri Bağlayıcıları** sayfasına erişmek ve YouTube verileri için bir bağlayıcı oluşturmaktır.
 
-1. **Veri bağlayıcıları** > **YouTube'a**<https://compliance.microsoft.com> gidin ve tıklayın.
+1. **Veri bağlayıcıları** > **YouTube'a**<https://compliance.microsoft.com> gidin ve bunu seçin.
 
-2. **YouTube** ürün açıklaması sayfasında **Bağlayıcı ekle'ye** tıklayın.
+2. **YouTube** ürün açıklaması sayfasında **Bağlayıcı ekle'yi** seçin.
 
-3. **Hizmet koşulları** sayfasında **Kabul Et'e** tıklayın.
+3. **Hizmet koşulları** sayfasında **Kabul Et'i** seçin.
 
-4. Bağlayıcıyı tanımlayan benzersiz bir ad girin ve **İleri'ye** tıklayın.
+4. Bağlayıcıyı tanımlayan benzersiz bir ad girin ve **İleri'yi** seçin.
 
 5. Bağlayıcıyı yapılandırmak için Merge1 hesabınızda oturum açın.
 
@@ -65,7 +70,7 @@ Aşağıdaki genel bakış, Microsoft 365'te YouTube verilerini arşivlerken ba�
 
 İkinci adım, Veritas Merge1 sitesinde YouTube bağlayıcısını yapılandırmaktır. YouTube bağlayıcısını yapılandırma hakkında bilgi için bkz. [Birleştirme1 Üçüncü Taraf Bağlayıcıları Kullanıcı Kılavuzu](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20YouTube%20User%20Guide.pdf).
 
-**Kaydet & Son'a** tıkladıktan sonra, uyumluluk portalındaki bağlayıcı sihirbazındaki **Kullanıcı eşleme** sayfası görüntülenir.
+**Kaydet & Son'u** seçtikten sonra, uyumluluk portalındaki bağlayıcı sihirbazındaki **Kullanıcı eşleme** sayfası görüntülenir.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>3. Adım: Kullanıcıları eşleme ve bağlayıcı kurulumunu tamamlama
 
@@ -73,17 +78,17 @@ Kullanıcıları eşlemek ve uyumluluk portalında bağlayıcı kurulumunu tamam
 
 1. **YouTube kullanıcılarını Microsoft 365 kullanıcıları ile eşle** sayfasında otomatik kullanıcı eşlemesini etkinleştirin. YouTube öğeleri, kuruluşunuzdaki kullanıcıların e-posta adreslerini içeren *Email* adlı bir özellik içerir. Bağlayıcı bu adresi bir Microsoft 365 kullanıcısı ile ilişkilendirebiliyorsa, öğeler söz konusu kullanıcının posta kutusuna aktarılır.
 
-2. **İleri'ye** tıklayın, ayarlarınızı gözden geçirin ve yeni bağlayıcının içeri aktarma işleminin ilerleme durumunu görmek için **Veri bağlayıcıları** sayfasına gidin.
+2. **İleri'yi** seçin, ayarlarınızı gözden geçirin ve yeni bağlayıcının içeri aktarma işleminin ilerleme durumunu görmek için **Veri bağlayıcıları** sayfasına gidin.
 
 ## <a name="step-4-monitor-the-youtube-connector"></a>4. Adım: YouTube bağlayıcısını izleme
 
 YouTube bağlayıcısını oluşturduktan sonra bağlayıcı durumunu uyumluluk portalında görüntüleyebilirsiniz.
 
-1. Sol gezinti bölmesinde **Veri bağlayıcıları'na** <https://compliance.microsoft.com/> gidin ve tıklayın.
+1. Sol gezinti **bölmesinden Veri bağlayıcıları'na** <https://compliance.microsoft.com/> gidin ve bunu seçin.
 
-2. **Bağlayıcılar** sekmesine tıklayın ve ardından **YouTube** bağlayıcısını seçerek bağlayıcının özelliklerini ve bilgilerini içeren açılır sayfayı görüntüleyin.
+2. **Bağlayıcılar** sekmesini ve ardından **YouTube** bağlayıcısını seçerek bağlayıcının özelliklerini ve bilgilerini içeren açılır sayfayı görüntüleyin.
 
-3. Bağlayıcının durum günlüğünü açmak (veya kaydetmek) için **Kaynakla bağlayıcı durumu** altında **Günlüğü indir** bağlantısına tıklayın. Bu günlük, Microsoft buluta aktarılan veriler hakkında bilgi içerir. Daha fazla bilgi için bkz. [Veri bağlayıcıları için yönetici günlüklerini görüntüleme](data-connector-admin-logs.md).
+3. Bağlayıcının durum günlüğünü açmak (veya kaydetmek) için **Kaynakla bağlayıcı durumu** altında **Günlüğü indir** bağlantısını seçin. Bu günlük, Microsoft buluta aktarılan veriler hakkında bilgi içerir. Daha fazla bilgi için bkz. [Veri bağlayıcıları için yönetici günlüklerini görüntüleme](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Bilinen sorunlar
 

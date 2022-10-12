@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Temel Mobilite ve Güvenlik, microsoft 365 e-posta ve belgelerine erişimi denetleen ilkelerle mobil cihazların güvenliğini sağlamanıza ve yönetmenize yardımcı olur.
-ms.openlocfilehash: e0a59651974c22428738e38ed42ece0beda2936f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 44934f10173759c971bb1bc5052624ac5ad00b69
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68166911"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68534951"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Temel Hareketlilik ve Güvenlik Özellikleri
 
@@ -155,7 +155,7 @@ Aşağıdaki seçenek, el ile oluşturulmuş bir e-posta profili kullanan kullan
 |---|---|---|---|
 |<sup>1</sup>. cihazda görüntülü konferansları engelleme|Evet|Hayır|Hayır|
 |Uygulama deposuna erişimi engelleme<sup>1</sup>|Evet|Hayır|Evet|
-|Uygulama deposuna erişirken parola gerektir|Hayır|Evet|Evet|
+|Uygulama deposuna erişirken parola gerektir|Evet|Hayır|Hayır|
 
 <sup>1</sup> Bu ayarların çalışması için denetimli iOS cihazları gerekir. 
 

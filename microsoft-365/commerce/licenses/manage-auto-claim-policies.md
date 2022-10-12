@@ -20,12 +20,12 @@ ms.custom:
 description: Belirli uygulamalar için kullanıcılara otomatik olarak lisans atayan otomatik talep ilkeleri oluşturmayı ve yönetmeyi öğrenin.
 search.appverid: MET150
 ms.date: 04/06/2021
-ms.openlocfilehash: 13618b44262199d71bd719576df01fd298813c8e
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 94bfcb3e9d7b210a6ca794e0e7fa88e0161de848
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68163589"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68534794"
 ---
 # <a name="manage-microsoft-teams-auto-claim-policies"></a>Microsoft Teams otomatik talep ilkelerini yönetme
 
@@ -36,7 +36,7 @@ Otomatik talep ilkesi, kullanıcıların bir uygulamada ilk kez oturum açtıkla
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Otomatik talep ilkeleri oluşturmak ve yönetmek için Genel, Kullanıcı veya Lisans yöneticisi olmanız gerekir. Daha fazla bilgi için bkz. [Microsoft 365 yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
+Otomatik talep ilkeleri oluşturmak ve yönetmek için Genel yönetici olmanız gerekir. Daha fazla bilgi için bkz. [Microsoft 365 yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="turn-the-auto-claim-policy-feature-on-or-off"></a>Otomatik talep ilkesi özelliğini açma veya kapatma
 

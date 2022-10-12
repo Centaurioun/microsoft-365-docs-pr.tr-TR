@@ -13,17 +13,19 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - SPO_Content
 search.appverid:
 - MET150
 description: Uç nokta veri kaybı önleme konumlarını kullanmak için veri kaybı önleme (DLP) ilkelerini yapılandırmayı öğrenin.
-ms.openlocfilehash: eef4e62f013c95788d723a250b5d8b833bf574b8
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: f8e74219a796b46f681caceefdb532e1678f0a74
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497849"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68537016"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uç noktada veri kaybı önlemeyi kullanma
 
@@ -37,6 +39,8 @@ Uç Nokta DLP özelliklerini ve DLP ilkelerinde nasıl ortaya çıkardıkların�
 >- [Bir şablondan DLP ilkesi oluşturma](create-a-dlp-policy-from-a-template.md)
 >- [Bir DLP ilkesi oluşturma, test etme ve ayarlama](create-test-tune-dlp-policy.md)
 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -130,7 +134,7 @@ Bu senaryolar, etkinlik gezginine eklenen ve raporlayan cihazlarınız olmasın�
 
 ## <a name="scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview"></a>Senaryo 4: Otomatik karantina (önizleme) ile bulut eşitleme uygulamalarından DLP bildirimlerini döngüye almaktan kaçının
 
-### <a name="before-you-begin"></a>Başlamadan önce
+## <a name="before-you-begin-scenario-4"></a>Senaryo 4'e başlamadan önce
 
 Bu senaryoda, dosyaları **Son Derece Gizli** duyarlılık etiketiyle OneDrive ile eşitleme engellenir. Bu, birden çok bileşen ve yordam içeren karmaşık bir senaryodur. Size gerekenler:
 
@@ -240,7 +244,7 @@ Bu senaryoda, dosyaları **Son Derece Gizli** duyarlılık etiketiyle OneDrive i
 
 ## <a name="scenario-5-restrict-unintentional-sharing-to-unallowed-cloud-apps-and-services"></a>Senaryo 5: İstenmeyen paylaşımı izin verilmeyen bulut uygulamaları ve hizmetleriyle kısıtlama
 
-Endpoint DLP ve Microisoft Edge Web tarayıcısı ile hassas öğelerin yanlışlıkla paylaşılmasıyla izin verilmeyen bulut uygulamaları ve hizmetleri kısıtlayabilirsiniz. Edge, bir öğenin Bir Uç Nokta DLP ilkesi tarafından ne zaman kısıtlandığını anlar ve erişim kısıtlamalarını zorlar.
+Endpoint DLP ve Microsoft Edge Web tarayıcısı ile hassas öğelerin yanlışlıkla paylaşılmalarını izin verilmeyen bulut uygulamaları ve hizmetleriyle kısıtlayabilirsiniz. Edge, bir öğenin Bir Uç Nokta DLP ilkesi tarafından ne zaman kısıtlandığını anlar ve erişim kısıtlamalarını zorlar.
 
 Düzgün yapılandırılmış bir DLP ilkesinde konum olarak **Cihazlar'ı** seçip Microsoft Edge tarayıcısını kullandığınızda, bu ayarlarda tanımladığınız izin verilmeyen tarayıcıların DLP ilke denetimlerinizle eşleşen hassas öğelere erişmesi engellenir. Bunun yerine kullanıcılar, DLP tarafından uygulanan kısıtlamaları anlayarak DLP ilkesindeki koşullar karşılandığında etkinlikleri engelleyebilecek veya kısıtlayan Microsoft Edge'i kullanmaya yönlendirilecektir.
 
@@ -299,14 +303,137 @@ Bu söz dizimi tüm http/https web siteleri için geçerlidir.
 1. **Kaydet**'i seçin.
 1. **İlkeler'i** seçin.
 1. Yalnızca **Cihazlara** uygulanan bir ilke oluşturun ve kapsamına girin. İlke oluşturma hakkında daha fazla bilgi için bkz. [DLP ilkesi oluşturma, test etme ve ayarlama](create-test-tune-dlp-policy.md) .
-1. **Kullanıcının Edge'den hassas bir siteye eriştiği** bir kural ve **Kullanıcılar Windows cihazlarında Microsoft Edge tarayıcısında hassas sitelere eriştiğinde etkinlikleri denetle veya kısıtla** eylemini oluşturun.
-1. Eylemde **Hassas site grupları ekle veya kaldır'ı** seçin.
+1. **Kullanıcının Edge'den hassas bir siteye eriştiği** ve **Cihazlarda etkinlikleri denetle veya kısıtla** eylemini kullanan bir kural oluşturun.
+1. **Hizmet etki alanı ve tarayıcı etkinlikleri** bölümünde **Kısıtlı bir bulut hizmeti etki alanına yükle'yi veya izin verilmeyen bir tarayıcıdan erişim'i** seçin ve eylemi **Yalnızca denetle** olarak ayarlayın. Bu, tüm site grupları için genel eylemi ayarlar.
 1. İstediğiniz **Hassas site gruplarını** seçin.
 1. **Ekle**'yi seçin.
+1. İsteğE BAĞLI: Bir veya daha fazla site grubu için genel eyleme bir özel durum (genellikle izin verilenler listesi) oluşturmak istiyorsanız **, Hassas hizmet etki alanı özel durumlarını yapılandır'ı** seçin, özel durumun olmasını istediğiniz site grubunu ekleyin, istenen eylemi yapılandırın ve Yapılandırmayı **kaydedin** .
 1. İzlemek veya kısıtlamak istediğiniz kullanıcı etkinliklerini ve bu etkinliklere yanıt olarak DLP'nizde gerçekleştirdiğiniz eylemleri seçin.
 1. Kuralı ve ilkeyi yapılandırmayı tamamlayın ve uygulayın.
 
+## <a name="scenario-7-authorization-groups-preview"></a>Senaryo 7 Yetkilendirme grupları (önizleme)
 
+> [!IMPORTANT]
+> **Yazıcı gruplarını**, **Çıkarılabilir depolama cihaz gruplarını**, **Ağ paylaşım gruplarını** ve **Ağ özel durumlarını/VPN'yi** kullanabilmeniz için [buraya](https://forms.office.com/r/GNVTFvxuZv) kaydolmanız gerekir.
+
+Bu senaryolar, etkinlik gezginine eklenen ve raporlayan cihazlarınız olmasını gerektirir. Henüz cihaz eklemediyseniz bkz [. Uç nokta veri kaybı önlemeyi kullanmaya başlama](endpoint-dlp-getting-started.md).
+
+Yetkilendirme grupları çoğunlukla izin listeleri olarak kullanılır. Gruba genel ilke eylemlerinden farklı ilke eylemleri atamıştınız. Bu senaryoda, bir yazıcı grubu tanımlamayı ve ardından gruptaki yazıcılar dışında tüm yazdırma etkinlikleri için engelleme eylemleriyle bir ilke yapılandırmayı inceleyeceğiz. Bu yordamlar, **Kaldırılabilir depolama cihazı grupları** ve **Ağ paylaşımı grupları** için temelde aynıdır.
+
+Bu senaryoda, hukuk departmanının sözleşmeleri yazdırmak için kullandığı bir yazıcı grubu tanımlayacağız. Sözleşmeleri diğer yazıcılara yazdırma engellenir.
+
+### <a name="create-and-use-printer-groups"></a>Yazıcı grupları oluşturma ve kullanma
+
+1. Microsoft Purview uyumluluk portalı **Veri kaybı önleme** > **Uç Noktası DLP ayarları** > **Yazıcı grupları'nı** açın.
+1. **Yazıcı grubu oluştur'u** seçin ve gruba bir ad verin. Bu senaryoda kullanacağız `Legal printers`.
+1. **Yazıcı ekle'yi** seçin ve bir ad belirtin. Yazıcıları şu şekilde tanımlayabilirsiniz:
+    1. Kolay yazıcı adı 
+    1. USB ürün kimliği
+    1. USB satıcı kimliği
+    1. IP aralığı
+    1. Dosyaya yazdır
+    1. Yazıcıda dağıtılan evrensel yazdırma
+    1. Şirket yazıcısı
+    1. Yerel ortama yazdır
+1. **Kapat**'ı seçin.
+
+### <a name="configure-policy-printing-actions"></a>İlke yazdırma eylemlerini yapılandırma
+
+1. **İlkeler** sekmesini açın.
+
+1. **İlke oluştur'u** seçin ve özel ilke şablonunu seçin.
+1. Konumun kapsamını yalnızca **Cihazlar olarak belirleyin**.
+
+1. Şu durumlarda bir kural oluşturun:
+    1. **İçerik içeriği** =  **Eğitilebilir sınıflandırıcılar**, **Hukuk İşleri**
+    1. **Eylem** =  **Cihazlarda etkinlikleri denetleme veya kısıtlama**
+    1. Ardından **tüm uygulamalarda Dosya etkinlikleri'ne** tıklayın
+    1. **Belirli bir etkinliğe kısıtlama uygula'yı** seçin
+    1. **Yazdırma Bloğu'nu** =  seçin
+1. **Farklı yazdırma kısıtlamaları seçin'i** seçin
+1. **Yazıcı grubu kısıtlamaları'nın** altında **Grup ekle'yi** ve **yasal yazıcılar'ı** seçin.
+1. **Eyleme** = **İzin Ver'i** ayarlayın.
+    > [!TIP]
+    > **İzin Ver** eylemi denetim günlüğüne kayıt ve denetim olayı kaydeder, ancak uyarı veya bildirim oluşturmaz. 
+10. Kaydetmek.
+11. **İlk değeri test etmek istediğim** varsayılan değeri kabul edin ve **Test modundayken ilke ipuçlarını göster'i** seçin. **İleri**'yi seçin.
+
+12. Ayarlarınızı gözden geçirin ve **Gönder'i** seçin.
+
+13. Yeni DLP ilkesi, ilke listesinde görünür.
+
+## <a name="scenario-8-network-exceptions-preview"></a>Senaryo 8 Ağ özel durumları (önizleme)
+
+> [!IMPORTANT]
+> **Yazıcı gruplarını**, **Çıkarılabilir depolama cihaz gruplarını**, **Ağ paylaşım gruplarını** ve **Ağ özel durumlarını/VPN'yi** kullanabilmeniz için [buraya](https://forms.office.com/r/GNVTFvxuZv) kaydolmanız gerekir.
+
+Bu senaryolar, etkinlik gezginine eklenen ve raporlayan cihazlarınız olmasını gerektirir. Henüz cihaz eklemediyseniz bkz [. Uç nokta veri kaybı önlemeyi kullanmaya başlama](endpoint-dlp-getting-started.md).
+
+Bu senaryoda, karma çalışanların kuruluş kaynaklarına erişmek için kullandığı VPN'lerin listesini tanımlayacağız.
+
+### <a name="create-and-use-a-network-exception"></a>Ağ özel durumu oluşturma ve kullanma
+
+Ağ özel durumları, kullanıcıların dosyaya eriştiği ağı temel alarak dosya etkinliklerinde İzin Ver, Yalnızca Denetle, Geçersiz kılma ile engelle ve Engelle eylemlerini yapılandırmanıza olanak tanır. Tanımladığınız [VPN ayarları](dlp-configure-endpoint-settings.md#vpn-settings-preview) listesinden ve **Kurumsal ağ** seçeneğinden seçim yapabilirsiniz. Eylemler, bu kullanıcı etkinliklerine tek tek veya toplu olarak uygulanabilir:
+
+- Panoya kopyala
+- USB çıkarılabilir cihaza kopyalama
+- Ağ paylaşımına kopyalama
+- Yazdırma
+- İzin verilmeyen Bluetooth uygulamasını kullanarak kopyalama veya taşıma
+- RDP kullanarak kopyalama veya taşıma
+
+#### <a name="get-the-server-address-or-network-address"></a>Sunucu adresini veya Ağ adresini alma
+
+1. DLP tarafından izlenen bir Windows cihazında yönetici olarak **bir Windows PowerShell** penceresi açın.
+1. Bu cmdlet'i çalıştırın
+
+```powershell-interactive
+Get-VpnConnection
+```
+
+3. Bu cmdlet'i çalıştırmak birden çok alan ve değer döndürür.
+1. **ServerAddress** alanını bulun ve bu değeri kaydedin. VPN listesinde bir VPN girişi oluşturduğunuzda bunu kullanacaksınız.
+1. **Ad** alanını bulun ve bu değeri kaydedin. **AD** alanı, VPN listesinde bir VPN girişi oluşturduğunuzda **Ağ adresi** alanına eşler.
+
+#### <a name="add-a-vpn"></a>VPN ekleme
+
+1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) >  **Veri kaybı önleme** > **Uç Noktası DLP ayarları****VPN ayarlarını** >  açın.
+1. **VPN adresleri ekle veya düzenle'yi** seçin.
+1. Get-VpnConnection'ı çalıştırmak için **Sunucu adresini** veya **Ağ adresini** belirtin.
+1. **Kaydet**'i seçin.
+1. Öğeyi kapatın.
+
+#### <a name="configure-policy-actions"></a>İlke eylemlerini yapılandırma
+
+1. **İlkeler** sekmesini açın.
+
+1. **İlke oluştur'u** seçin ve özel ilke şablonunu seçin.
+1. Konumun kapsamını yalnızca **Cihazlar olarak belirleyin**.
+
+1. Şu durumlarda bir kural oluşturun:
+    1. **İçerik içeriği** =  **Eğitilebilir sınıflandırıcılar**, **Hukuk İşleri**
+    1. **Eylem** =  **Cihazlarda etkinlikleri denetleme veya kısıtlama**
+    1. Ardından **tüm uygulamalarda Dosya etkinlikleri'ne** tıklayın
+    1. **Belirli bir etkinliğe kısıtlama uygula'yı** seçin
+    1. **Ağ özel durumlarını** yapılandırmak istediğiniz eylemleri seçin.
+1. **Panoya kopyala'yı** ve **Yalnızca denetle** eylemini seçin
+1. **Panoya farklı kopya kısıtlamalarını seçin'i** seçin.
+1. **VPN'i** seçin ve eylemi **Geçersiz kılma ile engelle** olarak ayarlayın.
+
+> [!IMPORTANT]
+> Bir kullanıcının VPN üzerinden bağlandıkları etkinlikleri denetlemek istediğinizde VPN'yi seçmeniz ve VPN'yi **Ağ özel durumları** yapılandırmasında en yüksek öncelik haline *getirmeniz gerekir*. Aksi takdirde, **Kurumsal ağ** seçeneği belirlenirse, **Kurumsal ağ** girişi için tanımlanan eylem zorlanır.
+
+> [!CAUTION]
+> **Tüm etkinliklere uygula** seçeneği, burada tanımlanan ağ özel durumlarını kopyalar ve yazdır ve **ağ paylaşımına kopyala** **gibi** yapılandırılan diğer tüm belirli etkinliklere uygular. **_Bu, diğer etkinliklerdeki ağ özel durumlarının üzerine yazar Son kaydedilen yapılandırma kazanır._**  
+
+8. Kaydetmek.
+1. **İlk değeri test etmek istediğim** varsayılan değeri kabul edin ve **Test modundayken ilke ipuçlarını göster'i** seçin. **İleri**'yi seçin.
+
+1. Ayarlarınızı gözden geçirin ve **Gönder'i** seçin.
+
+1. Yeni DLP ilkesi, ilke listesinde görünür.
+ 
+ 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Uç nokta veri kaybı önleme hakkında daha fazla bilgi edinme](endpoint-dlp-learn-about.md)

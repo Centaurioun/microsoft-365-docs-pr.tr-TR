@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: b3e82cdc77b0ca62c81ae3b2091e3384a5830384
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: dec808cc347e4e6078c1275821275b7db8992345
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233276"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536774"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>Linux'ta statik ara sunucu bulma için Uç Nokta için Microsoft Defender yapılandırma
 
@@ -89,3 +89,6 @@ sudo systemctl daemon-reload; sudo systemctl restart mdatp
 ```
 > [!NOTE]
 > 'yi kaldırmadan `mdatp`önce yapmış olabileceğiniz tüm eklemeleri kaldırmak için, içinden özel dosyayı `/etc/systemd/system`silin.
+
+> [!NOTE]
+> Red Hat Enterprise Linux 6.X ve CentOS 6.X **, systemctl'yi** desteklemez. MDE için statuc proxy'sini yapılandırmak için  **mdatp config proxy set --value http://address:port** kullanın. Bu yöntem diğer tüm Linux dağıtımları için de çalışır.

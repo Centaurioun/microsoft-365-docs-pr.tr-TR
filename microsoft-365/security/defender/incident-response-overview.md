@@ -22,12 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 655858dab8b590909073f42c54148f7d0cbe4f06
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: de6df0dd19823dd864e0ca97e3daaada60f42b80
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503522"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536444"
 ---
 # <a name="investigate-and-respond-with-microsoft-365-defender"></a>Microsoft 365 Defender ile araştırma ve yanıtlama
 
@@ -37,7 +37,7 @@ Microsoft 365 Defender için birincil araştırma ve yanıtlama görevleri şunl
 - [Otomatik düzeltme eylemlerini gözden geçirme ve onaylama](#automated-investigation-and-remediation)
 - [Verilerinizde bilinen tehditleri arama](#proactive-search-for-threats-with-advanced-hunting)
 - [En son siber saldırıları anlama](#get-ahead-of-emerging-threats-with-threat-analytics)
-- [Yardım alın](#collaborate-with-microsoft-experts)
+- [Yardım alın](#collaborate-with-microsoft-defender-experts)
 
 ## <a name="incident-response"></a>Olay yanıtı
 
@@ -54,7 +54,7 @@ Her olay için olay yanıt iş akışınızı kullanarak olayı ve saldırıyı 
 
 Kuruluşunuz Microsoft 365 Defender kullanıyorsa, kötü amaçlı veya şüpheli bir etkinlik veya yapıt algılandığında güvenlik operasyonları ekibiniz Microsoft 365 Defender portalında bir uyarı alır. Gelen tehditlerin hiç bitmeyen akışı göz önünde bulundurulduğunda, güvenlik ekipleri genellikle yüksek hacimli uyarıları ele alma zorluğuyla karşı karşıya kalır. Neyse ki Microsoft 365 Defender, güvenlik operasyonları ekibinizin tehditleri daha verimli ve etkili bir şekilde ele almasına yardımcı olabilecek otomatik araştırma ve yanıt (AIR) özelliklerini içerir.
 
-Otomatik bir araştırma tamamlandığında, bir olayın her kanıtı için bir karara ulaşılır. Karara bağlı olarak düzeltme eylemleri tanımlanır. Bazı durumlarda düzeltme eylemleri otomatik olarak gerçekleştirilen; diğer durumlarda, düzeltme eylemleri Microsoft 365 Defender İşlem merkezi aracılığıyla onay bekler. 
+Otomatik bir araştırma tamamlandığında, bir olayın her kanıtı için bir karara ulaşılır. Karara bağlı olarak düzeltme eylemleri tanımlanır. Bazı durumlarda düzeltme eylemleri otomatik olarak gerçekleştirilen; diğer durumlarda, düzeltme eylemleri Microsoft 365 Defender İşlem merkezi aracılığıyla onay bekler.
 
 Daha fazla bilgi için bkz. [Microsoft 365 Defender'de otomatik araştırma ve yanıt](m365d-autoir.md).
 
@@ -84,8 +84,8 @@ Tanımlanan her tehdit, siber güvenlik algılama ve analizinin ön saflarında 
 
 Daha fazla bilgi için bkz[. Microsoft 365 Defender'de tehdit analizi](threat-analytics.md).
 
-## <a name="collaborate-with-microsoft-experts"></a>Microsoft uzmanlarıyla işbirliği yapma
+## <a name="collaborate-with-microsoft-defender-experts"></a>Microsoft Defender uzmanlarıyla işbirliği yapma
 
-Endpoint Attack Notifications (eski adıyla Microsoft Tehdit Uzmanları - Hedefli Saldırı Bildirimleri) yönetilen bir tehdit avcılığı hizmetidir. Başvurduktan ve kabul edildikten sonra Microsoft tehdit uzmanlarından Uç Nokta Saldırısı Bildirimleri alırsınız, böylece ortamınıza yönelik kritik tehditleri kaçırmazsınız. Bu bildirimler kuruluşunuzun uç noktalarını, e-postalarını ve kimliklerini korumanıza yardımcı olur. Microsoft Defender Uzmanlar – İsteğe Bağlı Uzmanlar, kuruluşunuzun karşılaştığı tehditler hakkında uzman tavsiyeleri almanıza olanak tanır ve kuruluşunuzun karşılaştığı tehditlerle ilgili yardım alabilirsiniz. Ek abonelik hizmeti olarak kullanılabilir.
+Endpoint Attack Notifications (eski adıyla Microsoft Tehdit Uzmanları - Hedefli Saldırı Bildirimleri) yönetilen bir tehdit avcılığı hizmetidir. Başvurduktan ve kabul edildikten sonra, Microsoft Defender uzmanlardan Uç Nokta Saldırısı Bildirimleri alırsınız, böylece ortamınıza yönelik kritik tehditleri kaçırmazsınız. Bu bildirimler kuruluşunuzun uç noktalarını, e-postalarını ve kimliklerini korumanıza yardımcı olur. Microsoft Defender Uzmanlar – İsteğe Bağlı Uzmanlar, kuruluşunuzun karşılaştığı tehditler hakkında uzman tavsiyeleri almanıza olanak tanır ve kuruluşunuzun karşılaştığı tehditlerle ilgili yardım alabilirsiniz. Ek abonelik hizmeti olarak kullanılabilir.
 
-Daha fazla bilgi için bkz. [microsoft 365'te uzmanlara genel bakış Microsoft Defender](/microsoft-365/security/defender/microsoft-threat-experts).
+Daha fazla bilgi için bkz. [microsoft 365'te uzmanlara genel bakış Microsoft Defender](../defender-endpoint/experts-on-demand.md).

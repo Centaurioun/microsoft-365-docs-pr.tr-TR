@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard için paylaşımı yönetmeyi öğrenin.
-ms.openlocfilehash: aeb6da3d6bd66c02468ff19efa072af4d7084389
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: 2d788474a1c72baec448bf20dbc78a12e1afd1e2
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492518"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68537346"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard"></a>Microsoft Whiteboard için paylaşımı yönetme
 
@@ -53,6 +53,8 @@ Bu ayar yalnızca beyaz tahtalar için geçerlidir ve önceden paylaşılan ayar
 
 > [!NOTE]
 > Varsayılan olarak, **Anonim kullanıcılar toplantılardaki uygulamalarla etkileşimde bulunabilir Teams toplantı** ayarı etkindir. Devre dışı bırakdıysanız, toplantı sırasında hiçbir anonim kullanıcı (konuklar veya federasyon kullanıcıları yerine) beyaz tahtaya erişemez.
+>
+> Paylaşılan cihaz hesaplarının Teams toplantılarında Whiteboard'a erişmesini istiyorsanız ancak anonim kullanıcılara erişim sağlamak istemiyorsanız, **AllowAnonymousMeetingParticipantsToAccessWhiteboards** etkinken **Anonim kullanıcıların toplantılardaki uygulamalarla etkileşim kurabilmesini** devre dışı bırakabilirsiniz
 
 Bu değişikliklerin kiracınız genelinde uygulanması yaklaşık 60 dakika sürmelidir.
 

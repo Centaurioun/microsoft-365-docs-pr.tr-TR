@@ -3,6 +3,7 @@ title: İçerik türlerini hub'a gönderme
 description: İçerik türlerini hub'a göndermeyi öğrenin
 ms.author: mikeplum
 author: MikePlumleyMSFT
+ms.reviewer: shrganguly
 manager: serdars
 audience: admin
 ms.topic: article
@@ -13,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: f3e3e314d0527e48cb2566b45e48f2e7158f0cf4
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 9a90c076d8097a2497a536db89f1879b91279105
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584627"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536400"
 ---
 # <a name="push-content-types-to-a-hub"></a>İçerik türlerini hub'a gönderme
 

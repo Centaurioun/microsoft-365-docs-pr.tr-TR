@@ -1,5 +1,6 @@
 ---
 title: Microsoft 365'te Rogers Network verilerini arşivleye bağlayıcı ayarlama
+description: Yöneticiler, Microsoft 365'te Rogers Network verilerini içeri aktarmak ve arşiv etmek için bir TeleMessage bağlayıcısı ayarlayabilir. Bu sayede Microsoft 365'teki üçüncü taraf veri kaynaklarından verileri arşivleyebilir, böylece kuruluşunuzun üçüncü taraf verilerini yönetmek için yasal tutma, içerik arama ve bekletme ilkeleri gibi uyumluluk özelliklerini kullanabilirsiniz.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,20 +11,24 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: Yöneticiler, Microsoft 365'te Rogers Network verilerini içeri aktarmak ve arşiv etmek için bir TeleMessage bağlayıcısı ayarlayabilir. Bu sayede Microsoft 365'teki üçüncü taraf veri kaynaklarından verileri arşivleyebilir, böylece kuruluşunuzun üçüncü taraf verilerini yönetmek için yasal tutma, içerik arama ve bekletme ilkeleri gibi uyumluluk özelliklerini kullanabilirsiniz.
-ms.openlocfilehash: 378c3c60d23605a32746a77959527f2c9d7e1b58
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
+ms.openlocfilehash: 6ab8805ba76bd93bd02806a25a0c62ae2fb1c2a0
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67826302"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68535256"
 ---
 # <a name="set-up-a-connector-to-archive-rogers-network-data"></a>Rogers Network verilerini arşivleye bir bağlayıcı ayarlama
 
 Rogers mobil ağından SMS ve MMS verilerini içeri aktarmak ve arşiv etmek için Microsoft Purview uyumluluk portalı TeleMessage bağlayıcısını kullanın. [Rogers Network Archiver bağlayıcısını](https://www.telemessage.com/mobile-archiver/network-archiver/rogers/) ayarlayıp yapılandırdıktan sonra kuruluşunuzun Rogers mobil ağına bağlanır ve SMS ve MMS verilerini Microsoft 365'teki posta kutularına aktarır.
 
 Rogers mobil ağındaki veriler kullanıcı posta kutularında depolandıktan sonra, verilere Dava Tutma, İçerik araması ve Microsoft 365 bekletme ilkeleri gibi Microsoft Purview özelliklerini uygulayabilirsiniz. Örneğin, İçerik araması veya Microsoft Purview eKeşif (Standart) servis talebiyle ilişkilendirilmiş bir arama kullanarak Rogers mobil ağından SMS ve MMS iletilerini arayabilirsiniz. Microsoft 365'te verileri içeri aktarmak ve arşivlemek için Rogers Network Archiver bağlayıcısı kullanmak, kuruluşunuzun kurumsal idare düzenlemeleri ve mevzuat ilkeleriyle uyumlu kalmasına yardımcı olabilir.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-archiving-rogers-mobile-network-data"></a>Rogers mobil ağ verilerini arşivleme hakkında genel bakış
 
@@ -53,19 +58,19 @@ Aşağıdaki genel bakış, Bağlayıcı kullanarak Rogers SMS ve MMS verilerini
 
 - 3. Adımda Rogers Ağ Arşivleyici bağlayıcısı oluşturan kullanıcıya Veri Bağlayıcısı Yönetici rolü atanmalıdır. Bu rol, uyumluluk portalındaki **Veri bağlayıcıları sayfasına bağlayıcı** eklemek için gereklidir. Bu rol varsayılan olarak birden çok rol grubuna eklenir. Bu rol gruplarının listesi için Güvenlik [& Uyumluluk Merkezi'ndeki İzinler bölümündeki "Güvenlik ve uyumluluk merkezlerindeki](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center) roller" bölümüne bakın. Alternatif olarak, kuruluşunuzdaki bir yönetici özel bir rol grubu oluşturabilir, Veri Bağlayıcısı Yönetici rolünü atayabilir ve ardından uygun kullanıcıları üye olarak ekleyebilir. Yönergeler için, [Microsoft Purview uyumluluk portalı İzinler](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group) bölümündeki "Özel rol grubu oluşturma" bölümüne bakın.
 
-- Bu TeleMessage veri bağlayıcısı, Microsoft 365 US Government bulutundaki GCC ortamlarında kullanılabilir. Üçüncü taraf uygulamalar ve hizmetler, kuruluşunuzun müşteri verilerini Microsoft 365 altyapısının dışındaki üçüncü taraf sistemlerde depolamayı, iletmeyi ve işlemeyi içerebilir ve bu nedenle Microsoft Purview ve veri koruma taahhütleri kapsamında değildir. Microsoft, üçüncü taraf uygulamalara bağlanmak için bu ürünün kullanıldığının, bu üçüncü taraf uygulamaların FEDRAMP uyumlu olduğunu ifade ettiğini ifade etmemektedir.
+- Bu TeleMessage veri bağlayıcısı, Microsoft 365 US Government bulutundaki GCC ortamlarında kullanılabilir. Üçüncü taraf uygulamalar ve hizmetler, kuruluşunuzun müşteri verilerini Microsoft 365 altyapısının dışında olan ve bu nedenle Microsoft Purview ve veri koruma taahhütleri kapsamında olmayan üçüncü taraf sistemlerde depolamayı, iletmeyi ve işlemeyi içerebilir. Microsoft, üçüncü taraf uygulamalara bağlanmak için bu ürünün kullanıldığının, bu üçüncü taraf uygulamaların FEDRAMP uyumlu olduğunu ifade ettiğini ifade etmemektedir.
 
 ## <a name="create-a-rogers-network-archiver-connector"></a>Rogers Network Archiver bağlayıcısı oluşturma
 
 Önceki bölümde açıklanan önkoşulları tamamladıktan sonra, uyumluluk portalında Rogers Ağ Arşivleyicisi bağlayıcısını oluşturabilirsiniz. Bağlayıcı, TeleMessage sitesine bağlanmak ve Rogers SMS/MMS verilerini Microsoft 365'teki ilgili kullanıcı posta kutusu kutularına aktarmak için sağladığınız bilgileri kullanır.
 
-1. **Veri bağlayıcıları Rogers** > **Ağ Arşivleyicisi'ne**<https://compliance.microsoft.com> gidin ve tıklayın.
+1. <https://compliance.microsoft.com> Adresine gidin ve **Veri bağlayıcıları Rogers** > **Ağ Arşivleyicisi'ne** tıklayın.
 
-2. **Rogers Ağ Arşivleyicisi** ürün açıklaması sayfasında **Bağlayıcı ekle'ye** tıklayın.
+2. **Rogers Network Archiver** ürün açıklaması sayfasında **Bağlayıcı ekle'yi** seçin.
 
-3. **Hizmet koşulları** sayfasında **Kabul Et'e** tıklayın.
+3. **Hizmet koşulları** sayfasında **Kabul Et'i** seçin.
 
-4. **TeleMessage'da Oturum Aç** sayfasındaki 3. Adım'ın altında, aşağıdaki kutulara gerekli bilgileri girin ve **İleri'ye** tıklayın.
+4. **TeleMessage'da Oturum Aç** sayfasındaki 3. Adım'ın altında aşağıdaki kutulara gerekli bilgileri girin ve **İleri'yi** seçin.
 
     - **Username:** TeleMessage kullanıcı adınız.
 
@@ -73,9 +78,9 @@ Aşağıdaki genel bakış, Bağlayıcı kullanarak Rogers SMS ve MMS verilerini
 
 5. Bağlayıcı oluşturulduktan sonra açılır pencereyi kapatabilir ve sonraki sayfaya gidebilirsiniz.
 
-6. Kullanıcı eşleme sayfasında otomatik kullanıcı **eşlemesini** etkinleştirin. Özel eşlemeyi etkinleştirmek için, kullanıcı eşleme bilgilerini içeren bir CSV dosyasını karşıya yükleyin ve **İleri'ye** tıklayın.
+6. Kullanıcı eşleme sayfasında otomatik kullanıcı **eşlemesini** etkinleştirin. Özel eşlemeyi etkinleştirmek için, kullanıcı eşleme bilgilerini içeren bir CSV dosyasını karşıya yükleyin ve **ardından İleri'yi** seçin.
 
-7. Ayarlarınızı gözden geçirin ve ardından **Son'a** tıklayarak bağlayıcıyı oluşturun.
+7. Ayarlarınızı gözden geçirin ve ardından **Son'u** seçerek bağlayıcıyı oluşturun.
 
 8. Yeni bağlayıcının içeri aktarma işleminin ilerleme durumunu görmek için **Veri bağlayıcıları sayfasındaki Bağlayıcılar** sekmesine gidin.
 

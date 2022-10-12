@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 ms.localizationpriority: medium
 description: OneDrive sitesini farklı bir coğrafi konuma taşıma hakkında, site taşımalarını zamanlama ve beklentileri kullanıcılara iletme gibi bilgileri bulun.
-ms.openlocfilehash: a6de4b0efc2b45652d89d5261b71dff415c740d6
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: bafe97fd1dc049b1a9fbb0bdcc2d9d1660baead4
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703324"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536554"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>OneDrive sitesini farklı bir coğrafi konuma taşıma
 
@@ -80,7 +80,7 @@ Tüm coğrafi konumların uyumlu olduğundan emin olmak için şunu çalıştır
 Get-SPOGeoMoveCrossCompatibilityStatus
 ```
 
-Coğrafi konumlarınızın listesini görürsünüz ve içeriğin arasında taşınıp taşınamayacağınız "Uyumlu" olarak belirtilir. Komut "Uyumsuz" döndürürse, lütfen durumu daha sonraki bir tarihte doğrulamayı yeniden deneyin.
+Bu, tüm coğrafi konumlarınızı ve ortamın hedef coğrafi konumla uyumlu olup olmadığını görüntüler. Coğrafi konum uyumsuzsa bu, o konumda bir güncelleştirmenin devam ettiğini gösterir. Birkaç gün içinde yeniden deneyin.
 
 OneDrive bir alt site içeriyorsa, örneğin, bu site taşınamaz. OneDrive'ın taşınıp taşınamadığını doğrulamak için -ValidationOnly parametresiyle Start-SPOUserAndContentMove cmdlet'ini kullanabilirsiniz:
 

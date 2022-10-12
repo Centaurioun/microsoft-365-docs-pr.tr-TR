@@ -1,5 +1,6 @@
 ---
 title: Fiziksel badging verilerini içeri aktarmak için bağlayıcı ayarlama
+description: Yöneticiler, kuruluşlarının fiziksel badging sisteminden Microsoft 365'e veri aktarmak için bir veri bağlayıcısı ayarlayabilir. Bu, bu verileri, kuruluşunuz için olası bir iç tehdit oluşturabilecek belirli kullanıcılar tarafından fiziksel binalarınıza erişimi algılamanıza yardımcı olmak için şirket içi risk yönetimi ilkelerinde kullanmanıza olanak tanır.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,15 +13,17 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ms.custom: admindeeplinkCOMPLIANCE
-description: Yöneticiler, kuruluşlarının fiziksel badging sisteminden Microsoft 365'e veri aktarmak için bir veri bağlayıcısı ayarlayabilir. Bu, bu verileri, kuruluşunuz için olası bir iç tehdit oluşturabilecek belirli kullanıcılar tarafından fiziksel binalarınıza erişimi algılamanıza yardımcı olmak için şirket içi risk yönetimi ilkelerinde kullanmanıza olanak tanır.
-ms.openlocfilehash: a04ae3c929948a7a30b3f7fb5b224ab14a193323
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 2b08302d0259731f4fa283def3f966e797d684da
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67826104"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536950"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Fiziksel badging verilerini içeri aktarmak için bağlayıcı ayarlama (önizleme)
 
@@ -39,6 +42,8 @@ Fiziksel bir badging bağlayıcısı ayarlamak aşağıdaki görevlerden oluşur
 - İsteğe bağlı olarak, şu anda fiziksel badging verilerini içeri aktarmak için betiği otomatik olarak çalışacak şekilde zamanlama.
 
 Önizlemeye katılmak isterseniz lütfen dcfeedback@microsoft.com ekibine ulaşın.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-set-up-the-connector"></a>Bağlayıcıyı ayarlamadan önce
 
@@ -144,11 +149,11 @@ Sonraki adım, uyumluluk portalında fiziksel bir badging bağlayıcısı oluşt
 
 1. Uyumluluk portalına gidin ve <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Veri bağlayıcıları'nı**</a> seçin.
 
-2. **Veri bağlayıcıları** sayfasında **, Fiziksel badging'in** altında **Görünüm'e** tıklayın.
+2. **Veri bağlayıcıları** sayfasında **Fiziksel badging'in** altında **Görünüm'ü** seçin.
 
-3. **Fiziksel badging** sayfasında **Bağlayıcı ekle'ye** tıklayın.
+3. **Fiziksel badging** sayfasında **Bağlayıcı ekle'yi** seçin.
 
-4. **Kimlik doğrulama kimlik bilgileri** sayfasında aşağıdakileri yapın ve **İleri'ye** tıklayın:
+4. **Kimlik doğrulaması kimlik bilgileri** sayfasında aşağıdakileri yapın ve **İleri'yi** seçin:
 
    1. 1. Adımda oluşturduğunuz Azure uygulamasının Azure AD uygulama kimliğini yazın veya yapıştırın.
 
@@ -156,17 +161,17 @@ Sonraki adım, uyumluluk portalında fiziksel bir badging bağlayıcısı oluşt
 
    3. Fiziksel badging bağlayıcısı için benzersiz bir ad yazın.
 
-5. **Gözden Geçir** sayfasında ayarlarınızı gözden geçirin ve ardından **Son'a** tıklayarak bağlayıcıyı oluşturun.
+5. **Gözden Geçir** sayfasında ayarlarınızı gözden geçirin ve ardından **Son'u** seçerek bağlayıcıyı oluşturun.
 
 6. Bağlayıcının oluşturulduğunu onaylayan bir durum sayfası görüntülenir. Bu sayfa iş kimliğini de içerir. İş kimliğini bu sayfadan veya bağlayıcının açılır sayfasından kopyalayabilirsiniz. Betiği çalıştırırken bu iş kimliğine ihtiyacınız vardır.
 
    Durum sayfası betiğin bağlantısını da içerir. JSON dosyasını API uç noktasına göndermeyi anlamak için bu betike bakın.
 
-7. **Bitti'ye** tıklayın.
+7. **Bitti'yi** seçin.
 
    Yeni bağlayıcı **Bağlayıcılar** sekmesindeki listede görüntülenir.
 
-8. Bağlayıcının özelliklerini ve diğer bilgilerini içeren açılır sayfayı görüntülemek için yeni oluşturduğunuz fiziksel badging bağlayıcısına tıklayın.
+8. Bağlayıcıyla ilgili özellikleri ve diğer bilgileri içeren açılır sayfayı görüntülemek için yeni oluşturduğunuz fiziksel badging bağlayıcısını seçin.
 
 ## <a name="step-4-run-the-script-to-post-your-json-file-containing-physical-badging-data"></a>4. Adım: Fiziksel badging verileri içeren JSON dosyanızı POST yapmak için betiği çalıştırın
 
@@ -179,7 +184,7 @@ Betiği çalıştırdıktan sonra, fiziksel badging verilerini içeren JSON dosy
 
 1. Örnek betike erişmek için [bu GitHub sitesine](https://github.com/microsoft/m365-physical-badging-connector-sample-scripts/blob/master/push_physical_badging_records.ps1) gidin.
 
-2. Betiği metin görünümünde görüntülemek için **Ham** düğmesine tıklayın
+2. Betiği metin görünümünde görüntülemek için **Ham** düğmesini seçin
 
 3. Örnek betikteki tüm satırları kopyalayın ve bir metin dosyasına kaydedin.
 
@@ -225,11 +230,11 @@ Fiziksel badging bağlayıcısını oluşturduktan ve fiziksel badging verilerin
 
 1. Uyumluluk portalına gidin ve <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Veri bağlayıcıları'nı**</a> seçin.
 
-2. **Bağlayıcılar** sekmesine tıklayın ve açılır sayfayı görüntülemek için fiziksel badging bağlayıcısını seçin. Bu sayfa, bağlayıcı hakkındaki özellikleri ve bilgileri içerir.
+2. **Bağlayıcılar** sekmesini seçin ve ardından açılır sayfayı görüntülemek için fiziksel badging bağlayıcısını seçin. Bu sayfa, bağlayıcı hakkındaki özellikleri ve bilgileri içerir.
 
    ![Fiziksel badging bağlayıcısı için durum açılır sayfası.](..\media\PhysicalBadgingStatusFlyout.png)
 
-3. **Son içeri aktarma'nın** altında Günlüğü **indir** bağlantısına tıklayarak bağlayıcının durum günlüğünü açın (veya kaydedin). Bu günlük, betiğin çalıştırılıp JSON dosyasındaki verileri Microsoft buluta her yükleyişi hakkında bilgi içerir.
+3. **Son içeri aktarma'nın** altında Günlüğü **indir** bağlantısını seçerek bağlayıcının durum günlüğünü açın (veya kaydedin). Bu günlük, betiğin çalıştırılıp JSON dosyasındaki verileri Microsoft buluta her yükleyişi hakkında bilgi içerir.
 
    ![Fiziksel badging bağlayıcısı günlük dosyası, JSON dosyasından karşıya yüklenen nesne sayısını görüntüler.](..\media\PhysicalBadgingConnectorLogFile.png)
 
@@ -243,11 +248,11 @@ Kuruluşunuzdaki en son fiziksel badging verilerinin insider risk yönetimi çö
 
 Betiği her gün otomatik olarak çalıştırmak için Windows'ta Görev Zamanlayıcı uygulamasını kullanabilirsiniz.
 
-1. Yerel bilgisayarınızda, Windows **Başlat** düğmesine tıklayın ve görev **zamanlayıcı** yazın.
+1. Yerel bilgisayarınızda Windows **Başlat** düğmesini seçin ve **görev zamanlayıcı** yazın.
 
-2. **Görev Zamanlayıcı** uygulamasına tıklayarak uygulamayı açın.
+2. **Görev Zamanlayıcı** uygulamasını seçerek açın.
 
-3. **Eylemler** bölümünde **Görev Oluştur'a** tıklayın.
+3. **Eylemler** bölümünde **Görev Oluştur'u** seçin.
 
 4. **Genel** sekmesinde, zamanlanan görev için açıklayıcı bir ad yazın; örneğin, **fiziksel badging bağlayıcı betiği**. İsteğe bağlı bir açıklama da ekleyebilirsiniz.
 
@@ -257,34 +262,34 @@ Betiği her gün otomatik olarak çalıştırmak için Windows'ta Görev Zamanla
 
    2. **En yüksek ayrıcalıklarla çalıştır** onay kutusunun seçili olduğundan emin olun.
 
-6. **Tetikleyiciler** sekmesini seçin, **Yeni'ye** tıklayın ve aşağıdaki işlemleri yapın:
+6. **Tetikleyiciler** sekmesini seçin, **Yeni'yi** seçin ve ardından aşağıdaki işlemleri yapın:
 
    1. **Ayarlar'ın** altında **Günlük** seçeneğini belirleyin ve ardından betiği ilk kez çalıştırmak için bir tarih ve saat seçin. Betik her gün belirtilen saatte çalıştırılır.
 
    2. **Gelişmiş ayarlar'ın** altında **Etkin** onay kutusunun seçili olduğundan emin olun.
 
-   3. **Tamam'a** tıklayın.
+   3. **Tamam**'ı seçin.
 
-7. **Eylemler** sekmesini seçin, **Yeni'ye** tıklayın ve ardından aşağıdaki işlemleri yapın:
+7. **Eylemler** sekmesini seçin, **Yeni'yi** seçin ve ardından aşağıdaki işlemleri yapın:
 
    ![Fiziksel badging bağlayıcısı betiği için yeni bir zamanlanmış görev oluşturmak için eylem ayarları.](..\media\SchedulePhysicalBadgingScript1.png)
 
    1. **Eylem** açılan listesinde **Program başlat'ın** seçili olduğundan emin olun.
 
-   2. **Program/betik** kutusunda **Gözat'a** tıklayın ve aşağıdaki konuma gidin ve yolu kutuda görüntülenecek şekilde seçin: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
+   2. **Program/betik** kutusunda **Gözat'ı** seçin ve aşağıdaki konuma gidin ve yolun kutuda görüntülenmesi için seçin: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
 
    3. **Bağımsız değişken ekle (isteğe bağlı)** kutusunda, 4. Adımda çalıştırdığınız betik komutunu yapıştırın. Örneğin, .\PhysicalBadging.ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json"
 
    4. Başlangıç yeri **(isteğe bağlı)** kutusuna, 4. Adımda çalıştırdığınız betiğin klasör konumunu yapıştırın. Örneğin, C:\Users\contosoadmin\Desktop\Scripts.
 
-   5. Yeni eylemin ayarlarını kaydetmek için **Tamam'a** tıklayın.
+   5. Yeni eylemin ayarlarını kaydetmek için **Tamam'ı** seçin.
 
-8. **Görev Oluştur** penceresinde **Tamam'a** tıklayarak zamanlanmış görevi kaydedin. Kullanıcı hesabı kimlik bilgilerinizi girmeniz istenebilir.
+8. **Görev Oluştur** penceresinde **Tamam'ı** seçerek zamanlanmış görevi kaydedin. Kullanıcı hesabı kimlik bilgilerinizi girmeniz istenebilir.
 
    Yeni görev Görev Zamanlayıcı Kitaplığı'nda görüntülenir.
 
    ![Yeni görev Görev Zamanlayıcı Kitaplığı'nda görüntülenir.](..\media\SchedulePhysicalBadgingScript2.png)
 
-Betiğin en son çalıştırıldığı ve bir sonraki çalıştırma zamanlaması görüntülenir. Görevi düzenlemek için çift tıklayabilirsiniz.
+Betiğin en son çalıştırıldığı ve bir sonraki çalıştırma zamanlaması görüntülenir. Görevi düzenlemek için çift seçebilirsiniz.
 
 Ayrıca, uyumluluk merkezindeki ilgili fiziksel badging bağlayıcısının açılır sayfasında betiğin en son ne zaman çalıştığını da doğrulayabilirsiniz.

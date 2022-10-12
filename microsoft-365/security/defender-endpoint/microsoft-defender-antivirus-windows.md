@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 ms.date: 10/03/2022
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 0e58a119cfd6dae272d5eae18a284e928f99235b
-ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
+ms.openlocfilehash: 27d7665fb275531457e90b418a2053fb978d7ead
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68363661"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68537104"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Windows’da Microsoft Defender Virüsten Koruma
 
@@ -60,6 +60,14 @@ Daha fazla bilgi edinmek için [Microsoft Defender Virüsten Koruma uyumluluğun
 ## <a name="check-the-state-of-microsoft-defender-antivirus-on-your-device"></a>Cihazınızın Microsoft Defender Virüsten Koruma durumunu kontrol etme
 
 Cihazınızın Microsoft Defender Virüsten Koruma durumunu kontrol etmek için Windows Güvenliği uygulaması veya Windows PowerShell gibi çeşitli yöntemlerden birini kullanabilirsiniz.
+
+> [!IMPORTANT]
+> [Platform sürümü 4.18.2208.0 ve sonraki](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions) sürümlerle başlayarak: Bir sunucu Uç Nokta için Microsoft Defender eklendiyse, "Windows Defender kapat" [grup ilkesi](configure-endpoints-gp.md#update-endpoint-protection-configuration) ayarı artık virüsten koruma Windows Defender tamamen devre dışı bırakmaz R2 ve üzerini Windows Server 2012. Bunun yerine pasif moda yerleştirir. Buna ek olarak, [kurcalama koruması](prevent-changes-to-security-settings-with-tamper-protection.md) özelliği etkin moda geçişe izin verir ancak pasif moda geçmez.
+> 
+> - Uç Nokta için Microsoft Defender'a eklemeden önce "Windows Defender kapat" zaten varsa, değişiklik olmaz ve Defender Virüsten Koruma devre dışı kalır.
+> - Defender Virüsten Koruma'yı eklemeden önce devre dışı bırakılmış olsa bile pasif moda geçmek için [ForceDefenderPassiveMode yapılandırmasını](switch-to-mde-phase-2.md#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) değeriyle `1`uygulayabilirsiniz. Etkin moda yerleştirmek için bunun yerine bu değeri olarak `0` değiştirin.
+> 
+> Kurcalama korumasının etkinleştirildiği zaman için `ForceDefenderPassiveMode` değiştirilen mantığa dikkat edin: Microsoft Defender Virüsten Koruma etkin moda geçirildikten sonra, kurcalama koruması olarak ayarlandığında `1`bile `ForceDefenderPassiveMode` pasif moda geri dönmesini engeller.
 
 ### <a name="use-the-windows-security-app-to-check-the-status-of-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma durumunu kontrol etmek için Windows Güvenliği uygulamasını kullanma
 

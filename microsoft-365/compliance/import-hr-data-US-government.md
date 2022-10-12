@@ -1,5 +1,6 @@
 ---
 title: İk verilerini ABD Kamu buluta aktarmak için bağlayıcı ayarlama
+description: ABD Kamu bulutundaki yöneticiler, çalışan verilerini kuruluşlarının insan kaynakları (İk) sisteminden Microsoft 365'e aktarmak için bir veri bağlayıcısı ayarlayabilir. Bu, kuruluşunuz için iç tehdit oluşturabilecek belirli kullanıcıların etkinliklerini algılamanıza yardımcı olmak için şirket içi risk yönetimi ilkelerinde İk verilerini kullanmanıza olanak tanır.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,20 +13,24 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
-description: ABD Kamu bulutundaki yöneticiler, çalışan verilerini kuruluşlarının insan kaynakları (İk) sisteminden Microsoft 365'e aktarmak için bir veri bağlayıcısı ayarlayabilir. Bu, kuruluşunuz için iç tehdit oluşturabilecek belirli kullanıcıların etkinliklerini algılamanıza yardımcı olmak için şirket içi risk yönetimi ilkelerinde İk verilerini kullanmanıza olanak tanır.
-ms.openlocfilehash: f8a8c302b226951631ab2bdd70a2f7cadf2e4657
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: b669d4c283cc0cb462ae14f22fad8f73e1c8b5ac
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67826456"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536114"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>ABD Kamu'da İk verilerini içeri aktarmak için bağlayıcı ayarlama
 
 İnsan kaynakları (İk) verilerini ABD Kamu kuruluşunuza aktarmak için Microsoft Purview uyumluluk portalı bir veri bağlayıcısı ayarlayabilirsiniz. İk ile ilgili veriler, bir çalışanın istifasını gönderdiği tarihi ve çalışanın son gününü içerir. Bu İk verileri daha sonra kuruluşunuzun kuruluşunuzdaki kötü amaçlı etkinliklerden veya veri hırsızlığından korunmasına yardımcı olmak için [insider risk yönetimi çözümü](insider-risk-management.md) gibi Microsoft bilgi koruma çözümleri tarafından kullanılabilir. İk bağlayıcısı ayarlamak, Azure Active Directory'de bağlayıcı tarafından kimlik doğrulaması için kullanılan bir uygulama oluşturmak, İk verilerinizi içeren bir CSV eşleme dosyaları oluşturmak, uyumluluk merkezinde bir veri bağlayıcısı oluşturmak ve ardından CSV dosyasındaki İk verilerini Microsoft buluta alan bir betik (zamanlanmış olarak) çalıştırmaktır. Ardından veri bağlayıcısı, Insider risk yönetimi aracı tarafından Microsoft 365 US Government kuruluşunuza aktarılan İk verilerine erişmek için kullanılır.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -79,11 +84,11 @@ Sonraki adım, uyumluluk portalında bir İk bağlayıcısı oluşturmaktır. Be
 
 1. Uyumluluk portalına gidin ve <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Veri bağlayıcıları** sayfasını</a> seçin.
 
-2. **İk** altındaki **Veri bağlayıcıları** sayfasında **Görünüm'e** tıklayın.
+2. **İk** altındaki **Veri bağlayıcıları** sayfasında **Görüntüle'yi** seçin.
 
-3. **İk** sayfasında **Bağlayıcı ekle'ye** tıklayın.
+3. **İk** sayfasında **Bağlayıcı ekle'yi** seçin.
 
-4. **Kimlik doğrulama kimlik bilgileri** sayfasında aşağıdakileri yapın ve **İleri'ye** tıklayın:
+4. **Kimlik doğrulaması kimlik bilgileri** sayfasında aşağıdakileri yapın ve **İleri'yi** seçin:
 
    1. 1. Adımda oluşturduğunuz Azure uygulamasının Azure AD uygulama kimliğini yazın veya yapıştırın.
 
@@ -93,7 +98,7 @@ Sonraki adım, uyumluluk portalında bir İk bağlayıcısı oluşturmaktır. Be
 
    ![Sütun başlığı adları CSV dosyasındaki adlarla eşleşiyor.](../media/HRConnectorWizard3.png)
 
-6. **Gözden Geçir** sayfasında ayarlarınızı gözden geçirin ve ardından **Son'a** tıklayarak bağlayıcıyı oluşturun.
+6. **Gözden Geçir** sayfasında ayarlarınızı gözden geçirin ve ardından **Son'u** seçerek bağlayıcıyı oluşturun.
 
    Bağlayıcının oluşturulduğunu onaylayan bir durum sayfası görüntülenir. Bu sayfa, İk verilerinizi karşıya yüklemek için örnek betiği çalıştırmak için sonraki adımı tamamlamanız gereken iki önemli öğe içerir.
 
@@ -101,19 +106,19 @@ Sonraki adım, uyumluluk portalında bir İk bağlayıcısı oluşturmaktır. Be
 
    1. **İş Kimliği.** Sonraki adımda betiği çalıştırmak için bu iş kimliğine ihtiyacınız olacaktır. Bu sayfadan veya bağlayıcı açılır sayfasından kopyalayabilirsiniz.
    
-   1. **Örnek betiğin bağlantısı.** Örnek betike erişmek için GitHub sitesine gitmek için **buraya** tıklayın (bağlantı yeni bir pencere açar). 4. Adım'da betiği kopyalayabilmeniz için bu pencereyi açık tutun. Alternatif olarak, 4. Adımda yeniden erişebilmek için hedefe yer işareti ekleyebilir veya URL'yi kopyalayabilirsiniz. Bu bağlantı bağlayıcı açılır sayfasında da kullanılabilir.
+   1. **Örnek betiğin bağlantısı.** Örnek betike erişmek için GitHub sitesine gitmek için **buradaki** bağlantıyı seçin (bağlantı yeni bir pencere açar). 4. Adım'da betiği kopyalayabilmeniz için bu pencereyi açık tutun. Alternatif olarak, 4. Adımda yeniden erişebilmek için hedefe yer işareti ekleyebilir veya URL'yi kopyalayabilirsiniz. Bu bağlantı bağlayıcı açılır sayfasında da kullanılabilir.
 
-7. **Bitti'ye** tıklayın.
+7. **Bitti'yi** seçin.
 
    Yeni bağlayıcı **Bağlayıcılar** sekmesindeki listede görüntülenir. 
 
-8. Yeni oluşturduğunuz İk bağlayıcısına tıklayarak bağlayıcıyla ilgili özellikleri ve diğer bilgileri içeren açılır sayfayı görüntüleyin.
+8. Yeni oluşturduğunuz İk bağlayıcısını seçerek bağlayıcıyla ilgili özellikleri ve diğer bilgileri içeren açılır sayfayı görüntüleyin.
 
    ![Yeni İk bağlayıcısı için açılır sayfa.](../media/HRConnectorWizard7.png)
 
    Henüz yapmadıysanız **, Azure Uygulaması Kimliği** ve **Bağlayıcı iş kimliği** değerlerini kopyalayabilirsiniz. Sonraki adımda betiği çalıştırmak için bunlara ihtiyacınız olacaktır. Betiği açılır sayfadan da indirebilirsiniz (veya sonraki adımda bağlantıyı kullanarak indirebilirsiniz.)
 
-   **Dosya eşleme** sayfasında tanımladığınız Azure Uygulaması kimliğini veya sütun üst bilgisi adlarını değiştirmek için **Düzenle'ye** de tıklayabilirsiniz.
+   **Dosya eşleme** sayfasında tanımladığınız Azure Uygulaması kimliğini veya sütun üst bilgisi adlarını değiştirmek için **Düzenle'yi** de seçebilirsiniz.
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-hr-data"></a>4. Adım: İk verilerinizi karşıya yüklemek için örnek betiği çalıştırın
 
@@ -121,7 +126,7 @@ Sonraki adım, uyumluluk portalında bir İk bağlayıcısı oluşturmaktır. Be
 
 1. GitHub sitesine örnek betikle erişmek için önceki adımda açık bıraktığınız pencereye gidin. Alternatif olarak, yer işaretli siteyi açın veya kopyaladığınız URL'yi kullanın.
 
-2. Betiği metin görünümünde görüntülemek için **Ham** düğmesine tıklayın.
+2. Betiği metin görünümünde görüntülemek için **Ham** düğmesini seçin.
 
 3. Örnek betikteki tüm satırları kopyalayın ve bir metin dosyasına kaydedin.
 
@@ -165,11 +170,11 @@ Sonraki adım, uyumluluk portalında bir İk bağlayıcısı oluşturmaktır. Be
 
 1. Uyumluluk portalına gidin ve <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Veri bağlayıcıları'nı**</a> seçin.
 
-2. **Bağlayıcılar** sekmesine tıklayın ve açılır sayfayı görüntülemek için İk bağlayıcısını seçin. Bu sayfa, bağlayıcı hakkındaki özellikleri ve bilgileri içerir.
+2. **Bağlayıcılar** sekmesini ve ardından açılır sayfayı görüntülemek için İk bağlayıcısını seçin. Bu sayfa, bağlayıcı hakkındaki özellikleri ve bilgileri içerir.
 
    ![Özellikler ve durum ile İk bağlayıcı açılır sayfası.](../media/HRConnectorFlyout1.png)
 
-3. **İlerleme Durumu** altında, Bağlayıcının durum günlüğünü açmak (veya kaydetmek) için **Günlüğü indir** bağlantısına tıklayın. Bu günlük, betiğin her çalıştırıldığında ve CSV dosyasındaki verileri Microsoft buluta yükleyişiyle ilgili bilgileri içerir. 
+3. **İlerleme Durumu** altında, Bağlayıcının durum günlüğünü açmak (veya kaydetmek) için **Günlüğü indir** bağlantısını seçin. Bu günlük, betiğin her çalıştırıldığında ve CSV dosyasındaki verileri Microsoft buluta yükleyişiyle ilgili bilgileri içerir. 
 
    ![İk bağlayıcısı günlük dosyası, karşıya yüklenen CSV dosyasındaki sayı satırlarını görüntüler.](../media/HRConnectorLogFile.png)
 
@@ -183,11 +188,11 @@ Kuruluşunuzdaki en son İk verilerinin insider risk yönetimi çözümü gibi a
 
 Betiği her gün otomatik olarak çalıştırmak için Windows'ta Görev Zamanlayıcı uygulamasını kullanabilirsiniz.
 
-1. Yerel bilgisayarınızda, Windows **Başlat** düğmesine tıklayın ve görev **zamanlayıcı** yazın.
+1. Yerel bilgisayarınızda Windows **Başlat** düğmesini seçin ve **görev zamanlayıcı** yazın.
 
-2. **Görev Zamanlayıcı** uygulamasına tıklayarak uygulamayı açın.
+2. **Görev Zamanlayıcı** uygulamasını seçerek açın.
 
-3. **Eylemler** bölümünde **Görev Oluştur'a** tıklayın.
+3. **Eylemler** bölümünde **Görev Oluştur'u** seçin.
 
 4. **Genel** sekmesinde, zamanlanan görev için açıklayıcı bir ad yazın; örneğin İk **BağlayıcıSı Betiği**. İsteğe bağlı bir açıklama da ekleyebilirsiniz.
 
@@ -197,34 +202,34 @@ Betiği her gün otomatik olarak çalıştırmak için Windows'ta Görev Zamanla
    
    1. **En yüksek ayrıcalıklarla çalıştır** onay kutusunun seçili olduğundan emin olun.
 
-6. **Tetikleyiciler** sekmesini seçin, **Yeni'ye** tıklayın ve aşağıdaki işlemleri yapın:
+6. **Tetikleyiciler** sekmesini seçin, **Yeni'yi** seçin ve ardından aşağıdaki işlemleri yapın:
 
    1. **Ayarlar'ın** altında **Günlük** seçeneğini belirleyin ve ardından betiği ilk kez çalıştırmak için bir tarih ve saat seçin. Betik her gün belirtilen saatte çalıştırılır.
    
    1. **Gelişmiş ayarlar'ın** altında **Etkin** onay kutusunun seçili olduğundan emin olun.
    
-   1. **Tamam'a** tıklayın.
+   1. **Tamam**'ı seçin.
 
-7. **Eylemler** sekmesini seçin, **Yeni'ye** tıklayın ve ardından aşağıdaki işlemleri yapın:
+7. **Eylemler** sekmesini seçin, **Yeni'yi** seçin ve ardından aşağıdaki işlemleri yapın:
 
    ![İk bağlayıcısı betiği için yeni bir zamanlanmış görev oluşturmak için eylem ayarları.](../media/HRConnectorScheduleTask1.png)
 
    1. **Eylem** açılan listesinde **Program başlat'ın** seçili olduğundan emin olun.
 
-   1. **Program/betik** kutusunda **Gözat'a** tıklayın ve aşağıdaki konuma gidin ve yolun kutuda görüntülenmesi için seçin: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`.
+   1. **Program/betik** kutusunda **Gözat'ı** seçin ve aşağıdaki konuma gidin ve yolun kutuda görüntülenmesi için seçin: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`.
 
    1. **Bağımsız değişken ekle (isteğe bağlı)** kutusunda, 4. Adımda çalıştırdığınız betik komutunu yapıştırın. Örneğin, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
    1. Başlangıç yeri **(isteğe bağlı)** kutusuna, 4. Adımda çalıştırdığınız betiğin klasör konumunu yapıştırın. Örneğin, `C:\Users\contosoadmin\Desktop\Scripts`.
 
-   1. Yeni eylemin ayarlarını kaydetmek için **Tamam'a** tıklayın.
+   1. Yeni eylemin ayarlarını kaydetmek için **Tamam'ı** seçin.
 
-8. **Görev Oluştur** penceresinde **Tamam'a** tıklayarak zamanlanmış görevi kaydedin. Kullanıcı hesabı kimlik bilgilerinizi girmeniz istenebilir.
+8. **Görev Oluştur** penceresinde **Tamam'ı** seçerek zamanlanmış görevi kaydedin. Kullanıcı hesabı kimlik bilgilerinizi girmeniz istenebilir.
 
    Yeni görev Görev Zamanlayıcı Kitaplığı'nda görüntülenir.
 
    ![Yeni görev Görev Zamanlayıcı Kitaplığı'nda görüntülenir.](../media/HRConnectorTaskSchedulerLibrary.png)
 
-   Betiğin en son çalıştırıldığı ve bir sonraki çalıştırma zamanlaması görüntülenir. Görevi düzenlemek için çift tıklayabilirsiniz.
+   Betiğin en son çalıştırıldığı ve bir sonraki çalıştırma zamanlaması görüntülenir. Görevi düzenlemek için çift seçebilirsiniz.
 
    Ayrıca, uyumluluk merkezindeki ilgili İk bağlayıcısının açılır sayfasında betiğin en son ne zaman çalıştığını da doğrulayabilirsiniz.

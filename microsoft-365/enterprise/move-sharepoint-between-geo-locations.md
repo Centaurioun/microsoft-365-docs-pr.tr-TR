@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: SharePoint sitesini çok coğrafi ortamınızda farklı bir coğrafi konuma taşımayı ve değişikliklerle ilgili beklentileri kullanıcılarınıza iletmeyi öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fed86c6e974795ac251433d6b9bf9338426639e8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: b1a9787887f34d89faf87dbe20984c39762f3b9f
+ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694435"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68536906"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>SharePoint sitesini farklı bir coğrafi konuma taşıma
 
@@ -93,7 +93,7 @@ Sitelerin taşınmayı şu şekilde desteklemiyoruz:
 - InfoPath formları
 - Uygulanan Bilgi Hakları Yönetimi (IRM) şablonları
 
-Tüm coğrafi konumların uyumlu olduğundan emin olmak için komutunu çalıştırın `Get-SPOGeoMoveCrossCompatibilityStatus`. Bu, tüm coğrafi konumlarınızı ve ortamın hedef coğrafi konumla uyumlu olup olmadığını görüntüler.
+Tüm coğrafi konumların uyumlu olduğundan emin olmak için komutunu çalıştırın `Get-SPOGeoMoveCrossCompatibilityStatus`. Bu, tüm coğrafi konumlarınızı ve ortamın hedef coğrafi konumla uyumlu olup olmadığını görüntüler. Coğrafi konum uyumsuzsa bu, o konumda bir güncelleştirmenin devam ettiğini gösterir. Birkaç gün içinde yeniden deneyin.
 
 Sitenizde yalnızca doğrulama denetimi gerçekleştirmek için parametresiyle `Start-SPOSiteContentMove` kullanarak sitenin `-ValidationOnly` taşınıp taşınamadığını doğrulayın. Örneğin:
 
