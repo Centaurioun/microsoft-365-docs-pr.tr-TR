@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex ile yerel sharepoint sitesinde model oluşturma
+title: Microsoft Syntex ile yerel bir SharePoint sitesinde model oluşturma
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,19 +12,19 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: SharePoint Syntex ile yerel bir SharePoint sitesinde yerel model oluşturmayı öğrenin.
-ms.openlocfilehash: 6a3d9098ef8f61d2ffe40c2871313ef1b2e2e0f7
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+description: Microsoft Syntex ile yerel bir SharePoint sitesinde yerel model oluşturmayı öğrenin.
+ms.openlocfilehash: 812fc68559223f2bf801fe7d1f8d2ef5b7d03e23
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560515"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547565"
 ---
-# <a name="create-a-model-on-a-local-sharepoint-site-with-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex ile yerel sharepoint sitesinde model oluşturma
+# <a name="create-a-model-on-a-local-sharepoint-site-with-microsoft-syntex"></a>Microsoft Syntex ile yerel bir SharePoint sitesinde model oluşturma
 
-SharePoint Syntex artık kendi SharePoint sitenizde modelleri yerel olarak oluşturma ve eğitmek için bir seçenek sunar. Bu modeller yalnızca oluşturuldukları sitede kullanılabilir. 
+Microsoft Syntex artık kendi SharePoint sitenizde modelleri yerel olarak oluşturma ve eğitmek için bir seçenek sunar. Bu modeller yalnızca oluşturuldukları sitede kullanılabilir. 
 
-SharePoint sitenizde belge sınıflandırma ve ayıklamayı etkinleştirerek SharePoint Syntex belge kitaplıklarındaki dosyaları sınıflandırmanıza, yeni dosyalardan bilgi ayıklamanıza ve ayıklanan bilgilere göre etkinlikleri otomatikleştirmenize olanak tanır.
+SharePoint sitenizde belge sınıflandırma ve ayıklamayı etkinleştirerek Syntex, belge kitaplıklarındaki dosyaları sınıflandırmanıza, yeni dosyalardan bilgi ayıklamanıza ve ayıklanan bilgilere göre etkinlikleri otomatikleştirmenize olanak tanır.
 
 Yerel model oluşturmayı etkinleştirdiğinizde, sitenize aşağıdaki listeler ve kitaplıklar eklenir:
 
@@ -41,7 +41,7 @@ Bu özellik yalnızca [belge anlama modelleri](apply-a-model.md) ve [önceden ol
 
     ![Sınıflandır ve ayıkla seçeneğinin vurgulandığı SharePoint belge kitaplığının ekran görüntüsü.](../media/content-understanding/local-model-classify-and-extract-option.png) 
 
-2. Bu özelliği ilk kez kullandığınızda, sitenizde SharePoint Syntex etkinleştirirsiniz. Aşağıdaki iletiyi görürsünüz.
+2. Bu özelliği ilk kez kullandığınızda, sitenizde Syntex'i etkinleştirirsiniz. Aşağıdaki iletiyi görürsünüz.
 
     ![Belge sınıflandırma ve ayıklama bilgilerini etkinleştir sayfasının ekran görüntüsü.](../media/content-understanding/local-model-first-run-activate-message.png) 
 
