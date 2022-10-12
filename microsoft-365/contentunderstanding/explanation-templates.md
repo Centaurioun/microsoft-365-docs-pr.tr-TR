@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex'da açıklama şablonlarını kullanma
+title: Microsoft Syntex'te açıklama şablonlarını kullanma
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex'da açıklama şablonlarını kullanma ve kaydetme hakkında daha fazla bilgi edinin.
-ms.openlocfilehash: 27c25bf9520f64dc6c91afe1ea736af8e784e74f
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Microsoft Syntex'te açıklama şablonlarını kullanma ve kaydetme hakkında daha fazla bilgi edinin.
+ms.openlocfilehash: ef1e3cd3575d5e943c2ea39e98f7c85046de32ec
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67578344"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547762"
 ---
-# <a name="use-explanation-templates-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da açıklama şablonlarını kullanma
+# <a name="use-explanation-templates-in-microsoft-syntex"></a>Microsoft Syntex'te açıklama şablonlarını kullanma
 
 Açıklamanız için çeşitli tümcecik listesi değerlerini el ile ekleyebilmenize karşın, açıklama kitaplığında size sağlanan şablonları kullanmak daha kolay olabilir.
 
@@ -118,4 +118,4 @@ Diğer modellerle birlikte kullanılacak bir içerik merkezinin açıklama kitap
 
 ### <a name="see-also"></a>Ayrıca bkz.
 
-[SharePoint Syntex'de açıklama türleri](explanation-types-overview.md)
+[Microsoft Syntex'teki açıklama türleri](explanation-types-overview.md)

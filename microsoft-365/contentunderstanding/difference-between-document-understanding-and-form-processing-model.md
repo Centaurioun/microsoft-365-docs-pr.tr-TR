@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex'da özel modeller arasındaki farklar
+title: Microsoft Syntex'teki özel modeller arasındaki farklar
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,17 +12,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Belge anlama modeli ile form işleme modeli arasındaki temel farklar hakkında bilgi edinin.
-ms.openlocfilehash: b17ab57cd7252c9a1cee7abb5a81359a965ca477
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+description: Microsoft Syntex'te belge anlama modeli ile form işleme modeli arasındaki temel farklar hakkında bilgi edinin.
+ms.openlocfilehash: 2d5d131ffb2176afabaf85474312bc07894491d9
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812106"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547894"
 ---
-# <a name="differences-between-custom-models-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da özel modeller arasındaki farklar 
+# <a name="differences-between-custom-models-in-microsoft-syntex"></a>Microsoft Syntex'teki özel modeller arasındaki farklar 
 
-Microsoft SharePoint Syntex'da içerik anlama, SharePoint belge kitaplıklarına yüklenen belgeleri tanımlamanıza ve sınıflandırmanıza ve ardından her dosyadan ilgili bilgileri ayıklamanıza olanak tanır. Örneğin, dosyalar bir SharePoint belge kitaplığına yüklendiğinden, *Satın Alma Siparişleri* olarak tanımlanan tüm dosyalar bu şekilde sınıflandırılır ve sonra özel belge kitaplığı görünümünde görüntülenir. Ayrıca, her dosyadan belirli bilgileri (po *numarası* ve *toplam* gibi) çekebilir ve belge kitaplığı görünümünüzde bir sütun olarak görüntüleyebilirsiniz. 
+Microsoft Syntex'te içerik anlama, SharePoint belge kitaplıklarına yüklenen belgeleri tanımlamanıza ve sınıflandırmanıza ve ardından her dosyadan ilgili bilgileri ayıklamanıza olanak tanır. Örneğin, dosyalar bir SharePoint belge kitaplığına yüklendiğinden, *Satın Alma Siparişleri* olarak tanımlanan tüm dosyalar bu şekilde sınıflandırılır ve sonra özel belge kitaplığı görünümünde görüntülenir. Ayrıca, her dosyadan belirli bilgileri (po *numarası* ve *toplam* gibi) çekebilir ve belge kitaplığı görünümünüzde bir sütun olarak görüntüleyebilirsiniz. 
 
 İçerik anlama, ihtiyacınız olan bilgileri tanımlamak ve ayıklamak için *modeller* oluşturmanıza olanak tanır. Modellerin arama, iş süreçleri, uyumluluk ve diğerleri için iş sorunlarını çözmeye yardımcı olması önemlidir.
 
@@ -34,7 +34,7 @@ Kullanabileceğiniz iki özel model türü vardır:
 Her iki model de genellikle aynı amaç için kullanılırken, aşağıda listelenen temel farklar hangilerini kullanabileceğinizi etkiler.
 
 > [!NOTE]
-> Form işleme ve belge anlama senaryosu örnekleri hakkında daha fazla bilgi için [bkz. SharePoint Syntex benimsemeye başlama](./adoption-getstarted.md).
+> Form işleme ve belge anlama senaryosu örnekleri hakkında daha fazla bilgi için [Syntex'i benimsemeye başlama](./adoption-getstarted.md) konusuna bakın.
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Yapılandırılmış veya yapılandırılmamış ve yarı yapılandırılmış içerik
 
@@ -82,7 +82,7 @@ Form işlemenin ne zaman kullanılacağını ve belge anlamanın ne zaman kullan
 | Yönetilen Meta Verilerle Tümleştirme | Hayır | Evet, yapılandırılmış yönetilen meta veri alanına başvuran varlık ayıklayıcısı eğiterek.|
 | Microsoft Purview Bilgi Koruması ile uyumluluk özelliği tümleştirmesi | Yayımlanan bekletme etiketlerini ayarlayın.<br>Duyarlılık etiketlerini ayarlama geliyor. | Yayımlanan bekletme etiketlerini ayarlayın.<br>Yayımlanan duyarlılık etiketlerini ayarlayın. |
 | Desteklenen bölgeler| Form işleme, Power Platform'a dayanır. Power Platform ve AI Builder için genel kullanılabilirlik hakkında bilgi için bkz. [Power Platform kullanılabilirliği](https://dynamics.microsoft.com/geographic-availability/). | Tüm bölgelerde kullanılabilir.|
-| İşlem maliyeti | AI Builder kredilerini kullanır.<br>Aylık her SharePoint Syntex lisansı için 3,5K kredi dahildir.<br>1M kredi, 2.000 dosya sayfası işlenmesine izin verir.<br>| Geçerli değil |
+| İşlem maliyeti | AI Builder kredilerini kullanır.<br>Aylık her Syntex lisansı için 3,5K kredi dahildir.<br>1M kredi, 2.000 dosya sayfası işlenmesine izin verir.<br>| Geçerli değil |
 | Kapasite | Varsayılan Power Platform ortamını kullanır (Dataverse veritabanının desteklendiği özel ortamlar). | Kapasite kısıtlamaları yoktur.|
 | Desteklenen diller| [73'ten fazla dil için dil](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support) desteği. | Modeller tüm Latin alfabesi dillerinde çalışır. İngilizceye ek olarak: Almanca, İsveççe, Fransızca, İspanyolca, İtalyanca ve Portekizce.|
 
@@ -95,4 +95,4 @@ Form işlemenin ne zaman kullanılacağını ve belge anlamanın ne zaman kullan
 
 [Form işlemeye genel bakış](form-processing-overview.md)
 
-[SharePoint Syntex giriş](index.md)
+[Microsoft Syntex'e giriş](index.md)

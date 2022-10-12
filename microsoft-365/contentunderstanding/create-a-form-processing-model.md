@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex'de form işleme modeli oluşturma
+title: Microsoft Syntex'te form işleme modeli oluşturma
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,15 +13,15 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
-description: SharePoint Syntex'de form işleme modeli oluşturmayı öğrenin.
-ms.openlocfilehash: b045de5b0f67d56f0ddfe726fbe0c1dd25391866
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+description: Microsoft Syntex'te form işleme modeli oluşturmayı öğrenin.
+ms.openlocfilehash: 445f1bb4bdbdd8a93e0feaf9c6c841329ea4ccd0
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812292"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547587"
 ---
-# <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'de form işleme modeli oluşturma
+# <a name="create-a-form-processing-model-in-microsoft-syntex"></a>Microsoft Syntex'te form işleme modeli oluşturma
 
 </br>
 
@@ -29,7 +29,7 @@ ms.locfileid: "67812292"
 
 </br>
 
-Microsoft Power Apps'teki bir özellik olan [AI Builder'ı](/ai-builder/overview) kullanma SharePoint Syntex kullanıcılar doğrudan bir SharePoint belge kitaplığından [form işleme modeli](form-processing-overview.md) oluşturabilir. 
+Microsoft Power Apps'teki bir özellik olan [AI Builder'ı](/ai-builder/overview) kullanma - Microsoft Syntex kullanıcıları doğrudan bir SharePoint belge kitaplığından [form işleme modeli](form-processing-overview.md) oluşturabilir. 
 
 Form işleme modeli oluşturmak aşağıdaki adımları içerir:
 
@@ -159,15 +159,15 @@ Bir form işleme modelinin uygulandığı kitaplıkta seçili bir dosyayı veya 
 
 ### <a name="classification-date-field"></a>Sınıflandırma Tarihi alanı
 
-Belge kitaplığına bir SharePoint Syntex form işleme modeli (veya belge anlama modeli) uygulandığında, **Sınıflandırma Tarihi** alanı kitaplık şemasına eklenir. Varsayılan olarak, bu alan boş olur. Ancak, belgeler bir model tarafından işlendiğinde ve sınıflandırıldığında, bu alan tamamlanma tarih-saat damgasıyla güncelleştirilir. 
+Belge kitaplığına Syntex form işleme modeli (veya belge anlama modeli) uygulandığında, **Sınıflandırma Tarihi** alanı kitaplık şemasına eklenir. Varsayılan olarak, bu alan boş olur. Ancak, belgeler bir model tarafından işlendiğinde ve sınıflandırıldığında, bu alan tamamlanma tarih-saat damgasıyla güncelleştirilir. 
 
-Model **Sınıflandırma Tarihi** ile damgalandığında, Kullanıcılara SharePoint belge kitaplığındaki bir model tarafından yeni bir dosyanın işlendiğini ve sınıflandırıldığını bildirmek için **SharePoint Syntex dosya akışını işledikten sonra e-posta gönder'i** kullanabilirsiniz.
+Model **Sınıflandırma Tarihi** ile damgalandığında, **Syntex bir dosya akışını işledikten sonra e-posta gönder'i** kullanarak kullanıcılara SharePoint belge kitaplığındaki bir model tarafından yeni bir dosyanın işlendiğini ve sınıflandırıldığını bildirebilirsiniz.
 
 Akışı çalıştırmak için:
 
 1. Bir dosya seçin ve ardından **Power Automate'i tümleştir** >  >  **Akış oluştur'u** seçin.
 
-2. **Akış oluştur** panelinde, **SharePoint Syntex bir dosyayı işledikten sonra e-posta gönder'i** seçin.
+2. **Akış oluştur** panelinde **Syntex bir dosyayı işledikten sonra E-posta gönder'i** seçin.
 
     ![Akış oluştur panelini ve akış seçeneğinin vurgulandığı ekran görüntüsü.](../media/content-understanding/integrate-create-flow.png) 
 

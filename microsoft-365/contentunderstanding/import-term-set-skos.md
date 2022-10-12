@@ -13,16 +13,16 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 search.appverid: ''
 ms.localizationpriority: high
-ms.openlocfilehash: 411c4e3303d6bb20370d540de998f9e6ea95105d
-ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
+ms.openlocfilehash: ad533e7f869e3680c9e4b8e5085881040fadd22e
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68026040"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547718"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>SKOS tabanlı biçim kullanarak terim kümesini içeri aktarma
 
-SKOS tabanlı bir biçim kullanarak terim kümesini içeri aktarabilirsiniz. Biçim hakkında ayrıntılı bilgi için bkz. [SharePoint taksonomisi SKOS biçimi başvurusu](skos-format-reference.md). Bu özellik [için SharePoint Syntex](index.md) lisansı gerekir.
+SKOS tabanlı bir biçim kullanarak terim kümesini içeri aktarabilirsiniz. Biçim hakkında ayrıntılı bilgi için bkz. [SharePoint taksonomisi SKOS biçimi başvurusu](skos-format-reference.md). Bu özellik için [Bir Microsoft Syntex](index.md) lisansı gerekir.
 
 İçeri aktarma dosyalarınızı 20.000'den az terimle tutmanızı öneririz. Daha büyük dosyalar doğrulama ve içeri aktarma için geçen süreyi artırabilir.
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex'da açıklama türleri
+title: Microsoft Syntex'teki açıklama türleri
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,17 +12,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex'da tümcecik listesi, normal ifade ve yakınlık açıklaması türleri hakkında daha fazla bilgi edinin.
-ms.openlocfilehash: acf691561e2935d982786fb60a0fe8cb4b410f42
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Microsoft Syntex'te tümcecik listesi, normal ifade ve yakınlık açıklaması türleri hakkında daha fazla bilgi edinin.
+ms.openlocfilehash: a85272830dcbc64266456774c56ea02ceb6245e6
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67580958"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547960"
 ---
-# <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da açıklama türleri
+# <a name="explanation-types-in-microsoft-syntex"></a>Microsoft Syntex'teki açıklama türleri
 
-Açıklamalar, Microsoft SharePoint Syntex'daki belge anlama modellerinizde etiketlemek ve ayıklamak istediğiniz bilgileri tanımlamaya yardımcı olmak için kullanılır. Açıklama oluştururken bir açıklama türü seçmeniz gerekir. Bu makale, farklı açıklama türlerini ve bunların nasıl kullanıldığını anlamanıza yardımcı olur.
+Açıklamalar, Microsoft Syntex'teki belge anlama modellerinizde etiketlemek ve ayıklamak istediğiniz bilgileri tanımlamaya yardımcı olmak için kullanılır. Açıklama oluştururken bir açıklama türü seçmeniz gerekir. Bu makale, farklı açıklama türlerini ve bunların nasıl kullanıldığını anlamanıza yardımcı olur.
 
 ![Üç açıklama türünü gösteren Açıklama oluştur panelinin ekran görüntüsü.](../media/content-understanding/explanation-types.png)
 
@@ -226,4 +226,4 @@ Bir sınıflandırıcıyı eğitirken, daha öngörülebilir sonuçlara neden ol
 
 ### <a name="see-also"></a>Ayrıca bkz.
 
-[SharePoint Syntex'de açıklama şablonlarını kullanma](explanation-templates.md)
+[Microsoft Syntex'te açıklama şablonlarını kullanma](explanation-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Değerlendirme aracını kullanarak SharePoint Syntex fırsatlarını keşfedin
+title: Microsoft 365 Değerlendirme aracını kullanarak Microsoft Syntex'teki fırsatları keşfedin
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -16,48 +16,48 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: ''
 ms.localizationpriority: medium
-description: Kuruluşunuzun SharePoint Syntex nasıl yararlanabileceğini görmek için benimseme değerlendirme aracını kullanmayı öğrenin.
-ms.openlocfilehash: f993530d9eea57bfa0cd8b03336f8a132588acdf
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Kuruluşunuzun Microsoft Syntex'ten nasıl yararlanabileceğini görmek için benimseme değerlendirme aracını kullanmayı öğrenin.
+ms.openlocfilehash: b964845523f8ce4ce9dc7213c177554f8df79a8a
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67578950"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547477"
 ---
-# <a name="discover-opportunities-in-sharepoint-syntex-by-using-the-microsoft-365-assessment-tool"></a>Microsoft 365 Değerlendirme aracını kullanarak SharePoint Syntex fırsatlarını keşfedin
+# <a name="discover-opportunities-in-microsoft-syntex-by-using-the-microsoft-365-assessment-tool"></a>Microsoft 365 Değerlendirme aracını kullanarak Microsoft Syntex'teki fırsatları keşfedin
 
 > [!NOTE]
 > Microsoft 365 Değerlendirme aracı yalnızca SharePoint Online'da çalıştırılabilir. 
 
-Microsoft 365 Değerlendirme aracını kullanarak SharePoint Syntex kuruluşunuza nasıl fayda sağlayacağını değerlendirebilirsiniz. Değerlendirmeyi çalıştırdığınızda, SharePoint bilgi mimarinizin SharePoint Syntex değere sahip olabileceğini gösteren göstergeleri özetleyen bir Power BI raporu oluşturacaksınız.
+Microsoft 365 Değerlendirme aracını kullanarak Microsoft Syntex'in kuruluşunuza nasıl fayda sağlayacağını değerlendirebilirsiniz. Değerlendirmeyi çalıştırdığınızda, SharePoint bilgi mimarinizin Syntex'in değerli olabileceği noktaları özetleyen bir Power BI raporu oluşturacaksınız.
 
 ![Power BI özetindeki üç örnek rapor sayfası görüntüsü.](../media/content-understanding/assessment-tool-reports.png)
 
 Değerlendirme raporu aşağıdaki bilgileri içerir: 
 
-- **Özel sütunlu kitaplıklar** – SharePoint Syntex sütunları otomatik olarak doldurarak tutarlılığı geliştirebileceği kitaplıkları belirleyin. 
+- **Özel sütunları olan kitaplıklar** – Syntex'in sütunları otomatik olarak doldurabileceği kitaplıkları belirleyin ve tutarlılığı geliştirin. 
 
-- **Sütun kullanımı** – En yüksek avantaja sahip olacakları SharePoint Syntex modelleri hedeflemek için sütun kullanımı desenlerini belirleyin. 
+- **Sütun kullanımı** – En yüksek avantaja sahip olacak syntex modellerini hedeflemek için sütun kullanımı desenlerini belirleyin. 
 
-- **Özel içerik türlerine sahip kitaplıklar** – Dosyaları otomatik olarak kategorilere ayırmak için SharePoint Syntex modellerin kullanılabildiği özel içerik türlerini kullanarak kitaplıkları tanımlayın. 
+- **Özel içerik türlerine sahip kitaplıklar** – Syntex modellerinin dosyaları otomatik olarak kategorilere ayırmak için kullanılabildiği özel içerik türlerini kullanarak kitaplıkları tanımlayın. 
 
-- **İçerik türü kullanımı – en** yüksek avantaja sahip olacakları SharePoint Syntex modelleri hedeflemek için içerik türü kullanımı desenlerini belirleyin. 
+- **İçerik türü kullanımı** – Syntex modellerini hedef almak için içerik türü kullanımının desenlerini belirleyin ve en yüksek avantaja sahip olacaklardır. 
 
-- **Bekletme etiketlerine sahip kitaplıklar – Bekletme** etiketlerinin kullanıldığı kitaplıkları belirleyin; burada tutarlılığı otomatikleştirmek ve geliştirmek için SharePoint Syntex kullanılabilir. 
+- **Bekletme etiketleri olan kitaplıklar** – Bekletme etiketlerinin kullanıldığı kitaplıkları belirleyin. Burada Syntex, tutarlılığı otomatikleştirmek ve geliştirmek için kullanılabilir. 
 
 - **Kitaplık boyutu** – Sınıflandırma ve meta verilerin içerik bulma deneyimini geliştirebileceği büyük kitaplıkları belirleyin. 
 
-- **Kitaplık modernleştirme durumu** – SharePoint Syntex tam olarak kullanmak için modernleştirilmesi gerekebilecek kitaplıkları belirleyin. 
+- **Kitaplık modernleştirme durumu** – Syntex'i tam olarak kullanmak için modernleştirilmesi gerekebilecek kitaplıkları belirleyin. 
 
 - **Önceden oluşturulmuş model adayları** – Adların veya içerik türlerinin önceden oluşturulmuş bir modelin uygulanabileceğini önerdiği kitaplıkları belirleyin. 
 
-- **Syntex modeli kullanımı** – Sitelerinizdeki SharePoint Syntex modellerinin geçerli kullanımını gözden geçirin. 
+- **Syntex modeli kullanımı** – Sitelerinizde Syntex modellerinin geçerli kullanımını gözden geçirin. 
 
 - **Değerlendirmeye genel bakış** – Hataları belirlemek için değerlendirme sonuçlarını gözden geçirin. 
 
 ## <a name="run-the-assessment"></a>Değerlendirmeyi çalıştırma
 
-SharePoint Syntex değerlendirmesi, Microsoft 365 Değerlendirme aracındaki bir modüldür. Değerlendirmeyi çalıştırmak için: 
+Syntex değerlendirmesi, Microsoft 365 Değerlendirme aracındaki bir modüldür. Değerlendirmeyi çalıştırmak için: 
 
 1. Daha fazla bilgi edinmek için [Microsoft 365 Değerlendirme aracı belgelerini ziyaret edin](https://pnp.github.io/pnpassessment/index.html) .
 
@@ -67,5 +67,5 @@ SharePoint Syntex değerlendirmesi, Microsoft 365 Değerlendirme aracındaki bir
 
 4. [İzinleri yapılandırın](https://pnp.github.io/pnpassessment/sharepoint-syntex/requirements.html). 
 
-5. [bir SharePoint Syntex değerlendirmesi çalıştırın](https://pnp.github.io/pnpassessment/sharepoint-syntex/assess.html). 
+5. [Syntex değerlendirmesi çalıştırın](https://pnp.github.io/pnpassessment/sharepoint-syntex/assess.html). 
 

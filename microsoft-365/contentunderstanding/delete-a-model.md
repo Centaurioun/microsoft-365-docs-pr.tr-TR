@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex'da modeli silme
+title: Microsoft Syntex'te model silme
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex'da belge anlama modelini silmeyi öğrenin.
-ms.openlocfilehash: 66360c99f1316dfdc046d3fed971b11d53b97326
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+description: Microsoft Syntex'te belge anlama modelini silmeyi öğrenin.
+ms.openlocfilehash: 776cdadafc5fffe0cea42a2cf99ac229b0e38c74
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67570215"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547455"
 ---
-# <a name="delete-a-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da modeli silme
+# <a name="delete-a-model-in-microsoft-syntex"></a>Microsoft Syntex'te model silme
 
 Bir noktada, belge anlama modelini veya önceden oluşturulmuş modeli silmek isteyebilirsiniz. Modeli silmeden önce, modeli uygulandığı tüm SharePoint belge kitaplıklarından kaldırmanız gerekir.
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex için senaryolar ve kullanım SharePoint Syntex
+title: Microsoft Syntex için senaryolar ve kullanım örnekleri
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -7,136 +7,136 @@ ms.reviewer: lauris
 ms.date: ''
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.custom: Adopt
 search.appverid: ''
 ms.localizationpriority: medium
-description: Bir veya daha fazla SharePoint Syntex ilgili iş senaryolarını bulun.
-ms.openlocfilehash: c5af826396d4b53dd84c36f8af599344fd5fb2ba
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+description: Kuruluşunuzda Microsoft Syntex'i kullanma hakkında iş senaryoları bulun.
+ms.openlocfilehash: 66cb9eeb572be506b246275a6e609d395c70a48e
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475641"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547850"
 ---
-# <a name="scenarios-and-use-cases-for-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex için senaryolar ve kullanım SharePoint Syntex
+# <a name="scenarios-and-use-cases-for-microsoft-syntex"></a>Microsoft Syntex için senaryolar ve kullanım örnekleri
 
-Aşağıdaki örnek senaryoları kullanarak, organizasyonda işlerinizi nasıl kullanabileceğiniz hakkında SharePoint Syntex fikirler istensin.
+Kuruluşunuzda Microsoft Syntex'i nasıl kullanabileceğiniz hakkında fikir istemi göndermek için aşağıdaki örnek senaryoları kullanın.
 
 - [Senaryo: Form işleme ile faturalardan verileri izleme](adoption-scenarios.md#scenario-track-data-from-invoices-with-form-processing)
-- [Senaryo: Belgeyi anlama ile sözleşmelerden bilgileri izleme](adoption-scenarios.md#scenario-track-information-from-contracts-with-document-understanding)
-- [Senaryo: Temel alan kayıt yönetimi, belge yönetimi ve uyumluluk süreçleriyle ilgili risklerden SharePoint Syntex](adoption-scenarios.md#scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex)
+- [Senaryo: Belge anlama ile sözleşmelerden bilgileri izleme](adoption-scenarios.md#scenario-track-information-from-contracts-with-document-understanding)
+- [Senaryo: Syntex tabanlı kayıt yönetimi, belge idaresi ve uyumluluk süreçlerinde riskten kaçının](adoption-scenarios.md#scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-syntex)
 - [Senaryo: Daha önce erişilemeyen belgelerden bilgi yakalama](adoption-scenarios.md#scenario-capture-information-from-previously-inaccessible-documents)
-- [Senaryo: Öngörüler ve çözümlemeler sağlamak için veri işlemeyi geliştirme](adoption-scenarios.md#scenario-improve-data-processing-to-provide-insights-and-analytics)
+- [Senaryo: İçgörüler ve analizler sağlamak için veri işlemeyi geliştirme](adoption-scenarios.md#scenario-improve-data-processing-to-provide-insights-and-analytics)
 - [Senaryo: Sipariş işlemeyi otomatikleştirme](adoption-scenarios.md#scenario-automate-order-processing)
-- [Senaryo: Visa yenileme işlemini basitleştirme](adoption-scenarios.md#scenario-simplify-visa-renewal-process)
+- [Senaryo: Vize yenileme sürecini basitleştirme](adoption-scenarios.md#scenario-simplify-visa-renewal-process)
 
 ## <a name="scenario-track-data-from-invoices-with-form-processing"></a>Senaryo: Form işleme ile faturalardan verileri izleme
 
-Örneğin, faturaları izlemek ve izlemek için faturalara SharePoint Syntex özellikleri Power Automate bir süreç kurebilirsiniz.
+Örneğin, faturaları izlemek ve izlemek için Syntex ve Power Automate özelliklerini kullanarak bir işlem ayarlayabilirsiniz.
 
 1. Fatura belgelerini depolamak için bir kitaplık ayarlayın.
-1. Modeli, belgelerde yer alan alanları tanıyacak şekilde eğitin.
-1. Listede izlemek istediğiniz alanları ayıkla.
-1. Belirli olayları size bildirmek için bir akış ayarlama; örneğin:
+1. Belgelerdeki alanları tanımak için modeli eğitin.
+1. İzlemek istediğiniz alanları bir listeye ayıklayın.
+1. Aşağıdakiler gibi belirli olaylar için size bildirimde bulunacak bir akış ayarlayın:
     - Yeni bir fatura eklenir.
-    - Faturanın son tarihi geçmiş.
-    - Fatura, otomatik onay tutarınıza göre daha büyük bir tutardır.
+    - Faturanın son tarihi geçmiştir.
+    - Fatura, otomatik onay tutarınızdan daha büyük bir tutara yöneliktir.
 
-![Faturalara faturalar, faturalar SharePoint Syntex ve fatura Power Automate.](../media/content-understanding/process-invoices-flow.png)
+![Syntex ve Power Automate ile faturaları izleyin ve izleyin.](../media/content-understanding/process-invoices-flow.png)
 
-Bu senaryoyu otomatik hale zaman şu şekilde oluşturabilirsiniz:
+Bu senaryoyı otomatikleştirdiğinizde şunları yapabilirsiniz:
 
-- Faturalardan verileri elle yapmak yerine otomatik olarak ayıklaarak zaman ve paradan tasarruf edebilirsiniz.
-- Olası hataları azaltmak ve iş akışlarını kullanarak faturaları kontrol etmek ve sorunları size bildirmek için daha iyi uyumluluk sağlayın.
+- Verileri el ile yapmak yerine otomatik olarak faturalardan ayıklayarak zamandan ve paradan tasarruf edin.
+- Faturaları denetlemek ve sorunları size bildirmek için iş akışlarını kullanarak olası hataları azaltın ve daha iyi uyumluluk sağlayın.
 
-## <a name="scenario-track-information-from-contracts-with-document-understanding"></a>Senaryo: Belgeyi anlama ile sözleşmelerden bilgileri izleme
+## <a name="scenario-track-information-from-contracts-with-document-understanding"></a>Senaryo: Belge anlama ile sözleşmelerden bilgileri izleme
 
-Başka bir örnek olarak, şirketinizin diğer şirketlerle veya bireylerle olan sözleşmelerini belirlemek için bir süreç de hazırlanmıştır. Müşteri adı, ücretler, tarihler veya diğer önemli bilgiler gibi söz konusu sözleşmelerden önemli bilgileri ayıklayacak bir model ayarlayın ve bilgileri hızla görüntü spor alanı olarak kitaplıklara ekleyin. İşle ilgili yasal düzenlemelere uygun uyumluluk için sözleşmelerin belirli bir süre öncesinde silinemeden önce silinemeden emin olmak için belge kitaplığına bir bekletme etiketi ekleyin.
+Başka bir örnek olarak, şirketinizin diğer şirketler veya bireylerle olan sözleşmelerini belirlemek için bir süreç ayarlayabilirsiniz. Bu sözleşmelerden müşteri adı, ücretler, tarihler veya diğer önemli bilgiler gibi önemli bilgileri ayıklamak için bir model ayarlayın ve bilgileri hızla görüntüleyebileceğiniz alanlar olarak kitaplığa ekleyin. İş düzenlemelerinize uygun uyumluluk için sözleşmelerin belirli bir süreden önce silinemeden önce silinemeden emin olmak için belge kitaplığına bir bekletme etiketi uygulayın.
 
-1. İçerik merkezinden başlar ve sözleşmeler için yeni bir belge anlama modeli oluşturun.
-1. Upload ve negatif örnekler için örnek belgeleri gözden geçirmek, sonra sözleşme belgelerini tanımlamak ve sonuçları gözden geçirmek için eğitimi çalıştırın.
-1. Ayıklayı, sözleşmelerde müşteri adı, ücret ve tarih gibi alanları tanımlaması için eğitin ve sonra ayıklayı test etmek için.
-1. Model tamamlandıktan sonra, modeli sözleşmeler yükley yeri olan kitaplı kitaplıya uygulayabilirsiniz.
-1. Sözleşmelerin gereken süre boyunca kitaplıkta tutulması için tarih alanına bir bekletme etiketi uygulayabilirsiniz.
+1. İçerik merkezinden başlayın ve sözleşmeler için yeni bir belge anlama modeli oluşturun.
+1. Pozitif ve negatif örnekler için örnek belgeleri karşıya yükleyin, ardından sözleşme belgelerini tanımlamak ve sonuçları gözden geçirmek için eğitimi çalıştırın.
+1. Ayıklayıcıyı sözleşmelerdeki alanları (istemci adı, ücret ve tarih gibi) belirleyecek şekilde eğitin ve ayıklayıcıyı test edin.
+1. Model tamamlandığında, modeli sözleşmeleri karşıya yükleyebileceğiniz bir kitaplığa uygulayın.
+1. Sözleşmelerin gerekli süre boyunca kitaplıkta tutulması için tarih alanına bir bekletme etiketi uygulayın.
 
-![Sözleşme ve bekletme etiketleriyle SharePoint Syntex ve takip edin.](../media/content-understanding/process-contracts-flow.png)
+![Syntex ve bekletme etiketleriyle sözleşmeleri izleyin ve izleyin.](../media/content-understanding/process-contracts-flow.png)
 
-Bu senaryoyu otomatik hale zaman şu şekilde oluşturabilirsiniz:
+Bu senaryoyı otomatikleştirdiğinizde şunları yapabilirsiniz:
 
-- Sözleşmelerde el ile yapmak yerine verileri otomatik olarak ayıklaarak zaman ve paradan tasarruf edebilirsiniz.
-- Sözleşmelerin uygun şekilde korun olduğundan emin olmak için bekletme etiketlerini kullanarak daha iyi uyumluluk sağlayın.
+- Sözleşmelerden verileri el ile yapmak yerine otomatik olarak ayıklayarak zamandan ve paradan tasarruf edin.
+- Sözleşmelerin uygun şekilde korunmasını sağlamak için bekletme etiketlerini kullanarak daha iyi uyumluluk sağlayın.
 
-## <a name="scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex"></a>Senaryo: Temel alan kayıt yönetimi, belge yönetimi ve uyumluluk süreçleriyle ilgili risklerden SharePoint Syntex
+## <a name="scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-syntex"></a>Senaryo: Syntex tabanlı kayıt yönetimi, belge idaresi ve uyumluluk süreçlerinde riskten kaçının
 
-Riskleri azaltma, çoğu şirket için ortak bir hedeftir. Size gerekenler:
+Risklerin azaltılması çoğu şirket için ortak bir hedeftir. Aşağıdakilere ihtiyacınız olabilir:
 
-- Kiracınız genelinde bilgi idaresi sağlamanın/zorunlu kılınmanın daha iyi bir yolu.
-- Projelerde belgelerin, e-postaların ve diğer iletişim formlarının sınıflandırması için sistemi geliştirmek için "kayıtlar" olarak düşünülmelidir.
-- Şirket ilkelerine uyumluluğu sağlamak için makbuzları, sözleşmeleri ve diğer faturaları denetleme.
+- Kiracınız genelinde bilgi idaresi sağlamanın/zorlamanın daha iyi bir yolu.
+- Belgeleri, e-postaları ve projeler için 'kayıtlar' olarak kabul edilen diğer iletişim biçimlerini sınıflandırma sistemini geliştirmek.
+- Makbuzları, sözleşmeleri vb. denetlemek, şirket ilkeleriyle uyumluluğu sağlamak.
 - Projelerin uyumluluk için gereken tüm belgelere sahip olduğundan emin olmak için.
 
-Daha iyi yönetim gereken belgeleri ve formları SharePoint Syntex şekilde sınıflandırmak, denetlemek ve bayrakla bayrakla sınıflandırmak için bu belgelere uyumluluk için bazı süreçler ayarlayın. Son kullanıcılardan el ile etiketlemek için SharePoint Syntex ve yönetim kurallarını ve arşivlemeyi el ile uygulamak için uyumluluk ekibine güvenmek yerine, içeriği otomatik olarak sınıflandırmak için E-postalara güvenebilirsiniz. Ayrıca, basitleştirilmiş bir arama deneyimini etkinleştirebilirsiniz, veri hacimlerini yönetebilir, kayıt yönetimi ve bekletme ilkeleri uygulayabilir, uyumluluktan emin olabilir ve en iyi arşivleme ve temizleme uygulamalarını uygulayabilirsiniz.
+Daha iyi idare gerektiren belgeleri ve formları yakalamak ve uygun şekilde sınıflandırmak, denetlemek ve işaretlemek için Syntex ile uyumluluk için bazı süreçler ayarlayın. İçeriği el ile etiketlemek için son kullanıcılara güvenmek yerine içeriği otomatik olarak sınıflandırmak için Syntex'e veya idare kurallarını ve arşivlemeyi el ile uygulamak için uyumluluk ekibine güvenebilirsiniz. Ayrıca basitleştirilmiş bir arama deneyimini etkinleştirebilir, veri birimlerini yönetebilir, kayıt yönetimi ve bekletme ilkeleri uygulayabilir, uyumluluğu sağlayabilir ve arşivleme ve temizleme yöntemlerini en iyi şekilde uygulayabilirsiniz.
 
-Bu senaryoyu otomatik hale geldiğinde şunların güvenli olduğunu hissedin:
+Bu senaryoyı otomatikleştirdiğinizde şunların güvenliğini sağlayabilirsiniz:
 
-- Uyumluluktan yarar vardır ve risk azaltıldı.
-- Taksonomi ve kayıt yönetimi tutarlı ve doğru bir şekilde uygulanır.
-- İçerik hacimleri denetlenr.
-- Çalışanlar doğru bağlamda doğru bilgileri kolayca keşfedebilir.
+- Uyumluluk sağlanır ve risk azalır.
+- Taksonomi ve kayıt yönetimi tutarlı ve doğru şekilde uygulanır.
+- İçerik birimleri denetleniyor.
+- Çalışanlar doğru bağlamda doğru bilgileri kolayca bulabilir.
 
 ## <a name="scenario-capture-information-from-previously-inaccessible-documents"></a>Senaryo: Daha önce erişilemeyen belgelerden bilgi yakalama
 
-Çoğu kuruluşun, yasal belgeler, ilkeler, sözleşmeler, İk belgeleri ve yönetim yönergeleri için büyük depoları vardır. Projeler, nedenler, temalar, kişiler, coğrafi alanlar gibi değerli bilgileri ayıklamak için bu veri depolarına veri verilerim.
+Çoğu kuruluşta büyük yasal belgeler, ilkeler, sözleşmeler, İk belgeleri ve idare yönergeleri depoları vardır. Projeler, sektörler, temalar, insanlar, coğrafi alanlar vb. gibi değerli bilgileri ayıklamak için bu veri depolarını mayınlayın.
 
-Örneğin bir İk yöneticisinin özgeçmişler, İk ilkeleri ve diğer formlar dahil olmak üzere tüm İk belgelerine hızla erişmesi gerekiyor. Özgeçmişler ve İk ile ilgili diğer belgelerle ilgili gerekli bilgileri belgelere el ile atmadan tanımlamak da istiyor. Kullanıcılar çeşitli sitelere yayılmış binlerce özgeçmişe, İk ilkelerine ve diğer belgelere el ile bakmak zorunda kalmadan ihtiyaçları olan bilgileri hızla bulmalarını sağlayan bir çözüm arıyor.
+Örneğin, bir İk yöneticisinin özgeçmişler, İk ilkeleri ve diğer formlar da dahil olmak üzere tüm İk belgelerine hızla erişmesi gerekir. Ayrıca özgeçmişlerden ve İk ile ilgili diğer belgelerden gerekli bilgileri belgeler arasında el ile elemeden hızla tanımlamak istiyorlar. Binlerce özgeçmişe, İk ilkesine ve çeşitli sitelere yayılmış olabilecek diğer belgelere el ile bakmak zorunda kalmadan ihtiyaç duydukları bilgileri hızla bulmalarını sağlayan bir çözüm arıyor.
 
-Bu senaryoyu otomatik hale zaman şu şekilde oluşturabilirsiniz:
+Bu senaryoyı otomatikleştirdiğinizde şunları yapabilirsiniz:
 
-- Dijital içerikten bilginin kilidini açın.
-- İk ilkelerini, özgeçmişleri, satış belgelerini, teknik şemaları, hesap planlarını sınıflandırarak bilgileri ayıklar.
-- Bulmak istediğiniz doğru bilgileri veya belgeyi hızla bulun.
-- En son bilgilere anında erişin.
-- Arama sürelerini azaltır.
+- Dijital içerikten bilgilerin kilidini açın.
+- İk ilkelerini, özgeçmişleri, satış belgelerini, teknik şemaları, hesap planlarını sınıflandırıp bilgileri ayıklayın.
+- Aradığınız doğru bilgileri veya belgeyi hızla bulun.
+- En son bilgilere anında erişim elde edin.
+- Arama sürelerini azaltın.
 
-## <a name="scenario-improve-data-processing-to-provide-insights-and-analytics"></a>Senaryo: Öngörüler ve çözümlemeler sağlamak için veri işlemeyi geliştirme
+## <a name="scenario-improve-data-processing-to-provide-insights-and-analytics"></a>Senaryo: İçgörüler ve analizler sağlamak için veri işlemeyi geliştirme
 
-Örneğin, bir farmasötik şirketi, SharePoint Syntex sahip olduğu soruları yanıtlamak için FDA belgelerinden bilgiler almak için şirket tarafından kullanılabilir. Yanıtların daha kolay erişilebilir olmasını sağlamak, bu yanıtları oluşturmak için gereken zamanı azaltabilir ve liderlik sorularına daha doğru yanıtlar oluşturmak için verilerin kullanılabilirliğini artırabilir.
+Örneğin, bir ilaç şirketi syntex kullanarak liderlerinin sorularını yanıtlamak için FDA belgelerinden bilgi ayıklayabilir. Yanıtların daha kolay erişilebilir olması, bu yanıtları üretmek için gereken süreyi kısaltabilir ve liderlik sorularına daha doğru yanıtlar üretmek için verilerin kullanılabilirliğini artırabilir.
 
-Örneğin, bir proje yöneticisinin liderlik ekibimin ürünle ilgili sorulara hızlıca yanıtlar sağlaması gerekiyor. Tek bir birleşik panoda sorgularla ilgili bilgileri ve ölçümleri bulmaları gerekir. Ürün etiketlerinden, ürün kitapçıklarından ve diğer malzemelerden ihtiyaçları olan bilgileri ayıklanan ve liderlik ekibine geri bildirim sunarken kullanabileceği birleştirilmiş bir rapor oluşturan bir çözüm arıyor.
+Örneğin, bir proje yöneticisinin liderlik ekibimden ürünle ilgili sorulara hızlı bir şekilde yanıt sağlaması gerekiyor. Birleştirilmiş bir panoda sorgularla ilgili bilgileri ve ölçümleri bulmaları gerekir. Ürün etiketlerinden, ürün broşürlerinden ve diğer malzemelerden ihtiyaç duydukları bilgileri ayıklayan ve liderlik ekiplerine geri bildirimde bulunurken kullanabilecekleri birleştirilmiş bir rapor oluşturan bir çözüm arıyor.
 
-Bu senaryoyu otomatik hale zaman şu şekilde oluşturabilirsiniz:
+Bu senaryoyı otomatikleştirdiğinizde şunları yapabilirsiniz:
 
-- Yanıtlar üretme süresini azaltır.
-- Verilerin kullanılabilirliğini artırma.
-- Daha doğru yanıtlar sağlama.
+- Yanıt üretme süresini azaltın.
+- Verilerin kullanılabilirliğini artırın.
+- Daha doğru yanıtlar sağlayın.
 
 ## <a name="scenario-automate-order-processing"></a>Senaryo: Sipariş işlemeyi otomatikleştirme
 
-Müşteri SharePoint Syntex ile, müşteri siparişlerinin el ile işleme süresini azaltabilirsiniz. Örneğin, OCR işlemeyi kullanarak faks, e-posta veya kağıttan SharePoint'ye siparişleri yükleyebilir ve ardından otomatik süreçleri kullanarak gerçekleştirilmiş işlemleri gerçekleştirebilirsiniz.
+Syntex ile müşteri siparişlerinin el ile işlenmesi süresini kısaltabilirsiniz. Örneğin, OCR işlemeyi kullanarak faks, e-posta veya kağıttan SharePoint belge kitaplığına sipariş yükleyebilir ve ardından otomatik işlemleri kullanarak yerine getirebilmeniz için bu siparişlerden meta verileri ayıklayabilirsiniz.
 
-Örneğin, bir tedarik zinciri yöneticisi el ile veri girişinin neden olduğu hataları azaltmak istiyor. İş sistemlerine giden hataları azaltmak için gelen müşteri siparişlerinin (kağıt, faks veya e-posta) elle gözden geçirmesini ve veri girişini önlemek istiyor. Gelen sipariş bilgilerini doğrulamak, çekirdek verileri ayıklamak ve sipariş karşılamak ve mutabakat için otomatik olarak ERP sistemine itmek için AI ve makine öğrenme tekniklerini uygular bir çözüm istiyor.
+Örneğin, tedarik zinciri yöneticisi el ile veri girişinin neden olduğu hataları azaltmak ister. İş sistemlerine giden hataları azaltmak için gelen müşteri siparişlerinin (kağıt, faks veya e-posta) el ile gözden geçirilmesini ve veri girişini önlemek istiyorlar. Sipariş karşılama ve mutabakat için gelen sipariş bilgilerini doğrulamak, çekirdek verileri ayıklamak ve otomatik olarak ERP sistemlerine göndermek için yapay zeka ve makine öğrenmesi tekniklerini uygulayan bir çözüm istiyor.
 
-Bu senaryoyu otomatik hale garanti etmek için:
+Bu senaryoyı otomatikleştirdiğinizde şunların yapıldığından emin olabilirsiniz:
 
 - Sipariş ve sevkiyat doğruluğu artar.
-- Sipariş veya sevkiyat hatalarına bağlı ücretler veya kalemler azaltıldı.
-- Faturalamadaki veya ödemelerdeki gecikmeler azalır.
-- Personel maliyetleri azaltıldı.
+- Sipariş veya sevkiyat hatalarıyla ilişkili ücretler veya cezalar azaltılır.
+- Faturalamadaki gecikmeler veya ödemeler azalır.
+- Personel maliyetleri azaltılır.
 
-## <a name="scenario-simplify-visa-renewal-process"></a>Senaryo: Visa yenileme işlemini basitleştirme
+## <a name="scenario-simplify-visa-renewal-process"></a>Senaryo: Vize yenileme sürecini basitleştirme
 
-SharePoint Syntex bilgileri için anımsatıcıları ve yenilemeleri otomatikleştirmenize yardımcı olabilir. Örneğin İk müdürü, çalışanların visas'larının güncel ve/veya zamanında yenilenmesine gerekmektedir. Bu kişiler, kişilerin Visas'larını güncelleştirmek için basit ve sezgisel bir işlem yapmak istiyor. Sözleşmelerden yenileme tarihlerini ayıklatan ve yenileme tarihleri yaklaştığında çalışanlara otomatik olarak anımsatıcılar gönderen bir çözüme ihtiyaçları vardır.
+Syntex, önemli sözleşme bilgileri için anımsatıcıları ve yenilemeleri otomatikleştirmenize yardımcı olabilir. Örneğin, bir İk direktörünün çalışanların vizelerinin güncel ve/veya zamanında yenilenmesini sağlaması gerekir. İnsanlara Vizelerini güncellemek için basit ve sezgisel bir süreç vermek istiyorlar. Sözleşmelerden yenileme tarihlerini ayıklayan ve yenileme tarihleri yaklaştığında çalışanlara otomatik olarak anımsatıcılar gönderen bir çözüme ihtiyaçları vardır.
 
-Bu senaryoyu otomatik hale garanti etmek için:
+Bu senaryoyı otomatikleştirdiğinizde şunların yapıldığından emin olabilirsiniz:
 
-- Uyumluluk dışı düzeyler azaltıldı.
-- Elle anımsatıcıların sayısı azalır.
-- Uyumluluk dışılık ile ilgili ince kuralların sayısı azaltıldı.
+- Uyumsuzluk düzeyleri azaltılır.
+- El ile anımsatıcı sayısı azaltılır.
+- Uyumsuzluk için ceza sayısı azalır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kullanmaya başlayın benimsemeyi SharePoint Syntex](adoption-getstarted.md)
+[Syntex'i benimsemeye başlama](adoption-getstarted.md)

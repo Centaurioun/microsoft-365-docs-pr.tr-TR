@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex'de belge anlamaya genel bakış
+title: Microsoft Syntex'te belge anlamaya genel bakış
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,15 +13,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex'da belge anlama hakkında bilgi edinin.
-ms.openlocfilehash: 345ca5aea2e575c7d893ff225e8d8ec06b9e847d
-ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+description: Microsoft Syntex'te belge anlama hakkında bilgi edinin.
+ms.openlocfilehash: d6b374d55840a53f1d78c22f69deebdbb5d89958
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68300288"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547653"
 ---
-# <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'de belge anlamaya genel bakış
+# <a name="document-understanding-overview-in-microsoft-syntex"></a>Microsoft Syntex'te belge anlamaya genel bakış
 
 
 </br>
@@ -33,7 +33,7 @@ ms.locfileid: "68300288"
 Belge anlama, dosya sınıflandırmasını ve bilgilerin ayıklamasını otomatikleştirmek için yapay zeka (AI) modellerini kullanır. Mektuplar veya sözleşmeler gibi yapılandırılmamış belgelerle en iyi şekilde çalışır. Bu belgelerde tümceciklere veya desenlere göre tanımlanabilen metinler olmalıdır. Tanımlanan metin hem dosyanın türünü (sınıflandırması) hem de ayıklamak istediklerinizi (ayıklayıcıları) tanımlar.
 
 > [!NOTE]
-> Belge anlama senaryosu örnekleri hakkında daha fazla bilgi için [bkz. SharePoint Syntex benimseme: Kullanmaya başlama kılavuzu](./adoption-getstarted.md).
+> Belge anlama senaryosu örnekleri hakkında daha fazla bilgi için [Syntex benimseme: Kullanmaya başlama kılavuzuna](./adoption-getstarted.md) bakın.
 
 Belge anlama modelleri *, içerik merkezi* olarak adlandırılan bir SharePoint sitesi türünde oluşturulur ve yönetilir. Bir SharePoint belge kitaplığına uygulandığında, model ayıklanan bilgileri depolamak için bir içerik türünün sütunlarıyla ilişkilendirilir. Oluşturduğunuz içerik türü SharePoint içerik türü galerisinde depolanır. Ayrıca, şemalarını kullanmak için mevcut içerik türlerini kullanmayı da seçebilirsiniz.
 
@@ -134,4 +134,4 @@ Belge anlama modelleri, aşağıdakiler de dahil olmak üzere *tüm* Latin taban
   
 [Form işlemeye genel bakış](form-processing-overview.md)
 
-[erişilebilirlik modunu SharePoint Syntex](accessibility-mode.md)
+[Syntex erişilebilirlik modu](accessibility-mode.md)

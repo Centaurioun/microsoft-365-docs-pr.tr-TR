@@ -11,10 +11,13 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
+- highpri
 - SPO_Content
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MOE150
 - MET150
@@ -22,12 +25,12 @@ description: Microsoft Purview Bilgi Koruması duyarlılık etiketlerinin, depol
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 97c507a9e3cae483018254a150bb9f8b2689dbf9
-ms.sourcegitcommit: d60d78e6a05845747af0ad25131c7e526d58064d
+ms.openlocfilehash: bb3f26d4d4e516b95000339221a6d144db1d6cc8
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67498471"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547631"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Duyarlılık etiketleri hakkında bilgi edinin
 
@@ -74,6 +77,8 @@ Duyarlılık etiketlerini şu amaçlarla kullanabilirsiniz:
 Tüm bu durumlarda, Microsoft Purview'un duyarlılık etiketleri doğru içerik üzerinde doğru eylemleri gerçekleştirmenize yardımcı olabilir. Duyarlılık etiketleriyle, kuruluşunuz genelinde verileri sınıflandırabilir ve bu sınıflandırmaya göre koruma ayarlarını zorunlu kılabilirsiniz. Bu koruma daha sonra içerikle birlikte kalır.
 
 Bunlar ve duyarlılık etiketleri tarafından desteklenen diğer senaryolar hakkında daha fazla bilgi için bkz. [Duyarlılık etiketleri için yaygın senaryolar](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). Duyarlılık etiketlerini destekleyen her zaman yeni özellikler geliştiriliyor, bu nedenle [Microsoft 365 yol haritasını](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) denetlemeyi de yararlı bulabilirsiniz.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="what-a-sensitivity-label-is"></a>Duyarlılık etiketi nedir?
 
@@ -160,9 +165,9 @@ Ancak alt etiketlerin sırası [otomatik etiketleme](apply-sensitivity-label-aut
 
 Alt etiketleri kullanarak, bir veya daha fazla etiketi, kullanıcının bir Office uygulamasında gördüğü bir üst etiket altında gruplandırabilirsiniz. Örneğin, kuruluşunuz gizli sınıflandırmasının belirli türlerine uygun birkaç farklı etiketi Gizli üst etiketi altında kullanabilir. Bu örnekte, Gizli üst etiketi yalnızca koruma ayarı olmayan bir metin etiketidir ve alt etiketleri olduğundan içeriğe uygulanamaz. Bunun yerine, kullanıcıların alt etiketlerini görüntülemek için Gizli'yi seçmesi gerekir ve ardından içeriğe uygulanacak bir alt etiket seçebilirler.
 
-Alt etiketler, etiketleri kullanıcılara mantıksal gruplar altında sunmanın basit bir yoludur. Alt etiketler bağlı oldukları üst etiketteki ayarları devralmaz. Bir kullanıcı için alt etiket yayımladığınızda, bu kullanıcı ilgili alt etiketi içeriğe uygulayabilir ancak yalnızca üst etikete uygulayamaz.
+Alt etiketler, etiketleri kullanıcılara mantıksal gruplar altında sunmanın basit bir yoludur. Alt etiketler, etiket renkleri dışında üst etiketlerinden hiçbir ayarı devralmaz. Bir kullanıcı için bir alt etiket yayımladığınızda, bu kullanıcı bu alt etiketi içeriğe ve kapsayıcılara uygulayabilir, ancak yalnızca üst etiketi uygulayamaz.
 
-Varsayılan etiket olarak bir üst etiket seçmeyin veya bir üst etiketi otomatik olarak uygulanacak (veya önerilen) şekilde yapılandırmayın. Bunu yaparsanız, üst etiket içeriğe uygulanmaz.
+Varsayılan etiket olarak bir üst etiket seçmeyin veya bir üst etiketi otomatik olarak uygulanacak (veya önerilen) şekilde yapılandırmayın. Bunu yaparsanız, üst etiket uygulanamaz.
 
 Alt etiketlemelerin kullanıcılar için nasıl görüntülendiğine ilişkin örnek:
 
@@ -245,9 +250,9 @@ Benzer şekilde, üçüncü ilkeye ayrı ayarlarla atanan hukuk departmanındaki
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>Duyarlılık etiketleri ve Azure Information Protection
 
-Windows, macOS, iOS ve Android'de Microsoft 365 Uygulamaları yerleşik olarak bulunan duyarlılık etiketleri, kullanıcılara tutarlı bir etiketleme deneyimi sağlamak için bu cihazlarda çok benzer şekilde görünür ve davranır. Ancak Windows bilgisayarlarda [Azure Information Protection (AIP) istemcisini](/azure/information-protection/rms-client/aip-clientv2) de kullanabilirsiniz. Bu istemci artık [bakım modunda](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613).
+Windows, macOS, iOS ve Android'de Microsoft 365 Uygulamaları yerleşik olarak bulunan duyarlılık etiketleri, kullanıcılara tutarlı bir etiketleme deneyimi sağlamak için bu cihazlarda çok benzer şekilde görünür ve davranır. Ancak Windows bilgisayarlarda [Azure Information Protection (AIP) istemcisini](/azure/information-protection/rms-client/aip-clientv2) de kullanabilirsiniz. Bu istemci artık [bakım modundadır](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613) ve yüklendiğinde artık en son Office uygulamaları için varsayılan etiketleme istemcisi değildir.
 
-AIP istemcisini kullanıyorsanız bkz. Windows bilgisayarlar için etiketleme seçeneklerinizi anlamak ve yönetmek [için Office uygulamaları için AIP eklentisi yerine yerleşik etiketlemeyi neden seçmelisiniz](sensitivity-labels-aip.md) ?
+Office uygulamalarında etiketleme için AIP istemcisini kullanıyorsanız, yerleşik etiketlemeye geçmenizi öneririz. Daha fazla bilgi için bkz. [Azure Information Protection (AIP) eklentisini Office uygulamaları için yerleşik etiketlemeye geçirme](sensitivity-labels-aip.md).
 
 ### <a name="azure-information-protection-labels"></a>Azure Information Protection etiketleri
 

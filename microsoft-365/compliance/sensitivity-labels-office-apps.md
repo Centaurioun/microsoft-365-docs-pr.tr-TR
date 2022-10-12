@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: MASAÜSTÜ, mobil ve web için Office uygulamalarında duyarlılık etiketlerini yönetmek için BT yöneticilerine yönelik bilgiler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 46008cae997bd71a9c5d165226a728a011d7f058
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 939aa04f9326e202610887c52111ae8c5c58b66d
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/12/2022
-ms.locfileid: "68542551"
+ms.locfileid: "68546863"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office uygulamalarında duyarlılık etiketlerini yönetme
 
@@ -39,15 +39,20 @@ Office uygulamalarında duyarlılık etiketlerini başarıyla yönetmenize yard�
 
 Windows ve Mac için Office masaüstü uygulamalarında yerleşik olarak bulunan duyarlılık etiketlerini kullanmak için Office'in abonelik sürümünü kullanmanız gerekir. Bu etiketleme istemcisi, Office'in bazen "Office Perpetual" olarak adlandırılan tek başına sürümlerini desteklemez.
 
-Office'in abonelik sürümleri için Kurumlar için Microsoft 365 Uygulamaları yükseltemiyorsanız, yalnızca Windows bilgisayarları için [Azure Information Protection (AIP) birleşik etiketleme istemcisini](/azure/information-protection/rms-client/aip-clientv2) kullanabilirsiniz. Ancak, bu istemci artık [bakım modundadır](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613) ve gerekmedikçe Office uygulamaları için AIP eklentisini kullanmanızı önermeyiz. Daha fazla bilgi için bkz. [Office uygulamaları için AIP eklentisi yerine neden yerleşik etiketlemeyi seçmelisiniz](sensitivity-labels-aip.md)?
+[Azure Information Protection (AIP) birleşik etiketleme istemcisi](/azure/information-protection/rms-client/aip-clientv2) artık [bakım modundadır](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613). Şu anda bu istemciyi Office uygulamalarında etiketleme için kullanıyorsanız, yerleşik etiketlemeye geçmenizi öneririz. Daha fazla bilgi için bkz. [Azure Information Protection (AIP) eklentisini Office uygulamaları için yerleşik etiketlemeye geçirme](sensitivity-labels-aip.md).
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Uygulamalarda duyarlılık etiketi özellikleri desteği
 
-Aşağıdaki tablolarda, Office uygulamalarında yerleşik olarak bulunan duyarlılık etiketlerine yönelik belirli özelliklerin sunulduğu en düşük Office sürümü listelenir. Ya da etiket özelliği genel önizlemedeyse veya gelecekteki bir sürüm için gözden geçiriliyorsa. Gelecek sürümler için planlanan yeni özelliklerle ilgili ayrıntılar için [Microsoft 365 yol haritasını](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) kullanın.
+Aşağıdaki tablolarda, Office uygulamalarında yerleşik olarak bulunan duyarlılık etiketlerine yönelik belirli özelliklerin sunulduğu en düşük Office sürümü listelenir. Ya da etiket özelliği genel önizleme aşamasındaysa veya gelecek bir sürüm için gözden geçiriliyorsa:
+
+- Tablo: [Word, Excel ve PowerPoint'teki duyarlılık etiketi özellikleri](#sensitivity-label-capabilities-in-word-excel-and-powerpoint)
+- Tablo: [Outlook'ta duyarlılık etiketi özellikleri](#sensitivity-label-capabilities-in-outlook)
+
+Gelecek sürümler için planlanan yeni özelliklerle ilgili ayrıntılar için [Microsoft 365 yol haritasını](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) kullanın.
 
 Office uygulamalarının yeni sürümleri farklı güncelleştirme kanalları için farklı zamanlarda kullanıma sunulur. Windows için yeni özellikleri daha önce Kurumsal Kanal yerine Geçerli Kanal veya Aylık Kurumsal Kanal'da Semi-Annual edineceksiniz. En düşük sürüm numaraları bir güncelleştirme kanalından diğerine de farklı olabilir. Daha fazla bilgi için bkz[. Microsoft 365 Uygulamaları güncelleştirme kanallarına genel bakış](/deployoffice/overview-update-channels) ve [Microsoft 365 Uygulamaları için Güncelleştirme geçmişi](/officeupdates/update-history-microsoft365-apps-by-date).
 
-Özel önizlemedeki yeni özellikler tabloya dahil değildir, ancak kuruluşunuzu [Microsoft Bilgi Koruması özel önizleme programına](https://aka.ms/mip-preview) aday göstererek bu önizlemelere katılabilirsiniz.
+Özel önizlemedeki yeni özellikler tablolara dahil değildir, ancak kuruluşunuzu [Microsoft Bilgi Koruması özel önizleme programına](https://aka.ms/mip-preview) aday göstererek bu önizlemelere katılabilirsiniz.
 
 iOS ve Android için Office için Office: Duyarlılık etiketleri [Office uygulamasında](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/) yerleşik olarak bulunur.
 
@@ -65,6 +70,7 @@ Listelenen sayılar, her özellik için gereken en düşük Office uygulaması s
  
 |Yeteneği |Windows |Mac |iOS |Android |Web |
 |-----------|-------:|----|----|--------|----|
+|[AIP eklentisi varsayılan olarak devre dışı bırakıldı](sensitivity-labels-aip.md#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in)| Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım | İlgili değil  | İlgili değil | İlgili değil| İlgili değil |
 |[Etiketi el ile uygulama, değiştirme veya kaldırma](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Çok dilli destek](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | İnceleme altında |
 |Yeni belgelere [varsayılan etiket uygulama](sensitivity-labels.md#what-label-policies-can-do)                                         | Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
@@ -93,6 +99,7 @@ Listelenen sayılar, her özellik için gereken en düşük Office uygulaması s
 
 |Yeteneği |Windows için Outlook |Mac için Outlook |iOS üzerinde Outlook |Android üzerinde Outlook |Web üzerinde Outlook |
 |-----------|-------------------:|----------------|---------------|-------------------|-------------------|
+|[AIP eklentisi varsayılan olarak devre dışı bırakıldı](sensitivity-labels-aip.md#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in)| Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım | İlgili değil  | İlgili değil | İlgili değil| İlgili değil |
 |[Etiketi el ile uygulama, değiştirme veya kaldırma](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Evet               |
 |[Çok dilli destek](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+ | 4.7.1+ | 4.0.39+ | Evet |
 |[Varsayılan etiket uygulama](sensitivity-labels.md#what-label-policies-can-do)                                         | Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Evet               |
@@ -118,12 +125,12 @@ Listelenen sayılar, her özellik için gereken en düşük Office uygulaması s
 
 ## <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office yerleşik etiketleme istemcisi ve Azure Information Protection istemcisi
 
-Kullanıcıların Windows bilgisayarlarında [Azure Information Protection (AIP) istemcisi](/azure/information-protection/rms-client/aip-clientv2) yüklüyse, yerleşik etiketler varsayılan olarak [kendilerini destekleyen Windows Office uygulamalarında](#labeling-client-for-desktop-apps) kapatılır. Yerleşik etiketler, AIP istemcisi tarafından kullanılan bir Office eklentisini kullanmadığından, daha fazla kararlılık ve daha iyi performans avantajına sahiptir. Ayrıca gelişmiş sınıflandırıcılar gibi en son özellikleri de destekler. 
+Kullanıcıların Windows bilgisayarlarında [Azure Information Protection (AIP) istemcisi](/azure/information-protection/rms-client/aip-clientv2) yüklüyse, yerleşik etiketler [etiketlemeyi destekleyen](#labeling-client-for-desktop-apps) en son Windows Office uygulamaları için yeni varsayılan etiketlerdir. Yerleşik etiketler, AIP istemcisi tarafından kullanılan bir Office eklentisini kullanmadığından, daha fazla kararlılık ve daha iyi performans avantajına sahiptir. Ayrıca gelişmiş sınıflandırıcılar gibi en son özellikleri de destekler.
 
 > [!NOTE]
-> Windows bilgisayarlarda beklediğiniz etiketleme özelliklerini görmüyorsanız, Office güncelleştirme kanalınız için desteklenen en düşük sürümleri onaylamanıza rağmen, bunun nedeni [AIP eklentisini devre dışı bırakmanız](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps) gerekebilir.
+> Windows bilgisayarlarda beklediğiniz etiketleme özelliklerini görmüyorsanız, Office güncelleştirme kanalınız için desteklenen en düşük sürümleri onaylamanıza rağmen, bunun nedeni Office'in eski sürümleri için [AIP eklentisini devre dışı bırakmanız](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps) gerekebilir.
 
-AIP istemcisiyle etiketleme desteği hakkında daha fazla bilgi edinmek ve bu istemciyi yalnızca Office uygulamalarında devre dışı bırakma hakkında daha fazla bilgi edinmek için bkz. [Office uygulamaları için AIP eklentisi yerine yerleşik etiketlemeyi seçme](sensitivity-labels-aip.md).
+AIP istemcisiyle etiketleme desteği hakkında daha fazla bilgi edinmek ve bu istemciyi yalnızca Office uygulamalarında devre dışı bırakma hakkında daha fazla bilgi edinmek için bkz. [Azure Information Protection (AIP) eklentisini Office uygulamaları için yerleşik etiketlemeye geçirme](sensitivity-labels-aip.md).
 
 ## <a name="if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows"></a>Windows'da Office uygulamalarında yerleşik etiketlemeyi kapatmanız gerekiyorsa
 

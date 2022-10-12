@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex'da form işlemeye genel bakış
+title: Microsoft Syntex'te form işlemeye genel bakış
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,26 +12,26 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex'da form işleme modelleri oluşturmak için AI Build'i kullanmayı öğrenin.
-ms.openlocfilehash: 327a8b91842f032a1176ab32e84b3f568079e8d2
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+description: Microsoft Syntex'te form işleme modelleri oluşturmak için Yapay Zeka Derlemesi'ni kullanmayı öğrenin.
+ms.openlocfilehash: a29ab194f42331218bf75671cfb776c706d2ee46
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812512"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547521"
 ---
-# <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da form işlemeye genel bakış
+# <a name="form-processing-overview-in-microsoft-syntex"></a>Microsoft Syntex'te form işlemeye genel bakış
 
  ![AI Builder.](../media/content-understanding/ai-builder.png)</br>
 
-Microsoft SharePoint Syntex, SharePoint belge kitaplıkları içinde model oluşturmak için Microsoft Power Apps [AI Builder](/ai-builder/overview) form işlemeyi kullanır.
+Microsoft Syntex, SharePoint belge kitaplıkları içinde model oluşturmak için Microsoft Power Apps [AI Builder](/ai-builder/overview) form işlemeyi kullanır.
 
 Formlar ve faturalar gibi yapılandırılmış veya yarı yapılandırılmış belgelerden anahtar-değer çiftlerini ve tablo verilerini tanımlamak ve ayıklamak için makine öğrenmesi teknolojisini kullanan yapay zeka modelleri oluşturmak için AI Builder form işlemeyi kullanabilirsiniz.
 
 Kuruluşlar genellikle posta, faks ve e-posta gibi çeşitli kaynaklardan büyük miktarlarda fatura alır. Bu belgelerin işlenmesi ve veritabanına el ile girilmesi önemli ölçüde zaman alabilir. Belgelerinizdeki metinleri, anahtar/değer çiftlerini ve tabloları ayıklamak için yapay zeka kullanarak form işleme bu işlemi otomatikleştirir. 
 
 > [!NOTE]
-> Form işleme senaryosu örnekleri hakkında daha fazla bilgi için [bkz. SharePoint Syntex benimseme: Kullanmaya başlama kılavuzu](./adoption-getstarted.md).
+> Form işleme senaryosu örnekleri hakkında daha fazla bilgi için [Syntex benimseme: Kullanmaya başlama kılavuzuna](./adoption-getstarted.md) bakın.
 
 Örneğin, belge kitaplığına yüklenen tüm satınalma siparişi belgelerini tanımlayan bir form işleme modeli oluşturabilirsiniz. Her satın alma siparişinden, *po numarası*, *tarih* veya *toplam maliyet* gibi sizin için önemli olan belirli verileri ayıklayabilir ve görüntüleyebilirsiniz.
 
@@ -53,7 +53,7 @@ Form işleme, belgeleri 73'ten fazla dilde destekler. Dillerin listesi için bkz
 
 ## <a name="multi-geo-environments"></a>Multi-Geo ortamları
 
-[Microsoft 365 Multi-Geo ortamında](../enterprise/microsoft-365-multi-geo.md) SharePoint Syntex ayarlarken, bunu yalnızca merkezi konumda form işlemeyi kullanacak şekilde yapılandırabilirsiniz. Form işlemeyi bir uydu konumunda kullanmak istiyorsanız Microsoft desteğine başvurun.
+[Bir Microsoft 365 Multi-Geo ortamında](../enterprise/microsoft-365-multi-geo.md) Syntex'i ayarlarken, bunu yalnızca merkezi konumda form işlemeyi kullanacak şekilde yapılandırabilirsiniz. Form işlemeyi bir uydu konumunda kullanmak istiyorsanız Microsoft desteğine başvurun.
 
 ## <a name="custom-environments"></a>Özel ortamlar
 

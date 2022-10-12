@@ -1,11 +1,11 @@
 ---
-title: SharePoint Syntex resim etiketleme
+title: Microsoft Syntex'te görüntü etiketleme
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.custom: admindeeplinkMAC
 search.appverid: ''
 ms.collection:
@@ -13,19 +13,19 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: SharePoint Syntex'de resim etiketleme hakkında bilgi edinin
-ms.openlocfilehash: e0b9b1669efb069942b81aaad7fb5e7e3aa57c1c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+description: Microsoft Syntex'te görüntü etiketleme hakkında bilgi edinin.
+ms.openlocfilehash: 7d125fafc0667456a4a0345305baddca4aeecf8b
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415892"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547368"
 ---
-# <a name="image-tagging-in-sharepoint-syntex"></a>SharePoint Syntex resim etiketleme
+# <a name="image-tagging-in-microsoft-syntex"></a>Microsoft Syntex'te görüntü etiketleme
 
 (Çok yakında)
 
-SharePoint Syntex'da resim etiketleme sayesinde kullanıcılar, resim etiketlerinde arama yaparak görüntüleri bulabilir ve görüntü etiketlerini temel alan iş akışları oluşturabilir. Varsayılan olarak, SharePoint ve OneDrive için temel görüntü etiketleme açıktır. Her iki konuma yüklenen görüntüler otomatik olarak taranır ve varsa, 37 temel etiket listesinden geçerli etiketler uygulanır. Kullanıcılar, resim etiketlerini arayarak resimleri bulabilir.
+Microsoft Syntex'te görüntü etiketleme özelliği sayesinde kullanıcılar, görüntü etiketlerinde arama yaparak görüntüleri bulabilir ve görüntü etiketlerini temel alan iş akışları oluşturabilir. Varsayılan olarak, SharePoint ve OneDrive için temel görüntü etiketleme açıktır. Her iki konuma yüklenen görüntüler otomatik olarak taranır ve varsa, 37 temel etiket listesinden geçerli etiketler uygulanır. Kullanıcılar, resim etiketlerini arayarak resimleri bulabilir.
 
 Kullanıcı bir görüntüyü karşıya yüklediğinde, etiketleme işlemi otomatik olarak çalıştırılır. Bir görüntü düzenlenirse etiketleme işlemi etiketleri güncelleştirmek için yeniden çalışır.
 
@@ -38,7 +38,7 @@ Etiketlemeyi kapatırsanız resimler artık otomatik olarak etiketlenmez. Mevcut
 
 ## <a name="configure-image-tagging"></a>Görüntü etiketlemeyi yapılandırma
 
-[SharePoint Syntex ayarladıktan](set-up-content-understanding.md) sonra, Microsoft 365 yönetim merkezi görüntü etiketlemeyi yapılandırabilirsiniz.
+[Syntex'i ayarladıktan](set-up-content-understanding.md) sonra, Microsoft 365 yönetim merkezi görüntü etiketlemeyi yapılandırabilirsiniz.
 
 Resim etiketlemeyi açmak veya kapatmak için
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex'de ayıklayıcı oluşturma
+title: Microsoft Syntex'te ayıklayıcı oluşturma
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex'da ayıklayıcı oluşturmayı öğrenin.
-ms.openlocfilehash: e80100c7a1f5614c3057188a630ae81182e87f7c
-ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
+description: Microsoft Syntex'te ayıklayıcı oluşturmayı öğrenin.
+ms.openlocfilehash: b47633d7e9489da46e82bb9f7b3699c65b663a08
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68026545"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547609"
 ---
-# <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'de ayıklayıcı oluşturma
+# <a name="create-an-extractor-in-microsoft-syntex"></a>Microsoft Syntex'te ayıklayıcı oluşturma
 
 
 <br/>
@@ -190,4 +190,4 @@ Yinelenen varlıklarınız varsa ve yalnızca bir değeri veya belirli sayıda d
 
 [Model uygulama](apply-a-model.md)
 
-[erişilebilirlik modunu SharePoint Syntex](accessibility-mode.md)
+[Syntex erişilebilirlik modu](accessibility-mode.md)

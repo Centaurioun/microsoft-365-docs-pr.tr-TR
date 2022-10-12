@@ -1,26 +1,26 @@
 ---
-title: Microsoft SharePoint Syntex'da modeli yineleme
+title: Microsoft Syntex'te modeli yineleme
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex'da belge anlama modelini nasıl ve neden çoğaltacağınızı öğrenin.
-ms.openlocfilehash: 56e05389cad4ad9010324a3efd48bf679700be76
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+description: Microsoft Syntex'te belge anlama modelini nasıl ve neden çoğaltacağınızı öğrenin.
+ms.openlocfilehash: 4cacd968082bb875e9b9bfdfd1df13d87dba3cb6
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882252"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547872"
 ---
-# <a name="duplicate-a-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da modeli yineleme
+# <a name="duplicate-a-model-in-microsoft-syntex"></a>Microsoft Syntex'te modeli yineleme
 
 Yeni bir model oluşturmanız gerekiyorsa ve mevcut bir modelin ihtiyacınız olan modele çok benzer olduğunu biliyorsanız, belge anlama modelinin çoğaltılarak zaman ve çabadan tasarruf etmenize neden olabilir.
 
@@ -28,7 +28,7 @@ Yeni bir model oluşturmanız gerekiyorsa ve mevcut bir modelin ihtiyacınız ol
 
 Modeli çoğalttığınızda, modeli yeniden adlandırdıktan sonra (örneğin, "Sözleşme Yenilemeleri" olarak), bu modelde güncelleştirmeler yapabilirsiniz. Örneğin, ihtiyacınız olmayan mevcut ayıklanan alanlardan bazılarını kaldırmayı seçebilir ve ardından modeli yenisini ayıklamak için eğitebilirsiniz (örneğin, "Yenileme tarihi").
 
-## <a name="duplicate-a-model"></a>Modeli yineleme
+## <a name="duplicate-a-model"></a>Modeli çoğalt
 
 Belge anlama modelini yinelemek için bu adımları izleyin.
 
@@ -54,11 +54,11 @@ Belge anlama modelini yinelemek için bu adımları izleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıflandırıcı oluşturma](create-a-classifier.md)
+[Sınıflandırıcı oluştur](create-a-classifier.md)
 
-[Modeli yeniden adlandırma](rename-a-model.md)
+[Modeli yeniden adlandır](rename-a-model.md)
 
-[Ayıklayıcı oluşturma](create-an-extractor.md)
+[Ayıklayıcı oluştur](create-an-extractor.md)
 
 [Document Understanding'e genel bakış](document-understanding-overview.md)
 
@@ -66,4 +66,4 @@ Belge anlama modelini yinelemek için bu adımları izleyin.
 
 [Model uygulama](apply-a-model.md) 
 
-[erişilebilirlik modunu SharePoint Syntex](accessibility-mode.md)
+[Syntex erişilebilirlik modu](accessibility-mode.md)

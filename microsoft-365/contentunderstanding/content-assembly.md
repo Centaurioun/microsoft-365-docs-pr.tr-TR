@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex'da içerik derlemesini kullanarak belge oluşturma
+title: Microsoft Syntex'te içerik derlemesini kullanarak belge oluşturma
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,22 +12,22 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex'da modern bir şablon kullanarak belgeleri ve diğer içerikleri otomatik olarak oluşturmayı öğrenin.
-ms.openlocfilehash: 9aaaea0c4bba533ea3ba27753b167aea1a4cf489
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+description: Microsoft Syntex'te modern bir şablon kullanarak belgeleri ve diğer içerikleri otomatik olarak oluşturmayı öğrenin.
+ms.openlocfilehash: e254f0dbf0ac4e415da32a088ae5970e5b02873a
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68224172"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547916"
 ---
-# <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da içerik derlemesini kullanarak belge oluşturma
+# <a name="create-documents-using-content-assembly-in-microsoft-syntex"></a>Microsoft Syntex'te içerik derlemesini kullanarak belge oluşturma
 
-sözleşmeler, iş beyanları, hizmet sözleşmeleri, onay mektupları, satış sunumları ve yazışmalar gibi standart yinelenen iş belgelerini otomatik olarak oluşturmanıza yardımcı olması için SharePoint Syntex kullanabilirsiniz. SharePoint Syntex'de içerik derlemesi kullanarak tüm bunları daha hızlı, daha tutarlı ve daha az hatayla yapabilirsiniz.
+Sözleşmeler, iş bildirimleri, hizmet sözleşmeleri, onay mektupları, satış sunumları ve yazışmalar gibi standart yinelenen iş belgelerini otomatik olarak oluşturmanıza yardımcı olması için Microsoft Syntex'i kullanabilirsiniz. Syntex'te içerik derlemesi kullanarak tüm bunları daha hızlı, daha tutarlı ve daha az hatayla yapabilirsiniz.
 
 İçerik derlemesiyle, mevcut bir belgeyi kullanarak *modern bir şablon* oluşturabilir ve ardından sharepoint listelerini veya el ile girdileri veri kaynağı olarak kullanarak otomatik olarak yeni içerik oluşturmak için bu şablonu kullanabilirsiniz.
 
 > [!NOTE]
-> İçerik derleme özelliklerine erişmek ve bunları kullanmak için lisanslı bir SharePoint Syntex kullanıcısı olmanız gerekir. SharePoint listelerini yönetmek için de izinleriniz olmalıdır.
+> İçerik derleme özelliklerine erişmek ve bunları kullanmak için lisanslı bir Syntex kullanıcısı olmanız gerekir. SharePoint listelerini yönetmek için de izinleriniz olmalıdır.
 
 ## <a name="create-a-modern-template"></a>Modern şablon oluşturma
 
@@ -177,7 +177,7 @@ Mevcut bir şablonu düzenlemeniz veya şablonu silmeniz veya yayımlamanız ger
 
    ![Şablondan belge oluşturma panelini gösteren belge kitaplığının ekran görüntüsü.](../media/content-understanding/content-assembly-create-document-2b.png)
 
-   Yer tutucuların değerlerini doldurmaya yönelik zaman ve çabayı azaltmaya yardımcı olmak için SharePoint Syntex şunları sağlar:
+   Syntex, yer tutucuların değerlerini doldurmaya yönelik zaman ve çabayı azaltmaya yardımcı olmak için şunları sağlar:
 
       - Listeden değer seçerken değerleri kolayca seçmenize yardımcı olacak öneriler.
       - Aynı listeyle ilişkilendirilmiş yer tutucular için bir kaydı benzersiz olarak tanımlayabilmek için yer tutucu değerlerini otomatik olarak doldurun.

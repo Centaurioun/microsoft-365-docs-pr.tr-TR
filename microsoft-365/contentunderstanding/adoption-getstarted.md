@@ -1,6 +1,6 @@
 ---
-title: Microsoft SharePoint Syntex benimsemeye başlama
-description: İş süreçlerinizi kolaylaştırmanıza yardımcı olmak için kuruluşunuzda SharePoint Syntex kullanmayı ve uygulamayı öğrenin.
+title: Microsoft Syntex'i benimsemeye başlama
+description: İş süreçlerinizi kolaylaştırmanıza yardımcı olmak için kuruluşunuzda Microsoft Syntex'i kullanmayı ve uygulamayı öğrenin.
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,26 +14,26 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: 55ec030a82beda2f1ddd767c938eba8769eb55b3
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: b4b9bf84e65a10661fc42daa679cf5d28290c502
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67556446"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547675"
 ---
-# <a name="get-started-driving-adoption-of-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex benimsemeye başlama
+# <a name="get-started-driving-adoption-of-microsoft-syntex"></a>Microsoft Syntex'i benimsemeye başlama
 
-SharePoint Syntex'da bulunan akıllı içerik hizmetlerini üç bölüme sahip olarak düşünün:
+Microsoft Syntex'te bulunan akıllı içerik hizmetlerini üç bölüme sahip olarak düşünün:
 
 - **İçerik anlama:** Bilgi bulma ve yeniden kullanma için meta verileri otomatik olarak uygulamak üzere içerikten bilgileri sınıflandırmak ve ayıklamak için kodsuz yapay zeka modelleri oluşturun. [İçerik anlama](document-understanding-overview.md) hakkında daha fazla bilgi edinin.
 - **İçerik işleme:** Power Automate'i kullanarak içerik yakalama, alma ve kategorilere ayırma işlemlerini otomatikleştirin ve içerik odaklı işlemleri kolaylaştırın. [İçerik işleme](form-processing-overview.md) hakkında daha fazla bilgi edinin.
 - **İçerik uyumluluğu:** Microsoft Purview Bilgi Koruması tümleştirmesi ile güvenliği ve idareyi geliştirmek için içeriği denetleme ve yönetme.
 
-Yeni yapay zeka hizmetleri ve özellikleriyle, SharePoint Syntex kullanarak içerik anlama ve sınıflandırma uygulamalarını doğrudan içerik yönetimi akışına oluşturabilirsiniz. İçeriğinizi anlamanın iki farklı yolu vardır. Kullandığınız model türü dosya biçimini ve kullanım örneğini temel alır.
+Yeni yapay zeka hizmetleri ve özellikleriyle Syntex kullanarak içerik anlama ve sınıflandırma uygulamalarını doğrudan içerik yönetimi akışına oluşturabilirsiniz. İçeriğinizi anlamanın iki farklı yolu vardır. Kullandığınız model türü dosya biçimini ve kullanım örneğini temel alır.
 
 | Form işleme | Belge anlama |
 |:-------|:-------|
-| Belge kitaplığından oluşturulur. | SharePoint Syntex parçası olan içerik merkezinde oluşturulur. |
+| Belge kitaplığından oluşturulur. | syntex'in bir parçası olan içerik merkezinde oluşturulur. |
 | Yapay zeka oluşturucusunda oluşturulan model. | Yerel arabirimde oluşturulan model. |
 | Yarı yapılandırılmış dosya biçimleri için kullanılır. | Yapılandırılmamış dosya biçimleri için kullanılır. |
 | Ayarlanabilir sınıflandırıcı. | İsteğe bağlı ayıklayıcılarla eğitilebilir sınıflandırıcı. |
@@ -44,12 +44,12 @@ Yeni yapay zeka hizmetleri ve özellikleriyle, SharePoint Syntex kullanarak içe
 
 ## <a name="identify-pilot-business-scenarios-to-optimize"></a>İyileştirme için pilot iş senaryolarını belirleme
 
-Kuruluşunuzda SharePoint Syntex kullanmaya hazırlanmak için öncelikle yararlı olacağı senaryoları anlamanız gerekir. "Neden", hangi modelin gerekli olacağını ve kuruluşunuzun modelin uygulanacağı yere göre nasıl yapılandırılacağını belirlemeye yardımcı olur. Belge anlamanın kuruluşunuza yardımcı olabileceği birkaç senaryo aşağıdadır:
+Kuruluşunuzda Syntex'i kullanmaya hazırlanmak için öncelikle yararlı olacağı senaryoları anlamanız gerekir. "Neden", hangi modelin gerekli olacağını ve kuruluşunuzun modelin uygulanacağı yere göre nasıl yapılandırılacağını belirlemeye yardımcı olur. Belge anlamanın kuruluşunuza yardımcı olabileceği birkaç senaryo aşağıdadır:
 
 - **İçerik işleme:** Sözleşmeleri, iş deyimlerini ve form benzeri diğer belgeleri işleyin. Formları alın, alanları anlamak ve eşlemek için modeli eğitin ve ardından verileri otomatik olarak toplamak için formlarınızı çalıştırın. Daha fazla bilgi için bkz. [Form işlemeye genel bakış](form-processing-overview.md).
 - **Fatura analizi:** Faturalarınızdan ilgili ayrıntıları çekin ve ilkeye uygun olduklarından veya uygun şekilde işlendiklerinden emin olun.
 
-SharePoint Syntex kuruluşunuza nasıl yardımcı olabileceğini düşünün:
+Syntex'in kuruluşunuza nasıl yardımcı olabileceğini düşünün:
 
 - İş süreçlerini otomatikleştirme
 - Arama doğruluğunu geliştirme
@@ -64,7 +64,7 @@ Dikkate almanız gereken iş senaryolarını düşünürken kendinize aşağıda
 
 Etki ve uygulama kolaylığına göre senaryoların önceliklerini belirleyin. İlk odak alanınızı kolayca uygulanabilecek daha yüksek etki senaryoları haline getirin. Uygulanması zor olan düşük etki senaryolarının önceliklerini kaldırın.
 
-Kuruluşunuzda SharePoint Syntex nasıl kullanabileceğiniz hakkında fikir almak için [örnek senaryoları ve kullanım örneklerini](adoption-scenarios.md) kullanın.
+Kuruluşunuzda Syntex'i nasıl kullanabileceğiniz hakkında fikir almak için [örnek senaryoları ve kullanım örneklerini](adoption-scenarios.md) kullanın.
 
 ## <a name="identify-roles--responsibilities"></a>Rolleri & sorumlulukları belirleme
 
@@ -86,7 +86,7 @@ Modelleri nerede oluşturup uygulayacak? İyileştirilebilen mevcut süreçler v
 
 ## <a name="strategic-positioning"></a>Stratejik konumlandırma
 
-Proje katılımcılarıyla birlikte çalışarak SharePoint Syntex kullanma stratejisine uygun olduklarından emin olun. Bu konumlandırmaya yardımcı olmak için aşağıdaki kaynakları araştırın ve sağlayın:
+Syntex kullanma stratejisine uygun olduklarından emin olmak için proje katılımcılarıyla birlikte çalışın. Bu konumlandırmaya yardımcı olmak için aşağıdaki kaynakları araştırın ve sağlayın:
 
 - İş sonuçları:
   - Olası mali sonuçlar
@@ -116,7 +116,7 @@ Projeniz için paydaşları belirleyin.
 
 ## <a name="readiness-checklist"></a>Hazırlık denetim listesi
 
-SharePoint Syntex uygulamaya hazırlanmak için şunları yapmanız gerekir:
+Syntex'i uygulamaya hazırlanmak için şunları yapmanız gerekir:
 
 ![content understanding için hazır olma.](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
@@ -146,6 +146,6 @@ SharePoint Syntex uygulamaya hazırlanmak için şunları yapmanız gerekir:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[SharePoint Syntex için senaryolar ve kullanım örnekleri](adoption-scenarios.md)
+[Syntex için senaryolar ve kullanım örnekleri](adoption-scenarios.md)
 
 [Microsoft 365 çözümü kullanarak sözleşmeleri yönetme](solution-manage-contracts-in-microsoft-365.md)

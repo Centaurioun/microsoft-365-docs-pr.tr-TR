@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex'da ayıklayıcı oluştururken terim deposu taksonomisini kullanma
+title: Microsoft Syntex'te ayıklayıcı oluştururken terim deposu taksonomisini kullanma
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,15 +13,15 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex belge anlama modelinizde ayıklayıcı oluştururken terim deposu taksonomisini kullanın.
-ms.openlocfilehash: 551acd46d2ccf8336bbdf6b6fda7e7cb448dd66c
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Microsoft Syntex'te belge anlama modelinizde ayıklayıcı oluştururken terim deposu taksonomisini kullanın.
+ms.openlocfilehash: f36d8a1f398031103ec308e89b8587eebfcaacdf
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579280"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547740"
 ---
-# <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da ayıklayıcı oluştururken terim deposu taksonomisini kullanma
+# <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-syntex"></a>Microsoft Syntex'te ayıklayıcı oluştururken terim deposu taksonomisini kullanma
 
 </br>
 
@@ -29,7 +29,7 @@ ms.locfileid: "67579280"
 
 </br>
 
-SharePoint Syntex kullanarak belge anlama modelinizde bir ayıklayıcı oluşturduğunuzda, ayıkladığınız verilerin tercih edilen terimlerini görüntülemek için [terim deposundaki genel terim](/sharepoint/managed-metadata) kümelerinden yararlanabilirsiniz.  
+Microsoft Syntex kullanarak belge anlama modelinizde bir ayıklayıcı oluşturduğunuzda, ayıkladığınız verilerin tercih edilen terimlerini görüntülemek için [terim deposundaki genel terim](/sharepoint/managed-metadata) kümelerinden yararlanabilirsiniz.  
 
 Örneğin, modeliniz belge kitaplığına yüklenen tüm **Sözleşme** belgelerini tanımlar ve sınıflandırır.  Ayrıca model, her sözleşmeden bir **Sözleşme Hizmeti** değeri ayıklar ve bunu kitaplık görünümünüzdeki bir sütunda görüntüler. Sözleşmelerdeki çeşitli Sözleşme Hizmetleri değerleri arasında, şirketinizin artık kullanmadığını ve yeniden adlandırıldığı birkaç eski değer vardır. Örneğin *Tasarım,* Grafik veya *Topografi* sözleşme hizmetleri *terimlerine yapılan tüm başvurular* artık *Creative* olarak adlandırılmalıdır. Modeliniz bir sözleşme belgesinden güncel olmayan terimlerden birini ayıklasa, geçerli creative terimini kitaplık görünümünüzde görüntülemesini istersiniz. Aşağıdaki örnekte, modeli eğitirken bir örnek belgenin *eski Tasarım* terimini içerdiğini görüyoruz.
 

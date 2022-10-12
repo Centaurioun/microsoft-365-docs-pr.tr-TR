@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex'de erişilebilirlik modu
+title: Microsoft Syntex'te erişilebilirlik modu
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,17 +12,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: SharePoint Syntex modellerini eğitirken ve modellerle çalışırken erişilebilirlik özellikleri modunu kullanmayı öğrenin.
-ms.openlocfilehash: 1355e48b42ab74c9d03f5b2944f3a7d146b4dd18
-ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
+description: Microsoft Syntex'te model eğitirken ve modellerle çalışırken erişilebilirlik özellikleri modunu kullanmayı öğrenin.
+ms.openlocfilehash: b3571118fe409e04140f9e45cb77e43ea7e45aca
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68026457"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547390"
 ---
-# <a name="accessibility-mode-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'de erişilebilirlik modu
+# <a name="accessibility-mode-in-microsoft-syntex"></a>Microsoft Syntex'te erişilebilirlik modu
 
-[SharePoint Syntex'da](index.md) kullanıcılar örnek belgelerle çalışırken model eğitiminin (etiket, eğit, test) tüm aşamalarında erişilebilirlik modunu açabilir. Erişilebilirlik modunu kullanmak, görme bozukluğu olan kullanıcıların belge görüntüleyicisinde gezinirken ve öğeleri etiketlediklerinde klavye erişilebilirliğini kolaylaştırmalarına yardımcı olabilir.
+[Microsoft Syntex'te](index.md) kullanıcılar örnek belgelerle çalışırken model eğitiminin (etiket, eğit, test) tüm aşamalarında erişilebilirlik modunu açabilir. Erişilebilirlik modunu kullanmak, görme bozukluğu olan kullanıcıların belge görüntüleyicisinde gezinirken ve öğeleri etiketlediklerinde klavye erişilebilirliğini kolaylaştırmalarına yardımcı olabilir.
 
 Bu, kullanıcıların klavyelerini kullanarak belge görüntüleyicisindeki metinlerde gezinmelerine ve yalnızca seçili değerlerin değil, aynı zamanda eylemlerin (seçili metinden etiketleme veya kaldırma gibi) anlatımını veya siz modeli ek örnek belgelerle eğitirken tahmin edilen etiket değerlerini duymalarına yardımcı olur. 
 

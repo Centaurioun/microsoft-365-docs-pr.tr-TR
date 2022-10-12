@@ -1,5 +1,5 @@
 ---
-title: SharePoint Syntex ve Power Automate ile belge oluşturmayı otomatikleştirme (önizleme)
+title: Microsoft Syntex ve Power Automate ile belge oluşturmayı otomatikleştirme (önizleme)
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,19 +12,19 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: SharePoint Syntex ve Power Automate kullanarak otomatik olarak belge ve diğer içerik oluşturmayı öğrenin.
-ms.openlocfilehash: 7ed0756b4aaed2ef564dd4796368e25d7f78dd97
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Microsoft Syntex ve Power Automate kullanarak otomatik olarak belge ve diğer içerik oluşturmayı öğrenin.
+ms.openlocfilehash: 616a88bf7a6de912e731fb96bc4af2f856089de0
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67876499"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547828"
 ---
-# <a name="automate-document-generation-with-sharepoint-syntex-and-power-automate-preview"></a>SharePoint Syntex ve Power Automate ile belge oluşturmayı otomatikleştirme (önizleme)
+# <a name="automate-document-generation-with-microsoft-syntex-and-power-automate-preview"></a>Microsoft Syntex ve Power Automate ile belge oluşturmayı otomatikleştirme (önizleme)
 
-power automate ile birlikte SharePoint Syntex içerik derlemesini kullanarak, modern şablonları kullanarak belge oluşturmayı otomatikleştirebilirsiniz. 
+Microsoft Syntex'teki içerik derlemesini Power Automate ile birlikte kullanarak, modern şablonları kullanarak belge oluşturmayı otomatikleştirebilirsiniz. 
 
-Bu önizleme sürümü, SharePoint bağlayıcısında bir Power Automate eylemidir. Eylem "SharePoint Syntex kullanarak belge oluşturma (önizleme)" olarak adlandırılır ve önizleme için sınırlı özelliklere sahiptir. 
+Bu önizleme sürümü, SharePoint bağlayıcısında bir Power Automate eylemidir. Eylem "Syntex kullanarak belge oluşturma (önizleme)" olarak adlandırılır ve önizleme için sınırlı özelliklere sahiptir. 
 
 ## <a name="scope-of-the-preview"></a>Önizlemenin kapsamı 
 
@@ -60,9 +60,9 @@ Modern bir şablon ve Power Automate kullanarak otomatik olarak belge oluşturma
 
    ![Örnek site adresini ve site adını gösteren Belge oluşturulduğunda veya değiştirildiğinde tetikleyicisinin ekran görüntüsü.](../media/content-understanding/document-generation-trigger.png)
 
-5. SharePoint bağlayıcısını yeniden seçin. Arama kutusunda **SharePoint Syntex kullanarak belge oluştur (önizleme)** eylemini arayın ve seçin.
+5. SharePoint bağlayıcısını yeniden seçin. Arama kutusunda **Syntex kullanarak belge oluştur (önizleme)** eylemini arayın ve seçin.
 
-   ![SharePoint Syntex (önizleme) eylemini kullanarak belge oluştur eylemini gösteren SharePoint bağlayıcısı Eylemleri sekmesinin ekran görüntüsü.](../media/content-understanding/document-generation-action.png) 
+   ![Syntex (önizleme) eylemini kullanarak belge oluştur eylemini gösteren SharePoint bağlayıcısı Eylemleri sekmesinin ekran görüntüsü.](../media/content-understanding/document-generation-action.png) 
 
 6. Site bilgilerini girin ve modern şablonu içeren belge kitaplığını seçin. 
 
@@ -78,4 +78,4 @@ Modern bir şablon ve Power Automate kullanarak otomatik olarak belge oluşturma
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
- [SharePoint Syntex'da içerik derlemesi kullanarak belge oluşturma](content-assembly.md)
+ [Microsoft Syntex'te içerik derlemesini kullanarak belge oluşturma](content-assembly.md)

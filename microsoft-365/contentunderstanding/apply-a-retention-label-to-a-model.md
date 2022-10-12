@@ -1,5 +1,5 @@
 ---
-title: SharePoint Syntex'da modele bekletme etiketi uygulama
+title: Microsoft Syntex'te modele bekletme etiketi uygulama
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: SharePoint Syntex'da bir modele bekletme etiketi uygulamayı öğrenin.
-ms.openlocfilehash: 2176826634b1f682f86989d418b251f9706100ed
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Microsoft Syntex'te bir modele bekletme etiketi uygulamayı öğrenin.
+ms.openlocfilehash: 9ae81daccf6373d6e876935488edc354e3779bee
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585674"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547982"
 ---
-# <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>SharePoint Syntex'da modele bekletme etiketi uygulama
+# <a name="apply-a-retention-label-to-a-model-in-microsoft-syntex"></a>Microsoft Syntex'te modele bekletme etiketi uygulama
 
 </br>
 
@@ -28,7 +28,7 @@ ms.locfileid: "67585674"
 
 </br>
 
-Microsoft SharePoint Syntex'da modele kolayca [bekletme etiketi](../compliance/retention.md) uygulayabilirsiniz. Bunu hem belge anlama hem de form işleme modelleri için yapabilirsiniz.
+Microsoft Syntex'te bir modele [kolayca bekletme etiketi](../compliance/retention.md) uygulayabilirsiniz. Bunu hem belge anlama hem de form işleme modelleri için yapabilirsiniz.
 
 Bekletme etiketleri, modellerinizin tanımladığınız belgelere bekletme ayarları uygulamanıza olanak tanır.  Örneğin, modelinizin yalnızca belge kitaplığınıza yüklenen *Sigorta bildirimi* belgelerini tanımlamasını değil, aynı zamanda bu belgelerin belirtilen süre boyunca belge kitaplığından silinememesi için (örneğin, sonraki beş ay) onlara bir *İş* saklama etiketi uygulamasını istiyorsunuz.
 

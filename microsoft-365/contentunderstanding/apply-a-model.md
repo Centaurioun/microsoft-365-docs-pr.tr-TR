@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex'da belge anlama modeli uygulama
+title: Microsoft Syntex'te belge anlama modeli uygulama
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex'da sharepoint belge kitaplığına yayımlanmış bir model uygulamayı öğrenin.
-ms.openlocfilehash: c11e4ba11cdf7da57a344dae774dab7518a72369
-ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
+description: Microsoft Syntex'te yayımlanmış bir modeli SharePoint belge kitaplığına nasıl uygulayacağınızı öğrenin.
+ms.openlocfilehash: 2f0d55f878baaf205ea4363a19a6afef34957ac7
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67639646"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68548026"
 ---
-# <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da belge anlama modeli uygulama
+# <a name="apply-a-document-understanding-model-in-microsoft-syntex"></a>Microsoft Syntex'te belge anlama modeli uygulama
 
 </br>
 
@@ -113,7 +113,7 @@ Uygulanan bir model, uygulandıktan sonra belge kitaplığına yüklenen tüm do
 
 ### <a name="classification-date-field"></a>Sınıflandırma Tarihi alanı
 
-Belge kitaplığına SharePoint Syntex belge anlama modeli (veya form işleme modeli) uygulandığında, **Sınıflandırma Tarihi** alanı kitaplık şemasına eklenir. Varsayılan olarak, bu alan boş olur. Ancak, belgeler bir model tarafından işlendiğinde ve sınıflandırıldığında, bu alan tamamlanma tarih-saat damgasıyla güncelleştirilir. 
+Belge kitaplığına syntex belge anlama modeli (veya form işleme modeli) uygulandığında, **Sınıflandırma Tarihi** alanı kitaplık şemasına eklenir. Varsayılan olarak, bu alan boş olur. Ancak, belgeler bir model tarafından işlendiğinde ve sınıflandırıldığında, bu alan tamamlanma tarih-saat damgasıyla güncelleştirilir. 
 
    ![Sınıflandırma Tarihi sütununu gösteren belge kitaplığının ekran görüntüsü.](../media/content-understanding/class-date-column.png) 
 
@@ -123,13 +123,13 @@ Belge kitaplığına SharePoint Syntex belge anlama modeli (veya form işleme mo
 
 Bir **dosya bir içerik anlama modeli tarafından sınıflandırıldığında** tetikleyicisi, dosya veya klasörden ayıklanan bilgileri kullanarak akış başlatmak için kullanılabilir.
 
-Örneğin, bir model **Sınıflandırma Tarihi** ile damgalandığında, Kullanıcılara SharePoint belge kitaplığındaki bir model tarafından yeni bir dosyanın işlendiğini ve sınıflandırıldığını bildirmek için **SharePoint Syntex dosya akışını işledikten sonra e-posta gönder'i** kullanabilirsiniz.
+Örneğin, bir model **Sınıflandırma Tarihi** ile damgalandığında, **Syntex dosya akışını işledikten sonra kullanıcılara** SharePoint belge kitaplığındaki bir model tarafından yeni bir dosyanın işlendiğini ve sınıflandırıldığını bildirmek için E-posta gönder'i kullanabilirsiniz.
 
 Akışı çalıştırmak için:
 
 1. Bir dosya seçin ve ardından **Power Automate'i tümleştir** >  >  **Akış oluştur'u** seçin.
 
-2. **Akış oluştur** panelinde, **SharePoint Syntex bir dosyayı işledikten sonra e-posta gönder'i** seçin.
+2. **Akış oluştur** panelinde **Syntex bir dosyayı işledikten sonra E-posta gönder'i** seçin.
 
     ![Akış oluştur panelini ve akış seçeneğinin vurgulandığı ekran görüntüsü.](../media/content-understanding/integrate-create-flow.png) 
 

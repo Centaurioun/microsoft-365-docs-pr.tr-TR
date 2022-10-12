@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex için örnek belge anlama modelini içeri aktarma
+title: Microsoft Syntex için örnek belge anlama modelini içeri aktarma
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Örnek model aracılığıyla modelleri anlama hakkında bilgi edinin.
-ms.openlocfilehash: d23009233f4eb9b5dba9fc7e38c152b6170a85b4
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 06f38e44162b5091607281c9aa34ce7dc721b647
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67580369"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547499"
 ---
-# <a name="import-a-sample-document-understanding-model-for-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex için örnek belge anlama modelini içeri aktarma
+# <a name="import-a-sample-document-understanding-model-for-microsoft-syntex"></a>Microsoft Syntex için örnek belge anlama modelini içeri aktarma
 
-SharePoint Syntex, incelemek için kullanabileceğiniz bir örnek model sunarak kendi modellerinizi nasıl oluşturabileceğinizi daha iyi anlamanızı sağlar. Örnek model ayrıca sınıflandırıcısı, ayıklayıcıları ve açıklamaları gibi model bileşenlerini incelemenizi sağlar. Modeli eğitmek için örnek dosyaları da kullanabilirsiniz.
+Microsoft Syntex, incelemek için kullanabileceğiniz bir örnek model sunarak kendi modellerinizi nasıl oluşturabileceğinizi daha iyi anlamanızı sağlar. Örnek model ayrıca sınıflandırıcısı, ayıklayıcıları ve açıklamaları gibi model bileşenlerini incelemenizi sağlar. Modeli eğitmek için örnek dosyaları da kullanabilirsiniz.
 
 ## <a name="import-the-sample-model"></a>Örnek modeli içeri aktarma
 
@@ -45,7 +45,7 @@ Modelin nasıl yapıldığını daha iyi anlamak için örnek modeli analiz etme
 
 ## <a name="get-sample-models"></a>Örnek modelleri alma
 
-Belge anlama modellerinin farklı kullanım desenlerini gösteren topluluk örneklerini içeren [SharePoint Syntex Örnekleri deposuna](https://github.com/pnp/syntex-samples) erişebilirsiniz. Bu depodaki örnekler hem belge anlama modeli dosyalarını hem de modeli eğitmek için kullanılan dosyaları içerir. İçeri aktarıldıktan sonra, dosyaları işlemek ve sınıflandırıcı ile ayıklayıcıları görüntülemek ve düzenlemek için bu modelleri kullanabilirsiniz.
+Belge anlama modellerinin farklı kullanım desenlerini gösteren topluluk örneklerini içeren [Syntex Örnekleri deposuna](https://github.com/pnp/syntex-samples) erişebilirsiniz. Bu depodaki örnekler hem belge anlama modeli dosyalarını hem de modeli eğitmek için kullanılan dosyaları içerir. İçeri aktarıldıktan sonra, dosyaları işlemek ve sınıflandırıcı ile ayıklayıcıları görüntülemek ve düzenlemek için bu modelleri kullanabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 [Sınıflandırıcı oluştur](create-a-classifier.md)

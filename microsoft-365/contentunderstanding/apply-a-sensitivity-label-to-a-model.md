@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex'da modele duyarlılık etiketi uygulama
+title: Microsoft Syntex'te modele duyarlılık etiketi uygulama
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,19 +12,19 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: SharePoint Syntex'da modele duyarlılık etiketi uygulamayı öğrenin.
-ms.openlocfilehash: bb694f1a406565986fef86f1089254a57d3cc53f
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Microsoft Syntex'te modele duyarlılık etiketi uygulamayı öğrenin.
+ms.openlocfilehash: 88e0198ce5f57b906d3ce00258d53c4d2073d33c
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67581146"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547543"
 ---
-# <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da modele duyarlılık etiketi uygulama
+# <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-syntex"></a>Microsoft Syntex'te modele duyarlılık etiketi uygulama
 
-Microsoft SharePoint Syntex'da belge anlama modellerine kolayca [duyarlılık etiketi](../compliance/sensitivity-labels.md) uygulayabilirsiniz. Bu özellik henüz form işleme modellerinde kullanılamaz.
+Microsoft Syntex'te belge anlama modellerine kolayca [duyarlılık etiketi](../compliance/sensitivity-labels.md) uygulayabilirsiniz. Bu özellik henüz form işleme modellerinde kullanılamaz.
 
-Duyarlılık etiketleri, modellerinizin tanımladığınız belgelere şifreleme uygulamanıza olanak tanır. Örneğin, modelinizin yalnızca belge kitaplığınıza yüklenen banka hesap numaralarını veya kredi kartı numaralarını içeren finansal belgeleri tanımlamasını değil, aynı zamanda bu içeriğe kimlerin erişebileceğini ve nasıl kullanılabileceğini kısıtlamak için şifreleme ayarlarıyla yapılandırılmış bir duyarlılık etiketi uygulamasını istiyorsunuz. SharePoint Syntex modelleri [etiket sırası](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) kurallarına uyar ve ayrıca kullanıcı tarafından dosyaya el ile uygulanmış olan mevcut bir etiketin üzerine yazılmaz. 
+Duyarlılık etiketleri, modellerinizin tanımladığınız belgelere şifreleme uygulamanıza olanak tanır. Örneğin, modelinizin yalnızca belge kitaplığınıza yüklenen banka hesap numaralarını veya kredi kartı numaralarını içeren finansal belgeleri tanımlamasını değil, aynı zamanda bu içeriğe kimlerin erişebileceğini ve nasıl kullanılabileceğini kısıtlamak için şifreleme ayarlarıyla yapılandırılmış bir duyarlılık etiketi uygulamasını istiyorsunuz. Syntex modelleri [etiket sırası](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) kurallarını dikkate alır ve ayrıca kullanıcı tarafından dosyaya el ile uygulanan mevcut bir etiketin üzerine yazılmaz. 
 
 Modelinizin giriş sayfasındaki model ayarlarınızdan modelinize önceden var olan bir duyarlılık etiketi uygulayabilirsiniz. Etiket, model ayarlarından seçilebilmek için zaten yayımlanmış olmalıdır. Etiketler Word (.docx), PowerPoint (.pptx) ve Excel (.xlsx) için Office dosyalarına uygulanır. 
 

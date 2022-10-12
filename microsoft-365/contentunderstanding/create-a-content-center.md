@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex'de içerik merkezi oluşturma
+title: Microsoft Syntex'te içerik merkezi oluşturma
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,15 +13,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex'da içerik merkezi oluşturmayı öğrenin.
-ms.openlocfilehash: b0151ad464a84e06cc613c9baf06db03a831ceae
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Microsoft Syntex'te içerik merkezi oluşturmayı öğrenin.
+ms.openlocfilehash: 392203db0de4aa5f13761a1bc15947862c1f1fce
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583230"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68547938"
 ---
-# <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'de içerik merkezi oluşturma
+# <a name="create-a-content-center-in-microsoft-syntex"></a>Microsoft Syntex'te içerik merkezi oluşturma
 
 
 </br>
@@ -36,7 +36,7 @@ Belge anlama modelleri oluşturmak ve yönetmek için önce bir içerik merkezi 
 
 [Kurulum](set-up-content-understanding.md) sırasında varsayılan bir içerik merkezi oluşturursunuz. Ancak bir SharePoint yöneticisi gerektiğinde ek merkezler oluşturmayı da seçebilir. Tüm model etkinliklerinin toplanmasını istediğiniz ortamlar için tek bir içerik merkezi uygun olsa da, kuruluşunuzdaki birden çok departman için, modelleri için farklı gereksinimlere ve izin gereksinimlerine sahip olabilecek ek merkezleriniz olmasını isteyebilirsiniz.
 
-Ayrıca, SharePoint Syntex denemek istiyorsanız, lisans satın almadan bu makaledeki yönergeleri kullanarak bir içerik merkezi oluşturabilirsiniz. Lisanssız kullanıcılar belge anlama modelleri oluşturabilir ancak bunları belge kitaplığına uygulayamaz.
+Ayrıca Syntex'i denemek istiyorsanız, lisans satın almadan bu makaledeki yönergeleri kullanarak bir içerik merkezi oluşturabilirsiniz. Lisanssız kullanıcılar belge anlama modelleri oluşturabilir ancak bunları belge kitaplığına uygulayamaz.
 
 > [!NOTE]
 > [Microsoft 365 Multi-Geo ortamında](../enterprise/microsoft-365-multi-geo.md), merkezi konumunuzda tek bir varsayılan içerik merkeziniz varsa, yalnızca bu konumdan model etkinliğinin bir toplu işlemini sağlayabilirsiniz. Şu anda Multi-Geo ortamında grup sınırları boyunca model etkinliğinin bir toplu işlemini alamazsınız. 
@@ -68,7 +68,7 @@ Siteyi oluşturduktan sonra, standart [SharePoint site izinleri modeli](/sharepo
 
 ### <a name="roll-up-of-models-in-the-default-content-center"></a>Varsayılan içerik merkezinde modellerin toplu olarak alınması
 
-SharePoint Syntex'da, kurulum sırasında oluşturulan ilk *içerik merkezi varsayılan içerik merkezidir*. Sonraki içerik merkezleri oluşturulursa, modelleri varsayılan içerik merkezi görünümünde gösterilir.
+Syntex'te, kurulum sırasında oluşturulan ilk *içerik merkezi varsayılan içerik merkezidir*. Sonraki içerik merkezleri oluşturulursa, modelleri varsayılan içerik merkezi görünümünde gösterilir.
 
 ![Varsayılan içerik merkezindeki Model kitaplığının ekran görüntüsü.](../media/content-understanding/model-library-default-content-center.png)
 

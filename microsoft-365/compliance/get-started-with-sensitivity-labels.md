@@ -11,20 +11,23 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
+- highpri
 - SPO_Content
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MOE150
 - MET150
 description: Kuruluşunuzun verilerini korumaya yardımcı olmak için duyarlılık etiketlerini kullanan yöneticiler, lisans gereksinimleri ve yaygın senaryolar için açıklayıcı adımlar.
-ms.openlocfilehash: c796bf283873e86a569e70d30fb7944a20bd7e2e
-ms.sourcegitcommit: d60d78e6a05845747af0ad25131c7e526d58064d
+ms.openlocfilehash: cb956c413d975c6d0199cb9b8f2d620b35b69fdc
+ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67498449"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68548004"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Hassasiyet etiketlerini kullanmaya başlama
 
@@ -32,7 +35,7 @@ ms.locfileid: "67498449"
 
 Duyarlılık etiketlerinin ne olduğu ve kuruluşunuzun verilerini korumanıza nasıl yardımcı olabileceği hakkında bilgi için bkz. [Duyarlılık etiketleri hakkında bilgi edinin](sensitivity-labels.md).
 
-[Azure Information Protection'niz](/azure/information-protection/what-is-information-protection) varsa ve hala Azure portal yönetilen Azure Information Protection etiketlerini kullanıyorsanız, bu etiketleri [birleşik etiketleme platformuna](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform) geçirmeniz gerekir. Windows bilgisayarlar için, yayımlanmış duyarlılık etiketleriniz için [hangi etiketleme istemcisini kullanacağınızı seçebilirsiniz](/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) .
+[Azure Information Protection'niz](/azure/information-protection/what-is-information-protection) varsa ve hala Azure portal yönetilen Azure Information Protection etiketlerini kullanıyorsanız, bu etiketleri [birleşik etiketleme platformuna](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform) geçirmeniz gerekir. Daha sonra, daha yeni, yerleşik etiketleme deneyiminden yararlanmak için Office uygulamaları için AIP eklentisini devre dışı bırakmanızı öneririz. Daha fazla bilgi için bkz. [Azure Information Protection (AIP) eklentisini Office uygulamaları için yerleşik etiketlemeye geçirme](sensitivity-labels-aip.md).
 
 Duyarlılık etiketlerini kullanarak kuruluşunuzun verilerini korumaya başlamaya hazır olduğunuzda:
 
@@ -50,6 +53,8 @@ Duyarlılık etiketlerini kullanarak kuruluşunuzun verilerini korumaya başlama
 Duyarlılık etiketlerini dağıtmak ve uygulamak için temel akış:
 
 ![Duyarlılık etiketleri için iş akışını gösteren diyagram.](../media/Sensitivity-label-flow.png)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>Duyarlılık etiketleri için abonelik ve lisans gereksinimleri
 
