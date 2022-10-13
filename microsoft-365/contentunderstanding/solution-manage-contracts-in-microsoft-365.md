@@ -16,17 +16,17 @@ ms.collection:
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
-description: SharePoint Syntex, SharePoint Listeleri, Microsoft Teams ve Power Automate'in Microsoft 365 çözümünü kullanarak sözleşmeleri yönetmeyi öğrenin.
-ms.openlocfilehash: edb05502ff9f4a84f194e4f991307886ce85bd46
-ms.sourcegitcommit: 674dfa2cb2f20546d2f7822e09bacf0e12e2718b
+description: Microsoft Syntex, SharePoint Listeleri, Microsoft Teams ve Power Automate'in Microsoft 365 çözümünü kullanarak sözleşmeleri yönetmeyi öğrenin.
+ms.openlocfilehash: 61c8d19815a1e766add4bed845ffdcc14967bba1
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68041183"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563328"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Microsoft 365 çözümü kullanarak sözleşmeleri yönetme
 
-Bu makalede, Microsoft 365'in SharePoint Syntex ve bileşenlerini kullanarak kuruluşunuz için sözleşme yönetimi çözümünün nasıl oluşturulacağı açıklanır. Benzersiz iş gereksinimlerinize uygun bir çözüm planlamanıza ve oluşturmanıza yardımcı olacak bir çerçeve sağlar. Bu çözüm sözleşme yönetiminden bahsetse de, iş veya fatura deyimleri gibi başka belge yönetimi çözümleri oluşturmak için uyarlayabilirsiniz.
+Bu makalede, Microsoft Syntex'i ve Microsoft 365 bileşenlerini kullanarak kuruluşunuz için nasıl sözleşme yönetimi çözümü oluşturulacağı açıklanır. Benzersiz iş gereksinimlerinize uygun bir çözüm planlamanıza ve oluşturmanıza yardımcı olacak bir çerçeve sağlar. Bu çözüm sözleşme yönetiminden bahsetse de, iş veya fatura deyimleri gibi başka belge yönetimi çözümleri oluşturmak için uyarlayabilirsiniz.
 
 </br>
 
@@ -48,11 +48,11 @@ Sözleşme yönetim sisteminizi planlamanın ilk adımı çözmeye çalıştığ
 
 ## <a name="overview-of-the-solution"></a>Çözüme genel bakış
 
-  ![SharePoint Syntex, SharePoint listeleri, Teams ve Power Automate kullanan çözümün diyagramı.](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png)
+  ![Syntex, SharePoint listeleri, Teams ve Power Automate kullanan çözümün diyagramı.](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png)
 
 Bu sözleşme yönetimi çözümü kılavuzu, Microsoft 365'in dört bileşenini içerir:
 
-- **Microsoft SharePoint Syntex**: Sözleşme dosyalarınızı tanımlamak ve sınıflandırmak ve ardından bunlardan uygun verileri ayıklamak için modeller oluşturun.
+- **Microsoft Syntex**: Sözleşme dosyalarınızı tanımlamak ve sınıflandırmak ve ardından bunlardan uygun verileri ayıklamak için modeller oluşturun.
 
 - **Microsoft SharePoint listeleri**: Sözleşmeleri iş dostu bir biçimde sunmak için modern SharePoint listelerinde sağlanan biçimlendirmeyi kullanın.
 
@@ -64,7 +64,7 @@ Bu sözleşme yönetimi çözümü kılavuzu, Microsoft 365'in dört bileşenini
 
   ![Belgeleri karşıya yüklemek, verileri ayıklamak, proje katılımcılarını bilgilendirmek ve sözleşmeyi onaylamak veya reddetmek için iş akışını gösteren çözümün diyagramı.](../media/content-understanding/syntex-solution-manage-contracts-overview.png)
 
-1. Belgeler bir SharePoint belge kitaplığına yüklenir. Belge kitaplığına SharePoint Syntex belge anlama modeli uygulandı. Aranacak şekilde eğitilen bir "sözleşme" içerik türüyle eşleşip eşleşmediğini görmek için her dosyayı denetler. Eşleşme bulursa, dosyayı "sözleşme" olarak sınıflandırır ve belgenin içerik türünü güncelleştirir.
+1. Belgeler bir SharePoint belge kitaplığına yüklenir. Belge kitaplığına Syntex belge anlama modeli uygulandı. Aranacak şekilde eğitilen bir "sözleşme" içerik türüyle eşleşip eşleşmediğini görmek için her dosyayı denetler. Eşleşme bulursa, dosyayı "sözleşme" olarak sınıflandırır ve belgenin içerik türünü güncelleştirir.
 
 2. Model ayrıca paydaşların görmekle ilgilendiği her sözleşme dosyasından *Müşteri*, *Yüklenici* ve *Ücret tutarı* gibi belirli verileri çeker.
 
@@ -86,20 +86,20 @@ Bu sözleşme yönetimi çözümü kılavuzu, Microsoft 365'in dört bileşenini
 
 Bu çözüm, tümü Microsoft 365 Kurumsal (E1, E3, E5, F3) veya İş (Temel, Standart veya Premium) lisansının parçası olarak kullanılabilen aşağıdaki işlevlere dayanır:
 
-- Microsoft SharePoint Syntex
+- Microsoft Syntex
 - Microsoft Teams
 - Power Automate
 
-### <a name="learn-how-to-use-sharepoint-syntex"></a>SharePoint Syntex kullanmayı öğrenin
+### <a name="learn-how-to-use-syntex"></a>Syntex'i kullanmayı öğrenin
 
-SharePoint Syntex'da yeni misiniz? yapay zeka kullanarak içeriği yönetmek için SharePoint Syntex kullanmayı öğrenin.
+Microsoft Syntex'i yeni mi kullanıyorsunuz? Yapay zeka kullanarak içeriği yönetmek için Syntex'i kullanmayı öğrenin.
 
-[SharePoint Syntex kullanmaya başlama](/training/paths/syntex-get-started) öğrenme yolu, belgeleri sınıflandırmak, metin ayıklamak ve hızlı ve kolay bilgi yönetimi için belgelerinizi etiketlemek için belge anlama ve form işleme modellerini nasıl kullanabileceğinizi öğretir.
+[Microsoft Syntex ile çalışmaya başlama](/training/paths/syntex-get-started) öğrenme yolu, belgeleri sınıflandırmak, metin ayıklamak ve hızlı ve kolay bilgi yönetimi için belgelerinizi etiketlemek için belge anlama ve form işleme modellerini nasıl kullanabileceğinizi öğretir.
 
 ## <a name="create-the-solution"></a>Çözümü oluşturma
 
 Sonraki bölümlerde sözleşme yönetimi çözümünüzü yapılandırma hakkında ayrıntılı bilgi verilecektir. Üç adıma ayrılmıştır:
 
-- [1. Adım. Sözleşme dosyalarını tanımlamak ve verileri ayıklamak için SharePoint Syntex kullanma](solution-manage-contracts-step1.md)
+- [1. Adım. Sözleşme dosyalarını tanımlamak ve verileri ayıklamak için Microsoft Syntex kullanma](solution-manage-contracts-step1.md)
 - [2. Adım. Sözleşme yönetim kanalınızı oluşturmak için Microsoft Teams'i kullanma](solution-manage-contracts-step2.md)
 - [3. Adım. Anlaşmalarınızı işlemek üzere akış oluşturmak için Power Automate'i kullanma](solution-manage-contracts-step3.md)

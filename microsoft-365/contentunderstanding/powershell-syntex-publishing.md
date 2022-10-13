@@ -12,24 +12,24 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: PowerShell ile model anlama SharePoint Syntex belge yayımlamayı öğrenin.
-ms.openlocfilehash: 20c100473207d246f7f1d3b8d9a1f52063c418e0
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: PowerShell ile microsoft syntex belge anlama modellerini yayımlamayı öğrenin.
+ms.openlocfilehash: 4b5d5e8b9a7f4b7a470a8578409b3601823c9415
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585806"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563218"
 ---
 # <a name="publish-document-understanding-models-with-powershell"></a>PowerShell ile belge anlama modellerini yayımlama
 
 > [!IMPORTANT]
-> SharePoint Syntex PowerShell cmdlet'leri ve diğer tüm PnP bileşenleri, bunlar için destek sağlayan etkin bir topluluk tarafından desteklenen açık kaynak araçlardır. Resmi Microsoft destek kanallarından açık kaynak araç desteği için SLA yoktur.
+> Microsoft Syntex PowerShell cmdlet'leri ve diğer tüm PnP bileşenleri, destek sağlayan etkin bir topluluk tarafından desteklenen açık kaynak araçlardır. Resmi Microsoft destek kanallarından açık kaynak araç desteği için SLA yoktur.
 
-SharePoint Syntex modelleri genellikle kiracınızdaki belge kitaplıklarına dağıtılır. Bu, içerik merkezi sitesi kullanılarak yapılabilir, ancak bu makalede açıklandığı gibi [PnP PowerShell](https://pnp.github.io/powershell/) kullanılarak da yapılabilir.
+Syntex modelleri genellikle kiracınızdaki belge kitaplıklarına dağıtılır. Bu, içerik merkezi sitesi kullanılarak yapılabilir, ancak bu makalede açıklandığı gibi [PnP PowerShell](https://pnp.github.io/powershell/) kullanılarak da yapılabilir.
 
 ## <a name="listing-the-available-models-in-a-content-center"></a>İçerik merkezinde kullanılabilir modelleri listeleme
 
-Geçerli SharePoint Syntex içerik merkezi sitesine eklenen modellere genel bir bakış elde etmek için [Get-PnPSyntexModel cmdlet'ini](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModel.html) kullanın:
+Geçerli Syntex içerik merkezi sitesine eklenen modellere genel bir bakış elde etmek için [Get-PnPSyntexModel cmdlet'ini](https://pnp.github.io/powershell/cmdlets/Get-PnPSyntexModel.html) kullanın:
 
 ```PowerShell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"

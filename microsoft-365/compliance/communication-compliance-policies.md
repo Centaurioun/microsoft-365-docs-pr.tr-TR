@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1be83dbddad556b877247470e5b37f6cf0708657
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 7f9e71aa2a66fcac2205eda0bdfc5c795fc3c634
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68504490"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565124"
 ---
 # <a name="create-and-manage-communication-compliance-policies"></a>İletişim uyumluluğu ilkeleri oluşturma ve yönetme
 
@@ -38,7 +38,7 @@ ms.locfileid: "68504490"
 > [!IMPORTANT]
 > İletişim uyumluluk ilkeleri oluşturmak ve yönetmek için PowerShell'in kullanılması desteklenmez. Bu ilkeleri oluşturmak ve yönetmek için [, iletişim uyumluluk çözümünde](https://compliance.microsoft.com/supervisoryreview) ilke yönetimi denetimlerini kullanmanız gerekir.
 
-Microsoft Purview uyumluluk portalı Microsoft 365 kuruluşları için iletişim uyumluluk ilkeleri oluşturursunuz. İletişim uyumluluk ilkeleri, kuruluşunuzda hangi iletişimlerin ve kullanıcıların gözden geçirileceğini tanımlar, iletişimlerin hangi özel koşulları karşılaması gerektiğini tanımlar ve kimin inceleme yapacağını belirtir. *İletişim Uyumluluğu Yönetici* rolüne atanan kullanıcılar ilkeleri ayarlayabilir ve bu role atanmış olan herkes Microsoft Purview uyumluluk portalı **İletişim uyumluluğu** sayfasına ve genel ayarlara erişebilir. Gerekirse, bir ilkedeki değişikliklerin geçmişini gözden geçirmeyi bekleyen uyarıların, yükseltilmiş öğelerin ve çözümlenen öğelerin durumunu da içeren bir .csv (virgülle ayrılmış değerler) dosyasına aktarabilirsiniz. İlkeler yeniden adlandırılamaz ve artık gerekli olmadığında silinebilir.
+Microsoft Purview uyumluluk portalı Microsoft 365 kuruluşları için iletişim uyumluluk ilkeleri oluşturursunuz. İletişim uyumluluk ilkeleri, kuruluşunuzda hangi iletişimlerin ve kullanıcıların gözden geçirileceğini tanımlar, iletişimlerin hangi özel koşulları karşılaması gerektiğini tanımlar ve kimin inceleme yapacağını belirtir. *İletişim Uyumluluğu Yöneticileri* rolüne atanan kullanıcılar ilkeler ayarlayabilir ve bu role atanmış olan herkes Microsoft Purview uyumluluk portalı **İletişim uyumluluğu** sayfasına ve genel ayarlara erişebilir. Gerekirse, bir ilkedeki değişikliklerin geçmişini gözden geçirmeyi bekleyen uyarıların, yükseltilmiş öğelerin ve çözümlenen öğelerin durumunu da içeren bir .csv (virgülle ayrılmış değerler) dosyasına aktarabilirsiniz. İlkeler yeniden adlandırılamaz ve artık gerekli olmadığında silinebilir.
 
 ## <a name="policy-templates"></a>İlke şablonları
 
@@ -86,9 +86,24 @@ Yöneticiler, kuruluşunuza uygun şekilde bu ilkeye hemen özel gözden geçire
 >[!IMPORTANT]
 >Teams Yönetici Center'da **Son kullanıcı raporlama** seçeneğini açmak veya kapatmak için PowerShell kullanıyorsanız [Microsoft Teams cmdlet'leri modülü sürüm 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) veya üzerini kullanmanız gerekir.
 
+## <a name="policy-for-insider-risk-management-integration-preview"></a>Insider risk yönetimi tümleştirmesi ilkesi (önizleme)
+
+Kullanıcılar iş stresi yaşadığında, bu kişiler bozulabilir. Bu duygu, bazı kullanıcılar tarafından kuruluşunuzun mesajlaşma sistemlerinde uygunsuz olabilecek davranışlar ortaya çıkarabilecek ücretsiz veya kötü amaçlı davranışlara yol açabilir. İletişim uyumluluğu, özel bir [Uygunsuz metin](#policy-templates) algılama ilkesi kullanarak [insider risk yönetiminin](/microsoft-365/compliance/insider-risk-management) dağıtılma ilkelerine uygun iletilerde algılanan azaltma sinyalleri sağlayabilir. Bu ilke, bir [Veri sızıntısının dışlanmış çalışanlar tarafından](/microsoft-365/compliance/insider-risk-management-policies#data-leaks-by-disgruntled-users-preview) yapılandırılması sırasında otomatik olarak oluşturulur (seçenek olarak seçilirse) veya şirket içi risk yönetiminde [dağıtılan çalışanlar ilkesi tarafından güvenlik ilkesi ihlalleri](/microsoft-365/compliance/insider-risk-management-policies#security-policy-violations-by-disgruntled-users-preview) .
+
+Insider risk yönetimi dağıtım ilkesi için yapılandırıldığında, *iletişim uyumluluğunda iletilerde dağıtım - (oluşturulma tarihi)* adlı ayrılmış bir ilke oluşturulur ve ilkedeki tüm kuruluş kullanıcılarını otomatik olarak içerir. Bu ilke yerleşik [Tehdit, Taciz ve Ayrımcılık sınıflandırıcılarını](#classifiers) kullanarak iletilerdeki bozulma davranışını algılamaya başlar ve bu sinyalleri otomatik olarak içeriden risk yönetimine gönderir. Gerekirse, bu ilke dahil edilen kullanıcıların kapsamını ve ilke koşulları ile sınıflandırıcılarını güncelleştirmek için düzenlenebilir.  
+
+24 saat içinde dağıtılmadı olarak sınıflandırılan 5 veya daha fazla ileti gönderen kullanıcılar, bu seçeneği içeren şirket içi risk yönetimi ilkeleri için otomatik olarak kapsama alınır. Kapsam dahilindeki risk yönetimi, ilkede yapılandırılan riskli etkinlikleri algılar ve uygun uyarılar oluşturur. Dağıtılmayan iletilerin gönderilmesi, kullanıcının bir iç risk yönetimi ilkesinde kapsama alınmasına kadar 48 saat kadar sürebilir. Insider risk yönetimi ilkesi tarafından algılanan riskli bir etkinlik için uyarı oluşturulursa, uyarının tetikleme olayının iletişim uyumluluğunu dağıtma etkinliğinden kaynaklandığı tanımlanır.
+
+[Insider Risk Yönetimi Araştırmacıları](/microsoft-365/compliance/insider-risk-management-plan#plan-for-the-review-and-investigation-workflow) rol grubuna atanan tüm kullanıcılar, ayrılmış iletişim uyumluluk ilkesinde otomatik olarak gözden geçiren olarak atanır. Risk yönetimi araştırmacılarının doğrudan iletişim uyumluluk uyarıları sayfasında (insider risk yönetimi uyarı ayrıntılarından bağlantılı) ilişkili dağıtım uyarısını gözden geçirmeleri gerekiyorsa, *İletişim Uyumluluğu Araştırmacıları* rol grubuna el ile eklenmelidirler.
+
+İletişim uyumluluğunu insider risk yönetimiyle tümleştirmeden önce, uygunsuz olabilecek metinler içeren iletileri algılarken aşağıdaki yönergeleri de göz önünde bulundurmanız gerekir:
+
+- **Mevcut *uygunsuz metinleri algıla* ilkesi olmayan kuruluşlar için**. *İletilerdeki yeni Dağıtım - (oluşturulma tarihi)* ilkesi, insider risk yönetimi ilkesi sihirbazı tarafından otomatik olarak oluşturulur. Çoğu durumda başka eylem gerekmez.
+- **Mevcut *Uygunsuz metinleri algıla* ilkesi olan kuruluşlar için**. *İletilerdeki yeni Dağıtım - (oluşturulma tarihi)* ilkesi, insider risk yönetimi ilkesi sihirbazı tarafından otomatik olarak oluşturulur. İletilerde uygunsuz olabilecek metinler için iki iletişim uyumluluk ilkeniz olsa da, araştırmacılar aynı etkinlik için yinelenen uyarılar görmez. Insider risk yönetimi araştırmacıları yalnızca ayrılmış tümleştirme ilkesine yönelik uyarıları görür ve iletişim uyumluluğu araştırmacıları yalnızca mevcut ilkenin uyarılarını görür. Gerekirse, kapsam içi kullanıcıları veya tek tek ilke koşullarını uygun şekilde değiştirmek için ayrılmış ilkeyi düzenleyebilirsiniz.
+
 ## <a name="pause-a-policy"></a>İlkeyi duraklatma
 
-İletişim uyumluluk ilkesi oluşturduktan sonra, gerekirse ilke geçici olarak duraklatılabilir. İlkeyi duraklatma, ilke eşleşmelerini test etmek veya sorun gidermek ya da ilke koşullarını iyileştirmek için kullanılabilir. Bu durumlarda bir ilkeyi silmek yerine, bir ilkenin duraklatılması, devam eden araştırma ve incelemeler için mevcut ilke uyarılarını ve iletilerini de korur. İlkenin duraklatılması, ilkenin duraklatıldığı süre boyunca ilkede tanımlanan tüm kullanıcı iletisi koşulları için inceleme ve uyarı oluşturmayı engeller. Bir ilkeyi duraklatmak veya yeniden başlatmak için kullanıcıların *İletişim Uyumluluğu Yönetici* rol grubunun üyesi olması gerekir.
+İletişim uyumluluk ilkesi oluşturduktan sonra, gerekirse ilke geçici olarak duraklatılabilir. İlkeyi duraklatma, ilke eşleşmelerini test etmek veya sorun gidermek ya da ilke koşullarını iyileştirmek için kullanılabilir. Bu durumlarda bir ilkeyi silmek yerine, bir ilkenin duraklatılması, devam eden araştırma ve incelemeler için mevcut ilke uyarılarını ve iletilerini de korur. İlkenin duraklatılması, ilkenin duraklatıldığı süre boyunca ilkede tanımlanan tüm kullanıcı iletisi koşulları için inceleme ve uyarı oluşturmayı engeller. Bir ilkeyi duraklatmak veya yeniden başlatmak için kullanıcıların *İletişim Uyumluluğu Yöneticileri* rol grubunun üyesi olması gerekir.
 
 İlkeyi duraklatmak için **İlke** sayfasına gidin, bir ilke seçin ve ardından eylemler araç **çubuğundan İlkeyi duraklat'ı** seçin. **İlkeyi duraklat** bölmesinde Duraklat'ı seçerek ilkeyi duraklatmak istediğinizi **onaylayın**. Bazı durumlarda, bir ilkenin duraklatılması 24 saat kadar sürebilir. İlke duraklatıldıktan sonra, ilkeyle eşleşen iletiler için uyarılar oluşturulmaz. Ancak, ilke duraklatmadan önce oluşturulan uyarılarla ilişkili iletiler araştırma, gözden geçirme ve düzeltme için kullanılabilir durumda kalır.
 
@@ -111,7 +126,7 @@ mevcut iletişim uyumluluk ilkelerine sahip kuruluşlar için, mevcut bir ilkede
 - **Farklı kullanıcı grupları için uygunsuz iletileri algılama ve gözden geçirme**: Bazı kuruluşlar aynı yapılandırmaya sahip birden çok ilke oluşturmayı tercih edebilir, ancak her ilke için farklı kapsam içi kullanıcılar ve farklı gözden geçirenler içerebilir.
 - **Küçük değişikliklerle benzer ilkeler**: Karmaşık yapılandırmaları veya koşulları olan ilkeler için, benzer bir ilkeden yeni ilke oluşturmak zaman kazandırabilir.
 
-Bir ilkeyi kopyalamak için kullanıcıların *İletişim Uyumluluğu* veya *İletişim Uyumluluğu Yönetici* rol gruplarının üyesi olması gerekir. Mevcut bir ilkeden yeni bir ilke oluşturulduktan sonra, yeni ilke yapılandırmasıyla eşleşen iletilerin görüntülenmesi 24 saat kadar sürebilir.
+Bir ilkeyi kopyalamak için kullanıcıların *İletişim Uyumluluğu* veya *İletişim Uyumluluğu Yöneticileri* rol gruplarının üyesi olması gerekir. Mevcut bir ilkeden yeni bir ilke oluşturulduktan sonra, yeni ilke yapılandırmasıyla eşleşen iletilerin görüntülenmesi 24 saat kadar sürebilir.
 
 İlkeyi kopyalamak ve yeni bir ilke oluşturmak için aşağıdaki adımları tamamlayın:
 
@@ -145,7 +160,7 @@ Daha eski bir ilkeyi tanımlamak için İlke **sayfasındaki** *Son ilke tarama*
 
 ## <a name="storage-limit-notification-preview"></a>Depolama sınırı bildirimi (önizleme)
 
-Her iletişim uyumluluk ilkesinin depolama sınırı boyutu 100 GB veya 1 milyon iletidir (hangisi önce ulaşılırsa). İlke bu sınırlara yaklaştıkça, bildirim e-postaları *İletişim Uyumluluğu* veya *İletişim Uyumluluğu Yönetici* rol gruplarına atanan kullanıcılara otomatik olarak gönderilir. Depolama boyutu veya ileti sayısı sınırın yüzde 80, 90 ve yüzde 95'ine ulaştığında bildirim iletileri gönderilir. İlke sınırına ulaşıldığında, ilke otomatik olarak devre dışı bırakılır ve ilke uyarılar için iletileri işlemeyi durdurur.
+Her iletişim uyumluluk ilkesinin depolama sınırı boyutu 100 GB veya 1 milyon iletidir (hangisi önce ulaşılırsa). İlke bu sınırlara yaklaştıkça, bildirim e-postaları *İletişim Uyumluluğu* veya *İletişim Uyumluluğu Yöneticileri* rol gruplarına atanan kullanıcılara otomatik olarak gönderilir. Depolama boyutu veya ileti sayısı sınırın yüzde 80, 90 ve yüzde 95'ine ulaştığında bildirim iletileri gönderilir. İlke sınırına ulaşıldığında, ilke otomatik olarak devre dışı bırakılır ve ilke uyarılar için iletileri işlemeyi durdurur.
 
 >[!IMPORTANT]
 >Depolama ve ileti sınırlarına ulaşılması nedeniyle bir ilke devre dışı bırakılırsa, devre dışı bırakılan ilkenin nasıl yönetileceğini değerlendirmeyi unutmayın. İlkeyi silerseniz tüm iletiler, ilişkili ekler ve ileti uyarıları kalıcı olarak silinir. Gelecekte kullanmak üzere bu öğelerin bakımını yapmanız gerekiyorsa devre dışı bırakılan ilkeyi silmeyin.

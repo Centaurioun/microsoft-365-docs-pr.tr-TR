@@ -16,20 +16,25 @@ ms.collection: m365-security
 description: Donanım tabanlı yalıtımda en son bilgileri edinin. Açıklardan yararlanmalar veya kötü amaçlı bağlantılar gibi mevcut ve yeni ortaya çıkan saldırıların çalışanların üretkenliğini ve kurumsal güvenliğini kesintiye uğratmasını önleyin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 75404b9b58fe51fa76a1699b6db0eff7354930c2
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 5213703a3c0793334f7131a4a2882057f7decc19
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68082625"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565520"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Yöneticiler için Office Application Guard
 
 **Şunlar için geçerlidir:** Word, Excel ve Microsoft 365 için PowerPoint Uygulamaları, Windows 10 Enterprise Windows 11 Enterprise
 
-Office için Microsoft Defender Application Guard (Office için Application Guard), güvenilmeyen dosyaların güvenilir kaynaklara erişmesini önlemeye yardımcı olur ve kuruluşunuzun yeni ve yeni saldırılara karşı güvende kalmasını sağlar. Bu makalede, office için Application Guard önizlemesi için cihazları ayarlama işleminde yöneticilere yol gösterilir. Bir cihazda Office için Application Guard etkinleştirmeye yönelik sistem gereksinimleri ve yükleme adımları hakkında bilgi sağlar.
+Office için Microsoft Defender Application Guard (Office için Application Guard), güvenilmeyen dosyaların güvenilir kaynaklara erişmesini önlemeye yardımcı olur ve kuruluşunuzun yeni ve yeni saldırılara karşı güvende kalmasını sağlar. Bu makalede, Office için Application Guard için desteklenen cihazları ayarlama işlemi yöneticilere yol gösterilir. 
 
 ## <a name="prerequisites"></a>Önkoşullar
+
+### <a name="licensing-requirements"></a>Lisans gereksinimleri
+
+* Microsoft 365 E5 veya Microsoft 365 E5 Güvenlik
+* [Microsoft 365'te Güvenli Belgeler](/microsoft-365/security/office-365-security/safe-docs)
 
 ### <a name="minimum-hardware-requirements"></a>En düşük donanım gereksinimleri
 
@@ -46,22 +51,11 @@ Office için Microsoft Defender Application Guard (Office için Application Guar
 Ayrıntılı sistem gereksinimleri için bkz. [Microsoft Defender Application Guard için sistem gereksinimleri](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Ayrıca, lütfen bilgisayar üreticinizin sanallaştırma teknolojisini etkinleştirme kılavuzlarına bakın.
 Microsoft 365 Uygulamaları güncelleştirme kanalları hakkında daha fazla bilgi edinmek için bkz. [Microsoft 365 Uygulamaları için güncelleştirme kanallarına genel bakış](/deployoffice/overview-update-channels).
 
-### <a name="licensing-requirements"></a>Lisans gereksinimleri
-
-* Microsoft 365 E5 Güvenlik
-* Fakülteler için Microsoft 365 A5
-* Öğrenciler için Microsoft 365 A5
-
-> [!NOTE]
-> Paylaşılan bilgisayar etkinleştirme veya cihaz tabanlı lisanslama ile Kurumlar için Microsoft 365 Uygulamaları Office için Application Guard erişimi yoktur.
->
-> Güvenli Belgeler lisans planları, Office için Application Guard erişim sağlar. Daha fazla bilgi için bkz. [Microsoft 365 E5/A5'te Güvenli Belgeler](/microsoft-365/security/office-365-security/safe-docs).
-
 ## <a name="deploy-application-guard-for-office"></a>Office için Application Guard dağıtma
 
 ### <a name="enable-application-guard-for-office"></a>Office için Application Guard etkinleştirme
 
-1. **Kb4571756 toplu aylık güvenlik güncelleştirmelerini Windows 10** indirip yükleyin.
+1. (yalnızca Windows 10) **Kb4571756 toplu aylık güvenlik güncelleştirmelerini Windows 10** indirip yükleyin. 
 
 2. Windows Özellikleri'nin altında **Microsoft Defender Application Guard'ı** ve **ardından Tamam'ı** seçin. Application Guard özelliğinin etkinleştirilmesi sistemin yeniden başlatılmasını ister. Şimdi veya 3. adımdan sonra yeniden başlatmayı seçebilirsiniz.
 
@@ -73,11 +67,11 @@ Microsoft 365 Uygulamaları güncelleştirme kanalları hakkında daha fazla bil
    Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard
    ```
 
-3. **Bilgisayar Yapılandırması\\Yönetim Şablonları\\Windows Bileşenleri\\ Microsoft Defender Application Guard'nde** bir grup ilkesi olan **Yönetilen Modda** Microsoft Defender Application Guard arayın. Seçenekler'in altındaki değeri **2** veya **3** olarak ayarlayıp Tamam veya **Uygula'yı** seçerek bu ilkeyi  açın.
+3. grup ilkesi Düzenleyicisi penceresinde **, Windows Bileşenleri -> Microsoft Defender Application Guard > Bilgisayar Yapılandırması -> Yönetim Şablonları ->** genişletin. **Yönetilen Modda Microsoft Defender Application Guard aç** ayarını etkinleştirin. Seçenekler'in altındaki değeri **2** veya **3** olarak ayarlayın. 
 
    :::image type="content" source="../../media/ag04-deploy.png" alt-text="Ag'yi Yönetilen Modda açma seçeneği" lightbox="../../media/ag04-deploy.png":::
 
-   Bunun yerine, karşılık gelen CSP ilkesini ayarlayabilirsiniz:
+   Alternatif olarak, karşılık gelen CSP ilkesini ayarlayabilirsiniz:
 
    > OMA-URI: **./Device/Vendor/MSFT/WindowsDefenderApplicationGuard/Settings/AllowWindowsDefenderApplicationGuard** <br> Veri türü: **Tamsayı** <br> Değer: **2**
 
@@ -92,29 +86,25 @@ Bu adım, sorunları tanımlamak ve düzeltmek için gereken verilerin Microsoft
 
 1. Başlat menüsünden **Ayarlar'ı** açın.
 
-   :::image type="content" source="../../media/ag05-diagnostic.png" alt-text="Başlat menüsü" lightbox="../../media/ag05-diagnostic.png":::
-
 2. **Windows Ayarları'nda** **Gizlilik'i** seçin.
 
-   :::image type="content" source="../../media/ag06-diagnostic.png" alt-text="Windows Ayarları menüsü" lightbox="../../media/ag06-diagnostic.png":::
-
 3. Gizlilik bölümünde **Tanılama & geri bildirim'i** ve **ardından İsteğe bağlı tanılama verileri'ne** tıklayın.
-
-   :::image type="content" source="../../media/ag07a-diagnostic.png" alt-text="Tanılama ve geri bildirim menüsü" lightbox="../../media/ag07a-diagnostic.png":::
 
 Windows tanılama ayarlarını yapılandırma hakkında daha fazla bilgi için bkz. [Kuruluşunuzda Windows tanılama verilerini yapılandırma](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enterprise-management).
 
 ### <a name="confirm-that-application-guard-for-office-is-enabled-and-working"></a>Office için Application Guard etkinleştirildiğini ve çalıştığını onaylayın
 
-Office için Application Guard etkinleştirildiğini onaylamadan önce, ilkelerin dağıtıldığı bir cihazda Word, Excel veya PowerPoint'i başlatın. Office'in etkinleştirildiğinden emin olun. Önce Office ürününü etkinleştirmek için iş kimliğinizi kullanmanız gerekebilir.
+Office için Application Guard etkinleştirildiğini onaylamadan önce: 
+1. İlkelerin dağıtıldığı bir cihazda Word, Excel veya PowerPoint'i başlatın. 
+2. Başlattığınız uygulamadan **Dosya -> Hesabı'na** gidin. Hesap sayfasında, beklenen lisansın gösterildiğini doğrulayın.
 
-Office Application Guard etkinleştirildiğini onaylamak için Word, Excel veya PowerPoint'i başlatın ve güvenilmeyen bir belge açın. Örneğin, İnternet'ten indirilen bir belgeyi veya kuruluşunuzun dışındaki bir kişiden gelen bir e-posta ekini açabilirsiniz.
+Office için Application Guard etkinleştirildiğini onaylamak için güvenilmeyen bir belge açın. Örneğin, İnternet'ten indirilen bir belgeyi veya kuruluşunuzun dışındaki bir kişiden gelen bir e-posta ekini açabilirsiniz.
 
-Güvenilmeyen bir dosyayı ilk kez açtığınızda, aşağıdaki örneğe benzer bir Office giriş ekranı görebilirsiniz. Office için Application Guard etkinleştirilirken ve dosya açılırken bir süre görüntülenebilir. Güvenilmeyen dosyaların sonraki açılışları daha hızlı olmalıdır.
+Güvenilmeyen bir dosyayı ilk kez açtığınızda, aşağıdaki örneğe benzer bir Office giriş ekranı görürsünüz. Office için Application Guard etkinleştiriliyor ve dosya açılıyor. Güvenilmeyen dosyaların sonraki açılışları genellikle daha hızlıdır.
 
 :::image type="content" source="../../media/ag08-confirm.png" alt-text="Office uygulaması giriş sayfası" lightbox="../../media/ag08-confirm.png":::
 
-Dosya açıldıktan sonra, dosyanın Office için Application Guard içinde açıldığını gösteren birkaç görsel gösterge göstermelidir:
+Dosya açıldıktan sonra, dosyanın Office için Application Guard içinde açık olduğunu belirten birkaç görsel gösterge vardır:
 
 * Şeritteki açıklama balonu
 
@@ -126,28 +116,29 @@ Dosya açıldıktan sonra, dosyanın Office için Application Guard içinde aç�
 
 ## <a name="configure-application-guard-for-office"></a>Office için Application Guard yapılandırma
 
-Office, Office için Application Guard özelliklerini yapılandırmanıza olanak tanımak için aşağıdaki ilkeleri destekler. Bu ilkeler Grup ilkeleri veya [Office bulut ilkesi hizmeti](/DeployOffice/overview-office-cloud-policy-service) aracılığıyla yapılandırılabilir.
+Office, Office için Application Guard yapılandırmak için aşağıdaki ilkeleri destekler. Bu ilkeler grup ilkeleri veya [Office bulut ilkesi hizmeti](/DeployOffice/overview-office-cloud-policy-service) aracılığıyla yapılandırılabilir.
 
 > [!NOTE]
 > Bu ilkelerin yapılandırılması, Office için Application Guard açılan dosyalar için bazı işlevleri devre dışı bırakabilir.
 
 |Ilkesi|Açıklama|
 |---|---|
-|Office için Application Guard kullanma|Bu ilkeyi etkinleştirmek Word, Excel ve PowerPoint'i Office için Application Guard yerine Korumalı Görünüm yalıtım kapsayıcısını kullanmaya zorlar. Bu ilke, Microsoft Edge için etkinleştirildiğinde sorunlar olduğunda Office için Application Guard geçici olarak devre dışı bırakmak için kullanılabilir.|
-|Office kapsayıcısı oluşturma öncesi için Application Guard yapılandırma|Bu ilke, güvenilmeyen dosyaları yalıtmaya yönelik Office kapsayıcısı için Application Guard geliştirilmiş çalışma zamanı performansı için önceden oluşturulup oluşturulmadığını belirler. Bu ayarı etkinleştirirseniz, kapsayıcıyı önceden oluşturmaya devam etmek için gün sayısını belirtebilir veya Office'in yerleşik buluşsal buluşsal öğesinin kapsayıcıyı önceden oluşturmasına izin vekleyebilirsiniz.
-|Office için Application Guard'nde açılan Office belgeleri için kopyalama/yapıştırmaya izin verme|Bu ilkenin etkinleştirilmesi, kullanıcının Office için Application Guard'da açılan bir belgedeki içeriği, dışında açılan bir belgeye kopyalamasını ve yapıştırmasını engeller.|
+|Office için Application Guard kullanma|Bu ilkeyi etkinleştirmek Word, Excel ve PowerPoint'i Office için Application Guard yerine Korumalı Görünüm yalıtım kapsayıcısını kullanmaya zorlar.|
+|Office kapsayıcısı oluşturma öncesi için Application Guard yapılandırma|Bu ilke, geliştirilmiş çalışma zamanı performansı için Office kapsayıcısı için Application Guard önceden oluşturulup oluşturulmadığını belirler. Bu ilkeyi etkinleştirdiğinizde, kapsayıcıyı önceden oluşturmaya devam etmek için gün sayısını belirtebilir veya Office'in yerleşik buluşsal buluşsal öğesinin kapsayıcıyı önceden oluşturmasına izin vekleyebilirsiniz.
+|Office için Application Guard'nde açılan Office belgeleri için kopyalama/yapıştırmaya izin verme|Bu ilkenin etkinleştirilmesi, kullanıcının Office için Application Guard'da açılan bir belgedeki içeriği kapsayıcı dışında açılmış bir belgeye kopyalamasını ve yapıştırmasını engeller.|
 |Office için Application Guard donanım hızlandırmayı devre dışı bırakma|Bu ilke, Office için Application Guard grafikleri işlemek için donanım hızlandırma kullanıp kullanmadığını denetler. Bu ayarı etkinleştirirseniz, Office için Application Guard yazılım tabanlı (CPU) işleme kullanır ve herhangi bir üçüncü taraf grafik sürücüsünü yüklemez veya bağlı grafik donanımıyla etkileşim kurmaz.
 |Office için Application Guard desteklenmeyen dosya türleri korumasını devre dışı bırakma|Bu ilke, Office için Application Guard desteklenmeyen dosya türlerinin açılmasını engelleyip engellemeyeceğini veya Korumalı Görünüm'e yeniden yönlendirmeyi etkinleştirip etkinleştirmeyeceğini denetler.
-|Office için Application Guard açılan belgeler için kamera ve mikrofon erişimini kapatma|Bu ilke etkinleştirildiğinde Office için Application Guard içindeki kamera ve mikrofona Office erişimi kaldırılır.|
-|Office için Application Guard'de açılan belgelerden yazdırmayı kısıtlama|Bu ilkenin etkinleştirilmesi, kullanıcının Office için Application Guard açılan bir dosyadan yazdırabileceği yazıcıları sınırlar. Örneğin, bu ilkeyi kullanarak kullanıcıları yalnızca PDF'ye yazdıracak şekilde kısıtlayabilirsiniz.|
-|Kullanıcıların dosyalarda Office koruması için Application Guard kaldırmasını engelleme|Bu ilkenin etkinleştirilmesi, Office koruması için Application Guard devre dışı bırakma veya Office için Application Guard dışında bir dosya açma seçeneğini (Office uygulama deneyimi içinde) kaldırır. <p> **Not:** Kullanıcılar, dosyadan web işareti özelliğini el ile kaldırarak veya belgeyi Güvenilen konuma taşıyarak bu ilkeyi yine atlayabilir.|
+|Office için Application Guard açılan belgeler için kamera ve mikrofon erişimini kapatma|Bu ilkenin etkinleştirilmesi, Office için Application Guard içindeki kamera ve mikrofona Office erişimini kaldırır.|
+|Office için Application Guard'de açılan belgelerden yazdırmayı kısıtlama|Bu ilkenin etkinleştirilmesi, kullanıcının Office için Application Guard'de açılan bir dosyadan yazdırabileceği yazıcıları sınırlar. Örneğin, bu ilkeyi kullanarak kullanıcıları yalnızca PDF'ye yazdıracak şekilde kısıtlayabilirsiniz.|
+|Kullanıcıların dosyalarda Office koruması için Application Guard kaldırmasını engelleme|Bu ilkenin etkinleştirilmesi, Office koruması için Application Guard devre dışı bırakma veya Office için Application Guard dışında bir dosya açma seçeneğini (Office uygulama deneyimi içinde) kaldırır. <p> **Not:** Kullanıcılar, dosyadan web işareti özelliğini el ile kaldırarak veya belgeyi güvenilir bir konuma taşıyarak bu ilkeyi yine atlayabilir.|
+|
 
 > [!NOTE]
-> Aşağıdaki ilkeler, kullanıcının etkin olması için oturumu kapatmasını ve Windows'ta yeniden oturum açmasını gerektirir:
+> Aşağıdaki ilkelerin geçerli olması için kullanıcıların oturumu kapatması ve Windows'ta yeniden oturum açması gerekir:
 >
 > * Office için Application Guard açılan belgeler için kopyalama/yapıştırmayı devre dışı bırakma
 > * Office için Application Guard açılan belgeler için yazdırmayı kısıtlama
-> * Office için Application Guard'da açılan belgelere kamera ve mikrofon erişimini kapatma
+> * Office için Application Guard'de açılan belgelere kamera ve mikrofon erişimini kapatma
 
 ## <a name="submit-feedback"></a>Geri bildirim gönderme
 
@@ -159,9 +150,9 @@ Office için Application Guard başlatırken herhangi bir sorunla karşılaşır
 
 2. Application Guard başlatırken bir hata iletişim kutusu alırsanız, yeni bir geri bildirim gönderimi başlatmak için hata iletişim kutusunda **Microsoft'a Bildir'i** seçin. Aksi takdirde, Application Guard için doğru kategoriyi seçmek için adresine gidin <https://aka.ms/mdagoffice-fb> ve sağ üst kısımdaki **Yeni geri bildirim ekle'yi seçin+&nbsp;**.
 
-3. Sizin için henüz doldurulmadıysa **Geri bildiriminizi özetleyin** kutusuna bir özet girin.
+3. **Geri bildiriminizi özetleyin** kutusuna bir özet girin.
 
-4. Karşılaştığınız sorunun ayrıntılı açıklamasını ve **daha ayrıntılı olarak açıkla** kutusuna hangi adımları uyguladığınızı girin ve **İleri'yi** seçin.
+4. Sorunun ayrıntılı açıklamasını ve **daha ayrıntılı olarak açıkla** kutusuna hata ayıklamak için hangi adımları tamamladıysanız bunu girin ve **İleri'yi** seçin.
 
 5. **Sorun'un** yanındaki baloncuğu seçin. Seçilen kategorinin **Güvenlik ve Gizlilik \> Microsoft Defender Application Guard – Office** olduğundan emin olun ve **İleri'yi** seçin.
 
@@ -185,9 +176,9 @@ Office için Application Guard başlatırken herhangi bir sorunla karşılaşır
 
 9. **Gönder'i** seçin.
 
-### <a name="submit-feedback-via-office-customer-voice"></a>Office Customer Voice aracılığıyla geri bildirim gönderme
+### <a name="submit-feedback-via-one-customer-voice"></a>One Customer Voice aracılığıyla geri bildirim gönderme
 
-Sorun, Office belgeleri Application Guard açıldığında ortaya çıkarsa, Office'in içinden de geri bildirim gönderebilirsiniz. Geri bildirim göndermek için [Office Insider El Kitabı'na](https://insider.office.com/handbook) bakın.
+Sorun, dosyalar Application Guard açıldığında ortaya çıkarsa Word, Excel ve PowerPoint'in içinden de geri bildirim gönderebilirsiniz. Ayrıntılı rehberlik için [Geri bildirim sağlama](https://insider.office.com/en-us/handbook#Provide-feedback) bölümüne bakın.
 
 ## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>Uç Nokta için Microsoft Defender ve Office 365 için Microsoft Defender ile tümleştirme
 
@@ -195,40 +186,32 @@ Office için Application Guard, yalıtılmış ortamda gerçekleşen kötü ama�
 
 [Microsoft E365 E5'teki Güvenli Belgeler](/microsoft-365/security/office-365-security/safe-docs), Office için Application Guard'de açılan belgeleri taramak için Uç Nokta için Microsoft Defender kullanan bir özelliktir. Ek bir koruma katmanı için, tarama sonuçları belirlenene kadar kullanıcılar Office için Application Guard bırakamaz.
 
-Uç Nokta için Microsoft Defender, kurumsal ağların gelişmiş tehditleri önlemesine, algılamasına, araştırmasına ve yanıtlamasına yardımcı olmak için tasarlanmış bir güvenlik platformudur. Bu platform hakkında daha fazla ayrıntı için bkz. [Uç Nokta için Microsoft Defender](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp). Cihazları bu platforma ekleme hakkında daha fazla bilgi için bkz. [Cihazları Uç Nokta için Microsoft Defender hizmetine ekleme](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure).
-
-Ayrıca Office 365 için Microsoft Defender Uç Nokta için Defender ile çalışacak şekilde yapılandırabilirsiniz. Daha fazla bilgi için bkz. [Office 365 için Defender Uç Nokta için Microsoft Defender ile tümleştirme](integrate-office-365-ti-with-mde.md).
-
 ## <a name="limitations-and-considerations"></a>Sınırlamalar ve dikkat edilmesi gerekenler
 
-* Office için Application Guard güvenilmeyen belgeleri, güvenilen şirket kaynaklarına, intranete, kullanıcının kimliğine ve bilgisayardaki rastgele dosyalara erişemeyecek şekilde yalıtan korumalı bir moddur. Sonuç olarak, bir kullanıcı disk üzerindeki yerel bir dosyadan resim ekleme gibi bu tür erişime bağımlılığı olan bir özelliğe erişmeye çalışırsa, erişim başarısız olur ve aşağıdaki örneğe benzer bir istem üretir. Güvenilmeyen bir belgenin güvenilen kaynaklara erişmesini sağlamak için, kullanıcıların belgeden Application Guard korumasını kaldırması gerekir.
+* Office için Application Guard güvenilmeyen belgeleri yalıtarak güvenilen şirket kaynaklarına, intranete, kullanıcının kimliğine ve bilgisayardaki rastgele dosyalara erişememelerini sağlayan korumalı bir moddur. Sonuç olarak, bir kullanıcı bu tür erişime bağımlılığı olan bir özelliğe erişmeye çalışırsa (örneğin, disk üzerindeki yerel bir dosyadan resim ekleme), erişim başarısız olur ve aşağıdaki örneğe benzer bir istem görüntüler. Güvenilmeyen bir belgenin güvenilen kaynaklara erişmesini sağlamak için, kullanıcıların belgeden Application Guard korumasını kaldırması gerekir.
 
   :::image type="content" source="../../media/ag09-confirm.png" alt-text="Güvenlik iletisini ve özellik durumunu belirten iletişim kutusu" lightbox="../../media/ag09-confirm.png":::
 
   > [!NOTE]
-  > Kullanıcılara yalnızca dosyaya ve kaynağına veya nereden geldiğine güveniyorlarsa korumayı kaldırmalarını önerin.
+  > Kullanıcılara yalnızca dosyaya ve dosyanın kaynağına güveniyorlarsa korumayı kaldırmalarını önerin.
 
-* Güvenilmeyen bir belge güvenilir bir konumda depolandığında, konumdaki güven belge tarafından devralınır. Genellikle bir kuruluşun bulut depolama alanı güvenilir bir konum olarak tanımlanır.
+* Office için Application Guard makrolar ve ActiveX denetimleri gibi etkin içerik devre dışı bırakılır. Etkin içeriği etkinleştirmek için Application Guard koruması kaldırılmalıdır.
 
-* Office için Application Guard'da makrolar ve ActiveX denetimleri gibi belgelerdeki etkin içerik devre dışı bırakılır. Kullanıcıların etkin içeriği etkinleştirmek için Application Guard korumasını kaldırması gerekir.
-
-* Ağ paylaşımlarındaki güvenilmeyen dosyalar veya farklı bir kuruluştan OneDrive, OneDrive İş veya SharePoint Online'dan paylaşılan dosyalar Application Guard salt okunur olarak açılır. Kullanıcılar kapsayıcıda çalışmaya devam etmek için bu tür dosyaların yerel bir kopyasını kaydedebilir veya doğrudan özgün dosyayla çalışmak için korumayı kaldırabilir.
+* Ağ paylaşımlarındaki güvenilmeyen dosyalar veya OneDrive, OneDrive İş veya SharePoint Online'dan paylaşılan dosyalar Application Guard salt okunur olarak açılır. Kullanıcılar kapsayıcıda çalışmaya devam etmek için bu tür dosyaların yerel bir kopyasını kaydedebilir veya doğrudan özgün dosyayla çalışmak için korumayı kaldırabilir.
 
 * Bilgi Hakları Yönetimi (IRM) tarafından korunan dosyalar varsayılan olarak engellenir. Kullanıcılar bu tür dosyaları Korumalı Görünüm'de açmak isterse, yöneticinin kuruluş için desteklenmeyen dosya türleri için ilke ayarlarını yapılandırması gerekir.
 
-* Office için Application Guard'deki Office uygulamalarında yapılan özelleştirmeler, kullanıcı oturumu kapatıp yeniden oturum açtığında veya cihaz yeniden başlatıldıktan sonra kalıcı olmaz.
+* Kullanıcı oturumu kapatıp yeniden oturum açtığında veya cihaz yeniden başlatıldıktan sonra Office için Application Guard'deki Office uygulamalarında yapılan özelleştirmeler kalıcı olmaz.
 
 * Yalnızca UIA çerçevesini kullanan Erişilebilirlik araçları, Office için Application Guard açılan dosyalar için erişilebilir bir deneyim sağlayabilir.
 
-* Yüklemeden sonra Application Guard ilk kez başlatılması için ağ bağlantısı gereklidir. Application Guard lisansı doğrulamak için bağlantı gereklidir.
+* Yüklemeden sonra Application Guard ilk kez başlatılması için ağ bağlantısı gereklidir. 
 
-* Belgenin bilgi bölümünde *, Son Değiştiren* özelliği kullanıcı olarak **WDAGUtilityAccount** görüntüleyebilir. WDAGUtilityAccount, Application Guard'de yapılandırılan anonim kullanıcıdır. Masaüstü kullanıcısının kimliği Application Guard kapsayıcısının içinde paylaşılmıyor.
+* Belgenin bilgi bölümünde *, Son Değiştiren* özelliği kullanıcı olarak **WDAGUtilityAccount** görüntüleyebilir. WDAGUtilityAccount, Application Guard tarafından kullanılan anonim hesaptır. Masaüstü kullanıcısının kimliği Application Guard kapsayıcısının içinde kullanılamaz.
 
 ## <a name="performance-optimizations-for-application-guard-for-office"></a>Office için Application Guard için performans iyileştirmeleri
 
-Bu bölümde, Office için Application Guard kullanılan performans iyileştirmelerine genel bir bakış sağlanır. Bu bilgiler, yöneticilerin Application Guard etkinleştirildiğinde Office'in performansı veya genel sistemle ilgili kullanıcılardan gelen raporları tanılamasına yardımcı olabilir.
-
-Application Guard, güvenilmeyen belgeleri sistemden yalıtmak için sanallaştırılmış bir kapsayıcı kullanır. Office belgelerini açmak için kapsayıcı oluşturma ve Application Guard kapsayıcısını ayarlama işlemi, kullanıcılar güvenilmeyen bir belgeyi açtığında kullanıcı deneyimini olumsuz etkileyebilecek bir performans yüküne sahiptir.
+Application Guard, güvenilmeyen belgeleri sistemden yalıtmak için sanal makineye benzer bir sanallaştırılmış kapsayıcı kullanır. Office belgelerini açmak için kapsayıcı oluşturma ve Application Guard kapsayıcısını ayarlama işlemi, kullanıcılar güvenilmeyen bir belgeyi açtığında kullanıcı deneyimini olumsuz etkileyebilecek bir performans yüküne sahiptir.
 
 Kullanıcılara beklenen dosya açma deneyimini sağlamak için, Application Guard bir sistemde aşağıdaki buluşsal yöntem karşılandığında kapsayıcıyı önceden oluşturmak için mantığı kullanır: Kullanıcı son 28 gün içinde bir dosyayı Korumalı Görünüm'de veya Application Guard açmıştır.
 

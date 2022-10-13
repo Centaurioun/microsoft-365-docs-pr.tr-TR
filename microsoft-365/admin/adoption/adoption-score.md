@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Benimseme Puanı'nın insanları ve teknoloji deneyimi ölçümlerini nasıl yansıtdığını ve benzer boyuttaki kuruluşlarla nasıl karşılaştırdığını öğrenin.
-ms.openlocfilehash: 372d9d13b02b8d0087c40a1e97c870dbfc6cb97b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: eff127b92aa14a80756827f93583e43df72f7456
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68205035"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563504"
 ---
 # <a name="microsoft-adoption-score"></a>Microsoft Benimseme Puanı 
 
@@ -47,16 +47,29 @@ Benimseme Puanı, kuruluşunuzun Microsoft 365'i nasıl kullandığı ve onu des
 
     Bahsedilen kategorilerin her biri için, kurumsal etkinlik biçimindeki bazı en iyi yöntemleri ve ilişkili avantajları belirlemek için genel araştırmalara bakıyoruz. Örneğin Forrester araştırması, kişilerin bulutta işbirliği yapıp içerik paylaştığında (ekleri e-postayla göndermek yerine) haftada 100 dakikaya kadar tasarruf yapabileceklerini göstermiştir. Ayrıca, dijital dönüşüm yolculuğunuzda nerede olduğunuzu görmenize yardımcı olmak için kuruluşunuzda bu en iyi yöntemlerin kullanımını da ölçüyoruz. 
 
-- **Teknoloji deneyimleri:** Kuruluşunuz hem güvenilir ve iyi performans gösteren teknolojiye hem de Microsoft 365'in verimli kullanımına bağlıdır. [Uç nokta analizi](https://aka.ms/endpointanalytics) , kuruluşunuzun donanım ve yazılımınızla ilgili performans ve sistem durumu sorunlarından nasıl etkilenebileceğini anlamanıza yardımcı olur. Microsoft 365 uygulama durumu, kuruluşunuzdaki cihazların önerilen kanallarda Microsoft 365 uygulamaları çalıştırıp çalıştırmadığını anlamanıza yardımcı olur.
-
-## <a name="before-you-begin"></a>Başlamadan önce
-
-Genel bakış ve önkoşul ayrıntıları için bkz [. Endpoint Analytics nedir](/mem/analytics/overview) ? Microsoft 365 ağ bağlantısı içgörüleri hakkında daha fazla bilgi edinmek için [ağ bağlantısına genel bakış makalesini](../../enterprise/microsoft-365-networking-overview.md) okuyun.
-
-Kişilerin veri deneyimi için bir İş için Microsoft 365 veya kurumsal abonelik için Office 365 gerekir. Kiracınızın uç nokta analizi verileri için aboneliğinize Microsoft Intune eklemeniz gerekir. Intune, cihazları ve uygulamaları yöneterek kuruluşunuzun verilerini korumaya yardımcı olur. Intune aldıktan sonra, Intune deneyiminde uç nokta analizini açabilirsiniz. Microsoft Intune hakkında daha fazla bilgi edinmek için [Microsoft Intune belgelerine bakın](/mem/intune/). 
+- **Teknoloji deneyimleri:** Kuruluşunuz hem güvenilir ve iyi performans gösteren teknolojiye hem de Microsoft 365'in verimli kullanımına bağlıdır. [Uç nokta analizi](https://aka.ms/endpointanalytics) , kuruluşunuzun donanım ve yazılımınızla ilgili performans ve sistem durumu sorunlarından nasıl etkilenebileceğini anlamanıza yardımcı olur. [Ağ bağlantısı](../../enterprise/microsoft-365-networking-overview.md) , ağ mimarinizdeki Exchange, SharePoint ve Microsoft Teams performansını anlamanıza yardımcı olur. Bağlantıyı geliştirmek için ağ ayarlarını gözden geçirebilir ve güncelleştirebilirsiniz. Microsoft 365 uygulama durumu, kuruluşunuzdaki cihazların önerilen kanallarda Microsoft 365 uygulamaları çalıştırıp çalıştırmadığını anlamanıza yardımcı olur.
 
 > [!NOTE]
-> Benimseme Puanı özelliklerini almak için Workplace Analytics lisansı gerekmez.
+> Tüm içgörüler, tek tek düzeyde değil, kuruluş düzeyindeki veriler kullanılarak hesaplanır.
+
+## <a name="how-to-turn-on-adoption-score"></a>Benimseme Puanı'nı açma
+
+Benimseme Puanı'nı etkinleştirmek için:
+
+1. Microsoft 365 yönetim merkezi Genel Yönetici olarak oturum açın ve **Raporlar** > **Benimseme Puanı'na** gidin
+2. **Benimseme Puanını Etkinleştir'i** seçin. İçgörülerin kullanılabilir duruma gelmesi 24 saat kadar sürebilir.
+
+> [!NOTE]
+> Benimseme Puanı'nı yalnızca Genel Yönetici rolüne sahip bir BT uzmanı kabul edebilir.
+
+Kuruluşunuz için kişi deneyimlerini yapılandırma seçenekleri hakkında daha fazla bilgi edinmek için [Benimseme Puanı gizlilik denetimlerini](privacy.md) ziyaret edin.
+
+## <a name="adoption-score-prerequisites"></a>Benimseme Puanı Önkoşulları
+
+Kişilerin veri deneyimi için bir İş için Microsoft 365 veya kurumsal abonelik için Office 365 gerekir. Kiracınızın uç nokta analizi verileri için aboneliğinize Microsoft Intune eklemeniz gerekir. Intune, cihazları ve uygulamaları yöneterek kuruluşunuzun verilerini korumaya yardımcı olur. Intune aldıktan sonra, Intune deneyiminde uç nokta analizini açabilirsiniz. Microsoft Intune hakkında daha fazla bilgi edinmek için [Microsoft Intune belgelerine bakın](/mem/intune/).
+
+> [!NOTE]
+> Benimseme Puanı özelliklerini almak için Viva Analizler lisansı gerekmez.
 
 Benimseme Puanı yalnızca Microsoft 365 yönetim merkezi kullanılabilir ve yalnızca aşağıdaki rollerden birine sahip BT uzmanları tarafından erişilebilir:  
 
@@ -68,9 +81,7 @@ Benimseme Puanı yalnızca Microsoft 365 yönetim merkezi kullanılabilir ve yal
 - Genel Okuyucu
 - Rapor Okuyucusu
 - Kullanım Özeti Raporları Okuyucusu
-
-> [!NOTE]
-> Yalnızca Genel Yönetici rolüne sahip bir BT uzmanı Benimseme Puanı için kiracıya kaydolabilir veya kiracıyı kabul edebilir.
+- Kullanıcı Deneyimi Başarı Yöneticisi
 
 Benimseme Puanı için rol tabanlı erişim denetimi modeli, bir kuruluştaki BT uzmanlarına rol atama esnekliği sağlayarak kuruluşların Microsoft 365 ile dijital dönüşüm çalışmalarını daha da geliştirmelerine yardımcı olur.
 
@@ -82,7 +93,7 @@ Microsoft bireysel gizliliği korumaya kararlıdır. Bu [gizlilik belgesinde](pr
 
 Benimseme Puanınız, kişilerinizin ve teknoloji deneyimlerinizin birleştirilmiş puanlarını temel alır. Her kategori eşit ağırlıktadır ve toplam 100 puandır. Mümkün olan en yüksek Benimseme Puanı 800'dür.
 
-### <a name="score-categories"></a>Kategorileri puanla 
+### <a name="score-categories"></a>Kategorileri puanla
 
 - İletişim (100 nokta)
 - Toplantılar (100 puan)

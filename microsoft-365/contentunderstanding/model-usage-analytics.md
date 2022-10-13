@@ -1,5 +1,5 @@
 ---
-title: Modellerinizin Microsoft SharePoint Syntex'de nasıl kullanıldığını analiz etme
+title: Modellerinizin Microsoft Syntex'te nasıl kullanıldığını analiz etme
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,14 +13,14 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Belge anlama ve form işleme modellerinizin performansı hakkında daha fazla bilgi bulmayı öğrenin.
-ms.openlocfilehash: 7c998304472db04d94b430fd1cb98111a1fbdd0a
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 2cbcabb919dc79a0c0eceaeda97d0e095b241235
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67582636"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564838"
 ---
-# <a name="analyze-how-your-models-are-used-in-microsoft-sharepoint-syntex"></a>Modellerinizin Microsoft SharePoint Syntex'de nasıl kullanıldığını analiz etme
+# <a name="analyze-how-your-models-are-used-in-microsoft-syntex"></a>Modellerinizin Microsoft Syntex'te nasıl kullanıldığını analiz etme
 
 </br>
 
@@ -29,7 +29,7 @@ ms.locfileid: "67582636"
 </br>
 
 
-SharePoint Syntex içerik merkeziniz, içerik merkezinden yayımlanan modellerinizin nasıl kullanıldığı hakkında daha fazla bilgi sağlamak için model kullanım analizi sağlar. İçerik merkezinin <b>son 30 gün içinde modellerinizin performansı</b> bölümünde aşağıdaki grafiklerde ve listelerde sağlanan 30 günlük kullanım analizi verilerinin birleştirilmesi yer alır:
+Microsoft Syntex içerik merkeziniz, içerik merkezinden yayımlanan modellerinizin nasıl kullanıldığı hakkında daha fazla bilgi sağlamak için model kullanım analizi sağlar. İçerik merkezinin <b>son 30 gün içinde modellerinizin performansı</b> bölümünde aşağıdaki grafiklerde ve listelerde sağlanan 30 günlük kullanım analizi verilerinin birleştirilmesi yer alır:
 
 - Modele göre sınıflandırma
 - Kitaplığa göre sınıflandırma
@@ -39,7 +39,7 @@ SharePoint Syntex içerik merkeziniz, içerik merkezinden yayımlanan modellerin
 
 ### <a name="roll-up-of-model-usage-data-in-the-default-content-center"></a>Model kullanım verilerini varsayılan içerik merkezinden alma
 
-SharePoint Syntex'da, kurulum sırasında varsayılan içerik merkezi oluşturulur. Gerektiğinde daha fazla içerik merkezi de oluşturulabilir. Örneğin, departmanlar modellerini oluşturmak ve yönetmek için kendi içerik merkezlerini oluşturabilir. 
+Syntex'te, kurulum sırasında varsayılan içerik merkezi oluşturulur. Gerektiğinde daha fazla içerik merkezi de oluşturulabilir. Örneğin, departmanlar modellerini oluşturmak ve yönetmek için kendi içerik merkezlerini oluşturabilir. 
 
 Model kullanım analiziyle ilgili olarak şunları unutmayın:
 

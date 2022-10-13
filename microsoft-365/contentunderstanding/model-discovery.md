@@ -1,26 +1,26 @@
 ---
-title: Microsoft SharePoint Syntex'de modelleri yayımlama ve bulma
+title: Microsoft Syntex'te modelleri yayımlama ve bulma
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Eğitilen modelleri diğer kullanıcıların kullanımına sunmayı ve Microsoft SharePoint Syntex'da diğer eğitilmiş modelleri uygulamayı öğrenin.
-ms.openlocfilehash: 758f6886af6606c57c50c5c4c88e35f7aeeaefe4
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+description: Eğitilen modelleri diğer kullanıcıların kullanımına sunmayı ve Microsoft Syntex'te diğer eğitilmiş modelleri uygulamayı öğrenin.
+ms.openlocfilehash: d39bbf3301e2e699db937ec4da3f8a7d3b624bdc
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916281"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565014"
 ---
-# <a name="publish-and-discover-models-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'de modelleri yayımlama ve bulma
+# <a name="publish-and-discover-models-in-microsoft-syntex"></a>Microsoft Syntex'te modelleri yayımlama ve bulma
 
 Eğitilen belge anlama modellerinizi doğrudan SharePoint belge kitaplığından başkalarının görüntülemesini ve kullanmasını sağlayabilirsiniz. 
 
@@ -59,7 +59,7 @@ Eğitilen modelinizi başkalarının kullanımına açmak için:
 
 İçeriğinize uygun olabilecek eğitilmiş modelleri bulmak için:
 
-1. Modelinizin belge kitaplığında **AutomateView** >  **document understanding modellerini** seçin.
+1. Modelinizin belge kitaplığında **Belgeyi anlama modellerini görüntülemeyi** **otomatikleştir'i** >  seçin.
 
 2. **Modelleri gözden geçir ve yenilerini uygula** sayfasında, uygulanan modelleri ve belge kitaplığınıza uygulanabilecek modelleri gözden geçirebilirsiniz.
 
@@ -117,6 +117,6 @@ Uygulanan modeli belge kitaplığınızdan kaldırmak için:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Belge anlama modeli uygulama](apply-a-model.md)
+[Bir belge anlama modeli uygulayın](apply-a-model.md)
 
 [Belge anlamaya genel bakış](document-understanding-overview.md)

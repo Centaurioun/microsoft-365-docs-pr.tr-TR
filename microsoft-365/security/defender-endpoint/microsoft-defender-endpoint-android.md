@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: a69004f41b461353ce51999c1b640081e3ebf702
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 434d598177d57475395d6caa789e4ee2c8854596
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68226591"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563917"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Android'de Uç Nokta için Microsoft Defender
 
@@ -73,7 +73,7 @@ Bu konuda, Android'de Uç Nokta için Defender'ın nasıl yükleneceği, yapıla
 
 ### <a name="installation-instructions"></a>Yükleme yönergeleri
 
-Android'de Uç Nokta için Microsoft Defender, kayıtlı cihazların her iki moduna da (eski Cihaz Yöneticisi ve Android Kurumsal modları) yüklemeyi destekler. **Şu anda, iş profili ve Şirkete ait tam olarak yönetilen kullanıcı cihaz kayıtlarına sahip kişisel cihazlar Android Kurumsal'da desteklenmektedir. Diğer Android Kurumsal modları için destek hazır olduğunda duyurulacaktır.**
+Android'de Uç Nokta için Microsoft Defender, kayıtlı cihazların her iki moduna da (eski Cihaz Yöneticisi ve Android Kurumsal modları) yüklemeyi destekler. **Şu anda, iş profiline sahip kişisel cihazlar, Şirkete ait, kişisel olarak etkinleştirilmiş ve Şirkete ait tam olarak yönetilen kullanıcı cihaz kayıtları Android Enterprise'da desteklenmektedir. Diğer Android Kurumsal modları için destek hazır olduğunda duyurulacaktır.**
 
 - Android'de Uç Nokta için Microsoft Defender dağıtımı Microsoft Intune (MDM) üzerinden yapılır. Daha fazla bilgi için bkz[. Microsoft Intune ile Android'de Uç Nokta için Microsoft Defender dağıtma](android-intune.md).
 - Intune mobil cihaz yönetimi (MDM) kullanılarak kaydedilmemiş cihazlara Uç Nokta için Microsoft Defender yüklemesi için bkz. [Uygulama koruma ilkesinde (MAM) Uç Nokta için Microsoft Defender risk sinyallerini yapılandırma](android-configure-mam.md).

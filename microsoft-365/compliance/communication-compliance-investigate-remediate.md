@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 21fadb41e5e63780ccd25f5089af9d39ec96016d
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 34202379220a6a36194662f4b8b2a74a71258b6f
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68533518"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565234"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>İletişim uyumluluğu uyarılarını araştırma ve çözümleme
 
@@ -251,7 +251,7 @@ Bildirimler için basit bir metin tabanlı e-posta iletisinden daha fazlasını 
 
 İletileri çözümlemek için aşağıdaki adımları tamamlayın:
 
-1. Microsoft 365 kuruluşunuzdaki *İletişim Uyumluluk Analisti* veya *İletişim Uyumluluğu Araştırmacısı* rol gruplarına atanmış bir kullanıcının kimlik bilgilerini kullanarak [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) oturum açın.
+1. Microsoft 365 kuruluşunuzdaki *İletişim Uyumluluğu Analistleri* veya *İletişim Uyumluluğu Araştırmacıları* rol gruplarına atanmış bir kullanıcının kimlik bilgilerini kullanarak [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) oturum açın.
 2. Microsoft Purview uyumluluk portalı **İletişim uyumluluğu'na** gidin.
 3. **İlkeler** sekmesini seçin ve ardından çözümlenen uyarı iletisini içeren bir ilke seçin, **İlke** sayfasını açmak için çift tıklayın.
 4. **İlke** sayfasında **Çözümlendi** sekmesini seçin.

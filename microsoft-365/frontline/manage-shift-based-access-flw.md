@@ -17,18 +17,19 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: bcbf2a52e14b2a382581612c026589df4612e374
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 86e3977db3a4c338f2f4d4317cf252684ddd8ba9
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68068797"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565432"
 ---
 # <a name="manage-shift-based-access-for-frontline-workers-in-teams"></a>Teams'de ön cephe çalışanları için vardiya tabanlı erişimi yönetme
 
-## <a name="overview"></a>Genel bakış
+> [!IMPORTANT]
+> Bu özellik kullanım dışı bırakıldı.
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
+## <a name="overview"></a>Genel bakış
 
 Microsoft Teams'de iletişim durumu, kullanıcının diğer kullanıcılar için geçerli kullanılabilirliğini ve durumunu gösterir. Ön cephe çalışanlarının varlığı genellikle diğer personele göre daha az tahmin edilebilirdir, çalışma saatleri genellikle her gün aynı değildir. Yönetici olarak, Teams'i kuruluşunuzdaki ön cephe çalışanlarının vardiyalı veya vardiya dışında ne zaman olduklarını belirtmeleri için vardiya tabanlı bir durum kümesi gösterecek şekilde yapılandırabilirsiniz.
 
@@ -123,7 +124,7 @@ Bu örnekte, remy@contoso.com adlı bir kullanıcıya Vardiya Dışı Teams Eri�
 Grant-CsTeamsShiftsPolicy -Identity remy@contoso.com -PolicyName "Off Shift Teams Access Custom Message"
 ```
 
-## <a name="related-topics"></a>İlgili konular
+## <a name="related-articles"></a>İlgili makaleler
 
 - [Teams'de kuruluşunuz için Vardiyalar uygulamasını yönetme](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Teams PowerShell'e genel bakış](/microsoftteams/teams-powershell-overview)

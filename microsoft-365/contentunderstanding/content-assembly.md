@@ -1,5 +1,5 @@
 ---
-title: Microsoft Syntex'te içerik derlemesini kullanarak belge oluşturma
+title: Microsoft Syntex'te içerik derlemesine genel bakış
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,183 +12,63 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft Syntex'te modern bir şablon kullanarak belgeleri ve diğer içerikleri otomatik olarak oluşturmayı öğrenin.
-ms.openlocfilehash: e254f0dbf0ac4e415da32a088ae5970e5b02873a
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+description: Microsoft Syntex'te modern bir şablon kullanarak belge ve diğer içerik oluşturma hakkında bilgi edinin.
+ms.openlocfilehash: 62016db6ee47a94c0b7c22ac8173b89c8150cc5f
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547916"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564125"
 ---
-# <a name="create-documents-using-content-assembly-in-microsoft-syntex"></a>Microsoft Syntex'te içerik derlemesini kullanarak belge oluşturma
+# <a name="overview-of-content-assembly-in-microsoft-syntex"></a>Microsoft Syntex'te içerik derlemesine genel bakış
 
-Sözleşmeler, iş bildirimleri, hizmet sözleşmeleri, onay mektupları, satış sunumları ve yazışmalar gibi standart yinelenen iş belgelerini otomatik olarak oluşturmanıza yardımcı olması için Microsoft Syntex'i kullanabilirsiniz. Syntex'te içerik derlemesi kullanarak tüm bunları daha hızlı, daha tutarlı ve daha az hatayla yapabilirsiniz.
+Sözleşmeler, iş bildirimleri, hizmet sözleşmeleri, onay mektupları, satış sunumları ve yazışmalar gibi standart yinelenen iş belgelerini otomatik olarak oluşturmanıza yardımcı olması için Microsoft Syntex'teki içerik derleme özelliklerini kullanabilirsiniz. Tüm bu eylemleri daha hızlı, daha tutarlı ve daha az hatayla yapmak için modern şablonlar oluşturabilir ve bu şablonları kullanarak belge oluşturabilirsiniz.
 
-İçerik derlemesiyle, mevcut bir belgeyi kullanarak *modern bir şablon* oluşturabilir ve ardından sharepoint listelerini veya el ile girdileri veri kaynağı olarak kullanarak otomatik olarak yeni içerik oluşturmak için bu şablonu kullanabilirsiniz.
+![Modern bir şablondan belge oluşturma akışının diyagramı.](../media/content-understanding/content-assembly-diagram.png)
+
+Modern bir şablon oluşturmak için var olan bir belgeyi karşıya yükler ve ardından sharepoint listelerini veya el ile girdileri veri kaynağı olarak kullanarak otomatik olarak yeni içerik oluşturmak için bu şablonu kullanırsınız.
 
 > [!NOTE]
 > İçerik derleme özelliklerine erişmek ve bunları kullanmak için lisanslı bir Syntex kullanıcısı olmanız gerekir. SharePoint listelerini yönetmek için de izinleriniz olmalıdır.
 
-## <a name="create-a-modern-template"></a>Modern şablon oluşturma
 
-Modern bir şablon oluşturmak için bu adımları izleyin.
+## <a name="requirements-and-limitations"></a>Gereksinimler ve sınırlamalar
 
-1. SharePoint belge kitaplığından Yeni **Modern şablon oluştur'u** >  seçin.
+### <a name="supported-file-types"></a>Desteklenen dosya türleri
 
-   ![Modern şablon oluştur seçeneğinin vurgulandığı belge kitaplığının ekran görüntüsü.](../media/content-understanding/content-assembly-create-template-1.png)
+Şablon oluşturmak için şu anda yalnızca Microsoft Word belgeleri (.docx/.doc uzantısı) desteklenmektedir.
 
-2. Modern şablon oluşturmak için temel olarak kullanmak istediğiniz mevcut bir Word belgesini seçin ve ardından **Aç'ı** seçin.
+### <a name="file-limitations"></a>Dosya sınırlamaları
 
-   ![Belgeyi seçtiğiniz karşıya yükleme sayfasının ekran görüntüsü.](../media/content-understanding/content-assembly-create-template-2.png)
+- Modern şablon olarak kullanmak istediğiniz Word belgesinde açıklamalar olmamalıdır veya Değişiklikleri İzle etkin olmamalıdır.
 
-   > [!NOTE]
-   > Şu anda şablon oluşturmak için yalnızca Word belgelerini (.docx uzantısı) karşıya yükleyebilirsiniz. Word belgelerini yerel depolama alanınızdan veya masaüstünüzden karşıya yükleyin.
+- Word'de içerik denetimleri modern şablon için alanlar oluşturmak için kullanıldığından, resimlere yönelik metin yer tutucularının metin sarmalı olmadığından emin olun. Belge zaten içerik denetimleri içeriyorsa, modern bir şablon oluşturmak için kullanmadan önce bunları kaldırın.
 
-3. Belgeyi karşıya yükledikten sonra, belge şablon stüdyosunda görüntülenir ve burada belgeyi şablona dönüştürebilirsiniz.
+### <a name="current-release-limitations"></a>Geçerli sürüm sınırlamaları
 
-   ![Şablon görüntüleyicisindeki belgenin ekran görüntüsü.](../media/content-understanding/content-assembly-create-template-3.png)
+- Şablon ve belge bir belge kitaplığıyla ilişkilendirilir. Şablonu başka bir belge kitaplığında kullanmak için, şablonu bu belge kitaplığında yeniden oluşturmanız gerekir.
 
-4. Şablon stüdyosunun sol üst köşesinde şablonun adını seçin. Varsayılan ad, şablonu oluşturmak için kullanılan belgenin adıdır. Şablonu yeniden adlandırmak istiyorsanız, varsayılan adı veya adın yanındaki kalem simgesini seçin, yeni adı yazın ve **ardından Enter'ı** seçin.
+- Modern şablonu oluşturmak için kullanılan karşıya yüklenen belge ayrı bir kopya olarak kaydedilir ve belge kitaplığının /forms dizinine yerleştirilir. Disk üzerindeki özgün dosya etkilenmez.
 
-   ![Yeniden adlandırmayı seçecek belgenin adını gösteren şablon görüntüleyicisinin ekran görüntüsü.](../media/content-understanding/content-assembly-create-template-3a.png)
+- Metin için alanlar ve ayrıca tablodaki hücrelerdeki metinler için alanlar oluşturabilirsiniz. Ancak görüntüler, akıllı resim, tam tablolar ve madde işaretli listeler şu anda desteklenmiyor.
 
-5. Belgedeki tüm dinamik metinler için, kullanıcıların bir belgeden diğerine değiştirmek isteyebileceği yer tutucular oluşturun. Örneğin, şirket adı, istemci adı, adres, telefon numarası veya tarih gibi girişler için bir yer tutucu oluşturmak isteyebilirsiniz.
+- Şablondan bir belge oluşturulduktan sonra, şablonla ilişkilendirilmemiş olur.
 
-    Yer tutucu oluşturmak için metni (tarih gibi) seçin. **Tüm yer tutucular** paneli açılır; burada yer tutucuya ilgili bir ad verir ve yer tutucuyla ilişkilendirmek istediğiniz giriş türünü seçersiniz.
- 
-   ![Bir alanın vurgulandığı ve Tüm yer tutucular panelinin gösterildiği şablon görüntüleyicisinin ekran görüntüsü.](../media/content-understanding/content-assembly-create-template-4b.png)
+## <a name="differences-between-modern-templates-and-other-document-templates"></a>Modern şablonlarla diğer belge şablonları arasındaki farklar
 
-   Şu anda, kullanıcıların bir yer tutucuyu doldurması için üç yol vardır:
+|Özellik  |Modern şablonlar  |Diğer şablonlar  |
+|---------|---------|---------|
+|Lisanslama      |Bu teklife erişmek için Syntex lisansı gerekir.  |Microsoft E3 veya E5 lisansının bir parçası olarak sunulur.  |
+|Bunların ne zaman kullanılacağı            | Belgenin yalnızca belirli bölümleri değiştiğinde, hizmet sözleşmeleri ve iş deyimleri gibi standart işlem belgeleri oluşturmak için kullanmanız gerekir. Modern şablonlardan oluşturulan belgeler tutarlılık ve kullanıcılar serbest akışta belgenin bölümlerini değiştirdiğinde el ile hata ve yazım hatası oluşma olasılığının daha az olmasını sağlar.  |Belgeyi diğer kullanıcıların başvurması için örnek olarak ayarlamak istediğinizde bu yöntemi kullanmalısınız. Satış sunumları veya yönetici özetleri gibi işlem dışı belgeler için normal şablonları kullanmayı düşünebilirsiniz.  |
+|İçerik oluşturmayı standartlaştırma |Şablon yayımlandıktan sonra kullanıcıların belge oluşturmasını kolaylaştırmak için alanlar ekleyebilir ve ardından içeriğin yalnızca belirli bölümleri için çeşitli veri kaynaklarıyla ilişkilendirebilirsiniz.  |Karşıya yüklendikten sonra dosya şablonda olduğu gibi tutulur. Şablonu kullanan tüm kullanıcıların içeriği buna göre değiştirmesi gerekir.   |
+|Desteklenen veri kaynakları     |Şablonları oluştururken alanları SharePoint listeleri ve terim deposuyla ilişkilendirebilirsiniz.   |Geçerli değil   |
+|Desteklenen belge türleri    |Şablon oluşturmak için şu anda yalnızca Microsoft Word belgeleri (.docx/.doc uzantısı) desteklenmektedir.  |Şablon olarak karşıya yüklemek için herhangi bir dosyayı kullanabilirsiniz.   |
+|Şablonların yönetimi    |Şablon oluşturulduktan sonra şablon alanlarını düzenleyebilir veya yönetebilir, şablonu yeniden adlandırabilir ve kullanım için yeniden yayımlayabilirsiniz.  |Geçerli değil   |
+|Şablonların taslak sürümü |Son olarak diğer kullanıcılar tarafından kullanılmak üzere yayımlamadan önce şablonların taslak sürümlerini oluşturabilirsiniz.   |Normal şablonların taslaklarını oluşturma özelliği yoktur.  |
+|Iş akışı   |[Power Automate iş akışlarını ayarlayarak](automate-document-generation.md) şablonlardan belge oluşturmayı otomatikleştirebilirsiniz.  |İş akışları normal şablonlarla yapılandırılamaz.  |
 
-   - [Metin girin veya tarih seçin](#associate-a-placeholder-by-entering-text-or-selecting-a-date)
-   - [Liste veya kitaplığın sütunundaki seçenekler arasından seçim yapma](#associate-a-placeholder-by-selecting-from-choices-in-a-column-of-a-list-or-library)
-   - [Yönetilen meta veri terim kümesinden veya terimden seçim yapın](#associate-a-placeholder-by-selecting-from-managed-metadata-term-set-or-term)
-
-   > [!NOTE]
-   > Metin için yer tutucular ve ayrıca tablodaki hücreler içindeki metinler için yer tutucular oluşturabilirsiniz. Ancak görüntüler, akıllı resim, tam tablolar ve madde işaretli listeler şu anda desteklenmiyor.   
-
-
-
-### <a name="associate-a-placeholder-by-entering-text-or-selecting-a-date"></a>Metin girerek veya tarih seçerek yer tutucuyu ilişkilendirme
-
-**Tüm yer tutucular** panelinde:
-
-1. **Ad** alanına yer tutucu için uygun bir ad girin.
-
-   ![El ile giriş için Tüm yer tutucular panelini gösteren şablon görüntüleyicisinin ekran görüntüsü.](../media/content-understanding/content-assembly-create-template-5a.png)
-
-2. **Yazarların bu yer tutucuyu nasıl doldurduğu** bölümünde **Metin girin'i seçin veya bir tarih seçin**.
-
-3. **Bilgi türü** alanında, yer tutucuyla ilişkilendirmek istediğiniz veri türünü seçin. Şu anda altı seçenek vardır: **Tek satırlı metin**, **Birden çok metin satırı**, **Sayı**, **Tarih ve saat**, **Email** ve **Köprü**.
-
-4. **Ekle**'yi seçin.
-
-   > [!NOTE]
-   > AA/GG/YYYY, DD/AA/YYYY, YYYY/AA/GG ve Ay DD gibi birden çok tarih biçimlendiricisi yapılandırabilirsiniz; ayrıca saati hem 12 saat hem de 24 saatlik biçimde ayarlayabilirsiniz. 
-
-### <a name="associate-a-placeholder-by-selecting-from-choices-in-a-column-of-a-list-or-library"></a>Bir liste veya kitaplığın sütunundaki seçenekler arasından seçim yaparak yer tutucuyu ilişkilendirme
-
-**Tüm yer tutucular** panelinde:
-
-1. **Ad** alanına yer tutucu için uygun bir ad girin.
-
-   ![SharePoint listesinden giriş için Tüm yer tutucular panelini gösteren şablon görüntüleyicisinin ekran görüntüsü.](../media/content-understanding/content-assembly-create-template-6a.png)
-
-2. **Yazarların bu yer tutucuyu nasıl doldurduğu** bölümünde, **liste veya kitaplığın sütunundaki seçeneklerden seç'i** ve ardından **Seç'i** seçin.
-
-3. **Kaynak sütun eklemek için liste seçin** sayfasında, kullanmak istediğiniz listeyi seçin ve ardından **İleri'yi** seçin.
-
-   ![Listeleri gösteren kaynak sütun eklemek için liste seçin sayfasının ekran görüntüsü.](../media/content-understanding/content-assembly-create-template-7.png)
-
-4. **Var olan liste sayfasında Kaynak sütun seçin** sayfasında, yer tutucuyla ilişkilendirmek istediğiniz sütun adını seçin ve ardından **Kaydet'i** seçin.
-
-   ![Mevcut liste sayfasından sütun adlarını gösteren Kaynak sütun seçin öğesinin ekran görüntüsü.](../media/content-understanding/content-assembly-create-template-8.png)
-
-    Listelerin özgün sayfasını yeniden görmek istiyorsanız listenin en altındaki **Git (liste adı)** bağlantısını seçin.
-
-5. İşiniz bittiğinde, liste alanının yer tutucuyla ilişkilendirildiğini görürsünüz.
-
-   ![Yer tutucuyla ilişkilendirilmiş liste alanını gösteren Tüm yer tutucular panelinin ekran görüntüsü.](../media/content-understanding/content-assembly-create-template-9.png)
-
-6. Kullanıcıların el ile giriş ekleyebilmesini istiyorsanız, listeden seçim yapmaya ek olarak **Yazarların yeni seçenekler eklemesine izin ver'i** seçin. Bu durumda, el ile giriş veri türü için varsayılan değer *Tek satır metindir*. Ayrıca, yazarların giriş yaptığı değerler yalnızca belgeyi oluşturmak için kullanılır. SharePoint listesine eklenmez.
-
-### <a name="associate-a-placeholder-by-selecting-from-managed-metadata-term-set-or-term"></a>Yönetilen meta veri terim kümesinden veya terimden seçim yaparak yer tutucuyu ilişkilendirme
-
-**Tüm yer tutucular** panelinde:
-
-1. **Ad** alanına yer tutucu için uygun bir ad girin.
-
-   ![Bir terim veya terim kümesinden giriş için Tüm yer tutucular panelini gösteren şablon görüntüleyicisinin ekran görüntüsü.](../media/content-understanding/content-assembly-create-template-term.png)
-
-2. **Yazarların bu yer tutucuyu nasıl doldurduğu** bölümünde **Yönetilen meta veri terim kümesinden veya teriminden seç'i** ve ardından **Seç'i** seçin.
-
-3. **Terim kümelerini veya terimleri seçin** sayfasında, yer tutucuyla ilişkilendirilecek terim kümesini veya terimi arayın veya seçin ve ardından **Kaydet'i** seçin.
-
-   ![Terim kümelerini veya terimleri seçin sayfasının ekran görüntüsü.](../media/content-understanding/content-assembly-select-term.png)
-
-4. İşiniz bittiğinde, seçilen terim kümesinin veya terimin yer tutucuyla ilişkilendirildiğini görürsünüz. 
-
-   ![İlişkili terim kümesini veya terimi gösteren Tüm yer tutucular panelinin ekran görüntüsü.](../media/content-understanding/content-assembly-associated-term.png)
-
-5. Kullanıcıların terim kümesine veya terime karşılık gelen birden çok değer ekleyebilmesini istiyorsanız **Birden çok değere izin ver'i** seçin. Ayrıca terim kümesi açık terim kümesi olarak yapılandırılmışsa **Yeni değerlere izin ver'i** seçebilirsiniz. Bu seçeneği etkinleştirirseniz, modern şablondan belge oluşturan kullanıcılar terim kümesine yeni terimler ekleyebilir ve bu terimleri yer tutucu değerler olarak ekleyebilir.
-
-   > [!TIP]
-   > **Yeni değerlere izin ver** seçeneğini etkinleştirdiğinizde (yalnızca açık terim kümeleri için izin verilir), kullanıcıların terim deposuna yedekli terimler ekleme olasılığı daha yüksektir. Yedekli terimler, yöneticilerin terim kümesini yönetmesini zorlaştırabilir.
-
-Gerekli olduğunu düşündüğünüz kadar yer tutucu oluşturabilirsiniz. İşiniz bittiğinde, şablonu taslak olarak kaydetmeyi veya şablonu yayımlamayı seçebilirsiniz.
-
-   - **Taslağı kaydet** – Şablonu taslak olarak kaydeder ve daha sonra erişebilirsiniz. Belge kitaplığından **Yeni** > **Düzenle menüsünü** seçerek **Modern şablonlar** bölümünden kaydedilmiş taslakları görüntüleyebilir, düzenleyebilir veya yayımlayabilirsiniz.
- 
-   - **Yayımla** – Belge oluşturmak için kuruluştaki diğer kullanıcılar tarafından kullanılacak şablonu yayımlar. Belge kitaplığından **Yeni** > **Düzenle menüsünü** seçerek **, Yayımlanan şablonları Modern şablonlar** bölümünden görüntüleyebilir, düzenleyebilir veya yayımdan kaldırabilirsiniz. 
-
-## <a name="edit-a-modern-template"></a>Modern şablonu düzenleme
-
-Mevcut bir şablonu düzenlemeniz veya şablonu silmeniz veya yayımlamanız gerekiyorsa bu adımları izleyin.
-
-1. SharePoint belge kitaplığından **Yeni** > **Düzenle Yeni menüsünü** seçin.
-
-   ![Yeni Düzenle menü seçeneğinin vurgulandığı belge kitaplığının ekran görüntüsü.](../media/content-understanding/content-assembly-edit-template-1.png)
-
-2. **Yeni Düzenle menü** panelinin **Modern şablonlar** bölümünde, düzenlemek istediğiniz yayımlanmış veya taslak şablonu seçin.
-
-   ![Modern şablonlar bölümünü gösteren Yeni Düzenle menü panelinin ekran görüntüsü.](../media/content-understanding/content-assembly-edit-template-2.png)
-
-3. Yayımlanmış bir şablonu veya taslak şablonu düzenlemek için:
-
-   - **Yayımlanan şablonlar** için **Düzenle'yi** seçerek yayımlanan şablonu düzenleyebileceğiniz şablon stüdyoyu açın. Şablonu silmeyi veya yayımdan kaldırmayı da seçebilirsiniz.
-
-      ![Yayımlanan şablonları gösteren Modern şablonlar bölümünün ekran görüntüsü.](../media/content-understanding/content-assembly-edit-published.png)
-
-   - **Taslak şablonları** için **Düzenle'yi** seçerek taslak şablonu düzenleyebileceğiniz şablon stüdyoyu açın. Şablonu silmeyi veya yayımlamayı da seçebilirsiniz.
-
-      ![Taslak şablonları gösteren Modern şablonlar bölümünün ekran görüntüsü.](../media/content-understanding/content-assembly-edit-draft.png)
-
-## <a name="create-a-document-from-a-modern-template"></a>Modern şablondan belge oluşturma
-
-*Sıfırdan* başlamak zorunda kalmadan benzer belgeleri hızla oluşturmak için yayımlanmış bir modern şablon kullanabilirsiniz. Yayımlanmış bir şablon kullanarak belge oluşturmak için şu adımları izleyin:
-
-1. SharePoint belge kitaplığından **Yeni'yi** ve ardından kullanmak istediğiniz modern şablonu seçin.
-
-   ![Yeni menüsündeki modern şablon seçeneklerini gösteren belge kitaplığının ekran görüntüsü.](../media/content-understanding/content-assembly-create-document-1.png)
-
-2. Şablon, şablon stüdyosunda açılır.
-
-3. **Şablondan belge oluştur** panelinde bilgileri girin ve **Belge oluştur'u** seçin.
-
-   ![Şablondan belge oluşturma panelini gösteren belge kitaplığının ekran görüntüsü.](../media/content-understanding/content-assembly-create-document-2b.png)
-
-   Syntex, yer tutucuların değerlerini doldurmaya yönelik zaman ve çabayı azaltmaya yardımcı olmak için şunları sağlar:
-
-      - Listeden değer seçerken değerleri kolayca seçmenize yardımcı olacak öneriler.
-      - Aynı listeyle ilişkilendirilmiş yer tutucular için bir kaydı benzersiz olarak tanımlayabilmek için yer tutucu değerlerini otomatik olarak doldurun.
-
-> [!NOTE]
-> **Geçerli sürüm sınırlamaları**
->- Şu anda şablon oluşturmak için yalnızca Microsoft Word belgeleri (.docx uzantısı) desteklenmektedir. Word belgesini karşıya yüklemeden önce, belgenin açıklama içermediğinden veya **Değişiklikleri izle** seçeneğinin etkin olduğundan emin olun. Belgede resimler için metin yer tutucuları varsa, bunların metin sarmalı olmadığından emin olun. Word'deki içerik denetimleri şu anda desteklenmiyor. İçerik denetimleri olan bir Word belgesinden şablon oluşturmak istiyorsanız, modern bir şablon oluşturmadan önce bunları kaldırın.
->- Şablon ve belge bir belge kitaplığıyla ilişkilendirilir. Şablonu başka bir belge kitaplığında kullanmak için, şablonu bu belge kitaplığında yeniden oluşturmanız gerekir.
->- Modern şablonu oluşturmak için kullanılan karşıya yüklenen belge ayrı bir kopya olarak kaydedilir ve belge kitaplığının /forms dizinine yerleştirilir. Disk üzerindeki özgün dosya etkilenmez.
->- Metin için yer tutucular ve ayrıca tablodaki hücreler içindeki metinler için yer tutucular oluşturabilirsiniz. Ancak görüntüler, akıllı resim, tam tablolar ve madde işaretli listeler şu anda desteklenmiyor.
->- Şablondan bir belge oluşturulduktan sonra, şablonla ilişkilendirilmemiş olur.
+> [!div class="nextstepaction"]
+> [Modern şablon oluşturma > kullanmaya başlama](content-assembly-modern-template.md)
 
 
 

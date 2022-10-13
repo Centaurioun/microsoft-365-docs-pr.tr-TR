@@ -1,5 +1,5 @@
 ---
-title: SharePoint Syntex ayarlama
+title: Microsoft Syntex'i ayarlama
 ms.author: mikeplum
 author: MikePlumleyMSFT
 ms.reviewer: ssquires
@@ -14,17 +14,17 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 ms.localizationpriority: high
-description: SharePoint Syntex ayarlama
-ms.openlocfilehash: 1db23fc1d1d5af03358867aaca901a279b0fe7a1
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Microsoft Syntex'i ayarlayın.
+ms.openlocfilehash: 5fab513e50bba1e0ccc975b724f589aebec914c4
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584926"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564246"
 ---
-# <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex ayarlama
+# <a name="set-up-microsoft-syntex"></a>Microsoft Syntex'i ayarlama
 
-Yöneticiler <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">microsoft SharePoint Syntex</a> ayarlamak için [Microsoft 365 yönetim merkezi](index.md) kullanabilir. 
+Yöneticiler[, Microsoft Syntex'i](index.md) ayarlamak için <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 yönetim merkezi</a> kullanabilir. 
 
 Başlamadan önce aşağıdakileri göz önünde bulundurun:
 
@@ -41,7 +41,7 @@ Kurulumdan önce ortamınızda içerik anlama özelliğini ayarlamanın ve yapı
 ## <a name="requirements"></a>Gereksinimler 
 
 > [!NOTE]
-> Microsoft 365 yönetim merkezi erişebilmek ve SharePoint Syntex ayarlamak için Genel yönetici veya SharePoint yönetici izinlerine sahip olmanız gerekir.
+> Microsoft 365 yönetim merkezi erişebilmek ve Syntex'i ayarlamak için Genel yönetici veya SharePoint yönetici izinlerine sahip olmanız gerekir.
 
 Yönetici olarak, kurulumdan sonra istediğiniz zaman ve <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 yönetim merkezi</a> içerik anlama yönetimi ayarları boyunca seçtiğiniz ayarlarda değişiklik yapabilirsiniz.
 
@@ -57,17 +57,17 @@ Form işleme modelleri oluşturabilmeniz için önce özel ortama [AI Builder kr
 
 ### <a name="licensing"></a>Lisanslama
 
-SharePoint Syntex kullanmak için kuruluşunuzun SharePoint Syntex aboneliği ve her kullanıcının atanmış bir lisansı olmalıdır. SharePoint Syntex lisansları, tümü atanması gereken aşağıdaki uygulamaları içerir:
+Syntex'i kullanmak için kuruluşunuzun Syntex aboneliğine ve her kullanıcıya atanmış bir lisansa sahip olması gerekir. yntex lisansları, tümü atanması gereken aşağıdaki uygulamaları içerir:
 
-- SharePoint Syntex
-- SharePoint Syntex - SPO türü
-- SharePoint Syntex için Common Data Service
+- Microsoft Syntex
+- Microsoft Syntex - SPO türü
+- Microsoft Syntex için Common Data Service
 
-Form işlemeyi kullanmak için AI Builder kredilerine de ihtiyacınız vardır. SharePoint Syntex lisanslı her kullanıcı için her ay bir AI Builder kredisi ayırması sağlanır.
+Form işlemeyi kullanmak için AI Builder kredilerine de ihtiyacınız vardır. Syntex'in lisanslı her kullanıcısı için her ay bir AI Builder kredisi ayırması sağlanır.
 
-SharePoint Syntex lisanslama hakkında ayrıntılı bilgi için bkz. [lisanslama SharePoint Syntex](syntex-licensing.md)
+Syntex lisanslama hakkında ayrıntılı bilgi için bkz. [Syntex lisanslama](syntex-licensing.md).
 
-## <a name="to-set-up-sharepoint-syntex"></a>SharePoint Syntex ayarlamak için
+## <a name="to-set-up-syntex"></a>Syntex'i ayarlamak için
 
 1. Microsoft 365 yönetim merkezi <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Kurulum'u**</a> seçin ve ardından **Dosyalar ve içerik** bölümünü görüntüleyin.
 
@@ -120,7 +120,7 @@ SharePoint Syntex lisanslama hakkında ayrıntılı bilgi için bkz. [lisanslama
 
 ## <a name="assign-licenses"></a>Lisans atama
 
-SharePoint Syntex yapılandırdıktan sonra, SharePoint Syntex özellikleri kullanacak kullanıcılara lisans atamanız gerekir.
+Syntex'i yapılandırdıktan sonra, syntex özelliklerini kullanacak kullanıcılar için lisans atamanız gerekir.
 
 Lisans atamak için:
 
@@ -133,7 +133,7 @@ Lisans atamak için:
 4. **SharePoint Syntex için uygulamaları göster'i** seçin. **Uygulamalar'ın** altında SharePoint Syntex, **SharePoint Syntex** ve **SharePoint Syntex - SPO türü** **için Common Data Service'in** seçili olduğundan emin olun.
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft 365 yönetim merkezi lisansları SharePoint Syntex.](../media/content-understanding/sharepoint-syntex-licenses.png)
+    > ![Microsoft 365 yönetim merkezi syntex lisansları.](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. **Değişiklikleri kaydet**’e tıklayın.
 

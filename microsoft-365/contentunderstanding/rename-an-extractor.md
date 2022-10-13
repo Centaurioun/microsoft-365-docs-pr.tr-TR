@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex'de ayıklayıcıyı yeniden adlandırma
+title: Microsoft Syntex'te ayıklayıcıyı yeniden adlandırma
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex'da ayıklayıcıyı nasıl ve neden yeniden adlandıracağınızı öğrenin.
-ms.openlocfilehash: 81c325e937378b5c00bac354f14e43d9ab676724
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Microsoft Syntex'te ayıklayıcıyı nasıl ve neden yeniden adlandıracağınızı öğrenin.
+ms.openlocfilehash: 8900eb68a5efab4d69911d193c35e82e6d58cbf6
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67576835"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565652"
 ---
-# <a name="rename-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'de ayıklayıcıyı yeniden adlandırma
+# <a name="rename-an-extractor-in-microsoft-syntex"></a>Microsoft Syntex'te ayıklayıcıyı yeniden adlandırma
 
 Ayıklanan bir veri alanına farklı bir adla başvurmak istiyorsanız, bir noktada ayıklayıcıyı yeniden adlandırmanız gerekebilir. Örneğin, kuruluşunuz sözleşme belgelerinde değişiklik yapmaya karar verir ve belgelerinde "müşteriler"i "müşteriler" olarak ifade eder. Modelinizde bir "Müşteri" alanı ayıkladıysanız, alanı "İstemci" olarak yeniden adlandırmayı seçebilirsiniz.
 

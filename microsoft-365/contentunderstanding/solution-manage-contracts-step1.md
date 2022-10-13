@@ -1,5 +1,5 @@
 ---
-title: Adım 1. Sözleşme dosyalarını tanımlamak ve verileri ayıklamak için SharePoint Syntex kullanma
+title: Adım 1. Sözleşme dosyalarını tanımlamak ve verileri ayıklamak için Microsoft Syntex kullanma
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,17 +11,17 @@ ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
-description: Microsoft 365 çözümü kullanarak sözleşme dosyalarını tanımlamak ve verileri ayıklamak için SharePoint Syntex kullanmayı öğrenin.
-ms.openlocfilehash: 115c1e3fbcd18bcc766132afaff308d25cf989fe
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Microsoft Syntex'i kullanarak sözleşme dosyalarını tanımlamayı ve bir Microsoft 365 çözümü kullanarak verileri ayıklamayı öğrenin.
+ms.openlocfilehash: 19a62850e2a6749e9a7cabbafbc8959af81367fe
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67582504"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563306"
 ---
-# <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Adım 1. Sözleşme dosyalarını tanımlamak ve verileri ayıklamak için SharePoint Syntex kullanma
+# <a name="step-1-use-microsoft-syntex-to-identify-contract-files-and-extract-data"></a>Adım 1. Sözleşme dosyalarını tanımlamak ve verileri ayıklamak için Microsoft Syntex kullanma
 
-Kuruluşunuzun, aldığınız birçok dosyadaki tüm sözleşme belgelerini tanımlamak ve sınıflandırmak için bir yönteme ihtiyacı vardır. Ayrıca, tanımlanan sözleşme dosyalarının her birinde (örneğin, *İstemci*, *Yüklenici* ve *Ücret tutarı*) birkaç önemli öğeyi hızla görüntüleyebilmek istiyorsunuz. Bunu [yapmak için SharePoint Syntex](index.md) kullanarak belge anlama modeli oluşturabilir ve belge kitaplığına uygulayabilirsiniz.
+Kuruluşunuzun, aldığınız birçok dosyadaki tüm sözleşme belgelerini tanımlamak ve sınıflandırmak için bir yönteme ihtiyacı vardır. Ayrıca, tanımlanan sözleşme dosyalarının her birinde (örneğin, *İstemci*, *Yüklenici* ve *Ücret tutarı*) birkaç önemli öğeyi hızla görüntüleyebilmek istiyorsunuz. Bunu yapmak için [Syntex](index.md) kullanarak belge anlama modeli oluşturabilir ve bunu bir belge kitaplığına uygulayabilirsiniz.
 
 ## <a name="overview-of-the-process"></a>İşleme genel bakış
 
@@ -31,7 +31,7 @@ Belge anlama modelleri, hem örnek dosyalar içeren bir model eğittiğinizde he
 
 1. İlk olarak, modeli tanımlamaya çalıştığınız içerik türüne (sözleşme) özgü özellikleri aramak için "eğitmek" için kullanabileceğiniz en az beş örnek dosya bulmanız gerekir. 
 
-2. SharePoint Syntex kullanarak yeni bir belge anlama modeli oluşturun. Örnek dosyalarınızı kullanarak [bir sınıflandırıcı oluşturmanız](create-a-classifier.md) gerekir. Sınıflandırıcıyı örnek dosyalarınızla eğiterek, şirketinizin sözleşmelerinde göreceğiniz özelliklere özgü özellikleri aramayı öğretirsiniz. Örneğin, sözleşmelerinizdeki *Hizmet Sözleşmesi*, *Sözleşme Koşulları* ve *Tazminat* gibi belirli dizeleri arayan [bir "açıklama" oluşturun](create-a-classifier.md#create-an-explanation). Hatta belgenin belirli bölümlerinde veya diğer dizelerin yanında bulunan bu dizeleri aramak için açıklamanızı eğitebilirsiniz. Sınıflandırıcınızı ihtiyaç duyduğu bilgilerle eğittiğinizi düşündüğünüzde, modelinizin ne kadar verimli olduğunu görmek için örnek bir örnek dosya kümesi üzerinde test edebilirsiniz. Test ettikten sonra, gerekirse açıklamalarınızı daha verimli hale getirmek için açıklamalarınızda değişiklik yapmayı seçebilirsiniz. 
+2. Syntex kullanarak yeni bir belge anlama modeli oluşturun. Örnek dosyalarınızı kullanarak [bir sınıflandırıcı oluşturmanız](create-a-classifier.md) gerekir. Sınıflandırıcıyı örnek dosyalarınızla eğiterek, şirketinizin sözleşmelerinde göreceğiniz özelliklere özgü özellikleri aramayı öğretirsiniz. Örneğin, sözleşmelerinizdeki *Hizmet Sözleşmesi*, *Sözleşme Koşulları* ve *Tazminat* gibi belirli dizeleri arayan [bir "açıklama" oluşturun](create-a-classifier.md#create-an-explanation). Hatta belgenin belirli bölümlerinde veya diğer dizelerin yanında bulunan bu dizeleri aramak için açıklamanızı eğitebilirsiniz. Sınıflandırıcınızı ihtiyaç duyduğu bilgilerle eğittiğinizi düşündüğünüzde, modelinizin ne kadar verimli olduğunu görmek için örnek bir örnek dosya kümesi üzerinde test edebilirsiniz. Test ettikten sonra, gerekirse açıklamalarınızı daha verimli hale getirmek için açıklamalarınızda değişiklik yapmayı seçebilirsiniz. 
 
 3. Modelinizde, her sözleşmeden belirli veri parçalarını çekmek için [bir ayıklayıcı oluşturabilirsiniz](create-an-extractor.md) . Örneğin, her sözleşme için en çok endişelendiğiniz bilgiler müşterinin kim olduğu, yüklenicinin adı ve toplam maliyettir.
 

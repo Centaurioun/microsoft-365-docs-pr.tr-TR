@@ -12,20 +12,20 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: SharePoint Syntex'de PowerShell ile belge anlama modellerini dışarı ve içeri aktarma hakkında bilgi edinin.
-ms.openlocfilehash: a022ee3be11470892cc62dda06173e83ee50f865
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Microsoft Syntex'te PowerShell ile belge anlama modellerini dışarı ve içeri aktarma hakkında bilgi edinin.
+ms.openlocfilehash: bea95d65c39e08ea2ac6714e48e9cbafe573d1a8
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585234"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564684"
 ---
 # <a name="export-and-import-document-understanding-models-with-powershell"></a>PowerShell ile belge anlama modellerini dışarı ve içeri aktarma
 
 > [!IMPORTANT]
-> SharePoint Syntex PowerShell cmdlet'leri ve diğer tüm PnP bileşenleri, bunlar için destek sağlayan etkin bir topluluk tarafından desteklenen açık kaynak araçlardır. Resmi Microsoft destek kanallarından açık kaynak araç desteği için SLA yoktur.
+> Microsoft Syntex PowerShell cmdlet'leri ve diğer tüm PnP bileşenleri, destek sağlayan etkin bir topluluk tarafından desteklenen açık kaynak araçlardır. Resmi Microsoft destek kanallarından açık kaynak araç desteği için SLA yoktur.
 
-SharePoint Syntex modeller PnP şablonları olarak dışarı aktarılabilir ve böylece içerik merkezleri veya kiracılar arasında yeniden kullanılabilir.
+Syntex modelleri PnP şablonları olarak dışarı aktarılabilir ve böylece içerik merkezleri veya kiracılar arasında yeniden kullanılabilir.
 
 ## <a name="export-all-models-in-a-content-center"></a>İçerik merkezindeki tüm modelleri dışarı aktarma
 

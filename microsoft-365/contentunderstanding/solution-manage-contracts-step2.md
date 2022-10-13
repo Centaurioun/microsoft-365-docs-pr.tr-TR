@@ -12,12 +12,12 @@ search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: Microsoft Teams'i kullanarak bir Microsoft 365 çözümü kullanarak sözleşme yönetimi kanalınızı oluşturmayı öğrenin.
-ms.openlocfilehash: 10d7598400f095dce34ed5fbb572608a7bd01306
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 5c4f674ce315aa9e047ff56276bebc224738ce44
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579214"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563806"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Adım 2. Sözleşme yönetim kanalınızı oluşturmak için Microsoft Teams'i kullanma
 
@@ -36,7 +36,7 @@ Kuruluşunuz bir sözleşme yönetimi çözümü ayarlarken paydaşların sözle
 
 ## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>SharePoint belge kitaplığınızı Sözleşmeler sekmesine ekleme
 
-Sözleşme Yönetimi kanalınızda bir **Sözleşmeler** sekmesi oluşturduktan sonra, [SharePoint belge kitaplığınızı buna eklemeniz](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b) gerekir. Eklemek istediğiniz SharePoint belge kitaplığı, önceki bölümde SharePoint Syntex belge anlama modelinizi uyguladığınız kitaplıktır.
+Sözleşme Yönetimi kanalınızda bir **Sözleşmeler** sekmesi oluşturduktan sonra, [SharePoint belge kitaplığınızı buna eklemeniz](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b) gerekir. Eklemek istediğiniz SharePoint belge kitaplığı, syntex belge anlama modelinizi önceki bölümde uyguladığınız kitaplıktır.
 
 SharePoint belge kitaplığını ekledikten sonra, tüm sınıflandırılmış sözleşmeleri varsayılan liste görünümü aracılığıyla görüntüleyebilirsiniz.
 
@@ -47,7 +47,7 @@ SharePoint belge kitaplığını ekledikten sonra, tüm sınıflandırılmış s
 > [!NOTE]
 > Bu bölümde, [Sözleşme Yönetimi Çözümü Varlıkları deposuna](https://github.com/pnp/syntex-samples/tree/main/scenario%20samples/Contracts%20Management) dahil edilen [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20samples/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) dosyasında yer alan kod örneklerine başvuruda bulunulmaktadır.
 
-Teams, sözleşmelerinizi kutucuk görünümünde görüntülemenize olanak tanırken, sözleşme kartında görünür hale getirmek istediğiniz sözleşme verilerini görüntülemek için özelleştirmek isteyebilirsiniz. Örneğin, **Sözleşmeler** sekmesinde, üyelerin sözleşme kartında müşteriyi, yükleniciyi ve ücret tutarını görmesi önemlidir. Bu alanların tümü, belge kitaplığınıza uygulanan SharePoint Syntex modeliniz aracılığıyla her sözleşmeden ayıklandı. Ayrıca, üyelerin sözleşmenin onay sürecinde nerede olduğunu kolayca görebilmesi için kutucuk üst bilgi çubuğunu her durum için farklı renklerle değiştirebilmek istiyorsunuz. Örneğin, onaylanan tüm sözleşmelerin mavi üst bilgi çubuğu olacaktır.
+Teams, sözleşmelerinizi kutucuk görünümünde görüntülemenize olanak tanırken, sözleşme kartında görünür hale getirmek istediğiniz sözleşme verilerini görüntülemek için özelleştirmek isteyebilirsiniz. Örneğin, **Sözleşmeler** sekmesinde, üyelerin sözleşme kartında müşteriyi, yükleniciyi ve ücret tutarını görmesi önemlidir. Bu alanların tümü, belge kitaplığınıza uygulanan Syntex modeliniz aracılığıyla her sözleşmeden ayıklandı. Ayrıca, üyelerin sözleşmenin onay sürecinde nerede olduğunu kolayca görebilmesi için kutucuk üst bilgi çubuğunu her durum için farklı renklerle değiştirebilmek istiyorsunuz. Örneğin, onaylanan tüm sözleşmelerin mavi üst bilgi çubuğu olacaktır.
 
    ![SharePoint kitaplığının kutucuk görünümü.](../media/content-understanding/tile.png)
 
@@ -106,7 +106,7 @@ Aşağıdaki kod, her başlık kartının durumunu tanımlamanızı sağlar. Her
 
 ## <a name="extracted-fields"></a>Ayıklanan alanlar
 
-Her sözleşme kartında her sözleşme için ayıklanmış üç alan görüntülenir (*İstemci*, *Yüklenici* ve *Ücret Tutarı*). Ayrıca, dosyanın tanımlamak için kullanılan SharePoint Syntex modeli tarafından sınıflandırıldığı saati/tarihi de görüntülemek istiyorsunuz.
+Her sözleşme kartında her sözleşme için ayıklanmış üç alan görüntülenir (*İstemci*, *Yüklenici* ve *Ücret Tutarı*). Ayrıca, dosyanın tanımlamak için kullanılan Syntex modeli tarafından sınıflandırıldığı saati/tarihi de görüntülemek istiyorsunuz.
 
 [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20samples/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) dosyasında aşağıdaki bölümler bunların her birini tanımlar.
 

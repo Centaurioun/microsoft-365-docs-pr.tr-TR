@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - highpri
-ms.openlocfilehash: 26aa7bd217092ad28932ff91113f130122cdfeb2
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: d356c89866cc1a0f3727bf647fd451cc4339d8ae
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68506048"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564443"
 ---
 # <a name="learn-about-insider-risk-management"></a>İçeriden risk yönetimi hakkında daha fazla bilgi edinme
 
@@ -198,7 +198,7 @@ Sağlık sektöründeki kuruluşlar için yapılan son çalışmalar, insider il
 
 ### <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>Dağıtılmamış kullanıcıların eylemleri ve davranışları (önizleme)
 
-Çalışma stresi olayları, kullanıcı davranışını insider riskleriyle ilgili çeşitli şekillerde etkileyebilir. Bu stresörler kötü bir performans incelemesi, konum indirgeme veya performans gözden geçirme planına yerleştirilen kullanıcı olabilir. Kullanıcıların çoğu bu olaylara kötü amaçlı olarak yanıt vermese de, bu eylemlerin stresi bazı kullanıcıların normal koşullarda normalde dikkate almayabilecekleri şekilde davranmalarına neden olabilir. Aşağıdaki insider risk yönetimi ilkesi şablonları, bu tür riskli etkinlikleri tanımlamaya yardımcı olmak için Microsoft 365 HR bağlayıcısını kullanır ve istihdam stresi olayları yakınlarında oluşabilecek davranışlarla ilgili risk göstergelerini puanlama işlemini başlatır:
+Çalışma stresi olayları, kullanıcı davranışını insider riskleriyle ilgili çeşitli şekillerde etkileyebilir. Bu stresörler kötü bir performans incelemesi, konum indirgeme veya performans gözden geçirme planına yerleştirilen kullanıcı olabilir. Stresörler ayrıca kullanıcıların e-postada ve diğer iletilerde tehdit edici, taciz edici veya ayrımcı dil göndermesi gibi uygunsuz davranışlara da yol açabilir. Kullanıcıların çoğu bu olaylara kötü amaçlı olarak yanıt vermese de, bu eylemlerin stresi bazı kullanıcıların normal koşullarda normalde dikkate almayabilecekleri şekilde davranmalarına neden olabilir. Aşağıdaki insider risk yönetimi ilkesi şablonları, bu tür riskli etkinlikleri tanımlamaya yardımcı olmak için İk bağlayıcısını ve/veya [özel bir iletişim uyumluluk ilkesiyle](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) tümleştirmeyi kullanarak kullanıcıları şirket içi risk yönetimi ilkeleri kapsamına alabilir ve istihdam stresi olayları yakınlarında oluşabilecek davranışlarla ilgili risk göstergelerini puanlamaya başlayabilir:
 
 - [Bozuk kullanıcılar tarafından veri sızıntıları (önizleme)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Dağıtılmamış kullanıcıların güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)

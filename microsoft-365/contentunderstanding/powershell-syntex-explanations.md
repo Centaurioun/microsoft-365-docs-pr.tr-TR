@@ -12,18 +12,18 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: PowerShell'de model açıklamalarını anlama SharePoint Syntex çalışma hakkında bilgi edinin.
-ms.openlocfilehash: f81281e28977e842188e1dcc02906eedaad09738
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: PowerShell'de Microsoft Syntex belge anlama modeli açıklamalarıyla çalışma hakkında bilgi edinin.
+ms.openlocfilehash: c2ffc7493e91adc4e990da56e5a29408121eded2
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67578366"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564706"
 ---
 # <a name="work-with-document-understanding-model-explanations-in-powershell"></a>PowerShell'de model açıklamalarını anlama belgesiyle çalışma
 
 > [!IMPORTANT]
-> SharePoint Syntex PowerShell cmdlet'leri ve diğer tüm PnP bileşenleri, bunlar için destek sağlayan etkin bir topluluk tarafından desteklenen açık kaynak araçlardır. Resmi Microsoft destek kanallarından açık kaynak araç desteği için SLA yoktur.
+> Microsoft Syntex PowerShell cmdlet'leri ve diğer tüm PnP bileşenleri, destek sağlayan etkin bir topluluk tarafından desteklenen açık kaynak araçlardır. Resmi Microsoft destek kanallarından açık kaynak araç desteği için SLA yoktur.
 
 Özel açıklama şablonları, içerik merkezi içindeki bir listede depolanır. Bu açıklamalar liste öğeleri olarak depolandığından, PowerShell bunlarla etkileşime geçmek için kullanılabilir.
 

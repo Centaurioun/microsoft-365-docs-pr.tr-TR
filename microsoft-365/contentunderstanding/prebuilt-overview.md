@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex'da önceden oluşturulmuş modellere genel bakış
+title: Microsoft Syntex'te önceden oluşturulmuş modellere genel bakış
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -7,23 +7,23 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.customer: intro-overview
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex'da önceden oluşturulmuş modeller hakkında bilgi edinin.
-ms.openlocfilehash: 04247a627c30e4a13209f11bcdf40c3b24e8aea0
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+description: Microsoft Syntex'te önceden oluşturulmuş modeller hakkında bilgi edinin.
+ms.openlocfilehash: 8d5d2c9a4103c02e4acab10f653ae658679a1c07
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497593"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563196"
 ---
-# <a name="prebuilt-models-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da önceden oluşturulmuş modellere genel bakış
+# <a name="prebuilt-models-overview-in-microsoft-syntex"></a>Microsoft Syntex'te önceden oluşturulmuş modellere genel bakış
 
-SharePoint Syntex, [belgeleri anlama modellerine](document-understanding-overview.md) ve [form işleme modellerine](form-processing-overview.md) ek olarak, bilgilerin ayıklanmını otomatikleştirmek için önceden oluşturulmuş modeller sağlar.
+Microsoft Syntex, modelleri ve [form işleme modellerini](form-processing-overview.md) [belge anlamanın](document-understanding-overview.md) yanı sıra, bilgilerin ayıklanmını otomatikleştirmek için önceden oluşturulmuş modeller de sağlar.
 
 Önceden oluşturulmuş modeller, belgeleri ve belgelerdeki yapılandırılmış bilgileri tanımak için önceden eğitilir. Sıfırdan yeni bir özel model oluşturmak yerine, kuruluşunuzun gereksinimlerine uygun belirli alanlar eklemek için önceden eğitilmiş mevcut bir modeli yineleyebilirsiniz. 
 

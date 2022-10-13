@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 66b34f4b158bc23467a0f147e57330e7ee736f5a
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: a26b31caeb695718b3a7c747265615490fc92321
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68224788"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564224"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac'te Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -37,6 +37,28 @@ ms.locfileid: "68224788"
 Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkında daha fazla bilgi için: 
 - [Linux'ta Uç Nokta için Microsoft Defender'deki yenilikler](linux-whatsnew.md) 
 - [iOS'ta Uç Nokta için Microsoft Defender'deki yenilikler](ios-whatsnew.md)</br>
+
+<details>
+  <summary>Ekim 2022 (Derleme: 101.82.21 | Sürüm: 20.122082.18221.0)</summary>
+
+&ensp;Derleme: **101.82.21**<br/>
+&ensp;Sürüm: **20.122082.18221.0**<br/>
+&ensp;Altyapı sürümü: **1.1.19400.3**<br/>
+&ensp;İmza sürümü: **1.369.962.0**<br/>
+
+**Yenilikler**
+
+- Engelleme modundaki Mac TP kapatmada cihazın kilitlenmesine/ yeniden başlatmada kilitlenmesine neden oluyor
+- İsteğe bağlı tarama geçmişini görüntülemek için mdatp komut satırı anahtarı ekleme
+- MacOs'ta Cihaz Sahibinin Performansını Geliştirme
+- macOS Ventura için hazır (13.0)
+- Hata ve performans düzeltmeleri
+
+<br/>
+</details>
+
+> [!IMPORTANT]
+> Bu, sürüm notlarının yayımlandığı gün macOS Ventura'da bilinen sorunlar olmadan en düşük MDE sürümüdür. Apple, artık ve macOS Ventura GA arasında MDE deneyimini etkileyen platform değişiklikleriyle Ventura Beta'ları yayınlamaya devam edebilir. Önerilen son Ventura uyumlu MDE sürüm numarası için Ventura GA tarihi ile ilgili bu sürüm notlarını ziyaret edin.
 
 <details>
   <summary>Ağustos 2022 (Derleme: 101.78.13 | Sürüm: 20.122072.17813.0)</summary>
@@ -54,7 +76,7 @@ Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkınd
 - Ventura'da kullanıcı arabirimi kilitlenmesi için düzeltme
 - Tanımların yüklendikten hemen sonra indirilmemesiyle ilgili düzeltme
 - Diğer hata düzeltmeleri
-
+    
 <br/>
 </details>
 

@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: d4a8d948f460bf44d7d159a39eedcf2a0ca65c73
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 5487b2292901cd34599664215f18b4bbdc7cd943
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503896"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564640"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Insider risk yönetimi etkinliklerini araştırma
 
@@ -133,9 +133,11 @@ Uyarı hakkında daha fazla bilgi için Uyarı ayrıntısı sayfasındaki aşağ
 Bu bölüm, kullanıcı ve uyarı hakkında genel bilgiler içerir. Bu bilgiler, kullanıcı için uyarıya dahil edilen algılanan etkinlik hakkında ayrıntılı bilgiler gözden geçirilirken bağlam için kullanılabilir:
 
 - **Bu uyarıyı oluşturan etkinlik**: Uyarının oluşturulmasına neden olan etkinlik değerlendirme döneminde en yüksek risk etkinliğini ve ilke eşleşmesini görüntüler.
-- **Tetikleyici olay**: İlkeden kullanıcının etkinliğine risk puanları atamaya başlamasını isteyen en son tetikleyici olayı görüntüler.
+- **Tetikleyici olay**: İlkeden kullanıcının etkinliğine risk puanları atamaya başlamasını isteyen en son tetikleyici olayı görüntüler. *Dağıtılan kullanıcılar tarafından veri sızıntıları* için [iletişim uyumluluğuyla tümleştirmeyi](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) yapılandırdıysanız veya güvenlik *ilkesi ihlalleri için dağıtılan kullanıcı* ilkeleriyle tümleştirmeyi yapılandırdıysanız, bu uyarılar için tetikleme olayının kapsamı iletişim uyumluluk etkinliği olarak belirlenmiştir.
 - **Kullanıcı profili**: Uyarıya atanan kullanıcı hakkında genel bilgileri görüntüler. Anonimleştirme etkinse kullanıcı adı, e-posta adresi, diğer ad ve kuruluş alanları anonimleştirilir.
 - **Kullanıcı uyarı geçmişi**: Son 30 güne ait kullanıcının uyarılarının listesini görüntüler. Kullanıcının uyarı geçmişinin tamamını görüntülemek için bir bağlantı içerir.
+
+Yalnızca [öncelik içeriğini](/microsoft-365/compliance/insider-risk-management-policies#prioritize-content-in-policies) içeren etkinlikler kapsamındaki ilkelerden oluşturulan uyarılar, bu bölümdeki *bu uyarı bildirimi için Yalnızca öncelikli içeriğe sahip etkinlik puanlandı* öğesini içerir.
 
 ### <a name="all-risk-factors"></a>Tüm risk faktörleri
 
@@ -176,7 +178,7 @@ Bu sekme Etkinlik gezginini açar. Daha fazla bilgi için bu makaledeki Etkinlik
     - **Risk kategorisi**: Etkinlikleri aşağıdaki risk kategorilerine göre filtreleyin: *Risk puanı 15 > olan etkinlikler (sıralı olmadığı sürece)* ve *Sıralı etkinlikler*.
     - **Etkinlik Türü**: Etkinlikleri şu türlere göre filtreleyin: *Erişim*, *Silme*, *Toplama*, *Sızdırma*, *Sızma*, *Gizleme* ve *Güvenlik*.
     - **Sıralama ölçütü**: Zaman çizelgesi etkinliklerini *gerçekleşen Tarihe* veya *Risk puanına* göre listeleyin.
-4. **Risk sırası**: Riskli etkinliklerin kronolojik sırası, risk araştırmasının önemli bir yönüdür ve bu ilgili etkinliklerin tanımlanması, kuruluşunuz için genel riski değerlendirmenin önemli bir parçasıdır. İlgili uyarı etkinlikleri, bu etkinliklerin daha büyük bir risk alanıyla ilişkilendirildiğini vurgulamak için bağlantı çizgileri ile görüntülenir. Etkinliklerin bu görünümü, araştırmacıların yalıtılmış veya tek seferlik olaylar olarak görülebilecek risk etkinlikleri için kelimenin tam anlamıyla "noktaları birbirine bağlamalarına" yardımcı olabilir. İlişkili tüm risk etkinliklerinin ayrıntılarını görüntülemek için dizideki herhangi bir baloncuğu seçin. Ayrıntılar şunlardır:
+4. **Risk sırası**: Riskli etkinliklerin kronolojik sırası, risk araştırmasının önemli bir yönüdür ve bu ilgili etkinliklerin tanımlanması, kuruluşunuz için genel riski değerlendirmenin önemli bir parçasıdır. İlgili uyarı etkinlikleri, bu etkinliklerin daha büyük bir risk alanıyla ilişkilendirildiğini vurgulamak için bağlantı çizgileri ile görüntülenir. Diziler, bu görünümde sıranın risk puanına göre sıra etkinliklerinin üzerine yerleştirilmiş bir simgeyle de tanımlanır. Bu diziyle ilişkili riskli etkinliğin tarihini ve saatini görmek için simgenin üzerine gelin. Etkinliklerin bu görünümü, araştırmacıların yalıtılmış veya tek seferlik olaylar olarak görülebilecek risk etkinlikleri için kelimenin tam anlamıyla "noktaları birbirine bağlamalarına" yardımcı olabilir. İlişkili tüm risk etkinliklerinin ayrıntılarını görüntülemek için dizideki simgeyi veya herhangi bir baloncuğu seçin. Ayrıntılar şunlardır:
 
     - **Sıranın adı** .
     - Sıranın **Tarih** veya **Tarih aralığı**.
@@ -266,6 +268,7 @@ Insider risk yönetimi ilkeleriniz tarafından oluşturulan uyarı sayısından 
 
 - **Insider risk ilkelerinizi ayarlayın: Doğru insider** risk ilkesini seçmek ve yapılandırmak, uyarıların türünü ve hacmini ele almak için en temel yöntemdir. Uygun [ilke şablonuyla](insider-risk-management-policies.md#policy-templates) başlayarak, göreceğiniz risk etkinliklerinin ve uyarıların türlerine odaklanmanıza yardımcı olur. Uyarı hacmini etkileyebilecek diğer faktörler kapsam içi kullanıcı ve grupların boyutu ile [önceliklendirilen içerik ve kanallardır](insider-risk-management-policies.md#prioritize-content-in-policies). Bu alanları kuruluşunuz için en önemli olan alanlara daraltmak için ilkeleri ayarlamayı göz önünde bulundurun.
 - **Insider risk ayarlarınızı değiştirme**: Insider risk ayarları, alacağınız birim ve uyarı türlerini etkileyebilecek çok çeşitli yapılandırma seçenekleri içerir. Bunlar [ilke göstergeleri](insider-risk-management-settings.md#indicators), [gösterge eşikleri](insider-risk-management-settings.md#indicator-level-settings-preview) ve [ilke zaman çerçeveleri](insider-risk-management-settings.md#policy-timeframes) için ayarları içerir. Belirli dosya türlerini dışlamak, etkinlik uyarıları ilkeleriniz tarafından raporlanmadan önce minimum eşikleri tanımlamak ve uyarı birimi yapılandırmasını daha düşük bir ayara değiştirmek için [akıllı algılama](insider-risk-management-settings.md#intelligent-detections) seçeneklerini yapılandırmayı göz önünde bulundurun.
+- **Satır içi uyarı özelleştirmesini etkinleştirme (önizleme)**: [Satır içi uyarı özelleştirmesini](/microsoft-365/compliance/insider-risk-management-settings#inline-alert-customization-preview) etkinleştirmek analistlerin ve araştırmacıların uyarıları gözden geçirirken ilkeleri hızla düzenlemesine olanak tanır. Microsoft önerileriyle etkinlik algılama için eşikleri güncelleştirebilir, özel eşikleri yapılandırabilir veya uyarıyı oluşturan etkinlik türünü yoksaymayı seçebilirler. Bu etkin değilse, yalnızca *Insider Risk Yönetimi* rol grubuna atanan kullanıcılar satır içi uyarı özelleştirmesini kullanabilir.
 - **Uygun olduğunda uyarıları toplu silme**: Analistlerinizin ve araştırmacılarınızın [aynı anda birden fazla uyarıyı hemen kapatması](insider-risk-management-activities.md#dismiss-multiple-alerts-preview) için önceliklendirme süresinden tasarruf etmeye yardımcı olabilir. Aynı anda kapatmak için en fazla 400 uyarı seçebilirsiniz.
 
 ### <a name="not-familiar-with-the-alert-triage-process"></a>Uyarı önceliklendirme işlemi hakkında bilgi sahibi değilim

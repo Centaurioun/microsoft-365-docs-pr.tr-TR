@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Çevrimiçi kuruluşunuzu telefonunuzdan veya tabletinizde yönetmek için web tabanlı Microsoft 365 yönetim merkezi eşlikçiniz olan Microsoft 365 Yönetici uygulamasını edinin.
-ms.openlocfilehash: 8f3fc892c94e69d6a7090ed5905f420ae7893673
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: a4bf10444eb638b86de3723baf64992cc8e46376
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68200131"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563482"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Microsoft 365 Yönetici mobil uygulaması hakkında
 
@@ -78,6 +78,10 @@ Yönetici mobil uygulamasını kullanmak için bir Microsoft 365 kuruluşunda y�
 [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) 
 
 [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
+
+## <a name="watch-install-and-use-the-admin-mobile-app"></a>İzleyin: Yönetici mobil uygulamasını yükleme ve kullanma
+
+[!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 

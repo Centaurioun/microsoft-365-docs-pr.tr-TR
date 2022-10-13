@@ -1,5 +1,6 @@
 ---
 title: Uyumluluk merkezinde İçerik arama ve eBulma (Standart) sınırları
+description: Microsoft Purview uyumluluk portalı İçerik arama ve eBulma (Standart) özellikleri için geçerli olan sınırlar hakkında bilgi edinin.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,25 +11,26 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
-description: Microsoft Purview uyumluluk portalı İçerik arama ve eBulma (Standart) özellikleri için geçerli olan sınırlar hakkında bilgi edinin.
-ms.openlocfilehash: 52239b2f82b46feecc18685b309c1420255b9039
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 1b3adc70796e2a4cc25fb23eb6076fc5cc6ff4db
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67819281"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564268"
 ---
 # <a name="limits-for-ediscovery-search"></a>eBulma arama sınırları
 
 Microsoft Purview uyumluluk portalı eBulma arama araçlarına çeşitli sınırlar uygulanır. Buna **İçerik arama** sayfasında çalıştırılacak aramalar ve eBulma **(Standart)** sayfasında eBulma olayıyla ilişkili aramalar dahildir. Bu sınırlar, kuruluşlara sağlanan hizmetlerin durumunu ve kalitesini korumaya yardımcı olur. Arama için Exchange Online'da e-posta iletilerinin dizinlenmesiyle ilgili sınırlar da vardır. eBulma aramalarının veya e-posta dizin oluşturmanın sınırlarını değiştiremezsiniz, ancak eBulma aramalarını planlarken, çalıştırırken ve sorun giderirken bu sınırları dikkate alabilmeniz için bunları bilmeniz gerekir.
 
 Microsoft Purview eKeşif (Premium) aracıyla ilgili sınırlar için bkz. [eBulma'daki sınırlar (Premium)](limits-ediscovery20.md)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="search-limits"></a>Arama sınırları
 
@@ -119,9 +121,6 @@ Aşağıdaki tabloda, bir e-posta iletisinin dizine alınmamış bir öğe veya 
 |||
 
 ## <a name="jobs-limits"></a>İş sınırları
-
-> [!NOTE]
-> eBulma (Premium) işleri eBulma (Standart) sınırlarına doğru sayılır. Örneğin, eBulma'da (Premium) çalışan 50 işiniz varsa, işleri eBulma'da (Standart) başlatamazsınız. eBulma (Standart) işleri eBulma (Premium) sınırlarına doğru sayılmaz.
 
 |Açıklama|Sınırı|
 |---|---|

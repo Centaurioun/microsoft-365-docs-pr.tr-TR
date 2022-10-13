@@ -11,14 +11,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 7bfa691f6faeb6afcd65291c222c7358428a08ed
-ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
+ms.openlocfilehash: a377fe3dee4f38666b13ba26301b9ad1f681f6cd
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "67648779"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564618"
 ---
 # <a name="insider-risk-management-policies"></a>Insider risk yönetimi ilkeleri
 
@@ -28,6 +30,8 @@ ms.locfileid: "67648779"
 Insider risk yönetimi ilkeleri, hangi kullanıcıların kapsam içinde olduğunu ve uyarılar için hangi risk göstergesi türlerinin yapılandırıldığını belirler. Kuruluşunuzdaki tüm kullanıcılar için geçerli olan bir güvenlik ilkesini hızla oluşturabilir veya bir ilkede yönetim için tek tek kullanıcılar veya gruplar tanımlayabilirsiniz. İlkeler, ilke koşullarını birden çok veya belirli Microsoft Teams' e, SharePoint sitelerine, veri duyarlılığı türlerine ve veri etiketlerine odaklanmak için içerik önceliklerini destekler. Şablonları kullanarak belirli risk göstergelerini seçebilir ve ilke göstergeleri için olay eşiklerini özelleştirebilir, risk puanlarını ve uyarıların düzeyini ve sıklığını etkili bir şekilde özelleştirebilirsiniz. Hızlı ilkeleri kullanarak, en son analiz taramalarından elde edilen sonuçlara göre ilke koşullarını otomatik olarak tanımlayan kullanıcı ilkelerini kaldırarak veri sızıntıları veya veri hırsızlığı bile oluşturabilirsiniz. Ayrıca, risk puanı artırıcıları ve anomali algılamaları, daha yüksek öneme sahip veya daha alışılmadık riskli kullanıcı etkinliğini belirlemeye yardımcı olur. İlke pencereleri, ilkeyi uyarı etkinliklerine uygulamak için zaman dilimini tanımlamanızı sağlar ve etkinleştirildikten sonra ilkenin süresini belirlemek için kullanılır.
 
 Yerleşik ilke şablonlarıyla oluşturulan ilkelerin olası riskler üzerinde hızlı bir şekilde işlem gerçekleştirmenize nasıl yardımcı olabileceğine ilişkin genel bir bakış için [Insider Risk Yönetimi İlkeleri Yapılandırması videosunu](https://www.youtube.com/watch?v=kudK5ajZTUo) inceleyin.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="policy-dashboard"></a>İlke panosu
 
@@ -97,9 +101,11 @@ Kuruluşunuzdaki kullanıcıların verilerini korumak ve veri sızıntılarını
 
 ### <a name="data-leaks-by-disgruntled-users-preview"></a>Bozuk kullanıcılar tarafından veri sızıntıları (önizleme)
 
-Kullanıcılar iş stresi yaşadığında, bu kişiler bozulabilir ve bu da içeriden risk etkinliği olasılığını artırabilir. Bu şablon, dağınıklık ile ilişkili bir gösterge tanımlandığında güvenlik ve uyumlulukla ilgili kullanıcı etkinliğini puanlama işlemine başlar. Örnek olarak sistem sinyalleri performans geliştirme bildirimleri, düşük performans gözden geçirmeleri veya iş düzeyi durumu değişiklikleri verilebilir. Dağıtılan kullanıcılar için veri sızıntıları, SharePoint Online'dan dosya indirmeyi ve çalışma stresi veya olaylarının yakınında kişisel bulut mesajlaşma ve depolama hizmetlerine veri kopyalamayı içerebilir.
+Kullanıcılar iş stresi yaşadığında, bu kişiler bozulabilir ve bu da içeriden risk etkinliği olasılığını artırabilir. Bu şablon, parçalanmayla ilişkili bir gösterge tanımlandığında kullanıcı etkinliğini puanlama işlemine başlar. Performans geliştirme bildirimleri, düşük performans gözden geçirmeleri, iş düzeyi durumunda yapılan değişiklikler veya e-posta ve yetersizlik sinyali verebilen diğer iletiler buna örnek olarak verilebilir. Dağıtılan kullanıcılar için veri sızıntıları, SharePoint Online'dan dosya indirmeyi ve çalışma stresi veya olaylarının yakınında kişisel bulut mesajlaşma ve depolama hizmetlerine veri kopyalamayı içerebilir.
 
-Bu şablonu kullanırken, kuruluşunuzdaki kullanıcılar için performans geliştirme bildirimlerini, düşük performans gözden geçirme durumunu veya iş düzeyi değişiklik bilgilerini düzenli aralıklarla içeri aktarmak için bir Microsoft 365 İK bağlayıcısı da yapılandırmanız gerekir. Kuruluşunuz için Microsoft 365 İK bağlayıcısını yapılandırmaya yönelik adım adım yönergeler için [İk bağlayıcısı ile verileri içeri aktarma](import-hr-data.md) makalesine bakın.
+Bu şablonu kullanırken bir İk bağlayıcısı yapılandırmanız, kullanıcı iletilerinden [gelen iletişim uyumluluğunu dağıtma sinyallerini tümleştirme](/microsoft-365/compliance/communication-compliance-policies#policy-for-insider-risk-management-integration-preview) seçeneğini belirlemeniz veya her ikisini de seçmeniz gerekir. İk bağlayıcısı, kuruluşunuzdaki kullanıcılar için performans geliştirme bildirimlerinin, düşük performans gözden geçirme durumlarının veya iş düzeyi değişiklik bilgilerinin düzenli aralıklarla içeri aktarılmasını sağlar. İletişim uyumluluğu azaltma tümleştirmesi tehdit edici, taciz edici veya ayrımcı metin içeriği içerebilecek kullanıcı iletilerine yönelik sinyalleri içeri aktarır. İletişim Uyumluluğu'nda oluşturulan ilişkili uyarıların insider risk yönetimi ilkesiyle tümleştirilmesi için önceliklendirilmesi, düzeltilmesi veya durumu değiştirilmesi gerekmez.
+
+İk bağlayıcısını yapılandırmak için İk bağlayıcısı [ile verileri içeri aktarma makalesine](import-hr-data.md) bakın. İletişim uyumluluğuyla tümleştirmeyi yapılandırmak için, ilkeyi yapılandırırken sihirbazda bu seçeneği belirleyeceksiniz.
 
 ### <a name="general-security-policy-violations-preview"></a>Genel güvenlik ilkesi ihlalleri (önizleme)
 
@@ -137,9 +143,9 @@ Güvenlik ihlali uyarılarını içeri aktarmak için kuruluşunuzda Uç Nokta i
 
 ### <a name="security-policy-violations-by-disgruntled-users-preview"></a>Dağıtılmamış kullanıcıların güvenlik ilkesi ihlalleri (önizleme)
 
-İş stresi olan kullanıcılar, yanlışlıkla veya kötü amaçlı güvenlik ilkesi ihlalleri için daha yüksek risk altında olabilir. Bu stresörler, kullanıcının bir performans geliştirme planına yerleştirilmesini, düşük performans gözden geçirme durumunu veya mevcut konumundan indirgenmeyi içerebilir. Bu ilke şablonu, bu kullanıcılar için bu olaylarla ilişkili bu göstergelere ve etkinliklere göre risk puanlaması başlatır.
+İş stresi olan kullanıcılar, yanlışlıkla veya kötü amaçlı güvenlik ilkesi ihlalleri için daha yüksek risk altında olabilir. Bu stresörler, kullanıcının bir performans geliştirme planına yerleştirilmesine, performans gözden geçirme durumunun düşmesine, geçerli konumundan indirgenmesine veya e-posta gönderen kullanıcının ve yetersizlik sinyali veren diğer iletilerin gönderilmesine neden olan davranışlara neden olabilir. Bu ilke şablonu, bu kullanıcılar için bu olaylarla ilişkili bu göstergelere ve etkinliklere göre risk puanlaması başlatır.
 
-Bu şablonu kullanırken, kuruluşunuzdaki kullanıcılar için performans iyileştirme bildirimleri, düşük performans gözden geçirme durumu veya iş düzeyi değişiklik bilgileriyle ilgili sistem sinyallerini düzenli aralıklarla içeri aktarmak için bir Microsoft İk bağlayıcısı da yapılandırmanız gerekir. Kuruluşunuz için Microsoft İk bağlayıcısını yapılandırmaya yönelik adım adım yönergeler için [İk bağlayıcısı ile verileri içeri aktarma](import-hr-data.md) makalesine bakın.
+Bu şablonu kullanırken, bir İk bağlayıcısı yapılandırmanız veya kullanıcı iletilerinden gelen [iletişim uyumluluğunu dağıtma sinyallerini](/microsoft-365/compliance/communication-compliance-policies#policy-for-insider-risk-management-integration-preview) veya her ikisini tümleştirme seçeneğini belirlemeniz gerekir. İk bağlayıcısı, kuruluşunuzdaki kullanıcılar için performans geliştirme bildirimlerinin, düşük performans gözden geçirme durumlarının veya iş düzeyi değişiklik bilgilerinin düzenli aralıklarla içeri aktarılmasını sağlar. İletişim uyumluluğu azaltma tümleştirmesi tehdit edici, taciz edici veya ayrımcı metin içeriği içerebilecek kullanıcı iletilerine yönelik sinyalleri içeri aktarır. İletişim Uyumluluğu'nda oluşturulan ilişkili uyarıların insider risk yönetimi ilkesiyle tümleştirilmesi için önceliklendirilmesi, düzeltilmesi veya durumu değiştirilmesi gerekmez. İk bağlayıcısını yapılandırmak için İk bağlayıcısı [ile verileri içeri aktarma makalesine](import-hr-data.md) bakın. İletişim uyumluluğuyla tümleştirmeyi yapılandırmak için, ilkeyi yapılandırırken sihirbazda bu seçeneği belirleyeceksiniz.
 
 Ayrıca kuruluşunuzda Uç Nokta için Microsoft Defender yapılandırmanız ve güvenlik ihlali uyarılarını içeri aktarmak için Defender Güvenlik Merkezi'nde insider risk yönetimi tümleştirmesi için Uç Nokta için Defender'ı etkinleştirmeniz gerekir. Şirket içi risk yönetimi tümleştirmesi için Uç Nokta için Defender'ı yapılandırma hakkında daha fazla bilgi için bkz. [Uç Nokta için Defender'da gelişmiş özellikleri yapılandırma](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
 
@@ -154,19 +160,24 @@ Aşağıdaki tabloda, her insider risk yönetimi ilkesi şablonundan oluşturula
 | **Ayrılan kullanıcılar tarafından veri hırsızlığı** | İk bağlayıcısından veya Azure Active Directory hesabı silme işleminden istifa veya sonlandırma tarihi göstergesi | (isteğe bağlı) Sonlandırma ve istifa tarihi göstergeleri için yapılandırılmış Microsoft 365 İk bağlayıcısı |
 | **Genel veri sızıntıları** | *Yüksek önem derecesi* uyarısı veya yerleşik sızdırma olayı tetikleyicileri oluşturan veri sızıntısı ilkesi etkinliği | *Yüksek önem derecesi* uyarıları için yapılandırılmış DLP ilkesi <br><br> VEYA <br><br> Özelleştirilmiş tetikleyici göstergeleri |
 | **Öncelikli kullanıcılara göre veri sızıntıları** | *Yüksek önem derecesi* uyarısı veya yerleşik sızdırma olayı tetikleyicileri oluşturan veri sızıntısı ilkesi etkinliği | *Yüksek önem derecesi* uyarıları için yapılandırılmış DLP ilkesi <br><br> VEYA <br><br> Özelleştirilmiş tetikleyici göstergeleri <br><br> Insider risk ayarlarında yapılandırılmış öncelikli kullanıcı grupları |
-| **Bozuk kullanıcılar tarafından veri sızıntıları** | İk bağlayıcısından performans geliştirme, düşük performans veya iş düzeyi değişiklik göstergeleri | Microsoft İk bağlayıcısı, dağıtım göstergeleri için yapılandırıldı |
+| **Bozuk kullanıcılar tarafından veri sızıntıları** | - İk bağlayıcısından performans iyileştirmesi, düşük performans veya iş düzeyi değişiklik göstergeleri. <br> - Tehdit edici olabilecek, taciz eden veya ayrımcı dil içeren iletiler | Microsoft 365 HR bağlayıcısı, dağıtım göstergeleri için yapılandırıldı <br><br> VEYA <br><br> İletişim Uyumluluğu tümleştirmesi ve ayrılmış dağıtım ilkesi |
 | **Genel güvenlik ilkesi ihlalleri** | güvenlik denetimlerinin veya Uç Nokta için Microsoft Defender tarafından algılanan istenmeyen yazılımların savunulması | Etkin Uç Nokta için Microsoft Defender aboneliği <br><br> yapılandırılmış Microsoft Purview uyumluluk portalı ile Uç Nokta için Microsoft Defender tümleştirmesi |
 | **Genel hasta verilerini kötüye kullanma** | EMR sistemlerinden güvenlik denetimlerinin savunulması <br><br> İk sistemlerinden kullanıcı ve hasta adresi eşleştirme göstergeleri | İlke veya şirket içi risk ayarlarında seçilen sağlık hizmeti erişim göstergeleri <br><br> Adres eşleştirme için yapılandırılmış Microsoft 365 İK bağlayıcısı <br><br> Microsoft Healthcare veya Epic bağlayıcısı yapılandırıldı |
 | **Genel riskli tarayıcı kullanımı** | En az bir seçili *Gözatma göstergesiyle* eşleşen güvenlikle ilgili kullanıcı gözatma etkinliği | [Tarayıcı sinyali algılama makalesinde](/microsoft-365/compliance/insider-risk-management-browser-support) önkoşulların tam listesine bakın |
 | **Ayrılan kullanıcıların güvenlik ilkesi ihlalleri** | İk bağlayıcısından veya Azure Active Directory hesabı silme işleminden istifa veya sonlandırma tarihi göstergeleri | (isteğe bağlı) Sonlandırma ve istifa tarihi göstergeleri için yapılandırılmış Microsoft 365 İk bağlayıcısı <br><br> Etkin Uç Nokta için Microsoft Defender aboneliği <br><br> yapılandırılmış Microsoft Purview uyumluluk portalı ile Uç Nokta için Microsoft Defender tümleştirmesi |
 | **Öncelikli kullanıcılara göre güvenlik ilkesi ihlalleri** | güvenlik denetimlerinin veya Uç Nokta için Microsoft Defender tarafından algılanan istenmeyen yazılımların savunulması | Etkin Uç Nokta için Microsoft Defender aboneliği <br><br> yapılandırılmış Microsoft Purview uyumluluk portalı ile Uç Nokta için Microsoft Defender tümleştirmesi <br><br> Insider risk ayarlarında yapılandırılmış öncelikli kullanıcı grupları |
-| **Dağıtılan kullanıcının güvenlik ilkesi ihlalleri** | İk bağlayıcısından performans geliştirme, düşük performans veya iş düzeyi değişiklik göstergeleri | Microsoft 365 HR bağlayıcısı, dağıtım göstergeleri için yapılandırıldı <br><br> Etkin Uç Nokta için Microsoft Defender aboneliği <br><br> yapılandırılmış Microsoft Purview uyumluluk portalı ile Uç Nokta için Microsoft Defender tümleştirmesi |
+| **Dağıtılan kullanıcının güvenlik ilkesi ihlalleri** | - İk bağlayıcısından performans iyileştirmesi, düşük performans veya iş düzeyi değişiklik göstergeleri. <br> - Tehdit edici olabilecek, taciz eden veya ayrımcı dil içeren iletiler | Microsoft 365 HR bağlayıcısı, dağıtım göstergeleri için yapılandırıldı <br><br> VEYA <br><br> İletişim Uyumluluğu tümleştirmesi ve ayrılmış dağıtım ilkesi <br><br> Ve <br><br> Etkin Uç Nokta için Microsoft Defender aboneliği <br><br> yapılandırılmış Microsoft Purview uyumluluk portalı ile Uç Nokta için Microsoft Defender tümleştirmesi |
 
 ## <a name="prioritize-content-in-policies"></a>İlkelerdeki içeriğin önceliğini belirleme
 
-Insider risk yönetimi ilkeleri, nerede depolandığına, içerik türüne veya nasıl sınıflandırıldığına bağlı olarak içerik için daha yüksek bir öncelik belirtmeyi destekler. İçeriği öncelik olarak belirtmek, ilişkili etkinlikler için risk puanını artırır ve bu da yüksek önem derecesi uyarısı oluşturma olasılığını artırır. Ancak, ilgili içerik yerleşik veya özel hassas bilgi türleri içermediği veya ilkede öncelik olarak belirtilmediği sürece bazı etkinlikler uyarı oluşturmaz.
+Insider risk yönetimi ilkeleri, nerede depolandığına, içerik türüne veya nasıl sınıflandırıldığına bağlı olarak içerik için daha yüksek bir öncelik belirtmeyi destekler. Ayrıca, bir ilke tarafından algılanan tüm etkinliklere veya yalnızca öncelik içeriği içeren etkinliklere risk puanları atamayı seçebilirsiniz. İçeriği öncelik olarak belirtmek, ilişkili etkinlikler için risk puanını artırır ve bu da yüksek önem derecesi uyarısı oluşturma olasılığını artırır. Ancak, ilgili içerik yerleşik veya özel hassas bilgi türleri içermediği veya ilkede öncelik olarak belirtilmediği sürece bazı etkinlikler uyarı oluşturmaz.
 
 Örneğin, kuruluşunuzun son derece gizli bir proje için ayrılmış bir SharePoint sitesi vardır. Bu SharePoint sitesindeki bilgiler için veri sızıntıları projenin güvenliğini tehlikeye atabilir ve başarısını önemli ölçüde etkileyebilir. Veri sızıntıları ilkesinde bu SharePoint sitesine öncelik vererek, uygun etkinliklerin risk puanları otomatik olarak artırılır. Bu öncelik belirleme, bu etkinliklerin bir iç risk uyarısı oluşturma olasılığını artırır ve uyarı için önem derecesini yükseltir.
+
+Buna ek olarak, bu ilkeyi yalnızca bu proje için öncelikli içerik içeren SharePoint site etkinliğine odaklanmayı seçebilirsiniz. Risk puanları atanır ve uyarılar yalnızca belirtilen etkinlikler öncelik içeriği içerdiğinde oluşturulur. Öncelik içeriği olmayan etkinlikler puanlamaz, ancak bir uyarı oluşturulursa bunları gözden geçirebilirsiniz.
+
+>[!NOTE]
+>İlkeyi yalnızca öncelik içeriği içeren etkinlikler için uyarı oluşturacak şekilde yapılandırıyorsanız, risk puanı artırıcılarına hiçbir değişiklik uygulanmaz.
 
 İlke sihirbazında bir insider risk yönetimi ilkesi oluşturduğunuzda, aşağıdaki önceliklerden birini seçebilirsiniz:
 
@@ -178,14 +189,14 @@ Insider risk yönetimi ilkeleri, nerede depolandığına, içerik türüne veya 
 
 ## <a name="sequence-detection-preview"></a>Sıra algılama (önizleme)
 
-Riskli etkinlikler yalıtılmış olaylar olarak gerçekleşmeyebilir. Bu riskler genellikle daha büyük bir olay dizisinin parçasıdır. Sıra, art  iki veya daha fazla kullanıcı etkinliğinden oluşan ve yükseltilmiş risk önerebilecek bir grupdur. Bu ilgili etkinliklerin belirlenmesi, genel riski değerlendirmenin önemli bir parçasıdır. Veri hırsızlığı veya veri sızıntısı ilkeleri için sıra algılama etkinleştirildiğinde, sıra bilgisi etkinliklerinden elde edilen içgörüler, insider risk yönetimi olayı içindeki **Kullanıcı etkinliği** sekmesinde görüntülenir. Aşağıdaki ilke şablonları sıra algılamayı destekler:
+Riskli etkinlikler yalıtılmış olaylar olarak gerçekleşmeyebilir. Bu riskler genellikle daha büyük bir olay dizisinin parçasıdır. Sıra, art  iki veya daha fazla kullanıcı etkinliğinden oluşan ve yükseltilmiş risk önerebilecek bir grupdur. Bu ilgili etkinliklerin belirlenmesi, genel riski değerlendirmenin önemli bir parçasıdır. Veri hırsızlığı veya veri sızıntısı ilkeleri için sıra algılama seçildiğinde, sıra bilgisi etkinliklerinden elde edilen içgörüler, insider risk yönetimi olayı içindeki **Kullanıcı etkinliği** sekmesinde görüntülenir. Aşağıdaki ilke şablonları sıra algılamayı destekler:
 
 - Ayrılan kullanıcılar tarafından veri hırsızlığı
 - Genel veri sızıntıları
 - Öncelikli kullanıcılara göre veri sızıntıları
 - Bozuk kullanıcılar tarafından veri sızıntıları
 
-Bu insider risk yönetimi ilkeleri belirli göstergeleri ve oluşan sırayı kullanarak risk dizisindeki her adımı algılayabilir. Bir dizide etkinlikleri eşlerken dosya adları kullanılır. Bu riskler dört ana etkinlik kategorisine ayrılır:
+Bu insider risk yönetimi ilkeleri belirli göstergeleri ve oluşan sırayı kullanarak risk dizisindeki her adımı algılayabilir. Öncelikli kullanıcı şablonlarına göre *Genel veri sızıntıları* ve *Veri sızıntıları'ndan oluşturulan ilkeler* için, ilkeyi tetikleyen dizileri de seçebilirsiniz. Bir dizide etkinlikleri eşlerken dosya adları kullanılır. Bu riskler dört ana etkinlik kategorisine ayrılır:
 
 - **Koleksiyon**: Bu kategori sinyalleri kapsam içi ilke kullanıcıları tarafından yapılan indirme etkinliklerine odaklanır. Bu kategorideki bazı örnek etkinlikler, SharePoint sitelerinden dosya indirmek veya dosyaları sıkıştırılmış bir klasöre taşımak olabilir.
 - **Sızdırma**: Bu kategori sinyalleri, kapsam içi ilke kullanıcıları tarafından iç ve dış kaynaklarda paylaşım veya ayıklama etkinliklerine odaklanır. Bu kategorideki örnek bir etkinlik, kuruluşunuzdan dış alıcılara ekleri olan e-postalar göndermek olabilir.
@@ -193,7 +204,7 @@ Bu insider risk yönetimi ilkeleri belirli göstergeleri ve oluşan sırayı kul
 - **Temizleme**: Bu kategori sinyalleri kapsam içi ilke kullanıcılarına göre silme etkinliklerine odaklanır. Bu kategorideki örnek bir etkinlik, bir cihazdan dosya silmek olabilir.
 
 > [!NOTE]
-> Sıra algılama, iç risk yönetimi için genel ayarlarda etkinleştirilen göstergeleri ve ilkede seçilen göstergeleri kullanır. Uygun göstergeler seçilmezse, sıra algılama çalışmaz.
+> Sıra algılama, insider risk yönetimi için genel ayarlarda etkinleştirilen göstergeleri kullanır. Uygun göstergeler seçilmezse, ilke sihirbazındaki sıra algılama adımında bu göstergeleri açabilirsiniz.
 
 İlkede yapılandırıldığında her bir sıra algılama türü için tek tek eşik ayarlarını özelleştirebilirsiniz. Bu eşik ayarları, sırayla ilişkili dosyaların hacmine göre uyarıları ayarlar.
 
@@ -308,34 +319,36 @@ Yeni bir insider risk yönetimi ilkesi oluşturmak için genellikle Microsoft Pu
 8. Devam etmek için **İleri'yi** seçin.
 9. **Öncelik sırasına alınacak içerik** sayfasında, öncelik sırasına göre kaynakları atayabilir (gerekirse) bu kaynaklar için yüksek önem derecesi uyarısı oluşturma olasılığını artırabilirsiniz. Aşağıdaki seçeneklerden birini seçin:
 
-    - **SharePoint sitelerini, duyarlılık etiketlerini ve/veya hassas bilgi türlerini öncelikli içerik olarak belirtmek istiyorum**. Bu seçeneğin seçilmesi, sihirbazdaki ayrıntılı sayfaların bu kanalları yapılandırmasına olanak tanır.
-    - **Şu anda öncelik içeriğini belirtmek istemiyorum (ilke oluşturulduktan sonra bunu yapabilirsiniz)**. Bu seçeneğin seçilmesi, sihirbazdaki kanal ayrıntı sayfalarını atlar.
+    - **İçeriği önceliklendirmek istiyorum**. Bu seçeneğin belirtilmesi *SharePoint sitelerine*, *Duyarlılık etiketlerine*, *Hassas bilgi türlerine* ve *Dosya uzantıları içerik türlerine* öncelik vermenizi sağlar. Bu seçeneği belirlerseniz en az bir öncelik içerik türü seçmeniz gerekir.
+    - **Şu anda öncelikli içerik belirtmek istemiyorum**. Bu seçeneğin seçilmesi, sihirbazdaki öncelik içerik ayrıntısı sayfalarını atlar.
 
 10. Devam etmek için **İleri'yi** seçin.
 
-11. Önceki adımda **SharePoint sitelerini, duyarlılık etiketlerini, hassas bilgi türlerini ve/veya dosya uzantılarını öncelik içeriği olarak belirtmek istiyorum** seçeneğini belirlediyseniz, *SharePoint sitelerinin* ayrıntı sayfalarını, *hassas bilgi türlerini*, *duyarlılık etiketlerini* ve *dosya uzantılarını* görürsünüz. İlkeye öncelik vermek üzere SharePoint, hassas bilgi türleri ve duyarlılık etiketlerini tanımlamak için bu ayrıntı sayfalarını kullanın.
+11. Önceki adımda **İçeriği önceliklendirmek istiyorum** seçeneğini belirlediyseniz *SharePoint sitelerinin* ayrıntı sayfalarını, *hassas bilgi türlerini*, *duyarlılık etiketlerini*, *dosya uzantılarını* ve *Puanlama'yı* görürsünüz. İlkeye öncelik vermek üzere SharePoint' i, hassas bilgi türlerini, duyarlılık etiketlerini ve dosya uzantılarını tanımlamak için bu ayrıntı sayfalarını kullanın. *Puanlama* ayrıntısı sayfası, ilkenin kapsamını yalnızca öncelik içeriğine risk puanlarını atamaya olanak tanır.
 
     - **SharePoint siteleri**: **SharePoint sitesi ekle'yi** seçin ve erişiminiz olan ve önceliklendirmek istediğiniz SharePoint sitelerini seçin. Örneğin, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Hassas bilgi türü**: **Hassas bilgi türü ekle'yi** seçin ve önceliklendirmek istediğiniz duyarlılık türlerini seçin. Örneğin, *"ABD Banka Hesap Numarası"* ve *"Kredi Kartı Numarası"*.
     - **Duyarlılık etiketleri**: **Duyarlılık etiketi ekle'yi** seçin ve önceliklendirmek istediğiniz etiketleri seçin. Örneğin, *"Gizli"* ve *"Gizli"*.
     - **Dosya uzantıları**: En fazla 50 dosya uzantısı ekleyin. '.' dosyasını dosya uzantısına ekleyebilir veya atlayabilirsiniz. Örneğin, *.py* veya *py* Python dosyalarının önceliklerini belirlemeye yöneliktir.
+    - **Puanlama**: Risk puanlarının bu ilke tarafından algılanan tüm etkinliklere mi yoksa yalnızca öncelik içeriği içeren etkinlikler için mi atandığına karar verin. **Tüm etkinlikler için uyarı al'ı** veya **Yalnızca öncelik içeriği içeren etkinlikler için uyarı al'ı** seçin.
 
     >[!NOTE]
     >İlkeyi yapılandıran ve öncelikli SharePoint sitelerini seçen kullanıcılar, erişim iznine sahip oldukları SharePoint sitelerini seçebilir. SharePoint siteleri geçerli kullanıcı tarafından ilkede seçilemiyorsa, gerekli izinlere sahip başka bir kullanıcı ilkenin sitelerini daha sonra seçebilir veya geçerli kullanıcıya gerekli sitelere erişim verilmesi gerekir.
 
 12. Devam etmek için **İleri'yi** seçin.
-13. *Öncelikli kullanıcılara göre* *Genel veri sızıntıları veya Veri sızıntıları* şablonlarını seçtiyseniz, özel tetikleyici olayları ve ilke göstergeleri için Bu ilkenin **tetikleyicileri** sayfasında seçenekleri görürsünüz. Etkinlik puanlaması için ilkeye atanan kullanıcıları kapsama alanlara getiren olayları tetikleme için bir DLP ilkesi veya gösterge seçme seçeneğiniz vardır. **Kullanıcı bir veri kaybı önleme (DLP) ilkesi tetikleme olayıyla eşleşir** seçeneğini belirlerseniz, bu iç risk yönetimi ilkesi için DLP İlkesi için tetikleyici göstergelerini etkinleştirmek üzere DLP ilkesi açılan listesinden bir DLP ilkesi seçmeniz gerekir. **Kullanıcı bir sızdırma etkinliği tetikleme olayı gerçekleştirir** seçeneğini belirlerseniz, ilke tetikleyici olayı için listelenen göstergelerden birini veya daha fazlasını seçmeniz gerekir.
+13. *Öncelikli kullanıcılara göre* *Genel veri sızıntıları veya Veri sızıntıları* şablonlarını seçtiyseniz, özel tetikleyici olayları ve **ilke göstergeleri için Bu ilkenin tetikleyicileri** sayfasında seçenekleri görürsünüz. Etkinlik puanlaması için ilkeye atanan kullanıcıları kapsama alanlara getiren olayları tetikleme için bir DLP ilkesi veya gösterge seçme seçeneğiniz vardır. **Kullanıcı bir veri kaybı önleme (DLP) ilkesi tetikleme olayıyla eşleşir** seçeneğini belirlerseniz, bu iç risk yönetimi ilkesi için DLP İlkesi için tetikleyici göstergelerini etkinleştirmek üzere DLP ilkesi açılan listesinden bir DLP ilkesi seçmeniz gerekir. **Kullanıcı bir sızdırma etkinliği tetikleme olayı gerçekleştirir** seçeneğini belirlerseniz, ilke tetikleyici olayı için listelenen göstergelerden birini veya daha fazlasını seçmeniz gerekir.
     >[!IMPORTANT]
     >Listelenen bir göstergeyi seçemiyorsanız bunun nedeni, bunların kuruluşunuz için etkinleştirilmemiş olmasıdır. İlkeyi seçip atayabilmelerini sağlamak için **Insider risk yönetimi** > **Ayarları** > **İlke göstergelerinde göstergeleri** etkinleştirin.
 
     Diğer ilke şablonlarını seçtiyseniz özel tetikleyici olayları desteklenmez. Olayları tetikleyen yerleşik ilke uygulanır ve ilke öznitelikleri tanımlamadan 23. Adıma devam edersiniz.
 
-14. Devam etmek için **İleri'yi** seçin.
-15. Öncelikli kullanıcılara göre *Genel veri sızıntıları* veya *Veri sızıntıları şablonlarını* seçtiyseniz ve **Kullanıcı bir sızdırma etkinliği ve ilişkili göstergeler gerçekleştirir'i** seçtiyseniz, seçtiğiniz olayları tetikleyen gösterge için özel veya varsayılan eşikleri seçebilirsiniz. Tetikleyici olaylar için **Varsayılan eşikleri kullan (Önerilen)** veya **Özel eşikleri kullan'ı** seçin.
-16. Devam etmek için **İleri'yi** seçin.
-17. **Tetikleyici olaylar için özel eşikleri kullan'ı** seçtiyseniz, 13. Adımda seçtiğiniz her tetikleyici olay göstergesi için istenen etkinlik uyarısı düzeyini oluşturmak için uygun düzeyi seçin.
-18. Devam etmek için **İleri'yi** seçin.
-19. **İlke göstergeleri** sayfasında, **Insider risk ayarları** > **Göstergeleri** sayfasında kullanılabilir olarak tanımladığınız [göstergeleri](insider-risk-management-settings.md#indicators) görürsünüz. İlkeye uygulamak istediğiniz göstergeleri seçin.
+14. *Dağıtılan kullanıcılar tarafından veri sızıntıları* veya kullanıcı *şablonlarının güvenlik ilkesi ihlalleri* seçeneğini belirlediyseniz, **bu ilkenin tetikleyicileri** sayfasında iletişim uyumluluğu ve İk veri bağlayıcısı olaylarıyla tümleştirme seçeneklerini görürsünüz. Kullanıcılar tehdit edici, taciz edici veya ayrımcı dil içeren iletiler gönderdiğinde veya İk sisteminizde dağıtılan olaylar rapor edildikten sonra kullanıcıları ilke kapsamına getirmek için risk puanlarını atama seçeneğiniz vardır. **İletişim uyumluluğundan çıkarma tetikleyicileri (önizleme)** seçeneğini belirlerseniz, varsayılan iletişim uyumluluk ilkesini kabul edebilir (otomatik olarak oluşturulur), bu tetikleyici için önceden oluşturulmuş bir ilke kapsamı seçebilir veya kapsamı belirlenmiş başka bir ilke oluşturabilirsiniz. **İk veri bağlayıcısı olaylarını** seçerseniz, kuruluşunuz için bir İk veri bağlayıcısı yapılandırmanız gerekir.
+15. Devam etmek için **İleri'yi** seçin.
+16. Öncelikli kullanıcılara göre *Genel veri sızıntıları* veya *Veri sızıntıları şablonlarını* seçtiyseniz ve **Kullanıcı bir sızdırma etkinliği ve ilişkili göstergeler gerçekleştirir'i** seçtiyseniz, seçtiğiniz olayları tetikleyen gösterge için özel veya varsayılan eşikleri seçebilirsiniz. Tetikleyici olaylar için **Varsayılan eşikleri kullan (Önerilen)** veya **Özel eşikleri kullan'ı** seçin.
+17. Devam etmek için **İleri'yi** seçin.
+18. **Tetikleyici olaylar için özel eşikleri kullan'ı** seçtiyseniz, 13. Adımda seçtiğiniz her tetikleyici olay göstergesi için istenen etkinlik uyarısı düzeyini oluşturmak için uygun düzeyi seçin.
+19. Devam etmek için **İleri'yi** seçin.
+20. **İlke göstergeleri** sayfasında, **Insider risk ayarları** > **Göstergeleri** sayfasında kullanılabilir olarak tanımladığınız [göstergeleri](insider-risk-management-settings.md#indicators) görürsünüz. İlkeye uygulamak istediğiniz göstergeleri seçin.
 
     > [!IMPORTANT]
     > Bu sayfadaki göstergeler seçilemiyorsa, tüm ilkeler için etkinleştirmek istediğiniz göstergeleri seçmeniz gerekir. Sihirbazdaki **Göstergeleri aç** düğmesini kullanabilir veya **Insider risk yönetimi** > **Ayarlar** > **İlkesi göstergeleri** sayfasında göstergeleri seçebilirsiniz.
@@ -344,10 +357,10 @@ Yeni bir insider risk yönetimi ilkesi oluşturmak için genellikle Microsoft Pu
     *Veri hırsızlığı* veya *Veri sızıntıları* ilke şablonu seçtiyseniz, ilkeye uygulanacak bir veya daha fazla **Sıra algılama** yöntemi ve **bir Kümülatif sızdırma algılama** yöntemi seçin.
     *Genel riskli tarayıcı kullanım* ilkesi şablonunu seçtiyseniz **Gözatma göstergelerinden** birini veya daha fazlasını seçin.
 
-20. Devam etmek için **İleri'yi** seçin.
-21. **Varsayılan veya özel gösterge eşiklerini kullanmaya karar ver** sayfasında, seçtiğiniz ilke göstergeleri için özel veya varsayılan eşikleri seçin. **Tüm göstergeler için varsayılan eşikleri kullan'ı** veya Seçili ilke göstergeleri için **özel eşikler belirtin'i** seçin. Özel eşikleri belirtin'i seçtiyseniz, her ilke göstergesi için istenen etkinlik uyarı düzeyini oluşturmak için uygun düzeyi seçin.
-22. Devam etmek için **İleri'yi** seçin.
-23. **Gözden Geçir** sayfasında, ilke için seçtiğiniz ayarları ve seçimleriniz için önerileri veya uyarıları gözden geçirin. İlke değerlerinden herhangi birini değiştirmek için **Düzenle'yi** veya ilkeyi oluşturup etkinleştirmek için **Gönder'i** seçin.
+21. Devam etmek için **İleri'yi** seçin.
+22. **Varsayılan veya özel gösterge eşiklerini kullanmaya karar ver** sayfasında, seçtiğiniz ilke göstergeleri için özel veya varsayılan eşikleri seçin. **Tüm göstergeler için varsayılan eşikleri kullan'ı** veya Seçili ilke göstergeleri için **özel eşikler belirtin'i** seçin. Özel eşikleri belirtin'i seçtiyseniz, her ilke göstergesi için istenen etkinlik uyarı düzeyini oluşturmak için uygun düzeyi seçin.
+23. Devam etmek için **İleri'yi** seçin.
+24. **Gözden Geçir** sayfasında, ilke için seçtiğiniz ayarları ve seçimleriniz için önerileri veya uyarıları gözden geçirin. İlke değerlerinden herhangi birini değiştirmek için **Düzenle'yi** veya ilkeyi oluşturup etkinleştirmek için **Gönder'i** seçin.
 
 ## <a name="update-a-policy"></a>İlkeyi güncelleştirme
 
@@ -367,34 +380,36 @@ Mevcut bir ilkeyi yönetmek için aşağıdaki adımları tamamlayın:
 8. Devam etmek için **İleri'yi** seçin.
 9. **Öncelik sırasına alınacak içerik** sayfasında, öncelik sırasına göre kaynakları atayabilir (gerekirse) bu kaynaklar için yüksek önem derecesi uyarısı oluşturma olasılığını artırabilirsiniz. Aşağıdaki seçeneklerden birini seçin:
 
-    - **SharePoint sitelerini, duyarlılık etiketlerini, hassas bilgi türlerini ve/veya dosya uzantılarını öncelikli içerik olarak belirtmek istiyorum**. Bu seçeneğin seçilmesi, sihirbazdaki ayrıntılı sayfaların bu kanalları yapılandırmasına olanak tanır.
-    - **Şu anda öncelik içeriğini belirtmek istemiyorum (ilke oluşturulduktan sonra bunu yapabilirsiniz)**. Bu seçeneğin seçilmesi, sihirbazdaki kanal ayrıntı sayfalarını atlar.
+    - **İçeriği önceliklendirmek istiyorum**. Bu seçeneğin belirtilmesi *SharePoint sitelerine*, *Duyarlılık etiketlerine*, *Hassas bilgi türlerine* ve *Dosya uzantıları içerik türlerine* öncelik vermenizi sağlar. Bu seçeneği belirlerseniz en az bir öncelik içerik türü seçmeniz gerekir.
+    - **Şu anda öncelikli içerik belirtmek istemiyorum**. Bu seçeneğin seçilmesi, sihirbazdaki öncelik içerik ayrıntısı sayfalarını atlar.
 
 10. Devam etmek için **İleri'yi** seçin.
 
-11. Önceki adımda **SharePoint sitelerini, duyarlılık etiketlerini ve/veya hassas bilgi türlerini öncelik içeriği olarak belirtmek istiyorum** seçeneğini belirlediyseniz, *SharePoint sitelerinin* ayrıntı sayfalarını, *hassas bilgi türlerini* ve *duyarlılık etiketlerini* görürsünüz. İlkeye öncelik vermek üzere SharePoint, hassas bilgi türleri ve duyarlılık etiketlerini tanımlamak için bu ayrıntı sayfalarını kullanın.
+11. Önceki adımda **İçeriği önceliklendirmek istiyorum** seçeneğini belirlediyseniz *SharePoint sitelerinin* ayrıntı sayfalarını, *hassas bilgi türlerini*, *duyarlılık etiketlerini*, *dosya uzantılarını* ve *Puanlama'yı* görürsünüz. İlkeye öncelik vermek üzere SharePoint' i, hassas bilgi türlerini, duyarlılık etiketlerini ve dosya uzantılarını tanımlamak için bu ayrıntı sayfalarını kullanın. *Puanlama* ayrıntısı sayfası, ilkenin kapsamını yalnızca öncelik içeriğine risk puanlarını atamaya olanak tanır.
 
     - **SharePoint siteleri**: **SharePoint sitesi ekle'yi** seçin ve erişiminiz olan ve önceliklendirmek istediğiniz SharePoint sitelerini seçin. Örneğin, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Hassas bilgi türü**: **Hassas bilgi türü ekle'yi** seçin ve önceliklendirmek istediğiniz duyarlılık türlerini seçin. Örneğin, *"ABD Banka Hesap Numarası"* ve *"Kredi Kartı Numarası"*.
     - **Duyarlılık etiketleri**: **Duyarlılık etiketi ekle'yi** seçin ve önceliklendirmek istediğiniz etiketleri seçin. Örneğin, *"Gizli"* ve *"Gizli"*.
     - **Dosya uzantıları**: En fazla 50 dosya uzantısı ekleyin. '.' dosyasını dosya uzantısına ekleyebilir veya atlayabilirsiniz. Örneğin, *.py* veya *py* Python dosyalarının önceliklerini belirlemeye yöneliktir.
+    - **Puanlama**: Risk puanlarının bu ilke tarafından algılanan tüm etkinliklere mi yoksa yalnızca öncelik içeriği içeren etkinlikler için mi atandığına karar verin. **Tüm etkinlikler için uyarı al'ı** veya **Yalnızca öncelik içeriği içeren etkinlikler için uyarı al'ı** seçin.
 
     >[!NOTE]
     >İlkeyi yapılandıran ve öncelikli SharePoint sitelerini seçen kullanıcılar, erişim iznine sahip oldukları SharePoint sitelerini seçebilir. SharePoint siteleri geçerli kullanıcı tarafından ilkede seçilemiyorsa, gerekli izinlere sahip başka bir kullanıcı ilkenin sitelerini daha sonra seçebilir veya geçerli kullanıcıya gerekli sitelere erişim verilmesi gerekir.
 
 12. Devam etmek için **İleri'yi** seçin.
-13. *Öncelikli kullanıcılara göre* *Genel veri sızıntıları veya Veri sızıntıları* şablonlarını seçtiyseniz, özel tetikleyici olayları ve ilke göstergeleri için Bu ilkenin **tetikleyicileri** sayfasında seçenekleri görürsünüz. Etkinlik puanlaması için ilkeye atanan kullanıcıları kapsama alanlara getiren olayları tetikleme için bir DLP ilkesi veya gösterge seçme seçeneğiniz vardır. **Kullanıcı bir veri kaybı önleme (DLP) ilkesi tetikleme olayıyla eşleşir** seçeneğini belirlerseniz, bu iç risk yönetimi ilkesi için DLP İlkesi için tetikleyici göstergelerini etkinleştirmek üzere DLP ilkesi açılan listesinden bir DLP ilkesi seçmeniz gerekir. **Kullanıcı bir sızdırma etkinliği tetikleme olayı gerçekleştirir** seçeneğini belirlerseniz, ilke tetikleyici olayı için listelenen göstergelerden birini veya daha fazlasını seçmeniz gerekir.
+13. *Öncelikli kullanıcılara göre* *Genel veri sızıntıları veya Veri sızıntıları* şablonlarını seçtiyseniz, özel tetikleyici olayları ve **ilke göstergeleri için Bu ilkenin tetikleyicileri** sayfasında seçenekleri görürsünüz. Etkinlik puanlaması için ilkeye atanan kullanıcıları kapsama alanlara getiren olayları tetikleme için bir DLP ilkesi veya gösterge seçme seçeneğiniz vardır. **Kullanıcı bir veri kaybı önleme (DLP) ilkesi tetikleme olayıyla eşleşir** seçeneğini belirlerseniz, bu iç risk yönetimi ilkesi için DLP İlkesi için tetikleyici göstergelerini etkinleştirmek üzere DLP ilkesi açılan listesinden bir DLP ilkesi seçmeniz gerekir. **Kullanıcı bir sızdırma etkinliği tetikleme olayı gerçekleştirir** seçeneğini belirlerseniz, ilke tetikleyici olayı için listelenen göstergelerden birini veya daha fazlasını seçmeniz gerekir.
     >[!IMPORTANT]
     >Listelenen bir göstergeyi seçemiyorsanız bunun nedeni, bunların kuruluşunuz için etkinleştirilmemiş olmasıdır. İlkeyi seçip atayabilmelerini sağlamak için **Insider risk yönetimi** > **Ayarları** > **İlke göstergelerinde göstergeleri** etkinleştirin.
 
     Diğer ilke şablonlarını seçtiyseniz özel tetikleyici olayları desteklenmez. Olayları tetikleyen yerleşik ilke uygulanır ve ilke öznitelikleri tanımlamadan 23. Adıma devam edersiniz.
 
-14. Devam etmek için **İleri'yi** seçin.
-15. Öncelikli kullanıcılara göre *Genel veri sızıntıları* veya *Veri sızıntıları şablonlarını* seçtiyseniz ve **Kullanıcı bir sızdırma etkinliği ve ilişkili göstergeler gerçekleştirir'i** seçtiyseniz, seçtiğiniz olayları tetikleyen gösterge için özel veya varsayılan eşikleri seçebilirsiniz. Tetikleyici olaylar için **Varsayılan eşikleri kullan (Önerilen)** veya **Özel eşikleri kullan'ı** seçin.
-16. Devam etmek için **İleri'yi** seçin.
-17. **Tetikleyici olaylar için özel eşikleri kullan'ı** seçtiyseniz, 13. Adımda seçtiğiniz her tetikleyici olay göstergesi için istenen etkinlik uyarısı düzeyini oluşturmak için uygun düzeyi seçin.
-18. Devam etmek için **İleri'yi** seçin.
-19. **İlke göstergeleri** sayfasında, **Insider risk ayarları** > **Göstergeleri** sayfasında kullanılabilir olarak tanımladığınız [göstergeleri](insider-risk-management-settings.md#indicators) görürsünüz. İlkeye uygulamak istediğiniz göstergeleri seçin.
+14. *Dağıtılan kullanıcılar tarafından veri sızıntıları* veya kullanıcı *şablonlarının güvenlik ilkesi ihlalleri* seçeneğini belirlediyseniz, **bu ilkenin tetikleyicileri** sayfasında iletişim uyumluluğu ve İk veri bağlayıcısı [olaylarıyla tümleştirme](/microsoft-365/compliance/communication-compliance-policies#policy-for-insider-risk-management-integration-preview) seçeneklerini görürsünüz. Kullanıcılar tehdit edici, taciz edici veya ayrımcı dil içeren iletiler gönderdiğinde veya İk sisteminizde dağıtılan olaylar rapor edildikten sonra kullanıcıları ilke kapsamına getirmek için risk puanlarını atama seçeneğiniz vardır. **İletişim uyumluluğundan çıkarma tetikleyicileri (önizleme)** seçeneğini belirlerseniz, varsayılan iletişim uyumluluk ilkesini kabul edebilir (otomatik olarak oluşturulur), bu tetikleyici için önceden oluşturulmuş bir ilke kapsamı seçebilir veya kapsamı belirlenmiş başka bir ilke oluşturabilirsiniz. **İk veri bağlayıcısı olaylarını** seçerseniz, kuruluşunuz için bir İk veri bağlayıcısı yapılandırmanız gerekir.
+15. Devam etmek için **İleri'yi** seçin.
+16. Öncelikli kullanıcılara göre *Genel veri sızıntıları* veya *Veri sızıntıları şablonlarını* seçtiyseniz ve **Kullanıcı bir sızdırma etkinliği ve ilişkili göstergeler gerçekleştirir'i** seçtiyseniz, seçtiğiniz olayları tetikleyen gösterge için özel veya varsayılan eşikleri seçebilirsiniz. Tetikleyici olaylar için **Varsayılan eşikleri kullan (Önerilen)** veya **Özel eşikleri kullan'ı** seçin.
+17. Devam etmek için **İleri'yi** seçin.
+18. **Tetikleyici olaylar için özel eşikleri kullan'ı** seçtiyseniz, 13. Adımda seçtiğiniz her tetikleyici olay göstergesi için istenen etkinlik uyarısı düzeyini oluşturmak için uygun düzeyi seçin.
+19. Devam etmek için **İleri'yi** seçin.
+20. **İlke göstergeleri** sayfasında, **Insider risk ayarları** > **Göstergeleri** sayfasında kullanılabilir olarak tanımladığınız [göstergeleri](insider-risk-management-settings.md#indicators) görürsünüz. İlkeye uygulamak istediğiniz göstergeleri seçin.
 
     > [!IMPORTANT]
     > Bu sayfadaki göstergeler seçilemiyorsa, tüm ilkeler için etkinleştirmek istediğiniz göstergeleri seçmeniz gerekir. Sihirbazdaki **Göstergeleri aç** düğmesini kullanabilir veya **Insider risk yönetimi** > **Ayarlar** > **İlkesi göstergeleri** sayfasında göstergeleri seçebilirsiniz.
@@ -402,10 +417,10 @@ Mevcut bir ilkeyi yönetmek için aşağıdaki adımları tamamlayın:
     En az bir *Office* veya *Cihaz* göstergesi seçtiyseniz **, Risk puanı güçlendiricilerini** uygun şekilde seçin. Risk puanı güçlendiricileri yalnızca seçili göstergeler için geçerlidir.
     *Veri hırsızlığı* veya *Veri sızıntıları* ilke şablonu seçtiyseniz, ilkeye uygulanacak bir veya daha fazla **Sıra algılama** yöntemi ve **bir Kümülatif sızdırma algılama** yöntemi seçin.
 
-20. Devam etmek için **İleri'yi** seçin.
-21. **Varsayılan veya özel gösterge eşiklerini kullanmaya karar ver** sayfasında, seçtiğiniz ilke göstergeleri için özel veya varsayılan eşikleri seçin. **Tüm göstergeler için varsayılan eşikleri kullan'ı** veya Seçili ilke göstergeleri için **özel eşikler belirtin'i** seçin. Özel eşikleri belirtin'i seçtiyseniz, her ilke göstergesi için istenen etkinlik uyarı düzeyini oluşturmak için uygun düzeyi seçin.
-22. Devam etmek için **İleri'yi** seçin.
-23. **Gözden Geçir** sayfasında, ilke için seçtiğiniz ayarları ve seçimleriniz için önerileri veya uyarıları gözden geçirin. İlke değerlerinden herhangi birini değiştirmek için **Düzenle'yi** veya ilkeyi oluşturup etkinleştirmek için **Gönder'i** seçin.
+21. Devam etmek için **İleri'yi** seçin.
+22. **Varsayılan veya özel gösterge eşiklerini kullanmaya karar ver** sayfasında, seçtiğiniz ilke göstergeleri için özel veya varsayılan eşikleri seçin. **Tüm göstergeler için varsayılan eşikleri kullan'ı** veya Seçili ilke göstergeleri için **özel eşikler belirtin'i** seçin. Özel eşikleri belirtin'i seçtiyseniz, her ilke göstergesi için istenen etkinlik uyarı düzeyini oluşturmak için uygun düzeyi seçin.
+23. Devam etmek için **İleri'yi** seçin.
+24. **Gözden Geçir** sayfasında, ilke için seçtiğiniz ayarları ve seçimleriniz için önerileri veya uyarıları gözden geçirin. İlke değerlerinden herhangi birini değiştirmek için **Düzenle'yi** veya ilkeyi oluşturup etkinleştirmek için **Gönder'i** seçin.
 
 ## <a name="copy-a-policy"></a>İlkeyi kopyalama
 

@@ -11,18 +11,19 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 saklamanın SharePoint ve OneDrive'da nasıl çalıştığını, kuruluşunuz için verilerin otomatik olarak elde tutulmasını veya silinmesini yönetmek için bekletme ilkelerini ve bekletme etiketlerini kullanmayı öğrenin.
-ms.openlocfilehash: 98bef6ba43fd57b2533badcf4578668cd12860dd
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: dc694171b6964b728a983597a246eb2446c9f472
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67735834"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564771"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>SharePoint ve OneDrive için bekletme hakkında bilgi edinin
 
@@ -35,6 +36,8 @@ Diğer iş yükleri için bkz:
 - [Microsoft Teams için bekletme hakkında bilgi edinin](retention-policies-teams.md)
 - [Yammer için bekletme hakkında bilgi edinin](retention-policies-yammer.md)
 - [Exchange için bekletme hakkında bilgi edinin](retention-policies-exchange.md)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Saklama ve silmeye dahil olanlar
 
@@ -66,7 +69,7 @@ Bekletme ilkeleri ve otomatik uygulama etiket ilkeleri için: Bekletme ayarları
 
 Korunması gereken içeriği depolamak için SharePoint ve OneDrive, site için mevcut olmayan bir Koruma Bekletme kitaplığı oluşturur. Koruma Bekletme kitaplığı etkileşimli olarak kullanılmak üzere tasarlanmamıştır, ancak bunun yerine, uyumluluk nedenleriyle gerektiğinde dosyaları otomatik olarak depolar. Aşağıdaki şekilde çalışır:
 
-Kullanıcı bekletmeye tabi olan bir öğeyi değiştirdiğinde veya sildiğinde, bekletme ayarları uygulandıktan sonra içeriğin değiştirilip değiştirilmediğine ilişkin bir denetim yapılır. Bekletme ayarları uygulandıktan sonra yapılan ilk değişiklik buysa, içerik, kullanıcının özgün içeriği değiştirmesine veya silmesine olanak tanıyan Koruma Saklama kitaplığına kopyalanır.
+Kullanıcı, bekletme ilkesinden elde tutmaya tabi olan bir öğeyi veya öğeleri kayıt olarak işaretleyen bir bekletme etiketini değiştirdiğinde veya saklamaya tabi olan herhangi bir öğeyi sildiğinde, özgün içerik Koruma Bekletme kitaplığına kopyalanır. Bu davranış, kullanıcının kendi uygulamasındaki içeriği değiştirmesine veya silmesine olanak tanırken, uyumluluk nedeniyle özgün kopyanın bir kopyasını tutar.
 
 Bir zamanlayıcı işi, Koruma Bekletme kitaplığında düzenli aralıklarla çalışır. Koruma Bekletme kitaplığında 30 günden uzun süredir bulunan içerik için, bu iş içeriği söz konusu içeriğin bekletme ayarları tarafından kullanılan tüm sorgularla karşılaştırır. Yapılandırılan saklama süresinden daha eski olan içerik daha sonra Koruma Saklama kitaplığından ve hala oradaysa özgün konumdan silinir. Bu zamanlayıcı işi yedi günde bir çalıştırılır ve bu da minimum 30 günle birlikte içeriğin Koruma Tutma kitaplığından silinmesinin 37 güne kadar sürebileceği anlamına gelir.
 
@@ -88,7 +91,7 @@ Kullanıcılar aşağıdaki koşullardan herhangi birinde etiketli bir öğeyi s
 
 - Bekletme etiketi, öğeleri düzenleme [kaydı](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) olarak işaretler ve bu da öğenin düzenlenmesini veya silinmesini her zaman engeller.
 
-OneDrive hesabı veya SharePoint sitesindeki içeriğe bekletme ayarları atandıktan sonra, içeriğin izlediği yollar bekletme ayarlarının tutulup silineceği, yalnızca korunacak veya yalnızca silineceği durumlarına bağlıdır.
+OneDrive hesabı veya SharePoint sitesindeki içeriğe bekletme ayarları atandıktan sonra, içeriğin izlediği yollar bekletme ayarlarının tutulup silineceği, yalnızca korunacak veya yalnızca silineceği durumlarına bağlıdır. İzleyen açıklamalarda, değiştirilen içerik saklama ilkeleri ve öğeleri kayıt olarak işaretleyen bekletme etiketleri (ve içeriğin kilidi açık) için Koruma Bekletme kitaplığına taşınır. Öğeleri kayıt olarak işaretlemeyen bekletme etiketleriyle değiştirilen öğeler, Koruma Saklama kitaplığında kopya oluşturmaz, ancak öğeler silindiğinde bunu yapar.
 
 Bekletme ayarlarının saklanması ve silinmesi gerektiğinde:
 

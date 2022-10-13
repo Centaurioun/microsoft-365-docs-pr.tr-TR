@@ -13,16 +13,16 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: 558f322c8e22ae6146f90baa4d9ce19f00a6cea5
-ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
+ms.openlocfilehash: 44d6c198afe6da28e29670bbdc0c059ef2761311
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68025359"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563195"
 ---
 # <a name="term-store-reports"></a>Terim deposu raporları
 
-<a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">SharePoint yönetim merkezinde Terim deposu</a> raporlarına erişebilirsiniz. Bu özellik [için SharePoint Syntex](index.md) lisansı gerekir.
+<a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">SharePoint yönetim merkezinde Terim deposu</a> raporlarına erişebilirsiniz. Bu özellik için [Bir Microsoft Syntex](index.md) lisansı gerekir.
 
 **Raporlar'ı** genişletin ve **İçerik hizmetleri'ne** tıklayın.
 

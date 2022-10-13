@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: eb44b1ce51466af5c1478b894721c54c13e89b40
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 9b8ef92016ea87e69cf1284c4ae740a3978f1fba
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503566"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564596"
 ---
 # <a name="get-started-with-insider-risk-management"></a>İçeriden risk yönetimini kullanmaya başlama
 
@@ -285,35 +285,37 @@ Insider risk yönetimi ilkeleri atanmış kullanıcıları içerir ve uyarılar 
 8. Devam etmek için **İleri'yi** seçin.
 9. **Öncelik sırasına alınacak içerik** sayfasında, öncelik sırasına göre kaynakları atayabilir (gerekirse) bu kaynaklar için yüksek önem derecesi uyarısı oluşturma olasılığını artırabilirsiniz. Aşağıdaki seçeneklerden birini seçin:
 
-    - **SharePoint sitelerini, duyarlılık etiketlerini, hassas bilgi türlerini ve/veya dosya uzantılarını öncelikli içerik olarak belirtmek istiyorum**. Bu seçeneğin seçilmesi, sihirbazdaki ayrıntılı sayfaların bu kanalları yapılandırmasına olanak tanır.
-    - **Şu anda öncelik içeriğini belirtmek istemiyorum (ilke oluşturulduktan sonra bunu yapabilirsiniz)**. Bu seçeneğin seçilmesi, sihirbazdaki kanal ayrıntı sayfalarını atlar.
+    - **İçeriği önceliklendirmek istiyorum**. Bu seçeneğin belirtilmesi *SharePoint sitelerine*, *Duyarlılık etiketlerine*, *Hassas bilgi türlerine* ve *Dosya uzantıları içerik türlerine* öncelik vermenizi sağlar. Bu seçeneği belirlerseniz en az bir öncelik içerik türü seçmeniz gerekir.
+    - **Şu anda öncelikli içerik belirtmek istemiyorum**. Bu seçeneğin seçilmesi, sihirbazdaki öncelik içerik ayrıntısı sayfalarını atlar.
 
 10. Devam etmek için **İleri'yi** seçin.
 
-11. Önceki adımda **SharePoint sitelerini, duyarlılık etiketlerini, hassas bilgi türlerini ve/veya dosya uzantılarını öncelik içeriği olarak belirtmek istiyorum** seçeneğini belirlediyseniz, *SharePoint sitelerinin* ayrıntı sayfalarını, *hassas bilgi türlerini*, *duyarlılık etiketlerini* ve *dosya uzantılarını* görürsünüz. İlkeye öncelik vermek üzere SharePoint' i, hassas bilgi türlerini, duyarlılık etiketlerini ve dosya uzantılarını tanımlamak için bu ayrıntı sayfalarını kullanın.
+11. Önceki adımda **İçeriği önceliklendirmek istiyorum** seçeneğini belirlediyseniz *SharePoint sitelerinin* ayrıntı sayfalarını, *hassas bilgi türlerini*, *duyarlılık etiketlerini*, *dosya uzantılarını* ve *Puanlama'yı* görürsünüz. İlkeye öncelik vermek üzere SharePoint' i, hassas bilgi türlerini, duyarlılık etiketlerini ve dosya uzantılarını tanımlamak için bu ayrıntı sayfalarını kullanın. *Puanlama* ayrıntıları sayfası, ilkenin kapsamını yalnızca risk puanlarını atayarak öncelik içeriği içeren belirtilen etkinlikler için uyarılar oluşturmanızı sağlar.
 
     - **SharePoint siteleri**: **SharePoint sitesi ekle'yi** seçin ve erişiminiz olan ve önceliklendirmek istediğiniz SharePoint sitelerini seçin. Örneğin, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Hassas bilgi türü**: **Hassas bilgi türü ekle'yi** seçin ve önceliklendirmek istediğiniz duyarlılık türlerini seçin. Örneğin, *"ABD Banka Hesap Numarası"* ve *"Kredi Kartı Numarası"*.
     - **Duyarlılık etiketleri**: **Duyarlılık etiketi ekle'yi** seçin ve önceliklendirmek istediğiniz etiketleri seçin. Örneğin, *"Gizli"* ve *"Gizli"*.
-    - Dosya uzantıları: En fazla 50 dosya uzantısı ekleyin. '.' dosyasını dosya uzantısına ekleyebilir veya atlayabilirsiniz. Örneğin, *.py* veya *py* Python dosyalarının önceliklerini belirlemeye yöneliktir.
+    - **Dosya uzantıları**: En fazla 50 dosya uzantısı ekleyin. '.' dosyasını dosya uzantısına ekleyebilir veya atlayabilirsiniz. Örneğin, *.py* veya *py* Python dosyalarının önceliklerini belirlemeye yöneliktir.
+    - **Puanlama**: Risk puanlarının bu ilke tarafından algılanan tüm etkinliklere mi yoksa yalnızca öncelik içeriği içeren etkinlikler için mi atandığına karar verin. **Tüm etkinlikler için uyarı al'ı** veya **Yalnızca öncelik içeriği içeren etkinlikler için uyarı al'ı** seçin.
 
     > [!NOTE]
     > İlkeyi yapılandıran ve öncelikli SharePoint sitelerini seçen kullanıcılar, erişim iznine sahip oldukları SharePoint sitelerini seçebilir. SharePoint siteleri geçerli kullanıcı tarafından ilkede seçilemiyorsa, gerekli izinlere sahip başka bir kullanıcı ilkenin sitelerini daha sonra seçebilir veya geçerli kullanıcıya gerekli sitelere erişim verilmesi gerekir.
 
 12. Devam etmek için **İleri'yi** seçin.
-13. *Öncelikli kullanıcılara göre* *Genel veri sızıntıları* veya Veri sızıntıları şablonlarını seçtiyseniz, özel tetikleyici olayları ve ilke göstergeleri için Bu ilkenin **tetikleyicileri** sayfasında seçenekleri görürsünüz. Etkinlik puanlaması için ilkeye atanan kullanıcıları kapsama alanlara getiren olayları tetikleme için bir DLP ilkesi veya gösterge seçme seçeneğiniz vardır. **Kullanıcı bir veri kaybı önleme (DLP) ilkesi tetikleme olayıyla eşleşir** seçeneğini belirlerseniz, bu iç risk yönetimi ilkesi için DLP İlkesi için tetikleyici göstergelerini etkinleştirmek üzere DLP ilkesi açılan listesinden bir DLP ilkesi seçmeniz gerekir. **Kullanıcı bir sızdırma etkinliği tetikleme olayı gerçekleştirir** seçeneğini belirlerseniz, ilke tetikleyici olayı için listelenen göstergelerden birini veya daha fazlasını seçmeniz gerekir.
+13. *Öncelikli kullanıcılara göre* *Genel veri sızıntıları* veya Veri sızıntıları şablonlarını seçtiyseniz, özel tetikleyici olayları ve ilke göstergeleri **için Bu ilkenin tetikleyicileri** sayfasında seçenekleri görürsünüz. Etkinlik puanlaması için ilkeye atanan kullanıcıları kapsama alanlara getiren olayları tetikleme için bir DLP ilkesi veya gösterge seçme seçeneğiniz vardır. **Kullanıcı bir veri kaybı önleme (DLP) ilkesi tetikleme olayıyla eşleşir** seçeneğini belirlerseniz, bu iç risk yönetimi ilkesi için DLP İlkesi için tetikleyici göstergelerini etkinleştirmek üzere DLP ilkesi açılan listesinden bir DLP ilkesi seçmeniz gerekir. **Kullanıcı bir sızdırma etkinliği tetikleme olayı gerçekleştirir** seçeneğini belirlerseniz, ilke tetikleyici olayı için listelenen göstergelerden birini veya daha fazlasını seçmeniz gerekir.
 
     > [!IMPORTANT]
-    > Listelenen bir göstergeyi seçemiyorsanız bunun nedeni, bunların kuruluşunuz için etkinleştirilmemiş olmasıdır. İlkeyi seçip atayabilmelerini sağlamak için **Insider risk yönetimi** > **Ayarları** > **İlke göstergelerinde göstergeleri** etkinleştirin.
+    > Listelenen bir göstergeyi veya sırayı seçemiyorsanız, bunun nedeni şu anda kuruluşunuz için etkinleştirilmemiş olmasıdır. İlkeyi seçip atayabilmek için **Göstergeleri aç** istemini seçin.
 
     Diğer ilke şablonlarını seçtiyseniz özel tetikleyici olayları desteklenmez. Olayları tetikleyen yerleşik ilke uygulanır ve ilke öznitelikleri tanımlamadan 23. Adıma devam edersiniz.
 
-14. Devam etmek için **İleri'yi** seçin.
-15. Öncelikli kullanıcılara göre *Genel veri sızıntıları* veya *Veri sızıntıları şablonlarını* seçtiyseniz ve **Kullanıcı bir sızdırma etkinliği ve ilişkili göstergeler gerçekleştirir'i** seçtiyseniz, seçtiğiniz olayları tetikleyen gösterge için özel veya varsayılan eşikleri seçebilirsiniz. Tetikleyici olaylar için **Varsayılan eşikleri kullan (Önerilen)** veya **Özel eşikleri kullan'ı** seçin.
-16. Devam etmek için **İleri'yi** seçin.
-17. **Tetikleyici olaylar için özel eşikleri kullan'ı** seçtiyseniz, 13. Adımda seçtiğiniz her tetikleyici olay göstergesi için istenen etkinlik uyarısı düzeyini oluşturmak için uygun düzeyi seçin. Kullanıcılar için günlük normun üzerinde anormal etkinliklere (belirli göstergeler için) göre önerilen eşikleri, özel eşikleri veya eşikleri kullanabilirsiniz.
-18. Devam etmek için **İleri'yi** seçin.
-19. **İlke göstergeleri** sayfasında, **Insider risk ayarları** > **Göstergeleri** sayfasında kullanılabilir olarak tanımladığınız [göstergeleri](insider-risk-management-settings.md#indicators) görürsünüz. İlkeye uygulamak istediğiniz göstergeleri seçin.
+14. *Dağıtılan kullanıcılar tarafından veri sızıntıları* veya kullanıcı *şablonlarının güvenlik ilkesi ihlalleri* seçeneğini belirlediyseniz, **bu ilkenin tetikleyicileri** sayfasında iletişim uyumluluğu ve İk veri bağlayıcısı olaylarıyla tümleştirme seçeneklerini görürsünüz. Kullanıcılar tehdit edici, taciz edici veya ayrımcı dil içeren iletiler gönderdiğinde veya İk sisteminizde dağıtılan olaylar rapor edildikten sonra kullanıcıları ilke kapsamına getirmek için risk puanlarını atama seçeneğiniz vardır. **İletişim uyumluluğundan çıkarma tetikleyicileri (önizleme)** seçeneğini belirlerseniz, varsayılan iletişim uyumluluk ilkesini kabul edebilir (otomatik olarak oluşturulur), bu tetikleyici için önceden oluşturulmuş bir ilke kapsamı seçebilir veya kapsamı belirlenmiş başka bir ilke oluşturabilirsiniz. **İk veri bağlayıcısı olaylarını** seçerseniz, kuruluşunuz için bir İk veri bağlayıcısı yapılandırmanız gerekir.
+15. Devam etmek için **İleri'yi** seçin.
+16. Öncelikli kullanıcılara göre *Genel veri sızıntıları* veya *Veri sızıntıları şablonlarını* seçtiyseniz ve **Kullanıcı bir sızdırma etkinliği ve ilişkili göstergeler gerçekleştirir'i** seçtiyseniz, seçtiğiniz olayları tetikleyen gösterge için özel veya varsayılan eşikleri seçebilirsiniz. Tetikleyici olaylar için **Varsayılan eşikleri kullan (Önerilen)** veya **Özel eşikleri kullan'ı** seçin.
+17. Devam etmek için **İleri'yi** seçin.
+18. **Tetikleyici olaylar için özel eşikleri kullan'ı** seçtiyseniz, 13. Adımda seçtiğiniz her tetikleyici olay göstergesi için istenen etkinlik uyarısı düzeyini oluşturmak için uygun düzeyi seçin. Kullanıcılar için günlük normun üzerinde anormal etkinliklere (belirli göstergeler için) göre önerilen eşikleri, özel eşikleri veya eşikleri kullanabilirsiniz.
+19. Devam etmek için **İleri'yi** seçin.
+20. **İlke göstergeleri** sayfasında, **Insider risk ayarları** > **Göstergeleri** sayfasında kullanılabilir olarak tanımladığınız [göstergeleri](insider-risk-management-settings.md#indicators) görürsünüz. İlkeye uygulamak istediğiniz göstergeleri seçin.
 
     > [!IMPORTANT]
     > Bu sayfadaki göstergeler seçilemiyorsa, tüm ilkeler için etkinleştirmek istediğiniz göstergeleri seçmeniz gerekir. Sihirbazdaki **Göstergeleri aç** düğmesini kullanabilir veya **Insider risk yönetimi** > **Ayarlar** > **İlkesi göstergeleri** sayfasında göstergeleri seçebilirsiniz.
@@ -322,10 +324,10 @@ Insider risk yönetimi ilkeleri atanmış kullanıcıları içerir ve uyarılar 
     *Veri hırsızlığı* veya *Veri sızıntıları* ilke şablonu seçtiyseniz, ilkeye uygulanacak bir veya daha fazla **Sıra algılama** yöntemi ve **bir Kümülatif sızdırma algılama** yöntemi seçin.
     *Riskli tarayıcı kullanım* ilkesi şablonunu seçtiyseniz **Gözatma göstergelerinden** birini veya daha fazlasını seçin.
 
-20. Devam etmek için **İleri'yi** seçin.
-21. **Varsayılan veya özel gösterge eşiklerini kullanmaya karar ver** sayfasında, seçtiğiniz ilke göstergeleri için özel veya varsayılan eşikleri seçin. **Tüm göstergeler için varsayılan eşikleri kullan'ı** veya Seçili ilke göstergeleri için **özel eşikler belirtin'i** seçin. Özel eşikleri belirtin'i seçtiyseniz, her ilke göstergesi için istenen etkinlik uyarı düzeyini oluşturmak için uygun düzeyi seçin.
-22. Devam etmek için **İleri'yi** seçin.
-23. **Gözden Geçir** sayfasında, ilke için seçtiğiniz ayarları ve seçimleriniz için önerileri veya uyarıları gözden geçirin. İlke değerlerinden herhangi birini değiştirmek için **Düzenle'yi** veya ilkeyi oluşturup etkinleştirmek için **Gönder'i** seçin.
+21. Devam etmek için **İleri'yi** seçin.
+22. **Varsayılan veya özel gösterge eşiklerini kullanmaya karar ver** sayfasında, seçtiğiniz ilke göstergeleri için özel veya varsayılan eşikleri seçin. **Tüm göstergeler için varsayılan eşikleri kullan'ı** veya Seçili ilke göstergeleri için **özel eşikler belirtin'i** seçin. Özel eşikleri belirtin'i seçtiyseniz, her ilke göstergesi için istenen etkinlik uyarı düzeyini oluşturmak için uygun düzeyi seçin.
+23. Devam etmek için **İleri'yi** seçin.
+24. **Gözden Geçir** sayfasında, ilke için seçtiğiniz ayarları ve seçimleriniz için önerileri veya uyarıları gözden geçirin. İlke değerlerinden herhangi birini değiştirmek için **Düzenle'yi** veya ilkeyi oluşturup etkinleştirmek için **Gönder'i** seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

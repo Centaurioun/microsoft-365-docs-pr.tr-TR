@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex belge kitaplıklarında meta verileri arama
+title: Microsoft Syntex'te belge kitaplıklarında meta verileri arama
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,22 +12,22 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: high
-description: SharePoint Syntex kullanarak SharePoint belge kitaplıklarındaki öğeleri bulmak için gelişmiş meta veri aramasını kullanmayı ve özel site sütunlarını aramayı öğrenin.
-ms.openlocfilehash: db13be1ce22becc10d04bf7e18becc9208784844
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+description: Microsoft Syntex kullanarak SharePoint belge kitaplıklarındaki öğeleri bulmak için gelişmiş meta veri aramasını kullanmayı ve özel site sütunlarını aramayı öğrenin.
+ms.openlocfilehash: 359bde29850c54a9c1a338d95aa826894b1b3dcf
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560185"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565871"
 ---
-# <a name="search-for-metadata-in-document-libraries-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex belge kitaplıklarında meta verileri arama
+# <a name="search-for-metadata-in-document-libraries-in-microsoft-syntex"></a>Microsoft Syntex'te belge kitaplıklarında meta verileri arama
 
-SharePoint Syntex'daki gelişmiş meta veri arama özelliği, SharePoint belge kitaplıklarında belirli meta veri tabanlı sorgular gerçekleştirmenize olanak tanır. Yalnızca anahtar sözcükleri aramak yerine belirli meta veri sütunu değerlerine göre daha hızlı ve daha hassas sorgular yapabilirsiniz.
+Microsoft Syntex'teki gelişmiş meta veri arama özelliği, SharePoint belge kitaplıklarında belirli meta veri tabanlı sorgular gerçekleştirmenize olanak tanır. Yalnızca anahtar sözcükleri aramak yerine belirli meta veri sütunu değerlerine göre daha hızlı ve daha hassas sorgular yapabilirsiniz.
 
 Gelişmiş meta veri araması, dosyayı SharePoint belge kitaplığında bulmanıza yardımcı olması için belgeyle ilişkilendirilmiş meta verileri kullanmanıza olanak tanır. Bu özellik, belgenin en son ne zaman değiştirildiği, dosyayla ilişkilendirilmiş belirli bir kişi veya belirli bir dosya türü gibi aramak istediğiniz belirli bir bilgi parçasına sahip olduğunuzda özellikle kullanışlıdır.
 
 > [!NOTE]
-> Bu özellik yalnızca SharePoint Syntex lisansına sahip kullanıcılar için kullanılabilir. 
+> Bu özellik yalnızca Syntex lisansına sahip kullanıcılar için kullanılabilir. 
 
 ## <a name="to-use-advanced-metadata-search"></a>Gelişmiş meta veri aramasını kullanmak için
 

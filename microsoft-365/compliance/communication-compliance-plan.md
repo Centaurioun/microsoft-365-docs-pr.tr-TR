@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f491cbc346bf79824be782403b4ae3a7d54431a6
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: d632963b9e06215bc84e6b70559a6584e6f5a7a2
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68504028"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565190"
 ---
 # <a name="plan-for-communication-compliance"></a>İletişim uyumluluğu planı
 
@@ -79,9 +79,9 @@ Office 365'da denetim için kullanımdan kaldırma bilgileri için ayrıntılar 
 - [*kuruluş yönetimi*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) rol grubunu Microsoft Purview uyumluluk portalı
 - [*uyumluluk yöneticisi*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) rol grubunu Microsoft Purview uyumluluk portalı
 - *İletişim Uyumluluğu* rol grubu
-- *İletişim Uyumluluğu Yönetici* rol grubu
+- *İletişim Uyumluluğu Yöneticileri* rol grubu
 
-Aşağıdaki rollerin üyeleri *İletişim Uyumluluğu Yönetici* rol grubuna dahil edilen çözüm izinlerine sahiptir:
+Aşağıdaki rollerin üyeleri *, İletişim Uyumluluğu Yöneticileri* rol grubuna dahil edilen çözüm izinlerine sahiptir:
 
 - Azure Active Directory *Genel Yöneticisi*
 - Azure Active Directory *Uyumluluk Yöneticisi*
@@ -89,7 +89,7 @@ Aşağıdaki rollerin üyeleri *İletişim Uyumluluğu Yönetici* rol grubuna da
 - *Microsoft Purview uyumluluk portalı Uyumluluk Yöneticisi*
 
 > [!IMPORTANT]
-> İletişim uyumluluk yapılandırmanızın kuruluşunuzdan ayrılması durumunda iletişim uyumluluk yapılandırmanızın 'sıfır yönetici' senaryosunda yer almaması için İletişim *Uyumluluğu* veya *İletişim Uyumluluğu Yönetici* rol gruplarında (seçtiğiniz seçeneğe bağlı olarak) her zaman en az bir kullanıcınız olduğundan emin olun.
+> İletişim uyumluluk yapılandırmanızın kuruluşunuzdan ayrılması durumunda iletişim *uyumluluk* yapılandırmanızın 'sıfır yönetici' senaryosunda yer almaması için İletişim *Uyumluluğu veya İletişim Uyumluluğu Yöneticileri* rol gruplarında (belirlediğiniz seçeneğe bağlı olarak) her zaman en az bir kullanıcınız olduğundan emin olun.
 
 İletişim uyumluluk ilkelerini ve uyarılarını nasıl yönetmek istediğinize bağlı olarak, farklı iletişim uyumluluk özellikleri kümelerini yönetmek için kullanıcıları belirli rol gruplarına atamanız gerekir. Farklı uyumluluk özellikleri alanlarını yönetmek için farklı uyumluluk sorumluluklarına sahip kullanıcıları belirli rol gruplarına atama seçeneğiniz vardır. Ya da belirlenen yöneticiler, analistler, araştırmacılar ve görüntüleyiciler için tüm kullanıcı hesaplarını *İletişim Uyumluluğu* rol grubuna atamaya karar vekleyebilirsiniz. Uyumluluk yönetimi gereksinimlerinize en uygun tek bir rol grubu veya birden çok rol grubu kullanın.
 
@@ -98,10 +98,10 @@ Aşağıdaki rollerin üyeleri *İletişim Uyumluluğu Yönetici* rol grubuna da
 |**Rol**|**Rol izinleri**|
 |:-----|:-----|
 | **İletişim Uyumluluğu** | Kuruluşunuz için iletişim uyumluluğunu tek bir grupta yönetmek için bu rol grubunu kullanın. Belirlenen yöneticiler, analistler, araştırmacılar ve görüntüleyiciler için tüm kullanıcı hesaplarını ekleyerek, iletişim uyumluluk izinlerini tek bir grupta yapılandırabilirsiniz. Bu rol grubu tüm iletişim uyumluluk izni rollerini içerir. Bu yapılandırma, iletişim uyumluluğunu hızlı bir şekilde kullanmaya başlamanın en kolay yoludur ve ayrı kullanıcı grupları için ayrı izinlere ihtiyaç duymayan kuruluşlar için uygundur. İletişim uyumluluk yöneticisi olarak ilke oluşturan kullanıcıların posta kutuları Exchange Online barındırılmalıdır. |
-| **İletişim Uyumluluğu Yönetici** | İletişim uyumluluğunu başlangıçta yapılandırmak ve daha sonra iletişim uyumluluk yöneticilerini tanımlı bir gruba ayırmak için bu rol grubunu kullanın. Bu rol grubuna atanan kullanıcılar iletişim uyumluluk ilkelerini, genel ayarları ve rol grubu atamalarını oluşturabilir, okuyabilir, güncelleştirebilir ve silebilir. Bu rol grubuna atanan kullanıcılar ileti uyarılarını görüntüleyemez. İletişim uyumluluk yöneticisi olarak ilke oluşturan kullanıcıların posta kutuları Exchange Online barındırılmalıdır. |
-| **İletişim Uyumluluğu Analisti** | İletişim uyumluluğu analistleri olarak görev yapacak kullanıcılara izin atamak için bu grubu kullanın. Bu rol grubuna atanan kullanıcılar, Gözden Geçiren olarak atandıkları ilkeleri görüntüleyebilir, ileti meta verilerini görüntüleyebilir (ileti içeriği değil), ek gözden geçirenlere iletebilir veya kullanıcılara bildirim gönderebilir. Analistler bekleyen uyarıları çözümleyemez. |
-| **İletişim Uyumluluğu Araştırmacısı** | İletişim uyumluluk araştırmacısı olarak görev yapacak kullanıcılara izin atamak için bu grubu kullanın. Bu rol grubuna atanan kullanıcılar ileti meta verilerini ve içeriğini görüntüleyebilir, ek gözden geçirenlere iletebilir, eBulma (Premium) olayına iletebilir, kullanıcılara bildirim gönderebilir ve uyarıyı çözebilir. |
-| **İletişim Uyumluluğu Görüntüleyicisi** | İletişim raporlarını yönetecek kullanıcılara izin atamak için bu grubu kullanın. Bu rol grubuna atanan kullanıcılar, iletişim uyumluluğu giriş sayfasındaki tüm raporlama pencere öğelerine erişebilir ve tüm iletişim uyumluluk raporlarını görüntüleyebilir. |
+| **İletişim Uyumluluğu Yöneticileri** | İletişim uyumluluğunu başlangıçta yapılandırmak ve daha sonra iletişim uyumluluk yöneticilerini tanımlı bir gruba ayırmak için bu rol grubunu kullanın. Bu rol grubuna atanan kullanıcılar iletişim uyumluluk ilkelerini, genel ayarları ve rol grubu atamalarını oluşturabilir, okuyabilir, güncelleştirebilir ve silebilir. Bu rol grubuna atanan kullanıcılar ileti uyarılarını görüntüleyemez. İletişim uyumluluk yöneticisi olarak ilke oluşturan kullanıcıların posta kutuları Exchange Online barındırılmalıdır. |
+| **İletişim Uyumluluğu Analistleri** | İletişim uyumluluğu analistleri olarak görev yapacak kullanıcılara izin atamak için bu grubu kullanın. Bu rol grubuna atanan kullanıcılar, Gözden Geçiren olarak atandıkları ilkeleri görüntüleyebilir, ileti meta verilerini görüntüleyebilir (ileti içeriği değil), ek gözden geçirenlere iletebilir veya kullanıcılara bildirim gönderebilir. Analistler bekleyen uyarıları çözümleyemez. |
+| **İletişim Uyumluluğu Araştırmacıları** | İletişim uyumluluk araştırmacısı olarak görev yapacak kullanıcılara izin atamak için bu grubu kullanın. Bu rol grubuna atanan kullanıcılar ileti meta verilerini ve içeriğini görüntüleyebilir, ek gözden geçirenlere iletebilir, eBulma (Premium) olayına iletebilir, kullanıcılara bildirim gönderebilir ve uyarıyı çözebilir. |
+| **İletişim Uyumluluğu Görüntüleyicileri** | İletişim raporlarını yönetecek kullanıcılara izin atamak için bu grubu kullanın. Bu rol grubuna atanan kullanıcılar, iletişim uyumluluğu giriş sayfasındaki tüm raporlama pencere öğelerine erişebilir ve tüm iletişim uyumluluk raporlarını görüntüleyebilir. |
 
 ### <a name="supervised-users"></a>Denetimli kullanıcılar
 
@@ -112,7 +112,7 @@ Aşağıdaki rollerin üyeleri *İletişim Uyumluluğu Yönetici* rol grubuna da
 
 ### <a name="reviewers"></a>Yorumcu -lar
 
-İletişim uyumluluk ilkesi oluşturduğunuzda, denetimli kullanıcıların iletilerini kimin gözden geçireceğini belirlemeniz gerekir. İlkede, kullanıcı e-posta adresleri denetimli iletişimleri gözden geçirmek için kişileri veya kişi gruplarını tanımlar. Tüm gözden geçirenlerin Exchange Online'da barındırılan posta kutuları olmalıdır, *İletişim Uyumluluk Analisti* veya *İletişim Uyumluluğu Araştırmacısı* rol gruplarına atanmalıdır ve araştırılması gereken ilkede atanmalıdır. Gözden geçirenler bir ilkeye eklendiğinde, ilkeye atamayı bildiren ve gözden geçirme işlemiyle ilgili bilgilerin bağlantılarını sağlayan bir e-posta iletisini otomatik olarak alır.
+İletişim uyumluluk ilkesi oluşturduğunuzda, denetimli kullanıcıların iletilerini kimin gözden geçireceğini belirlemeniz gerekir. İlkede, kullanıcı e-posta adresleri denetimli iletişimleri gözden geçirmek için kişileri veya kişi gruplarını tanımlar. Tüm gözden geçirenlerin Exchange Online üzerinde barındırılan posta kutuları olmalıdır, *İletişim Uyumluluk Analistleri* veya *İletişim Uyumluluk Araştırmacıları* rol gruplarına atanmalıdır ve araştırmak için ihtiyaç duydukları ilkede atanmalıdır. Gözden geçirenler bir ilkeye eklendiğinde, ilkeye atamayı bildiren ve gözden geçirme işlemiyle ilgili bilgilerin bağlantılarını sağlayan bir e-posta iletisini otomatik olarak alır.
 
 ### <a name="groups-for-supervised-users-and-reviewers"></a>Denetimli kullanıcılar ve gözden geçirenler için gruplar
 
@@ -133,7 +133,7 @@ Kuruluşunuzdaki grupları iletişim uyumluluk ilkeleri için yapılandırmanız
 
 İletişim uyumluluğu eşleşmesi olan kullanıcılar için İletişim **uyumluluk** ayarları'nda aşağıdaki ayarlardan birini seçebilirsiniz:
 
-- **Kullanıcı adlarının anonimleştirilmiş sürümlerini göster**: *İletişim Uyumluluğu Analisti* rol grubundaki kullanıcıların ilke uyarılarıyla ilişkili kimleri görmesini önlemek için kullanıcı adları anonimleştirilir. *İletişim Uyumluluk Araştırmacısı* rol grubundaki kullanıcılar anonimleştirilmiş sürümleri değil, her zaman kullanıcı adlarını görür. Örneğin, iletişim uyumluluk deneyiminin tüm alanlarında 'AnonIS8-988' gibi rastgele bir takma adla 'Grace Taylor' kullanıcısı görünür. Bu ayarın seçilmesi, geçerli ve geçmiş ilke eşleşmeleri olan tüm kullanıcıları anonim hale getirir ve tüm ilkeler için geçerlidir. İletişim uyumluluğu uyarı ayrıntılarındaki kullanıcı profili bilgileri, bu seçenek seçildiğinde kullanılamaz. Ancak, mevcut ilkelere yeni kullanıcılar eklenirken veya yeni ilkelere kullanıcı atanırken kullanıcı adları görüntülenir. Bu ayarı kapatmayı seçerseniz, geçerli veya geçmiş ilke eşleşmeleri olan tüm kullanıcılar için kullanıcı adları görüntülenir.
+- **Kullanıcı adlarının anonimleştirilmiş sürümlerini göster**: *İletişim Uyumluluğu Analistleri* rol grubundaki kullanıcıların ilke uyarılarıyla ilişkili olan kullanıcıları görmesini önlemek için kullanıcı adları anonimleştirilir. *İletişim Uyumluluk Araştırmacıları* rol grubundaki kullanıcılar anonimleştirilmiş sürümleri değil, her zaman kullanıcı adlarını görür. Örneğin, iletişim uyumluluk deneyiminin tüm alanlarında 'AnonIS8-988' gibi rastgele bir takma adla 'Grace Taylor' kullanıcısı görünür. Bu ayarın seçilmesi, geçerli ve geçmiş ilke eşleşmeleri olan tüm kullanıcıları anonim hale getirir ve tüm ilkeler için geçerlidir. İletişim uyumluluğu uyarı ayrıntılarındaki kullanıcı profili bilgileri, bu seçenek seçildiğinde kullanılamaz. Ancak, mevcut ilkelere yeni kullanıcılar eklenirken veya yeni ilkelere kullanıcı atanırken kullanıcı adları görüntülenir. Bu ayarı kapatmayı seçerseniz, geçerli veya geçmiş ilke eşleşmeleri olan tüm kullanıcılar için kullanıcı adları görüntülenir.
 - **Kullanıcı adlarının anonimleştirilmiş sürümlerini gösterme**: İletişim uyumluluk uyarıları için geçerli ve geçmiş tüm ilke eşleşmeleri için kullanıcı adları görüntülenir. Kullanıcı profili bilgileri (ad, başlık, diğer ad ve kuruluş veya departman) tüm iletişim uyumluluk uyarıları için kullanıcı için görüntülenir.
 
 ## <a name="plan-for-policies"></a>İlkeleri planlama

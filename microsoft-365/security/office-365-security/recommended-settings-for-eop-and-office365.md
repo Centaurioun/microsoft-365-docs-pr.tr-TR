@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) ve Office 365 için Defender güvenlik ayarları için en iyi yöntemler nelerdir? Standart koruma için geçerli öneriler neleri içerir? Daha katı olmak istiyorsanız ne kullanılmalıdır? Ayrıca Office 365 için Defender kullanıyorsanız ne kadar ekstra alırsınız?
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 37e2b1ba06070fd0b302e62cf7f549f7136f61ca
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: ed580495feda8f913afa2541563d60e029b7c2c9
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68542617"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565812"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP ve Office 365 için Microsoft Defender güvenliği için önerilen ayarlar
 
@@ -195,7 +195,7 @@ Bu ayar hakkında daha fazla bilgi için bkz. [Office 365 için Microsoft Defend
 
 |Güvenlik özelliği adı|Varsayılan|Standart|Sıkı|Açıklama ekleme|
 |---|:---:|:---:|:---:|---|
-|**Kimlik avı e-posta eşiği** <br><br> _PhishThresholdLevel_|**1 - Standart** <br><br> `1`|**3 - Daha agresif** <br><br> `2`|**4 - En agresif** <br><br> `3`||
+|**Kimlik avı e-posta eşiği** <br><br> _PhishThresholdLevel_|**1 - Standart** <br><br> `1`|**3 - Daha agresif** <br><br> `3`|**4 - En agresif** <br><br> `4`||
 
 #### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender kimlik avı önleme ilkelerindeki kimliğe bürünme ayarları
 

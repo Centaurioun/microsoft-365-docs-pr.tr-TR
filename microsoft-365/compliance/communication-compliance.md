@@ -23,12 +23,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e7ea484e30330819f67f1ac0a8eaf7b7e789503c
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 5082d07b9b0b0552917dff6071662ee713a7769b
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503192"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565087"
 ---
 # <a name="learn-about-communication-compliance"></a>İletişim uyumluluğu hakkında daha fazla bilgi edinme
 
@@ -135,6 +135,13 @@ Uyarılar, ilke eşleşmeleri, eylemler ve eğilimler için yeni etkileşimli pa
 
 İletişim uyumluluk ilkelerindeki mesajlaşma kanalı desteği hakkında daha fazla bilgi edinmek için bkz. [İletişim uyumluluğu ile kanal sinyallerini algılama](/microsoft-365/compliance/communication-compliance-channels).
 
+## <a name="integration-with-insider-risk-management-preview"></a>Insider risk yönetimiyle tümleştirme (önizleme)
+
+İletişim uyumluluğu, iletilerde algılanan azaltma sinyallerini insider risk yönetimi azaltma ilkelerine sağlayabilir. İletişim uyumluluğunda özel bir [Uygunsuz metin algıla](/microsoft-365/compliance/communication-compliance-policies#policy-templates) ilkesi kullanarak, bu ilkeyi, iç risk yönetiminde [dağıtılan çalışanlar ilkesi tarafından dağıtılan çalışanlar](/microsoft-365/compliance/insider-risk-management-policies#data-leaks-by-disgruntled-users-preview) veya [Güvenlik ilkesi ihlalleri tarafından veri sızıntılarına](/microsoft-365/compliance/insider-risk-management-policies#security-policy-violations-by-disgruntled-users-preview) eklemeyi seçebilirsiniz. İletişim uyumluluk ilkesi tarafından iletilerde algılanan azaltma, kullanıcıları insider risk yönetimi ilkeleri kapsamına almak için tetikleyici bir olay olarak görev görür.
+
+Insider risk yönetimiyle tümleştirme hakkında daha fazla bilgi edinmek için bkz. [İletişim uyumluluk ilkeleri oluşturma ve yönetme](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview).
+Insider risk yönetimi hakkında daha fazla bilgi edinmek için bkz. [Insider risk yönetimi hakkında bilgi edinin](/microsoft-365/compliance/insider-risk-management).
+
 ## <a name="get-started-with-recommended-actions-preview"></a>Önerilen eylemleri kullanmaya başlama (önizleme)
 
 İletişim uyumluluğunu ilk kez ayarlarken veya yeni ilkeler oluşturmaya başlarken, [önerilen yeni eylemler](/microsoft-365/compliance/communication-compliance-configure#recommended-actions-preview) deneyimi, iletişim uyumluluk özelliklerinden en iyi şekilde yararlanmak için size yardımcı olabilir. Önerilen eylemler arasında izinler ayarlama, dağıtım grupları oluşturma, ilke oluşturma ve daha fazlası yer alır
@@ -156,8 +163,8 @@ Bu iş akışı adımında uyumluluk gereksinimlerinizi belirler ve geçerli ile
 
 Microsoft Purview uyumluluk portalı aşağıdaki ilke şablonları arasından seçim yapabilirsiniz:
 
-- **Uygunsuz metinleri izleme**: Uygunsuz, uygunsuz veya rahatsız edici olarak kabul edilebilecek iletilerdeki metinleri otomatik olarak algılamak için yerleşik sınıflandırıcıları kullanan bir ilkeyi hızla oluşturmak için bu şablonu kullanın.
-- **Uygunsuz görüntüleri izleme**: Kuruluşunuzda uygunsuz olarak kabul edilebilecek yetişkinlere yönelik ve müstehcen görüntüler içeren içeriği otomatik olarak algılamak için yerleşik sınıflandırıcıları kullanan bir ilkeyi hızla oluşturmak için bu şablonu kullanın.
+- **Uygunsuz metni algılama**: Uygunsuz, kötü amaçlı veya rahatsız edici olarak kabul edilebilecek iletilerdeki metinleri otomatik olarak algılamak için yerleşik sınıflandırıcıları kullanan bir ilkeyi hızla oluşturmak için bu şablonu kullanın.
+- **Uygunsuz görüntüleri algılama**: Kuruluşunuzda uygunsuz olarak değerlendirilebilecek yetişkinlere yönelik ve müstehcen görüntüler içeren içeriği otomatik olarak algılamak için yerleşik sınıflandırıcıları kullanan bir ilkeyi hızla oluşturmak için bu şablonu kullanın.
 - **Hassas bilgileri izleme**: Bu şablonu kullanarak, önemli verilerin erişimi olmaması gereken kişilerle paylaşılmadığından emin olmak için tanımlı hassas bilgi türleri veya anahtar sözcükler içeren iletişimleri taramaya yönelik bir ilke oluşturun.
 - **Finansal mevzuat uyumluluğunu izleme**: Mevzuat standartlarıyla ilişkili standart finansal terimlere başvurular için iletişimleri taramak üzere hızla bir ilke oluşturmak için bu şablonu kullanın.
 - **İlgi alanı çakışmasını izleme: İlgi çakışmalarını** önlemeye yardımcı olmak üzere iki grup veya iki kullanıcı arasındaki iletişimi algılamak üzere hızla bir ilke oluşturmak için bu şablonu kullanın.

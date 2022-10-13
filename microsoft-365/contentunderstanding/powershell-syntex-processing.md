@@ -12,18 +12,18 @@ ms.collection:
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: SharePoint Syntex belge anlama modeliyle işlem isteğinde bulunmak için PowerShell'i kullanmayı öğrenin.
-ms.openlocfilehash: a0806910e268585f27f320e541bb8f30c2bec7db
-ms.sourcegitcommit: cbb9a89499d42f4a029e18780bee408946e1671d
+description: Bir Microsoft Syntex belge anlama modeli tarafından işleme isteğinde bulunmak için PowerShell'i kullanmayı öğrenin.
+ms.openlocfilehash: 1f537c3759ee8783c18bee5e8241e004c73f2eec
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68026018"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563240"
 ---
 # <a name="use-powershell-to-request-processing-by-a-document-understanding-model"></a>Belge anlama modeliyle işleme isteğinde bulunmak için PowerShell kullanma
 
 > [!IMPORTANT]
-> SharePoint Syntex PowerShell cmdlet'leri ve diğer tüm PnP bileşenleri, bunlar için destek sağlayan etkin bir topluluk tarafından desteklenen açık kaynak araçlardır. Resmi Microsoft destek kanallarından açık kaynak araç desteği için SLA yoktur.
+> Microsoft Syntex PowerShell cmdlet'leri ve diğer tüm PnP bileşenleri, destek sağlayan etkin bir topluluk tarafından desteklenen açık kaynak araçlardır. Resmi Microsoft destek kanallarından açık kaynak araç desteği için SLA yoktur.
 
 Belge anlama modelleri, kitaplığa yeni yüklenen dosyaları işler. Kullanıcı arabiriminde işlemeyi el ile istemek de mümkündür. Ancak, PowerShell aracılığıyla işlemeyi tetiklemenin daha verimli olduğu senaryolar olabilir.
 

@@ -19,12 +19,12 @@ ms.custom:
 description: Yöneticiler, Exchange Online Protection (EOP) içindeki iletilere uygulanan istenmeyen posta güvenilirlik düzeyi (SCL) hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 52287e2e264cd8b6281bc7b0f85b315cc0047494
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 498a2ea8b0fc50e426c870bace29d2b34a1f06ec
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68082581"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563784"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>EOP'de istenmeyen posta güvenilirlik düzeyi (SCL)
 
@@ -42,9 +42,9 @@ SCL'nin anlamı ve iletilerde gerçekleştirilen varsayılan eylemler aşağıda
 |-1|İleti istenmeyen posta filtrelemeyi atladı. Örneğin, ileti güvenilir bir gönderenden, güvenilir bir alıcıya gönderildi veya IP İzin Ver Listesi'nde bir e-posta kaynak sunucusundan geliyor. Daha fazla bilgi için bkz. [EOP'de güvenilir gönderen listeleri oluşturma](create-safe-sender-lists-in-office-365.md).|İletiyi alıcıların gelen kutusuna teslim edin.|
 |0, 1|İstenmeyen posta filtreleme, iletinin istenmeyen posta olmadığını belirledi.|İletiyi alıcıların gelen kutusuna teslim edin.|
 |5, 6|İstenmeyen posta filtrelemesi iletiyi **İstenmeyen Posta** olarak işaretledi|İletiyi alıcıların Önemsiz Email klasörüne teslim edin.|
-|9|İstenmeyen posta filtrelemesi iletiyi **Yüksek güvenilirlikli istenmeyen posta** olarak işaretledi|İletiyi alıcıların Önemsiz Email klasörüne teslim edin.|
+|8, 9|İstenmeyen posta filtrelemesi iletiyi **Yüksek güvenilirlikli istenmeyen posta** olarak işaretledi|İletiyi alıcıların Önemsiz Email klasörüne teslim edin.|
 
-SCL 2, 3, 4, 7 ve 8'in istenmeyen posta filtrelemesi tarafından kullanılmadığını fark edeceksiniz.
+SCL 2, 3, 4 ve 7'nin istenmeyen posta filtrelemesi tarafından kullanılmadığını fark edeceksiniz.
 
 İletilerde SCL'yi damgalama amacıyla posta akışı kurallarını (taşıma kuralları olarak da bilinir) kullanabilirsiniz. SCL'yi ayarlamak için bir posta akışı kuralı kullanırsanız, 5 veya 6 değerleri **İstenmeyen Posta** için istenmeyen posta filtreleme eylemini tetikler ve 7, 8 veya 9 değerleri **yüksek güvenilirlikli istenmeyen posta** için istenmeyen posta filtreleme eylemini tetikler. Daha fazla bilgi için bkz. [İletilerde istenmeyen posta güvenilirlik düzeyini (SCL) ayarlamak için posta akışı kurallarını kullanma](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 

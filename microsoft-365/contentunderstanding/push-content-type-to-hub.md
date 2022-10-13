@@ -1,6 +1,6 @@
 ---
 title: İçerik türlerini hub'a gönderme
-description: İçerik türlerini hub'a göndermeyi öğrenin
+description: İçerik türlerini bir hub'a göndermeyi öğrenin.
 ms.author: mikeplum
 author: MikePlumleyMSFT
 ms.reviewer: shrganguly
@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: 9a90c076d8097a2497a536db89f1879b91279105
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 3437073029cae2611d10a53b6f07d4d56ca19722
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68536400"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565476"
 ---
 # <a name="push-content-types-to-a-hub"></a>İçerik türlerini hub'a gönderme
 
@@ -30,7 +30,7 @@ ms.locfileid: "68536400"
 </br>
 
 
-Önemli içerik türlerini SharePoint kitaplıkları ve listelerinde daha tutarlı bir şekilde kullanılabilir hale getirmek için bunları seçtiğiniz hub'lara gönderebilirsiniz. İçerik türlerinin gönderilmesi, bunları otomatik olarak hub ile ilişkilendirilmiş sitelerde oluşturulan tüm yeni listelere ve kitaplıklara ve hub'a eklenen tüm yeni sitelere ekler. Bu özellik [için SharePoint Syntex](index.md) lisansı gerekir.
+Önemli içerik türlerini SharePoint kitaplıkları ve listelerinde daha tutarlı bir şekilde kullanılabilir hale getirmek için bunları seçtiğiniz hub'lara gönderebilirsiniz. İçerik türlerinin gönderilmesi, bunları otomatik olarak hub ile ilişkilendirilmiş sitelerde oluşturulan tüm yeni listelere ve kitaplıklara ve hub'a eklenen tüm yeni sitelere ekler. Bu özellik için [Bir Microsoft Syntex](index.md) lisansı gerekir.
 
 Bu özelliğin çalışması için gönderilen içerik türlerinin zaten yayımlanması gerekir.
 

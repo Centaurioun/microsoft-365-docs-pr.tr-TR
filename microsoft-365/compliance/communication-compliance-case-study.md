@@ -18,20 +18,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- remotework
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 17b80d00cfb8c5855dda7d21371097dd413fb707
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: e221275185476eda23cd96926c203403630dd9e3
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685667"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565454"
 ---
 # <a name="case-study---contoso-quickly-configures-an-inappropriate-text-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Örnek olay incelemesi - Contoso Microsoft Teams, Exchange ve Yammer iletişimleri için uygun olmayan bir metin ilkesini hızla yapılandırır
+
+>[!IMPORTANT]
+>Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamak için kullanılır.
 
 [Microsoft Purview İletişim Uyumluluğu](/microsoft-365/compliance/communication-compliance), kuruluşunuzda uygunsuz metin içeren iletileri algılamanıza, yakalamanıza ve üzerinde işlem yapmanıza yardımcı olarak iletişim risklerini en aza indirmenize yardımcı olur. uygunsuz metinler küfür, tehdit, taciz ve uygunsuz görüntüler içerebilir. Önceden tanımlanmış ve özel [ilkeler](/microsoft-365/compliance/communication-compliance-policies) , belirlenen gözden geçirenler tarafından incelenebilmeleri için ilke eşleşmeleri için iç ve dış iletişimleri taramanıza olanak sağlar. Gözden geçirenler kuruluşunuzdaki e-posta, Microsoft Teams, Yammer veya üçüncü taraf [iletişimleri için uyarıları araştırabilir](/microsoft-365/compliance/communication-compliance-investigate-remediate#investigate-alerts) ve kuruluşunuzun ileti standartlarıyla uyumlu olduklarından emin olmak için uygun [düzeltme eylemlerini](/microsoft-365/compliance/communication-compliance-investigate-remediate#remediate-alerts) gerçekleştirebilir.
 
@@ -43,6 +45,8 @@ Bu örnek olay incelemesi, uygunsuz metinleri algılamak için bir iletişim uyu
 - [2. Adım: İletişim uyumluluğuna erişme](#step-2-accessing-communication-compliance)
 - [3. Adım: Önkoşulları yapılandırma ve iletişim uyumluluk ilkesi oluşturma](#step-3-configuring-prerequisites-and-creating-a-communication-compliance-policy)
 - [4. Adım: Uyarıları araştırma ve düzeltme](#step-4-investigate-and-remediate-alerts)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="step-1-planning-for-communication-compliance"></a>1. Adım: İletişim uyumluluğunu planlama
 
@@ -79,17 +83,17 @@ Contoso BT yöneticileri, Contoso için lisans desteğini doğrulamak için aşa
 
 ### <a name="permissions-for-communication-compliance"></a>İletişim uyumluluğu izinleri
 
-İletişim uyumluluk özelliklerini yönetmek için izinleri yapılandırmak için kullanılan beş rol grubu vardır. **İletişim uyumluluğunu** Microsoft Purview uyumluluk portalı menü seçeneği olarak kullanılabilir hale getirmek ve bu yapılandırma adımlarına devam etmek için Contoso yöneticilerine *İletişim Uyumluluğu Yönetici* rolü atanır.
+İletişim uyumluluk özelliklerini yönetmek için izinleri yapılandırmak için kullanılan beş rol grubu vardır. **İletişim uyumluluğunu** Microsoft Purview uyumluluk portalı menü seçeneği olarak kullanılabilir hale getirmek ve bu yapılandırma adımlarına devam etmek için Contoso yöneticilerine *İletişim Uyumluluğu Yöneticileri* rolü atanır.
 
 Contoso *, İletişim Uyumluluğu* rol grubunu kullanmaya karar verir ve tüm iletişim uyumluluğu yöneticilerini, analistlerini, araştırmacılarını ve görüntüleyicilerini gruba atar. Bu rol grubu yapılandırması, Contoso'nun hızlı bir şekilde başlamasını ve uyumluluk yönetimi gereksinimlerine en uygun şekilde başlamasını kolaylaştırır.
 
 |**Rol**|**Rol izinleri**|
 |:-----|:-----|
 | **İletişim Uyumluluğu** | Kuruluşunuz için iletişim uyumluluğunu tek bir grupta yönetmek için bu rol grubunu kullanın. Belirlenen yöneticiler, analistler, araştırmacılar ve görüntüleyiciler için tüm kullanıcı hesaplarını ekleyerek, iletişim uyumluluk izinlerini tek bir grupta yapılandırabilirsiniz. Bu rol grubu tüm iletişim uyumluluk izni rollerini içerir. Bu rol grubu yapılandırması, iletişim uyumluluğunu hızlı bir şekilde kullanmaya başlamanın en kolay yoludur ve ayrı kullanıcı grupları için ayrı izinlere ihtiyaç duymayan kuruluşlar için uygundur. |
-| **İletişim Uyumluluğu Yönetici** | İletişim uyumluluğunu başlangıçta yapılandırmak ve daha sonra iletişim uyumluluk yöneticilerini tanımlı bir gruba ayırmak için bu rol grubunu kullanın. Bu rol grubuna atanan kullanıcılar iletişim uyumluluk ilkelerini, genel ayarları ve rol grubu atamalarını oluşturabilir, okuyabilir, güncelleştirebilir ve silebilir. Bu rol grubuna atanan kullanıcılar ileti uyarılarını görüntüleyemez. |
-| **İletişim Uyumluluğu Analisti** | İletişim uyumluluğu analistleri olarak görev yapacak kullanıcılara izin atamak için bu grubu kullanın. Bu rol grubuna atanan kullanıcılar, Gözden Geçiren olarak atandıkları ilkeleri görüntüleyebilir, ileti meta verilerini görüntüleyebilir (ileti içeriği değil), ek gözden geçirenlere iletebilir veya kullanıcılara bildirim gönderebilir. Analistler bekleyen uyarıları çözümleyemez. |
-| **İletişim Uyumluluğu Araştırmacısı** | İletişim uyumluluk araştırmacısı olarak görev yapacak kullanıcılara izin atamak için bu grubu kullanın. Bu rol grubuna atanan kullanıcılar ileti meta verilerini ve içeriğini görüntüleyebilir, ek gözden geçirenlere iletebilir, eBulma (Premium) olayına iletebilir, kullanıcılara bildirim gönderebilir ve uyarıyı çözebilir. |
-| **İletişim Uyumluluğu Görüntüleyicisi** | İletişim raporlarını yönetecek kullanıcılara izin atamak için bu grubu kullanın. Bu rol grubuna atanan kullanıcılar, iletişim uyumluluğu giriş sayfasındaki tüm raporlama pencere öğelerine erişebilir ve tüm iletişim uyumluluk raporlarını görüntüleyebilir. |
+| **İletişim Uyumluluğu Yöneticileri** | İletişim uyumluluğunu başlangıçta yapılandırmak ve daha sonra iletişim uyumluluk yöneticilerini tanımlı bir gruba ayırmak için bu rol grubunu kullanın. Bu rol grubuna atanan kullanıcılar iletişim uyumluluk ilkelerini, genel ayarları ve rol grubu atamalarını oluşturabilir, okuyabilir, güncelleştirebilir ve silebilir. Bu rol grubuna atanan kullanıcılar ileti uyarılarını görüntüleyemez. |
+| **İletişim Uyumluluğu Analistleri** | İletişim uyumluluğu analistleri olarak görev yapacak kullanıcılara izin atamak için bu grubu kullanın. Bu rol grubuna atanan kullanıcılar, Gözden Geçiren olarak atandıkları ilkeleri görüntüleyebilir, ileti meta verilerini görüntüleyebilir (ileti içeriği değil), ek gözden geçirenlere iletebilir veya kullanıcılara bildirim gönderebilir. Analistler bekleyen uyarıları çözümleyemez. |
+| **İletişim Uyumluluğu Araştırmacıları** | İletişim uyumluluk araştırmacısı olarak görev yapacak kullanıcılara izin atamak için bu grubu kullanın. Bu rol grubuna atanan kullanıcılar ileti meta verilerini ve içeriğini görüntüleyebilir, ek gözden geçirenlere iletebilir, eBulma (Premium) olayına iletebilir, kullanıcılara bildirim gönderebilir ve uyarıyı çözebilir. |
+| **İletişim Uyumluluğu Görüntüleyicileri** | İletişim raporlarını yönetecek kullanıcılara izin atamak için bu grubu kullanın. Bu rol grubuna atanan kullanıcılar, iletişim uyumluluğu giriş sayfasındaki tüm raporlama pencere öğelerine erişebilir ve tüm iletişim uyumluluk raporlarını görüntüleyebilir. |
 
 1. Contoso BT yöneticileri[, genel](https://compliance.microsoft.com/permissions) yönetici hesabının kimlik bilgilerini kullanarak Microsoft Purview uyumluluk portalı izinleri sayfasında oturum açar ve Microsoft 365'te rolleri görüntülemek ve yönetmek için bağlantıyı seçer.
 2. Microsoft Purview uyumluluk portalı <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**, İzinler'e**</a> gider ve Office 365 rolleri görüntülemek ve yönetmek için bağlantıyı seçer.

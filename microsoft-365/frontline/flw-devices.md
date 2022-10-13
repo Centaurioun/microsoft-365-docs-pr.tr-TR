@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 9c776de6300c3b2b58b5d2778f351829a1c183f3
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: bac87e202ebf656f8da6986738e42f847b8e098a
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68063540"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563262"
 ---
 # <a name="manage-mobile-devices-for-frontline-workers"></a>Ön cephe çalışanları için mobil cihazları yönetme
 
@@ -93,14 +93,6 @@ Bazı kuruluşlar, ön cephe çalışanlarının Teams'e ve diğer iş uygulamal
 Bazı durumlarda, kullanıcılar kişisel cihazlarını yönetime kaydetmekte isteksiz olabilir. Cihaz kaydı bir seçenek değilse, mobil uygulama yönetimi (MAM) yaklaşımını seçebilir ve şirket verileri içeren uygulamaları yönetmek için [uygulama koruma ilkelerini](/mem/intune/apps/app-protection-policies) kullanabilirsiniz. Örneğin, şirket verilerinin cihazdaki kişisel uygulamalara kopyalanmasını önlemek için Teams ve Office mobil uygulamalarına uygulama koruma ilkeleri uygulayabilirsiniz.
 
 Daha fazla bilgi edinmek için Intune [planlama kılavuzundaki "Kişisel cihazlar ve Kuruluşa ait cihazlar"](/mem/intune/fundamentals/intune-planning-guide#personal-devices-vs-organization-owned-devices) bölümüne ve [Dağıtım kılavuzu: Cihazları Microsoft Intune kaydetme](/mem/intune/fundamentals/deployment-guide-enrollment) bölümüne bakın.
-
-### <a name="off-shift-access-controls-in-teams"></a>Teams'de vardiya dışı erişim denetimleri
-
-Vardiya dışı erişim denetimleri, çalışanlar vardiya dışındayken Teams'e erişimi sınırlamanıza yardımcı olur. Bu özellik sayesinde, çalışanlar uygulamaya çalışma saatleri dışında eriştiğinde Teams'i bir ileti görüntüleyecek şekilde ayarlayabilirsiniz. Teams'i kullanabilmeleri için önce iletiyi kabul etmesi gerekir.
-
-Varsayılan ileti, çalışana çalışma saatleri dışında Teams'de harcanan süre için ödeme yapılmayacağını bildirir. Varsayılan iletiyi kullanabilir, önceden tanımlanmış bir ileti seçebilir veya kendi iletinizi görüntüleyebilirsiniz. Bu özellik, çalışanların vardiyada değilken istemsiz bir şekilde çalışmamasını sağlamaya yardımcı olur ve işgücü düzenlemelerine uymaya yardımcı olur.
-
-Daha fazla bilgi için bkz. [Teams'e vardiyalı erişim kapalı](manage-shift-based-access-flw.md#off-shift-access-to-teams).
 
 ## <a name="related-articles"></a>İlgili makaleler
 

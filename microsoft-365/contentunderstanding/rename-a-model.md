@@ -1,26 +1,26 @@
 ---
-title: Microsoft SharePoint Syntex'da modeli yeniden adlandırma
+title: Microsoft Syntex'te modeli yeniden adlandırma
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex'da belge anlama modelini nasıl ve neden yeniden adlandıracağınızı öğrenin.
-ms.openlocfilehash: 0044b237705e6a716efb6133db392c68b82c7a25
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+description: Microsoft Syntex'te belge anlama modelini nasıl ve neden yeniden adlandıracağınızı öğrenin.
+ms.openlocfilehash: 3629475a9579886f20c12031fa402fda68c0636e
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916149"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564290"
 ---
-# <a name="rename-a-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da modeli yeniden adlandırma
+# <a name="rename-a-model-in-microsoft-syntex"></a>Microsoft Syntex'te modeli yeniden adlandırma
 
 Bir noktada, belge anlama modelini yeniden adlandırmak isteyebilirsiniz. Bir modelin ilk taslağını oluşturduğunuzda, son adı çok fazla düşünmemiş olabilirsiniz (örneğin, modeli "AlexWilburModel1" olarak adlandırmış olabilirsiniz). Modeli son haline getirmeye ve kullanmaya yaklaştığınızda daha uygun bir adın "Sözleşme Yenilemeleri" olacağını fark eder ve modeli yeniden adlandırmak istersiniz.  
 
@@ -31,7 +31,7 @@ Bir diğer örnek de kuruluşunuzun bir işleme veya belge türüne farklı bir 
 
 Modeli yeniden adlandırmak, modelle ilişkili [içerik türünü](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) de yeniden adlandırır.
 
-## <a name="rename-a-model"></a>Modeli yeniden adlandırma
+## <a name="rename-a-model"></a>Modeli yeniden adlandır
 
 Belge anlama modelini yeniden adlandırmak için bu adımları izleyin.
 
@@ -54,11 +54,11 @@ Belge anlama modelini yeniden adlandırmak için bu adımları izleyin.
 5. **Yeniden Adlandır'ı** seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Sınıflandırıcı oluşturma](create-a-classifier.md)
+[Sınıflandırıcı oluştur](create-a-classifier.md)
 
-[Ayıklayıcı oluşturma](create-an-extractor.md)
+[Ayıklayıcı oluştur](create-an-extractor.md)
 
-[Ayıklayıcıyı yeniden adlandırma](rename-an-extractor.md)
+[Ayıklayıcıyı yeniden adlandır](rename-an-extractor.md)
 
 [Document Understanding'e genel bakış](document-understanding-overview.md)
 

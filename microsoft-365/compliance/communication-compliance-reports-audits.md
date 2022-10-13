@@ -14,19 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a3348ccc2458252aca84762d89d58dbeb9ebe92a
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: b4697afae9745934437084927ed347582c4a300a
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851600"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565102"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>İletişim uyumluluk raporlarını ve denetimlerini kullanma
+
+>[!IMPORTANT]
+>Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamak için kullanılır.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="reports"></a>Raporlar
 
@@ -145,7 +150,7 @@ Bazı durumlarda, kullanıcı etkinliklerinin ve iletişimlerinin denetimini kan
 > [!IMPORTANT]
 > İletişim uyumluluk olayları kaydedilmeden önce kuruluşunuz için denetimin etkinleştirilmesi gerekir. Denetimi etkinleştirmek için bkz [. Denetim günlüğünü etkinleştirme](/microsoft-365/compliance/communication-compliance-configure#step-2-required-enable-the-audit-log). Etkinlikler Microsoft 365 Denetim günlüğünde yakalanan olayları tetiklediğinde, bu olayların iletişim uyumluluk ilkelerinde görüntülenebilmesi 48 saat kadar sürebilir.
 
-İletişim uyumluluk ilkesi güncelleştirme etkinliklerini görüntülemek için, herhangi bir **ilkenin ana sayfasında İlke güncelleştirmelerini dışarı aktar** denetimini seçin. Güncelleştirme etkinliklerini dışarı aktarmak için *Genel Yönetici* veya *İletişim Uyumluluğu Yönetici* rolleri atanmış olmalıdır. Bu eylem, aşağıdaki bilgileri içeren .csv biçiminde bir denetim dosyası oluşturur:
+İletişim uyumluluk ilkesi güncelleştirme etkinliklerini görüntülemek için, herhangi bir **ilkenin ana sayfasında İlke güncelleştirmelerini dışarı aktar** denetimini seçin. Güncelleştirme etkinliklerini dışarı aktarmak için *Genel Yönetici* veya *İletişim Uyumluluğu Yöneticileri rollerine* atanmış olmanız gerekir. Bu eylem, aşağıdaki bilgileri içeren .csv biçiminde bir denetim dosyası oluşturur:
 
 |Alan|Ayrıntılar|
 |---|---|
@@ -154,7 +159,7 @@ Bazı durumlarda, kullanıcı etkinliklerinin ve iletişimlerinin denetimini kan
 | **Operasyonlar** | İlke üzerinde gerçekleştirilen güncelleştirme işlemleri. |
 | **AuditData** | Bu alan, tüm ilke güncelleştirme etkinlikleri için ana veri kaynağıdır. Tüm güncelleştirme etkinlikleri kaydedilir ve virgülle ayrılmıştır. |
 
-bir ilkenin iletişim uyumluluğu gözden geçirme etkinliklerini görüntülemek için, belirli bir ilkenin **Genel Bakış** sayfasında **Gözden geçirme etkinliklerini dışarı aktar** denetimini seçin. Gözden geçirme etkinliklerini dışarı aktarmak için *Genel Yönetici* veya *İletişim Uyumluluğu Yönetici* rolleri atanmış olmalıdır. Bu eylem, aşağıdaki bilgileri içeren .csv biçiminde bir denetim dosyası oluşturur:
+bir ilkenin iletişim uyumluluğu gözden geçirme etkinliklerini görüntülemek için, belirli bir ilkenin **Genel Bakış** sayfasında **Gözden geçirme etkinliklerini dışarı aktar** denetimini seçin. Gözden geçirme etkinliklerini dışarı aktarmak için *Size Genel Yönetici* veya *İletişim Uyumluluğu Yöneticileri* rolleri atanmalıdır. Bu eylem, aşağıdaki bilgileri içeren .csv biçiminde bir denetim dosyası oluşturur:
 
 |Alan|Ayrıntılar|
 |---|---|

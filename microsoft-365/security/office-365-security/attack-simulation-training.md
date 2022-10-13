@@ -14,12 +14,12 @@ ms.custom: ''
 description: Yöneticiler, Office 365 için Microsoft Defender Plan 2'deki Saldırı simülasyonu eğitimi kullanarak kimlik avı saldırılarının simülasyonunu yapmayı ve kullanıcılarını kimlik avı önleme konusunda eğitmeyi öğrenebilir.
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: cfd17d6aeb21b05aef13c95489780ddcd209fbf0
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 144d1788b861566c496ced4e927a8591647a93b8
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68048934"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68566024"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Office 365 için Defender'de Saldırı simülasyonu eğitimi ile kimlik avı saldırısı simülasyonu
 
@@ -311,7 +311,7 @@ Gösterilen bir eğitimi kullanmak istemiyorsanız Eğitimi sil simgesine tıkla
 
 ### <a name="landing-page"></a>Giriş sayfası
 
-**Giriş sayfası sayfasında**, simülasyonda yükü açan kullanıcının alındığı web sayfasını yapılandırabilirsiniz.
+**Giriş sayfası sayfasında**, simülasyonda yükü açan kullanıcıların götürülecekleri web sayfasını yapılandırabilirsiniz.
 
 Microsoft tarafından seçilmiş giriş sayfaları 12 dilde kullanılabilir: Çince (Basitleştirilmiş), Çince (Geleneksel), İngilizce, Fransızca, Almanca, İtalyanca, Japonca, Korece, Portekizce, Rusça, İspanyolca ve Felemenkçe.
 
@@ -527,6 +527,7 @@ Aşağıdaki ayarlar kullanılabilir:
     - **Başlatma zamanını seçin**
 - **Benzetimi sona erdirecek gün sayısını yapılandırın**: Varsayılan değer 2'dir.
 - **Bölge algılamalı saat dilimi teslimini etkinleştirme**: Çalışanlarınıza bölgelerine göre çalışma saatleri içinde sanal saldırı iletileri iletin.
+- **Toplanan sürücüye göre teknik ara verileri görüntüleme sayfası**: Sürücüye göre URL tekniği saldırıları için görünen katmanı gösterebilirsiniz. Bu katmanı gizlemek ve doğrudan giriş sayfasına gitmek için bu seçeneği kaldırın.
 
 - **Toplanan sürücüye göre teknik ara verileri görüntüleme sayfası**: Bu ayar yalnızca [bir teknik seçin sayfasında](#select-a-social-engineering-technique) **Drive-by URL'sini** seçtiyseniz kullanılabilir. Sürücüye göre URL tekniği saldırıları için ortaya çıkan katmanı gösterebilirsiniz. Katmanı gizlemek ve doğrudan giriş sayfasına gitmek için bu seçeneği belirtmeyin.
 

@@ -8,19 +8,19 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 search.appverid:
 - MET150s
 description: Yöneticiler, Exchange Online Protection (EOP) içinde gelen iletileri engellemek için kullanılabilir ve tercih edilen seçenekler hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a8abd50deb509564acb6646dc0732bf4a61b6cfd
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 6a53c888b1817ca490ce0be71f37080bc3aaa7ac
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481426"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565827"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>EOP'de engellenen gönderen listeleri oluşturma
 
@@ -58,7 +58,7 @@ Standart smtp e-posta iletisi, _ileti zarfı ve ileti_ içeriğinden oluşur. İ
 
 Ve adresleri sıklıkla `5321.MailFrom` `5322.From` aynıdır (kişiden kişiye iletişim). Ancak, başka biri adına e-posta gönderildiğinde, adresler farklı olabilir.
 
-EOP'de istenmeyen posta önleme ilkelerinde engellenen gönderen listeleri ve engellenen etki alanı listeleri hem hem de `5321.MailFrom` `5322.From` adreslerini inceler. Outlook Engellenen Gönderenler yalnızca adresi kullanır `5322.From` .
+EOP'deki istenmeyen posta önleme ilkelerinde engellenen gönderen listeleri ve engellenen etki alanı listeleri yalnızca `5322.From` adresleri inceler. Bu davranış, adresi kullanan `5322.From` Outlook Engellenen Gönderenlere benzer.
 
 ## <a name="use-outlook-blocked-senders"></a>Outlook Engellenen Gönderenleri kullanma
 
@@ -71,7 +71,7 @@ bir kullanıcının Engellenen Gönderenler listesi nedeniyle iletiler başarıy
 
 ## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>Engellenen gönderen listelerini veya engellenen etki alanı listelerini kullanma
 
-Birden çok kullanıcı etkilendiğinde kapsam daha geniştir, bu nedenle bir sonraki en iyi seçenek istenmeyen posta önleme ilkelerinde engellenen gönderen listeleri veya engellenen etki alanı listeleridir. Listelerdeki gönderenlerden gelen iletiler **İstenmeyen Posta** ( **Yüksek güvenilirlikli istenmeyen posta** değil) olarak işaretlenir ve iletide **İstenmeyen posta** filtresi kararı için yapılandırdığınız eylem gerçekleştirilen eylemdir. Daha fazla bilgi için bkz. [İstenmeyen posta önleme ilkelerini yapılandırma](configure-your-spam-filter-policies.md).
+Birden çok kullanıcı etkilendiğinde kapsam daha geniştir, bu nedenle bir sonraki en iyi seçenek istenmeyen posta önleme ilkelerinde engellenen gönderen listeleri veya engellenen etki alanı listeleridir. Listelerdeki gönderenlerden gelen iletiler **Yüksek güvenilirlikli istenmeyen posta** olarak işaretlenir ve iletiler üzerinde **Yüksek Güvenilirlikli İstenmeyen Posta** filtresi kararı için yapılandırdığınız eylem oluşturulduğunda. Daha fazla bilgi için bkz. [İstenmeyen posta önleme ilkelerini yapılandırma](configure-your-spam-filter-policies.md).
 
 Bu listeler için en yüksek sınır yaklaşık 1000 giriştir.
 

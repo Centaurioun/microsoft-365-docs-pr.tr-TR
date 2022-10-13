@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 83d2bf85a6e6edf612975b7679e40769d06a3a89
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: b45ebdd1bd6ea920614a50266232261ce8620c37
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221598"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565696"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender için Intune tabanlı dağıtım
 
@@ -43,6 +43,7 @@ Bu konuda, Intune aracılığıyla macOS'ta Uç Nokta için Microsoft Defender n
 1. [Uygulamayı yayımlama](#publish-application)
 
 ## <a name="prerequisites-and-system-requirements"></a>Önkoşullar ve sistem gereksinimleri
+
 
 Başlamadan önce, geçerli yazılım sürümü için önkoşulların ve sistem gereksinimlerinin açıklaması için [macOS'ta ana Uç Nokta için Microsoft Defender sayfasına](microsoft-defender-endpoint-mac.md) bakın.
 
@@ -99,7 +100,7 @@ Sonraki adım, ihtiyaç Uç Nokta için Microsoft Defender sistem yapılandırma
 
 ### <a name="onboarding-blob"></a>Blob ekleme
 
-Bu profil, Uç Nokta için Microsoft Defender lisans bilgilerini içerir. Bu profil olmadan Uç Nokta için Microsoft Defender lisanslanmadığını bildirir.
+Bu profil, Uç Nokta için Microsoft Defender için bir lisans bilgileri içerir. Lisans bilgileri olmadan Uç Nokta için Microsoft Defender lisanslanmadığını bildirir.
 
 1. **Yapılandırma Profilleri'nin** altında **Profil Oluştur'u** seçin.
 1. **Platform**=**macOS**, **Profil türü Şablonları'nı**= seçin. **Şablon adı**= **Özel**. **Oluştur'a** tıklayın.

@@ -6,25 +6,26 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-endpointprotect
 - m365solution-scenario
 - highpri
+- tier1
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ea9ae9a463763607145ef67b2e70aa5cd66c495b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 596488f105e2b7be1c6047a37cca7a2fbc297c79
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694303"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564027"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Microsoft Endpoint Manager aracılığı ile katılım
 
@@ -46,7 +47,7 @@ Bu makale Dağıtım kılavuzunun bir parçasıdır ve örnek ekleme yöntemi ol
 
 Uç Nokta için Defender çeşitli uç noktaların ve araçların eklenip eklenmediğini desteklese de, bu makale bunları kapsamaz. Desteklenen diğer dağıtım araçlarını ve yöntemlerini kullanarak genel ekleme hakkında bilgi için bkz. [Eklemeye genel bakış](onboarding.md).
 
-[Microsoft Endpoint Manager](/mem/endpoint-manager-overview), çeşitli hizmetleri bir hale getiren bir çözüm platformudur. [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) tabanlı cihaz yönetimini içerir.
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview), çeşitli hizmetleri bir hale getiren bir çözüm platformudur. [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) ve [Microsoft Endpoint Configuration Manager](/mem/configmgr) içerir.
 
 Bu konu, kullanıcılara şu konuda yol gösterir:
 

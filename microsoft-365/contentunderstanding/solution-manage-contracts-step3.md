@@ -12,20 +12,20 @@ search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: Microsoft 365 çözümü kullanarak sözleşmelerinizi işlemek üzere akışınızı oluşturmak için Power Automate'i kullanmayı öğrenin.
-ms.openlocfilehash: 0a449fbac6fe7a0dd9c66e49a0ba6dd57b649b15
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: fbdf155fa1cd8e9b9b94a98dee09d1544c8e439e
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67578862"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564662"
 ---
 # <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>Adım 3. Anlaşmalarınızı işlemek üzere akış oluşturmak için Power Automate'i kullanma
 
-Sözleşme Yönetimi kanalınızı oluşturdunuz ve SharePoint belge kitaplığınızı iliştirdiniz. Sonraki adım, SharePoint Syntex modelinizin tanımladığını ve sınıflaştırdığını sözleşmelerinizi işlemek için bir Power Automate akışı oluşturmaktır. [SharePoint belge kitaplığınızda bir Power Automate akışı oluşturarak](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01) bu adımı gerçekleştirebilirsiniz.
+Sözleşme Yönetimi kanalınızı oluşturdunuz ve SharePoint belge kitaplığınızı iliştirdiniz. Bir sonraki adım, Syntex modelinizin tanımladığını ve sınıflaştırdığını sözleşmelerinizi işlemek için bir Power Automate akışı oluşturmaktır. [SharePoint belge kitaplığınızda bir Power Automate akışı oluşturarak](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01) bu adımı gerçekleştirebilirsiniz.
 
 Sözleşme yönetimi çözümünüz için aşağıdaki eylemleri gerçekleştirmek üzere bir Power Automate akışı oluşturmak istiyorsunuz:
 
--  Bir sözleşme SharePoint Syntex modeliniz tarafından sınıflandırıldıktan sonra sözleşme durumunu **Gözden geçirildi** olarak değiştirin.
+-  Syntex modeliniz tarafından bir sözleşme sınıflandırıldıktan sonra sözleşme durumunu **Gözden geçirildi** olarak değiştirin.
 - Ardından sözleşme gözden geçirilir ve onaylanır veya reddedilir.
 - Onaylanan sözleşmeler için, sözleşme bilgileri ödeme işleme için bir sekmeye nakledilir.
 - Reddedilen sözleşmeler için takıma daha fazla analiz için bildirim gönderilir. 
@@ -36,7 +36,7 @@ Aşağıdaki diyagramda, sözleşme yönetimi çözümü için Power Automate ak
 
 ## <a name="prepare-your-contract-for-review"></a>Sözleşmenizi gözden geçirme için hazırlama
 
-Bir sözleşme SharePoint Syntex belge anlama modelinize göre tanımlanıp sınıflandırıldığında Power Automate akışı önce durumu **Gözden geçirildi** olarak değiştirir.
+Syntex belge anlama modelinize göre bir sözleşme tanımlanıp sınıflandırıldığında, Power Automate akışı önce durumu **Gözden geçirildi** olarak değiştirir.
 
 ![Güncelleştirme durumu.](../media/content-understanding/flow-overview.png)
 

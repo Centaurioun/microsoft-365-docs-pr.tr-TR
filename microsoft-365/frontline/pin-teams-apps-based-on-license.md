@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 7cf2adb04f27a01970eb516a82f5fbb35a5cc2f6
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: debc8a975d132c83183fce4a4f0d4f6905dcbb40
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68082339"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565990"
 ---
 # <a name="tailor-teams-apps-for-your-frontline-workers"></a>Teams uygulamalarını ön saf çalışanları için uyarlama
 
@@ -38,6 +38,7 @@ Teams, uygulamaları lisansa göre sabitler ve ön saha çalışanlarınıza Tea
 
 Uygulamalar, Teams mobil istemcilerinin (iOS ve Android) altındaki ve Teams masaüstü istemcisinin yanındaki çubuk olan uygulama çubuğuna sabitlenir. [F lisansı](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt) olan kullanıcılar için aşağıdaki uygulamalar sabitlenmiştir:
 
+- [Viva Bağlantılar](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) ([çok yakında](#coming-soon))
 - [Etkinlik](https://support.microsoft.com/office/explore-the-activity-feed-in-teams-91c635a1-644a-4c60-9c98-233db3e13a56)
 - [Sohbet](https://support.microsoft.com/office/get-started-with-chat-0b506ce2-eb6d-4fca-9668-e56980ba755e)
 - [Takım](https://support.microsoft.com/office/teams-and-channels-in-microsoft-teams-c6d0e61d-a61e-44a6-a972-04f2a8fa4155)
@@ -99,6 +100,20 @@ Uyarlanmış ön cephe uygulama deneyiminin diğer Teams uygulama ilkeleriyle na
 
 > [!NOTE]
 > Uyarlanmış ön cephe uygulama deneyiminde uygulamaların veya uygulamaların sırasını değiştiremezsiniz. Şimdilik, değişiklik yapmak istiyorsanız kendi özel deneyiminizi ayarlayabilirsiniz. Bunu yapmak için önce özelliği kapatın. Ardından [, özel bir uygulama kurulum ilkesi oluşturun](/microsoftteams/teams-app-setup-policies) ve [bunu kullanıcılara veya gruplara atayın](/microsoftteams/assign-policies-users-and-groups).
+
+### <a name="coming-soon"></a>Çok yakında
+
+ Viva Bağlantılar yakında ön cepheye özel uygulamalar deneyiminin bir parçası olacak. Özel uygulama deneyimini gören ön cephe kullanıcıları Viva Bağlantılar hem mobil hem de masaüstünde ilk konuma sabitlenmiş olur.
+
+Bu deneyim, Kuruluşunuzun gereksinimlerine uyacak şekilde özelleştirilebilen Görevler, Vardiyalar, Onaylar ve En İyi Haberler gibi ilgili ön hat kartları içeren varsayılan bir pano içerir. Kuruluşunuz zaten bir Viva Bağlantılar giriş sitesi ayarladıysa, varsayılan deneyimden önceliklidir. Daha fazla bilgi için bkz. [Microsoft 365 yol haritası](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=99706).
+
+**Teams mobil**
+
+:::image type="content" source="media/tailored-teams-apps-viva-connections-mobile.png" alt-text="Teams mobil cihazlarda uyarlanmış ön hat uygulama deneyimindeki Viva Bağlantılar gösteren ekran görüntüsü." lightbox="media/tailored-teams-apps-viva-connections-mobile.png":::
+
+**Teams masaüstü**
+
+:::image type="content" source="media/tailored-teams-apps-viva-connections-desktop.png" alt-text="Teams masaüstünde uyarlanmış ön hat uygulama deneyiminde Viva Bağlantılar gösteren ekran görüntüsü." lightbox="media/tailored-teams-apps-viva-connections-desktop.png":::
 
 ## <a name="related-articles"></a>İlgili makaleler
 

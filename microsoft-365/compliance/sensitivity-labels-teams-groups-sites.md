@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint ve Microsoft Teams sitelerindeki ve Microsoft 365 gruplarındaki içeriği korumak için duyarlılık etiketlerini kullanın.
-ms.openlocfilehash: 0541fb9994a567f0ded9377380dd402522ad9e19
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 279fdd6738811dda31a237e57b91558fb439d81b
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68536972"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565893"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Microsoft Teams, Microsoft 365 grupları ve SharePoint sitelerindeki içeriği korumak için duyarlılık etiketlerini kullanma
 
@@ -36,7 +36,7 @@ Belge ve e-postaları korumak için [duyarlılık etiketlerini](sensitivity-labe
 - Dış kullanıcı erişimi
 - SharePoint sitelerinden dış paylaşım
 - Yönetilmeyen cihazlardan erişim
-- Kimlik doğrulama bağlamları (önizlemede)
+- Kimlik doğrulama bağlamları
 - SharePoint sitesi için varsayılan paylaşım bağlantısı (Yalnızca PowerShell yapılandırması)
 - Site paylaşım ayarları (Yalnızca PowerShell yapılandırması)
 
@@ -121,7 +121,7 @@ Kapsayıcılar için duyarlılık etiketlerini henüz etkinleştirmediyseniz, a�
             
             Ek yapılandırma bilgileri [için bu bölümün sonundaki yönetilmeyen cihazlara yönelik bağımlılıklar seçeneği hakkında daha fazla bilgi](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) bölümüne bakın.
             
-        - **Mevcut kimlik doğrulama bağlamını seçin**: Şu anda önizleme aşamasında olan bu seçenek, kullanıcılar bu etiketin uygulandığı SharePoint sitelerine eriştiğinde daha sıkı erişim koşulları uygulamanıza olanak tanır. Bu koşullar, kuruluşunuzun Koşullu Erişim dağıtımı için oluşturulmuş ve yayımlanmış mevcut bir kimlik doğrulama bağlamını seçtiğinizde uygulanır. Kullanıcılar yapılandırılmış koşulları karşılamıyorsa veya kimlik doğrulama bağlamlarını desteklemeyen uygulamalar kullanıyorlarsa erişimleri reddedilir.
+        - **Mevcut bir kimlik doğrulama bağlamını seçin**: Bu seçenek, kullanıcılar bu etiketin uygulandığı SharePoint sitelerine eriştiğinde daha sıkı erişim koşulları uygulamanıza olanak tanır. Bu koşullar, kuruluşunuzun Koşullu Erişim dağıtımı için oluşturulmuş ve yayımlanmış mevcut bir kimlik doğrulama bağlamını seçtiğinizde uygulanır. Kullanıcılar yapılandırılmış koşulları karşılamıyorsa veya kimlik doğrulama bağlamlarını desteklemeyen uygulamalar kullanıyorlarsa erişimleri reddedilir.
             
             Ek yapılandırma bilgileri [için bu bölümün sonundaki kimlik doğrulama bağlamı seçeneğine yönelik bağımlılıklar hakkında daha fazla bilgi](#more-information-about-the-dependencies-for-the-authentication-context-option) bölümüne bakın.
             
@@ -174,7 +174,7 @@ Tüm uygulamalar kimlik doğrulama bağlamlarını desteklemez. Desteklenmeyen b
     - iOS: 12.30'da kullanıma sunulacak
     - Android: Henüz desteklenmiyor
 
-Bu önizleme için bilinen sınırlamalar:
+Bilinen sınırlamalar:
 
 - OneDrive eşitleme uygulaması için, diğer siteler için değil, yalnızca OneDrive için desteklenir.
 

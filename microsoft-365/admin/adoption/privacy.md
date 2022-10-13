@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gizlilik, Benimseme Puanı ile nasıl korunur?
-ms.openlocfilehash: 5dc0d1852941769f07dce587fc664d37fc193f89
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: d8a7d7e03bc00a56ca410ec49ab91511db135b3a
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68173071"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563448"
 ---
 # <a name="privacy-controls-for-adoption-score"></a>Benimseme Puanı için gizlilik denetimleri
 
@@ -35,8 +35,9 @@ Gizliliğiniz Microsoft için önemlidir. Gizliliğinizi nasıl koruduğumuz hak
 Kişiler deneyimleri alanında ölçümler yalnızca kuruluş düzeyinde kullanılabilir. Bu alan, içerik işbirliği, hareketlilik, toplantılar, ekip çalışması ve iletişim kategorilerine bakarak kişilerin Microsoft 365'i nasıl kullandığına bakar. İç gizlilik ilkesi gereksinimlerinizi karşılamanıza yardımcı olmak için çeşitli denetim düzeyleriyle size olanak sağlarız.
 Denetimler size şu bilgileri verir:
 
-- Benimseme Puanı'nda bilgileri kimlerin görebileceğini denetlemek için esnek yönetici rolleri.
-- kişi deneyimleri alanından çıkma özelliği.
+- Benimseme Puanı'nda bilgileri kimlerin görebileceğini denetlemek için esnek yönetici rolleri
+- Kullanıcı ve grupları kişilerden kaldırma özelliği hesaplamalar yaşar
+- Kişi deneyimleri alanından vazgeçme özelliği
 
 ## <a name="flexible-admin-roles-to-control-who-can-see-the-information-in-adoption-score"></a>Benimseme Puanı'nda bilgileri kimlerin görebileceğini denetlemek için esnek yönetici rolleri
 
@@ -50,18 +51,34 @@ Benimseme Puanı'nın tamamını görüntülemek için aşağıdaki yönetici ro
 - Genel Okuyucu
 - Rapor Okuyucusu
 - Kullanım Özeti Raporları Okuyucusu
+- Kullanıcı Deneyimi Başarı Yöneticisi
 
-Rapor Okuyucusu veya Kullanım Özeti Raporları Okuyucusu rolünü, değişiklik yönetimi ve benimsemeden sorumlu olan, ancak bt yöneticisi olması gerekmeyen herkese atayın. Bu rol, microsoft 365 yönetim merkezinde benimseme puanı deneyiminin tamamına erişim sağlar.
+Genel yönetici, değişiklik yönetimi ve benimsemeden sorumlu olan herkese Rapor Okuyucusu rolünü, Kullanım Özeti Raporları Okuyucusu rolünü veya Kullanıcı Deneyimi Başarı Yöneticisi rolünü atayabilir, ancak bt yöneticisi olması gerekmez.
+
+Rapor Okuyucusu rolüne sahip kullanıcılar kullanım raporlama verilerini ve rapor panosunu Microsoft 365 yönetim merkezi ve Power BI'daki benimseme bağlam paketini görüntüleyebilir. Kullanım Özeti Raporları Okuyucusu rolüne sahip kullanıcılar, Microsoft 365 Kullanım Analizi ve Benimseme Puanı'nda yalnızca kiracı düzeyi toplamlarını ve grup düzeyi toplamlarını görebilir. Kullanıcı Deneyimi Başarı Yöneticisi rolü, Kullanım Özeti Raporları Okuyucusu rolünün izinlerini içerir ve İleti Merkezi, Ürün Geri Bildirimi ve Hizmet Durumu gibi Benimseme ile ilgili daha fazla bilgiye erişebilir. Farklı roller hakkında daha fazla bilgi edinmek için bkz. [Azure AD yerleşik](/azure/active-directory/roles/permissions-reference) roller.
+
+## <a name="capability-to-choose-specific-users-or-certain-groups"></a>Belirli kullanıcıları veya belirli grupları seçme özelliği
+
+Kuruluşunuzdaki kişilerin içgörüleri deneyimlediğini belirlemek için verileri kullanılacak kullanıcıları ve grupları seçebilirsiniz. Bazı grupların atlanması içgörü hesaplamalarını etkiler. Kuruluşunuzun kişi deneyim raporları dışında bırakılabilmesi için Genel yönetici olmanız gerekir. Değişikliğin uygulanması 24 saat kadar sürebilir.
+
+Belirli grupları atlar:
+
+1. Yönetim merkezinde **Ayarlar** > **Kuruluş Ayarları** > **Benimseme Puanı'na** gidin.
+2. **Belirli kullanıcıları grup aracılığıyla dışla'yı** seçin.  
+3. Atacak bir veya birden çok Yönetici Center AAD grubu seçin.
+4. **Değişiklikleri kaydet'i** seçin.
+
+:::image type="content" source="../../media/adoption-score-exclude-users.png" alt-text="Ekran görüntüsü: İçgörüleri hesaplarken grup aracılığıyla belirli kullanıcıları dışlama seçeneği.":::
 
 ## <a name="capability-to-opt-out-of-people-experiences"></a>Kişi deneyimlerini geri çevirme özelliği
 
-Benimseme Puanı'nın kişi deneyimleri alanından da çıkabilirsiniz. Devre dışı bırakmanız durumunda kuruluşunuzdan hiç kimse bu ölçümleri görüntüleyemez ve kuruluşunuz iletişim, toplantılar, ekip çalışması, içerik işbirliği ve mobilite içeren hesaplamalardan kaldırılacaktır. Kuruluşunuzun kişi deneyim raporları dışında bırakılabilmesi için Genel yönetici olmanız gerekir.
+Benimseme Puanı'nın kişi deneyimleri alanından da çıkabilirsiniz. Devre dışı bırakmanız durumunda kuruluşunuzdan hiç kimse bu ölçümleri görüntüleyemez ve kuruluşunuz iletişim, toplantılar, ekip çalışması, içerik işbirliği ve mobilite içeren hesaplamalardan kaldırılacaktır. Kuruluşunuzun kişi deneyim raporları dışında bırakılabilmesi için Genel yönetici olmanız gerekir. Değişikliğin uygulanması 24 saat kadar sürebilir. Geçmiş verileri saklamak için değişikliğinizi utc saatinde günün sonundan önce geri döndürebilirsiniz.
 
 Geri çevirmek için:
 
 1. Yönetim merkezinde **Ayarlar**  >  **Kuruluş Ayarları** > **Benimseme Puanı'na** gidin.
-2. **Kullanıcı yok (kişiler içgörüler hesaplanamaz) seçeneğini** belirleyin. 
+2. **Kullanıcılar için hesaplama'yı** seçin. 
 3. **Kişi deneyimlerinden veri kaldırmak istiyor musunuz?** onay ekranında **Verileri Kaldır'ı** seçin.
 4. **Kaydet'i** seçin.
 
-:::image type="content" source="../../media/orgsettingspageoptout.png" alt-text="Kişi deneyimlerini geri çevirebileceğiniz kuruluş ayarları sayfası.":::
+:::image type="content" source="../../media/adoption-score-calculate-insights.png" alt-text="Ekran görüntüsü: Kişi deneyimlerinden vazgeçmek için kuruluş ayarları seçeneği içgörüler":::

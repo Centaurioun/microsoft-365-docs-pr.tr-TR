@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex için İçerik Merkezi site şablonunu kullanma
+title: Microsoft Syntex için İçerik Merkezi site şablonunu kullanma
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,23 +12,23 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex'da İçerik Merkezi site şablonunu sağlamayı ve kullanmayı öğrenin.
-ms.openlocfilehash: b82f649788f06dbd73cede83d635061894b50105
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+description: Microsoft Syntex'te İçerik Merkezi site şablonunu sağlamayı ve kullanmayı öğrenin.
+ms.openlocfilehash: 9c5e1f09104026c04ee86d4b86a968d04ca2bcdb
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599769"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564158"
 ---
-# <a name="use-the-content-center-site-template-for-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex için İçerik Merkezi site şablonunu kullanma
+# <a name="use-the-content-center-site-template-for-microsoft-syntex"></a>Microsoft Syntex için İçerik Merkezi site şablonunu kullanma
 
-SharePoint Syntex İçerik Merkezi sitesi, SharePoint Syntex özelliklerini daha iyi anlamanıza yardımcı olmak için tasarlanmış, dağıtmaya hazır, yönergeli bir SharePoint sitesi şablonudur.
+Microsoft Syntex İçerik Merkezi sitesi, Syntex özelliklerini daha iyi anlamanıza yardımcı olmak için tasarlanmış, dağıtmaya hazır, yönerge temelli bir SharePoint sitesi şablonudur.
 
-Kendi modellerinizi oluşturmak ve eğitmek için ihtiyacınız olan araçları ve bilgileri öğreneceksiniz. Ardından bu siteyi merkezi bir içerik deposu veya kendi SharePoint Syntex modellerinizi yönetmek için denetim merkezi olarak kullanabilirsiniz.
+Kendi modellerinizi oluşturmak ve eğitmek için ihtiyacınız olan araçları ve bilgileri öğreneceksiniz. Daha sonra bu siteyi merkezi bir içerik deposu olarak veya kendi Syntex modellerinizi yönetmek için denetim merkezi olarak kullanabilirsiniz.
 
 ![İçerik Merkezi site şablonu giriş sayfasının ekran görüntüsü.](../media/content-understanding/content-center-site-home-page.png)
 
-Bu sitede modeller kendi içeriğiniz kullanılarak eğitilebilir ve değerlendirilebilir. Ancak, modelleri kitaplıklara uygulamak için SharePoint Syntex lisansı gerekir.  
+Bu sitede modeller kendi içeriğiniz kullanılarak eğitilebilir ve değerlendirilebilir. Ancak, modelleri kitaplıklara uygulamak için Syntex lisansı gereklidir.  
 
 ## <a name="provision-the-site"></a>Siteyi sağlama
 
@@ -39,7 +39,7 @@ Bu sitede modeller kendi içeriğiniz kullanılarak eğitilebilir ve değerlendi
 > [!NOTE]
 > Siteyi sağlamak için Microsoft 365'te genel yönetici veya SharePoint yöneticisi olmanız gerekir.
 
-1. [SharePoint görünüm kitabının](https://lookbook.microsoft.com/) ana sayfasında, **Tasarımları görüntüle** menüsünde **SharePoint Syntex** >  **SharePoint Syntex İçerik Merkezi'ni** seçin.
+1. [SharePoint görünüm kitabının](https://lookbook.microsoft.com/) ana sayfasında, **Tasarımları görüntüle** menüsünde **Syntex** > **Syntex İçerik Merkezi'ni** seçin.
 
 2. **İçerik Merkezi** sayfasında **Kiracınıza ekle'yi** seçin.
 
@@ -51,17 +51,17 @@ Bu sitede modeller kendi içeriğiniz kullanılarak eğitilebilir ve değerlendi
 
 4. **Sağla'yı** seçtiğinizde, kısa bir süre içinde siteniz kullanıma hazır olur. İçerik Merkezi site şablonunu sağlama isteğinizin tamamlandığını belirten bir e-posta alırsınız (sağladığınız e-posta adresine gönderilir).
 
-5. **Siteyi aç'ı** seçtiğinizde İçerik Merkezi sitenizi görürsünüz. Buradan siteyi keşfedebilir ve SharePoint Syntex hakkında daha fazla bilgi edinebilirsiniz. 
+5. **Siteyi aç'ı** seçtiğinizde İçerik Merkezi sitenizi görürsünüz. Buradan siteyi keşfedebilir ve Syntex hakkında daha fazla bilgi edinebilirsiniz. 
 
 SharePoint look book hizmetinden sağlama hakkında daha fazla bilgi için bkz. [Yeni öğrenme yolları çözümü sağlama](/office365/customlearning/custom_provision).
 
 ## <a name="explore-the-site"></a>Siteyi keşfedin
 
-İçerik Merkezi sitesi, kuruluşunuzda SharePoint Syntex kullanmaya başlama adımlarında size yol gösteren önceden doldurulmuş sayfalar içerir. 
+İçerik Merkezi sitesi, kuruluşunuzda Syntex kullanmaya başlama adımlarında size yol gösteren önceden doldurulmuş sayfalar içerir. 
 
-### <a name="get-started-with-sharepoint-syntex"></a>SharePoint Syntex kullanmaya başlama
+### <a name="get-started-with-syntex"></a>Syntex'i kullanmaya başlama
 
-SharePoint Syntex hakkında bilgi edinin ve bunu kuruluşunuz için nasıl kullanabileceğinizi öğrenin. SharePoint Syntex genel bakış sağlayan bir video izleyin ve başlamanıza yardımcı olacak eğitimleri bulun.
+Syntex'e giriş hakkında bilgi edinin ve bunu kuruluşunuz için nasıl kullanabileceğinizi öğrenin. Syntex'e genel bakış sağlayan bir video izleyin ve başlamanıza yardımcı olacak eğitimleri bulun.
 
 ### <a name="learn-about-model-types"></a>Model türleri hakkında bilgi edinin
 
@@ -71,13 +71,13 @@ SharePoint Syntex hakkında bilgi edinin ve bunu kuruluşunuz için nasıl kulla
 
 Modeller kitaplığında belge anlama modeli oluşturmayı ve ardından önceden eğitilmiş örnek modeli etkinleştirmeyi öğrenin.
 
-### <a name="sharepoint-syntex-in-six-simple-steps"></a>Altı basit adımda SharePoint Syntex
+### <a name="syntex-in-six-simple-steps"></a>Altı basit adımda syntex
 
 bir içerik merkeziyle başlayın ve ardından ihtiyacınız olan bilgileri tanımlamak, sınıflandırmak ve ayıklamak için model oluşturmayı adım adım öğrenin.
 
 ### <a name="streamline-everyday-processes-and-tasks"></a>Günlük işlemleri ve görevleri kolaylaştırın
 
-SharePoint Syntex kullanarak el ile kullanılanları nasıl kullanacağınızı ve kuruluşunuz için otomatik ve kolaylaştırılmış bir şeye nasıl dönüştüreceğinizi öğrenin.
+Syntex'i kullanarak el ile kullanılanları nasıl kullanacağınızı ve kuruluşunuz için otomatik ve kolaylaştırılmış bir şeye nasıl dönüştüreceğinizi öğrenin.
 
 ### <a name="manage-compliance"></a>Uyumluluğu yönetme
 
@@ -89,6 +89,6 @@ Model etkinliğini göstermek ve modellerinizin nasıl kullanıldığı hakkınd
 
 ### <a name="find-additional-resources"></a>Ek kaynakları bulma
 
-SharePoint Syntex hakkında daha fazla bilgi edinmenize yardımcı olacak ek kaynakları ve senaryoları keşfedin.
+Syntex hakkında daha fazla bilgi edinmenize yardımcı olacak ek kaynakları ve senaryoları keşfedin.
 
 

@@ -26,12 +26,12 @@ appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2a9174b1cb9e9090b7010798041c539608ace616
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 57676d0f1f037c1c780d0a6f7f0611dc79ab5a7e
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68077458"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564992"
 ---
 # <a name="schedule-owner-for-shift-management"></a>Vardiya yönetimi için Sahibi Zamanla
 
@@ -89,4 +89,3 @@ Grant-CsTeamsShiftsPolicy -Identity remy@contoso.com -PolicyName ScheduleOwnerPo
 ## <a name="related-articles"></a>İlgili makaleler
 
 - [Teams'de kuruluşunuz için Vardiyalar uygulamasını yönetme](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
-- [Teams'de ön cephe çalışanları için vardiya tabanlı erişimi yönetme](manage-shift-based-access-flw.md)

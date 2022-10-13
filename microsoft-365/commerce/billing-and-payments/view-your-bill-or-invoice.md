@@ -28,12 +28,12 @@ ms.custom:
 - adminvideo
 description: Microsoft 365 yönetim merkezinde faturanızı veya fatura ekstrenizi bulun. Ayrıca, faturanızı kaydedebilir ve faturanızın bir kopyasını yazdırabilirsiniz.
 ms.date: 01/25/2022
-ms.openlocfilehash: e04cf46ceba2886fc0e939ead05a49147e4aa759
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 06c509641bc4eea370680fd65171e1d38bc579f5
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68165723"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565410"
 ---
 # <a name="view-your-microsoft-365-for-business-subscription-bill-or-invoice"></a>İş için Microsoft 365 abonelik faturanızı veya faturanızı görüntüleme
 
@@ -73,8 +73,8 @@ Bu makalede açıklanan adımları yerine getirmek için Genel yönetici veya Fa
 
 ::: moniker-end
 
-2. **Faturalar** sekmesinde, açılan listeden bir tarih aralığı seçin ve ardından görüntülemek istediğiniz siparişi seçin.
-3. Özet sayfasında, faturadaki tüm maddelerin maddelerini, miktarını, fiyatını, indirimini ve toplamını görebilirsiniz.
+2. **Faturalar** sekmesinde, görüntülemek istediğiniz faturayı seçin. Fatura görmüyorsanız, tarih filtresini kullanın ve **Son 3 ay**, **Son 6 ay** veya **Tarih aralığını belirtin'i** seçin.
+3. **Fatura özeti** sayfasında, madde listesi, her bir öğenin fiyatı ve faturadaki tüm maddelerin toplam maliyeti de dahil olmak üzere fatura ayrıntılarını görürsünüz.
 4. Faturanın PDF kopyasını yazdırmak veya kaydetmek için **PDF indir** seçeneğine tıklayın.
 
 Fatura ekstrenizin bir kopyasını e-postayla almak istiyorsanız bkz. [Faturalama bildirimlerini ve fatura eklerini yönetme](manage-billing-notifications.md).

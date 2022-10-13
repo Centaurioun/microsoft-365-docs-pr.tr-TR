@@ -7,21 +7,20 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 ROBOTS: NO INDEX, NO FOLLOW
 description: Başkalarının Outlook'ta sizinle toplantı zamanlamasına izin vermek için Bookings'i benimle birlikte kullanın.
-ms.openlocfilehash: 6b35380769e00323dd91b2e7d816eeb98fcee241
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: 7eea946472e94fb6d4e2ae144a1127a6b8e09c72
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851094"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565498"
 ---
 # <a name="bookings-with-me"></a>Benimle Bookings
 
 Outlook'ta **benimle yapılan rezervasyonlar**, Outlook takviminizdeki serbest/meşgul bilgileriyle tümleşen web tabanlı bir kişisel zamanlama sayfasıdır. Benimle yapılan rezervasyonlar, insanların sizinle bir toplantı veya randevu zamanlamasına olanak tanır. Uygunluğunuz ve tercihleriniz temelinde sizinle kolayca zamanlayabilmeleri için başkalarıyla paylaşmak üzere özel toplantı türleri oluşturabilirsiniz. Hem bir e-posta onayı alırsınız hem de katılımcılar benimle rezervasyonlar sayfanızdan sizinle zamanlanmış toplantıları güncelleştirebilir veya iptal edebilir.
-
-> [!NOTE]
-> Benimle yapılan rezervasyonlar dünya çapında önizleme aşamasında sunulmaktadır. Önizlemede yer alan özellikler tamamlanmayabilir ve genel sürümde kullanıma sunulmadan önce değişikliklere uğrayabilir.
 
 Benimle yapılan rezervasyonların iki farklı görünümü var:
 
@@ -221,6 +220,12 @@ PowerShell Exchange Online kullanarak aşağıdaki komutları çalıştırmanız
     ```PowerShell
    Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
+
+### <a name="create-bookings-with-me"></a>Benimle Bookings oluşturma
+
+1. [Web üzerinde Outlook](https://go.microsoft.com/fwlink/p/?LinkID=402333) açın.
+2. **Takvim**'i seçin.
+3. Benimle **Bookings** oluşturmak için takviminizde görünen Rezervasyon oluştur sayfa bağlantısını seçin.
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 

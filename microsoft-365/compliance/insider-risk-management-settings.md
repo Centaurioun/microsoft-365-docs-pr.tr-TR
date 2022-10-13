@@ -12,18 +12,24 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- highpri
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 30804601a463a47f2c11b0d8054a2435acdca486
-ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
+ms.openlocfilehash: 0bf0edeb32b23a941ef653823e95f6e63b4a686f
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "67648757"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68564553"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Insider risk yönetimi ayarlarını kullanmaya başlama
+
+>[!IMPORTANT]
+>Microsoft Purview İçeriden Risk Yönetimi IP hırsızlığı, veri sızıntısı ve güvenlik ihlalleri gibi olası kötü amaçlı veya yanlışlıkla insider risklerini belirlemek için çeşitli sinyalleri ilişkilendirmektedir. Insider risk yönetimi, müşterilerin güvenlik ve uyumluluğu yönetmek için ilkeler oluşturmasına olanak tanır. Tasarım gereği gizlilikle oluşturulan kullanıcılar varsayılan olarak takma ad kullanır ve kullanıcı düzeyinde gizlilik sağlamaya yardımcı olmak için rol tabanlı erişim denetimleri ve denetim günlükleri kullanılır.
 
 Insider risk yönetimi ayarları, ilke oluştururken seçtiğiniz şablondan bağımsız olarak tüm insider risk yönetimi ilkeleri için geçerlidir. Ayarlar, tüm **insider risk** yönetimi sayfalarının en üstünde bulunan Insider risk ayarları denetimi kullanılarak yapılandırılır. Bu ayarlar, aşağıdaki alanlar için ilke bileşenlerini denetler:
 
@@ -40,6 +46,8 @@ Insider risk yönetimi ayarları, ilke oluştururken seçtiğiniz şablondan ba�
 - [Yönetici bildirimleri](#admin-notifications)
 
 Başlamadan ve içeriden risk yönetimi ilkeleri oluşturmadan önce, bu ayarları anlamanız ve kuruluşunuz için uyumluluk gereksinimleri için en uygun ayar düzeylerini seçmeniz önemlidir.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="privacy"></a>Gizlilik
 
@@ -64,7 +72,7 @@ Sinyaller toplanır ve kullanıcılar göstergelerle ilgili etkinlikler gerçekl
 - **Genel ayarlar göstergeleri**: Insider risk yönetimi için genel ayarlarda etkinleştirilen göstergeler hem ilkelerde yapılandırma için kullanılabilen göstergeleri hem de insider risk yönetimi tarafından toplanan kullanıcı etkinliği sinyallerinin türlerini tanımlar. Örneğin, bir kullanıcı verileri kişisel bulut depolama hizmetlerine veya taşınabilir depolama cihazlarına kopyalarsa ve bu göstergeler yalnızca genel ayarlarda seçilirse, bu etkinlik Etkinlik gezgininde gözden geçirilebilir. Ancak, bu etkinlik bir iç risk yönetimi ilkesinde tanımlanmadığından, etkinliğe bir risk puanı atanmayacak veya uyarı oluşturulmayacak.
 - **İlke göstergeleri**: Insider risk yönetimi ilkelerine dahil edilen göstergeler, kapsam içi bir kullanıcının risk puanını belirlemek için kullanılır. İlke göstergeleri genel ayarlarda tanımlanan göstergelerden etkinleştirilir ve yalnızca bir kullanıcı için tetikleme olayı gerçekleştikten sonra etkinleştirilir.  İlke göstergelerine bazı örnekler, kullanıcının verileri kişisel bulut depolama hizmetlerine veya taşınabilir depolama cihazlarına kopyalaması, kullanıcı hesabının Azure Active Directory'den kaldırılması veya kullanıcının iç dosya ve klasörleri yetkisiz dış taraflarla paylaşmasıdır.
 
-Belirli ilke göstergeleri, belirli ilke şablonları için tetikleyici olaylarını özelleştirmek için de kullanılabilir. İlke sihirbazında Öncelikli kullanıcı şablonlarına göre *Genel veri sızıntıları* veya *Veri sızıntıları* için yapılandırıldığında, bu göstergeler ilkeleriniz ve kullanıcılar ilke kapsamında olduğunda size daha fazla esneklik ve özelleştirme sağlar. Ayrıca, bir ilkede daha ayrıntılı denetim için bu tetikleyici göstergeleri için tek tek etkinlik eşikleri tanımlayabilirsiniz.
+Belirli ilke şablonları için tetikleyici olaylarını özelleştirmek için bazı ilke göstergeleri ve dizileri de kullanılabilir. İlke sihirbazında, öncelikli kullanıcı şablonlarına göre *Genel veri sızıntıları* veya *Veri sızıntıları* için yapılandırıldığında, bu göstergeler veya diziler ilkeleriniz için ve kullanıcılar ilke kapsamında olduğunda size daha fazla esneklik ve özelleştirme sağlar. Ayrıca, bir ilkede daha ayrıntılı denetim için bu tetikleyici göstergeleri için tek tek etkinlik eşikleri tanımlayabilirsiniz.
 
 İlke göstergeleri aşağıdaki alanlara ayrılmıştır. İç risk ilkesi oluştururken gösterge olay sınırlarını her gösterge düzeyi için etkinleştirmek ve özelleştirmek için göstergeleri seçebilirsiniz:
 
@@ -663,3 +671,32 @@ Yönetici ve analiz bildirimlerini devre dışı bırakmak isterseniz aşağıda
     - **Analytics kapatıldığında e-posta bildirimi gönderme**
 
 4. Yapılandırmak ve çıkmak için **Kaydet'i** seçin.
+
+## <a name="inline-alert-customization-preview"></a>Satır içi uyarı özelleştirmesi (önizleme)
+
+Satır içi uyarı özelleştirmesi, uyarıyı gözden geçirirken doğrudan **Uyarı panosundan** bir iç risk yönetimi ilkesini hızlı bir şekilde ayarlamanıza olanak tanır. Bir etkinlik ilgili ilkede yapılandırılan eşiklere uyduğunda uyarılar oluşturulur. Bu etkinlikten alınan uyarı sayısını azaltmak için etkinliğin eşiklerini değiştirebilir veya ilkeden etkinliği tamamen kaldırabilirsiniz.
+
+*Insider Risk Yönetimi Analistleri* ve *Insider Risk Yönetimi Araştırmacıları* rol gruplarına atanan kullanıcıların ilke eşiklerini düzenlemesine ve belirli göstergeleri devre dışı bırakmasına izin vermek için satır içi uyarı özelleştirmesini etkinleştirebilirsiniz. Satır içi uyarı özelleştirme etkin değilse, bu ilke koşullarını yalnızca *Insider Risk Management Yönetici* veya *Insider Risk Management* rol gruplarına atanan kullanıcılar düzenleyebilir. Satır içi uyarı özelleştirmesi, geçerli uyarı durumundan bağımsız olarak uyarılar için desteklenir ve analistlerin ve araştırmacıların gerekirse *Kapatılan* ve *Çözümlenen* uyarılar için ilkeleri güncelleştirmesine olanak sağlar.
+
+Satır içi uyarı özelleştirmesini etkinleştirmek için aşağıdaki adımları tamamlayın:
+
+1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) **Insider risk yönetimi** > **Insider risk ayarları'na** gidin.
+2. **Satır içi uyarı özelleştirme (önizleme)** sayfasını seçin.
+3. Insider risk yönetimi için satır içi uyarı özelleştirmesini etkinleştirin.
+4. Yapılandırmak ve çıkmak için **Kaydet'i** seçin.
+
+> [!NOTE]
+> Satır içi uyarı özelleştirmenin etkinleştirilmesi, yeni ve mevcut ilke uyarılarında kullanılabilir duruma gelmesi yaklaşık bir saat sürer.
+
+Etkinleştirildiğinde analistler ve araştırmacılar Uyarı **panosundaki** bir **uyarı için bu etkinlik için uyarıları azalt'ı** seçebilir ve uyarıyla ilişkili etkinlik ve göstergelerle ilgili ayrıntıları görüntüleyebilir. Ayrıca, düşük, orta ve yüksek önem derecesi uyarıları oluşturmak için kullanılan olay sayısı için geçerli ilke eşikleri görüntülenir. **Bu etkinlik için uyarıları azalt** seçiliyse ve eşiği değiştiren veya ilişkili göstergeyi kaldıran bir önceki ilke düzenlemesi yapılmışsa, ilkede yapılan önceki değişikliklerin ayrıntılarını içeren bir bildirim iletisi görürsünüz.
+
+Analistler ve araştırmacılar, uyarıyı oluşturan ilkeyi hızlı bir şekilde düzenlemek **için Bu etkinlik için uyarıları azalt** bölmesindeki aşağıdaki seçenekler arasından seçim yapabilir:
+
+- **Microsoft'un önerilen eşiklerini kullanarak uyarıları azaltın**: İlkedeki eşikleri sizin için otomatik olarak artıracağız. İlkeyi değiştirmeden önce önerilen yeni eşik ayarlarını gözden geçirebilirsiniz.
+- **Kendi eşiklerinizi seçerek uyarıları azaltın**: Geçerli ve gelecekteki uyarılar için bu etkinlik türünün eşiklerini el ile artırabilirsiniz. İlkeyi değiştirmeden önce geçerli eşik ayarlarını gözden geçirebilir ve yeni eşik ayarlarını yapılandırabilirsiniz.
+- **Bu etkinlik için uyarı almayı durdur**: Bu gösterge ilkeden kaldırılır ve bu etkinlik artık ilke tarafından algılanmayacaktır. Bu, göstergenin eşik tabanlı olup olmadığına bakılmaksızın tüm göstergeler için geçerlidir.
+
+Bir seçenek seçtikten sonra analistler ve araştırmacılar ilkeyi güncelleştirmek için iki seçenek belirleyebilir:
+
+- **Uyarıyı kaydetme ve kapatma**: İlkedeki değişiklikleri kaydeder ve uyarı durumunu *Çözüldü* olarak güncelleştirir.
+- **Yalnızca kaydet**: İlkedeki değişiklikleri kaydeder, ancak uyarı durumu aynı kalır.

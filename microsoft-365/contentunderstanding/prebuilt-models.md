@@ -1,26 +1,26 @@
 ---
-title: Microsoft SharePoint Syntex'de faturalardan veya makbuzlardan bilgi ayıklamak için önceden oluşturulmuş bir model kullanma
+title: Microsoft Syntex'te faturalardan veya makbuzlardan bilgi ayıklamak için önceden oluşturulmuş bir model kullanma
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: SharePoint Syntex'da önceden oluşturulmuş bir model oluşturmayı ve yapılandırmayı öğrenin.
-ms.openlocfilehash: f3b262ca94e0bfc6886a2ce84ae614569c584bf1
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+description: Microsoft Syntex'te önceden oluşturulmuş bir model oluşturmayı ve yapılandırmayı öğrenin.
+ms.openlocfilehash: 7ec51b86bc6645e2ebe13923969155e1b6b309b7
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738419"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68563284"
 ---
-# <a name="use-a-prebuilt-model-to-extract-info-from-invoices-or-receipts-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'de faturalardan veya makbuzlardan bilgi ayıklamak için önceden oluşturulmuş bir model kullanma
+# <a name="use-a-prebuilt-model-to-extract-info-from-invoices-or-receipts-in-microsoft-syntex"></a>Microsoft Syntex'te faturalardan veya makbuzlardan bilgi ayıklamak için önceden oluşturulmuş bir model kullanma
 
 Önceden oluşturulmuş modeller, belgeleri ve belgelerdeki yapılandırılmış bilgileri tanımak için önceden eğitilir. Sıfırdan yeni bir özel model oluşturmak yerine, kuruluşunuzun gereksinimlerine uygun belirli alanlar eklemek için önceden eğitilmiş mevcut bir modeli yineleyebilirsiniz. 
 
@@ -34,7 +34,7 @@ ms.locfileid: "64738419"
 
 ## <a name="create-a-prebuilt-model"></a>Önceden oluşturulmuş bir model oluşturma
 
-Belgeleri SharePoint Syntex'de sınıflandırmak üzere önceden oluşturulmuş bir model oluşturmak için bu adımları izleyin.
+Syntex'te belgeleri sınıflandırmak için önceden oluşturulmuş bir model oluşturmak için bu adımları izleyin.
 
 1. **Modeller** sayfasında **Model oluştur'u** seçin.
 
@@ -100,11 +100,11 @@ Bir ayıklayıcı seçtiğinizde, belge alanında **Ayıklayıcı seç?** kutusu
 
    ![Ayıklayıcı ayrıntıları sayfasındaki Ayıklayıcı seç kutusunun ekran görüntüsü.](../media/content-understanding/prebuilt-select-distractor-box.png) 
 
-Özgün değer, belgedeki değerdir. Ayıklanan değer, SharePoint sütununda yazılacak değerdir. Model bir kitaplığa uygulandığında, belgede nasıl görünmesini istediğinizi belirtmek için sütun biçimlendirmesini kullanabilirsiniz.
+Özgün değer, belgedeki değerdir. Ayıklanan değer, SharePoint'teki sütuna yazılacak değerdir. Model bir kitaplığa uygulandığında, belgede nasıl görünmesini istediğinizi belirtmek için sütun biçimlendirmesini kullanabilirsiniz.
 
 Kullanmak istediğiniz ek ayıklayıcıları seçmeye devam edin. Bu model yapılandırması için analiz etmek üzere başka dosyalar da ekleyebilirsiniz.
 
-## <a name="rename-an-extractor"></a>Ayıklayıcıyı yeniden adlandırma
+## <a name="rename-an-extractor"></a>Ayıklayıcıyı yeniden adlandır
 
 Ayıklayıcıyı model giriş sayfasından veya **Ayıklayıcılar** panelinden yeniden adlandırabilirsiniz. Model kitaplığa uygulandığında bu adlar sütun adları olarak kullanılacağından, seçili ayıklayıcıları yeniden adlandırmayı düşünebilirsiniz.
 
