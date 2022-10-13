@@ -18,12 +18,12 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: article
-ms.openlocfilehash: 223f8a3c544a0f0f31781e3dbbf123bb6e600bd0
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 84923e4940585a5c98dead3d7f09a6bcf078bf06
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68082977"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565936"
 ---
 # <a name="supported-microsoft-365-defender-streaming-event-types-in-event-streaming-api"></a>Olay akışı API Microsoft 365 Defender sinde olay akış türleri desteklenir
 
@@ -36,7 +36,8 @@ ms.locfileid: "68082977"
 
 
 Olay Akışı API'si, daha fazla olay türünü destekleyecek şekilde sürekli genişletiliyor. Şu anda genel önizleme aşamasında olan veya henüz desteklenmeyen Hangi Avcılık tablolarının genel kullanıma sunulduğu hakkında bilgi edinin. 
-**Yeni - Email olay türleri/tabloları artık GA'dır**
+
+**Yeni - Kimlik ve CloudApp olay türleri/tabloları artık GA'dır**.
 
 ## <a name="hunting-tables-support-status-in-event-streaming-api"></a>Olay Akışı API'sinde tehdit avcılığı tabloları destek durumu
 

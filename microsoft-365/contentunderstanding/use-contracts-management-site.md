@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex için Sözleşme Yönetimi site şablonunu kullanma
+title: Microsoft Syntex için Sözleşme Yönetimi site şablonunu kullanma
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,17 +12,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex Sözleşme Yönetimi site şablonunu sağlamayı, kullanmayı ve özelleştirmeyi öğrenin.
-ms.openlocfilehash: 271ff008aad60434f1e52a9eca233b2d1b7aeb3d
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Microsoft Syntex'te Sözleşme Yönetimi site şablonunu sağlamayı, kullanmayı ve özelleştirmeyi öğrenin.
+ms.openlocfilehash: 028afdbe0f82143c8ee84cdd773c859f7064cf47
+ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67582482"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "68565542"
 ---
-# <a name="use-the-contracts-management-site-template-for-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex için Sözleşme Yönetimi site şablonunu kullanma
+# <a name="use-the-contracts-management-site-template-for-microsoft-syntex"></a>Microsoft Syntex için Sözleşme Yönetimi site şablonunu kullanma
 
-Sözleşme Yönetimi sitesi, kuruluşunuzun SharePoint Syntex değerini en üst düzeye çıkarmanıza yardımcı olan, dağıtılmaya hazır ve özelleştirilebilir bir SharePoint site şablonudur. Site, kuruluşunuzdaki sözleşmeleri yönetmek, işlemek ve durumunu izlemek için profesyonel bir site oluşturmanıza olanak sağlamak için tasarlanmıştır.
+Sözleşme Yönetimi sitesi, kuruluşunuzun Microsoft Syntex değerini en üst düzeye çıkarmanıza yardımcı olan, dağıtılmaya hazır ve özelleştirilebilir bir SharePoint site şablonudur. Site, kuruluşunuzdaki sözleşmeleri yönetmek, işlemek ve durumunu izlemek için profesyonel bir site oluşturmanıza olanak sağlamak için tasarlanmıştır.
 
 ## <a name="features-of-the-site"></a>Sitenin özellikleri
 
@@ -30,7 +30,7 @@ Sözleşme Yönetimi sitesi, kuruluşunuzun SharePoint Syntex değerini en üst 
 
 Sözleşme Yönetimi sitesi önceden doldurulmuş sayfalar, web bölümleri ve site gezintisi içerir. Site, kuruluşunuzun kendi markasını, çalışan bilgilerini, ilke ve planlama bilgilerini, iş akışını, kişileri ve kaynakları birleştirecek şekilde özelleştirilebilir.
 
-Site, belgeleri sınıflandırmak ve meta verileri ayıklamak için SharePoint belge kitaplığında çalışan bir SharePoint Syntex modelinin gücünü kullanır. Site, hızlı bir şekilde başlamanız için önceden oluşturulmuş belge kitaplıkları sağlar, ancak gerektiğinde kendi belgenizi de oluşturabilirsiniz. Site aşağıdaki öne çıkan kitaplıkları içerir:
+Site, belgeleri sınıflandırmak ve meta verileri ayıklamak için SharePoint belge kitaplığında çalışan bir Syntex modelinin gücünü kullanır. Site, hızlı bir şekilde başlamanız için önceden oluşturulmuş belge kitaplıkları sağlar, ancak gerektiğinde kendi belgenizi de oluşturabilirsiniz. Site aşağıdaki öne çıkan kitaplıkları içerir:
 
 - **Bölgeler** – Sözleşme belgelerini coğrafi alana, ülkeye veya bölgeye göre sınıflandırma.
 
@@ -42,7 +42,7 @@ Site, belgeleri sınıflandırmak ve meta verileri ayıklamak için SharePoint b
 
 - **Modeller** – Belgeleri sınıflandırmak ve meta verileri ayıklamak için bu kitaplıktaki modeli kullanın. Kullanıcılar ihtiyaçlarına uyacak şekilde kendi modellerini oluşturabilir ve bunları bu kitaplığa ekleyebilir.
 
-- **Örnek anlaşmalar kitaplığı** – Sınıflandırılmış ve meta verileri SharePoint Syntex modeli kullanılarak ayıklanmış dosyaları bulun. 
+- **Örnek sözleşme kitaplığı** – Syntex modeli kullanılarak sınıflandırılmış ve meta verileri ayıklanmış dosyaları bulun. 
 
 Kitaplıkta durum gibi diğer meta verileri izleyebileceğiniz ve belge kitaplığı biçimlendirmesini kullanarak daha görsel bir şekilde gösterebileceğiniz ayrı bir görünüm vardır.
 
@@ -53,9 +53,9 @@ Sözleşme Yönetimi sitesi [SharePoint look book hizmetinden](https://lookbook.
 ![Sözleşme Yönetimi site şablonu sağlama sayfasının ekran görüntüsü.](../media/content-understanding/contracts-management-site-provisioning-page.png)
 
 > [!NOTE]
-> Siteyi sağlamak için Microsoft 365'te genel yönetici veya SharePoint yöneticisi olmanız gerekir. Ayrıca bu site şablonunu kuruluşunuza eklemek için SharePoint Syntex lisansınız olmalıdır.
+> Siteyi sağlamak için Microsoft 365'te genel yönetici veya SharePoint yöneticisi olmanız gerekir. Ayrıca, bu site şablonunu kuruluşunuza eklemek için bir Syntex lisansına sahip olmanız gerekir.
 
-1. [SharePoint görünüm kitabının](https://lookbook.microsoft.com/) ana sayfasında, **Tasarımları görüntüle** menüsünde **sözleşme yönetimi SharePoint Syntex** >  **SharePoint Syntex** seçin.
+1. [SharePoint görünüm kitabının](https://lookbook.microsoft.com/) ana sayfasında, **Tasarımları görüntüle** menüsünde **Syntex** > **Syntex Sözleşme yönetimi'ni** seçin.
 
 2. **Sözleşme Yönetimi** sayfasında **Kiracınıza ekle'yi** seçin.
 
@@ -104,9 +104,9 @@ Sözleşme Yönetimi sitesi için site gezintisi denetimine sahipsiniz. Kuruluş
 Sözleşme Yönetimi sitesi, başlamak için ihtiyacınız olan bileşenleri içerir, ancak aşağıdakiler gibi ek bileşenler de ekleyebilirsiniz:
 
 - **Sözleşme istekleri** kitaplığına yeni bir sözleşme eklendiğinde iş akışını tetikleme amacıyla [Power Automate akışı](/power-automate/getting-started) kullanın.
-- Ek [SharePoint Syntex modelleri oluşturun](/microsoft-365/contentunderstanding/#models).
+- Ek [Syntex modelleri](/microsoft-365/contentunderstanding/#models) oluşturun.
 - **Şablonlar** kitaplığındaki [içerik derleme](content-assembly.md) özelliğini kullanın.
-- microsoft 365'in diğer bileşenleriyle birlikte SharePoint Syntex kullanarak [bir sözleşme yönetimi çözümü](solution-manage-contracts-in-microsoft-365.md) oluşturun.
+- Syntex'i Microsoft 365'in diğer bileşenleriyle birlikte kullanarak [bir sözleşme yönetimi çözümü](solution-manage-contracts-in-microsoft-365.md) oluşturun.
 
 ## <a name="share-the-site-with-others"></a>Siteyi başkalarıyla paylaşma
 
