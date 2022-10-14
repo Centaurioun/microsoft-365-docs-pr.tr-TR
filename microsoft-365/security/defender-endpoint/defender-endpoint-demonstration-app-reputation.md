@@ -18,15 +18,13 @@ ms.collection:
 - tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 6b3519fe6358de1e65d2dbb38a4dafad1757608e
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 08d3e258bbc004240d26f6683fec16e2eb332d1d
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68543013"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573493"
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # <a name="smartscreen-app-reputation-demonstration"></a>SmartScreen uygulaması saygınlığı tanıtımı
 
 Uç Nokta için Microsoft Defender SmartScreen'in Uygulama itibarına göre kimlik avı ve kötü amaçlı yazılım web sitelerini tanımlamanıza nasıl yardımcı olduğunu test edin.
@@ -73,7 +71,7 @@ Bu indirme bilinen kötü amaçlı yazılımdır; SmartScreen bu programın çal
 
   Bu bağlantının başlatılması aşağıdakine benzer bir ileti işlemelidir:
 
-  :::image type="content" source="images/smartscreen-app-reputation-known-malware.png" alt-text="SmartScreen, güvenli olmayan bir üne sahip bir dosya indirmesi algılar.; indirme engellendi.":::
+  :::image type="content" source="images/smartscreen-app-reputation-known-malware.png" alt-text="SmartScreen'in güvenli olmayan bir üne sahip bir dosya indirmesini nasıl algılayanı gösteren ekran görüntüsü.; indirme engellendi.":::
 
 ## <a name="learn-more"></a>Daha fazla bilgi
 

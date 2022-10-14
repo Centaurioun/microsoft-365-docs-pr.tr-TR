@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 08/12/2022
+ms.date: 10/13/2022
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 94a1e3646a8b10f6569d03d23becb0b683913a79
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 6a372bca6c2eb278a91aff7b9494871317f25492
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68226239"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573537"
 ---
 # <a name="protect-your-network"></a>Ağınızı koruyun
 
@@ -157,13 +157,15 @@ Komut ve Denetim sunucuları (C2) desteği bu fidye yazılımı evriminin öneml
 
 ## <a name="smartscreen-unblock"></a>SmartScreen Engellemesini Kaldır
 
-Uç Nokta için Defender göstergelerindeki yeni bir özellik, yöneticilerin son kullanıcıların bazı URL'ler ve IP'ler için oluşturulan uyarıları atlamasına olanak tanır. URL'nin neden engellendiğine bağlı olarak, bir SmartScreen bloğuyla karşılaşıldığında yöneticilere sitenin engellemesini 24 saate kadar kaldırma olanağı sunabilir. Bu gibi durumlarda, son kullanıcının tanımlı süre boyunca URL veya IP **engelini kaldırmasına** izin verecek bir Windows Güvenliği bildirim görüntülenir.  
+Uç Nokta için Defender'daki göstergelerle, yöneticiler son kullanıcıların bazı URL'ler ve IP'ler için oluşturulan uyarıları atlamasına izin verebilir. URL'nin neden engellendiğine bağlı olarak, bir SmartScreen bloğuyla karşılaşıldığında yöneticilere sitenin engellemesini 24 saate kadar kaldırma olanağı sunabilir. Bu gibi durumlarda, son kullanıcının tanımlı süre boyunca URL veya IP **engelini kaldırmasına** izin verecek bir Windows Güvenliği bildirim görüntülenir.  
 
 :::image type="content" source="images/network-protection-smart-screen-block-notification.png" alt-text="Ağ koruması için Windows Güvenliği bildirimi.":::
 
-Uç Nokta için Microsoft Defender Yöneticiler, aşağıdaki yapılandırma aracını kullanarak [Microsoft 365 Defender](https://security.microsoft.com/) SmartScreen Engellemesini Kaldırma işlevini yapılandırabilir. Microsoft 365 Defender portalından ConfigToolName yoluna gidin.
+Uç Nokta için Microsoft Defender yöneticileri IP'ler, URL'ler ve etki alanları için "izin ver" göstergesini kullanarak [Microsoft 365 Defender portalında](https://security.microsoft.com) SmartScreen Engellemesini Kaldırma işlevini yapılandırabilir. 
 
 :::image type="content" source="images/network-protection-smart-screen-block-configuration.png" alt-text="Ağ koruması SmartScreen blok yapılandırması ULR ve IP formu.":::
+
+Bkz [. IP'ler ve URL'ler/etki alanları için gösterge oluşturma](indicator-ip-domain.md).
 
 ## <a name="using-network-protection"></a>Ağ korumasını kullanma
 
@@ -172,9 +174,9 @@ Ağ koruması cihaz başına etkinleştirilir ve bu genellikle yönetim altyapı
 > [!NOTE]
 > Microsoft Defender Virüsten Koruma'nın ağ korumasını etkinleştirmek için etkin olması gerekir.
 
-Ağ korumasını **Denetim** modunda veya **Blok** modunda etkinleştirebilirsiniz. IP adreslerini veya URL'leri engellemeden önce ağ korumasını etkinleştirmenin etkisini değerlendirmek istiyorsanız, engellenecek veriler hakkında veri toplamak için bir süre denetim modunda ağ korumasını etkinleştirebilirsiniz. Son kullanıcılar ağ koruması tarafından engellenecek bir adrese veya siteye bağlandığında denetim modu günlükleri.
+Ağ korumasını **Denetim** modunda veya **Blok** modunda etkinleştirebilirsiniz. IP adreslerini veya URL'leri engellemeden önce ağ korumasını etkinleştirmenin etkisini değerlendirmek istiyorsanız, ağ korumasını denetim modunda etkinleştirerek engellenecek veriler hakkında veri toplayabilirsiniz. Son kullanıcılar ağ koruması tarafından engellenecek bir adrese veya siteye bağlandığında denetim modu günlükleri.
 
-Linux ve macOS için ağ koruması hakkında bilgi için bkz. [Linux için ağ koruması](network-protection-linux.md) ve [MacOS için Ağ koruması](network-protection-macos.md).
+Linux ve macOS için ağ koruması hakkında bilgi için bkz. [Linux için ağ koruması](network-protection-linux.md) ve [macOS için ağ koruması](network-protection-macos.md).
 
 ## <a name="advanced-hunting"></a>Gelişmiş avcılık örneği
 
@@ -342,4 +344,4 @@ Ağ koruması artık Blok modunun SmartScreen tarafından doğrulandıktan ve iz
 - [Ağ korumasını etkinleştirme](enable-network-protection.md) | Ağınızda ağ korumasını etkinleştirmek ve yönetmek için grup ilkesi, PowerShell veya MDM CSP'lerini kullanın.
 - [Microsoft Intune'de saldırı yüzeyi azaltma özelliklerini yapılandırma](/mem/intune/protect/endpoint-security-asr-policy)
 - [Linux | için ağ koruması](network-protection-linux.md) Linux cihazları için Microsoft Ağ koruması kullanma hakkında bilgi edinmek için.
-- [MacOS | için ağ koruması](network-protection-macos.md) MacOS için Microsoft Ağ koruması hakkında daha fazla bilgi edinmek için
+- [macOS | için ağ koruması](network-protection-macos.md) macOS için Microsoft Ağ koruması hakkında daha fazla bilgi edinmek için
