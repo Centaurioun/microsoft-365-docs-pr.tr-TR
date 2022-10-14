@@ -11,16 +11,19 @@ ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: İleti merkezi gönderileri için uyumluluk meta verilerine genel bakış alma
-ms.openlocfilehash: 93259a813990bf106dc91729f042f5a10b727599
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 1205c5429427741f6383fd48205730db1ccbfc98
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68566456"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573955"
 ---
 # <a name="conformance-metadata-for-message-center-posts"></a>İleti Merkezi gönderileri için uyumluluk meta verileri
 
-Yeni özellikleri veya hizmet dağıtımlarını planlarken, sektörünüzün, bölgenizin ve ülkenizin uyumluluğu için değişiklikleri anlamanız ve değerlendirmeniz gerekir. Yeni veya değişen bir özellik hakkında yeterli uyumluluk bilgisi yoksa, özellik hakkında kendi araştırmanızı yürütmeniz veya sorularla Uyumluluk Programı'na ulaşmanız gerekmesi hakkında geri bildiriminizi aldık.  
+> [!IMPORTANT]
+> Bu özel belge yalnızca Değişiklik Yönetimi: Uyumluluk meta verileri kullanıcıları içindir. Bu belgeyi doğrudan pilota dahil olanların dışında paylaşmayın.
+
+Yeni özellikleri veya hizmet dağıtımlarını planlarken, sektörünüze, bölgenize ve ülkenize uygunluk için değişiklikleri anlamak ve değerlendirmek istiyorsunuz. Yeni veya değişen bir özellik hakkında uyumluluk bilgileri yetersiz olduğunda geri bildiriminizi aldık. Bu özellik hakkında kendi araştırmanızı gerçekleştirmeniz veya sorularla Uyumluluk Programı'na ulaşmanız gerekir.  
 
 Bu pilot programda, yeni ve güncelleştirilmiş Microsoft 365 özellikleri ve hizmetleri için proaktif olarak meta veriler sağlamak istiyoruz. Hedefimiz, uyumluluk gereksinimlerinizi verimli bir şekilde değerlendirmenize yardımcı olmak ve benimseme ve değişiklik yönetimi kararları konusunda size yardımcı olmaktır.  
 
