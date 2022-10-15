@@ -18,25 +18,23 @@ ms.collection:
 - tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: feecc22cdeaa64be65c7570e3a89b087c77195a7
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 5e8f971a02ec0ec019d239460f32d4eb7ae289a5
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68543255"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573625"
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # <a name="cloud-delivered-protection-demonstration"></a>Bulut tabanlı koruma tanıtımı
 
 Microsoft Gelişmiş Koruma Hizmeti (MAPS) olarak da adlandırılan Microsoft Defender Virüsten Koruma için bulut tabanlı koruma, standart gerçek zamanlı korumamıza ek olarak güçlü ve hızlı koruma sağlar.
 
 ## <a name="scenario-requirements-and-setup"></a>Senaryo gereksinimleri ve kurulumu
 
-- Windows 7, Windows 8.1 & Windows 10
+- Windows 7, Windows 8.1, Windows 10 Windows 11
 - Microsoft Defender Gerçek zamanlı koruma etkinleştirildi
 - Bulut tabanlı koruma varsayılan olarak etkindir, ancak önceki kuruluş ilkelerinin bir parçası olarak devre dışı bırakıldıysa yeniden etkinleştirmeniz gerekebilir. Daha fazla bilgi için bkz[. Microsoft Defender Virüsten Koruma'da bulut tabanlı korumayı etkinleştirme](/windows/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus?ocid=wd-av-demo-cloud-middle).
-- Ayrıca bu ayarı ve diğer ayarları Windows 10 etkinleştirmek için [PowerShell betiğini](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/) indirip kullanabilirsiniz.
+- Ayrıca bu ayarı ve diğer ayarları Windows 10 ve Windows 11 etkinleştirmek için [PowerShell betiğini](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/) indirip kullanabilirsiniz.
 
 ### <a name="scenario"></a>Senaryo
 
@@ -59,7 +57,6 @@ Microsoft Gelişmiş Koruma Hizmeti (MAPS) olarak da adlandırılan Microsoft De
    :::image type="content" source="images/cloud-delivered-protection-smartscreen-threat-found-notification.png" alt-text="Microsoft Defender Virüsten Koruma Tehditleri bulundu bildirimi, ayrıntıları almak için seçenekler sağlar":::
 
 5. Dosya yürütülürse veya Microsoft Defender SmartScreen tarafından engellendiğini görürseniz bulut tabanlı koruma çalışmaz. Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma için ağ bağlantılarını yapılandırma ve doğrulama](/windows/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus?ocid=wd-av-demo-cloud-middle).
-
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

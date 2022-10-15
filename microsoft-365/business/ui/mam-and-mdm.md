@@ -24,22 +24,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Mobil cihaz yönetimi ile mobil uygulama yönetimi veya MDM ile MAM arasındaki farkları öğrenin.
-ms.openlocfilehash: 5e47b7d69e65605b9615543ffdc0a6b787cdec35
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 68d8214dfc2356f78fb1ac7fc68852550d874a91
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68169661"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573603"
 ---
 # <a name="difference-between-mdm-and-mam"></a>MDM ile MAM arasındaki fark
 
-Microsoft 365 İş Ekstra, iş verilerinizi korumanız için çeşitli yollar sunar. Otomatik olarak ayarlanan çeşitli korumalar ve işinizi daha fazla korumak için kendinizi nasıl ayarlayabileceğiniz hakkında daha fazla bilgi için bkz. [Microsoft 365 İş Ekstra genel bakış](../../admin/admin-overview/what-is-microsoft-365.md). Windows 10 cihazlarınızı ve mobil cihazlarınızdaki verileri koruyan ilkeler de ayarlayabilirsiniz.
-[Windows 10 cihazlar için uygulama koruma ayarlarını yapın](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md).
+Microsoft 365 İş Ekstra, iş verilerinizi korumanız için çeşitli yollar sunar. Otomatik olarak ayarlanan çeşitli korumalar ve işinizi daha fazla korumak için kendinizi nasıl ayarlayabileceğiniz hakkında daha fazla bilgi için bkz. [Microsoft 365 İş Ekstra genel bakış](../../admin/admin-overview/what-is-microsoft-365.md). Ayrıca, Windows cihazlarınızı ve mobil cihazlarınızdaki verileri korumak için cihazları İş için Microsoft Defender olarak ekleyebilirsiniz. Daha fazla bilgi için bkz[. Kayıtlı cihazları İş için Microsoft Defender ekleme](/microsoft-365/business-premium/m365bp-onboard-devices-mdb). 
 
 ## <a name="mobile-device-management-or-mdm"></a>Mobil cihaz yönetimi veya MDM
 
-Microsoft 365 İş Ekstra, Windows 10 cihazlarınızdaki verileri koruyan ilkeler ayarlamanıza olanak tanır. Bir cihaz mobil cihaz yönetimi altındayken, cihazın tamamını denetlersiniz ve bu cihazdan verileri silebilir ve ayrıca fabrika ayarlarına sıfırlayabilirsiniz. Daha fazla bilgi için bkz. [Windows 10 bilgisayarlar için cihaz koruma ayarlarını ayarlama](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md).
+Microsoft 365 İş Ekstra, Windows 10 ve 11 cihazlarınızdaki verileri koruyan ilkeler ayarlamanıza olanak tanır. Bir cihaz mobil cihaz yönetimi altındayken, cihazın tamamını denetlersiniz ve bu cihazdan verileri silebilir ve ayrıca fabrika ayarlarına sıfırlayabilirsiniz. Daha fazla bilgi için bkz. [Size uygun cihaz yönetimi çözümünü seçme](/mem/intune/fundamentals/what-is-device-management#choose-the-device-management-solution-thats-right-for-you) ve [Yönetilen cihazları ayarlama ve güvenli hale ayarlama](/microsoft-365/business-premium/m365bp-protect-devices).
 
 ## <a name="mobile-application-management-or-mam"></a>Mobil uygulama yönetimi veya MAM
 
-Mobil uygulama yönetimi, kullanıcılarınızın iPhone ve Android gibi kişisel cihazlarında ve kişisel Win 10 bilgisayarlarında iş verilerinizi denetlemenize olanak tanır. Kullanıcılarınızın iş verilerini Office uygulamalarından kişisel uygulamalarına kopyalamasını önlemek için uygulama yönetimi ilkelerini kullanabilirsiniz. Ayrıca, kişisel cihazlarında Office uygulamalarından tüm verileri kaldırabilirsiniz. Daha fazla bilgi için bkz. [Android veya iOS cihazları için uygulama koruma ayarlarını ayarlama](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md) ve [Windows 10 cihazlar için uygulama koruma ayarlarını ayarlama](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md).
+Mobil uygulama yönetimi, kullanıcılarınızın iPhone ve Android gibi kişisel cihazlarında ve kişisel Windows bilgisayarlarında iş verilerinizi denetlemenize olanak tanır. Kullanıcılarınızın iş verilerini Office uygulamalarından kişisel uygulamalarına kopyalamasını önlemek için uygulama yönetimi ilkelerini kullanabilirsiniz. Ayrıca, kişisel cihazlarında Office uygulamalarından tüm verileri kaldırabilirsiniz. Daha fazla bilgi için bkz. [Size uygun cihaz yönetimi çözümünü seçme](/mem/intune/fundamentals/what-is-device-management#choose-the-device-management-solution-thats-right-for-you) ve [Yönetilen cihazları ayarlama ve güvenli hale ayarlama](/microsoft-365/business-premium/m365bp-protect-devices).

@@ -21,12 +21,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Kuruluş bilgilerinizi koruyan cihaz ilkeleri oluşturmak için Temel Mobilite ve Güvenlik'i kullanın.
-ms.openlocfilehash: 5557f6c0d26d1870860b63f7236295ddd39e1171
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 2a6124992f9126cd69dad4a8fcb5a1a84f8c39c6
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68172015"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573735"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Basic Mobility ve Security'de cihaz güvenlik ilkeleri oluşturma
 
@@ -125,13 +125,13 @@ Kullanıcı cihazlarına bir ilke uyguladığınızda, her cihaz üzerindeki etk
 |**Güvenlik İlkesi**|**Android**|**Samsung KNOX**|**iOS**|**Notlar**|
 |:-----|:-----|:-----|:-----|:-----|
 |Şifrelenmiş yedekleme gerektir|Hayır|Evet|Evet|iOS şifreli yedekleme gereklidir.|
-|Bulut yedeklemesini engelleme|Evet|Evet|Evet|Android'de Google yedeklemesini (gri), iOS'ta bulut yedeklemesini engelleyin.|
-|Belge eşitlemesini engelle|Hayır|Hayır|Evet|iOS: Buluttaki belgeleri engelleyin.|
+|Bulut yedeklemesini engelleme|Evet|Evet|Evet|Android'de Google yedeklemesini (gri), denetimli iOS'ta bulut yedeklemesini engelleyin.|
+|Belge eşitlemesini engelle|Hayır|Hayır|Evet|iOS: Denetimli iOS cihazlarında buluttaki belgeleri engelleyin.|
 |Fotoğraf eşitlemeyi engelle |Hayır|Hayır|Evet|iOS (yerel): Fotoğraf Akışını engelle.|
 |Ekran yakalamayı engelle |Hayır|Evet|Evet|Denendiğinde engellendi.|
-|Görüntülü konferansı engelle |Hayır|Hayır|Evet|FaceTime, Skype'ta veya diğerlerinde değil iOS'ta engellendi.|
+|Görüntülü konferansı engelle |Hayır|Hayır|Evet|FaceTime, Skype veya diğer cihazlarda değil denetimli iOS cihazlarında engellenir.|
 |Tanılama verilerinin gönderilmesini engelleme |Hayır|Evet|Evet|Android'de Google kilitlenme raporu göndermeyi engelle.|
-|Uygulama mağazasına erişimi engelleme |Hayır|Evet|Evet|Android giriş sayfasında App Store simgesi eksik, Windows'ta devre dışı, iOS'ta eksik.|
+|Uygulama mağazasına erişimi engelleme |Hayır|Evet|Evet|Android giriş sayfasında app store simgesi eksik, Windows'ta devre dışı ve denetimli iOS cihazları.|
 |Uygulama mağazası için parola iste |Hayır|Hayır|Evet|iOS: iTunes satın alma işlemleri için parola gereklidir.|
 |Çıkarılabilir depolama birimine bağlantıyı engelle |Hayır|Evet|Yok|Android: SD kart ayarlarda gri görünüyor, Windows kullanıcıya bildirir, yüklü uygulamalar kullanılamaz|
 |Bluetooth bağlantısını engelle |Notlara bakın|Notlara bakın|Evet|Android'de bir ayar olarak BlueTooth'u devre dışı bırakamıyoruz. Bunun yerine BlueTooth gerektiren tüm işlemleri devre dışı bırakıyoruz: Gelişmiş Ses Dağıtımı, Ses/Video Uzaktan Kumanda, tutmadan kullanımlı cihazlar, kulaklık, Telefon Rehberi Erişimi ve Seri Bağlantı Noktası. Bunlardan herhangi biri kullanıldığında sayfanın en altında küçük bir bildirim iletisi görüntülenir.|

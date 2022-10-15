@@ -15,14 +15,14 @@ ms.collection:
 - m365-security
 - m365initiative-defender-office365
 ms.custom: ''
-description: Office 365 için Microsoft Defender E5, P1 ve P2 müşterileri artık e-posta varlık sayfasıyla her e-postanın 360 derecelik görünümünü alabilir.
+description: Office 365 için Microsoft Defender E5, P1 ve P2 müşterileri Explorer'da (Tehdit Gezgini) kopyalama, Algılama ayrıntıları, Algılanan tehdit, En son ve Özgün teslim konumları, Teslim eylemleri ve Ağ İletisi Kimliği gibi kimlikler gibi e-posta ayrıntılarını görebilir.
 search.appverid: met150
-ms.openlocfilehash: 1ba5117de0b87d4d151733c7869110d3b93b3a43
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 2cf260b477a5e10e3502cd381e625e0024bc034f
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68082691"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573909"
 ---
 # <a name="the-email-entity-page"></a>E-posta varlığı sayfası
 
@@ -40,20 +40,25 @@ ms.locfileid: "68082691"
 
 Office 365 için Microsoft Defender E5 ve Office P1 ve P2 için Defender yöneticileri, **Email varlık sayfasını** kullanarak e-postanın 360 derecelik bir görünümüne sahiptir. Bu e-postaya gitme sayfası [, Tehdit Gezgini 'e-posta ayrıntıları' açılır](threat-explorer-views.md) penceresinde sunulan bilgileri geliştirmek için oluşturulmuştur.
 
-## <a name="reach-the-email-entity-page"></a>E-posta varlığı sayfasına ulaşma
+*Kopyalama seçeneği,* Algılama ayrıntıları, Algılanan tehdit, En son ve Özgün teslim konumları, Teslim eylemleri ve Ağ İleti Kimliği gibi kimlikler gibi e-posta üst bilgileri de dahil olmak üzere Gezgin/Tehdit Gezgini'nde e-posta ayrıntılarına bakın.
 
-E-posta varlığı sayfası, Email & **işbirliği** \> **Gezgini'ndeki** Microsoft 365 Defender portalında <https://security.microsoft.com> bulunabilir. Veya doğrudan **Gezgin** sayfasına gitmek için kullanın <https://security.microsoft.com/threatexplorer>.
+## <a name="how-to-get-to-the-email-entity-page"></a>E-posta varlık sayfasına gitme
 
-**Gezgin'de**, araştırdığınız e-postanın konusunu seçin. Bu posta için açılan e-postanın üst kısmında altın renkli bir çubuk görüntülenir. Yeni sayfaya gönderilen bu davette "Zenginleştirilmiş verilerle yeni e-posta varlığı sayfamızı deneyin..." ifadesi yer alır. Yeni sayfayı görüntülemek için öğesini seçin.
+adresinden Microsoft 365 Defender portalına <https://security.microsoft.com>**Email & işbirliği** \> **Gezgini'ne** gidin. Veya doğrudan **Gezgin** sayfasına gitmek için kullanın <https://security.microsoft.com/threatexplorer>.
 
-:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="Yeni deneyime gitmek için *Zenginleştirilmiş verilerle yeni e-posta varlık sayfamızı deneyin* sözcüklerini içeren altın renkli başlık" lightbox="../../media/email-entities-1-navigation-to-ee.png":::
+1. **Gezgin'de**, araştırdığınız e-postanın konusunu seçin.
+1. Bu posta için e-posta açılır öğe açılır.
+1. **E-posta varlığını aç** seçeneğini görürsünüz.
+1. E-postanıza ayrıntılı bakış için seçin.
+
+:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="E-posta seçili durumdayken ayrıntıları içeren bir açılır sayfa ve üst kısımdaki e-posta için Varlığı aç sayfası açılır." lightbox="../../media/email-entities-1-navigation-to-ee.png":::
 
 :::image type="content" source="../../media/email-entities-2-eep.png" alt-text="Göreceğiniz başlıklara odaklanan e-posta varlığı sayfasının grafiği" lightbox="../../media/email-entities-2-eep.png":::
 
 > [!NOTE]
 > Bu sayfayı görüntülemek ve kullanmak için gereken izinler **, Gezgin'i** görüntülemek için gereken izinlerle aynıdır. Yöneticinin Genel yönetici veya genel okuyucu ya da Güvenlik yöneticisi ya da Güvenlik Okuyucusu üyesi olması gerekir. Daha fazla bilgi için bkz. [Microsoft 365 Defender portalında İzinler](permissions-microsoft-365-security-center.md).
 
-## <a name="read-the-email-entity-page"></a>E-posta varlık sayfasını okuma
+## <a name="how-to-read-the-email-entity-page"></a>E-posta varlığı sayfasını okuma
 
 Yapı, bir bakışta okunması ve gezinmesi kolay olacak şekilde tasarlanmıştır. Sayfanın üst kısmındaki çeşitli sekmeler, daha ayrıntılı araştırma yapmanızı sağlar. Düzen şu şekilde çalışır:
 
@@ -69,7 +74,7 @@ Yapı, bir bakışta okunması ve gezinmesi kolay olacak şekilde tasarlanmışt
 
     :::image type="content" source="../../media/email-entities-4-middle-panel.png" alt-text="E-posta üst bilgisini ve kimlik doğrulama durumunu içeren sayfanın ana paneli" lightbox="../../media/email-entities-4-middle-panel.png":::
 
-### <a name="use-email-entity-page-tabs"></a>E-posta varlığı sayfa sekmelerini kullanma
+### <a name="how-to-use-the-email-entity-page-tabs"></a>E-posta varlığı sayfa sekmelerini kullanma
 
 Varlık sayfasının üst kısmındaki sekmeler, e-postayı verimli bir şekilde araştırmanıza olanak sağlar.
 
@@ -79,9 +84,9 @@ Varlık sayfasının üst kısmındaki sekmeler, e-postayı verimli bir şekilde
 4. **URL'ler**: Bu sekme, e-postada bulunan URL'leri ve URL'lerle ilgili diğer ayrıntıları listeler. URL sayısı şu anda 10 ile sınırlıdır, ancak önce *kötü amaçlı URL'lerin* gösterilmesi için bu 10'un önceliği belirlenmiştir. Öncelik belirleme size zaman ve tahmin çalışması kazandırır. Kötü amaçlı olduğu ve patlatıldığı belirlenen URL'ler de burada gösterilir.
 5. **Benzer e-postalar**: Bu sekmede, bu e-postaya özgü *ağ ileti kimliği + alıcı* bileşimine benzer tüm e-postalar listelenir. Benzerlik yalnızca *iletinin gövdesini* temel alır. Postaları 'benzer' olarak kategorilere ayırmak için yapılan *belirlemeler ekleri* dikkate almaz.
 
-## <a name="new-to-the-email-entity-page"></a>E-posta varlığı sayfasında yeni
+## <a name="available-on-the-email-entity-page"></a>E-posta varlığı sayfasında kullanılabilir
 
-Bu e-posta varlık sayfasıyla birlikte gelen yeni özellikler vardır. Liste burada.
+Başlamak için bazı yararlı özellikleri aşağıda bulabilirsiniz.
 
 ### <a name="email-preview-for-cloud-mailboxes"></a>Bulut posta kutuları için Email önizlemesi
 
@@ -110,7 +115,7 @@ Kullanıcılar, e-postalarında bulunan ve belirli bir kiracı için patlatılan
 
 :::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="*Derin Analiz* başlığı altında zinciri, özeti, patlama ayrıntılarını ve ekran görüntüsünü gösteren patlama özeti" lightbox="../../media/email-entities-6-detonation-page.png":::
 
-### <a name="other-innovations"></a>Diğer yenilikler
+### <a name="other-features-that-make-the-email-entity-page-helpful"></a>Email varlık sayfasını yararlı hale getiren diğer özellikler
 
 *Etiketler*: Bunlar kullanıcılara uygulanan etiketlerdir. Kullanıcı alıcıysa, yöneticiler bir *alıcı* etiketi görür. Benzer şekilde, kullanıcı bir gönderense, *gönderen* etiketidir. Bu, e-posta varlıkları sayfasının sol tarafında görünür ( *yapışkan* olarak tanımlanan ve bu nedenle sayfaya tutturulmuş kısımda).
 
@@ -167,7 +172,8 @@ Kullanıcılar, e-postalarında bulunan ve belirli bir kiracı için patlatılan
   - Yok: DNS'de gönderen etki alanı için DMARC TXT kaydı olmadığını gösterir.
 
 *Bileşik Kimlik Doğrulaması*: Bu, Microsoft 365 tarafından iletinin orijinal olup olmadığını belirlemek üzere SPF, DKIM ve DMARC gibi e-posta kimlik doğrulamasını birleştirmek için kullanılan bir değerdir. Değerlendirmenin temeli olarak postanın *Kimden:* etki alanını kullanır.
-## <a name="actions-into-email-entity-page"></a>Email varlık Sayfasına yönelik eylemler
+
+## <a name="actions-you-can-take-on-the-email-entity-page"></a>Email varlık Sayfasında gerçekleştirebileceğiniz eylemler
 
 Güvenlik ekipleri artık geçici silme ve sabit silme gibi e-posta eylemleri gerçekleştirebilir, gereksiz öğeye geçebilir, gelen kutusuna geçebilir, araştırma başlatabilir, gözden geçirme için Microsoft'a gönderebilir ve diğer işlemleri gerçekleştirebilir. Dosya ve URL veya gönderen gibi **kiracı düzeyinde blok** eylemleri de Email varlık sayfasından tetiklenebilir.  
 
@@ -182,7 +188,7 @@ Ayrıca kiracı düzeyi blok URL'sini ve ekini ilgili Email varlık URL'si ve Ek
 Bu eylemleri yapmak için gereken [izinlere](permissions-microsoft-365-security-center.md) bakın. 
 
  
-### <a name="email-summary-panel"></a>Email özet paneli
+### <a name="the-email-summary-panel"></a>Email özet paneli
 
 E-posta özeti paneli, tam e-posta varlık sayfasının özetlenmiş bir görünümüdür. E-postayla ilgili standartlaştırılmış ayrıntıları (örneğin, algılamalar) ve bağlama özgü bilgileri (örneğin, Karantinaya Alma veya Gönderimler meta verileri) içerir. E-posta özeti paneli geleneksel Gerçek Zamanlı Algılamalar, Tehdit Gezgini, Gönderimler ve Raporlama açılır bileşenlerinin yerini alır.
 

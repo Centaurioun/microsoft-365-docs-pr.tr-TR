@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 10c1f0aff03fb302cc12cae78cf003d2f337a01a
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 452eb4d826ddedddc31bffa25edfcbc8b88526f1
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68234565"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68574109"
 ---
 # <a name="known-issues-team-shifts-connector-for-ukg-dimensions"></a>Bilinen sorunlar: UKG Boyutları için Ekip Vardiyaları bağlayıcısı
 
@@ -45,6 +45,16 @@ Bu sorunu geçici olarak çözmek için saat dilimi ayarını olduğu gibi tutun
 
 UkG Dimensions ile tümleştirmede zaman saati özelliğinin başlangıç ve bitiş sonu özelliği desteklenmez. Düğmeler Vardiyalar'da görüntülense bile kullanıcılar çıkış yapamaz veya molaya giriş yapamaz.
 
+## <a name="availability-settings-of-users-dont-apply-to-the-current-week"></a>Kullanıcıların kullanılabilirlik ayarları geçerli hafta için geçerli değildir
+
+Teams mobil kullanıcıları Vardiyalar'da kişisel uygunluklarını ayarlayabilir. Ancak, bir kullanıcı UKG Dimensions'ta haftanın başlangıcı olarak belirlenen günden sonra uygunluk durumunu ayarlarsa, uygunluk durumu geçerli hafta için değil sonraki hafta için geçerlidir. Örneğin, Pazar günü UKG Dimensions'ta haftanın başlangıcı olarak ayarlanır ve geçerli haftanın Pazartesi günü bir kullanıcı, Perşembe ve Cuma için uygunluk durumunu değiştirir. Bu senaryoda, kullanılabilirlik ayarları sonraki haftaya uygulanır.
+
+## <a name="users-see-a-red-x-when-a-coworker-accepts-their-swap-request-and-the-manager-declines-the-request"></a>Bir iş arkadaşı değiştirme isteğini kabul ettiğinde ve yönetici isteği reddettidiğinde kullanıcılar kırmızı bir "X" görür
+
+Şu anda bir kullanıcı bir iş arkadaşı ile değiştirme isteği oluşturursa ve iş arkadaşı isteği kabul ederse ancak yönetici bunu reddederse, kullanıcı beklenmedik bir şekilde hem iş arkadaşı hem de yöneticinin yanıtının yanında kırmızı bir "X" görür.
+
+Doğru, beklenen davranış, iş arkadaşı tarafından isteği kabul ettiğini belirten yeşil bir onay işareti ve yöneticinin isteği reddettiği anlamına gelen kırmızı bir "X" işaretidir.
+
 ## <a name="a-user-cant-perform-some-actions-in-shifts-in-the-teams-web-app-after-signing-in-with-a-different-account"></a>Kullanıcı, farklı bir hesapla oturum açtıktan sonra Teams web uygulamasındaKi Vardiyalar'da bazı eylemleri gerçekleştiremez
 
 Teams'de birden çok hesabı olan bir kullanıcı, UkG Boyutları'nda çoklu oturum açma (SSO) gerektiren ve aynı tarayıcıdaki Teams web uygulamasındaki hesapları değiştiren eylemleri Vardiyalar'da gerçekleştirirse bu sorun oluşabilir.
@@ -53,7 +63,7 @@ Teams'de birden çok hesabı olan bir kullanıcı, UkG Boyutları'nda çoklu otu
 
 Bu senaryoda, kullanıcının bir hesapta Teams ve Vardiyalar'da oturum açtığı, diğer hesaptaki UKG Dimensions'ta oturum açtığı bir önbelleğe alma sorunu oluşur.
 
-Bu sorunu geçici olarak çözmek için aşağıdakilerden birini yapın:
+Bu sorunu geçici olarak çözmek için aşağıdaki eylemlerden birini yapın:
 
 - Tarayıcıdaki mykronos.com sitesi için tanımlama bilgilerini ve site verilerini temizleyin. Daha fazla bilgi için bkz. [Microsoft Edge'de tanımlama bilgilerini silme](https://support.microsoft.com/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09) veya [Chrome'da tanımlama bilgilerini temizleme, etkinleştirme ve yönetme](https://support.google.com/chrome/answer/95647).
 - Teams web uygulamasını Microsoft Edge'deki bir InPrivate penceresinde veya Google Chrome'da Gizli modda kullanın.

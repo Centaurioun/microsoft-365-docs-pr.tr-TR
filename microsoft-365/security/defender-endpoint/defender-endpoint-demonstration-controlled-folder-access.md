@@ -18,15 +18,13 @@ ms.collection:
 - tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 64cf18c8cf307259fc01be5e8d67048585bcbbf6
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 525955cff6ed0b4463d8135e8f20dfd2b2785a66
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68542991"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573230"
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # <a name="controlled-folder-access-cfa-demonstrations-block-ransomware"></a>Denetimli klasör erişimi (CFA) tanıtımları (fidye yazılımını engelle)
 
 Denetimli Klasör Erişimi değerli verileri fidye yazılımı gibi kötü amaçlı uygulamalardan ve tehditlerden korumanıza yardımcı olur. Tüm uygulamalar (.exe, .scr, .dll dosyaları ve diğerleri dahil olmak üzere tüm yürütülebilir dosyalar) Microsoft Defender Virüsten Koruma tarafından değerlendirilir ve bu da uygulamanın kötü amaçlı veya güvenli olup olmadığını belirler. Uygulamanın kötü amaçlı veya şüpheli olduğu belirlenirse, korunan herhangi bir klasördeki dosyalarda değişiklik yapmasına izin verilmez.
@@ -38,26 +36,41 @@ Denetimli Klasör Erişimi değerli verileri fidye yazılımı gibi kötü amaç
 
 ## <a name="powershell-commands"></a>PowerShell komutları
 
-- Set-MpPreference -EnableControlledFolderAccess (Durum)
-- Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
+```powershell
+Set-MpPreference -EnableControlledFolderAccess (State)
+```
 
-Devletleri
-- Etkin = Blok modu (1)
-- AuditMode = Denetim Modu (2)
-- Devre Dışı = Kapalı (0)
+```powershell
+Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
+```
+
+## <a name="rule-states"></a>Kural durumları
+
+|Durum | Mod| Sayısal değer |
+|:---|:---|:---|
+| AuditMode | = Denetim Modu | 2 |
+| Etkin | = Blok modu | 1 |
+| Devre dışı | = Kapalı | 0 |
 
 ## <a name="verify-configuration"></a>Yapılandırmayı doğrulama
 
+```powershell
 Get-MpPreference
+```
 
 ## <a name="test-file"></a>Test dosyası
+
 [CFA fidye yazılımı test dosyası](https://demo.wd.microsoft.com/Content/ransomware_testfile_unsigned.exe)
 
 ## <a name="scenarios"></a>Senaryo
 
 ### <a name="setup"></a>Kurulum
 
-Bu [kurulum betiğini](https://demo.wd.microsoft.com/Content/CFA_SetupScript.zip) indirip çalıştırın. Bu PowerShell komutunu kullanarak betik kümesi yürütme ilkesini Sınırsız olarak çalıştırmadan önce: Set-ExecutionPolicy Sınırsız
+Bu [kurulum betiğini](https://demo.wd.microsoft.com/Content/CFA_SetupScript.zip) indirip çalıştırın. Bu PowerShell komutunu kullanarak betik kümesi yürütme ilkesini Sınırsız olarak çalıştırmadan önce: 
+
+```powershell
+Set-ExecutionPolicy Unrestricted
+```
 
 Bunun yerine şu el ile adımları gerçekleştirebilirsiniz:
 
@@ -67,18 +80,33 @@ Bunun yerine şu el ile adımları gerçekleştirebilirsiniz:
 
 ### <a name="scenario-1-cfa-blocks-ransomware-test-file"></a>Senaryo 1: CFA fidye yazılımı test dosyasını engelliyor
 
-1. PowerShell komutunu kullanarak CFA'yı açın: Set-MpPreference -EnableControlledFolderAccess Etkin
-2. PowerShell komutunu kullanarak tanıtım klasörünü korumalı klasörler listesine ekleyin: Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
+1. PowerShell komutunu kullanarak CFA'ı açın: 
+  
+```powershell
+Set-MpPreference -EnableControlledFolderAccess Enabled
+```
+
+2. PowerShell komutunu kullanarak tanıtım klasörünü korumalı klasörler listesine ekleyin:
+
+```powershell
+Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
+```
+
 3. Fidye yazılımı [test dosyasını](https://demo.wd.microsoft.com/Content/ransomware_testfile_unsigned.exe) indirin
 4. Fidye yazılımı test dosyasını yürüt *bu fidye yazılımı değildir, basit c:\demo şifrelemeye çalışır
 
 #### <a name="scenario-1-expected-results"></a>Senaryo 1 beklenen sonuçlar
 
-Fidye yazılımı test dosyasını yürütürken 5 saniye sonra CFA tarafından engellenen bir bildirim görmeniz gerekir
+Fidye yazılımı test dosyasını yürütürken 5 saniye sonra CFA'nın şifreleme girişimini engellediğini belirten bir bildirim görmeniz gerekir.
 
 ### <a name="scenario-2-what-would-happen-without-cfa"></a>Senaryo 2: CFA olmadan ne olur?
 
-1. Bu PowerShell komutunu kullanarak CFA'yı kapatın: Set-MpPreference -EnableControlledFolderAccess Devre Dışı
+1. Bu PowerShell komutunu kullanarak CFA'ı kapatın: 
+
+```powershell
+Set-MpPreference -EnableControlledFolderAccess Disabled
+```
+
 2. Fidye yazılımı [test dosyasını](https://demo.wd.microsoft.com/Content/ransomware_testfile_unsigned.exe) yürütme
 
 #### <a name="scenario-2-expected-results"></a>Senaryo 2 beklenen sonuçlar
@@ -90,8 +118,11 @@ Fidye yazılımı test dosyasını yürütürken 5 saniye sonra CFA tarafından 
 
 Bu [temizleme betiğini](https://demo.wd.microsoft.com/Content/ASR_CFA_CleanupScript.zip) indirin ve çalıştırın. Bunun yerine şu el ile adımları gerçekleştirebilirsiniz:
 
-- Set-MpPreference -EnableControlledFolderAccess Devre Dışı
-- Temizleme c:\demo [şifrelemesi şifreleme/şifre çözme dosyasını](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe) çalıştırın
+```powershell
+Set-MpPreference -EnableControlledFolderAccess Disabled
+```
+
+Temizleme c:\demo [şifrelemesi şifreleme/şifre çözme dosyasını](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe) çalıştırın
 
 ## <a name="see-also"></a>Ayrıca bkz.
 [Denetimli klasör erişimi](/windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard?ocid=wd-av-demo-cfa-bottom)
