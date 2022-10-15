@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: a26b31caeb695718b3a7c747265615490fc92321
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 1fe5cc67fe2d07dd18111fb2e866158328591028
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564224"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573713"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac'te Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -48,7 +48,7 @@ Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkınd
 
 **Yenilikler**
 
-- Engelleme modundaki Mac TP kapatmada cihazın kilitlenmesine/ yeniden başlatmada kilitlenmesine neden oluyor
+- Hata düzeltmesi - Engelleme modundaki Mac TP, cihazın kapatma sırasında kilitlenmesine/yeniden başlatma sırasında kilitlenmesine neden oluyor
 - İsteğe bağlı tarama geçmişini görüntülemek için mdatp komut satırı anahtarı ekleme
 - MacOs'ta Cihaz Sahibinin Performansını Geliştirme
 - macOS Ventura için hazır (13.0)

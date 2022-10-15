@@ -18,22 +18,20 @@ ms.collection:
 - tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 772600ddb31b5819718a23e340b832dde18ced6e
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: c89d259225f4820bb24d7ccfbe0f60d1cbedff55
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68543233"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573274"
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # <a name="attack-surface-reduction-rules-demonstrations"></a>Saldırı yüzeyi azaltma kuralları tanıtımları
 
 Saldırı Yüzeyi Azaltma (ASR) kuralları, genellikle kötü amaçlı yazılımlar ve kötü amaçlı uygulamalar tarafından makinelere bulaşmak için kullanılan belirli davranışları hedefler, örneğin:
 
 - Dosyaları indirmeye veya çalıştırmaya çalışan Office uygulamalarında veya web postasında kullanılan yürütülebilir dosyalar ve betikler
 - Karartılmış veya başka bir şekilde şüpheli olan betikler
-- Uygulamaların gerçekleştirdiği ve normal gündelik çalışma sırasında adsız davranışlar
+- Uygulamaların gerçekleştirdiği ve normal gündelik iş sırasında başlatılmamış davranışlar
 
 ## <a name="scenario-requirements-and-setup"></a>Senaryo gereksinimleri ve kurulumu
 
@@ -60,14 +58,21 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids 01443614-CD74-433A-B99E-2ECDC0
 Add-MpPreference -AttackSurfaceReductionRules_Ids 26190899-1602-49E8-8B27-EB1D0A1CE869 -AttackSurfaceReductionRules_Actions AuditMode
 Add-MpPreference -AttackSurfaceReductionRules_Ids 7674BA52-37EB-4A4F-A9A1-F0F9A1619A2C -AttackSurfaceReductionRules_Actions AuditMode
 ```
-### <a name="states"></a>Devletleri
-- Etkin = Blok modu (1)
-- AuditMode = Denetim Modu (2)
-- Devre Dışı = Kapalı (0)
+
+### <a name="rule-states"></a>Kural durumları
+
+|Durum | Mod| Sayısal değer |
+|:---|:---|:---|
+| AuditMode | = Denetim Modu | 2 |
+| Etkin | = Blok modu | 1 |
+| Devre dışı | = Kapalı | 0 |
 
 ### <a name="verify-configuration"></a>Yapılandırmayı doğrulama
 
-- Get-MpPreference
+```powershell
+
+Get-MpPreference
+```
 
 ## <a name="test-files"></a>Dosyaları test et
 
@@ -92,12 +97,17 @@ Not - Bazı test dosyalarında birden çok açık eklenmiş ve birden çok kural
 
 ### <a name="setup"></a>Kurulum
 
-Bu [kurulum betiğini](https://demo.wd.microsoft.com/Content/ASR_SetupScript.zip) indirip çalıştırın. Bu PowerShell komutunu kullanarak betik kümesi yürütme ilkesini Sınırsız olarak çalıştırmadan önce: Set-ExecutionPolicy Sınırsız
+Bu [kurulum betiğini](https://demo.wd.microsoft.com/Content/ASR_SetupScript.zip) indirip çalıştırın. Bu PowerShell komutunu kullanarak betik kümesi yürütme ilkesini Sınırsız olarak çalıştırmadan önce:
+
+```powershell
+Set-ExecutionPolicy Unrestricted
+
+```
 
 Bunun yerine şu el ile adımları gerçekleştirebilirsiniz:
 
 1. c: adlı demo, "c:\demo" altında bir klasör oluşturun
-2. Bu [temiz dosyayı](https://demo.wd.microsoft.com/Content/testfile_safe.txt) c:\demo dosyasına kaydedin (şifrelemek için bir şey gerekiyor)
+2. Bu [temiz dosyayı](https://demo.wd.microsoft.com/Content/testfile_safe.txt) c:\demo dosyasına kaydedin.
 3. Yukarıdaki powershell komutlarını kullanarak tüm kuralları etkinleştirin.
 
 ### <a name="scenario-1-asr-blocks-a-test-file-with-multiple-vulnerabilities"></a>Senaryo 1: ASR, birden çok güvenlik açığı olan bir test dosyasını engeller
@@ -112,7 +122,7 @@ Hemen bir "Eylem engellendi" bildirimi görmeniz gerekir.
 ### <a name="scenario-2-asr-rule-blocks-the-test-file-with-the-corresponding-vulnerability"></a>Senaryo 2: ASR kuralı test dosyasını ilgili güvenlik açığıyla engeller
 
 1. Yukarıdan PowerShell komutunu kullanarak test etmek istediğiniz kuralı yapılandırın.
-2. Örnek: Add-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EfC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Etkin
+2. Örnek: `Add-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EfC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Enabled`
 3. Yukarıda bağlantılı olarak test etmek istediğiniz kuralın test dosyasını/belgesini indirip açın, istenirse düzenlemeyi ve içeriği etkinleştirin
 4. Örnek: Office uygulamalarının D4F940AB-401B-4EFC-AADC-AD5F3C50688A [alt işlemleri oluşturmalarını engelleme](https://demo.wd.microsoft.com/Content/ransomware_testfile_doc.docm)
 

@@ -3,7 +3,7 @@ title: Office 365 ABD Hükümeti GCC Yüksek uç noktaları
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/29/2022
+ms.date: 09/29/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -21,12 +21,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: Bu makalede, Office 365 ABD Kamu GCC Yüksek planlarını kullanan müşteriler için erişilebilir uç noktalar bulacaksınız.
 hideEdit: true
-ms.openlocfilehash: cde1037c30788182fe1982390f7d0a76e0b9d77b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: fc5bdfae8e0e02c2a347d59e567297df017d1a23
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68165481"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573999"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 ABD Hükümeti GCC Yüksek uç noktaları
 
@@ -42,7 +42,7 @@ Office 365, İnternet bağlantısı gerektirir. Aşağıdaki uç noktalara yaln�
 
 |Notlar|İndir|
 |---|---|
-|**Son güncelleştirme:** 29.06.2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Günlük aboneliğini değiştir](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**İndir:** [JSON biçimindeki](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) tam liste|
+|**Son güncelleştirme:** 29.09.2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Günlük aboneliğini değiştir](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**İndir:** [JSON biçimindeki](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) tam liste|
 |
 
  Bu verileri kullanarak ağ bağlantısını yönetmeye yönelik önerilerimizi anlamak için [Office 365 uç noktalarını yönetme](managing-office-365-endpoints.md) ile başlayın. Uç nokta verileri, etkin olmadan 30 gün önce yayınlanan yeni IP Adresleri ve URL'ler ile her ayın başında gerektiği gibi güncelleştirilir. Bu, henüz otomatik güncelleştirmeleri olmayan müşterilerin yeni bağlantı gerekmeden önce işlemlerini tamamlamalarına olanak tanır. Destek artışlarını, güvenlik olaylarını veya diğer acil operasyonel gereksinimleri ele almak için gerekirse uç noktalar da ay boyunca güncelleştirilebilir. Aşağıdaki bu sayfada gösterilen verilerin tümü REST tabanlı web hizmetlerinden oluşturulmuştur. Bu verilere erişmek için bir betik veya bir ağ cihazı kullanıyorsanız, doğrudan [Web hizmetine](microsoft-365-ip-web-service.md) gitmelisiniz.
