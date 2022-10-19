@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 38d8710b121a445c24abfb9a67a9e0f60cf520ec
-ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
+ms.openlocfilehash: dd14c5ff33f53701d39a47438bd57ab01bc8c6c2
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68379996"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573471"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın
 
@@ -104,8 +104,8 @@ Dosya karması hesaplama özelliğini etkinleştirir veya devre dışı bırakı
 |Açıklama|Değer|
 |---|---|
 |**Anahtar**|enableFileHashComputation|
-|**Veri türü**|Dize|
-|**Olası değerler**|devre dışı (varsayılan) <p> Etkin|
+|**Veri türü**|Boole|
+|**Olası değerler**|false (varsayılan) <p> True|
 |**Açıklamalar**|Uç Nokta için Defender sürüm 101.73.77 veya sonraki sürümlerde kullanılabilir.|
   
 #### <a name="run-a-scan-after-definitions-are-updated"></a>Tanımlar güncelleştirildikten sonra tarama çalıştırma
