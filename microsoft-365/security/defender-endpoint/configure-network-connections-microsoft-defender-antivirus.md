@@ -13,18 +13,18 @@ manager: dansimp
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 06/28/2022
+ms.date: 10/13/2022
 ms.reviewer: mkaminska; pahuijbr
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: df6bc61380ef74f0944f7d9969e74d18fa1134d2
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: d49087d5dffd5bd2d726296b68b5407cc487e898
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68195423"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573867"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Microsoft Defender Virüsten Koruma ağ bağlantılarını yapılandırın ve doğrulayın
 
@@ -36,6 +36,13 @@ ms.locfileid: "68195423"
 
 **Platform**
 - Windows
+
+> [!TIP]
+> RSS akışı: Aşağıdaki URL'yi kopyalayıp akış okuyucunuza yapıştırarak bu sayfa güncelleştirildiğinde bildirim alın:
+>
+> ```https
+> https://github.com/MicrosoftDocs/microsoft-365-docs/commits/public/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus.md.atom
+> ```
 
 Microsoft Defender Virüsten Koruma bulut tabanlı korumanın düzgün çalıştığından emin olmak için güvenlik ekibinizin ağınızı uç noktalarınızla belirli Microsoft sunucuları arasında bağlantılara izin verecek şekilde yapılandırması gerekir. Bu makalede, güvenlik duvarı kurallarını kullanmak için izin verilmesi gereken bağlantılar listelenir. Ayrıca bağlantınızı doğrulamaya yönelik yönergeler de sağlar. Korumanızı doğru şekilde yapılandırmak, bulut tabanlı koruma hizmetlerinizden en iyi değeri almanızı sağlar.
 
