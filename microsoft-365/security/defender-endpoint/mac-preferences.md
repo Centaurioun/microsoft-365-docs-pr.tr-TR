@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 93d113959b138b1b4477fe779c0ce61fd6540634
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 972240c3683b469587d82ec5f729b35d79a40c0c
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68231890"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573462"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın
 
@@ -102,8 +102,8 @@ Dosya karması hesaplama özelliğini etkinleştirir veya devre dışı bırakı
 |---|---|
 |**Etki alanı**|`com.microsoft.wdav`|
 |**Anahtar**|enableFileHashComputation|
-|**Veri türü**|Dize|
-|**Olası değerler**|devre dışı (varsayılan) <p> Etkin|
+|**Veri türü**|Boole|
+|**Olası değerler**|false (varsayılan) <p> True|
 |**Açıklamalar**|Uç Nokta için Defender sürüm 101.73.77 veya sonraki sürümlerde kullanılabilir.|
 
 #### <a name="run-a-scan-after-definitions-are-updated"></a>Tanımlar güncelleştirildikten sonra tarama çalıştırma

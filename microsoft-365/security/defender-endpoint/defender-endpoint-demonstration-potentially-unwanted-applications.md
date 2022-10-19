@@ -18,22 +18,20 @@ ms.collection:
 - tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 56162c639b858a1ba255794e0b6fde03cddd5b14
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 8d98c1a74f771aee15d8b02ce9b16c8dd3b4fd7b
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68542661"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573361"
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # <a name="potentially-unwanted-applications-pua-demonstration"></a>İstenmeyebilecek uygulamalar (PUA) gösterimi
 
 Microsoft Defender Virüsten Koruma'daki İstenmeyebilecek Uygulamalar (PUA) koruma özelliği, PUA'ların ağınızdaki uç noktaları indirip yüklemesini tanımlayıp engelleyebilir. Bu uygulamalar virüs, kötü amaçlı yazılım veya diğer tehdit türleri olarak kabul edilmez, ancak uç noktalarda performanslarını veya kullanımlarını olumsuz yönde etkileyen eylemler gerçekleştirebilir.
 
 ## <a name="scenario-requirements-and-setup"></a>Senaryo gereksinimleri ve kurulumu
 
-- Windows 10
+- Windows 10, Windows 11
 
 - PUA korumasını etkinleştirin. Daha fazla bilgi için [İstenmeyebilecek Uygulamaları Algılama ve Engelleme](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) makalesine bakın.
 - Ayrıca bu ayarı ve diğerlerini etkinleştirmek için [PowerShell betiğini indirip kullanabilirsiniz](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/) .

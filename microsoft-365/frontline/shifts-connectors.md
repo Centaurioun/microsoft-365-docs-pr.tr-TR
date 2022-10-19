@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: b3faa651939b5866e5bb99dbf3ace05d9b86dfe0
-ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
+ms.openlocfilehash: d3a89c9ca4641f23135696dab13f69f09c2c5b94
+ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68381753"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68573339"
 ---
 # <a name="shifts-connectors"></a>Vardiya bağlayıcıları
 
@@ -120,7 +120,7 @@ UKG Boyutları için Teams Vardiyaları bağlayıcısı, Microsoft tarafından b
 Ön cephe yöneticileri:
 
 - UKG Boyutlarında vardiyaları ve zamanlamaları yayımlayın ve Vardiyalar'da görüntüleyin.
-- UKG Boyutlarında açık vardiyalar oluşturun, yönetin ve atayın ve bunları hem UKG Boyutlarında hem de Vardiyalarda görüntüleyin.
+- Teams masaüstü ve Teams web uygulamasında UKG Boyutlar ve Vardiyalar'da açık vardiyalar oluşturun, görüntüleyin, yönetin ve atayın. (Şu anda, yöneticiler Teams mobilde Vardiyalar'da açık vardiyaları görüntüleyemez veya atayamaz.)
 - UKG Boyutlarında izin oluşturun, düzenleyin ve silin ve Vardiyalar'da görüntüleyin.
 - Hem UKG Boyutlarında hem de Vardiyalarda çalışanlardan gelen zamanlama isteklerini görüntüleyin ve onaylayın.
 - UKG Boyutlarında çalışan kullanılabilirliğini ayarlayın ve güncelleştirin ve Vardiyalar'da görüntüleyin.
@@ -131,7 +131,7 @@ UKG Boyutları için Teams Vardiyaları bağlayıcısı, Microsoft tarafından b
 - vardiyalarda izin isteyin, izin bilgilerini görüntüleyin ve ekiplerinin açık vardiyalarını görüntüleyin.
 - Vardiyalar'da zaman kartı girişlerini görüntüleyin ve gönderin.
 - Vardiyalar'da açık vardiyalar ve değiştirme vardiyaları isteyin.
-- Vardiyalar'da kullanılabilirliklerini ayarlayın.
+- Teams mobilde Vardiyalar'da uygunluklarını ayarlayın.
 
 Aşağıdaki eylemler şu anda desteklenmiyor:
 
