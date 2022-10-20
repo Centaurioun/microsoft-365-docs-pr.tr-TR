@@ -13,16 +13,17 @@ search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_Enterprise
-- M365-security-compliance
+- purview-compliance
+- tier3
 - Strat_O365_Enterprise
 description: Bu makalede, müşteri verilerini Microsoft bulutunda güvende tutmak için kullanılan çeşitli şifreleme biçimlerine genel bir bakış okuyun.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3105da5d17b1656ffa0d29da4f4aa02c9a9f9064
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: bc28109558cd48b8d78081b73c192f84910cc9ef
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633927"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645012"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Microsoft Bulut'ta şifreleme
 
@@ -51,6 +52,8 @@ Bekleyen müşteri verilerinin şifrelenmesi, BitLocker, DKM, Azure Depolama Hiz
 Aktarımdaki müşteri verileri için tüm Office 365 sunucuları, müşteri verilerinin güvenliğini sağlamak için varsayılan olarak TLS kullanarak güvenli oturumlar oluşturur. Örneğin, Office 365 Skype Kurumsal, Outlook ve Web üzerinde Outlook, mobil istemciler ve web tarayıcıları için güvenli oturumlar anlaşması yapacaktır.
 
 (Müşteriye yönelik tüm sunucular varsayılan olarak TLS 1.2 ile anlaşma sağlar.)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="related-links"></a>İlgili Bağlantılar
 

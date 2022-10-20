@@ -10,7 +10,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom:
@@ -21,12 +21,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 1c928c6f7a7ccc3c9d4b22d9f69f75051bd17c5c
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 2f05fb723ba4b868bec871d9bde6f57107cd656d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68222038"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627093"
 ---
 # <a name="manage-tamper-protection-using-tenant-attach-with-configuration-manager-version-2006"></a>Configuration Manager, sürüm 2006 ile kiracı ekleme kullanarak kurcalama korumasını yönetme
 

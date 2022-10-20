@@ -1,5 +1,5 @@
 ---
-title: Kiracı İzin Ver/Engelle Listesini kullanarak e-postalara izin verme veya e-postaları engelleme
+title: Kiracı İzin Ver/Engelle Listesi'ni kullanarak e-postaya izin verme veya e-postayı engelleme
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,17 +13,17 @@ search.appverid:
 - MET150
 ms.collection:
 - m365-security
-description: Yöneticiler, Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde e-postalara ve sahte gönderen girişlerine izin verme veya bunları engelleme hakkında bilgi edinebilir.
+description: Yöneticiler, Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde e-posta ve sahte gönderen girişlerine izin verme veya bunları engelleme hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 9a954b820b584d9fdb6b210971423e9f17c15de6
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 90e8a8e84c26385457bc31533ca2e26b2500f69f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68066816"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640312"
 ---
-# <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesini kullanarak e-postalara izin verme veya e-postaları engelleme
+# <a name="allow-or-block-email-using-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesi'ni kullanarak e-postaya izin verme veya e-postayı engelleme
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -138,13 +138,13 @@ Etki alanları ve e-posta adresleri için izin verme girdilerini doğrudan Kirac
 Yönergeler için bkz. [Microsoft'a iyi e-posta bildirme](admin-submission.md#report-good-email-to-microsoft).
 
 > [!NOTE]
-> Microsoft sizin için izin verme girdilerini yönettiği için etki alanları ve e-posta adresleri için gereksiz izin verme girdileri kaldırılır. Bu davranış, kuruluşunuzu korur ve yanlış yapılandırılmış izin verme girdilerinin önlenmesine yardımcı olur. Karara katılmıyorsanız, iletinin neden hala kötü kabul edildiğini saptamak için bir destek olayı açmanız gerekebilir.
+> Microsoft, gerekli olmayan izinlerin oluşturulmasına yol açtığından, izin verilen girdileri doğrudan oluşturmanıza izin vermez, bu nedenle kuruluşunuzu aksi takdirde sistem tarafından filtrelenmiş olabilecek kötü amaçlı e-postalara maruz tutar.
 >
-> Etki alanı veya e-posta adresi henüz engellenmemişse, etki alanı veya e-posta adresi için izin ver girişi oluşturulmaz.
+> Microsoft, posta akışı sırasında filtreler tarafından kötü amaçlı olduğu belirlenen varlıklara (etki alanları veya e-posta adresleri, sahte gönderenler, URL'ler, dosyalar) izin verenler oluşturarak Gönderme'den izin verme işlemini yönetir. Örneğin, gönderen ve iletideki bir URL'nin hatalı olduğu belirlendiyse, gönderen için bir izin girdisi oluşturulur ve URL için bir izin girdisi oluşturulur.
 >
-> İletinin yanlış engellenmiş hatalı bir pozitif olduğu belirlendiği çoğu durumda, belirtilen son kullanma tarihinde izin ver girişi kaldırılır.
+> Bu varlıkla (etki alanı veya e-posta adresi, URL, dosya) yeniden karşılaşıldığında, bu varlıkla ilişkili tüm filtreler atlanır.
 >
-> Sahte gönderenler için izin verme girdileri oluşturmak için, bu makalenin devamında Sahte [gönderenler için izin verme girdileri oluşturma](#create-allow-entries-for-spoofed-senders) bölümüne bakın.
+> Posta akışı sırasında, etki alanından veya e-posta adresinden gelen iletiler filtreleme yığınında başka denetimler geçirirse, iletiler teslim edilecek. Örneğin, [e-posta kimlik doğrulaması](email-validation-and-authentication.md) geçerse, izin ver girişindeki bir gönderenden gelen bir ileti teslim edilecek.
 
 ### <a name="use-the-microsoft-365-defender-portal-to-view-allow-or-block-entries-for-domains-and-email-addresses-in-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesi'nde etki alanları ve e-posta adresleri için izin verme veya engelleme girdilerini görüntülemek için Microsoft 365 Defender portalını kullanın
 
@@ -215,6 +215,10 @@ Kiracı İzin Ver/Engelle listesinde etki alanları ve e-posta adresleri için i
    - **İsteğe bağlı not**
 
    Bitirdiğinizde, **Kaydet**'i tıklatın.
+
+**İzin verme süre sonu yönetimiyle** (şu anda özel önizleme aşamasındadır) Microsoft izin verilenler arasından bilgi edinmediyse, Microsoft'un yasal e-postanın yeniden gereksiz veya karantinaya girmesini önlemek için süresi yakında dolacak olan izinlerin süre sonu süresini otomatik olarak 30 gün uzatacağını unutmayın. Microsoft, izin verme tarihinden itibaren 90 takvim günü içinde öğrenmezse, Microsoft izin verme işlemini kaldırır.
+
+Microsoft izin verme bölümünden bilgi edindiyse, izin kaldırılır ve bu konuda sizi bilgilendiren bir uyarı alırsınız.
 
 > [!NOTE]
 > Yalnızca girişlere izin ver için, onay kutusundan farklı bir satıra tıklayarak girdiyi seçerseniz Gönderimi görüntüle simgesini seçebilirsiniz ![.](../../media/m365-cc-sc-view-submission-icon.png) **Gönderiyi** , konumundaki **Gönderimler** sayfasına gitmek üzere görünen ayrıntılar açılır öğesinde <https://security.microsoft.com/reportsubmission>görüntüleyin.

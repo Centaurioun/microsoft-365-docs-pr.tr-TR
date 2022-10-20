@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard için paylaşımı yönetmeyi öğrenin.
-ms.openlocfilehash: 2d788474a1c72baec448bf20dbc78a12e1afd1e2
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 669c099be2884d1219249bb78a0a144b81db011b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68537346"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632436"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard"></a>Microsoft Whiteboard için paylaşımı yönetme
 
@@ -27,7 +27,7 @@ Paylaşım deneyimi, Teams toplantısında olmanıza, paylaşılan bir cihaz kul
 
 Teams toplantısında beyaz tahta paylaştığınızda Whiteboard bir paylaşım bağlantısı oluşturur. Bu bağlantıya kuruluştaki herkes erişebilir. Beyaz tahta, toplantıdaki kiracı içi kullanıcılarla da paylaşılır. Beyaz tahtalar, varsayılan ayardan bağımsız olarak şirket tarafından paylaşılabilir bağlantılar kullanılarak paylaşılır. Varsayılan paylaşım bağlantı türü desteği planlandı.
 
-Teams toplantısı sırasında dış ve paylaşılan cihaz hesapları tarafından geçici işbirliğine yönelik daha fazla özellik vardır. Kullanıcılar, bir toplantıda paylaşılan beyaz tahtaları PowerPoint Canlı paylaşımına benzer şekilde geçici olarak görüntüleyebilir ve üzerinde işbirliği yapabilir.
+Teams toplantısı sırasında dış ve paylaşılan cihaz hesapları (genellikle Surface Hubs ve Teams Odaları cihazlarında kullanılır) geçici işbirliği için daha fazla özelliğe sahiptir. Kullanıcılar, bir toplantıda paylaşılan beyaz tahtaları PowerPoint Canlı paylaşımına benzer şekilde geçici olarak görüntüleyebilir ve üzerinde işbirliği yapabilir.
 
 Bu durumda Whiteboard, yalnızca Teams toplantısı sırasında beyaz tahta üzerinde geçici görüntüleme ve işbirliği sağlar. Paylaşım bağlantısı oluşturulmaz ve Beyaz Tahta dosyaya erişim izni vermez.
 
@@ -52,8 +52,9 @@ Bu davranışı etkinleştirmek için şu adımları izleyin:
 Bu ayar yalnızca beyaz tahtalar için geçerlidir ve önceden paylaşılan ayarların yerini alır: **OneDriveLoopSharingCapability** ve **CoreLoopSharingCapability**. Bu ayarlar artık geçerli değildir ve göz ardı edilebilir.
 
 > [!NOTE]
-> Varsayılan olarak, **Anonim kullanıcılar toplantılardaki uygulamalarla etkileşimde bulunabilir Teams toplantı** ayarı etkindir. Devre dışı bırakdıysanız, toplantı sırasında hiçbir anonim kullanıcı (konuklar veya federasyon kullanıcıları yerine) beyaz tahtaya erişemez.
->
+> Varsayılan olarak, **Anonim kullanıcılar toplantılardaki uygulamalarla etkileşimde bulunabilir Teams toplantı** ayarı etkindir. Devre dışı bırakdıysanız, toplantı sırasında herhangi bir anonim kullanıcının (konuklar veya federasyon kullanıcılarının aksine) beyaz tahtaya erişimi olmaz.
+
+> [!NOTE]
 > Paylaşılan cihaz hesaplarının Teams toplantılarında Whiteboard'a erişmesini istiyorsanız ancak anonim kullanıcılara erişim sağlamak istemiyorsanız, **AllowAnonymousMeetingParticipantsToAccessWhiteboards** etkinken **Anonim kullanıcıların toplantılardaki uygulamalarla etkileşim kurabilmesini** devre dışı bırakabilirsiniz
 
 Bu değişikliklerin kiracınız genelinde uygulanması yaklaşık 60 dakika sürmelidir.
@@ -78,9 +79,6 @@ Teams kanalına veya sohbete sekme olarak beyaz tahta eklediğinizde Whiteboard,
 ## <a name="create-and-share-in-whiteboard-native-clients"></a>Whiteboard yerel istemcilerinde oluşturma ve paylaşma
 
 Beyaz tahtaları web, masaüstü veya mobil istemcilerden paylaştığınızda belirli kişileri seçebilirsiniz. Kuruluştaki herkes tarafından erişilebilen bir paylaşım bağlantısı da oluşturabilirsiniz.
-
-> [!NOTE]
-> Teams toplantısı sırasında dış paylaşım henüz kullanılamamaktadır ancak gelecek bir sürümde eklenecektir.
 
 |Senaryo|Depolama ve sahiplik|Paylaşım ayarları|Paylaşım deneyimi|
 |---|---|---|---|

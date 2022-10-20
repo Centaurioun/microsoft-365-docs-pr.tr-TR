@@ -9,6 +9,7 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 10/18/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,12 +18,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 90e6977d6660cb475a4172d863080878957407f5
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 14b687f7b9221d73a314517db11709cb2da7948b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68223710"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627312"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -49,14 +50,19 @@ Bu makale, Linux'ta Uç Nokta için Microsoft Defender'nin en son sürümlerinde
 
 **Yenilikler**
 
-- mdatp sürüm 101.75.43 çalıştıran belirli müşteri iş yüklerinde gözlemlenen çekirdek kilitlenmesini düzeltir. RCA'nın ardından bu, bir algılayıcı dosya tanımlayıcısının sahipliğini serbest bırakırken bir yarış durumuna atfedildi. Kapatma yolundaki son ürün değişikliği nedeniyle yarış durumu ortaya çıktı. Daha yeni Çekirdek sürümleri (5.1+) üzerindeki müşteriler bu sorundan etkilenmez.
+- mdatp sürüm 101.75.43 çalıştıran belirli müşteri iş yüklerinde gözlemlenen çekirdek kilitlenmesini düzeltir. RCA'nın ardından bu, bir algılayıcı dosya tanımlayıcısının sahipliğini serbest bırakırken bir yarış durumuna atfedildi. Kapatma yolundaki son ürün değişikliği nedeniyle yarış durumu ortaya çıktı. Daha yeni Çekirdek sürümleri (5.1+) üzerindeki müşteriler bu sorundan etkilenmez. Temel alınan sorun hakkında daha fazla bilgi için bkz. [Fanotify kodundaki engellenen görevler nedeniyle Sistem kilitlenmesi](https://access.redhat.com/solutions/2838901).
+    
+**Bilinen sorunlar**
 
-- mdatp sürüm 101.75.43 veya 101.78.13'ten yükseltme yaparken, 101.80.97 sürümüne yükseltmeyi denemeden önce aşağıdaki komutları çalıştırın
+- mdatp sürüm 101.75.43 veya 101.78.13'ten yükseltme yaparken çekirdek kilitlenmesi ile karşılaşabilirsiniz. 101.80.97 sürümüne yükseltmeyi denemeden önce aşağıdaki komutları çalıştırın. Bu, sorunun oluşmasını engellemelidir.
 
 ```
 sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
+Yukarıdakini yürüttkten sonra, yükseltmeyi gerçekleştirmek için paket yöneticinizi kullanın. 
+    
+Yukarıdakilere alternatif olarak, [kaldırma](/microsoft-365/security/defender-endpoint/linux-resources#uninstall) yönergelerini izleyebilir ve ardından paketin en son sürümünü [yükleyebilirsiniz](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) .
 </br>
 
 <br/><br/>

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 3/21/2022
+ms.date: 10/14/2022
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.custom: ''
 description: Bir kuruluştaki kritik kişileri tanımlamayı ve onlara ek koruma sağlamak için öncelik hesabı etiketini eklemeyi öğrenin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 0133a684780ab59514d576bf619ebe2c4aa45099
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 964427f26df1f572f78f3b98602883ad69ac9a34
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68066618"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645285"
 ---
 # <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de Öncelik hesaplarını yapılandırma ve gözden geçirme
 
@@ -80,7 +80,7 @@ Daha fazla bilgi için bkz. [Office 365 için Microsoft Defender'de kullanıcı 
 - [Özel uyarı ilkeleri](../../compliance/alert-policies.md#view-alerts)
 - [Tehdit Gezgini ve gerçek zamanlı algılamalar](threat-explorer.md)
 - [Güvenliği aşılmış kullanıcı raporu](view-email-security-reports.md#compromised-users-report)
-- [varlık sayfasını Email](mdo-email-entity-page.md#other-innovations)
+- [varlık sayfasını Email](mdo-email-entity-page.md)
 - [Tehdit koruması durum raporu](view-email-security-reports.md#threat-protection-status-report)
 - [En çok gönderenler ve alıcılar raporu](view-email-security-reports.md#top-senders-and-recipients-report)
 - [Saldırı benzetimi](attack-simulation-training.md#target-users)

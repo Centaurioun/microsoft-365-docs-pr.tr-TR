@@ -15,16 +15,16 @@ author: martyav
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier1
-ms.openlocfilehash: 502f6b359c86a1bbb2574c794afa4ae28b40ed4a
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 9e6b7d16606d9f98b4ae5e5c5ddb473d7e1d1d4b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68506488"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622386"
 ---
 # <a name="microsoft-defender-experts-in-microsoft-365-overview"></a>Microsoft 365'te Microsoft Defender Uzmanlarına genel bakış
 

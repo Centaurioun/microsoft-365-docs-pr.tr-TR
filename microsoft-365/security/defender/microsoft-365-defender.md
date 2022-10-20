@@ -24,12 +24,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 adobe-target: true
-ms.openlocfilehash: 770a5d5ac44f5b60485287979395732f7303c755
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: b9429afee03d59e1fe88beb9d8f77549de1a5294
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68055402"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622628"
 ---
 # <a name="what-is-microsoft-365-defender"></a>Microsoft 365 Defender nedir?
 
@@ -43,7 +43,7 @@ Microsoft 365 Defender gelişmiş saldırılara karşı tümleşik koruma sağla
 
 Tümleşik Microsoft 365 Defender çözümüyle, güvenlik uzmanları bu ürünlerin her birinin aldığı tehdit sinyallerini birleştirebilir ve tehdidin tam kapsamını ve etkisini, ortama nasıl girdiğini, nelerin etkilendiğini ve şu anda kuruluşu nasıl etkilediğini belirleyebilir. Microsoft 365 Defender, saldırıyı önlemek veya durdurmak ve etkilenen posta kutularını, uç noktaları ve kullanıcı kimliklerini kendi kendine iyileştirmek için otomatik eylem uygular.
 
-<center><h2>Microsoft 365 Defender hizmetleri</center></h2>
+<center><h2>ürünleri Microsoft 365 Defender</center></h2>
 <table><tr><td><center><b><a href="/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint"><b>Uç Nokta için Microsoft Defender</b></center></a></td>
 <td><center><b><a href="/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management"><b>Microsoft Defender Güvenlik Açığı Yönetimi</b></center></a></td>
 <td><center><b><a href="/microsoft-365/security/office-365-security/overview"><b>Office 365 için Microsoft Defender</b></center></a></td>
@@ -52,6 +52,8 @@ Tümleşik Microsoft 365 Defender çözümüyle, güvenlik uzmanları bu ürünl
 </tr>
 </table>
 <br>
+
+Bunların dışında, Microsoft 365 Defender gelişmiş saldırılara karşı tümleşik koruma sağlamak için Azure Active Directory Kimlik Koruması], Uygulama İdaresi ve Microsoft Veri Kaybı Önleme ile yakından çalışır. 
 
 ## <a name="microsoft-365-defender-interactive-guide"></a>etkileşimli kılavuz Microsoft 365 Defender
 
@@ -66,7 +68,7 @@ Microsoft 365 Defender hizmetleri koruma:
 - **Uç Nokta için Defender ile uç noktalar** - Uç Nokta için Defender, önleyici koruma, ihlal sonrası algılama, otomatik araştırma ve yanıt için birleşik bir uç nokta platformudur.
 - **Defender Güvenlik Açığı Yönetimi ile varlıklar** - Microsoft Defender Güvenlik Açığı Yönetimi, güvenlik ve BT ekiplerinizin kuruluşunuzdaki kritik güvenlik açıklarını ve yanlış yapılandırmaları önceliklendirmesine ve gidermesine yardımcı olmak için sürekli varlık görünürlüğü, akıllı risk tabanlı değerlendirmeler ve yerleşik düzeltme araçları sunar.
 - **Office 365 için Defender ile Email ve işbirliği** - Office 365 için Defender kuruluşunuzu e-posta iletileri, bağlantılar (URL'ler) ve işbirliği araçları tarafından ortaya konan kötü amaçlı tehditlere karşı korur.
-- **Kimlik için Defender ve Azure Active Directory (Azure AD) Kimlik Koruması ile kimlikler** - Kimlik için Defender, şirket içi Active Directory Etki Alanı Hizmetleri (AD DS) sinyallerinizi kullanarak gelişmiş tehditleri, güvenliği aşılmış kimlikleri ve kuruluşunuza yönelik kötü amaçlı şirket içi eylemleri tanımlar, algılar ve araştırır. Azure AD Kimlik Koruması, bulut tabanlı Azure AD kimlik tabanlı risklerin algılanması ve düzeltilmesi için otomatik hale getirir.
+- **Kimlik için Defender ve Azure Active Directory (Azure AD) Kimlik Koruması ile kimlikler** - Kimlik için Microsoft Defender, şirket içi Active Directory kullanan bulut tabanlı bir güvenlik çözümüdür  gelişmiş tehditleri, güvenliği aşılmış kimlikleri ve kuruluşunuza yönelik kötü amaçlı insider eylemlerini tanımlamak, algılamak ve araştırmak için sinyaller. Azure AD Kimlik Koruması, Kullanıcılarınızı korumak için Microsoft'un Azure AD sahip kuruluşlardaki konumundan edindiği öğrenmeleri, Microsoft Hesapları ile tüketici alanını ve Xbox ile oyun oynamalarını kullanır.
 - **Microsoft Defender for Cloud Apps uygulamaları** - Microsoft Defender for Cloud Apps, bulut uygulamalarınıza derin görünürlük, güçlü veri denetimleri ve gelişmiş tehdit koruması getiren kapsamlı bir SaaS çözümüdür.
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww]
@@ -107,3 +109,7 @@ hizmeti Microsoft 365 Defender portalında <a href="https://go.microsoft.com/fwl
 
 - [Lisans gereksinimleri](prerequisites.md#licensing-requirements)
 - [Microsoft 365 Defender’ı açın](m365d-enable.md)
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Azure Active Directory Kimlik Koruması](/azure/active-directory/identity-protection/overview-identity-protection)

@@ -10,16 +10,17 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 description: macOS cihazlarını Uyumluluk çözümlerine ekleme hakkında bilgi edinin
-ms.openlocfilehash: 6cf9d5233f66f1afd62644f774b3f9301a477e2e
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 9966ed77aac5935cabc2bc33b4738f35107610e4
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67343513"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621783"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview"></a>macOS cihazlarının Microsoft 365'e katılımına genel bakış
 
@@ -30,9 +31,11 @@ MacOS cihazları, Intune veya JAMF Pro kullanılarak Microsoft Purview çözüml
 - [Uç nokta veri kaybı önleme (DLP)](./endpoint-dlp-learn-about.md)
 - [İçeriden risk yönetimi](insider-risk-management.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-macOS cihazlarda Uç Nokta DLP'sini (Catalina 10.15 veya üzeri) kullanmaya başlamadan önce şu makaleler hakkında bilgi sahibi olmanız gerekir:
+macOS cihazlarda Uç Nokta DLP'sini kullanmaya başlamadan önce (en son yayınlanan üç sürüm), şu makaleler hakkında bilgi sahibi olmanız gerekir:
 
 - [Uç nokta veri kaybı önleme hakkında daha fazla bilgi edinme](endpoint-dlp-learn-about.md)
 - [Uç noktada veri kaybı önlemeyi kullanmaya başlama](endpoint-dlp-getting-started.md)
@@ -56,7 +59,7 @@ macOS cihazlarınız zaten Intune veya JAMF Pro aracılığıyla yönetilmelidir
 
 ### <a name="supported-browsers"></a>Desteklenen tarayıcılar
 
-Uç nokta DLP, macOS Catalina 10.15 veya üzeri sürümlerde şu tarayıcıları destekler:
+Uç nokta DLP macOS'ta bu tarayıcıları destekler (en son yayınlanan üç sürüm):
 
 - Microsoft Edge (en son sürüm)
 - Safari (en son sürüm, yalnızca macOS)
