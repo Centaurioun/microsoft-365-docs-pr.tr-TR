@@ -7,7 +7,7 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,12 +19,12 @@ description: Microsoft 365'te otomatik bir araştırma sırasında ve sonrasınd
 ms.date: 01/29/2021
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: dd9d192862e82a43453459a6fedbb8b38c71a2cd
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 68eba87cfd33996d4a544e82b9408dbcfdfad466
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68060570"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639148"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365'te otomatik araştırmanın ayrıntıları ve sonuçları
 

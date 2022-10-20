@@ -1,5 +1,5 @@
 ---
-title: office uygulamalarını Microsoft 365 İş Ekstra'deki tüm cihazlara yükleme
+title: Microsoft 365 İş Ekstra'daki tüm cihazlara Microsoft 365 uygulamalarını yükleme
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
@@ -23,40 +23,40 @@ search.appverid:
 - MET150
 - MOE150
 description: office'i Microsoft 365 İş Ekstra'deki tüm cihazlara yükleme.
-ms.openlocfilehash: cb879c21b0b7c60536ed977305f727888b0bf560
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: affed595cb6f6b2b1814f865a2f58337d1d04618
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68096599"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68642073"
 ---
-# <a name="install-office-apps-on-all-devices"></a>Office uygulamalarını tüm cihazlara yükleme
+# <a name="install-microsoft-365-apps-on-all-devices"></a>Tüm cihazlara Microsoft 365 uygulamalarını yükleme
 
-Tamam, Microsoft 365 İş Ekstra ayarladınız ve artık kullanıcıların Mac, PC veya mobil cihazlarına tek tek Office uygulamalarını yüklemesini zorunlu kılabilirsiniz. Bu, kullanıcılarınızın ön cephelerin bir parçası olmak ve kuruluşun saldırılara karşı korunmasına yardımcı olmak için yapması gereken bir şeydir.
+Tamam, Microsoft 365 İş Ekstra ayarladınız ve artık kullanıcıların Mac, PC veya mobil cihazlarına tek tek Microsoft 365 uygulamalarını yüklemesini zorunlu kılabilirsiniz. Bu, kullanıcılarınızın ön cephelerin bir parçası olmak ve kuruluşun saldırılara karşı korunmasına yardımcı olmak için yapması gereken bir şeydir.
   
-## <a name="watch-install-office-apps"></a>İzleyin: Office uygulamalarını yükleme
+## <a name="watch-install-microsoft-365-apps"></a>izleyin: Microsoft 365 uygulamalarını yükleme
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1?autoplay=false]
 
-Kuruluşun tüm üyeleri için Microsoft Office uygulamaları **Başlat** menüsünde bulunabilir. Bunları görmüyorsanız, her kullanıcının yüklemesi gerekir.
+Kuruluşun tüm üyeleri için Microsoft Microsoft 365 uygulamaları **Başlat** menüsünde bulunabilir. Bunları görmüyorsanız, her kullanıcının yüklemesi gerekir.
 
 Aşağıdaki işlemleri gerçekleştirmelerini sağlayın:
 
 1. adresine [https://office.com](https://office.com)gidin ve iş hesabınızı kullanarak oturum açın.
 2. **Office**  >  **Microsoft 365 uygulamalarını**  >   yükle **Çalıştır'ı** ve ardından **Evet'i** seçin.
-3. Office uygulamaları yüklenir. İşlem birkaç dakika sürebilir. Tamamlandığında  **Kapat'ı** seçin.
+3. Microsoft 365 uygulamaları yüklüdür. İşlem birkaç dakika sürebilir. Tamamlandığında  **Kapat'ı** seçin.
 4. Microsoft Teams'i yüklemek için [office.com sayfasına](https://office.com) gidin ve  **Teams'i** seçin.
 5. Windows uygulamasını alın ve  **çalıştır'ı** seçin. Teams, yükleme tamamlandığında bir istem görüntüler.
 
 ## <a name="set-up-mobile-devices-for-microsoft-365-business-premium-users"></a>Microsoft 365 İş Ekstra kullanıcılar için mobil cihazları ayarlama
 
-Office'i iPhone veya Android telefona yüklemek için aşağıdaki yönergeleri kullanın. Bu adımları izledikten sonra, Office uygulamalarında oluşturulan iş dosyalarınız İş için Microsoft 365 tarafından korunur.
+Office'i iPhone veya Android telefona yüklemek için aşağıdaki yönergeleri kullanın. Bu adımları izledikten sonra, Microsoft 365 uygulamalarında oluşturulan iş dosyalarınız İş için Microsoft 365 tarafından korunur.
 
-Örnek Outlook içindir, ancak yüklemek istediğiniz diğer Office uygulamaları için geçerlidir.
+Örnek Outlook içindir, ancak yüklemek istediğiniz diğer Microsoft 365 uygulamaları için geçerlidir.
 
 ## <a name="iphone"></a>[Iphone](#tab/iPhone)
   
-İş için Microsoft 365 ile iOS cihazlarda Office uygulamalarını ayarlama hakkında kısa bir video izleyin.<br><br>
+İş için Microsoft 365 ile iOS cihazlarda Microsoft 365 uygulamalarını ayarlama hakkında kısa bir video izleyin.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
@@ -88,7 +88,7 @@ iPhone'da Outlook'u bulun ve yeniden başlatın. İstendiğinde bir PIN girin ve
 
 Aşağıdakiler hakkında ek bilgi için şu bağlantıları izleyin:
   
-- Office uygulamalarını yükleme:  [PC veya Mac bilgisayarınıza Office yükleme](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
+- Microsoft 365 uygulamalarını  [yükleme: PC veya Mac bilgisayarınıza Office yükleme](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 
 - Diğer uygulamaları yükleme: [Project](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281), [Visio](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710) veya [Skype Kurumsal](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb) 
 
@@ -134,7 +134,7 @@ Ek ayrıntılar ve bilgiler için:
 
 - Outlook'ta e-postayı ayarlama: [Windows](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) veya [Mac](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)
  
-- [Kullanıcıları en son Office uygulamalarına yükseltme](../admin/setup/upgrade-users-to-latest-office-client.md)
+- [Kullanıcıları en son Microsoft 365 uygulamalarına yükseltme](../admin/setup/upgrade-users-to-latest-office-client.md)
 
 Ek ayrıntılar ve bilgiler için:
 
@@ -142,11 +142,11 @@ Ek ayrıntılar ve bilgiler için:
 
 - Outlook'ta e-postayı ayarlama: [Windows](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) veya [Mac](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)
  
-- [Kullanıcıları en son Office uygulamalarına yükseltme](../admin/setup/upgrade-users-to-latest-office-client.md)
+- [Kullanıcıları en son Microsoft 365 uygulamalarına yükseltme](../admin/setup/upgrade-users-to-latest-office-client.md)
 
 Aşağıdakiler hakkında ek bilgi için şu bağlantıları izleyin:
   
-- Office uygulamalarını yükleme:  [PC veya Mac bilgisayarınıza Office yükleme](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
+- Microsoft 365 uygulamalarını  [yükleme: PC veya Mac bilgisayarınıza Office yükleme](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 
 - Diğer uygulamaları yükleme: [Project](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281), [Visio](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710) veya [Skype Kurumsal](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
 

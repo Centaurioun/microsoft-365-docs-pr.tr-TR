@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - met150
-ms.openlocfilehash: 3b3d5b9105db25d6d723961fab26f146d15aef1f
-ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
+ms.openlocfilehash: 17f58b7722614891e05c5c5101826735d1597db9
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68361990"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639412"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Microsoft 365 Defender'da uyarıları araştırma
 
@@ -99,7 +99,7 @@ Uyarı sayfası boyunca, uyarıyı başka bir olaya bağlama gibi kullanılabili
 
 ### <a name="alert-sources"></a>Uyarı kaynakları
 
-Microsoft 365 Defender uyarılar Uç Nokta için Microsoft Defender, Office 365 için Microsoft Defender gibi çözümlerden gelebilir Microsoft Defender for Cloud Apps ve Microsoft Defender for Cloud Apps için uygulama idare eklentisi. Uyarıda önceden eklenmiş karakterler içeren uyarılar fark edebilirsiniz. Aşağıdaki tabloda uyarının ekli karakterine göre uyarı kaynaklarının eşlemesini anlamanıza yardımcı olacak yönergeler sağlanmaktadır.
+Microsoft 365 Defender uyarılar Uç Nokta için Microsoft Defender, Office 365 için Microsoft Defender gibi çözümlerden gelebilir Microsoft Defender for Cloud Apps, Azure Active Directory Kimlik Koruması ve Microsoft Veri Kaybı Önleme için uygulama idare eklentisi Kimlik için Microsoft Defender, Microsoft Defender for Cloud Apps. Uyarıda önceden eklenmiş karakterler içeren uyarılar fark edebilirsiniz. Aşağıdaki tabloda uyarının ekli karakterine göre uyarı kaynaklarının eşlemesini anlamanıza yardımcı olacak yönergeler sağlanmaktadır.
 
 > [!NOTE]
 >
@@ -108,10 +108,19 @@ Microsoft 365 Defender uyarılar Uç Nokta için Microsoft Defender, Office 365 
 
 | Uyarı kaynağı | Ekli karakter |
 | :---|:--- |
+| Microsoft 365 Defender | `ra` <br> `ta` ThreatExperts için <br> `ea` DetectionSource = DetectionSource.CustomDetection için |
 | Office 365 için Microsoft Defender | `fa{GUID}` <br> Örnek: `fa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Uç Nokta için Microsoft Defender | `da` veya `ed` özel algılama uyarıları için <br> |
 | Kimlik için Microsoft Defender | `aa{GUID}` <br> Örnek: `aa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Bulut Uygulamaları için Microsoft Defender |`ca{GUID}` <br> Örnek: `ca123a456b-c789-1d2e-12f1g33h445h6i` |
+| Azure Active Directory (AAD) Kimlik Koruması | `ad` |
+| Uygulama İdaresi | `ma` |
+| Microsoft Veri Kaybı Önleme | `dl` |
+
+Varsayılan olarak, yalnızca güvenlik işlem merkezi için en uygun uyarılar etkinleştirilir. Tüm AAD IP risk algılamalarını almak istiyorsanız, **uyarı hizmeti** ayarı bölümünün altındaki Microsoft 365 Defender ayarı sayfasında bunu değiştirebilirsiniz. 
+
+> [!IMPORTANT]
+> Bazı bilgiler, ticari olarak piyasaya sürülmeden önce önemli ölçüde değiştirilebilen önceden yayımlanmış ürünle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
 
 ### <a name="analyze-affected-assets"></a>Etkilenen varlıkları analiz etme
 
@@ -314,3 +323,4 @@ Otomasyonun sorunsuz bir iş akışı oluşturmak için verimli bir şekilde nas
 - [Olayları yönetin](manage-incidents.md)
 - [Olayları araştırın](investigate-incidents.md)
 - [Veri kaybı olaylarını araştırma](investigate-dlp.md)
+- [Azure Active Directory Kimlik Koruması](/azure/active-directory/identity-protection/overview-identity-protection)

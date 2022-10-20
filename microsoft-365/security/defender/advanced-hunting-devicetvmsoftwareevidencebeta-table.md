@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
-ms.topic: article
-ms.openlocfilehash: 1e9f88822bdcf21c71f21c43eabd91b737bab350
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.collection:
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.openlocfilehash: dc79066e633a3e0a1d7b68f1315e1eeaef16433d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480569"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68636805"
 ---
 # <a name="devicetvmsoftwareevidencebeta"></a>DeviceTvmSoftwareEvidenceBeta
 

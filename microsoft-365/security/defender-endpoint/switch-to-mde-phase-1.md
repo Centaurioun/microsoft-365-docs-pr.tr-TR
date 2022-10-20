@@ -17,19 +17,19 @@ ms.collection:
 - m365solution-migratetomdatp
 - highpri
 - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
-ms.openlocfilehash: 34bd2b66705114ad2bba8739cfae98ac8556e85e
-ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
+ms.openlocfilehash: 6b32b56cba5d6e45266c9c9cb28c8331a95ca019
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68363287"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625863"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Uç Nokta için Microsoft Defender Geçiş - 1. Aşama: Hazırlama
 

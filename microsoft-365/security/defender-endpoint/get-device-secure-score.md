@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 130155711355c0e19109672bdcb241775f3db1e9
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: a32ef5cd16c5b0ee3871b526d74c5c7031d85dcf
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68209788"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638202"
 ---
 # <a name="get-device-secure-score"></a>Cihaz güvenlik puanı al
 

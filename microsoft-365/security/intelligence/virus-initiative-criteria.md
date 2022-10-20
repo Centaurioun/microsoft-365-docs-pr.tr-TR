@@ -14,20 +14,23 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: 11fa05644d5f65ee4f835027636d41da1dd37adc
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 734fa013a54a3ad8184fbc3b4a44289cb4fe9715
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68229536"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645329"
 ---
 # <a name="microsoft-virus-initiative"></a>Microsoft Virüs Girişimi
 
 Microsoft Virüs Girişimi (MVI), kuruluşların performans, güvenilir ve Microsoft teknolojisi ve stratejisiyle uyumlu daha iyi bir şekilde birlikte güvenlik çözümleri geliştirmelerine yardımcı olur.
 
 ## <a name="become-a-member"></a>Üye olun
+
+> [!NOTE]
+> MVI Programı şu anda üyelik için yeni başvuru kabul etmemekte. Daha fazla bilgi için lütfen MVI@microsoft.com başvurun.
 
 Kötü amaçlı yazılımdan koruma veya virüsten koruma teknolojisi geliştiren ve üreten bir kuruluşun temsilcisiyseniz üyelik isteyebilirsiniz. 
 

@@ -14,21 +14,23 @@ search.appverid:
 - MET150
 ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 İleti Şifrelemesi'ni (OME) ayarlamayı tamamladıktan sonra dağıtımınızı çeşitli yollarla özelleştirmeyi öğrenin.
-ms.openlocfilehash: b3d7ffe5db987b9fb3bd29682c8e101ffd99946a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: bd494b9323868da8c9fa03f6381349e3ee4ea5a0
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635293"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620710"
 ---
 # <a name="manage-office-365-message-encryption"></a>Office 365 İleti Şifrelemesini yönetme
 
 Office 365 İleti Şifrelemesi'ni (OME) ayarlamayı tamamladıktan sonra, dağıtımınızın yapılandırmasını çeşitli yollarla özelleştirebilirsiniz. Örneğin, tek seferlik geçiş kodlarının etkinleştirilip etkinleştirilmeyebileceğini yapılandırabilir, **şifrele** düğmesini Web üzerinde Outlook ve daha fazlasını görüntüleyebilirsiniz. Bu makaledeki görevler nasıl yapılacağını açıklar.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="manage-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>Google, Yahoo ve Microsoft Hesabı alıcılarının Office 365 İleti Şifreleme portalında oturum açmak için bu hesapları kullanıp kullanamayacağını yönetin
 
@@ -189,7 +191,7 @@ Alıcıları Outlook veya Web üzerinde Outlook kullanmak yerine OME Portalı'nd
    New-TransportRule -name "<mail flow rule name>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "<option name>" -ApplyRightsProtectionCustomizationTemplate "<template name>"
    ```
 
-    Nerede:
+    burada:
 
    - `mail flow rule name` , yeni posta akışı kuralı için kullanmak istediğiniz addır.
 

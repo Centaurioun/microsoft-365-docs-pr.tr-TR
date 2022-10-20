@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: d1bb0a39ea37f16e3cd245085dbe4986fece59d4
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 694d5dd15dbead030e392f3095c0cc578dc8f85f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68089531"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640906"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 

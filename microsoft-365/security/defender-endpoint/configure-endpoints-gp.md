@@ -15,16 +15,16 @@ ms.collection:
 - m365-security
 - tier1
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.date: 12/07/2021
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 3aa8872609f07e9382c9b7e2040a417a99221c63
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 32e9bda04c7abcee70af5d086255e905fab34170
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180527"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632040"
 ---
 # <a name="onboard-windows-devices-using-group-policy"></a>Windows araçlarını Grup İlkesi kullanarak ekleyin 
 

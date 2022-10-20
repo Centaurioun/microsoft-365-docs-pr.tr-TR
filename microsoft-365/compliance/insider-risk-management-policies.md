@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: a377fe3dee4f38666b13ba26301b9ad1f681f6cd
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 732582dbd65358f7743a8420ac52317b184af469
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564618"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626544"
 ---
 # <a name="insider-risk-management-policies"></a>Insider risk yönetimi ilkeleri
 
@@ -295,6 +295,7 @@ Her ilke şablonu için desteklenen en fazla kapsam içi kullanıcı sayısını
 |Öncelikli kullanıcılara göre güvenlik ilkesi ihlali|1,000|
 |Ayrılan kullanıcıların güvenlik ilkesi ihlalleri|15,000|
 |Dağıtılmamış kullanıcıların güvenlik ilkesi ihlalleri|7,500|
+|Adli kanıt|Önizleme sürümü için 5 kullanıcı|
 
 ## <a name="create-a-new-policy"></a>Yeni ilke oluşturma
 

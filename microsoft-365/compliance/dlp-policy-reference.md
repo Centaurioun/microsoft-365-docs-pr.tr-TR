@@ -21,12 +21,12 @@ ms.collection:
 recommendations: false
 description: DLP ilkesi bileşeni ve yapılandırma başvurusu. Bu makale, DLP ilkesinin ayrıntılı anatomisini sağlar.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: d566d924240878e967a308b5940989c949ce76b4
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: 0d5f89887c241ee6dbfa7b85ee515b2ebca3abc0
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492582"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634816"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Veri Kaybı Önleme ilkesi başvurusu
 
@@ -140,8 +140,7 @@ DLP ilkeleri hassas öğeleri hassas bilgi türüyle (SIT) veya duyarlılık eti
 |Şirket içi depolar| Evet| Evet| Hayır|
 |Power BI|Evet | Evet| Hayır|
 
-> [!NOTE]
-> DLP, hassas belgeleri algılamak için bir koşul olarak eğitilebilir sınıflandırıcıların kullanılmasını (önizlemede) destekler. İçerik Exchange Online, SharePoint Online siteleri, OneDrive İş hesapları, Teams Sohbeti ve Kanalları ve Cihazlar'daki eğitilebilir sınıflandırıcılar tarafından tanımlanabilir. Daha fazla bilgi için bkz [. Eğitilebilir Sınıflandırıcılar](classifier-learn-about.md).
+DLP, hassas belgeleri algılamak için bir koşul olarak eğitilebilir sınıflandırıcıların kullanılmasını destekler. İçerik Exchange Online, SharePoint Online siteleri, OneDrive İş hesapları, Teams Sohbeti ve Kanalları ve Cihazlar'daki eğitilebilir sınıflandırıcılar tarafından tanımlanabilir. Daha fazla bilgi için bkz [. Eğitilebilir Sınıflandırıcılar](classifier-learn-about.md).
 
 > [!NOTE]
 > DLP, e-postalarda ve eklerde duyarlılık etiketlerini algılamayı destekler. Daha fazla bilgi için bkz. [DLP ilkelerinde koşul olarak duyarlılık etiketlerini kullanma](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
@@ -224,7 +223,7 @@ Koşullar kapsayıcıdır ve kuralın ne aramasını istediğinizi ve bu öğele
 - [hassas bilgi türleri](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [duyarlılık etiketleri](sensitivity-labels.md)
 - [bekletme etiketleri](retention.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
-- [Eğitilebilir Sınıflandırıcılar](classifier-learn-about.md) (önizlemede)
+- [Eğitilebilir Sınıflandırıcılar](classifier-learn-about.md) 
 
 ilkeyi uygulamayı seçtiğiniz [konumlara](#location-support-for-how-content-can-be-defined) bağlı olarak.
 

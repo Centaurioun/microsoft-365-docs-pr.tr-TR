@@ -9,8 +9,9 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
+ms.date: 10/17/2022
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom:
@@ -21,12 +22,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: f316687fc0a894cc72578d8e556dc1e1ab322fed
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 7446892236a4b6976c67d8332e618b8089f8869d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180035"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641523"
 ---
 # <a name="frequently-asked-questions-on-tamper-protection"></a>Kurcalama koruması hakkında sık sorulan sorular
 
@@ -67,11 +68,11 @@ Ev kullanıcısıysanız bkz. [Tek bir cihazda kurcalama korumasını yönetme](
 
 ## <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-with-group-policy"></a>Intune'de kurcalama korumasının yapılandırılması, grup ilkesi ile Microsoft Defender Virüsten Koruma'nın nasıl yönetileceğini nasıl etkiler?
 
-Şu anda 'kurcalama koruması' yapılandırmak ve yönetmek için Intune kullanıyorsanız, Intune kullanmaya devam etmelisiniz. 
+Şu anda kurcalama korumasını yapılandırmak ve yönetmek için Intune kullanıyorsanız, Intune kullanmaya devam etmelisiniz. 
 
-Grup ilkesi kurcalama koruması için geçerli değildir. grup ilkesi kullanarak Microsoft Defender Virüsten Koruma ayarlarında yapılan değişiklikler, kurcalama koruması açıldığında veya Intune ile kurcalama koruması yapılandırıldığında yoksayılır.
+Kurcalama koruması açıksa ve Microsoft Defender Virüsten Koruma ayarlarında değişiklik yapmak için grup ilkesi kullandığınızda, kurcalama korumalı ayarlar yoksayılır. 
 
-## <a name="if-we-use-microsoft-intune-to-configure-tamper-protection-does-it-apply-only-to-the-entire-organization"></a>'Kurcalama korumasını' yapılandırmak için Microsoft Intune kullanırsak, bu yalnızca kuruluşun tamamı için geçerli mi?
+## <a name="if-we-use-microsoft-intune-to-configure-tamper-protection-does-it-apply-only-to-the-entire-organization"></a>Kurcalama korumasını yapılandırmak için Microsoft Intune kullanırsak, bu yalnızca kuruluşun tamamı için geçerli mi?
 
 Intune ile kurcalama korumasını yapılandırma esnekliğine sahipsiniz. Kuruluşunuzun tamamını hedefleyebilir veya belirli cihazları ve kullanıcı gruplarını seçebilirsiniz.
 
@@ -88,7 +89,7 @@ Kiracı ekleme kullanıyorsanız Microsoft Endpoint Configuration Manager kullan
 
 ## <a name="im-an-enterprise-customer-can-local-admins-change-tamper-protection-on-their-devices"></a>Kurumsal bir müşteriyim. Yerel yöneticiler cihazlarında kurcalama korumasını değiştirebilir mi?
 
-Hayır. Yerel yöneticiler 'kurcalama koruması' ayarlarını değiştiremez veya değiştiremez.
+Hayır. Yerel yöneticiler kurcalama koruması ayarlarını değiştiremez veya değiştiremez.
 
 ## <a name="what-happens-if-my-device-is-onboarded-with-microsoft-defender-for-endpoint-and-then-goes-into-an-off-boarded-state"></a>Cihazım Uç Nokta için Microsoft Defender eklendiğinde ve ardından kapalı duruma geçerse ne olur?
 

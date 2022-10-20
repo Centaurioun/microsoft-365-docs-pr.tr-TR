@@ -13,25 +13,30 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Dosya etkinliklerini izlemek ve bu dosyalar için uç noktalara koruyucu eylemler uygulamak için Uç nokta veri kaybı önlemeyi ayarlayın.
-ms.openlocfilehash: 6800eaeec80bddda35a3b297d6fb9689800cc244
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 777269fc9e2dd7edd88b0d554c6bb1218c1c3ff7
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67343447"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634684"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Uç noktada veri kaybı önlemeyi kullanmaya başlama
 
 Uç nokta veri kaybını önleme (Endpoint DLP), Microsoft 365 hizmetlerindeki hassas öğeleri bulmak ve korumak için kullanabileceğiniz Microsoft Purview Veri Kaybı Önleme (DLP) özellik paketinin bir parçasıdır. Microsoft'un tüm DLP teklifleri hakkında daha fazla bilgi için bkz. [Veri kaybını önleme hakkında bilgi edinin](dlp-learn-about-dlp.md). Uç Nokta DLP hakkında daha fazla bilgi edinmek için bkz [. Uç nokta veri kaybını önleme hakkında bilgi edinin](endpoint-dlp-learn-about.md)
 
-Microsoft Endpoint DLP, Catalina 10.15 ve üzerini çalıştıran eklenen [Windows 10 ve Windows 11](device-onboarding-overview.md) ve [eklenen macOS cihazlarını](device-onboarding-macos-overview.md) izlemenizi sağlar. Bir cihaz eklendikten sonra, DLP hassas öğelerin ne zaman kullanıldığını ve paylaşılacağını algılar. Bu, bunların düzgün kullanıldığından ve korunduğundan emin olmak ve onları tehlikeye atabilecek riskli davranışları önlemeye yardımcı olmak için ihtiyacınız olan görünürlüğü ve denetimi sağlar.
+Microsoft Endpoint DLP[, eklenen Windows 10 ve](device-onboarding-overview.md) en son yayınlanan üç sürümü çalıştıran Windows 11 ve [eklenen macOS cihazlarını](device-onboarding-macos-overview.md) izlemenize olanak tanır. Bir cihaz eklendikten sonra, DLP hassas öğelerin ne zaman kullanıldığını ve paylaşılacağını algılar. Bu, bunların düzgün kullanıldığından ve korunduğundan emin olmak ve onları tehlikeye atabilecek riskli davranışları önlemeye yardımcı olmak için ihtiyacınız olan görünürlüğü ve denetimi sağlar.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 

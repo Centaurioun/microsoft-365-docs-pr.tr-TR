@@ -6,7 +6,7 @@ ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -20,12 +20,12 @@ ms.custom:
 description: Office 365 aboneliğinizin tam koruması için Exchange Online Protection, Office 365 için Microsoft Defender, Plan 1 ve 2 ve Microsoft 365 Defender için el ile yapılandırmalar.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 0ef5c7987895f984fd59662298617a72504dda67
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: ffdf0c66bc7cc15d3d65b5734a48e240f25d765b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68573383"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622034"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Daha fazla güvenlik için Microsoft 365 kiracınızı yapılandırma
 
@@ -79,11 +79,11 @@ Her raporun içinde, izlenen belirli alanlara yönelik kartlar görürsünüz.
 1. **Email & İşbirliği raporlarına** tıklayın.
 1. Kullanılabilir rapor kartlarını not alın.
     1. *E-postada algılanan kötü amaçlı yazılımlardan* *İstenmeyen posta algılamalarına*, *Güvenliği Aşılmış kullanıcılara*, *Kullanıcıya ileti bildirilenlere* ve *Gönderimler'e* bağlanan bir düğmeyle son iki mesajı göndermeye kadar her şey.
-1. *Posta akışı durum özeti* gibi bir rapora tıklayın ve verileri incelemek için **Ayrıntıları görüntüle** düğmesine tıklayın (toplam posta akışının daha kolay yorumlanması ve engellenen, istenmeyen posta ve kimlik avı e-postaları gibi daha fazlasının daha kolay yorumlanması için bir huni görünümü bile içerir).
+1. Örneğin, *Posta akışı durum özeti* ve verileri incelemek için **Ayrıntıları görüntüle** düğmesine tıklayın (toplam posta akışının daha kolay yorumlanması ve engellenen, istenmeyen postalar ve kimlik avı e-postaları gibi daha fazlasının daha kolay yorumlanması için huni görünümü bile içerir).
 
 |Pano|Açıklama|
 |---|---|
-|güvenlik raporlarını Email|Bu raporlar Exchange Online Protection'de kullanılabilir. Daha fazla bilgi için bkz. [Microsoft 365 Defender portalında e-posta güvenlik raporlarını görüntüleme](view-email-security-reports.md).|
+|Güvenlik raporları| Kötü amaçlı yazılım algılaması olan kullanıcılar ve cihazlar, cihaz uyumluluğu ve risk altındaki kullanıcılar gibi kimlikler ve cihaz güvenlik raporları.|
 |raporları Office 365 için Defender|Raporlar yalnızca Office 365 için Defender'de kullanılabilir. Daha fazla bilgi için bkz. [Microsoft 365 Defender portalında Office 365 için Defender raporlarını görüntüleme](view-reports-for-mdo.md).|
 |Posta akışı raporları ve içgörüleri|Bu raporlar ve içgörüler Exchange yönetim merkezinde (EAC) kullanılabilir. Daha fazla bilgi için bkz [. Posta akışı raporları](/exchange/monitoring/mail-flow-reports/mail-flow-reports) ve [Posta akışı içgörüleri](/exchange/monitoring/mail-flow-insights/mail-flow-insights).|
 |[Tehdit Gezgini (veya gerçek zamanlı algılamalar)](threat-explorer.md)|Kiracınıza yönelik bir saldırıyı araştırıyorsanız veya yaşıyorsanız, tehditleri analiz etmek için Gezgin'i (veya gerçek zamanlı algılamaları) kullanın. Explorer (ve gerçek zamanlı algılama raporu) size zaman içindeki saldırı hacmini gösterir ve bu verileri tehdit aileleri, saldırgan altyapısı ve daha fazlası tarafından analiz edebilirsiniz. Ayrıca, Olaylar listesi için herhangi bir şüpheli e-postayı işaretleyebilirsiniz.|

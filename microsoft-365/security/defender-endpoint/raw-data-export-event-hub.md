@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 396ebb62e426a1e1ab9207fcc493ebf3d5d0c760
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: bf0c8d2a09d9dfc91e49351dce1f60ba10680787
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232924"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632678"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Gelişmiş Tehdit Avcılığı olaylarını Azure Event Hubs akışı yapmak için Uç Nokta için Microsoft Defender yapılandırma
 

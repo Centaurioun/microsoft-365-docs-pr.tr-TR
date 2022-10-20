@@ -10,21 +10,25 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- tier1
+- highpri
 ms.custom: seo-marvel-apr2020
 description: Bu makalede, hizmet şifrelemenin Microsoft Purview Müşteri Anahtarı ile nasıl çalıştığını öğreneceksiniz.
-ms.openlocfilehash: 98f298e88a53fee40e5f254e18695bca42aad52a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 9d4e19b322f1dd4672dfdf06fedeef23b1cdadbc
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632475"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641875"
 ---
 # <a name="service-encryption-with-microsoft-purview-customer-key"></a>Microsoft Purview Müşteri Anahtarı ile hizmet şifreleme
 
 Microsoft 365, BitLocker ve Dağıtılmış Anahtar Yöneticisi (DKM) aracılığıyla etkinleştirilen temel, birim düzeyinde şifreleme sağlar. Microsoft 365, içeriğiniz için ek bir şifreleme katmanı sunar. Bu içerik Exchange Online, Skype Kurumsal, SharePoint Online, OneDrive İş ve Microsoft Teams verilerini içerir.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>Hizmet şifrelemesi, BitLocker ve Müşteri Anahtarı birlikte nasıl çalışır?
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 5e3f8cb9cc826894f816fcebf28ef73213548f22
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: c5b7b70113cdb7ebf0099dd653d0991ed4b788af
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233342"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623023"
 ---
 # <a name="resources"></a>Kaynaklar
 
@@ -146,7 +146,7 @@ Aşağıdaki tabloda, en yaygın senaryolardan bazılarına yönelik komutlar li
 |Karantina yönetimi|Karantinaya tehdit olarak algılanan bir dosya ekleme|`mdatp threat quarantine add --id [threat-id]`|
 |Karantina yönetimi|Tehdit olarak algılanan bir dosyayı karantinadan kaldırma|`mdatp threat quarantine remove --id [threat-id]`|
 |Karantina yönetimi|Dosyayı karantinadan geri yükleme|`mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`|
-|Uç Nokta Algılama ve Yanıt|Erken önizlemeyi ayarlama (kullanılmayan)|`mdatp edr early-preview [enable|disable]`|
+|Uç Nokta Algılama ve Yanıt|Erken önizlemeyi ayarlama |`mdatp edr early-preview [enabled\|disabled]`|
 |Uç Nokta Algılama ve Yanıt|Grup kimliğini ayarlama|`mdatp edr group-ids --group-id [group-id]`|
 |Uç Nokta Algılama ve Yanıt|Etiketi ayarlama /kaldırma, yalnızca `GROUP` desteklenir|`mdatp edr tag set --name GROUP --value [tag]`|
 |Uç Nokta Algılama ve Yanıt|Dışlamaları listeleme (kök)|`mdatp edr exclusion list [processes|paths|extensions|all]`|

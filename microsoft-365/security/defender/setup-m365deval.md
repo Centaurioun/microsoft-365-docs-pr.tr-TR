@@ -20,13 +20,13 @@ ms.collection:
 - m365solution-evalutatemtp
 - highpri
 - tier1
-ms.topic: article
-ms.openlocfilehash: f29b3b80f35ae957e39019767fc3119625954850
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 6eafed1510fa478cbb0012437bf5cc7a6254dc98
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68088849"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640620"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-in-a-lab-environment"></a>laboratuvar ortamında Microsoft 365 Defender denemenizi ayarlama 
 

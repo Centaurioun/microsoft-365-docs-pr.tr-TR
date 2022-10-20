@@ -3,7 +3,7 @@ title: Office 365 için Dış Etki Alanı Adı Sistemi kayıtları
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 11/10/2021
+ms.date: 10/14/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Office 365 dağıtımı planlarken kullanılacak dış Etki Alanı Adı Sistemi kayıtlarının başvuru listesi.
-ms.openlocfilehash: 12549d107d875a036da306ad99fbdf165be27ec8
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: d81ae7c1633e4860fa3c3528f87216150b435993
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68196193"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630632"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 için Dış Etki Alanı Adı Sistemi kayıtları
 
@@ -80,20 +80,22 @@ Exchange Federasyon kullanan Email müşterilerin tablonun en altında listelene
 |**TXT** <br/> **(Exchange federasyonu)**|Karma dağıtım için Exchange federasyonu için kullanılır.|**TXT kaydı 1:** Örneğin, contoso.com ve özel olarak oluşturulan, etki alanına dayanıklı karma metin (örneğin, Y96nu89138789315669824) <br/> **TXT kaydı 2:** Örneğin, exchangedelegation.contoso.com ve özel olarak oluşturulan, etki alanına dayanıklı karma metin (örneğin, Y3259071352452626169)|
 |**CNAME** <br/> **(Exchange federasyonu)**|Şirketiniz Exchange federasyonu kullanırken Otomatik Bulma hizmetini kullanarak Outlook istemcilerinin Exchange Online hizmetine kolayca bağlanmasına yardımcı olur. Otomatik bulma, doğru Exchange Server konağı otomatik olarak bulur ve kullanıcılarınız için Outlook'u yapılandırılır.|**Diğer ad:** Örneğin, Autodiscover.service.contoso.com <br/> **Target:** autodiscover.outlook.com|
 
-## <a name="external-dns-records-required-for-skype-for-business-online"></a>Skype Kurumsal Online için gereken dış DNS kayıtları
+## <a name="external-dns-records-required-for-teams-and-skype-for-business-online"></a>Teams ve Skype Kurumsal Online için gereken dış DNS kayıtları
 <a name="BKMK_ReqdCore"> </a>
 
-Ağınızın doğru yapılandırıldığından emin olmak için [Office 365 URL'leri ve IP adresi aralıklarını](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO) kullanırken atılması gereken belirli adımlar vardır.
+Ağınızın doğru yapılandırıldığından emin olmak için [Office 365 URL'leri ve IP adresi aralıklarını](urls-and-ip-address-ranges.md) kullanırken atılması gereken belirli adımlar vardır.
 
-> [!NOTE]
-> Bu DNS kayıtları, özellikle belirli federasyon sorunlarının ortaya çıkabileceği karma Teams ve Skype Kurumsal senaryosunda Teams için de geçerlidir.
+Bu DNS kayıtları Teams, Skype Kurumsal Online veya her ikisi için de geçerlidir.
 
 |DNS kaydı|Amaç|Kullanılacak değer|
 |---|---|---|
-|**SRV** <br/> **(Skype Kurumsal Online)**|SIP federasyonunu etkinleştirerek Office 365 etki alanınızın anlık ileti (IM) özelliklerini dış istemcilerle paylaşmasına izin verir. [Office 365 URL'leri ve IP adresi aralıkları](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO) hakkında daha fazla bilgi edinin.|**Hizmet:** sipfederationtls <br/> **Protokolü:** Tcp <br/> **Öncelik:** 100 <br/> **Ağırlık:** 1 <br/> **Bağlantı noktası:** 5061 <br/> **Hedef:** sipfed.online.lync.com <br/> **Not:** Güvenlik duvarı veya ara sunucu dış DNS'de SRV aramalarını engelliyorsa, bu kaydı iç DNS kaydına eklemeniz gerekir. |
-|**SRV** <br/> **(Skype Kurumsal Online)**|lync istemcileri arasındaki bilgi akışını koordine etmek için Skype Kurumsal tarafından kullanılır.|**Hizmet:** sip <br/> **Protokolü:** Tls <br/> **Öncelik:** 100 <br/> **Ağırlık:** 1 <br/> **Bağlantı noktası:** 443 <br/> **Hedef:** sipdir.online.lync.com|
-|**CNAME** <br/> **(Skype Kurumsal Online)**|Skype Kurumsal Online hizmetini bulmanıza ve oturum açmanıza yardımcı olması için Lync istemcisi tarafından kullanılır.|**Diğer ad:** sip <br/> **Hedef:** sipdir.online.lync.com <br/> Daha fazla bilgi için bkz. [URL'leri ve IP adresi aralıklarını Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO).|
-|**CNAME** <br/> **(Skype Kurumsal Online)**|Skype Kurumsal Online hizmetini bulmanıza ve oturum açmanıza yardımcı olması için Lync mobil istemcisi tarafından kullanılır.|**Diğer ad:** lyncdiscover <br/> **Hedef:** webdir.online.lync.com|
+|**SRV** <br/> **(Teams ve Skype Kurumsal Online)**|SIP federasyonunu etkinleştirerek Office 365 etki alanınızın anlık ileti (IM) özelliklerini dış istemcilerle paylaşmasına izin verir.|**Hizmet:** sipfederationtls <br/> **Protokolü:** Tcp <br/> **Öncelik:** 100 <br/> **Ağırlık:** 1 <br/> **Bağlantı noktası:** 5061 <br/> **Hedef:** sipfed.online.lync.com <br/> **Not:** Güvenlik duvarı veya ara sunucu dış DNS'de SRV aramalarını engelliyorsa, bu kaydı iç DNS kaydına eklemeniz gerekir. |
+|**SRV** <br/> **(Teams ve Skype Kurumsal Online)**|Hem Teams hem de Skype Kurumsal Online tarafından şirket içi Skype Kurumsal, Teams ve bulutlar arası Skype Kurumsal (örneğin, @ sipfed.online.lync.com ve 21Vianet  _tarafından sağlanan Office 365 arasında Office 365 arasında iletişim kurmak için gereklidir sipfed.online.partner.lync.cn_ veya ABD kamu bulutları).<br/>Hem Yalnızca Teams hem de karma modda gereklidir. Yalnızca Teams modunda çevrimiçi uç sunuculara (örn. _sipfed.online.lync.com_) işaret ederken karma modda şirket içi uç sunuculara (örn. _sipfed) işaret eder\<domain>_.|**Hizmet:** sipfederationtls <br/> **Protokolü:** Tcp <br/> **Öncelik:** 100 <br/> **Ağırlık:** 1 <br/> **Bağlantı noktası:** 5061 <br/> **Hedef:** _sipfederationtls.tcp.\<domain> <br/> **Not:** Güvenlik duvarı veya ara sunucu dış DNS'de SRV aramalarını engelliyorsa, bu kaydı iç DNS kaydına eklemeniz gerekir. |
+|**SRV** <br/> **(Teams ve Skype Kurumsal Online)**|Oturum açmak için Windows Masaüstü istemcisi ve Skype Kurumsal telefonları Skype Kurumsal için gereklidir. Teams için Skype Kurumsal Çevrimiçi telefonlar kullanan ve çevrimiçi uç sunuculara (örneğin _sip.online.lync.com_) işaret etmesi gereken yalnızca Teams kiracıları tarafından gerekebilir. <br/>Karma kiracılar, şirket içi dağıtımlarda (örneğin, _sip\<domain>_) oturum açmak için Windows Masaüstü istemcilerini ve telefonlarını desteklemek için gereklidir.|**Hedef:** _sip._tls.\<domain>|
+|**CNAME** <br/> **(Teams ve Skype Kurumsal Online)**|Windows, Mac ve web istemcilerinin yanı sıra Skype Toplantısı Uygulaması (SMA) için Skype Kurumsal masaüstü istemcisinin oturum açması gerekir. <br/>Yönetim için Skype Kurumsal Online altyapısını kullanmaya devam eden PowerShell cmdlet'leri tarafından da kullanılır. Bu nedenle, hem Yalnızca Teams hem de karma kiracılar için de gereklidir.|**Hedef:**  lyncdiscover.\<domain>|
+|**SRV** <br/> **(Skype Kurumsal Online)**|Lync istemcileri arasındaki bilgi akışını koordine etmek için Skype Kurumsal için gereklidir.|**Hizmet:** sip <br/> **Protokolü:** Tls <br/> **Öncelik:** 100 <br/> **Ağırlık:** 1 <br/> **Bağlantı noktası:** 443 <br/> **Hedef:** sipdir.online.lync.com|
+|**CNAME** <br/> **(Skype Kurumsal Online)**|Skype Kurumsal Online hizmetini bulmak ve oturum açmak için Lync masaüstü istemcisi tarafından gereklidir.|**Diğer ad:** sip <br/> **Hedef:** sipdir.online.lync.com|
+|**CNAME** <br/> **(Skype Kurumsal Online)**|Skype Kurumsal Online hizmetini bulmanıza ve oturum açmanıza yardımcı olması için Lync mobil istemcisi tarafından gereklidir.|**Diğer ad:** lyncdiscover <br/> **Hedef:** webdir.online.lync.com|
 
 ## <a name="external-dns-records-required-for-office-365-single-sign-on"></a>Office 365 Tek Sign-On için gereken dış DNS kayıtları
 <a name="BKMK_ReqdCore"> </a>

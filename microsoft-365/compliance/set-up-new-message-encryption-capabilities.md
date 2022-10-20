@@ -14,25 +14,27 @@ search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 description: Kuruluşunuzun içindeki ve dışındaki kişilerle korumalı e-posta iletişimi sağlayan Microsoft Purview İleti Şifrelemesi hakkında bilgi edinin.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 4b47296ec6e445df20a0694e5cff7ed5b2216852
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 9deff0d084a8a9cf498614da355f36320f6e44ae
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099469"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639894"
 ---
 # <a name="set-up-message-encryption"></a>İleti Şifrelemeyi Ayarlama
 
 Microsoft Purview İleti Şifrelemesi kuruluşların korumalı e-postaları herhangi bir cihazdaki herkesle paylaşmasına olanak tanır. Kullanıcılar diğer Microsoft 365 kuruluşlarının yanı sıra Outlook.com, Gmail ve diğer e-posta hizmetlerini kullanarak üçüncü taraflarla korumalı ileti alışverişinde bulunabilir.
 
 Kuruluşunuzda Microsoft Purview İleti Şifrelemesi kullanılabilir olduğundan emin olmak için aşağıdaki adımları izleyin.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="verify-that-azure-rights-management-is-active"></a>Azure Rights Management'ın etkin olduğunu doğrulama
 
@@ -138,6 +140,6 @@ Mevcut kuralları Microsoft Purview İleti Şifrelemesi kullanacak şekilde gün
 3. Her kural için **Aşağıdakileri yapın bölümünde:**
     - **İleti güvenliğini değiştir'i** seçin.
     - **İleti Şifrelemesi ve hak koruması Office 365 Uygula'yı** seçin.
-    - Listeden bir RMS şablonu seçin.
+    - RMS şablon listesinden **Şifrele'yi** seçin.
     - **Kaydet**'i seçin.
     - **Tamam**'ı seçin.

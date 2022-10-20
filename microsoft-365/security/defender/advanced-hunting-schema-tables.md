@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: 53de014dd9b299c0e6a3d356b7c919c4d0a47379
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 2fb0ebc9b3bc095a7cf0eb76fe4440283e175b7f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68049044"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639587"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Gelişmiş tehdit avcılığı şemasını anlama
 

@@ -10,14 +10,15 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
-description: Müşteri Anahtarını ayarlamayı öğrenin.
-ms.openlocfilehash: d285d19eb00afdaea6c5c591caf32a9b4a482987
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+- purview-compliance
+- tier1
+description: Bu makalede, gerekli Azure kaynaklarını oluşturma ve yapılandırma adımları açıklanır ve ardından Müşteri Anahtarını ayarlama adımları sağlanır.
+ms.openlocfilehash: 4d6c82efc996d0d10b619bf152ffbfb3d27b9d5f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642206"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641831"
 ---
 # <a name="set-up-customer-key"></a>Müşteri Anahtarını Ayarlama
 
@@ -28,6 +29,8 @@ Müşteri Anahtarını kullanmadan önce Azure'ın kurulumunu yapma. Bu makalede
 > [!IMPORTANT]
 > Bu makaledeki en iyi yöntemleri izlemenizi kesinlikle öneririz. Bunlar **TIP** ve **ÖNEMLİ** olarak adlandırılır. Müşteri Anahtarı, kapsamı kuruluşunuzun tamamı kadar büyük olabilecek kök şifreleme anahtarları üzerinde denetim sağlar. Bu, bu anahtarlarla yapılan hataların geniş bir etkiye sahip olabileceği ve hizmet kesintilerine veya verilerinizin geri alınamaz bir şekilde kaybolmasına neden olabileceği anlamına gelir.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="before-you-set-up-customer-key"></a>Müşteri Anahtarını ayarlamadan önce
 
 Başlamadan önce, kuruluşunuz için uygun Azure aboneliklerine ve M365/O365 lisanslarına sahip olduğunuzdan emin olun. Ücretli Azure Aboneliklerini kullanmanız gerekir. Ücretsiz, Deneme, Sponsorluklar, MSDN Abonelikleri ve Eski Destek kapsamındaki abonelikler uygun değildir.

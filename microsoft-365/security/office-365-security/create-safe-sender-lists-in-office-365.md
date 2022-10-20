@@ -18,12 +18,12 @@ ms.custom:
 description: Yöneticiler, Exchange Online Protection (EOP) içinde gelen iletilere izin vermek için kullanılabilir ve tercih edilen seçenekler hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: ea351bc854d34d0a2e618fda0344569b70c00e7d
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 65520a890be1e7c8e529496b7fb78005139bde9d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565849"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645197"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>EOP'de güvenilir gönderen listeleri oluşturma
 
@@ -34,33 +34,34 @@ ms.locfileid: "68565849"
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online posta kutuları olan bir Microsoft 365 müşterisiyseniz veya Exchange Online posta kutusu olmayan tek başına Exchange Online Protection (EOP) müşterisiyseniz, EOP kullanıcıların güvenilir gönderenlerden e-posta almasını sağlamanın çeşitli yollarını sunar. Bu seçenekler arasında Exchange posta akışı kuralları (aktarım kuralları olarak da bilinir), Outlook Güvenilir Gönderenler, IP İzin Verilenler Listesi (bağlantı filtreleme) ve istenmeyen posta önleme ilkelerinde izin verilen gönderen listeleri veya izin verilen etki alanı listeleri bulunur. Toplu olarak, bu seçenekleri _güvenilir gönderen listeleri_ olarak düşünebilirsiniz.
+Exchange Online posta kutuları olan bir Microsoft 365 müşterisiyseniz veya Exchange Online posta kutusu olmayan tek başına Exchange Online Protection (EOP) müşterisiyseniz, EOP kullanıcıların güvenilir gönderenlerden e-posta almasını sağlamanın çeşitli yollarını sunar. Toplu olarak, bu seçenekleri _güvenilir gönderen listeleri_ olarak düşünebilirsiniz.
 
 Kullanılabilir güvenilir gönderen listeleri, en çok önerilenden en az önerilene kadar aşağıdaki listede açıklanmıştır:
 
-1. Posta akışı kuralları
-2. Outlook Güvenilir Gönderenler
-3. IP İzin Ver Listesi (bağlantı filtreleme)
-4. İzin verilen gönderen listeleri veya izin verilen etki alanı listeleri (istenmeyen posta önleme ilkeleri)
+1. Kiracı İzin Ver/Engelle Listesi'nde etki alanları ve e-posta adresleri (sahte gönderenler dahil) için girişlere izin verin.
+2. Posta akışı kuralları (taşıma kuralları olarak da bilinir).
+3. Outlook Güvenilir Gönderenler (her posta kutusunda depolanan Güvenilir Gönderenler listesi).
+4. IP İzin Ver Listesi (bağlantı filtreleme)
+5. İzin verilen gönderen listeleri veya izin verilen etki alanı listeleri (istenmeyen posta önleme ilkeleri)
 
-Posta akışı kuralları, yalnızca doğru iletilere izin verildiğinden emin olmak için en fazla esnekliği sağlar. İstenmeyen postadan koruma ilkelerindeki izin verilen gönderen ve izin verilen etki alanı listeleri IP İzin Verilenler Listesi kadar güvenli değildir çünkü gönderenin e-posta etki alanı kolayca sahtedir. Ancak IP adresinden gönderilen _herhangi_ bir etki alanından gelen e-postalar istenmeyen posta filtrelemesini atladığı için IP İzin Verme Listesi de bir risk oluşturur.
+Bu makalenin geri kalanında her yöntemle ilgili ayrıntılar yer alır.
 
 > [!IMPORTANT]
+> Kötü amaçlı yazılım veya yüksek güvenilirlikli kimlik avı olarak tanımlanan iletiler, kullandığınız güvenilir gönderen listesi seçeneğine bakılmaksızın her zaman karantinaya alınır. Daha fazla bilgi için bkz[. Office 365'de varsayılan olarak güvenlidir](secure-by-default.md).
 >
-> - Kötü amaçlı yazılım veya yüksek güvenilirlikli kimlik avı olarak tanımlanan iletiler, kullandığınız güvenilir gönderen listesi seçeneğine bakılmaksızın her zaman karantinaya alınır. Daha fazla bilgi için bkz[. Office 365'de varsayılan olarak güvenlidir](secure-by-default.md).
+> Güvenilir gönderen listelerini kullanarak istenmeyen posta filtrelemesinde _yaptığınız özel durumları_ yakından izlemeye dikkat edin.
 >
-> - Güvenilir gönderen listelerini kullanarak istenmeyen posta filtrelemesinde _yaptığınız özel durumları_ yakından izlemeye dikkat edin.
+> Her zaman güvenilir gönderen listelerinizdeki iletileri analiz için Microsoft'a gönderin. Yönergeler için bkz. [Microsoft'a iyi e-posta bildirme](admin-submission.md#report-good-email-to-microsoft). İletilerin veya ileti kaynaklarının zararsız olduğu belirlenirse, Microsoft iletilere otomatik olarak izin verebilir ve girişi güvenli gönderen listelerinde el ile tutmanız gerekmez.
 >
-> - Hatalı pozitif (iyi e-posta kötü olarak işaretlenmiş) konusunda yardımcı olmak için güvenilir gönderen listelerini kullanabilirsiniz ancak mümkünse kaçınılması gereken geçici bir çözüm olarak güvenilir gönderen listelerinin kullanımını göz önünde bulundurmalısınız. İstenmeyen posta filtreleme özel durumları kuruluşunuzu kimlik sahtekarlığına ve diğer saldırılara açabileceğinden, güvenilir gönderen listelerini kullanarak hatalı pozitif sonuçları yönetmenizi önermeyiz. Hatalı pozitif sonuçları yönetmek için güvenilir gönderen listelerini kullanmakta ısrar ediyorsanız dikkatli olmanız ve [İletileri ve dosyaları Microsoft'a bildirme](report-junk-email-messages-to-microsoft.md) konusunu hazır tutmanız gerekir.
->
-> - Etki alanının kimliği doğrulanmamış e-posta göndermesine (kimlik sahtekarlığına karşı korumayı atlama) ancak istenmeyen posta önleme ve diğer korumaları atlamamasına izin vermek için kimlik [sahtekarlığı zekası içgörülerini](learn-about-spoof-intelligence.md) ve [Kiracı İzin Ver/Engelle Listesi'ni](manage-tenant-allow-block-list.md) kullanabilirsiniz.
->
-> - EOP ve Outlook, iletinin gönderenini belirlemek için farklı ileti özelliklerini inceler. Daha fazla bilgi için bu makalenin devamında yer [alan Toplu e-posta ile ilgili dikkat edilmesi gerekenler](#considerations-for-bulk-email) bölümüne bakın.
->
+> E-postaya izin vermek yerine, _engellenen gönderen listelerini_ kullanarak belirli kaynaklardan gelen e-postaları engellemek için çeşitli seçenekleriniz de vardır. Daha fazla bilgi için bkz. [EOP'de engelleyici gönderen listeleri oluşturma](create-block-sender-lists-in-office-365.md).
 
-Buna karşılık, _engellenen gönderen listelerini_ kullanarak belirli kaynaklardan gelen e-postaları engellemek için çeşitli seçenekleriniz de vardır. Daha fazla bilgi için bkz. [EOP'de engelleyici gönderen listeleri oluşturma](create-block-sender-lists-in-office-365.md).
+## <a name="use-allow-entries-in-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesinde izin ver girdilerini kullanma
 
-## <a name="recommended-use-mail-flow-rules"></a>(Önerilen) Posta akışı kurallarını kullanma
+Gönderenlerden veya etki alanlarından gelen postalara izin vermek için önerilen bir numaralı seçenek Kiracı İzin Ver/Engelle Listesi'dir. Yönergeler için bkz. [Kiracı İzin Verme/Engelleme Listesi'ni kullanarak e-postaya izin verme veya engelleme](allow-block-email-spoof.md).
+
+Yalnızca Kiracı İzin Ver/Engelle Listesi'ni bir nedenle kullanamıyorsanız gönderenlere izin vermek için farklı bir yöntem kullanmayı düşünmelisiniz.
+
+## <a name="use-mail-flow-rules"></a>Posta akışı kurallarını kullanma
 
 > [!NOTE]
 > bir iç göndereni güvenilir gönderen olarak belirtmek için ileti üst bilgilerini ve posta akışı kurallarını kullanamazsınız. Bu bölümdeki yordamlar yalnızca dış gönderenler için geçerlidir.
@@ -77,7 +78,7 @@ Aşağıdaki örnekte, istenmeyen posta filtrelemeyi atlamak için contoso.com e
 
      Bu koşul, gönderen etki alanının sahte olmadığından emin olmak için gönderen e-posta etki alanının e-posta kimlik doğrulama durumunu denetler. E-posta kimlik doğrulaması hakkında daha fazla bilgi için bkz. [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md) ve [DMARC](use-dmarc-to-validate-email.md).
 
-   - **IP İzin Verme Listesi**: Bağlantı filtresi ilkesinde kaynak IP adresini veya adres aralığını belirtin.
+   - **IP İzin Verme Listesi**: Bağlantı filtresi ilkesinde kaynak IP adresini veya adres aralığını belirtin. Yönergeler için bkz. [Bağlantı filtrelemeyi yapılandırma](configure-the-connection-filter-policy.md).
 
      Gönderen etki alanı e-posta kimlik doğrulaması kullanmıyorsa bu ayarı kullanın. IP İzin Ver Listesindeki kaynak IP adresleri söz konusu olduğunda mümkün olduğunca kısıtlayıcı olun. /24 veya daha az BIR IP adresi aralığı öneririz (daha azı daha iyidir). Tüketici hizmetlerine (örneğin, outlook.com) veya paylaşılan altyapılara ait IP adresi aralıklarını kullanmayın.
 
@@ -90,10 +91,12 @@ Aşağıdaki örnekte, istenmeyen posta filtrelemeyi atlamak için contoso.com e
    > - Ağ adresi çevirisi (NAT) ağ geçidinin arkasındaki bir IP adresine izin verirseniz, IP İzin Verme Listenizin kapsamını bilmek için NAT havuzuna dahil olan sunucuları bilmeniz gerekir. IP adresleri ve NAT katılımcıları değişebilir. Standart bakım yordamlarınızın bir parçası olarak IP İzin Ver Listesi girdilerinizi düzenli aralıklarla denetlemeniz gerekir.
 
 3. **İsteğe bağlı koşullar**:
+
    - **Gönderen** \> **iç/dış** \> **Kuruluş dışında**: Bu koşul örtülüdür, ancak doğru yapılandırılmamış olabilecek şirket içi e-posta sunucularını hesaba eklemek için bu koşulu kullanabilirsiniz.
    - **Konu veya gövde** \> **konu veya gövde bu sözcüklerden** \> herhangi birini içerir \<keywords\>: İletileri konu satırında veya ileti gövdesinde anahtar sözcüklere veya tümceciklere göre daha fazla kısıtlayabilirseniz, bu sözcükleri bir koşul olarak kullanabilirsiniz.
 
 4. **Eylem**: Kuralda bu eylemlerin ikisini de yapılandırın:
+
    1. **İleti özelliklerini** \> değiştirme **istenmeyen posta güvenilirlik düzeyini (SCL)** \> ayarlama **İstenmeyen posta filtrelemeyi atla**.
    2. **İleti özelliklerini** \> değiştirme **ileti üst bilgisi ayarlama**: **İleti üst bilgisini** \<CustomHeaderName\> **değerine** \<CustomHeaderValue\>ayarlayın.
 
@@ -106,9 +109,11 @@ Aşağıdaki örnekte, istenmeyen posta filtrelemeyi atlamak için contoso.com e
 ## <a name="use-outlook-safe-senders"></a>Outlook Güvenilir Gönderenlerini kullanma
 
 > [!CAUTION]
-> Bu yöntem, saldırganların Gelen Kutusu'na e-postayı başarıyla teslim etme riski oluşturur ve aksi takdirde filtrelenebilir; Ancak, kullanıcının Güvenilir Gönderenler veya Güvenli Etki Alanları listeleri kötü amaçlı yazılımların veya yüksek güvenilirlikli kimlik avı iletilerinin filtrelenmesini engellemez.
+> Bu yöntem, saldırganların Gelen Kutusu'na e-postayı başarıyla teslim etme riski oluşturur ve aksi takdirde filtrelenebilir; Ancak, kullanıcının Güvenilir Gönderenler veya Güvenli Etki Alanları listelerindeki bir girdiden gelen bir iletinin kötü amaçlı yazılım veya yüksek güvenilirlikli kimlik avı olduğu belirlenirse, ileti filtrelenir.
 
-Kuruluş ayarı yerine, kullanıcılar veya yöneticiler gönderen e-posta adreslerini posta kutusunda Güvenilir Gönderenler listesine ekleyebilir. Yönergeler için bkz[. Office 365 Exchange Online posta kutularında gereksiz e-posta ayarlarını yapılandırma](configure-junk-email-settings-on-exo-mailboxes.md). Gönderenler filtreleme yığınının bölümlerini atlayacağı için çoğu durumda bu yöntem tercih edilmez. Gönderene güvenseniz de, gönderenin güvenliği tehlikeye girebilir ve kötü amaçlı içerik gönderebilir. Filtrelerimizin her iletiyi denetlemesine izin verdiğinizde ve yanlış [pozitif/negatifi yanlış aldıysak Microsoft'a bildirmeniz](report-junk-email-messages-to-microsoft.md) daha iyi olur. Filtreleme yığınının atlanması da [sıfır saatlik otomatik temizlemeyi (ZAP)](zero-hour-auto-purge.md) engeller.
+Kuruluş ayarı yerine, kullanıcılar veya yöneticiler gönderen e-posta adreslerini posta kutusunda Güvenilir Gönderenler listesine ekleyebilir. Yönergeler için bkz[. Office 365 Exchange Online posta kutularında gereksiz e-posta ayarlarını yapılandırma](configure-junk-email-settings-on-exo-mailboxes.md).
+
+Gönderenler filtreleme yığınının bölümlerini atlayacağı için çoğu durumda bu yöntem tercih edilmez. Gönderene güvenseniz de, gönderenin güvenliği tehlikeye girebilir ve kötü amaçlı içerik gönderebilir. Filtrelerimizin her iletiyi denetlemesine izin vermeli ve yanlış [pozitif/negatifi yanlış aldıysak Microsoft'a bildirmelisiniz](report-junk-email-messages-to-microsoft.md) . Filtreleme yığınının atlanması da [sıfır saatlik otomatik temizlemeyi (ZAP)](zero-hour-auto-purge.md) engeller.
 
 Tasarım gereği ve Exchange Online posta kutularının daha fazla güvenliği için, yalnızca güvenilir gönderenler, engellenen gönderenler ve engellenen etki alanları için gereksiz e-posta ayarları tanınır. Güvenli posta listesi ayarları yoksayılır.
 
@@ -118,7 +123,10 @@ Tasarım gereği ve Exchange Online posta kutularının daha fazla güvenliği i
 
 ## <a name="use-the-ip-allow-list"></a>IP İzin Ver Listesini Kullanma
 
-Daha önce açıklandığı gibi posta akışı kurallarını kullanamıyorsanız, bir sonraki en iyi seçenek kaynak e-posta sunucusunu veya sunucuları bağlantı filtresi ilkesindeki IP İzin Verme Listesi'ne eklemektir. Ayrıntılar için bkz [. EOP'de bağlantı filtrelemeyi yapılandırma](configure-the-connection-filter-policy.md).
+> [!CAUTION]
+> Posta akışı kuralları gibi ek doğrulama olmadan, IP İzin Ver Listesindeki kaynaklardan gelen e-postalar istenmeyen posta filtreleme ve gönderen kimlik doğrulaması (SPF, DKIM, DMARC) denetimlerini atlar. Bu sonuç, saldırganların Gelen Kutusu'na e-postayı başarıyla teslim etme riski oluşturur ve aksi takdirde filtrelenebilir; ancak, IP İzin Ver Listesindeki bir girdiden gelen bir iletinin kötü amaçlı yazılım veya yüksek güvenilirlikli kimlik avı olduğu belirlenirse, ileti filtrelenir.
+
+Bir sonraki en iyi seçenek, kaynak e-posta sunucusunu veya sunucuları bağlantı filtresi ilkesindeki IP İzin Verme Listesi'ne eklemektir. Ayrıntılar için bkz [. EOP'de bağlantı filtrelemeyi yapılandırma](configure-the-connection-filter-policy.md).
 
 **Notlar**:
 
@@ -126,20 +134,17 @@ Daha önce açıklandığı gibi posta akışı kurallarını kullanamıyorsanı
 - Tüketici hizmetlerine (örneğin, outlook.com) veya paylaşılan altyapılara ait IP adresi aralıklarını kullanmayın.
 - IP İzin Ver Listesindeki girdileri düzenli olarak gözden geçirin ve artık ihtiyacınız olmayan girdileri kaldırın.
 
-> [!CAUTION]
-> Posta akışı kuralları gibi ek doğrulama olmadan, IP İzin Ver Listesindeki kaynaklardan gelen e-postalar istenmeyen posta filtreleme ve gönderen kimlik doğrulaması (SPF, DKIM, DMARC) denetimlerini atlar. Bu, saldırganların Gelen Kutusu'na e-postayı başarıyla teslim etme riski oluşturur ve aksi takdirde filtrelenebilir; ancak IP İzin Ver Listesi kötü amaçlı yazılım veya yüksek güvenilirlikli kimlik avı iletilerinin filtrelenmesini engellemez.
-
 ## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>İzin verilen gönderen listelerini veya izin verilen etki alanı listelerini kullanma
 
-İstenmeyen en az seçenek, istenmeyen posta önleme ilkelerinde izin verilen gönderen listesini veya izin verilen etki alanı listesini kullanmaktır. Gönderenler tüm istenmeyen posta, kimlik sahtekarlığı ve kimlik avı korumasını ve gönderen kimlik doğrulamasını (SPF, DKIM, DMARC) atladığından _mümkünse_ bu seçenekten kaçınmalısınız. Bu yöntem yalnızca geçici test için en iyi şekilde kullanılır. Ayrıntılı adımlar [EOP'de istenmeyen posta önleme ilkelerini yapılandırma](configure-your-spam-filter-policies.md) konusunda bulunabilir.
-
-Bu listeler için en yüksek sınır yaklaşık 1000 giriştir; ancak portala yalnızca 30 giriş girebilirsiniz. 30'dan fazla girdi eklemek için PowerShell'i kullanmanız gerekir.
-
 > [!CAUTION]
 >
-> - Bu yöntem, saldırganların Gelen Kutusu'na e-postayı başarıyla teslim etme riski oluşturur ve aksi takdirde filtrelenebilir; ancak, izin verilen gönderenler veya izin verilen etki alanları listeleri kötü amaçlı yazılımların veya yüksek güvenilirlikli kimlik avı iletilerinin filtrelenmesini engellemez.
+> Bu yöntem, saldırganların Gelen Kutusu'na e-postayı başarıyla teslim etme riski oluşturur ve aksi takdirde filtrelenebilir; ancak, izin verilen gönderenler veya izin verilen etki alanları listelerindeki bir girdiden gelen bir iletinin kötü amaçlı yazılım veya yüksek güvenilirlikli kimlik avı olduğu belirlenirse, ileti filtrelenir.
 >
-> - İzin verilen etki alanı listelerinde sahip olduğunuz etki alanlarını (kabul edilen etki alanları olarak da bilinir) veya popüler etki alanlarını (örneğin, microsoft.com) kullanmayın.
+> İzin verilen etki alanı listelerinde sahip olduğunuz etki alanlarını (kabul edilen etki alanları olarak da bilinir) veya popüler etki alanlarını (örneğin, microsoft.com) kullanmayın.
+
+İstenmeyen en az seçenek, istenmeyen posta önleme ilkelerinde izin verilen gönderen listesini veya izin verilen etki alanı listesini kullanmaktır. Gönderenler tüm istenmeyen posta, kimlik sahtekarlığı, kimlik avı koruması (yüksek güvenilirlikli kimlik avı hariç) ve gönderen kimlik doğrulamasını (SPF, DKIM, DMARC) atladığından _mümkünse_ bu seçenekten kaçınmalısınız. Bu yöntem yalnızca geçici test için en iyi şekilde kullanılır. Ayrıntılı adımlar [EOP'de istenmeyen posta önleme ilkelerini yapılandırma](configure-your-spam-filter-policies.md) konusunda bulunabilir.
+
+Bu listeler için en yüksek sınır yaklaşık 1000 giriştir; ancak portala yalnızca 30 giriş girebilirsiniz. 30'dan fazla girdi eklemek için PowerShell'i kullanmanız gerekir.
 
 ## <a name="considerations-for-bulk-email"></a>Toplu e-posta ile ilgili dikkat edilmesi gerekenler
 
@@ -150,14 +155,14 @@ Standart smtp e-posta iletisi, _ileti zarfı ve ileti_ içeriğinden oluşur. İ
 
 Ve adresleri sıklıkla `5321.MailFrom` `5322.From` aynıdır (kişiden kişiye iletişim). Ancak, başka biri adına e-posta gönderildiğinde, adresler farklı olabilir. Bu durum en sık toplu e-posta iletileri için gerçekleşir.
 
-Örneğin, Blue Yonder Airlines'ın e-posta reklamlarını göndermek için Margie'nin Seyahatini kiraladığını varsayalım. Gelen Kutunuzda aldığınız ileti aşağıdaki özelliklere sahiptir:
+Örneğin, Blue Yonder Airlines'ın reklam e-posta iletileri göndermek için Margie'nin Seyahat'ini kiraladığını varsayalım. Gelen Kutunuzda aldığınız ileti aşağıdaki özelliklere sahiptir:
 
 - Adres `5321.MailFrom` blueyonder.airlines@margiestravel.com.
 - Adres `5322.From` blueyonder@news.blueyonderairlines.com, Outlook'ta göreceğiniz adrestir.
 
-EOP'deki istenmeyen posta önleme ilkelerindeki güvenilir gönderen listeleri ve güvenli etki alanı listeleri yalnızca `5322.From` adresleri inceler; bu, adresi kullanan Outlook Güvenilir Gönderenleri'ne `5322.From` benzer.
+EOP'deki istenmeyen posta önleme ilkelerindeki güvenilir gönderen listeleri ve güvenli etki alanı listeleri yalnızca `5322.From` adresleri inceler. Bu davranış, adresi kullanan Outlook Güvenilir Gönderenleri'ne `5322.From` benzer.
 
 Bu iletinin filtrelenmesini önlemek için aşağıdaki adımları uygulayabilirsiniz:
 
 - blueyonder@news.blueyonderairlines.com ( `5322.From` adres) Outlook Güvenilir Göndereni olarak ekleyin.
-- blueyonder@news.blueyonderairlines.com (adres, blueyonder.airlines@margiestravel.com `5322.From` (), `5321.MailFrom`veya her ikisinden gelen iletilerin aranması koşuluyla bir [posta akışı kuralı kullanın](#recommended-use-mail-flow-rules).
+- blueyonder@news.blueyonderairlines.com (adres), blueyonder.airlines@margiestravel.com (`5322.From`adres) veya her ikisinden gelen iletilerin aranması koşuluyla `5321.MailFrom` bir [posta akışı kuralı kullanın](#use-mail-flow-rules).

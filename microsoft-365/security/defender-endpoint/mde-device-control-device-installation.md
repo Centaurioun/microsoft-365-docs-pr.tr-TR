@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 08/11/2022
+ms.date: 10/18/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: fa03a2b2d91598b65e523d520b4c87b708202d18
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 2769321a4abd534987cf15b5b51f36f004eede16
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221497"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68642425"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Cihaz Denetimi Cihazı Yüklemesini Uç Nokta için Microsoft Defender
 
@@ -138,7 +138,7 @@ Bu ilke ayarı, belirli bir cihaz için birden fazla yükleme ilkesi ayarı geç
 Bu ilke ayarı, Windows'un yüklenmesinin engellendiği cihazlar için Tak ve Kullan donanım kimliklerinin ve uyumlu kimliklerin listesini belirtmenize olanak tanır. Varsayılan olarak, bu ilke ayarı Windows'un cihaz yüklemesine izin veren diğer ilke ayarlarına göre önceliklidir.
 
 > [!NOTE]
-> Geçerli cihazlar için bu ilke ayarının yerine geçmek üzere **Bu cihaz örneği kimliklerinden herhangi biriyle eşleşen cihazların yüklenmesine izin ver** ilke ayarını etkinleştirmek için **, Tüm cihaz eşleştirme ölçütlerinde cihaz yükleme ilkelerine izin ver ve engelle için katmanlı değerlendirme sırası uygula** ilke ayarını etkinleştirin.
+> Geçerli cihazlar için bu ilke ayarının yerine geçmek üzere **Bu cihaz örneği kimliklerinden herhangi biriyle eşleşen cihazların yüklenmesine izin ver** ilke ayarını etkinleştirmek için **, Tüm cihaz eşleştirme ölçütlerinde cihaz yükleme ilkelerine izin ver ve engelle için katmanlı değerlendirme sırası uygula** ilke ayarını etkinleştirin. Ayrıca, Cihaz Denetimi'nde **Çıkarılabilir Depolama Birimini Engelle** seçeneği seçiliyse izin verme ilkesi öncelikli olmaz.
 
 Bu ilke ayarını etkinleştirirseniz, Windows'un oluşturduğunuz listede donanım kimliği veya uyumlu kimliği görünen bir cihaz yüklemesi engellenir. Bu ilke ayarını bir uzak masaüstü sunucusunda etkinleştirirseniz, ilke ayarı belirtilen cihazların uzak masaüstü istemcisinden uzak masaüstü sunucusuna yeniden yönlendirilmesini etkiler.
 

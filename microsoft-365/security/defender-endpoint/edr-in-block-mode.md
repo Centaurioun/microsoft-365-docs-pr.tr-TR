@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.custom:
@@ -21,12 +21,12 @@ ms.collection:
 - tier2
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4abed10794df5fe4e1789bff7014e32ea304e937
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 6f9c88b4edde50f4a23d20784d8dbd64a52f15b9
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68186447"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68643085"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Blok modunda uç nokta algılama ve yanıt (EDR)
 

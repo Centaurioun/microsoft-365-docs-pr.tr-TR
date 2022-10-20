@@ -7,21 +7,25 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.topic: article
 ms.reviewer: krowley
 ms.author: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: bad0dc997f2c564670858d2ac35b2cd3177e0578
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.collection:
+- tier2
+- purview-compliance
+ms.openlocfilehash: c2ef3d59c6d6264b64628622f4883c09778aa91e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67678833"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628411"
 ---
 # <a name="disabling-tls-10-and-11-in-microsoft-365-gcc-high-and-dod"></a>Microsoft 365 GCC High ve DoD'da TLS 1.0 ve 1.1'i devre dışı bırakma
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="summary"></a>Özet
 

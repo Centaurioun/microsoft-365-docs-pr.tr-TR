@@ -13,23 +13,25 @@ ms.localizationpriority: ''
 search.appverid:
 - MET150
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 - Strat_O365_Enterprise
 description: Office 365 İleti Şifrelemesi kullanarak kuruluşunuz için hassas bilgi türü ilkesi oluşturmayı öğrenin.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 0974c30882177eb9fc46c2a2fcf65bc2edb43078
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a3c6797750c25e876e1df159d75f1a269decee80
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633443"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634552"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>İleti Şifrelemesi'ni kullanarak kuruluşunuz için hassas bilgi türü ilkesi oluşturma
 
 Office 365 İleti Şifrelemesi ile hassas bir bilgi türü ilkesi oluşturmak için Exchange posta akışı kurallarını veya Microsoft Purview veri kaybı önlemeyi (DLP) kullanabilirsiniz. Exchange posta akışı kuralı oluşturmak için <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange yönetim merkezini (EAC)</a> veya PowerShell'i kullanabilirsiniz.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>EAC'de posta akışı kurallarını kullanarak ilkeyi oluşturmak için
 
@@ -45,7 +47,7 @@ E-postalar veya ekleri aşağıdaki hassas bilgi türlerini içeriyorsa, kurulu�
 
 - ABA yönlendirme numarası
 - Kredi kartı numarası
-- Uyuşturucu Uygulama Dairesi (DEA) numarası
+- Uyuşturucuyla Mücadele Ajansı (DEA) numarası 
 - Birleşik Krallık / Birleşik Krallık pasaport numarası
 - ABD banka hesap numarası
 - ABD Bireysel Vergi Mükellefi Kimlik Numarası (ITIN)

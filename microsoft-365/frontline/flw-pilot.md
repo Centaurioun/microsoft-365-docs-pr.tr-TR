@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 08db9f99ac5a7fd5dc2c116a1f2ef9f35e7f71c7
-ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
+ms.openlocfilehash: bebdd76ce0725ec4338825bd52cff143896b7e5d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68495045"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641787"
 ---
 # <a name="start-with-a-pilot-deployment-of-microsoft-365-for-frontline-workers"></a>Ön cephe çalışanları için Microsoft 365'in pilot dağıtımıyla başlayın
 
@@ -152,7 +152,7 @@ Teams'i ayarladıktan ve ekiplerinizi ve kanallarınızı oluşturduktan sonra p
 
 - Müşteriler veya müşterilerle randevu zamanlamak için [rezervasyonlar](bookings-virtual-visits.md).
 - Ön cephe iş gücünüzü zamanlamak için [vardiyalar](shifts-for-teams-landing-page.md).
-- Çalışanlar için öğrenme ve eğitim deneyimleri oluşturmaya [Viva Öğrenme](/sharepoint/build-learning-and-training-experiences-for-employees).
+- Çalışanlara yönelik öğrenme ve eğitim deneyimleri oluşturmak için [Viva Learning](/sharepoint/build-learning-and-training-experiences-for-employees).
 
 ### <a name="communicate"></a>Iletişim kur
 

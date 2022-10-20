@@ -11,19 +11,20 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Bekletme etiketlerini yayımlama yönergelerini kullanarak, ihtiyacınız olan şeyleri korumak ve olmayanları silmek için bunları uygulamalara uygulayabilirsiniz.
-ms.openlocfilehash: a477157b024d3b58483fe90549ba75e820f34a2f
-ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.openlocfilehash: c21a586e7d1738ea12a4b037854998bb7f1fff40
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67335748"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68642004"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Bekletme etiketlerini yayımlama ve uygulamalarda uygulama
 
@@ -45,6 +46,8 @@ Bekletme etiketlerini kuruluşunuzdaki kişilerin içeriği sınıflandırabilme
 ![Etiketler için rollerin ve görevlerin diyagramı.](../media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
 
 İki yönetici adımı için aşağıdaki yönergeleri kullanın.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -148,7 +151,7 @@ After content is labeled, see the following information to understand when the a
 
 ### Manually apply retention labels 
 
-End users, as well as administrators, can manually apply retention labels from the following locations:  
+End users, as well as administrators, can manually apply retention labels from the following locations:
 
 - Outlook and Outlook on the web
     
@@ -220,6 +223,10 @@ For SharePoint, but not OneDrive, you can create a view of the library that cont
 #### Applying retention labels using Microsoft 365 groups
 
 When you publish retention labels to the **Microsoft 365 Groups** location, the retention labels appear in the SharePoint teams site but aren't supported by any email client for group mailboxes. The experience of applying a retention label in the site is identical to that for documents in SharePoint.
+
+Users can also apply the retention labels directly in Teams, from the **Files** tab:
+
+![Applying a retention label in a Teams channel, Files tab.](../media/retention-label-teams-files.gif)
 
 ### Applying a default retention label to all content in a SharePoint library, folder, or document set
 

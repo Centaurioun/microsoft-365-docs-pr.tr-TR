@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+ms.date: 10/18/2022
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +18,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 99bf1ffbb7f356434eaaa469cf9e4b7201c7b6e0
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: f5a63939747234a236901735be1fc0d4a970d299
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68200329"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638397"
 ---
 # <a name="turn-on-network-protection"></a>Ağ korumasını açın
 
@@ -56,7 +57,7 @@ Kayıt defteri düzenleyicisini kullanarak yerel bir cihazda ağ korumasının e
 
 2. Yan **menüden HKEY_LOCAL_MACHINE** seçin.
 
-3. İç içe menülerde **YAZıLıM** \> **İlkeleri** \> **Microsoft** \> **Windows Defender Windows Defender** \> **Exploit Guard** **Ağ Koruması'na**\> gidin.
+3. İç içe menülerde **YAZıLıM** \> **İlkeleri** \> **Microsoft** \> **Windows Defender** \> **İlke Yöneticisi'ne** gidin.
 
 Anahtar eksikse **SOFTWARE** \> **Microsoft** \> **Windows Defender Windows Defender** \> **Exploit Guard** **Ağ Koruması'na**\> gidin.
 
@@ -154,7 +155,7 @@ Etki alanına katılmış bilgisayarlarda veya tek başına bir bilgisayarda ağ
 
 2. **Grup İlkesi Yönetimi Düzenleyicisi**'nde **Bilgisayar yapılandırması**'na gidin ve **Yönetim şablonları**'nı seçin.
 
-3. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Windows Defender Exploit Guard** \> **Ağ koruması** olarak genişletin.
+3. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Microsoft Defender Exploit Guard** \> **Ağ koruması** olarak genişletin.
 
    > [!NOTE]
    > Windows'un daha eski sürümlerinde, grup ilkesi yolu "Microsoft Defender Virüsten Koruma" yerine "Windows Defender Virüsten Koruma" diyebilir.

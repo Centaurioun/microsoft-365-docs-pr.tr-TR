@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 08/09/2022
+ms.date: 10/18/2022
 ms.reviewer: pauhijbr, ksarens, mkaminska
 manager: dansimp
 ms.subservice: mde
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier3
 search.appverid: met150
-ms.openlocfilehash: 8e3603887a7b4c1713c72bfe4640c63d71f44c1b
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 900e3424218cab4ab461339278ca64cbe8837805
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68219112"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628015"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>Zamanlanmış hızlı veya tam Microsoft Defender Virüsten Koruma taramalarını yapılandırma
 
@@ -50,6 +50,8 @@ Her zaman açık, gerçek zamanlı koruma ve [isteğe bağlı virüsten koruma](
 - Varsayılan olarak, Microsoft Defender Virüsten Koruma zamanlanmış taramaların zamanından 15 dakika önce bir güncelleştirme olup olmadığını denetler. [Bu varsayılanı geçersiz kılmak için koruma güncelleştirmelerinin ne zaman indirileceği ve uygulanacağı zamanlamayı yönetebilirsiniz](manage-protection-update-schedule-microsoft-defender-antivirus.md).
 
 - Bir cihazın fişi takılı değilse ve zamanlanmış bir tam tarama sırasında pille çalışıyorsa, zamanlanan tarama 1002 olayıyla durdurulur ve tarama tamamlanmadan önce durdurulur. Microsoft Defender Virüsten Koruma bir sonraki zamanlanan zamanda tam tarama çalıştırır.
+
+- Zamanlanmış taramalar, cihazın yerel saat dilimine göre çalışır.
 
 ## <a name="quick-scan-full-scan-and-custom-scan"></a>Hızlı tarama, tam tarama ve özel tarama
 

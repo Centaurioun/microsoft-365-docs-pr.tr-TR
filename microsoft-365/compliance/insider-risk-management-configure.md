@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 9b8ef92016ea87e69cf1284c4ae740a3978f1fba
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 5d3e889966576f4255de2442e7725d616448d555
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564596"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645043"
 ---
 # <a name="get-started-with-insider-risk-management"></a>İçeriden risk yönetimini kullanmaya başlama
 
@@ -98,15 +98,19 @@ Insider risk yönetimi ilkelerini ve uyarılarını nasıl yönetmek istediğini
 
 Insider risk yönetimiyle çalışırken bu rol grubu seçenekleri ve çözüm eylemleri arasından seçim yapacaksınız:
 
-|Eylem|Insider Risk Management|Insider Risk Management Yönetici|İçeriden Risk Yönetimi Analistleri|İçeriden Risk Yönetimi Araştırmacıları|Insider Risk Management Denetçileri|
-|---|---|---|---|---|---|
-|İlkeleri ve ayarları yapılandırma|Evet|Evet|Hayır|Hayır|Hayır|
-|Analiz içgörülerine erişme|Evet|Evet|Evet|Hayır|Hayır|
-|Erişim & uyarıları araştırma|Evet|Hayır|Evet|Evet|Hayır|
-|Olayları araştırmak & erişim|Evet|Hayır|Evet|Evet|Hayır|
-|access & İçerik Gezgini'ni görüntüleyin|Evet|Hayır|Hayır|Evet|Hayır|
-|Bildirim şablonlarını yapılandırma|Evet|Hayır|Evet|Evet|Hayır|
-|Denetim günlüklerini görüntüleme & dışarı aktarma|Evet|Hayır|Hayır|Hayır|Evet|
+|**Eylem**|**Insider Risk Management**|**Insider Risk Management Yönetici**|**İçeriden Risk Yönetimi Analistleri**|**İçeriden Risk Yönetimi Araştırmacıları**|**Insider Risk Management Denetçileri**|**Insider Risk Yönetimi Onaylayanları**|
+|---|---|---|---|---|---|---|
+|İlkeleri ve ayarları yapılandırma|Evet|Evet|Hayır|Hayır|Hayır|Hayır|
+|Analiz içgörülerine erişme|Evet|Evet|Evet|Hayır|Hayır|Hayır|
+|Erişim & uyarıları araştırma|Evet|Hayır|Evet|Evet|Hayır|Hayır|
+|Olayları araştırmak & erişim|Evet|Hayır|Evet|Evet|Hayır|Hayır|
+|access & İçerik Gezgini'ni görüntüleyin|Evet|Hayır|Hayır|Evet|Hayır|Hayır|
+|Bildirim şablonlarını yapılandırma|Evet|Hayır|Evet|Evet|Hayır|Hayır|
+|Denetim günlüklerini görüntüleme & dışarı aktarma|Evet|Hayır|Hayır|Hayır|Evet|Hayır|
+|Erişim & adli kanıt yakalamalarını görüntüleme|Evet|Hayır|Hayır|Evet|Hayır|Hayır|
+|Adli kanıt yakalama isteği oluşturma|Evet|Evet|Hayır|Hayır|Hayır|Hayır|
+|İstekleri yakalamaya yönelik adli kanıtları onaylama|Evet|Hayır|Hayır|Hayır|Hayır|Evet|
+|Cihaz durumu raporunu görüntüleme|Evet|Evet|Hayır|Hayır|Hayır|Hayır|
 
 > [!IMPORTANT]
 > Yerleşik *Insider Risk Yönetimi* veya *Insider Risk Yönetimi Yönetici* rol gruplarında her zaman en az bir kullanıcınız olduğundan emin olun (seçtiğiniz seçeneğe bağlı olarak), kuruluşunuzdan ayrılan belirli kullanıcılar için insider risk yönetimi yapılandırmanızın 'sıfır yönetici' senaryosuna girmemesi için.
@@ -237,6 +241,12 @@ Güvenlik ihlali ilkeleri oluşturursanız, kuruluşunuzda Uç Nokta için Micro
 
 [Uç Nokta için Defender'ı](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) insider risk yönetimi tümleştirmesi için yapılandırmaya yönelik adım adım yönergeler için Uç Nokta için Defender'da gelişmiş özellikleri yapılandırma makalesine bakın. Uç Nokta için Microsoft Defender yapılandırdıktan sonra bu yapılandırma adımlarına dönün.
 
+### <a name="configure-forensic-evidence-optional"></a>Adli kanıtı yapılandırma (isteğe bağlı)
+
+Bir güvenlik olayına yol açabilecek riskli kullanıcı etkinlikleri hakkında daha iyi içgörüler elde etmek için adli araştırmalar sırasında güvenlik ekipleri için görsel bağlama sahip olmak çok önemlidir. Özelleştirilebilir olay tetikleyicileri ve yerleşik kullanıcı gizliliği koruma denetimleriyle adli kanıt, kuruluşunuzun hassas verilerin yetkisiz veri sızdırması gibi olası veri risklerini daha iyi azaltmasına, anlamasına ve yanıtlamasına yardımcı olmak için cihazlar arasında özelleştirilebilir yakalamaya olanak tanır.
+
+Kuruluşunuz için adli kanıt yapılandırmaya yönelik adım adım yönergeler için [Insider risk yönetimi adli kanıtını kullanmaya başlama](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure) makalesine bakın.
+
 ## <a name="step-5-required-configure-insider-risk-settings"></a>5. Adım (gerekli): Insider risk ayarlarını yapılandırma
 
 [Insider risk ayarları](insider-risk-management-settings.md) , ilke oluştururken seçtiğiniz şablondan bağımsız olarak tüm insider risk yönetimi ilkeleri için geçerlidir. Ayarlar, tüm **insider risk** yönetimi sekmelerinin en üstünde bulunan Insider risk ayarları denetimi kullanılarak yapılandırılır. Bu ayarlar gizliliği, göstergeleri, akıllı algılamaları ve daha fazlasını denetler.
@@ -262,7 +272,7 @@ Güvenlik ihlali ilkeleri oluşturursanız, kuruluşunuzda Uç Nokta için Micro
 8. **Power Automate akışları** sayfasında, insider risk akışı şablonlarından bir akış yapılandırın veya yeni bir akış oluşturun. Adım adım yönergeler için [Insider risk yönetimi ayarlarını kullanmaya başlama](insider-risk-management-settings.md#power-automate-flows-preview) makalesine bakın.
 9. **Öncelik varlıkları sayfasında**, fiziksel denetiminizdeki verileri kullanmak için öncelik varlıklarını yapılandırın ve Fiziksel bağlantı bağlayıcısı tarafından içeri aktarılan erişim platformuna erişin. Adım adım yönergeler için [Insider risk yönetimi ayarlarını kullanmaya başlama](insider-risk-management-settings.md#priority-physical-assets-preview) makalesine bakın.
 10. **Microsoft Teams** sayfasında, servis talebi veya kullanıcı işbirliği için otomatik olarak bir ekip oluşturmak için Microsoft Teams'in insider risk yönetimiyle tümleştirmesini etkinleştirin. Adım adım yönergeler için [Insider risk yönetimi ayarlarını kullanmaya başlama](insider-risk-management-settings.md#microsoft-teams-preview) makalesine bakın.
-11. Insider risk ilkelerinizde bu ayarları etkinleştirmek için **Kaydet'i** seçin.
+12. Insider risk ilkelerinizde bu ayarları etkinleştirmek için **Kaydet'i** seçin.
 
 ## <a name="step-6-required-create-an-insider-risk-management-policy"></a>6. Adım (gerekli): Insider risk yönetimi ilkesi oluşturma
 

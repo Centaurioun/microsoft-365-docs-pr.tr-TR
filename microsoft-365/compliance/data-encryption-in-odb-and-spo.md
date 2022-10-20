@@ -15,21 +15,24 @@ search.appverid:
 - MET150
 ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - SPO_Content
+- tier2
 description: OneDrive İş ve SharePoint Online'da veri güvenliği için şifrelemenin temel öğelerini anlama.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5b56caed2a93bf482509a4a90a8bbc3a828d76e7
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b33bbe22e5bf606bcc71b6308c5fce3e0c68a542
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630157"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621774"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>Data Encryption in OneDrive for Business and SharePoint Online
 
 OneDrive İş ve SharePoint Online'da veri güvenliği için şifrelemenin temel öğelerini anlama.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="security-and-data-encryption-in-office-365"></a>Office 365'de güvenlik ve veri şifrelemesi
 
 Microsoft 365, fiziksel veri merkezi güvenliği, ağ güvenliği, erişim güvenliği, uygulama güvenliği ve veri güvenliği olmak üzere birden çok katmanda kapsamlı koruma sunan son derece güvenli bir ortamdır. Bu makale özellikle OneDrive İş ve SharePoint Online için veri güvenliğinin aktarım ve bekleyen şifreleme tarafına odaklanır.

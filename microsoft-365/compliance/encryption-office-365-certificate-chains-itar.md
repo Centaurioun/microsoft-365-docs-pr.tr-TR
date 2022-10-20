@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
-- Strat_O365_IP
+- purview-compliance
+- tier1
 description: Microsoft 365'te DOD ve GCC Yüksek kök sertifikaların ve sertifika yetkililerinin (CA) tam listesini görüntüleyin.
-ms.openlocfilehash: 201bc3d7a952bc7906d7efe7ac7b856348cb88e4
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6d0428c84f80a1850aac00295737bd1a61cf0e34
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627337"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68642843"
 ---
 # <a name="microsoft-365-encryption-chains---dod-and-gcc-high"></a>Microsoft 365 şifreleme zincirleri - DOD ve GCC High
 
@@ -40,6 +40,8 @@ Son güncelleştirme: **16.10.2020**
 | Genel Olarak Güvenilen Kök ve Ara Sertifikalar | [Microsoft 365 ITAR Sertifika Paketi (P7B)](https://download.microsoft.com/download/b/3/a/b3ae08a2-516c-46a9-8723-6256e4fd6383/m365_chain_certs_itar20201012.p7b) | crl.entrust.net<br>crl3.digicert.com<br>crl4.digicert.com | ocsp.digicert.com<br>ocsp.entrust.net |
 
 Sertifika sağlayıcılarıyla ilgili ek ayrıntıları görmek için aşağıdaki kök ve ara bölümleri genişletin.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="microsoft-365-certificate-details"></a>**Microsoft 365 Sertifika Ayrıntıları**
 

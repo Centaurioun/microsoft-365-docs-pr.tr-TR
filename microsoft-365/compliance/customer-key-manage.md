@@ -10,18 +10,21 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 description: Müşteri Anahtarı'nı ayarladıktan sonra, AKV anahtarlarını geri yükleyerek ve izinleri yöneterek ve veri şifreleme ilkeleri oluşturup atayarak anahtarı yönetmeyi öğrenin.
-ms.openlocfilehash: 4f02b9228dc581e1b1d2a2f533d65d97bffe572e
-ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.openlocfilehash: 31cc70e94bd11c86cd66a8d2cc8b4033b4c0b2eb
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67433476"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641919"
 ---
 # <a name="manage-customer-key"></a>Müşteri Anahtarını Yönet
 
 Müşteri Anahtarını ayarladıktan sonra bir veya daha fazla veri şifreleme ilkesi (DEP) oluşturup atamanız gerekir. DEP'lerinizi atadıktan sonra anahtarlarınızı bu makalede açıklandığı gibi yönetebilirsiniz. İlgili konularda Müşteri Anahtarı hakkında daha fazla bilgi edinin.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="create-a-dep-for-use-with-multiple-workloads-for-all-tenant-users"></a>Tüm kiracı kullanıcıları için birden çok iş yüküyle kullanmak üzere bir DEP oluşturma
 

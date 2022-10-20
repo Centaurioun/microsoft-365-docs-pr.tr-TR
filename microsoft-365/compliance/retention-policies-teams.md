@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Kuruluşunuz için Teams iletilerinin otomatik olarak tutulmasını veya silinmesini yönetebilmeniz için Microsoft Teams için geçerli olan Microsoft 365 bekletme ilkeleri hakkında bilgi edinin.
-ms.openlocfilehash: 799556ea2f36f2c90c8182ae5cef0b5311cd9a75
-ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
+ms.openlocfilehash: cea95093a48aeda2e93c77c975b0838ae1962ba2
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68495154"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633052"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams için bekletme hakkında bilgi edinin
 
@@ -51,7 +51,7 @@ Diğer iş yükleri için bkz:
 > 
 > Bekletme ilkeleri, [kendinizle sohbet](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) özelliğiyle gönderilen iletileri de destekler.
 
-Teams sohbetleri iletileri, kanal iletileri ve özel kanal iletileri Teams için bekletme ilkeleri kullanılarak silinebilir ve iletilerdeki metinlere ek olarak, uyumluluk nedeniyle aşağıdaki öğeler korunabilir: Video klipleri, eklenmiş resimler, tablolar, köprü metni bağlantıları, diğer Teams iletilerine ve dosyalarına bağlantılar ve [kart içeriği](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Sohbet iletileri ve özel kanal iletileri konuşmadaki kişilerin tüm adlarını, kanal iletileri ise ekip adını ve ileti başlığını (varsa) içerir. 
+Teams sohbetleri iletileri, kanal iletileri ve özel kanal iletileri Teams için bekletme ilkeleri kullanılarak silinebilir ve iletilerdeki metinlere ek olarak, uyumluluk nedeniyle aşağıdaki öğeler korunabilir: [Video klipleri](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c), eklenmiş resimler, tablolar, köprü metni bağlantıları, diğer Teams iletilerine ve dosyalarına bağlantılar ve [kart içeriği](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Sohbet iletileri ve özel kanal iletileri konuşmadaki kişilerin tüm adlarını, kanal iletileri ise ekip adını ve ileti başlığını (varsa) içerir. 
 
 Kod parçacıkları, Teams mobil istemcisinden kaydedilen sesli notlar, küçük resimler, duyuru görüntüleri ve ifade biçimindeki diğer kişilerden gelen tepkiler, Teams için bekletme ilkelerini kullandığınızda korunmaz.
 

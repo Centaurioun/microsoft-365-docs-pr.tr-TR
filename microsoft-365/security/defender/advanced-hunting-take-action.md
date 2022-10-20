@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier1
-ms.topic: article
-ms.openlocfilehash: 9fc8d4a7b5d0d2e7964cb0651165e8e0b9b209c4
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 50695e5fbbcda4dfdee1c5debd921c019be1e003
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68049066"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625313"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Gelişmiş tehdit avcılığı sorgu sonuçları üzerinde eylem gerçekleştirme
 

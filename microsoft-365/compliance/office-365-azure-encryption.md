@@ -13,16 +13,17 @@ search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_Enterprise
-- M365-security-compliance
+- purview-compliance
+- tier3
 - Strat_O365_Enterprise
 description: Azure Disk Şifrelemesi gibi Azure'da kullanılabilen şifreleme hakkında bilgi edinin
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: de0e98feb54cd2f56ebea35a0f0ec243b8712d86
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: b320fdf7125746e6ad7c4b4d3fa6e70d8d757ac7
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67472446"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630852"
 ---
 # <a name="encryption-in-azure"></a>Azure'da şifreleme
 
@@ -35,6 +36,8 @@ Veriler [istemci tarafı şifreleme](/azure/storage/storage-client-side-encrypti
 Bekleyen veriler için Azure, AES-256 desteği gibi birçok şifreleme seçeneği sunarak ihtiyaçlarınıza en uygun veri depolama senaryolarını seçme esnekliği sunar. Veriler [Depolama Hizmeti Şifrelemesi](/azure/storage/storage-service-encryption) kullanılarak Azure Depolama'ya yazıldığında otomatik olarak şifrelenebilir ve VM'ler tarafından kullanılan işletim sistemi ve veri diskleri şifrelenebilir. Daha fazla bilgi için bkz. [Azure'da Windows sanal makineleri için güvenlik önerileri](/azure/virtual-machines/security-recommendations). Ayrıca, Azure Depolama'daki veri nesnelerine temsilci erişimi [, Paylaşılan Erişim İmzaları](/azure/storage/storage-dotnet-shared-access-signature-part-1) kullanılarak verilebilir. Azure ayrıca [Azure SQL Veritabanı ve Data Warehouse için Saydam Veri Şifrelemesi](/sql/relational-databases/security/encryption/transparent-data-encryption-azure-sql) kullanarak bekleyen veriler için şifreleme sağlar.
 
 Azure'da şifreleme hakkında daha fazla bilgi için bkz. [Azure şifrelemeye genel bakış](/azure/security/security-azure-encryption-overview) ve [Bekleyen Azure Veri Şifrelemesi](/azure/security/azure-security-encryption-atrest).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="azure-disk-encryption"></a>Azure Disk Şifrelemesi
 

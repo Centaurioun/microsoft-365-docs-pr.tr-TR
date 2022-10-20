@@ -11,16 +11,18 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 search.appverid:
 - MET150
 description: Microsoft Purview veri kaybı önleme ilkelerini ve araçlarını kullanarak hassas bilgilerinizi korumayı öğrenin ve DLP yaşam döngüsünde bir tura katılın.
-ms.openlocfilehash: 46c29b8aa19ce9b70cdb9127ab2c6270c0009a0e
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: fa3dd5ac5f32d058c55c5bde92b4a12170bd8fb3
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882422"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623355"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Veri kaybı önleme hakkında daha fazla bilgi edinme
 
@@ -30,11 +32,13 @@ Microsoft Purview'da, DLP ilkelerini tanımlayıp uygulayarak veri kaybı önlem
 
 - Teams, Exchange, SharePoint ve OneDrive gibi Microsoft 365 hizmetleri
 - Word, Excel ve PowerPoint gibi Office uygulamaları
-- Windows 10, Windows 11 ve macOS (Catalina 10.15 ve üzeri) uç noktaları
+- Windows 10, Windows 11 ve macOS (en son yayımlanan üç sürüm) uç noktası
 - Microsoft dışı bulut uygulamaları
 - şirket içi dosya paylaşımları ve şirket içi SharePoint.
 
 DLP, hassas öğeleri yalnızca basit bir metin taramasıyla değil, derin içerik analizini kullanarak algılar. İçerik, normal ifadelerin değerlendirilmesi, iç işlev doğrulaması ve birincil veri eşleşmesine yakın ikincil veri eşleşmeleri tarafından anahtar sözcüklerle yapılan birincil veri eşleşmeleri için analiz edilir. Bunun ötesinde DLP, DLP ilkelerinizle eşleşen içeriği algılamak için makine öğrenmesi algoritmalarını ve diğer yöntemleri de kullanır.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="dlp-is-part-of-the-larger-microsoft-purview-offering"></a>DLP, daha büyük Microsoft Purview teklifinin bir parçasıdır
 
@@ -67,7 +71,7 @@ DLP izleme ve koruma, kullanıcıların her gün kullandığı uygulamalarda yer
 
 **DLP için teknoloji planlaması**
 
-Teknoloji olarak DLP'nin bekleyen verilerinizi, kullanımdaki verileri ve Microsoft 365 hizmetleri, Windows 10, Windows 11 ve macOS (Catalina 10.15 ve üzeri) cihazları, şirket içi dosya paylaşımları ve şirket içi SharePoint'te hareket halindeki verileri izleyip koruyabileceğini unutmayın. Farklı konumlar, izlemek ve korumak istediğiniz veri türü ve ilke eşleşmesi gerçekleştiğinde gerçekleştirilecek eylemler için planlama etkileri vardır.
+Teknoloji olarak DLP'nin bekleyen verilerinizi, kullanımdaki verileri ve Microsoft 365 hizmetleri, Windows 10, Windows 11 ve macOS (en son yayımlanan üç sürüm) cihazları, şirket içi dosya paylaşımları ve şirket içi SharePoint'te hareket halindeki verileri izleyebileceğini ve koruyabileceğini unutmayın. Farklı konumlar, izlemek ve korumak istediğiniz veri türü ve ilke eşleşmesi gerçekleştiğinde gerçekleştirilecek eylemler için planlama etkileri vardır.
 
 **DLP için iş süreçleri planlaması**
 
@@ -88,7 +92,7 @@ Bekleyen verilere, kullanımdaki verilere ve konumlardaki hareket halindeki veri
 - OneDrive hesapları
 - Teams sohbeti ve kanal iletileri
 - Bulut Uygulamaları için Microsoft Defender
-- Windows 10, Windows 11 ve macOS (Catalina 10.15 ve üzeri) cihazlar
+- Windows 10, Windows 11 ve macOS (üç son sürüm) cihazı
 - Şirket içi depolar
 - PowerBI siteleri
 
@@ -145,8 +149,8 @@ Konum | include/exclude by|
 |SharePoint siteleri |Site |
 |OneDrive hesapları |hesaplar veya dağıtım grupları |
 |Teams sohbeti ve kanal iletileri |hesap veya dağıtım grubu |
-|Windows 10, Windows 11 ve macOS (Catalina 10.15 ve üzeri) cihazlar |kullanıcı veya grup |
-|Microsoft Cloud App Security |Örnek |
+|Windows 10, Windows 11 ve macOS (üç son sürüm) cihazı |kullanıcı veya grup |
+|Microsoft Bulut Uygulamaları Güvenliği |Örnek |
 |Şirket içi depolar| depo dosyası yolu|
 
 3. **Bir ilkenin bir öğeye uygulanması için eşleşmesi gereken koşulları seçin** - Önceden yapılandırılmış koşulları kabul edebilir veya özel koşullar tanımlayabilirsiniz. Bazı örnekler şunlardır:
@@ -159,7 +163,7 @@ Konum | include/exclude by|
 
 - SharePoint/Exchange/OneDrive: Kuruluş formunuzun dışındaki kişilerin içeriğe erişmesini engelleyin. Kullanıcıya bir ipucu gösterin ve DLP ilkesi tarafından yasaklanan bir eylemde bulunduğunu belirten bir e-posta bildirimi gönderin.
 - Teams Sohbeti ve Kanal: Hassas bilgilerin sohbette veya kanalda paylaşılmasını engelleyin
-- Windows 10, Windows 11 ve macOS (Catalina 10.15 ve üzeri) Cihazlar: Hassas bir öğeyi kaldırılabilir bir USB cihazına kopyalamayı denetleme veya kısıtlama
+- Windows 10, Windows 11 ve macOS (en son yayımlanan üç sürüm) Cihazlar: Hassas bir öğeyi kaldırılabilir bir USB cihazına kopyalamayı denetleme veya kısıtlama
 - Office Uygulamaları: Kullanıcıya riskli bir davranış sergilediğini bildiren ve geçersiz kılmaya izin veren bir açılır pencere gösterin.
 - Şirket içi dosya paylaşımları: Dosyayı depolandığı konumdan karantina klasörüne taşıma
 

@@ -17,13 +17,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
-ms.openlocfilehash: 5a9e62ab2d66a16cceea3607c124edf7e7531ea7
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 06ea5fad75bf1eb004d6e6a50c6a08a29934ec16
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68049110"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68643921"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-365-defender"></a>SIEM araçlarınızı Microsoft 365 Defender ile tümleştirin
 
