@@ -23,12 +23,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5082d07b9b0b0552917dff6071662ee713a7769b
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 0c1950e2c3927db06143a63754ea61350b121d05
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565087"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68629335"
 ---
 # <a name="learn-about-communication-compliance"></a>İletişim uyumluluğu hakkında daha fazla bilgi edinme
 
@@ -114,7 +114,7 @@ Yerleşik düzeltme iş akışları, kuruluşunuzda ilke eşleşmeleri olan ilet
 - **Kullanıcı geçmişi**: İlke eşleşmeleri için geçmiş bildirimler ve yükseltmeler gibi tüm kullanıcı iletisi düzeltme etkinliklerinin geçmiş görünümü artık gözden geçirenlere düzeltme iş akışı işlemi sırasında daha fazla bağlam sağlar. Kullanıcılar için ilke eşleşmelerinin ilk kez veya tekrarlanan örnekleri artık arşivlenir ve kolayca görüntülenebilir.
 - **Desen algılandı bildirimi**: Zaman içinde birçok taciz ve zorbalık eylemi gerçekleşir ve bir kullanıcı tarafından aynı davranışın örneklerinin yinelenmesi gerekir. Uyarı ayrıntılarında görüntülenen yeni desen algılanan bildirim, bu uyarılara ve bu tür davranışlara dikkat etmeye yardımcı olur.
 - **Çeviri**: Düzeltme iş akışındaki çeviri desteğini kullanarak sekiz dilde ileti ayrıntılarını hızla araştırın. Diğer dillerdeki iletiler otomatik olarak gözden geçirenin görüntüleme diline dönüştürülür.
-- **Ek algılama**: OneDrive ve Microsoft Teams'den Microsoft Teams iletilerinin ilke sınıflandırıcıları ve koşullarıyla eşleşen bağlantılı içeriği (Modern ekler) tarayın, algılayın ve araştırın. Ek içeriği, ayrıntılı inceleme ve eylem için otomatik olarak bir metin dosyasına ayıklanır.
+- **Ek algılama**: OneDrive ve Microsoft Teams'den Microsoft Teams iletilerinin ilke sınıflandırıcıları ve koşullarıyla eşleşen bağlantılı içeriği (Modern ekler) algılama, tanımlama ve araştırma. Ek içeriği, ayrıntılı inceleme ve eylem için otomatik olarak bir metin dosyasına ayıklanır.
 
 ### <a name="actionable-insights"></a>Eyleme dönüştürülebilir içgörüler
 

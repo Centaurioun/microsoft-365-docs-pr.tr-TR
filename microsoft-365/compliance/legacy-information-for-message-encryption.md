@@ -14,24 +14,25 @@ search.appverid:
 - MET150
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier3
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 description: Kuruluşunuz için eski dosyaların Office 365 İleti Şifrelemesi'ne (OME) nasıl geçirilmesini anlayın.
-ms.openlocfilehash: b34ccbcf077238ba3caee9da3b337cd0d32cf458
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 97333df898dfd8aaff0670cc73b3c67a9325fd47
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642535"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626434"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 İleti Şifrelemesi için eski bilgiler
 
 Kuruluşunuzu henüz Microsoft Purview İleti Şifrelemesi taşımadıysanız ancak OME'yi zaten dağıttıysanız, bu makaledeki bilgiler kuruluşunuz için geçerlidir. Microsoft, kuruluşunuz için makul olduğu anda Microsoft Purview İleti Şifrelemesi'e geçmek için bir plan yapmanızı önerir. Yönergeler için bkz[. Microsoft Purview İleti Şifrelemesi ayarlama](set-up-new-message-encryption-capabilities.md). Yeni ileti şifrelemesi hakkında daha fazla bilgi edinmek istiyorsanız bkz. [İleti şifreleme](ome.md). Bu makalenin geri kalanı, Microsoft Purview İleti Şifrelemesi yayımlanmadan önceki OME davranışını ifade eder.
 
-Office 365 İleti Şifrelemesi ile kuruluşunuz, kuruluşunuzun içindeki ve dışındaki kişiler arasında şifreli e-posta iletileri gönderebilir ve alabilir. Office 365 İleti Şifrelemesi Outlook.com, Yahoo, Gmail ve diğer e-posta hizmetleriyle çalışır. E-posta iletisi şifrelemesi, yalnızca hedeflenen alıcıların ileti içeriğini görüntüleyebilmesine yardımcı olur.
+Office 365 İleti Şifrelemesi ile kuruluşunuz, kuruluşunuzun içindeki ve dışındaki kişiler arasında şifreli e-posta iletileri gönderebilir ve alabilir. Office 365 İleti Şifrelemesi Outlook.com, Yahoo, Gmail ve diğer e-posta hizmetleriyle çalışır. Email ileti şifrelemesi, yalnızca hedeflenen alıcıların ileti içeriğini görüntüleyebilmesine yardımcı olur.
 
 İşte birkaç örnek:
 
@@ -40,6 +41,8 @@ Office 365 İleti Şifrelemesi ile kuruluşunuz, kuruluşunuzun içindeki ve dı
 - Bir ipotek komisyoncusu, kredi başvurusu için müşteriden finansal bilgiler talep eder
 - Bir sağlık hizmeti sağlayıcısı hastalara sağlık hizmeti bilgileri gönderir
 - Avukat bir müşteriye veya başka bir avukata gizli bilgiler gönderir
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="how-office-365-message-encryption-works-without-the-new-capabilities"></a>Office 365 İleti Şifrelemesi yeni özellikler olmadan nasıl çalışır?
 
@@ -95,7 +98,7 @@ Exchange posta akışı kuralları oluşturma hakkında daha fazla bilgi için b
 
 ### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Exchange Online PowerShell kullanarak yeni OME özellikleri olmadan e-posta iletilerini şifrelemek için bir posta akışı kuralı oluşturun
 
-1. Exchange Online PowerShell’e bağlanın. Daha fazla bilgi için bkz[. Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Exchange Online PowerShell’e bağlanın. Yönergeler için bkz. [Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. **New-TransportRule** cmdlet'ini kullanarak bir kural oluşturun ve _ApplyOME_ parametresini olarak `$true`ayarlayın.
 
@@ -137,7 +140,7 @@ E-posta kullanıcılarınız şifreli iletiler gönderdiğinde, bu iletilerin al
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Exchange Online PowerShell kullanarak yeni OME özellikleri olmadan şifrelenmiş e-posta yanıtlarından şifrelemeyi kaldırma kuralı oluşturma
 
-1. Exchange Online PowerShell’e bağlanın. Daha fazla bilgi için bkz[. Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Exchange Online PowerShell’e bağlanın. Yönergeler için bkz. [Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. **New-TransportRule** cmdlet'ini kullanarak bir kural oluşturun ve _RemoveOME_ parametresini olarak `$true`ayarlayın.
 
@@ -221,7 +224,7 @@ Aşağıdaki tabloda, Microsoft Purview İleti Şifrelemesi yayımlanmadan önce
 |İleti boyutu sınırları|Office 365 İleti Şifrelemesi en fazla 25 megabaytlık iletileri şifreleyebilir. İleti boyutu sınırları hakkında daha fazla bilgi için bkz. [Exchange Online Sınırları](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).|
 |E-posta bekletme ilkelerini Exchange Online|Exchange Online şifrelenmiş iletileri depolamaz.|
 |Office 365 İleti Şifrelemesi için dil desteği|Office 365 İleti şifrelemesi aşağıdaki gibi Microsoft 365 dillerini destekler: <p> Gelen e-posta iletileri ve ekli HTML dosyaları, gönderenin dil ayarlarına göre yerelleştirilir. <p> Görüntüleme portalı, alıcının tarayıcı ayarlarına göre yerelleştirilir. <p> Şifrelenmiş iletinin gövdesi (içeriği) yerelleştirilmemiş.|
-|OME Portalı ve OME Görüntüleyici Uygulaması için gizlilik bilgileri|[Office 365 Microsoft Mesajlaşma Şifreleme Portalı gizlilik bildirimi](https://privacy.microsoft.com/privacystatement), Microsoft'un özel bilgilerinizle ne yaptığı ve neleri yapmadığı hakkında ayrıntılı bilgi sağlar.|
+|OME Portalı ve OME Görüntüleyici Uygulaması için gizlilik bilgileri|[Office 365 Mesajlaşma Şifreleme Portalı gizlilik bildirimi](https://privacy.microsoft.com/privacystatement), Microsoft'un özel bilgilerinizle ne yaptığı ve neleri yapmadığı hakkında ayrıntılı bilgi sağlar.|
 
 ## <a name="frequently-asked-questions-about-legacy-ome"></a>Eski OME hakkında Sık Sorulan Sorular
 <a name="LegacyServiceInfo"> </a>
@@ -308,7 +311,7 @@ Hayır. İleti gönderildikten sonra belirli bir kişiye ileti gönderemezsiniz.
 
  **S. Microsoft, OME Portalı ve OME Görüntüleyici Uygulaması aracılığıyla sağladığım bilgilerle ne yapar?**
 
-[Office 365 Microsoft Mesajlaşma Şifreleme Portalı gizlilik bildirimi](https://privacy.microsoft.com/privacystatement), Microsoft'un özel bilgilerinizle ne yaptığı ve neleri yapmadığı hakkında ayrıntılı bilgi sağlar.
+[Office 365 Mesajlaşma Şifreleme Portalı gizlilik bildirimi](https://privacy.microsoft.com/privacystatement), Microsoft'un özel bilgilerinizle ne yaptığı ve neleri yapmadığı hakkında ayrıntılı bilgi sağlar.
 
 **S. İstedikten sonra tek seferlik geçiş kodunu alamazsam ne yapmalıyım?**
 

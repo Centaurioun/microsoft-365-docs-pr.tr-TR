@@ -24,12 +24,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5d79ae1a158a5c6b3663a5596594d905cea51874
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: db0327982fa4dc281ba5ea2c4c0c013eaeee934d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565300"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620777"
 ---
 # <a name="get-started-with-communication-compliance"></a>İletişim uyumluluğunu kullanmaya başlama
 
@@ -280,7 +280,7 @@ Yammer'ı Yerel Modda yapılandırma hakkında daha fazla bilgi için bkz:
 
     - Hassas bilgi türlerini dahil etmek isteyip istediğinizi seçin. Bu adım, varsayılan ve özel hassas bilgi türlerini seçebileceğiniz yerdir. İletişim uyumluluk ilkesi sihirbazında var olan özel hassas bilgi türlerinden veya özel anahtar sözcük sözlüklerinden seçim yapın. Gerekirse sihirbazı çalıştırmadan önce bu öğeleri oluşturabilirsiniz. İletişim uyumluluk ilkesi sihirbazından yeni hassas bilgi türleri de oluşturabilirsiniz.
 
-    - Sınıflandırıcıları etkinleştirmek isteyip istediğinizi seçin. Sınıflandırıcılar, e-posta iletilerinin veya diğer metin türlerinin gövdesinde gönderilen veya alınan uygunsuz dil ve görüntüleri algılayabilir. Şu yerleşik sınıflandırıcıları seçebilirsiniz: *Tehdit*, *Küfür*, *Hedeflenen taciz*, *Yetişkin görüntüleri*, *Racy görüntüleri* ve *Gory görüntüleri*.
+    - Sınıflandırıcıları etkinleştirmek isteyip istediğinizi seçin. Sınıflandırıcılar, e-posta iletilerinin veya diğer metin türlerinin gövdesinde gönderilen veya alınan uygunsuz olabilecek dil ve görüntüleri algılayabilir. [İletişim uyumluluk ilkelerine özgü yerleşik sınıflandırıcıları](/microsoft-365/compliance/communication-compliance-policies#classifiers) seçebilirsiniz.
 
     - İlke koşullarıyla eşleşen yazdırılmış veya el yazısı metinler için iletilerdeki eklenmiş veya eklenmiş görüntüleri taramak için [optik karakter tanımayı (OCR)](/microsoft-365/compliance/communication-compliance-policies#optical-character-recognition-ocr) etkinleştirin. Özel ilkeler için, optik karakter tanıma taramasının seçilmesini sağlamak için ilkede metin, anahtar sözcükler, sınıflandırıcılar veya hassas bilgi türleriyle ilişkili bir veya daha fazla koşullu ayar yapılandırılmalıdır.
 

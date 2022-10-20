@@ -18,15 +18,15 @@ ms.collection:
 - highpri
 - tier1
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: d873027de355029643216aaa546b41126da3de61
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 5369f6a359602166b3b2302bd268a7fa4e8b3c4e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221906"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68637672"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Uç Nokta için Microsoft Defender dağıtımı ayarlama
 

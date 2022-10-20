@@ -5,7 +5,7 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 ms.service: microsoft-365-security
-ms.topic: article
+ms.topic: conceptual
 audience: Admin
 f1.keywords:
 - NOCSH
@@ -20,12 +20,12 @@ ms.collection:
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 3de2fd16014c1347c70ad8500090d85e18a672a6
-ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+ms.openlocfilehash: a3f531aa8782878b69a5c61a763c01e974e0e069
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68297738"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624939"
 ---
 # <a name="continuous-access-evaluation-for-microsoft-365"></a>Microsoft 365 için sürekli erişim değerlendirmesi
 

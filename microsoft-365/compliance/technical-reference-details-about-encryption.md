@@ -10,46 +10,48 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
-- Strat_O365_IP
+- tier1
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Office 365 ve Microsoft 365'te şifreleme için kullanılan çeşitli sertifikalar, teknolojiler ve Aktarım Katmanı Güvenliği (TLS) şifreleme paketleri hakkında bilgi edinin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6b5df1f9e983ab2e8add09b50c2dfbd30dc1243e
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: a26d54a4532c7c6fe5c07f59368bd143a53b5285
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67679317"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644757"
 ---
 # <a name="technical-reference-details-about-encryption"></a>Şifreleme hakkında teknik başvuru ayrıntıları
 
-Office 365 şifreleme için kullanılan sertifikalar, teknolojiler ve TLS şifreleme paketleri hakkında bilgi edinmek için bu [makaleye](encryption.md) bakın. Bu makalede planlı kullanımdan kaldırma işlemleriyle ilgili ayrıntılar da sağlanır.
+[Office 365'te şifreleme](encryption.md) için kullanılan sertifikalar, teknolojiler ve TLS şifreleme paketleri hakkında bilgi edinmek için bu makaleye bakın. Bu makalede planlı kullanımdan kaldırma işlemleriyle ilgili ayrıntılar da sağlanır.
   
-- Genel bakış bilgileri arıyorsanız bkz[. Office 365'de şifreleme](encryption.md).
-- Kurulum bilgilerini arıyorsanız bkz. [Office 365 Kurumsal'de şifrelemeyi ayarlama](set-up-encryption.md).
+- Genel bakış bilgileri arıyorsanız bkz [. Office 365'te şifreleme](encryption.md).
+- Kurulum bilgilerini arıyorsanız bkz. [Office 365 Kurumsal'da şifrelemeyi ayarlama](set-up-encryption.md).
 - Windows'un belirli sürümleri tarafından desteklenen şifre paketleri hakkında bilgi için bkz. [TLS/SSL'de Şifreleme Paketleri (Schannel SSP)](/windows/desktop/SecAuthN/cipher-suites-in-schannel).
 
-## <a name="microsoft-office-365-certificate-ownership-and-management"></a>sertifika sahipliğini ve yönetimini Microsoft Office 365
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## <a name="microsoft-office-365-certificate-ownership-and-management"></a>Microsoft Office 365 sertifika sahipliği ve yönetimi
 
 Office 365 için sertifika satın almanız veya bakımını yapmanız gerekmez. Bunun yerine, Office 365 kendi sertifikalarını kullanır.
   
 ## <a name="current-encryption-standards-and-planned-deprecations"></a>Geçerli şifreleme standartları ve planlanan kullanımdan kaldırmalar
 
-Sınıfının en iyisi şifreleme sağlamak için Office 365 desteklenen şifreleme standartlarını düzenli olarak gözden geçirin. Bazen eski standartlar eski ve daha az güvenli hale geldikçe kullanım dışı kalır. Bu makalede, şu anda desteklenen şifreleme paketleri ve diğer standartlar ve planlı kullanımdan kaldırmalarla ilgili ayrıntılar açıklanmaktadır.
+Office 365, sınıfının en iyisi şifreleme sağlamak için desteklenen şifreleme standartlarını düzenli olarak inceler. Bazen eski standartlar eski ve daha az güvenli hale geldikçe kullanım dışı kalır. Bu makalede, şu anda desteklenen şifreleme paketleri ve diğer standartlar ve planlı kullanımdan kaldırmalarla ilgili ayrıntılar açıklanmaktadır.
 
 ## <a name="fips-compliance-for-office-365"></a>Office 365 için FIPS uyumluluğu
 
-Office 365 tarafından desteklenen tüm şifreleme paketleri FIPS 140-2 kapsamında kabul edilebilir algoritmalar kullanır. Office 365 FiPS doğrulamalarını Windows'tan devralır (Schannel aracılığıyla). Schannel hakkında daha fazla bilgi için bkz. [TLS/SSL 'de Şifreleme Paketleri (Schannel SSP)](/windows/desktop/SecAuthN/cipher-suites-in-schannel).
+Office 365 tarafından desteklenen tüm şifreleme paketleri FIPS 140-2 altında kabul edilebilir algoritmalar kullanır. Office 365, FIPS doğrulamalarını Windows'tan devralır (Schannel aracılığıyla). Schannel hakkında daha fazla bilgi için bkz. [TLS/SSL 'de Şifreleme Paketleri (Schannel SSP)](/windows/desktop/SecAuthN/cipher-suites-in-schannel).
   
 ## <a name="versions-of-tls-supported-by-office-365"></a>Office 365 tarafından desteklenen TLS sürümleri
 
-TLS ve TLS'den önce gelen SSL, bilgisayarlar arasındaki bağlantıyı şifrelemek için güvenlik sertifikaları kullanarak ağ üzerinden iletişimin güvenliğini sağlayan şifreleme protokolleridir. Office 365 TLS sürüm 1.2 'yi (TLS 1.2) destekler.
+TLS ve TLS'den önce gelen SSL, bilgisayarlar arasındaki bağlantıyı şifrelemek için güvenlik sertifikaları kullanarak ağ üzerinden iletişimin güvenliğini sağlayan şifreleme protokolleridir. Office 365 TLS sürüm 1.2'yi (TLS 1.2) destekler.
 
 TLS sürüm 1.3 (TLS 1.3), bazı hizmetler tarafından desteklenir.
 
@@ -58,23 +60,23 @@ TLS sürüm 1.3 (TLS 1.3), bazı hizmetler tarafından desteklenir.
   
 ## <a name="support-for-tls-10-and-11-deprecation"></a>TLS 1.0 ve 1.1 kullanımdan kaldırma desteği
 
-Office 365 31 Ekim 2018'de TLS 1.0 ve 1.1'i desteklemeyi durdurdu. GCC High ve DoD ortamlarında TLS 1.0 ve 1.1'i devre dışı bırakmayı tamamladık. 15 Ekim 2020'den itibaren Dünya çapında ve GCC ortamlarında TLS 1.0 ve 1.1'i devre dışı bırakmaya başladık ve önümüzdeki haftalar ve aylar boyunca kullanıma sunulmaya devam edeceğiz.
+Office 365, 31 Ekim 2018'de TLS 1.0 ve 1.1'i desteklemeyi durdurdu. GCC High ve DoD ortamlarında TLS 1.0 ve 1.1'i devre dışı bırakmayı tamamladık. 15 Ekim 2020'den itibaren Dünya çapında ve GCC ortamlarında TLS 1.0 ve 1.1'i devre dışı bırakmaya başladık ve önümüzdeki haftalar ve aylar boyunca kullanıma sunulmaya devam edeceğiz.
 
-Office 365 ve Microsoft 365 hizmetlerine güvenli bir bağlantı sağlamak için tüm istemci-sunucu ve tarayıcı-sunucu birleşimleri TLS 1.2 ve modern şifre paketlerini kullanır. Belirli istemci-sunucu ve tarayıcı-sunucu kombinasyonlarını güncelleştirmeniz gerekebilir. Bu değişikliğin sizi nasıl etkilediğini öğrenmek için bkz. [Office 365'de TLS 1.2'nin zorunlu kullanımına hazırlanma](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
+Office 365 ve Microsoft 365 hizmetlerine güvenli bir bağlantı sağlamak için tüm istemci-sunucu ve tarayıcı-sunucu birleşimleri TLS 1.2 ve modern şifreleme paketlerini kullanır. Belirli istemci-sunucu ve tarayıcı-sunucu kombinasyonlarını güncelleştirmeniz gerekebilir. Bu değişikliğin sizi nasıl etkilediğini öğrenmek için bkz. [Office 365'te TLS 1.2'nin zorunlu kullanımına hazırlanma](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
   
 ## <a name="deprecating-support-for-3des"></a>3DES desteğini kullanımdan kaldırma
 
-31 Ekim 2018'den bu yana Office 365 artık Office 365 ile iletişim için 3DES şifreleme paketlerinin kullanımını desteklememektedir. Daha açık belirtmek gerekirse, Office 365 artık TLS_RSA_WITH_3DES_EDE_CBC_SHA şifreleme paketini desteklememektedir. 28 Şubat 2019'dan bu yana bu şifre paketi Office 365'de devre dışı bırakılmıştır. Office 365 ile iletişim kuran istemciler ve sunucular desteklenen şifrelemelerden birini veya daha fazlasını desteklemelidir. Desteklenen şifrelemelerin listesi için bkz. [Office 365 tarafından desteklenen TLS şifreleme paketleri](#tls-cipher-suites-supported-by-office-365).
+31 Ekim 2018'den bu yana, Office 365 artık Office 365 ile iletişim için 3DES şifreleme paketlerinin kullanımını desteklememektedir. Daha açık belirtmek gerekirse, Office 365 artık TLS_RSA_WITH_3DES_EDE_CBC_SHA şifreleme paketini desteklememektedir. Bu şifre paketi 28 Şubat 2019'dan bu yana Office 365'te devre dışı bırakılmıştır. Office 365 ile iletişim kuran istemciler ve sunucular desteklenen şifrelemelerden birini veya daha fazlasını desteklemelidir. Desteklenen şifrelemelerin listesi için bkz. [Office 365 tarafından desteklenen TLS şifreleme paketleri](#tls-cipher-suites-supported-by-office-365).
   
-## <a name="deprecating-sha-1-certificate-support-in-office-365"></a>Office 365'de SHA-1 sertifika desteğini kullanımdan kaldırma
+## <a name="deprecating-sha-1-certificate-support-in-office-365"></a>Office 365'te SHA-1 sertifika desteğini kullanımdan kaldırma
 
 Haziran 2016'dan bu yana, Office 365 artık giden veya gelen bağlantılar için sha-1 sertifikası kabul etmemektedir. Sertifika zincirinde SHA-2 (Güvenli Karma Algoritması 2) veya daha güçlü bir karma algoritması kullanın.
   
 ## <a name="tls-cipher-suites-supported-by-office-365"></a>Office 365 tarafından desteklenen TLS şifre paketleri
 
-TLS, güvenli bağlantılar kurmak için *şifreleme paketlerini*, şifreleme algoritmaları koleksiyonlarını kullanır. Office 365 aşağıdaki tabloda listelenen şifre paketlerini destekler. Tabloda şifreleme paketleri güç sırasına göre listelenir ve en güçlü şifreleme paketi ilk sırada listelenir.
+TLS, güvenli bağlantılar kurmak için *şifreleme paketlerini*, şifreleme algoritmaları koleksiyonlarını kullanır. Office 365, aşağıdaki tabloda listelenen şifre paketlerini destekler. Tabloda şifreleme paketleri güç sırasına göre listelenir ve en güçlü şifreleme paketi ilk sırada listelenir.
 
-Office 365 önce en güvenli şifreleme paketini kullanarak bağlanmayı deneyerek bir bağlantı isteğine yanıt verir. Bağlantı çalışmazsa, Office 365 listedeki en güvenli ikinci şifre paketini dener ve bu şekilde devam edin. Hizmet, bağlantı kabul edilene kadar listede devam eder. Benzer şekilde, Office 365 bağlantı istediğinde, alıcı hizmet TLS'nin kullanılıp kullanılmayacağını ve hangi şifre paketinin kullanılacağını seçer.
+Office 365, önce en güvenli şifreleme paketini kullanarak bağlanmayı deneyerek bir bağlantı isteğine yanıt verir. Bağlantı çalışmazsa, Office 365 listedeki en güvenli ikinci şifreleme paketini dener, vb. Hizmet, bağlantı kabul edilene kadar listede devam eder. Benzer şekilde, Office 365 bir bağlantı istediğinde, alıcı hizmet TLS'nin kullanılıp kullanılmayacağını ve hangi şifre paketinin kullanılacağını seçer.
 
 | Şifreleme paketi adı | Anahtar değişimi algoritması/gücü | İletme gizliliği | Şifreleme/güç | Kimlik doğrulama algoritması/gücü |
 |:-----|:-----|:-----|:-----|:-----|

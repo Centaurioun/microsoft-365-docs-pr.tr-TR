@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 454ff32f55ab17963b396ec4507b702fadc2a484
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 625339a899788f04fbdbbd8971253cece40b61cd
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68207170"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646913"
 ---
 # <a name="list-vulnerabilities-by-recommendation"></a>Öneriye göre güvenlik açıklarını listele
 

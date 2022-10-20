@@ -3,7 +3,7 @@ title: Office 365 teslim edilen kötü amaçlı e-postayı düzeltme
 author: msfttracyp
 ms.author: tracyp
 manager: dansimp
-ms.topic: article
+ms.topic: conceptual
 ms.collection: m365-security
 audience: admin
 f1.keywords:
@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Tehdit düzeltme
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 18b7405baa44bb37b697422826c6977c6c7b9749
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 09479dc2a8da8e7b8df9d4a2eae07d5a4c0b4dc6
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68083813"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622078"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Office 365'te teslim edilen kötü amaçlı e-postaları düzeltme
 
