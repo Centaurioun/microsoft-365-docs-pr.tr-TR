@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Microsoft için Cloudflare'da etki alanınızı doğrulamayı ve e-posta, Skype Kurumsal Online ve diğer hizmetler için DNS kayıtlarını ayarlamayı öğrenin.
-ms.openlocfilehash: 22cbf5478bf7dab301eb29854755606970324389
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: b0945bb5cc6a3ac975692fc1857f29a5fb9fa1e0
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68187349"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630018"
 ---
 # <a name="connect-your-dns-records-at-cloudflare-to-microsoft-365"></a>Cloudflare'daki DNS kayıtlarınızı Microsoft 365'e bağlama
 
@@ -263,7 +263,7 @@ Bu seçeneği yalnızca kuruluşunuz Microsoft Teams'in yanı sıra sohbet, konf
     |Tür|Name|Hizmet|Protokol|TTL|Öncelik|Ağırlık|Bağlantı noktası|Hedef|
     |---|---|---|---|---|---|---|---|---|
     |SRV|*domain_name* kullanın; örneğin, contoso.com|_Sıp|TLS|30 dakika|100|1|443|sipfed.online.lync.com|
-    |SRV|_sipfederationtls|TCP|*domain_name* kullanın; örneğin, contoso.com|30 dakika|100|1|5061|sipfed.online.lync.com|
+    |SRV|*domain_name* kullanın; örneğin, contoso.com|_sipfederationtls|TCP|30 dakika|100|1|5061|sipfed.online.lync.com|
 
 1. **Kaydet**'i seçin.
 

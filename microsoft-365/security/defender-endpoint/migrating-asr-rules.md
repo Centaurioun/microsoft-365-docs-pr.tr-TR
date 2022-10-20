@@ -2,7 +2,7 @@
 title: Üçüncü taraf HIPS'ten ASR kurallarına geçiş
 description: Üçüncü taraf konak yetkisiz erişim önleme sistemi (HIPS) çözümünden ASR kurallarına geçişe nasıl yaklaşıldığı açıklanır.
 keywords: Saldırı yüzeyi azaltma kuralları, asr, asr kuralları, kalçalar, konak izinsiz giriş önleme sistemi, koruma kuralları, anti-exploit, antiexploit, exploit, enfeksiyon önleme, Uç Nokta için Microsoft Defender
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: edbf7121a23bd5effda50256fdc07a6d58e09493
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 5c13a63125c8b2906bf61f0a36cb4ff97f6f6f0f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68231648"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646539"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Üçüncü taraf HIPS'ten ASR kurallarına geçiş
 

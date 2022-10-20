@@ -17,12 +17,12 @@ ms.custom: ''
 description: Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde izin verme ve blokları yönetmeyi öğrenin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: e46cabba3e2d0f765937a8ff34bbcea918204974
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 20dc3a8a9b69da2df684d5f0f35f8b552f3b1f4f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68542485"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622166"
 ---
 # <a name="manage-your-allows-and-blocks-in-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesinde izinlerinizi ve bloklarınızı yönetin
 
@@ -83,20 +83,20 @@ Aşağıdaki listede, Gönderimler portalında Bir şeyi Microsoft'a hatalı poz
 
 - **Email**: Bir ileti Microsoft 365 filtreleme yığını tarafından engellendiyse, Kiracı İzin Ver/Engelle Listesinde bir izin ver girişi oluşturulabilir:
 
-  - İleti kimlik [sahtekarlığına](learn-about-spoof-intelligence.md) karşı engellenmişse, gönderen için bir izin girdisi oluşturulur ve Kiracı İzin Ver Engelleme Listesi'ndeki Kimlik **Sahtekarı gönderenler** sekmesinde görüntülenir.
+  - İleti kimlik [sahtekarlığına](learn-about-spoof-intelligence.md) karşı engellenmişse, gönderen için bir izin girişi oluşturulur ve Kiracı İzin Verme Engelleme Listesi'ndeki Kimlik **Sahtekarı gönderenler** sekmesinde görüntülenir.
 
   - İleti [Office 365 için Defender'da etki alanı veya kullanıcı kimliğe bürünme koruması](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) tarafından engellendiyse, Kiracı İzin Ver/Engelle Listesinde izin verme girdisi oluşturulmaz. Bunun yerine, etki alanı veya gönderen, iletiyi algılayan [kimlik avı önleme ilkesinin](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) **Güvenilen gönderenler ve etki alanları bölümüne** eklenir.
 
-  - İleti başka nedenlerle engellendiyse, gönderen için bir izin verme girdisi oluşturulur ve Kiracı İzin Verme Engelleme Listesi'ndeki **Etki Alanları & adresleri** sekmesinde görüntülenir.
+  - İleti başka nedenlerle engellendiyse, gönderen için bir izin girdisi oluşturulur ve Kiracı İzin Ver Engelleme Listesi'ndeki **Etki Alanları & adresleri** sekmesinde görüntülenir.
 
-  - İleti engellenmediyse ve gönderen için izin ver girişi oluşturulmazsa, Kimlik **sahtekarı gönderenler** sekmesinde veya **Etki Alanları & adresleri** sekmesinde olmaz.
+  - İleti engellenmediyse ve gönderen için bir izin girdisi oluşturulmadıysa, kimlik **sahtekarı gönderenler** sekmesinde veya **Etki Alanları & adresleri** sekmesinde olmaz.
 
 Varsayılan olarak, **etki alanları ve e-posta adresleri**, **dosyalar** ve **URL'ler** için girişlerin süresi 30 gün sonra dolar ve bu da maksimum değerdir. **Sahte gönderenler için girişlerin** süresi hiçbir zaman dolmaz.
 
 > [!NOTE]
-> Microsoft sizin için izin verme girdilerini yönettiği için etki **alanları ve e-posta adresleri**, **URL'ler** veya **dosyalar** için gereksiz izin verme girdileri kaldırılır. Bu davranış, kuruluşunuzu korur ve yanlış yapılandırılmış izin verme girdilerinin önlenmesine yardımcı olur. Karara katılmıyorsanız, iletinin neden hala kötü kabul edildiğini saptamak için bir destek olayı açmanız gerekebilir.
+> Microsoft, gerekli olmayan izinlerin oluşturulmasına yol açtığından, izin verilen girdileri doğrudan oluşturmanıza izin vermez, bu nedenle müşterinin kiracısını aksi takdirde sistem tarafından filtrelenmiş olabilecek kötü amaçlı e-postalara maruz tutar.
 >
-> İletinin kötü amaçlı olduğunu belirleyen filtrelere bağlı olarak posta akışı sırasında izinler eklenir. Örneğin, gönderen ve iletideki bir URL'nin hatalı olduğu belirlendiyse, gönderen için bir izin girdisi oluşturulur ve URL için bir izin girdisi oluşturulur.
+> Microsoft, posta akışı sırasında filtreler tarafından kötü amaçlı olduğu belirlenen varlıklara (etki alanları veya e-posta adresleri, sahte gönderenler, URL'ler, dosyalar) izin verenler oluşturarak Gönderme'den izin verme işlemini yönetir. Örneğin, gönderen ve iletideki bir URL'nin hatalı olduğu belirlendiyse, gönderen için bir izin girdisi oluşturulur ve URL için bir izin girdisi oluşturulur.
 >
 > Bu varlıkla (etki alanı veya e-posta adresi, URL, dosya) yeniden karşılaşıldığında, bu varlıkla ilişkili tüm filtreler atlanır.
 >
@@ -107,3 +107,7 @@ Varsayılan olarak, **etki alanları ve e-posta adresleri**, **dosyalar** ve **U
 Gönderimler portalı aracılığıyla izin verme girdisi veya Kiracı İzin Ver/Engelle Listesi'ne bir blok girişi ekledikten sonra, girişin zamanın %99,999'unda hemen çalışmaya başlaması gerekir. Geri kalanlar için 24 saat kadar sürebilir.
 
 Sistemin izin verme veya engelleme hakkında bilgi edinip öğrenmediğini görmek için girişlerin 30 gün sonra otomatik olarak süresinin dolmasına izin vermenizi öneririz. Aksi takdirde, sisteme öğrenmesi için 30 gün daha vermek için başka bir giriş yapmanız gerekir.
+
+Süre **sonu yönetimine izin ver** (şu anda Özel önizlemede) ile, Microsoft izin verme girdisinden öğrenmediyse, Microsoft yakında sona erecek girişlere izin verme sürelerini otomatik olarak 30 gün daha uzatır. Bu uzantı, meşru e-postanın yeniden gereksiz veya karantinaya girmesini önlemeye yardımcı olur. Microsoft, izin ver girişinin ilk oluşturulduğu tarihten itibaren 90 takvim günü içinde öğrenmezse, Microsoft izin ver girişini kaldırır.
+
+Microsoft izin ver girdisinden bilgi edindiyse, girdi kaldırılır ve bu konuda sizi bilgilendiren bir uyarı alırsınız.

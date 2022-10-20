@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 İş Ekstra'da yönetici hesaplarınızı ayarlamayı ve korumayı öğrenin.
-ms.openlocfilehash: c1d7358fd0c117b20b35870b2a04cfd03885bf7a
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: 8fa85f823294e32e923fb9eebbe5472733a175e1
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68097061"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632392"
 ---
 # <a name="protect-your-administrator-accounts-in-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra'de yönetici hesaplarınızı koruma
 
@@ -43,7 +43,7 @@ Microsoft 365'e kaydolup bilgilerinizi girdiğinizde otomatik olarak Genel Yöne
 
 ## <a name="create-other-admin-accounts"></a>Diğer yönetici hesaplarını oluşturma
 
-Yalnızca Microsoft 365 yönetimi için yönetici hesaplarını kullanın. Yöneticilerin, Office uygulamalarını düzenli olarak kullanmaları için ayrı bir kullanıcı hesabı olması ve yalnızca hesap ve cihazları yönetmek için gerektiğinde ve diğer yönetici işlevleri üzerinde çalışırken yönetici hesaplarını kullanmaları gerekir. Ek lisanslar için ödeme yapmak zorunda kalabilmeniz için yönetici hesaplarınızdan Microsoft 365 lisansını kaldırmanız da iyi bir fikirdir.
+Yalnızca Microsoft 365 yönetimi için yönetici hesaplarını kullanın. Yöneticilerin, Microsoft 365 uygulamalarını düzenli olarak kullanmaları için ayrı bir kullanıcı hesabı olmalıdır ve yönetim hesaplarını yalnızca hesap ve cihazları yönetmek için gerektiğinde ve diğer yönetici işlevleri üzerinde çalışırken kullanmalıdır. Ek lisanslar için ödeme yapmak zorunda kalabilmeniz için yönetici hesaplarınızdan Microsoft 365 lisansını kaldırmanız da iyi bir fikirdir.
 
 Yöneticiye başka bir güvenilir çalışana erişim vermek için en az bir Genel yönetici hesabı daha ayarlamak istersiniz. Kullanıcı yönetimi için ayrı yönetici hesapları da oluşturabilirsiniz (bu role **Kullanıcı yönetimi yöneticisi** adı verilir). Daha fazla bilgi için bkz. [yönetici rolleri hakkında](/office365/admin/add-users/about-admin-roles).
 

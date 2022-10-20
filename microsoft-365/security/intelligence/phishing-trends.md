@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: 8931d7fa891b2d746ed91fc3093b7832dcef0021
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 64b15d3b2615b9165a24b935cc60fae492029e95
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68224964"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625181"
 ---
 # <a name="phishing-trends-and-techniques"></a>Kimlik avı eğilimleri ve teknikleri
 

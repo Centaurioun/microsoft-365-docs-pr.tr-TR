@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Bir kuruluşu kimlik avına ve kötü amaçlı URL kullanan diğer saldırılara karşı korumak için Office 365 için Defender'de Güvenli Bağlantılar koruması hakkında bilgi edinin. Teams Güvenli Bağlantılar'ı keşfedin ve Güvenli Bağlantılar iletilerinin grafiklerini görün.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 048de0ae500dfbeeb9f4981af50d4297a80b6e9c
-ms.sourcegitcommit: c550d73b153ad4856188c9109d9d80f02ca989b6
+ms.openlocfilehash: 9365cc73239eb9086c565468aeb8f3104ad35b6f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68140930"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626873"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Güvenli Bağlantılar
 
@@ -255,8 +255,6 @@ Bu ayarlar e-posta, Teams ve Office uygulamalarında Güvenli Bağlantılar içi
 - **Kullanıcı tıklamalarını izleme**: Tıklanan URL'ler için Güvenli Bağlantılar tıklama verilerinin depolanmasını açın veya kapatın. Bu ayarı seçili (açık) bırakmanızı öneririz.
 
   Office uygulamaları için Güvenli Bağlantılar'da bu ayar Word, Excel, PowerPoint ve Visio masaüstü sürümleri için geçerlidir.
-
-  İç gönderenler ve iç alıcılar arasında gönderilen e-posta iletilerindeki bağlantılar için URL tıklama izlemesi şu anda desteklenmemektedir.
 
   Bu ayarı seçerseniz aşağıdaki ayarlar kullanılabilir:
 

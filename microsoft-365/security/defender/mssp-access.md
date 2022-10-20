@@ -12,19 +12,19 @@ ms.author: macapara
 author: mjcaparas
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.collection:
 - m365-security
 - tier2
-ms.openlocfilehash: a52c85a51e3dd0268ac2c596ca648a288322e1c8
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 673a669cc44fba1dc615fa70568b257d207543cf
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68064332"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622342"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>Yönetilen güvenlik hizmeti sağlayıcısı (MSSP) erişimi sağlama 
 

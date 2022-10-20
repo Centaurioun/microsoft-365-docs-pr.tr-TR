@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Uç nokta veri kaybı önleme (DLP) merkezi ayarlarını yapılandırmayı öğrenin.
-ms.openlocfilehash: b0593bb5ada76274a4fa53ec2877087352bf6afb
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: d3b38a9125979f33e4d22277b8967f4f3d37c349
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68533474"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621372"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Uç noktada veri kaybı önleme ayarlarını yapılandırma
 
@@ -49,7 +49,7 @@ Başlamadan önce DLP ayarlarınızı ayarlamanız gerekir.
 
 ### <a name="endpoint-dlp-windows-1011-and-macos-settings"></a>Uç nokta DLP Windows 10/11 ve macOS ayarları
 
-|Ayar |Windows 10, 1809 ve üzeri, Windows 11  |macOS Catalina 10.15 veya üzeri |Notlar  |
+|Ayar |Windows 10, 1809 ve üzeri, Windows 11  |macOS (en son yayınlanan üç sürüm) |Notlar  |
 |---------|---------|---------|---------|
 |Dosya yolu dışlamaları     |Destekleniyor         |Destekleniyor         |macOS varsayılan olarak açık olan dışlamaların önerilen bir listesini içerir          |
 |Kısıtlı uygulamalar     |Destekleniyor         |Destekleniyor         |         |
@@ -243,17 +243,56 @@ macOS cihazları için tam dosya yolunu eklemeniz gerekir. Mac uygulamalarının
 
 İlkeleriniz tarafından korunan hassas dosyaların Microsoft Edge'den belirli hizmet etki alanlarına yüklenip yüklenemeyeceğini denetleyebilirsiniz.
 
-Liste modu **Engelle** olarak ayarlanırsa, kullanıcı bu etki alanlarına hassas öğeleri karşıya yükleyemez. Bir öğe bir DLP ilkesiyle eşleştiği için karşıya yükleme eylemi engellendiğinde, DLP bir uyarı oluşturur veya hassas öğenin karşıya yüklenmesini engeller.
+##### <a name="allow"></a>İzin ver
 
-Liste modu **İzin Ver** olarak ayarlanırsa, kullanıcılar **_hassas öğeleri yalnızca_** bu etki alanlarına yükleyebilir ve diğer tüm etki alanlarına erişime izin verilmez.
+**Hizmet etki alanları** listesi **İzin Ver** olarak ayarlandığında, kullanıcı listedeki etki alanlarından herhangi birine hassas bir dosya yüklemeyi denediğinde DLP ilkeleri uygulanmaz.
+
+Liste modu **İzin Ver** olarak ayarlanırsa, hassas bir öğe ve listede yer alan bir etki alanı içeren tüm kullanıcı etkinlikleri denetlenecektir. Etkinliğe izin verilir. Kullanıcı hassas bir öğe ve listede *olmayan* bir etki alanı içeren bir etkinliği denediğinde DLP ilkeleri ve ilkelerde tanımlanan eylemler uygulanır.
+
+Örneğin, bu yapılandırmayla:
+
+- **Hizmet etki alanları** liste modu **İzin Ver** olarak ayarlanır.
+    - Contoso.com listede.
+-  DLP ilkesi, Kredi kartı numaraları içeren hassas öğelerin karşıya yüklenmesini **engelle** olarak ayarlanır.
+ 
+Kullanıcı şu işlemleri yapmaya çalışır:
+
+- Contoso.com kredi kartı numaralarını içeren hassas bir dosyayı karşıya yükleyin.
+    - Kullanıcı etkinliğine izin verilir, denetlenir, bir olay oluşturulur, ancak olay ayrıntılarında ilke adını veya tetikleyici kuralı adını listelemez ve hiçbir uyarı oluşturulmaz. 
+
+ancak bir kullanıcı aşağıdaki işlemleri yapmaya çalışırsa: 
+
+- wingtiptoys.com (listede olmayan) kredi kartı numaralarını içeren hassas bir dosyayı karşıya yükleyin.
+    - İlke uygulanır ve kullanıcı etkinliği engellenir. Bir olay oluşturulur ve bir uyarı oluşturulur. 
+ 
+##### <a name="block"></a>Engelle
+ 
+**Hizmet etki alanları** listesi **Engelle** olarak ayarlandığında, kullanıcı listedeki etki alanlarından herhangi birine hassas bir dosya yüklemeyi denediğinde DLP ilkeleri uygulanır.
+
+Liste modu **Engelle** olarak ayarlanırsa, kullanıcı hassas bir öğe ve listede yer alan bir etki alanı içeren bir etkinliği denediğinde DLP ilkeleri ve ilkelerde tanımlanan eylemler uygulanır. Hassas bir öğe ve listede olmayan bir etki alanı içeren tüm etkinlikler denetlenecek ve kullanıcı etkinliğine izin verilir.
+
+Örneğin, bu yapılandırmayla:
+
+- **Hizmet etki alanları** liste modu **Engelle** olarak ayarlanır.
+    - Contoso.com listede.
+-  Bir DLP ilkesi, kredi kartı numaraları içeren hassas öğelerin karşıya yüklenmesi için **geçersiz kılma ile engelle** olarak ayarlanır.
+ 
+Kullanıcı şu işlemleri yapmaya çalışır:
+
+- Contoso.com kredi kartı numaralarını içeren hassas bir dosyayı karşıya yükleyin.
+    - Kullanıcı etkinliği engellenir, ancak kullanıcı bloğu geçersiz kılabilir, bir olay oluşturulur ve bir uyarı tetiklenir.
+
+ancak bir kullanıcı aşağıdaki işlemleri yapmaya çalışırsa: 
+
+- wingtiptoys.com (listede olmayan) kredi kartı numaralarını içeren hassas bir dosyayı karşıya yükleyin.
+    - İlke *uygulanmaz* ve kullanıcı etkinliği denetlener. Bir olay oluşturulur, ancak olay ayrıntılarında ilke adını veya tetikleyici kuralı adını listelemez ve hiçbir uyarı oluşturulmaz. 
 
 > [!IMPORTANT]
 > Hizmet kısıtlama modu "İzin Ver" olarak ayarlandığında, kısıtlamalar uygulanmadan önce en az bir hizmet etki alanı yapılandırmış olmanız gerekir.
 
-Hizmet etki alanının FQDN biçimini bitiş olmadan kullanın `.` 
+Listeye bir etki alanı eklediğinizde hizmet etki alanının FQDN biçimini bitiş `.` olmadan kullanın.
 
 Örneğin:
-
 
 | Giriş | URL eşleştirme davranışı |
 |---|---|

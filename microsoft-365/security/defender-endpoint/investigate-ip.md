@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.date: 04/24/2018
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 41557fc56e9ccbe64a05f3aad3d280ff544473c4
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: e652be5793988d468d36a3c0a7dbd9e879739fe7
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232308"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623024"
 ---
 # <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Uç Nokta için Microsoft Defender uyarısıyla ilişkili IP adresini araştırma
 

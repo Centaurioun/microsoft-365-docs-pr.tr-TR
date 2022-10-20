@@ -18,12 +18,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow için Kapsamlı Sertifikalı uygulama yükleme ve yapılandırma kılavuzu.
-ms.openlocfilehash: 6502e3301dab653c14980acb4e91f2dd8ed2a589
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 724517e0ac268ecc1d857f59b3e0352cecfd1903
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68173137"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624851"
 ---
 # <a name="configure-microsoft-365-support-integration-with-azure-ad-auth-token"></a>Azure AD Kimlik Doğrulama Belirteci ile Microsoft 365 destek tümleştirmesini yapılandırma
 
@@ -83,7 +83,7 @@ Bu önkoşullar, Microsoft 365 destek tümleştirmesini ayarlamak için gereklid
 
     - Belirteç URL'si: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
-    - Yeniden yönlendirme URL'si: `https://{service-now-instance-name``}.service-now.com/oauth_redirect.do`
+    - Yeniden yönlendirme URL'si: `https://{your-servicenow-instance}.service-now.com/oauth_redirect.do`
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image6.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image6.png" alt-text="Grafik kullanıcı arabirimi, uygulama açıklaması otomatik olarak oluşturuldu":::
 
@@ -95,7 +95,7 @@ Bu önkoşullar, Microsoft 365 destek tümleştirmesini ayarlamak için gereklid
 
 1. **Sistem OAuth &gt; Uygulama Kayıt Defteri'ne** gidin.
 
-1. **Yeni'yi** ve ardından **Yeni Open ID Connect Sağlayıcısı oluştur'u** seçin.
+1. **Kimlik belirteçlerini doğrulamak için Yeni'yi ve ardından Yapılandır ve OIDC sağlayıcısı'na tıklayın**.
 
 1. **OAuth OIDC Sağlayıcısı Yapılandırması'nda** **Ara'yı** seçin ve **oidc provider configuration.list altında şu değerlerle yeni bir OIDC\_sağlayıcı\_yapılandırması** oluşturun:
 
@@ -109,7 +109,7 @@ Bu önkoşullar, Microsoft 365 destek tümleştirmesini ayarlamak için gereklid
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image24.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image24.png" alt-text="Grafik kullanıcı arabirimi, metin, uygulama Açıklaması otomatik olarak oluşturuldu":::
 
-1. **Kimlik belirteçlerini şu değerlerle doğrulamak için OIDC sağlayıcısı yapılandır'ı** seçerek yeni bir uygulama oluşturun:
+1. Bu yeni uygulamada alanları şu değerlerle doldurun:
 
     - Ad: **{Tenant\_Name}\_application\_inbound\_API** (örnek: contoso\_application\_inbound\_API)
 
@@ -119,7 +119,7 @@ Bu önkoşullar, Microsoft 365 destek tümleştirmesini ayarlamak için gereklid
 
     - OAuth OIDC Sağlayıcısı Yapılandırması: Önceki adımda oluşturulan OIDC sağlayıcısı
 
-    - Yeniden yönlendirme URL'si: `https://{service-now-instance-name}.service-now.com/oauth\_redirect.do`
+    - Yeniden yönlendirme URL'si: `https://{service-now-instance-name}.service-now.com/oauth_redirect.do`
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image25.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image25.png" alt-text="Grafik kullanıcı arabirimi, uygulama açıklaması otomatik olarak oluşturuldu":::
 

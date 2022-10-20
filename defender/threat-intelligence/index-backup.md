@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender Tehdit Bilgileri (Defender TI) nedir?
-description: Bu genel bakış makalesinde, Microsoft Defender Tehdit Bilgileri (Defender TI) ile birlikte gelen ana özellikler hakkında bilgi edinebilirsiniz.
+title: Microsoft Defender Tehdit Bilgileri (Defender TI) nedir? -Yedekleme
+description: Bu genel bakış makalesinde, Microsoft Defender Tehdit Bilgileri (Defender TI) ile birlikte gelen ana özellikler hakkında bilgi edinebilirsiniz. -Yedekleme
 author: alexroland24
 ms.author: aroland
 manager: dolmont
@@ -8,14 +8,14 @@ ms.service: threat-intelligence
 ms.topic: overview
 ms.date: 08/02/2022
 ms.custom: template-overview
-ms.openlocfilehash: bed8b4ed1aefb1a401f61256161f6dce5c593e18
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 1e8ba342f6bf68bd61353e43a8641859251d674e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737256"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623795"
 ---
-# <a name="what-is-microsoft-defender-threat-intelligence-defender-ti"></a>Microsoft Defender Tehdit Bilgileri (Defender TI) nedir?
+# <a name="what-is-microsoft-defender-threat-intelligence-defender-ti---backup"></a>Microsoft Defender Tehdit Bilgileri (Defender TI) nedir? -Yedekleme
 
 Microsoft Defender Tehdit Bilgileri (Defender TI), tehdit altyapısı analizi gerçekleştirirken ve tehdit bilgilerini toplarken önceliklendirme, olay yanıtlama, tehdit avcılığı, güvenlik açığı yönetimi ve siber tehdit bilgilerine yönelik çözümleyici iş akışlarını kolaylaştıran bir platformdur. Çözümleyiciler, kuruluşlarının kendilerini savunmasına gerçekten yardımcı olan şeylere odaklanmak yerine veri keşfetme, toplama ve ayrıştırma işlemlerine önemli miktarda zaman harcar ve analiz ve bağıntı yoluyla aktörler hakkında içgörüler elde etmiş olur.
 

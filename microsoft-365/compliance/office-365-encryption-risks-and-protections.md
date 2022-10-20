@@ -13,17 +13,18 @@ search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_Enterprise
-- M365-security-compliance
+- purview-compliance
+- tier3
 - Strat_O365_Enterprise
 ms.custom:
 - seo-marvel-mar2020
 description: Bu makalede, Office 365 riskleri ve koruma için kullanılabilen şifreleme teknolojileri hakkında bilgi edineceksiniz.
-ms.openlocfilehash: 3e57ac67506320d549b0ff3208c6763b046367bb
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 7afb32e0676bde43032490a82650bff1ab1bb25c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635183"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620535"
 ---
 # <a name="encryption-risks-and-protections"></a>Şifreleme Riskleri ve Korumaları
 
@@ -41,9 +42,11 @@ Bazı risk senaryoları ve bunları azaltan mevcut şifreleme teknolojileri aşa
 | Microsoft 365 ile istemciler arasında TLS | Exchange Online, SharePoint Online, OneDrive İş, Skype Kurumsal, Teams ve Yammer | Microsoft, Müşteri | Microsoft 365 ile istemci bilgisayarlar arasındaki veri akışına İnternet üzerinden dokunmak için ortadaki adam veya başka bir saldırı. | Bu uygulama hem Microsoft'a hem de müşterilere değer sağlar ve Microsoft 365 ile istemci arasında akan veri bütünlüğünü güvenceye alır. |
 | Microsoft veri merkezleri arasında TLS | Exchange Online, SharePoint Online, OneDrive İş ve Skype Kurumsal | Microsoft | Farklı Microsoft veri merkezlerinde bulunan Microsoft 365 sunucuları arasındaki müşteri veri akışına dokunmak için ortadaki adam veya başka bir saldırı. | Bu uygulama, verileri Microsoft veri merkezleri arasındaki saldırılara karşı korumanın başka bir yöntemidir. |
 | Azure Rights Management (Microsoft 365 veya Azure Information Protection dahil) | Exchange Online, SharePoint Online ve OneDrive İş | Müşteri | Veriler, verilere erişimi olmaması gereken bir kişinin eline geçer. | Azure Information Protection, birden çok cihazda dosyaların ve e-postaların güvenliğini sağlamaya yardımcı olmak için şifreleme, kimlik ve yetkilendirme ilkelerini kullanarak müşterilere değer sağlayan Azure RMS'yi kullanır. Azure RMS, Microsoft 365'ten kaynaklanan ve belirli ölçütlere uyan tüm e-postaların (belirli bir adrese gönderilen tüm e-postalar) başka bir alıcıya gönderilmeden önce otomatik olarak şifrelendiği müşterilere değer sağlar. |
-| S/MIME | Exchange Online | Müşteri | E-posta, hedeflenen alıcı olmayan bir kişinin eline geçer. | S/MIME, S/MIME ile şifrelenen e-postanın şifresinin yalnızca e-postanın doğrudan alıcısı tarafından çözülebileceğini güvenceye alarak müşterilere değer sağlar. |
-| Office 365 İleti Şifrelemesi | Exchange Online, SharePoint Online | Müşteri | Korumalı ekler de dahil olmak üzere e-posta, Microsoft 365 içinde veya dışında e-postanın hedeflenen alıcısı olmayan bir kişinin eline geçer. | OME, Microsoft 365'ten gelen ve belirli ölçütlere uyan tüm e-postaların (belirli bir adrese gönderilen tüm e-postalar) başka bir iç veya dış alıcıya gönderilmeden önce otomatik olarak şifrelendiği müşterilere değer sağlar. |
-| İş ortağı kuruluşu ile SMTP TLS | Exchange Online | Müşteri | E-posta, Microsoft 365 kiracısından başka bir iş ortağı kuruluşuna aktarılırken ortadaki adam veya başka bir saldırı yoluyla kesiliyor. | Bu senaryo müşteriye, Microsoft 365 kiracısı ile iş ortağının e-posta kuruluşu arasında şifrelenmiş bir SMTP kanalında tüm e-postaları gönderebilecekleri/alabilecekleri bir değer sağlar. |
+| S/MIME | Exchange Online | Müşteri | Email, hedeflenen alıcı olmayan bir kişinin eline düşer. | S/MIME, S/MIME ile şifrelenen e-postanın şifresinin yalnızca e-postanın doğrudan alıcısı tarafından çözülebileceğini güvenceye alarak müşterilere değer sağlar. |
+| Office 365 İleti Şifrelemesi | Exchange Online, SharePoint Online | Müşteri | korumalı ekler de dahil olmak üzere Email, e-postanın hedeflenen alıcısı olmayan Microsoft 365 içinde veya dışında bir kişinin eline düşer. | OME, Microsoft 365'ten gelen ve belirli ölçütlere uyan tüm e-postaların (belirli bir adrese gönderilen tüm e-postalar) başka bir iç veya dış alıcıya gönderilmeden önce otomatik olarak şifrelendiği müşterilere değer sağlar. |
+| İş ortağı kuruluşu ile SMTP TLS | Exchange Online | Müşteri | Email, Microsoft 365 kiracısından başka bir iş ortağı kuruluşuna aktarılırken ortadaki adam veya başka bir saldırı yoluyla yakalanabilir. | Bu senaryo müşteriye, Microsoft 365 kiracısı ile iş ortağının e-posta kuruluşu arasında şifrelenmiş bir SMTP kanalında tüm e-postaları gönderebilecekleri/alabilecekleri bir değer sağlar. |
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="encryption-technologies-available-in-multi-tenant-environments"></a>Çok kiracılı ortamlarda kullanılabilen şifreleme teknolojileri
 

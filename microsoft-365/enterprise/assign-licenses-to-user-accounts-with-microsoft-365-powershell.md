@@ -23,12 +23,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: Bu makalede, PowerShell'i kullanarak lisanssız kullanıcılara Microsoft 365 lisansı atamayı öğrenin.
-ms.openlocfilehash: 17e2afda1eca7b91f8f43e4466c64298313d8259
-ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
+ms.openlocfilehash: 0ebd6a4133c3e757e2a17936938904f5773ae4e1
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68484335"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646473"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>PowerShell ile kullanıcı hesaplarına Microsoft 365 lisansları atama
 
@@ -52,12 +52,12 @@ Kullanıcı hesaplarına önce bir konum atanmalıdır. Konum belirtmek, [Micros
 
 İlk olarak [Microsoft 365 kiracınıza bağlanın](/graph/powershell/get-started#authentication).
 
-Bir kullanıcıya lisans atama ve kaldırma için User.ReadWrite.All izin kapsamı veya ['Lisans ata' Graph API başvuru sayfasında](/graph/api/user-assignlicense) listelenen diğer izinlerden biri gerekir.
+Bir kullanıcı için lisans atama ve kaldırma için User.ReadWrite.All izin kapsamı veya ['Lisans ata' Microsoft Graph API başvuru sayfasında](/graph/api/user-assignlicense) listelenen diğer izinlerden biri gerekir.
 
 Kiracıda bulunan lisansları okumak için Organization.Read.All izin kapsamı gereklidir.
 
 ```powershell
-Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+Connect-MgGraph -Scopes User.ReadWrite.All, Organization.Read.All
 ```
 
 Kuruluşunuzdaki `Get-MgSubscribedSku` her bir plandaki kullanılabilir lisans planlarını ve kullanılabilir lisans sayısını görüntülemek için komutunu çalıştırın. Her plandaki kullanılabilir lisans sayısı **ActiveUnits WarningUnits** - **ConsumedUnits'tir** - . Lisans planları, lisanslar ve hizmetler hakkında daha fazla bilgi için bkz. [PowerShell ile lisansları ve hizmetleri görüntüleme](view-licenses-and-services-with-microsoft-365-powershell.md).
@@ -374,3 +374,5 @@ $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq
 [PowerShell ile Microsoft 365’i yönetme](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Microsoft 365 için PowerShell'i kullanmaya başlama](getting-started-with-microsoft-365-powershell.md)
+
+Microsoft Graph [kullanıcısını kullanma: assignLicense](/graph/api/user-assignlicense) ve [subscribedSku](/graph/api/resources/subscribedsku) API'leri

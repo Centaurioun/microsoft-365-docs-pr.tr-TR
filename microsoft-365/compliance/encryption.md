@@ -15,17 +15,18 @@ search.appverid:
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 ms.collection:
-- M365-security-compliance
-- Strat_O365_IP
+- purview-compliance
+- tier1
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 description: Office 365 ile içeriğiniz bekleyen ve aktarım halindeki en güçlü şifreleme, protokoller ve teknolojiler ile şifrelenir. Office 365'da şifrelemeye genel bir bakış edinin.
-ms.openlocfilehash: e26ade7021434461e72e24b7aa8176888d9c21d0
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 7cbdde89847e976cef7c6680c66140308940805d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629651"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645021"
 ---
 # <a name="encryption"></a>Şifreleme
 
@@ -34,6 +35,8 @@ ms.locfileid: "66629651"
 - TLS gibi sertifikalar ve teknolojiler hakkında bilgi için bkz. [Office 365 şifreleme hakkında teknik başvuru ayrıntıları](technical-reference-details-about-encryption.md).
 
 - Kuruluşunuz için şifrelemeyi yapılandırma veya ayarlama hakkında bilgi için bkz. [Office 365 Kurumsal'de şifrelemeyi ayarlama](set-up-encryption.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="what-is-encryption-and-how-does-it-work-in-office-365"></a>Şifreleme nedir ve Office 365 nasıl çalışır?
 
@@ -55,7 +58,7 @@ Office 365 ile verilerinizin güvenliğini sağlamak için birden çok katman ve
 |:-----|:-----|:-----|
 |Bir cihazdaki dosyalar. Bu dosyalar bir klasöre kaydedilmiş e-posta iletilerini, bilgisayar, tablet veya telefona kaydedilmiş Office belgelerini ya da Microsoft buluta kaydedilmiş verileri içerebilir.  <br/> |Microsoft veri merkezlerinde BitLocker. BitLocker, Windows bilgisayarlar ve tabletler gibi istemci makinelerinde de kullanılabilir  <br/> Microsoft veri merkezlerinde Dağıtılmış Anahtar Yöneticisi (DKM)  <br/> Microsoft 365 için Müşteri Anahtarı  <br/> |[Windows BT Merkezi: BitLocker](/windows/device-security/bitlocker/bitlocker-overview) <br/> [Microsoft Güven Merkezi: Şifreleme](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [Bulut güvenlik denetimleri serisi: Bekleyen Verileri Şifreleme](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Exchange Online, e-posta sırlarınızı nasıl güvence altına alır?](exchange-online-secures-email-secrets.md) <br/> [Müşteri Anahtarı ile hizmet şifrelemesi](customer-key-overview.md) <br/> |
 |Kullanıcılar arasında aktarımda olan dosyalar. Bu dosyalar, kullanıcılar arasında paylaşılan Office belgelerini veya SharePoint liste öğelerini içerebilir.  <br/> |Aktarımdaki dosyalar için TLS  <br/> |[Data Encryption in OneDrive for Business and SharePoint Online](data-encryption-in-odb-and-spo.md) <br/> [Skype Kurumsal Online: Güvenlik ve Arşivleme](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features) <br/> |
-|Alıcılar arasında aktarım halindeki e-posta. Bu e-posta, Exchange Online tarafından barındırılan e-postaları içerir.  <br/> |Aktarımdaki e-posta için Azure Rights Management, S/MIME ve TLS ile Microsoft Purview İleti Şifrelemesi  <br/> |[İleti Şifrelemesi](ome.md) <br/> [Office 365'de e-posta şifrelemesi](email-encryption.md) <br/> [Exchange Online, Office 365’de e-posta bağlantılarını güvence altına almak için TLS'yi nasıl kullanır?](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
+|alıcılar arasında aktarımda Email. Bu e-posta, Exchange Online tarafından barındırılan e-postaları içerir.  <br/> |Aktarımdaki e-posta için Azure Rights Management, S/MIME ve TLS ile Microsoft Purview İleti Şifrelemesi  <br/> |[İleti Şifrelemesi](ome.md) <br/> [Office 365'de şifrelemeyi Email](email-encryption.md) <br/> [Exchange Online, Office 365’de e-posta bağlantılarını güvence altına almak için TLS'yi nasıl kullanır?](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
 |Microsoft Teams'i kullanan alıcılar arasında aktarımda olan sohbetler, iletiler ve dosyalar. <br/> |Teams, anlık iletileri şifrelemek için TLS ve MTLS kullanır. Medya trafiği Güvenli RTP (SRTP) kullanılarak şifrelenir. Teams, şifreleme anahtarı değişimleri için FIPS (Federal Bilgi İşleme Standardı) uyumlu algoritmalar kullanır. <br/> |[Teams için Şifreleme](/microsoftteams/teams-security-guide#encryption-for-teams) <br/> |
 
 ## <a name="what-if-i-need-more-control-over-encryption-to-meet-security-and-compliance-requirements"></a>Güvenlik ve uyumluluk gereksinimlerini karşılamak için şifreleme üzerinde daha fazla denetime ihtiyacım olursa ne olur?

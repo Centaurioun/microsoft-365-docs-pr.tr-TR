@@ -13,24 +13,27 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 description: 'Uç nokta veri kaybını önleme, dosya etkinliklerinin ve bu dosyalar için koruyucu eylemlerin izlenmesini uç noktalara genişletir. Dosyalar Uyumluluk çözümlerinde görünür hale getiriliyor '
-ms.openlocfilehash: 862353d3b0f63cdaf6867ddbe1b9ff7e304096cc
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: c04920a2d81c07209378ba53a600830dbd8dd5eb
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67709211"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68636134"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>Uç nokta veri kaybı önleme hakkında daha fazla bilgi edinme
 
 Microsoft Purview Veri Kaybı Önleme (DLP) kullanarak hassas olduğunu belirlediğiniz öğeler üzerinde gerçekleştirilen eylemleri izleyebilir ve bu öğelerin yanlışlıkla paylaşılmasını önleyebilirsiniz. DLP hakkında daha fazla bilgi için bkz. [Veri kaybını önleme hakkında bilgi edinin](dlp-learn-about-dlp.md).
 
-**Uç nokta veri kaybı önleme** (Endpoint DLP), DLP'nin etkinlik izleme ve koruma özelliklerini fiziksel olarak Windows 10, Windows 11 ve macOS (Catalina 10.15 ve üzeri) cihazlarda depolanan hassas öğelere genişletir. Cihazlar Microsoft Purview çözümlerine eklendikten sonra, kullanıcıların hassas öğelerle yaptıklarıyla ilgili bilgiler [etkinlik gezgininde](data-classification-activity-explorer.md) görünür hale getirilir ve [DLP ilkeleri](create-test-tune-dlp-policy.md) aracılığıyla bu öğeler üzerinde koruyucu eylemler uygulayabilirsiniz.
+**Uç nokta veri kaybını önleme** (Endpoint DLP), DLP'nin etkinlik izleme ve koruma özelliklerini fiziksel olarak Windows 10, Windows 11 ve macOS (üç son sürüm) cihazında depolanan hassas öğelere genişletir. Cihazlar Microsoft Purview çözümlerine eklendikten sonra, kullanıcıların hassas öğelerle yaptıklarıyla ilgili bilgiler [etkinlik gezgininde](data-classification-activity-explorer.md) görünür hale getirilir ve [DLP ilkeleri](create-test-tune-dlp-policy.md) aracılığıyla bu öğeler üzerinde koruyucu eylemler uygulayabilirsiniz.
 
 > [!TIP]
 > Çıkarılabilir depolama birimi için cihaz denetimi arıyorsanız bkz. [Uç Nokta için Microsoft Defender Cihaz Denetimi Çıkarılabilir Depolama birimi Access Control](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
@@ -38,11 +41,13 @@ Microsoft Purview Veri Kaybı Önleme (DLP) kullanarak hassas olduğunu belirled
 > [!NOTE]
 > Microsoft Purview'da, hassas öğelerin DLP ilkesi değerlendirmesi merkezi olarak gerçekleşir, bu nedenle ilkelerin ve ilke güncelleştirmelerinin tek tek cihazlara dağıtılması için zaman gecikmesi yoktur. Uyumluluk merkezinde bir ilke güncelleştirildiğinde, bu güncelleştirmelerin hizmet genelinde eşitlenmesi genellikle yaklaşık bir saat sürer. İlke güncelleştirmeleri eşitlendikten sonra, hedeflenen cihazlardaki öğeler bir sonraki erişildiğinde veya değiştirildiğinde otomatik olarak yeniden değerlendirilir.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>İzleyebileceğiniz ve üzerinde eylem gerçekleştirebileceğiniz uç nokta etkinlikleri
 
 Uç nokta DLP, kullanıcıların fiziksel olarak Windows 10, Windows 11 veya macOS cihazlarında depolanan hassas öğeleri ele alan aşağıdaki etkinlik türlerini denetlemenize ve yönetmenize olanak tanır.
 
-|Etkinlik |Açıklama  |Windows 10 1809 ve üzeri/ Windows 11| macOS Catalina 10.15 ve üzeri | Denetlenebilir/kısıtlanabilir|
+|Etkinlik |Açıklama  |Windows 10 1809 ve üzeri/ Windows 11| macOS en son yayınlanan üç sürüm | Denetlenebilir/kısıtlanabilir|
 |---------|---------|---------|---------|---------|
 |bulut hizmetine yükleme veya izin verilmeyen tarayıcılarla erişim    | Bir kullanıcının kısıtlanmış bir hizmet etki alanına öğe yüklemeyi veya bir öğeye tarayıcı üzerinden erişmeyi denediğinde algılar.  DLP'de izin verilmeyen bir tarayıcı olarak listelenen bir tarayıcı kullanıyorlarsa, karşıya yükleme etkinliği engellenir ve kullanıcı Microsoft Edge'i kullanmaya yönlendirilir. Microsoft Edge daha sonra DLP ilke yapılandırmasına göre karşıya yükleme veya erişime izin verir veya erişimi engeller         |Desteklenen | Desteklenen|denetlenebilir ve kısıtlanabilir|
 |başka bir uygulamaya kopyalama    |Kullanıcı korumalı bir öğeden bilgi kopyalamaya çalıştığında bunu algılar ve ardından başka bir uygulama, işlem veya öğeye yapıştırır. Ayrıca, kullanıcının Word, Excel ve PowerPoint için aynı uygulama, işlem veya öğe içindeki dosyalar arasında içerik kopyalayıp yapıştırdığında da algılar.|Desteklenen|Desteklenen         | denetlenebilir ve kısıtlanabilir|

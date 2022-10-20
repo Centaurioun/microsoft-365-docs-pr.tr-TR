@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 894d7bddda68f42896be03e654811ecb0b542448
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 148946ee5b786b9557b1c1ca820266229386b318
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68167087"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628818"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>Bir düzeltme etkinliğine maruz kalmış cihazları listele
 

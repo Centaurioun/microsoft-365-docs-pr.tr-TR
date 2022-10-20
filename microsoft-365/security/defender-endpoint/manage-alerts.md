@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1a0c4638f54198a1794daeac563c2cabaa683c2a
-ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
+ms.openlocfilehash: 716ac461957f8e595bf4dd458b9871e6cb85b7cc
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68363617"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620337"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Uç Nokta için Microsoft Defender uyarılarını yönetme
 

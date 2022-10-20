@@ -19,17 +19,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2f64d869ce6a362e543a78fa4f9e390a4ae7f891
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: 684fbfde05c334ffadae16bae7e5c613e7fc8589
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68574065"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68636704"
 ---
 # <a name="create-and-manage-communication-compliance-policies"></a>İletişim uyumluluğu ilkeleri oluşturma ve yönetme
 
->[!IMPORTANT]
->Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamak için kullanılır.
+> [!IMPORTANT]
+> Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamak için kullanılır.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -63,13 +63,13 @@ Kuruluşunuzdaki uygunsuz iletileri algılamak ve düzeltmek için katmanlı bir
 
 [Teams yönetim merkezinde](/microsoftteams/manage-teams-in-modern-portal) varsayılan olarak etkin olan Teams iletilerindeki *Bir sorun bildir* seçeneği, kuruluşunuzdaki kullanıcıların ilke için iletişim uyumluluğu gözden geçirenleri tarafından gözden geçirmek üzere uygunsuz iç kişisel ve grup sohbeti iletileri göndermesine olanak tanır. Bu iletiler, Teams grubundaki ve özel sohbetlerdeki iletileri raporlamayı destekleyen varsayılan bir sistem ilkesi tarafından desteklenir.
 
-![İletişim uyumluluğu Bir sorun bildirin.](../media/communication-compliance-report-a-concern-full-menu.png)
+![İletişim uyumluluğu sorunu bildir](../media/communication-compliance-report-a-concern-full-menu.png)
 
 Kullanıcı gözden geçirmek üzere bir Teams sohbet iletisi gönderdiğinde, ileti Kullanıcı tarafından bildirilen ileti ilkesine kopyalanır. Bildirilen iletiler başlangıçta tüm sohbet üyeleri tarafından görünür durumda kalır ve sohbet üyelerine veya gönderene kanal, özel veya grup sohbetlerinde bir iletinin bildirildiğine dair bir bildirim yoktur. Kullanıcı aynı iletiyi birden çok kez raporlayamaz ve ilke gözden geçirme işlemi sırasında ileti sohbet oturumuna dahil olan tüm kullanıcılar tarafından görünür durumda kalır.
 
 gözden geçirme işlemi sırasında, iletişim uyumluluğu gözden geçirenler iletideki iletiyi Teams sohbetinden kaldırma da dahil olmak üzere tüm standart [düzeltme eylemlerini](/microsoft-365/compliance/communication-compliance-investigate-remediate#step-3-decide-on-a-remediation-action) gerçekleştirebilir. İletilerin nasıl düzeltileceğine bağlı olarak, ileti gönderen ve alıcılar incelemeden sonra Teams sohbetlerinde farklı [bildirim iletileri](/microsoftteams/communication-compliance#act-on-inappropriate-messages-in-microsoft-teams) görür.
 
-![İletişim uyumluluğu kullanıcı tarafından bildirilen iletiler ilkesi.](../media/communication-compliance-user-reported-messages-policy.png)
+![İletişim uyumluluğu kullanıcı tarafından bildirilen iletiler ilkesi](../media/communication-compliance-user-reported-messages-policy.png)
 
 Teams sohbetlerinden gelen kullanıcı tarafından bildirilen iletiler, Kullanıcı tarafından bildirilen ileti ilkesi tarafından işlenen tek iletilerdir ve yalnızca ilke için atanan gözden geçirenler değiştirilebilir. Diğer tüm ilke özellikleri düzenlenemez. İlke oluşturulduğunda, ilkeye atanan ilk gözden geçirenlerin tümü *İletişim Uyumluluğu Yöneticileri* rol grubunun (en az bir kullanıcıyla doldurulmuşsa) veya kuruluşunuzun *Genel Yönetici* rol grubunun tüm üyeleridir. İlkeyi oluşturan, *İletişim Uyumluluğu Yöneticileri* rol grubundan (en az bir kullanıcıyla doldurulmuşsa) rastgele seçilen bir kullanıcı veya kuruluşunuzun *Genel Yönetici* rol grubundan rastgele seçilen bir kullanıcıdır.  
 
@@ -162,8 +162,8 @@ Daha eski bir ilkeyi tanımlamak için İlke **sayfasındaki** *Son ilke tarama*
 
 Her iletişim uyumluluk ilkesinin depolama sınırı boyutu 100 GB veya 1 milyon iletidir (hangisi önce ulaşılırsa). İlke bu sınırlara yaklaştıkça, bildirim e-postaları *İletişim Uyumluluğu* veya *İletişim Uyumluluğu Yöneticileri* rol gruplarına atanan kullanıcılara otomatik olarak gönderilir. Depolama boyutu veya ileti sayısı sınırın yüzde 80, 90 ve yüzde 95'ine ulaştığında bildirim iletileri gönderilir. İlke sınırına ulaşıldığında, ilke otomatik olarak devre dışı bırakılır ve ilke uyarılar için iletileri işlemeyi durdurur.
 
->[!IMPORTANT]
->Depolama ve ileti sınırlarına ulaşılması nedeniyle bir ilke devre dışı bırakılırsa, devre dışı bırakılan ilkenin nasıl yönetileceğini değerlendirmeyi unutmayın. İlkeyi silerseniz tüm iletiler, ilişkili ekler ve ileti uyarıları kalıcı olarak silinir. Gelecekte kullanmak üzere bu öğelerin bakımını yapmanız gerekiyorsa devre dışı bırakılan ilkeyi silmeyin.
+> [!IMPORTANT]
+> Depolama ve ileti sınırlarına ulaşılması nedeniyle bir ilke devre dışı bırakılırsa, devre dışı bırakılan ilkenin nasıl yönetileceğini değerlendirmeyi unutmayın. İlkeyi silerseniz tüm iletiler, ilişkili ekler ve ileti uyarıları kalıcı olarak silinir. Gelecekte kullanmak üzere bu öğelerin bakımını yapmanız gerekiyorsa devre dışı bırakılan ilkeyi silmeyin.
 
 Depolama ve ileti sınırlarına yaklaşan ilkeleri yönetmek için, kapsam sürekliliğini korumak için ilkenin bir kopyasını oluşturmayı veya geçerli ilke depolama boyutunu ve ileti sayılarını en aza indirmeye yardımcı olmak için aşağıdaki eylemleri gerçekleştirmeyi göz önünde bulundurun:
 
@@ -205,21 +205,34 @@ Kuruluşunuza veya sektörünüze özgü anahtar sözcüklerin basit yönetimini
 
 ### <a name="classifiers"></a>Sınıflandırıcı
 
-[Yerleşik eğitilebilir ve genel sınıflandırıcılar](/microsoft-365/compliance/classifier-learn-about) , farklı uyumluluk sorunları için kuruluşunuzdaki tüm iletişim kanallarında gönderilen veya alınan iletileri tarar. Sınıflandırıcılar, tehdit önleme ilkelerini ihlal etme olasılığı olan iletilerdeki dili tanımlamak için yapay zeka ve anahtar sözcüklerin bir bileşimini kullanır.
+[Yerleşik eğitilebilir ve genel sınıflandırıcılar](/microsoft-365/compliance/classifier-learn-about) , farklı uyumluluk sorunları için kuruluşunuzdaki tüm iletişim kanallarında gönderilen veya alınan iletileri inceler. Sınıflandırıcılar, tehdit önleme ilkelerini ihlal etme olasılığı olan iletilerdeki dili tanımlamak için yapay zeka ve anahtar sözcüklerin bir bileşimini kullanır. 
 
-İletişim uyumluluğu, aşağıdaki dil ve içerik türlerine yönelik terimler, görüntüler ve yaklaşımlar için iletişimi taramak için yerleşik eğitilebilir ve genel sınıflandırıcılar kullanır:
+Sınıflandırıcıları kullanan ilkeler, altı veya daha büyük sözcük sayısına sahip iletileri inceler ve değerlendirir. Altıdan az sözcük içeren iletiler sınıflandırıcılar kullanılarak ilkelerde değerlendirilmez. Uygunsuz içerik içeren daha kısa iletileri tanımlamak ve üzerinde işlem yapmak için, bu tür içerikleri algılayan iletişim uyumluluk ilkelerine özel bir anahtar sözcük sözlüğü eklemenizi öneririz.
 
-- **Yetişkinlere yönelik görüntüler**: Doğası gereği cinsel içerikli görüntüler için taramalar.
-- **Müşteri Şikayetleri**: Kuruluşunuzun ürünleri veya hizmetleri hakkında yapılan geri bildirimleri ve şikayetleri tarar.
-- **Ayrımcılık**: Açık ayrımcı dili tarar ve diğer topluluklarla karşılaştırıldığında Afrikalı Amerikalı/Siyah topluluklara karşı ayrımcı dile karşı özellikle hassastır.
-- **Gory görüntüleri**: Şiddet ve vahşeti gösteren görüntüler için taramalar.
-- **Taciz**: ırk, renk, din, ulusal köken ile ilgili insanları hedefleyen saldırgan davranış taramaları.
-- **Küfür**: Çoğu insanı utandıran küfür içeren ifadeler tarar.
-- **Müstehcen görüntüler**: Doğası gereği cinsel açıdan öneride bulunan ancak Yetişkinlere yönelik olarak kabul edilen görüntülerden daha az açık içerik içeren görüntüler için taramalar.
-- **Tehdit**: Bir kişiye veya mülke yönelik şiddet veya fiziksel zarar verme tehditlerini tarar.
+İletişim uyumluluğu, aşağıdaki dil ve içerik türlerinin iletişimlerini incelemek için belirli yerleşik eğitilebilir ve genel sınıflandırıcıları kullanabilir:
+
+|**Sınıflandırıcısı**|**Açıklama**|
+|:-------------|:--------------|
+| **Yetişkin resimleri** | Doğası gereği cinsel açıdan açık olabilecek görüntüleri algılar. |
+| **Kurumsal sabotaj (önizleme)** | Şirket varlıklarına veya mülklerine zarar verme veya bunları yok etme eylemlerinden bahsedebilecek iletileri algılar. Bu sınıflandırıcı, müşterilerin NERC Kritik Altyapı Koruması standartları gibi mevzuat uyumluluğu yükümlülüklerini yönetmelerine veya Washington eyaletinde bölüm 9.05 RCW gibi eyalet düzenlemelerine göre durumlarını yönetmelerine yardımcı olabilir.  |
+| **Müşteri şikayetleri (önizleme)** | Düzenlemeye tabi sektörler için yasaların gerektirdiği şekilde, kuruluşunuzun ürünleri veya hizmetleriyle ilgili müşteri şikayetleri önerebilecek iletileri algılar. Bu sınıflandırıcı, müşterilerin FINRA Kural 4530, FINRA 4513, FINRA 2111, Tüketici Finansal Koruma Bürosu, Federal Düzenlemeler Yönetmeliği Unvan 21: Gıda ve İlaçlar ve Federal Ticaret Komisyonu Yasası gibi mevzuat uyumluluğu yükümlülüklerini yönetmelerine yardımcı olabilir.  |
+| **Ayrımcı -lık** | Olası ayrımcı dili algılar ve diğer topluluklarla karşılaştırıldığında Afrikalı Amerikalı/Siyah topluluklara karşı ayrımcı dile karşı özellikle hassastır. |
+| **Hediyeler & eğlence (önizleme)** | Hizmet karşılığında hediye veya eğlence alışverişi önerebilecek iletileri algılar ve bu da rüşvetle ilgili düzenlemeleri ihlal eder. Bu sınıflandırıcı, müşterilerin Yabancı Bozuk Uygulamalar Yasası (FCPA), Birleşik Krallık Rüşvet Yasası ve FINRA Kuralı 2320 gibi mevzuat uyumluluğu yükümlülüklerini yönetmelerine yardımcı olabilir.  |
+| **Gory resimleri** | Şiddet ve patlamayı gösteren görüntüleri algılar. |
+| **Taciz** | Irk, renk, din, ulusal köken ile ilgili insanları hedef alan saldırgan davranışlar algılar. |
+| **Para aklama (önizleme)** | Gelirlerin kaynağını veya hedefini gizlemek veya gizlemek için para aklama veya etkileşim önerebilecek işaretleri algılar. Bu sınıflandırıcı, müşterilerin Banka Gizlilik Yasası, ABD Vatanseverlik Yasası, FINRA Kural 3310 ve 2020 Para AklamaYla Mücadele Yasası gibi mevzuat uyumluluğu yükümlülüklerini yönetmelerine yardımcı olabilir. |
+| **Küfür** | Çoğu insanı utandıran küfür içeren ifadeleri algılar. |
+| **Müstehcen görüntüler** | Doğası gereği cinsel açıdan öneride bulunabilecek ancak Yetişkinlere yönelik olarak kabul edilen görüntülerden daha az açık içerik içeren görüntüleri algılar. |
+| **Mevzuat harmanlaması (önizleme)** | Hassas bilgilerin gizlenmeye çalışılması gibi yasal koruma gereksinimlerini ihlal eden iletileri algılar. Bu sınıflandırıcı, müşterilerin Sherman Antitrust Act, Securities Exchange Act 1933, Securities Exchange Act of 1934, Investment Advisers Act of 1940, Federal Commission Act ve Robinson-Patman Act gibi mevzuat uyumluluğu yükümlülüklerini yönetmelerine yardımcı olabilir. |
+| **Hisse senedi işleme (önizleme)** | Hisse senedi fiyatını işleme girişimi önerebilecek hisse senetlerini satın alma, satma veya tutma önerileri gibi olası hisse senedi işleme işaretlerini algılar. Bu sınıflandırıcı, müşterilerin 1934 Menkul Kıymetler Borsası Yasası, FINRA Kural 2372 ve FINRA Kural 5270 gibi mevzuat uyumluluğu yükümlülüklerini yönetmelerine yardımcı olabilir. |
+| **Tehdit** | Bir kişiye veya mülke şiddet veya fiziksel zarar vermek için olası tehditleri algılar. |
+| **Yetkisiz açıklama (önizleme)** | Yetkisiz kişiler için gizli veya dahili olarak açıkça belirlenmiş içerik içeren bilgilerin paylaşımını algılar.Bu sınıflandırıcı, müşterilerin FINRA Kural 2010 ve SEC Kuralı 10b-5 gibi mevzuat uyumluluğu yükümlülüklerini yönetmelerine yardımcı olabilir. |
+
+> [!IMPORTANT]
+> Önizleme sınıflandırıcıları, bilinen bir sorun nedeniyle büyük hacimli toplu gönderen/bülten içeriği algılayabilir. Bu sınıflandırıcılar önizleme aşamasındayken, dışlamak istediğiniz [*etki alanlarının listesiyle bu etki alanları koşulunun hiçbirine ileti gönderilmez* iletisini ekleyerek büyük](/microsoft-365/compliance/communication-compliance-policies#conditional-settings) hacimli toplu gönderen/bülten içeriğini algılamayı azaltabilirsiniz.
 
 > [!NOTE]
-> Sınıflandırıcıları kullanan ilkeler, altı veya daha büyük sözcük sayısına sahip iletileri inceler ve değerlendirir. Altıdan az sözcük içeren iletiler sınıflandırıcılar kullanılarak ilkelerde değerlendirilmez. Uygunsuz içerik içeren daha kısa iletileri tanımlamak ve üzerinde işlem yapmak için, bu tür içerikleri algılayan iletişim uyumluluk ilkelerine özel bir anahtar sözcük sözlüğü eklemenizi öneririz.
+> İngilizce dilinde Tehdit, Taciz ve Küfür sınıflandırıcılarını kullanan ilkeler, üç veya daha fazla sözcük sayısına sahip iletileri inceler ve değerlendirir. Üçten az sözcük içeren iletiler, bu sınıflandırıcı türleri kullanılarak ilkelerde değerlendirilmez. Uygunsuz içerik içeren daha kısa iletileri tanımlamak ve üzerinde işlem yapmak için, bu tür içerikleri algılayan iletişim uyumluluk ilkelerine özel bir anahtar sözcük sözlüğü eklemenizi öneririz.
 
 ### <a name="optical-character-recognition-ocr"></a>Optik karakter tanıma (OCR)
 

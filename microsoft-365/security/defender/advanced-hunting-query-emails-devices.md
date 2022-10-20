@@ -17,15 +17,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
-ms.topic: article
-ms.openlocfilehash: 740f9c5e683297f2a4d990cad5fdbc8c6295ed57
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+- m365-security
+- tier1
+ms.topic: conceptual
+ms.openlocfilehash: d6a9333fabe555552b31c673b0ae1d93554ca4d7
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481866"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625357"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Cihazlar, e-postalar, uygulamalar ve kimlikler arasında tehditleri avlama
 

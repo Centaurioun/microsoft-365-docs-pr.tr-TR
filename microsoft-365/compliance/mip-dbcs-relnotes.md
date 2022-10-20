@@ -9,17 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Çift bayt karakter kümeleri için destek için sürüm notları.
-ms.openlocfilehash: 593e1db04c5e4dc56bc4cc1a7fd11d907d4fe09d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 3851b0d0b49faecc123704ee2930fbd3d6ce6360
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622435"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68631820"
 ---
 # <a name="support-for-double-byte-character-set-release-notes"></a>Çift bayt karakter kümesi sürüm notları desteği
 
@@ -31,6 +32,8 @@ ms.locfileid: "66622435"
 - Japanese
 
 Bu destek hassas bilgi türleri ve anahtar sözcük sözlükleri için kullanılabilir ve Microsoft Purview Veri Kaybı Önleme (Exchange Online, SharePoint Online, OneDrive İş ve Teams için), İletişim Uyumluluğu, Office uygulamalarında Otomatik Etiketleme ve Microsoft Defender for Cloud Apps.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="known-issues"></a>Bilinen sorunlar
 
@@ -46,7 +49,7 @@ Bu destek hassas bilgi türleri ve anahtar sözcük sözlükleri için kullanıl
   - "Ek bu sözcüklerden herhangi birini içeriyor"
   - "Ek bu sözcüklerden herhangi birini içeriyor"
 
-- Veri kaybı önleme ilkeleri, Japonca dahil olmak üzere Doğu Asya dilleri için aşağıda belirtilen koşullar dışında Catalina 10.15 ve üzerini çalıştıran macOS cihazlarda (önizleme) uygulanabilir.
+- Veri kaybı önleme ilkeleri, Japonca da dahil olmak üzere Doğu Asya dilleri için aşağıda belirtilen koşullar dışında, en son yayınlanan üç sürümü çalıştıran macOS cihazlarda (önizleme) uygulanabilir.
   - Japonya banka hesap numarası gibi yerleşik şablon kullanma gibi tam genişlikli sayılar algılanmadı
   - Sınırlayıcıları olmayan sayılar algılanmadı
   - Hassas bir bilgi türü için yarım genişlikte boşlukla ayrılmış anahtar sözcükler algılanmadı. Örneğin: Japonca sözcük hassas bilgi türünde ayarlanır ve tümce içindeyse sözlük algılanmadı

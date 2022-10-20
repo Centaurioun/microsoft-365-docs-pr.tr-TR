@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
-ms.openlocfilehash: 6d733c7b27528a25097bd8aa666f14a60989cbfc
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: de510420a3d4f91fc713e2514f9d0f88b609d479
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221048"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625159"
 ---
 # <a name="microsoft-safety-scanner-download"></a>Microsoft Güvenlik Tarayıcısı İndirme
 
@@ -46,7 +46,7 @@ Microsoft Güvenlik Tarayıcısı, Windows bilgisayarlarından kötü amaçlı y
 
 ## <a name="system-requirements"></a>Sistem gereksinimleri
 
-Güvenlik Tarayıcısı, Windows 11, Windows 10, Windows 10 Tech Preview, Windows 8.1, Windows 8, Windows 7, Windows Server 2019, Windows Server 2016, Windows Server Tech Preview çalıştıran bilgisayarlardan kötü amaçlı yazılımların kaldırılmasına yardımcı olur. R2, Windows Server 2012, Windows Server 2008 R2 veya Windows Server 2008'i Windows Server 2012. Ayrıntılar için [Microsoft Yaşam Döngüsü İlkesi'ne](/lifecycle/) bakın.
+Güvenlik Tarayıcısı, Windows 11, Windows 10, Windows 10 Tech Preview, Windows 8.1, Windows 8, Windows 7, Windows Server 2019, Windows Server 2016, Windows Server Tech Preview çalıştıran bilgisayarlardan kötü amaçlı yazılımların kaldırılmasına yardımcı olur. R2, Windows Server 2012 veya Windows Server 2008 R2'yi Windows Server 2012. Ayrıntılar için [Microsoft Yaşam Döngüsü İlkesi'ne](/lifecycle/) bakın.
 
 ## <a name="how-to-run-a-scan"></a>Tarama nasıl çalıştırılır?
 

@@ -18,15 +18,15 @@ ms.collection:
 - m365-initiative-defender-endpoint
 - highpri
 - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: d0809a1efaa091c21e2cb88c0f085e978a7f048f
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: d4bb3297fda9f748a17a8d1018a18f71527d9293
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68506510"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68637804"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Uç Nokta için Microsoft Defender hizmetine ekleme
 

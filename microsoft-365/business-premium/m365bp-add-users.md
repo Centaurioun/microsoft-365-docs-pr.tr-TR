@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Kuruluşunuzun ağına ve iç sistemlerine yeni bir çalışan veya kullanıcı ekleme. Şirketinize yeni bir çalışan katıldığında, bunları ağa güvenli bir şekilde eklemeniz gerekir.
-ms.openlocfilehash: f9a35302dd5f26d30aa1be84c5f6c01fee8e490d
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: abb54ec48228ffd9a52eb7744d1bde8376a9b3cb
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68096555"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627707"
 ---
 # <a name="add-a-new-employee-in-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra'de yeni bir çalışan ekleme
 
@@ -33,7 +33,7 @@ Aşağıdaki bilgiler, kuruluşa yeni bir çalışan eklemek için Microsoft 365
   
  **Yönetici değil misiniz?** [Microsoft 365'in](https://support.microsoft.com/office/396b8d9e-e118-42d0-8a0d-87d1f2f055fb) kurulumunda iş ve ev kullanıcılarına yardımcı olması konusunda yolunuzu öğrenin. 
   
- **Planınızda Office uygulaması yok mu?** Aşağıdaki adımları izleyin, ancak uygulamaları yükleme bölümlerini atlayın. Bunun yerine [Office'in Çevrimiçi sürümlerini](https://support.microsoft.com/office/91a4ec74-67fe-4a84-a268-f6bdf3da1804) kullanın.
+ **Planınızda Microsoft 365 uygulaması yok mu?** Aşağıdaki adımları izleyin, ancak uygulamaları yükleme bölümlerini atlayın. Bunun yerine [Office'in Çevrimiçi sürümlerini](https://support.microsoft.com/office/91a4ec74-67fe-4a84-a268-f6bdf3da1804) kullanın.
 
 ## <a name="how-to-add-a-new-user"></a>Yeni kullanıcı ekleme
 
@@ -56,8 +56,8 @@ Başlamalarına yardımcı olacak hızlı bir başvuru aşağıda verilmiştir:
 |**Görev**|**Ayrıntıları bulma**|
 |:-----|:-----|
 |Office'te oturum açma  <br/> |adresine [https://www.office.com](https://www.office.com)gidin, **Oturum aç'ı** seçin ve ardından kullanıcı kimliğinizi ve parolanızı girin.  <br/> |
-|Office uygulamalarını bilgisayarınıza yükleyin.  <br/><br/> |Oturum açtığınızda, giriş sayfasında Word ve Outlook gibi uygulamaları indirip yüklemek için bir bağlantı bulunur.  **Office'i Yükle'yi** seçin.         Yönergeler için bkz. [Office'i yükleme](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).  <br/> |
-|Outlook 2016'de e-postanızı ayarlayın.  <br/> |Bilgisayarınızda Office uygulamaları yüklendikten sonra e-postanızı ayarlayın. Yönergeler için bkz. [Outlook'u ayarlama](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).  <br/> |
+|Microsoft 365 uygulamalarını bilgisayarınıza yükleyin.  <br/><br/> |Oturum açtığınızda, giriş sayfasında Word ve Outlook gibi uygulamaları indirip yüklemek için bir bağlantı bulunur.  **Office'i Yükle'yi** seçin.         Yönergeler için bkz. [Office'i yükleme](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).  <br/> |
+|Outlook 2016'de e-postanızı ayarlayın.  <br/> |Bilgisayarınızda Microsoft 365 uygulamaları yüklendikten sonra e-postanızı ayarlayın. Yönergeler için bkz. [Outlook'u ayarlama](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).  <br/> |
 |şirketinizdeki veya dünyanın dört bir yanındaki iş arkadaşlarıyla veya iş ortaklarıyla bağlantı kurabilmeniz için Skype Kurumsal ayarlayın. Anlık ileti, sesli veya görüntülü aramalarla konuşmalar başlatabilirsiniz.  <br/> |[bilgisayarınıza Skype Kurumsal yükleyin](https://support.microsoft.com/office/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb).  <br/> <br/>Skype Kurumsal kullanmayı öğrenmek için [bir video izleyin.](https://support.microsoft.com/office/3a21eca4-434d-41f1-ab06-3d4a268573b7) <br/> <br/>Çalışanlarınızın ücretsiz Skype uygulamasını kullanan işletmenizin dışındaki kişilerle iletişim kurabilmesi için Skype Kurumsal ayarladınız mı? Aksi takdirde, Skype Kurumsal kullanırken ne bekleyebileceğinizi öğrenmek için yeni çalışanınıza bildirin.  <br/> |
 |E-posta almak veya telefonunuzda Skype Kurumsal kullanmak istiyorsanız mobil cihazınıza uygulama yükleyin.  <br/> |Telefonunuzdan e-posta alabilmeniz için Outlook mobil uygulamasını ayarlamak istiyorsanız. Yönergeler için bkz. [iOS](https://support.microsoft.com/office/b2de2161-cc1d-49ef-9ef9-81acd1c8e234), [Android](https://support.microsoft.com/office/886db551-8dfa-4fd5-b835-f8e532091872)[, Windows Phone](https://support.microsoft.com/office/181a112a-be92-49ca-ade5-399264b3d417) <br/> <br/>mobil cihazınızda Skype Kurumsal kullanmak istiyorsanız mobil uygulamayı indirip yükleyin. Yönergeler için bkz. [iOS](https://support.microsoft.com/office/3239c8a3-cf55-4ff0-a967-5de51911c049#OS_Type=iOS), [Android](https://support.microsoft.com/office/4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Android)[, Windows Phone](https://support.microsoft.com/office/4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Windows_Phone) <br/> |
 |Belgelerinizi, sunularınızı ve elektronik tablolarınızı bulutta depolamayı ve düzenlemeyi öğrenmenize yardımcı olmak için OneDrive İş eğitimini tamamlayın.  <br/> |OneDrive İş kullanarak işle ilgili belgelerinizi bulutta tutun. Microsoft 365'te farklı bir bilgisayarda oturum açmış olsanız bile içeriğinize her zaman erişebilirsiniz. [OneDrive İş nasıl kullanacağınızı öğrenmek için bir video izleyin](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **Eğitim:** [eğitim OneDrive İş](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132) (OneDrive İş seçin).  <br/> |

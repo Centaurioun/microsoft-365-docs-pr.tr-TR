@@ -15,20 +15,22 @@ search.appverid:
 - MOE150
 ms.assetid: 4cde0cda-3430-4dc0-b489-f2c0736c929f
 ms.collection:
-- M365-security-compliance
-- Strat_O365_IP
+- purview-compliance
+- tier1
 description: Exchange Online ve Microsoft 365'in e-posta iletişimlerinin güvenliğini sağlamak için Aktarım Katmanı Güvenliği (TLS) ve İletme Gizliliği 'ni (FS) nasıl kullandığını öğrenin. Ayrıca Exchange Online için Microsoft tarafından verilen sertifika hakkında da bilgi edinin.
-ms.openlocfilehash: 127e72fd756754b11cf27316a006fab08fc459fb
-ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+ms.openlocfilehash: 1b3133cd9111531efa10f18cad15556fd4833a80
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67432341"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626566"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Exchange Online, e-posta bağlantılarının güvenliğini sağlamak için TLS'yi nasıl kullanır?
 
 Exchange Online ve Microsoft 365'in e-posta iletişimlerinin güvenliğini sağlamak için Aktarım Katmanı Güvenliği (TLS) ve İletme Gizliliği 'ni (FS) nasıl kullandığını öğrenin. Ayrıca, Exchange Online için Microsoft tarafından verilen sertifika hakkında bilgi sağlar.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="tls-basics-for-microsoft-365-and-exchange-online"></a>Microsoft 365 ve Exchange Online için TLS temel bilgileri
 
 AKTARıM Katmanı Güvenliği (TLS) ve TLS'den önce gelen SSL, bilgisayarlar arasındaki bağlantıyı şifrelemek için güvenlik sertifikaları kullanarak ağ üzerinden iletişimi güvenli hale getiren şifreleme protokolleridir. TLS, Güvenli Yuva Katmanı'nın (SSL) yerini alır ve genellikle SSL 3.1 olarak adlandırılır. Exchange Online, Exchange sunucuları arasındaki bağlantıları ve Exchange sunucuları ile şirket içi Exchange sunucularınız veya alıcılarınızın posta sunucuları gibi diğer sunucular arasındaki bağlantıları şifrelemek için TLS kullanır. Bağlantı şifrelendiğinde, bu bağlantı üzerinden gönderilen tüm veriler şifrelenmiş kanal üzerinden gönderilir. Ancak TLS ile şifrelenmiş bir bağlantı üzerinden gönderilen bir iletiyi TLS şifrelemesini desteklemeyen bir alıcı kuruluşuna iletirseniz, bu iletinin şifrelenmesi gerekmez. TLS iletiyi şifrelemez, yalnızca bağlantıyı şifreler.

@@ -14,17 +14,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier2
 ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 description: Yöneticiler, Microsoft Purview İleti Şifrelemesi kullanarak iletileri şifrelemek ve şifresini çözmek için posta akışı kuralları (aktarım kuralları) oluşturmayı öğrenebilir.
-ms.openlocfilehash: 75abd302bf661fda50b144f431572c8c6dfc8bcc
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b244cd1847d46f80bd56ec5a9aec09eadc6781cd
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635709"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620733"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>E-posta iletilerini şifrelemek için posta akışı kurallarını tanımlama
 
@@ -38,6 +39,8 @@ Posta akışı kurallarını oluşturan bileşenler ve posta akışı kuralları
 
 > [!IMPORTANT]
 > Karma Exchange ortamları için, şirket içi kullanıcılar yalnızca e-posta Exchange Online üzerinden yönlendirildiğinde ileti şifrelemesi kullanarak şifreli posta gönderip alabilir. İleti şifrelemesini karma Exchange ortamında yapılandırmak için önce [Karma Yapılandırma sihirbazını kullanarak karma](/Exchange/exchange-hybrid) yapılandırmanız ve ardından [postayı Office 365'dan e-posta sunucunuza akacak şekilde yapılandırmanız ve e-posta sunucunuzdan](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-1-configure-mail-to-flow-from-office-365-to-your-on-premises-email-server) [Office 365'a akacak şekilde yapılandırmanız](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365) gerekir. Postayı Office 365 akacak şekilde yapılandırdıktan sonra, bu kılavuzu kullanarak ileti şifrelemesi için posta akışı kurallarını yapılandırabilirsiniz.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="create-mail-flow-rules-to-encrypt-email-messages-with-microsoft-purview-message-encryption"></a>Microsoft Purview İleti Şifrelemesi ile e-posta iletilerini şifrelemek için posta akışı kuralları oluşturma
 

@@ -16,12 +16,13 @@ ms.collection:
 ms.custom: ''
 search.appverid: MET150
 description: Yeni Toplantı içgörü puanının ayrıntıları - kişiler Benimseme Puanı'nın deneyimini yaşar.
-ms.openlocfilehash: 7e4dd45a5ec8bec72a5ddaa4beb3bd1223b98a0c
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: d6e74a03e459bfaaef3aa4e3b37bc70374e38b64
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68566409"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623575"
 ---
 # <a name="meetings-insights-score--people-experiences-new"></a>Toplantı içgörü puanı – Kişiler deneyimleri (Yeni)
 

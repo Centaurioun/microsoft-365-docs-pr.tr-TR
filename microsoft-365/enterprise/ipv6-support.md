@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Özet: Microsoft 365 bileşenlerinde ve Microsoft 365 kamu tekliflerinde IPv6 desteğini açıklar.'
-ms.openlocfilehash: db517778f2aa17af142c4204220cbcd3dbd026e4
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: ace89b7f49eb5535dd49119358c1936d8a6b638a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68172653"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623974"
 ---
 # <a name="ipv6-support-in-microsoft-365-services"></a>Microsoft 365 hizmetlerinde IPv6 desteği
 
-Kurumsal ağlar, hizmet sağlayıcıları ve cihazlar arasında IPv6'nın giderek daha fazla benimsenmesi ve desteklenmesiyle birlikte, birçok müşteri kullanıcılarının IPv6 istemcilerinden ve IPv6 ağlarından Microsoft 365 hizmetlerine erişmeye devam edip edemediğini merak ediyor. Microsoft 365 hizmetleri hem IPv6 çift yığından hem de yalnızca IPv6 cihazlarından başarıyla kullanılabilir. Aslında, tüketicilerden IPv6'nın daha iyi benimsenmesini sağlayan büyük kuruluşlara kadar artan sayıda müşterimiz var. Çoğu müşteri için, IPv4 dijital manzaralarından tamamen kaybolmaz, bu nedenle herhangi bir Microsoft 365 özelliği veya hizmeti için IPv6 gerektirmeyi veya IPv4 önceliklerini kaldırmayı planlamıyoruz.
+Kurumsal ağlar, hizmet sağlayıcıları ve cihazlar arasında IPv6'nın giderek daha fazla benimsenmesi ve desteklenmesiyle birlikte, birçok müşteri kullanıcılarının IPv6 istemcilerinden ve IPv6 ağlarından Microsoft 365 hizmetlerine erişmeye devam edip edemediğini merak ediyor. Microsoft 365 hizmetleri hem IPv6 çift yığından hem de yalnızca IPv6 cihazlarından başarıyla kullanılabilir (Yalnızca IPv6 cihazlar için DNS64 veya NAT64 gibi çeviri teknolojileri gerekir). Aslında, tüketicilerden IPv6'nın daha iyi benimsenmesini sağlayan büyük kuruluşlara kadar artan sayıda müşterimiz var. Çoğu müşteri için, IPv4 dijital manzaralarından tamamen kaybolmaz, bu nedenle herhangi bir Microsoft 365 özelliği veya hizmeti için IPv6 gerektirmeyi veya IPv4 önceliklerini kaldırmayı planlamıyoruz.
 
 Microsoft 365 ile ilgili temel önceliklerimizden biri, herhangi bir konumdan, herhangi bir cihazdan İnternet üzerinden sorunsuz müşteri ve kullanıcı deneyimleri sağlamaktır. Buna, çift yığın yapılandırmasında IPv6 kullanan müşteri cihazlarından Microsoft 365'e erişimin yanı sıra yalnızca IPv6 istemci dağıtımlarına geçiş dahildir. Çoğu durumda, Microsoft 365 ağ bağlantısı ilkeleri, Microsoft 365 [URL'leri ve IP adresi aralıkları ve Microsoft 365](urls-and-ip-address-ranges.md) [ağ planlama en iyi yöntemlerinde](network-and-migration-planning.md#best-practices-for-network-planning-and-improving-migration-performance-for-office-365) açıklandığı gibi [Microsoft 365'e](microsoft-365-network-connectivity-principles.md) bağlanmaya yönelik standart bir İnternet tabanlı modeli izlediğinizde, IPv6 geçişleri kullanıcı deneyiminizi kesintiye uğratmaz.
 

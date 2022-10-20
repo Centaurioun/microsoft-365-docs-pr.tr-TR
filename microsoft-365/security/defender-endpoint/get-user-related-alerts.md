@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: b1c598b9710596930c645b88ea822324a744c70d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: c6d0355de6c44f2de636f77add7e5df34c5a4da4
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68190627"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624235"
 ---
 # <a name="get-user-related-alerts-api"></a>Kullanıcıyla ilgili uyarılar API'lerini alma
 

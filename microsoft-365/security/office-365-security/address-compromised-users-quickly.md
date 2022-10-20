@@ -5,7 +5,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -16,12 +16,12 @@ ms.date: 06/10/2021
 description: Office 365 için Microsoft Defender Plan 2'de otomatik araştırma ve yanıt özellikleriyle güvenliği aşılmış kullanıcı hesaplarını algılama ve ele alma sürecini nasıl hızlandıracağınızı öğrenin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 5cf0574629bc39f987ab5ee4ad2968937ed4bc64
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 1e55f3aaec89429be06f97ed0e7947461da9015a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68064200"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622232"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Güvenliği aşılmış kullanıcı hesaplarını otomatik araştırma ve yanıtla ele alın
 

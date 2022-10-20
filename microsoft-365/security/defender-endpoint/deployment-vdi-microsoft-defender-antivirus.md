@@ -16,13 +16,14 @@ ms.service: microsoft-365-security
 ms.collection:
 - m365-security
 - tier2
+- ContentEngagementFY23
 search.appverid: met150
-ms.openlocfilehash: 7fe1ca66ff803fa03ff6c97f8657152be5723ec6
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: b3f9ec32541fc77e1ac1191019cb589fb1829e43
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180175"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634376"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Sanal Masaüstü Altyapısı (VDI) ortamında Microsoft Defender Virüsten Koruma için dağıtım klavuzu
 
@@ -60,11 +61,11 @@ Windows 10, sürüm 1903'te, indirilen güvenlik zekası güncelleştirmelerinin
 
 ### <a name="use-group-policy-to-enable-the-shared-security-intelligence-feature"></a>Paylaşılan güvenlik bilgileri özelliğini etkinleştirmek için grup ilkesi kullanın:
 
-1. grup ilkesi yönetim bilgisayarınızda grup ilkesi Yönetim Konsolu'nu açın, yapılandırmak istediğiniz grup ilkesi Nesnesine sağ tıklayın ve ardından **Düzenle'ye** tıklayın.
+1. grup ilkesi yönetim bilgisayarınızda grup ilkesi Yönetim Konsolu'nu açın, yapılandırmak istediğiniz grup ilkesi Nesnesi'ne sağ tıklayın ve **düzenle'yi** seçin.
 
 2. **grup ilkesi Yönetim Düzenleyicisi'nde** **Bilgisayar yapılandırması'na** gidin.
 
-3. **Yönetim şablonları'nı** tıklatın.
+3. **Yönetim şablonları'nı** seçin.
 
 4. **Virüsten Koruma** \> **Güvenlik Bilgileri** Güncelleştirmeler Microsoft Defender ağacı **Windows bileşenlerine** \> genişletin.
 
@@ -72,13 +73,13 @@ Windows 10, sürüm 1903'te, indirilen güvenlik zekası güncelleştirmelerinin
 
 6. Girin `\\<sharedlocation\>\wdav-update` (bu değerle ilgili yardım için bkz [. İndirme ve paketi açma](#download-and-unpackage-the-latest-updates)).
 
-7. **Tamam**'a tıklayın.
+7. **Tamam**'ı seçin.
 
 8. GPO'yi test etmek istediğiniz VM'lere dağıtın.
 
 ### <a name="use-powershell-to-enable-the-shared-security-intelligence-feature"></a>Paylaşılan güvenlik zekası özelliğini etkinleştirmek için PowerShell kullanma
 
-Özelliği etkinleştirmek için aşağıdaki cmdlet'i kullanın. Daha sonra bunu göndermeniz gerekir çünkü normalde PowerShell tabanlı yapılandırma ilkelerini VM'lere gönderebilirsiniz:
+Özelliği etkinleştirmek için aşağıdaki cmdlet'i kullanın. Daha sonra normalde PowerShell tabanlı yapılandırma ilkelerini VM'lere göndereceğinden güncelleştirmeyi göndermeniz gerekir:
 
 ```PowerShell
 Set-MpPreference -SharedSignaturesPath \\<shared location>\wdav-update
@@ -138,7 +139,7 @@ Bu, cihazların güncelleştirmeleri alabilmesi için paylaşıma okuma erişimi
 
 3. **Eylemler** sekmesine gidin. **Yeni... öğesini seçin.** **Program/Betik** alanına **PowerShell** girin. **Bağımsız değişken ekle** alanına girin`-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1`. **Tamam**'ı seçin.
 
-4. İsterseniz ek ayarları yapılandırmayı seçebilirsiniz.
+4. İsterseniz daha fazla ayar yapılandırmayı seçebilirsiniz.
 
 5. Zamanlanmış görevi kaydetmek için **Tamam'ı** seçin.
 
@@ -259,7 +260,7 @@ Vm ardışık olarak zamanlanmış iki veya daha fazla taramayı kaçırdıysa, 
 
 3. İlkeyi **Etkin** olarak ayarlayın.
 
-4. **Tamam**'a tıklayın.
+4. **Tamam**'ı seçin.
 
 5. grup ilkesi Nesnenizi genellikle yaptığınız gibi dağıtın.
 

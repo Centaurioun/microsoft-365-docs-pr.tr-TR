@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
-- Strat_O365_IP
+- purview-compliance
+- tier1
 description: Microsoft 365'te kök sertifikaların ve sertifika yetkililerinin (CA) tam listesini görüntüleyin.
-ms.openlocfilehash: e131aa1c56890289735fd7605db7ace95d24fd7a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d96983d9f4211c5c6b7814cf8a97f8e1f207ce70
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641800"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632216"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Microsoft 365 şifreleme zincirleri
 
@@ -39,6 +39,8 @@ Son güncelleştirme: **25/4/2022**
 | Genel Olarak Güvenilen Ara Sertifikalar | [Microsoft 365 Ara Sertifika Paketi (P7B)](https://download.microsoft.com/download/1/4/7/14777f28-3fde-4958-aebf-bd192a4a7fac/m365_intermediate_certs_20201013.p7b) | cdp1.public-trust.com<br>crl.cnnic.cn<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>ocspcnnicroot.cnnic.cn<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com<br>www.cnnic.cn |
 
 Sertifika sağlayıcılarıyla ilgili ek ayrıntıları görmek için aşağıdaki kök ve ara bölümleri genişletin.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="microsoft-365-root-certificate-details"></a>**Microsoft 365 Kök Sertifika Ayrıntıları**
 

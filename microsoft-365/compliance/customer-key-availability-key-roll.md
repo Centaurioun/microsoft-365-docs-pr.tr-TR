@@ -10,19 +10,22 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 description: Müşteri Anahtarı ile birlikte kullanılan Azure Key Vault depolanan müşteri kök anahtarlarının nasıl alındığını öğrenin. Hizmetler Exchange Online, Skype Kurumsal, SharePoint Online, OneDrive İş ve Teams dosyalarını içerir.
-ms.openlocfilehash: 474df9b4776df09b4a46ca002f506155606bdb52
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 22071e7e7c7168da2117cd9e7d0abcb07f9e211e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636501"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647793"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>Bir Müşteri Anahtarını veya uygunluk anahtarını toplama veya döndürme
 
 > [!CAUTION]
 > Yalnızca güvenlik veya uyumluluk gereksinimleriniz anahtarın alınması gerektiğini belirlediğinde Müşteri Anahtarı ile kullandığınız bir şifreleme anahtarını yuvarlayın. Ayrıca, ilkelerle ilişkilendirilmiş veya ilişkili anahtarları silmeyin. Anahtarlarınızı yuvarladığınızda, önceki anahtarlarla şifrelenmiş içerik olacaktır. Örneğin, etkin posta kutuları sık sık yeniden şifrelenirken, etkin olmayan, bağlantısı kesilmiş ve devre dışı bırakılmış posta kutuları önceki anahtarlarla yine de şifrelenebilir. SharePoint Online, geri yükleme ve kurtarma amacıyla içeriğin yedeğini gerçekleştirir, bu nedenle eski anahtarlar kullanılarak arşivlenmiş içerik olabilir.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="about-rolling-the-availability-key"></a>Kullanılabilirlik anahtarını döndürme hakkında
 

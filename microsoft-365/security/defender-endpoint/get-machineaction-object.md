@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: f7794470e86a74f5caef9e4f4201ff39addb0ffd
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: f3dbe643110c0cdc9ad2c3842ecf59532710e563
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68201539"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624556"
 ---
 # <a name="get-machineaction-api"></a>machineAction API'lerini alma
 

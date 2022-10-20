@@ -15,15 +15,15 @@ ms.collection:
 - m365-security
 - tier1
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 16da44ee7df41d3a239055360e71f320346a097d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 5e16ed5cead5d9bf662dc3d0ac29894387476cdd
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180285"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638708"
 ---
 # <a name="onboard-windows-devices-to-defender-for-endpoint-using-intune"></a>Intune kullanarak Windows cihazlarını Uç Nokta için Defender'a ekleme 
 

@@ -10,31 +10,34 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview Uyumluluk Yöneticisi'nde uyumluluk puanınızı etkileyebilecek etkinlikler için uyarılar oluşturmayı öğrenin.
-ms.openlocfilehash: 499d1f005b67b2a9583d7138ce784b2e7ae1c8ad
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 532dd4523d7364895ee385f5c2b6f96a9e3d51a0
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642250"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68636112"
 ---
 # <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>Microsoft Purview Uyumluluk Yöneticisi uyarıları ve uyarı ilkeleri
 
 **Bu makalede:** Uyumluluk Yöneticisi'nde belirli etkinlikler için **uyarı ayarlamayı** , uyarıları yönetmeyi ve uyarı koşullarını tanımlamak için **uyarı ilkeleri oluşturmayı** öğrenin.
 
-## <a name="overview"></a>Genel Bakış
-Uyumluluk Manger, uyumluluk hedeflerinizi takip edebilmeniz için değişiklikler gerçekleşir gerçekleşmez sizi uyarabilir. Örneğin, kiracınızdaki bir yapılandırma değişikliği nedeniyle bir iyileştirme eyleminin puan değeri arttığında veya azaldığında ya da bir kullanıcıya uygulama veya test çalışması yapması için bir iyileştirme eylemi atandığında sizi bilgilendirecek uyarılar ayarlayabilirsiniz. Uyarı oluşturabileceğiniz [olay türlerini](#create-an-alert-policy) görüntüleyin.
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## <a name="overview"></a>Genel bakış
+Uyumluluk Yöneticisi, uyumluluk hedeflerinizi takip edebilmeniz için değişiklikler gerçekleşir gerçekleşmez sizi uyarabilir. Örneğin, kiracınızdaki bir yapılandırma değişikliği nedeniyle bir iyileştirme eyleminin puan değeri arttığında veya azaldığında ya da bir kullanıcıya uygulama veya test çalışması yapması için bir iyileştirme eylemi atandığında sizi bilgilendirecek uyarılar ayarlayabilirsiniz. Uyarı oluşturabileceğiniz [olay türlerini](#create-an-alert-policy) görüntüleyin.
 
 Uyarı oluşturmak için, önce bir uyarıyı tetikleyen koşulları ve bildirimlerin sıklığını ana hatlarıyla belirlemek için bir uyarı ilkesi ayarlarsınız. İlke koşullarınızla bir eşleşme algıladığımızda ayrıntıları içeren bir e-posta bildirimi alırsınız; böylece araştırmanız veya başka işlemler yapmanız gerekip gerekmediğini belirleyebilirsiniz.
 
-Tüm uyarılar Uyumluluk Günlüğü'ndeki **Uyarılar** sekmesinde, tüm uyarı ilkeleri ise **Uyarı İlkeleri sekmesinde** listelenir.  Tüm kuruluşlar için [önceden ayarlanmış bir varsayılan puan değiştirme ilkesi](#default-score-change-policy) vardır.
+Tüm uyarılar Uyumluluk Yöneticisi'ndeki **Uyarılar** sekmesinde, tüm uyarı ilkeleri ise **Uyarı İlkeleri sekmesinde** listelenir.  Tüm kuruluşlar için [önceden ayarlanmış bir varsayılan puan değiştirme ilkesi](#default-score-change-policy) vardır.
 
 ## <a name="understanding-the-alerts-and-alert-policies-pages"></a>Uyarılar ve Uyarı ilkeleri sayfalarını anlama
 
@@ -45,7 +48,7 @@ Tüm uyarılar Uyumluluk Günlüğü'ndeki **Uyarılar** sekmesinde, tüm uyarı
 
 **Uyarı ilkelerinizi** görüntülemek ve yönetmek için Uyumluluk Yöneticisi'nde Uyarı ilkeleri sekmesini seçin. **Uyarı ilkeleri** sayfası, kuruluşunuz tarafından oluşturulan tüm ilkeleri listeleyen bir tablo içerir. Bu sayfadan yeni ilkeler oluşturabilir, mevcut ilkeleri düzenleyebilir, etkinleştirme durumunu değiştirebilir ve ilkeleri silebilirsiniz.
 
-**Durum sütununda** **Etkin**, ilkenin etkin olduğu ve koşullar karşılandığında uyarıları tetiklediğinde olduğu anlamına gelir. **Etkin değil** , ilkenin var olduğu ancak uyarı oluşturmayolduğu anlamına gelir. İlkeler tablosu, ilkenin önem derecesini ve ilkenin son değiştirilme tarihini de gösterir.
+**Durum sütununda** **Etkin**, ilkenin etkin olduğu ve koşullar karşılandığında uyarıları tetiklediğinde olduğu anlamına gelir. **Etkin değil** , ilkenin var olduğu ancak uyarı oluşturmadığından anlamına gelir. İlkeler tablosu, ilkenin önem derecesini ve ilkenin son değiştirilme tarihini de gösterir.
 
 Tek bir ilkenin ayrıntılarını görüntülemek için tablodaki satırını seçin. Tüm ayrıntıları gösteren bir açılır pencere bölmesi görüntülenir. Bölmenin alt kısmındaki **Eylem** düğmesini seçin ve ilkeyi düzenlemek, uyarılarını görüntülemek veya silmek için seçenekler arasından seçim yapın. Ekleme, düzenleme, silme, etkinleştirme ve devre dışı bırakma komutları, filtrelerin üzerinde tablonun üst kısmında da kullanılabilir.
 
@@ -228,7 +231,7 @@ Bir uyarı üzerinde işlem yapmak için **Uyarılar** sayfasındaki satırını
 
 **Uyarı atama**: Uyarıya neden olan olayları araştırmak veya doğrulamak için uyarıyı kullanıcıya atamak isteyebilirsiniz. Bu seçeneği belirlediğinizde, kuruluşunuzdaki bir kullanıcıyı seçebileceğiniz ve uyarıyı ona atayabileceğiniz bir panel açılır. Uyarılar sayfasında **Filtreler'i** seçip **Atanan** alanına kullanıcının adını girerek **uyarı** görünümünüzü filtreleyebilirsiniz.
 
-**E-posta uyarısı**: Eylemin gerçekleştiğini onaylamak için uyarının etkinliğiyle ilişkili kullanıcıya bir e-posta göndermek isteyebilirsiniz. Bu seçeneği belirttiğinizde uyarıyla ilgili temel bilgileri içeren bir e-posta şablonu açar. Bu şablonu daha fazla yönergeyle özelleştirebilir ve kullanıcıya gönderebilirsiniz.
+**Email uyarısı**: Uyarının etkinliğiyle ilişkilendirilmiş kullanıcıya eylemin gerçekleştiğini onaylamak için bir e-posta göndermek isteyebilirsiniz. Bu seçeneği belirttiğinizde uyarıyla ilgili temel bilgileri içeren bir e-posta şablonu açar. Bu şablonu daha fazla yönergeyle özelleştirebilir ve kullanıcıya gönderebilirsiniz.
 
 **İlke ayrıntılarını görüntüleme**: Uyarıyı tetikleyen ilkenin ayarlarını gözden geçirmek isteyebilirsiniz. Bu seçeneği belirlediğinizde, ilke ayrıntıları panelinin zaten açık olduğu **Uyarı ilkeleri** sayfasına doğrudan yönlendirilirsiniz. İlke ayrıntıları panelini kapattığınızda artık **Uyarılar** sayfanızda olmayacaksınız.
 
@@ -251,7 +254,7 @@ Bir uyarı oluşturulduktan sonra, durumu uyarıyı oluşturan ilkenin durumunda
 
 İlke silindiğinde, bu ilke tarafından oluşturulan tüm uyarılar **Uyarılar** sayfanızda kalır, ancak yeni uyarı oluşturulmaz.
 
-## <a name="email-notifications-of-alerts"></a>Uyarıların e-posta bildirimleri
+## <a name="email-notifications-of-alerts"></a>Uyarıların bildirimlerini Email
 
 İlke oluşturduğunuzda, ilkeyi oluşturan kullanıcıya bir eşleşme algılandığını belirten bir e-posta gönderilir. Bu e-posta bildirimlerini kuruluşunuzdaki diğer kullanıcılara göndermeyi seçebilirsiniz. Uyarılar neredeyse gerçek zamanlı olarak gerçekleşir ve bir uyarı oluşturulur oluşturulmaz e-posta bildirimleri gönderilir. E-posta olay adını, önem derecesini, algılanan zamanı ve uyarıyı Uyumluluk Yöneticisi'nde görüntüleme bağlantısını içerir.
 

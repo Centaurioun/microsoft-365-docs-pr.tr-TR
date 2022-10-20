@@ -11,32 +11,37 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
 description: Eğitilebilir sınıflandırıcılar, etiketleme veya ilke uygulamasına bakılması için pozitif ve negatif örnekler vererek çeşitli içerik türlerini tanıyabilir.
-ms.openlocfilehash: 09b02f948cc765901b098b1d2ec66ade7d4bfc5f
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: 37dc3e1f57d4572e95eb78c9794a120f9c99d19c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811174"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630260"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Eğitilebilir sınıflandırıcılar hakkında daha fazla bilgi edinme
 
-İçeriğin korunabilmesi ve doğru şekilde işlenebilmesi için sınıflandırma ve etiketleme, bilgi koruma uzmanlık alanı için başlangıç noktasıdır. Microsoft 365'in içeriği sınıflandırmak için üç yolu vardır.
+İçeriğin korunabilmesi ve düzgün işlenebilmesi için kategorilere ayırmak ve etiketlemek, bilgi koruma uzmanlık alanı için başlangıç noktasıdır. Microsoft Purview' un içeriği sınıflandırmak için üç yolu vardır.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="manually"></a>Elle
 
-El ile sınıflandırma insan yargısı ve eylem gerektirir. Kullanıcılar ve yöneticiler, içerikle karşılaştıklarında bunları içeriğe uygular. Önceden var olan etiketleri ve hassas bilgi türlerini veya özel oluşturulanları kullanabilirsiniz.  Daha sonra içeriği koruyabilir ve eğilimini yönetebilirsiniz.
+El ile kategorilere ayırma, insan yargısı ve eylemi gerektirir. Kullanıcılar ve yöneticiler, içerikle karşılaştıklarında içeriği kategorilere ayırır. Önceden var olan etiketleri ve hassas bilgi türlerini veya özel oluşturulanları kullanabilirsiniz.  Daha sonra içeriği koruyabilir ve eğilimini yönetebilirsiniz.
 
 ## <a name="automated-pattern-matching"></a>Otomatik desen eşleştirme
 
-Bu sınıflandırma mekanizması kategorisi içeriği bulma ölçütü:
+Bu kategorilere ayırma mekanizmaları, içeriği şu şekilde bulmayı içerir:
 
 - Anahtar sözcükler veya meta veri değerleri (anahtar sözcük sorgu dili).
 - Sosyal güvenlik, kredi kartı veya banka hesabı numaraları ( [Hassas bilgi türü varlık tanımları)](sensitive-information-type-entity-definitions.md) gibi hassas bilgilerin önceden tanımlanmış desenlerini kullanma.
@@ -47,7 +52,7 @@ Daha sonra duyarlılık ve bekletme etiketleri otomatik olarak uygulanarak içer
 
 ## <a name="classifiers"></a>Sınıflandırıcı
 
-Bu sınıflandırma yöntemi, el ile veya otomatik desen eşleştirme yöntemleri tarafından kolayca tanımlanmayan içeriğe çok uygundur. Bu sınıflandırma yöntemi, öğedeki öğeler (desen eşleştirme) tarafından değil, öğenin ne olduğuna göre bir öğeyi tanımlamak için bir sınıflandırıcı kullanmakla daha fazla ilgili olur. Sınıflandırıcı, sınıflandırmak istediğiniz içeriğin yüzlerce örneğine bakarak bir içerik türünü tanımlamayı öğrenir.
+Bu kategorilere ayırma yöntemi, el ile veya otomatik desen eşleştirme yöntemleriyle kolayca tanımlanmayan içeriğe çok uygundur. Bu kategorilere ayırma yöntemi, öğedeki öğeler (desen eşleştirme) tarafından değil, öğenin ne olduğuna bağlı olarak bir öğeyi tanımlamak için sınıflandırıcı kullanmakla daha fazla ilgili olur. Sınıflandırıcı, girintilendirmek istediğiniz içeriğin yüzlerce örneğine bakarak bir içerik türünü tanımlamayı öğrenir.
 
 > [!NOTE]
 > Önizlemede - Filtreler panelinde Eğitilebilir Sınıflandırıcılar'ı genişleterek içerik gezgininde **eğitilebilir sınıflandırıcıları** görüntüleyebilirsiniz. Eğitilebilir sınıflandırıcılar, hiçbir etiketleme gerektirmeden SharePoint, Teams ve OneDrive'da bulunan olay sayısını otomatik olarak görüntüler.
@@ -55,9 +60,13 @@ Bu sınıflandırma yöntemi, el ile veya otomatik desen eşleştirme yöntemler
 
 ### <a name="where-you-can-use-classifiers"></a>Sınıflandırıcıları kullanabileceğiniz yerler
 
-Sınıflandırıcılar, [duyarlılık etiketleriyle Office otomatik etiketleme](apply-sensitivity-label-automatically.md), [bir koşula göre ve iletişim uyumluluğuna göre bekletme etiketi ilkesini otomatik uygulama](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) koşulu olarak kullanılabilir.[](communication-compliance.md)
+Sınıflandırıcılar şunlar için bir koşul olarak kullanılabilir:
 
-Duyarlılık etiketleri sınıflandırıcıları koşul olarak kullanabilir. Bkz. [İçeriğe otomatik olarak duyarlılık etiketi uygulama](apply-sensitivity-label-automatically.md).
+- [Duyarlılık etiketleriyle Office otomatik etiketlemesi](apply-sensitivity-label-automatically.md)
+- [Bir koşula göre bekletme etiketi ilkesini otomatik uygulama](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)
+- [İletişim uyumluluğu](communication-compliance.md)
+- Duyarlılık etiketleri sınıflandırıcıları koşul olarak kullanabilir. Bkz. [İçeriğe otomatik olarak duyarlılık etiketi uygulama](apply-sensitivity-label-automatically.md).
+- [Veri kaybı önleme](dlp-learn-about-dlp.md)
 
 > [!IMPORTANT]
 > Sınıflandırıcılar yalnızca şifrelenmemiş öğelerle çalışır.
@@ -65,72 +74,9 @@ Duyarlılık etiketleri sınıflandırıcıları koşul olarak kullanabilir. Bkz
 ## <a name="types-of-classifiers"></a>Sınıflandırıcı türleri
 
 - **önceden eğitilmiş sınıflandırıcılar** - Microsoft, eğitmeden kullanmaya başlayabileceğiniz birden çok sınıflandırıcı oluşturmuş ve önceden eğitmiştir. Bu sınıflandırıcılar, durumunda `Ready to use`görüntülenir.
-- **özel eğitilebilir sınıflandırıcılar** - Önceden eğitilen sınıflandırıcıların kapsadığını aşan sınıflandırma gereksinimleriniz varsa, kendi sınıflandırıcılarınızı oluşturabilir ve eğitebilirsiniz.
+- **özel eğitilebilir sınıflandırıcılar** - Önceden eğitilen sınıflandırıcıların kapsadığını aşan içerik tanımlama ve kategorilere ayırma gereksinimleriniz varsa, kendi sınıflandırıcılarınızı oluşturabilir ve eğitebilirsiniz.
 
-### <a name="pre-trained-classifiers"></a>Önceden eğitilmiş sınıflandırıcılar
-
-Microsoft 365, önceden eğitilmiş birden çok sınıflandırıcı ile birlikte gelir:
-
-- **Yetişkin, müstehcen ve gory**: Bu tür görüntüleri algılar. Görüntülerin boyutu 50 kilobayt (KB) ile 4 megabayt (MB) arasında olmalı ve yükseklik x genişlik boyutlarında 50 x 50 pikselden büyük olmalıdır. Tarama ve algılama, Exchange Online e-posta iletileri ile Microsoft Teams kanalları ve sohbetleri için desteklenir. .jpeg, .png, .gif ve .bmp dosyalarındaki içeriği algılar.
-
-- **Sözleşmeler**: İfşa etmeme sözleşmeleri, iş beyanları, kredi ve kira sözleşmeleri, istihdam ve rekabet dışı sözleşmeler gibi yasal sözleşmelerle ilgili içeriği algılar. .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml dosyalarındaki içeriği algılar.
-
-- **Müşteri şikayetleri**: Müşteri şikayetleri sınıflandırıcısı, kuruluşunuzun ürünleri veya hizmetleri hakkında yapılan geri bildirimleri ve şikayetleri algılar. Bu sınıflandırıcı, Tüketici Finansal Koruma Bürosu ve Gıda ve İlaç Yönetimi gereksinimleri gibi şikayetlerin tespiti ve önceliklendirmesi ile ilgili mevzuat gereksinimlerini karşılamanıza yardımcı olabilir. İletişim Uyumluluğu için .msg ve .eml dosyalarındaki içeriği algılar. Microsoft Purview Bilgi Koruması hizmetlerinin geri kalanında .docx, .pdf, .txt, .rtf, .jpg, .jpeg, .png, .gif, .bmp, .svg dosyalarındaki içeriği algılar.
-
-- **Ayrımcılık**: Açık ayrımcı dili algılar ve diğer topluluklarla karşılaştırıldığında Afrikalı Amerikalı/Siyah topluluklara karşı ayrımcı dile duyarlıdır.
-
-- **Finans**: Kurumsal finans, muhasebe, ekonomi, bankacılık ve yatırım kategorilerindeki içeriği algılar. .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xltm, .xlam, .xla dosyaları.
-
-- **Taciz**: Irk, etnik köken, din, ulusal köken, cinsiyet, cinsel yönelim, yaş, engellilik gibi bir veya birden çok kişiyi hedefleyen saldırgan davranışla ilgili belirli bir rahatsız edici dil metin öğesi kategorisini algılar. .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg dosyalarındaki içeriği algılar.
-
-- **Sağlık**: Tıbbi hizmetler, tanılar, tedavi, talepler gibi tıbbi ve sağlık yönetimi açısından içeriği algılar. .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xltm, .xlam, .xla dosyaları.
-
-- **İk**: İnsan kaynaklarıyla ilgili işe alım, görüşme, işe alma, eğitim, değerlendirme, uyarı ve sonlandırma kategorilerindeki içeriği algılar. .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xltm, .xlam, .xla dosyaları.
-
-- **IP**: Ticari sırlar ve benzer gizli bilgiler gibi Fikri Mülkiyetle ilgili kategorilerdeki içeriği algılar. .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xltm, .xlam, .xla dosyaları.
-
-- **BT**: Ağ ayarları, bilgi güvenliği, donanım ve yazılım gibi Bilgi Teknolojisi ve Siber Güvenlik kategorilerindeki içeriği algılar. .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xltm, .xlam, .xla dosyaları.
-
-- **Yasal işler**: Dava, yasal süreç, yasal yükümlülük, yasal terminoloji, hukuk ve mevzuat gibi hukuk işleri ile ilgili kategorilerdeki içeriği algılar. .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml dosyalarındaki içeriği algılar.
-
-- **Tedarik**: Teklif verme, alıntılama, satın alma ve mal ve hizmet tedariki için ödeme kategorilerindeki içeriği algılar. .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla dosyalarındaki içeriği algılar.
-
-- **Küfür**: Çoğu kişiyi utandıran ifadeler içeren belirli bir rahatsız edici dil metin öğeleri kategorisini algılar. .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg dosyalarındaki içeriği algılar.
-
-- **Özgeçmiş**: Bir başvuru sahibinin kişisel, eğitim, mesleki nitelikleri, iş deneyimi ve diğer kişisel tanımlayıcı bilgilerinin metinsel hesapları olan docx, .pdf, .rtf, .txt öğelerini algılar
-
-- **Kaynak kodu**: GitHub'da bilgisayar programlama dillerinde yazılmış bir dizi yönerge ve deyim içeren öğeleri algılar: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Betiği. .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .phar, .php4, .pyc, . R, .r, .rda, . RData, .rds, .rb, .scala, .sc, .sh, .swift dosyaları.
-
-  > [!NOTE]
-  > Kaynak Kodu, metnin büyük kısmının kaynak kodu olduğunu algılamak için eğitilir. Düz metinle kesişen kaynak kodu metnini algılamaz.
-
-- **Vergi: Vergi** planlaması, vergi formları, vergi dosyalama, vergi düzenlemeleri gibi Vergi ilişkisi içeriğini algılar. .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xltm, .xlam, .xla dosyaları.
-
-- **Tehdit**: Şiddet uygulama veya bir kişi ya da mülke fiziksel zarar verme ya da zarar verme tehditleriyle ilgili belirli bir rahatsız edici dil metin öğesi kategorisini algılar. .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg dosyalarındaki içeriği algılar.
-
-Bu sınıflandırıcılar **, Microsoft Purview uyumluluk portalı** \> **Veri sınıflandırması** \> **Eğitilebilir sınıflandırıcılar** görünümünde durumunu `Ready to use`gösterir.
-
-![classifiers-pre-trained-classifiers.](../media/classifiers-ready-to-use-classifiers.png)
-
-> [!IMPORTANT]
-> Yerleşik eğitilebilir ve genel sınıflandırıcıların bu alanlarda terimlerin veya dillerin kapsamlı veya eksiksiz bir listesini sağlamadığını lütfen unutmayın. Ayrıca, dil ve kültürel standartlar sürekli olarak değişir ve bu gerçekler ışığında, Microsoft bu sınıflandırıcıları kendi takdirine bağlı olarak güncelleştirme hakkını saklı tutar. Sınıflandırıcılar kuruluşunuzun bu alanları algılamasına yardımcı olabilir ancak sınıflandırıcılar, kuruluşunuzun bu dilin kullanımını algılama veya ele alma için tek aracı sağlamayı amaçlamamaktadır. Microsoft veya yan kuruluşları değil kuruluşunuz, yerel gizlilik ve diğer geçerli yasalara uyumluluk dahil olmak üzere önceden eğitilmiş bir sınıflandırıcı tarafından tanımlanan tüm içeriklerin izlenmesi, taranması, engellenmesi, kaldırılması ve saklanmasıyla ilgili tüm kararlardan sorumlu kalır. Microsoft, dağıtım ve kullanımdan önce hukuk müşaviri ile danışmayı teşvik eder.
-
-Tehdit, Küfür, Taciz ve Ayrımcılık sınıflandırıcılarımız içeriği şu dillerde tarar:
-
-- Arapça
-- Çince (Basitleştirilmiş)
-- Çince (Geleneksel)
-- Dutch
-- English
-- French
-- German
-- Italian
-- Korean
-- Japanese
-- Portekizce
-- Spanish
-
-Diğerleri sadece şu anda İngilizce.
+Önceden [eğitilmiş tüm sınıflandırıcıların](classifier-tc-definitions.md#trainable-classifiers-definitions) tam listesi için eğitilebilir sınıflandırıcı tanımlarına bakın.
 
 ### <a name="custom-classifiers"></a>Özel sınıflandırıcılar
 

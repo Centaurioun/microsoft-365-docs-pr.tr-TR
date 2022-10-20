@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 09f1761c6af7fe063b2b6ddc132a5af64971792e
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: fc093b38f6721ba21c41678bfc6c744e21186b1b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68227052"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635146"
 ---
 # <a name="set-device-value-api"></a>Cihaz değeri API'lerini ayarlama
 

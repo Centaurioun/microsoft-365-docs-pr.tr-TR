@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Benimseme Puanı'nın insanları ve teknoloji deneyimi ölçümlerini nasıl yansıtdığını ve benzer boyuttaki kuruluşlarla nasıl karşılaştırdığını öğrenin.
-ms.openlocfilehash: eff127b92aa14a80756827f93583e43df72f7456
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 83170a50a473c24656e10ce57cea4bc44c3767fc
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563504"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621041"
 ---
 # <a name="microsoft-adoption-score"></a>Microsoft Benimseme Puanı 
 
@@ -88,6 +88,9 @@ Benimseme Puanı için rol tabanlı erişim denetimi modeli, bir kuruluştaki BT
 Microsoft bireysel gizliliği korumaya kararlıdır. Bu [gizlilik belgesinde](privacy.md)  , microsoft'a sağladığınız güveni tehlikeye atamazken bilgilerin eyleme dönüştürülebilir olduğundan emin olmak için kuruluşunuzun BT yöneticisi olarak size sağladığımız denetimler açıklanmaktadır.
 
 **Deneyime Microsoft 365 Yönetici evden Raporlar** > **Benimseme Puanı** altında erişebilirsiniz.
+
+> [!NOTE]
+> Bu özellik GCC High, GCC ve DOD kiracılarında kullanılamaz.
   
 ## <a name="how-the-score-is-calculated"></a>Puan nasıl hesaplanır?
 

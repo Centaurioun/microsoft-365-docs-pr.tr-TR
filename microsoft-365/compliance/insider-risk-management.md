@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - highpri
-ms.openlocfilehash: d356c89866cc1a0f3727bf647fd451cc4339d8ae
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 889589330ddc79b434d8fa07b11fa20e784c4762
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564443"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621262"
 ---
 # <a name="learn-about-insider-risk-management"></a>İçeriden risk yönetimi hakkında daha fazla bilgi edinme
 
@@ -132,7 +132,7 @@ Uyarılar, yeni bir servis talebi açılarak, uyarı mevcut bir servis talebine 
 
 ### <a name="investigate"></a>Araştır
 
-[Kullanıcı etkinlik raporları (önizleme)](insider-risk-management-activities.md#user-activity-reports-preview) ile seçili bir kullanıcının tüm etkinliklerini hızla araştırın. Bu raporlar, kuruluşunuzdaki araştırmacıların belirli bir süre boyunca belirli kullanıcılara yönelik etkinlikleri geçici veya açık bir şekilde şirket içi risk yönetimi ilkesine atamak zorunda kalmadan incelemelerine olanak sağlar. Bir kullanıcının etkinliklerini inceledikten sonra araştırmacılar zararsız olarak tek tek etkinlikleri kapatabilir, raporun bağlantısını diğer araştırmacılarla paylaşabilir veya e-postayla gönderebilir ya da kullanıcıyı geçici veya açık olarak bir iç risk yönetimi ilkesine atamayı seçebilir.
+[Kullanıcı etkinlik raporlarıyla](insider-risk-management-activities.md#user-activity-reports) seçili bir kullanıcının tüm etkinliklerini hızla araştırın. Bu raporlar, kuruluşunuzdaki araştırmacıların belirli bir süre boyunca belirli kullanıcılara yönelik etkinlikleri geçici veya açık bir şekilde şirket içi risk yönetimi ilkesine atamak zorunda kalmadan incelemelerine olanak sağlar. Bir kullanıcının etkinliklerini inceledikten sonra araştırmacılar zararsız olarak tek tek etkinlikleri kapatabilir, raporun bağlantısını diğer araştırmacılarla paylaşabilir veya e-postayla gönderebilir ya da kullanıcıyı geçici veya açık olarak bir iç risk yönetimi ilkesine atamayı seçebilir.
 
 [Olaylar](insider-risk-management-cases.md) , ilke eşleşmesi ile ilgili etkinlik ayrıntılarının ve koşullarının daha ayrıntılı bir şekilde incelenmesini ve incelenmesini gerektiren uyarılar için oluşturulur. **Servis Talebi panosu** tüm etkin servis taleplerinin, zaman içindeki açık servis taleplerinin ve kuruluşunuzun servis talebi istatistiklerinin tümünün görünümünü sağlar. Gözden geçirenler servis taleplerini duruma, servis talebinin açıldığı tarihe ve servis talebinin son güncelleştirildiği tarihe göre hızla filtreleyebilir.
 
@@ -203,11 +203,9 @@ Sağlık sektöründeki kuruluşlar için yapılan son çalışmalar, insider il
 - [Bozuk kullanıcılar tarafından veri sızıntıları (önizleme)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Dağıtılmamış kullanıcıların güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
-### <a name="risky-browser-usage-that-could-result-in-a-security-incident-preview"></a>Güvenlik olayına neden olabilecek riskli tarayıcı kullanımı (önizleme)
+### <a name="visual-context-for-potentially-risky-user-activities-with-forensic-evidence-preview"></a>Adli kanıtlarla riskli olabilecek kullanıcı etkinlikleri için görsel bağlam (önizleme)
 
-Çoğu kuruluş, kullanıcılara bir kuruluşun cihazlarının ve İnternet erişiminin nasıl kullanılması gerektiğini netleştiren kurallar ve yönergeler sağlar. Bu ilkeler hem kuruluşun hem de kullanıcıların güvenlik ve mevzuat risklerinden korunmasına yardımcı olur. Aşağıdaki insider risk yönetimi ilkesi şablonu, bu tür riskli eylemlerin kimliğini belirlemeye yardımcı olmak için, kötü amaçlı yazılım veya korsanlık araçları sağlayan siteleri ziyaret etme gibi bir veri güvenliği olayına neden olabilecek web gözatma davranışları için risk puanlamanın algılanıp etkinleştirilmesine yardımcı olabilir.
-
-- [Genel riskli tarayıcı kullanımı (önizleme)](insider-risk-management-policies.md#general-risky-browser-usage-preview)
+Görsel bağlama sahip olmak, bir güvenlik olayına yol açabilecek riskli olabilecek kullanıcı etkinlikleri hakkında daha iyi içgörüler elde etmek için adli araştırmalar sırasında güvenlik ekipleri için çok önemlidir. Bu, gerçekten riskli olup olmadıklarını veya bağlam dışına alınıp alınmadığını ve riskli olup olmadıklarını değerlendirmeye yardımcı olmak için bu etkinliklerin görsel olarak yakalanmasını içerebilir. Riskli olduğu belirlenen etkinlikler için, adli kanıt yakalamalarının olması araştırmacıların ve kuruluşunuzun bu etkinlikleri daha iyi azaltmasına, anlamasına ve yanıtlamasına yardımcı olabilir. Bu senaryoya yardımcı olmak için kuruluşunuzdaki çevrimiçi ve çevrimdışı cihazlar için [adli kanıt yakalamayı etkinleştirin](insider-risk-management-forensic-evidence.md) .
 
 ## <a name="ready-to-get-started"></a>Başlamaya hazır mısınız?
 

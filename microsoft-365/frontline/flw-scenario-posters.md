@@ -1,6 +1,6 @@
 ---
 title: Ön cephe çalışanları için Microsoft 365 - senaryo posterleri
-description: Bu indirilebilir posterlerle kuruluşunuzdaki ön cephe çalışanları için kolayca uygulayabileceğiniz senaryolar hakkında bilgi edinin.
+description: Kuruluşunuzdaki ön cephe çalışanları için kolayca uygulayabileceğiniz senaryolar hakkında bilgi edinmek için bu PDF posterlerini indirin.
 search.appverid: MET150
 author: samanro
 ms.author: samanro
@@ -14,20 +14,23 @@ ms.collection:
 - highpri
 - m365solution-frontline
 - m365solution-scenario
+- EngageScoreOct2022
 ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 3cdc1433e419a8179d4de60465788602e4f1b532
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 056590f985c6fc4d0d5653e61beae5989e2f0084
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68082471"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644691"
 ---
 # <a name="microsoft-365-for-frontline-workers---scenario-posters"></a>Ön cephe çalışanları için Microsoft 365 - senaryo posterleri
 
-Kuruluşunuzun ön cephe çalışanları için Microsoft 365 ile neler yapabileceğini tahmin etmeye başlamak için bu senaryoya genel bakışları kullanın, ardından bu senaryoları nasıl uygulayabileceğinizi öğrenmek için bağlantıları izleyin. Bu posterleri PDF veya Visio biçiminde indirebilir ve kuruluşunuz için özelleştirebilirsiniz.
+Kuruluşunuzun ön cephe çalışanları için Microsoft 365 ile neler yapabileceğini tahmin etmeye başlamak için bu senaryoya genel bakışları kullanın. Bu posterleri PDF veya Visio biçiminde indirebilir ve kuruluşunuz için özelleştirebilirsiniz.
+
+Microsoft 365'in ön cephe çalışanlarınıza nasıl yardımcı olabileceği hakkında daha fazla bilgi edinmek için bkz. [Ön cephe çalışanları için Microsoft 365 senaryolarınızı seçme](flw-choose-scenarios.md). Senaryoları planlama ve uygulama hakkında daha fazla bilgi edinmek için bkz. [Ön cephe çözümleri dağıtmaya yönelik teknik planlama kılavuzu (teknik inceleme).](flw-technical-planning-guide-deployment.md)
 
 ## <a name="scenarios-for-frontline-workers"></a>Ön cephe çalışanları için senaryolar
 

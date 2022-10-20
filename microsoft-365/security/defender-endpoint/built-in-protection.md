@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.reviewer: joshbregman
 f1.keywords: NOCSH
-ms.openlocfilehash: 662e53d4d0a590260936227776f9a17b733ee194
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: a1a02fa28291a38d080b2969019638a1fc7dfe6b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68504929"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68629908"
 ---
 # <a name="built-in-protection-helps-guard-against-ransomware"></a>Yerleşik koruma fidye yazılımlarından korunmaya yardımcı olur
 
@@ -41,7 +41,7 @@ Yerleşik koruma, cihazlarınızın korunduğundan emin olmak için kullanıma s
 
 | Aşama | Neler olur? |
 |:---|:---|
-| Yerleşik koruma [önizlemede](preview.md) kullanıma sunuldu | Önizleme özelliklerini almayı tercih eden müşteriler, yerleşik korumanın geldiğini [bildiren bir bildirim](#what-does-the-notification-look-like) alır. Henüz yapılandırılmamışsa, Uç Nokta için Defender Plan 2 veya Microsoft 365 E5 sahip müşteriler için kurcalama koruması açılır. |
+| Yerleşik koruma (önizleme) kullanıma sunuldu | Önizleme özelliklerini almayı tercih eden müşteriler, yerleşik korumanın geldiğini [bildiren bir bildirim](#what-does-the-notification-look-like) alır. Henüz yapılandırılmamışsa, Uç Nokta için Defender Plan 2 veya Microsoft 365 E5 sahip müşteriler için kurcalama koruması açılır. |
 | Yerleşik koruma kiracınız için kullanılabilir hale gelir | Kiracınızın yerleşik korumayı almak üzere olduğu ve kurcalama korumasının ne zaman açılacağı (henüz yapılandırılmamışsa) [size bildirilir](#what-does-the-notification-look-like) . |
 | Yerleşik koruma geliyor | Kiracınız için kurcalama koruması açılır ve kuruluşunuzun Windows cihazlarına uygulanır. [Yerleşik koruma ayarlarınızı](#can-i-change-built-in-protection-settings) [geri çevirebilir](#can-i-opt-out) veya değiştirebilirsiniz. |
 | Yerleşik koruma geldikten sonra | Uç Nokta için Defender'a yeni cihazlar ekli olduğunda, yerleşik koruma ayarları Windows çalıştıran tüm yeni cihazlara uygulanır. [Yerleşik koruma ayarlarınızı istediğiniz zaman değiştirebilirsiniz](#can-i-change-built-in-protection-settings). |

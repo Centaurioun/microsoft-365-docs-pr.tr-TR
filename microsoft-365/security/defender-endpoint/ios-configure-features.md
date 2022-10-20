@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: c1d909699cdcbf993351a5232f2b12cbf84b5ca1
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: fb5736f0de612e4de3bc19f873721a2577ca6521
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68222924"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630062"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>iOS özelliklerinde Uç Nokta için Microsoft Defender’ı yapılandırın
 
@@ -81,7 +81,7 @@ Bu yapılandırma hem kayıtlı (MDM) cihazlar hem de kayıtlı olmayan (MAM) ci
     - [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar** > **Uygulama yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
     - İlkeye **iOS/iPadOS > Platform** adını verin.
     - Hedef uygulama olarak Uç Nokta için Microsoft Defender seçin.
-    - Ayarlar sayfasında Yapılandırma tasarımcısını kullan'ı seçin ve anahtar ve değer türü olarak **WebProtection** **değerini Boole** olarak ekleyin.
+    - Ayarlar sayfasında Yapılandırma tasarımcısını kullan'ı seçin ve anahtar ve değer türü olarak **WebProtection** değerini **Dize** olarak ekleyin.
         - Varsayılan olarak **, WebProtection= true**.
         - Yönetici web korumasını kapatmak için **WebProtection = false** yapması gerekir.
         - Defender, kullanıcı uygulamayı her açtığında sinyali Microsoft 365 Defender portalına gönderir.

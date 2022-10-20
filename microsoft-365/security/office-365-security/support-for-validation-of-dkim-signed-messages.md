@@ -6,7 +6,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -16,12 +16,12 @@ ms.collection:
 description: Exchange Online Protection ve Exchange Online DKIM imzalı iletileri doğrulama hakkında bilgi edinin
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: f615304f18cbc4ed09e6915a0507baaca7360c9b
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 410180d764d0ed96d1cb13fe3c2a39604604778a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68048538"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633140"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>DKIM imzalı iletileri doğrulama desteği
 

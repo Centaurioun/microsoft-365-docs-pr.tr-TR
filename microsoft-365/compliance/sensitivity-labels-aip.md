@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 uygulamaları için, hassas verileri korumak için Azure Information Protection (AIP) eklentisinin yerleşik etiketlemeye geçişini anlayın.
-ms.openlocfilehash: b2cf7289bd93d29494625f23bc77cd759fc50920
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 80cc5a22f3fe604f2579b321bd12546502386988
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547806"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644779"
 ---
 # <a name="migrate-the-azure-information-protection-aip-add-in-to-built-in-labeling-for-office-apps"></a>Azure Information Protection (AIP) eklentisini Office uygulamaları için yerleşik etiketlemeye geçirme
 
@@ -146,6 +146,8 @@ Bu değişiklikleri yaptıktan sonra **Duyarlılık** düğmesi Office şeridind
 [Office'in daha yeni sürümlerinde](#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps), AIP eklentisi varsayılan olarak devre dışıdır. Bunu etkinleştirmek için **Kullanıcı Yapılandırması/Yönetim Şablonları/Microsoft Office 2016/Güvenlik Ayarları** altında yeni bir Office ayarı yapılandırmanız gerekir:
 
 - **Duyarlılık etiketlemesi için Azure Information Protection eklentisini kullanın**. Değeri **1** olarak ayarlayın.
+
+Bu yeni ayar hala kullanıma sunulmaya devam ediyor. Henüz görmüyorsanız birkaç gün daha bekleyin ve yeniden deneyin.
 
 bu ayarı grup ilkesi veya [Office bulut ilkesi hizmetini](/DeployOffice/overview-office-cloud-policy-service) kullanarak dağıtın.
 

@@ -14,15 +14,17 @@ ms.date: 10/19/2021
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
-ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: edc40d6c2d16fef634fdb051beb52c9b1abbf162
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: b6beeb4039891403ac8645117d4c55f0c2be9b51
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687779"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626039"
 ---
 # <a name="restore-quarantined-files-in-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma’da karantinaya alınan dosyaları geri yükleyin
 
@@ -37,7 +39,7 @@ ms.locfileid: "67687779"
 **Platform**
 - Windows
 
-Microsoft Defender Virüsten Koruma, cihazınızdaki tehditleri algılayıp düzeltecek şekilde yapılandırılmışsa, Microsoft Defender Virüsten Koruma şüpheli dosyaları karantinaya alır. Karantinaya alınan bir dosyanın tehdit oluşturmadığından eminseniz dosyayı geri yükleyebilirsiniz.
+Microsoft Defender Virüsten Koruma, cihazınızdaki tehditleri algılayıp düzeltecek şekilde yapılandırılmışsa Microsoft Defender Virüsten Koruma şüpheli dosyaları karantinaya alır. Karantinaya alınan bir dosyanın tehdit oluşturmadığından eminseniz dosyayı geri yükleyebilirsiniz.
 
 1. **Windows Güvenliği** açın.
 2. **Virüs & tehdit koruması'nın** ardından **Koruma geçmişi'ne** tıklayın.

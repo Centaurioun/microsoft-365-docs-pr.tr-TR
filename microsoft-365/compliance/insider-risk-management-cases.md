@@ -11,16 +11,21 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 678d500b5d523c2b656f4f30fa4ef4a4ed5015a7
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 254fb4f17331be8b688463599dea86b9f3748ca8
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628715"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634640"
 ---
 # <a name="insider-risk-management-cases"></a>Insider risk yönetimi durumları
+
+>[!IMPORTANT]
+>Microsoft Purview İçeriden Risk Yönetimi IP hırsızlığı, veri sızıntısı ve güvenlik ihlalleri gibi olası kötü amaçlı veya yanlışlıkla insider risklerini belirlemek için çeşitli sinyalleri ilişkilendirmektedir. Insider risk yönetimi, müşterilerin güvenlik ve uyumluluğu yönetmek için ilkeler oluşturmasına olanak tanır. Tasarım gereği gizlilikle oluşturulan kullanıcılar varsayılan olarak takma ad kullanır ve kullanıcı düzeyinde gizlilik sağlamaya yardımcı olmak için rol tabanlı erişim denetimleri ve denetim günlükleri kullanılır.
 
 Vakalar, içeriden risk yönetiminin merkezidir ve ilkelerinizde tanımlanan risk göstergeleri tarafından oluşturulan sorunları derinlemesine araştırmanıza ve üzerinde işlem yapmanızı sağlar. Servis talepleri, kullanıcının uyumlulukla ilgili bir sorunu gidermek için başka bir eyleme ihtiyaç duyulduğu durumlarda uyarılardan el ile oluşturulur. Her servis talebinin kapsamı tek bir kullanıcı olarak belirlenmiştir ve mevcut bir servis talebine veya yeni bir servis talebine kullanıcı için birden çok uyarı eklenebilir.
 
@@ -32,6 +37,8 @@ Bir olayın ayrıntılarını araştırdıktan sonra şunları yaparak işlem ya
 - eBulma (Premium) araştırması için olayı yükseltme
 
 Insider risk yönetiminde vakaların nasıl araştırıldığını ve yönetildiğini gösteren bir genel bakış için [Insider Risk Yönetimi Araştırması ve Yükseltme videosunu](https://www.youtube.com/watch?v=UONUSmkRC8s) gözden geçirin.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="cases-dashboard"></a>Servis Talepleri panosu
 
@@ -80,7 +87,7 @@ Bir servis talebi seçildiğinde olay yönetimi araçları açılır ve analistl
 - **Durum**: Etkin veya Kapalı durumdaki servis talebinin geçerli durumu.
 - **Olay oluşturma tarihi**: Servis talebinin oluşturulduğu tarih ve saat.
 - **Kullanıcının risk puanı**: Kullanıcının servis talebi için geçerli hesaplanan risk düzeyi. Bu puan 24 saatte bir hesaplanır ve kullanıcıyla ilişkili tüm etkin uyarılardan alınan uyarı riski puanlarını kullanır.
-- **E-posta**: Kullanıcının servis talebi için e-posta diğer adı.
+- **Email**: Kullanıcının servis talebi için e-posta diğer adı.
 - **Kuruluş veya departman**: Kullanıcının atandığı kuruluş veya departman.
 - **Yönetici adı**: Kullanıcının yöneticisinin adı.
 - **Yönetici e-postası**: Kullanıcının yöneticisinin e-posta diğer adı.
@@ -126,6 +133,12 @@ Uyarıları aşağıdakiler gibi çeşitli özniteliklere göre filtrelemek içi
 **Etkinlik gezgini** sekmesi, risk analistlerinin ve araştırmacıların risk uyarılarıyla ilişkili etkinlik ayrıntılarını gözden geçirmesine olanak tanır. Örneğin, olay yönetimi eylemleri kapsamında araştırmacıların ve analistlerin daha fazla ayrıntı için olayla ilişkili tüm risk etkinliklerini gözden geçirmeleri gerekebilir. **Etkinlik gezgini** ile gözden geçirenler algılanan riskli etkinliğin zaman çizelgesini hızla gözden geçirebilir ve uyarılarla ilişkili tüm risk etkinliklerini tanımlayıp filtreleyebilir.
 
 Etkinlik gezgini hakkında daha fazla bilgi için [Insider risk yönetimi etkinlikleri](insider-risk-management-activities.md#activity-explorer) makalesine bakın.
+
+### <a name="forensic-evidence-preview"></a>Adli kanıt (önizleme)
+
+**Adli kanıt (önizleme)** sekmesi, risk araştırmacılarının vakalara dahil edilen risk etkinlikleriyle ilişkili görsel yakalamaları gözden geçirmesine olanak tanır. Örneğin, olay yönetimi eylemlerinin bir parçası olarak araştırmacıların gözden geçirilirken kullanıcı etkinliğinin bağlamını netleştirmeye yardımcı olması gerekebilir. Etkinliğin gerçek kliplerinin görüntülenmesi, araştırmacının kullanıcı etkinliğinin potansiyel olarak riskli olup olmadığını ve bir güvenlik olayına yol açıp açmadığını belirlemesine yardımcı olabilir.
+
+Adli kanıt hakkında daha fazla bilgi için [insider risk yönetimi adli kanıt hakkında bilgi edinin](/microsoft-365/compliance/insider-risk-management-forensic-evidence) makalesine bakın.
 
 ### <a name="content-explorer"></a>İçerik gezgini
 

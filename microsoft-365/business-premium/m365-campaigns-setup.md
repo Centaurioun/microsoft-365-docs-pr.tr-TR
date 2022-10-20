@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Kampanyalar veya diğer işletmeler için Microsoft 365 İş kurulumuna genel bakış
-ms.openlocfilehash: 8c88a1c519a4174342049b5c5dac85f24eac8d32
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: 769cf1141ce2734020e9247fad1f95cc6e2b5069
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68096621"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620966"
 ---
 # <a name="setup-for-microsoft-365-business-for-campaigns"></a>Kampanyalar için Microsoft 365 İş kurulumu
 
@@ -72,7 +72,7 @@ Kampanyalar için Microsoft 365 (veya Microsoft 365 İş Ekstra) aboneliğinize 
 2. Hesabın kullanıcı adını ve parolasını kullanarak oturum açın. Kullanıcılar, kullanıcı olarak eklendiklerinde aldıkları e-postada bu bilgilere sahip olur. E-postayı bulamıyorsa bkz. [Kullanıcı davet e-postası almadı](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
 
 > [!TIP]
-> Personelinize oturum açma, Office uygulamalarını alma ve dosyaları kaydetme, kopyalama ve paylaşma konusunda yardım almak için [Çalışan hızlı kurulum kılavuzunun](../admin/setup/employee-quick-setup.md) bağlantısını sağlayın.
+> Personelinize oturum açma, Microsoft 365 uygulamalarını alma ve dosyaları kaydetme, kopyalama ve paylaşma konusunda yardım almak için [Çalışan hızlı kurulum kılavuzunun](../admin/setup/employee-quick-setup.md) bağlantısını sağlayın.
 
 ## <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Gizlilik ve onay bildirimiyle oturum açma sayfanızı özelleştirme
 

@@ -3,7 +3,7 @@ title: Denetimli klasör erişimini etkinleştirin
 keywords: Denetimli klasör erişimi, windows 10, windows 11, windows defender, fidye yazılımı, koruma, dosyalar, klasörler, etkinleştirme, açma, kullanma
 description: Denetimli klasör erişimini etkinleştirerek önemli dosyalarınızı korumayı öğrenin
 ms.service: microsoft-365-security
-ms.topic: article
+ms.topic: conceptual
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,12 @@ ms.collection:
 - tier3
 ms.date: ''
 search.appverid: met150
-ms.openlocfilehash: cab2e6b6031f91dfa21de44253f06ab7e1d58ddc
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 88219eb48a81f092070b787acbd283cc3bf5fb37
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68207434"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630676"
 ---
 # <a name="enable-controlled-folder-access"></a>Denetimli klasör erişimini etkinleştirin
 

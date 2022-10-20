@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: MASAÜSTÜ, mobil ve web için Office uygulamalarında duyarlılık etiketlerini yönetmek için BT yöneticilerine yönelik bilgiler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 939aa04f9326e202610887c52111ae8c5c58b66d
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 61302c27f9c59cbedb9bc7f3456ca6e8a1fecbb7
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68546863"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621902"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office uygulamalarında duyarlılık etiketlerini yönetme
 
@@ -43,12 +43,12 @@ Windows ve Mac için Office masaüstü uygulamalarında yerleşik olarak bulunan
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Uygulamalarda duyarlılık etiketi özellikleri desteği
 
-Aşağıdaki tablolarda, Office uygulamalarında yerleşik olarak bulunan duyarlılık etiketlerine yönelik belirli özelliklerin sunulduğu en düşük Office sürümü listelenir. Ya da etiket özelliği genel önizleme aşamasındaysa veya gelecek bir sürüm için gözden geçiriliyorsa:
+Aşağıdaki tablolarda, Office uygulamalarında yerleşik olarak bulunan duyarlılık etiketleri için belirli özellikler sağlayan en düşük Office sürümü listelenir. Ya da etiket özelliği genel önizleme aşamasındaysa veya gelecek bir sürüm için gözden geçiriliyorsa:
 
-- Tablo: [Word, Excel ve PowerPoint'teki duyarlılık etiketi özellikleri](#sensitivity-label-capabilities-in-word-excel-and-powerpoint)
-- Tablo: [Outlook'ta duyarlılık etiketi özellikleri](#sensitivity-label-capabilities-in-outlook)
+- [Word, Excel ve PowerPoint için yetenekler tablosu](#sensitivity-label-capabilities-in-word-excel-and-powerpoint)
+- [Outlook için Yetenekler tablosu](#sensitivity-label-capabilities-in-outlook)
 
-Gelecek sürümler için planlanan yeni özelliklerle ilgili ayrıntılar için [Microsoft 365 yol haritasını](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) kullanın.
+Gelecek sürümler için planlanan yeni etiketleme özellikleri hakkında ayrıntılı bilgi için [Microsoft 365 yol haritasını](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) kullanın.
 
 Office uygulamalarının yeni sürümleri farklı güncelleştirme kanalları için farklı zamanlarda kullanıma sunulur. Windows için yeni özellikleri daha önce Kurumsal Kanal yerine Geçerli Kanal veya Aylık Kurumsal Kanal'da Semi-Annual edineceksiniz. En düşük sürüm numaraları bir güncelleştirme kanalından diğerine de farklı olabilir. Daha fazla bilgi için bkz[. Microsoft 365 Uygulamaları güncelleştirme kanallarına genel bakış](/deployoffice/overview-update-channels) ve [Microsoft 365 Uygulamaları için Güncelleştirme geçmişi](/officeupdates/update-history-microsoft365-apps-by-date).
 

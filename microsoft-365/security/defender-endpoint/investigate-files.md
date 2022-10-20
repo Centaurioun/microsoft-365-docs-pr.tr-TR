@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.date: 04/24/2018
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 04c8b9b2ac274d4d3f563241f13afd39a914d78e
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: d3da70b1e7ed2e8f2a7987cbd3f8aec5449a3cfc
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232418"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646319"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Uç Nokta için Microsoft Defender uyarısıyla ilişkili bir dosyayı araştırma
 

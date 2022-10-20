@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 51dd466b7ea760adee751c20f6e3de39883c5e46
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 5a1570d63dd298dde2dd375a14dee8e1a36e71f4
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68147459"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68629863"
 ---
 # <a name="enable-conditional-access-to-better-protect-users-devices-and-data"></a>Kullanıcıları, cihazları ve verileri daha iyi korumak için Koşullu Erişimi etkinleştirme
 

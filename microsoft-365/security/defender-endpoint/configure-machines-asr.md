@@ -15,15 +15,15 @@ ms.collection:
 - m365-security
 - tier2
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 6f7c67d34677e5f454e9d9f59bdc99ee8008a0da
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: e5acd0b84ffbfa654c00407c134388651b117efc
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68205739"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623311"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>ASR kuralı dağıtım ve algılamalarını iyileştirme
 

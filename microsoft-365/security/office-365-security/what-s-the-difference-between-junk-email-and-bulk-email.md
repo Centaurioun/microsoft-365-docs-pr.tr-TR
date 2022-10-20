@@ -19,12 +19,12 @@ ms.custom:
 description: Yöneticiler, Exchange Online Protection (EOP) içindeki gereksiz e-posta (istenmeyen posta) ile toplu e-posta (gri posta) arasındaki farklar hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 6613502c858a87096b4220b17d94b8821b0f9835
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 5adbe73cc7c1970c0cdc9698cf8868d42a9541f7
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68066156"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633096"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>EOP'de gereksiz e-posta ile toplu e-posta arasındaki fark nedir?
 
@@ -81,4 +81,4 @@ Office 365 için Defender Plan 2 olmayan kuruluşlar, Office 365 Plan 2 için Mi
 
 3. İstenen ve istenmeyen gönderenleri belirledikten sonra toplu eşiği istediğiniz düzeye ayarlayın. Toplu eşiğinize sığmayan BCL puanına sahip toplu gönderenler varsa, [iletileri analiz için Microsoft'a gönderin](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal); bu da göndereni Kiracı İzin Ver/Engelle Listesi'ne izin verilen giriş olarak ekler.
 
-Yöneticiler [önerilen toplu eşik değerlerini](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop) toplu eşik değerlerini izleyebilir veya kuruluşlarının gereksinimlerine uygun bir toplu eşik değeri seçebilir.
+Yöneticiler [önerilen toplu eşik değerlerini](recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop) izleyebilir veya kuruluşlarının gereksinimlerine uygun bir toplu eşik değeri seçebilir.

@@ -22,12 +22,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 5f2a87f1fa8ff8130e460f46c9ac94275ba0735d
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 06434a3f3211726ccde4642fd13de81304cd3c0f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221334"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635234"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Değişiklik korumasıyla güvenlik ayarlarını koruyun
 
@@ -39,6 +39,7 @@ ms.locfileid: "68221334"
 
 **Platform**
 - Windows
+- macOS
 
 Kurcalama koruması, Windows'un aşağıdaki sürümlerinden birini çalıştıran cihazlar için kullanılabilir:
 
@@ -55,6 +56,12 @@ Kurcalama koruması, Windows'un aşağıdaki sürümlerinden birini çalıştır
 > [!NOTE]
 > Windows Server 2012 R2'de kurcalama koruması, modern birleşik çözüm paketi kullanılarak eklenen cihazlar için kullanılabilir. Daha fazla bilgi için bkz. [Windows sunucularını Uç Nokta için Microsoft Defender hizmetine ekleme](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
 
+Kurcalama koruması, macOS'un aşağıdaki sürümlerinden birini çalıştıran cihazlar için kullanılabilir:
+
+- Monterey (12)
+- Big Sur (11)
+- Catalina (10,15+)
+
 ## <a name="overview"></a>Genel bakış
 
 Bazı siber saldırılar sırasında kötü aktörler, makinelerinizde virüsten koruma gibi güvenlik özelliklerini devre dışı bırakmaya çalışır. Kötü aktörler verilerinize daha kolay erişim elde etmek, kötü amaçlı yazılım yüklemek veya verilerinizi, kimliğinizi ve cihazlarınızı başka bir şekilde kullanmak için güvenlik özelliklerinizi devre dışı bırakmak ister. Kurcalama koruması, bu tür şeylerin oluşmasını önlemeye yardımcı olur. Kurcalama koruması ile kötü amaçlı uygulamaların aşağıdaki gibi eylemler gerçekleştirmesi engellenir:
@@ -70,7 +77,7 @@ Bazı siber saldırılar sırasında kötü aktörler, makinelerinizde virüsten
 - Arşivlerin ve ağ dosyalarının taranmalarını devre dışı bırakma
 
 > [!IMPORTANT]
-> Yerleşik koruma (önizleme), kurcalama korumasını varsayılan olarak açmayı içerir. Yerleşik koruma hakkında daha fazla bilgi edinmek için bkz:
+> Yerleşik koruma, kurcalama korumasını varsayılan olarak açmayı içerir. Yerleşik koruma hakkında daha fazla bilgi edinmek için bkz:
 > - [Yerleşik koruma fidye yazılımlarını korumaya yardımcı olur](built-in-protection.md) (makale)
 > - [Tüm kurumsal müşteriler için kurcalama koruması açılacaktır](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478) (Teknik Topluluk blog gönderisi)
 

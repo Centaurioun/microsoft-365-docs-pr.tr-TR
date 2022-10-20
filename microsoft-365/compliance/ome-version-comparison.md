@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 description: Bu makale, ileti şifrelemesinin farklı sürümleri arasındaki farkları açıklamaya yardımcı olur.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 44eb59a160af9ecbe171e1c9b63f67e6ac608fe0
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 355ae33ff7e9860bb9ef151d3bcdf538857e9d25
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276273"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630764"
 ---
 # <a name="compare-versions-of-message-encryption"></a>İleti şifreleme sürümlerini karşılaştırma
 
@@ -31,6 +31,8 @@ ms.locfileid: "67276273"
 Bu makalenin geri kalanında eski Office 365 İleti Şifrelemesi (OME) ile Microsoft Purview İleti Şifrelemesi ve Microsoft Purview Gelişmiş İleti Şifrelemesi karşılaştırılır. Microsoft Purview İleti Şifrelemesi, hem OME hem de Bilgi Hakları Yönetimi'nin (IRM) birleştirilmesi ve daha yeni bir sürümüdür. GCC High'a dağıtmanın benzersiz özellikleri de özetlenmiştir. bu ikisi kuruluşunuzda bir arada bulunabilir. Yeni özelliklerin nasıl çalıştığı hakkında bilgi için bkz. [İleti Şifrelemesi (OME) Office 365](ome.md).
 
 Bu makale, ileti şifreleme hakkında daha büyük bir makale serisinin parçasıdır. Bu makale yöneticilere ve BTPro'lara yöneliktir. Yalnızca şifreli ileti gönderme veya alma hakkında bilgi arıyorsanız [İleti şifrelemesi](ome.md) makalelerinin listesine bakın ve gereksinimlerinize en uygun makaleyi bulun.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="overview-of-ad-rms-deprecation-in-exchange-online"></a>Exchange Online'da AD RMS'nin kullanımdan kaldırılmasına genel bakış
 

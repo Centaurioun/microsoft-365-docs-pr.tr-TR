@@ -14,15 +14,16 @@ search.appverid:
 ms.collection:
 - Strat_O365_Enterprise
 - purview-compliance
+- tier3
 - Strat_O365_Enterprise
 description: Office 365 bitLocker şifrelemesini nasıl kullandığını ve kaybolan veya çalınan bilgisayarlar ve diskler nedeniyle veri hırsızlığı olasılığını nasıl azaltacağınızı öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d9c7d88f3dedb94a4b9abbee58f84aa75fa8c76a
-ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
+ms.openlocfilehash: d72040d4cac4b76637877482e18a025a160d2484
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68122335"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620667"
 ---
 # <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>Şifreleme için BitLocker ve Dağıtılmış Anahtar Yöneticisi (DKM)
 

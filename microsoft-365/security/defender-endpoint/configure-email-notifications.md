@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection:
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 9455ee4d7c4ff01cf003b89dece0b9f05efe873e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 7ff95f5ca4f2608a522d075f8e880c2aafa32323
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699202"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623773"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de uyarı bildirimlerini yapılandırma
 
@@ -39,7 +41,8 @@ Uç Nokta için Defender'ı yeni uyarılar için belirtilen alıcılara e-posta 
 [İş için Defender](../defender-business/mdb-overview.md) kullanıyorsanız, belirli kullanıcılar (roller veya gruplar için değil) için e-posta bildirimleri ayarlayabilirsiniz.
 
 > [!NOTE]
-> Yalnızca 'Güvenlik ayarlarını yönetme' izinlerine sahip kullanıcılar e-posta bildirimlerini yapılandırabilir. Temel izin yönetimini kullanmayı seçtiyseniz, Güvenlik Yöneticisi veya Genel Yönetici rollerine sahip kullanıcılar e-posta bildirimlerini yapılandırabilir.
+> - Yalnızca 'Güvenlik ayarlarını yönetme' izinlerine sahip kullanıcılar e-posta bildirimlerini yapılandırabilir. Temel izin yönetimini kullanmayı seçtiyseniz, Güvenlik Yöneticisi veya Genel Yönetici rollerine sahip kullanıcılar e-posta bildirimlerini yapılandırabilir.
+> - Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.
 
 Bildirimleri tetikleyen uyarı önem düzeylerini ayarlayabilirsiniz. E-posta bildiriminin alıcılarını da ekleyebilir veya kaldırabilirsiniz. Yeni alıcılar eklendikten sonra tetiklenen uyarılar hakkında bildirim alır. Uyarılar hakkında daha fazla bilgi için bkz. [Uyarılar sırasını görüntüleme ve düzenleme](alerts-queue.md).
 

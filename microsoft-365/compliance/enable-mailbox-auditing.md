@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
+- tier1
 - purview-compliance
 search.appverid:
 - MOE150
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Posta kutusu denetim günlüğü Microsoft 365'te varsayılan olarak açıktır ('varsayılan posta kutusu denetimi' veya 'posta kutusu denetimi varsayılan olarak açık' olarak da adlandırılır). Bu yapılandırma, posta kutusu sahipleri, temsilciler ve yöneticiler tarafından gerçekleştirilen belirli eylemlerin otomatik olarak posta kutusu denetim günlüğüne kaydedildiği ve burada posta kutusunda gerçekleştirilen etkinlikleri arayabileceğiniz anlamına gelir.
-ms.openlocfilehash: 542d3e40d97834ffa2fed6e7bd17a8152b5765d7
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: f3c9487998fa6253692969c01981cf3676e1025a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68476473"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632238"
 ---
 # <a name="manage-mailbox-auditing"></a>Posta kutusu denetimini yönetme
 

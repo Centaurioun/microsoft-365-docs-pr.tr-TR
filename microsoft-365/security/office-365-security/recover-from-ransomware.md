@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -17,12 +17,12 @@ ms.collection:
 description: Microsoft 365 yöneticileri fidye yazılımı saldırısından kurtarmayı öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 330c0dedc59a8e7434f0261fbc932cd911730b3a
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 4630513695cad88e5e706028bf75397de58bec1a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68083857"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626895"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Microsoft 365'te fidye yazılımı saldırısından kurtarma
 

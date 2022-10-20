@@ -6,7 +6,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: high
 search.appverid:
 - MET150
@@ -18,12 +18,12 @@ ms.custom:
 description: Kimliği Doğrulanmış Alınan Zincir (ARC), cihazlarda ve gönderen ile alıcı arasında gelen dolaylı posta akışlarında kimlik doğrulama sonuçlarını korumaya çalışan e-posta kimlik doğrulamasıdır. Güvenilir ARC Gönderenleriniz için şu şekilde özel durumlar yapabilirsiniz.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: f4cf3bc84505665321e02743a786146f5a5e930c
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 21eca28f5296a4ed405b931c6b8e6b6a043e30df
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68061956"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626785"
 ---
 # <a name="make-a-list-of-trusted-arc-senders-to-trust-legitimate-indirect-mailflows"></a>*Meşru* dolaylı posta akışlarına güvenmek için güvenilir ARC Gönderenlerinin listesini oluşturma
 

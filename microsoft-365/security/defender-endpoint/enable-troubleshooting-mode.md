@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: d1aca56b87d037a90498baba9a6151ec3878d0f2
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: bc93ecda200dc207f39c95a2e2ce3f3f97c2251c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68175028"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68628301"
 ---
 # <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de sorun giderme modunu kullanmaya başlama 
 

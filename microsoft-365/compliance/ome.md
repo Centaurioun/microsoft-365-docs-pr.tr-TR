@@ -13,24 +13,26 @@ ms.date: 02/07/2020
 search.appverid:
 - MET150
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: Kuruluşunuzun içindeki ve dışındaki kişiler arasında şifreli e-posta iletileri göndermeyi ve almayı öğrenin.
-ms.openlocfilehash: 0501aeb833d41048e6e3f8848f20b3e4b0bc217b
-ms.sourcegitcommit: 57e6a8e42b41376c4f4021754c918502bf52d209
+ms.openlocfilehash: 7d08c865735c3ae8f9e6396940b03af4625aad0e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2022
-ms.locfileid: "67427124"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644845"
 ---
 # <a name="message-encryption"></a>İleti Şifrelemesi
 
 Kişiler genellikle finansal veriler, yasal sözleşmeler, gizli ürün bilgileri, satış raporları ve projeksiyonlar, hasta sağlığı bilgileri veya müşteri ve çalışan bilgileri gibi hassas bilgileri değiştirmek için e-posta kullanır. Sonuç olarak, posta kutuları büyük miktarlarda hassas olabilecek bilgiler için depolara dönüşebilir ve bilgi sızıntısı kuruluşunuz için ciddi bir tehdit haline gelebilir.
 
 Office 365 İleti Şifrelemesi ile kuruluşunuz, kuruluşunuzun içindeki ve dışındaki kişiler arasında şifreli e-posta iletileri gönderebilir ve alabilir. Office 365 İleti Şifrelemesi Outlook.com, Yahoo!, Gmail ve diğer e-posta hizmetleriyle çalışır. Email ileti şifrelemesi, yalnızca hedeflenen alıcıların ileti içeriğini görüntüleyebilmesine yardımcı olur.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="how-message-encryption-works"></a>İleti Şifrelemesi nasıl çalışır?
 
@@ -48,7 +50,7 @@ OME'nin önceki sürümüyle Microsoft Purview İleti Şifrelemesi arasındaki f
 
 Birisi şifreleme posta akışı kuralıyla eşleşen bir e-posta iletisi gönderdiğinde, ileti gönderilmeden önce şifrelenir. Posta okumak için Outlook istemcilerini kullanan tüm Microsoft 365 son kullanıcıları, gönderenle aynı kuruluşta olmasalar bile şifrelenmiş ve hak korumalı postalar için yerel, birinci sınıf okuma deneyimleri alır. Desteklenen Outlook istemcileri Outlook masaüstü, Outlook Mac, iOS ve Android üzerinde Outlook mobile ve Web üzerinde Outlook (eski adıyla Outlook Web App) içerir.
 
-Outlook.com, Gmail ve Yahoo hesaplarına gönderilen şifrelenmiş veya hak korumalı posta alan şifrelenmiş iletilerin alıcıları, bir Microsoft hesabı, Gmail veya Yahoo kimlik bilgilerini kullanarak kolayca kimlik doğrulaması yapabilecekleri şifrelenmiş ileti portalına yönlendiren bir sarmalayıcı posta alır.
+Gmail ve Yahoo hesaplarına gönderilen şifrelenmiş veya hak korumalı posta alan şifrelenmiş iletilerin alıcıları, bir Microsoft hesabı, Gmail veya Yahoo kimlik bilgilerini kullanarak kolayca kimlik doğrulaması yapabilecekleri OME Portalı'na yönlendiren bir sarmalayıcı posta alır.
 
 Outlook dışındaki istemcilerde şifrelenmiş veya hak korumalı posta okuyan son kullanıcılar, aldıkları şifrelenmiş ve hak korumalı iletileri görüntülemek için şifrelenmiş ileti portalını da kullanır.
 

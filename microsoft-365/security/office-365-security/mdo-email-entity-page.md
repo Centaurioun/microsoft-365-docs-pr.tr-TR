@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/12/2022
+ms.date: 10/14/2022
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdo
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 description: Office 365 için Microsoft Defender E5, P1 ve P2 müşterileri Explorer'da (Tehdit Gezgini) kopyalama, Algılama ayrıntıları, Algılanan tehdit, En son ve Özgün teslim konumları, Teslim eylemleri ve Ağ İletisi Kimliği gibi kimlikler gibi e-posta ayrıntılarını görebilir.
 search.appverid: met150
-ms.openlocfilehash: 2cf260b477a5e10e3502cd381e625e0024bc034f
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: a7f6cbc013cf5a3b8a319a51447f857a16f096fd
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68573909"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645131"
 ---
 # <a name="the-email-entity-page"></a>E-posta varlığı sayfası
 
@@ -33,10 +33,10 @@ ms.locfileid: "68573909"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 **Bu makalede:**
-- [E-posta varlığı sayfasına ulaşma](#reach-the-email-entity-page)
-- [E-posta varlık sayfasını okuma](#read-the-email-entity-page)
-- [E-posta varlığı sayfa sekmelerini kullanma](#use-email-entity-page-tabs)
-- [E-posta varlığı sayfasında yeni](#new-to-the-email-entity-page)
+- [E-posta varlığı sayfasına ulaşma](#how-to-get-to-the-email-entity-page)
+- [E-posta varlık sayfasını okuma](#how-to-read-the-email-entity-page)
+- [E-posta varlığı sayfa sekmelerini kullanma](#how-to-use-the-email-entity-page-tabs)
+- [E-posta varlığı sayfasında yeni](#available-on-the-email-entity-page)
 
 Office 365 için Microsoft Defender E5 ve Office P1 ve P2 için Defender yöneticileri, **Email varlık sayfasını** kullanarak e-postanın 360 derecelik bir görünümüne sahiptir. Bu e-postaya gitme sayfası [, Tehdit Gezgini 'e-posta ayrıntıları' açılır](threat-explorer-views.md) penceresinde sunulan bilgileri geliştirmek için oluşturulmuştur.
 

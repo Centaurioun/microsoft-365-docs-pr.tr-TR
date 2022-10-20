@@ -12,18 +12,23 @@ ms.date: 10/3/2019
 ms.localizationpriority: ''
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_Enterprise
+- tier2
+- purview-compliance
 description: 'Özet: Microsoft Office 365 veri dayanıklılığını anlama.'
-ms.openlocfilehash: f6967905c97f83fda2f73fc61ddf96a4a02fbec8
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 1f7a2c80a354983156cd09de0399b752c4b2e5ca
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67055998"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621836"
 ---
 # <a name="service-encryption"></a>Hizmet Şifrelemesi
 
 Birim düzeyinde şifrelemenin yanı sıra Exchange Online, Microsoft Teams, SharePoint Online ve OneDrive İş de müşteri verilerini şifrelemek için Hizmet Şifrelemesi'ni kullanır. Hizmet Şifrelemesi iki anahtar yönetimi seçeneğine olanak tanır:
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="microsoft-managed-keys"></a>Microsoft tarafından yönetilen anahtarlar
 Microsoft, hizmet şifrelemesi için kök anahtarlar da dahil olmak üzere tüm şifreleme anahtarlarını yönetir. Bu seçenek şu anda Exchange Online, SharePoint Online OneDrive İş için varsayılan olarak etkindir. Microsoft tarafından yönetilen anahtarlar, Müşteri Anahtarı'nı kullanmaya karar vermediğiniz sürece varsayılan hizmet şifrelemesi sağlar. Daha sonraki bir tarihte veri temizleme yolunu izlemeden Müşteri Anahtarı'nı kullanmayı durdurmaya karar verirseniz verileriniz Microsoft tarafından yönetilen anahtarlar kullanılarak şifrelenir. Verileriniz her zaman en az bu varsayılan düzeyde şifrelenir.

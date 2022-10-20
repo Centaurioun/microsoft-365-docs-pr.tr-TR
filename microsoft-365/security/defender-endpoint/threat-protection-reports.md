@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 19c5d11368e17db0584baa18a46a19c8357af703
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 1f848ac8f0c2e58c91018825b5559f2259169b3b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232902"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68637452"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de tehdit koruma raporu
 

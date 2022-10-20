@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: GCC ortamlarında Microsoft Whiteboard için paylaşımı yönetmeyi öğrenin.
-ms.openlocfilehash: 48b1b517bb75977f2537d8365b3a00d01e077858
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 045626581bdc2e19ada18e016a7786c648b32120
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68536994"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626697"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard-in-gcc-environments"></a>GCC ortamlarında Microsoft Whiteboard için paylaşımı yönetme
 
@@ -28,7 +28,7 @@ ms.locfileid: "68536994"
 
 Teams toplantısında beyaz tahta paylaştığınızda Whiteboard bir paylaşım bağlantısı oluşturur. Bu bağlantıya kuruluştaki herkes erişebilir. Beyaz tahta, toplantıdaki kiracı içi kullanıcılarla da paylaşılır. Beyaz tahtalar, varsayılan ayardan bağımsız olarak şirket tarafından paylaşılabilir bağlantılar kullanılarak paylaşılır. Varsayılan paylaşım bağlantı türü desteği planlandı.
 
-Toplantı sırasında dış ve paylaşılan cihaz hesaplarının çoğu tarafından geçici işbirliğine yönelik daha fazla özellik vardır. Kullanıcılar teams toplantısında paylaşıldıklarında beyaz tahtaları PowerPoint Canlı paylaşımına benzer şekilde geçici olarak görüntüleyebilir ve üzerinde işbirliği yapabilir.
+Teams toplantısı sırasında dış ve paylaşılan cihaz hesapları (genellikle Surface Hubs ve Teams Odaları cihazlarında kullanılır) geçici işbirliği için daha fazla özelliğe sahiptir. Kullanıcılar, bir toplantıda paylaşılan beyaz tahtaları PowerPoint Canlı paylaşımına benzer şekilde geçici olarak görüntüleyebilir ve üzerinde işbirliği yapabilir.
 
 Bu durumda Whiteboard, yalnızca Teams toplantısı sırasında beyaz tahta üzerinde geçici görüntüleme ve işbirliği sağlar. Paylaşım bağlantısı oluşturulmaz ve Beyaz Tahta dosyaya erişim izni vermez.
 
@@ -52,7 +52,8 @@ Bu ayar yalnızca beyaz tahtalar için geçerlidir ve önceden paylaşılan ayar
 
 > [!NOTE]
 > Varsayılan olarak, **Anonim kullanıcılar toplantılardaki uygulamalarla etkileşimde bulunabilir Teams toplantı** ayarı varsayılan olarak etkindir. Devre dışı bırakdıysanız, toplantı sırasında hiçbir anonim kullanıcı (konuklar veya federasyon kullanıcıları yerine) beyaz tahtaya erişemez
->
+
+> [!NOTE]
 > Paylaşılan cihaz hesaplarının Teams toplantılarında Whiteboard'a erişmesini istiyorsanız ancak anonim kullanıcılara erişim sağlamak istemiyorsanız, **AllowAnonymousMeetingParticipantsToAccessWhiteboards** etkinken **Anonim kullanıcıların toplantılardaki uygulamalarla etkileşim kurabilmesini** devre dışı bırakabilirsiniz
 
 Bu değişikliklerin kiracınız genelinde uygulanması yaklaşık 60 dakika sürmelidir.

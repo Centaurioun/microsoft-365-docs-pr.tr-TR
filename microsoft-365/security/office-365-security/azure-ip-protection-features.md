@@ -7,24 +7,24 @@ author: kccross
 manager: laurawi
 ms.date: 6/29/2018
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Bu makalede, Azure Information Protection koruma özelliklerinde kullanıma sunulan değişiklikler açıklanmaktadır
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: b4d57227e07695f334a70cd8ad5f28e34f8a3895
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: d26b4b3567c76e8a6384a6ec420562839d9cc2b1
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67472776"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622188"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Azure Information Protection mevcut kiracılara sunulan koruma özellikleri
 

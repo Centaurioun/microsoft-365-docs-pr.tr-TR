@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 36e00732202950df890316260d888353cb48bf6e
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 6332486cfd1937f867e77b984be64fd2d376c1f1
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68210184"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638620"
 ---
 # <a name="onboard-non-windows-devices"></a>Windows dışı diğer cihazları ekleyin
 

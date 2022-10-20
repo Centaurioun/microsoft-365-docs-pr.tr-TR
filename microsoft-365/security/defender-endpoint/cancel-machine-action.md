@@ -15,15 +15,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
-ms.topic: article
+ms.collection:
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.custom: api
-ms.openlocfilehash: d57c9bbdfb0a649c1712af078ae5b45577cb24c6
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 9db5698699385cafe02ab74c49e8070e3cd92678
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740302"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621858"
 ---
 # <a name="cancel-machine-action-api"></a>Makine eylem API'lerini iptal etme
 

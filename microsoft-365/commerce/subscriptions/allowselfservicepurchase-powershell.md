@@ -22,12 +22,12 @@ search.appverid:
 description: Self servis satın alma özelliğini açmak veya kapatmak için AllowSelfServicePurchase PowerShell cmdlet'ini kullanmayı öğrenin.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 10/10/2022
-ms.openlocfilehash: 77e1fa8fe85861381c4eb5128148c08f0997bcfc
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 3ce3c30a7a51987407c9040e6b8317d092ff491f
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68533312"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627663"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>MSCommerce PowerShell modülü için AllowSelfServicePurchase kullanma
 
@@ -44,10 +44,10 @@ ms.locfileid: "68533312"
 
 **MSCommerce** PowerShell modülünü kullanmak için şunları yapmanız gerekir:
 
-- Windows 10 cihazı
+- Windows 10 veya üzeri bir işletim sistemi.
 - PowerShell 5 veya üzeri. PowerShell 6.x/7.x şu anda bu modülde desteklenmiyor.
-- Cihaz için yönetici izni
-- Kiracınız için genel veya Faturalama Yönetici rolü
+- **MSCommerce** ürün ilkelerini değiştirmek için kiracınızın Genel veya Faturalama yöneticisi rolü.
+- **MSCommerce** ürün ilkelerinin salt okunur listesini görmek için kiracınızın Genel okuyucu rolü.
 
 ## <a name="install-the-mscommerce-powershell-module"></a>MSCommerce PowerShell modülünü yükleme
 

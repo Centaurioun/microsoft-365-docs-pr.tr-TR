@@ -13,15 +13,17 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
+ms.collection:
+- tier3
 ms.custom:
 - seo-marvel-apr2020
 description: Exchange Online IRM'yi kuruluşunuzun gereksinimlerini karşılamak için şirket içi Active Directory Rights Management Service'i (AD RMS) kullanacak şekilde yapılandırmayı öğrenin.
-ms.openlocfilehash: 926bea0b1f9379d2eaad2bc7c5bd672f98329b8a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 9ea51944045dd635fbaf3d1b50c578fc607adae1
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628803"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68629225"
 ---
 # <a name="exchange-online-mail-encryption-with-ad-rms"></a>AD RMS ile Exchange Online posta şifrelemesi
 
@@ -29,6 +31,8 @@ Bilgi sızıntısını önlemeye yardımcı olmak için Exchange Online, e-posta
 
 IRM koruması Microsoft Outlook veya Web üzerinde Outlook kullanıcıları tarafından uygulanabilir ve yöneticiler tarafından aktarım koruma kuralları veya Outlook koruma kuralları kullanılarak uygulanabilir. IRM, sizin ve kullanıcılarınızın e-posta içindeki hassas verilere kimlerin erişebileceğini, iletebileceğini, yazdırabileceğini veya kopyalayabileceğini denetlemenize yardımcı olur.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="changes-to-how-irm-works-with-message-encryption-and-azure-active-directory"></a>İleti şifreleme ve Azure Active Directory ile IRM'nin çalışma şeklindeki değişiklikler
 
 Eylül 2017 itibarıyla, kuruluşunuz için Microsoft Purview İleti Şifrelemesi ayarladığınızda, IRM'yi Azure Rights Management (Azure RMS) ile kullanılacak şekilde de ayarlarsınız. Artık Azure RMS ile IRM'i ayrı olarak ayarlamazsınız. Bunun yerine, ileti şifreleme ve hak yönetimi birlikte sorunsuz bir şekilde çalışır. Microsoft Purview İleti Şifrelemesi hakkında daha fazla ayrıntı için bkz. [İleti Şifrelemesi SSS](./ome-faq.yml). Kuruluşunuzdaki Microsoft Purview İleti Şifrelemesi kullanmaya başlamaya hazırsanız bkz. [Microsoft Purview İleti Şifrelemesi ayarlama](./set-up-new-message-encryption-capabilities.md).

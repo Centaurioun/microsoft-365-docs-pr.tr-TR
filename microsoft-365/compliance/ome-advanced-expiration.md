@@ -13,16 +13,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 description: Özel markalı bir şablon aracılığıyla e-postalarda son kullanma tarihi ayarlayarak e-posta güvenliğinizi genişletmek için Microsoft Purview Gelişmiş İleti Şifrelemesi'ni kullanın.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b93aad4f217f956561b686b1415c64456a4360db
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 96d9acafd7c192e24768bcc9cf3e015fffb4db4c
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635161"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634596"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-microsoft-purview-advanced-message-encryption"></a>Microsoft Purview Gelişmiş İleti Şifreleme tarafından şifrelenen e-posta için bir son geçerlilik tarihi belirleme
 
@@ -39,6 +39,8 @@ Son kullanıcı, son kullanma tarihi ayarlanmış bir posta aldığında, sarmal
 Yalnızca dış alıcılara e-postalar için son kullanma tarihleri ayarlayabilirsiniz.
 
 Microsoft Purview Gelişmiş İleti Şifrelemesi ile özel markalama uyguladığınızda, Office 365 sarmalayıcıyı şablonu uyguladığınız posta akışı kuralına uyan e-postaya uygular. Ayrıca, süre sonunu yalnızca özel markalama kullanıyorsanız kullanabilirsiniz.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>PowerShell kullanarak posta süre sonunu zorlamak için özel bir marka şablonu oluşturma
 

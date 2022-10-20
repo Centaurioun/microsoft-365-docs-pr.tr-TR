@@ -18,15 +18,15 @@ ms.collection:
 - highpri
 - tier1
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: d213154ded15187e5041b6dda55a30245b0b34fe
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: dc3499dad3f08f6f9e3e7346d22b97808cd807ee
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68223556"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626149"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager aracılığı ile katılım
 

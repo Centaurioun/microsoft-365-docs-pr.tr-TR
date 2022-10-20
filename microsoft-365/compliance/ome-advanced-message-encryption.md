@@ -11,17 +11,17 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.date: 05/12/2022
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 description: Gelişmiş İleti Şifrelemesi, yöneticilerin korumalı iletilerle daha da fazlasını yapmalarını sağlayarak kuruluşların uyumluluk yükümlülüklerini karşılamasına yardımcı olur.
-ms.openlocfilehash: a4b970c005b49067e59254ff549200a9118f6cd4
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f70b05fffa62011afda1d758ea9268ee40d81c59
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632167"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620513"
 ---
 # <a name="advanced-message-encryption"></a>Gelişmiş İleti Şifrelemesi
 
@@ -30,6 +30,8 @@ Microsoft Purview Gelişmiş İleti Şifrelemesi [Microsoft 365 Kurumsal E5, Off
 Gelişmiş İleti Şifrelemesi, müşterilerin dış alıcılar ve şifrelenmiş e-postalara erişimleri üzerinde daha esnek denetimler gerektiren uyumluluk yükümlülüklerini karşılamasına yardımcı olur. Office 365 Gelişmiş İleti Şifrelemesi ile, otomatik ilkelerle kuruluş dışında paylaşılan hassas e-postaları denetleyebilir ve şifrelenmiş ileti portalı erişim günlükleri aracılığıyla bu etkinlikleri izleyebilirsiniz. Bu ilkeleri PII, Finansal veya Sistem Durumu Kimlikleri gibi hassas bilgi türlerini tanımlamak için yapılandırabilir veya korumayı geliştirmek için anahtar sözcükleri kullanabilirsiniz. İlkeleri yapılandırdıktan sonra, ilkeleri özel markalı e-posta şablonlarıyla eşleştirip ilkeye uyan e-postaların ek denetimi için bir sona erme tarihi eklersiniz. Ayrıca yöneticiler, istedikleri zaman posta erişimini iptal ederek güvenli bir web portalı aracılığıyla dışarıdan erişilen şifrelenmiş e-postaları daha fazla denetleyebiliyor.
 
 Yalnızca dış alıcılara gönderilen e-postaları iptal edebilir ve son kullanma tarihi ayarlayabilirsiniz.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="get-started-with-microsoft-purview-advanced-message-encryption"></a>Microsoft Purview Gelişmiş İleti Şifrelemesi ile çalışmaya başlama
 

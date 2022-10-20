@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: İş için Microsoft 365 aboneliğiniz için çevrimiçi veya telefon desteği almayı öğrenin. Destek almak için bir iş aboneliği yöneticisi olmanız gerekir.
-ms.openlocfilehash: 0dd352b8c4cc4399805a80132ba288bc76949e5d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: ae3855d8ab7d236413541a029d3e0c82a6585a82
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68178261"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638928"
 ---
 # <a name="get-support-for-microsoft-365-for-business"></a>İş için Microsoft 365 desteği alma
 
@@ -66,16 +66,15 @@ Servis isteğinizi çevrimiçi başlatarak zaman kazanın. Bir çözüm bulmanı
 
 ## <a name="phone-support"></a>Telefon desteği
 
-Ülkenizin veya bölgenizin numarasını bulmak için aşağıdaki açılır menüyü kullanın.
-
-[!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
-
-Faturalandırma desteği ve Teknik destek saatleri (ve diller), açılır menüden seçilen her ülkenin kendi sayfasında listelenir.
+Faturalama ve Teknik destek saatleri (ve dilleri) için telefon numaraları [, ülkeye veya bölgeye göre iş destek kişileri için Microsoft 366'da](support-contact-info.md) listelenir.
 
 Yöneticiyseniz desteği ararken hesap ayrıntılarınızı hazır bulundurun.
 
 > [!NOTE]
-> Kuruluşunuzu daha iyi korumak için mevcut telefon tabanlı doğrulama sürecimize PIN kodu tabanlı bir doğrulama adımı ekledik. Kuruluş profilinizde kayıtlı olmayan bir numaradan bizimle iletişime geçerseniz Microsoft destek temsilcisi, Microsoft 365 yönetim merkezi profilinizdeki kayıtlı e-postaya veya telefon numarasına bir doğrulama kodu gönderir. Destek temsilcisinin, kuruluşunuzun hesabına erişmesine izin vermek için bu kodu destek temsilcisine vermelisiniz.
+> Kuruluşunuzu daha iyi korumak için mevcut telefon tabanlı doğrulama sürecimize PIN kodu tabanlı bir doğrulama adımı ekledik. Kuruluş profilinizde kayıtlı olmayan bir numaradan bizimle iletişime geçerseniz Microsoft destek temsilcisi, Microsoft 365 yönetim merkezi profilinizdeki kayıtlı e-postaya veya telefon numarasına bir doğrulama kodu gönderir. Kuruluşunuzun hesabına erişim izni vermek için bu kodu destek temsilcisine sağlamanız gerekir.
+
+İş ürünleri ve hizmetleri için Microsoft 365 faturalama desteği pazartesiden cumaya kadar 09:05'ten (Avustralya'da 09:00-18:00) İngilizce olarak sağlanır.\
+Teknik destek, haftanın 7 günü, günde 24 saat İngilizce olarak sağlanır.
 
 - **Amerika Birleşik Devletleri'nde,1 800 865 9408 numaralı telefonu arayın.**
 
