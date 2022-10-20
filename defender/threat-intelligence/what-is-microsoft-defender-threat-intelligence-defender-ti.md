@@ -8,16 +8,16 @@ ms.service: threat-intelligence
 ms.topic: overview
 ms.date: 08/02/2022
 ms.custom: template-overview
-ms.openlocfilehash: 62e3df65479bec45896504dc8eda006e2a41d75b
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: e1c59f07cd321491bebf9cd13a7a8a3d68323d73
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739278"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68623597"
 ---
 # <a name="what-is-microsoft-defender-threat-intelligence-defender-ti"></a>Microsoft Defender Tehdit Bilgileri (Defender TI) nedir?
 
-Microsoft Defender Tehdit Bilgileri (Defender TI), tehdit altyapısı analizi gerçekleştirirken ve tehdit bilgilerini toplarken önceliklendirme, olay yanıtlama, tehdit avcılığı, güvenlik açığı yönetimi ve siber tehdit bilgilerine yönelik çözümleyici iş akışlarını kolaylaştıran bir platformdur. Çözümleyiciler, kuruluşlarının kendilerini savunmasına gerçekten yardımcı olan şeylere odaklanmak yerine veri keşfetme, toplama ve ayrıştırma işlemlerine önemli miktarda zaman harcar ve analiz ve bağıntı yoluyla aktörler hakkında içgörüler elde etmiş olur.
+Microsoft Defender Tehdit Bilgileri (Defender TI), tehdit altyapısı analizi gerçekleştirirken ve tehdit bilgilerini toplarken önceliklendirme, olay yanıtlama, tehdit avcılığı, güvenlik açığı yönetimi ve siber tehdit bilgilerine yönelik çözümleyici iş akışlarını kolaylaştıran bir platformdur. Analistler, analiz ve bağıntı yoluyla aktörler hakkında içgörüler türeterek kuruluşlarının kendilerini savunmasına gerçekten yardımcı olan şeylere odaklanmak yerine veri bulma, toplama ve ayrıştırma işlemlerine önemli miktarda zaman harcar.
 
 Çözümleyicilerin genellikle şüpheli bir etki alanını, konağı veya IP adresini değerlendirmek için ihtiyaç duydukları kritik veri kümelerini elde etmek amacıyla birden çok depoya gitmesi gerekir. DNS verileri, WHOIS bilgileri, kötü amaçlı yazılımlar ve SSL sertifikaları, güvenlik ihlali göstergelerine (IOC) yönelik önemli bağlam sağlayıcılarıdır ve bu depolar yaygın olarak dağıtıldığı için her zaman ortak bir veri yapısını sahip değillerdir. Bu sebeple çözümleyicilerin, şüpheli altyapının düzgün ve zamanında değerlendirilebilmesi için gerekli olan ilgili tüm verilere sahip olması kolay değildir.
 

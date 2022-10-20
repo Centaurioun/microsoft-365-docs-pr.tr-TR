@@ -19,12 +19,12 @@ ms.collection:
 - tier3
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 549cf88fe713b54ad3a37eb32deddda39cbe9e9a
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: f496e01ff3c3c4a1db42e96d4bae49080776a663
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68233694"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68629467"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Kamu görevlisi müşterilere yönelik Uç Nokta için Microsoft Defender
 
@@ -204,7 +204,7 @@ Bilinen boşluklar şunlardır:
 |Özellik adı|Gcc|GCC Yüksek|Dod|
 |---|:---:|:---:|:---:|
 |Web Koruması (Kimlik Avı önleme ve özel göstergeler)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|
-|Kötü Amaçlı YazılımDan Koruma (Yalnızca Android)|![Hayır](images/svg/check-no.svg) Geliştirme aşamasında|![Hayır](images/svg/check-no.svg) Geliştirme aşamasında|![Hayır](images/svg/check-no.svg) Geliştirme aşamasında|
+|Kötü Amaçlı YazılımDan Koruma (Yalnızca Android)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|
 |Jailbreak Algılama (iOS-Only)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|
 |Koşullu Erişim/Koşullu Başlatma|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|
 |MAM desteği|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|

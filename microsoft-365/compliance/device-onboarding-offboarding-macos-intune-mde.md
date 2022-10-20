@@ -10,16 +10,17 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 description: MDE müşterileri için Microsoft Intune kullanarak macOS cihazlarını Microsoft Purview çözümlerine ekleme ve çıkarma hakkında bilgi edinin
-ms.openlocfilehash: b14b8c8385bd1a67265b36006c35d35612a32e3c
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 7638653c7794270b37c3925f17a64949f1fcae75
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385517"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632282"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers"></a>macOS cihazlarının Uç Nokta için Microsoft Defender müşterileri için Intune kullanarak Uyumluluk çözümlerine katılımı ve çıkarılması
 
@@ -33,11 +34,13 @@ ms.locfileid: "67385517"
 - [İçeriden risk yönetimi](insider-risk-management.md)
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="before-you-begin"></a>Başlamadan önce
 
 - [macOS cihazlarınızın Intune eklenip Şirket Portalı](/mem/intune/fundamentals/deployment-guide-platform-macos) [uygulamasına](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp) kaydedildiğinden emin olun. 
 - [Microsoft Endpoint Manager merkezine](https://endpoint.microsoft.com/#home) erişiminiz olduğundan emin olun
-- Bu, macOS sürüm Catalina 10.15 ve üzerini destekler
+- Bu, en son yayınlanan üç macOS sürümünü destekler.
 - macOS cihazlarınıza v95+ Edge tarayıcısını yükleme 
 
 ## <a name="onboard-macos-devices-into-microsoft-purview-solutions-using-microsoft-intune"></a>Microsoft Intune kullanarak macOS cihazlarını Microsoft Purview çözümlerine ekleme

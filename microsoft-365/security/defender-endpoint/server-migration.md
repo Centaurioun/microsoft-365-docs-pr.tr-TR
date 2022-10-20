@@ -17,14 +17,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: c97abc6cd41354ca76952f321672e69039f63909
-ms.sourcegitcommit: 0380a7cd5adb710b80a0ed6fcd349199f1571080
+ms.openlocfilehash: 0720eb69c37b9767d96819cdea431422bed145a1
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2022
-ms.locfileid: "68342952"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68625973"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Önceki MMA tabanlı Uç Nokta için Microsoft Defender çözümünden sunucu geçişi senaryoları
 

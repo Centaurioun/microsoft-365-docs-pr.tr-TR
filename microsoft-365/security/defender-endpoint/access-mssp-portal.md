@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 204e2e9b966de5eec246cfdaea6515b26fb8235a
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 43ee12ed331bb9a23ae16e837e928400d03ca723
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68142465"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632172"
 ---
 # <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>Microsoft 365 Defender MSSP müşteri portalına erişme
 

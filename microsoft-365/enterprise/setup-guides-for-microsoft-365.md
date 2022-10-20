@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Kiracınızın lisanslarındaki özellikleri planlamak, geçirmek ve uygulamak için adım adım araçlar edinin. Çalıştırmanız gereken bir hizmeti veya uygulamayı ayarlamaya yönelik bir kılavuz bulun.
-ms.openlocfilehash: 350b13242d457309f7d81c2ca710d64af42dd12b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: c0d08945fb1cff97704a30ebd645a2096b49d18e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68179361"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626324"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 ve Office 365 hizmetleri için kurulum kılavuzları
 
@@ -139,10 +139,6 @@ Parolasız [dağıtımınızı planlama](https://aka.ms/passwordlesssetup) kıla
 Kullanıcılara, hesapları kilitliyse veya bir yardım masası mühendisine başvurmaya gerek kalmadan parolalarını unuttuklarında parolalarını bağımsız olarak değiştirme veya sıfırlama olanağı verin.
 
 Ortamınızda SSPR dağıtmanıza yardımcı olacak uygun Azure portal seçeneklerini yapılandırmaya yönelik ilgili makaleleri ve yönergeleri almak için [Self servis parola sıfırlama dağıtımınızı planlama](https://aka.ms/SSPRSetupGuide) kılavuzunu kullanın.
-
-### <a name="active-directory-federation-services-ad-fs-deployment-advisor"></a>Active Directory Federasyon Hizmetleri (AD FS) (AD FS) dağıtım danışmanı
-
-[AD FS dağıtım danışmanı](https://aka.ms/adfsguidance), Microsoft 365 ve Office 365 hizmetleri için kullanıcıların kimliğini doğrulayan bir şirket içi AD FS altyapısı dağıtma konusunda size adım adım rehberlik sağlar. Bu kılavuzla, kuruluşunuz AD FS bileşenlerini ve gereksinimlerini gözden geçirebilir, dağıtım için gerekli olan SSL sertifikalarını alıp yükleyebilir ve gerekli bir web uygulaması ara sunucusu yükleyebilir.
 
 ## <a name="guides-for-security-and-compliance"></a>Güvenlik ve uyumluluk kılavuzları
 

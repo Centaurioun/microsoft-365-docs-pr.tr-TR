@@ -15,23 +15,23 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 5487b2292901cd34599664215f18b4bbdc7cd943
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 5d56550ce32c8e26af1dd777cd8477e7a59788d0
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564640"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68630238"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Insider risk yönetimi etkinliklerini araştırma
 
 >[!IMPORTANT]
 >Microsoft Purview İçeriden Risk Yönetimi IP hırsızlığı, veri sızıntısı ve güvenlik ihlalleri gibi olası kötü amaçlı veya yanlışlıkla insider risklerini belirlemek için çeşitli sinyalleri ilişkilendirmektedir. Insider risk yönetimi, müşterilerin güvenlik ve uyumluluğu yönetmek için ilkeler oluşturmasına olanak tanır. Tasarım gereği gizlilikle oluşturulan kullanıcılar varsayılan olarak takma ad kullanır ve kullanıcı düzeyinde gizlilik sağlamaya yardımcı olmak için rol tabanlı erişim denetimleri ve denetim günlükleri kullanılır.
 
-Riskli kullanıcı etkinliklerini araştırmak, kuruluşunuz için insider risklerini en aza indirmenin önemli bir ilk adımıdır. Bu riskler, şirket içi risk yönetimi ilkelerinden uyarı oluşturan etkinlikler veya ilkeler tarafından algılanan ancak kullanıcılar için hemen bir iç risk yönetimi uyarısı oluşturmayan etkinlikler olabilir. **Kullanıcı etkinlik raporlarını (önizleme)** veya **Uyarı panosunu** kullanarak bu tür etkinlikleri araştırabilirsiniz.
+Riskli kullanıcı etkinliklerini araştırmak, kuruluşunuz için insider risklerini en aza indirmenin önemli bir ilk adımıdır. Bu riskler, şirket içi risk yönetimi ilkelerinden uyarı oluşturan etkinlikler veya ilkeler tarafından algılanan ancak kullanıcılar için hemen bir iç risk yönetimi uyarısı oluşturmayan etkinlikler olabilir. **Kullanıcı etkinlik raporlarını** veya **Uyarı panosunu** kullanarak bu tür etkinlikleri araştırabilirsiniz.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="user-activity-reports-preview"></a>Kullanıcı etkinliği raporları (önizleme)
+## <a name="user-activity-reports"></a>Kullanıcı etkinliği raporları
 
 Kullanıcı etkinliği raporları, belirli kullanıcılara yönelik etkinlikleri geçici olarak veya açık bir şekilde şirket içi risk yönetimi ilkesine atamak zorunda kalmadan tanımlı bir süre boyunca incelemenize olanak tanır. Çoğu şirket içi risk yönetimi senaryosunda kullanıcılar ilkelerde açıkça tanımlanır ve ilke uyarıları (olayları tetiklemeye bağlı olarak) ve etkinliklerle ilişkili risk puanları olabilir. Ancak bazı senaryolarda, bir ilkede açıkça tanımlanmayan kullanıcıların etkinliklerini incelemek isteyebilirsiniz. Bu etkinlikler, kullanıcı ve riskli olabilecek etkinlikler hakkında bir ipucu aldığınız kullanıcılar veya genellikle bir iç risk yönetimi ilkesine atanma ihtiyacı olmayan kullanıcılara yönelik olabilir.
 
@@ -50,10 +50,11 @@ Yeni raporların gözden geçirilmesi genellikle 10 saat kadar sürer. Rapor haz
 
 ![Insider risk yönetimi kullanıcı etkinliği raporu.](../media/insider-risk-user-activity-report.png)
 
-Seçili **kullanıcının Kullanıcı etkinliği raporu****, Kullanıcı etkinliği** ve **Etkinlik gezgini** sekmelerini içerir:
+Seçili kullanıcının **Kullanıcı etkinliği raporu** **Kullanıcı etkinliği**, **Etkinlik gezgini** ve **Adli kanıt (önizleme)** sekmelerini içerir:
 
 - **Kullanıcı etkinliği**: Etkinlikleri araştırmak ve dizilerde gerçekleşen olası etkinlikleri görüntülemek için bu grafik görünümünü kullanın. Bu sekme, tüm etkinliklerin geçmiş zaman çizelgesi, etkinlik ayrıntıları, kullanıcı için geçerli risk puanı, risk olaylarının sırası ve araştırma çalışmalarına yardımcı olacak filtreleme denetimleri de dahil olmak üzere bir servis talebinin hızlı bir şekilde gözden geçirilmesini sağlayacak şekilde yapılandırılmıştır.
 - **Etkinlik gezgini**: **Etkinlik gezgini** sekmesi, risk araştırmacılarına etkinlikler hakkında ayrıntılı bilgi sağlayan kapsamlı bir analiz aracı sağlar. Etkinlik gezgini ile gözden geçirenler algılanan riskli etkinliğin zaman çizelgesini hızla gözden geçirebilir ve uyarılarla ilişkili tüm risk etkinliklerini tanımlayıp filtreleyebilir. Etkinlik gezginini kullanma hakkında daha fazla bilgi edinmek için bu makalenin devamında yer alan *Etkinlik gezgini* bölümüne bakın.
+- **Adli kanıt (önizleme)**: **Adli kanıt (önizleme)** sekmesi, kullanıcılar için güvenlik olaylarına neden olabilecek etkinliklerle ilişkili adli kanıt yakalamalarına erişim sağlar. Adli kanıt, kuruluşunuzun hassas verilerin yetkisiz veri sızdırması gibi olası veri risklerini daha iyi azaltmasına, anlamasına ve yanıtlamasına yardımcı olmak için cihazlar arasında özelleştirilebilir görsel yakalamaya olanak tanır. Adli kanıt kullanma hakkında daha fazla bilgi edinmek için bkz. [Insider risk yönetimi adli kanıtı hakkında bilgi edinin](/microsoft-365/compliance/insider-risk-management-forensic-evidence).
 
 ## <a name="alert-dashboard"></a>Uyarı panosu
 
@@ -195,11 +196,11 @@ Bu sekme Etkinlik gezginini açar. Daha fazla bilgi için bu makaledeki Etkinlik
 > [!NOTE]
 > Etkinlik gezgini, kuruluşunuzda bu özellik kullanıma sunulduktan sonra olayları tetikleyen kullanıcılar için uyarı yönetimi alanında kullanılabilir.
 
-Etkinlik gezgini, risk araştırmacılarına ve analistlerine uyarılar hakkında ayrıntılı bilgi sağlayan kapsamlı bir analiz aracı sağlar. Etkinlik gezgini ile gözden geçirenler algılanan riskli etkinliğin zaman çizelgesini hızla gözden geçirebilir ve uyarılarla ilişkili tüm risk etkinliklerini tanımlayıp filtreleyebilir. 
+Etkinlik gezgini, risk araştırmacılarına ve analistlerine uyarılar hakkında ayrıntılı bilgi sağlayan kapsamlı bir analiz aracı sağlar. Etkinlik gezgini ile gözden geçirenler algılanan riskli etkinliğin zaman çizelgesini hızla gözden geçirebilir ve uyarılarla ilişkili tüm risk etkinliklerini tanımlayıp filtreleyebilir.
 
 Sütun bilgileri için Etkinlik gezginindeki uyarıları filtrelemek için Filtre denetimini seçin. Uyarıları, uyarının ayrıntılar bölmesinde listelenen bir veya daha fazla özniteliğe göre filtreleyebilirsiniz. Etkinlik gezgini, araştırmacıların ve analistlerin panoyu kendileri için en önemli bilgilere odaklamalarına yardımcı olmak için özelleştirilebilir sütunları da destekler.
 
-Aşağıdaki alanlara yönelik etkinlikleri ve içgörüleri görüntülemek ve sıralamak için Etkinlik kapsamı ve Risk içgörü filtrelerini kullanın.
+Aşağıdaki alanlara yönelik etkinlikleri ve içgörüleri görüntülemek ve sıralamak için *Etkinlik kapsamı* ve *Risk içgörü* filtrelerini kullanın.
 
 - **Etkinlik kapsamı filtreleri**: Kullanıcı için puanlanan tüm etkinlikleri filtreler.
   - Bu kullanıcı için tüm puanlanan etkinlikler
@@ -250,8 +251,8 @@ Insider risk yönetimi uyarıları yaş ilerledikçe, riskli etkinliği en aza i
 
 Sınırlı geçerli değer sağlayan eski öğelerin sayısını en aza indirmeye yardımcı olmak için, insider risk yönetimi uyarıları, durumları ve kullanıcı etkinliği raporları için aşağıdaki saklama ve sınırlar geçerlidir:
 
-|Öğe|Bekletme/Sınır|
-|---|---|
+|**Öğe**|**Bekletme/Sınır**|
+|:-------|:------------------|
 |Gözden geçirme durumu gerekiyor olan uyarılar|Uyarı oluşturma işleminden 120 gün sonra otomatik olarak silindi|
 |Etkin durumlar (ve ilişkili yapıtlar)|Süresiz saklama, süresi asla dolmaz|
 |Çözümlenen servis talepleri (ve ilişkili yapıtlar)|Servis talebi çözümünden 120 gün sonra otomatik olarak silindi|

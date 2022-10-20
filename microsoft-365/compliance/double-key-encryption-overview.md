@@ -11,17 +11,20 @@ audience: Admin
 ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
-ms.openlocfilehash: c42104ccb74aba71b143d1ee31b0ed5893d9396f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+- purview-compliance
+- tier1
+ms.openlocfilehash: 71f3dd312b6ccd87079b3f5f958481ee3a229bd0
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641844"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68634772"
 ---
 # <a name="double-key-encryption-frequently-asked-questions"></a>Çift Anahtar Şifrelemesi hakkında sık sorulan sorular
 
 Çift Anahtar Şifrelemesi'nin nasıl çalıştığı hakkında bir sorunuz mu var? Burada bir yanıt olup olmadığını kontrol edin.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="what-is-double-key-encryption-dke"></a>Çift Anahtar Şifrelemesi (DKE) nedir?
 

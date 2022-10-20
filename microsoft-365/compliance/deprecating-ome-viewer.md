@@ -15,21 +15,24 @@ search.appverid:
 - MOE150
 ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier3
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 İleti Şifrelemesi (OME) Görüntüleyici uygulaması 2018'de Android ve Apple mağazalarından kaldırılmıştır.
-ms.openlocfilehash: 2e1e0ead7d34761a3159b4b51368ea4460acb596
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ee3d8e351d76e7107aa07114c7cd457d38ab3638
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630091"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632348"
 ---
 # <a name="deprecating-message-encryption-viewer-app"></a>İleti Şifreleme Görüntüleyicisi Uygulamasını KullanımDan Kaldırma
 
 15 Ağustos 2018'de android ve Apple mağazalarından Office 365 İleti Şifrelemesi (OME) Görüntüleyicisi mobil uygulamasını kaldırdık. Office 365 İleti Şifreleme Görüntüleyicisi mobil uygulamasının, Apple ve Android telefonlarda OME'nin önceki sürümüyle şifrelenmiş e-posta iletilerini ve eklerini okuması gerekiyordu. OME Görüntüleyicisi uygulamasını kaldırmanın dışında, OME'nin önceki sürümünde başka bir değişiklik yapmayız.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="changes-from-august-2018"></a>Ağustos 2018'den itibaren değişiklikler
 
 Eylül 2017'de duyurulduğu gibi, kullanıcıların mobil uygulamanın gereksinimi olmadan kuruluş içindeki veya dışındaki herkese şifrelenmiş ve korumalı iletiler gönderebilmesi için Office 365 [İleti Şifrelemesi'nin](https://aka.ms/ome2017) yeni bir sürümünü yayımladık. O zamandan beri ek özellikler ekledik:

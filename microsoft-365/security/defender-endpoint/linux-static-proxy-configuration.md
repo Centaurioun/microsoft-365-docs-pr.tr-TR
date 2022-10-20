@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: dec808cc347e4e6078c1275821275b7db8992345
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: e58e81044e296f675c375e6caa5169e75eba51e6
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68536774"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622958"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>Linux'ta statik ara sunucu bulma için Uç Nokta için Microsoft Defender yapılandırma
 
@@ -71,7 +71,16 @@ Bir ara sunucu gerekliyse ancak yapılandırılmamışsa yükleme ve kaldırma i
 
 ## <a name="post-installation-configuration"></a>Yükleme sonrası yapılandırma
 
-Yüklemeden sonra ortam değişkeniNin `HTTPS_PROXY` Uç Nokta için Defender hizmet dosyasında tanımlanması gerekir. Bunu yapmak için komutunu çalıştırın `sudo systemctl edit --full mdatp.service`.
+Yüklemeden sonra, aşağıdaki yöntemlerden birini kullanarak Uç Nokta için Defender'ı statik proxy ile yapılandırın:
+
+```bash
+mdatp config proxy set --value http://address:port
+```
+> [!NOTE]
+> Bu yöntem, Linux'ta Uç Nokta için Defender'ın her dağıtımında çalışır ve **Önerilir**.
+
+
+Ortam değişkeni, `HTTPS_PROXY` Uç Nokta için Defender hizmet dosyasında tanımlanmalıdır. Bunu yapmak için komutunu çalıştırın `sudo systemctl edit --full mdatp.service`.
 Ardından değişkeni hizmete iki yoldan biriyle yayabilirsiniz:
 
 - Satırın `#Environment="HTTPS_PROXY=http://address:port"` açıklamasını kaldırın ve statik proxy adresinizi belirtin.
@@ -91,4 +100,4 @@ sudo systemctl daemon-reload; sudo systemctl restart mdatp
 > 'yi kaldırmadan `mdatp`önce yapmış olabileceğiniz tüm eklemeleri kaldırmak için, içinden özel dosyayı `/etc/systemd/system`silin.
 
 > [!NOTE]
-> Red Hat Enterprise Linux 6.X ve CentOS 6.X **, systemctl'yi** desteklemez. MDE için statuc proxy'sini yapılandırmak için  **mdatp config proxy set --value http://address:port** kullanın. Bu yöntem diğer tüm Linux dağıtımları için de çalışır.
+> Red Hat Enterprise Linux 6.X ve CentOS 6.X **, systemctl** ve **/etc/environment** yöntemlerini desteklemez. Bu dağıtımlarda MDE için statik proxy yapılandırmak için Önerilen **mdatp config proxy kümesi** yöntemini kullanın.

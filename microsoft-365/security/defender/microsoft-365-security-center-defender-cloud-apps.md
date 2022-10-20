@@ -11,9 +11,9 @@ f1.keywords:
 ms.author: dacurwin
 author: dcurwin
 manager: dansimp
-ms.date: 08/21/2022
+ms.date: 08/04/2022
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
@@ -21,12 +21,12 @@ ms.collection:
 - m365-security
 - tier2
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: a918a77f4aee962f126a3fdc47ee783c291e5765
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 9097a48dee61ea0dc96345331f83b07d1796fb2d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68055358"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68622590"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-microsoft-365-defender-preview"></a>Microsoft 365 Defender'de Microsoft Defender for Cloud Apps (Önizleme)
 
@@ -48,13 +48,12 @@ Avantajlar hakkında daha fazla bilgi edinin: [Microsoft 365 Defender genel bak�
 
 ## <a name="quick-reference"></a>Hızlı başvuru
 
-Aşağıdaki resimde ve tabloda Microsoft Defender for Cloud Apps ile Microsoft 365 Defender arasındaki gezinti değişiklikleri listelenmiştir.
+Aşağıdaki resimler ve tablolar, Microsoft Defender for Cloud Apps ile Microsoft 365 Defender arasındaki gezinti değişikliklerini listeler.
 
-> [!NOTE]
-> Bazı sayfalar henüz geçirilmemiş ve Bulut Uygulamaları için Defender portalından erişilmelidir.
+### <a name="discover"></a>Keşfetmek
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/defender-cloud-apps-m365-defender.png" alt-text="Microsoft 365 Defender portalındaki yeni konumlar" lightbox="../../media/defender-cloud-apps-m365-defender.png":::
+> :::image type="content" source="../../media/defender-cloud-apps-m365-defender-discover.png" alt-text="Microsoft 365 Defender portalında Cloud Discovery özellikleri için yeni konumlar" lightbox="../../media/defender-cloud-apps-m365-defender-discover.png":::
 
 | Bulut Uygulamaları için Defender | Microsoft 365 Defender |
 |---------|---------|
@@ -66,19 +65,64 @@ Aşağıdaki resimde ve tabloda Microsoft Defender for Cloud Apps ile Microsoft 
 | Aygıtları | Cloud Discovery sayfasındaki sekme |
 | Bulut uygulaması kataloğu |  Bulut uygulamaları -> Bulut uygulaması kataloğu |
 | Cloud Discovery anlık görüntü raporu oluşturma | Cloud Discovery sayfasındaki Eylemler'in altında |
+
+### <a name="investigate"></a>Araştır
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="../../media/defender-cloud-apps-m365-defender-investigate.png" alt-text="Microsoft 365 Defender portalındaki Araştırma özellikleri için yeni konumlar" lightbox="../../media/defender-cloud-apps-m365-defender-investigate.png":::
+
+| Bulut Uygulamaları için Defender | Microsoft 365 Defender |
+|---------|---------|
 | Etkinlik günlüğü | Bulut uygulamaları -> Etkinlik günlüğü |
-| Dosyalar | Cloud Apps için Defender portalında kalan |
+| Dosyalar | Bulut uygulamaları -> Dosyaları |
 | Kullanıcılar ve hesaplar | Varlıklar -> Kimlikleri |
-| Güvenlik yapılandırması | Cloud Apps için Defender portalında kalan |
+| Güvenlik yapılandırması | [Bulut için Microsoft Defender'da](/azure/defender-for-cloud/defender-for-cloud-introduction) kullanılabilir |
 | Kimlik güvenliği duruşu | [Kimlik için Microsoft Defender kimlik güvenliği duruş değerlendirmeleri](/defender-for-identity/isp-overview) |
 | OAuth uygulamaları | Bulut uygulamaları -> OAuth uygulamaları |
-| Bağlı uygulamalar | Cloud Apps için Defender portalında kalan |
+| Bağlı uygulamalar | Ayarlar -> Bulut uygulamaları -> Bağlı uygulamalar |
 
-> [!NOTE]
-> Microsoft 365 Defender portalındaki yeni Cloud Apps için Defender deneyimi, şu anda [Yönetici erişimini yönetme](/defender-cloud-apps/manage-admins) bölümünde ayrıntılı olarak belirtilen tüm kullanıcılar tarafından kullanılabilir:
->
-> - Cloud [Apps için Defender'daki Yerleşik yönetici rollerinde](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps) tanımlandığı gibi **Uygulama/Örnek yöneticisi**, **Kullanıcı grubu yöneticisi**, Cloud **Discovery genel** yöneticisi ve Cloud **Discovery rapor yöneticisi**.
-> - Etkinlik gizliliği bölümünde tanımlanan kullanıcı [gizlilik](/defender-cloud-apps/activity-privacy) grupları
+### <a name="control"></a>Denetim
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="../../media/defender-cloud-apps-m365-defender-control.png" alt-text="Microsoft 365 Defender portalındaki Denetim özellikleri için yeni konumlar" lightbox="../../media/defender-cloud-apps-m365-defender-control.png":::
+
+| Bulut Uygulamaları için Defender | Microsoft 365 Defender |
+|---------|---------|
+| İlkeler | Bulut uygulamaları -> İlke yönetimi |
+| Şablonlar | Bulut uygulamaları -> İlke şablonları |
+
+### <a name="settings"></a>Ayarlar
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="../../media/defender-cloud-apps-m365-defender-settings.png" alt-text="Microsoft 365 Defender portalında Ayarlar için yeni konumlar" lightbox="../../media/defender-cloud-apps-m365-defender-settings.png":::
+
+| Bulut Uygulamaları için Defender | Microsoft 365 Defender |
+|---------|---------|
+| Ayarlar | Ayarlar -> Bulut uygulamaları |
+| Sistem ayarları | Ayarlar -> Bulut uygulamaları |
+| Ayarlar/İdare günlüğü | Bulut uygulamaları -> İdare günlüğü |
+| Güvenlik uzantıları | Ayarlar -> Bulut uygulamaları |
+| Playbook'lar | Ayarlar -> Bulut uygulamaları |
+| SIEM aracıları | Ayarlar -> Bulut uygulamaları |
+| Dış DLP | Ayarlar -> Bulut uygulamaları |
+| API belirteçleri | Ayarlar -> Bulut uygulamaları |
+| Yönetici erişimini yönetme | İzinler-> Bulut uygulamaları-> Rolleri |
+| Dışarı aktarılan raporlar | Raporlar -> Bulut uygulamaları -> Dışarı aktarılan raporlar |
+| Kapsamlı dağıtım ve gizlilik | İzinler -> Bulut uygulamaları -> Etkinlik Gizliliği izinleri |
+| Bağlı Uygulamalar/Uygulama bağlayıcıları | Ayarlar -> Cloud Apps -> Bağlı Uygulamalar |
+| Koşullu Erişim Uygulama Denetimi | Ayarlar -> Bulut uygulamaları -> Koşullu Erişim Uygulama Denetimi uygulamaları |
+| IP adresi aralıkları              | Ayarlar -> Bulut uygulamaları                                      |
+| Kullanıcı grupları                    | Ayarlar -> Bulut uygulamaları                                      |
+
+## <a name="limitations"></a>Sınırlamalar
+
+- Microsoft 365 Defender portalındaki yeni Cloud Apps için Defender deneyimi, şu anda [Yönetici erişimini yönetme](/defender-cloud-apps/manage-admins) bölümünde ayrıntılı olarak belirtilen tüm kullanıcılar tarafından kullanılabilir:
+  - Cloud [Apps için Defender'daki Yerleşik yönetici rollerinde](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps) tanımlandığı gibi **Uygulama/Örnek yöneticisi**, **Kullanıcı grubu yöneticisi**, Cloud **Discovery genel** yöneticisi ve Cloud **Discovery rapor yöneticisi**.
+  - Etkinlik gizliliği bölümünde tanımlanan kullanıcı [gizlilik](/defender-cloud-apps/activity-privacy) grupları
+
+- Yeni deneyim şu anda yalnızca tam Microsoft Defender for Cloud Apps lisanslarında kullanılabilir.
+- Yeni müşterilerin önce Microsoft Defender for Cloud Apps portalında oturum açması gerekir.
+- Bazı bağlantılar sizi Cloud Apps için Defender portalına yönlendirebilir.
 
 ## <a name="whats-changed"></a>Değişenler
 
@@ -93,6 +137,10 @@ Microsoft 365 Defender'da genel arama (sayfanın üst kısmındaki arama çubuğ
 ### <a name="assets-and-identities"></a>Varlıklar ve kimlikler
 
 Microsoft 365 Defender deneyiminin tamamına yayılan ayrılmış **varlıklar** bölümünün oluşturulması kapsamında, Bulut Uygulamaları için Defender'ın **Kullanıcılar ve Hesaplar** bölümü **Kimlikler** bölümü olarak yeniden adlandırılır. İşlevlerde değişiklik beklenmiyor.
+
+## <a name="related-videos"></a>İlgili videolar
+
+- [Microsoft 365 Defender'de bulut uygulamalarını koruma](https://www.microsoft.com/videoplayer/embed/RE59yVU)
 
 ## <a name="related-information"></a>İlgili bilgiler
 

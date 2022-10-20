@@ -25,12 +25,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Özet: Yeni uç nokta Web hizmeti belirli senaryolar için birkaç uç nokta içermez.'
 hideEdit: true
-ms.openlocfilehash: 1e10047657a61cc07a7c8d608f11fc9233687fe5
-ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
+ms.openlocfilehash: 4466302b3187330b3c3106bf4e9b8f30726834d8
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68484247"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68626346"
 ---
 # <a name="other-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP Adresi ve URL Web hizmetine dahil olmayan diğer uç noktalar
 
@@ -51,7 +51,7 @@ DNS dışında, açıklanan belirli bir senaryoya ihtiyacınız olmadığı sür
 |Satır|Amaç|Hedef|Tür|
 |---|---|---|---|
 |1|**PST ve dosya alımı için [İçeri Aktarma Hizmeti](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6)**|Daha fazla gereksinim için [İçeri Aktarma Hizmeti'ne](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) bakın.|Sık rastlanmayan giden senaryo|
-|2|**[Office 365 için Microsoft Desteği ve Kurtarma Yardımcısı](https://diagnostics.office.com/#/)**|`https://autodiscover.outlook.com` <br> <https://officecdn.microsoft.com> <br> <https://api.diagnostics.office.com> <br> `https://apibasic.diagnostics.office.com` <br> <https://autodiscover-s.outlook.com> <br> `https://cloudcheckenabler.azurewebsites.net` <br> <https://login.live.com> <br> <https://login.microsoftonline.com> <br> <https://login.windows.net> <br> <https://o365diagtelemetry.trafficmanager.net> <br> <https://odc.officeapps.live.com> <br> <https://offcatedge.azureedge.net> <br> <https://officeapps.live.com> <br> <https://outlook.office365.com> <br> <https://outlookdiagnostics.azureedge.net>|Giden sunucu trafiği|
+|2|**[Office 365 için Microsoft Desteği ve Kurtarma Yardımcısı](https://diagnostics.office.com/#/)**|`https://autodiscover.outlook.com` <br> <https://officecdn.microsoft.com> <br> <https://api.diagnostics.office.com> <br> `https://apibasic.diagnostics.office.com` <br> <https://autodiscover-s.outlook.com> <br> `https://cloudcheckenabler.azurewebsites.net` <br> <https://login.live.com> <br> <https://login.microsoftonline.com> <br> <https://login.windows.net> <br> <https://o365diagtelemetry.trafficmanager.net> <br> <https://odc.officeapps.live.com> <br> <https://offcatedge.azureedge.net> <br> <https://officeapps.live.com> <br> <https://outlook.office365.com> <br> <https://outlookdiagnostics.azureedge.net> <br> <https://sara.api.support.microsoft.com> |Giden sunucu trafiği|
 |3|**Azure AD Bağlan (SSO seçeneği)** <p> Uzak PowerShell & WinRM|Müşteri STS ortamı (AD FS Sunucusu ve AD FS Ara Sunucusu) \| TCP bağlantı noktaları 80 & 443|Gelen sunucu trafiği|
 |4|AD FS Proxy sunucuları gibi **STS** (yalnızca federasyon müşterileri için)|Customer STS (AD FS Proxy gibi) \| Tcp 443 veya TCP 49443 bağlantı noktaları w/ClientTLS|Gelen sunucu trafiği|
 |5|**[Birleşik Mesajlaşma/SBC tümleştirmesini Exchange Online](/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers)**|Şirket içi Oturum Sınır Denetleyicisi ile \*.um.outlook.com arasında çift yönlü|Yalnızca sunucuya giden trafik|

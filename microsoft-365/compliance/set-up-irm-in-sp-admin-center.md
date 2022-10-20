@@ -9,28 +9,32 @@ ms.date: 6/29/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection:
-- SPO_Content
 ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: SharePoint listelerini ve belge kitaplıklarını korumak için Microsoft Azure Active Directory Rights Management Services (RMS) aracılığıyla SharePoint Online IRM'yi kullanmayı öğrenin.
+ms.collection:
+- tier3
+- purview-compliance
+- SPO_Content
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
-ms.openlocfilehash: af8f19fe455c1aca1d6b7aab045a9aea5b5efee5
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b002cc58192b5bed9799bdddaaad09d82cc0101b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632057"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68631798"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
 SharePoint Online'da IRM koruması liste ve kitaplık düzeyindeki dosyalara uygulanır. Kuruluşunuzun IRM korumasını kullanabilmesi için önce Rights Management'ı ayarlamanız gerekir. IRM, kullanım kısıtlamalarını şifrelemek ve atamak için Azure Information Protection Azure Rights Management hizmetine dayanır. Bazı Microsoft 365 planları Azure Rights Management'ı içerir ancak tümünü içermez. Daha fazla bilgi edinmek için [Bkz. Office uygulamaları ve hizmetleri Azure Rights Management'ı nasıl destekler](/azure/information-protection/understand-explore/office-apps-services-support)?
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="turn-on-irm-service-using-sharepoint-admin-center"></a>SharePoint yönetim merkezini kullanarak IRM hizmetini açma
 
 Kuruluşunuzun SharePoint listelerini ve kitaplıklarını IRM ile koruyabilmesi için önce kuruluşunuz için Rights Management hizmetini etkinleştirmeniz gerekir. Nasıl yapılacağını öğrenmek için bkz [. Azure Rights Management'ı etkinleştirme](/information-protection/deploy-use/activate-service). Rights Management hizmetini etkinleştirmek için genel yönetici ayrıcalıklarına sahip bir iş veya okul hesabı kullanmanız gerekir. Aksi takdirde, SharePoint Online ile IRM özelliklerini kullanamazsınız.
@@ -62,7 +66,7 @@ IRM korumalı bir kitaplıktan PDF dosyası indirdiğinizde, Microsoft 365 korum
   
 SharePoint Online aşağıdaki dosya türlerinin şifrelenmesini destekler:
   
-- PDF
+- Pdf
     
 - Aşağıdaki Microsoft Office programları için 97-2003 dosya biçimleri: Word, Excel ve PowerPoint
     

@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Siber saldırılara ve diğer kötü amaçlı tehditlere ve güvenlik açıklarına karşı koruma ile kendi cihazını getir (KCG) ayarlamaya genel bakış.
-ms.openlocfilehash: 33246deae1f9284e5168dd566468a46d4f20cb96
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: e45c9840e2d884e1ec43d272348b33c67fd6601a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68093770"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620843"
 ---
 # <a name="set-up-unmanaged-byod-devices"></a>Yönetilmeyen (KCG) cihazları ayarlama
 
@@ -39,7 +39,7 @@ Her cihaz ağınıza olası bir saldırı yoludur ve kişisel olarak sahip oluna
 Hedefleriniz şunlardır:
 
 - [Herkesin MFA'yı ayarlamasını sağlayın](m365bp-multifactor-authentication.md).
-- [Cihazlara Office uygulamalarını yükleyin](m365bp-install-office-apps.md).
+- [Microsoft 365 uygulamalarını cihazlara yükleyin](m365bp-install-office-apps.md).
 - [Yönetilmeyen Windows ve Mac cihazları korumalı](m365bp-protect-pcs-macs.md).
 
 Bu hedeflere ulaştıktan sonra [E-postayı güvenli bir şekilde kullanma](m365bp-protect-email-overview.md) bölümüne geçin.

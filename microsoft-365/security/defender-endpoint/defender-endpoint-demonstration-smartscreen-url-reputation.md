@@ -16,17 +16,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 7303d0eb27a13d296a353d10b16b5fa32bcc0267
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 721ba2fb07d7d8f94b9a3de4e9858bbaf889e519
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68542595"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68620369"
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # <a name="url-reputation-demonstrations"></a>URL saygınlığı tanıtımları
 
 Microsoft Defender SmartScreen'in URL saygınlığına göre kimlik avı ve kötü amaçlı yazılım web sitelerini tanımlamanıza nasıl yardımcı olduğunu test edin.

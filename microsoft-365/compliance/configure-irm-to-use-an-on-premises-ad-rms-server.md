@@ -14,15 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier3
 description: Exchange Online'da Bilgi Hakları Yönetimi'ni (IRM) Active Directory Rights Management Service (AD RMS) sunucusu kullanacak şekilde yapılandırmayı öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5bd4a104d4cceedbdb82c1ff2baac0b547b74fbe
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 87f776964e6aacb9407350ef905ee7680035dbce
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637515"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621416"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>IRM’yi bir şirket içi AD RMS sunucusunda kullanmak üzere yapılandırma
 
@@ -32,11 +33,13 @@ Bu konu başlığında, IRM'yi AD RMS sunucusu kullanacak şekilde nasıl yapıl
 
 Exchange Online'da IRM hakkında daha fazla bilgi edinmek için bkz. [Exchange Online'de Bilgi Hakları Yönetimi](information-rights-management-in-exchange-online.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Başlamadan önce bilmeniz gerekenler
 
 - Bu görevi tamamlamak için tahmini süre: 30 dakika
 
-- Bu yordamı veya yordamları gerçekleştirebilmeniz için, önce izinlerin atanması gerekir. Hangi izinlere ihtiyacınız olduğunu görmek için, [Microsoft Mesajlaşma ilkesi ve uyumluluk izinleri](/Exchange/permissions/feature-permissions/policy-and-compliance-permissions) konusunda "Bilgi Hakları Yönetimi" girdisine bakın.
+- Bu yordamı veya yordamları gerçekleştirebilmeniz için, önce izinlerin atanması gerekir. Hangi izinlere ihtiyacınız olduğunu görmek için [Mesajlaşma ilkesi ve uyumluluk izinleri](/Exchange/permissions/feature-permissions/policy-and-compliance-permissions) konu başlığındaki "Bilgi Hakları Yönetimi" girdisine bakın.
 
 - AD RMS sunucusu Windows Server 2008 veya sonraki bir sürümünü çalıştırıyor olmalıdır. AD RMS'yi dağıtma hakkında ayrıntılı bilgi için bkz. [AD RMS Kümesi Yükleme](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726041(v=ws.11)).
 

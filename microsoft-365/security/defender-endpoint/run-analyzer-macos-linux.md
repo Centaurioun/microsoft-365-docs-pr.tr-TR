@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: f7c3bc6abbb4340ae04f94b2f1fb0e031e69fa9d
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: 9880ce99cecf251ced026748474f21abaafbee38
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492235"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68632568"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>macOS ve Linux üzerinde istemci çözümleyicisini çalıştırma
 
@@ -38,7 +38,7 @@ ms.locfileid: "68492235"
 1. [XMDE İstemci Çözümleyicisi](https://aka.ms/XMDEClientAnalyzer) aracını araştırmanız gereken macOS veya Linux makinesine indirin.
 
    > [!NOTE]
-   > Yukarıdaki bağlantıdan indirilen geçerli 'XMDEClientAnalyzer.zip' SHA256 karması: 'BF102A79626C88FE58B5BE3034640835F96F54230292486716D72F515875966C'
+   > Yukarıdaki bağlantıdan indirilen geçerli 'XMDEClientAnalyzer.zip' SHA256 karması: 'D54FEAEB444127E486CE2B2646BCD3A076F58C44214490F60E35EDD55F763219'
 
 2. Makinedeki XMDEClientAnalyzer.zip içeriğini ayıklayın.
 
@@ -73,7 +73,7 @@ ms.locfileid: "68492235"
 > - Ayrıca aracın şu anda Python sürüm 3 veya üzerinin yüklü olması gerekir.
 >
 > - Python 3 kullanamayan veya lxml bileşenini getiremeyen bir makinede çalışıyorsanız, çözümleyicinin gereksinimlerinin hiçbirini içermeyen ikili tabanlı bir sürümünü indirebilirsiniz: [XMDE İstemci Çözümleyicisi İkili](https://aka.ms/XMDEClientAnalyzerBinary). <br> İkili dosyanın şu anda imzasız olduğunu unutmayın. Paketin MacOS üzerinde çalıştırılmasına izin vermek için şu söz dizimini kullanmanız gerekir: "spctl --add /Path/To/Application.app".
-> - Yukarıdaki bağlantıdan indirilen geçerli 'XMDEClientAnalyzerBinary.zip' SHA256 karması: '6FEB44EF2D9FEB8C8093A016FAB2B5F3ED580931008066BF134E8B1E04CAB222'
+> - Yukarıdaki bağlantıdan indirilen geçerli 'XMDEClientAnalyzerBinary.zip' SHA256 karması: '44099C0AA544B6A2E8676D5BB64BA79494E615E17329CE5ACC26C9F48E7F226B'
 >
 > - Cihazınız bir ara sunucunun arkasındaysa, proxy sunucusunu mde_support_tool.sh betiğine ortam değişkeni olarak geçirebilirsiniz. Örneğin: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 

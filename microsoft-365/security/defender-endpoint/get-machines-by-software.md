@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 9b1fc9a849dad451b4607a0ba41c880e85892526
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 3007674d6cc35d0d7e5e9c789d7097d46bd7e27e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68209634"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624622"
 ---
 # <a name="list-devices-by-software"></a>Cihazları yazılıma göre listeleme
 

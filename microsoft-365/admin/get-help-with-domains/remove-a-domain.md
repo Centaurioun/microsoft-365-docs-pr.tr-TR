@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Eski bir etki alanını Microsoft 365'ten kaldırmayı ve kullanıcıları ve grupları başka bir etki alanına taşımayı veya aboneliğinizi iptal etmeyi öğrenin.
-ms.openlocfilehash: 71525192b5515a5921882f35c8d75f107726b9cf
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: d7dca16ad65e97940b268b300975f242accaf137
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68204859"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68629313"
 ---
 # <a name="remove-a-domain"></a>Etki alanını kaldırma
 
@@ -166,7 +166,7 @@ NS kayıtlarınızı değiştirmek için bkz. [Microsoft 365'i herhangi bir etki
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>Etki alanının kaldırılması ne kadar sürer?
 
-Güvenlik grupları, dağıtım listeleri, kullanıcılar ve Microsoft 365 grupları gibi birçok yerde başvurulmuyorsa Microsoft 365'in etki alanını kaldırması 5 dakika kadar sürebilir. Etki alanını kullanan çok fazla başvuru varsa, etki alanının kaldırılması saatler (bir gün) sürebilir.
+Güvenlik grupları, dağıtım listeleri, kullanıcılar, diğer adlar, paylaşılan posta kutuları, kaynak posta kutuları ve Microsoft 365 grupları gibi birçok yerde başvurulmazsa Microsoft 365'in etki alanını kaldırması beş dakika kadar sürebilir. Etki alanını kullanan çok fazla başvuru varsa, etki alanının kaldırılması saatler (bir gün) sürebilir.
 
 If you have hundreds or thousands of users, use PowerShell to query for all users and then move them to another domain. Otherwise, it's possible for a handful of users to be missed in the UI, and then when you go to remove the domain, you won't be able to and you won't know why. See [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname) for more information. To set the default domain, use [Set-MsolDomain](/powershell/module/msonline/set-msoldomain).
 

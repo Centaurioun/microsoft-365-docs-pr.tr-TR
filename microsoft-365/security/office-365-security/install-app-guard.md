@@ -7,7 +7,7 @@ ms.author: maccruz
 author: schmurky
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -16,12 +16,12 @@ ms.collection: m365-security
 description: Donanım tabanlı yalıtımda en son bilgileri edinin. Açıklardan yararlanmalar veya kötü amaçlı bağlantılar gibi mevcut ve yeni ortaya çıkan saldırıların çalışanların üretkenliğini ve kurumsal güvenliğini kesintiye uğratmasını önleyin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 5213703a3c0793334f7131a4a2882057f7decc19
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 14f5cdffb0bc7aeeda6fac383c8d716260dba15e
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565520"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68633228"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Yöneticiler için Office Application Guard
 
