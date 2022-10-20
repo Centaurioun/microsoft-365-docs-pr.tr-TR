@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 23c02b6df071c8eabd21ecce48d5d0ec2c33e3a2
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 530a10beecab3c0f371db7a607e1b2a5d441c5a9
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232220"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635432"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender için en düşük gereksinimler
 
@@ -44,7 +44,7 @@ Cihazları hizmete eklemek için bazı minimum gereksinimler vardır. Cihazları
 
 ## <a name="licensing-requirements"></a>Lisans gereksinimleri
 
-[Uç Nokta Plan 1 ve Plan 2 için Defender'ın](defender-endpoint-plan-1-2.md) tek başına sürümleri, diğer Microsft 365 planlarına dahil edildiğinde bile sunucu lisanslarını içermez. Sunucuları bu planlara eklemek için Bulut için Defender teklifinin bir parçası olarak Sunucular için [Defender](/azure/defender-for-cloud/defender-for-cloud-introduction) Plan 1 veya Plan 2 gerekir. Daha fazla bilgi edinmek [için bkz. Sunucular için Microsoft Defender](/azure/defender-for-cloud/defender-for-servers-introduction) genel bakış.
+[Uç Nokta Plan 1 ve Plan 2 için Defender'ın](defender-endpoint-plan-1-2.md) tek başına sürümleri, diğer Microsoft 365 planlarının bir parçası olarak dahil edildiğinde bile sunucu lisanslarını içermez. Sunucuları bu planlara eklemek için Bulut için Defender teklifinin bir parçası olarak Sunucular için [Defender](/azure/defender-for-cloud/defender-for-cloud-introduction) Plan 1 veya Plan 2 gerekir. Daha fazla bilgi edinmek [için bkz. Sunucular için Microsoft Defender](/azure/defender-for-cloud/defender-for-servers-introduction) genel bakış.
 
 Uç Nokta için Microsoft Defender için lisanslama gereksinimleri hakkında bilgi için bkz. [lisanslama bilgileri Uç Nokta için Microsoft Defender](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
@@ -88,7 +88,8 @@ Uç Nokta için Defender'a erişim, aşağıdaki tarayıcıları destekleyen bir
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server, sürüm 1803 veya üzeri
-  - Windows Server 2019
+  - Windows Server 2019 ve üzeri
+  - Windows Server 2019 core edition
   - Windows Server 2022
 - Windows Sanal Masaüstü
 - Windows 365

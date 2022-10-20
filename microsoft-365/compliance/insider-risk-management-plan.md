@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 6fe74108e484b158b292f86191425cd0aa73b0b4
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: e5243e403ffb110a2c7c1559869ae194c3e110a8
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503478"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68621240"
 ---
 # <a name="plan-for-insider-risk-management"></a>İçeriden risk yönetimi planı
 
@@ -64,15 +64,19 @@ Insider risk yönetimi ilkelerini ve uyarılarını nasıl yönetmek istediğini
 
 Insider risk yönetimiyle çalışırken bu rol grubu seçenekleri ve çözüm eylemleri arasından seçim yapacaksınız:
 
-|**Eylem**|**Insider Risk Management**|**Insider Risk Management Yönetici**|**İçeriden Risk Yönetimi Analistleri**|**İçeriden Risk Yönetimi Araştırmacıları**|**Insider Risk Management Denetçileri**|
-|:----------|:--------------------------|:--------------------------------|:-----------------------------------|:----------------------------------------|:-----------------------------------|
-| İlkeleri ve ayarları yapılandırma | Evet | Evet | Hayır | Hayır | Hayır |
-| Analiz içgörülerine erişme | Evet | Evet | Evet | Hayır | Hayır |
-| Erişim & uyarıları araştırma | Evet | Hayır | Evet | Evet | Hayır |
-| Olayları araştırmak & erişim | Evet | Hayır | Evet | Evet | Hayır |
-| access & İçerik Gezgini'ni görüntüleyin | Evet | Hayır | Hayır | Evet | Hayır |
-| Bildirim şablonlarını yapılandırma | Evet | Hayır | Evet | Evet | Hayır |
-| Denetim günlüklerini görüntüleme & dışarı aktarma | Evet | Hayır | Hayır | Hayır | Evet |
+|**Eylem**|**Insider Risk Management**|**Insider Risk Management Yönetici**|**İçeriden Risk Yönetimi Analistleri**|**İçeriden Risk Yönetimi Araştırmacıları**|**Insider Risk Management Denetçileri**|**Insider Risk Yönetimi Onaylayanları**|
+|---|---|---|---|---|---|---|
+|İlkeleri ve ayarları yapılandırma|Evet|Evet|Hayır|Hayır|Hayır|Hayır|
+|Analiz içgörülerine erişme|Evet|Evet|Evet|Hayır|Hayır|Hayır|
+|Erişim & uyarıları araştırma|Evet|Hayır|Evet|Evet|Hayır|Hayır|
+|Olayları araştırmak & erişim|Evet|Hayır|Evet|Evet|Hayır|Hayır|
+|access & İçerik Gezgini'ni görüntüleyin|Evet|Hayır|Hayır|Evet|Hayır|Hayır|
+|Bildirim şablonlarını yapılandırma|Evet|Hayır|Evet|Evet|Hayır|Hayır|
+|Denetim günlüklerini görüntüleme & dışarı aktarma|Evet|Hayır|Hayır|Hayır|Evet|Hayır|
+|Erişim & adli kanıt yakalamalarını görüntüleme|Evet|Hayır|Hayır|Evet|Hayır|Hayır|
+|Adli kanıt yakalama isteği oluşturma|Evet|Evet|Hayır|Hayır|Hayır|Hayır|
+|İstekleri yakalamaya yönelik adli kanıtları onaylama|Evet|Hayır|Hayır|Hayır|Hayır|Evet|
+|Cihaz durumu raporunu görüntüleme|Evet|Evet|Hayır|Hayır|Hayır|Hayır|
 
 >[!IMPORTANT]
 >*Insider Risk Management* veya *Insider Risk Management Yönetici* rol gruplarında her zaman en az bir kullanıcınız olduğundan emin olun (seçtiğiniz seçeneğe bağlı olarak), kuruluşunuzdan ayrılan belirli kullanıcılar için insider risk yönetimi yapılandırmanızın 'sıfır yönetici' senaryosuna girmemesini sağlayın.
@@ -126,3 +130,4 @@ Kuruluşunuz için insider risk yönetimini yapılandırmaya hazır mısınız? 
 
 - Genel ilke ayarlarını yapılandırmak için [insider risk yönetimi ayarlarını kullanmaya başlayın](insider-risk-management-settings.md).
 - Önkoşulları yapılandırmak, ilkeler oluşturmak ve uyarıları almaya başlamak için [insider risk yönetimini kullanmaya başlayın](insider-risk-management-configure.md).
+- Kuruluşunuzda adli kanıt yakalamayı yapılandırmaya yönelik adım adım yönergeler için [insider risk yönetimi adli kanıtlarını kullanmaya başlayın](/microsoft-365/compliance/insider-risk-management-forensic-evidence-configure).
