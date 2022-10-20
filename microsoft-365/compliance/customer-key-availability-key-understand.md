@@ -7,15 +7,18 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
+ms.collection:
+- purview-compliance
+- tier1
 search.appverid:
 - MET150
 description: Kayıp Müşteri Anahtarlarını kurtarmak için kullanılan kullanılabilirlik anahtarı hakkında bilgi edinin.
-ms.openlocfilehash: 8a5cf75aaef5f71f25b5d34ed6db481446907abf
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 3a6fcebcd9ccc3a6e81728803e19b3b21a62432a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631105"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68641963"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>Müşteri Anahtarı için uygunluk anahtarı hakkında daha fazla bilgi edinme
 
@@ -33,6 +36,8 @@ Anahtar yönetimi için çeşitli korumaları ve işlemleri kullanarak verilerin
 
 Anahtarların güvenliğini sağlama hakkında daha fazla bilgi için [bkz. Microsoft Güven Merkezi](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data) .
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="availability-key-uses"></a>Kullanılabilirlik anahtarı kullanımları
 
 Kullanılabilirlik anahtarı, dış bir malefactor veya kötü amaçlı insider'ın anahtar kasanızın denetimini çaldığı veya yanlışlıkla yanlış yönetimin kök anahtar kaybına neden olduğu senaryolar için kurtarma özelliği sağlar. Bu kurtarma özelliği, Müşteri Anahtarı ile uyumlu tüm Microsoft 365 hizmetleri için geçerlidir. Tek tek hizmetler kullanılabilirlik anahtarını farklı kullanır. Microsoft 365, kullanılabilirlik anahtarını yalnızca aşağıda açıklanan yollarla kullanır.

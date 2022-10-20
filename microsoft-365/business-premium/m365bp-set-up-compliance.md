@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 ms.collection:
 - m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Veri kaybını önlemek ve sizin ve müşterilerinizin hassas bilgilerini güvende tutmaya yardımcı olmak için uyumluluk özelliklerini ayarlayın.
-ms.openlocfilehash: d19f82c350a7c6c9514b46e1cb7dcf9c7e6bb296
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: ca37ff6d4fd9496bade037da9ac5ff9dd1da083a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68096533"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68643657"
 ---
 # <a name="set-up-compliance-features-in-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra'de uyumluluk özelliklerini ayarlama
 
@@ -76,7 +76,7 @@ Microsoft 365 İş Ekstra uyumluluk özelliklerinizi ayarlamaya başlamanıza ya
 
 [YouTube kanalımızda](https://go.microsoft.com/fwlink/?linkid=2198022) bu videoya ve diğer videolara göz atın.
 
-Duyarlılık etiketleri Office uygulamalarında (Outlook, Word, Excel ve PowerPoint gibi) kullanılabilir. Etiketlere örnek olarak şunlar verilebilir:
+Duyarlılık etiketleri Microsoft 365 uygulamalarında (Outlook, Word, Excel ve PowerPoint gibi) kullanılabilir. Etiketlere örnek olarak şunlar verilebilir:
 
 - Normal
 - Personal

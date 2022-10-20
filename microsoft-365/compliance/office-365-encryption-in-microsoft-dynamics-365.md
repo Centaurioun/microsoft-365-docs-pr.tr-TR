@@ -11,15 +11,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: ''
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_Enterprise
+- purview-compliance
+- tier3
 description: Microsoft'un microsoft veritabanında beklerken ve aktarım sırasında Microsoft Dynamics 365'teki müşteri verilerini korumak için şifreleme teknolojisini nasıl kullandığını öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ba3dbef73b7674364f19e83befdbb8cdfe417ad6
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 1bbbdc37e431522e5c6155e9365177c35a54d961
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67678811"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644977"
 ---
 # <a name="encryption-in-microsoft-dynamics-365"></a>Microsoft Dynamics 365'te şifreleme
 
@@ -27,9 +30,10 @@ Microsoft, Dynamics 365'teki müşteri verilerini bir Microsoft veri merkezinde 
 
 Dynamics 365, kullanıcı adları ve e-posta parolaları gibi hassas bilgiler içeren bir dizi varsayılan varlık özniteliği için standart Microsoft SQL Server hücre düzeyinde şifreleme kullanır. Bu özellik, kuruluşların FIPS 140-2 ile ilişkili uyumluluk gereksinimlerini karşılamaya yardımcı olabilir. Alan düzeyinde veri şifrelemesi, dynamics 365 örneği ile e-posta hizmeti arasında tümleştirmeyi etkinleştirmek için kullanıcı adlarını ve parolaları depolaması gereken [Microsoft Dynamics CRM Email Yönlendiricisi'ni](/previous-versions/dynamicscrm-2016/administering-dynamics-365/hh699800(v=crm.8)) kullanan senaryolarda özellikle önemlidir.
 
-Dynamics 365'in tüm örnekleri, diske yazıldığında (bekleyen) verilerin gerçek zamanlı şifrelemesini gerçekleştirmek için [Microsoft SQL Server Saydam Veri Şifrelemesi'ni](/sql/relational-databases/security/encryption/transparent-data-encryption) (TDE) kullanır. TDE SQL Server, Azure SQL Veritabanı ve Azure SQL Data Warehouse veri dosyalarını şifreler. Varsayılan olarak, Microsoft Dynamics 365 örnekleriniz için veritabanı şifreleme anahtarlarını depolar ve yönetir. (Dynamics 365 for Financials tarafından kullanılan anahtarlar .NET Framework Veri Koruma API'si tarafından oluşturulur.)
 
-Dynamics 365 Yönetim Merkezi'ndeki anahtarları yönetme özelliği, yöneticilere Dynamics 365 örnekleriyle ilişkili veritabanı şifreleme anahtarlarını kendi kendine yönetme olanağı sağlar. (Kendi kendine yönetilen veritabanı şifreleme anahtarları yalnızca Microsoft Dynamics 365 için Ocak 2017 güncelleştirmesinde kullanılabilir ve sonraki sürümlerde kullanılamayabilir. Daha fazla bilgi için bkz [. Dynamics 365 (çevrimiçi) örneğinizin şifreleme anahtarlarını yönetme](/dynamics365/customer-engagement/admin/manage-encryption-keys-instance).) Anahtar yönetimi özelliği, HSM'de depolananlar gibi hem PFX hem de BYOK şifreleme anahtarı dosyalarını destekler. (İnternet üzerinden HSM korumalı anahtar oluşturma ve aktarma hakkında daha fazla bilgi için bkz. [Azure Key Vault için HSM korumalı anahtar oluşturma ve aktarma](/azure/key-vault/key-vault-hsm-protected-keys).)
+Dynamics 365'in tüm örnekleri, diske yazıldığında (bekleyen) verilerin gerçek zamanlı şifrelemesini gerçekleştirmek için [Microsoft SQL Server Saydam Veri Şifrelemesi'ni](/sql/relational-databases/security/encryption/transparent-data-encryption) (TDE) kullanır. TDE SQL Server, Azure SQL Veritabanı ve Azure SQL Data Warehouse veri dosyalarını şifreler. Varsayılan olarak, Microsoft Dynamics 365 örnekleriniz için veritabanı şifreleme anahtarlarını depolar ve yönetir. (Dynamics 365 for Financials tarafından kullanılan anahtarlar .NET Framework Veri Koruma API'si tarafından oluşturulur.) 
+
+Power Platform Yönetim Merkezi'ndeki anahtarları yönetme özelliği, yöneticilere Dynamics 365 örnekleriyle ilişkili veritabanı şifreleme anahtarlarını kendi kendine yönetme olanağı sağlar. Bkz. [Dynamics 365 (çevrimiçi) örneğinizin şifreleme anahtarlarını yönetme](/dynamics365/customer-engagement/admin/manage-encryption-keys-instance). Anahtar yönetimi özelliği, HSM'de depolananlar gibi hem PFX hem de BYOK şifreleme anahtarı dosyalarını destekler. (İnternet üzerinden HSM korumalı anahtar oluşturma ve aktarma hakkında daha fazla bilgi için bkz. [Azure Key Vault için HSM korumalı anahtar oluşturma ve aktarma](/azure/key-vault/key-vault-hsm-protected-keys).) 
 
 Şifreleme anahtarını karşıya yükleme seçeneğini kullanmak için hem genel hem de özel şifreleme anahtarı gerekir.
 

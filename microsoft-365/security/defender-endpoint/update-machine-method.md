@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 24a346074c32810b4c00a3c9386a4273ba5176c4
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 640a5ec91fbfefe674f692e29ef9544dc54f14e1
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68225492"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68644242"
 ---
 # <a name="update-machine"></a>Makineyi güncelleştir 
 

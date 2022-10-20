@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 6b31f92a1ded98b61827536ef37754b1c33592f5
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 6e49d2bb04b7a9ec49929a9e01eb150bebe19e52
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68200219"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68642711"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>Desteklenen Uç Nokta için Microsoft Defender API'leri
 

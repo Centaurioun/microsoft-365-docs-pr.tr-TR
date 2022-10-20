@@ -12,17 +12,18 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-ms.topic: article
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.date: 04/24/2018
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 07db85f18bf680291a07ad40f31399025986d56b
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: b02097ddc1d19cc1428c58c46f70b05862516930
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711136"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646737"
 ---
 # <a name="investigate-domains-and-urls-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Uç Nokta için Microsoft Defender uyarısıyla ilişkili etki alanlarını ve URL'leri araştırma
 

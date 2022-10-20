@@ -13,18 +13,23 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
+ms.collection:
+- tier3
+- purview-compliance
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: Office 365 İleti Şifrelemesi'nin önceki sürümü Microsoft Azure Rights Management'a (önceki adıyla Windows Azure Active Directory Rights Management) bağlıdır.
-ms.openlocfilehash: 386056c282ea5f4ad996cc7ae7c50926436fe720
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 3c27ef38c73e4a1f3d325fc083e8e99f34b83157
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641372"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647771"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>İleti Şifrelemesi'nin önceki sürümü için Azure Rights Management'i ayarlama
 
 Bu konuda, Office 365 İleti Şifrelemesi'nin (OME) önceki sürümüyle kullanılmak üzere Azure Information Protection'nin bir parçası olan Azure Rights Management'ı (RMS) etkinleştirmek ve ayarlamak için izlemeniz gereken adımlar açıklanmaktadır.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="this-article-only-applies-to-the-previous-version-of-ome"></a>Bu makale yalnızca OME'nin önceki sürümü için geçerlidir
 

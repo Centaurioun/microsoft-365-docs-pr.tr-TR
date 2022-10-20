@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 ms.collection:
 - tier1
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 İş Ekstra'deki koruma özelliklerinin Intune ayarlarıyla nasıl eş olduğunu öğrenin. Abonelik, Intune ayarlarını değiştirmek için size bir lisans sağlar.
-ms.openlocfilehash: 185eda9e5b5e214716608d4232a0ea81c00d6b4b
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: c8e46dc763fdd7acdc079295c8e00ed111230480
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68096379"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68647419"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Microsoft 365 İş Ekstra koruma özellikleri Intune ayarlarıyla nasıl eşler?
 
@@ -55,11 +55,11 @@ Intune ayarını bulmak için Microsoft 365 İş Ekstra yönetici kimlik bilgile
 |Kullanıcıları, iş dosyalarını OneDrive İş'e kaydetmeye zorla  <br/> Yalnızca OneDrive İş'e izin verildiğini unutmayın  |Şirket verilerinin kaydedileceği depolama hizmetlerini seçin  |
 |İş dosyalarını şifrele  |Uygulama verilerini şifrele  |
 |**Kullanıcının mobil cihazlarda Office dosyalarına nasıl erişeceğini yönet** alanında ||
-|Office uygulamalarına erişirken PIN veya parmak izi iste  | Erişim için PIN iste  <br/>  Ayrıca şu ayarları da yapar:  <br/> **Basit PIN'e İzin Ver** için **Evet** <br/> **PIN Uzunluğu** için 4  <br/> **PIN yerine parmak izine izin ver** için **Evet** <br/> **Cihaz PIN'i yönetildiğinde uygulama PIN'ini devre dışı bırakma** için **Hayır** |
+|Microsoft 365 uygulamalarına erişmek için PIN veya parmak izi gerektirme  | Erişim için PIN iste  <br/>  Ayrıca şu ayarları da yapar:  <br/> **Basit PIN'e İzin Ver** için **Evet** <br/> **PIN Uzunluğu** için 4  <br/> **PIN yerine parmak izine izin ver** için **Evet** <br/> **Cihaz PIN'i yönetildiğinde uygulama PIN'ini devre dışı bırakma** için **Hayır** |
 |Oturum açma işlemi bu kadar çok başarısız olduğunda PIN'i sıfırla (PIN gerekli değilse bu devre dışı bırakılır)  |PIN sıfırlamadan önceki deneme sayısı  |
-|Office uygulamaları boşta kaldığında kullanıcıların yeniden oturum açmasını gerektir (PIN gerekli değilse bu devre dışı bırakılır)  | Şu sürenin ardından erişim gereksinimlerini yeniden denetle (dakika cinsinden)  <br/>  Ayrıca şu ayarları da yapar:  <br/> **Zaman aşımı** dakika sayısına ayarlanır  <br/>  Bu, Microsoft 365 İş içinde ayarladığınız dakika sayısıyla aynıdır.  <br/> **Çevrimdışı tanınan süre** değeri varsayılan olarak 720 dakikaya ayarlanır  |
+|Microsoft 365 uygulamaları boşta bırakıldıktan sonra kullanıcıların yeniden oturum açmasını gerektir (PIN gerekli değilse bu devre dışı bırakılır)  | Şu sürenin ardından erişim gereksinimlerini yeniden denetle (dakika cinsinden)  <br/>  Ayrıca şu ayarları da yapar:  <br/> **Zaman aşımı** dakika sayısına ayarlanır  <br/>  Bu, Microsoft 365 İş içinde ayarladığınız dakika sayısıyla aynıdır.  <br/> **Çevrimdışı tanınan süre** değeri varsayılan olarak 720 dakikaya ayarlanır  |
 |İşletim sistemi kısıtlamaları kaldırılmış veya kök erişim izni verilmiş cihazlardan iş dosyalarına erişilmesini engelle  |Yönetilen uygulamaların işletim sistemi kısıtlamaları kaldırılmış veya kök erişim izni verilmiş cihazlarda çalışmasını engelle  |
-|Kullanıcıların Office uygulamalarından kişisel uygulamalara içerik kopyalamasına izin ver  | Kesme, kopyalama ve yapıştırma işlemlerini diğer uygulamalarla kısıtlama  <br/>  Microsoft 365 İş Ekstra seçeneği **Açık** olarak ayarlanırsa, bu üç seçenek de **Intune'deki Tüm Uygulamalar** olarak ayarlanır:  <br/> **Uygulamanın diğer uygulamalara veri aktarmasına izin ver** <br/> **Uygulamanın diğer uygulamalardan veri almasına izin ver** <br/> **Diğer uygulamalarla kesme, kopyalama ve yapıştırmayı kısıtla** <br/>  Microsoft 365 İş seçeneği **Açık** olarak ayarlandıysa, tüm Intune seçenekleri şöyle ayarlanır:  <br/> **Uygulamanın diğer uygulamalara veri aktarmasına izin ver** seçeneği **İlke ile yönetilen uygulamalar** olarak ayarlanır <br/> **Uygulamanın diğer uygulamalardan veri almasına izin ver** seçeneği **Tüm Uygulamalar** olarak ayarlanır <br/> **Diğer uygulamalarla kesme, kopyalama ve yapıştırmayı kısıtla** seçeneği **İçine Yapıştırmayla İlke ile Yönetilen Uygulamalar** olarak ayarlanır |
+|Kullanıcıların Microsoft 365 uygulamalarından kişisel uygulamalara içerik kopyalamasına izin verme  | Diğer uygulamalarla kesme, kopyalama ve yapıştırmayı kısıtla  <br/>  Microsoft 365 İş Ekstra seçeneği **Açık** olarak ayarlanırsa, bu üç seçenek de **Intune'deki Tüm Uygulamalar** olarak ayarlanır:  <br/> **Uygulamanın diğer uygulamalara veri aktarmasına izin ver** <br/> **Uygulamanın diğer uygulamalardan veri almasına izin ver** <br/> **Diğer uygulamalarla kesme, kopyalama ve yapıştırmayı kısıtla** <br/>  Microsoft 365 İş seçeneği **Açık** olarak ayarlandıysa, tüm Intune seçenekleri şöyle ayarlanır:  <br/> **Uygulamanın diğer uygulamalara veri aktarmasına izin ver** seçeneği **İlke ile yönetilen uygulamalar** olarak ayarlanır <br/> **Uygulamanın diğer uygulamalardan veri almasına izin ver** seçeneği **Tüm Uygulamalar** olarak ayarlanır <br/> **Diğer uygulamalarla kesme, kopyalama ve yapıştırmayı kısıtla** seçeneği **İçine Yapıştırmayla İlke ile Yönetilen Uygulamalar** olarak ayarlanır |
    
 ## <a name="windows-10-app-protection-settings"></a>Windows 10 uygulama koruma ayarları
 

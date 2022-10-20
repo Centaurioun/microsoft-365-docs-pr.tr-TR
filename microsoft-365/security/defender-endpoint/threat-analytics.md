@@ -18,14 +18,14 @@ ms.collection:
 - m365-security
 - m365initiative-defender-endpoint
 - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: f5bf80e4bc58b089ebfadfadef5bceb64c557ddf
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 16e3269cd0b2106eb0a43aaf28f57e7ac32c41bf
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68225514"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68646099"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>Tehdit analizi aracılığıyla yeni ortaya çıkan tehditleri izleme ve yanıtlama
 

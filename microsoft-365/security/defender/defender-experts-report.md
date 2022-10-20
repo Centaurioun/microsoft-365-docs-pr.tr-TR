@@ -20,14 +20,14 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9a47884f4918359278b192c3314e5b2374d64f3f
-ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
+ms.openlocfilehash: 44c12c77e141490df39b774e3c3d5f399cb2310d
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68362848"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68645725"
 ---
 # <a name="understand-the-defender-experts-for-hunting-report-in-microsoft-365-defender"></a>Microsoft 365 Defender'da Avcılık için Defender Uzmanları raporunu anlama
 
@@ -37,7 +37,7 @@ ms.locfileid: "68362848"
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Microsoft Defender Uzmanlar, Microsoft 365 Defender müşterilerin karşılaştıkları önemli tehditleri anlamasına yardımcı olmak için insan zekasını ve uzman tarafından eğitilmiş teknolojiyi katmanlıyor. Defender Uzman'ın tehdit avcılığı becerileri, tehdit ortamının kapsamlı bir şekilde anlaşılması ve yeni ortaya çıkan tehditlerle ilgili bilgilerin ortamınızdaki bu tehditleri belirlemenize, önceliklendirmenize ve ele almanıza nasıl yardımcı olabileceğini gösterir. 
+Microsoft Tehdit Avcılığı için Defender Uzmanları, Microsoft 365 Defender müşterilerin karşılaştıkları önemli tehditleri anlamasına yardımcı olmak için insan zekasını ve uzman tarafından eğitilmiş teknolojiyi katmanlar. Defender Uzman'ın tehdit avcılığı becerileri, tehdit ortamının kapsamlı bir şekilde anlaşılması ve yeni ortaya çıkan tehditlerle ilgili bilgilerin ortamınızdaki bu tehditleri belirlemenize, önceliklendirmenize ve ele almanıza nasıl yardımcı olabileceğini gösterir. 
 
 Avcılık için Defender Uzmanları, Microsoft 365 Defender ürünleriniz tarafından oluşturulan uyarıların yanı sıra, ortamınızda ortaya çıkan tüm tehditleri anlamanıza yardımcı olmak için aylık raporlar yayımlar.
 
@@ -57,7 +57,7 @@ Raporun her bölümü, Defender Uzmanlarımızın ortamınızda bulduğu tehditl
 
 Örnek raporun aşağıdaki ekran görüntüsüne bakın:
 
-![Microsoft 365 Defender portalında Microsoft Defender Uzmanlar raporunun ekran görüntüsü.](../../media/mte/defenderexperts/defender-experts-report.png)
+![Microsoft 365 Defender portalındaki Microsoft Tehdit Avcılığı için Defender Uzmanları raporunun ekran görüntüsü.](../../media/mte/defenderexperts/defender-experts-report.png)
 
 ## <a name="view-defender-experts-notifications"></a>Defender Uzman Bildirimlerini Görüntüleme
 

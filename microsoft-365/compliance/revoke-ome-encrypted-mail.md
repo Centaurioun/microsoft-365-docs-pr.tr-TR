@@ -11,21 +11,21 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.date: 05/02/2022
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 description: Yönetici olarak ve ileti gönderen olarak, Microsoft Purview Gelişmiş İleti Şifrelemesi ile şifrelenen bazı e-postaları iptal edebilirsiniz.
-ms.openlocfilehash: b27ea41d1d91b825450d39ade96afdef04c0fdea
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 739165155817f3063bfb87aaae0bce7b3aa02931
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639434"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68643591"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Gelişmiş İleti Şifrelemesi ile şifrelenen e-postayı iptal etme
 
-E-posta iptali, Microsoft Purview Gelişmiş İleti Şifrelemesi'nin bir parçası olarak sunulur. Microsoft Purview Gelişmiş İleti Şifrelemesi [Microsoft 365 Kurumsal E5, Office 365 E5](https://www.microsoft.com/microsoft-365/enterprise/home), Microsoft 365 E5 (Kar Amacı Gütmeyen Personel Fiyatlandırması), Office 365 Kurumsal E5 (Kar Amacı Gütmeyen Personel Fiyatlandırması) ve Office 365 Eğitim A5. Gelişmiş İleti Şifrelemesi iptali ve süre sonu işlevlerini kullanmak için E5 lisansınızdaki **Office 365 Premium Şifreleme** seçeneğini etkinleştirin.
+Email iptal, Microsoft Purview Gelişmiş İleti Şifrelemesi'nin bir parçası olarak sunulur. Microsoft Purview Gelişmiş İleti Şifrelemesi [Microsoft 365 Kurumsal E5, Office 365 E5](https://www.microsoft.com/microsoft-365/enterprise/home), Microsoft 365 E5 (Kar Amacı Gütmeyen Personel Fiyatlandırması), Office 365 Kurumsal E5 (Kar Amacı Gütmeyen Personel Fiyatlandırması) ve Office 365 Eğitim A5. Gelişmiş İleti Şifrelemesi iptali ve süre sonu işlevlerini kullanmak için E5 lisansınızdaki **Office 365 Premium Şifreleme** seçeneğini etkinleştirin.
 
 Kuruluşunuzun Microsoft Purview Gelişmiş İleti Şifrelemesi içermeyen bir aboneliği varsa, Microsoft 365 E3, Microsoft 365 E3 (Kar Amacı Gütmeyen Personel Fiyatlandırması) için Microsoft 365 E5 Uyumluluk SKU eklentisiyle veya Microsoft 365 E3, Microsoft 365 E3 (Kar Amacı Gütmeyen Personel Fiyatlandırması) veya SKU'ları Office 365 için SKU eklentisini Office 365 Gelişmiş Uyumluluk.
 
@@ -36,6 +36,8 @@ Bir ileti Microsoft Purview Gelişmiş İleti Şifrelemesi kullanılarak şifrel
 > [!NOTE]
 > OME iletilerini izleme ve iptal etme özelliğinin kullanılabildiğini garanti etmek için özel bir markalama şablonu eklemeniz gerekir. Bkz. [Şifrelenmiş iletilerinize kuruluşunuzun markasını ekleme](add-your-organization-brand-to-encrypted-messages.md)
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="encrypted-emails-that-you-can-revoke"></a>İptal edebilirsiniz şifrelenmiş e-postalar
 
 Alıcı bağlantı tabanlı, markalı bir şifreli e-posta aldıysa yöneticiler ve ileti gönderenler şifrelenmiş e-postaları iptal edebilir. Alıcı desteklenen bir Outlook istemcisinde yerel bir satır içi deneyim aldıysa, iletiyi iptal yapamazsınız.

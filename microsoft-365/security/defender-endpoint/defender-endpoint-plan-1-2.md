@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 09/26/2022
+ms.date: 10/18/2022
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - m365-security
 - tier1
-ms.openlocfilehash: 2d627357f4242d74fbec8a7d6a15925f60a32f63
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 89d4865dfafede716077aa0f73e31a897383ad68
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180219"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68643239"
 ---
 # <a name="compare-microsoft-endpoint-security-plans"></a>Microsoft uç nokta güvenlik planlarını karşılaştırma
 
@@ -47,7 +47,7 @@ Aşağıdaki tabloda, Microsoft uç nokta güvenlik planlarına dahil edilenler 
 | Plan | Dahil olanlar |
 |:---|:---|
 | [Uç Nokta için Defender Plan 1](defender-endpoint-plan-1.md)  | <ul><li>[Yeni nesil koruma](defender-endpoint-plan-1.md#next-generation-protection) (kötü amaçlı yazılımdan koruma ve virüsten koruma içerir)</li><li>[Saldırı yüzeyini azaltma](defender-endpoint-plan-1.md#attack-surface-reduction)</li><li> [El ile yanıt eylemleri](defender-endpoint-plan-1.md#manual-response-actions)</li><li>[Merkezi yönetim](defender-endpoint-plan-1.md#centralized-management)</li><li>[Güvenlik raporları](defender-endpoint-plan-1.md#reporting)</li><li>[Apı 'leri](defender-endpoint-plan-1.md#apis)</li><li>[Windows 10, iOS, Android işletim sistemi ve macOS cihazları için destek](defender-endpoint-plan-1.md#cross-platform-support)</li></ul>|
-| [Uç Nokta için Defender Plan 2](microsoft-defender-endpoint.md)  | Uç Nokta için Defender Plan 1 özelliklerinin tümüne ek olarak:<ul><li>[cihaz keşfi](device-discovery.md)</li><li>[Cihaz envanteri](machines-view-overview.md)</li><li>[Core Defender Güvenlik Açığı Yönetimi özellikleri](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md)</li><li>[Tehdit Analizi](threat-analytics.md)</li><li>[Otomatik araştırma ve yanıt](automated-investigations.md)</li><li>[Gelişmiş avcılık örneği](advanced-hunting-overview.md)</li><li>[Uç nokta algılama ve yanıt](overview-endpoint-detection-response.md)</li><li>[Microsoft Tehdit Uzmanları](microsoft-threat-experts.md)</li><li>[Windows](configure-endpoints.md) (istemci ve sunucu) ve [Windows dışı platformlar](configure-endpoints-non-windows.md) (macOS, iOS, Android ve Linux) desteği</li></ul> |
+| [Uç Nokta için Defender Plan 2](microsoft-defender-endpoint.md)  | Uç Nokta için Defender Plan 1 özelliklerinin tümüne ek olarak:<ul><li>[cihaz keşfi](device-discovery.md)</li><li>[Cihaz envanteri](machines-view-overview.md)</li><li>[Core Defender Güvenlik Açığı Yönetimi özellikleri](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md)</li><li>[Tehdit Analizi](threat-analytics.md)</li><li>[Otomatik araştırma ve yanıt](automated-investigations.md)</li><li>[Gelişmiş avcılık örneği](advanced-hunting-overview.md)</li><li>[Uç nokta algılama ve yanıt](overview-endpoint-detection-response.md)</li><li>[Microsoft Tehdit Uzmanları](microsoft-threat-experts.md)</li><li>[Windows](configure-endpoints.md) (yalnızca istemci) ve [Windows dışı platformlar](configure-endpoints-non-windows.md) (macOS, iOS, Android ve Linux) desteği</li></ul> |
 | [Defender Güvenlik Açığı Yönetimi eklentisi](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md) | Uç Nokta Için Defender Plan 2 için diğer Defender Güvenlik Açığı Yönetimi özellikleri:<ul><li>[Güvenlik temelleri değerlendirmesi](../defender-vulnerability-management/tvm-security-baselines.md)</li><li>[Güvenlik açığı bulunan uygulamaları engelleyin](../defender-vulnerability-management/tvm-block-vuln-apps.md)</li><li>[Tarayıcı uzantıları](../defender-vulnerability-management/tvm-browser-extensions.md)</li><li>[Dijital sertifika değerlendirmesi](../defender-vulnerability-management/tvm-certificate-inventory.md)</li><li>[Ağ paylaşımı analizi](../defender-vulnerability-management/tvm-network-share-assessment.md)</li><li>[Windows](configure-endpoints.md) (istemci ve sunucu) ve [Windows dışı platformlar](configure-endpoints-non-windows.md) (macOS, iOS, Android ve Linux) desteği</li></ul> |
 | [İş için Defender](../defender-business/mdb-overview.md) <sup>[[1](#fn1)]</sup>  | [Küçük ve orta ölçekli işletmeler için iyileştirilmiş hizmetler](../defender-business/compare-mdb-m365-plans.md) şunlardır: <ul><li>Email koruması</li><li>Antispam koruması</li><li>Kötü amaçlı yazılımdan koruma</li><li>Yeni nesil koruma</li><li>Saldırı yüzeyini azaltma</li><li>Uç nokta algılama ve yanıt</li><li>Otomatik araştırma ve yanıt </li><li>Güvenlik açığı yönetimi</li><li>Merkezi raporlama</li><li>API'ler (özel uygulamalar veya raporlama çözümleriyle tümleştirme için)</li><li>[Microsoft 365 Lighthouse ile tümleştirme](../defender-business/mdb-lighthouse-integration.md)</li></ul> |
 
