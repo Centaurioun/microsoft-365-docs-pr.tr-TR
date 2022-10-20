@@ -1,5 +1,6 @@
 ---
-title: Bir inceleme setinden belgeleri dışa aktarma
+title: Belgeleri eBulma'daki bir gözden geçirme kümesinden dışarı aktarma (Premium)
+description: Sunular veya dış incelemeler için bir eBulma (Premium) gözden geçirme kümesinden içerik seçmeyi ve dışarı aktarmayı öğrenin.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,19 +11,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
-description: Sunular veya dış incelemeler için bir eBulma (Premium) gözden geçirme kümesinden içerik seçmeyi ve dışarı aktarmayı öğrenin.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 59adbdd86eedb7cb06e3ea9e2a43af848f2fb872
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 5ff08e00966a81e936b8960e51af462dbbb362e9
+ms.sourcegitcommit: cf3811117bf20cdd27c43390cb2f10c6afc525c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67826741"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68648411"
 ---
 # <a name="export-documents-from-a-review-set-in-ediscovery-premium"></a>Belgeleri eBulma'daki bir gözden geçirme kümesinden dışarı aktarma (Premium)
 
@@ -32,16 +34,18 @@ Gözden geçirme kümesindeki belgeleri dışarı aktarmak için:
 
 1. Microsoft Purview uyumluluk portalı, eBulma (Premium) servis talebini açın, **Gözden geçirme kümeleri** sekmesini seçin ve ardından dışarı aktarmak istediğiniz gözden geçirme kümesini seçin.
 
-2. Gözden geçirme kümesinde **Eylem** > **Dışarı Aktar'a** tıklayın.
+2. Gözden geçirme kümesinde **Dışarı Aktarma Eylemi'ni** >  seçin.
 
    Dışarı Aktarma aracı, dışarı aktarmayı yapılandırma ayarlarıyla birlikte açılır sayfayı görüntüler. Bazı seçenekler varsayılan olarak seçilidir, ancak bunları değiştirebilirsiniz. Yapılandırabileceğiniz dışarı aktarma seçeneklerinin açıklamaları için aşağıdaki bölüme bakın.
 
-   ![Gözden geçirme kümesindeki öğeleri dışarı aktarmak için yapılandırma seçenekleri.](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
+   ![Gözden geçirme kümesindeki öğeleri dışarı aktarmak için yapılandırma seçenekleri.](../media/ediscovery-review-set-export-options.png)
 
-3. Dışarı aktarmayı yapılandırdıktan sonra dışarı aktarma işlemini başlatmak için **Dışarı Aktar'a** tıklayın. **Çıkış seçenekleri** bölümünde seçtiğiniz seçeneğe bağlı olarak, dışarı aktarma dosyalarına doğrudan indirme yoluyla veya kuruluşunuzun Azure Depolama hesabından erişebilirsiniz.
+3. Dışarı aktarmayı yapılandırdıktan sonra dışarı aktarma işlemini başlatmak için **Dışarı Aktar'ı** seçin. **Çıkış seçenekleri** bölümünde seçtiğiniz seçeneğe bağlı olarak, dışarı aktarma dosyalarına doğrudan indirme yoluyla veya kuruluşunuzun Azure Depolama hesabından erişebilirsiniz.
 
 > [!NOTE]
 > Dışarı aktarma işleri, servis talebinin ömrü boyunca saklanır. Ancak, dışarı aktarma işi tamamlandıktan sonraki 30 gün içinde bir dışarı aktarma işinden içeriği indirmeniz gerekir.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="export-options"></a>Dışarı aktarma seçenekleri
 
@@ -76,8 +80,6 @@ Dışarı aktarmayı yapılandırmak için aşağıdaki seçenekleri kullanın. 
   - Metin dosyaları: Bu seçenek, dışarı aktarma işlemindeki yerel dosyaların ayıklanan metin sürümlerini içerir.
   
   - Yeniden düzenlenen yerel dosyaları dönüştürülen PDF'lerle değiştirin: Gözden geçirme sırasında yeniden düzenlenen PDF dosyaları oluşturulursa, bu dosyalar dışarı aktarma için kullanılabilir. Yalnızca yeniden işlem yapılmış yerel dosyaları dışarı aktarmayı seçebilir (bu seçeneği belirtmeyerek) veya gerçek redaksiyonları içeren PDF dosyalarını dışarı aktarmak için bu seçeneği belirleyebilirsiniz.
-
-  - Tek tek sohbet iletileri yerine konuşma PDF'leri: Sohbet konuşmalarını PDF dosyasında dışarı aktarmak için bu onay kutusunu seçin. Aynı konuşmadaki tüm sohbet iletileri aynı PDF dosyasında dışarı aktarılır. Bu onay kutusunu seçili olarak bırakırsanız, sohbet konuşmasında yer alan her benzersiz ileti tek başına bir öğe olarak dışarı aktarılır. Dosya, posta kutusuna kaydedildiği biçimde dışarı aktarılır. Belirli bir konuşma için birden çok .msg dosyası alırsınız.
 
 Aşağıdaki bölümlerde gevşek dosyalar için klasör yapısı ve sıkıştırılmış dizin yapısı seçenekleri açıklanmaktadır. Dışarı aktarmalar, sıkıştırılmamış içerik boyutu üst sınırı 75 GB olan ZIP dosyalarına bölümlenir. Dışarı aktarma boyutu 75 GB'tan küçükse, dışarı aktarma işlemi bir özet dosyadan ve tek bir ZIP dosyasından oluşur. 75 GB'tan büyük sıkıştırılmamış veri dışarı aktarma işlemleri için birden çok ZIP dosyası oluşturulur. İndirildikten sonra, zip dosyaları tek bir konuma sıkıştırılabilir ve tam dışarı aktarmayı yeniden oluşturabilir.
 

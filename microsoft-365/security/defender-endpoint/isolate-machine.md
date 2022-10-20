@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: ea7c171a3c9c8f050b647b753addeee404a3bf94
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 96a03ae7664a1332ce29a1ead574c5caba18b524
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68222148"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68631600"
 ---
 # <a name="isolate-machine-api"></a>Makine API'lerini yalıtma
 
