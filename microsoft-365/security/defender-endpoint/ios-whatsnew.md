@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: e7b7117703fccd95c40f2ec6ec979cca526d6319
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: da1e100386680e6ea870e78f89524408ba823ede
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68221202"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627356"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS'ta Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -45,7 +45,7 @@ Uç Nokta için Microsoft Defender'da Ağ Koruması artık genel önizleme aşam
 
 Özelliği Microsoft Endpoint Manager Yönetici merkezinden yapılandırma gibi esneklik sunmak için çeşitli yönetici denetimleri içerir. Yöneticiler, iOS cihazlarından Uç Nokta için Defender tarafından gönderilen verileri yapılandırmak için gizlilik denetimlerini de etkinleştirebilir. Daha fazla bilgi için [Bkz. Ağ Korumasını Yapılandırma](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-network-protection).
 
-iOS için ağ koruması kiracınız için zaten etkin. Ağ koruması özelliğini test eden son kullanıcılar TestFlight aracılığıyla uygulamanın önizleme sürümünü yükleyebilir. https://aka.ms/mdeiospp iOS cihazında adresine gidin. Bu, cihazınıza TestFlight uygulamasını yüklemenizi veya zaten yüklü olması durumunda TestFlight'ı açmanızı ister. TestFlight uygulamasında, Microsoft Defender Uç Noktasını yüklemek için ekrandaki yönergeleri izleyin. Lütfen MDE sürüm numarasının 1.1.29270104 olduğunu doğrulayın.
+iOS için ağ koruması kiracınız için zaten etkin. Ağ koruması özelliğini test eden son kullanıcılar TestFlight aracılığıyla uygulamanın önizleme sürümünü yükleyebilir. https://aka.ms/mdeiospp iOS cihazında adresine gidin. Bu, cihazınıza TestFlight uygulamasını yüklemenizi veya zaten yüklü olması durumunda TestFlight'ı açmanızı ister. TestFlight uygulamasında, Microsoft Defender Uç Noktasını yüklemek için ekrandaki yönergeleri izleyin. Lütfen MDE sürüm numarasının 1.1.33070102 olduğunu doğrulayın.
 
 ## <a name="privacy-controls"></a>Gizlilik Denetimleri
 

@@ -26,18 +26,19 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 İş Temel aboneliğine kaydolmayı öğrenin.
-ms.openlocfilehash: 6b21646cf04d22133fd0cf90b3ae7813bf715156
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: c00ddf1c1c4a3d732c3e15ce29574bc5762e877b
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68197007"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68624807"
 ---
 # <a name="sign-up-for-microsoft-365-business-basic"></a>Microsoft 365 İş Temel için kaydolun
 
 Microsoft 365 İş Temel kaydolmak ister misiniz?
 
 Başlamanın birkaç yolu vardır:
+
 - **Microsoft 365 İş Temel [satın alın](https://go.microsoft.com/fwlink/?linkid=2181424) ve kurulumu tamamlayın**. [Satın alma hakkında bilgi için aşağıdaki adımları izleyin](#sign-up-steps).
 - **Microsoft iş ortakları için**: **Burada bir bağlantımız var mı?**
 
@@ -45,7 +46,7 @@ Başlamanın birkaç yolu vardır:
 
 - İş için satın almıyorsanız [bir ev veya aile planına kaydolun](https://go.microsoft.com/fwlink/?linkid=2109398).
 
-> [!Note]
+> [!NOTE]
 > Microsoft 365 İş Temel aboneliği ticari kullanıma yöneliktir ve iş müşterilerine yöneliktir.
 
 ## <a name="sign-up-steps"></a>Kaydolma adımları
@@ -59,8 +60,8 @@ Microsoft 365 İş Temel aboneliği satın almak ve kaydolmak için aşağıdaki
 2. **Microsoft 365 İş Temel seçtiğiniz için teşekkür ederiz** sayfasında, zaten kullandığınız bir e-posta adresi girin. Bu, Microsoft'un kurulum sırasında sizinle iletişim kurmak için kullanmasını istediğiniz herhangi bir adres olabilir. Ayrıca faturanız ve yenilemeleriniz hakkında size bilgi göndereceğimiz adrestir. **İleri**'yi seçin.
 3. **Hesabı ayarla'yı** seçin ve adınızı, iş telefon numaranızı, iş boyutunuzu, şirket adınızı ve konumunuzu girin. **İleri**'yi seçin.
 
-> [!NOTE]
-> Şirketinizin adını Microsoft 365 yönetim merkezi görüntülüyoruz. Burası kullanıcıları, lisansları ve diğer özellikleri ve hizmetleri yönettiğiniz yerdir. Ayrıca tüm iç SharePoint sitesi URL'lerine de ekleriz.
+   > [!NOTE]
+   > Şirketinizin adını Microsoft 365 yönetim merkezi görüntülüyoruz. Burası kullanıcıları, lisansları ve diğer özellikleri ve hizmetleri yönettiğiniz yerdir. Ayrıca tüm iç SharePoint sitesi URL'lerine de ekleriz.
 
 4. Bunun siz olduğunuzdan emin olmamıza yardımcı olun. Size ulaşmak için kullanabileceğimiz bir numara girin ve **Doğrulama Kodu Gönder'i** seçin. Bir mesaj alırsınız. Kodunuzu girin ve **Doğrula'yı** seçin.
 
@@ -68,7 +69,7 @@ Microsoft 365 İş Temel aboneliği satın almak ve kaydolmak için aşağıdaki
 
 6. Kuruluşunuz için kaç tane iş lisansı istediğinizi seçin ve **Ödeme yöntemi ekle'yi** seçin ve **Sipariş ver** için ödeme işlemine devam edin.
 
-3. **Onay ayrıntıları** sayfasında, aboneliğiniz hakkında daha fazla bilgi vereceğiz. Artık kullanıcıları eklemek, Office uygulamalarını yüklemek, ekibinizi Microsoft 365 ve daha fazlasını kullanmaya davet etmek için Microsoft 365 yönetim merkezi gidebilirsiniz. Ayrıca kurulum adımlarını içeren bir e-posta da göndereceğiz.
+7. **Onay ayrıntıları** sayfasında, aboneliğiniz hakkında daha fazla bilgi vereceğiz. Artık kullanıcıları eklemek, Office uygulamalarını yüklemek, ekibinizi Microsoft 365 ve daha fazlasını kullanmaya davet etmek için Microsoft 365 yönetim merkezi gidebilirsiniz. Ayrıca kurulum adımlarını içeren bir e-posta da göndereceğiz.
 
 Microsoft Business Basic aboneliğinizi [ayarlamayı tamamlamak](setup-apps-for-business.md) için bu adımları izleyin. Hazır olduğunuzda [bir etki alanı da ekleyebilirsiniz](../setup/add-domain.md) .
 
@@ -84,11 +85,11 @@ Microsoft 365 İş Temel kaydolduğunda, kullanmaya başlamak için 2 seçeneği
 
 Aşağıdaki tabloda her seçim özetlenmiştir.
 
-||**Seçenek 1** – Outlook, Hotmail, Yahoo, Gmail veya diğer e-posta hesabıyla [oturum açma (Basitleştirilmiş Kaydolma)](#terms-of-service-update-for-simplified-sign-up-mode)|**Seçenek 2** – İş etki alanı ekleme ve yeni bir iş e-posta hesabı oluşturma |
-|:-----|:-----|:-----|
-|Kullanılabilir uygulamalar ve hizmetler  <br/> |Web için Word, Web için Excel, Web için PowerPoint, Web için Teams ve Web için Access kullanın. OneDrive ve SharePoint masaüstü uygulaması dahildir. Bu uygulama kümesi, markalı e-postaya hemen ihtiyaç duymayan veya zaten farklı bir sağlayıcıdan markalı e-posta kullanan ve Microsoft Exchange'i kullanmaya geçmeye niyetli olmayan çok küçük işletmeler için en iyisidir.  Outlook'u var olan e-posta hesabınızla (outlook.com, Hotmail, Yahoo, Gmail veya diğer) kullanacaksınız.  <br/> |Web için Word, Web için Excel, Web için PowerPoint, Web için Teams ve Web için Access kullanın. OneDrive ve SharePoint masaüstü uygulaması dahildir. Seçenek 2 ile Microsoft 365 İş Temel ayrıca çok çeşitli ek hizmetlere erişmenizi sağlar: Outlook ile yeni, markalı iş e-posta hesapları, işletmenizdeki paylaşılan takvimler, Bookings randevu zamanlaması ve Toplantı kayıtları. Paylaşılan belge depolama ve SharePoint siteleri, Microsoft Planner ve Microsoft Listeler, Microsoft 365 İş Temel ve İş için Microsoft 365 Uygulamaları Seçenek 2 ile ek hizmetler sunar. İşletmenizde daha kolay belge paylaşımı, sektörünüz için uyumluluk gereksinimleri için destek, Çalışanlarınızın hizmet kullanımına erişim ve denetim ve Teams ve Office'te çalışan Microsoft dışı uygulamaların (örneğin Salesforce, Adobe) en geniş tümleştirme yelpazesi üzerinde denetim. <br/> |
-|Gerekli bilgi  <br/> |Teknik bilgi olmadan çalışmaya başlamanıza olanak tanıyalım.  <br/> |Etki alanı satın almanız veya bir etki alanına sahip olmanız gerekir.  Etki alanının sahipliğini kanıtlamak için teknik bilgiye ihtiyacınız olabilir. <br/> |
-|Veri işleme  <br/> |[Microsoft Hizmet Sözleşmesi](https://go.microsoft.com/fwlink/p/?linkid=2180702) Eki kapsamında sağlanır ve bazı uzaktan çalışma ve işbirliği araçları isteyen işletmeler için en iyisidir ve Microsoft [Gizlilik Bildirimi](https://go.microsoft.com/fwlink/?LinkId=521839) kapsamında verileriniz için denetleyici olarak hareket etme konusunda Microsoft'un rahat olmasını sağlar. Bu seçeneği kullanan hizmetlere aboneler, bir etki alanı eklenene kadar bir kişinin kullanıcı içeriğine veya verilerine erişmeyecektir. Aboneler, veri sahipliğini ve fikri mülkiyet haklarıyla ilgili dikkate alınacak noktaları ihtiyaçlarına göre değerlendirmelidir. Örneğin, hesaplarında depolanan bir belge üzerinde diğer kullanıcılarla işbirliği içinde çalışıyorsanız, bu belgelere sizin için erişilemez hale gelebilirler. Bu nedenle, veri sahipliğini ve fikri mülkiyet hakları konularını buna göre değerlendirmeniz gerekir.  Ayrıca, siz davet ettikten sonra bile kullanıcılar Basitleştirilmiş Sign-Up hesaplarındaki belgeleri Etki Alanı Hesabı aboneliğinize aktarmamayı tercih edebilir. Bu, daha sonra bir etki alanı hesabı ekleseniz bile belgelerine erişemeyebilir  <br/> |[Microsoft Çevrimiçi Abonelik Sözleşmesi](https://go.microsoft.com/fwlink/p/?linkid=2180430) kapsamında kullanılabilir ve Microsoft'un [Veri Koruma Eki](https://go.microsoft.com/fwlink/p/?linkid=2180314) kapsamında verileri için işlemci olarak davranması gereken ve tam kapsamlı uzaktan çalışma ve işbirliği araçları paketimize ihtiyacı olan işletmeler için en iyisidir. Hem çalışanlarınız tarafından hizmetlerin kullanımı hem de Microsoft tarafından ilgili verilerin işlenmesi üzerinde düzenlenmiş sektörlerde bulunan veya daha fazla denetim arayan aboneler Seçenek 2'yi seçmeli ve etki alanı eklemeli ve Etki Alanı Hesabı kurumsal düzey sözleşmesi kapsamında kaydolmalıdır. <br/> |
+|&nbsp;|**Seçenek 1** – Outlook, Hotmail, Yahoo, Gmail veya diğer e-posta hesabıyla [oturum açma (Basitleştirilmiş Kaydolma)](#terms-of-service-update-for-simplified-sign-up-mode)|**Seçenek 2** – İş etki alanı ekleme ve yeni bir iş e-posta hesabı oluşturma |
+|---|---|---|
+|Kullanılabilir uygulamalar ve hizmetler|Web için Word, Web için Excel, Web için PowerPoint, Web için Teams ve Web için Access kullanın. OneDrive ve SharePoint masaüstü uygulaması dahildir. Bu uygulama kümesi, markalı e-postaya hemen ihtiyaç duymayan veya zaten farklı bir sağlayıcıdan markalı e-posta kullanan ve Microsoft Exchange'i kullanmaya geçmeye niyetli olmayan çok küçük işletmeler için en iyisidir. Outlook'u var olan e-posta hesabınızla (outlook.com, Hotmail, Yahoo, Gmail veya diğer) kullanacaksınız.|Web için Word, Web için Excel, Web için PowerPoint, Web için Teams ve Web için Access kullanın. OneDrive ve SharePoint masaüstü uygulaması dahildir. Seçenek 2 ile Microsoft 365 İş Temel ayrıca çok çeşitli ek hizmetlere erişmenizi sağlar: Outlook ile yeni, markalı iş e-posta hesapları, işletmenizdeki paylaşılan takvimler, Bookings randevu zamanlaması ve Toplantı kayıtları. Paylaşılan belge depolama ve SharePoint siteleri, Microsoft Planner ve Microsoft Listeler, Microsoft 365 İş Temel ve İş için Microsoft 365 Uygulamaları Seçenek 2 ile ek hizmetler sunar. İşletmenizde daha kolay belge paylaşımı, sektörünüz için uyumluluk gereksinimleri için destek, Çalışanlarınızın hizmet kullanımına erişim ve denetim ve Teams ve Office'te çalışan Microsoft dışı uygulamaların (örneğin Salesforce, Adobe) en geniş tümleştirme yelpazesi üzerinde denetim.|
+|Gerekli bilgi|Teknik bilgi olmadan çalışmaya başlamanıza olanak tanıyalım.|Etki alanı satın almanız veya bir etki alanına sahip olmanız gerekir. Etki alanının sahipliğini kanıtlamak için teknik bilgiye ihtiyacınız olabilir.|
+|Veri işleme|[Microsoft Hizmet Sözleşmesi](https://go.microsoft.com/fwlink/p/?linkid=2180702) Eki kapsamında sağlanır ve bazı uzaktan çalışma ve işbirliği araçları isteyen işletmeler için en iyisidir ve Microsoft [Gizlilik Bildirimi](https://go.microsoft.com/fwlink/?LinkId=521839) kapsamında verileriniz için denetleyici olarak hareket etme konusunda Microsoft'un rahat olmasını sağlar. Bu seçeneği kullanan hizmetlere aboneler, bir etki alanı eklenene kadar bir kişinin kullanıcı içeriğine veya verilerine erişmeyecektir. Aboneler, veri sahipliğini ve fikri mülkiyet haklarıyla ilgili dikkate alınacak noktaları ihtiyaçlarına göre değerlendirmelidir. Örneğin, hesaplarında depolanan bir belge üzerinde diğer kullanıcılarla işbirliği içinde çalışıyorsanız, bu belgelere sizin için erişilemez hale gelebilirler. Bu nedenle, veri sahipliğini ve fikri mülkiyet hakları konularını buna göre değerlendirmeniz gerekir. Ayrıca, siz davet ettikten sonra bile kullanıcılar Basitleştirilmiş Sign-Up hesaplarındaki belgeleri Etki Alanı Hesabı aboneliğinize aktarmamayı tercih edebilir. Bu, daha sonra bir etki alanı hesabı ekleseniz bile belgelerine erişemeyebilir|[Microsoft Çevrimiçi Abonelik Sözleşmesi](https://go.microsoft.com/fwlink/p/?linkid=2180430) kapsamında kullanılabilir ve Microsoft'un [Veri Koruma Eki](https://go.microsoft.com/fwlink/p/?linkid=2180314) kapsamında verileri için işlemci olarak davranması gereken ve tam kapsamlı uzaktan çalışma ve işbirliği araçları paketimize ihtiyacı olan işletmeler için en iyisidir. Hem çalışanlarınız tarafından hizmetlerin kullanımı hem de Microsoft tarafından ilgili verilerin işlenmesi üzerinde düzenlenmiş sektörlerde bulunan veya daha fazla denetim arayan aboneler Seçenek 2'yi seçmeli ve etki alanı eklemeli ve Etki Alanı Hesabı kurumsal düzey sözleşmesi kapsamında kaydolmalıdır.|
 
 İş gereksinimleriniz için en uygun iki seçeneği belirlemek için bu üç faktörü kullanın.
 
@@ -104,7 +105,7 @@ Bu e-posta adresiyle Microsoft 365'te oturum açacaksınız. Örneğin, alliebel
 
 3. **Onay ayrıntıları** sayfasında, aboneliğiniz hakkında daha fazla bilgi vereceğiz. Artık kullanıcıları eklemek, Office uygulamalarını yüklemek, ekibinizi Microsoft 365 ve daha fazlasını kullanmaya davet etmek için Microsoft 365 yönetim merkezi gidebilirsiniz. Ayrıca Microsoft 365 İş Temel için ayarlama adımlarını içeren bir e-posta da göndereceğiz.
 
-Bu seçeneğin markalı e-posta, hizmetlerin diğer kullanıcılar tarafından kullanılması için yönetici denetimi veya sektöre özgü uyumluluk desteği sağlamadığını unutmayın.  Aboneler, bu seçenek kapsamında diğer kullanıcıların (çalışanlar) kullanımı veya belgeleri üzerinde herhangi bir erişime veya denetime sahip değildir. Kullanıcılar, 2. seçeneği hemen seçmediğiniz sürece OneDrive/Teams gibi depolama alanında oluşturulan verileri yükseltilmiş, kurumsal düzeydeki etki alanı hesabınıza aktarmamayı tercih edebilir.
+Bu seçeneğin markalı e-posta, hizmetlerin diğer kullanıcılar tarafından kullanılması için yönetici denetimi veya sektöre özgü uyumluluk desteği sağlamadığını unutmayın. Aboneler, bu seçenek kapsamında diğer kullanıcıların (çalışanlar) kullanımı veya belgeleri üzerinde herhangi bir erişime veya denetime sahip değildir. Kullanıcılar, 2. seçeneği hemen seçmediğiniz sürece OneDrive/Teams gibi depolama alanında oluşturulan verileri yükseltilmiş, kurumsal düzeydeki etki alanı hesabınıza aktarmamayı tercih edebilir.
 
 <!--This option isn't recommended for larger businesses, including specialty industries such as healthcare or legal.-->
 
@@ -129,7 +130,7 @@ Ekim 2021'de iş etki alanı eklemeden bir iş aboneliği satın almak için dah
 
 Basitleştirilmiş Kaydolma kullanım koşulları kısa süre önce güncelleştirilmiştir ve özellikle çok kullanıcılı iş abonelikleri için lisanslama ve veri sahipliğini netleştirir. İş aboneliğinizin devamı için [Microsoft 365 yönetim Merkezi'ni](https://go.microsoft.com/fwlink/?linkid=2024339) ziyaret edebilir ve **Basitleştirilmiş Kaydolma'yı** kullanmaya devam edebilir (ve Microsoft Hizmet Sözleşmesi Eki'ni kullanmayı kabul edebilir) veya [Microsoft 365 yönetim Merkezi'ni](https://go.microsoft.com/fwlink/?linkid=2024339) ziyaret edip bir **iş etki alanı** ekleyebilir (ve Microsoft Çevrimiçi Hizmet Sözleşmesi'ni kullanabilirsiniz). Bu iki moddan hangilerinin ihtiyaçlarınıza en uygun olduğunu seçmenize yardımcı olmak için bu makalenin üst kısmındaki tabloya bakın.
 
-Basitleştirilmiş Kaydolma için güncelleştirilmiş koşulları kabul etmemeyi veya bir iş etki alanı eklememeyi seçerseniz, aboneliğiniz otomatik olarak yenilenmez ve geçerli abonelik sözleşmenizin sonunda Office uygulamalarına erişiminizi kaybedersiniz.  OneDrive verileriniz, kopyalarını oluşturmanız için 90 gün boyunca saklanır ve ardından silinir.
+Basitleştirilmiş Kaydolma için güncelleştirilmiş koşulları kabul etmemeyi veya bir iş etki alanı eklememeyi seçerseniz, aboneliğiniz otomatik olarak yenilenmez ve geçerli abonelik sözleşmenizin sonunda Office uygulamalarına erişiminizi kaybedersiniz. OneDrive verileriniz, kopyalarını oluşturmanız için 90 gün boyunca saklanır ve ardından silinir.
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 
@@ -147,7 +148,7 @@ Basitleştirilmiş Kaydolma için güncelleştirilmiş koşulları kabul etmemey
 
 ### <a name="why-might-i-need-to-verify-my-domain-to-create-a-business-email"></a>İş e-postası oluşturmak için neden etki alanımı doğrulamam gerekebilir?
 
-Zaten sahip olduğunuz bir etki alanını kullanmayı seçerseniz, Bu etki alanını Microsoft 365 ile e-posta adresiniz için kullanabilirsiniz. Kaydolma işleminin bir parçası olarak, Microsoft 365 aracılığıyla e-posta gönderebilmeniz için etki alanını doğrulamanızı istiyoruz.  Bu, bu kimliğe sahip e-posta gönderen etki alanının sahibi olduğunuzu onaylar ve bu da güvenliği artırır ve sahte etkinlikleri önler.
+Zaten sahip olduğunuz bir etki alanını kullanmayı seçerseniz, Bu etki alanını Microsoft 365 ile e-posta adresiniz için kullanabilirsiniz. Kaydolma işleminin bir parçası olarak, Microsoft 365 aracılığıyla e-posta gönderebilmeniz için etki alanını doğrulamanızı istiyoruz. Bu, bu kimliğe sahip e-posta gönderen etki alanının sahibi olduğunuzu onaylar ve bu da güvenliği artırır ve sahte etkinlikleri önler.
 
 ### <a name="is-there-a-benefit-to-paying-monthly-vs-annually"></a>Aylık ve yıllık ödemenin bir avantajı var mı?
 
@@ -168,4 +169,3 @@ Yinelenen faturalama açık olduğunda aboneliğiniz her yıl abone olduğunuz g
 ## <a name="set-up-microsoft-365-business-basic"></a>Microsoft 365 İş Temel’i ayarlama
 
 Etki alanı satın alma veya ekleme adımları için bkz. [Yeni veya var olan bir etki alanıyla Microsoft 365 İş Temel ayarlama](../setup/setup-business-basic.md).
-

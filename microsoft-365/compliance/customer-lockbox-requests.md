@@ -7,23 +7,24 @@ author: kccross
 manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- tier1
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.custom: admindeeplinkMAC
 description: Microsoft destek mühendisinin bir sorunla karşılaştığınızda verilerinize nasıl erişebileceğini denetlemenize olanak sağlayan Müşteri Kasası istekleri hakkında bilgi edinin.
-ms.openlocfilehash: 7094de30722c4419e3c1c33d0c06f2cdb6d37290
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 8e1edd826f3e0b77d6bd0c65521acc68c0f63821
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642184"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68627619"
 ---
 # <a name="microsoft-purview-customer-lockbox"></a>Microsoft Purview Müşteri Kasası
 
@@ -34,6 +35,8 @@ Kullanıcılarınızın Microsoft Purview tekliflerinden yararlanması için lis
 Müşteri Kasası, Microsoft'un açık onayınız olmadan hizmet işlemleri yapmak için içeriğinize erişememesini sağlar. Müşteri Kasası sizi Microsoft'un yalnızca yetkili isteklerin içeriğinize erişim izni vermek için kullandığı onay iş akışı sürecine getirir. Microsoft'un iş akışı süreci hakkında daha fazla bilgi edinmek için bkz [. Ayrıcalıklı erişim yönetimi](privileged-access-management-solution-overview.md).
 
 Microsoft mühendisleri bazen hizmette ortaya çıkan sorunları gidermeye ve düzeltmeye yardımcı olur. Mühendisler genellikle Microsoft'un hizmetleri için kullandığı kapsamlı telemetri ve hata ayıklama araçlarını kullanarak sorunları çözer. Ancak bazı durumlarda, kök nedeni belirlemek ve sorunu çözmek için bir Microsoft mühendisinin içeriğinize erişmesi gerekir. Müşteri Kasası, mühendisin onay iş akışının son adımı olarak sizden erişim istemesini gerektirir. Bu, kuruluşunuz için isteği onaylama veya reddetme ve içeriğinize doğrudan erişim denetimi sağlama seçeneği sunar.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="customer-lockbox-overview-video"></a>Müşteri Kasasına genel bakış videosu
 
@@ -221,7 +224,7 @@ Müşteri Kasası Microsoft 365 veya Office 365 E5 aboneliklerine dahildir ve In
 
 Müşteri içeriği, Microsoft 365 hizmetlerinin ve uygulamalarının kullanıcıları tarafından oluşturulan verilerdir. Müşteri içeriğine örnek olarak şunlar verilebilir:
 
-- E-posta gövdesi veya e-posta ekleri
+- Gövde veya e-posta eklerini Email
 
 - SharePoint site içeriği
 
