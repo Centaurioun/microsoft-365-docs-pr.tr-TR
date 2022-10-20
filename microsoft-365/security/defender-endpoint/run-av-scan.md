@@ -14,16 +14,16 @@ audience: ITPro
 mms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 54f2c0941edeb7db8e0d2dd36f02145895673230
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 7a853b9d9446c3ab88622412ad384ab19c22e4d5
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68223078"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68635212"
 ---
 # <a name="run-antivirus-scan-api"></a>Virüsten koruma tarama API'si çalıştırma
 

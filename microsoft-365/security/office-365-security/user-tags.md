@@ -17,12 +17,12 @@ ms.custom: ''
 description: Yöneticiler, Office 365 için Microsoft Defender Plan 2'de kullanıcı etiketleri olan belirli kullanıcı gruplarını tanımlamayı öğrenebilir. Etiket filtreleme, etiketlenen kullanıcıları hızlı bir şekilde tanımlamak için Office 365 için Microsoft Defender uyarılarda, raporlarda ve araştırmalarda kullanılabilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 28e1df8bd94cb9829bc8c68e6f13e376cf54126c
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: d6a3a2ca0fbb0a7297ce8d53e73ea4be37359036
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68066354"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639982"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender kullanıcı etiketleri
 
@@ -48,7 +48,7 @@ Kullanıcılara sistem etiketleri veya özel etiketler uyguladıktan sonra, bu e
 - [Özel uyarı ilkeleri](../../compliance/alert-policies.md#view-alerts)
 - [Tehdit Gezgini ve gerçek zamanlı algılamalar](threat-explorer.md)
 - [Güvenliği aşılmış kullanıcı raporu](view-email-security-reports.md#compromised-users-report)
-- [varlık sayfasını Email](mdo-email-entity-page.md#other-innovations)
+- [varlık sayfasını Email](mdo-email-entity-page.md)
 - [Tehdit koruması durum raporu](view-email-security-reports.md#threat-protection-status-report)
 - [En çok gönderenler ve alıcılar raporu](view-email-security-reports.md#top-senders-and-recipients-report)
 - [Saldırı benzetimi](attack-simulation-training.md#target-users)

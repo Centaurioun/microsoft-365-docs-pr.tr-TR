@@ -14,16 +14,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 904c37160c53568e84ebbf2cc408eef05c5ef298
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 4a7f1f40b5a7a75e5cef876c7162ba807e986dcf
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68173775"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68638290"
 ---
 # <a name="get-alert-related-machine-information-api"></a>Uyarıyla ilgili makine bilgileri API'lerini alma
 

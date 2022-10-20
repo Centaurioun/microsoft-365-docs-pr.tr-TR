@@ -20,12 +20,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 7ad14ea93944cf7f754006c4e934049061d1b29d
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 75d0c3b56ba45be8540cd8bd877f1c9067fceb4a
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68057578"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68639938"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender’daki yenilikler
 
@@ -46,6 +46,12 @@ Diğer Microsoft Defender güvenlik ürünleriyle ilgili yenilikler hakkında da
 - [Uç Nokta için Microsoft Defender'deki yenilikler](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [Kimlik için Microsoft Defender'deki yenilikler](/defender-for-identity/whats-new)
 - [Microsoft Defender for Cloud Apps'deki yenilikler](/cloud-app-security/release-notes)
+
+## <a name="october-2022"></a>Ekim 2022
+
+- **[Kiracı İzin Ver/Engelle Listesinde izinlerinizi ve bloklarınızı yönetin](manage-tenant-allow-block-list.md):**
+  - Süre **sonu yönetimine izin ver** (şu anda özel önizleme aşamasındadır) ile, Microsoft izin verilenlerden ders almadıysa, yasal e-postanın yeniden gereksiz veya karantinaya girmesini önlemek için süresi yakında dolacak olan izinlerin süre sonu süresini otomatik olarak 30 gün uzatır.
+  - Kamu bulutu ortamlarındaki müşteriler artık yönetici URL'sini ve e-posta eki gönderimlerini kullanarak Kiracı İzin Ver/Engelle Listesi'nde URL'ler ve ekler için izin verme ve engelleme girdileri oluşturabilir. Gönderim deneyimi aracılığıyla gönderilen veriler müşteri kiracısını terk etmediğinden, kamu bulutu müşterileri için veri yerleşimi taahhütlerini karşılar.
 
 ## <a name="september-2022"></a>Eylül 2022
 

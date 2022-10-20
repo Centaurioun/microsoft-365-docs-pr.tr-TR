@@ -19,13 +19,13 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: article
-ms.openlocfilehash: 24ceb3addf4df4f7c142dc9a5fe5dbcf23458a12
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.topic: conceptual
+ms.openlocfilehash: 4296cfae2dc81be779ea25781ade13de5ce3c0fe
+ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68086981"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68640818"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
