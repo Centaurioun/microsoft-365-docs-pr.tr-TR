@@ -12,8 +12,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
+- tier2
 search.appverid:
 - MOE150
 - MET150
@@ -23,12 +23,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
 description: Kuruluşunuzun ileti saklama, eKeşif ve saklama gereksinimlerini desteklemek için arşiv posta kutularını etkinleştirmeyi veya devre dışı bırakmayı öğrenin.
-ms.openlocfilehash: 9e01fb4c31045175e13674b2433b2a3b90a0c040
-ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
+ms.openlocfilehash: 2dbece4e898ff4c01a6f224a1e7b69ab3a533448
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67631404"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660213"
 ---
 # <a name="enable-archive-mailboxes-for-microsoft-365"></a>Microsoft 365 için arşiv posta kutularını etkinleştirme
 
@@ -38,7 +38,9 @@ Microsoft 365’te arşivleme ( *Yerinde Arşivleme* olarak da adlandırılır) 
 
 Yönetici portalı veya PowerShell kullanarak arşiv posta kutusunu etkinleştirmek veya devre dışı bırakmak için bu makaledeki bilgileri kullanın. Ayrıca, herhangi bir sorunu ve önerilen çözümü belirlemek için bir kullanıcının arşiv posta kutusunda otomatik tanılama denetiminin nasıl çalıştırıldığını da öğrenin.
 
-Şu anda arşiv posta kutularını etkinleştirmek veya devre dışı bırakmak için [Microsoft Purview uyumluluk portalı](microsoft-365-compliance-center.md) veya [yeni Exchange yönetim merkezini (EAC)](/exchange/exchange-admin-center) kullanabilirsiniz.
+Arşiv posta kutularını etkinleştirme veya devre dışı bırakma yapılandırması[, Microsoft Purview uyumluluk portalı](microsoft-365-compliance-center.md) [yeni Exchange yönetim merkezine (EAC)](/exchange/exchange-admin-center) taşınıyor. Bu taşıma tüm kiracılar için tamamlanana kadar, bu sayfa her iki yönetici deneyimine yönelik yönergeler içerir.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="get-the-necessary-permissions"></a>Gerekli izinleri alma
 

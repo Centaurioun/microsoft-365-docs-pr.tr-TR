@@ -6,23 +6,25 @@ manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft Syntex'te belge anlama modelini silmeyi öğrenin.
-ms.openlocfilehash: 776cdadafc5fffe0cea42a2cf99ac229b0e38c74
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+description: Microsoft Syntex'te modeli silmeyi öğrenin.
+ms.openlocfilehash: d7568e116fb3ea56bb36652a378955d74efa2d90
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547455"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659182"
 ---
 # <a name="delete-a-model-in-microsoft-syntex"></a>Microsoft Syntex'te model silme
 
-Bir noktada, belge anlama modelini veya önceden oluşturulmuş modeli silmek isteyebilirsiniz. Modeli silmeden önce, modeli uygulandığı tüm SharePoint belge kitaplıklarından kaldırmanız gerekir.
+<sup>**Şunlar için geçerlidir:**  &ensp; &#10003; Tüm özel modeller &ensp; | &ensp; &#10003; Tüm önceden oluşturulmuş modeller</sup>
+
+Bir noktada modeli silmek isteyebilirsiniz. Modeli silmeden önce, modeli uygulandığı tüm SharePoint belge kitaplıklarından kaldırmanız gerekir.
 
 ## <a name="remove-a-model-from-a-library"></a>Kitaplıktan model kaldırma
 
@@ -33,7 +35,7 @@ Modeli bir belge kitaplığından model giriş sayfasından veya belge kitaplı�
 
 ## <a name="delete-a-model"></a>Modeli sil
 
-Belge anlama modelini veya önceden oluşturulmuş modeli silmek için bu adımları izleyin.
+Modeli silmek için bu adımları izleyin.
 
 1. Modelin belge kitaplığından [kaldırıldığından](#remove-a-model-from-a-library) emin olun.
  
@@ -49,6 +51,5 @@ Belge anlama modelini veya önceden oluşturulmuş modeli silmek için bu adıml
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Belge anlamaya genel bakış](document-understanding-overview.md)
+[Modeli yeniden adlandır](rename-a-model.md)
 
-[Model uygulama](apply-a-model.md) 

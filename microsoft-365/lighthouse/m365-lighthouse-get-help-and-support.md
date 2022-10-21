@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: crimora
+ms.reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -18,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için yardım ve destek almayı öğrenin.
-ms.openlocfilehash: 8a9a032d0838119a478924382d06586f19b35b9f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 9b8749a381dc29ca801e72a81257ee7d67f86c7a
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68202133"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68663510"
 ---
 # <a name="get-help-and-support-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse için yardım ve destek alma 
 

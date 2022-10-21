@@ -6,23 +6,25 @@ manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft Syntex'te belge anlama modelini nasıl ve neden çoğaltacağınızı öğrenin.
-ms.openlocfilehash: 4cacd968082bb875e9b9bfdfd1df13d87dba3cb6
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+description: Microsoft Syntex'te modeli nasıl ve neden çoğaltacağınızı öğrenin.
+ms.openlocfilehash: 88860487d14a7a4bab3742f610854623cc8f681d
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547872"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660785"
 ---
 # <a name="duplicate-a-model-in-microsoft-syntex"></a>Microsoft Syntex'te modeli yineleme
 
-Yeni bir model oluşturmanız gerekiyorsa ve mevcut bir modelin ihtiyacınız olan modele çok benzer olduğunu biliyorsanız, belge anlama modelinin çoğaltılarak zaman ve çabadan tasarruf etmenize neden olabilir.
+<sup>**Şunlar için geçerlidir:**  &ensp; Yapılandırılmamış belge işlemeyi &#10003;</sup>
+
+Yapılandırılmamış bir belge işleme modelini çoğaltmak, yeni bir model oluşturmanız ve mevcut bir modelin ihtiyacınız olan modele çok benzer olduğunu bilmeniz gerektiğinde zaman ve çabadan tasarruf etmenizi sağlayabilir.
 
 Örneğin, "Sözleşmeler" adlı mevcut bir model, çalışmanız gereken dosyaları sınıflandırır. Yeni modeliniz mevcut verilerin bir kısmını ayıklar, ancak bazı ek verileri ayıklamak için güncelleştirilmiş olması gerekir. Sıfırdan yeni bir model oluşturup eğitmek yerine, yinelenen model özelliğini kullanarak Sözleşmeler modelinin bir kopyasını oluşturabilirsiniz. Bu kopya, örnek dosyalar ve varlık ayıklayıcıları gibi tüm ilişkili eğitim öğelerini de kopyalar.
 
@@ -30,7 +32,7 @@ Modeli çoğalttığınızda, modeli yeniden adlandırdıktan sonra (örneğin, 
 
 ## <a name="duplicate-a-model"></a>Modeli çoğalt
 
-Belge anlama modelini yinelemek için bu adımları izleyin.
+Yapılandırılmamış belge işleme modellerini yinelemek için bu adımları izleyin.
 
 1. model listenizi görmek için içerik merkezinde **Modeller'i** seçin.
 
@@ -54,16 +56,6 @@ Belge anlama modelini yinelemek için bu adımları izleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıflandırıcı oluştur](create-a-classifier.md)
-
 [Modeli yeniden adlandır](rename-a-model.md)
-
-[Ayıklayıcı oluştur](create-an-extractor.md)
-
-[Document Understanding'e genel bakış](document-understanding-overview.md)
-
-[Açıklama türleri](explanation-types-overview.md)
-
-[Model uygulama](apply-a-model.md) 
 
 [Syntex erişilebilirlik modu](accessibility-mode.md)

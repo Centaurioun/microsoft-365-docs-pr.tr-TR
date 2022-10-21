@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: katmartin
+ms.reviewer: katmartin
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -18,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Windows 365 Bulut PC Microsoft 365 Lighthouse'da yeniden sağlamayı öğrenin.
-ms.openlocfilehash: a48b949b20265b1ede382e87b9333d17199ed543
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 9b33f9be3bef3a3ae069866e5c31f724695913ee
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68201957"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68663005"
 ---
 # <a name="reprovision-a-windows-365-cloud-pc-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'da Windows 365 Bulut PC yeniden sağlama
 

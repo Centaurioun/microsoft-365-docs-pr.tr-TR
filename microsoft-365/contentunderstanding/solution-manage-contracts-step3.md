@@ -7,17 +7,17 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: ''
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: Microsoft 365 çözümü kullanarak sözleşmelerinizi işlemek üzere akışınızı oluşturmak için Power Automate'i kullanmayı öğrenin.
-ms.openlocfilehash: fbdf155fa1cd8e9b9b94a98dee09d1544c8e439e
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 22f9970e9314bb59f03d552265f8819d00f9fdad
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564662"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68663400"
 ---
 # <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>Adım 3. Anlaşmalarınızı işlemek üzere akış oluşturmak için Power Automate'i kullanma
 
@@ -36,7 +36,7 @@ Aşağıdaki diyagramda, sözleşme yönetimi çözümü için Power Automate ak
 
 ## <a name="prepare-your-contract-for-review"></a>Sözleşmenizi gözden geçirme için hazırlama
 
-Syntex belge anlama modelinize göre bir sözleşme tanımlanıp sınıflandırıldığında, Power Automate akışı önce durumu **Gözden geçirildi** olarak değiştirir.
+Bir sözleşme yapılandırılmamış belge işleme modeliniz tarafından tanımlanıp sınıflandırıldığında, Power Automate akışı önce durumu **Gözden geçirildi** olarak değiştirir.
 
 ![Güncelleştirme durumu.](../media/content-understanding/flow-overview.png)
 

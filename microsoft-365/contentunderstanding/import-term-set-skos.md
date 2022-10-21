@@ -5,7 +5,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.topic: article
 ms.collection:
 - enabler-strategic
@@ -13,16 +13,16 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 search.appverid: ''
 ms.localizationpriority: high
-ms.openlocfilehash: ad533e7f869e3680c9e4b8e5085881040fadd22e
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 389d211a3f094fa8e6956a2c7882d6efef5aa795
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547718"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659993"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>SKOS tabanlı biçim kullanarak terim kümesini içeri aktarma
 
-SKOS tabanlı bir biçim kullanarak terim kümesini içeri aktarabilirsiniz. Biçim hakkında ayrıntılı bilgi için bkz. [SharePoint taksonomisi SKOS biçimi başvurusu](skos-format-reference.md). Bu özellik için [Bir Microsoft Syntex](index.md) lisansı gerekir.
+SKOS tabanlı bir biçim kullanarak terim kümesini içeri aktarabilirsiniz. Biçim hakkında ayrıntılı bilgi için bkz. [SharePoint taksonomisi SKOS biçimi başvurusu](skos-format-reference.md). Bu özellik için [Bir Microsoft Syntex lisansı](syntex-licensing.md) gerekir.
 
 İçeri aktarma dosyalarınızı 20.000'den az terimle tutmanızı öneririz. Daha büyük dosyalar doğrulama ve içeri aktarma için geçen süreyi artırabilir.
 
@@ -48,6 +48,6 @@ Dosya başarıyla içeri aktarıldığında bir başarı iletisi görüntülenir
 
 [Yönetilen meta verilere giriş](/sharepoint/managed-metadata)
 
-[Belge anlamaya genel bakış](document-understanding-overview.md)
+[Yapılandırılmamış belge işlemeye genel bakış](document-understanding-overview.md)
 
 [Terim kümelerini içeri aktarma (site düzeyi)](https://support.microsoft.com/office/168fbc86-7fce-4288-9a1f-b83fc3921c18)

@@ -6,23 +6,28 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft Syntex ile yerel bir SharePoint sitesinde yerel model oluşturmayı öğrenin.
-ms.openlocfilehash: 812fc68559223f2bf801fe7d1f8d2ef5b7d03e23
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: dcd514b0d6656f7a4ce4d181aca348016e7ada53
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547565"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660258"
 ---
 # <a name="create-a-model-on-a-local-sharepoint-site-with-microsoft-syntex"></a>Microsoft Syntex ile yerel bir SharePoint sitesinde model oluşturma
 
-Microsoft Syntex artık kendi SharePoint sitenizde modelleri yerel olarak oluşturma ve eğitmek için bir seçenek sunar. Bu modeller yalnızca oluşturuldukları sitede kullanılabilir. 
+<sup>**Şunlar için geçerlidir:**  &ensp; &#10003; Tüm özel modeller &ensp; | &ensp; &#10003; Tüm eğitilen modeller</sup>
+
+Microsoft Syntex, modelleri kendi SharePoint sitenizde yerel olarak oluşturma ve eğitmek için bir seçenek sağlar. Bu modeller yalnızca oluşturuldukları sitede kullanılabilir. 
+
+> [!NOTE]
+> Modelinizi bulunabilir ve diğer kullanıcılar için kullanılabilir hale getirmek istiyorsanız bir *kurumsal model* oluşturmanız gerekir. Kurumsal model, [içerik merkezinde](create-a-content-center.md) oluşturulan ve eğitilen bir modeldir.  
 
 SharePoint sitenizde belge sınıflandırma ve ayıklamayı etkinleştirerek Syntex, belge kitaplıklarındaki dosyaları sınıflandırmanıza, yeni dosyalardan bilgi ayıklamanıza ve ayıklanan bilgilere göre etkinlikleri otomatikleştirmenize olanak tanır.
 
@@ -33,7 +38,9 @@ Yerel model oluşturmayı etkinleştirdiğinizde, sitenize aşağıdaki listeler
 - Açıklama şablonları listesi
 - Model kullanım listesi
 
-Bu özellik yalnızca [belge anlama modelleri](apply-a-model.md) ve [önceden oluşturulmuş modeller](prebuilt-models.md) oluşturmak için kullanılabilir. 
+Model, yalnızca model sitedeki herhangi bir kitaplığa ilk kez uygulandığında otomatik olarak geçerli siteye yükseltilir. Bu, modeli kullanılabilir site modelleri listesinde bulunabilir ve sitedeki diğer tüm kitaplıklar için kullanılabilir hale getirir. Model sitedeki bir kitaplığa uygulanana kadar kullanılamaz. Benzer şekilde, bir model sitedeki tüm kitaplıklardan kaldırıldığında, kullanılabilir site modelleri listesinden de kaldırılır. 
+
+Bu özellik tüm [model türlerinde](model-types-overview.md) kullanılabilir. 
 
 ## <a name="create-a-model-on-a-local-site"></a>Yerel sitede model oluşturma
 
@@ -58,7 +65,7 @@ Bu özellik yalnızca [belge anlama modelleri](apply-a-model.md) ve [önceden ol
 
     ![Model oluştur panelinin ekran görüntüsü.](../media/content-understanding/local-model-create-a-model.png) 
 
-6. [Belgenizin modeli anlamasını eğitmeye](apply-a-model.md) veya seçtiğiniz dosyaları kullanarak [önceden oluşturulmuş modelinizi yapılandırmaya](prebuilt-models.md) devam edin.
+6. [Özel modelinizi eğitmeye](apply-a-model.md) veya seçtiğiniz dosyaları kullanarak [eğitilen modelinizi yapılandırmaya](prebuilt-overview.md) devam edin.
 
 7. İşiniz bittiğinde, **Kitaplığa ekle** paneli açılır.
 
@@ -70,3 +77,5 @@ Bu özellik yalnızca [belge anlama modelleri](apply-a-model.md) ve [önceden ol
 
     ![Modelin sitedeki uygulandığı yeri gösteren model giriş sayfasının ekran görüntüsü.](../media/content-understanding/local-model-home-page.png) 
 
+> [!NOTE]
+> Bir yerel model tek bir kitaplığa uygulandığında, uygulamanın aynı sitedeki diğer kitaplıklara bulunması için kullanılabilir hale gelir.

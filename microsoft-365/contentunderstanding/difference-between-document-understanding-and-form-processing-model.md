@@ -1,98 +1,45 @@
 ---
-title: Microsoft Syntex'teki özel modeller arasındaki farklar
+title: Microsoft Syntex'te özel modelleri karşılaştırma
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: lauris
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft Syntex'te belge anlama modeli ile form işleme modeli arasındaki temel farklar hakkında bilgi edinin.
-ms.openlocfilehash: 2d5d131ffb2176afabaf85474312bc07894491d9
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+description: Microsoft Syntex'teki özel modeller arasındaki temel farklar hakkında bilgi edinin.
+ms.openlocfilehash: 63d6d444fad48da993413b15943bffda7b175ad1
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547894"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660103"
 ---
-# <a name="differences-between-custom-models-in-microsoft-syntex"></a>Microsoft Syntex'teki özel modeller arasındaki farklar 
+# <a name="compare-custom-models-in-microsoft-syntex"></a>Microsoft Syntex'te özel modelleri karşılaştırma 
 
-Microsoft Syntex'te içerik anlama, SharePoint belge kitaplıklarına yüklenen belgeleri tanımlamanıza ve sınıflandırmanıza ve ardından her dosyadan ilgili bilgileri ayıklamanıza olanak tanır. Örneğin, dosyalar bir SharePoint belge kitaplığına yüklendiğinden, *Satın Alma Siparişleri* olarak tanımlanan tüm dosyalar bu şekilde sınıflandırılır ve sonra özel belge kitaplığı görünümünde görüntülenir. Ayrıca, her dosyadan belirli bilgileri (po *numarası* ve *toplam* gibi) çekebilir ve belge kitaplığı görünümünüzde bir sütun olarak görüntüleyebilirsiniz. 
+Gereksinimlerinize en uygun modeli belirlemenize yardımcı olmak için özel modellerdeki farkları görmek için aşağıdaki tabloyu kullanın.
 
-İçerik anlama, ihtiyacınız olan bilgileri tanımlamak ve ayıklamak için *modeller* oluşturmanıza olanak tanır. Modellerin arama, iş süreçleri, uyumluluk ve diğerleri için iş sorunlarını çözmeye yardımcı olması önemlidir.
-
-Kullanabileceğiniz iki özel model türü vardır:
-
-- [Modelleri belge anlama](document-understanding-overview.md)
-- [Form işleme modelleri](form-processing-overview.md)
-
-Her iki model de genellikle aynı amaç için kullanılırken, aşağıda listelenen temel farklar hangilerini kullanabileceğinizi etkiler.
-
-> [!NOTE]
-> Form işleme ve belge anlama senaryosu örnekleri hakkında daha fazla bilgi için [Syntex'i benimsemeye başlama](./adoption-getstarted.md) konusuna bakın.
-
-## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Yapılandırılmış veya yapılandırılmamış ve yarı yapılandırılmış içerik
-
-Ayıklamak istediğiniz metin varlıklarının cümleler veya belgenin belirli bölgelerinde olduğu, mektuplar veya sözleşmeler gibi yapılandırılmamış belgelerden veri tanımlamak ve ayıklamak için belge anlama modellerini kullanın. Örneğin, yapılandırılmamış bir belge, farklı şekillerde yazılabilen bir sözleşme yenileme mektubu olabilir. Ancak bilgiler, metin dizesi `Service start date of` ve ardından gerçek bir tarih gibi her sözleşme yenileme belgesinin gövdesinde tutarlı bir şekilde bulunur.
-
-Dosyaları tanımlamak ve formlar veya faturalar gibi yapılandırılmış veya yarı yapılandırılmış belgelerden veri ayıklamak için form işleme modellerini kullanın. Form işleme modelleri, örnek belgelerden formunuzun düzenini anlamak ve benzer konumlardan ayıklamak için ihtiyacınız olan verileri aramayı öğrenmek için eğitilir. Formlar genellikle varlıkların aynı konumda olduğu daha yapılandırılmış bir düzene sahiptir (örneğin, vergi formundaki bir sosyal güvenlik numarası).
-
-> [!NOTE]
-> Belge anlama modeli oluşturmak veya sharepoint belge kitaplığına uygulamak için içerik merkezi sitesine erişiminiz olmalıdır. 
-
-## <a name="where-models-are-created"></a>Modellerin oluşturulduğu yer
-
-Belge anlama modelleri bir SharePoint içerik merkezi sitesinde oluşturulur ve yönetilir. 
-
-> [!NOTE]
-> Giriş belgeleri hakkında daha fazla bilgi için bkz. [Form işleme modeli gereksinimleri ve sınırlamaları](/ai-builder/form-processing-model-requirements). 
-
-Form işleme modelleri Power Apps [AI Builder'da](/ai-builder/overview) oluşturulur, ancak oluşturma işlemi doğrudan bir SharePoint belge kitaplığından başlar. Bir kullanıcının form işleme modeli oluşturabilmesi için önce belge kitaplığında form işleme modeli oluşturma özelliğinin etkinleştirilmesi gerekir. Yöneticiler, içerik anlama yönetici ayarlarında form işleme modeli oluşturmayı etkinleştirebilir. Form işleme modelleri, belge kitaplığına yüklenen dosyaları işlemek için Power Automate akışlarını kullanır.
-
-Belge anlama modeli oluşturduğunuzda, [SharePoint İçerik](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) Türleri galerisine kaydedilmiş yeni bir SharePoint içerik türü oluşturursunuz. Gerekirse modelinizi tanımlamak için mevcut içerik türlerini de kullanabilirsiniz.
-
-bir içerik türü oluşturulduktan ve bir modelle ilişkilendirildikten sonra, **Site İçerik Türü** özellik panelinden bu modele de başvurabilirsiniz.
-
-:::image type="content" source="../media/content-understanding/site-content-type-panel.png" alt-text="Belge anlama modelinin vurgulandığı Site İçerik Türü panelinin ekran görüntüsü." lightbox="../media/content-understanding/site-content-type-panel.png":::
-
-Form işleme modelleri ayrıca yeni [SharePoint içerik türleri](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) oluşturur ve SharePoint İçerik Türleri galerisinde de depolanır.
-
-## <a name="where-they-can-be-applied"></a>Uygulanabilecek yerler
-
-Erişiminiz olan SharePoint belge kitaplıklarına belge anlama modelleri uygulayabilirsiniz. İçerik merkezini kullanarak belge anlama modeli oluşturun ve bunu farklı belge kitaplıklarına uygulayın. İçerik merkezi, belge anlama modellerinin nasıl kullanıldığı ve bunların nereye uygulandığı konusunda size daha merkezi bir denetim sağlar. Bu bilgilerin bir içerik merkezine de toplanmış olması gerektiğini unutmayın.
-
-Form işleme modelleri şu anda yalnızca kendi oluşturduğunuz SharePoint belge kitaplığına uygulanabilir. Bu, siteye erişimi olan lisanslı kullanıcıların form işleme modeli oluşturmasına olanak tanır. Bir yöneticinin lisanslı kullanıcıların kullanımına sunulabilmesi için sharepoint belge kitaplığında form işlemeyi etkinleştirmesi gerektiğini unutmayın.
-
-## <a name="comparison-of-form-processing-and-document-understanding"></a>Form işleme ve belge anlama karşılaştırması
-
-Form işlemenin ne zaman kullanılacağını ve belge anlamanın ne zaman kullanılacağını anlamak için aşağıdaki tabloyu kullanın.
-
-| Özellik | Form işleme | Belge anlama |
-| ------- | ------- | ------- |
-| Model türü - her bir modelin ne zaman kullanılacağı | Yapılandırılmış ve yarı yapılandırılmış dosya biçimleri, örneğin, düzen ve biçimlendirmenin benzer olduğu faturalar veya satın alma siparişleri gibi form içeriğine yönelik PDF'ler.  | Yapılandırılmamış veya yarı yapılandırılmış dosya biçimleri, örneğin, düzende farklılıklar olan ancak yine de ayıklanacak benzer bilgilerin bulunduğu Office belgeleri. |
-| Model oluşturma | SharePoint belge kitaplığından sorunsuz erişimle yapay zeka oluşturucusunda oluşturulan model.| SharePoint'te içerik merkezi olan yeni bir sitede oluşturulan model. |
-| Sınıflandırma türü| Ayarlanabilir sınıflandırıcı, sisteme hangi verilerin ayıklanacağı konusunda ipuçları vermek için kullanılır.| Hangi verilerin ayıklanması için belge konumu atamak için makine öğretimi kullanan isteğe bağlı ayıklayıcılarla eğitilebilir sınıflandırıcı.|
-| Konum | Tek bir belge kitaplığı için eğitildi.| Birden çok kitaplık için uygulanabilir.|
-| Desteklenen dosya türleri| PDF, JPG, PNG biçiminde, toplam 50 MB ve 500 sayfada eğitin.| Negatif örnekler de dahil olmak üzere 5-10 PDF, Office veya e-posta dosyaları üzerinde eğitin.<br>Office dosyaları 64.000 karakterle kesilir. OCR ile taranan dosyalar 20 sayfayla sınırlıdır. [Desteklenen dosya türlerine](document-understanding-overview.md#supported-file-types) bakın.|
-| Yönetilen Meta Verilerle Tümleştirme | Hayır | Evet, yapılandırılmış yönetilen meta veri alanına başvuran varlık ayıklayıcısı eğiterek.|
-| Microsoft Purview Bilgi Koruması ile uyumluluk özelliği tümleştirmesi | Yayımlanan bekletme etiketlerini ayarlayın.<br>Duyarlılık etiketlerini ayarlama geliyor. | Yayımlanan bekletme etiketlerini ayarlayın.<br>Yayımlanan duyarlılık etiketlerini ayarlayın. |
-| Desteklenen bölgeler| Form işleme, Power Platform'a dayanır. Power Platform ve AI Builder için genel kullanılabilirlik hakkında bilgi için bkz. [Power Platform kullanılabilirliği](https://dynamics.microsoft.com/geographic-availability/). | Tüm bölgelerde kullanılabilir.|
-| İşlem maliyeti | AI Builder kredilerini kullanır.<br>Aylık her Syntex lisansı için 3,5K kredi dahildir.<br>1M kredi, 2.000 dosya sayfası işlenmesine izin verir.<br>| Geçerli değil |
-| Kapasite | Varsayılan Power Platform ortamını kullanır (Dataverse veritabanının desteklendiği özel ortamlar). | Kapasite kısıtlamaları yoktur.|
-| Desteklenen diller| [73'ten fazla dil için dil](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support) desteği. | Modeller tüm Latin alfabesi dillerinde çalışır. İngilizceye ek olarak: Almanca, İsveççe, Fransızca, İspanyolca, İtalyanca ve Portekizce.|
-
+| Özellik | Yapılandırılmamış belge işleme | Serbest biçimli belge işleme | Yapılandırılmış belge işleme |
+| ------- | ------- | ------- | ------- |
+| Bu içerik türü için kullanın | Yapılandırılmamış veya yarı yapılandırılmış dosya biçimleri, örneğin, düzende farklılıklar bulunan ancak yine de ayıklanacak benzer bilgiler olan Office belgeleri. | Yapılandırılmamış ve serbest biçimli dosya biçimleri, örneğin harfler, sözleşmeler ve iş deyimleri gibi ayarlanmış yapısı olmayan belgeler. | Yapılandırılmış ve yarı yapılandırılmış dosya biçimleri, örneğin, düzen ve biçimlendirmenin benzer olduğu faturalar veya satın alma siparişleri gibi form içeriğine yönelik PDF'ler. |
+| Model oluşturma | SharePoint'te içerik merkezi olan yeni bir sitede oluşturulan model.  | SharePoint belge kitaplığından sorunsuz erişimle [AI Builder'da](/ai-builder/overview) oluşturulan model.| SharePoint belge kitaplığından sorunsuz erişimle [AI Builder'da](/ai-builder/overview) oluşturulan model. |
+| Sınıflandırma türü | Hangi verilerin ayıklanması için belge konumu atamak için makine öğretimi kullanan isteğe bağlı ayıklayıcılarla eğitilebilir sınıflandırıcı. | Geçerli değil | Geçerli değil |
+| Konum | Birden çok kitaplık için uygulanabilir. | Tek bir belge kitaplığı için eğitildi. | Tek bir belge kitaplığı için eğitildi. |
+| Desteklenen dosya türleri | Negatif örnekler de dahil olmak üzere 5-10 .pdf, Office veya e-posta dosyaları üzerinde eğitin.<br>Office dosyaları 64.000 karakterle kesilir. OCR ile taranan dosyalar 20 sayfayla sınırlıdır. 20'den fazla dosya türünü destekler. [Desteklenen dosya türlerine](requirements-and-limitations.md#unstructured-document-processing) bakın.  | Toplam 50 MB ve 500 sayfa .pdf, .jpg veya .png biçiminde eğitin. | Toplam 50 MB ve 500 sayfa .pdf, .jpg veya .png biçiminde eğitin. |
+| Yönetilen meta verilerle tümleştirme | Evet, yapılandırılmış yönetilen meta veri alanına başvuran varlık ayıklayıcısı eğiterek. | Hayır | Hayır |
+| Microsoft Purview Bilgi Koruması ile uyumluluk özelliği tümleştirmesi | Yayımlanan bekletme etiketlerini ayarlayın.<br>Yayımlanan duyarlılık etiketlerini ayarlayın. | Bekletme etiketlerini ayarlama geliyor. <br>Duyarlılık etiketlerini ayarlama geliyor. | Yayımlanan bekletme etiketlerini ayarlayın. <br>Duyarlılık etiketlerini ayarlama geliyor. |
+| Desteklenen bölgeler| Tüm bölgelerde kullanılabilir. | Power Platform'a dayanır. Power Platform ve AI Builder için genel kullanılabilirlik hakkında bilgi için bkz. [Power Platform kullanılabilirliği](https://dynamics.microsoft.com/geographic-availability/). | Power Platform'a dayanır. Power Platform ve AI Builder için genel kullanılabilirlik hakkında bilgi için bkz. [Power Platform kullanılabilirliği](https://dynamics.microsoft.com/geographic-availability/). |
+| İşlem maliyeti | Geçerli değil | AI Builder kredilerini kullanır.<br>Aylık her Syntex lisansı için 3.500 kredi dahildir.<br>1 milyon kredi, 2.000 dosya sayfası işlenmesine izin verecek. | AI Builder kredilerini kullanır.<br>Aylık her Syntex lisansı için 3.500 kredi dahildir.<br>1 milyon kredi, 2.000 dosya sayfası işlenmesine izin verecek. |
+| Kapasite | Kapasite kısıtlaması yok. | Varsayılan Power Platform ortamını kullanır (Dataverse veritabanının desteklendiği özel ortamlar). | Varsayılan Power Platform ortamını kullanır (Dataverse veritabanının desteklendiği özel ortamlar). |
+| Desteklenen diller| Modeller tüm Latin alfabesi dillerinde çalışır. İngilizceye ek olarak: Almanca, İsveççe, Fransızca, İspanyolca, İtalyanca ve Portekizce. | Geçerli dil desteği İngilizce içindir. | [73 dil için dil](/ai-builder/form-processing-model-requirements.md#languages-supported) desteği. |
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Eğitim: AI Builder ile iş performansını geliştirme](/training/paths/improve-business-performance-ai-builder/?source=learn)
 
-[Belge anlamaya genel bakış](document-understanding-overview.md)
 
-[Form işlemeye genel bakış](form-processing-overview.md)
-
-[Microsoft Syntex'e giriş](index.md)

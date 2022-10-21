@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Microsoft Office 2013 yüklü cihazlar için modern kimlik doğrulamasını etkinleştirmek için kayıt defteri anahtarlarını ayarlamayı öğrenin.
-ms.openlocfilehash: 8223b2efb88cd29e57353098ab014b76f52251f2
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: a272eacc546aa4d9dadbf9acac1ae1372f332209
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68629972"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68663334"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Windows cihazlarda Office 2013 için Modern kimlik doğrulamasını etkinleştirme
 
@@ -53,9 +53,9 @@ Office 2013 istemci uygulamaları için MFA'yı etkinleştirmek için, [Tıkla-�
 
 Office yüklemenizin Tıkla-Çalıştır mı yoksa MSI tabanlı mı olduğunu belirlemek için:
 
-1.  Outlook 2013'ü başlatın.
-2.  **Dosya** **menüsünden Office Hesabı'nı** seçin.
-3.  Outlook 2013 Tıkla-Çalıştır yüklemeleri için **Güncelleştirme Seçenekleri** öğesi görüntülenir. MSI tabanlı yüklemeler için **Güncelleştirme Seçenekleri** öğesi görüntülenmez.
+1.    Outlook 2013'ü başlatın.
+2.    **Dosya** **menüsünden Office Hesabı'nı** seçin.
+3.    Outlook 2013 Tıkla-Çalıştır yüklemeleri için **Güncelleştirme Seçenekleri** öğesi görüntülenir. MSI tabanlı yüklemeler için **Güncelleştirme Seçenekleri** öğesi görüntülenmez.
 
       :::image type="content" source="../../security/defender-endpoint/images/office-2013-run-installation.png" alt-text="Office 2013'ün ekran görüntüsü":::
 
@@ -67,10 +67,12 @@ Tıkla-çalıştır yüklemeleri için aşağıdaki dosyaların yüklü olması 
 |---|---|---|
 |MSO.DLL|C:\Program Files\Microsoft Office 15\root\vfs\ProgramFilesCommonx86\Microsoft Shared\OFFICE15\MSO.DLL|15.0.4753.1001|
 |Csı. DLLL|CSI.DLL C:\Program Files\Microsoft Office 15\root\office15\csi.dll|15.0.4753.1000|
-|Groove.EXE|C:\Program Files\Microsoft Office 15\root\office15\GROOVE.exe|15.0.4763.1000|
+|Groove.EXE*|C:\Program Files\Microsoft Office 15\root\office15\GROOVE.exe|15.0.4763.1000|
 |Outlook.exe|C:\Program Files\Microsoft Office 15\root\office15\OUTLOOK.exe|15.0.4753.1002|
 |ADAL.DLL|C:\Program Files\Microsoft Office 15\root\vfs\ProgramFilesCommonx86\Microsoft Shared\OFFICE15\ADAL.DLL|1.0.2016.624|
 |Iexplore.exe|C:\Program Files\Internet Explorer|Değişir|
+
+\* Groove.EXE Office yüklemenizin bir parçası değilse, Azure Active Directory Kimlik Doğrulama Kitaplığı'nın (ADAL) çalışması için yüklenmesi gerekmez. Ancak, Groove.EXE varsa tabloda listelenen dosya sürümü gereklidir.
 
 ### <a name="msi-based-installations"></a>MSI tabanlı yüklemeler
 
@@ -80,10 +82,12 @@ MSI tabanlı yüklemeler için aşağıdaki dosyaların yüklü olması gerekir.
 |---|---|---|---|
 |MSO.DLL|C:\Program Files\Microsoft Office 15\root\vfs\ProgramFilesCommonx86\Microsoft Shared\OFFICE15\MSO.DLL|[KB3085480](https://support.microsoft.com/en-us/topic/description-of-the-security-update-for-office-2013-september-10-2019-0d171ba2-2eba-a2ca-a54d-c0f568de6bcc)|15.0.4753.1001|
 |Csı. DLLL|CSI.DLL C:\Program Files\Microsoft Office 15\root\office15\csi.dll|[KB3172545](https://support.microsoft.com/en-us/topic/july-11-2017-update-for-office-2013-kb3172545-d6b47054-04d5-5154-40ba-3436d1e0efdb)|15.0.4753.1000|
-|Groove.EXE|C:\Program Files\Microsoft Office 15\root\office15\GROOVE.exe|[KB4022226](https://support.microsoft.com/en-us/topic/august-7-2018-update-for-onedrive-for-business-for-office-2013-kb4022226-6163bb26-cbde-eb16-ac42-abfda7afbf68)|15.0.4763.1000|
+|Groove.EXE*|C:\Program Files\Microsoft Office 15\root\office15\GROOVE.exe|[KB4022226](https://support.microsoft.com/en-us/topic/august-7-2018-update-for-onedrive-for-business-for-office-2013-kb4022226-6163bb26-cbde-eb16-ac42-abfda7afbf68)|15.0.4763.1000|
 |Outlook.exe|C:\Program Files\Microsoft Office 15\root\office15\OUTLOOK.exe|[KB4484096](https://support.microsoft.com/en-us/topic/october-1-2019-update-for-outlook-2013-kb4484096-6513145a-cc75-1cd1-72b7-78cb62d8476b)|15.0.4753.1002|
 |ADAL.DLL|C:\Program Files\Microsoft Office 15\root\vfs\ProgramFilesCommonx86\Microsoft Shared\OFFICE15\ADAL.DLL|[KB3085565](https://support.microsoft.com/en-us/topic/july-5-2016-update-for-office-2013-kb3085565-1d1a6d24-fbd4-1bae-242f-a35e0e2aba40)|1.0.2016.624|
 |Iexplore.exe|C:\Program Files\Internet Explorer|[MS14-052](https://support.microsoft.com/en-us/topic/ms14-052-cumulative-security-update-for-internet-explorer-september-9-2014-17d29b71-9e78-0bc1-8961-7b812d04e4e1)|Geçerli değil|
+
+\* Groove.EXE Office yüklemenizin bir parçası değilse, Azure Active Directory Kimlik Doğrulama Kitaplığı'nın (ADAL) çalışması için yüklenmesi gerekmez. Ancak, Groove.EXE varsa tabloda listelenen dosya sürümü gereklidir.
 
 ## <a name="enable-modern-authentication-for-office-2013-clients"></a>Office 2013 istemcileri için modern kimlik doğrulamayı etkinleştirme
 
