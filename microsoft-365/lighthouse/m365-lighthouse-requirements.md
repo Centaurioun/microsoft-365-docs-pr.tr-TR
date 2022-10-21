@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: crimora
+ms.reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -18,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Yönetilen Hizmet Sağlayıcıları (MSP' ler) için Microsoft 365 Lighthouse kullanmak için gereksinimlerin listesini alın.
-ms.openlocfilehash: 224b5dcb1eb77fac1d582b75a75f10aa527cd247
-ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+ms.openlocfilehash: ebfe68f7c07b1aabc9d83ef57bd973595309e921
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68297760"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662961"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse için gereksinimler
 

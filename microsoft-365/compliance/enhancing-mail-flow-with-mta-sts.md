@@ -11,22 +11,25 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 description: MTA-STS ile posta akışını geliştirmeyi öğrenin.
-ms.openlocfilehash: b8833e7b737c5ab03fb57320bbdbad7513f33b47
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 51ea4595c208ded39c980eee0ad9445383754350
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797695"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68663553"
 ---
 # <a name="enhancing-mail-flow-with-mta-sts"></a>MTA-STS ile posta akışını iyileştirme
 
 [Exchange Online SMTP MTA Strict Transport Security](https://datatracker.ietf.org/doc/html/rfc8461) (MTA-STS) standardı desteği eklenir. Standart, TLS'nin her zaman e-posta sunucuları arasındaki bağlantılar için kullanıldığından emin olmak için geliştirilmiştir. Ayrıca, alıcı sunucunun güvenilir bir sertifikaya sahip olduğunu doğrulamak için sunucu göndermek için bir yol sağlar. TLS sunulmazsa veya sertifika geçerli değilse, gönderen iletileri teslim etmeyi reddeder. Bu yeni denetimler SMTP'nin genel güvenliğini artırır ve ortadaki adam saldırılarına karşı koruma sağlar.
 
 MTA-STS iki senaryoya ayrılabilir: Gelen ve Giden Koruma. Gelen, MTA-STS ile Exchange Online barındırılan etki alanlarının korumasını kapsar ve Giden, MTA-STS korumalı etki alanlarına e-posta gönderirken Exchange Online tarafından gerçekleştirilen MTA-STS doğrulamalarını kapsar.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="outbound-protection"></a>Giden Koruma
 
@@ -55,7 +58,7 @@ mx: *.mail.protection.outlook.com
 max_age: 604800
 ```
 
-MX kayıtları doğrudan Exchange Online işaret eden tüm müşteriler, microsoft.com ilkesinde yukarıda gösterilen değerlerle kendi ilkelerinde belirtebilir. İlkedeki benzersiz gerekli bilgiler, Exchange Online (`*`.mail.protection.outlook.com) işaret eden MX kaydıdır ve aynı sertifika tüm Exchange Online müşteriler tarafından paylaşılır. İlkenizi *zorlama* moduna geçirmeden önce geçerli olduğundan emin olmak için *test* modunda yayımlamak mümkündür. Orada yapılandırmanızı denetleyebilen üçüncü taraf doğrulama araçları vardır.
+MX kayıtları doğrudan Exchange Online işaret eden tüm müşteriler, microsoft.com ilkesinde yukarıda gösterilen değerlerle kendi ilkelerinde belirtebilir. İlkedeki benzersiz gerekli bilgiler, Exchange Online (`*`.mail.protection.outlook.com) işaret eden MX kaydıdır ve aynı sertifika tüm Exchange Online müşteriler tarafından paylaşılır. Exchange Online yalnızca bir kuruluşun belirli bir etki alanı için e-posta almasına izin verir, bu nedenle joker karakter kullanmak güvenliği zayıflatamaz, ancak diğer e-posta hizmetleri için böyle olmayabilir. İlkenizi *zorlama* moduna geçirmeden önce geçerli olduğundan emin olmak için *test* modunda yayımlamak mümkündür. Orada yapılandırmanızı denetleyebilen üçüncü taraf doğrulama araçları vardır.
 
 Bu ilkeler, Exchange Online müşteriler adına barındırabilecek bir şey değildir, bu nedenle müşterilerin tercih ettikleri hizmetleri kullanarak etki alanı STS ilkesini yapılandırmaları gerekir. Azure hizmetleri, ilke barındırma için kolayca kullanılabilir ve bu makalenin devamında bir yapılandırma kılavuzu vardır. İlkenin, alt etki alanı `mta-sts.<domain name>`için bir sertifika ile HTTPS tarafından korunması gerekir.
 

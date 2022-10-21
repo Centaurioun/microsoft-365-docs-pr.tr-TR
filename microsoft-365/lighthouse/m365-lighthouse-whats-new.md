@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: crimora
+ms.reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -18,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP' ler) için her ay Microsoft 365 Lighthouse eklenen, değiştirilen ve düzeltilmiş olanlara bakın.
-ms.openlocfilehash: 65fba4d7cdef2b1afc8935f6833e10e04dee616f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 647bd02a388b20e96fd6ca859a7ea0c4f117692d
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68197051"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661731"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'daki yenilikler
 

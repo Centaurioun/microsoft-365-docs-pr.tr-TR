@@ -1,26 +1,28 @@
 ---
-title: PowerShell'de model açıklamalarını anlama belgesiyle çalışma
+title: PowerShell'de yapılandırılmamış belge işleme modelleri için açıklamalarla çalışma
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-manager: serdars
+manager: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: PowerShell'de Microsoft Syntex belge anlama modeli açıklamalarıyla çalışma hakkında bilgi edinin.
-ms.openlocfilehash: c2ffc7493e91adc4e990da56e5a29408121eded2
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+description: PowerShell'de Microsoft Syntex modeli açıklamaları ile çalışma hakkında bilgi edinin.
+ms.openlocfilehash: b4f647bbd168b89bf6306c63f2d6d9ee86ac2a5c
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564706"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659949"
 ---
-# <a name="work-with-document-understanding-model-explanations-in-powershell"></a>PowerShell'de model açıklamalarını anlama belgesiyle çalışma
+# <a name="work-with-explanations-for-unstructured-document-processing-models-in-powershell"></a>PowerShell'de yapılandırılmamış belge işleme modelleri için açıklamalarla çalışma
+
+<sup>**Şunlar için geçerlidir:**  &ensp; Yapılandırılmamış belge işlemeyi &#10003;</sup>
 
 > [!IMPORTANT]
 > Microsoft Syntex PowerShell cmdlet'leri ve diğer tüm PnP bileşenleri, destek sağlayan etkin bir topluluk tarafından desteklenen açık kaynak araçlardır. Resmi Microsoft destek kanallarından açık kaynak araç desteği için SLA yoktur.

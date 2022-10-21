@@ -1,26 +1,28 @@
 ---
-title: PowerShell ile belge anlama modellerini yayımlama
+title: PowerShell ile özel modeller yayımlama
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-manager: serdars
+manager: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: PowerShell ile microsoft syntex belge anlama modellerini yayımlamayı öğrenin.
-ms.openlocfilehash: 4b5d5e8b9a7f4b7a470a8578409b3601823c9415
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+description: PowerShell kullanarak Microsoft Syntex özel modellerini yayımlamayı öğrenin.
+ms.openlocfilehash: 46724246d1a4c85676f1722c643968a09f843c79
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563218"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661317"
 ---
-# <a name="publish-document-understanding-models-with-powershell"></a>PowerShell ile belge anlama modellerini yayımlama
+# <a name="publish-custom-models-with-powershell"></a>PowerShell ile özel modeller yayımlama
+
+<sup>**Şunlar için geçerlidir:**  &ensp; Tüm özel modelleri &#10003;</sup>
 
 > [!IMPORTANT]
 > Microsoft Syntex PowerShell cmdlet'leri ve diğer tüm PnP bileşenleri, destek sağlayan etkin bir topluluk tarafından desteklenen açık kaynak araçlardır. Resmi Microsoft destek kanallarından açık kaynak araç desteği için SLA yoktur.

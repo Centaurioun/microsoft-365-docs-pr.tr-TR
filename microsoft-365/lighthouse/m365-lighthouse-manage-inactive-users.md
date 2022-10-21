@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: ragovind
+ms.reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -18,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için etkin olmayan kullanıcıları yönetmeyi öğrenin.
-ms.openlocfilehash: 53786c305bbce10c7345b696d5cc476e0b3dde9b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 3beb3214496522eb8baced7f411e87bfd87ffbb6
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68188867"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68663137"
 ---
 # <a name="manage-inactive-users-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'da etkin olmayan kullanıcıları yönetme
 

@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.custom: admindeeplinkMAC
 search.appverid: ''
 ms.collection:
@@ -14,12 +14,12 @@ ms.collection:
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft Syntex'te görüntü etiketleme hakkında bilgi edinin.
-ms.openlocfilehash: 7d125fafc0667456a4a0345305baddca4aeecf8b
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 35bcb403d743400dcc3c125a2ff633022d217fdf
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547368"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662280"
 ---
 # <a name="image-tagging-in-microsoft-syntex"></a>Microsoft Syntex'te görüntü etiketleme
 

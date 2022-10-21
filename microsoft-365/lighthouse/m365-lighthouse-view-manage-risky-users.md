@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: ragovind
+ms.reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -18,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için riskli kullanıcıları görüntülemeyi ve yönetmeyi öğrenin.
-ms.openlocfilehash: 5562a6c4178f9bbe0108817cb12be0354dc87d90
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: e1fd432b00e0d6bfb4c4595e04f64ff653835a92
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68208512"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661973"
 ---
 # <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'de riskli kullanıcıları görüntüleme ve yönetme
 

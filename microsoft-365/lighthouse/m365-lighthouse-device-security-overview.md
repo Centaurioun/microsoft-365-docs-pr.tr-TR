@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: ragovind
+ms.reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -18,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için güvenlik risklerini görüntülemeyi öğrenin.
-ms.openlocfilehash: 13ba0100a2daef57228e45cdd3f1a2e5f8fa9447
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: a07f68e51eb43f726b043b095e02630c122d315f
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68178503"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662039"
 ---
 # <a name="overview-of-the-device-security-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'da Cihaz güvenliği sayfasına genel bakış
 

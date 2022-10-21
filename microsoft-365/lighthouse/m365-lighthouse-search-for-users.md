@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: ragovind
+ms.reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -18,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için kullanıcıları nasıl arayacağınızı öğrenin.
-ms.openlocfilehash: 0823a42436836bc0fe5e6d4475066b68d48ab901
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 554b1dbd787a20f9ea08d719141c8857c59099aa
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68178371"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659773"
 ---
 # <a name="search-for-users-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'de kullanıcıları arama
 

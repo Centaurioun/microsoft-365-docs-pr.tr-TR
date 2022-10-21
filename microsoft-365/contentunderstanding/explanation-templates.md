@@ -6,21 +6,23 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft Syntex'te açıklama şablonlarını kullanma ve kaydetme hakkında daha fazla bilgi edinin.
-ms.openlocfilehash: ef1e3cd3575d5e943c2ea39e98f7c85046de32ec
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: c075a084077479fe1cbb9890203f7e2e6b15843d
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547762"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662829"
 ---
 # <a name="use-explanation-templates-in-microsoft-syntex"></a>Microsoft Syntex'te açıklama şablonlarını kullanma
+
+<sup>**Şunlar için geçerlidir:**  &ensp; Yapılandırılmamış belge işlemeyi &#10003;</sup>
 
 Açıklamanız için çeşitli tümcecik listesi değerlerini el ile ekleyebilmenize karşın, açıklama kitaplığında size sağlanan şablonları kullanmak daha kolay olabilir.
 
@@ -30,8 +32,8 @@ Açıklamanız için çeşitli tümcecik listesi değerlerini el ile ekleyebilme
 
 Açıklama kitaplığı, aşağıdakiler de dahil olmak üzere yaygın olarak kullanılan *tümcecik listesi* açıklamalarını içerir:
 
-- Tarih: Takvim tarihleri, tüm biçimler. Metin ve sayıları içerir (örneğin, "9 Aralık 2020").
-- Tarih (sayısal): Takvim tarihleri, tüm biçimler. Sayılar içerir (örneğin, 1-11-2020).
+- Tarih: Takvim tarihleri, tüm biçimler. Metin ve sayıları içerir (örneğin, "9 Aralık 2022").
+- Tarih (sayısal): Takvim tarihleri, tüm biçimler. Sayıları içerir (örneğin, 1-11-2022).
 - Zaman: 12 saat ve 24 saatlik biçimler.
 - Sayı: İki ondalık basameğe kadar pozitif ve negatif sayılar.
 - Yüzde: Yüzdeyi temsil eden desenlerin listesi. Örneğin, %1, %11, %100 veya %11,11.

@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: kywirpel
+ms.reviewer: kywirpel
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -18,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Kiracılar sayfası hakkında bilgi edinin.
-ms.openlocfilehash: 40dfbe455c754248a97b6b29127fbea663feb103
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 8530ce8a86828114f7914953b3924da2572e6f33
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68199031"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661753"
 ---
 # <a name="overview-of-the-tenants-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'da Kiracılar sayfasına genel bakış
 

@@ -1,34 +1,34 @@
 ---
-title: Microsoft Syntex için Sözleşme Yönetimi site şablonunu kullanma
+title: Microsoft Syntex için sözleşme yönetimi sitesi şablonunu kullanma
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: kkameth
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft Syntex'te Sözleşme Yönetimi site şablonunu sağlamayı, kullanmayı ve özelleştirmeyi öğrenin.
-ms.openlocfilehash: 028afdbe0f82143c8ee84cdd773c859f7064cf47
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+description: Microsoft Syntex'te sözleşme yönetimi sitesi şablonunu sağlamayı, kullanmayı ve özelleştirmeyi öğrenin.
+ms.openlocfilehash: 55074f24b88c67e7a4701231e038e50637713347
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565542"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660741"
 ---
-# <a name="use-the-contracts-management-site-template-for-microsoft-syntex"></a>Microsoft Syntex için Sözleşme Yönetimi site şablonunu kullanma
+# <a name="use-the-contracts-management-site-template-for-microsoft-syntex"></a>Microsoft Syntex için sözleşme yönetimi sitesi şablonunu kullanma
 
-Sözleşme Yönetimi sitesi, kuruluşunuzun Microsoft Syntex değerini en üst düzeye çıkarmanıza yardımcı olan, dağıtılmaya hazır ve özelleştirilebilir bir SharePoint site şablonudur. Site, kuruluşunuzdaki sözleşmeleri yönetmek, işlemek ve durumunu izlemek için profesyonel bir site oluşturmanıza olanak sağlamak için tasarlanmıştır.
+Sözleşme yönetim sitesi, kuruluşunuzun Microsoft Syntex değerini en üst düzeye çıkarmanıza yardımcı olan, dağıtılmaya hazır ve özelleştirilebilir bir SharePoint sitesi şablonudur. Site, kuruluşunuzdaki sözleşmeleri yönetmek, işlemek ve durumunu izlemek için profesyonel bir site oluşturmanıza olanak sağlamak için tasarlanmıştır.
 
 ## <a name="features-of-the-site"></a>Sitenin özellikleri
 
-![Sözleşme Yönetimi site şablonu giriş sayfasının ekran görüntüsü.](../media/content-understanding/contracts-management-site-home-page.png)
+![Sözleşme yönetimi sitesi şablonu giriş sayfasının ekran görüntüsü.](../media/content-understanding/contracts-management-site-home-page.png)
 
-Sözleşme Yönetimi sitesi önceden doldurulmuş sayfalar, web bölümleri ve site gezintisi içerir. Site, kuruluşunuzun kendi markasını, çalışan bilgilerini, ilke ve planlama bilgilerini, iş akışını, kişileri ve kaynakları birleştirecek şekilde özelleştirilebilir.
+Sözleşme yönetimi sitesi önceden doldurulmuş sayfalar, web bölümleri ve site gezintisi içerir. Site, kuruluşunuzun kendi markasını, çalışan bilgilerini, ilke ve planlama bilgilerini, iş akışını, kişileri ve kaynakları birleştirecek şekilde özelleştirilebilir.
 
 Site, belgeleri sınıflandırmak ve meta verileri ayıklamak için SharePoint belge kitaplığında çalışan bir Syntex modelinin gücünü kullanır. Site, hızlı bir şekilde başlamanız için önceden oluşturulmuş belge kitaplıkları sağlar, ancak gerektiğinde kendi belgenizi de oluşturabilirsiniz. Site aşağıdaki öne çıkan kitaplıkları içerir:
 
@@ -48,38 +48,38 @@ Kitaplıkta durum gibi diğer meta verileri izleyebileceğiniz ve belge kitaplı
 
 ## <a name="provision-the-site"></a>Siteyi sağlama
 
-Sözleşme Yönetimi sitesi [SharePoint look book hizmetinden](https://lookbook.microsoft.com/) sağlanabilir.
+Sözleşme yönetim sitesi [SharePoint look book hizmetinden](https://lookbook.microsoft.com/) sağlanabilir.
 
-![Sözleşme Yönetimi site şablonu sağlama sayfasının ekran görüntüsü.](../media/content-understanding/contracts-management-site-provisioning-page.png)
+![Sözleşme yönetimi sitesi şablonu sağlama sayfasının ekran görüntüsü.](../media/content-understanding/contracts-management-site-provisioning-page.png)
 
 > [!NOTE]
-> Siteyi sağlamak için Microsoft 365'te genel yönetici veya SharePoint yöneticisi olmanız gerekir. Ayrıca, bu site şablonunu kuruluşunuza eklemek için bir Syntex lisansına sahip olmanız gerekir.
+> Siteyi sağlamak için Microsoft 365'te genel yönetici veya SharePoint yöneticisi olmanız gerekir. Ayrıca, bu site şablonunu kuruluşunuza eklemek için [bir Microsoft Syntex lisansına](syntex-licensing.md) sahip olmanız gerekir.
 
-1. [SharePoint görünüm kitabının](https://lookbook.microsoft.com/) ana sayfasında, **Tasarımları görüntüle** menüsünde **Syntex** > **Syntex Sözleşme yönetimi'ni** seçin.
+1. [SharePoint görünüm kitabının](https://lookbook.microsoft.com/) ana sayfasında, **Tasarımları görüntüle** menüsünde **Syntex** > **Syntex sözleşme yönetimi'ni** seçin.
 
-2. **Sözleşme Yönetimi** sayfasında **Kiracınıza ekle'yi** seçin.
+2. **Sözleşme yönetimi** sayfasında **Kiracınıza ekle'yi** seçin.
 
-    ![Sözleşme Yönetimi site şablonu sağlama sayfasındaki Kiracınıza ekle düğmesinin ekran görüntüsü.](../media/content-understanding/contracts-management-site-add-to-your-tenant.png)
+    ![Sözleşme yönetimi sitesi şablonu sağlama sayfasındaki Kiracınıza ekle düğmesinin ekran görüntüsü.](../media/content-understanding/contracts-management-site-add-to-your-tenant.png)
 
 3. E-posta adresinizi (sitenizin kullanıma hazır olduğu zaman bildirimi için), kullanmak istediğiniz site URL'sini ve siteniz için kullanmak istediğiniz başlığı girin. 
 
-    ![Sözleşme Yönetimi site şablonu sağlama sayfasındaki e-posta ve site URL'si alanlarının ekran görüntüsü.](../media/content-understanding/contracts-management-email-and-site-url.png)
+    ![Sözleşme yönetimi site şablonu sağlama sayfasındaki e-posta ve site URL'si alanlarının ekran görüntüsü.](../media/content-understanding/contracts-management-email-and-site-url.png)
 
-4. **Sağla'yı** seçtiğinizde, kısa bir süre içinde siteniz kullanıma hazır olur. Sözleşme Yönetimi site şablonunu sağlama isteğinizin tamamlandığını belirten bir e-posta alırsınız (sağladığınız e-posta adresine gönderilir).
+4. **Sağla'yı** seçtiğinizde, kısa bir süre içinde siteniz kullanıma hazır olur. Sözleşme yönetimi sitesi şablonunu sağlama isteğinizin tamamlandığını belirten bir e-posta alırsınız (sağladığınız e-posta adresine gönderilir).
 
-5. **Siteyi aç'ı** seçtiğinizde Sözleşme Yönetimi sitenizi görürsünüz. Buradan siteyi keşfedebilir, sayfaları ve içeriği özelleştirebilirsiniz. 
+5. **Siteyi aç'ı** seçtiğinizde sözleşme yönetim sitenizi görürsünüz. Buradan siteyi keşfedebilir, sayfaları ve içeriği özelleştirebilirsiniz. 
 
 SharePoint look book hizmetinden sağlama hakkında daha fazla bilgi için bkz. [Yeni öğrenme yolları çözümü sağlama](/office365/customlearning/custom_provision).
 
 ## <a name="customize-the-site"></a>Siteyi özelleştirme
 
-Sözleşme Yönetimi sitesini diğer kullanıcılarla paylaşmadan önce, siteyi gereksinimlerinizi karşılayacak şekilde özelleştirmek istersiniz. 
+Sözleşme yönetim sitesini diğer kullanıcılarla paylaşmadan önce, siteyi gereksinimlerinizi karşılayacak şekilde özelleştirmek istersiniz. 
 
 ### <a name="customize-the-look-and-feel-of-your-site"></a>Sitenizin görünümünü özelleştirme
 
 Sitenizin aşağıdaki öğelerini kuruluşunuzun ihtiyacına uyacak şekilde özelleştirin:
 
-- Sözleşme Yönetimi sitesindeki [markayı](https://support.microsoft.com/office/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b) kuruluşunuzla uyumlu olacak şekilde güncelleştirin.
+- Sözleşme yönetimi sitesindeki [markayı](https://support.microsoft.com/office/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b) kuruluşunuzla uyumlu olacak şekilde güncelleştirin.
 - Mümkün olduğunca kuruluşunuzdaki gerçek sitelerin görüntülerini içerecek şekilde [Hero web bölümünü](https://support.microsoft.com/office/use-the-hero-web-part-d57f449b-19a0-4b0d-8ce3-be5866430645) özelleştirin.
 - [Kişiler web bölümünü](https://support.microsoft.com/office/show-people-profiles-on-your-page-with-the-people-web-part-7e52c5f6-2d72-48fa-a9d3-d2750765fa05) sözleşme yöneticilerinin veya diğer kişilerin iletişim bilgilerini içerecek şekilde özelleştirin.
 - Stiller, madde işaretleri, girintiler, vurgulama ve bağlantılar gibi biçimlendirme seçeneklerine paragraf eklemek için [Metin web bölümünü](https://support.microsoft.com/office/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801) özelleştirin.
@@ -91,7 +91,7 @@ Sitenizin aşağıdaki öğelerini kuruluşunuzun ihtiyacına uyacak şekilde ö
 
 ### <a name="customize-the-site-navigation"></a>Site gezintisini özelleştirme
 
-Sözleşme Yönetimi sitesi için site gezintisi denetimine sahipsiniz. Kuruluşunuzla uyumlu değişiklikler yapmanıza yardımcı olması için aşağıdaki kaynakları kullanın:
+Sözleşme yönetimi sitesi için site gezintisi denetimine sahipsiniz. Kuruluşunuzla uyumlu değişiklikler yapmanıza yardımcı olması için aşağıdaki kaynakları kullanın:
 
 - [Site gezintisini](https://support.microsoft.com/office/customize-the-navigation-on-your-sharepoint-site-3cd61ae7-a9ed-4e1e-bf6d-4655f0bf25ca) özelleştirin.
 - [Bu siteyi bir hub ile ilişkilendirin](https://support.microsoft.com/office/associate-a-sharepoint-site-with-a-hub-site-ae0009fd-af04-4d3d-917d-88edb43efc05).
@@ -101,7 +101,7 @@ Sözleşme Yönetimi sitesi için site gezintisi denetimine sahipsiniz. Kuruluş
 
 ### <a name="add-other-workflows"></a>Diğer iş akışlarını ekleme
 
-Sözleşme Yönetimi sitesi, başlamak için ihtiyacınız olan bileşenleri içerir, ancak aşağıdakiler gibi ek bileşenler de ekleyebilirsiniz:
+Sözleşme yönetim sitesi, başlamak için ihtiyacınız olan bileşenleri içerir, ancak aşağıdakiler gibi ek bileşenler de ekleyebilirsiniz:
 
 - **Sözleşme istekleri** kitaplığına yeni bir sözleşme eklendiğinde iş akışını tetikleme amacıyla [Power Automate akışı](/power-automate/getting-started) kullanın.
 - Ek [Syntex modelleri](/microsoft-365/contentunderstanding/#models) oluşturun.
@@ -110,13 +110,13 @@ Sözleşme Yönetimi sitesi, başlamak için ihtiyacınız olan bileşenleri iç
 
 ## <a name="share-the-site-with-others"></a>Siteyi başkalarıyla paylaşma
 
-[Sitenizi başkalarıyla paylaşın](https://support.microsoft.com/office/share-a-site-958771a8-d041-4eb8-b51c-afea2eae3658). Sözleşme Yönetimi sitesinin yaygın olarak bilindiğinden ve benimsendiğinden emin olmak için kuruluşunuzdaki diğer kişilerle iş ortağı olun.
+[Sitenizi başkalarıyla paylaşın](https://support.microsoft.com/office/share-a-site-958771a8-d041-4eb8-b51c-afea2eae3658). Sözleşme yönetim sitesinin yaygın olarak bilindiğinden ve benimsendiğinden emin olmak için kuruluşunuzdaki diğer kişilerle iş ortağı olun.
 
-Sözleşme Yönetimi sitesini yönetmeye yönelik önemli başarı faktörleri:
+Sözleşme yönetim sitesini yönetmek için önemli başarı faktörleri:
 
-- Sözleşme Yönetimi sitenizin başlatılmasını kutlayın.
+- Sözleşme yönetim sitenizin başlatılmasını kutlayın.
 - Yeni kaynağı duyurarak haber oluşturun ve gönderin.
 - Kullanıcıların sorular ve geri bildirimler için bir çıkış noktası olduğundan emin olun.
 - Giriş sayfasındaki içeriği yükseltmek, gezintiyi güncelleştirmek veya netlik için içeriği yeniden yazmak için [site analizinden](https://support.microsoft.com/office/view-usage-data-for-your-sharepoint-site-2fa8ddc2-c4b3-4268-8d26-a772dc55779e) elde edilen içgörüleri kullanın.
-- İçeriğin güncel ve hala ilgili olduğundan emin olmak için Sözleşme Yönetimi sitesini gerektiği gibi gözden geçirin.
+- İçeriğin güncel ve hala ilgili olduğundan emin olmak için sözleşme yönetim sitesini gerektiği gibi gözden geçirin.
 

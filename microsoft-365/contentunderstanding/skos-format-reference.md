@@ -5,19 +5,19 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: high
 description: SharePoint taksonomisi için SKOS biçim başvurusu hakkında bilgi edinin.
-ms.openlocfilehash: 794b1d444ca49a7b33e0a60b46cefe896dd8578a
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 305d3098a4481211623368e443294c387c879ef4
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564202"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660719"
 ---
 # <a name="skos-format-reference-for-sharepoint-taxonomy"></a>SharePoint taksonomisi için SKOS biçim başvurusu
 
