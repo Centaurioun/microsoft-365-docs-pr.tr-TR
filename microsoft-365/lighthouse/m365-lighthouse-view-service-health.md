@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: chboyd
+ms.reviewer: chboyd
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -18,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için kiracı hizmeti durumunu görüntülemeyi öğrenin.
-ms.openlocfilehash: fa207ffe5519a31e7abd709c473794deccc1bda1
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 17e20fd4f95bc5ba3cfba8bdada49d715a13f7e2
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68187635"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68663049"
 ---
 # <a name="view-tenant-service-health-in-microsoft-365-lighthouse"></a>kiracı hizmetinin durumunu Microsoft 365 Lighthouse görüntüleme
 

@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 10/13/2022
+ms.date: 10/20/2022
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 6a372bca6c2eb278a91aff7b9494871317f25492
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: 6e246cfeb14095cf0b5c471cbe4b3707d94d203d
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68573537"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662609"
 ---
 # <a name="protect-your-network"></a>Ağınızı koruyun
 
@@ -269,7 +269,7 @@ Gelişmiş avcılık için örnek bir sorgu aşağıda verilmişti:
 ```kusto
 
 DeviceNetworkEvents
-|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked', 'ConnectionSuccess')
+|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 
 ```
 

@@ -6,7 +6,7 @@ ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
@@ -15,27 +15,27 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: high
 description: Microsoft Syntex'i ayarlayın.
-ms.openlocfilehash: 5fab513e50bba1e0ccc975b724f589aebec914c4
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: b6a7309e9ae833f643930d9f308c1b748afeb0f5
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564246"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659597"
 ---
 # <a name="set-up-microsoft-syntex"></a>Microsoft Syntex'i ayarlama
 
-Yöneticiler[, Microsoft Syntex'i](index.md) ayarlamak için <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 yönetim merkezi</a> kullanabilir. 
+Yöneticiler, Microsoft Syntex'i ayarlamak için <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 yönetim merkezi</a> kullanabilir. 
 
 Başlamadan önce aşağıdakileri göz önünde bulundurun:
 
-- Form işlemeyi hangi SharePoint sitelerinde etkinleştireceksiniz? Bunların tümü, bazıları veya belirli siteler mi?
+- Belge işlemeyi hangi SharePoint sitelerinde etkinleştireceksiniz? Bunların tümü, bazıları veya belirli siteler mi?
 - Varsayılan içerik merkezinize ne ad vereceksiniz?
 
 İlk kurulumdan sonra <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 yönetim merkezi</a> ayarlarınızı değiştirebilirsiniz.
 
 Kurulumdan önce ortamınızda içerik anlama özelliğini ayarlamanın ve yapılandırmanın en iyi yolunu planladığınızdan emin olun. Örneğin, aşağıdaki kararları vermeniz gerekir:
 
-- Form işlemeyi etkinleştirmek istediğiniz SharePoint siteleri - bunların tümü, bazıları veya seçili siteler
+- Belge işlemeyi etkinleştirmek istediğiniz SharePoint siteleri - bunların tümü, bazıları veya seçili siteler
 - İçerik merkezinizin adı ve yöneticileri
 
 ## <a name="requirements"></a>Gereksinimler 
@@ -49,7 +49,7 @@ Yönetici olarak, kurulumdan sonra istediğiniz zaman ve <a href="https://go.mic
 
 Özel bir Power Platform ortamı kullanmayı planlıyorsanız, bu ortamda *Cortex Projesi için AI Builder* uygulamasını yüklemeniz gerekir. Ayrıntılar için [bkz. Dynamics 365 uygulamalarını yönetme](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) ve Dynamics 365 uygulamaları listesinde *Cortex Projesi için AI Builder* uygulamasını arama.
 
-Form işleme modelleri oluşturabilmeniz için önce özel ortama [AI Builder kredileri ayırmanız](/power-platform/admin/capacity-add-on) da gerekir. 
+Ayrıca, belge işleme modelleri oluşturabilmeniz için önce özel ortama [AI Builder kredileri ayırmanız](/power-platform/admin/capacity-add-on) gerekir. 
 
 Özel bir ortam kullanırken, model oluşturuculara Ortam Oluşturucu güvenlik rolü atanmalı ve model kullanıcılarına Temel Kullanıcı güvenlik rolü atanmalıdır. Daha fazla bilgi için bkz. [Kullanıcıya güvenlik rolü atama](/power-platform/admin/assign-security-roles) .
 
@@ -57,15 +57,15 @@ Form işleme modelleri oluşturabilmeniz için önce özel ortama [AI Builder kr
 
 ### <a name="licensing"></a>Lisanslama
 
-Syntex'i kullanmak için kuruluşunuzun Syntex aboneliğine ve her kullanıcıya atanmış bir lisansa sahip olması gerekir. yntex lisansları, tümü atanması gereken aşağıdaki uygulamaları içerir:
+Syntex'i kullanmak için kuruluşunuzun Syntex aboneliğine ve her kullanıcıya atanmış bir lisansa sahip olması gerekir. Syntex lisansları, tümü atanması gereken aşağıdaki uygulamaları içerir:
 
-- Microsoft Syntex
-- Microsoft Syntex - SPO türü
-- Microsoft Syntex için Common Data Service
+- Syntex
+- Syntex - SPO türü
+- Syntex için Common Data Service
 
-Form işlemeyi kullanmak için AI Builder kredilerine de ihtiyacınız vardır. Syntex'in lisanslı her kullanıcısı için her ay bir AI Builder kredisi ayırması sağlanır.
+Yapılandırılmış belge işleme veya serbest biçimli belge işleme modellerini kullanmak için AI Builder kredilerine de ihtiyacınız vardır. Syntex'in lisanslı her kullanıcısı için her ay bir AI Builder kredisi ayırması sağlanır.
 
-Syntex lisanslama hakkında ayrıntılı bilgi için bkz. [Syntex lisanslama](syntex-licensing.md).
+Syntex lisanslama hakkında ayrıntılı bilgi için bkz. [Microsoft Syntex lisansı](syntex-licensing.md)
 
 ## <a name="to-set-up-syntex"></a>Syntex'i ayarlamak için
 
@@ -78,7 +78,7 @@ Syntex lisanslama hakkında ayrıntılı bilgi için bkz. [Syntex lisanslama](sy
     > [!div class="mx-imgBorder"]
     > ![Kurulumu başlatın.](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. **Form İşlemeyi Yapılandır** sayfasında, kullanıcıların belirli SharePoint belge kitaplıklarında form işleme modelleri oluşturmasına izin vermek isteyip istemediğinizi seçebilirsiniz. Belge kitaplığı şeridinde, etkin olduğu SharePoint belge kitaplıklarında **form işleme modeli oluşturma** seçeneği sağlanacaktır.
+4. **Form İşlemeyi Yapılandır** sayfasında, kullanıcıların belirli SharePoint belge kitaplıklarında belge işleme modelleri oluşturmasına izin vermek isteyip istemediğinizi seçebilirsiniz. Belge kitaplığı şeridinde, etkin olduğu SharePoint belge kitaplıklarında **form işleme modeli oluşturma** seçeneği sağlanacaktır.
  
      **Form işleme modeli oluşturma seçeneği hangi SharePoint kitaplıkları tarafından gösterilmelidir**? için şunları seçebilirsiniz:</br>
       - **Kuruluşunuzdaki tüm SharePoint kitaplıklarının** kullanımına açmak için tüm SharePoint sitelerindeki kitaplıklar.</br>
@@ -86,14 +86,14 @@ Syntex lisanslama hakkında ayrıntılı bilgi için bkz. [Syntex lisanslama](sy
       - Herhangi bir sitenin kullanımına açmak istemiyorsanız **SharePoint kitaplığı** yok (kurulumdan sonra bunu değiştirebilirsiniz).
 
    > [!div class="mx-imgBorder"]
-   > ![Form işleme sitesi seçeneklerini yapılandırın.](../media/content-understanding/admin-configforms.png)
+   > ![Belge işleme sitesi seçeneklerini yapılandırın.](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
-   > Site eklendikten sonra kaldırılması, sitedeki kitaplıklara uygulanan mevcut modelleri veya bir kitaplığa belge anlama modelleri uygulama özelliğini etkilemez. 
+   > Site eklendikten sonra sitenin kaldırılması, o sitedeki kitaplıklara uygulanan mevcut modelleri veya bir kitaplığa yapılandırılmamış belge işleme modelleri uygulama özelliğini etkilemez. 
     
-    Yapılandırılmış birden çok Power Platform ortamınız varsa, form işleme için hangisini kullanmak istediğinizi seçebilirsiniz. (Yalnızca bir ortamınız varsa bu seçenek görünmez.)
+    Birden çok Power Platform ortamı yapılandırdıysanız, belge işleme için hangisini kullanmak istediğinizi seçebilirsiniz. (Yalnızca bir ortamınız varsa bu seçenek görünmez.)
 
-    ![Form işleme Power Platform seçeneklerini yapılandırın.](../media/content-understanding/setup-power-platform-env.png)
+    ![Belge işleme Power Platform seçeneklerini yapılandırın.](../media/content-understanding/setup-power-platform-env.png)
 
     **Power Platform ortamı** için şunları seçebilirsiniz:
     - Varsayılan Power Platform **ortamınızı** kullanmak için varsayılan ortamı kullanın.
@@ -101,7 +101,7 @@ Syntex lisanslama hakkında ayrıntılı bilgi için bkz. [Syntex lisanslama](sy
 
     **İleri**'ye tıklayın.
 
-5. **İçerik Merkezi Oluştur** sayfasında, kullanıcılarınızın belge anlama modelleri oluşturup yönetebileceği bir SharePoint içerik merkezi sitesi oluşturabilirsiniz. Daha önce SharePoint yönetim merkezinden bir içerik merkezi oluşturduysanız, bu bilgiler burada görüntülenir ve **İleri'yi** seçebilirsiniz.
+5. **İçerik Merkezi Oluştur** sayfasında, kullanıcılarınızın yapılandırılmamış belge işleme modelleri oluşturup yönetebileceği bir SharePoint içerik merkezi sitesi oluşturabilirsiniz. Daha önce SharePoint yönetim merkezinden bir içerik merkezi oluşturduysanız, bu bilgiler burada görüntülenir ve **İleri'yi** seçebilirsiniz.
 
     1. **Site adı** alanına, içerik merkezi sitenize vermek istediğiniz adı yazın.
     
@@ -130,7 +130,7 @@ Lisans atamak için:
 
 3. Açılan menüden **Uygulamalar'ı** seçin.
 
-4. **SharePoint Syntex için uygulamaları göster'i** seçin. **Uygulamalar'ın** altında SharePoint Syntex, **SharePoint Syntex** ve **SharePoint Syntex - SPO türü** **için Common Data Service'in** seçili olduğundan emin olun.
+4. **Syntex için uygulamaları göster'i** seçin. **Uygulamalar'ın** altında **Syntex, Syntex ve Syntex için Common Data Service** **- SPO türünün** tümünün seçili olduğundan emin olun. 
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft 365 yönetim merkezi syntex lisansları.](../media/content-understanding/sharepoint-syntex-licenses.png)
@@ -139,8 +139,6 @@ Lisans atamak için:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Form işleme modeline genel bakış](/ai-builder/form-processing-model-overview)
-
-[Adım Adım: Belge Anlama Modeli Oluşturma (video)](https://www.youtube.com/watch?v=DymSHObD-bg)
+[AI Builder'da belge işleme modeline genel bakış](/ai-builder/form-processing-model-overview)
 
 [Power Platform yönetim merkezinde ortam oluşturma ve yönetme](/power-platform/admin/create-environment)

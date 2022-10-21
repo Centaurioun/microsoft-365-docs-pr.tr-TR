@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
@@ -14,15 +14,16 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Microsoft Syntex'te sınıflandırıcı oluşturmayı öğrenin.
-ms.openlocfilehash: 9b8f78ed01a6fc366f7f84d85d7202c8cdb99b31
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 7f459145bafbf9b50146ae375dc1c98b1f54ffc0
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547784"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661577"
 ---
 # <a name="create-a-classifier-in-microsoft-syntex"></a>Microsoft Syntex'te sınıflandırıcı oluşturma
 
+<sup>**Şunlar için geçerlidir:**  &ensp; Yapılandırılmamış belge işlemeyi &#10003;</sup>
 
 </br>
 
@@ -54,9 +55,15 @@ Sınıflandırıcı oluşturmak için şunları yapmanız gerekir:
 
 Modelinizi oluşturmanın ilk adımı, modelinize bir ad vermektir:
 
-1. İçerik **merkezinden Yeni'yi** ve ardından **Model oluştur'u** seçin.
-2. **Yeni belge anlama modeli** bölmesindeki **Ad** alanına modelin adını yazın. Örneğin, sözleşme yenileme belgelerini tanımlamak istiyorsanız modeli *Sözleşme Yenileme* olarak adlandırabilirsiniz.
-3. **Oluştur**'u seçin. Bu, model için bir giriş sayfası oluşturur.</br>
+1. İçerik **merkezinden Yeni'yi** ve ardından **Model'i** seçin.
+
+2. **Model oluşturma seçenekleri** sayfasında **Öğretim yöntemi'ni** seçin.
+
+3. **Öğretim yöntemi: Ayrıntılar** sayfasında **İleri'yi** seçin.
+
+4. **Öğretme yöntemiyle model oluşturma** sayfasında, **Model adı** alanına modelin adını yazın. Örneğin, sözleşme yenileme belgelerini tanımlamak istiyorsanız modeli *Sözleşme Yenileme* olarak adlandırabilirsiniz.
+
+5. **Oluştur**'u seçin. Bu, model için bir giriş sayfası oluşturur.
 
     ![Sınıflandırıcı modeli giriş sayfası.](../media/content-understanding/model-home.png)
 
@@ -68,12 +75,15 @@ Bu modeli, şemasını kullanmak üzere SharePoint <a href="https://go.microsoft
 
 ## <a name="add-your-example-files"></a>Örnek dosyalarınızı ekleme
 
-Modelin giriş sayfasında, modeli belge türünüzü tanımlayacak şekilde eğitmek için ihtiyacınız olacak örnek dosyalarınızı ekleyin. </br>
+Modelin giriş sayfasında, modeli belge türünüzü tanımlayacak şekilde eğitmek için ihtiyacınız olacak örnek dosyalarınızı ekleyin. 
+
+<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4D0iX] 
 
 </br>
+--->
 
 > [!NOTE]
 > Hem sınıflandırıcı hem de [ayıklayıcı eğitimi](create-an-extractor.md) için aynı dosyaları kullanmanız gerekir. Her zaman daha sonra daha fazlasını ekleme seçeneğiniz vardır, ancak genellikle tam bir örnek dosya kümesi eklersiniz. Modelinizi eğitmek için bazılarını etiketleyip kalan etiketsiz olanları test ederek model uygunluklarını değerlendirin. 
@@ -149,8 +159,6 @@ Etiketli örnek dosyalarınızda bir eşleşme aldıysanız, artık modelinizi m
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Ayıklayıcı oluştur](create-an-extractor.md)
-
-[Document Understanding'e genel bakış](document-understanding-overview.md)
 
 [Açıklama türleri](explanation-types-overview.md)
 

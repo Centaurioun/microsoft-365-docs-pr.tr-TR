@@ -1,71 +1,65 @@
 ---
-title: Microsoft Syntex'te form işlemeye genel bakış
+title: Microsoft Syntex'te yapılandırılmış belge işlemeye genel bakış
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft Syntex'te form işleme modelleri oluşturmak için Yapay Zeka Derlemesi'ni kullanmayı öğrenin.
-ms.openlocfilehash: a29ab194f42331218bf75671cfb776c706d2ee46
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+description: Microsoft Syntex'te yapılandırılmış belge işleme modelleri oluşturmak için AI Builder'ı kullanmayı öğrenin.
+ms.openlocfilehash: 9d006741cc236841f4438c5937666c1fc0f02e16
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547521"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662664"
 ---
-# <a name="form-processing-overview-in-microsoft-syntex"></a>Microsoft Syntex'te form işlemeye genel bakış
-
- ![AI Builder.](../media/content-understanding/ai-builder.png)</br>
-
-Microsoft Syntex, SharePoint belge kitaplıkları içinde model oluşturmak için Microsoft Power Apps [AI Builder](/ai-builder/overview) form işlemeyi kullanır.
-
-Formlar ve faturalar gibi yapılandırılmış veya yarı yapılandırılmış belgelerden anahtar-değer çiftlerini ve tablo verilerini tanımlamak ve ayıklamak için makine öğrenmesi teknolojisini kullanan yapay zeka modelleri oluşturmak için AI Builder form işlemeyi kullanabilirsiniz.
-
-Kuruluşlar genellikle posta, faks ve e-posta gibi çeşitli kaynaklardan büyük miktarlarda fatura alır. Bu belgelerin işlenmesi ve veritabanına el ile girilmesi önemli ölçüde zaman alabilir. Belgelerinizdeki metinleri, anahtar/değer çiftlerini ve tabloları ayıklamak için yapay zeka kullanarak form işleme bu işlemi otomatikleştirir. 
+# <a name="overview-of-structured-document-processing-in-microsoft-syntex"></a>Microsoft Syntex'te yapılandırılmış belge işlemeye genel bakış
 
 > [!NOTE]
-> Form işleme senaryosu örnekleri hakkında daha fazla bilgi için [Syntex benimseme: Kullanmaya başlama kılavuzuna](./adoption-getstarted.md) bakın.
+> *Yapılandırılmış belge işleme* , önceki sürümlerde *form işleme* olarak biliniyordu.
 
-Örneğin, belge kitaplığına yüklenen tüm satınalma siparişi belgelerini tanımlayan bir form işleme modeli oluşturabilirsiniz. Her satın alma siparişinden, *po numarası*, *tarih* veya *toplam maliyet* gibi sizin için önemli olan belirli verileri ayıklayabilir ve görüntüleyebilirsiniz.
+Alan ve tablo değerlerini otomatik olarak tanımlamak için yapılandırılmış belge işleme modelini ([düzen yöntemi](create-syntex-model.md#train-a-custom-model)) kullanın. Formlar ve faturalar gibi yapılandırılmış veya yarı yapılandırılmış belgeler için en iyi sonucu sağlar.
 
-![Belge kitaplığı görünümü.](../media/content-understanding/doc-lib-done.png)</br>  
+Microsoft Syntex, SharePoint belge kitaplıkları içinde yapılandırılmış belge işleme modelleri oluşturmak için Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) belge işlemeyi (eski adıyla form işleme) kullanır.
+<!---
+ ![AI Builder.](../media/content-understanding/ai-builder.png)
+--->
+Formlar ve faturalar gibi yapılandırılmış veya yarı yapılandırılmış belgelerden anahtar-değer çiftlerini ve tablo verilerini tanımlamak ve ayıklamak için makine öğrenmesi teknolojisini kullanan yapılandırılmış belge işleme modelleri oluşturmak için AI Builder belge işlemeyi kullanabilirsiniz.
 
-Modelinizi eğitmek ve formunuzdan ayıklanacak bilgileri tanımlamak için örnek dosyaları kullanırsınız. Belgenizin düzeni, modeliniz eğitilerek öğrenilir. Başlamak için yalnızca beş form belgesine ihtiyacınız vardır. AI Builder örnek dosyalarınızı anahtar-değer çiftleri için analiz eder ve algılanmamış olabilecek dosyaları el ile de tanımlayabilirsiniz.  AI builder, modelinizin doğruluğunu örnek dosyalarınızda test etmenizi sağlar.
+Kuruluşlar genellikle posta, faks ve e-posta gibi çeşitli kaynaklardan büyük miktarlarda fatura alır. Bu belgelerin işlenmesi ve veritabanına el ile girilmesi önemli ölçüde zaman alabilir. Belgelerinizdeki metinleri, anahtar-değer çiftlerini ve tabloları ayıklamak için yapay zeka kullanarak Syntex bu işlemi otomatikleştirir. 
 
-Modelinizi eğitip yayımladıktan sonra modeliniz bir [Power Automate akışı](/power-automate/getting-started) oluşturur. Akış, SharePoint belge kitaplığına bir dosya yüklendiğinde çalışır ve modelde tanımlanan verileri ayıklar. Ayıklanan veriler, modelinizin belge kitaplığı görünümündeki sütunlarda görüntülenir.
+> [!NOTE]
+> Kuruluşunuzda bu modelleri kullanma hakkında daha fazla fikir için bkz. [Benimsemeyi ve](adoption-getstarted.md) [Senaryoları ve kullanım örneklerini](adoption-scenarios.md) kullanmaya başlama.
 
-Kullanıcıların içinde form işleme modeli oluşturabilmesi için Office 365 yöneticisinin SharePoint belge kitaplığı için [form işlemeyi](create-a-form-processing-model.md) [etkinleştirmesi](./set-up-content-understanding.md) gerekir. Siteleri kurulum sırasında veya kurulumdan sonra yönetim ayarlarınızdan seçebilirsiniz.
+Örneğin, belge kitaplığına yüklenen tüm belgeleri tanımlayan yapılandırılmış bir belge işleme modeli oluşturabilirsiniz. Her belgeden, sizin için önemli olan belirli verileri ayıklayabilir ve görüntüleyebilirsiniz.
 
-## <a name="file-limitations"></a>Dosya sınırlamaları
+![Belge kitaplığı görünümünü gösteren ekran görüntüsü.](../media/content-understanding/doc-lib-done.png)  
 
-Form işleme modellerini kullanırken [, dosya kullanımına yönelik gereksinimleri ve sınırlamaları](/ai-builder/form-processing-model-requirements) not aldığınızdan emin olun.
+Modelinizi eğitmek ve formunuzdan ayıklanacak bilgileri tanımlamak için örnek dosyaları kullanırsınız. Belgenizin düzeni, modeliniz eğitilerek öğrenilir. Başlamak için yalnızca beş form belgesine ihtiyacınız vardır. Syntex örnek dosyalarınızı anahtar-değer çiftleri için analiz eder ve algılanmamış olabilecek dosyaları el ile de tanımlayabilirsiniz.  AI builder, modelinizin doğruluğunu örnek dosyalarınızda test etmenizi sağlar.
 
-## <a name="supported-languages"></a>Desteklenen diller
+Yalnızca etkin olduğu SharePoint belge kitaplıklarında yapılandırılmış bir belge işleme modeli oluşturabilirsiniz. Etkinleştirildiyse, belge kitaplığınızda **Sınıflandır ve ayıkla** seçeneğini görebilirsiniz. 
 
-Form işleme, belgeleri 73'ten fazla dilde destekler. Dillerin listesi için bkz. [Form işleme dili desteği](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support).
+![AI Builder modelini gösteren ekran görüntüsü.](../media/content-understanding/create-ai-builder-model2.png)
 
-## <a name="multi-geo-environments"></a>Multi-Geo ortamları
+Belge kitaplığınızda etkinleştirilmesi gerekiyorsa Microsoft 365 yöneticinize başvurun.
 
-[Bir Microsoft 365 Multi-Geo ortamında](../enterprise/microsoft-365-multi-geo.md) Syntex'i ayarlarken, bunu yalnızca merkezi konumda form işlemeyi kullanacak şekilde yapılandırabilirsiniz. Form işlemeyi bir uydu konumunda kullanmak istiyorsanız Microsoft desteğine başvurun.
+## <a name="requirements"></a>Gereksinimler
 
-## <a name="custom-environments"></a>Özel ortamlar
-
-Power Platform işleme için özel bir ortam (varsayılan ortam yerine) kullanıyorsanız ek kurulum gereksinimleri vardır. Daha fazla bilgi için bkz [. Özel Power Platform ortamları](set-up-content-understanding.md#requirements).
-
+Bu modeli seçerken dikkate alınması gereken gereksinimler hakkında bilgi için bkz [. Microsoft Syntex'te modeller için gereksinimler ve sınırlamalar](requirements-and-limitations.md#structured-document-processing).
 
 ## <a name="see-also"></a>Ayrıca bkz.
-  
+
+[Özel modelleri karşılaştırma](difference-between-document-understanding-and-form-processing-model.md)
+
+[Yapılandırılmış belge işleme modelini eğitin](create-a-form-processing-model.md)
+
 [Power Automate belgeleri](/power-automate/)
-
-[Form işleme modeli oluştur](create-a-form-processing-model.md)
-
-[Belge anlamaya genel bakış](document-understanding-overview.md)
 
 [Eğitim: AI Builder ile iş performansını geliştirme](/training/paths/improve-business-performance-ai-builder/?source=learn)

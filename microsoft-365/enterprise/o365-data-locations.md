@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 müşteri verilerinizin dünya çapında nerede depolandığını belirleme
-ms.openlocfilehash: b16e3dd298b5106446d882b1d950b8aacd68d708
-ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+ms.openlocfilehash: 0b1a21871fefb075a4939f134f26f1baa5b42a1d
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68298089"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661159"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 müşteri verilerinizin depolandığı yer
 
@@ -147,7 +147,7 @@ Ne olursa olsun, Microsoft müşterilerin veya son kullanıcılarının müşter
 ### <a name="what-are-the-considerations-for-microsoft-viva-data-locations"></a>Microsoft Viva veri konumları için dikkat edilmesi gerekenler nelerdir?
 <details><summary>Genişletmek için tıklayın</summary>
 
-- Viva Bağlantılar
+- Viva Bağlantıları
   - Pano, Kaynaklar ve masaüstü uygulamasının verileri SharePoint Online'da depolanır.
   - Akış, SharePoint Online (Haberler), Stream (SharePoint Online'da bekleyen konumda depolanır) ve Yammer 'dan (bekleyenler Yammer'da depolanır) içerik içerir.
 - Viva Analizler
@@ -215,8 +215,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -243,8 +243,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -271,8 +271,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -299,8 +299,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -327,8 +327,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -355,8 +355,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -383,8 +383,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -411,8 +411,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -439,8 +439,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -467,8 +467,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -495,8 +495,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 3 – Amerika |
-| Viva Konular | Küresel Coğrafya 3 – Amerika |
+| Viva Bağlantıları | Küresel Coğrafya 3 – Amerika |
+| Viva Konuları | Küresel Coğrafya 3 – Amerika |
 | Viva Öğrenme | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Kişisel | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 3 – Amerika |
@@ -523,8 +523,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -551,8 +551,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -579,8 +579,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avustralya |
 | Tahta | Avustralya |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Avustralya |
-| Viva Konular | Avustralya |
+| Viva Bağlantıları | Avustralya |
+| Viva Konuları | Avustralya |
 | Viva Öğrenme | Avustralya |
 | Viva Analizler - Kişisel | Avustralya |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -607,8 +607,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -635,8 +635,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -663,8 +663,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -691,8 +691,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -719,8 +719,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -747,8 +747,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -775,8 +775,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -803,8 +803,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -831,8 +831,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -859,8 +859,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -887,8 +887,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -915,8 +915,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -943,8 +943,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 3 – Amerika |
-| Viva Konular | Küresel Coğrafya 3 – Amerika |
+| Viva Bağlantıları | Küresel Coğrafya 3 – Amerika |
+| Viva Konuları | Küresel Coğrafya 3 – Amerika |
 | Viva Öğrenme | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Kişisel | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 3 – Amerika |
@@ -971,8 +971,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 3 – Amerika |
-| Viva Konular | Küresel Coğrafya 3 – Amerika |
+| Viva Bağlantıları | Küresel Coğrafya 3 – Amerika |
+| Viva Konuları | Küresel Coğrafya 3 – Amerika |
 | Viva Öğrenme | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Kişisel | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 3 – Amerika |
@@ -999,8 +999,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -1027,8 +1027,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -1055,8 +1055,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -1083,8 +1083,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Brezilya |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Brezilya |
-| Viva Konular | Brezilya |
+| Viva Bağlantıları | Brezilya |
+| Viva Konuları | Brezilya |
 | Viva Öğrenme | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Kişisel | Brezilya |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 3 – Amerika |
@@ -1111,8 +1111,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -1139,8 +1139,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -1167,8 +1167,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -1195,8 +1195,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -1223,8 +1223,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -1251,8 +1251,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -1279,8 +1279,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -1307,8 +1307,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -1335,8 +1335,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Kanada |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Kanada |
-| Viva Konular | Kanada |
+| Viva Bağlantıları | Kanada |
+| Viva Konuları | Kanada |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Kanada |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -1363,8 +1363,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -1391,8 +1391,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -1419,8 +1419,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -1447,8 +1447,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -1475,8 +1475,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 3 – Amerika |
-| Viva Konular | Küresel Coğrafya 3 – Amerika |
+| Viva Bağlantıları | Küresel Coğrafya 3 – Amerika |
+| Viva Konuları | Küresel Coğrafya 3 – Amerika |
 | Viva Öğrenme | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Kişisel | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 3 – Amerika |
@@ -1503,8 +1503,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -1531,8 +1531,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -1559,8 +1559,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -1587,8 +1587,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -1615,8 +1615,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -1643,8 +1643,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -1671,8 +1671,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -1699,8 +1699,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -1727,8 +1727,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -1755,8 +1755,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -1783,8 +1783,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -1811,8 +1811,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 3 – Amerika |
-| Viva Konular | Küresel Coğrafya 3 – Amerika |
+| Viva Bağlantıları | Küresel Coğrafya 3 – Amerika |
+| Viva Konuları | Küresel Coğrafya 3 – Amerika |
 | Viva Öğrenme | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Kişisel | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 3 – Amerika |
@@ -1839,8 +1839,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -1867,8 +1867,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -1895,8 +1895,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -1923,8 +1923,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -1951,8 +1951,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -1979,8 +1979,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -2007,8 +2007,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 3 – Amerika |
-| Viva Konular | Küresel Coğrafya 3 – Amerika |
+| Viva Bağlantıları | Küresel Coğrafya 3 – Amerika |
+| Viva Konuları | Küresel Coğrafya 3 – Amerika |
 | Viva Öğrenme | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Kişisel | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 3 – Amerika |
@@ -2035,8 +2035,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -2063,8 +2063,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -2091,8 +2091,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -2119,8 +2119,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -2147,8 +2147,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -2175,8 +2175,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -2203,8 +2203,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 3 – Amerika |
-| Viva Konular | Küresel Coğrafya 3 – Amerika |
+| Viva Bağlantıları | Küresel Coğrafya 3 – Amerika |
+| Viva Konuları | Küresel Coğrafya 3 – Amerika |
 | Viva Öğrenme | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Kişisel | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 3 – Amerika |
@@ -2231,8 +2231,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -2259,8 +2259,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -2287,8 +2287,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avustralya |
 | Tahta | Avustralya |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Avustralya |
-| Viva Konular | Avustralya |
+| Viva Bağlantıları | Avustralya |
+| Viva Konuları | Avustralya |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Avustralya |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -2315,8 +2315,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -2343,8 +2343,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Fransa |
-| Viva Konular | Fransa |
+| Viva Bağlantıları | Fransa |
+| Viva Konuları | Fransa |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Fransa |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -2371,8 +2371,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 3 – Amerika |
-| Viva Konular | Küresel Coğrafya 3 – Amerika |
+| Viva Bağlantıları | Küresel Coğrafya 3 – Amerika |
+| Viva Konuları | Küresel Coğrafya 3 – Amerika |
 | Viva Öğrenme | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Kişisel | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 3 – Amerika |
@@ -2399,8 +2399,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -2427,8 +2427,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -2455,8 +2455,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -2483,8 +2483,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -2511,8 +2511,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -2539,8 +2539,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Almanya |
-| Viva Konular | Almanya |
+| Viva Bağlantıları | Almanya |
+| Viva Konuları | Almanya |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Almanya |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -2567,8 +2567,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -2595,8 +2595,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -2623,8 +2623,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -2651,8 +2651,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -2679,8 +2679,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -2707,8 +2707,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -2735,8 +2735,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -2763,8 +2763,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -2791,8 +2791,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -2819,8 +2819,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -2847,8 +2847,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -2875,8 +2875,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 3 – Amerika |
-| Viva Konular | Küresel Coğrafya 3 – Amerika |
+| Viva Bağlantıları | Küresel Coğrafya 3 – Amerika |
+| Viva Konuları | Küresel Coğrafya 3 – Amerika |
 | Viva Öğrenme | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Kişisel | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 3 – Amerika |
@@ -2903,8 +2903,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -2931,8 +2931,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -2959,8 +2959,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -2987,8 +2987,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -3015,8 +3015,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -3043,8 +3043,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -3071,8 +3071,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -3099,8 +3099,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -3127,8 +3127,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Hindistan |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Hindistan |
-| Viva Konular | Hindistan |
+| Viva Bağlantıları | Hindistan |
+| Viva Konuları | Hindistan |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Hindistan |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -3155,8 +3155,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -3183,8 +3183,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -3211,8 +3211,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -3239,8 +3239,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -3267,8 +3267,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -3295,8 +3295,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -3323,8 +3323,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -3351,8 +3351,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Japonya |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Japonya |
-| Viva Konular | Japonya |
+| Viva Bağlantıları | Japonya |
+| Viva Konuları | Japonya |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Japonya |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -3379,8 +3379,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -3407,8 +3407,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -3435,8 +3435,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -3463,8 +3463,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -3491,8 +3491,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -3519,8 +3519,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Güney Kore |
-| Viva Konular | Güney Kore |
+| Viva Bağlantıları | Güney Kore |
+| Viva Konuları | Güney Kore |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Güney Kore |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -3547,8 +3547,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -3575,8 +3575,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -3603,8 +3603,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -3631,8 +3631,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -3659,8 +3659,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -3687,8 +3687,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -3715,8 +3715,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -3743,8 +3743,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -3771,8 +3771,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -3799,8 +3799,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | İsviçre |
-| Viva Konular | İsviçre |
+| Viva Bağlantıları | İsviçre |
+| Viva Konuları | İsviçre |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | İsviçre |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -3827,8 +3827,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -3855,8 +3855,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -3883,8 +3883,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -3911,8 +3911,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -3939,8 +3939,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -3967,8 +3967,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -3995,8 +3995,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -4023,8 +4023,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -4051,8 +4051,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4079,8 +4079,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -4107,8 +4107,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -4135,8 +4135,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -4163,8 +4163,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -4191,8 +4191,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -4219,8 +4219,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -4247,8 +4247,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -4275,8 +4275,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4303,8 +4303,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -4331,8 +4331,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -4359,8 +4359,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -4387,8 +4387,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -4415,8 +4415,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4443,8 +4443,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -4471,8 +4471,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4499,8 +4499,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4527,8 +4527,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -4555,8 +4555,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -4583,8 +4583,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4611,8 +4611,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avustralya |
 | Tahta | Avustralya |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Avustralya |
-| Viva Konular | Avustralya |
+| Viva Bağlantıları | Avustralya |
+| Viva Konuları | Avustralya |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Avustralya |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4639,8 +4639,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -4667,8 +4667,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -4695,8 +4695,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -4723,8 +4723,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4751,8 +4751,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4779,8 +4779,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4807,8 +4807,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Küresel Coğrafya 1 – EMEA |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Norveç |
-| Viva Konular | Norveç |
+| Viva Bağlantıları | Norveç |
+| Viva Konuları | Norveç |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Norveç |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -4836,8 +4836,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -4864,8 +4864,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -4892,8 +4892,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4920,8 +4920,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4948,8 +4948,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -4976,8 +4976,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -5004,8 +5004,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 3 – Amerika |
-| Viva Konular | Küresel Coğrafya 3 – Amerika |
+| Viva Bağlantıları | Küresel Coğrafya 3 – Amerika |
+| Viva Konuları | Küresel Coğrafya 3 – Amerika |
 | Viva Öğrenme | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Kişisel | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 3 – Amerika |
@@ -5032,8 +5032,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 3 – Amerika |
-| Viva Konular | Küresel Coğrafya 3 – Amerika |
+| Viva Bağlantıları | Küresel Coğrafya 3 – Amerika |
+| Viva Konuları | Küresel Coğrafya 3 – Amerika |
 | Viva Öğrenme | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Kişisel | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 3 – Amerika |
@@ -5060,8 +5060,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -5088,8 +5088,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -5116,8 +5116,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -5144,8 +5144,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -5172,8 +5172,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -5197,9 +5197,9 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneNote Hizmetleri | Katar* |
 | Stream | Katar* |
 | Tahta | Katar* |
-| Viva Bağlantılar | Katar* |
+| Viva Bağlantıları | Katar* |
 | Viva Analizler - Kişisel İçgörüler | Katar* |
-| Viva Konular | Katar* |
+| Viva Konuları | Katar* |
 | Azure Active Directory | Avrupa Birliği |
 | Teams için Dataverse | Avrupa Birliği |
 | Intune | Avrupa Birliği |
@@ -5233,8 +5233,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -5261,8 +5261,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -5289,8 +5289,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -5317,8 +5317,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -5345,8 +5345,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -5373,8 +5373,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -5401,8 +5401,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -5429,8 +5429,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -5457,8 +5457,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -5485,8 +5485,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -5513,8 +5513,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -5541,8 +5541,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -5569,8 +5569,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -5597,8 +5597,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -5625,8 +5625,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -5653,8 +5653,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -5681,8 +5681,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -5709,8 +5709,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -5737,8 +5737,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -5765,8 +5765,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -5793,8 +5793,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -5821,8 +5821,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -5849,8 +5849,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -5877,8 +5877,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -5905,8 +5905,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -5933,8 +5933,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -5961,8 +5961,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | South Africa |
-| Viva Konular | South Africa |
+| Viva Bağlantıları | South Africa |
+| Viva Konuları | South Africa |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | South Africa |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -5989,8 +5989,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -6017,8 +6017,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Avrupa Birliği |
-| Viva Konular | Avrupa Birliği |
+| Viva Bağlantıları | Avrupa Birliği |
+| Viva Konuları | Avrupa Birliği |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Avrupa Birliği |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -6045,8 +6045,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6073,8 +6073,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -6101,8 +6101,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -6129,8 +6129,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -6157,8 +6157,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | İsveç |
-| Viva Konular | İsveç |
+| Viva Bağlantıları | İsveç |
+| Viva Konuları | İsveç |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | İsveç |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -6185,8 +6185,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Avrupa Birliği |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | İsviçre |
-| Viva Konular | İsviçre |
+| Viva Bağlantıları | İsviçre |
+| Viva Konuları | İsviçre |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | İsviçre |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -6213,8 +6213,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6241,8 +6241,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -6269,8 +6269,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -6297,8 +6297,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6325,8 +6325,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6353,8 +6353,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -6381,8 +6381,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6409,8 +6409,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6437,8 +6437,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -6465,8 +6465,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -6493,8 +6493,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -6521,8 +6521,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -6549,8 +6549,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -6577,8 +6577,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6605,8 +6605,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -6633,8 +6633,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -6661,8 +6661,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -6689,8 +6689,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Birleşik Arap Emirlikleri |
-| Viva Konular | Birleşik Arap Emirlikleri |
+| Viva Bağlantıları | Birleşik Arap Emirlikleri |
+| Viva Konuları | Birleşik Arap Emirlikleri |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Birleşik Arap Emirlikleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -6717,8 +6717,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Birleşik Krallık |
 | Tahta | Avrupa Birliği |
 | Forms | Avrupa Birliği |
-| Viva Bağlantılar | Birleşik Krallık |
-| Viva Konular | Birleşik Krallık |
+| Viva Bağlantıları | Birleşik Krallık |
+| Viva Konuları | Birleşik Krallık |
 | Viva Öğrenme | Avrupa Birliği |
 | Viva Analizler - Kişisel | Birleşik Krallık |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Avrupa Birliği |
@@ -6745,13 +6745,14 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca 3. taraf İk verileriyle Yönetici/Lider | Amerika Birleşik Devletleri |
 | Viva Analizler - Gelişmiş | Amerika Birleşik Devletleri |
+| Viva Hedefleri | Amerika Birleşik Devletleri |
 </p></details>
 
 ## <a name="uruguay"></a>Uruguay
@@ -6773,8 +6774,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 3 – Amerika |
-| Viva Konular | Küresel Coğrafya 3 – Amerika |
+| Viva Bağlantıları | Küresel Coğrafya 3 – Amerika |
+| Viva Konuları | Küresel Coğrafya 3 – Amerika |
 | Viva Öğrenme | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Kişisel | Küresel Coğrafya 3 – Amerika |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 3 – Amerika |
@@ -6801,8 +6802,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6829,8 +6830,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -6857,8 +6858,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6884,8 +6885,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Amerika Birleşik Devletleri |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Amerika Birleşik Devletleri |
-| Viva Konular | Amerika Birleşik Devletleri |
+| Viva Bağlantıları | Amerika Birleşik Devletleri |
+| Viva Konuları | Amerika Birleşik Devletleri |
 | Viva Öğrenme | Amerika Birleşik Devletleri |
 | Viva Analizler - Kişisel | Amerika Birleşik Devletleri |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Amerika Birleşik Devletleri |
@@ -6912,8 +6913,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6940,8 +6941,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 2 – Asya Pasifik |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 2 – Asya Pasifik |
-| Viva Konular | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Bağlantıları | Küresel Coğrafya 2 – Asya Pasifik |
+| Viva Konuları | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Öğrenme | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Kişisel | Küresel Coğrafya 2 – Asya Pasifik |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6968,8 +6969,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -6996,8 +6997,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Amerika Birleşik Devletleri |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -7024,8 +7025,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
@@ -7052,8 +7053,8 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
 | Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
+| Viva Bağlantıları | Küresel Coğrafya 1 – EMEA |
+| Viva Konuları | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
 | Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |

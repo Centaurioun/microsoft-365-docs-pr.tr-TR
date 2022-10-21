@@ -9,7 +9,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 09/23/2022
+ms.date: 10/20/2022
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -22,12 +22,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 06434a3f3211726ccde4642fd13de81304cd3c0f
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: a3c388cff2085881151d0fb94ca915d7947c508e
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68635234"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659137"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Değişiklik korumasıyla güvenlik ayarlarını koruyun
 
@@ -156,6 +156,7 @@ Microsoft Defender Güvenlik Açığı Yönetimi hakkında daha fazla bilgi edin
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
+- [Yerleşik koruma fidye yazılımlarından korunmaya yardımcı olur](built-in-protection.md)
 - [Microsoft Intune için Endpoint Protection ile Windows bilgisayarlarının güvenliğini sağlamaya yardımcı olun](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 - [Uç Nokta için Microsoft Defender genel bakışını edinin](/microsoft-365/security/defender-endpoint)
 - [Birlikte daha iyi: Microsoft Defender Virüsten Koruma ve Uç Nokta için Microsoft Defender](why-use-microsoft-defender-antivirus.md)

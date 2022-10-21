@@ -7,7 +7,7 @@ ms.reviewer: lauris; jaeccles
 ms.date: ''
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: ''
 ms.localizationpriority: medium
 description: Kuruluşunuzda Microsoft Syntex için bir deneme pilot programı planlamayı, kaydolmayı ve çalıştırmayı öğrenin.
-ms.openlocfilehash: 27770aa818c25b5c18c07a3f8f67a2185964ad37
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 028c91912d04f99c030d9de887c0c344961add3d
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564070"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662697"
 ---
 # <a name="run-a-trial-of-microsoft-syntex"></a>Microsoft Syntex denemesi çalıştırma
 
@@ -68,8 +68,10 @@ Bir test veya tanıtım kiracısı, etkinleştirme adımlarını ve yönetim den
 
 Üretim kiracısının deneme sürümünün değerini en üst düzeye çıkarmak için planlama ve iş etkileşimi gereklidir. Syntex tarafından ele alınabilecek üç veya altı kullanım örneğini belirlemek için bir veya daha fazla iş alanıyla etkileşime geçmeniz gerekir. Bu kullanım örnekleri şunları yapmalıdır:
 
-- Form işleme veya belge anlama modeli tarafından çözülebilecek senaryolar ekleyin.
+- Özel bir model veya önceden oluşturulmuş bir model kullanılarak çözülebilecek senaryolar ekleyin.
+
 - Ayıklanan meta verilerin amacını net bir şekilde anlayın; örneğin, Power Automate'i kullanarak biçimlendirmeyi veya otomasyonu görüntüleyin. Syntex, belgeleri sınıflandırmaya ve meta verileri ayıklamaya odaklanmış olsa da, bu meta verilerin sağladığı miktar değeridir.
+
 - Tanımlı bir veri kümesini temel alın; örneğin, belirli SharePoint siteleri veya kitaplıkları. Syntex'in yaygın bir yanılgısı, genel amaçlı modellerin tüm kuruluş içeriğine uygulanabilmesidir. Daha doğru bir görünüm, modellerin hedeflenen konumlardaki belirli iş sorunlarını çözmeye yardımcı olmak için oluşturulduğudur.
 
 Bu kullanım örneklerinin tümü Syntex için uygun olmayabilir. Kaliteli denemenin amacı Syntex'in tüm senaryolara uygun olduğunu kanıtlamak değildir. Bunun yerine, deneme sürümü ürünün değerini daha iyi anlamanıza yardımcı olmalıdır.
@@ -98,17 +100,21 @@ Denemenin sonucuna bağlı olarak Syntex'in üretim kullanımına devam edip etm
 
 Hizmetin sürekliliğini sağlamak için gerekli lisans sayısını satın almanız ve bu [lisansları](syntex-licensing.md) kullanıcılara atamanız gerekir. Deneme süresinin sonunda tam lisansı olmayan deneme kullanıcıları Syntex'i tam olarak kullanamaz.
 
-Beklenen sayıda AI Builder kredisi için öngörülen form işleme ve plan kullanımınızı tahmin etmek zorunda olabilirsiniz. Yardım için bkz. [Size uygun AI Builder kapasitesini tahmin](https://powerapps.microsoft.com/ai-builder-calculator/) etme.
+Yapılandırılmış belge işleme veya serbest biçimli belge işleme modellerinin öngörülen kullanımını tahmin etmek ve beklenen sayıda AI Builder kredisi için planlama yapmak zorunda olabilirsiniz. Yardım için bkz. [Size uygun AI Builder kapasitesini tahmin](https://powerapps.microsoft.com/ai-builder-calculator/) etme.
 
 ### <a name="dont-proceed-to-production-use"></a>Üretim kullanımına devam etmeyin
 
 Deneme sürümünden sonra lisans satın almıyorsanız:
 
 - Yeni modeller oluşturamazsınız.
+
 - Modelleri çalıştıran kitaplıklar artık dosyaları otomatik olarak sınıflandırmaz veya modelleri ayıklamaz.
+
 - Daha önce sınıflandırılmış dosyalar veya ayıklanan meta veriler etkilenmez.
-- İçerik merkezleri ve belge anlama modelleri otomatik olarak silinmez. Gelecekte lisans satın alma kararı alırsanız bunlar kullanılabilir durumda kalır.
-- Form işleme modelleri, varsayılan Power Platform ortamının Dataverse (eski adı Common Data Service (CDS)) örneğinde depolanır. Bunlar Syntex için gelecekteki lisanslama ile veya Power Platform'daki AI Builder özellikleriyle kullanılabilir.
+
+- İçerik merkezleri ve içindeki modeller otomatik olarak silinmez. Gelecekte lisans satın alma kararı alırsanız bunlar kullanılabilir durumda kalır.
+
+- Yapılandırılmış belge işleme veya serbest biçimli belge işleme modelleri, varsayılan Power Platform ortamının Dataverse (eski adı Common Data Service (CDS)) örneğinde depolanır. Bunlar Syntex için gelecekteki lisanslama ile veya Power Platform'daki AI Builder özellikleriyle kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

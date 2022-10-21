@@ -7,35 +7,35 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: ''
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: Microsoft Syntex'i kullanarak sözleşme dosyalarını tanımlamayı ve bir Microsoft 365 çözümü kullanarak verileri ayıklamayı öğrenin.
-ms.openlocfilehash: 19a62850e2a6749e9a7cabbafbc8959af81367fe
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 06859af656eca3bef48d644e2fa29b3605ba4e85
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563306"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661247"
 ---
 # <a name="step-1-use-microsoft-syntex-to-identify-contract-files-and-extract-data"></a>Adım 1. Sözleşme dosyalarını tanımlamak ve verileri ayıklamak için Microsoft Syntex kullanma
 
-Kuruluşunuzun, aldığınız birçok dosyadaki tüm sözleşme belgelerini tanımlamak ve sınıflandırmak için bir yönteme ihtiyacı vardır. Ayrıca, tanımlanan sözleşme dosyalarının her birinde (örneğin, *İstemci*, *Yüklenici* ve *Ücret tutarı*) birkaç önemli öğeyi hızla görüntüleyebilmek istiyorsunuz. Bunu yapmak için [Syntex](index.md) kullanarak belge anlama modeli oluşturabilir ve bunu bir belge kitaplığına uygulayabilirsiniz.
+Kuruluşunuzun, aldığınız birçok dosyadaki tüm sözleşme belgelerini tanımlamak ve sınıflandırmak için bir yönteme ihtiyacı vardır. Ayrıca, tanımlanan sözleşme dosyalarının her birinde (örneğin, *İstemci*, *Yüklenici* ve *Ücret tutarı*) birkaç önemli öğeyi hızla görüntüleyebilmek istiyorsunuz. Bunu yapmak için Syntex] kullanarak yapılandırılmamış bir belge işleme modeli oluşturabilir ve bunu bir belge kitaplığına uygulayabilirsiniz.
 
 ## <a name="overview-of-the-process"></a>İşleme genel bakış
 
-[Belge anlama](document-understanding-overview.md) , dosya sınıflandırmasını ve bilgilerin ayıklamasını otomatikleştirmek için yapay zeka (AI) modellerini kullanır. Belge anlama modelleri, ihtiyacınız olan bilgilerin sözleşmeler gibi tablo veya formlarda yer almadığı yapılandırılmamış ve yarı yapılandırılmış belgelerden bilgi ayıklamada da idealdir. 
+[Yapılandırılmamış belge işleme modelleri](document-understanding-overview.md) , dosyaların sınıflandırılmasını ve bilgilerin ayıklamasını otomatikleştirmek için yapay zeka (AI) kullanır. Bu model türleri, ihtiyacınız olan bilgilerin sözleşmeler gibi tablo veya formlarda yer almadığı yapılandırılmamış ve yarı yapılandırılmış belgelerden bilgi ayıklamak için de idealdir. 
 
-Belge anlama modelleri, hem örnek dosyalar içeren bir model eğittiğinizde hem de modeli belge kitaplığındaki dosyalara karşı çalıştırdığınızda PDF'leri, görüntüleri ve TIFF dosyalarını taramak için Optik Karakter Tanıma (OCR) teknolojisini kullanır.
+Yapılandırılmamış belge işleme modelleri pdf'leri, görüntüleri ve TIFF dosyalarını taramak için hem bir modeli örnek dosyalarla eğittiğinizde hem de modeli belge kitaplığındaki dosyalara karşı çalıştırdığınızda optik karakter tanıma (OCR) teknolojisini kullanır.
 
 1. İlk olarak, modeli tanımlamaya çalıştığınız içerik türüne (sözleşme) özgü özellikleri aramak için "eğitmek" için kullanabileceğiniz en az beş örnek dosya bulmanız gerekir. 
 
-2. Syntex kullanarak yeni bir belge anlama modeli oluşturun. Örnek dosyalarınızı kullanarak [bir sınıflandırıcı oluşturmanız](create-a-classifier.md) gerekir. Sınıflandırıcıyı örnek dosyalarınızla eğiterek, şirketinizin sözleşmelerinde göreceğiniz özelliklere özgü özellikleri aramayı öğretirsiniz. Örneğin, sözleşmelerinizdeki *Hizmet Sözleşmesi*, *Sözleşme Koşulları* ve *Tazminat* gibi belirli dizeleri arayan [bir "açıklama" oluşturun](create-a-classifier.md#create-an-explanation). Hatta belgenin belirli bölümlerinde veya diğer dizelerin yanında bulunan bu dizeleri aramak için açıklamanızı eğitebilirsiniz. Sınıflandırıcınızı ihtiyaç duyduğu bilgilerle eğittiğinizi düşündüğünüzde, modelinizin ne kadar verimli olduğunu görmek için örnek bir örnek dosya kümesi üzerinde test edebilirsiniz. Test ettikten sonra, gerekirse açıklamalarınızı daha verimli hale getirmek için açıklamalarınızda değişiklik yapmayı seçebilirsiniz. 
+2. Syntex kullanarak yeni bir yapılandırılmamış belge işleme modeli oluşturun. Örnek dosyalarınızı kullanarak [bir sınıflandırıcı oluşturmanız](create-a-classifier.md) gerekir. Sınıflandırıcıyı örnek dosyalarınızla eğiterek, şirketinizin sözleşmelerinde göreceğiniz özelliklere özgü özellikleri aramayı öğretirsiniz. Örneğin, sözleşmelerinizdeki *Hizmet Sözleşmesi*, *Sözleşme Koşulları* ve *Tazminat* gibi belirli dizeleri arayan [bir "açıklama" oluşturun](create-a-classifier.md#create-an-explanation). Hatta belgenin belirli bölümlerinde veya diğer dizelerin yanında bulunan bu dizeleri aramak için açıklamanızı eğitebilirsiniz. Sınıflandırıcınızı ihtiyaç duyduğu bilgilerle eğittiğinizi düşündüğünüzde, modelinizin ne kadar verimli olduğunu görmek için örnek bir örnek dosya kümesi üzerinde test edebilirsiniz. Test ettikten sonra, gerekirse açıklamalarınızı daha verimli hale getirmek için açıklamalarınızda değişiklik yapmayı seçebilirsiniz. 
 
 3. Modelinizde, her sözleşmeden belirli veri parçalarını çekmek için [bir ayıklayıcı oluşturabilirsiniz](create-an-extractor.md) . Örneğin, her sözleşme için en çok endişelendiğiniz bilgiler müşterinin kim olduğu, yüklenicinin adı ve toplam maliyettir.
 
-4. Modelinizi başarıyla oluşturduktan sonra [sharepoint belge kitaplığına uygulayın](apply-a-model.md). Belgeleri belge kitaplığına yüklerken, belge anlama modeliniz çalışır ve modelinizde tanımladığınız sözleşme içerik türüyle eşleşen tüm dosyaları tanımlar ve sınıflandırır. Sözleşme olarak sınıflandırılan tüm dosyalar özel kitaplık görünümünde görüntülenir. Dosyalar, ayıklayıcınızda tanımladığınız her sözleşmedeki değerleri de görüntüler.
+4. Modelinizi başarıyla oluşturduktan sonra [sharepoint belge kitaplığına uygulayın](apply-a-model.md). Belgeleri belge kitaplığına yüklerken yapılandırılmamış belge işleme modeliniz çalışır ve modelinizde tanımladığınız sözleşme içerik türüyle eşleşen tüm dosyaları tanımlar ve sınıflandırır. Sözleşme olarak sınıflandırılan tüm dosyalar özel kitaplık görünümünde görüntülenir. Dosyalar, ayıklayıcınızda tanımladığınız her sözleşmedeki değerleri de görüntüler.
 
    ![Belge kitaplığındaki sözleşmeler.](../media/content-understanding/doc-lib-solution.png)
 
@@ -44,15 +44,15 @@ Belge anlama modelleri, hem örnek dosyalar içeren bir model eğittiğinizde he
 ## <a name="steps-to-create-and-train-your-model"></a>Modelinizi oluşturma ve eğitmeye yönelik adımlar
 
 > [!NOTE]
-> Bu adımlar için [, Sözleşme Yönetimi Çözümü Varlıkları deposundaki](https://github.com/pnp/syntex-samples/tree/main/scenario%20samples/Contracts%20Management) örnek dosyaları kullanabilirsiniz. Bu depodaki örnekler hem belge anlama modeli dosyalarını hem de modeli eğitmek için kullanılan dosyaları içerir.
+> Bu adımlar için [, Sözleşme Yönetimi Çözümü Varlıkları deposundaki](https://github.com/pnp/syntex-samples/tree/main/scenario%20samples/Contracts%20Management) örnek dosyaları kullanabilirsiniz. Bu depodaki örnekler hem model dosyalarını hem de modeli eğitmek için kullanılan dosyaları içerir.
 
 ### <a name="create-a-contract-model"></a>Sözleşme modeli oluşturma
 
 İlk adım, Sözleşme modelinizi oluşturmaktır.
 
-1. İçerik **merkezinden Yeni'yi** ve ardından **Model oluştur'u** seçin.
+1. İçerik **merkezinden Yeni** > **Model** > **Öğretimi yöntemi'ni** seçin.
 
-2. **Yeni belge anlama modeli** bölmesindeki **Ad** alanına modelin adını yazın. Bu sözleşme yönetimi çözümü için modeli *Sözleşme* olarak adlandırabilirsiniz.
+2. **Öğretim yöntemiyle model oluştur** bölmesindeki **Ad** alanına modelin adını yazın. Bu sözleşme yönetimi çözümü için modeli *Sözleşme* olarak adlandırabilirsiniz.
 
 4. **Oluştur**'u seçin. Bu, model için bir giriş sayfası oluşturur.</br>
 

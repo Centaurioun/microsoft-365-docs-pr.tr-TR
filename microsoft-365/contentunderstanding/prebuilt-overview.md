@@ -6,69 +6,52 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.customer: intro-overview
-ms.service: microsoft-365-enterprise
+ms.custom: intro-overview
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft Syntex'te önceden oluşturulmuş modeller hakkında bilgi edinin.
-ms.openlocfilehash: 8d5d2c9a4103c02e4acab10f653ae658679a1c07
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 0ec44b2f7b0b0360eedceadb71ddf9abdc6e2941
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563196"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659159"
 ---
-# <a name="prebuilt-models-overview-in-microsoft-syntex"></a>Microsoft Syntex'te önceden oluşturulmuş modellere genel bakış
+# <a name="overview-of-prebuilt-models-in-microsoft-syntex"></a>Microsoft Syntex'te önceden oluşturulmuş modellere genel bakış
 
-Microsoft Syntex, modelleri ve [form işleme modellerini](form-processing-overview.md) [belge anlamanın](document-understanding-overview.md) yanı sıra, bilgilerin ayıklanmını otomatikleştirmek için önceden oluşturulmuş modeller de sağlar.
+Microsoft Syntex, [özel modellere](model-types-overview.md#custom-models) ek olarak bilgilerin ayıklanmını otomatikleştirmek için *önceden oluşturulmuş modeller* de sağlar.
 
-Önceden oluşturulmuş modeller, belgeleri ve belgelerdeki yapılandırılmış bilgileri tanımak için önceden eğitilir. Sıfırdan yeni bir özel model oluşturmak yerine, kuruluşunuzun gereksinimlerine uygun belirli alanlar eklemek için önceden eğitilmiş mevcut bir modeli yineleyebilirsiniz. 
+Önceden oluşturulmuş modeller, belgeleri ve belgelerdeki yapılandırılmış bilgileri tanımak için önceden yapılandırılmıştır. Sıfırdan yeni bir özel model oluşturmak yerine, kuruluşunuzun gereksinimlerine uygun belirli alanlar eklemek için önceden eğitilmiş mevcut bir modeli yineleyebilirsiniz. 
 
 Önceden oluşturulmuş modeller, belirli belge türlerinde ortak olan önceden tanımlanmış metin ve veri alanlarını tanımlamak ve ayıklamak için derin öğrenme modelleriyle birlikte optik karakter tanıma (OCR) kullanır. Dosyalarınızdan birini önceden oluşturulmuş modele göre analiz ederek işe başlarsınız. Ardından, amacınız için anlamlı olan algılanan alanları seçersiniz. Model ihtiyacınız olan alanları algılamazsa farklı bir dosya kullanarak yeniden analiz edebilirsiniz.
 
-Belge anlama modelleri gibi, önceden oluşturulmuş modeller [de içerik merkezinde](create-a-content-center.md) oluşturulur ve yönetilir. SharePoint belge kitaplığına uygulandığında, model bir içerik türüyle ilişkilendirilir ve ayıklanan bilgilerin depolandığı sütunlara sahiptir. 
+Diğer modeller gibi önceden oluşturulmuş modeller de [içerik merkezinde](create-a-content-center.md) oluşturulur ve yönetilir. SharePoint belge kitaplığına uygulandığında, model bir içerik türüyle ilişkilendirilir ve ayıklanan bilgilerin depolandığı sütunlara sahiptir. 
 
 Modelinizi yayımladıktan sonra, içerik merkezini kullanarak erişiminiz olan herhangi bir SharePoint belge kitaplığına uygulayın.  
 
+## <a name="available-prebuilt-models"></a>Kullanılabilir önceden oluşturulmuş modeller
+
+Şu anda önceden oluşturulmuş iki model vardır: [faturalar](prebuilt-model-invoice.md) ve [makbuzlar](prebuilt-model-receipt.md).
+
+- *Fatura modeli, satış faturalarından* önemli bilgileri analiz eder ve ayıklar. API faturaları çeşitli biçimlerde analiz eder ve müşteri adı, faturalama adresi, son tarih ve son ödeme tutarı gibi [önemli fatura bilgilerini ayıklar](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction) .
+
+- *Makbuz modeli, satış makbuzlarından* önemli bilgileri analiz eder ve ayıklar. API basılı ve el yazısı makbuzları analiz eder ve satıcı adı, satıcı telefon numarası, işlem tarihi, vergi ve işlem toplamı gibi [önemli makbuz bilgilerini ayıklar](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction) .
+
+Önceden oluşturulmuş ek modeller gelecek sürümlerde kullanıma sunulacaktır.
+
 ## <a name="requirements"></a>Gereksinimler
 
-- Desteklenen dosya biçimleri: JPEG, PNG, BMP, TIFF ve PDF (metin eklenmiş veya taranmış).
-
-- Desteklenen diller: Şu anda yalnızca Birleşik Devletler İngilizce dil faturaları desteklenmektedir. Avustralya, Kanada, Birleşik Devletler, Büyük Britanya ve Hindistan'dan İngilizce satış makbuzları desteklenir.
-
-- Metin eklenmiş PDF'ler, karakter ayıklama ve konum hata olasılığını ortadan kaldırmak için en iyisidir.
-
-- PDF ve TIFF için en fazla 2.000 sayfa işlenebilir.
-
-- Dosya boyutu 50 MB'tan küçük olmalıdır.
-
-- Görüntü boyutları 50 x 50 piksel ile 10.000 x 10.000 piksel arasında olmalıdır.
-
-- PDF boyutları, Yasal veya A3 kağıt boyutuna karşılık gelen en fazla 17 x 17 inç veya daha küçüktür.
-
-- Eğitim verilerinin toplam boyutu 500 sayfa veya daha azdır.
-
-### <a name="file-limitations"></a>Dosya sınırlamaları
-
-Microsoft Office metin tabanlı dosyalar ve OCR ile taranan dosyalar (PDF, resim veya TIFF) hakkında aşağıdaki farklara dikkat edin:
-
-- Office dosyaları: 64.000 karakterde kesilir (belge kitaplığındaki dosyalarda çalıştırıldığında).
-
-- OCR ile taranan dosyalar: 20 sayfalık bir sınır vardır.  
-
-## <a name="model-considerations"></a>Modelle ilgili dikkat edilmesi gerekenler
-
-- Aynı kitaplığa önceden oluşturulmuş iki veya daha fazla model uygulanırsa, dosya en yüksek ortalama güvenilirlik puanına sahip model kullanılarak sınıflandırılır. Ayıklanan varlıklar yalnızca uygulanan modelden olacaktır.
-
-- Özel form işleme modeline sahip bir kitaplığa önceden oluşturulmuş bir model uygulanırsa, dosya önceden oluşturulmuş model ve bu model için algılanan ayıklayıcılar kullanılarak sınıflandırılır. Form işleme modeliyle eşleşen boş sütunlar varsa, bu ayıklanan değerler kullanılarak sütunlar doldurulur.
-
-- Kitaplığa birden fazla özel form işleme modeli uygulanması desteklenmez.
+Bu modeli seçerken dikkate alınması gereken gereksinimler hakkında bilgi için bkz [. Microsoft Syntex'te modeller için gereksinimler ve sınırlamalar](requirements-and-limitations.md). 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Faturalardan veya makbuzlardan bilgi ayıklamak için önceden oluşturulmuş bir model kullanma](prebuilt-models.md)
+[Faturalardan bilgi ayıklamak için önceden oluşturulmuş bir model kullanma](prebuilt-model-invoice.md)
+
+[Makbuzlardan bilgi ayıklamak için önceden oluşturulmuş bir model kullanma](prebuilt-model-receipt.md)
+
  
 

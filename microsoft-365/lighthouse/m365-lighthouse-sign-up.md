@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: crimora
+ms.reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -19,12 +19,12 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: Yönetilen Hizmet Sağlayıcıları (MSP) için Microsoft 365 Lighthouse kaydolmayı öğrenin.
-ms.openlocfilehash: 1192cad5a786ef9ce4a00b416e30c156cf460b6c
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 6d26b570a9576daa5a76871bab06cb797e9ac914
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68191639"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659729"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse için kaydolun
 

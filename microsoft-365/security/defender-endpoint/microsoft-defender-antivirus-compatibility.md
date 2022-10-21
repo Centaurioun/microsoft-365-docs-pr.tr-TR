@@ -7,7 +7,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 10/03/2022
+ms.date: 10/20/2022
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 1bcbaf6d0be4ae12fddb959b82bcbd63723eafec
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 2f9f9b65804d5218f2439e85af1c888b012c9a62
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68536356"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661665"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender Virüsten Koruma'nın diğer güvenlik ürünleriyle uyumluluğu
 
@@ -127,13 +127,13 @@ Uç Nokta için Defender, uç noktanıza yüklenen virüsten korumayı daha da g
 
 Microsoft Defender Virüsten Koruma'nın pasif modda çalışması için uç noktaların aşağıdaki gereksinimleri karşılaması gerekir:
 
-- İşletim sistemi: Windows 10 veya daha yenisi; Windows Server 2022, Windows Server 2019 veya Windows Server, sürüm 1803 veya üzeri
-- Microsoft Defender Virüsten Koruma yüklenmelidir
-- Microsoft dışı başka bir virüsten koruma/kötü amaçlı yazılımdan koruma ürünü yüklenmeli ve birincil virüsten koruma çözümü olarak kullanılmalıdır
-- Uç noktalar Uç Nokta için Defender'a eklenmelidir
+- İşletim sistemi: Windows 10 veya daha yenisi; Windows Server 2022, Windows Server 2019 veya Windows Server, sürüm 1803 veya üzeri <br/>(Windows Server 2012 R2 ve Windows Server 2016 modern[, birleşik çözüm](/microsoft-365/security/defender-endpoint/configure-server-endpoints) kullanılarak eklenirse). 
+- Microsoft Defender Virüsten Koruma yüklenmelidir. 
+- Microsoft dışı başka bir virüsten koruma/kötü amaçlı yazılımdan koruma ürünü yüklenmeli ve birincil virüsten koruma çözümü olarak kullanılmalıdır. 
+- Uç noktalar, Uç Nokta için Defender'a eklenmelidir. 
 
 > [!IMPORTANT]
-> - Microsoft Defender Virüsten Koruma yalnızca Windows 10 ve 11, Windows Server 2022, Windows Server 2019, Windows Server, sürüm 1803 veya üzeri, Windows Server 2016 ve Windows Server 2012 R2 çalıştıran cihazlarda kullanılabilir.
+> - Microsoft Defender Virüsten Koruma yalnızca Windows 10 ve 11, Windows Server 2022, Windows Server 2016, Windows Server 2019, Windows Server, sürüm 1803 veya daha yeni, Windows Server 2016 ve çalıştıran cihazlarda kullanılabilir R2 Windows Server 2012.
 > - Pasif mod yalnızca cihaz [modern, birleşik çözüm](/microsoft-365/security/defender-endpoint/configure-server-endpoints) kullanılarak eklendiğinde Windows Server 2012 R2 & 2016'da desteklenir. 
 > - Windows 8.1'da, Microsoft Endpoint Configuration Manager aracılığıyla yönetilen [System Center Endpoint Protection](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10)) olarak kurumsal düzeyde uç nokta virüsten koruma sunulmaktadır.
 > - Windows Defender kurumsal düzeyde yönetim sağlamasa da [Windows Defender Windows 8.1 üzerindeki tüketici cihazları](/previous-versions/windows/it-pro/windows-8.1-and-8/dn344918(v=ws.11)#BKMK_WindowsDefender) için de sunulur.

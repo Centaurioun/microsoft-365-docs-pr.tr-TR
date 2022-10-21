@@ -6,21 +6,23 @@ manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft Syntex'te ayıklayıcıyı nasıl ve neden yeniden adlandıracağınızı öğrenin.
-ms.openlocfilehash: 8900eb68a5efab4d69911d193c35e82e6d58cbf6
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 15da5f905a622173758b4d8f1ac2b4c2de219014
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565652"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661269"
 ---
 # <a name="rename-an-extractor-in-microsoft-syntex"></a>Microsoft Syntex'te ayıklayıcıyı yeniden adlandırma
+
+<sup>**Şunlar için geçerlidir:**  &ensp; Yapılandırılmamış belge işlemeyi &#10003;</sup>
 
 Ayıklanan bir veri alanına farklı bir adla başvurmak istiyorsanız, bir noktada ayıklayıcıyı yeniden adlandırmanız gerekebilir. Örneğin, kuruluşunuz sözleşme belgelerinde değişiklik yapmaya karar verir ve belgelerinde "müşteriler"i "müşteriler" olarak ifade eder. Modelinizde bir "Müşteri" alanı ayıkladıysanız, alanı "İstemci" olarak yeniden adlandırmayı seçebilirsiniz.
 
@@ -52,16 +54,7 @@ Varlık ayıklayıcısını yeniden adlandırmak için bu adımları izleyin.
 5. **Yeniden Adlandır'ı** seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
+
 [Ayıklayıcı oluştur](create-an-extractor.md)
 
-[Sınıflandırıcı oluştur](create-a-classifier.md)
 
-[Modeli yeniden adlandır](rename-a-model.md)
-
-[Açıklama türleri](explanation-types-overview.md)
-
-[Ayıklayıcı oluştururken terim deposu taksonomisini kullan](leverage-term-store-taxonomy.md)
-
-[Document Understanding'e genel bakış](document-understanding-overview.md)
-
-[Model uygulama](apply-a-model.md) 

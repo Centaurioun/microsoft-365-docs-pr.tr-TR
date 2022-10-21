@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 description: Bu makalede, Office 365 riskleri ve koruma için kullanılabilen şifreleme teknolojileri hakkında bilgi edineceksiniz.
-ms.openlocfilehash: 7afb32e0676bde43032490a82650bff1ab1bb25c
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 032b709bb32e9b699c5622dfb22dce63cf472ec5
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68620535"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662521"
 ---
 # <a name="encryption-risks-and-protections"></a>Şifreleme Riskleri ve Korumaları
 
@@ -57,7 +57,7 @@ Bazı risk senaryoları ve bunları azaltan mevcut şifreleme teknolojileri aşa
 |  | Skype Kurumsal | AES 256 bit | AES dış anahtarı gizli dizi kasasında depolanır. Gizli Kasa, erişim için üst düzey yükseltme ve onaylar gerektiren güvenli bir depodur. Erişim yalnızca Kasa adlı bir iç araç kullanılarak istenebilir ve onaylanabilir. AES dış anahtarı, sunucudaki Güvenilir Platform Modülü'nde de depolanır. 48 basamaklı sayısal parola Active Directory'de depolanır ve Kilit Kutusu tarafından korunur. | Evet |
 | Hizmet Şifrelemesi | SharePoint Online | AES 256 bit | Blobları şifrelemek için kullanılan anahtarlar SharePoint Online İçerik Veritabanı'nda depolanır. SharePoint Online İçerik Veritabanı, veritabanı erişim denetimleri ve bekleyen şifreleme ile korunur. Şifreleme, Azure SQL Veritabanında TDE kullanılarak gerçekleştirilir. Bu gizli diziler, kiracı düzeyinde değil SharePoint Online için hizmet düzeyindedir. Bu gizli diziler (bazen ana anahtarlar olarak da adlandırılır) Anahtar Deposu adlı ayrı bir güvenli depoda depolanır. TDE, hem etkin veritabanı hem de veritabanı yedeklemeleri ve işlem günlükleri için bekleyen güvenlik sağlar. Müşteriler isteğe bağlı anahtarı sağladığında, müşteri anahtarı Azure Key Vault'de depolanır ve hizmet, bir kiracı anahtarını şifrelemek için anahtarı kullanır. Bu anahtar, site anahtarını şifrelemek için kullanılır ve daha sonra dosya düzeyi anahtarlarını şifrelemek için kullanılır. Temel olarak, müşteri bir anahtar sağladığında yeni bir anahtar hiyerarşisi kullanıma sunulur. | Evet |
 |  | Skype Kurumsal | AES 256 bit | Her veri parçası, rastgele oluşturulan farklı bir 256 bit anahtar kullanılarak şifrelenir. Şifreleme anahtarı, konferans başına ana anahtar tarafından da şifrelenen karşılık gelen meta veri XML dosyasında depolanır. Ana anahtar ayrıca konferans başına bir kez rastgele oluşturulur. | Evet |
-|  | Exchange Online | AES 256 bit | Her posta kutusu, Microsoft tarafından (yol haritasında) veya müşteri (Müşteri Anahtarı kullanıldığında) tarafından denetlenen şifreleme anahtarlarını kullanan bir veri şifreleme ilkesi kullanılarak şifrelenir. | Evet |
+|  | Exchange Online | AES 256 bit | Her posta kutusu, Microsoft tarafından veya müşteri tarafından denetlenen şifreleme anahtarlarını kullanan bir veri şifreleme ilkesi kullanılarak şifrelenir (Müşteri Anahtarı kullanıldığında). | Evet |
 | Microsoft 365 ile istemciler/iş ortakları arasında TLS | Exchange Online | [Birden çok şifreleme paketlerini destekleyen fırsatçı TLS](./exchange-online-uses-tls-to-secure-email-connections.md) | Exchange Online için TLS sertifikası (outlook.office.com), Baltimore CyberTrust Root tarafından verilen 2048 bit SHA256RSA sertifikasıdır. <br> <br> Exchange Online için TLS kök sertifikası, Baltimore CyberTrust Root tarafından verilen 2048 bit SHA1RSA sertifikasıdır. | Evet, 256 bit şifreleme gücüne sahip TLS 1.2 kullanıldığında |
 |  | SharePoint Online | AES 256 ile TLS 1.2 <br> <br> [Data Encryption in OneDrive for Business and SharePoint Online](./data-encryption-in-odb-and-spo.md) | SharePoint Online (*.sharepoint.com) için TLS sertifikası, Baltimore CyberTrust Root tarafından verilen 2048 bit SHA256RSA sertifikasıdır. <br> <br> SharePoint Online için TLS kök sertifikası, Baltimore CyberTrust Root tarafından verilen 2048 bit SHA1RSA sertifikasıdır. | Evet |
 |  | Skype Kurumsal | [SIP iletişimleri ve PSOM veri paylaşımı oturumları için TLS](https://support.office.com/article/Set-up-your-network-for-Skype-for-Business-Online-d21f89b0-3afc-432e-b735-036b2432fdbf) | Skype Kurumsal (*.lync.com) için TLS sertifikası, Baltimore CyberTrust Root tarafından verilen 2048 bit SHA256RSA sertifikasıdır. <br> <br> Skype Kurumsal için TLS kök sertifikası, Baltimore CyberTrust Root tarafından verilen 2048 bit SHA256RSA sertifikasıdır. | Evet |

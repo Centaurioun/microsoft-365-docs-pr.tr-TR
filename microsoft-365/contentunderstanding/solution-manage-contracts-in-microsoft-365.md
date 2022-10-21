@@ -7,7 +7,7 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: ''
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - m365solution-managecontracts
 - m365solution-overview
@@ -16,13 +16,13 @@ ms.collection:
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
-description: Microsoft Syntex, SharePoint Listeleri, Microsoft Teams ve Power Automate'in Microsoft 365 çözümünü kullanarak sözleşmeleri yönetmeyi öğrenin.
-ms.openlocfilehash: 61c8d19815a1e766add4bed845ffdcc14967bba1
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+description: Microsoft Syntex, SharePoint listeleri, Microsoft Teams ve Power Automate'in Microsoft 365 çözümünü kullanarak sözleşmeleri yönetmeyi öğrenin.
+ms.openlocfilehash: 2abb6e28f9bac16d374a4056b996c3067125c4f5
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563328"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659204"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Microsoft 365 çözümü kullanarak sözleşmeleri yönetme
 
@@ -64,7 +64,7 @@ Bu sözleşme yönetimi çözümü kılavuzu, Microsoft 365'in dört bileşenini
 
   ![Belgeleri karşıya yüklemek, verileri ayıklamak, proje katılımcılarını bilgilendirmek ve sözleşmeyi onaylamak veya reddetmek için iş akışını gösteren çözümün diyagramı.](../media/content-understanding/syntex-solution-manage-contracts-overview.png)
 
-1. Belgeler bir SharePoint belge kitaplığına yüklenir. Belge kitaplığına Syntex belge anlama modeli uygulandı. Aranacak şekilde eğitilen bir "sözleşme" içerik türüyle eşleşip eşleşmediğini görmek için her dosyayı denetler. Eşleşme bulursa, dosyayı "sözleşme" olarak sınıflandırır ve belgenin içerik türünü güncelleştirir.
+1. Belgeler bir SharePoint belge kitaplığına yüklenir. Belge kitaplığına bir Syntex yapılandırılmamış belge işleme modeli uygulandı. Aranacak şekilde eğitilen bir "sözleşme" içerik türüyle eşleşip eşleşmediğini görmek için her dosyayı denetler. Eşleşme bulursa, dosyayı "sözleşme" olarak sınıflandırır ve belgenin içerik türünü güncelleştirir.
 
 2. Model ayrıca paydaşların görmekle ilgilendiği her sözleşme dosyasından *Müşteri*, *Yüklenici* ve *Ücret tutarı* gibi belirli verileri çeker.
 
@@ -94,7 +94,7 @@ Bu çözüm, tümü Microsoft 365 Kurumsal (E1, E3, E5, F3) veya İş (Temel, St
 
 Microsoft Syntex'i yeni mi kullanıyorsunuz? Yapay zeka kullanarak içeriği yönetmek için Syntex'i kullanmayı öğrenin.
 
-[Microsoft Syntex ile çalışmaya başlama](/training/paths/syntex-get-started) öğrenme yolu, belgeleri sınıflandırmak, metin ayıklamak ve hızlı ve kolay bilgi yönetimi için belgelerinizi etiketlemek için belge anlama ve form işleme modellerini nasıl kullanabileceğinizi öğretir.
+[Microsoft Syntex ile çalışmaya başlama](/training/paths/syntex-get-started) öğrenme yolu, hızlı ve kolay bilgi yönetimi için belgeleri sınıflandırmak, metin ayıklamak ve belgelerinizi etiketlemek için yapılandırılmamış, serbest biçimli ve yapılandırılmamış belge işleme modellerini nasıl kullanabileceğinizi öğretir.
 
 ## <a name="create-the-solution"></a>Çözümü oluşturma
 

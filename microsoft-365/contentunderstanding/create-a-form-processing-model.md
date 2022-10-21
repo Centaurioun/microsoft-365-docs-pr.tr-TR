@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Microsoft Syntex'te yapılandırılmış bir belge işleme modelini eğitmeyi öğrenin.
-ms.openlocfilehash: 12bc46578d6cd26b4847baeb77856ff37b7d246c
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: c4bea3f71e3cfaaa79863443db21ab038826db8a
+ms.sourcegitcommit: fa5a1699c8c863a1e61e427e522b3c40855a4f7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/21/2022
-ms.locfileid: "68660357"
+ms.locfileid: "68667830"
 ---
 # <a name="train-a-structured-document-processing-model-in-microsoft-syntex"></a>Microsoft Syntex'te yapılandırılmış belge işleme modelini eğitin
 
@@ -35,8 +35,6 @@ Using [AI Builder](/ai-builder/overview)—a feature in Microsoft Power Apps—S
 --->
 
 İçerik merkezinde yapılandırılmış bir belge işleme modeli oluşturmak için [Syntex'te model oluşturma](create-syntex-model.md) başlığı altındaki yönergeleri izleyin. Veya [modeli yerel bir sitede oluşturmak için Yerel SharePoint sitesinde model](create-local-model.md) oluşturma başlığı altında yer alan yönergeleri izleyin. Ardından modelinizi eğitmek için bu makaleyi kullanın.
-
-![AI Builder modelini eğitmek için iş akışının diyagramı.](../media/content-understanding/train-aib-model.png)
 
 Yapılandırılmış bir belge işleme modelini eğitmek için şu adımları izleyin:
 
@@ -84,7 +82,7 @@ Modele ayıklamak istediğiniz alanları ve tablo verilerini anlamasını öğre
 --->
 3. Dosyaları belge kitaplığınıza yükleyin. Modelin içerik türü olarak tanımlamış olduğu tüm dosyalar, görünümünüzdeki dosyaları listeler ve ayıklanan verileri sütunlarda görüntüler.
 
-    ![Ayıklanan verileri gösteren ekran görüntüsü.](../media/content-understanding/doc-lib-done.png) 
+    ![Yapılır.](../media/content-understanding/doc-lib-done.png) 
 
 > [!NOTE]
 > Aynı kitaplığa yapılandırılmış veya serbest biçimli bir belge işleme modeli ve yapılandırılmamış bir belge işleme modeli uygulanırsa, dosya yapılandırılmamış belge işleme modeli ve bu model için eğitilmiş ayıklayıcılar kullanılarak sınıflandırılır. Belge işleme modeliyle eşleşen boş sütunlar varsa, bu ayıklanan değerler kullanılarak sütunlar doldurulur.

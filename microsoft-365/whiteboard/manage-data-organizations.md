@@ -12,16 +12,16 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Azure ve OneDrive İş'de Microsoft Whiteboard için veri saklama hakkında bilgi edinin.
-ms.openlocfilehash: a43caaa9aaccff3b2a56a1c38537f80d2304358f
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 136506afcec7fe067a270e0577678b5b6a9ec9ff
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598207"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662851"
 ---
 # <a name="manage-data-for-microsoft-whiteboard"></a>Microsoft Whiteboard için verileri yönetme
 
-Whiteboard içeriği OneDrive İş ve Azure'da depolanır. OneDrive İş, tüm yeni beyaz tahtalar için varsayılan depolama alanıdır. Başlangıçta Azure'da oluşturulan beyaz tahtalar ve Surface Hub veya Microsoft Teams Room cihazında başlatılan beyaz tahtalar Azure'da depolanır.
+Whiteboard içeriği OneDrive İş ve Azure'da depolanır. OneDrive İş, tüm yeni beyaz tahtalar için varsayılan depolama alanıdır. Başlangıçta Azure'da oluşturulan beyaz tahtalar ve Surface Hub'da veya Microsoft Teams Odaları cihazda başlatılan beyaz tahtalar Azure'da depolanır.
 
 Verileri yönetmek için önce Whiteboard'un kuruluşunuz için etkinleştirildiğinden emin olmanız gerekir. Daha fazla bilgi için bkz. [Whiteboard erişimini yönetme](manage-whiteboard-access-organizations.md).
 

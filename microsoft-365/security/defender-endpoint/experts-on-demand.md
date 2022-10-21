@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 3476e599311c698a83987f48754b16c12d64e0ec
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: e24d5e513d4f5200a33d9cbd6d407353ac9215ca
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68506897"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68663115"
 ---
 # <a name="ask-defender-experts"></a>Defender Uzmanlarına Sorun
 
@@ -37,7 +37,7 @@ ms.locfileid: "68506897"
 > Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!NOTE]
-> Ağustos 2022 itibarıyla, **Bir tehdit uzmanına danışmak** için İsteğe Bağlı Uzmanlar seçeneği **Defender Uzmanlara Sor** olarak yeniden tanımlanmıştır. Bu belgeler eski Microsoft Tehdit Uzmanları hizmetini desteklemek için hala buradadır, ancak hizmeti geçerli lisansınızın ötesinde keşfetmek istiyorsanız [Microsoft Defender Uzmanlar'a](/microsoft-365/security/defender/defender-experts-for-hunting) bakın. Microsoft Defender Experts for Hunting [aboneliğinde İsteğe Bağlı Uzmanlar](/microsoft-365/security/defender/onboarding-defender-experts-for-hunting?view=o365-worldwide#collaborate-with-experts-on-demand) bulunur.
+> Ağustos 2022 itibarıyla, **Bir tehdit uzmanına danışmak** için İsteğe Bağlı Uzmanlar seçeneği **Defender Uzmanlara Sor** olarak yeniden tanımlanmıştır. Bu belgeler eski Microsoft Tehdit Uzmanları hizmetini desteklemek için hala buradadır, ancak hizmeti geçerli lisansınızın ötesinde keşfetmek istiyorsanız [Microsoft Tehdit Avcılığı için Defender Uzmanları](/microsoft-365/security/defender/defender-experts-for-hunting) bakın. Microsoft Tehdit Avcılığı için Defender Uzmanları [aboneliğinde İsteğe Bağlı Uzmanlar](/microsoft-365/security/defender/onboarding-defender-experts-for-hunting) bulunur.
 
 Müşteriler, yanıtlarını almak için doğrudan Microsoft 365 Defender portalından güvenlik uzmanlarımızla etkileşime geçebilir. Uzmanlar, uyarı sorgularından, risk altındaki cihazlardan, şüpheli ağ bağlantısının kök nedenlerinden devam eden gelişmiş kalıcı tehdit kampanyalarıyla ilgili daha fazla tehdit zekasına kadar kuruluşunuzu etkileyen karmaşık tehditleri daha iyi anlamak için gereken içgörüleri sağlar. Bu özellik ile şunları yapabilirsiniz:
 
@@ -55,7 +55,7 @@ Yanıt için doğrudan Microsoft 365 Defender portalından etkileşime geçen Mi
 > [!NOTE]
 >
 > - Kuruluşunuzun özelleştirilmiş tehdit bilgileri verileriyle ilgili uyarı sorguları şu anda desteklenmiyor. Ayrıntılar için güvenlik operasyonlarınıza veya olay yanıt ekibinize başvurun.
-> - **Defender Uzmanlarına Sor** sorgusunu gönderebilmek için Microsoft 365 Defender portalında **Güvenlik ayarlarını yönet** iznine sahip olmanız gerekir.
+> - **Defender Uzmanlarına Sor** sorgusunu gönderebilmek için Microsoft 365 Defender portalında **[Güvenlik ayarlarını yönet](../defender-endpoint/user-roles.md)** iznine sahip olmanız gerekir.
 
 1. Araştırmak istediğiniz ilgili bilgileri (örneğin **Olay** sayfası) içeren portal sayfasına gidin. Araştırma isteği göndermeden önce ilgili uyarı veya cihazın sayfasının görüntülendiğinden emin olun.
 
@@ -117,5 +117,5 @@ Araştırmayı devam ettirmek için hızlı bir şekilde yanıt vermek çok öne
 
 ## <a name="next-steps"></a>Sonraki adımlar
 - Uç noktalar arasında tehditleri proaktif olarak avlamak için [Bkz. Uç Nokta Saldırısı Bildirimi](../defender-endpoint/endpoint-attack-notifications.md).
-- Uç noktalar, Office 365, bulut uygulamaları ve kimlik genelinde tehditleri proaktif olarak avlamak [için Microsoft Defender Uzmanlar'a](../defender/defender-experts-for-hunting.md) bakın.
+- Uç noktalar, Office 365, bulut uygulamaları ve kimlik genelinde tehditleri proaktif olarak avlamak için [Microsoft Tehdit Avcılığı için Defender Uzmanları](../defender/defender-experts-for-hunting.md) bakın.
 

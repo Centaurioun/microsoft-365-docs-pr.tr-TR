@@ -6,23 +6,23 @@ ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: high
 description: Microsoft Syntex için lisanslama hakkında bilgi edinin.
-ms.openlocfilehash: c3c78d407aacb260d6b9d6edb9597d9fc3a4c38c
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 4b35810f1f8ed3e260f9d6cd83ccd9a36f15f32c
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565058"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68663356"
 ---
 # <a name="licensing-for-microsoft-syntex"></a>Microsoft Syntex için lisanslama
 
-SharePoint Syntex kullanmak için her Syntex kullanıcısı için bir lisansınız olmalıdır. Kiracınızdaki tüm SharePoint Syntex lisanslarını gelecekteki bir tarihte kaldırırsanız (veya deneme süreniz dolarsa), kullanıcılar artık belge anlama veya form işleme modelleri oluşturamaz, yayımlayamaz veya çalıştıramaz. Ayrıca terim deposu raporları, SKOS taksonomisi içeri aktarma ve İçerik türü gönderimi artık kullanılamaz. Hiçbir model, içerik veya meta veri silinmez ve site izinleri değiştirilmez.
+Microsoft Syntex'i kullanmak için her Syntex kullanıcısı için bir lisansınız olmalıdır. Gelecekteki bir tarihte kiracınızdan tüm Syntex lisanslarını kaldırırsanız (veya deneme süreniz dolarsa), kullanıcılar artık özel modeller oluşturamaz, yayımlayamaz veya çalıştıramaz. Ayrıca terim deposu raporları, SKOS taksonomisi içeri aktarma ve içerik türü gönderimi artık kullanılamaz. Hiçbir model, içerik veya meta veri silinmez ve site izinleri değiştirilmez.
  
 > [!NOTE] 
 > Syntex bir eklenti lisansıdır ve kullanıcıların da Microsoft 365 lisansına sahip olmasını gerektirir.
@@ -31,20 +31,20 @@ SharePoint Syntex kullanmak için her Syntex kullanıcısı için bir lisansın�
  
 Aşağıdaki görevler, bunları gerçekleştiren kullanıcı için [bir Syntex lisansı](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex) gerektirir:
  
-- Kitaplığa belge anlama modeli uygulama. (Lisanssız kullanıcılara içerik merkezine erişim verilebilir ve burada belge anlama modelleri oluşturabilir ancak bunları belge kitaplığına uygulayamaz.)
-- Kitaplıktaki giriş noktası aracılığıyla form işleme modeli oluşturma
-- Belge anlama veya form işleme modelinin uygulandığı kitaplığa içerik yükleme
-- İsteğe bağlı olarak belge anlama modeli çalıştırma
+- Yapılandırılmamış belge işleme modelini kitaplığa uygulama. (Lisanssız kullanıcılara içerik merkezine erişim izni verilebilir ve burada modeller oluşturabilir, ancak bunları belge kitaplığına uygulayamaz.)
+- Kitaplıktaki giriş noktası aracılığıyla yapılandırılmış belge işleme modeli veya serbest biçimli belge işleme modeli oluşturma
+- Özel modelin uygulandığı kitaplığa içerik yükleme
+- Yapılandırılmamış bir belge işleme modelini isteğe bağlı olarak çalıştırma
 - İçerik derlemesi ile modern bir şablon oluşturma
-- Modern bir şablondan belge oluşturma
+- Modern şablondan belge oluşturma
 - Gelişmiş meta veri arama kullanımı
 - Premium taksonomi hizmetlerinin kullanımı. (Premium taksonomi hizmetleri SKOS tabanlı terim kümesi içeri aktarmayı, kurumsal içerik türlerini hub ile ilişkili sitelere göndermeyi ve terim deposu raporlarını içerir.)
 
-Lisanssız kullanıcılara içerik merkezine erişim izni verilebilir ve burada belge anlama modelleri oluşturabilir ancak bunları belge kitaplığına uygulayamaz.
+Lisanssız kullanıcılara bir içerik merkezine erişim izni verilebilir ve burada modeller oluşturabilir, ancak bunları belge kitaplığına uygulayamaz.
  
 ## <a name="cost-of-training-and-running-models"></a>Eğitim ve çalıştırma modellerinin maliyeti
  
-Belge anlama modellerini eğitip çalıştırmanın maliyeti Syntex lisansının maliyetine dahildir. Ancak form işleme modelleri hem eğitim hem de çalışma zamanı işleme için AI Builder kapasitesini kullanır. Kapasite, AI Builder'ı kullanacağınız Power Apps ortamına ayrılmalıdır.
+Yapılandırılmamış belge işleme modellerini eğitme ve çalıştırma maliyeti Syntex lisansının maliyetine dahildir. Ancak, yapılandırılmış belge işleme ve serbest biçimli belge işleme modelleri hem eğitim hem de çalışma zamanı işleme için AI Builder kapasitesini kullanır. Kapasite, AI Builder'ı kullanacağınız Power Apps ortamına ayrılmalıdır.
 
 Her Syntex lisansı için lisans başına aylık 3.500 AI Builder kredisi ayrılır ve kiracı düzeyinde havuza alınır ve ayda en fazla 1 milyon kredi ayrılır. Bu ayırma her etkin Syntex lisansı için her ay yenilenir. (Kullanılmayan krediler aydan aya yuvarlanmıyor.) 
 
@@ -61,7 +61,6 @@ Kuruluşunuzda bir veya daha fazla Syntex lisansına sahip olmak, SharePoint yö
 - SKOS tabanlı terim kümesi içeri aktarma
 - Kurumsal içerik türlerini bir merkez sitesine gönderme, bunları ilişkili sitelere ve yeni oluşturulan listelere veya kitaplıklara da ekler
 - Yayımlanan terim kümeleri ve bunların kiracınız genelinde kullanımı hakkında içgörüler sağlayan terim deposu raporları
-
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

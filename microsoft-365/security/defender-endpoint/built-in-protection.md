@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 10/07/2022
+ms.date: 10/20/2022
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.reviewer: joshbregman
 f1.keywords: NOCSH
-ms.openlocfilehash: a1a02fa28291a38d080b2969019638a1fc7dfe6b
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 25074c0540f00d9edf4b508a271e47c3777792e1
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68629908"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660675"
 ---
 # <a name="built-in-protection-helps-guard-against-ransomware"></a>Yerleşik koruma fidye yazılımlarından korunmaya yardımcı olur
 
@@ -41,7 +41,7 @@ Yerleşik koruma, cihazlarınızın korunduğundan emin olmak için kullanıma s
 
 | Aşama | Neler olur? |
 |:---|:---|
-| Yerleşik koruma (önizleme) kullanıma sunuldu | Önizleme özelliklerini almayı tercih eden müşteriler, yerleşik korumanın geldiğini [bildiren bir bildirim](#what-does-the-notification-look-like) alır. Henüz yapılandırılmamışsa, Uç Nokta için Defender Plan 2 veya Microsoft 365 E5 sahip müşteriler için kurcalama koruması açılır. |
+| Yerleşik koruma kullanıma sunulacak | Müşteriler yerleşik korumanın geldiğini [bildiriyor](#what-does-the-notification-look-like) . Henüz yapılandırılmamışsa, Uç Nokta için Defender Plan 2 veya Microsoft 365 E5 sahip müşteriler için kurcalama koruması açılır. |
 | Yerleşik koruma kiracınız için kullanılabilir hale gelir | Kiracınızın yerleşik korumayı almak üzere olduğu ve kurcalama korumasının ne zaman açılacağı (henüz yapılandırılmamışsa) [size bildirilir](#what-does-the-notification-look-like) . |
 | Yerleşik koruma geliyor | Kiracınız için kurcalama koruması açılır ve kuruluşunuzun Windows cihazlarına uygulanır. [Yerleşik koruma ayarlarınızı](#can-i-change-built-in-protection-settings) [geri çevirebilir](#can-i-opt-out) veya değiştirebilirsiniz. |
 | Yerleşik koruma geldikten sonra | Uç Nokta için Defender'a yeni cihazlar ekli olduğunda, yerleşik koruma ayarları Windows çalıştıran tüm yeni cihazlara uygulanır. [Yerleşik koruma ayarlarınızı istediğiniz zaman değiştirebilirsiniz](#can-i-change-built-in-protection-settings). |

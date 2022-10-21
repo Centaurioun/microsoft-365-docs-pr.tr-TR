@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
-ms.author: v-jweston
+author: dansimp
+ms.author: dansimp
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.custom: asr
@@ -20,13 +20,15 @@ ms.collection:
 - tier2
 ms.date: ''
 search.appverid: met150
-ms.openlocfilehash: 3617ae81204d6c2e244d58868fad6fe7d315f29e
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: f71c2d4fa2807f6e7667b7ab32c54081cf239986
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68229096"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659400"
 ---
+<!--- jweston-1 to return as author and ms.author appx April/May 2023. --->
+
 # <a name="network-protection-for-macos"></a>macOS için ağ koruması
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -78,16 +80,16 @@ Ağ koruması, düşük saygınlık kaynaklarına bağlanmaya çalışan tüm gi
 - Eklenen Makineler:
   - En düşük macOS sürümü: 11
   - Ürün sürümü 101.78.13 veya üzeri
-  - Cihazınızın InsiderSlow (Önizleme) veya InsiderFast (Beta) Microsoft AutoUpdate güncelleştirme kanalında olması gerekir. Güncelleştirme kanalını denetlemek için aşağıdaki komutu kullanabilirsiniz:
+  - Cihazınızın Dış (Önizleme) veya InsiderFast (Beta) Microsoft AutoUpdate güncelleştirme kanalında olması gerekir. Güncelleştirme kanalını denetlemek için aşağıdaki komutu kullanabilirsiniz:
 
 ```bash
 mdatp health --field release_ring 
 ```
 
-Cihazınız insiderSlow(Önizleme) güncelleştirme kanalında değilse Terminal'den aşağıdaki komutu yürütür. Kanal güncelleştirmesi, ürün bir sonraki başlatıldığında (bir sonraki ürün güncelleştirmesi yüklendiğinde veya cihaz yeniden başlatıldığında) geçerlilik kazanır.
+Cihazınız henüz Dış (Önizleme) güncelleştirme kanalında değilse Terminal'den aşağıdaki komutu yürütür. Kanal güncelleştirmesi, ürün bir sonraki başlatıldığında (bir sonraki ürün güncelleştirmesi yüklendiğinde veya cihaz yeniden başlatıldığında) geçerlilik kazanır.
 
 ```bash
-defaults write com.microsoft.autoupdate2 ChannelName -string InsiderSlow
+defaults write com.microsoft.autoupdate2 ChannelName -string External
 ```
 
 Alternatif olarak, yönetilen bir ortamdaysanız (JAMF veya Intune), cihaz grubunu uzaktan yapılandırabilirsiniz. Daha fazla bilgi için bkz. [macOS'ta Uç Nokta için Microsoft 365 Defender tercihlerini ayarlama](mac-preferences.md).
@@ -96,7 +98,7 @@ Alternatif olarak, yönetilen bir ortamdaysanız (JAMF veya Intune), cihaz grubu
 
 ### <a name="microsoft-365-defender-for-endpoint"></a>Uç Nokta için Microsoft 365 Defender
 
-Cihazınızı InsiderSlow(önizleme) güncelleştirme kanalında olacak şekilde yapılandırdıktan sonra Microsoft AutoUpdate aracılığıyla en son ürün sürümünü yükleyin. Microsoft AutoUpdate'i açmak için Terminal'den aşağıdaki komutu çalıştırın:
+Cihazınızı Dış (önizleme) güncelleştirme kanalında olacak şekilde yapılandırdıktan sonra Microsoft AutoUpdate aracılığıyla en son ürün sürümünü yükleyin. Microsoft AutoUpdate'i açmak için Terminal'den aşağıdaki komutu çalıştırın:
 
 ```bash
 open /Library/Application\ Support/Microsoft/MAU2.0/Microsoft\ AutoUpdate.app

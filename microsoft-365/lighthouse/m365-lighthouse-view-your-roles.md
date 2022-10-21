@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: magarlan, chrigreen
+ms.reviewer: magarlan, chrigreen
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -18,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcısı (MSP) teknisyenleri için, kuruluşunuzun yönettiği farklı müşteri kiracılarında Azure Active Directory (Azure AD) rollerinizi görüntülemeyi öğrenin.
-ms.openlocfilehash: cdc38d77a7397c1b4a79f59b9050f4522ad21abb
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: dce01eea5904ee785e2b56adc32c8b51867a876a
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68202001"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659335"
 ---
 # <a name="view-your-azure-active-directory-roles-in-microsoft-365-lighthouse"></a>Azure Active Directory rollerinizi Microsoft 365 Lighthouse'de görüntüleme
 

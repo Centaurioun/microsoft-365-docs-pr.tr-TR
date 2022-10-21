@@ -7,7 +7,7 @@ ms.reviewer: lauris
 ms.date: ''
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
@@ -15,33 +15,33 @@ ms.custom: Adopt
 search.appverid: ''
 ms.localizationpriority: medium
 description: Kuruluşunuzda Microsoft Syntex'i kullanma hakkında iş senaryoları bulun.
-ms.openlocfilehash: 66cb9eeb572be506b246275a6e609d395c70a48e
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: a43231e268e69a74cdc0bbc35df2cdd24d9e0d37
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547850"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660917"
 ---
 # <a name="scenarios-and-use-cases-for-microsoft-syntex"></a>Microsoft Syntex için senaryolar ve kullanım örnekleri
 
 Kuruluşunuzda Microsoft Syntex'i nasıl kullanabileceğiniz hakkında fikir istemi göndermek için aşağıdaki örnek senaryoları kullanın.
 
-- [Senaryo: Form işleme ile faturalardan verileri izleme](adoption-scenarios.md#scenario-track-data-from-invoices-with-form-processing)
-- [Senaryo: Belge anlama ile sözleşmelerden bilgileri izleme](adoption-scenarios.md#scenario-track-information-from-contracts-with-document-understanding)
+- [Senaryo: Yapılandırılmış belge işleme modelini kullanarak faturalardan bilgileri izleme](adoption-scenarios.md#scenario-track-information-from-invoices-by-using-the-structured-document-processing-model)
+- [Senaryo: Yapılandırılmamış belge işleme modelini kullanarak sözleşmelerden bilgileri izleme](adoption-scenarios.md#scenario-track-information-from-contracts-by-using-the-unstructured-document-processing-model)
 - [Senaryo: Syntex tabanlı kayıt yönetimi, belge idaresi ve uyumluluk süreçlerinde riskten kaçının](adoption-scenarios.md#scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-syntex)
 - [Senaryo: Daha önce erişilemeyen belgelerden bilgi yakalama](adoption-scenarios.md#scenario-capture-information-from-previously-inaccessible-documents)
 - [Senaryo: İçgörüler ve analizler sağlamak için veri işlemeyi geliştirme](adoption-scenarios.md#scenario-improve-data-processing-to-provide-insights-and-analytics)
 - [Senaryo: Sipariş işlemeyi otomatikleştirme](adoption-scenarios.md#scenario-automate-order-processing)
 - [Senaryo: Vize yenileme sürecini basitleştirme](adoption-scenarios.md#scenario-simplify-visa-renewal-process)
 
-## <a name="scenario-track-data-from-invoices-with-form-processing"></a>Senaryo: Form işleme ile faturalardan verileri izleme
+## <a name="scenario-track-information-from-invoices-by-using-the-structured-document-processing-model"></a>Senaryo: Yapılandırılmış belge işleme modelini kullanarak faturalardan bilgileri izleme
 
 Örneğin, faturaları izlemek ve izlemek için Syntex ve Power Automate özelliklerini kullanarak bir işlem ayarlayabilirsiniz.
 
 1. Fatura belgelerini depolamak için bir kitaplık ayarlayın.
-1. Belgelerdeki alanları tanımak için modeli eğitin.
-1. İzlemek istediğiniz alanları bir listeye ayıklayın.
-1. Aşağıdakiler gibi belirli olaylar için size bildirimde bulunacak bir akış ayarlayın:
+2. Belgelerdeki alanları tanımak için modeli eğitin.
+3. İzlemek istediğiniz alanları bir listeye ayıklayın.
+4. Aşağıdakiler gibi belirli olaylar için size bildirimde bulunacak bir akış ayarlayın:
     - Yeni bir fatura eklenir.
     - Faturanın son tarihi geçmiştir.
     - Fatura, otomatik onay tutarınızdan daha büyük bir tutara yöneliktir.
@@ -53,15 +53,15 @@ Bu senaryoyı otomatikleştirdiğinizde şunları yapabilirsiniz:
 - Verileri el ile yapmak yerine otomatik olarak faturalardan ayıklayarak zamandan ve paradan tasarruf edin.
 - Faturaları denetlemek ve sorunları size bildirmek için iş akışlarını kullanarak olası hataları azaltın ve daha iyi uyumluluk sağlayın.
 
-## <a name="scenario-track-information-from-contracts-with-document-understanding"></a>Senaryo: Belge anlama ile sözleşmelerden bilgileri izleme
+## <a name="scenario-track-information-from-contracts-by-using-the-unstructured-document-processing-model"></a>Senaryo: Yapılandırılmamış belge işleme modelini kullanarak sözleşmelerden bilgileri izleme
 
 Başka bir örnek olarak, şirketinizin diğer şirketler veya bireylerle olan sözleşmelerini belirlemek için bir süreç ayarlayabilirsiniz. Bu sözleşmelerden müşteri adı, ücretler, tarihler veya diğer önemli bilgiler gibi önemli bilgileri ayıklamak için bir model ayarlayın ve bilgileri hızla görüntüleyebileceğiniz alanlar olarak kitaplığa ekleyin. İş düzenlemelerinize uygun uyumluluk için sözleşmelerin belirli bir süreden önce silinemeden önce silinemeden emin olmak için belge kitaplığına bir bekletme etiketi uygulayın.
 
-1. İçerik merkezinden başlayın ve sözleşmeler için yeni bir belge anlama modeli oluşturun.
-1. Pozitif ve negatif örnekler için örnek belgeleri karşıya yükleyin, ardından sözleşme belgelerini tanımlamak ve sonuçları gözden geçirmek için eğitimi çalıştırın.
-1. Ayıklayıcıyı sözleşmelerdeki alanları (istemci adı, ücret ve tarih gibi) belirleyecek şekilde eğitin ve ayıklayıcıyı test edin.
-1. Model tamamlandığında, modeli sözleşmeleri karşıya yükleyebileceğiniz bir kitaplığa uygulayın.
-1. Sözleşmelerin gerekli süre boyunca kitaplıkta tutulması için tarih alanına bir bekletme etiketi uygulayın.
+1. İçerik merkezinden başlayın ve sözleşmeler için yeni bir yapılandırılmamış belge işleme modeli oluşturun.
+2. Pozitif ve negatif örnekler için örnek belgeleri karşıya yükleyin, ardından sözleşme belgelerini tanımlamak ve sonuçları gözden geçirmek için eğitimi çalıştırın.
+3. Ayıklayıcıyı sözleşmelerdeki alanları (istemci adı, ücret ve tarih gibi) belirleyecek şekilde eğitin ve ayıklayıcıyı test edin.
+4. Model tamamlandığında, modeli sözleşmeleri karşıya yükleyebileceğiniz bir kitaplığa uygulayın.
+5. Sözleşmelerin gerekli süre boyunca kitaplıkta tutulması için tarih alanına bir bekletme etiketi uygulayın.
 
 ![Syntex ve bekletme etiketleriyle sözleşmeleri izleyin ve izleyin.](../media/content-understanding/process-contracts-flow.png)
 
@@ -75,7 +75,7 @@ Bu senaryoyı otomatikleştirdiğinizde şunları yapabilirsiniz:
 Risklerin azaltılması çoğu şirket için ortak bir hedeftir. Aşağıdakilere ihtiyacınız olabilir:
 
 - Kiracınız genelinde bilgi idaresi sağlamanın/zorlamanın daha iyi bir yolu.
-- Belgeleri, e-postaları ve projeler için 'kayıtlar' olarak kabul edilen diğer iletişim biçimlerini sınıflandırma sistemini geliştirmek.
+- Belgeleri, e-postaları ve projeler için "kayıtlar" olarak kabul edilen diğer iletişim biçimlerini sınıflandırma sistemini geliştirmek.
 - Makbuzları, sözleşmeleri vb. denetlemek, şirket ilkeleriyle uyumluluğu sağlamak.
 - Projelerin uyumluluk için gereken tüm belgelere sahip olduğundan emin olmak için.
 
@@ -97,7 +97,7 @@ Bu senaryoyı otomatikleştirdiğinizde şunların güvenliğini sağlayabilirsi
 Bu senaryoyı otomatikleştirdiğinizde şunları yapabilirsiniz:
 
 - Dijital içerikten bilgilerin kilidini açın.
-- İk ilkelerini, özgeçmişleri, satış belgelerini, teknik şemaları, hesap planlarını sınıflandırıp bilgileri ayıklayın.
+- İk ilkelerini, özgeçmişleri, satış belgelerini, teknik şemaları ve hesap planlarını sınıflandırıp bilgileri ayıklayın.
 - Aradığınız doğru bilgileri veya belgeyi hızla bulun.
 - En son bilgilere anında erişim elde edin.
 - Arama sürelerini azaltın.
@@ -116,7 +116,7 @@ Bu senaryoyı otomatikleştirdiğinizde şunları yapabilirsiniz:
 
 ## <a name="scenario-automate-order-processing"></a>Senaryo: Sipariş işlemeyi otomatikleştirme
 
-Syntex ile müşteri siparişlerinin el ile işlenmesi süresini kısaltabilirsiniz. Örneğin, OCR işlemeyi kullanarak faks, e-posta veya kağıttan SharePoint belge kitaplığına sipariş yükleyebilir ve ardından otomatik işlemleri kullanarak yerine getirebilmeniz için bu siparişlerden meta verileri ayıklayabilirsiniz.
+Syntex ile müşteri siparişlerinin el ile işlenmesi süresini kısaltabilirsiniz. Örneğin, OCR işlemeyi kullanarak faks, e-posta veya kağıttan SharePoint'e sipariş yükleyebilir ve ardından otomatik işlemleri kullanarak yerine getirebilmeniz için bu siparişlerden meta verileri ayıklayabilirsiniz.
 
 Örneğin, tedarik zinciri yöneticisi el ile veri girişinin neden olduğu hataları azaltmak ister. İş sistemlerine giden hataları azaltmak için gelen müşteri siparişlerinin (kağıt, faks veya e-posta) el ile gözden geçirilmesini ve veri girişini önlemek istiyorlar. Sipariş karşılama ve mutabakat için gelen sipariş bilgilerini doğrulamak, çekirdek verileri ayıklamak ve otomatik olarak ERP sistemlerine göndermek için yapay zeka ve makine öğrenmesi tekniklerini uygulayan bir çözüm istiyor.
 
@@ -129,7 +129,7 @@ Bu senaryoyı otomatikleştirdiğinizde şunların yapıldığından emin olabil
 
 ## <a name="scenario-simplify-visa-renewal-process"></a>Senaryo: Vize yenileme sürecini basitleştirme
 
-Syntex, önemli sözleşme bilgileri için anımsatıcıları ve yenilemeleri otomatikleştirmenize yardımcı olabilir. Örneğin, bir İk direktörünün çalışanların vizelerinin güncel ve/veya zamanında yenilenmesini sağlaması gerekir. İnsanlara Vizelerini güncellemek için basit ve sezgisel bir süreç vermek istiyorlar. Sözleşmelerden yenileme tarihlerini ayıklayan ve yenileme tarihleri yaklaştığında çalışanlara otomatik olarak anımsatıcılar gönderen bir çözüme ihtiyaçları vardır.
+Syntex, önemli sözleşme bilgileri için anımsatıcıları ve yenilemeleri otomatikleştirmenize yardımcı olabilir. Örneğin, bir İk direktörünün çalışanların vizelerinin güncel veya zamanında yenilenmesini sağlaması gerekir. İnsanlara vizelerini güncellemek için basit ve sezgisel bir süreç vermek istiyorlar. Sözleşmelerden yenileme tarihlerini ayıklayan ve yenileme tarihleri yaklaştığında çalışanlara otomatik olarak anımsatıcılar gönderen bir çözüme ihtiyaçları vardır.
 
 Bu senaryoyı otomatikleştirdiğinizde şunların yapıldığından emin olabilirsiniz:
 
@@ -139,4 +139,6 @@ Bu senaryoyı otomatikleştirdiğinizde şunların yapıldığından emin olabil
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Syntex'i benimsemeye başlama](adoption-getstarted.md)
+[Microsoft Syntex'i benimsemeye başlama](adoption-getstarted.md)
+
+[Microsoft 365 çözümü kullanarak sözleşmeleri yönetme](solution-manage-contracts-in-microsoft-365.md)

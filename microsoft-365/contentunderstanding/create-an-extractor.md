@@ -6,22 +6,23 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft Syntex'te ayıklayıcı oluşturmayı öğrenin.
-ms.openlocfilehash: b47633d7e9489da46e82bb9f7b3699c65b663a08
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 4e2ff7f0452e72d66a46ead73919b1bce2bc80c6
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547609"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660389"
 ---
 # <a name="create-an-extractor-in-microsoft-syntex"></a>Microsoft Syntex'te ayıklayıcı oluşturma
 
+<sup>**Şunlar için geçerlidir:**  &ensp; Yapılandırılmamış belge işlemeyi &#10003;</sup>
 
 <br/>
 
@@ -59,7 +60,7 @@ Sonraki adım, örnek eğitim dosyalarınızda ayıklamak istediğiniz varlığ�
 
 Ayıklayıcı oluşturulurken ayıklayıcı sayfası açılır. Burada, listedeki ilk dosyanın görüntüleyicide görüntülendiği örnek dosyalarınızın listesini görürsünüz.
 
-1. Görüntüleyiciden, dosyalardan ayıklamak istediğiniz verileri seçin. Örneğin, *Başlangıç Hizmeti Tarihi'ni* ayıklamak istiyorsanız, ilk dosyadaki tarih değerini vurgularsınız (*Pazartesi, 14 Ekim 2019*). ve ardından **Kaydet'i** seçin. Etiketlenmiş örnekler listesinde, **Etiket** sütununun altındaki dosyadan değerin görüntülendiğini görmeniz gerekir.
+1. Görüntüleyiciden, dosyalardan ayıklamak istediğiniz verileri seçin. Örneğin, *Başlangıç Hizmeti Tarihi'ni* ayıklamak istiyorsanız, ilk dosyadaki tarih değerini vurgularsınız (*Pazartesi, Ekim 14, 2022*). ve ardından **Kaydet'i** seçin. Etiketlenmiş örnekler listesinde, **Etiket** sütununun altındaki dosyadan değerin görüntülendiğini görmeniz gerekir.
 2. Otomatik kaydetmek için **sonraki dosya'ya** tıklayın ve görüntüleyicideki listede bir sonraki dosyayı açın. Alternatif olarak **Kaydet'i** ve ardından **Etiketli örnekler** listesinden başka bir dosya seçin.
 3. Görüntüleyicide 1. ve 2. adımları yineleyin, ardından etiketi beş dosyaya da kaydedene kadar yineleyin.
 
@@ -79,9 +80,9 @@ Büyük bir belgeyi arıyorsanız veya belgede varlığın birden çok örneği 
 
 Örneğimizde, varlık biçiminin kendisi ve örnek belgelerde sahip olabileceği çeşitlemeler hakkında ipucu sağlayan bir açıklama oluşturacağız. Örneğin, tarih değeri aşağıdakiler gibi çeşitli biçimlerde olabilir:
 
-- 10/14/2019
-- 14 Ekim 2019, Cumartesi
-- 14 Ekim 2019 Pazartesi
+- 10/14/2022
+- 14 Ekim 2022, Cumartesi
+- 14 Ekim 2022 Pazartesi
 
 *Hizmet Başlangıç Tarihi'ni* tanımlamaya yardımcı olmak için bir desen açıklaması oluşturabilirsiniz.
 
@@ -185,9 +186,5 @@ Yinelenen varlıklarınız varsa ve yalnızca bir değeri veya belirli sayıda d
 [Açıklama türleri](explanation-types-overview.md)
 
 [Ayıklayıcı oluştururken terim deposu taksonomisini kullan](leverage-term-store-taxonomy.md)
-
-[Document Understanding'e genel bakış](document-understanding-overview.md)
-
-[Model uygulama](apply-a-model.md)
 
 [Syntex erişilebilirlik modu](accessibility-mode.md)

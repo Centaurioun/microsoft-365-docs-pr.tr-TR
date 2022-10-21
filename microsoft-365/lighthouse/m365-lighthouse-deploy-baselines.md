@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: shcallaw, kywirpel
+ms.reviewer: shcallaw, kywirpel
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -18,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Microsoft 365 Lighthouse temellerini dağıtmayı öğrenin.
-ms.openlocfilehash: 7530826efe1ca36420c26078d7f0c651c78d9c4c
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: cf23c84f4be87f6e6f9618097822c9ea138a64ae
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68163107"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659049"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Microsoft 365 Lighthouse temellerini dağıtma
 

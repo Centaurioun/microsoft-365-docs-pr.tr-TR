@@ -6,19 +6,19 @@ manager: pamgreen
 ms.reviewer: kkameth
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: high
 description: Microsoft Syntex kullanarak SharePoint belge kitaplıklarındaki öğeleri bulmak için gelişmiş meta veri aramasını kullanmayı ve özel site sütunlarını aramayı öğrenin.
-ms.openlocfilehash: 359bde29850c54a9c1a338d95aa826894b1b3dcf
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 0e50bbacc3d63e0892cfd2685053a150cba734fe
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565871"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661467"
 ---
 # <a name="search-for-metadata-in-document-libraries-in-microsoft-syntex"></a>Microsoft Syntex'te belge kitaplıklarında meta verileri arama
 

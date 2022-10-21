@@ -6,19 +6,19 @@ manager: pamgreen
 audience: admin
 ms.reviewer: anrasto, shrganguly
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft Syntex'te modern bir şablon kullanarak belge ve diğer içerik oluşturma hakkında bilgi edinin.
-ms.openlocfilehash: 62016db6ee47a94c0b7c22ac8173b89c8150cc5f
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 7b03b50be0243117b12ec08dfcc61a4f88ba8034
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564125"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660455"
 ---
 # <a name="overview-of-content-assembly-in-microsoft-syntex"></a>Microsoft Syntex'te içerik derlemesine genel bakış
 
@@ -30,7 +30,6 @@ Modern bir şablon oluşturmak için var olan bir belgeyi karşıya yükler ve a
 
 > [!NOTE]
 > İçerik derleme özelliklerine erişmek ve bunları kullanmak için lisanslı bir Syntex kullanıcısı olmanız gerekir. SharePoint listelerini yönetmek için de izinleriniz olmalıdır.
-
 
 ## <a name="requirements-and-limitations"></a>Gereksinimler ve sınırlamalar
 

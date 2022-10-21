@@ -14,18 +14,16 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Microsoft Syntex'te serbest biçimli belge işleme modelini eğitmeyi öğrenin.
-ms.openlocfilehash: cb0aa89f1c0f7e1a34c08d67a11ea82b45e48c29
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: b8e306c725680be1bf36ba8922e52c9d1978242e
+ms.sourcegitcommit: fa5a1699c8c863a1e61e427e522b3c40855a4f7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/21/2022
-ms.locfileid: "68664443"
+ms.locfileid: "68667808"
 ---
 # <a name="train-a-freeform-document-processing-model-in-microsoft-syntex"></a>Microsoft Syntex'te serbest biçimli belge işleme modelini eğitin
 
 İçerik merkezinde serbest [biçimli bir belge işleme modeli oluşturmak için Syntex'te model oluşturma](create-syntex-model.md) başlığı altındaki yönergeleri izleyin. Veya [modeli yerel bir sitede oluşturmak için Yerel SharePoint sitesinde model](create-local-model.md) oluşturma başlığı altında yer alan yönergeleri izleyin. Ardından modelinizi eğitmek için bu makaleyi kullanın.
-
-![AI Builder modelini eğitmek için iş akışının diyagramı.](../media/content-understanding/train-aib-model.png)
 
 Serbest biçimli bir belge işleme modelini eğitmek için şu adımları izleyin:
 

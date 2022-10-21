@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 description: Faturalama bildirimi e-postalarını ve fatura eklerini kimlerin alacağını yönetmeyi öğrenin.
 ms.date: 03/17/2021
-ms.openlocfilehash: 3affe1bea7f9ceebd777a9d54e4a7f7973fae6e9
-ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
+ms.openlocfilehash: 81b4541af6683260a4b4b9340977d9695b15df21
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68472727"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659707"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Faturalama bildirimlerini ve fatura eklerini yönetme
 
@@ -70,7 +70,7 @@ Kuruluşunuzun faturalama bildirimleri her Genel ve Faturalama yöneticisinin bi
 Kuruluşunuzdaki diğer yöneticilerin birincil ve alternatif e-posta adresini değiştirmek için aşağıdaki adımları kullanın.
 
 > [!NOTE]
-> Faturalama yöneticileri kendi birincil ve alternatif e-posta adreslerini değiştirebilir, ancak diğer yöneticiler için değiştiremez.
+> Faturalama yöneticileri yalnızca kendi alternatif e-posta adreslerini değiştirebilir. Diğer yöneticilerin e-posta adreslerini değiştiremezler.
 
 1. Yönetim merkezinde **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faturalama bildirimleri</a> sayfasına gidin.
 2. **Faturalama bildirimlerini alan yöneticiler** bölümünde bir ad seçin.

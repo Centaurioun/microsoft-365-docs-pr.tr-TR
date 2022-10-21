@@ -1,5 +1,6 @@
 ---
 title: Microsoft Purview uyumluluk portalı eBulma izinleri atama
+description: Microsoft Purview uyumluluk portalı kullanarak eBulma ile ilgili görevleri gerçekleştirmek için gereken izinleri atayın.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,42 +11,38 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: Microsoft Purview uyumluluk portalı kullanarak eBulma ile ilgili görevleri gerçekleştirmek için gereken izinleri atayın.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 4e1c1bdcda0f4912eefe65dc846338cceeae252f
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 97f080bf273a0a2e7e8694d7ae4923a32e0c38c7
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67823331"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662214"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>Uyumluluk portalında eBulma izinleri atama
 
-Kişilerin Microsoft Purview uyumluluk portalı [eBulma ile ilgili araçlardan](ediscovery.md) herhangi birini kullanmasını istiyorsanız, onlara uygun izinleri atamanız gerekir. Bunu yapmanın en kolay yolu, kişiyi uyumluluk portalındaki **İzinler** sayfasında uygun rol grubuna eklemektir. Bu konuda, eBulma görevlerini gerçekleştirmek için gereken izinler açıklanmaktadır.
+Kişilerin Microsoft Purview uyumluluk portalı [eBulma ile ilgili araçlardan](ediscovery.md) herhangi birini kullanmasını istiyorsanız, onlara uygun izinleri atamanız gerekir. Rolleri atamanın en kolay yolu, uyumluluk portalındaki **İzinler** sayfasında uygun rol grubunu eklemektir. Bu makalede, eBulma görevlerini gerçekleştirmek için gereken izinler açıklanmaktadır.
 
 > [!TIP]
 > Uyumluluk portalındaki eBulma (Premium) genel bakış sayfasında kendi izinlerinizi görüntüleyebilirsiniz. İzinlerinizin görüntülenmesi için en az bir rol atanmış olmanız gerekir.
 
-Uyumluluk portalındaki birincil eBulma ile ilgili rol grubu **eBulma Yöneticisi** olarak adlandırılır. Bu rol grubu içinde iki alt grup vardır.
+Uyumluluk portalındaki birincil eBulma ile ilgili rol grubu **eBulma Yöneticisi** olarak adlandırılır. Bu rol grubu içinde iki alt grup vardır:
   
 - **eBulma Yöneticisi** - eBulma Yöneticisi, kuruluştaki içerik konumlarında arama yapmak ve arama sonuçlarını önizleme ve dışarı aktarma gibi aramayla ilgili çeşitli eylemleri gerçekleştirmek için eBulma arama araçlarını kullanabilir. Üyeler ayrıca Microsoft Purview eKeşif (Standart) ve Microsoft Purview eKeşif (Premium) içinde servis talepleri oluşturabilir ve yönetebilir, servis talebine üye ekleyip kaldırabilir, servis talebi tutmaları oluşturabilir, servis talebiyle ilişkili aramaları çalıştırabilir ve servis talebi verilerine erişebilir. eBulma Yöneticileri yalnızca oluşturdukları servis taleplerine erişebilir ve bu servis taleplerini yönetebilir. Diğer eBulma Yöneticileri tarafından oluşturulan servis taleplerini erişemez veya yönetemezler.
   
 - **eBulma Yöneticisi** - eBulma Yöneticisi, eBulma Yöneticisi rol grubunun bir üyesidir ve eBulma Yöneticisi'nin gerçekleştirebileceği içerik arama ve servis talebi yönetimiyle ilgili görevleri gerçekleştirebilir. Ayrıca, eBulma Yöneticisi şunları yapabilir:
   
   - Uyumluluk portalındaki **eBulma (Standart)** ve **eBulma (Premium)** sayfalarında listelenen tüm servis taleplerine erişin.
-
   - Kuruluştaki herhangi bir durum için eBulma (Premium) içindeki servis talebi verilerine erişin.
-  
   - Kendilerini servis talebine üye olarak ekledikten sonra herhangi bir eBulma servis talebini yönetin.
-  
   - eBulma durumundan üyeleri kaldırma. Bir servis talebinin üyelerini yalnızca eBulma Yöneticisi kaldırabilir. eBulma Yöneticisi alt grubunun üyesi olan kullanıcılar, olayı kullanıcı oluşturmuş olsa bile bir servis talebinin üyelerini kaldıramaz.
   
   Kuruluşunuzda eBulma Yöneticileri istemenizin nedenleri için bkz. [Daha fazla bilgi](#more-information).
@@ -53,38 +50,47 @@ Uyumluluk portalındaki birincil eBulma ile ilgili rol grubu **eBulma Yöneticis
 > [!NOTE]
 > eBulma (Premium) kullanarak kullanıcının verilerini analiz etmek için kullanıcıya (verilerin koruyucusu) bir Office 365 E5 veya Microsoft 365 E5 lisansı atanmalıdır. Alternatif olarak, Office 365 E1 veya Office 365 ya da Microsoft 365 E3 lisansı olan kullanıcılara Microsoft 365 E5 Uyumluluk veya Microsoft 365 eKeşif ve Denetim eklentisi lisansı atanabilir. Davalara üye olarak atanan ve verileri toplamak, görüntülemek ve analiz etmek için eKeşif (Premium) kullanan yöneticilerin, uyumluluk görevlilerinin veya yasal personelin E5 lisansına ihtiyacı yoktur. eKeşif (Premium) lisanslama hakkında daha fazla bilgi için bkz. [eBulma (Premium)'da abonelikler ve lisanslama](overview-ediscovery-20.md#subscriptions-and-licensing).
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="before-you-assign-permissions"></a>İzinleri atamadan önce
 
-- Uyumluluk portalında eBulma izinlerini atamak için Kuruluş Yönetimi rol grubunun üyesi olmanız veya Rol Yönetimi rolüne atanmış olmanız gerekir.
+- Uyumluluk portalında eBulma izinlerini atamak için *Kuruluş Yönetimi* rol grubunun üyesi olmanız veya *Rol Yönetimi* rolüne atanmış olmanız gerekir.
 
-- eBulma Yöneticisi rol grubundaki eBulma Yöneticileri alt grubunun üyesi olarak posta özellikli bir güvenlik grubu eklemek için Güvenlik & Uyumluluk PowerShell'de [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) cmdlet'ini kullanabilirsiniz. Ancak, eBulma Yöneticileri alt grubuna posta özellikli bir güvenlik grubu ekleyemezsiniz. Ayrıntılar için bkz. [Daha fazla bilgi](#more-information).
+- eBulma Yöneticisi rol grubundaki *eBulma Yöneticileri* alt grubunun üyesi olarak posta özellikli bir güvenlik grubu eklemek için Güvenlik & Uyumluluk PowerShell'indeki [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) cmdlet'ini kullanabilirsiniz. Ancak, *eBulma Yöneticileri* alt grubuna posta özellikli bir güvenlik grubu ekleyemezsiniz. Ayrıntılar için bkz. [Daha fazla bilgi](#more-information).
   
 ## <a name="assign-ediscovery-permissions"></a>eKeşif izinleri atama
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Uyumluluk portalına</a> gidin ve izin atayabilen bir hesap kullanarak oturum açın.
-  
 2. Sol bölmede **İzinler'i** seçin.
-
-3. **İzinler & Rolleri** sayfasında, **Microsoft Purview çözümleri'nin** altında **Roller'e** tıklayın.
+3. **İzinler & Rolleri** sayfasında, **Microsoft Purview çözümleri'nin** altında **Roller'i** seçin.
 
    Doğrudan bu sayfaya gitmek için kullanın <https://compliance.microsoft.com/compliancecenterpermissions>.
 
 4. **Microsoft Purview çözümleri için rol grupları** sayfasında **eBulma Yöneticisi'ni** seçin.
+5. **eBulma Yöneticisi** açılır bölmesinde, atamak istediğiniz eBulma izinlerine göre aşağıdakilerden birini yapın.
   
-5. **eBulma Yöneticisi** açılır sayfasında, atamak istediğiniz eBulma izinlerine göre aşağıdakilerden birini yapın.
+    **Kullanıcıyı eBulma Yöneticisi yapmak için:**
+    - **eBulma Yöneticisi'nin** yanında **Düzenle'yi** seçin.
+    - **eBulma Yöneticisi Seç** sihirbazı sayfasında Simge Ekle'yi seçin![.](../media/ITPro-EAC-AddIcon.gif) **Ekle'yi seçin**. 
+    - eBulma yöneticisi olarak eklemek istediğiniz kullanıcıyı (veya kullanıcıları) ve ardından **Ekle'yi** seçin. 
+    - Kullanıcı eklemeyi bitirdiğinizde **Bitti'yi** seçin.
+    - **Düzenleme eBulma Yöneticisi'ni Seçin** sihirbazı sayfasında **Kaydet'i** seçerek değişiklikleri eKeşif Yöneticisi üyeliğine kaydedin.
   
-    **Kullanıcıyı eBulma Yöneticisi yapmak için:** **eBulma Yöneticisi'nin** yanında **Düzenle'yi** seçin. **eBulma Yöneticisi Seç** sihirbazı sayfasında Simge Ekle'ye tıklayın![.](../media/ITPro-EAC-AddIcon.gif) **Ekle'yi seçin**. eBulma yöneticisi olarak eklemek istediğiniz kullanıcıyı (veya kullanıcıları) ve ardından **Ekle'yi** seçin. Kullanıcı eklemeyi bitirdiğinizde **Bitti'yi** seçin. Ardından, **eBulma Yöneticisi'ni Seçin** sihirbazı sayfasında **Kaydet'i** seçerek değişiklikleri eBulma Yöneticisi üyeliğine kaydedin.
-  
-    **Kullanıcıyı eBulma Yöneticisi yapmak için:** **eBulma Yöneticisi'nin** yanındaki **Düzenle'yi** seçin. **eBulma Yöneticisi Seç** sayfasında Simge Ekle'ye tıklayın![.](../media/ITPro-EAC-AddIcon.gif) **Ekle'yi seçin**. **eBulma Yöneticisi** olarak eklemek istediğiniz kullanıcıyı (veya kullanıcıları) seçin ve ardından **Ekle'yi** seçin. Kullanıcı eklemeyi bitirdiğinizde **Bitti'yi** seçin. Ardından, **eBulma Yöneticisi'ni Seçin** sihirbazı sayfasında, eBulma Yöneticisi üyeliğindeki değişiklikleri kaydetmek için **Kaydet'i** seçin.
+    **Kullanıcıyı eBulma Yöneticisi yapmak için:**
+    - **eBulma Yöneticisi'nin** yanındaki **Düzenle'yi** seçin.
+    - **eBulma Yöneticisi Seç** sayfasında Simge Ekle'yi seçin![.](../media/ITPro-EAC-AddIcon.gif) **Ekle'yi seçin**.
+    - **eBulma Yöneticisi** olarak eklemek istediğiniz kullanıcıyı (veya kullanıcıları) seçin ve ardından **Ekle'yi** seçin. 
+    - Kullanıcı eklemeyi bitirdiğinizde **Bitti'yi** seçin.
+    - **eBulma Yöneticisi'ni Seçin** sihirbazı sayfasında, eBulma Yöneticisi üyeliğindeki değişiklikleri kaydetmek için **Kaydet'i** seçin.
   
 > [!NOTE]
-> Bir kullanıcıyı **eBulma Yöneticisi yapmak için Add-eDiscoveryCaseAdmin** cmdlet'ini de kullanabilirsiniz. Ancak, bu cmdlet'i kullanarak eBulma Yöneticisi haline getirebilmeniz için önce kullanıcıya Servis Talebi Yönetimi rolü atanmalıdır. Daha fazla bilgi için bkz. [Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin).
+> Bir kullanıcıyı **eBulma Yöneticisi yapmak için Add-eDiscoveryCaseAdmin** cmdlet'ini de kullanabilirsiniz. Ancak, bu cmdlet'i kullanarak eBulma Yöneticisi haline getirebilmeniz için önce kullanıcıya *Servis Talebi Yönetimi* rolü atanmalıdır. Daha fazla bilgi için bkz. [Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin).
   
-Uyumluluk portalındaki **İzinler** sayfasında, kullanıcılara eBulma ile ilgili izinleri Uyumluluk Yöneticisi, Kuruluş Yönetimi ve Gözden Geçiren rol gruplarına ekleyerek de atayabilirsiniz. Bu rol gruplarının her birine atanan eBulma ile ilgili RBAC rollerinin açıklaması için bkz. [eBulma ile ilgili RBAC rolleri](#rbac-roles-related-to-ediscovery).
+Uyumluluk portalındaki **İzinler** sayfasında, kullanıcılara eBulma ile ilgili izinleri *Uyumluluk Yöneticisi*, *Kuruluş Yönetimi* ve *Gözden Geçiren* rol gruplarına ekleyerek de atayabilirsiniz. Bu rol gruplarının her birine atanan eBulma ile ilgili rol tabanlı erişim denetimi rollerinin açıklaması için bkz. [eBulma ile ilgili rol tabanlı erişim denetimi rolleri](#rbac-roles-related-to-ediscovery).
 
 ## <a name="rbac-roles-related-to-ediscovery"></a>eBulma ile ilgili RBAC rolleri
 
-Aşağıdaki tabloda uyumluluk portalında eBulma ile ilgili RBAC rolleri listelenir ve her rolün varsayılan olarak atandığı yerleşik rol grupları gösterilir.
+Aşağıdaki tabloda, uyumluluk portalında eBulma ile ilgili rol tabanlı erişim denetimi rolleri listelenir ve her rolün varsayılan olarak atandığı yerleşik rol gruplarını gösterir.
   
 | Rol | Uyumluluk Yöneticisi | eBulma Yöneticisi & Yöneticisi | Kuruluş Yönetimi | Inceleme |
 |:-----|:-----:|:-----:|:-----:|:-----:|
@@ -94,21 +100,21 @@ Aşağıdaki tabloda uyumluluk portalında eBulma ile ilgili RBAC rolleri listel
 |Veli||![Onay işareti.](../media/checkmark.png)|||
 |Dışarı aktarma||![Onay işareti.](../media/checkmark.png)|||
 |Tutun|![Onay işareti.](../media/checkmark.png)|![Onay işareti.](../media/checkmark.png)|![Onay işareti.](../media/checkmark.png)||
+|Gözden geçirme kümesi etiketlerini yönetme| |![Onay işareti.](../media/checkmark.png)|||
 |Önizleme||![Onay işareti.](../media/checkmark.png)|||
 |Gözden geçirin||![Onay işareti.](../media/checkmark.png)||![Onay işareti](../media/checkmark.png)|
 |RMS Şifre Çözme||![Onay işareti](../media/checkmark.png)|||
 |Arama ve Temizleme|||![Onay işareti](../media/checkmark.png)||
   
-Aşağıdaki bölümlerde, önceki tabloda listelenen eBulma ile ilgili RBAC rollerinin her biri açıklanmaktadır.
+Aşağıdaki bölümlerde, önceki tabloda listelenen eBulma ile ilgili rol tabanlı erişim denetimi rollerinin her biri açıklanmaktadır.
 
 ### <a name="case-management"></a>Olay Yönetimi
 
-Bu rol, kullanıcıların uyumluluk portalında eBulma (Standart) ve eBulma (Premium) durumlarına erişimi oluşturmasına, düzenlemesine, silmesine ve denetlemesine olanak tanır. Daha önce açıklandığı gibi, **add-eDiscoveryCaseAdmin cmdlet'ini kullanarak eBulma** Yöneticisi yapabilmeniz için önce kullanıcıya Olay Yönetimi rolü atanmalıdır.
+Bu rol, kullanıcıların uyumluluk portalında eBulma (Standart) ve eBulma (Premium) durumlarına erişimi oluşturmasına, düzenlemesine, silmesine ve denetlemesine olanak tanır. Daha önce açıklandığı gibi, **add-eDiscoveryCaseAdmin cmdlet'ini kullanarak eBulma** Yöneticisi yapabilmeniz için önce kullanıcıya *Olay Yönetimi* rolü atanmalıdır.
 
 Daha fazla bilgi için bkz.:
 
 - [eKeşif’i (Standart) kullanmaya başlama](get-started-core-ediscovery.md)
-
 - [eKeşif'i kullanmaya başlama (Premium)](get-started-with-advanced-ediscovery.md)
 
 ### <a name="communication"></a>İletişim
@@ -121,11 +127,11 @@ Daha fazla bilgi için bkz [. eBulma (Premium)'da iletişimlerle çalışma](man
 
 Bu rol, kullanıcıların uyumluluk portalında İçerik Arama aracını çalıştırarak posta kutularını ve ortak klasörleri, SharePoint Online sitelerini, OneDrive İş sitelerini, Skype Kurumsal konuşmalarını, Microsoft 365 gruplarını ve Microsoft Teams'i ve Yammer gruplarını aramasına olanak tanır. Bu rol kullanıcının arama sonuçlarıyla ilgili bir tahmin almasına ve dışarı aktarma raporları oluşturmasına olanak tanır, ancak arama sonuçlarını önizleme, dışarı aktarma veya silme gibi içerik arama eylemlerini başlatmak için başka roller gereklidir.
 
-İçerik arama ve eBulma (Standart) bölümünde, Uyumluluk Araması rolüne atanmış ancak Önizleme rolüne sahip olmayan kullanıcılar, Önizleme rolü atanmış bir kullanıcı tarafından önizleme eyleminin başlatıldığı aramanın sonuçlarının önizlemesini görebilir. Önizleme rolü olmayan kullanıcı, ilk önizleme eylemi oluşturulduktan sonra iki haftaya kadar sonuçları önizleyebilir.
+İçerik arama ve eBulma (Standart) bölümünde *, Uyumluluk Araması* rolüne atanmış ancak Önizleme rolüne sahip olmayan kullanıcılar, *Önizleme* *rolü atanmış* bir kullanıcı tarafından önizleme eyleminin başlatıldığı aramanın sonuçlarının önizlemesini görebilir. *Önizleme* rolü olmayan kullanıcı, ilk önizleme eylemi oluşturulduktan sonra iki haftaya kadar sonuçları önizleyebilir.
 
-Benzer şekilde, İçerik arama ve eBulma (Standart) içinde Uyumluluk Araması rolüne atanmış ancak Dışarı Aktarma rolüne sahip olmayan kullanıcılar, Dışarı Aktarma rolü atanmış bir kullanıcı tarafından dışarı aktarma eyleminin başlatıldığı aramanın sonuçlarını indirebilir. Dışarı Aktarma rolü olmayan kullanıcı, ilk dışarı aktarma eylemi oluşturulduktan sonra iki haftaya kadar aramanın sonuçlarını indirebilir. Bundan sonra, Dışarı Aktarma rolüne sahip biri dışarı aktarmayı yeniden başlatmadığı sürece sonuçları indiremezler.
+Benzer şekilde, İçerik arama ve eBulma (Standart) içinde *Uyumluluk Araması* rolüne atanmış ancak Dışarı Aktarma rolüne sahip olmayan kullanıcılar, *Dışarı Aktarma* *rolü atanmış* bir kullanıcı tarafından dışarı aktarma eyleminin başlatıldığı aramanın sonuçlarını indirebilir. *Dışarı Aktarma* rolü olmayan kullanıcı, ilk dışarı aktarma eylemi oluşturulduktan sonra iki haftaya kadar aramanın sonuçlarını indirebilir. Bundan sonra, Dışarı Aktarma rolüne sahip biri dışarı *aktarmayı* yeniden başlatmadığı sürece sonuçları indiremezler.
 
-Arama sonuçlarını önizlemek ve dışarı aktarmak için iki haftalık yetkisiz kullanım süresi (karşılık gelen arama ve dışarı aktarma rolleri olmadan) eBulma (Premium) için geçerli değildir. eKeşif 'te (Premium) içeriği önizlemek ve dışarı aktarmak için kullanıcılara Önizleme ve Dışarı Aktarma rolleri atanmalıdır.
+Arama sonuçlarını önizlemek ve dışarı aktarmak için iki haftalık yetkisiz kullanım süresi (karşılık gelen arama ve dışarı aktarma rolleri olmadan) eBulma (Premium) için geçerli değildir. eKeşif 'te (Premium) içeriği önizlemek ve dışarı aktarmak için kullanıcılara *Önizleme* ve *Dışarı Aktarma* rolleri atanmalıdır.
 
 ### <a name="custodian"></a>Veli
 
@@ -146,8 +152,11 @@ Bu rol, kullanıcıların posta kutularına, ortak klasörlere, sitelere, Skype 
 Ayrı tutmalar hakkında daha fazla bilgi için bkz:
 
 - [eBulma'da ayrı tutma oluşturma (Standart)](create-ediscovery-holds.md) 
-
 - [eBulma'da ayrı tutma oluşturma (Premium)](add-custodians-to-case.md)
+
+### <a name="manage-review-set-tags"></a>Gözden geçirme kümesi etiketlerini yönetme
+
+Bu rol, kullanıcıların erişebilecekleri durumlar için gözden geçirme kümesi etiketleri oluşturmasına, düzenlemesine ve silmesine olanak tanır. Kullanıcıların gözden geçirme sırasında [etiketleri yönetmek](/microsoft-365/compliance/tagging-documents#creating-and-applying-tags) için en azından *Gözden Geçir* rolüne ve bu role sahip olması gerekir.
 
 ### <a name="preview"></a>Önizleme
 
@@ -173,7 +182,7 @@ Rol gruplarını eBulma (Standart) ve eBulma (Premium) servis taleplerinin üyes
 
 - [eBulma (Premium) servis talebine üye ekleme veya kaldırma](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 
-Bunu göz önünde bulundurarak, rol grubuna bir rol eklendiğinde veya bir rol grubundan kaldırıldığında, rol grubunun üyesi olduğu herhangi bir durumun üyesi olarak bu rol grubunun otomatik olarak kaldırılacağını bilmek önemlidir. Bunun nedeni, kuruluşunuzun bir olayın üyelerine yanlışlıkla ek izinler sağlamasını korumaktır. Benzer şekilde, bir rol grubu silinirse, üyesi olduğu tüm durumlardan kaldırılır.
+Bu gereksinim göz önünde bulundurularak, rol grubuna bir rol eklendiğinde veya bir rol grubundan kaldırıldığında, rol grubunun üyesi olduğu herhangi bir durumun üyesi olarak bu rol grubunun otomatik olarak kaldırılacağını bilmeniz önemlidir. Bunun nedeni, kuruluşunuzun bir olayın üyelerine yanlışlıkla ek izinler sağlamasını korumaktır. Benzer şekilde, bir rol grubu silinirse, üyesi olduğu tüm durumlardan kaldırılır.
 
 eBulma olayının üyesi olabilecek bir rol grubuna rol eklemeden veya kaldırmadan önce, rol grubunun üyesi olduğu servis taleplerinin listesini almak için [Güvenlik & Uyumluluk PowerShell'de](/powershell/exchange/connect-to-scc-powershell) aşağıdaki komutları çalıştırabilirsiniz. Rol grubunu güncelleştirdikten sonra, rol grubunu bu servis taleplerinin bir üyesi olarak geri eklersiniz.
 
@@ -194,10 +203,9 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
 - **Neden eBulma Yöneticisi oluşturasın?** Daha önce açıklandığı gibi, bir eBulma Yöneticisi, kuruluşunuzdaki tüm eBulma servis taleplerini görüntüleyebilen ve erişebilen eBulma Yöneticisi rol grubunun üyesidir. Tüm eBulma olaylarına erişme özelliğinin iki önemli amacı vardır:
 
   - Bir eBulma olayının tek üyesi olan bir kişi kuruluşunuzdan ayrılırsa, hiç kimse (Kuruluş Yönetimi rol grubunun üyeleri veya eBulma Yöneticisi rol grubunun başka bir üyesi dahil) bu eBulma olayına erişemez çünkü bir servis talebinin üyesi değildir. Bu durumda, bu durumda verilere erişmenin hiçbir yolu yoktur. Ancak bir eBulma Yöneticisi kuruluştaki tüm eBulma olaylarına erişebildiğinden, olayı görüntüleyebilir ve kendisini veya başka bir eBulma yöneticisini davanın üyesi olarak ekleyebilir.
+  - Bir eBulma Yöneticisi tüm eBulma (Standart) ve eBulma (Premium) servis taleplerini görüntüleyebilir ve bunlara erişebildiğinden, tüm servis taleplerini ve ilişkili uyumluluk aramalarını denetleyebilir ve denetleyebilir. Bu işlev, uyumluluk aramalarının veya eBulma durumlarının kötüye kullanılmasını önlemeye yardımcı olabilir. eBulma Yöneticileri uyumluluk aramasının sonuçlarında hassas olabilecek bilgilere erişebildiğinden, eBulma Yöneticisi olan kişi sayısını sınırlamanız gerekir.
 
-  - Bir eBulma Yöneticisi tüm eBulma (Standart) ve eBulma (Premium) servis taleplerini görüntüleyebilir ve bunlara erişebildiğinden, tüm servis taleplerini ve ilişkili uyumluluk aramalarını denetleyebilir ve denetleyebilir. Bu, uyumluluk aramalarının veya eBulma durumlarının kötüye kullanılmasını önlemeye yardımcı olabilir. eBulma Yöneticileri uyumluluk aramasının sonuçlarında hassas olabilecek bilgilere erişebildiğinden, eBulma Yöneticisi olan kişi sayısını sınırlamanız gerekir.
-
-- **eBulma Yöneticisi rol grubunun üyesi olarak bir grup ekleyebilir miyim?** Daha önce açıklandığı gibi, Güvenlik & Uyumluluk PowerShell'de **Add-RoleGroupMember** cmdlet'ini kullanarak eBulma Yöneticisi rol grubundaki eBulma Yöneticileri alt grubunun üyesi olarak posta özellikli bir güvenlik grubu ekleyebilirsiniz. Örneğin, eBulma Yöneticisi rol grubuna posta özellikli bir güvenlik grubu eklemek için aşağıdaki komutu çalıştırabilirsiniz. 
+- **eBulma Yöneticisi rol grubunun üyesi olarak bir grup ekleyebilir miyim?** Daha önce açıklandığı gibi, Güvenlik & Uyumluluk PowerShell'de **Add-RoleGroupMember** cmdlet'ini kullanarak *eBulma Yöneticisi rol grubundaki eBulma* Yöneticileri alt grubunun üyesi olarak posta etkin bir güvenlik grubu ekleyebilirsiniz. Örneğin, *eBulma Yöneticisi* rol grubuna posta özellikli bir güvenlik grubu eklemek için aşağıdaki komutu çalıştırabilirsiniz.
 
   ```powershell
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>

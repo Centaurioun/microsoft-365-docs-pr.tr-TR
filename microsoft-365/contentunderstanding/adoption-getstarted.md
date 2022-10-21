@@ -1,25 +1,25 @@
 ---
 title: Microsoft Syntex'i benimsemeye başlama
-description: İş süreçlerinizi kolaylaştırmanıza yardımcı olmak için kuruluşunuzda Microsoft Syntex'i kullanmayı ve uygulamayı öğrenin.
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.date: ''
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.custom: Adopt
 search.appverid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: b4b9bf84e65a10661fc42daa679cf5d28290c502
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+description: İş süreçlerinizi kolaylaştırmaya yardımcı olmak için kuruluşunuzda Microsoft Syntex'i kullanmayı ve uygulamayı öğrenin.
+ms.openlocfilehash: e824356fb5c729a6a508abebecffd4b6ea0c6e45
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547675"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660587"
 ---
 # <a name="get-started-driving-adoption-of-microsoft-syntex"></a>Microsoft Syntex'i benimsemeye başlama
 
@@ -29,25 +29,28 @@ Microsoft Syntex'te bulunan akıllı içerik hizmetlerini üç bölüme sahip ol
 - **İçerik işleme:** Power Automate'i kullanarak içerik yakalama, alma ve kategorilere ayırma işlemlerini otomatikleştirin ve içerik odaklı işlemleri kolaylaştırın. [İçerik işleme](form-processing-overview.md) hakkında daha fazla bilgi edinin.
 - **İçerik uyumluluğu:** Microsoft Purview Bilgi Koruması tümleştirmesi ile güvenliği ve idareyi geliştirmek için içeriği denetleme ve yönetme.
 
-Yeni yapay zeka hizmetleri ve özellikleriyle Syntex kullanarak içerik anlama ve sınıflandırma uygulamalarını doğrudan içerik yönetimi akışına oluşturabilirsiniz. İçeriğinizi anlamanın iki farklı yolu vardır. Kullandığınız model türü dosya biçimini ve kullanım örneğini temel alır.
+Yeni yapay zeka hizmetleri ve özellikleriyle Syntex kullanarak içerik anlama ve sınıflandırma uygulamalarını doğrudan içerik yönetimi akışına oluşturabilirsiniz. Özel model türleri için içeriğinizi anlamanın üç farklı yolu vardır. Kullandığınız özel model türü, dosya biçimine ve kullanım örneğine bağlıdır.
 
-| Form işleme | Belge anlama |
-|:-------|:-------|
-| Belge kitaplığından oluşturulur. | syntex'in bir parçası olan içerik merkezinde oluşturulur. |
-| Yapay zeka oluşturucusunda oluşturulan model. | Yerel arabirimde oluşturulan model. |
-| Yarı yapılandırılmış dosya biçimleri için kullanılır. | Yapılandırılmamış dosya biçimleri için kullanılır. |
-| Ayarlanabilir sınıflandırıcı. | İsteğe bağlı ayıklayıcılarla eğitilebilir sınıflandırıcı. |
-| Tek bir kitaplıkla sınırlıdır. | Birden çok kitaplık için uygulanabilir. |
-| PDF, JPG, PNG biçiminde eğitin, toplam 50 MB/500 pp. | Negatif örnekler de dahil olmak üzere 5-10 PDF, Office veya e-posta dosyaları üzerinde eğitin. |
+| Yapılandırılmamış belge işleme | Yapılandırılmış belge işleme | Serbest biçimli belge işleme |
+| ------- | ------- | ------- |
+| syntex'in bir parçası olan içerik merkezinde oluşturulur. | Belge kitaplığından oluşturulur. | Belge kitaplığından oluşturulur. |
+| Yerel arabirimde oluşturulan model. | Yapay zeka oluşturucusunda oluşturulan model. | Yapay zeka oluşturucusunda oluşturulan model. |
+| Yarı yapılandırılmış veya yapılandırılmamış dosya biçimleri için kullanılır. | Yapılandırılmış veya yarı yapılandırılmış dosya biçimleri için kullanılır. | Yapılandırılmamış veya serbest biçimli dosya biçimleri için kullanılır. |
+| İsteğe bağlı ayıklayıcılarla eğitilebilir sınıflandırıcı. | Ayarlanabilir sınıflandırıcı. | Ayarlanabilir sınıflandırıcı. |
+| Birden çok kitaplık için uygulanabilir. | Tek bir kitaplıkla sınırlıdır. | Tek bir kitaplıkla sınırlıdır. |
+| Negatif örnekler de dahil olmak üzere 5-10 PDF, Office veya e-posta dosyaları üzerinde eğitin. | PDF, JPG, PNG biçiminde eğitin, toplam 50 MB/500 pp. | PDF, JPG, PNG biçiminde eğitin, toplam 50 MB/500 pp. |
 
-Özelliklerin daha eksiksiz bir karşılaştırması için bkz. [Belge anlama ve form işleme modelleri arasındaki fark](difference-between-document-understanding-and-form-processing-model.md).
+Özel özelliklerin daha eksiksiz bir karşılaştırması için bkz. [Syntex'te özel modelleri karşılaştırma](difference-between-document-understanding-and-form-processing-model.md).
+
+Özel bir model oluşturmanız gerekmiyorsa, belirli yapılandırılmış belgeler için önceden eğitilmiş önceden oluşturulmuş bir [model](prebuilt-overview.md) kullanabilirsiniz.
 
 ## <a name="identify-pilot-business-scenarios-to-optimize"></a>İyileştirme için pilot iş senaryolarını belirleme
 
-Kuruluşunuzda Syntex'i kullanmaya hazırlanmak için öncelikle yararlı olacağı senaryoları anlamanız gerekir. "Neden", hangi modelin gerekli olacağını ve kuruluşunuzun modelin uygulanacağı yere göre nasıl yapılandırılacağını belirlemeye yardımcı olur. Belge anlamanın kuruluşunuza yardımcı olabileceği birkaç senaryo aşağıdadır:
+Kuruluşunuzda Syntex'i kullanmaya hazırlanmak için öncelikle yararlı olacağı senaryoları anlamanız gerekir. "Neden", hangi modelin gerekli olacağını ve modelin uygulanacağı yere göre kuruluşunuzun nasıl yapılandırılacağını belirlemeye yardımcı olur. Özel modellerin kuruluşunuza yardımcı olabileceği birkaç senaryo aşağıdadır:
 
-- **İçerik işleme:** Sözleşmeleri, iş deyimlerini ve form benzeri diğer belgeleri işleyin. Formları alın, alanları anlamak ve eşlemek için modeli eğitin ve ardından verileri otomatik olarak toplamak için formlarınızı çalıştırın. Daha fazla bilgi için bkz. [Form işlemeye genel bakış](form-processing-overview.md).
-- **Fatura analizi:** Faturalarınızdan ilgili ayrıntıları çekin ve ilkeye uygun olduklarından veya uygun şekilde işlendiklerinden emin olun.
+- **İçerik işleme**: sözleşmeleri, iş deyimlerini ve form benzeri diğer belgeleri işleme. Formları alın, alanları anlamak ve eşlemek için modeli eğitin ve ardından verileri otomatik olarak toplamak için formlarınızı çalıştırın.
+
+- **Fatura analizi**: Faturalarınızdan ilgili ayrıntıları çekin ve ilkeye uygun olduklarından veya uygun şekilde işlendiklerinden emin olun.
 
 Syntex'in kuruluşunuza nasıl yardımcı olabileceğini düşünün:
 
@@ -66,23 +69,22 @@ Etki ve uygulama kolaylığına göre senaryoların önceliklerini belirleyin. �
 
 Kuruluşunuzda Syntex'i nasıl kullanabileceğiniz hakkında fikir almak için [örnek senaryoları ve kullanım örneklerini](adoption-scenarios.md) kullanın.
 
-## <a name="identify-roles--responsibilities"></a>Rolleri & sorumlulukları belirleme
+## <a name="identify-roles-and-responsibilities"></a>Rolleri ve sorumlulukları belirleme
 
 Kuruluşunuzda modelleri kimin oluşturacağını ve yöneteceğini belirleyin. Aşağıdaki roller söz konusu olabilir.
 
 | SharePoint/Bilgi yöneticisi | Power Platform yöneticisi | Bilgi yöneticisi | Model sahibi |
 |:-------|:-------|:-------|:-------|
 | AAD rolü| AAD rolü | AAD rolü | Şampiyonlar |
-| Form işlemeyi yapılandırma | Form işleme için Dataverse ortamını yapılandırma | Kullanım örneklerini toplama | İş kullanım örneklerini toplama |
+| Yapılandırılmış belge işleme ve serbest biçimli belge işleme modellerini yapılandırma | Dataverse ortamını yapılandırma | Kullanım örneklerini toplama | İş kullanım örneklerini toplama |
 | İçerik merkezlerini ve izinleri yönetme| AIB kredilerini satın alma ve ayırma | En iyi uygulamaları oluşturma ve model analizini gözden geçirme | Model oluşturma ve uygulama |
 
-Bilgi yöneticisi, İş Süreci Sahibi ve İçerik modeli sahibi, kuruluşta örnek modeller ve şampiyon benimsemesi oluşturur.
-İlgili olabilecek diğer kişiler: Uyumluluk yöneticisi, Taksonomi yöneticileri.
+Bilgi yöneticisi, iş süreci sahibi ve içerik modeli sahibi, kuruluşta örnek modeller ve şampiyon benimsemesi oluşturur. Uyumluluk yöneticisi ve taksonomi yöneticileriyle ilgili olabilecek diğer kişiler.
 
 Modelleri nerede oluşturup uygulayacak? İyileştirilebilen mevcut süreçler veya depolar var mı?
 
-- Form işleme: Hangi sitelerin Form işleme eylemini alacağını belirleyin.
-- Belge anlama: Farklı iş alanları için birden çok içerik merkezi oluşturabilirsiniz.
+- Yapılandırılmamış belge işleme: Farklı iş alanları için birden çok içerik merkezi oluşturabilirsiniz.
+- Yapılandırılmış belge işleme veya serbest biçimli belge işleme: Bu eylemi alacak sitelere karar verin.
 
 ## <a name="strategic-positioning"></a>Stratejik konumlandırma
 
@@ -103,8 +105,8 @@ Projeniz için paydaşları belirleyin.
 
 |Rol |Sorumluluk |Bölüm |
 |:-------|:-------|:--------|
-| Yönetici sponsorları   | Üst düzey vizyon ve değerleri şirkete iletme   |  Yönetici liderliği   |
-| Proje müşteri adaylarını | Başlatma yürütme ve dağıtım işleminin tamamını denetleme | Proje yönetimi |
+| Yönetici sponsoru   | Üst düzey vizyon ve değerleri şirkete iletme   |  Yönetici liderliği   |
+| Proje müşteri adayı | Başlatma yürütme ve dağıtım işleminin tamamını denetleme | Proje yönetimi |
 | Bilgi yöneticileri| İçerik merkezleri oluşturma ve yönetme | BT veya diğer departman|
 | İçerik yöneticileri ve model sahipleri| Kullanım örneklerini toplama ve model oluşturma ve uygulama | Herhangi bir departman|
 | Şampiyonlar | İtiraz işlemeyi yaygınlaştırmaya ve yönetmeye yardımcı olun | Herhangi bir departman (personel) |
@@ -112,16 +114,16 @@ Projeniz için paydaşları belirleyin.
 | Power Platform yöneticisi| Dataverse ortamını yapılandırma | BT departmanı|
 
 > [!NOTE]
-> Dağıtımınız boyunca bu rollerin her birinin yerine getirilmesini önersek de, tanımladığınız çözümü kullanmaya başlamak için tümünün gerekli olmadığını fark edebilirsiniz.
+> Dağıtımınız boyunca bu rollerin her birinin yerine getirilmesini önersek de, tanımlanan çözümünüzü kullanmaya başlamak için tümünün gerekli olmadığını fark edebilirsiniz.
 
 ## <a name="readiness-checklist"></a>Hazırlık denetim listesi
 
 Syntex'i uygulamaya hazırlanmak için şunları yapmanız gerekir:
 
-![content understanding için hazır olma.](../media/content-understanding/cu-adoption-readinesschecklist.png)
+![İçerik anlama için hazır olma.](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
 1. Bitiş durumunu planlama
-    - Belge anlama modelleri son değil, araçlardır.
+    - Modeller son değil, araçlardır.
     - Ayıklanan meta verilerin değerinden şu şekilde yararlanmayı planlayın:
       - Arama
       - Biçimlendirmeyi filtreleme ve görüntüleme
@@ -132,20 +134,22 @@ Syntex'i uygulamaya hazırlanmak için şunları yapmanız gerekir:
     - Mevcut içerik türleri modeller için iyi adaylar mıdır?
     - Meta verilerle hangi mevcut işlemler geliştirilebilir?
 3. Design
-    - Bilgi mimarisine, yönetilen meta verilere ve içerik türlerine yaklaşımınızı tasarlar.
-    - Tanım, oluşturma, yönetim sürecini tasarlar.
+    - Bilgi mimarisi, yönetilen meta veriler ve içerik türlerine yaklaşımınızı tasarlar.
+    - Tanım, oluşturma ve yönetim sürecini tasarlar.
 
 ## <a name="engage-your-organization"></a>Kuruluşunuzla etkileşime geçme
 
-1. Bahis sahiplerini belirleyin, senaryoları onaylayın ve proje planı geliştirin.
-1. Ayarları yapılandırın ve lisansları uygulayın.
-1. Farkındalık ve eğitime başlayın – Şampiyonları işe alın.
-1. Aşamalı olarak dağıt.  
-1. Geri bildirim toplayın ve yineleme yapın.
-1. Kullanım gerektiğinde AI Builder kredileri için plan arttıkça.
+1. Bahis sahiplerini belirleyin, senaryoları onaylayın ve bir proje planı geliştirin.
+2. Ayarları yapılandırın ve lisansları uygulayın.
+3. Farkındalık ve eğitime başlayın - şampiyonları işe alın.
+4. Aşamalı olarak dağıt.  
+5. Geri bildirim toplayın ve yineleme yapın.
+6. Kullanım gerektiğinde AI Builder kredileri için plan arttıkça.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Syntex için senaryolar ve kullanım örnekleri](adoption-scenarios.md)
+[Microsoft Syntex benimseme merkezi](https://adoption.microsoft.com/sharepoint-syntex/adoption/)
 
-[Microsoft 365 çözümü kullanarak sözleşmeleri yönetme](solution-manage-contracts-in-microsoft-365.md)
+[Microsoft Syntex için senaryolar ve kullanım örnekleri](adoption-scenarios.md)
+
+[Microsoft Syntex'teki model türlerine genel bakış](syntex-overview.md)

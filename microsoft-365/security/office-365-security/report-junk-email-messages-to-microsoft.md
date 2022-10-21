@@ -17,12 +17,12 @@ ms.collection:
 description: Şüpheli bir e-postayı veya dosyayı Microsoft'a Nasıl yaparım? bildirdiniz? İletileri, URL'leri, e-posta eklerini ve dosyaları analiz için Microsoft'a bildirin. İstenmeyen posta ve kimlik avı e-postalarını bildirmeyi öğrenin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: fddca0ff2c68f369910ebd048ed696c7cc7444bf
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 3d27b7d3e76454245c7d429fc025237b1c84f690
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68090519"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662983"
 ---
 # <a name="how-do-i-report-a-suspicious-email-or-file-to-microsoft"></a>Şüpheli bir e-postayı veya dosyayı Microsoft'a Nasıl yaparım? bildirdiniz?
 
@@ -51,6 +51,6 @@ Birleşik gönderim deneyimi hakkında daha fazla bilgi gösteren bu videoyu izl
 |[Dosyaları analiz için gönderin](../intelligence/submission-guide.md)|Yönetici|E-posta eklerini ve diğer şüpheli dosyaları analiz için Microsoft'a gönderin.|
 
 > [!NOTE]
-> Bir e-posta varlığını Microsoft'a bildirdiğinizde, e-postayla ilişkili her şeyin bir kopyası oluşturulur ve incelemelere eklenir. Bu kopya e-posta içeriğini, e-posta üst bilgilerini ve e-posta yönlendirmeyle ilgili verileri içerir. İletideki ekler de eklenir.
+> Bir e-posta varlığını Microsoft'a bildirdiğinizde, e-postayla ilişkili her şeyi kopyalayarak sürekli algoritma incelemelerimize ekleriz. Bu kopya e-posta içeriğini, e-posta üst bilgilerini ve e-posta yönlendirmeyle ilgili verileri içerir. Tüm ileti ekleri de eklenir.
 >
-> Microsoft, geri bildirimlerinizi kuruluşunuzun tüm bilgileri analiz etme ve şüpheli ileti raporlama ve gözden geçirme sürecini iyileştirme izni olarak kabul eder. İletiniz, siz sağladıktan en fazla 30 gün sonra silinene kadar güvenli bir şekilde depolanır. Microsoft gönderdiğiniz iletiyi ve ekleri okuyabilir, ancak e-postanız sizinle Microsoft arasında gizli olarak ele alınabilir. Gönderiminiz, gözden geçirme işlemi için başka bir tarafa sağlanmaz.
+> Microsoft, geri bildiriminizi kuruluşunuzun daha önce açıklanan tüm bilgileri analiz etme izni olarak değerlendirerek ileti hijyen algoritmalarına ince ayar uygular. mesajınızı ABD'deki güvenli denetimli veri merkezlerimizde tutuyoruz. Gönderim, siz bize sağladıktan en fazla 30 gün sonra silinir. Microsoft personeli gönderdiğiniz iletileri ve ekleri okuyabilir ve bu normalde Microsoft 365'te e-posta için izin verilmez. Ancak, e-postanız sizinle Microsoft arasında gizli olarak ele alınmaya devam eder ve e-postanızı veya eklerinizi gözden geçirme işleminin bir parçası olarak başka bir tarafa sağlamayacağız.

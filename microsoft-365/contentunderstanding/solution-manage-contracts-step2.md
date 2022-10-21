@@ -7,17 +7,17 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: ''
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: Microsoft Teams'i kullanarak bir Microsoft 365 çözümü kullanarak sözleşme yönetimi kanalınızı oluşturmayı öğrenin.
-ms.openlocfilehash: 5c4f674ce315aa9e047ff56276bebc224738ce44
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 262312b2b8f43a7f3cc177ccd1544a9d12fbdcd1
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563806"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68661203"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Adım 2. Sözleşme yönetim kanalınızı oluşturmak için Microsoft Teams'i kullanma
 
@@ -33,10 +33,9 @@ Kuruluşunuz bir sözleşme yönetimi çözümü ayarlarken paydaşların sözle
 
 - **Üyelerin ödeme için ne zaman gönderilebileceğini bilmesi için onaylanmış sözleşmeleri görmeleri için bir konum belirleyin.** SharePoint'te Bir **Ödeme için** listesi oluşturmanız ve sütun türü olarak **Tek satır metni** seçerek **İstemci**, **Yüklenici** ve **Ücret tutarı** sütunlarını eklemeniz gerekir. [**Sözleşmeler** sekmesinde yaptığınıza](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab) benzer şekilde, **Ödeme İçin** listesini Sözleşme Yönetimi kanalına Teams sekmesi olarak eklemeniz gerekir. **Ödeme İçin** sekmesi, ödeme için gönderilmesi gereken tüm sözleşmeleri listeler. Bu çözümü kolayca genişleterek bu bilgileri doğrudan üçüncü taraf bir finansal uygulamaya (örneğin Dynamics CRM) yazabilirsiniz. 
 
-
 ## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>SharePoint belge kitaplığınızı Sözleşmeler sekmesine ekleme
 
-Sözleşme Yönetimi kanalınızda bir **Sözleşmeler** sekmesi oluşturduktan sonra, [SharePoint belge kitaplığınızı buna eklemeniz](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b) gerekir. Eklemek istediğiniz SharePoint belge kitaplığı, syntex belge anlama modelinizi önceki bölümde uyguladığınız kitaplıktır.
+Sözleşme Yönetimi kanalınızda bir **Sözleşmeler** sekmesi oluşturduktan sonra, [SharePoint belge kitaplığınızı buna eklemeniz](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b) gerekir. Eklemek istediğiniz SharePoint belge kitaplığı, yapılandırılmamış belge işleme modelinizi önceki bölümde uyguladığınız kitaplıktır.
 
 SharePoint belge kitaplığını ekledikten sonra, tüm sınıflandırılmış sözleşmeleri varsayılan liste görünümü aracılığıyla görüntüleyebilirsiniz.
 

@@ -1,44 +1,49 @@
 ---
-title: Microsoft Syntex'te belge anlama modeli uygulama
+title: Microsoft Syntex'te belge kitaplığına model uygulama
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft Syntex'te yayımlanmış bir modeli SharePoint belge kitaplığına nasıl uygulayacağınızı öğrenin.
-ms.openlocfilehash: 2f0d55f878baaf205ea4363a19a6afef34957ac7
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: b0aed07a5a530b06b04fe78775d49373daae290f
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68548026"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68659247"
 ---
-# <a name="apply-a-document-understanding-model-in-microsoft-syntex"></a>Microsoft Syntex'te belge anlama modeli uygulama
+# <a name="apply-a-model-to-a-document-library-in-microsoft-syntex"></a>Microsoft Syntex'te belge kitaplığına model uygulama
 
+<sup>**Şunlar için geçerlidir:**  &ensp; &#10003; Tüm özel modeller &ensp; | &ensp; &#10003; Tüm önceden oluşturulmuş modeller</sup>
+
+<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
 
 </br>
+--->
 
-Belge anlama modelinizi yayımladıktan sonra, bunu Microsoft 365 kiracınızdaki bir veya daha fazla SharePoint belge kitaplığına uygulayabilirsiniz.
+Yapılandırılmamış bir belge işleme modelini eğittik, serbest biçimli veya yapılandırılmış bir belge işleme modeli eğitip yayımladıktan veya önceden oluşturulmuş bir model oluşturduktan sonra, bunu Microsoft 365 kiracınızdaki bir veya daha fazla SharePoint belge kitaplığına uygulayabilirsiniz.
+
+Bu makale hem *kurumsal modeller* hem de *yerel modeller* için geçerlidir. [İçerik merkezinde](create-a-content-center.md) bir kurumsal model oluşturulur ve eğitilir ve kullanmak üzere başkaları tarafından bulunabilir. [Yerel bir model](create-local-model.md) oluşturulur ve kendi SharePoint sitenizde yerel olarak eğitilir.  
 
 > [!NOTE]
 > Modeli yalnızca erişiminiz olan belge kitaplıklarına uygulayabilirsiniz.
 
-
 ## <a name="apply-your-model-to-a-document-library"></a>Modelinizi belge kitaplığına uygulama
 
-Modelinizi bir SharePoint belge kitaplığına uygulamak için:
+Modeli giriş sayfası veya kullanılabilir modeller listesinden dahil olmak üzere farklı yerlere uygulayabilirsiniz. Modelinizi bir SharePoint belge kitaplığına uygulamak için:
 
-1. Model giriş sayfasındaki **Modeli kitaplıklara uygula** kutucuğunda **Modeli uygula'yı** seçin. Ya da **Modelin uygulandığı yer** bölümünde **+Kitaplık ekle'yi** seçin.
+1. Model giriş sayfasındaki **Modeli kitaplıklara uygula** kutucuğunda **Modeli uygula'yı** seçin. Öte yandan **Modelin uygulandığı yer** bölümünde **Kitaplık ekle'yi** de seçebilirsiniz.
 
     ![Kitaplık ekle seçeneğinin vurgulandığı Modelin uygulandığı yer bölümünün ekran görüntüsü.](../media/content-understanding/apply-to-library.png)
 
@@ -57,13 +62,13 @@ Modelinizi bir SharePoint belge kitaplığına uygulamak için:
 
     ![Kitaplık görünümlerini gösteren Gelişmiş ayarların ekran görüntüsü.](../media/content-understanding/library-view.png)
 
-    Daha fazla bilgi için bu [makalenin devamında belge kitaplığındaki görünümü değiştirme](#change-the-view-in-a-document-library) bölümüne bakın.
+    Daha fazla bilgi için bkz. [Belge kitaplığında görünümü seçme](choose-library-view.md).
 
 5. Modeli kitaplığa uygulamak için **Ekle'yi** seçin.
 
 6. Modelin giriş sayfasındaki **Modelin uygulandığı yer** bölümünde SharePoint sitesinin adını listelenmiş olarak görmeniz gerekir.
 
-7. Belge kitaplığınıza gidin ve modelin belge kitaplığı görünümünde olduğunuzdan emin olun. **Belge anlama modellerini görüntülemeyi** **otomatikleştir'i** >  seçin.
+7. Belge kitaplığınıza gidin ve modelin belge kitaplığı görünümünde olduğunuzdan emin olun. **Modelleri görüntülemeyi** **otomatikleştir'i** >  seçin.
 
 8. **Modelleri gözden geçir ve yenilerini uygula** sayfasında, belge kitaplığına uygulanan modelleri görmek için **Uygulanan** sekmesini seçin.
 
@@ -76,9 +81,9 @@ Modeli belge kitaplığına uyguladıktan sonra, belgeleri siteye yüklemeye ba�
 Model, modelin ilişkili içerik türüne sahip tüm dosya ve klasörleri tanımlar ve bunları görünümünüzde listeler. Modelinizde ayıklayıcı varsa, görünümde her dosya veya klasörden ayıkladığınız verilerin sütunları görüntülenir.
 
 > [!NOTE]
-> Aynı kitaplığa iki veya daha fazla belge anlama modeli uygulanırsa, karşıya yüklenen dosya en yüksek ortalama güvenilirlik puanına sahip model kullanılarak sınıflandırılır. Ayıklanan varlıklar yalnızca uygulanan modelden olacaktır. <br><br>Aynı kitaplığa özel form işleme modeli ve belge anlama modeli uygulanırsa, dosya belge anlama modeli ve bu model için eğitilen ayıklayıcılar kullanılarak sınıflandırılır. Form işleme modeliyle eşleşen boş sütunlar varsa, bu ayıklanan değerler kullanılarak sütunlar doldurulur.
+> Aynı kitaplığa iki veya daha fazla yapılandırılmamış belge işleme modeli uygulanırsa, karşıya yüklenen dosya en yüksek ortalama güvenilirlik puanına sahip model kullanılarak sınıflandırılır. Ayıklanan varlıklar yalnızca uygulanan modelden olacaktır. <br><br>Aynı kitaplığa serbest biçimli veya yapılandırılmış bir belge işleme modeli ve yapılandırılmamış bir belge işleme modeli uygulanırsa, dosya yapılandırılmamış belge işleme modeli ve bu model için eğitilmiş ayıklayıcılar kullanılarak sınıflandırılır. Serbest biçimli veya yapılandırılmış belge işleme modeliyle eşleşen boş sütunlar varsa, sütunlar ayıklanan değerler kullanılarak doldurulur.
 
-## <a name="sync-changes-to-one-or-more-libraries"></a>Değişiklikleri bir veya daha fazla kitaplıkla eşitleme
+## <a name="sync-changes-to-one-or-more-document-libraries"></a>Değişiklikleri bir veya daha fazla belge kitaplığına eşitleme
 
 Bir modeli birden çok belge kitaplığına yayımladığınızda ve ardından bir ayıklayıcı ekleme veya kaldırma gibi modeli güncelleştirdiğinizde, güncelleştirmeyi modelin uygulandığı tüm kitaplıklara göndermeniz gerekir.
 
@@ -98,7 +103,7 @@ Değişiklikleri bir veya yalnızca seçili kitaplıklara eşitlemek için:
 
 ## <a name="apply-the-model-to-files-and-folder-content-already-in-the-document-library"></a>Modeli belge kitaplığında zaten bulunan dosyalara ve klasör içeriğine uygulama
 
-Uygulanan bir model, uygulandıktan sonra belge kitaplığına yüklenen tüm dosyaları ve klasör içeriğini işlerken, modeli uygulamadan önce belge kitaplığında zaten var olan dosyalarda ve klasör içeriğinde çalıştırmak için aşağıdakileri de yapabilirsiniz:
+Uygulanan model, belge kitaplığına yüklenen tüm dosyaları ve klasör içeriğini uygulandıktan sonra işler. Modeli uygulamadan önce belge kitaplığında zaten var olan dosya ve klasör içeriğinde çalıştırmak için aşağıdaki adımları da gerçekleştirebilirsiniz:
 
 1. Belge kitaplığınızda, modeliniz tarafından işlenmesini istediğiniz dosya ve klasörleri seçin.
 
@@ -113,7 +118,7 @@ Uygulanan bir model, uygulandıktan sonra belge kitaplığına yüklenen tüm do
 
 ### <a name="classification-date-field"></a>Sınıflandırma Tarihi alanı
 
-Belge kitaplığına syntex belge anlama modeli (veya form işleme modeli) uygulandığında, **Sınıflandırma Tarihi** alanı kitaplık şemasına eklenir. Varsayılan olarak, bu alan boş olur. Ancak, belgeler bir model tarafından işlendiğinde ve sınıflandırıldığında, bu alan tamamlanma tarih-saat damgasıyla güncelleştirilir. 
+Belge kitaplığına özel bir uygulama uygulandığında **, Sınıflandırma Tarihi** alanı kitaplık şemasına eklenir. Varsayılan olarak, bu alan boş olur. Ancak, belgeler bir model tarafından işlendiğinde ve sınıflandırıldığında, bu alan tamamlanma tarih-saat damgasıyla güncelleştirilir. 
 
    ![Sınıflandırma Tarihi sütununu gösteren belge kitaplığının ekran görüntüsü.](../media/content-understanding/class-date-column.png) 
 
@@ -133,14 +138,11 @@ Akışı çalıştırmak için:
 
     ![Akış oluştur panelini ve akış seçeneğinin vurgulandığı ekran görüntüsü.](../media/content-understanding/integrate-create-flow.png) 
 
-## <a name="change-the-view-in-a-document-library"></a>Belge kitaplığındaki görünümü değiştirme
-
-[!INCLUDE [Change the view in a document library](../includes/change-library-view.md)]
-
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıflandırıcı oluştur](create-a-classifier.md)
+[Kurumsal modeli paylaşma](model-discovery.md)
 
-[Ayıklayıcı oluştur](create-an-extractor.md)
+[Diğer eğitilmiş modelleri keşfedin](discover-other-trained-models.md)
 
-[Document Understanding'e genel bakış](document-understanding-overview.md)
+[Belge kitaplığında görünümü seçme](choose-library-view.md)
+

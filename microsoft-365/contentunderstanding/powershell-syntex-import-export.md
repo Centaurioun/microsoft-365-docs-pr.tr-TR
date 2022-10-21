@@ -1,26 +1,28 @@
 ---
-title: PowerShell ile belge anlama modellerini dışarı ve içeri aktarma
+title: PowerShell ile yapılandırılmamış belge işleme modellerini dışarı ve içeri aktarma
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-manager: serdars
+manager: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Microsoft Syntex'te PowerShell ile belge anlama modellerini dışarı ve içeri aktarma hakkında bilgi edinin.
-ms.openlocfilehash: bea95d65c39e08ea2ac6714e48e9cbafe573d1a8
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+description: Microsoft Syntex'te PowerShell ile modelleri dışarı ve içeri aktarma hakkında bilgi edinin.
+ms.openlocfilehash: 975a4f463d80c273f31912c30c70c5e7c07fd6c9
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564684"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68662105"
 ---
-# <a name="export-and-import-document-understanding-models-with-powershell"></a>PowerShell ile belge anlama modellerini dışarı ve içeri aktarma
+# <a name="export-and-import-unstructured-document-processing-models-with-powershell"></a>PowerShell ile yapılandırılmamış belge işleme modellerini dışarı ve içeri aktarma
+
+<sup>**Şunlar için geçerlidir:**  &ensp; Yapılandırılmamış belge işlemeyi &#10003;</sup>
 
 > [!IMPORTANT]
 > Microsoft Syntex PowerShell cmdlet'leri ve diğer tüm PnP bileşenleri, destek sağlayan etkin bir topluluk tarafından desteklenen açık kaynak araçlardır. Resmi Microsoft destek kanallarından açık kaynak araç desteği için SLA yoktur.
@@ -29,7 +31,7 @@ Syntex modelleri PnP şablonları olarak dışarı aktarılabilir ve böylece i�
 
 ## <a name="export-all-models-in-a-content-center"></a>İçerik merkezindeki tüm modelleri dışarı aktarma
 
-İçerik merkezindeki tüm modelleri tek bir PnP şablonuna aktarmak için aşağıdaki [PnP PowerShell](https://pnp.github.io/powershell/) cmdlet'lerini kullanın:
+bir içerik merkezindeki tüm yapılandırılmamış belge işleme modellerini tek bir PnP şablonuna aktarmak için aşağıdaki [PnP PowerShell](https://pnp.github.io/powershell/) cmdlet'lerini kullanın:
 
 ```powershell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -39,7 +41,7 @@ Get-PnPSiteTemplate -Out MyModels.pnp -Handlers SyntexModels
 
 ## <a name="export-specific-models"></a>Belirli modelleri dışarı aktarma
 
-belirli modelleri bir içerik merkezinden PnP şablonuna aktarmak için aşağıdaki [PnP PowerShell](https://pnp.github.io/powershell/) cmdlet'lerini kullanın:
+Belirli yapılandırılmamış belge işleme modellerini bir içerik merkezinden PnP şablonuna aktarmak için aşağıdaki [PnP PowerShell](https://pnp.github.io/powershell/) cmdlet'lerini kullanın:
 
 ```powershell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -88,13 +90,14 @@ extract.json, hangi modelleri dışarı aktarmak istediğinizi tanımlar ve mode
 }
 ```
 
-"includeTrainingData" özelliğini eklemezseniz, varsayılan davranış dahil edilir.
+"includeTrainingData" özelliğini dahil etmezseniz, varsayılan davranış eklemektir.
 
 > [!NOTE]
 > Modelin hedef içerik merkezine aktarıldığında düzenlenebilir olması için eğitim verileri gereklidir.
 
 ## <a name="import-models-to-a-content-center"></a>Modelleri içerik merkezine aktarma
-PnP şablonlarına aktarılan belgeleri anlama modelleri herhangi bir kiracıdaki içerik merkezine aktarılabilir. Dışarı aktarma işlemi eğitim verilerini de içerdiyse, model içeri aktarıldıktan sonra düzenlenebilir.
+
+PnP şablonlarına aktarılmış yapılandırılmamış belge işleme modelleri herhangi bir kiracıdaki bir içerik merkezine aktarılabilir. Dışarı aktarma işlemi eğitim verilerini de içerdiyse, model içeri aktarıldıktan sonra düzenlenebilir.
 
 Modeli içeri aktarmak için aşağıdaki komutları kullanın:
 

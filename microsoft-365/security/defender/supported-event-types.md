@@ -18,12 +18,12 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
-ms.openlocfilehash: 2bcd6ad83cbffca69f4b26c0088c7fe6b996c93d
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 32c65808ea0c27dcb60fde8bdab17a447283ba08
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68640532"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660235"
 ---
 # <a name="supported-microsoft-365-defender-streaming-event-types-in-event-streaming-api"></a>Olay akışı API Microsoft 365 Defender sinde olay akış türleri desteklenir
 
@@ -57,11 +57,12 @@ Aşağıdaki tablo yalnızca akış API'sinde desteklenen tabloların listesini 
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Ga | Ga | Ga | Ga |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Ga | Ga | Ga | Ga |
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | Ga | Ga | Ga | Ga |
-| **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Ga |![Hayır](../defender-endpoint/images/svg/check-no.svg)|![Hayır](../defender-endpoint/images/svg/check-no.svg)|![Hayır](../defender-endpoint/images/svg/check-no.svg)|
-| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Ga |![Hayır](../defender-endpoint/images/svg/check-no.svg)|![Hayır](../defender-endpoint/images/svg/check-no.svg)|![Hayır](../defender-endpoint/images/svg/check-no.svg)|
-| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Ga |![Hayır](../defender-endpoint/images/svg/check-no.svg)|![Hayır](../defender-endpoint/images/svg/check-no.svg)|![Hayır](../defender-endpoint/images/svg/check-no.svg)|
-| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Ga |![Hayır](../defender-endpoint/images/svg/check-no.svg)|![Hayır](../defender-endpoint/images/svg/check-no.svg)|![Hayır](../defender-endpoint/images/svg/check-no.svg)|
+| **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Ga |Genel önizleme|Genel önizleme|Genel önizleme|
+| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Ga |Genel önizleme|Genel önizleme|Genel önizleme|
+| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Ga |Genel önizleme|Genel önizleme|Genel önizleme|
+| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Ga |Genel önizleme|Genel önizleme|Genel önizleme|
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)**|Ga|![Hayır](../defender-endpoint/images/svg/check-no.svg)|![Hayır](../defender-endpoint/images/svg/check-no.svg)|![Hayır](../defender-endpoint/images/svg/check-no.svg)|
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)**|Ga|![Hayır](../defender-endpoint/images/svg/check-no.svg)|![Hayır](../defender-endpoint/images/svg/check-no.svg)|![Hayır](../defender-endpoint/images/svg/check-no.svg)|
 | **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)**|Ga|![Hayır](../defender-endpoint/images/svg/check-no.svg)|![Hayır](../defender-endpoint/images/svg/check-no.svg)|![Hayır](../defender-endpoint/images/svg/check-no.svg)|
 | **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)**|Ga|![Hayır](../defender-endpoint/images/svg/check-no.svg)|![Hayır](../defender-endpoint/images/svg/check-no.svg)|![Hayır](../defender-endpoint/images/svg/check-no.svg)|
+| **[UrlClickEvents](advanced-hunting-urlclickevents-table.md)**|Genel önizleme|Genel önizleme|Genel önizleme|Genel önizleme|

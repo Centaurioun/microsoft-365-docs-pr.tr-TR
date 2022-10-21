@@ -1,24 +1,24 @@
 ---
-title: Microsoft Syntex ve Power Automate ile belge oluşturmayı otomatikleştirme (önizleme)
+title: Microsoft Syntex ve Power Automate ile belge oluşturmayı otomatikleştirme (Önizleme)
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: anrasto, shrganguly
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft Syntex ve Power Automate kullanarak otomatik olarak belge ve diğer içerik oluşturmayı öğrenin.
-ms.openlocfilehash: 616a88bf7a6de912e731fb96bc4af2f856089de0
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: 4d09d31cba0c21aa65bbf09eecc75a375b10bce6
+ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68547828"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68660565"
 ---
 # <a name="automate-document-generation-with-microsoft-syntex-and-power-automate-preview"></a>Microsoft Syntex ve Power Automate ile belge oluşturmayı otomatikleştirme (önizleme)
 
@@ -78,4 +78,4 @@ Modern bir şablon ve Power Automate kullanarak otomatik olarak belge oluşturma
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
- [Microsoft Syntex'te içerik derlemesini kullanarak belge oluşturma](content-assembly.md)
+ [Microsoft Syntex'te içerik derlemesine genel bakış](content-assembly.md)
