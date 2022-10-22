@@ -20,12 +20,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 6e246cfeb14095cf0b5c471cbe4b3707d94d203d
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: ab9af833225c26a0c0651a6fd3adacf948881f34
+ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/21/2022
-ms.locfileid: "68662609"
+ms.locfileid: "68673205"
 ---
 # <a name="protect-your-network"></a>Ağınızı koruyun
 
@@ -47,11 +47,22 @@ Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz den
 
 Ağ koruması, cihazların İnternet tabanlı olaylardan korunmasına yardımcı olur. Ağ koruması bir saldırı yüzeyi azaltma özelliğidir. Çalışanların uygulamalar aracılığıyla tehlikeli etki alanlarına erişmesini önlemeye yardımcı olur. İnternette kimlik avı dolandırıcılığı, açıklardan yararlanma ve diğer kötü amaçlı içerikleri barındıran etki alanları tehlikeli olarak kabul edilir. Ağ koruması[, Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) kapsamını genişleterek düşük saygınlık kaynaklarına bağlanmaya çalışan tüm giden HTTP(ler) trafiğini engeller (etki alanı veya konak adına göre).
 
-Ağ koruması [, Web korumasındaki](web-protection-overview.md) korumayı işletim sistemi düzeyine genişletir. Microsoft Edge'de bulunan web koruma işlevselliğini desteklenen diğer tarayıcılara ve tarayıcı olmayan uygulamalara sağlar. Ağ koruması ayrıca [Uç nokta algılama ve yanıt](overview-endpoint-detection-response.md) ile kullanıldığında güvenliğin aşılmasına ilişkin göstergelerin (ICS) görünürlüğünü ve engellenmesini de sağlar. Örneğin, ağ koruması belirli etki alanlarını veya konak adlarını engellemek için kullanabileceğiniz [özel göstergelerinizle](manage-indicators.md) birlikte çalışır.
+Ağ koruması [, Web korumasındaki](web-protection-overview.md) korumayı işletim sistemi düzeyine genişletir ve Web İçeriği Filtreleme (WCF) için temel bir bileşendir. Microsoft Edge'de bulunan web koruma işlevselliğini desteklenen diğer tarayıcılara ve tarayıcı olmayan uygulamalara sağlar. Ağ koruması ayrıca [Uç nokta algılama ve yanıt](overview-endpoint-detection-response.md) ile kullanıldığında güvenliğin aşılmasına ilişkin göstergelerin (ICS) görünürlüğünü ve engellenmesini de sağlar. Örneğin, ağ koruması belirli etki alanlarını veya konak adlarını engellemek için kullanabileceğiniz [özel göstergelerinizle](manage-indicators.md) birlikte çalışır.
+
+### <a name="network-protection-coverage"></a>Ağ koruma kapsamı
+
+Aşağıdaki tabloda kapsamın ağ koruma alanları özetlemektedir.
+
+| Özellik | Microsoft Edge | Üçüncü taraf tarayıcılar | Tarayıcı dışı işlemler <br> (örneğin, PowerShell) |
+|:---|:---|:---|:---|
+| Web Tehdit Koruması | SmartScreen etkinleştirilmelidir | NP'nin blok modunda olması gerekir | NP'nin blok modunda olması gerekir |
+| Özel Göstergeler | SmartScreen etkinleştirilmelidir | NP'nin blok modunda olması gerekir | NP'nin blok modunda olması gerekir |
+| Web İçeriği Filtreleme | SmartScreen etkinleştirilmelidir | NP'nin blok modunda olması gerekir | Desteklenmiyor |
 
 > [!NOTE]
+> Ağ koruması, Windows cihazlarında msedge.exe izlemez.
+> Mac ve Linux'ta, Edge'de bu özellikler için destek almak için blok modunda ağ korumasına sahip olmanız gerekir.
 > Web koruma senaryoları, Microsoft Edge ve Internet Explorer dışındaki işlemler için inceleme ve zorlama için Ağ Koruması'dan yararlanıyor:
->
 > - IP, üç protokol için de desteklenir (TCP, HTTP ve HTTPS (TLS)).
 > - Özel göstergelerde yalnızca tek IP adresleri desteklenir (CIDR blokları veya IP aralıkları yoktur).
 > - Şifrelenmiş URL'ler (tam yol) yalnızca birinci taraf tarayıcılarda (Internet Explorer, Edge) engellenebilir.
@@ -69,7 +80,8 @@ Ağ koruması Windows 10 veya 11 (Pro veya Enterprise), Windows Server sürüm 1
 
 | Windows sürümü | Microsoft Defender Virüsten Koruma |
 |:---|:---|
-| Windows 10 sürüm 1709 veya üzeri <br/> Windows 11 <br/> Windows Server 1803 veya üzeri | [Microsoft Defender Virüsten Koruma gerçek zamanlı koruma](configure-real-time-protection-microsoft-defender-antivirus.md) ve [bulut tabanlı korumanın](enable-cloud-protection-microsoft-defender-antivirus.md) etkinleştirildiğinden (etkin) emin olun. |
+| Windows 10 sürüm 1709 veya üzeri, Windows 11, Windows Server 1803 veya üzeri | [Microsoft Defender Virüsten Koruma gerçek zamanlı koruma](configure-real-time-protection-microsoft-defender-antivirus.md) ve [bulut tabanlı korumanın](enable-cloud-protection-microsoft-defender-antivirus.md) etkinleştirildiğinden emin olun (etkin) |
+| Birleştirilmiş aracıyla R2 ve Windows Server 2016 Windows Server 2012 | Platform Güncelleştirmesi sürüm 4.18.2001.x.x veya üzeri |
 
 ## <a name="why-network-protection-is-important"></a>Ağ koruması neden önemlidir?
 
@@ -161,7 +173,7 @@ Uç Nokta için Defender'daki göstergelerle, yöneticiler son kullanıcıların
 
 :::image type="content" source="images/network-protection-smart-screen-block-notification.png" alt-text="Ağ koruması için Windows Güvenliği bildirimi.":::
 
-Uç Nokta için Microsoft Defender yöneticileri IP'ler, URL'ler ve etki alanları için "izin ver" göstergesini kullanarak [Microsoft 365 Defender portalında](https://security.microsoft.com) SmartScreen Engellemesini Kaldırma işlevini yapılandırabilir. 
+Uç Nokta için Microsoft Defender yöneticileri IP'ler, URL'ler ve etki alanları için "izin ver" göstergesini kullanarak [Microsoft 365 Defender portalında](https://security.microsoft.com) SmartScreen Engellemesini Kaldırma işlevini yapılandırabilir.
 
 :::image type="content" source="images/network-protection-smart-screen-block-configuration.png" alt-text="Ağ koruması SmartScreen blok yapılandırması ULR ve IP formu.":::
 
@@ -174,7 +186,7 @@ Ağ koruması cihaz başına etkinleştirilir ve bu genellikle yönetim altyapı
 > [!NOTE]
 > Microsoft Defender Virüsten Koruma'nın ağ korumasını etkinleştirmek için etkin olması gerekir.
 
-Ağ korumasını **Denetim** modunda veya **Blok** modunda etkinleştirebilirsiniz. IP adreslerini veya URL'leri engellemeden önce ağ korumasını etkinleştirmenin etkisini değerlendirmek istiyorsanız, ağ korumasını denetim modunda etkinleştirerek engellenecek veriler hakkında veri toplayabilirsiniz. Son kullanıcılar ağ koruması tarafından engellenecek bir adrese veya siteye bağlandığında denetim modu günlükleri.
+Ağ korumasını **Denetim** modunda veya **Blok** modunda etkinleştirebilirsiniz. IP adreslerini veya URL'leri engellemeden önce ağ korumasını etkinleştirmenin etkisini değerlendirmek istiyorsanız, ağ korumasını denetim modunda etkinleştirerek engellenecek veriler hakkında veri toplayabilirsiniz. Son kullanıcılar ağ koruması tarafından engellenecek bir adrese veya siteye bağlandığında denetim modu günlükleri. Risk (IoC) veya Web içeriği filtreleme (WCF) göstergelerinin çalışması için ağ korumasının "Blok modunda" olması gerektiğini unutmayın
 
 Linux ve macOS için ağ koruması hakkında bilgi için bkz. [Linux için ağ koruması](network-protection-linux.md) ve [macOS için ağ koruması](network-protection-macos.md).
 
@@ -195,7 +207,6 @@ DeviceEvents
 
 ```
 
-
 :::image type="content" source="images/network-protection-advanced-hunting.png" alt-text="Olayları denetlemek ve tanımlamak için gelişmiş avcılık." lightbox="images/network-protection-advanced-hunting.png":::
 
 > [!TIP]
@@ -213,6 +224,7 @@ DeviceEvents:
 |sort by Timestamp desc
 
 ```
+
 Yanıt kategorisi, olaya neyin neden olduğunu söyler, örneğin:
 
 | ResponseCategory | Olaydan sorumlu özellik |
@@ -317,7 +329,7 @@ Windows 10 Enterprise çok kullanıcılı yapısı nedeniyle aşağıdaki noktal
 
 ### <a name="alternative-option-for-network-protection"></a>Ağ koruması için alternatif seçenek
 
-Azure'da Windows Sanal Masaüstü'nde kullanılan Windows Server sürüm 1803 veya üzeri ile Çok Oturumlu 1909 ve üzeri Windows 10 Enterprise için, Microsoft Edge için ağ koruması aşağıdaki yöntem kullanılarak etkinleştirilebilir:
+Azure'da Windows Sanal Masaüstü'nde kullanılan Windows Server 2012R2/2016 birleşik MDE istemcisi, Windows Server sürüm 1803 veya üzeri, Windows Server 2019 veya üzeri ve Windows 10 Enterprise Çok Oturumlu 1909 ve üzeri sürümler için aşağıdaki yöntem kullanılarak Microsoft Edge için ağ koruması etkinleştirilebilir:
 
 1. [Ağ korumasını aç'ı](enable-network-protection.md) kullanın ve ilkenizi uygulamak için yönergeleri izleyin.
 
@@ -327,6 +339,57 @@ Azure'da Windows Sanal Masaüstü'nde kullanılan Windows Server sürüm 1803 ve
    - `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
    - `Set-MpPreference -AllowNetworkProtectionDownLevel 1`
    - `Set-MpPreference -AllowDatagramProcessingOnWinServer 1`
+
+> [!NOTE]
+> Bazı durumlarda altyapınıza, trafik hacminize ve diğer koşullara `Set-MpPreference -AllowDatagramProcessingOnWinServer 1` bağlı olarak ağ performansı üzerinde bir etkisi olabilir.
+
+### <a name="network-protection-for-windows-servers"></a>Windows Sunucuları için ağ koruması
+
+Aşağıda Windows Sunucularına özgü bilgiler yer alır.
+
+#### <a name="verify-that-network-protection-is-enabled"></a>Ağ korumasının etkinleştirildiğini doğrulama
+
+Kayıt Defteri Düzenleyicisi'ni kullanarak yerel bir cihazda ağ korumasının etkinleştirilip etkinleştirilmediğini doğrulayın.
+
+1. Görev çubuğunda **Başlangıç** düğmesini seçin ve Kayıt Defteri Düzenleyicisi'ni açmak için **regedit** yazın.
+1. Yan **menüden HKEY_LOCAL_MACHINE'ı** seçin.
+1. İç içe menülerde MICROSOFT **Windows defender** >  **Windows Defender Exploit Guard** > **Ağ Koruması** **YAZıLıM** > **İlkeleri'ne** >  >  gidin.
+
+   (Anahtar yoksa **YAZILIM'a** >  gidin **Microsoft** >   >  Windows Defender **Windows Defender Exploit Guard** > **Ağ Koruması**)
+
+4. Cihazdaki ağ korumasının geçerli durumunu görmek için **EnableNetworkProtection** öğesini seçin:
+
+   - 0 = Kapalı
+   - 1 = Açık (etkin)
+   - 2 = Denetim modu
+
+Ek bilgi için bkz. [Ağ korumasını açma](enable-network-protection.md)
+
+##### <a name="network-protection-suggestion"></a>Ağ koruması önerisi
+
+Windows Server 2012R2/2016 birleşik MDE istemcisi, Windows Server sürüm 1803 veya üzeri, Windows Server 2019 veya üzeri ve Windows 10 Enterprise Çoklu Oturum 1909 ve üzeri (Azure'da Windows Sanal Masaüstü'nde kullanılır) için etkinleştirilmesi gereken ek kayıt defteri anahtarları vardır:
+
+**HKEY_LOCAL_MACHINE**\* *YAZILIM**\** İlkeler **\**Microsoft**\* *Windows Defender**\** Windows Defender Exploit Guard **\**Ağ Koruması**
+
+**AllowNetworkProtectionDownLevel** (dword) 1 (onaltılık) **AllowNetworkProtectionOnWinServer** (dword) 1 (onaltılık) **EnableNetworkProtection** (dword) 1 (onaltılık)
+
+> [!NOTE]
+> Altyapınıza, trafik hacmine ve diğer koşullara bağlı **olarak,**\\**HKEY_LOCAL_MACHINE SOFTWARE**\\**Policies**\\**Microsoft**\\ **Windows Defender** \\**NIS**\\**Consumers**\\**IPS** - **AllowDatagramProcessingOnWinServer (dword) 1 (onaltılık)** ağ performansı üzerinde bir etkisi olabilir.
+
+Ek bilgi için bkz. [Ağ korumasını açma](enable-network-protection.md)
+
+#### <a name="windows-servers-and-windows-multi-session-configuration-requires-powershell"></a>Windows Sunucuları ve Windows Çoklu oturum yapılandırması için PowerShell gerekir
+
+Windows Sunucuları ve Windows Multi-session için, PowerShell cmdlet'lerini kullanarak etkinleştirmeniz gereken ek öğeler vardır. Windows Server 2012R2/2016 birleşik MDE istemcisi, Windows Server sürüm 1803 veya üzeri, Windows Server 2019 veya üzeri ve Azure'daki Windows Sanal Masaüstü'nde kullanılan Çok Oturumlu 1909 ve üzeri Windows 10 Enterprise.
+
+1. Set-MpPreference -EnableNetworkProtection Etkin
+1. Set-MpPreference -AllowNetworkProtectionOnWinServer 1
+1. Set-MpPreference -AllowNetworkProtectionDownLevel 1
+1. Set-MpPreference -AllowDatagramProcessingOnWinServer 1
+
+> [!NOTE]
+> Bazı durumlarda altyapınıza, trafik hacminize ve diğer koşullara bağlı olarak **Set-MpPreference -AllowDatagramProcessingOnWinServer 1** ağ performansı üzerinde bir etkiye sahip olabilir.
+
 
 ## <a name="network-protection-troubleshooting"></a>Ağ koruması sorunlarını giderme
 

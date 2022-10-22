@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Uç nokta veri kaybı önleme (DLP) merkezi ayarlarını yapılandırmayı öğrenin.
-ms.openlocfilehash: d3b38a9125979f33e4d22277b8967f4f3d37c349
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: eaa286aa1767b1cbf401d44035d1ed240131af69
+ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68621372"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68672963"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Uç noktada veri kaybı önleme ayarlarını yapılandırma
 
@@ -403,8 +403,8 @@ Bu özellik, aşağıdaki Windows sürümlerinden herhangi birini çalıştıran
 Kaldırılabilir depolama cihazlarını şu parametrelerle tanımlayabilirsiniz:
 
 - Depolama cihazı kolay adı - Cihaz yöneticisindeki depolama cihazı özellik ayrıntılarından Kolay ad değerini alın.
-- USB ürün kimliği - Cihaz yöneticisindeki yazıcı cihazı özellik ayrıntılarından Cihaz Örneği yol değerini alın. Ürün Kimliği ve Satıcı Kimliği biçimine dönüştürün, bkz. [Standart USB tanımlayıcıları](/windows-hardware/drivers/install/standard-usb-identifiers).
-- USB satıcı kimliği - Cihaz yöneticisindeki yazıcı cihazı özellik ayrıntılarından Cihaz Örneği yol değerini alın. Ürün Kimliği ve Satıcı Kimliği biçimine dönüştürün, bkz. [Standart USB tanımlayıcıları](/windows-hardware/drivers/install/standard-usb-identifiers).
+- USB ürün kimliği - Cihaz yöneticisindeki USB cihaz özelliği ayrıntılarından Cihaz Örneği yol değerini alın. Ürün Kimliği ve Satıcı Kimliği biçimine dönüştürün, bkz. [Standart USB tanımlayıcıları](/windows-hardware/drivers/install/standard-usb-identifiers).
+- USB satıcı kimliği - Cihaz yöneticisindeki USB cihaz özelliği ayrıntılarından Cihaz Örneği yol değerini alın. Ürün Kimliği ve Satıcı Kimliği biçimine dönüştürün, bkz. [Standart USB tanımlayıcıları](/windows-hardware/drivers/install/standard-usb-identifiers).
 - Seri numarası kimliği - Cihaz yöneticisindeki depolama cihazı özellik ayrıntılarından seri numarası kimliği değerini alın.
 - Cihaz Kimliği - Cihaz yöneticisindeki depolama cihazı özellik ayrıntılarından cihaz kimliği değerini alın.
 - Örnek yolu kimliği - Cihaz yöneticisindeki depolama cihazı özellik ayrıntılarından cihaz kimliği değerini alın.

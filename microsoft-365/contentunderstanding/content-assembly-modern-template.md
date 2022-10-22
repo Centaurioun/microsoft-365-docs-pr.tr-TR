@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft Syntex'te modern bir şablon oluşturmayı öğrenin.
-ms.openlocfilehash: 022f46531e54041d5a11b43d75b21d0e033095ca
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: af64b97c104e218ca851182ce043e3a65e72a159
+ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/21/2022
-ms.locfileid: "68661599"
+ms.locfileid: "68673139"
 ---
 # <a name="create-a-modern-template-in-microsoft-syntex"></a>Microsoft Syntex'te modern şablon oluşturma
 
@@ -151,27 +151,6 @@ Gerekli olduğunu düşündüğünüz kadar alan oluşturabilirsiniz. İşiniz b
 
 2. Yayımlanan *şablonları* **Modern** **şablonlar bölümündeki Yayımlanan şablonlar** açılan menüsünde görüntülemek, düzenlemek veya yayımdan kaldırmak için belge kitaplığından **Yeni** > **Düzenle menüsünü** seçin. 
 
-## <a name="edit-a-modern-template"></a>Modern şablonu düzenleme
+## <a name="see-also"></a>Ayrıca bkz.
 
-Mevcut bir şablonu düzenlemeniz veya şablonu silmeniz veya yayımlamanız gerekiyorsa bu adımları izleyin.
-
-1. SharePoint belge kitaplığından **Yeni** > **Düzenle Yeni menüsünü** seçin.
-
-   ![Yeni Düzenle menü seçeneğinin vurgulandığı belge kitaplığının ekran görüntüsü.](../media/content-understanding/content-assembly-edit-template-1.png)
-
-2. **Yeni Düzenle menü** panelinin **Modern şablonlar** bölümünde, düzenlemek istediğiniz yayımlanmış veya taslak şablonu seçin.
-
-   ![Modern şablonlar bölümünü gösteren Yeni Düzenle menü panelinin ekran görüntüsü.](../media/content-understanding/content-assembly-edit-template-2.png)
-
-3. Yayımlanmış bir şablonu veya taslak şablonu düzenlemek için:
-
-   - **Yayımlanan şablonlar** için **Düzenle'yi** seçerek yayımlanan şablonu düzenleyebileceğiniz şablon stüdyoyu açın. Şablonu silmeyi veya yayımdan kaldırmayı da seçebilirsiniz.
-
-      ![Yayımlanan şablonları gösteren Modern şablonlar bölümünün ekran görüntüsü.](../media/content-understanding/content-assembly-edit-published.png)
-
-   - **Taslak şablonları** için **Düzenle'yi** seçerek taslak şablonu düzenleyebileceğiniz şablon stüdyoyu açın. Şablonu silmeyi veya yayımlamayı da seçebilirsiniz.
-
-      ![Taslak şablonları gösteren Modern şablonlar bölümünün ekran görüntüsü.](../media/content-understanding/content-assembly-edit-draft.png)
-
-> [!div class="nextstepaction"]
-> [Sonraki adım > Modern şablondan belge oluşturma](content-assembly-create-document.md)
+[Modern şablonu düzenleme](content-assembly-edit-template.md)

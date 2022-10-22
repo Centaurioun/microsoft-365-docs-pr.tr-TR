@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 732582dbd65358f7743a8420ac52317b184af469
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 6c596bd9358bae512b935abc6de0f34c00dca7f1
+ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68626544"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68673029"
 ---
 # <a name="insider-risk-management-policies"></a>Insider risk yönetimi ilkeleri
 
@@ -436,7 +436,7 @@ Mevcut bir ilkeyi kopyalamak için aşağıdaki adımları tamamlayın:
 
 ## <a name="immediately-start-scoring-security-related-user-activity"></a>Güvenlikle ilgili kullanıcı etkinliğini puanlamaya hemen başlayın
 
-Insider risk yönetimi tetikleyici olay iş akışının dışında, içeriden risk ilkeleri olan kullanıcılara risk puanlarını hemen atamaya başlamanız gereken senaryolar olabilir. **İlkeler** **sekmesindeki kullanıcılar için Puanlama etkinliğini başlat'ı** kullanarak belirli bir süre boyunca bir veya daha fazla iç risk ilkesine el ile kullanıcı (veya kullanıcılar) ekleyin, etkinliklerine risk puanlarını hemen atamaya başlayın ve kullanıcının tetikleme göstergesine (DLP ilkesi eşleşmesi gibi) sahip olması gereksinimini atlayın. Kullanıcıyı ilkeye eklemek için bir neden de ekleyebilirsiniz. Bu neden kullanıcıların etkinlik zaman çizelgesinde görünür. İlkelere el ile eklenen kullanıcılar **Kullanıcılar** panosunda görüntülenir ve etkinlik ilke uyarı eşiklerini karşılıyorsa uyarılar oluşturulur.
+Insider risk yönetimi tetikleyici olay iş akışının dışında, içeriden risk ilkeleri olan kullanıcılara risk puanlarını hemen atamaya başlamanız gereken senaryolar olabilir. **İlkeler** **sekmesindeki kullanıcılar için Puanlama etkinliğini başlat'ı** kullanarak belirli bir süre boyunca bir veya daha fazla iç risk ilkesine el ile kullanıcı (veya kullanıcılar) ekleyin, etkinliklerine risk puanlarını hemen atamaya başlayın ve kullanıcının tetikleme göstergesine (DLP ilkesi eşleşmesi gibi) sahip olması gereksinimini atlayın. Kullanıcıyı ilkeye eklemek için bir neden de ekleyebilirsiniz. Bu neden kullanıcıların etkinlik zaman çizelgesinde görünür. İlkelere el ile eklenen kullanıcılar **Kullanıcılar** panosunda görüntülenir ve etkinlik ilke uyarı eşiklerini karşılıyorsa uyarılar oluşturulur. Anında puanlama için kullanıcı eklerken ilke başına en fazla 4.000 kullanıcı ekleyebilirsiniz.
 
 Kullanıcı etkinliklerini hemen puanlamaya başlamak isteyebileceğiniz bazı senaryolar:
 

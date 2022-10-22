@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 10/10/2022
+ms.date: 10/21/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 48fb6a2e4ec0c77a17e1ea0fedd95244485232bc
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 94f2818f2e470807b9e4ed7f4ee23334106e2d50
+ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68536466"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68673183"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama
 
@@ -89,11 +89,11 @@ Tüm güncelleştirmelerimiz
 - Tümleştirme geliştirmeleri (Bulut, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>Eylül-2022 (Platform: 4.18.2209.x | Motor: 1.1.19700.3)</summary>
+<summary>Eylül-2022 (Platform: 4.18.2209.7 | Motor: 1.1.19700.3)</summary>
 
 &ensp;Güvenlik bilgileri güncelleştirme sürümü: **1.377.8.0**<br/>
 &ensp;Sürüm tarihi: **10 Ekim 2022**<br/>
-&ensp;Platform: **4.18.2209.x**<br/>
+&ensp;Platform: **4.18.2209.7**<br/>
 &ensp;Motor: **1.1.19700.3**<br/>
 &ensp;Destek aşaması: **Güvenlik ve Kritik Güncelleştirmeler**<br/>
 
@@ -841,6 +841,21 @@ Windows 10 (Enterprise, Pro ve Home sürümleri), Windows Server 2019, Windows S
 Daha fazla bilgi için bkz. [Windows işletim sistemi yükleme görüntüleri için Microsoft Defender güncelleştirme](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20221014.1</summary>
+
+&ensp;Paket sürümü: **20221014.1**<br/>
+&ensp;Platform sürümü: **4.18.2209.7**<br/>
+&ensp;Altyapı sürümü: **1.1.19700.3**<br/>
+&ensp;İmza sürümü: **1.373.208.0**<br/>
+
+### <a name="fixes"></a>Giderir
+- Yok
+
+### <a name="additional-information"></a>Ek bilgiler
+- Yok
+
+<br/>
+</details><details>
 <summary>20220929.1</summary>
 
 &ensp;Paket sürümü: **20220929.1**<br/>

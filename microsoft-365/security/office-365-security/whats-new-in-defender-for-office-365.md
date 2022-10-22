@@ -20,12 +20,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 75d0c3b56ba45be8540cd8bd877f1c9067fceb4a
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 5fd3435be3d0ec64f8d501cc6957578dbe4c2458
+ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68639938"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68672834"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender’daki yenilikler
 
@@ -52,6 +52,8 @@ Diğer Microsoft Defender güvenlik ürünleriyle ilgili yenilikler hakkında da
 - **[Kiracı İzin Ver/Engelle Listesinde izinlerinizi ve bloklarınızı yönetin](manage-tenant-allow-block-list.md):**
   - Süre **sonu yönetimine izin ver** (şu anda özel önizleme aşamasındadır) ile, Microsoft izin verilenlerden ders almadıysa, yasal e-postanın yeniden gereksiz veya karantinaya girmesini önlemek için süresi yakında dolacak olan izinlerin süre sonu süresini otomatik olarak 30 gün uzatır.
   - Kamu bulutu ortamlarındaki müşteriler artık yönetici URL'sini ve e-posta eki gönderimlerini kullanarak Kiracı İzin Ver/Engelle Listesi'nde URL'ler ve ekler için izin verme ve engelleme girdileri oluşturabilir. Gönderim deneyimi aracılığıyla gönderilen veriler müşteri kiracısını terk etmediğinden, kamu bulutu müşterileri için veri yerleşimi taahhütlerini karşılar.
+- **URL tıklama uyarılarında geliştirme:**
+  - Yeni geri arama senaryosuyla, "Kötü amaçlı olabilecek bir URL tıklaması algılandı" uyarısı artık son _48 saat_ içinde (e-postalar için) kötü amaçlı URL kararının tanımlandığı andan itibaren tüm tıklamaları içerecek. 
 
 ## <a name="september-2022"></a>Eylül 2022
 
@@ -74,6 +76,7 @@ Diğer Microsoft Defender güvenlik ürünleriyle ilgili yenilikler hakkında da
 - Yeniden yönlendirme varsayılan olarak etkindir ve Kiracının tüm kullanıcılarını etkiler.
 - Genel Yöneticiler ve Güvenlik Yöneticileri, Microsoft 365 Defender portalında **Ayarlar** >  **Email & işbirliği** > **Portalı yeniden yönlendirme** ve yeniden yönlendirme geçişine giderek yeniden yönlendirmeyi açabilir veya kapatabilir.
 - **Yerleşik koruma**: Tüm Office 365 için Defender müşterileri için varsayılan olarak açık olan temel düzeyde Güvenli Bağlantılar ve Güvenli Ekler koruması sağlayan profil. Bu yeni ilke ve öncelik sırası hakkında daha fazla bilgi edinmek için [bkz. Önceden ayarlanmış güvenlik ilkeleri](preset-security-policies.md) ve belirli Güvenli Bağlantılar ve Güvenli Ek denetimleri kümesi hakkında bilgi edinmek için bkz. [Güvenli Ekler ayarları](recommended-settings-for-eop-and-office365.md#safe-attachments-settings) ve [Güvenli Bağlantılar ayarları](recommended-settings-for-eop-and-office365.md#safe-links-settings).
+- **Toplu Şikayet Düzeyi** artık Gelişmiş Tehdit Avcılığı'ndaki EmailEvents tablosunda 0 ile 9 arasından sayısal BCL değerleriyle kullanılabilir. Daha yüksek bir BCL puanı, toplu iletinin şikayet oluşturma olasılığının daha yüksek olduğunu ve istenmeyen posta olma olasılığının daha yüksek olduğunu gösterir.
 
 ## <a name="july-2022"></a>Temmuz 2022
 

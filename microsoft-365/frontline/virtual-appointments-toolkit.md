@@ -20,18 +20,18 @@ ms.collection:
 - m365-frontline
 - highpri
 ms.reviewer: ''
-description: Müşterilerinizin kuruluşunuzla sanal randevuların nasıl kullanılacağını anlamasına yardımcı olmak için web sitenize ekleyebileceğiniz özelleştirilebilir kaynaklar ve bilgi grafikleri.
+description: Müşterilerinizin Bookings'te zamanlanmış sanal randevuların kuruluşunuzla nasıl kullanılacağını anlamasına yardımcı olmak için web sitenize ekleyebileceğiniz özelleştirilebilir kaynaklar ve bilgi grafikleri.
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: a0844c3602af089660d4bbf1be8a5e475f8fe208
-ms.sourcegitcommit: 597aad78b6952b4a5642a84dddf3fe3c8cc8eeff
+ms.openlocfilehash: 80cf404830e2f66a4457ddbfcf4f1fab1c610eb9
+ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/23/2022
-ms.locfileid: "67999891"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "68672941"
 ---
-# <a name="help-your-clients-and-customers-use-virtual-appointments"></a>İstemcilerinizin ve müşterilerinizin sanal randevuları kullanmasına yardımcı olma
+# <a name="help-your-clients-and-customers-use-virtual-appointments-scheduled-with-bookings"></a>Müşterilerinizin ve müşterilerinizin Bookings ile zamanlanmış sanal randevuları kullanmalarına yardımcı olun
 
 Kuruluşunuz sanal randevular için Microsoft Teams'i ve Bookings uygulamasını kullanmaya başladığına göre, müşterilerinizin ve müşterilerinizin bu randevuları nasıl rezerve edip katılacaklarını anladığınızdan emin olmanız gerekir.
 
@@ -104,7 +104,7 @@ Personelinizin nasıl yöneteceklerini bilmelerini sağlayarak sanal randevulard
 - [Teams'de Bookings uygulamasını kullanmayı öğrenin](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5).
 - [Bookings randevusna nasıl katılacağınızı öğrenin](https://support.microsoft.com/office/join-a-bookings-appointment-attendees-3deb7bde-3ea3-4b41-8a06-741ad0db9fc0).
 - [Randevuyu yürüt](bookings-virtual-visits.md#conduct-an-appointment).
-- [Sanal randevular hakkında bir video izleyin](#help-your-clients-and-customers-use-virtual-appointments).
+- [Sanal randevular hakkında bir video izleyin](#help-your-clients-and-customers-use-virtual-appointments-scheduled-with-bookings).
 - [Sanal randevularda kuyruğu yönetme hakkında bir video izleyin](https://go.microsoft.com/fwlink/?linkid=2202615).
 - [Sanal randevularda bekleme odası özellikleri hakkında bir video izleyin](https://go.microsoft.com/fwlink/?linkid=2202614).
 
