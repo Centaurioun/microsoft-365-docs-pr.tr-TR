@@ -18,12 +18,12 @@ description: Yöneticiler, Exchange Online Protection (EOP) ve Office 365 için 
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.openlocfilehash: 1c49e13e6942de8947b69e2bcb236cbe5ba6b493
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 420ad079e76c22f8706813743696b79567e6a030
+ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68072359"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68684749"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365'te kimlik avı önleme ilkeleri
 
@@ -188,7 +188,7 @@ Aşağıdaki kimliğe bürünme ayarları yalnızca Office 365 için Defender ki
 
   > [!NOTE]
   >
-  > - Her kimlik avı önleme ilkesinde en fazla 350 korumalı kullanıcı (gönderen e-posta adresleri) belirtebilirsiniz. Birden çok ilkede aynı korumalı kullanıcıyı belirtemezsiniz. Bu nedenle, alıcıya kaç ilke uygulandığından bağımsız olarak, her bir alıcı için en fazla korunan kullanıcı (gönderen e-posta adresi) sayısı 350'dir. İlke önceliği ve ilke işlemenin ilk ilke uygulandıktan sonra nasıl durdurulacağı hakkında daha fazla bilgi için bkz [. E-posta korumasının sırası ve önceliği](how-policies-and-protections-are-combined.md).
+  > - Her kimlik avı önleme ilkesinde en fazla 301 korumalı kullanıcı (gönderen e-posta adresleri) belirtebilirsiniz. Birden çok ilkede aynı korumalı kullanıcıyı belirtemezsiniz. Bu nedenle, alıcıya kaç ilke uygulandığından bağımsız olarak, her bir alıcı için en fazla korunan kullanıcı (gönderen e-posta adresi) sayısı 301'dir. İlke önceliği ve ilke işlemenin ilk ilke uygulandıktan sonra nasıl durdurulacağı hakkında daha fazla bilgi için bkz [. E-posta korumasının sırası ve önceliği](how-policies-and-protections-are-combined.md).
   > - Kullanıcı kimliğe bürünme koruması, gönderen ve alıcı daha önce e-posta yoluyla iletişim kurarsa çalışmaz. Gönderen ve alıcı e-posta yoluyla hiç iletişim kurmadıysa, ileti bir kimliğe bürünme girişimi olarak tanımlanır.
 
   Varsayılan olarak, **Kullanıcılar'da korunacak** kimliğe bürünme koruması için hiçbir gönderen e-posta adresi yapılandırılmaz. Bu nedenle varsayılan olarak, varsayılan ilkede veya özel ilkelerde hiçbir gönderen e-posta adresi kimliğe bürünme koruması kapsamında değildir.

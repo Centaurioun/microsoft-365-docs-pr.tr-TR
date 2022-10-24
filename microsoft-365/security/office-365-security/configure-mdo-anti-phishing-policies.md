@@ -17,12 +17,12 @@ description: Yöneticiler, Office 365 için Microsoft Defender sahip kuruluşlar
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.openlocfilehash: 3c0bdc066d1f47c02afe8fae1938813241bceff5
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: d0358aa6c266a112c67873223553d550f6eb303d
+ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68055226"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68684795"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de kimlik avı önleme ilkelerini yapılandırma
 
@@ -139,7 +139,7 @@ Microsoft 365 Defender portalında özel kimlik avı önleme ilkesi oluşturmak,
 
      > [!NOTE]
      >
-     > - Her kimlik avı önleme ilkesinde en fazla 350 korumalı kullanıcı (gönderen e-posta adresleri) belirtebilirsiniz. Birden çok ilkede aynı korumalı kullanıcıyı belirtemezsiniz.
+     > - Her kimlik avı önleme ilkesinde en fazla 301 korumalı kullanıcı (gönderen e-posta adresleri) belirtebilirsiniz. Birden çok ilkede aynı korumalı kullanıcıyı belirtemezsiniz.
      > - Kullanıcı kimliğe bürünme koruması, gönderen ve alıcı daha önce e-posta yoluyla iletişim kurarsa çalışmaz. Gönderen ve alıcı e-posta yoluyla hiç iletişim kurmadıysa, ileti bir kimliğe bürünme girişimi olarak tanımlanır.
 
      - **Kullanıcıların korumasını etkinleştir**: Varsayılan değer kapalı (seçili değil). Açmak için onay kutusunu seçin ve ardından görüntülenen **Yönet (nn) gönderenler** bağlantısına tıklayın.

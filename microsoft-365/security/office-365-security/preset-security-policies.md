@@ -17,12 +17,12 @@ description: Yöneticiler, Exchange Online Protection (EOP) ve Office 365 için 
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.openlocfilehash: afcbfb788644e2542d5c080eed881f2531558a02
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: b28c315ecfe8ee6513c8f45be6d89953d4908647
+ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68066552"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68684764"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP ve Office 365 için Microsoft Defender'da önceden ayarlanmış güvenlik ilkeleri
 
@@ -206,7 +206,7 @@ Başka bir deyişle, **Katı** önceden ayarlanmış güvenlik ilkesinin ayarlar
 
    Her giriş bir görünen ad ve bir e-posta adresinden oluşur. Kutulara her değeri girin ve **Ekle'ye** tıklayın. Bu adımı gerektiği kadar tekrarlayın.
 
-   En fazla 350 kullanıcı belirtebilir ve birden çok ilkedeki kullanıcı kimliğe bürünme koruması ayarlarında aynı kullanıcıyı belirtemezsiniz.
+   En fazla 301 kullanıcı belirtebilir ve birden çok ilkedeki kullanıcı kimliğe bürünme koruması ayarlarında aynı kullanıcıyı belirtemezsiniz.
 
    Listeden var olan bir girdiyi kaldırmak için ![Kullanıcıyı kimliğe bürünme koruması simgesinden kaldırın.](../../media/m365-cc-sc-remove.png).
 

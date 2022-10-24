@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: adaa92fc286be90d9c97d88b57a513d689da5e08
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 5b5af7d7dc9373f0fdd13e38f5e6934327bc1f57
+ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68630896"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68684951"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>İletişim uyumluluğu uyarılarını araştırma ve çözümleme
 
@@ -117,8 +117,8 @@ Uyarıları veya yapılandırdığınız filtrelemeyi gözden geçirmeye nereden
 - **Düz metin**: İletinin yalnızca satır numaralı bir görünümünü görüntüleyen ve hassas bilgi türü terimleri, bir ilkeye atanan yerleşik sınıflandırıcılar tarafından tanımlanan terimler veya ilkeye atanmış ayrılmış anahtar sözcük sözlüğüne dahil edilen terimler için iletilerde ve eklerde anahtar sözcük vurgulama içeren metin görünümü. Şu anda yalnızca İngilizce dilinde kullanılabilen anahtar sözcük vurgulama, uzun iletilerde ve eklerde ilginizi çeken alana yönlendirmenize yardımcı olabilir. Bazı durumlarda, vurgulanan metin yalnızca ilke koşullarıyla eşleşen iletiler için eklerde olabilir. Katıştırılmış dosyalar görüntülenmez ve bu görünümdeki satır numaralandırması, birden çok gözden geçiren arasında ilgili ayrıntılara başvurmak için yararlıdır.
 - **Konuşma**: Microsoft Teams sohbet iletileri için kullanılabilir olan bu görünüm, gözden geçirenlerin etkinliği konuşma bağlamında görüntülemesine yardımcı olmak için bir uyarı iletisinden önce ve sonra en fazla beş ileti görüntüler. Bu bağlam, gözden geçirenlerin iletileri hızla değerlendirmesine ve daha bilinçli ileti çözümleme kararları vermesine yardımcı olur. Teams'de bulunan tüm satır içi resimler, emojiler ve çıkartmalar da dahil olmak üzere konuşmalara gerçek zamanlı ileti eklemeleri görüntülenir. İletilere resim veya metin dosyası ekleri görüntülenmez. Düzenlenen iletiler veya konuşma penceresinden silinmiş iletiler için bildirimler otomatik olarak görüntülenir. İleti çözümlendiğinde, ilişkili konuşma iletileri çözümlenen iletiyle birlikte korunmaz. Konuşma iletileri, uyarı iletisi tanımlandıktan sonra 60 güne kadar kullanılabilir.
 - **Kullanıcı geçmişi**: Kullanıcı geçmişi görünümü, iletiyi gönderen kullanıcı için herhangi bir iletişim uyumluluk ilkesi tarafından oluşturulan diğer tüm uyarıları görüntüler.
-- **Desen algılandı bildirimi**: Zaman içinde birçok taciz ve zorbalık eylemi ve aynı davranışın örneklerinin bir kullanıcı tarafından yeniden yinelenmesi gerekir. *Desen algılandı* bildirimi uyarı ayrıntılarında görüntülenir ve uyarıya dikkat çekmektedir. Desenlerin algılanması ilke başına temel alınır ve gönderen tarafından aynı alıcıya en az iki ileti gönderildiğinde son 30 gün içindeki davranışı değerlendirir. Araştırmacılar ve gözden geçirenler, uyarıyı uygun şekilde değerlendirmek üzere yinelenen davranışı belirlemek için bu bildirimi kullanabilir.
-- **Çeviri**: Bu görünüm, uyarı iletisi metnini her gözden geçiren için Microsoft 365 aboneliğindeki *Görüntülenen dil* ayarında yapılandırılan dile otomatik olarak dönüştürür. *Çeviri* görünümü, çok dilli kullanıcıları olan kuruluşlara yönelik araştırma desteğini genişletmeye yardımcı olur ve iletişim uyumluluğu gözden geçirme sürecinin dışında ek çeviri hizmetleri gereksinimini ortadan kaldırır. Microsoft çeviri hizmetleri kullanılarak *Çeviri* görünümü gerektiğinde açılıp kapatılabilir ve çok çeşitli dilleri destekler. Desteklenen dillerin tam listesi için bkz. [Microsoft Translator Dilleri](https://www.microsoft.com/translator/business/languages/). *Çeviri Dili Listesi'nde* listelenen diller *Çeviri* görünümünde desteklenir.
+- **Desen algılandı bildirimi**: Zaman içinde birçok taciz ve zorbalık eylemi, aynı davranışın örneklerinin bir kullanıcı tarafından yeniden yinelenmesidir. *Desen algılandı* bildirimi uyarı ayrıntılarında görüntülenir ve uyarıya dikkat çekmektedir. Desenlerin algılanması ilke başına temel alınır ve gönderen tarafından aynı alıcıya en az iki ileti gönderildiğinde son 30 gün içindeki davranışı değerlendirir. Araştırmacılar ve gözden geçirenler, uyarıyı uygun şekilde değerlendirmek üzere yinelenen davranışı belirlemek için bu bildirimi kullanabilir.
+- **Çeviri**: Bu görünüm, uyarı iletisi metnini her gözden geçiren için Microsoft 365 aboneliğindeki *Görüntülenen dil* ayarında yapılandırılan dile otomatik olarak dönüştürür. *Çeviri* görünümü, çok dilli kullanıcıları olan kuruluşlara yönelik araştırma desteğini genişletmeye yardımcı olur ve iletişim uyumluluğu gözden geçirme sürecinin dışında ek çeviri hizmetleri gereksinimini ortadan kaldırır. İletişim uyumluluğu, Microsoft çeviri hizmetlerini kullanarak metnin kullanıcının geçerli sistem ayarından farklı bir dilde olup olmadığını otomatik olarak algılar ve uyarı iletisi metnini buna göre görüntüler. Desteklenen dillerin tam listesi için bkz. [Microsoft Translator Dilleri](https://www.microsoft.com/translator/business/languages/). *Çeviri Dili Listesi'nde* listelenen diller *Çeviri* görünümünde desteklenir.
 
 ### <a name="step-3-decide-on-a-remediation-action"></a>3. Adım: Düzeltme eylemine karar verme
 

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: MASAÜSTÜ, mobil ve web için Office uygulamalarında duyarlılık etiketlerini yönetmek için BT yöneticilerine yönelik bilgiler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 61302c27f9c59cbedb9bc7f3456ca6e8a1fecbb7
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 24ddef2f66af1a707e061f40fcfced27d4094613
+ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68621902"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68685020"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office uygulamalarında duyarlılık etiketlerini yönetme
 
@@ -81,11 +81,11 @@ Listelenen sayılar, her özellik için gereken en düşük Office uygulaması s
 |[Değişkenlerle dinamik işaretler](#dynamic-markings-with-variables)                                              | Güncel Kanal: 2010+ <br /><br> Aylık Kurumsal Kanal: 2010+ <br /><br> Semi-Annual Enterprise Channel: 2102+ | 16.42+     | 2.42+ | 16.0.13328+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[İzinleri şimdi atayın](encryption-sensitivity-labels.md#assign-permissions-now)                                 | Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Kullanıcıların izin atamasına izin ver: <br /> - Kullanıcılardan özel izinler (kullanıcılar ve gruplar) isteme](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |Güncel Kanal: 2004+ <br /><br> Aylık Kurumsal Kanal: 2004+ <br /><br> Semi-Annual Enterprise Channel: 2008+ | 16.35+   | İnceleme altında   | İnceleme altında         | İnceleme altında                                                        |
-|[Kullanıcıların izin atamasına izin ver: <br /> - Kullanıcılardan özel izinler (kullanıcılar, gruplar ve kuruluşlar) isteme](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions)                     |Önizleme: [Geçerli Kanala Dağıtım (Önizleme)](https://office.com/insider)  | İnceleme altında   | İnceleme altında   | İnceleme altında         | İnceleme altında                                                        |
+|[Kullanıcıların izin atamasına izin ver: <br /> - Kullanıcılardan özel izinler (kullanıcılar, gruplar ve kuruluşlar) isteme](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions)                     |Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım  | İnceleme altında   | İnceleme altında   | İnceleme altında         | İnceleme altında                                                        |
 |[Etiketle ilgili kullanıcı etkinliğini denetleme](#auditing-labeling-activities)                      | Güncel Kanal: 2011+ <br /><br> Aylık Kurumsal Kanal: 2011+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ | 2.46+ | 16.0.13628+ | Evet |
 |[Kullanıcıların e-postalarına ve belgelerine etiket uygulamasını gerektirme](#require-users-to-apply-a-label-to-their-email-and-documents)   | Güncel Kanal: 2101+ <br /><br> Aylık Kurumsal Kanal: 2101+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.45+         | 2.47+ | 16.0.13628+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[İçeriğe otomatik olarak bir hassasiyet etiketi uygulama](apply-sensitivity-label-automatically.md) <br /> - Hassas bilgi türlerini kullanma                    | Güncel Kanal: 2009+ <br /><br> Aylık Kurumsal Kanal: 2009+ <br /><br> Semi-Annual Enterprise Channel: 2102+ | 16.44+ | İnceleme altında | İnceleme altında | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[İçeriğe otomatik olarak bir hassasiyet etiketi uygulama](apply-sensitivity-label-automatically.md) <br /> - Eğitilebilir sınıflandırıcıları kullanma                    | Güncel Kanal: 2105+ <br /><br> Aylık Kurumsal Kanal: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | İnceleme altında | İnceleme altında | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[İçeriğe otomatik olarak bir hassasiyet etiketi uygulama](apply-sensitivity-label-automatically.md) <br /> - Eğitilebilir sınıflandırıcıları kullanma                    | Güncel Kanal: 2105+ <br /><br> Aylık Kurumsal Kanal: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | İnceleme altında | İnceleme altında | [İnceleme altında |
 |Etiketlenmiş ve şifrelenmiş belgeler için [birlikte yazma ve Otomatik Kaydetme](sensitivity-labels-coauthoring.md) desteği | Güncel Kanal: 2107+ <br /><br> Aylık Kurumsal Kanal: 2107+ <br /><br> Semi-Annual Enterprise Channel: 2202+ |  16.51+ | 2.58+ | 16.0.14931+  | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[PDF desteği](#pdf-support)| Güncel Kanal: 2208+ <br /><br> Aylık Kurumsal Kanal: 2208+ <br /><br> Semi-Annual Enterprise Channel: İnceleme altında|  İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
 |[Duyarlılık çubuğu](#sensitivity-bar) ve [görüntü etiketi rengi](#label-colors) | Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım | İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
@@ -487,7 +487,7 @@ Duyarlılık etiketleri için 10 standart renkten birini seçmek için Microsoft
 
 Alt etiketler için renkleri seçemezsiniz çünkü bunlar etiket rengini üst etiketlerinden otomatik olarak devralır.
 
-Bir etiket varsayılan 10 renkten birinden farklı bir renk için yapılandırılmışsa **, Önceden atanmış müşteri rengi kullan** onay kutusunun seçili olduğunu ve standart renk seçeneklerinin kullanılamaz olduğunu görürsünüz. Önce onay kutusunu temizleyerek özel rengi standart renklerden biriyle değiştirebilir ve ardından standart renklerden birini seçebilirsiniz. 
+Bir etiket varsayılan 10 renkten birinden farklı bir renk için yapılandırılmışsa **, Önceden atanmış özel renk kullan** onay kutusunun seçili olduğunu ve standart renk seçeneklerinin kullanılabilir olmadığını görürsünüz. Önce onay kutusunu temizleyerek özel rengi standart renklerden biriyle değiştirebilir ve ardından standart renklerden birini seçebilirsiniz. 
 
 Uyumluluk portalını kullanarak farklı bir özel renk yapılandıramazsınız. Bunun yerine, sonraki bölümde açıklandığı gibi PowerShell kullanın.
 

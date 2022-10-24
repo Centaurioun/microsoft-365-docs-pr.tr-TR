@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Paylaşılan posta kutuları, birden çok kişinin aynı posta kutusuna erişmesi gerektiğinde kullanılır. Paylaşılan posta kutusu oluşturmadan önce bilmeniz gerekenleri öğrenin.
-ms.openlocfilehash: 9c34cf0658f9028a14d8fa37380b7df812089495
-ms.sourcegitcommit: 4f8200453d347de677461f27eb5a3802ce5cc888
+ms.openlocfilehash: 43986a533bf1daf8190a30379aefd844e7d974ec
+ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68542529"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68684626"
 ---
 # <a name="about-shared-mailboxes"></a>Paylaşılan posta kutuları hakkında
 
@@ -42,6 +42,16 @@ Eğer yönetici kullanıcıya bunu yapma yetkisi verdiyse, grup posta kutusu izn
 [Paylaşılan posta kutusu oluşturmadan](create-a-shared-mailbox.md) önce bilmeniz gereken bazı şeyler şunlardır:
 
 - **Lisans:** Paylaşılan posta kutunuza lisans atamadan en fazla 50 GB veri depolayabilir. Bu alan dolduktan sonra daha fazla veri depolamak için posta kutusuna bir lisans atamanız gerekir. Paylaşılan posta kutusu lisanslama hakkında daha fazla bilgi için bkz. [Exchange Online Sınırları](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#StorageLimits). Paylaşılan bir posta kutusu depolama sınırına ulaştığında bir süre e-posta almaya devam edersiniz, ancak yeni e-posta gönderemezsiniz. Bu süre de sona erdiğinde e-posta alamazsınız. Posta kutusuna ileti gönderenler, iletinin teslim edilmediğine ilişkin bir bilgi alır.
+
+> [!NOTE]
+>
+> Aşağıdaki senaryolar için Exchange Online Plan 2 lisansı gerekir:
+>
+> - Paylaşılan posta kutusunda 50 GB'tan fazla depolama alanı kullanılıyor.
+> - Paylaşılan posta kutusu yerinde arşivleme kullanır.
+> - Paylaşılan posta kutusu, dava beklemeye alınır.
+> 
+> Lisans atama hakkında adım adım yönergeler için bkz. [Kullanıcılara lisans atama](/microsoft-365/admin/manage/assign-licenses-to-users). 
 
 - **Kullanıcı izinleri:** Kullanıcılara paylaşılan posta kutusunu kullanma izinleri (üyelik) vermeniz gerekir. Paylaşılan bir posta kutusunu yalnızca kuruluşunuzdaki kişiler kullanabilir.
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 02/03/2022
+ms.date: 10/24/2022
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: b46457a8215fc1eb5480558b6aa68fcf34029de6
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: fa0a72f68542b12df5edec8aa1f7d3a7603cc60d
+ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68174874"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68684922"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma'da bulut korumasını açma
 
@@ -152,7 +152,7 @@ SubmitSamplesConsent
 
 1. Görev çubuğunda kalkan simgesini seçerek veya başlangıç menüsünde **Windows Güvenliği arayarak Windows Güvenliği** uygulamasını açın.
 
-2. **Virüs & tehdit koruması** kutucuğunu (veya sol menü çubuğundaki kalkan simgesini) seçin ve ardından **Ayarları yönet'in** altında **Virüs & tehdit koruması ayarları'nı** seçin.
+2. **Virüs & tehdit koruması** kutucuğunu (veya sol menü çubuğundaki kalkan simgesini) seçin ve ardından **Virüs & tehdit koruması ayarları'nın** altında **Ayarları yönet'i** seçin.
 
    :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Virüs & tehdit koruması ayarları" lightbox="../../media/wdav-protection-settings-wdsc.png":::
 

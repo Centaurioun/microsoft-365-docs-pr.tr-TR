@@ -9,6 +9,7 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
+ms.date: 10/24/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +19,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: e72e280c192e4d3cdc404985f0d8f7854c9d115b
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 60a92ef217e572ec8ea9554c2870191f581dfa70
+ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68636187"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68684971"
 ---
 # <a name="web-content-filtering"></a>Web içeriği filtreleme
 
@@ -184,7 +185,7 @@ Web içeriği filtreleme ilkeleri hangi site kategorilerinin hangi cihaz gruplar
 
 Yeni ilke eklemek için şu adımları izleyin:
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalında</a> **Ayarlar** > **Web içeriği filtreleme** > **+ İlke ekle'yi** seçin.
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalında</a> **Ayarlar** > **Uç Noktalar** > **Web içeriği filtreleme+ İlke** >  **ekle'yi** seçin.
 
 2. Bir ad belirtin.
 

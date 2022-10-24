@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 uygulamaları için, hassas verileri korumak için Azure Information Protection (AIP) eklentisinin yerleşik etiketlemeye geçişini anlayın.
-ms.openlocfilehash: 80cc5a22f3fe604f2579b321bd12546502386988
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: eb12c7cff4b3ca27f49503a3528a775af794901a
+ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68644779"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68684930"
 ---
 # <a name="migrate-the-azure-information-protection-aip-add-in-to-built-in-labeling-for-office-apps"></a>Azure Information Protection (AIP) eklentisini Office uygulamaları için yerleşik etiketlemeye geçirme
 
@@ -81,7 +81,7 @@ Bazı özellikler yalnızca Office uygulamaları için yerleşik etiketleme tara
 
 - Otomatik ve önerilen etiketleme için:
     - [Eğitilebilir sınıflandırıcılar](classifier-learn-about.md), [tam veri eşleşmesi (EDM)](sit-learn-about-exact-data-match-based-sits.md) ve [adlandırılmış varlıklar](named-entities-learn.md) içeren akıllı sınıflandırma hizmetlerine erişim
-    - Kullanıcılar yazarken hassas bilgilerin algılanması
+    - Kullanıcılar metni girerken hassas bilgilerin algılanması
     - Word'de, kullanıcılar tanımlanan hassas içeriği gözden geçirebilir ve kaldırabilir
 - Mevcut kullanıcı iş akışlarıyla tümleştirilmiş [duyarlılık çubuğu](sensitivity-labels-office-apps.md#sensitivity-bar)
 - [PDF desteği](sensitivity-labels-office-apps.md#pdf-support)
