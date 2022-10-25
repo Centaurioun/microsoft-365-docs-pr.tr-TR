@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 09/14/2022
+ms.date: 10/24/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-mdb-setup
 - highpri
 - tier1
-ms.openlocfilehash: f72c0115b896fe9cfc80c7e04b21112f4ba7bbef
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: 674b48c5c558cb4d31df85e439c1eb216c09f00c
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68096885"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68687618"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Cihazları İş için Microsoft Defender ekleme
 
@@ -247,8 +247,8 @@ Bir cihaz Intune kaydedildikten sonra cihaz grubuna ekleyebilirsiniz. [İş içi
 
 ## <a name="servers"></a>Sunucular
 
-> [!NOTE]
-> **Sunucu ekleme özelliği şu anda önizleme aşamasındadır**.
+> [!IMPORTANT]
+> Windows Server veya Linux Server örneğini eklemeyi planlıyorsanız, İş için Microsoft Defender sunucuları (önizleme) gibi ek bir lisansa ihtiyacınız olacaktır. Alternatif olarak [Sunucular için Microsoft Defender](/azure/defender-for-cloud/defender-for-servers-introduction) kullanabilirsiniz; ancak Sunucular için Defender Plan 1 veya Plan 2 gibi bir kurumsal plan eklediğinizde İş için Defender deneyiminiz değişebilir. Daha fazla bilgi edinmek için bkz. [Microsoft uç nokta güvenlik aboneliklerinin bir karışımına sahipsem ne olur?](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions).
 
 Sunucunuz için işletim sistemini seçin:
 

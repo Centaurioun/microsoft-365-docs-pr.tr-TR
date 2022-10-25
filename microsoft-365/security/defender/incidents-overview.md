@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender ile olay yanıtı
 description: Microsoft 365 Defender portalında cihazlar, kullanıcılar ve posta kutuları arasında görülen olayları araştırın.
-keywords: olaylar, uyarılar, araştırma, analiz etme, yanıt, bağıntı, saldırı, makineler, cihazlar, kullanıcılar, kimlikler, kimlik, posta kutusu, e-posta, 365, Microsoft, m365, olay yanıtı, siber saldırı
+keywords: olaylar, uyarılar, saldırı hikayesi, araştırma, analiz etme, yanıt, bağıntı, saldırı, makineler, cihazlar, kullanıcılar, kimlikler, kimlik, posta kutusu, e-posta, 365, Microsoft, m365, olay yanıtı, siber saldırı
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d1c43e36c4f05bfd6d3324453e641a7120ac2771
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: da8e2ea8c4f3c239324a2a15992a0bd831fca55d
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68060922"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688216"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Microsoft 365 Defender ile olay yanıtı
 
@@ -46,12 +46,6 @@ Bir saldırı hakkında içgörü elde etmek için tek tek uyarıların birlikte
 
 :::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="Microsoft 365 Defender varlıkların olaylarını bir olayla ilişkilendirmesi." lightbox="../../media/incidents-overview/incidents.png":::
 
-Olaylara Microsoft 365 Defender (4 dakika) içinde bu kısa genel bakışı izleyin.
-
-<br>
-
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
-
 İlgili uyarıların bir olay halinde gruplanması, bir saldırının kapsamlı bir görünümünü sağlar. Örneğin, şunları görebilirsiniz:
 
 - Saldırının başladığı yer.
@@ -64,13 +58,18 @@ Olaylara Microsoft 365 Defender (4 dakika) içinde bu kısa genel bakışı izle
 
 ## <a name="incidents-and-alerts-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalında olaylar ve uyarılar
 
-**Olayları olaylar & uyarıları > Microsoft 365 Defender** <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalının</a> hızlı başlatılmasıyla olayları yönetirsiniz. İşte bir örnek.
+**Olayları olaylar & uyarıları > Microsoft 365 Defender** <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target=" blank">portalının</a> hızlı başlatılmasıyla olayları yönetirsiniz. İşte bir örnek.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Microsoft 365 Defender portalındaki Olaylar sayfası." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
-Olay adı seçildiğinde olayın özeti görüntülenir ve ek bilgiler içeren sekmelere erişim sağlanır. İşte bir örnek.
+Bir olay adı seçildiğinde olayın tüm saldırı hikayesi görüntülenir, örneğin:
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Microsoft 365 Defender portalındaki bir olayın Özet sayfası" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+- Olay içindeki uyarı sayfası: Olayla ilgili uyarıların kapsamı ve aynı sekmedeki bilgileri.
+- Graf: Saldırının parçası olan farklı şüpheli varlıkları kullanıcılar, cihazlar ve posta kutuları gibi ilgili varlıklarına bağlayan saldırının görsel bir gösterimi. 
+
+Varlık ayrıntılarını doğrudan grafikten görüntüleyebilir ve dosya silme veya cihaz yalıtımı gibi yanıt seçenekleriyle bunlar üzerinde işlem yapabilirsiniz.
+
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Microsoft 365 Defender portalındaki bir olayın saldırı hikayesi sayfasını gösteren ekran görüntüsü." lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 Bir olayın ek sekmeleri şunlardır:
 
@@ -98,13 +97,9 @@ Bir olayın ek sekmeleri şunlardır:
 
   Olayın uyarılarında desteklenen tüm olaylar ve şüpheli varlıklar.
 
-- Graph (Önizleme)
+- Özet
 
-  Saldırının parçası olan farklı şüpheli varlıkları kullanıcılar, cihazlar ve posta kutuları gibi ilgili varlıklarına bağlayan saldırının görsel bir gösterimi.
-
-Bir olayla verileri arasındaki ilişki ve Microsoft 365 Defender portalındaki bir olayın sekmeleri aşağıdadır.
-
-:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="Bir olayın ve verilerinin Microsoft 365 Defender portalındaki bir olayın sekmeleriyle ilişkisi." lightbox="../../media/incidents-overview/incidents-security-center.png":::
+  Uyarılarla ilişkili etkilenen varlıklara hızlı bir genel bakış.
 
 > [!NOTE]
 > *Desteklenmeyen uyarı türü* uyarı durumu görüyorsanız, bu otomatik araştırma özelliklerinin otomatik araştırma çalıştırmak için bu uyarıyı alamayacağı anlamına gelir. Ancak [, bu uyarıları el ile araştırabilirsiniz](investigate-incidents.md#alerts).
@@ -124,11 +119,11 @@ Kendi olay yanıtı iş akışınız için şu adımları göz önünde bulundur
 
 1. Her olay için bir [saldırı ve uyarı araştırması ve analizi](investigate-incidents.md) başlatın:
 
-   1. Kapsamını ve önem derecesini ve **Özet** ve **Grafik** (Önizleme) sekmelerinden hangi varlıkların etkilendiğini anlamak için olayın özetini görüntüleyin.
+   1. Kapsamını, önem derecesini, algılama kaynağını ve hangi varlıkların etkilendiğini anlamak için olayın saldırı hikayesini görüntüleyin.
 
-   1. Uyarılar sekmesiyle bunların kaynağını, kapsamını ve önem derecesini anlamak için **uyarıları** analiz etmeye başlayın.
+   1. Olay içindeki uyarı hikayesiyle bunların kaynağını, kapsamını ve önem derecesini anlamak için uyarıları analiz etmeye başlayın.
 
-   1. Gerektiğinde Cihazlar, **Kullanıcılar** ve **Posta Kutuları** sekmeleriyle etkilenen **cihazlar, kullanıcılar** ve posta kutuları hakkında bilgi toplayın.
+   1. Gerektiğinde, etkilenen cihazlar, kullanıcılar ve posta kutuları hakkında grafla bilgi toplayın. Tüm ayrıntıları içeren bir açılır öğeyi açmak için herhangi bir varlığa sağ tıklayın.
 
    1. **araştırma** sekmesiyle Microsoft 365 Defender [bazı uyarıları otomatik olarak nasıl çözümlediğini](m365d-autoir.md) görün.
 

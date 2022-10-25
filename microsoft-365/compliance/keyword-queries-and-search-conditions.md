@@ -1,5 +1,6 @@
 ---
 title: eBulma için anahtar sözcük sorguları ve arama koşulları
+description: Microsoft 365'teki eBulma arama araçlarını kullanarak arama yapabileceğiniz e-posta ve belge özellikleri hakkında bilgi edinin.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,30 +13,32 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: Microsoft 365'teki eBulma arama araçlarını kullanarak arama yapabileceğiniz e-posta ve belge özellikleri hakkında bilgi edinin.
-ms.openlocfilehash: 98ff5faabbd91f2c4aa67a789b4d2c61aa7dc0b1
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 788633afddc695ad35d6caee116e99b536e6d0f7
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67826675"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688284"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>eBulma için anahtar sözcük sorguları ve arama koşulları
 
-Bu makalede, Exchange Online e-posta öğelerinde ve Microsoft Teams sohbet konuşmalarında arama yapabileceğiniz e-posta ve belge özellikleri ile Microsoft Purview uyumluluk portalı'deki eBulma arama araçlarını kullanarak SharePoint ve OneDrive İş sitelerinde depolanan belgeler açıklanmaktadır. Buna İçerik arama, Microsoft Purview eKeşif (Standart) ve Microsoft Purview eKeşif (Premium) dahildir (eBulma(Premium) içindeki eBulma aramaları *koleksiyon* olarak adlandırılır). Bu özellikleri aramak için Güvenlik & Uyumluluk PowerShell'deki -ComplianceSearch cmdlet'lerini de kullanabilirsiniz **\***. Makalede ayrıca şunlar açıklanmaktadır:
+Bu makalede, e-posta öğelerinde arayabileceğiniz e-posta ve belge özellikleri, Exchange Online Microsoft Teams sohbet konuşmaları ve Microsoft Purview uyumluluk portalı'daki eBulma arama araçlarını kullanarak SharePoint ve OneDrive İş sitelerinde depolanan belgeler açıklanmaktadır. 
+
+Buna İçerik arama, Microsoft Purview eKeşif (Standart) ve Microsoft Purview eKeşif (Premium) dahildir (eBulma(Premium) içindeki eBulma aramaları *koleksiyon* olarak adlandırılır). Bu özellikleri aramak için [Güvenlik & Uyumluluk PowerShell'deki -ComplianceSearch](/powershell/exchange/scc-powershell) cmdlet'lerini de kullanabilirsiniz **\***. 
+
+Bu makalede ayrıca şunlar açıklanmaktadır:
 
 - Arama sonuçlarınızı daraltmak için Boole arama işleçlerini, arama koşullarını ve diğer arama sorgusu tekniklerini kullanma.
 - SharePoint ve OneDrive İş hassas veri türlerini ve özel hassas veri türlerini arama.
-- Kuruluşunuzun dışındaki kullanıcılarla paylaşılan site içeriğini arama
+- Kuruluşunuzun dışındaki kullanıcılarla paylaşılan site içeriğini arama.
 
 Farklı eBulma aramaları oluşturma hakkında adım adım yönergeler için bkz:
 
@@ -46,19 +49,22 @@ Farklı eBulma aramaları oluşturma hakkında adım adım yönergeler için bkz
 > [!NOTE]
 > Uyumluluk portalında eBulma aramaları ve Güvenlik & Uyumluluk PowerShell'deki ilgili **\*-ComplianceSearch** cmdlet'leri Anahtar Sözcük Sorgu Dili'ni (KQL) kullanır. Daha ayrıntılı bilgi için bkz [. Anahtar Sözcük Sorgu Dili söz dizimi başvurusu](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="searchable-email-properties"></a>Aranabilir e-posta özellikleri
 
-Aşağıdaki tabloda, uyumluluk portalındaki eBulma arama araçları kullanılarak veya **New-ComplianceSearch veya Set-ComplianceSearch** cmdlet'i kullanılarak aranabilecek **e-posta** iletisi özellikleri listelenmiştir. Tabloda her  _özellik için property:value_ söz dizimi örneği ve örnekler tarafından döndürülen arama sonuçlarının açıklaması yer alır. EBulma araması için anahtar sözcükler kutusuna bu  `property:value` çiftleri yazabilirsiniz.
+Aşağıdaki tabloda, uyumluluk portalındaki eBulma arama araçları kullanılarak veya **New-ComplianceSearch veya Set-ComplianceSearch** cmdlet'i kullanılarak aranabilecek **e-posta** iletisi özellikleri listelenmiştir. Tabloda her  _özellik için property:value_ söz dizimi örneği ve örnekler tarafından döndürülen arama sonuçlarının açıklaması yer alır. EBulma araması için anahtar sözcükler kutusuna bu  `property:value` çiftleri girebilirsiniz.
 
 > [!NOTE]
 > E-posta özelliklerinde arama yaparken, belirtilen özelliğin boş veya boş olduğu öğeleri aramak mümkün değildir. Örneğin, konu satırı boş olan e-posta iletilerini aramak için **subject:"" özelliğinin:***değer* çiftinin kullanılması sıfır sonuç döndürür. Bu, site ve kişi özelliklerinde arama yaparken de geçerlidir.
 
-|Özellik|Özellik açıklaması|Örnekler|Örnekler tarafından döndürülen arama sonuçları|
-|---|---|---|---|
-|AttachmentNames|E-posta iletisine eklenen dosyaların adları.|`attachmentnames:annualreport.ppt` <p> `attachmentnames:annual*`|annualreport.ppt adlı ekli bir dosyası olan iletiler. İkinci örnekte, joker karakter ( * ) kullanıldığında, ekin dosya adında "yıllık" sözcüğü bulunan iletiler döndürülüyor. <sup>1</sup>|`bcc:pilarp@contoso.com` <p> `bcc:pilarp` <p> `bcc:"Pilar Pinilla"`|Tüm örnekler Gizli alanına Pilar Pinilla eklenmiş iletileri döndürür.<br>([Bkz. Alıcı Genişletmesi](keyword-queries-and-search-conditions.md#recipient-expansion))|
-|Kategori|Aranacak kategoriler. Kategoriler, kullanıcılar tarafından Outlook veya Web üzerinde Outlook (eski adıyla Outlook Web App) kullanılarak tanımlanabilir. Olası değerler: <ul><li>Mavi<li>Yeşil<li>Turuncu<li>Mor<li>Kırmızı<li>Sarı</li></ul>|`category:"Red Category"`|Kaynak posta kutularında kırmızı kategoriye atanmış iletiler.|
-|Cc|E-posta iletisinin Bilgi alanı. <sup>1</sup>|`cc:pilarp@contoso.com` <p> `cc:"Pilar Pinilla"`|Her iki örnekte de Bilgi alanında Pilar Pinilla'nın belirtildiği iletiler.<br>([Bkz. Alıcı Genişletmesi](keyword-queries-and-search-conditions.md#recipient-expansion))|
-|Folderid|Belirli bir posta kutusu klasörünün klasör kimliği (GUID). Bu özelliği kullanırsanız, belirtilen klasörün bulunduğu posta kutusunda arama yapmaya özen gösterin. Yalnızca belirtilen klasör aranacak. Klasördeki alt klasörler aranmayacak. Alt klasörleri aramak için, aramak istediğiniz alt klasörün Folderid özelliğini kullanmanız gerekir. <p> Folderid özelliğini arama ve belirli bir posta kutusunun klasör kimliklerini almak için betik kullanma hakkında daha fazla bilgi için bkz. [Hedeflenen koleksiyonlar için İçerik aramasını kullanma](use-content-search-for-targeted-collections.md).|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000` <p> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|İlk örnek, belirtilen posta kutusu klasöründeki tüm öğeleri döndürür. İkinci örnek, belirtilen posta kutusu klasöründeki garthf@contoso.com tarafından gönderilen veya alınan tüm öğeleri döndürür.|
+|**Özellik**|**Özellik açıklaması**|**Örnekler**|**Örnekler tarafından döndürülen arama sonuçları**|
+|:-----------|:-----------------------|:-----------|:------------------------------------------|
+|AttachmentNames|E-posta iletisine eklenen dosyaların adları.|`attachmentnames:annualreport.ppt` <p> `attachmentnames:annual*`|*annualreport.ppt* adlı ekli bir dosyası olan iletiler. İkinci örnekte, joker karakteri ( * ) kullanıldığında, ekin dosya adında *yıllık* sözcüğü bulunan iletiler döndürülüyor. <sup>1</sup>
+|Gizli|E-posta iletisinin Gizli alanı. <sup>1</sup>|`bcc:pilarp@contoso.com` <p> `bcc:pilarp` <p> `bcc:"Pilar Pinilla"`|Tüm örnekler Gizli alanına *Pilar Pinilla* eklenmiş iletileri döndürür.<br>([Bkz. Alıcı Genişletmesi](keyword-queries-and-search-conditions.md#recipient-expansion))|
+|Kategori|Aranacak kategoriler. Kategoriler, kullanıcılar tarafından Outlook veya Web üzerinde Outlook (eski adıyla Outlook Web App) kullanılarak tanımlanabilir. Olası değerler: <ul><li>Mavi<li>Yeşil<li>Turuncu<li>Mor<li>Kırmızı<li>Sarı</li></ul>|`category:"Red Category"`|Kaynak posta kutularında *kırmızı* kategoriye atanmış iletiler.|
+|Cc|E-posta iletisinin Bilgi alanı. <sup>1</sup>|`cc:pilarp@contoso.com` <p> `cc:"Pilar Pinilla"`|Her iki örnekte de Bilgi alanında *Pilar Pinilla'nın* belirtildiği iletiler.<br>([Bkz. Alıcı Genişletmesi](keyword-queries-and-search-conditions.md#recipient-expansion))|
+|Folderid|Belirli bir posta kutusu klasörünün klasör kimliği (GUID). Bu özelliği kullanırsanız, belirtilen klasörün bulunduğu posta kutusunda arama yapmaya özen gösterin. Yalnızca belirtilen klasör aranacak. Klasördeki alt klasörler aranmayacak. Alt klasörleri aramak için, aramak istediğiniz alt klasörün *Folderid* özelliğini kullanmanız gerekir. <p> *Folderid* özelliğini arama ve belirli bir posta kutusunun klasör kimliklerini almak için betik kullanma hakkında daha fazla bilgi için bkz. [Hedeflenen koleksiyonlar için İçerik aramasını kullanma](use-content-search-for-targeted-collections.md).|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000` <p> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|İlk örnek, belirtilen posta kutusu klasöründeki tüm öğeleri döndürür. İkinci örnek, belirtilen posta kutusu klasöründeki *garthf@contoso.com* tarafından gönderilen veya alınan tüm öğeleri döndürür.|
 |Kaynak|E-posta iletisinin göndereni. <sup>1</sup>|`from:pilarp@contoso.com` <p> `from:contoso.com`|Belirtilen kullanıcı tarafından gönderilen veya belirtilen bir etki alanından gönderilen iletiler.<br>([Bkz. Alıcı Genişletmesi](keyword-queries-and-search-conditions.md#recipient-expansion))|
 |HasAttachment|İletinin eki olup olmadığını gösterir. **true** veya **false** değerlerini kullanın.|`from:pilar@contoso.com AND hasattachment:true`|Belirtilen kullanıcı tarafından gönderilen ve ekleri olan iletiler.|
 |Önemi|Gönderenin ileti gönderirken belirtebileceği e-posta iletisinin önemi. Varsayılan olarak, gönderen önem derecesini **yüksek** veya **düşük** olarak belirlemediği sürece iletiler normal öneme sahip olarak gönderilir.|`importance:high` <p> `importance:medium` <p> `importance:low`|Yüksek önem, orta önem veya düşük önem olarak işaretlenmiş iletiler.|
@@ -223,7 +229,7 @@ Posta kutularını veya ortak klasörleri ararken posta özelliklerini kullanara
 |---|---|
 |İleti türü|Aranacak ileti türü. Bu, Kind e-posta özelliğiyle aynı özelliktir. Olası değerler: <ul><li>Kişiler</li><li>Dokümanlar</li><li>E-posta</li><li>externaldata</li><li>Faks</li><li>Im</li><li>Günlük</li><li>Toplantı</li><li>microsoftteams</li><li>Notlar</li><li>Mesaj</li><li>rssfeeds</li><li>Görev</li><li>Sesli</li></ul>|
 |Katılımcı|E-posta iletisindeki tüm kişiler alanları. Bu alanlar Kimden, Kime, Bilgi ve Gizli alanlarıdır. ([Bkz. Alıcı Genişletmesi](keyword-queries-and-search-conditions.md#recipient-expansion))|
-|Tür|E-posta öğesinin ileti sınıfı özelliği. Bu, ItemClass e-posta özelliğiyle aynı özelliktir. Aynı zamanda çok değerli bir koşuldur. Birden çok ileti sınıfı seçmek için **CTRL** tuşunu basılı tutun ve ardından koşula eklemek istediğiniz açılan listede iki veya daha fazla ileti sınıfına tıklayın. Listede seçtiğiniz her ileti sınıfı, ilgili arama sorgusundaki **OR** işleci tarafından mantıksal olarak bağlanır. <p> Exchange tarafından kullanılan ve İleti sınıfı listesinden seçebileceğiniz ileti sınıflarının (ve karşılık gelen ileti **sınıfı** kimliklerinin) listesi için bkz [. Öğe Türleri ve İleti Sınıfları](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes).|
+|Tür|E-posta öğesinin ileti sınıfı özelliği. Bu, ItemClass e-posta özelliğiyle aynı özelliktir. Aynı zamanda çok değerli bir koşuldur. Birden çok ileti sınıfı seçmek için **CTRL** tuşunu basılı tutun ve ardından koşula eklemek istediğiniz açılan listeden iki veya daha fazla ileti sınıfı seçin. Listede seçtiğiniz her ileti sınıfı, ilgili arama sorgusundaki **OR** işleci tarafından mantıksal olarak bağlanır. <p> Exchange tarafından kullanılan ve İleti sınıfı listesinden seçebileceğiniz ileti sınıflarının (ve karşılık gelen ileti **sınıfı** kimliklerinin) listesi için bkz [. Öğe Türleri ve İleti Sınıfları](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes).|
 |Alınan|E-posta iletisinin alıcı tarafından alındığı tarih. Bu, Alınan e-posta özelliğiyle aynı özelliktir.|
 |Alıcı|E-posta iletisindeki tüm alıcı alanları. Bu alanlar Kime, Bilgi ve Gizli alanlarıdır. ([Bkz. Alıcı Genişletmesi](keyword-queries-and-search-conditions.md#recipient-expansion))|
 |Gönderen|E-posta iletisinin göndereni.|
@@ -271,27 +277,19 @@ Koşul eklediğinizde, koşul için özellik türüyle ilgili bir işleç seçeb
 Arama koşullarını kullanırken aşağıdakileri göz önünde bulundurun.
 
 - Koşul, **AND** işleci tarafından anahtar sözcük sorgusuna (anahtar sözcük kutusunda belirtilen) mantıksal olarak bağlanır. Bu, öğelerin hem anahtar sözcük sorgusunu hem de sonuçlara dahil edilecek koşulu karşılaması gerektiğini gösterir. Koşulların sonuçlarınızı daraltmanıza bu şekilde yardımcı olur.
-
 - Arama sorgusuna iki veya daha fazla benzersiz koşul eklerseniz (farklı özellikler belirten koşullar), bu koşullar **AND** işleci tarafından mantıksal olarak bağlanır. Bu, yalnızca tüm koşulları karşılayan öğelerin (herhangi bir anahtar sözcük sorgusuna ek olarak) döndürüldüğünü gösterir.
-
 - Aynı özellik için birden fazla koşul eklerseniz, bu koşullar **OR** işleci tarafından mantıksal olarak bağlanır. Bu, anahtar sözcük sorgusunu karşılayan öğelerin ve koşullardan herhangi birinin döndürüldüğünü gösterir. Bu nedenle, aynı koşulların grupları **OR** işleci tarafından birbirine bağlanır ve ardından benzersiz koşul kümeleri **AND** işleci tarafından bağlanır.
-
 - Tek bir koşula birden çok değer (virgül veya noktalı virgülle ayrılmış) eklerseniz, bu değerler **OR** işleci tarafından bağlanır. Başka bir deyişle, koşuldaki özellik için belirtilen değerlerden herhangi birini içeren öğeler döndürülür.
-
 - **İçerir** ve **Eşittir** mantığına sahip bir işleç kullanan tüm koşullar, basit dize aramaları için benzer arama sonuçları döndürür. Basit dize araması, koşulda joker karakter içermeyen bir dizedir). Örneğin, **Herhangi birine Eşit'i** kullanan bir koşul, herhangi birini **içerir** seçeneğini kullanan bir koşulla aynı öğeleri döndürür.
-
 - Anahtar sözcükler kutusu ve koşullar kullanılarak oluşturulan arama sorgusu, **Arama sayfasında,** seçili aramanın ayrıntılar bölmesinde görüntülenir. Sorguda, gösterimin  `(c:c)` sağındaki her şey sorguya eklenen koşulları gösterir.
-
 - Koşullar yalnızca arama sorgusuna özellikler ekler; işleç eklemez. Bu nedenle ayrıntı bölmesinde görüntülenen sorgu, gösterimin  `(c:c)` sağında işleçleri göstermez. KQL, sorgu yürütülürken mantıksal işleçleri (önceden açıklanan kurallara göre) ekler.
-
-- Koşulların sırasını yeniden sorgulamak için sürükle ve bırak denetimini kullanabilirsiniz. Bir koşulun denetimine tıklayın ve yukarı veya aşağı taşıyın.
-
+- Koşulların sırasını yeniden sorgulamak için sürükle ve bırak denetimini kullanabilirsiniz. Koşulun denetimini seçin ve yukarı veya aşağı taşıyın.
 - Daha önce açıklandığı gibi, bazı koşul özellikleri birden çok değer (noktalı virgülle ayrılmış) yazmanıza olanak sağlar. Her değer **OR** işleci tarafından mantıksal olarak bağlanır ve sorguyla `(filetype=docx) OR (filetype=pptx) OR (filetype=xlsx)`sonuçlanır. Aşağıdaki çizimde, birden çok değer içeren bir koşul örneği gösterilmektedir.
 
     ![Birden çok değer içeren bir koşul.](../media/SearchConditions1.png)
 
   > [!NOTE]
-  > Birden çok koşul ekleyemezsiniz (aynı özellik için **koşul ekle'ye** tıklayarak). Bunun yerine, önceki örnekte gösterildiği gibi koşul için birden çok değer sağlamanız gerekir (noktalı virgülle ayrılmıştır).
+  > Birden çok koşul ekleyemezsiniz (aynı özellik için **koşul ekle'yi** seçerek). Bunun yerine, önceki örnekte gösterildiği gibi koşul için birden çok değer sağlamanız gerekir (noktalı virgülle ayrılmıştır).
 
 ### <a name="examples-of-using-conditions-in-search-queries"></a>Arama sorgularında koşulları kullanma örnekleri
 
@@ -355,7 +353,7 @@ Bazı özel karakterler arama dizinine dahil edilmez ve bu nedenle aranamaz. Bu,
 
 ## <a name="searching-for-site-content-shared-with-external-users"></a>Dış kullanıcılarla paylaşılan site içeriğini arama
 
-SharePoint'te depolanan belgeleri ve kuruluşunuzun dışındaki kişilerle paylaşılan siteleri OneDrive İş için uyumluluk merkezindeki eBulma arama araçlarını da kullanabilirsiniz. Bu, kuruluşunuzun dışında paylaşılmakta olan hassas veya özel bilgileri belirlemenize yardımcı olabilir. Bir anahtar sözcük sorgusunda  `ViewableByExternalUsers` özelliğini kullanarak bunu yapabilirsiniz. Bu özellik, aşağıdaki paylaşım yöntemlerinden biri kullanılarak dış kullanıcılarla paylaşılan belgeleri veya siteleri döndürür:
+Ayrıca, uyumluluk portalında eBulma arama araçlarını kullanarak SharePoint'te depolanan belgeleri ve kuruluşunuzun dışındaki kişilerle paylaşılan siteleri OneDrive İş arayabilirsiniz. Bu, kuruluşunuzun dışında paylaşılmakta olan hassas veya özel bilgileri belirlemenize yardımcı olabilir. Bir anahtar sözcük sorgusunda  `ViewableByExternalUsers` özelliğini kullanarak bunu yapabilirsiniz. Bu özellik, aşağıdaki paylaşım yöntemlerinden biri kullanılarak dış kullanıcılarla paylaşılan belgeleri veya siteleri döndürür:
 
 - Kullanıcıların kuruluşunuzda kimliği doğrulanmış kullanıcı olarak oturum açmasını gerektiren paylaşım daveti.
 - Bu bağlantıya sahip olan herkesin kimliğinin doğrulanması gerekmeden kaynağa erişmesine olanak tanıyan anonim bir konuk bağlantısı.
@@ -433,21 +431,12 @@ Karakter sınırları hakkında daha fazla bilgi için bkz. [eBulma arama sını
 ## <a name="search-tips-and-tricks"></a>Arama ipuçları ve püf noktaları
 
 - Anahtar sözcük aramaları büyük/küçük harfe duyarlı değildir. Örneğin, **kedi** ve **CAT** aynı sonuçları döndürür.
-
 - Boole işleçleri **VE**, **OR**, **NOT** ve **NEAR** büyük harf olmalıdır.
-
 - İki anahtar sözcük veya iki  `property:value` ifade arasındaki boşluk **, AND** kullanımıyla aynıdır. Örneğin,  `from:"Sara Davis" subject:reorganization` Sara Davis tarafından gönderilen ve konu satırında yeniden düzenleme sözcüğünü içeren tüm iletileri döndürür.
-
 - Biçimle eşleşen söz dizimini `property:value` kullanın. Değerler büyük/küçük harfe duyarlı değildir ve işlecinden sonra boşluk olamaz. Boşluk varsa, hedeflenen değer tam metin araması olur. Örneğin `to: pilarp` , pilarp'e gönderilen iletiler yerine anahtar sözcük olarak "pilarp" sözcüğünü arar.
-
 - Kime, Kimden, Bilgi veya Alıcılar gibi bir alıcı özelliğinde arama yaparken, alıcıyı belirtmek için SMTP adresi, diğer ad veya görünen ad kullanabilirsiniz. Örneğin, pilarp@contoso.com, pilarp veya "Pilar Pinilla" kullanabilirsiniz.
-
 - Yalnızca ön ek aramalarını kullanabilirsiniz; örneğin, **cat\**_ veya _* set\**_. Sonek aramaları (_*\*kedi**), infix aramaları (**c\*t**) ve alt dize aramaları (**\*kedi\***) desteklenmez.
-
 - Bir özellikte arama yaparken, arama değeri birden çok sözcükden oluşuyorsa çift tırnak işareti (" ") kullanın. Örneğin `subject:budget Q1` , konu satırında **bütçe** içeren ve iletinin herhangi bir yerinde veya ileti özelliklerinden herhangi birinde **Q1** içeren iletileri döndürür. kullanma `subject:"budget Q1"` , konu satırının herhangi bir yerinde **bütçe Q1** içeren tüm iletileri döndürür.
-
 - Belirli bir özellik değeriyle işaretlenmiş içeriği arama sonuçlarınızdan dışlamak için, özelliğin adının önüne eksi işareti (-) koyun. Örneğin, `-from:"Sara Davis"` Sara Davis tarafından gönderilen tüm iletileri hariç tutar.
-
 - İleti türüne göre öğeleri dışarı aktarabilirsiniz. Örneğin, Microsoft Teams'de Skype konuşmalarını ve sohbetlerini dışarı aktarmak için söz dizimini `kind:im`kullanın. Yalnızca e-posta iletilerini döndürmek için kullanabilirsiniz `kind:email`. Microsoft Teams'de sohbetleri, toplantıları ve aramaları döndürmek için kullanın `kind:microsoftteams`.
-
 - Daha önce açıklandığı gibi, sitelerde arama yaparken yalnızca belirtilen sitedeki öğeleri döndürmek için özelliğini kullanırken `path` URL'nin sonuna sondakini `/` eklemeniz gerekir. Sondaki `/`öğesini eklemezseniz, benzer yol adına sahip bir sitedeki öğeler de döndürülür. Örneğin, kullanırsanız `path:sites/HelloWorld` veya `sites/HelloWorld_West` adlı `sites/HelloWorld_East` sitelerdeki öğeler de döndürülür. Yalnızca HelloWorld sitesinden öğe döndürmek için kullanmanız `path:sites/HelloWorld/`gerekir.

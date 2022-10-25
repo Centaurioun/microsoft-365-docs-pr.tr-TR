@@ -1,5 +1,6 @@
 ---
 title: Microsoft Purview uyumluluk portalı İçerik araması oluşturma ve çalıştırma
+description: Farklı Microsoft 365 hizmetlerindeki içeriği aramak için uyumluluk merkezindeki İçerik arama eBulma aracını kullanın.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,9 +11,9 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MED150
@@ -20,91 +21,81 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-description: Farklı Microsoft 365 hizmetlerindeki içeriği aramak için uyumluluk merkezindeki İçerik arama eBulma aracını kullanın.
-ms.openlocfilehash: 34440fed3db4f8826040c0c9771e1acf89a57ace
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 80049d041bce7c959eb9d0b00d4fec86a94ad1de
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67821879"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688397"
 ---
 # <a name="create-a-content-search"></a>İçerik araması oluşturma
 
 Kuruluşunuzda e-posta, belgeler ve anlık ileti konuşmaları gibi yerinde içerik aramak için Microsoft Purview uyumluluk portalı İçerik arama eBulma aracını kullanabilirsiniz. Bu bulut tabanlı Microsoft 365 veri kaynaklarında içerik aramak için bu aracı kullanın:
   
 - posta kutularını Exchange Online
-
 - SharePoint Online siteleri ve OneDrive İş hesapları
-
 - Microsoft Teams
-
 - Microsoft 365 Grupları
-
 - Yammer Grupları
 
 Bir arama çalıştırdıktan sonra, arama açılır sayfasında içerik konumlarının sayısı ve tahmini arama sonuçları sayısı görüntülenir. Arama sorgusuyla eşleşen en çok öğeye sahip içerik konumları gibi istatistikleri hızla görüntüleyebilirsiniz. Bir arama çalıştırdıktan sonra sonuçların önizlemesini görebilir veya yerel bir bilgisayara aktarabilirsiniz.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="before-you-run-a-search"></a>Arama çalıştırmadan önce
 
 - <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Uyumluluk portalında</a> İçerik arama aracına erişmek için (aramaları çalıştırmak ve sonuçları önizlemek ve sonuçları dışarı aktarmak için), yönetici, uyumluluk yetkilisi veya eBulma yöneticisinin uyumluluk portalındaki eBulma Yöneticisi rol grubunun üyesi olması gerekir. Daha fazla bilgi için bkz. [eBulma izinleri atama](assign-ediscovery-permissions.md).
-
 - Exchange karma dağıtımında, şirket içi posta kutularında e-postaları aramak için İçerik arama aracını kullanamazsınız. Aracı yalnızca bulut tabanlı posta kutularını aramak için kullanabilirsiniz.
-
 - Exchange karma dağıtımında, şirket içi posta kutularında Teams sohbet verilerini arayabilirsiniz. Daha fazla bilgi için bkz. [Şirket içi kullanıcılar için Teams sohbet verileri](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
 
 ## <a name="create-and-run-a-search"></a>Arama oluşturma ve çalıştırma
   
-1. <https://compliance.microsoft.com> Adresine gidin ve uygun izinlere atanmış bir hesabın kimlik bilgilerini kullanarak oturum açın.
+1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) gidin ve uygun izinlere atanmış bir hesabın kimlik bilgilerini kullanarak oturum açın.
 
-2. Uyumluluk portalının sol gezinti bölmesinde **İçerik araması'na** tıklayın.
+2. Uyumluluk portalının sol gezinti bölmesinde **İçerik araması'nı** seçin.
 
-3. **İçerik arama** sayfasında **Yeni arama'ya** tıklayın.
+3. **İçerik arama** sayfasında **Yeni arama'yı** seçin.
 
-4. Aramayı tanımlamaya yardımcı olan isteğe bağlı bir açıklama olan arama için bir ad yazın. Aramanın adı kuruluşunuzda benzersiz olmalıdır.
+4. **Ad ve açıklama** sayfasında, aramayı tanımlamaya yardımcı olacak isteğe bağlı bir açıklama olan arama için bir ad girin. Aramanın adı kuruluşunuzda benzersiz olmalıdır.
 
 5. **Konumlar** sayfasında, aramak istediğiniz içerik konumlarını seçin. Posta kutuları, siteler ve ortak klasörlerde arama yapabilirsiniz.
 
     ![Aranacak içerik konumlarını seçin.](../media/ContentSearchLocations.png)
   
-   1. **Exchange posta kutuları**: İki durumlu düğmeyi **Açık** olarak ayarlayın ve ardından Aranacak posta kutularını belirtmek için **Kullanıcıları, grupları veya ekipleri seçin'e** tıklayın. Kullanıcı posta kutularını ve dağıtım gruplarını bulmak için arama kutusunu kullanın. Microsoft Ekibi (kanal iletileri için), Office 365 Grubu ve Yammer Grubu ile ilişkili posta kutusunda da arama yapabilirsiniz. Posta kutularında depolanan uygulama verileri hakkında daha fazla bilgi için bkz. [eBulma için posta kutularında depolanan içerik](what-is-stored-in-exo-mailbox.md).
+   1. **Exchange posta kutuları**: İki durumlu düğmeyi **Açık** olarak ayarlayın ve ardından Aranacak posta kutularını belirtmek için **Kullanıcıları, grupları veya ekipleri seçin'i** seçin. Kullanıcı posta kutularını ve dağıtım gruplarını bulmak için arama kutusunu kullanın. Microsoft Ekibi (kanal iletileri için), Microsoft 365 Grubu ve Yammer Grubu ile ilişkili posta kutusunda da arama yapabilirsiniz. Posta kutularında depolanan uygulama verileri hakkında daha fazla bilgi için bkz. [eBulma için posta kutularında depolanan içerik](what-is-stored-in-exo-mailbox.md).
 
-   2. **SharePoint siteleri**: İki durumlu düğmeyi **Açık** olarak ayarlayın ve ardından **Site seç'e** tıklayarak SharePoint sitelerini ve Aranacak OneDrive hesaplarını belirtin. Aramak istediğiniz her sitenin URL'sini yazın. Microsoft Ekibi, Office 365 Grubu veya Yammer Grubu için SharePoint sitesinin URL'sini de ekleyebilirsiniz.
+   2. **SharePoint siteleri**: İki durumlu düğmeyi **Açık** olarak ayarlayın ve ardından **Site seç'i** seçerek SharePoint sitelerini ve Aranacak OneDrive hesaplarını belirtin. Aramak istediğiniz her sitenin URL'sini girin. Microsoft Ekibi, Microsoft 365 Grubu veya Yammer Grubu için SharePoint sitesinin URL'sini de ekleyebilirsiniz.
   
-   3. **Ortak klasörleri değiştirme**: Exchange Online kuruluşunuzdaki ortak klasörlerde arama yapmak için iki durumlu düğmeyi **Açık** olarak ayarlayın. Aranacak belirli ortak klasörleri seçemezsiniz. Ortak klasörlerde arama yapmak istemiyorsanız iki durumlu düğmeyi kapalı bırakın.
+   3. **Exchange ortak klasörleri**: Exchange Online kuruluşunuzdaki tüm ortak klasörlerde arama yapmak için iki durumlu düğmeyi **Açık** olarak ayarlayın. Aranacak belirli ortak klasörleri seçemezsiniz. Tüm ortak klasörlerde arama yapmak istemiyorsanız iki durumlu düğmeyi kapalı bırakın.
   
    4. Şirket içi kullanıcılar için Teams içeriği aramak için bu onay kutusunu seçili tutun. Örneğin, kuruluştaki tüm Exchange posta kutularında arama yaparsanız ve bu onay kutusu seçiliyse, şirket içi kullanıcılar için Teams sohbet verilerini depolamak için kullanılan bulut tabanlı depolama alanı arama kapsamına eklenir. Daha fazla bilgi için bkz. [Şirket içi kullanıcılar için Teams sohbet verilerini arama](search-cloud-based-mailboxes-for-on-premises-users.md).
 
-6. **Arama koşullarınızı tanımlayın** sayfasında bir anahtar sözcük sorgusu yazın ve gerekirse arama sorgusuna koşullar ekleyin.
+6. **Koşullar** sayfasında bir anahtar sözcük sorgusu girin ve gerekirse arama sorgusuna koşullar ekleyin.
 
    ![Arama sorgusunu yapılandırın.](../media/ContentSearchQuery.png)
 
    1. Anahtar sözcükleri, gönderilen ve alınan tarihler gibi ileti özelliklerini veya dosya adları veya belgenin son değiştirildiği tarih gibi belge özelliklerini belirtin. **AND**, **OR**, **NOT** ve **NEAR** gibi boole işleci kullanan daha karmaşık sorgular kullanabilirsiniz. Anahtar sözcük kutusunu boş bırakırsanız, belirtilen içerik konumlarında bulunan tüm içerik arama sonuçlarına eklenir. Daha fazla bilgi için bkz [. eBulma için anahtar sözcük sorguları ve arama koşulları](keyword-queries-and-search-conditions.md).
 
-   2. Alternatif olarak, **Anahtar sözcük listesini göster** onay kutusuna tıklayabilir ve her satıra bir anahtar sözcük yazabilirsiniz. Bunu yaparsanız, her satırdaki anahtar sözcükler, oluşturulan arama sorgusundaki **OR** işlecine benzer bir mantıksal işleç (**c:s**) ile bağlanır.
+   2. Alternatif olarak, **Anahtar sözcük listesini göster** onay kutusunu seçebilir ve her satıra bir anahtar sözcük girebilirsiniz. Bunu yaparsanız, her satırdaki anahtar sözcükler, oluşturulan arama sorgusundaki **OR** işlecine benzer bir mantıksal işleç (**c:s**) ile bağlanır.
 
-      Anahtar sözcük listesini neden kullanmalısınız? Her anahtar sözcükle eşleşen öğe sayısını gösteren istatistikler alabilirsiniz. Bu, hangi anahtar sözcüklerin en (ve en az) etkili olduğunu hızla belirlemenize yardımcı olabilir. Satır içinde bir anahtar sözcük tümceciği (parantez içinde) de kullanabilirsiniz. Anahtar sözcük listesi ve arama istatistikleri hakkında daha fazla bilgi için bkz. [Aramalar için anahtar sözcük istatistiklerini alma](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-searches).
+      **Anahtar sözcük listesini neden kullanmalısınız**? Her anahtar sözcükle eşleşen öğe sayısını gösteren istatistikler alabilirsiniz. Bu, hangi anahtar sözcüklerin en (ve en az) etkili olduğunu hızla belirlemenize yardımcı olabilir. Satır içinde bir anahtar sözcük tümceciği (parantez içinde) de kullanabilirsiniz. Anahtar sözcük listesi ve arama istatistikleri hakkında daha fazla bilgi için bkz. [Aramalar için anahtar sözcük istatistiklerini alma](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-searches).
 
       > [!NOTE]
       > Büyük anahtar sözcük listelerinin neden olduğu sorunları azaltmaya yardımcı olmak için anahtar sözcük listesinde en fazla 20 satırla sınırlısınız.
 
    3. Bir aramayı daraltmak ve daha iyileştirilmiş bir sonuç kümesi döndürmek için arama koşulları ekleyebilirsiniz. Her koşul, aramayı başlattığınızda oluşturulan ve çalıştırılan arama sorgusuna bir yan tümce ekler. Koşul, **and** işlecine benzer bir mantıksal işleç (**c:c**) tarafından anahtar sözcük sorgusuna (anahtar sözcük kutusunda belirtilen) mantıksal olarak bağlanır. Bu, öğelerin sonuçlara dahil edilmesi için hem anahtar sözcük sorgusunu hem de bir veya daha fazla koşulu karşılaması gerektiğini gösterir. Koşulların sonuçlarınızı daraltmanıza bu şekilde yardımcı olur. Arama sorgusunda kullanabileceğiniz koşulların listesi ve açıklaması için bkz [. Arama koşulları](keyword-queries-and-search-conditions.md#search-conditions).
 
-7. Arama ayarlarını gözden geçirin (ve gerekirse düzenleyin) ve ardından başlatmak için aramayı gönderin.
+7. Arama ayarlarını gözden geçirin (ve gerekirse düzenleyin) ve ardından aramayı başlatmak için **Gönder'i** seçin.
   
-Bu içerik aramasına yeniden erişmek veya **İçerik arama** sayfasında listelenen diğer içerik aramalarına erişmek için aramayı seçin ve **aç'a** tıklayın.
+Bu içerik aramasına yeniden erişmek veya **İçerik arama** sayfasında listelenen diğer içerik aramalarına erişmek için, arama özetini ve arama istatistiklerini görüntülemek için bir arama seçin.
+
+farklı Microsoft 365 hizmetlerinde içerik arama gibi İçerik arama hakkında daha fazla bilgi için bkz. [İçerik araması için özellik başvurusu](content-search-reference.md).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 İçerik araması oluşturup çalıştırdıktan sonra gerçekleştirilecek sonraki adımların listesi aşağıdadır.
 
 - [Arama sonuçlarını önizleme](preview-ediscovery-search-results.md)
-
 - [Arama sonuçları için istatistikleri görüntüleme](view-keyword-statistics-for-content-search.md)
-
 - [Arama sonuçlarını dışarı aktarma](export-search-results.md)
-
 - [Bir arama raporunu dışa aktarma](export-a-content-search-report.md)
-
-## <a name="more-information"></a>Daha fazla bilgi
-
-farklı Microsoft 365 hizmetlerinde içerik arama gibi İçerik arama hakkında daha fazla bilgi için bkz. [İçerik araması için özellik başvurusu](content-search-reference.md).

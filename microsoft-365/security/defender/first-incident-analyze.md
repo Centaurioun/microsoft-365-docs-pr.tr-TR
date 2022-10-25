@@ -1,7 +1,7 @@
 ---
 title: Adım 1. İlk olayınızı önceliklendirme ve analiz etme
 description: Microsoft 365 Defender'deki ilk olayınızın analizini önceliklendirme ve analize başlama.
-keywords: olaylar, uyarılar, araştırma, bağıntı, saldırı, makineler, cihazlar, kullanıcılar, kimlikler, kimlik, posta kutusu, e-posta, 365, Microsoft, m365, olay yanıtı, siber saldırı
+keywords: olaylar, uyarılar, saldırı hikayesi, araştırma, bağıntı, saldırı, makineler, cihazlar, kullanıcılar, kimlikler, kimlik, posta kutusu, e-posta, 365, Microsoft, m365, olay yanıtı, siber saldırı
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -24,12 +24,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b2e10cd5e3d615495a688484dd8351cecb1564f4
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 2b3b31019b641f45f50fce229d4b7cced1002c25
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68080051"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688343"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Adım 1. İlk olayınızı önceliklendirme ve analiz etme
 
@@ -104,9 +104,9 @@ Microsoft 365 Defender kullanarak verileri okumanın ve analiz etmenin birden ç
 
 İşte bir örnek:
 
-1. Öncelik belirleme önceliği belirlendikten sonra analist, olay adını seçerek ayrıntılı bir analiz başlatır. Bu sayfada verilerin analize yardımcı olması için sekmelerde görüntülendiği **Olay Özeti** açılır. **Uyarılar** sekmesinin altında uyarı türleri görüntülenir. Analistler ilgili algılama kaynağında detaya gitmek için her uyarıya tıklayabilir.
+1. Öncelik belirleme önceliği belirlendikten sonra analist, olay adını seçerek ayrıntılı bir analiz başlatır. Bu sayfada verilerin analize yardımcı olmak için sekmelerde görüntülendiği **Saldırı hikayesi** açılır. **Uyarılar hikayesi** sekmesinin altında uyarı türleri görüntülenir. Analistler ilgili algılama kaynağında detaya gitmek için her uyarıya tıklayabilir.
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="Bir olayın Özet sekmesi" lightbox="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="Bir olayın saldırı hikayesini gösteren ekran görüntüsü." lightbox="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png":::
 
     Her algılama kaynağının hangi etki alanını kapsadığı hakkında hızlı bir kılavuz için bu makalenin [Algıla](#detection-by-microsoft-365-defender) bölümünü gözden geçirin.
 

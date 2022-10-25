@@ -1,5 +1,6 @@
 ---
 title: İçerik arama sonuçlarını dışarı aktarma
+description: arama sonuçlarını Microsoft Purview uyumluluk portalı bir İçerik aramasından yerel bir bilgisayara aktarın. Email sonuçları PST dosyaları olarak dışarı aktarılır. SharePoint ve OneDrive İş sitelerindeki içerik yerel Office belgeleri olarak dışarı aktarılır.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,22 +13,20 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- content-search
 search.appverid:
 - MOE150
 - MED150
 - MET150
-ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: arama sonuçlarını Microsoft Purview uyumluluk portalı bir İçerik aramasından yerel bir bilgisayara aktarın. Email sonuçları PST dosyaları olarak dışarı aktarılır. SharePoint ve OneDrive İş sitelerindeki içerik yerel Office belgeleri olarak dışarı aktarılır.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 42d823f3d9a798b75f8d82cab46cbfa5ce900d4c
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 9de3a0346fabd9da9b567a3f1b1326d3a09beb34
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67826939"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68687892"
 ---
 # <a name="export-content-search-results"></a>İçerik arama sonuçlarını dışarı aktarma
 
@@ -35,35 +34,30 @@ ms.locfileid: "67826939"
   
 İçerik aramasının sonuçlarını dışarı aktarmak için sonuçların hazırlanması ve yerel bir bilgisayara indirilmesi gerekir. Arama sonuçlarını dışarı aktarmaya yönelik bu adımlar, Microsoft Purview eKeşif (Standart) servis talepleri ile ilişkili bir aramanın sonuçlarını dışarı aktarmak için de geçerlidir.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="before-you-export-search-results"></a>Arama sonuçlarını dışarı aktarmadan önce
 
 - Arama sonuçlarını dışarı aktarmak için, Microsoft Purview uyumluluk portalı'de Dışarı aktarma yönetimi rolüne atanmış olmanız gerekir. Bu rol, yerleşik eBulma Yöneticisi rol grubuna atanır. Varsayılan olarak Kuruluş Yönetimi rol grubuna atanmaz. Daha fazla bilgi için bkz. [eBulma izinleri atama](assign-ediscovery-permissions.md).
-
 - Arama sonuçlarını dışarı aktarmak için kullandığınız bilgisayarın aşağıdaki sistem gereksinimlerini karşılaması gerekir:
   
   - Windows'un en son sürümü (32 bit veya 64 bit)
-  
   - Microsoft .NET Framework 4.7 veya üzeri
-  
+
 - eBulma Dışarı Aktarma Aracı'nı çalıştırmak için Microsoft Edge<sup>1'i</sup> kullanmanız gerekir. Arama sonuçlarını dışarı aktarmak için Internet Explorer 11'in kullanılması artık desteklenmiyor<sup>2</sup>.
   
   > [!NOTE]
-  > <sup>1</sup> Microsoft Edge'de yapılan son değişikliklerin bir sonucu olarak ClickOnce desteği artık varsayılan olarak etkin değildir. Edge'de ClickOnce desteğini etkinleştirme yönergeleri için bkz. [Microsoft Edge'de eKeşif Dışarı Aktarma Aracı'nı kullanma](configure-edge-to-export-search-results.md). Ayrıca Microsoft, ClickOnce uygulamaları için üçüncü taraf uzantılar veya eklentiler üretmez. Üçüncü taraf uzantıları veya eklentileri olan desteklenmeyen bir tarayıcı kullanarak arama sonuçlarını dışarı aktarma desteklenmez.
+  > <sup>1</sup> Microsoft Edge'de yapılan son değişikliklerin bir sonucu olarak SelectOnce desteği artık varsayılan olarak etkin değildir. Edge'de SelectOnce desteğini etkinleştirme yönergeleri için bkz. [Microsoft Edge'de eKeşif Dışarı Aktarma Aracı'nı kullanma](configure-edge-to-export-search-results.md). Ayrıca Microsoft, SelectOnce uygulamaları için üçüncü taraf uzantılar veya eklentiler üretmez. Üçüncü taraf uzantıları veya eklentileri olan desteklenmeyen bir tarayıcı kullanarak arama sonuçlarını dışarı aktarma desteklenmez.
   >
   > <sup>2</sup> Ağustos 2021'den itibaren, Microsoft 365 uygulamaları ve hizmetleri artık Internet Explorer 11'i (IE11) desteklemeyecektir ve kullanıcılar düşük bir deneyime sahip olabilir veya bu uygulama ve hizmetlere bağlanamayabilir. Bu uygulamalar ve hizmetler, desteğin sorunsuz bir şekilde sona ermesini sağlamak için önümüzdeki haftalar ve aylar içinde aşamalı olarak kullanıma sunulacaktır. Her uygulama ve hizmet, bağımsız zamanlamalarla aşamalı olarak kullanıma alınıyor. Daha fazla bilgi için bu [blog gönderisini inceleyin](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666).
 
 - 2. Adımda arama sonuçlarını indirmek için kullandığınız eBulma Dışarı Aktarma Aracı, otomasyonu desteklemez (betik kullanarak veya cmdlet'leri çalıştırarak). 1. Adım'daki hazırlık sürecini veya 2. Adım'daki indirme işlemini otomatikleştirmenizi kesinlikle öneririz. Bu işlemlerden birini otomatikleştirirseniz Microsoft Desteği sorunlarla karşılaşırsanız yardım sağlamaz.
-
 - Arama sonuçlarını yerel bir bilgisayara indirmenizi öneririz. Şirketinizin güvenlik duvarı veya ara sunucu altyapısının arama sonuçlarını indirirken sorunlara neden olmasını ortadan kaldırmak için arama sonuçlarını ağınızın dışındaki bir sanal masaüstüne indirmeyi düşünebilirsiniz. Bu, çok sayıda dosyayı dışarı aktarırken Azure veri bağlantılarında oluşan zaman aşımlarını azaltabilir. Sanal masaüstleri hakkında daha fazla bilgi için bkz. [Windows Sanal Masaüstü](https://azure.microsoft.com/services/virtual-desktop).
-
 - Arama sonuçlarını indirirken performansı artırmak için, büyük bir sonuç kümesi döndüren aramaları daha küçük aramalara bölmeyi göz önünde bulundurun. Örneğin, daha hızlı indirilebilen daha küçük bir sonuç kümesi döndürmek için arama sorgularında tarih aralıklarını kullanabilirsiniz.
-  
 - Arama sonuçlarını dışarı aktardığınızda, veriler yerel bilgisayarınıza indirilmeden önce geçici olarak Microsoft bulutunda Microsoft tarafından sağlanan bir Azure Depolama konumunda depolanır. Kuruluşunuzun Azure'da .blob.core.windows.net (joker karakter dışarı **\*** aktarmanız için benzersiz bir tanımlayıcıyı temsil eder) uç noktasına bağlanaabildiğinden emin olun. Arama sonuçları verileri oluşturulduktan iki hafta sonra Azure Depolama konumundan silinir. 
-  
 - Kuruluşunuz İnternet ile iletişim kurmak için bir ara sunucu kullanıyorsa, arama sonuçlarını dışarı aktarmak için kullandığınız bilgisayarda ara sunucu ayarlarını tanımlamanız gerekir (böylece dışarı aktarma aracı proxy sunucunuz tarafından doğrulanabilir). Bunu yapmak için  *machine.config*  dosyasını Windows sürümünüzle eşleşen konumda açın. 
   
   - **32 bit:** `%windir%\Microsoft.NET\Framework\[version]\Config\machine.config`
-  
   - **64 bit:** `%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
   
     *machine.config* dosyasına ve `</configuration>` etiketleri arasında `<configuration>` bir yere aşağıdaki satırları ekleyin. ve `Port` değerlerini kuruluşunuz için doğru değerlerle değiştirmeyi `ProxyServer` unutmayın; örneğin, `proxy01.contoso.com:80`. 
@@ -85,9 +79,9 @@ ms.locfileid: "67826939"
 
 İlk adım, arama sonuçlarını dışarı aktarma için hazırlamaktır. Sonuçları hazırladığınızda, bunlar Microsoft bulutunda Microsoft tarafından sağlanan bir Azure Depolama konumuna yüklenir. Posta kutuları ve sitelerden gelen içerik, saatte en fazla 2 GB oranında karşıya yüklenir.
   
-1. Uyumluluk portalında, sonuçları dışarı aktarmak istediğiniz içerik aramasını seçin.
+1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com), sonuçları dışarı aktarmak istediğiniz içerik aramasını seçin.
   
-2. Açılır sayfanın alt kısmındaki **Eylemler** menüsünde **Sonuçları dışarı aktar'a** tıklayın.
+2. Açılır sayfanın en altındaki **Eylemler** menüsünde **Sonuçları dışarı aktar'ı** seçin.
 
    ![Eylemler menüsünde sonuçları dışarı aktar seçeneği.](../media/ActionMenuExportResults.png)
 
@@ -98,9 +92,7 @@ ms.locfileid: "67826939"
    ![Çıkış seçeneklerini dışarı aktarın.](../media/ExportOutputOptions.png)
 
     - **Tanınmayan biçime sahip olanlar hariç olmak üzere tüm öğeler şifrelenir veya başka nedenlerle dizine eklenmemiştir**. Bu seçenek yalnızca dizine alınan öğeleri dışarı aktarır.
-  
     - **Tanınmayan biçime sahip öğeler de dahil olmak üzere tüm öğeler şifrelenir veya başka nedenlerle dizine eklenmemiştir**. Bu seçenek dizine alınmış ve dizine alınmamış öğeleri dışarı aktarır.
-  
     - **Yalnızca tanınmayan biçime sahip olan, şifrelenen veya başka nedenlerle dizine eklenemeyen öğeler**. Bu seçenek yalnızca dizinlenmemiş öğeleri dışarı aktarır.
 
       Kısmen dizine alınan öğelerin nasıl dışarı aktarıldıklarının açıklaması için [Daha fazla bilgi](#more-information) bölümüne bakın. Kısmen dizine alınan öğeler hakkında daha fazla bilgi için bkz. [İçerik aramasında kısmen dizine alınan öğeler](partially-indexed-items-in-content-search.md).
@@ -110,11 +102,8 @@ ms.locfileid: "67826939"
    ![Exchange seçenekleri.](../media/ExchangeExportOptions.png)
 
     - **Her posta kutusu için bir PST dosyası**: Arama sonuçlarını içeren her kullanıcı posta kutusu için bir PST dosyası dışarı aktarır. Kullanıcının arşiv posta kutusundan elde edilen sonuçlar aynı PST dosyasına eklenir. Bu seçenek, kaynak posta kutusundan posta kutusu klasör yapısını yeniden oluşturur.
-  
     - **Tüm iletileri içeren bir PST dosyası**: Aramaya dahil edilen tüm kaynak posta kutularından gelen arama sonuçlarını içeren tek bir PST dosyasını ( *Exchange.pst* adlı) dışarı aktarır. Bu seçenek, her ileti için posta kutusu klasör yapısını yeniden oluşturur.
-  
     - **Tek bir klasördeki tüm iletileri içeren bir PST dosyası**: Arama sonuçlarını, tüm iletilerin tek bir üst düzey klasörde bulunduğu tek bir PST dosyasına aktarır. Bu seçenek, gözden geçirenlerin her öğenin özgün posta kutusu klasör yapısında gezinmek zorunda kalmadan öğeleri kronolojik düzende (öğeler gönderme tarihine göre sıralanır) gözden geçirmesine olanak tanır.
-  
     - **Tek tek iletiler**: .msg biçimini kullanarak arama sonuçlarını tek tek e-posta iletileri olarak dışarı aktarır. Bu seçeneği seçerseniz, e-posta arama sonuçları dosya sistemindeki bir klasöre aktarılır. Tek tek iletilerin klasör yolu, sonuçları bir PST dosyasına aktardıysanız kullanılanla aynıdır.
   
 5. Aşağıdaki ek seçenekleri yapılandırın:
@@ -131,7 +120,7 @@ ms.locfileid: "67826939"
    > [!IMPORTANT]
    > Sıkıştırılmış (sıkıştırılmış) bir klasördeki dosyaların dışarı aktarılması, dışarı aktarma sürelerini artırır.
   
-6. **Dışarı aktarma** işlemini başlatmak için Dışarı Aktar'a tıklayın. Arama sonuçları indirilmeye hazırlanır, yani özgün içerik konumlarından toplanır ve ardından Microsoft bulutundaki bir Azure Depolama konumuna yüklenir. Bu işlem birkaç dakika sürebilir.
+6. **Dışarı aktarma** işlemini başlatmak için Dışarı Aktar'ı seçin. Arama sonuçları indirilmeye hazırlanır, yani özgün içerik konumlarından toplanır ve ardından Microsoft bulutundaki bir Azure Depolama konumuna yüklenir. Bu işlem birkaç dakika sürebilir.
 
 Dışarı aktarılan arama sonuçlarını indirme yönergeleri için sonraki bölüme bakın.
   
@@ -139,31 +128,31 @@ Dışarı aktarılan arama sonuçlarını indirme yönergeleri için sonraki bö
 
 Sonraki adım, arama sonuçlarını Azure Depolama konumundan yerel bilgisayarınıza indirmektir.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Dışarı aktarılan arama sonuçları, 1. Adımda dışarı aktarma işini oluşturduktan sonraki 14 gün içinde indirilmelidir.
   
 1. Uyumluluk portalındaki **İçerik arama** sayfasında **Dışarı Aktarmalar** sekmesini seçin
   
-   Dışarı aktarma işlerinin listesini oluşturduğunuz dışarı aktarma işini gösterecek şekilde güncelleştirmek için **Yenile'ye** tıklamanız gerekebilir. Dışarı aktarma işlerinin adı, arama adına **eklenmiş _Export** karşılık gelen aramayla aynı ada sahiptir.
+   Dışarı aktarma işlerinin listesini oluşturduğunuz dışarı aktarma işini gösterecek şekilde güncelleştirmek için **Yenile'yi** seçmeniz gerekebilir. Dışarı aktarma işlerinin adı, arama adına **eklenmiş _Export** karşılık gelen aramayla aynı ada sahiptir.
   
 2. 1. Adımda oluşturduğunuz dışarı aktarma işini seçin.
 
-3. Açılan sayfada **, Anahtarı dışarı aktar'ın** altında **Panoya kopyala'ya** tıklayın. Arama sonuçlarını indirmek için 6. adımda bu anahtarı kullanırsınız.
+3. Açılan sayfada **, Anahtarı dışarı aktar'ın** altında **Panoya kopyala'yı** seçin. Arama sonuçlarını indirmek için 6. adımda bu anahtarı kullanırsınız.
   
    > [!IMPORTANT]
    > Herkes eBulma Dışarı Aktarma aracını yükleyip başlatabileceğinden ve arama sonuçlarını indirmek için bu anahtarı kullanabileceğinden, parolaları veya güvenlikle ilgili diğer bilgileri koruyacağınız gibi bu anahtarı korumak için önlem almayı unutmayın.
 
-4. Açılır sayfanın üst kısmında **Sonuçları indir'e** tıklayın.
+4. Açılır sayfanın üst kısmında **Sonuçları indir'i** seçin.
 
-5. **eBulma Dışarı Aktarma Aracı'nı** yüklemeniz istenirse **Yükle'ye** tıklayın.
+5. **eBulma Dışarı Aktarma Aracı'nı** yüklemeniz istenirse **Yükle'yi** seçin.
 
 6. **eBulma Dışarı Aktarma Aracı'nda** aşağıdakileri yapın:
 
    ![eBulma Dışarı Aktarma Aracı.](../media/eDiscoveryExportTool.png)
 
-   1. 3. adımda kopyaladığınız dışarı aktarma anahtarını uygun kutuya yapıştırın.
+   1. 3. Adımda kopyaladığınız dışarı aktarma anahtarını uygun kutuya yapıştırın.
   
-   2. Arama sonucu dosyalarını indirmek istediğiniz konumu belirtmek için **Gözat'a** tıklayın.
+   2. Arama sonucu dosyalarını indirmek istediğiniz konumu belirtmek için **Gözat'ı** seçin.
   
       > [!IMPORTANT]
       >  İndirme sırasındaki yüksek ağ etkinliği nedeniyle, arama sonuçlarını yalnızca yerel bilgisayarınızdaki bir iç sürücüdeki bir konuma indirmeniz gerekir. En iyi indirme deneyimi için şu yönergeleri izleyin: <br/>
@@ -171,7 +160,7 @@ Sonraki adım, arama sonuçlarını Azure Depolama konumundan yerel bilgisayarı
       >- Arama sonucunu indirdiğiniz klasör için virüsten koruma taramasını devre dışı bırakın.<br/>
       >- Eşzamanlı indirme işleri için arama sonuçlarını farklı klasörlere indirin.
 
-7. Arama sonuçlarını bilgisayarınıza indirmek için **Başlat'a** tıklayın.
+7. Arama sonuçlarını bilgisayarınıza indirmek için **Başlat'ı** seçin.
   
     **eBulma Dışarı Aktarma Aracı**, indirilecek kalan öğelerin sayısının (ve boyutunun) tahmini de dahil olmak üzere dışarı aktarma işlemiyle ilgili durum bilgilerini görüntüler. Dışarı aktarma işlemi tamamlandığında dosyalara indirildikleri konumdan erişebilirsiniz.
 
@@ -179,19 +168,13 @@ Sonraki adım, arama sonuçlarını Azure Depolama konumundan yerel bilgisayarı
 
 Arama sonuçlarını dışarı aktarma hakkında daha fazla bilgi aşağıdadır.
   
-[Dışarı aktarma sınırları](#export-limits)
-  
-[Raporları dışarı aktarma](#export-reports)
-  
-[Kısmen dizinlenmiş öğeleri dışarı aktarma](#exporting-partially-indexed-items)
-
-[Tek tek iletileri veya PST dosyalarını dışarı aktarma](#exporting-individual-messages-or-pst-files)
-
-[RMS korumalı e-posta iletilerinin ve şifrelenmiş dosya eklerinin şifresini çözme](#decrypting-rms-protected-email-messages-and-encrypted-file-attachments)
-
-[Dışarı aktarılan öğelerin dosya adları](#filenames-of-exported-items)  
-  
-[Çeşitli](#miscellaneous)
+- [Dışarı aktarma sınırları](#export-limits)
+- [Raporları dışarı aktarma](#export-reports)
+- [Kısmen dizinlenmiş öğeleri dışarı aktarma](#exporting-partially-indexed-items)
+- [Tek tek iletileri veya PST dosyalarını dışarı aktarma](#exporting-individual-messages-or-pst-files)
+- [RMS korumalı e-posta iletilerinin ve şifrelenmiş dosya eklerinin şifresini çözme](#decrypting-rms-protected-email-messages-and-encrypted-file-attachments)
+- [Dışarı aktarılan öğelerin dosya adları](#filenames-of-exported-items)
+- [Çeşitli](#miscellaneous)
   
 ### <a name="export-limits"></a>Dışarı aktarma sınırları
 
@@ -202,37 +185,25 @@ Arama sonuçlarını dışarı aktarma hakkında daha fazla bilgi aşağıdadır
 - Arama sonuçlarını dışarı aktardığınızda, arama sonuçlarına ek olarak aşağıdaki raporlar da eklenir.
   
   - **Dışarı Aktarma Özeti** Dışarı aktarmanın özetini içeren bir Excel belgesi. Bu, arama yapılan içerik kaynağı sayısı, arama sonuçlarının tahmini ve indirilen boyutları ve dışarı aktarılan tahmini ve indirilen öğe sayısı gibi bilgileri içerir.
-  
   - **Bildirim** Arama sonuçlarına dahil edilen her öğe hakkında bilgi içeren bir bildirim dosyası (XML biçiminde).
-  
   - **Sonuç -ları** Arama sonucu olarak indirilen her öğe hakkında bilgi içeren bir Excel belgesi. E-posta için, sonuç günlüğü her ileti hakkında aşağıdakiler dahil olmak üzere bilgiler içerir:
   
     - İletinin kaynak posta kutusunda konumu (iletinin birincil posta kutusunda mı yoksa arşiv posta kutusunda mı olduğu dahil).
-  
     - İletinin gönderildiği veya alındığı tarih.
-
     - İletideki Konu satırı.
-
     - İletinin göndereni ve alıcıları.
-
     - Arama sonuçlarını dışarı aktarırken yinelenenleri kaldırma seçeneğini etkinleştirdiyseniz iletinin yinelenen ileti olup olmadığı. Yinelenen iletilerin **Öğeye Çoğalt** sütununda, iletiyi yinelenen olarak tanımlayan bir değeri vardır. **Öğeye Çoğalt** sütunundaki değer, dışarı aktarılan iletinin öğe kimliğini içerir. Daha fazla bilgi için bkz. [eBulma arama sonuçlarında yinelenenleri kaldırma](de-duplication-in-ediscovery-search-results.md).
 
       SharePoint ve OneDrive İş sitelerindeki belgeler için sonuç günlüğü, aşağıdakiler dahil olmak üzere her belge hakkında bilgi içerir:
 
       - Belgenin URL'si.
-
       - Belgenin bulunduğu site koleksiyonunun URL'si.
-
       - Belgenin son değiştirildiği tarih.
-
       - Belgenin adı (sonuç günlüğündeki Konu sütununda bulunur).
 
   - **Dizine Alınmamış Öğeler** Arama sonuçlarına dahil edilecek kısmen dizinlenmiş öğeler hakkında bilgi içeren bir Excel belgesi. Arama sonuçları raporunu oluştururken kısmen dizine alınan öğeleri dahil etmezseniz, bu rapor yine indirilir, ancak boş kalır.
-
   - **Hatalar ve Uyarılar** Dışarı aktarma sırasında karşılaşılan dosyalar için hatalar ve uyarılar içerir. Her bir hataya veya uyarıya özgü bilgiler için Hata Ayrıntıları sütununa bakın.
-
   - **Atlanan Öğeler** Arama sonuçlarını SharePoint'ten ve OneDrive İş sitelerden dışarı aktardığınızda, dışarı aktarma işlemi genellikle atlanan öğeler raporu (SkippedItems.csv) içerir. Bu raporda belirtilen öğeler genellikle indirilmeyecek öğelerdir(klasör veya belge kümesi gibi). Bu tür öğelerin dışarı aktarılmaması tasarım gereğidir. Atlanan diğer öğeler için, atlanan öğeler raporundaki 'Hata Türü' ve 'Hata Ayrıntıları' alanı, öğenin atlanma nedenini ve diğer arama sonuçlarıyla birlikte indirilmenin nedenini gösterir.
-
   - **Trace.log** Dışarı aktarma işlemiyle ilgili ayrıntılı günlük bilgilerini içerir ve dışarı aktarma sırasında sorunların ortaya çıkarılmasına yardımcı olabilir. Arama sonuçlarını dışarı aktarmayla ilgili bir sorun hakkında Microsoft Desteği içeren bir bilet açarsanız, bu izleme günlüğünü sağlamanız istenebilir.
   
     > [!NOTE]
@@ -264,16 +235,13 @@ Arama sonuçlarını dışarı aktarma hakkında daha fazla bilgi aşağıdadır
 
     Kısmen dizinlenmiş öğeleri dışarı aktarmayı seçerseniz, **Exchange içeriğini** farklı dışarı aktar altında seçtiğiniz seçeneğe bakılmaksızın, kısmen dizine alınan posta kutusu öğeleri ayrı bir PST dosyasında dışarı aktarılır.
 
-- Kısmen dizine alınan öğeler arama sonuçlarında döndürülürse (kısmen dizine alınan öğelerin diğer özellikleri arama ölçütleriyle eşleşdiğinden), kısmen dizine alınan öğeler normal arama sonuçlarıyla birlikte dışarı aktarılır. Bu nedenle, hem dizine alınan öğeleri hem de kısmen dizine alınan öğeleri dışarı aktarmayı seçerseniz ( **tanınmayan biçime sahip olanlar da dahil olmak üzere Tüm öğeler şifrelenir veya diğer nedenlerle dizine alınmazsa** dışarı aktarma seçeneği) normal sonuçlarla dışarı aktarılan kısmen dizine alınan öğeler Results.csv raporunda listelenir. Bunlar Dizinlenmemiş items.csv raporunda listelenmez.
+- Kısmen dizine alınan öğeler arama sonuçlarında döndürülürse (kısmen dizine alınan öğelerin diğer özellikleri arama ölçütleriyle eşleşdiğinden), kısmen dizine alınan öğeler normal arama sonuçlarıyla birlikte dışarı aktarılır. Bu nedenle, hem dizine alınan öğeleri hem de kısmen dizine alınan öğeleri dışarı aktarmayı seçerseniz ( **tanınmayan biçime sahip olanlar da dahil olmak üzere Tüm öğeler şifrelenir veya diğer nedenlerle dizine alınmazsa** dışarı aktarma seçeneği) normal sonuçlarla dışarı aktarılan kısmen dizine alınan öğeler Results.csv raporunda listelenir. Dizinlenmemiş items.csv raporunda listelenmez.
   
 ### <a name="exporting-individual-messages-or-pst-files"></a>Tek tek iletileri veya PST dosyalarını dışarı aktarma
   
 - İletinin dosya yolu adı Windows için karakter üst sınırını aşarsa, dosya yolu adı kesilir. Ancak özgün dosya yolu adı Bildirim ve Sonuçlar Günlüğü'nde listelenir.
-  
 - Daha önce açıklandığı gibi, e-posta arama sonuçları dosya sistemindeki bir klasöre aktarılır. Tek tek iletilerin klasör yolu, kullanıcının posta kutusundaki klasör yolunu çoğaltacak. Örneğin, kullanıcının gelen kutusundaki "ContosoCase101" adlı arama iletileri klasör yolunda  `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox`yer alır.
-
 - E-posta iletilerini tek bir klasördeki tüm iletileri içeren bir PST dosyasında dışarı aktarmayı seçerseniz, PST klasörünün en üst düzeyine **Silinmiş Öğeler** klasörü ve **Arama Klasörleri** klasörü eklenir. Bu klasörler boş.
-
 - Daha önce belirtildiği gibi, RMS korumalı iletilerin dışarı aktarıldığında şifresini çözmek için e-posta arama sonuçlarını tek tek iletiler olarak dışarı aktarmanız gerekir. E-posta arama sonuçlarını PST dosyası olarak dışarı aktarırsanız şifrelenmiş iletiler şifrelenmiş olarak kalır.
   
 ### <a name="decrypting-rms-protected-email-messages-and-encrypted-file-attachments"></a>RMS korumalı e-posta iletilerinin ve şifrelenmiş dosya eklerinin şifresini çözme
@@ -281,13 +249,9 @@ Arama sonuçlarını dışarı aktarma hakkında daha fazla bilgi aşağıdadır
 İçerik aramasının sonuçlarına dahil edilen tüm hak korumalı (RMS korumalı) e-posta iletilerini dışarı aktardığınızda şifresi çözülür. Ayrıca, [Microsoft şifreleme teknolojisiyle](encryption.md) şifrelenen ve arama sonuçlarında yer alan bir e-posta iletisine eklenen tüm dosyaların şifresi dışarı aktarıldığında da çözülür. Bu şifre çözme özelliği, eBulma Yöneticisi rol grubunun üyeleri için varsayılan olarak etkindir. Bunun nedeni, RMS Şifre Çözme yönetim rolünün varsayılan olarak bu rol grubuna atanmış olmasıdır. Şifrelenmiş e-posta iletilerini ve eklerini dışarı aktarırken aşağıdakileri göz önünde bulundurun:
   
 - Daha önce açıklandığı gibi, RMS korumalı iletileri dışarı aktarırken şifresini çözmek için arama sonuçlarını tek tek iletiler olarak dışarı aktarmanız gerekir. Arama sonuçlarını bir PST dosyasına aktarırsanız, RMS korumalı iletiler şifrelenmiş olarak kalır.
-
 - Şifresi çözülen iletiler **ResultsLog** raporunda tanımlanır. Bu rapor **, Kod Çözme Durumu** adlı bir sütun içerir ve bu sütundaki **Kod Çözme** değeri, şifresi çözülen iletileri tanımlar.
-
 - Arama sonuçlarını dışarı aktarırken dosya eklerinin şifresini çözmenin yanı sıra, arama sonuçlarının önizlemesini yaparken de şifresi çözülmüş dosyanın önizlemesini görüntüleyebilirsiniz. Hak korumalı e-posta iletisini yalnızca dışarı aktardıktan sonra görüntüleyebilirsiniz.
-
 - Şu anda, arama sonuçlarını dışarı aktarırken kullanılan şifre çözme özelliği SharePoint ve OneDrive İş sitelerinden şifrelenmiş içerik içermez. Ancak, Microsoft şifreleme teknolojileriyle şifrelenen ve SharePoint Online ile OneDrive İş depolanan belgeler için yakında destek sunulacaktır.
-
 - Birinin RMS korumalı iletilerin ve şifrelenmiş dosya eklerinin şifresini çözmesini engellemeniz gerekiyorsa, özel bir rol grubu oluşturmanız (yerleşik eBulma Yöneticisi rol grubunu kopyalayarak) ve ardından ÖZEL rol grubundan RMS Decrypt yönetim rolünü kaldırmanız gerekir. Ardından iletilerin şifresini çözmek istemediğiniz kişiyi özel rol grubunun bir üyesi olarak ekleyin.
   
 ### <a name="filenames-of-exported-items"></a>Dışarı aktarılan öğelerin dosya adları
@@ -313,9 +277,6 @@ Arama sonuçlarını dışarı aktarma hakkında daha fazla bilgi aşağıdadır
 ### <a name="miscellaneous"></a>Çeşitli
   
 - eBulma Dışarı Aktarma Aracı'nı kullanarak arama sonuçlarını indirirken şu hatayı alabilirsiniz: `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` Bu geçici bir hatadır ve genellikle Azure Depolama konumunda oluşur. Bu sorunu çözmek için eBulma Dışarı Aktarma Aracı'nı yeniden başlatacak olan [arama sonuçlarını indirmeyi](#step-2-download-the-search-results) yeniden deneyin.
-
 - Tüm arama sonuçları ve dışarı aktarma raporları İçerik araması ile aynı ada sahip bir klasöre eklenir. Dışarı aktarılan e-posta iletileri **Exchange** adlı bir klasörde bulunur. Belgeler **SharePoint** adlı bir klasörde bulunur.
-
 - SharePoint ve OneDrive İş sitelerindeki belgeler için dosya sistemi meta verileri, belgeler yerel bilgisayarınıza aktarıldığında korunur. Bu, belgeler dışarı aktarıldığında oluşturulan ve son değiştirilen tarihler gibi belge özelliklerinin değiştirilmediği anlamına gelir.
-
-- Arama sonuçlarınız SharePoint'ten arama sorgusuyla eşleşen bir liste öğesi eklerse, listedeki tüm satırlar, arama sorgusuyla eşleşen öğeye ve listedeki eklere ek olarak dışarı aktarılır. Bu davranışın nedeni, arama sonuçlarında döndürülen liste öğeleri için bir bağlam sağlamaktır. Ek liste öğeleri ve ekleri, dışarı aktarılan öğelerin sayısının arama sonuçlarının özgün tahmininden farklı olmasını sağlar.
+- Arama sonuçlarınız SharePoint'ten arama sorgusuyla eşleşen bir liste öğesi eklerse, listedeki tüm satırlar, arama sorgusuyla eşleşen öğeye ve listedeki eklere ek olarak dışarı aktarılır. Bu davranışın nedeni, arama sonuçlarında döndürülen liste öğeleri için bir bağlam sağlamaktır. Diğer liste öğeleri ve ekleri, dışarı aktarılan öğelerin sayısının arama sonuçlarının özgün tahmininden farklı olmasını sağlar.

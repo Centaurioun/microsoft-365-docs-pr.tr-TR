@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - met150
-ms.openlocfilehash: 17f58b7722614891e05c5c5101826735d1597db9
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 94892ff32f00dd1ceebf2a8bddfbb2518e96682d
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68639412"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688018"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Microsoft 365 Defender'da uyarıları araştırma
 
@@ -86,7 +86,7 @@ Office 365 için Microsoft Defender uyarılarına erişmek için aşağıdaki ro
 
 Ana uyarı sayfasını görmek için uyarının adını seçin. İşte bir örnek.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Microsoft 365 Defender portalında uyarının ayrıntıları" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Microsoft 365 Defender portalında uyarının ayrıntılarını gösteren ekran görüntüsü" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png":::
 
 Uyarıyı **yönet** **bölmesinden Ana uyarı sayfasını aç** eylemini de seçebilirsiniz.
 
@@ -117,7 +117,9 @@ Microsoft 365 Defender uyarılar Uç Nokta için Microsoft Defender, Office 365 
 | Uygulama İdaresi | `ma` |
 | Microsoft Veri Kaybı Önleme | `dl` |
 
-Varsayılan olarak, yalnızca güvenlik işlem merkezi için en uygun uyarılar etkinleştirilir. Tüm AAD IP risk algılamalarını almak istiyorsanız, **uyarı hizmeti** ayarı bölümünün altındaki Microsoft 365 Defender ayarı sayfasında bunu değiştirebilirsiniz. 
+Varsayılan olarak, yalnızca güvenlik işlem merkezi için en uygun uyarılar etkinleştirilir. Tüm AAD IP risk algılamalarını almak istiyorsanız, **uyarı hizmeti** ayarı bölümünün altındaki Microsoft 365 Defender ayarı sayfasında bunu değiştirebilirsiniz.
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-aadip-alert.png" alt-text="Microsoft 365 Defender portalında Azure AD kimlik koruma uyarıları ayarının ekran görüntüsü." lightbox="../../media/investigate-alerts/alerts-ss-aadip-alert.png":::
 
 > [!IMPORTANT]
 > Bazı bilgiler, ticari olarak piyasaya sürülmeden önce önemli ölçüde değiştirilebilen önceden yayımlanmış ürünle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
@@ -145,7 +147,7 @@ Ayrıntılar sayfası, seçili uyarının ayrıntılarını ve bununla ilgili ay
 
 Uyarıyı yönetmek için uyarı sayfasının özet ayrıntıları bölümünde Uyarıyı **yönet'i** seçin. Tek bir uyarı için **Uyarıyı yönet** bölmesinin bir örneği aşağıda verilmiştır.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Microsoft 365 Defender portalındaki Uyarıyı yönet bölümü" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Microsoft 365 Defender portalındaki Uyarıyı yönet bölümünün ekran görüntüsü" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png":::
 
 **Uyarıyı yönet** bölmesi şunları görüntülemenize veya belirtmenize olanak tanır:
 
@@ -168,19 +170,19 @@ Uyarıyı yönetmek için uyarı sayfasının özet ayrıntıları bölümünde 
 
 *Belirli bir uyarıya benzer bir uyarı kümesini yönetmek için* uyarı sayfasının özet ayrıntıları bölümündeki **INSIGHT** kutusunda **Benzer uyarıları görüntüle'yi** seçin.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" alt-text="Microsoft 365 Defender portalında uyarıyı yönetme":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" alt-text="Microsoft 365 Defender portalında uyarı seçme işleminin ekran görüntüsü":::
 
 **Uyarıları yönet** bölmesinden, tüm ilgili uyarıları aynı anda sınıflandırabilirsiniz. İşte bir örnek.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" alt-text="Microsoft 365 Defender portalında ilgili uyarıları yönetme":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" alt-text="Microsoft 365 Defender portalında ilgili uyarıları yönetme ekran görüntüsü":::
 
 Benzer uyarılar geçmişte zaten sınıflandırıldıysa, diğer uyarıların nasıl çözüldüğünü öğrenmek için Microsoft 365 Defender önerileri kullanarak zaman kazanabilirsiniz. Özet ayrıntıları bölümünde **Öneriler'i** seçin.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" alt-text="Uyarı önerileri seçme örneği":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" alt-text="Uyarı önerileri seçme örneğinin ekran görüntüsü":::
 
 **Öneriler** sekmesi araştırma, düzeltme ve önleme için sonraki adım eylemler ve öneriler sağlar. İşte bir örnek.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="Uyarı önerileri örneği":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="Uyarı önerileri örneğinin ekran görüntüsü":::
 
 ## <a name="suppress-an-alert"></a>Uyarıyı gizleme
 

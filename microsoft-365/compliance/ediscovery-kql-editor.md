@@ -1,5 +1,6 @@
 ---
 title: Arama sorguları oluşturmak için KQL düzenleyicisini kullanma
+description: İçerik arama, eBulma (Standart) ve eBulma (Premium) içinde eBulma arama sorgularını yapılandırmak için KQL düzenleyicisini kullanabilirsiniz.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,31 +12,33 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-description: İçerik arama, eBulma (Standart) ve eBulma (Premium) içinde eBulma arama sorgularını yapılandırmak için KQL düzenleyicisini kullanabilirsiniz.
-ms.openlocfilehash: 60dd9506beaebbb45d795c58f4f04b39d5c4b665
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: bfee0098300c6cb00bc456c5329f98f87e468461
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67826763"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68686582"
 ---
 # <a name="use-the-kql-editor-to-build-search-queries"></a>Arama sorguları oluşturmak için KQL düzenleyicisini kullanma
 
-Microsoft 365 eKeşif araçları aramasında yeni KQL sorgu deneyimi, İçerik arama, Microsoft Purview eKeşif (Standart) ve eBulma (Premium) içinde arama sorguları oluştururken geri bildirim ve rehberlik sağlar. Düzenleyiciye sorgu yazdığınızda, desteklenen aranabilir özellikler ve koşullar için otomatik tamamlama sağlar ve standart özellikler ve koşullar için desteklenen değerlerin listelerini sağlar. Örneğin, sorgunuzda e-posta özelliğini belirtirseniz `kind` düzenleyici, seçebileceğiniz desteklenen değerlerin listesini sunar. KQL düzenleyicisi, aramayı çalıştırmadan önce düzeltebileceğiniz olası sorgu hatalarını gerçek zamanlı olarak da görüntüler. En iyisi, standart koşul oluşturucusunda anahtar sözcükler ve koşullar kartlarını kullanarak sorguları el ile oluşturmak zorunda kalmadan karmaşık sorguları doğrudan düzenleyiciye yapıştırabilirsiniz.
+Microsoft Purview eKeşif araçları aramasında yeni Anahtar Sözcük Sorgu Dili (KQL) sorgu deneyimi, İçerik arama, Microsoft Purview eKeşif (Standart) ve eBulma (Premium) içinde arama sorguları oluştururken geri bildirim ve rehberlik sağlar. Düzenleyiciye sorgu girdiğinizde, desteklenen aranabilir özellikler ve koşullar için otomatik tamamlama sağlar ve standart özellikler ve koşullar için desteklenen değerlerin listesini sağlar. Örneğin, sorgunuzda e-posta özelliğini belirtirseniz `kind` düzenleyici, seçebileceğiniz desteklenen değerlerin listesini sunar. KQL düzenleyicisi, aramayı çalıştırmadan önce düzeltebileceğiniz olası sorgu hatalarını gerçek zamanlı olarak da görüntüler. En iyisi, standart koşul oluşturucusunda anahtar sözcükler ve koşullar kartlarını kullanarak sorguları el ile oluşturmak zorunda kalmadan karmaşık sorguları doğrudan düzenleyiciye yapıştırabilirsiniz.
   
 KQL düzenleyicisini kullanmanın başlıca avantajları şunlardır:
 
 - Rehberlik sağlar ve sıfırdan arama sorguları oluşturmanıza yardımcı olur.
-
 - Uzun ve karmaşık sorguları doğrudan düzenleyiciye hızlı bir şekilde yapıştırmanızı sağlar. Örneğin, karşı danışmandan karmaşık bir sorgu alırsanız, bunu koşul oluşturucusunu kullanmak yerine KQL düzenleyicisine yapıştırabilirsiniz.
-
 - Olası hataları hızla tanımlar ve sorunların nasıl çözüleceğini gösteren ipuçları görüntüler.
 
 EBulma (Standart) ve eBulma (Premium) içinde sorgu tabanlı tutmalar oluşturduğunuzda da KQL düzenleyicisi kullanılabilir.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="displaying-the-kql-editor"></a>KQL düzenleyicisini görüntüleme
 
@@ -55,7 +58,7 @@ Aşağıdaki bölümlerde KQL düzenleyicisinin nasıl öneriler sağladığına
 
 ### <a name="autocompletion-of-search-properties-and-operators"></a>Arama özelliklerini ve işleçlerini otomatik olarak tamamlama
 
-KQL düzenleyicisinde bir arama sorgusu yazmaya başladığınızda düzenleyici, seçebileceğiniz desteklenen arama özelliklerinin ( *özellik kısıtlamaları* olarak da adlandırılır) önerilen otomatik tamamlamasını görüntüler. Bu iki karakterle başlayan desteklenen özelliklerin listesini görüntülemek için en az iki karakter yazmanız gerekir. Örneğin, aşağıdaki ekran görüntüsü ile `Se`başlayan önerilen arama özelliklerini gösterir.
+KQL düzenleyicisine bir arama sorgusu girmeye başladığınızda düzenleyici, seçebileceğiniz desteklenen arama özelliklerinin ( *özellik kısıtlamaları* olarak da adlandırılır) önerilen otomatik tamamlamasını görüntüler. Bu iki karakterle başlayan desteklenen özelliklerin listesini görüntülemek için en az iki karakter yazmanız gerekir. Örneğin, aşağıdaki ekran görüntüsü ile `Se`başlayan önerilen arama özelliklerini gösterir.
 
 ![KQL düzenleyicisi desteklenen özellikler önerir](../media/KQLEditorAutoCompleteProperties.png)
 

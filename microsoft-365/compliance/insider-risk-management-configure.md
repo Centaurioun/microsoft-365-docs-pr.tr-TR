@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 5d3e889966576f4255de2442e7725d616448d555
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 460be0f6e84693504de56574688979733a28acd7
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68645043"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68687704"
 ---
 # <a name="get-started-with-insider-risk-management"></a>İçeriden risk yönetimini kullanmaya başlama
 
@@ -262,11 +262,14 @@ Kuruluşunuz için adli kanıt yapılandırmaya yönelik adım adım yönergeler
 
 4. **İlke zaman çerçeveleri** sayfasında, bir kullanıcı bir iç risk ilkesi için eşleşme tetiklediğinde etkin olacak [ilke zaman çerçevelerini](insider-risk-management-settings.md#policy-timeframes) seçin.
 5. **Akıllı algılamalar** sayfasında, insider risk ilkeleri için aşağıdaki ayarları yapılandırın:
-    - [Dosya türü dışlamaları](insider-risk-management-settings.md#file-type-exclusions)
-    - [Olağan dışı etkinlikler için puanı artırmak için en az günlük etkinlik sayısı](insider-risk-management-settings.md#minimum-number-of-daily-events-to-boost-score-for-unusual-activity)
-    - [Uyarı ses düzeyi](insider-risk-management-settings.md#alert-volume)
-    - [Uyarı durumunu Uç Nokta için Microsoft Defender](insider-risk-management-settings.md#microsoft-defender-for-endpoint-alert-statuses-preview)
-    - [Etki alanı ayarları](insider-risk-management-settings.md#domains)
+    - [Dosya etkinliği algılama](insider-risk-management-settings.md#file-activity-detection)
+    - [Uyarı birimi](insider-risk-management-settings.md#alert-volume)
+    - [Uyarı durumlarını Uç Nokta için Microsoft Defender](insider-risk-management-settings.md#microsoft-defender-for-endpoint-alert-statuses)
+    - [Etki alanları](insider-risk-management-settings.md#domains)
+    - [Hassas bilgi türü dışlama](insider-risk-management-settings.md#sensitive-info-types-exclusion)
+    - [Dosya yolu dışlamaları](insider-risk-management-settings.md#file-path-exclusions)
+    - [Site dışlamaları](insider-risk-management-settings.md#site-exclusions)
+    - [Anahtar sözcük dışlama](insider-risk-management-settings.md#keyword-exclusion)
 6. **Uyarıları dışarı aktar** sayfasında, gerekirse Office 365 Yönetimi API'lerini kullanarak insider risk uyarısı bilgilerinin dışarı aktarılabilmesini sağlayın.
 7. **Öncelik kullanıcı grupları** sayfasında, bir öncelik kullanıcı grubu oluşturun ve **3. Adımda** oluşturulmadıysa kullanıcıları ekleyin.
 8. **Power Automate akışları** sayfasında, insider risk akışı şablonlarından bir akış yapılandırın veya yeni bir akış oluşturun. Adım adım yönergeler için [Insider risk yönetimi ayarlarını kullanmaya başlama](insider-risk-management-settings.md#power-automate-flows-preview) makalesine bakın.

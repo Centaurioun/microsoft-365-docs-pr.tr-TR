@@ -11,19 +11,19 @@ metadata:
   ms.service: microsoft-365-security
   ms.subservice: mdb
   ms.localizationpriority: medium
-  ms.date: 08/10/2022
+  ms.date: 10/24/2022
   ms.reviewer: shlomiakirav
   f1.keywords: NOCSH
   ms.collection:
   - SMB
   - m365-security
   - tier1
-  ms.openlocfilehash: 197cc97f5a5f8d7f51a2315dfc8029da03a59f90
-  ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+  ms.openlocfilehash: 5c2dfa32529e0acc7c85807601c2deacce267427
+  ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
   ms.translationtype: MT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 09/28/2022
-  ms.locfileid: "68096973"
+  ms.lasthandoff: 10/24/2022
+  ms.locfileid: "68688094"
 title: İş için Microsoft Defender - Sık sorulan sorular ve yanıtlar
 summary: >
   İş için Defender hakkında sorularınıza yanıt almak için bu makaleyi kullanın.
@@ -54,9 +54,9 @@ sections:
   - question: İş için Defender Mac, Android ve iOS/iPadOS istemci cihazlarını koruyor mu?
     answer: "Evet. İş için Defender Mac, Android ve iOS/iPadOS cihazları için korumayı destekler. Bkz [. Cihazları ekleme](mdb-onboard-devices.md).\n\n- Mac cihazlarını Microsoft 365 Defender portalında yerel bir betik kullanarak ekleyebilirsiniz. \n- Android ve iOS/iPadOS cihazlarını eklemek için [Microsoft Intune](/mem/intune/) kullanabilirsiniz.\n\nMac, iOS/iPadOS ve Android cihazlar için daha basitleştirme yol haritasındadır. \n"
   - question: İş için Defender sunucuları destekliyor mu?
-    answer: "Sunucu desteği artık önizleme aşamasında! Bkz. [İş için Microsoft Defender sunucuları alma (önizleme)](get-defender-business-servers.md).  \n\nİş için Microsoft Defender sunucuları lisansı genel kullanıma sunulduğunda (GA), Microsoft 365 İş Ekstra ve İş için Defender'ın tek başına sürümü için bir eklenti olarak sunulur. GA'da İş için Microsoft Defender sunucuların fiyatı sunucu örneği başına 3 ABD doları olacaktır. Bu noktada, eklenen her sunucu için bir lisans satın alabilir veya İş için Defender'dan sunucuları kullanıma almayı seçebilirsiniz.\n"
+    answer: "Windows Server veya Linux Server örneğini eklemeyi planlıyorsanız, [İş için Microsoft Defender sunucuları (önizleme)](get-defender-business-servers.md) gibi ek bir lisansa ihtiyacınız olacaktır. \n\nAlternatif olarak [Sunucular için Microsoft Defender](/azure/defender-for-cloud/defender-for-servers-introduction) kullanabilirsiniz; ancak Sunucular için Defender Plan 1 veya Plan 2 gibi bir kurumsal plan eklediğinizde İş için Defender deneyiminiz değişebilir. Daha fazla bilgi edinmek için bkz. [Microsoft uç nokta güvenlik aboneliklerinin bir karışımına sahipsem ne olur?](#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions) ve [Cihazları İş için Microsoft Defender ekleme](mdb-onboard-devices.md).\n\n[İş için Microsoft Defender sunucuları](get-defender-business-servers.md) lisansı genel kullanıma sunulduğunda (GA), Microsoft 365 İş Ekstra ve İş için Defender'ın tek başına sürümü için bir eklenti olarak sunulur. GA'da İş için Microsoft Defender sunucuların fiyatı sunucu örneği başına 3 ABD doları olacaktır. Bu noktada, eklenen her sunucu için bir lisans satın alabilir veya İş için Defender'dan sunucuları kullanıma almayı seçebilirsiniz.\n"
   - question: İş için Microsoft Defender sunucuları ile Sunucular için Microsoft Defender Plan 1 ve Plan 2 arasındaki fark nedir?
-    answer: "İş için Defender sunucuları, İş için Defender'ın bir eklentisidir ve yalnızca Microsoft 365 İş Ekstra. 300'e kadar çalışanı olan işletmeler için Microsoft 365 Defender portalındaki ([https://security.microsoft.com](https://security.microsoft.com)) hem istemciler hem de sunucular için tek bir uç nokta güvenlik deneyimi sağlar. Basitleştirilmiş bir yapılandırma işlemi ve cihaz ekleme seçenekleriyle, İş için Defender, şirket cihazlarını korumak için Sunucular için Defender'ı veya Bulut için Defender'ı ayarlamak, yapılandırmak ve kullanmak için güvenlik arka planına sahip olması gerekmeyen müşterilere olanak tanır. \n\nSunucular için Defender Plan 1/Plan 2, diğer Microsoft bulut planlarıyla satın alınabilen kurumsal odaklı bir tekliftir. Sunucular için Defender Plan 1 ve Plan 2, [Bulut için Microsoft Defender'nin](/azure/defender-for-cloud/defender-for-cloud-introduction) bir parçasıdır. Altı aylık veri saklama ve Microsoft Tehdit Uzmanları hizmeti ile gelişmiş tehdit avcılığı, Sunucular için Defender Plan 1 veya Plan 2 ile kullanılabilir.\n\nBulut için Defender, tüm Azure, şirket içi ve çoklu bulut (Amazon AWS ve Google GCP) kaynaklarınız için bir Bulut Güvenliği Duruş Yönetimi (CSPM) ve Bulut İş Yükü Koruma Platformu (CWPP) hizmetidir. Bulut için Defender yönetici deneyimi, Azure portal ([https://portal.azure.com](https://portal.azure.com) ) içinde yer alır.\n"
+    answer: "İş için Microsoft Defender sunucuları (önizleme), İş için Defender'ın bir eklentisidir ve yalnızca Microsoft 365 İş Ekstra. 300'e kadar çalışanı olan işletmeler için Microsoft 365 Defender portalındaki ([https://security.microsoft.com](https://security.microsoft.com)) hem istemciler hem de sunucular için tek bir uç nokta güvenlik deneyimi sağlar. Basitleştirilmiş bir yapılandırma işlemi ve cihaz ekleme seçenekleriyle, İş için Defender, şirket cihazlarını korumak için Sunucular için Defender'ı veya Bulut için Defender'ı ayarlamak, yapılandırmak ve kullanmak için güvenlik arka planına sahip olması gerekmeyen müşterilere olanak tanır. \n\nSunucular için Defender Plan 1/Plan 2, diğer Microsoft bulut planlarıyla satın alınabilen kurumsal odaklı bir tekliftir. Sunucular için Defender Plan 1 ve Plan 2, [Bulut için Microsoft Defender'nin](/azure/defender-for-cloud/defender-for-cloud-introduction) bir parçasıdır. Sunucular için Defender Plan 1 ve Plan 2, altı aylık veri saklama ve Microsoft Tehdit Uzmanları hizmeti ile gelişmiş tehdit avcılığı içerir. Bulut için Defender yönetici deneyimi, Azure portal ([https://portal.azure.com](https://portal.azure.com) ) içinde yer alır.\n\nBulut için Defender'ı İş için Defender'ın bulunduğu bir kiracıya eklemenin, basitleştirilmiş İş için Defender deneyimini kurumsal bir deneyim olarak değiştirebileceğini anlamak önemlidir. Daha fazla ayrıntı için bkz. [Microsoft uç nokta güvenlik aboneliklerinin bir karışımına sahipsem ne olur?](#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)\n"
   - question: İş için Defender'da birden fazla web içeriği filtreleme ilkesi yapılandırabilir miyim?
     answer: "Şu anda, İş için Defender, İş için Defender kiracısı başına yalnızca bir tekdüzen web filtreleme ilkesini destekler. \n\nBkz. [Web içeriği filtrelemeyi ayarlama](mdb-configure-security-settings.md#set-up-web-content-filtering).\n"
   - question: İş için Defender ile Microsoft dışı virüsten koruma/kötü amaçlı yazılımdan koruma yazılımı kullanabilir miyim?

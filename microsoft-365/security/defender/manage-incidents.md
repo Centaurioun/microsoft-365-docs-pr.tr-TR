@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender'de olayları yönetme
 description: Atamayı, durumu güncelleştirmeyi öğrenin,
-keywords: olay, olaylar, analiz, yanıt, uyarılar, bağıntılı uyarılar, atama, güncelleştirme, durum, yönetme, sınıflandırma, Microsoft, 365, m365
+keywords: olay, olaylar, saldırı hikayesi, analiz etme, yanıt, uyarılar, bağıntılı uyarılar, atama, güncelleştirme, durum, yönetme, sınıflandırma, Microsoft, 365, m365
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ec7f1d86943455001cf4456410fb2786ccf56c03
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: dc5e017732c9d00f3b9ab05310a6fff8a0777b86
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68091993"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68686605"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender'de olayları yönetme
 
@@ -58,6 +58,7 @@ Olayları bir olayın **Olay yönetme** bölmesinden yönetebilirsiniz. İşte b
 
 Bu bölmeyi aşağıdaki olay **yönet** bağlantısından görüntüleyebilirsiniz:
 
+- **Uyarı hikayesi** sayfası.
 - Olay kuyruğundaki bir olayın Özellikler bölmesi.
 - Bir olayın **özet** sayfası.
 
@@ -106,9 +107,6 @@ Olay düzeltildiyse olayı **çözümle'yi** seçerek iki durumlu düğmeyi sağ
 - Teknik olarak yanlış veya yanıltıcı olduğundan, tespit ettiğiniz olay türleri için **hatalı pozitif** değeri yoksayılabilir.
 
 Olayları sınıflandırmak, durumlarını ve türlerini belirtmek, zaman içinde daha iyi algılama belirlemesi sağlamak için Microsoft 365 Defender ayarlanmasına yardımcı olur.
-
-Önceliklendirme verimliliğini artırmak için sınıflandırmayı kullanmayı öğrenmek için bu kısa videoyu izleyin.  
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LHJq]
 
 ## <a name="add-comments"></a>Açıklama ekleme
 

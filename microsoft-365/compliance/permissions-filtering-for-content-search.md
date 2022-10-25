@@ -1,5 +1,6 @@
 ---
 title: eBulma için izin filtrelemeyi yapılandırma
+description: eBulma yöneticilerinin kuruluşunuzdaki posta kutularının ve sitelerin yalnızca bir alt kümesini aramasına izin vermek için arama izinleri filtrelemesini kullanın.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,25 +12,25 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
-description: eBulma yöneticilerinin kuruluşunuzdaki posta kutularının ve sitelerin yalnızca bir alt kümesini aramasına izin vermek için arama izinleri filtrelemesini kullanın.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a1441a10b1331c8a2d48d6e22e7a39132a5cd5d
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: b6a90bb64fa2884e4ec94cfac83f437bad73c23e
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67851556"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688411"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>eBulma için izin filtrelemeyi yapılandırma
 
-EBulma yöneticisinin kuruluşunuzdaki posta kutularının ve sitelerin yalnızca bir alt kümesini aramasına izin vermek için arama izinleri filtrelemesini kullanabilirsiniz. Ayrıca, aynı eBulma yöneticisinin yalnızca belirli bir arama ölçütünü karşılayan posta kutusu veya site içeriği için arama yapmasına izin vermek için izin filtrelemeyi de kullanabilirsiniz. Örneğin, eBulma yöneticisinin yalnızca belirli bir konum veya departmandaki kullanıcıların posta kutularını aramasına izin vekleyebilirsiniz. Bunu, belirli bir kullanıcının veya kullanıcı grubunun hangi posta kutularını arayabileceğini sınırlamak için desteklenen bir alıcı filtresi kullanan bir filtre oluşturarak yaparsınız. Ayrıca, kullanıcının hangi posta kutusu içeriğini arayabileceğini belirten bir filtre de oluşturabilirsiniz. Bu işlem, aranabilir bir ileti özelliği kullanan bir filtre oluşturularak yapılır. Benzer şekilde, bir eBulma yöneticisinin kuruluşunuzdaki yalnızca belirli SharePoint sitelerini aramasına izin vekleyebilirsiniz. Bunu, aranabilecek siteyi sınırlayan bir filtre oluşturarak yaparsınız. Ayrıca, hangi site içeriğinin aranabileceğini belirten bir filtre de oluşturabilirsiniz. Bu işlem, aranabilir bir site özelliği kullanan bir filtre oluşturularak yapılır.
+EBulma yöneticisinin kuruluşunuzdaki posta kutularının ve sitelerin yalnızca bir alt kümesini aramasına izin vermek için arama izinleri filtrelemesini kullanabilirsiniz. Ayrıca, aynı eBulma yöneticisinin yalnızca belirli bir arama ölçütünü karşılayan posta kutusu veya site içeriği için arama yapmasına izin vermek için izin filtrelemeyi de kullanabilirsiniz. 
+
+Örneğin, eBulma yöneticisinin yalnızca belirli bir konum veya departmandaki kullanıcıların posta kutularını aramasını isteyebilirsiniz. Bunu, belirli bir kullanıcının veya kullanıcı grubunun hangi posta kutularını arayabileceğini sınırlamak için desteklenen bir alıcı filtresi kullanan bir filtre oluşturarak yaparsınız. Ayrıca, kullanıcının hangi posta kutusu içeriğini arayabileceğini belirten bir filtre de oluşturabilirsiniz. Bu işlem, aranabilir bir ileti özelliği kullanan bir filtre oluşturularak yapılır. Benzer şekilde, bir eBulma yöneticisinin kuruluşunuzdaki yalnızca belirli SharePoint sitelerini aramasına izin vekleyebilirsiniz. Bunu, aranabilecek siteyi sınırlayan bir filtre oluşturarak yaparsınız. Ayrıca, hangi site içeriğinin aranabileceğini belirten bir filtre de oluşturabilirsiniz. Bu işlem, aranabilir bir site özelliği kullanan bir filtre oluşturularak yapılır.
 
 Microsoft Purview uyumluluk portalı İçerik arama, Microsoft Purview eKeşif (Standart) ve Microsoft Purview eKeşif (Premium) kullanarak içerik aradığınızda arama izinleri filtreleri uygulanır. Belirli bir kullanıcıya arama izinleri filtresi uygulandığında, bu kullanıcı aramayla ilgili aşağıdaki eylemleri gerçekleştirebilir:
 
@@ -40,30 +41,27 @@ Microsoft Purview uyumluluk portalı İçerik arama, Microsoft Purview eKeşif (
 
 Ayrıca, belirli eBulma yöneticilerinin arayabileceği kullanıcı içerik konumlarını (posta kutuları, SharePoint siteleri ve OneDrive hesapları gibi) denetleyan bir kuruluş içinde mantıksal _sınırlar (uyumluluk sınırları_ olarak adlandırılır) oluşturmak için arama izinleri filtrelemesini de kullanabilirsiniz. Daha fazla bilgi için bkz. [eBulma araştırmaları için uyumluluk sınırlarını ayarlama](set-up-compliance-boundaries.md).
 
-Güvenlik & Uyumluluğu PowerShell'deki aşağıdaki dört cmdlet, arama izinleri filtrelerini yapılandırmanıza ve yönetmenize olanak sağlar:
+[Güvenlik & Uyumluluğu PowerShell'deki](/powershell/exchange/scc-powershell) aşağıdaki dört cmdlet, arama izinleri filtrelerini yapılandırmanıza ve yönetmenize olanak sağlar:
 
 - [New-ComplianceSecurityFilter](#new-compliancesecurityfilter)
 - [Get-ComplianceSecurityFilter](#get-compliancesecurityfilter)
 - [Set-ComplianceSecurityFilter](#set-compliancesecurityfilter)
 - [Remove-ComplianceSecurityFilter](#remove-compliancesecurityfilter)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="requirements-to-configure-permissions-filtering"></a>İzin filtrelemeyi yapılandırma gereksinimleri
 
-- Uyumluluk güvenlik filtresi cmdlet'lerini çalıştırmak için, uyumluluk portalında Kuruluş Yönetimi rol grubunun üyesi olmanız gerekir. Daha fazla bilgi için bkz [. Güvenlik & Uyumluluk Merkezi'ndeki İzinler](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
-
+- Uyumluluk güvenlik filtresi cmdlet'lerini çalıştırmak için, uyumluluk portalında *Kuruluş Yönetimi* rol grubunun üyesi olmanız gerekir. Daha fazla bilgi için bkz [. Güvenlik & Uyumluluk Merkezi'ndeki İzinler](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 - Uyumluluk güvenlik filtresi cmdlet'lerini kullanmak için hem Exchange Online hem de Güvenlik & Uyumluluğu PowerShell'e bağlanmanız gerekir. Bu cmdlet'ler posta kutusu özelliklerine erişim gerektirdiği için bu gereklidir; bu nedenle Exchange Online PowerShell'e bağlanmanız gerekir. Sonraki bölümdeki adımlara bakın.
-
 - Arama izinleri filtreleri hakkında ek [bilgi için Daha fazla bilgi](#more-information) bölümüne bakın.
-
 - Arama izinleri filtreleme etkin olmayan posta kutuları için geçerlidir. Bu, etkin olmayan posta kutusunda kimlerin arama yapabileceklerini sınırlamak için posta kutusu ve posta kutusu içeriği filtrelemesini kullanabileceğiniz anlamına gelir. İzin filtreleme ve etkin olmayan posta kutuları hakkında ek bilgi için [Daha fazla bilgi](#more-information) bölümüne bakın.
-
 - Exchange'de ortak klasörlerde kimlerin arama yapabileceklerini sınırlamak için arama izinleri filtreleme kullanılamaz.
-
 - Bir kuruluşta oluşturulabilecek arama izni filtrelerinin sayısıyla ilgili bir sınır yoktur. Ancak, arama sorgusu en fazla 100 koşula sahip olabilir. Bu durumda, bir koşul Boole işleci ( **AND**, **OR** ve **NEAR** gibi) tarafından sorguya bağlı bir şey olarak tanımlanır. Koşul sayısı sınırı, arama sorgusunun kendisini ve aramayı çalıştıran kullanıcıya uygulanan tüm arama izinleri filtrelerini içerir. Bu nedenle, ne kadar çok arama izni filtreniz varsa (özellikle bu filtreler aynı kullanıcı veya kullanıcı grubuna uygulanırsa), arama için en fazla koşul sayısını aşma olasılığı o kadar yüksek olur. Kuruluşunuzun koşullar sınırına ulaşmasını önlemek için, iş gereksinimlerinizi karşılamak için kuruluşunuzdaki arama izni filtrelerinin sayısını mümkün olduğunca az tutun. Daha fazla bilgi için bkz. [eBulma araştırmaları için uyumluluk sınırlarını ayarlama](set-up-compliance-boundaries.md#frequently-asked-questions).
 
 ## <a name="connect-to-exchange-online-and-security--compliance-powershell-in-a-single-session"></a>Tek bir oturumda Exchange Online ve Güvenlik & Uyumluluğu PowerShell'e bağlanma
 
-Bu bölümdeki betiği başarıyla çalıştırabilmeniz için önce Exchange Online PowerShell modülünü indirip yüklemeniz gerekir. Bilgi için bkz. [Exchange Online Powershell modülünü yükleme ve koruma](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
+Bu bölümdeki betiği başarıyla çalıştırabilmeniz için önce Exchange Online PowerShell modülünü indirip yüklemeniz gerekir. Daha fazla bilgi için bkz. [Exchange Online PowerShell modülünü yükleme ve koruma](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
 
 1. .ps1dosya adı soneki kullanarak aşağıdaki metni bir **Windows PowerShell** betik dosyasına kaydedin. Örneğin, **ConnectEXO-SCC.ps1** adlı bir dosyaya kaydedebilirsiniz.
 
@@ -86,7 +84,6 @@ Bunun işe yarayip yaramadığını nasıl anlarsınız? Betiği çalıştırdı
 PowerShell bağlantı hatalarını gidermek için bkz:
 
 - [Exchange Online PowerShell’e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell#how-do-you-know-this-worked)
-
 - [Güvenlik & Uyumluluğu PowerShell'e bağlanma](/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
 
 ## <a name="new-compliancesecurityfilter"></a>New-ComplianceSecurityFilter
@@ -126,7 +123,6 @@ _Filters_ parametresi, uyumluluk güvenlik filtresi için arama ölçütlerini b
 - **Site ve site içeriği filtreleme:** Atanan kullanıcıların hangi site veya site içeriğini arayabileceğini belirtmek için kullanabileceğiniz SharePoint ve OneDrive ile ilgili iki filtre vardır.
 
   - **Site_**_SearchableSiteProperty_
-
   - **SiteContent_**_SearchableSiteProperty_
 
    Bu iki filtre birbirinin yerine kullanılabilir. Örneğin, `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors'"` aynı  `"SiteContent_Path -like 'https://contoso.sharepoint.com/sites/doctors'"` sonuçları döndürür. Aranabilir site özelliklerinin listesi için bkz [. eBulma için anahtar sözcük sorguları ve arama koşulları](keyword-queries-and-search-conditions.md#searchable-site-properties)  Daha eksiksiz bir liste için bkz. [SharePoint'te gezinilen ve yönetilen özelliklere genel bakış](/SharePoint/technical-reference/crawled-and-managed-properties-overview). **Sorgulanabilir** sütununda **Evet** ile işaretlenmiş özellikler, site veya site içerik filtresi oluşturmak için kullanılabilir.
@@ -137,7 +133,6 @@ _Filters_ parametresi, uyumluluk güvenlik filtresi için arama ölçütlerini b
 Arama izinleri filtreleri için _Filtreler_ parametresini yapılandırırken aşağıdaki noktaları göz önünde bulundurun:
 
 - _Site_ filtresi bir konum filtresi gibi görünse de, posta kutularının aksine siteler için içerik konumu filtresi yoktur. SharePoint ve OneDrive için tüm filtreler içerik filtreleridir (bu nedenle _Site\__ ve _SiteContent\__ filtreleri de değiştirilebilir). Çünkü _Path_ gibi siteyle ilgili özellikler doğrudan belgelere damgalanır. Bu neden? Bu, SharePoint'in tasarlandığı yöntemin bir sonucudur. SharePoint'te, Exchange posta kutuları gibi özellikleri olan bir "site nesnesi" yoktur. Bu nedenle, _Path_ özelliği belgeye damgalanır ve belgenin bulunduğu sitenin URL'sini içerir. Bu nedenle _Site_ filtresi içerik konumu filtresi olarak değil içerik filtresi olarak kabul edilir.
-
 - Kullanıcıların belirli bir hizmetteki içerik konumlarında arama yapmasını (örneğin, bir kullanıcının herhangi bir Exchange posta kutusunda veya herhangi bir SharePoint sitesinde arama yapmasını engellemek) açıkça engellemek için bir arama izinleri filtresi oluşturmanız gerekir. Başka bir deyişle, kullanıcının kuruluştaki tüm SharePoint sitelerinde arama yapmasına izin veren bir arama izinleri filtresi oluşturmak, kullanıcının posta kutularını aramasını engellemez. Örneğin, SharePoint yöneticilerinin yalnızca SharePoint sitelerinde arama yapmasını sağlamak için, posta kutularını aramalarını engelleyen bir filtre oluşturmanız gerekir. Benzer şekilde, Exchange yöneticilerinin yalnızca posta kutularını aramasına izin vermek için, sitelerde arama yapmasını engelleyen bir filtre oluşturmanız gerekir.
 
 ### <a name="users"></a>Kullanıcılar
@@ -161,7 +156,6 @@ Filtreler listesi kullanmanın alternatifi, iki ayrı arama izni filtresi oluşt
 Filtre listesi kullanma hakkında aşağıdaki şeyleri aklınızda bulundurun:
 
 - **Posta Kutusu** filtresi ve **MailboxContent** filtresi içeren bir filtre oluşturmak için filtreler listesi kullanmanız gerekir.
-
 - Filtreler listesinin her bileşeni karmaşık bir filtre söz dizimi içerebilir. Örneğin, posta kutusu ve site filtreleri bir **-veya** işleciyle ayrılmış birden çok filtre içerebilir:
 
    ```powershell
@@ -184,7 +178,7 @@ Bu örnek, kullanıcının annb@contoso.com yalnızca Kanada'daki posta kutular�
 New-ComplianceSecurityFilter -FilterName CountryFilter  -Users annb@contoso.com -Filters "Mailbox_CountryCode  -eq '124'"
 ```
 
-Bu örnek, kullanıcıların donh ve suzanf'ın yalnızca CustomAttribute1 posta kutusu özelliği için 'Marketing' değerine sahip posta kutularını ve OneDrive hesaplarını aramasına olanak tanır.
+Bu örnek, kullanıcıların *donh* ve *suzanf'ın* yalnızca CustomAttribute1 posta kutusu özelliği için 'Marketing' değerine sahip posta kutularını ve OneDrive hesaplarını aramasına olanak tanır.
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'"
@@ -326,7 +320,7 @@ Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.u
 
 ## <a name="more-information"></a>Daha fazla bilgi
 
-- **Arama izinleri filtreleme nasıl çalışır?** Bir arama çalıştırıldığında arama sorgusuna izin filtresi eklenir. İzin filtresi **, AND** Boole işleci tarafından arama sorgusuna katılır. Arama sorgusu ve izinler filtresi için sorgu mantığı şöyle görünür:
+**Arama izinleri filtreleme nasıl çalışır?** Bir arama çalıştırıldığında arama sorgusuna izin filtresi eklenir. İzin filtresi **, AND** Boole işleci tarafından arama sorgusuna katılır. Arama sorgusu ve izinler filtresi için sorgu mantığı şöyle görünür:
 
   ```text
   <SearchQuery> AND <PermissionsFilter>
@@ -334,7 +328,7 @@ Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.u
 
   Örneğin, Bob'un Çalışanlar dağıtım grubunun üyelerinin posta kutularındaki tüm arama eylemlerini gerçekleştirmesine izin veren bir izin filtreniz vardır. Ardından Bob, arama sorgusuyla  `sender:jerry@adatum.com`kuruluştaki tüm posta kutularında bir arama çalıştırır. İzin filtresi ve arama sorgusu bir **AND** işleci tarafından mantıksal olarak birleştirildiğinden, arama jerry@adatum.com tarafından Çalışanlar dağıtım grubunun herhangi bir üyesine gönderilen tüm iletileri döndürür.
 
-- **Birden çok arama izni filtreniz varsa ne olur?** Bir arama sorgusunda, birden çok izin filtresi **OR** Boole işleçleri tarafından birleştirilir. Bu nedenle, filtrelerden herhangi biri doğruysa sonuçlar döndürülür. Bir aramada, tüm filtreler ( **OR** işleçleri tarafından birleştirilir) **ve** işleci tarafından arama sorgusuyla birleştirilir.
+**Birden çok arama izni filtreniz varsa ne olur?** Bir arama sorgusunda, birden çok izin filtresi **OR** Boole işleçleri tarafından birleştirilir. Bu nedenle, filtrelerden herhangi biri doğruysa sonuçlar döndürülür. Bir aramada, tüm filtreler ( **OR** işleçleri tarafından birleştirilir) **ve** işleci tarafından arama sorgusuyla birleştirilir.
 
   ```text
   <SearchQuery> AND  (<PermissionsFilter1> OR <PermissionsFilter2> OR <PermissionsFilter3>)
@@ -342,13 +336,13 @@ Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.u
 
   Bir arama filtresinin Bob'un yalnızca Çalışanlar dağıtım grubunun üyelerinin posta kutularını aramasına izin verdiği önceki örneği ele alalım. Ardından Bob'un Phil'in posta kutusunu ("Mailbox_Alias -ne 'Phil'") aramasını engelleyen başka bir filtre oluştururuz. Ayrıca Phil'in İşçiler grubunun bir üyesi olduğunu da varsayalım. Bob, kuruluştaki tüm posta kutularında bir arama (önceki örnekten) çalıştırdığında, Bob'un Phil'in posta kutusunda arama yapmasını önlemek için filtre uygulamış olsanız bile Arama sonuçları Phil'in posta kutusu için döndürülür. Bunun nedeni Bob'un Çalışanlar grubunda arama yapmasına izin veren ilk filtrenin doğru olmasıdır. Phil çalışanlar grubunun bir üyesi olduğu için Bob, Phil'in posta kutusunda arama yapabilir.
 
-- **Etkin olmayan posta kutuları için arama izinleri filtrelemesi çalışıyor mu?** Evet, kuruluşunuzda etkin olmayan posta kutularında kimlerin arama yapabileceklerini sınırlamak için posta kutusu ve posta kutusu içerik filtrelerini kullanabilirsiniz. Normal posta kutusu gibi, etkin olmayan bir posta kutusunun da izin filtresi oluşturmak için kullanılan alıcı özelliğiyle yapılandırılması gerekir. Gerekirse, **etkin olmayan posta kutularının özelliklerini görüntülemek için Get-Mailbox -InactiveMailboxOnly** komutunu kullanabilirsiniz. Daha fazla bilgi için bkz [. Etkin olmayan posta kutularını oluşturma ve yönetme](create-and-manage-inactive-mailboxes.md).
+**Etkin olmayan posta kutuları için arama izinleri filtrelemesi çalışıyor mu?** Evet, kuruluşunuzda etkin olmayan posta kutularında kimlerin arama yapabileceklerini sınırlamak için posta kutusu ve posta kutusu içerik filtrelerini kullanabilirsiniz. Normal posta kutusu gibi, etkin olmayan bir posta kutusunun da izin filtresi oluşturmak için kullanılan alıcı özelliğiyle yapılandırılması gerekir. Gerekirse, **etkin olmayan posta kutularının özelliklerini görüntülemek için Get-Mailbox -InactiveMailboxOnly** komutunu kullanabilirsiniz. Daha fazla bilgi için bkz [. Etkin olmayan posta kutularını oluşturma ve yönetme](create-and-manage-inactive-mailboxes.md).
 
-- **Arama izinleri filtreleme ortak klasörler için çalışıyor mu?** Hayır. Daha önce açıklandığı gibi, Exchange'de ortak klasörlerde kimlerin arama yapabileceklerini sınırlamak için arama izinleri filtreleme kullanılamaz. Örneğin, ortak klasör konumlarındaki öğeler bir izin filtresi tarafından arama sonuçlarından dışlanamaz.
+**Arama izinleri filtreleme ortak klasörler için çalışıyor mu?** Hayır. Daha önce açıklandığı gibi, Exchange'de ortak klasörlerde kimlerin arama yapabileceklerini sınırlamak için arama izinleri filtreleme kullanılamaz. Örneğin, ortak klasör konumlarındaki öğeler bir izin filtresi tarafından arama sonuçlarından dışlanamaz.
 
-- **Kullanıcının belirli bir hizmetteki tüm içerik konumlarını aramasına izin vermek, farklı bir hizmetteki içerik konumlarında arama yapmasını da engelliyor mu?** Hayır. Daha önce açıklandığı gibi, kullanıcıların belirli bir hizmetteki içerik konumlarında arama yapmasını (örneğin, bir kullanıcının herhangi bir Exchange posta kutusunda veya herhangi bir SharePoint sitesinde arama yapmasını engellemek) açıkça engellemek için bir arama izinleri filtresi oluşturmanız gerekir. Başka bir deyişle, kullanıcının kuruluştaki tüm SharePoint sitelerinde arama yapmasına izin veren bir arama izinleri filtresi oluşturmak, kullanıcının posta kutularını aramasını engellemez. Örneğin, SharePoint yöneticilerinin yalnızca SharePoint sitelerinde arama yapmasını sağlamak için, posta kutularını aramalarını engelleyen bir filtre oluşturmanız gerekir. Benzer şekilde, Exchange yöneticilerinin yalnızca posta kutularını aramasına izin vermek için, sitelerde arama yapmasını engelleyen bir filtre oluşturmanız gerekir.
+**Kullanıcının belirli bir hizmetteki tüm içerik konumlarını aramasına izin vermek, farklı bir hizmetteki içerik konumlarında arama yapmasını da engelliyor mu?** Hayır. Daha önce açıklandığı gibi, kullanıcıların belirli bir hizmetteki içerik konumlarında arama yapmasını (örneğin, bir kullanıcının herhangi bir Exchange posta kutusunda veya herhangi bir SharePoint sitesinde arama yapmasını engellemek) açıkça engellemek için bir arama izinleri filtresi oluşturmanız gerekir. Başka bir deyişle, kullanıcının kuruluştaki tüm SharePoint sitelerinde arama yapmasına izin veren bir arama izinleri filtresi oluşturmak, kullanıcının posta kutularını aramasını engellemez. Örneğin, SharePoint yöneticilerinin yalnızca SharePoint sitelerinde arama yapmasını sağlamak için, posta kutularını aramalarını engelleyen bir filtre oluşturmanız gerekir. Benzer şekilde, Exchange yöneticilerinin yalnızca posta kutularını aramasına izin vermek için, sitelerde arama yapmasını engelleyen bir filtre oluşturmanız gerekir.
 
-- **Arama izinleri filtreleri, arama sorgusu karakter sınırlarına göre sayılır mı?** Evet. Arama izinleri filtreleri, arama sorguları için karakter sınırına göre sayılır. Daha fazla bilgi için bkz. [eBulma sınırları (Premium)](limits-ediscovery20.md).
+**Arama izinleri filtreleri, arama sorgusu karakter sınırlarına göre sayılır mı?** Evet. Arama izinleri filtreleri, arama sorguları için karakter sınırına göre sayılır. Daha fazla bilgi için bkz. [eBulma sınırları (Premium)](limits-ediscovery20.md).
 
 **Bir kuruluşta oluşturulabilecek en fazla arama izni filtresi sayısı nedir?**
 

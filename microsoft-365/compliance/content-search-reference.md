@@ -1,5 +1,6 @@
 ---
 title: İçerik arama için özellik referansı
+description: Bu makale, İçerik arama hakkındaki birçok ayrıntıyı öğrenmenize yardımcı olmak için Microsoft Purview uyumluluk portalı İçerik arama eBulma aracı hakkında başvuru bilgileri içerir.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,9 +11,9 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MED150
@@ -20,17 +21,18 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-description: Bu makale, İçerik arama hakkındaki birçok ayrıntıyı öğrenmenize yardımcı olmak için Microsoft Purview uyumluluk portalı İçerik arama eBulma aracı hakkında başvuru bilgileri içerir.
-ms.openlocfilehash: 2f27903390691f3a503686c9f653f9f732590cf2
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 7a55a53ff271b15359414b7c97f1aeb113be1e4e
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67826192"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68686660"
 ---
 # <a name="feature-reference-for-content-search"></a>İçerik arama için özellik referansı
 
 Bu makalede İçerik aramanın özellikleri ve işlevleri açıklanmaktadır.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="content-search-limits"></a>İçerik arama sınırları
 
@@ -52,7 +54,7 @@ Arama sorgusu oluşturmak için anahtar sözcük listesini kullanırken aşağı
 
     ![Anahtar sözcük listesini biçimlendirmenin doğru yolu (onay kutusunu seçip listeyi yapıştırarak).](../media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
 
-- Ayrıca, bir Excel dosyasında veya düz metin dosyasındaki anahtar sözcüklerin veya anahtar sözcük tümceciklerinin listesini hazırlayabilir ve ardından listenizi kopyalayıp anahtar sözcük listesine yapıştırabilirsiniz. Bunu yapmak için **Anahtar sözcük listesini göster** onay kutusunu seçmeniz gerekir. Ardından anahtar sözcük listesindeki ilk satıra tıklayın ve listenizi yapıştırın. Excel veya metin dosyasındaki her satır anahtar sözcük listesinde ayrı bir satıra yapıştırılır.
+- Ayrıca, bir Excel dosyasında veya düz metin dosyasındaki anahtar sözcüklerin veya anahtar sözcük tümceciklerinin listesini hazırlayabilir ve ardından listenizi kopyalayıp anahtar sözcük listesine yapıştırabilirsiniz. Bunu yapmak için **Anahtar sözcük listesini göster** onay kutusunu seçmeniz gerekir. Ardından anahtar sözcük listesindeki ilk satırı seçin ve listenizi yapıştırın. Excel veya metin dosyasındaki her satır anahtar sözcük listesinde ayrı bir satıra yapıştırılır.
 
 - Anahtar sözcük listesini kullanarak bir sorgu oluşturduktan sonra, arama sorgusunu istediğiniz gibi yapmak için arama sorgusu söz dizimini doğrulamak iyi bir fikirdir. Ayrıntılar bölmesindeki **Sorgu** altında görüntülenen arama sorgusunda, anahtar sözcükler **(c:s)** metniyle ayrılır. Bu, anahtar sözcüklerin **OR** işlecine benzer bir mantıksal işleç tarafından bağlandığını gösterir. Benzer şekilde, arama sorgunuzda koşullar varsa, anahtar sözcükler ve koşullar **metinle (c:c)** ayrılır. Bu, anahtar sözcüklerin **and** işlecine benzer bir mantıksal işleçle koşullara bağlandığını gösterir. Anahtar sözcük listesi ve koşul kullanılırken sonuçlanan arama sorgusunun (Ayrıntılar bölmesinde görüntülenir) bir örneği aşağıda verilmiştir.
 
@@ -60,7 +62,7 @@ Arama sorgusu oluşturmak için anahtar sözcük listesini kullanırken aşağı
 
 - İçerik araması çalıştırdığınızda Microsoft 365, arama sorgunuzda desteklenmeyen karakterleri ve büyük harfe dönüştürülemeyen Boole işleçlerini otomatik olarak denetler. Desteklenmeyen karakterler genellikle gizlenir ve genellikle bir arama hatasına neden olur veya istenmeyen sonuçlar döndürür. Denetlenen desteklenmeyen karakterler hakkında daha fazla bilgi için bkz. [İçerik Arama sorgunuzda hatalar olup olmadığını denetleme](check-your-content-search-query-for-errors.md).
 
-- İngilizce olmayan karakterler (çince karakterler gibi) için anahtar sözcükler içeren bir arama sorgunuz varsa, İçerik aramasında **Sorgu dili-ülke/bölge**![Sorgu dili-ülke/bölge simgesine tıklayabilirsiniz.](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) ve arama için bir dil-ülke kültür kodu değeri seçin. Varsayılan dil/bölge nötrdür. İçerik araması için dil ayarını değiştirmeniz gerekip gerekmediğini nasıl anlayabilirsiniz? Belirli içerik konumları aradığınız İngilizce olmayan karakterleri içeriyorsa ancak arama sonuç döndürmezse, bunun nedeni dil ayarı olabilir.
+- İngilizce olmayan karakterler (çince karakterler gibi) için anahtar sözcükler içeren bir arama sorgunuz varsa, İçerik aramasında **Sorgu dili-ülke/bölge**![Sorgu dili-ülke/bölge simgesini seçebilirsiniz.](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) ve arama için bir dil-ülke kültür kodu değeri seçin. Varsayılan dil/bölge nötrdür. İçerik araması için dil ayarını değiştirmeniz gerekip gerekmediğini nasıl anlayabilirsiniz? Belirli içerik konumları aradığınız İngilizce olmayan karakterleri içeriyorsa ancak arama sonuç döndürmezse, bunun nedeni dil ayarı olabilir.
 
 ## <a name="partially-indexed-items"></a>Kısmen dizine eklenen öğeler
 
@@ -121,13 +123,9 @@ Microsoft Teams'de içerik ararken ve Microsoft 365 Grupları aşağıdakileri g
 - Teams kanalındaki toplantılar ve aramalar için özet bilgiler, toplantıya veya aramaya arayarak bağlanan kullanıcıların posta kutularında da depolanır. Bu, bu özet kayıtlarda arama yapmak için İçerik Arama'yı kullanabileceğiniz anlamına gelir. Özet bilgiler şunları içerir:
 
   - Toplantının veya aramanın tarihi, başlangıç saati, bitiş saati ve süresi
-
   - Her katılımcının toplantıya katıldığı veya toplantıdan ayrıldığı tarih ve saat ya da arama
-
   - Sesli mesaja gönderilen aramalar
-
   - Cevapsız veya yanıtlanmamış aramalar
-
   - İki ayrı çağrı olarak gösterilen arama aktarımları
 
   Toplantı ve arama özeti kayıtlarının aranabilmesi 8 saat kadar sürebilir.
@@ -190,7 +188,7 @@ Microsoft Teams'de içerik ararken ve Microsoft 365 Grupları aşağıdakileri g
 
 ## <a name="searching-inactive-mailboxes"></a>Etkin olmayan posta kutularını arama
 
-İçerik aramasında etkin olmayan posta kutularında arama yapabilirsiniz. Kuruluşunuzdaki etkin olmayan posta kutularının listesini almak için powershell Exchange Online komutunu `Get-Mailbox -InactiveMailboxOnly` çalıştırın. Alternatif olarak, **Microsoft Purview uyumluluk portalı Veri yaşam döngüsü yönetimi** \> **Microsoft 365** \> **Bekletme'ye** gidip **Diğer**![Gezinti Çubuğu üç nokta simgesine tıklayabilirsiniz.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \>**Etkin olmayan posta kutuları**.
+İçerik aramasında etkin olmayan posta kutularında arama yapabilirsiniz. Kuruluşunuzdaki etkin olmayan posta kutularının listesini almak için powershell Exchange Online komutunu `Get-Mailbox -InactiveMailboxOnly` çalıştırın. Alternatif olarak, Microsoft Purview uyumluluk portalı **Veri yaşam döngüsü yönetimi** \> **Microsoft 365** \> **Bekletme'ye** gidip **Diğer**![Gezinti Çubuğu üç nokta simgesini seçebilirsiniz.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \>**Etkin olmayan posta kutuları**.
 
 Etkin olmayan posta kutularında arama yaparken göz önünde bulundurmak istediğiniz birkaç şey aşağıdadır.
 
@@ -204,12 +202,10 @@ Etkin olmayan posta kutularında arama yaparken göz önünde bulundurmak istedi
    New-ComplianceSearch -Name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
    ```
 
-- Aynı SMTP adresine sahip etkin bir posta kutusuna ve etkin olmayan posta kutusuna sahip olmaktan kaçınmanızı kesinlikle öneririz. Etkin olmayan posta kutusuna atanan SMTP adresini yeniden kullanmanız gerekiyorsa, etkin olmayan posta kutusunu kurtarmanızı veya etkin olmayan posta kutusunun içeriğini etkin bir posta kutusuna (veya etkin posta kutusunun arşivini) geri yüklemenizi ve sonra etkin olmayan posta kutusunu silmenizi öneririz. Daha fazla bilgi için aşağıdaki konulardan birine bakın:
+- Aynı SMTP adresine sahip etkin bir posta kutusuna ve etkin olmayan posta kutusuna sahip olmaktan kaçınmanızı kesinlikle öneririz. Etkin olmayan posta kutusuna atanan SMTP adresini yeniden kullanmanız gerekiyorsa, etkin olmayan posta kutusunu kurtarmanızı veya etkin olmayan posta kutusunun içeriğini etkin bir posta kutusuna (veya etkin posta kutusunun arşivini) geri yüklemenizi ve sonra etkin olmayan posta kutusunu silmenizi öneririz. Daha fazla bilgi için aşağıdaki makalelerden birine bakın:
 
   - [Office 365'da etkin olmayan posta kutusunu kurtarma](recover-an-inactive-mailbox.md)
-
   - [Office 365'da etkin olmayan posta kutusunu geri yükleme](restore-an-inactive-mailbox.md)
-
   - [Office 365'da etkin olmayan posta kutusunu silme](delete-an-inactive-mailbox.md)
 
 ## <a name="searching-disconnected-or-de-licensed-mailboxes"></a>Bağlantısı kesilmiş veya lisansı kaldırılmış posta kutularını arama
@@ -217,18 +213,16 @@ Etkin olmayan posta kutularında arama yaparken göz önünde bulundurmak istedi
 Exchange Online lisansı (veya Microsoft 365 lisansının tamamı) bir kullanıcı hesabından veya Azure Active Directory'den kaldırılırsa, kullanıcının posta kutusu *bağlantısı kesilmiş* bir posta kutusuna dönüşür. Bu, posta kutusunun artık kullanıcı hesabıyla ilişkili olmadığı anlamına gelir. Bağlantısı kesilmiş posta kutularını ararken şunlar olur:
 
 - Lisans bir posta kutusundan kaldırılırsa, posta kutusu artık aranamaz.
-
 - Mevcut içerik aramasında lisansın kaldırıldığı bir posta kutusu varsa, içerik aramasını yeniden çalıştırırsanız bağlantısı kesilmiş posta kutusundan hiçbir arama sonucu döndürülmeyecektir.
-
 - İçerik araması oluşturmak için **New-ComplianceSearch** cmdlet'ini kullanır ve aranacak Exchange içerik konumu olarak bağlantısı kesilmiş bir posta kutusu belirtirseniz, içerik araması bağlantısı kesilmiş posta kutusundan arama sonucu döndürmez.
 
 Verilerin aranabilir olması için bağlantısı kesilmiş bir posta kutusunda saklamanız gerekiyorsa, lisansı kaldırmadan önce posta kutusuna bir ayrı tutmanız gerekir. Bu, verileri korur ve ayrı tutma kaldırılana kadar bağlantısı kesilmiş posta kutusunun aranabilir olmasını sağlar. Ayrı tutmalar hakkında daha fazla bilgi için bkz. [Exchange Online posta kutusuna yerleştirilen ayrı tutmanın türünü belirleme](identify-a-hold-on-an-exchange-online-mailbox.md).
 
-## <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>SharePoint Multi-Geo ortamında içerik arama
+## <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>SharePoint multi-geo ortamında içerik arama
 
 eBulma yöneticisinin SharePoint'te ve OneDrive'da SharePoint [çoklu coğrafi ortamındaki](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md) farklı bölgelerde içerik araması gerekiyorsa, bunun gerçekleşmesi için aşağıdaki şeyleri yapmanız gerekir:
 
-1. eBulma yöneticisinin araması gereken her uydu coğrafi konumu için ayrı bir kullanıcı hesabı oluşturun. Bu coğrafi konumdaki sitelerdeki içeriği aramak için eBulma yöneticisinin bu konum için oluşturduğunuz hesapta oturum açması ve ardından bir içerik araması çalıştırması gerekir.
+1. eBulma yöneticisinin araması gereken her uydu coğrafi konumu için ayrı bir kullanıcı hesabı oluşturun. Bu coğrafi konumdaki sitelerdeki içeriği aramak için, eBulma yöneticisinin bu konum için oluşturduğunuz hesapta oturum açması ve ardından bir içerik araması çalıştırması gerekir.
 
 2. eBulma yöneticisinin araması gereken her uydu coğrafi konumu (ve ilgili kullanıcı hesabı) için bir arama izinleri filtresi oluşturun. Bu arama izinlerinin her biri, eBulma yöneticisi bu konumla ilişkilendirilmiş kullanıcı hesabında oturum açtığında içerik aramasının kapsamını belirli bir coğrafi konumla sınırlar.
 
@@ -258,7 +252,6 @@ New-ComplianceSecurityFilter -FilterName "SPMultiGeo-APC" -Users ediscovery-apc@
 Çok coğrafi ortamlarda içerik aramak için arama izinleri filtrelerini kullanırken aşağıdakileri göz önünde bulundurun:
 
 - **Region** parametresi aramaları belirtilen uydu konumuna yönlendirir. Bir eBulma yöneticisi yalnızca arama izinleri filtresinde belirtilen bölgenin dışındaki SharePoint ve OneDrive sitelerinde arama verirse, hiçbir arama sonucu döndürülür.
-
 - **Region** parametresi Exchange posta kutularının aramalarını denetlemez. Posta kutularında arama yaptığınızda tüm veri merkezleri aranıyor.
 
 Çok coğrafi bir ortamda arama izinleri filtrelerini kullanma hakkında daha fazla bilgi [için, eBulma araştırmaları için uyumluluk sınırlarını ayarlama](set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments) bölümündeki "Multi-Geo ortamlarında içerik arama ve dışarı aktarma" bölümüne bakın.

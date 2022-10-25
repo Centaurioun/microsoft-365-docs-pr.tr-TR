@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: İş için Microsoft 365 aboneliğiniz için çevrimiçi veya telefon desteği almayı öğrenin. Destek almak için bir iş aboneliği yöneticisi olmanız gerekir.
-ms.openlocfilehash: ae3855d8ab7d236413541a029d3e0c82a6585a82
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 254c20dc7fc709b4217a92f0102d802a79286df1
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68638928"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688441"
 ---
 # <a name="get-support-for-microsoft-365-for-business"></a>İş için Microsoft 365 desteği alma
 
@@ -66,23 +66,17 @@ Servis isteğinizi çevrimiçi başlatarak zaman kazanın. Bir çözüm bulmanı
 
 ## <a name="phone-support"></a>Telefon desteği
 
-Faturalama ve Teknik destek saatleri (ve dilleri) için telefon numaraları [, ülkeye veya bölgeye göre iş destek kişileri için Microsoft 366'da](support-contact-info.md) listelenir.
+Çoğu ülkede veya bölgede, microsoft 365 iş ürünleri ve hizmetleri için faturalama desteği pazartesiden cumaya kadar 09:00-17:00 saatleri arasında İngilizce olarak sağlanır. Yerel dil desteği ülkeye veya bölgeye göre değişir.
+
+Teknik destek, günün 24 saati, haftanın 7 günü İngilizce ve bazı durumlarda da belirtildiği gibi yerel dillerde sağlanır.
+
+>[!div class="nextstepaction"]
+>[Ülkeye veya bölgeye göre destek telefon numaralarını bulma](support-contact-info.md)
 
 Yöneticiyseniz desteği ararken hesap ayrıntılarınızı hazır bulundurun.
 
 > [!NOTE]
 > Kuruluşunuzu daha iyi korumak için mevcut telefon tabanlı doğrulama sürecimize PIN kodu tabanlı bir doğrulama adımı ekledik. Kuruluş profilinizde kayıtlı olmayan bir numaradan bizimle iletişime geçerseniz Microsoft destek temsilcisi, Microsoft 365 yönetim merkezi profilinizdeki kayıtlı e-postaya veya telefon numarasına bir doğrulama kodu gönderir. Kuruluşunuzun hesabına erişim izni vermek için bu kodu destek temsilcisine sağlamanız gerekir.
-
-İş ürünleri ve hizmetleri için Microsoft 365 faturalama desteği pazartesiden cumaya kadar 09:05'ten (Avustralya'da 09:00-18:00) İngilizce olarak sağlanır.\
-Teknik destek, haftanın 7 günü, günde 24 saat İngilizce olarak sağlanır.
-
-- **Amerika Birleşik Devletleri'nde,1 800 865 9408 numaralı telefonu arayın.**
-
-- **Avustralya'da, 1 800 197 503 numaralı telefonu arayın.**
-
-- **Kanada'da, 1 800 865 9408 numaralı telefonu arayın.**
-
-- **Birleşik Krallık'ta, 0800 032 6417 numaralı telefonu arayın.**
 
 ## <a name="small-business-support-with-business-assist"></a>İşletme Yardımı ile küçük işletme desteği
 

@@ -1,5 +1,6 @@
 ---
 title: Microsoft Purview eKeşif çözümleri
+description: Microsoft Purview; Exchange posta kutuları, SharePoint ve OneDrive İş siteleri, Microsoft 365 Grupları, Microsoft Teams ve Skype Kurumsal konuşmaları gibi farklı konumlarda bulunan içeriği aramak ve dışarı aktarmak için kullanabileceğiniz üç eBulma aracı sunar. eBulma (Standart) ve eBulma (Premium), araştırmalarınızı yönetmenize yardımcı olacak birçok ek özellik sağlar.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,41 +11,37 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- m365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-ediscovery
-- m365initiative-compliance
 - m365solution-overview
+- highpri
+- ediscovery
 ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
 - MET150
-description: Microsoft Purview; Exchange posta kutuları, SharePoint ve OneDrive İş siteleri, Microsoft 365 Grupları, Microsoft Teams ve Skype Kurumsal konuşmaları gibi farklı konumlarda bulunan içeriği aramak ve dışarı aktarmak için kullanabileceğiniz üç eBulma aracı sunar. eBulma (Standart) ve eBulma (Premium), araştırmalarınızı yönetmenize yardımcı olacak birçok ek özellik sağlar.
-ms.openlocfilehash: 678500c2b44fbd3153e6fecb67073814cc2143a1
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: bdf70fcc98ae45b797da48a21f5d5978174bf0f6
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67821725"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688574"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>Microsoft Purview eKeşif çözümleri
 
-> [!TIP]
-> *Dokuz Microsoft Purview çözümlerinin tamamının premium sürümlerini ücretsiz olarak deneyebileceğinizi biliyor muydunuz?* Sağlam Purview özelliklerinin kuruluşunuzun uyumluluk gereksinimlerini karşılamasına nasıl yardımcı olabileceğini keşfetmek için 90 günlük Purview çözümleri deneme sürümünü kullanın. Microsoft 365 E3 ve Office 365 E3 müşterileri şimdi [Microsoft Purview uyumluluk portalı deneme hub'ında](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef) başlayabilir. [Kaydolabilecek kişiler ve deneme koşulları](compliance-easy-trials.md) hakkında ayrıntılı bilgi edinin.
-
 Elektronik bulma veya eBulma, yasal davalarda kanıt olarak kullanılabilecek elektronik bilgileri tanımlama ve teslim etme işlemidir. Exchange Online, OneDrive İş, SharePoint Online, Microsoft Teams, Microsoft 365 Grupları ve Yammer ekiplerindeki içeriği aramak için Microsoft Purview'daki eBulma araçlarını kullanabilirsiniz. Aynı eBulma aramasında posta kutularını ve siteleri arayabilir ve ardından arama sonuçlarını dışarı aktarabilirsiniz. Posta kutularında ve sitelerde bulunan içeriği tanımlamak, tutmak ve dışarı aktarmak için Microsoft Purview eKeşif (Standart) durumları kullanabilirsiniz. Kuruluşunuzun Office 365 E5 veya Microsoft 365 E5 aboneliği (veya ilgili E5 eklenti abonelikleri) varsa, Microsoft 365'teki zengin özelliklere sahip Microsoft Purview eKeşif (Premium) çözümünü kullanarak koruyucuları daha fazla yönetebilir ve içeriği analiz edebilirsiniz.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="ediscovery-solutions"></a>eKeşif çözümleri
 
 Microsoft Purview üç eBulma çözümü sağlar: İçerik arama, eBulma (Standart) ve eBulma (Premium).
 
-<!--
-![Key capabilities of Microsoft Purview eDiscovery tools.](..\media\m365-ediscovery-solution-graphic.png)
--->
-
 |İçerik Arama|eKeşif (Standart)|eKeşif (Premium)|
-|---------|---------|---------|
-|İçerik için arama yapma </br> Anahtar sözcük sorguları ve arama koşulları </br> Arama sonuçlarını dışarı aktarma </br> Rol tabanlı izinler|Arama ve dışarı aktarma </br> Olay yönetimi </br>Yasal tutma|Koruyucu yönetimi </br> Yasal tutma bildirimleri </br> Gelişmiş dizin oluşturma </br> Küme filtrelemeyi gözden geçirme </br> Etiketleme </br> Analytics </br> Tahmine dayalı kodlama modelleri </br> Ve daha fazlası...|
+|:-------------|:--------------------|:-------------------|
+|- İçerik arama </br> - Anahtar sözcük sorguları ve arama koşulları </br> - Arama sonuçlarını dışarı aktarma </br> - Rol tabanlı izinler|- Arama ve dışarı aktarma </br> - Olay yönetimi </br> - Yasal tutma| - Koruyucu yönetimi </br> - Yasal saklama bildirimleri </br> - Gelişmiş dizin oluşturma </br> - Küme filtrelemeyi gözden geçirme </br> -Etiketleme </br> -Analytics </br> - Tahmine dayalı kodlama modelleri </br> Ve daha fazlası...|
 
 - **İçerik araması**. İçerik arama aracını kullanarak Microsoft 365 veri kaynaklarında içerik arayın ve arama sonuçlarını yerel bir bilgisayara aktarın.
 
@@ -87,13 +84,13 @@ Her eBulma özelliğinin açıklaması aşağıdadır.
 
 - **İçerik arayın**. Exchange posta kutuları, OneDrive İş hesapları, SharePoint siteleri, Microsoft Teams, Microsoft 365 Grupları ve Yammer Teams'de depolanan içeriği arayın. Bu, posta kutularında ve sitelerde veri depolayan diğer Microsoft 365 uygulamaları tarafından oluşturulan içeriği içerir.
 
-- **Anahtar sözcük sorguları ve arama koşulları**. Sorgu ölçütlerine uyan içeriği aramak için KQL anahtar sözcük arama sorguları oluşturun. Aramanızın kapsamını daraltmak için koşullar da ekleyebilirsiniz.
+- **Anahtar sözcük sorguları ve arama koşulları**. Sorgu ölçütleriyle eşleşen içerik anahtar sözcüklerini aramak için Anahtar Sözcük Sorgu Dili (KQL) arama sorguları oluşturun. Aramanızın kapsamını daraltmak için koşullar da ekleyebilirsiniz.
 
 - **Arama istatistikleri**. Bir arama çalıştırdıktan sonra, arama ölçütlerinizle eşleşen öğelerin sayısı ve toplam boyutu gibi tahmini arama sonuçlarının istatistiklerini görüntüleyebilirsiniz. Diğer istatistikler, arama sonuçlarını içeren en üst içerik konumlarını ve arama sorgusunun farklı bölümleriyle eşleşen öğelerin sayısını içerir.
 
 - **Arama sonuçlarını dışarı aktarın**. İki adımlı bir işlemde arama sonuçlarını kuruluşunuzdaki yerel bir bilgisayara aktarın. Arama sonuçlarını dışarı aktardığınızda, öğeler Microsoft 365'teki özgün içerik konumundan Microsoft tarafından sağlanan azure depolama konumuna kopyalanır. Ardından bu öğeleri yerel bir bilgisayara indirebilirsiniz.
 
-- **Rol tabanlı izinler**. Farklı kullanıcıların gerçekleştirebileceği eBulma ile ilgili görevleri denetlemek için rol tabanlı erişim (RBAC) izinlerini kullanın. Yerleşik eBulma ile ilgili bir rol grubu kullanabilir veya belirli eBulma izinlerini atayan özel rol grupları oluşturabilirsiniz.
+- **Rol tabanlı izinler**. Farklı kullanıcıların gerçekleştirebileceği eBulma ile ilgili görevleri denetlemek için rol tabanlı erişim denetimi (RBAC) izinlerini kullanın. Yerleşik eBulma ile ilgili bir rol grubu kullanabilir veya belirli eBulma izinlerini atayan özel rol grupları oluşturabilirsiniz.
 
 - **Olay yönetimi**. eBulma (Standart) ve eBulma (Premium) içindeki eBulma durumları, belirli aramaları ve dışarı aktarmaları belirli bir araştırmayla ilişkilendirmenize olanak sağlar. Servis talebine kimlerin erişebileceğini denetlemek ve servis talebinin içeriğini görüntülemek için servis talebine üye de atayabilirsiniz.
 
@@ -103,7 +100,7 @@ Her eBulma özelliğinin açıklaması aşağıdadır.
 
 - **Yasal tutma bildirimleri**. Olay koruyucularıyla iletişim kurma sürecini yönetin. Yasal saklama bildirimi, koruyuculara olayla ilgili içeriği korumalarını emredmektedir. Koruyucular tarafından alınan, okunan ve onaylanan bildirimleri izleyebilirsiniz. eKeşif (Premium) içindeki iletişim iş akışı, koruyucuların ayrı tutma bildirimini kabul etmemesi durumunda ilk bildirimleri, anımsatıcıları ve yükseltmeleri oluşturup göndermenizi sağlar.
 
-- **Gelişmiş dizin oluşturma**. Bir olaya koruyucu ve koruyucu olmayan veri kaynakları eklediğinizde, ilişkili içerik konumları yeniden dizinlenir ( *Gelişmiş dizin oluşturma* olarak adlandırılan bir işlemde), bir araştırma için veri topladığınızda kısmen dizinlenmiş olarak kabul edilen tüm içeriğin tamamen aranabilir hale getirmek üzere yeniden işlenmesini sağlar.
+- **Gelişmiş dizin oluşturma**. Bir olaya koruyucu ve koruyucu olmayan veri kaynakları eklediğinizde, ilişkili içerik konumları *Gelişmiş dizin oluşturma* adlı bir işlemde yeniden dizinlenir. Gelişmiş dizin oluşturma, bir araştırma için veri topladığınızda tamamen aranabilir hale getirmek için kısmen dizinlenmiş olarak kabul edilen tüm içeriğin yeniden işlenmesini sağlar.
 
 - **Hata düzeltme**. Hata düzeltme adlı bir işlem kullanarak işleme hatalarını *düzeltin*. Hata düzeltme, Gelişmiş dizin oluşturma sırasında eBulma'nın (Premium) içeriği düzgün işlemesini engelleyen veri sorunlarını düzeltmenize olanak tanır. Örneğin, parola korumalı dosyalar kilitli veya şifrelenmiş olduğundan işlenemez. Hata düzeltmeyi kullanarak hata içeren dosyaları indirebilir, parola korumasını kaldırabilir ve ardından düzeltilmiş dosyaları karşıya yükleyebilirsiniz.
 
@@ -117,17 +114,17 @@ Her eBulma özelliğinin açıklaması aşağıdadır.
 
 - **Toplama istatistikleri ve raporları**. Taslak koleksiyon oluşturduktan veya bir koleksiyonu gözden geçirme kümesine işledikten sonra, arama ölçütleriyle eşleşen en çok öğeyi içeren içerik konumları ve arama sorgusu tarafından döndürülen öğe sayısı gibi, alınan öğelerle ilgili zengin bir istatistik kümesini görüntüleyebilirsiniz. Sonuçların bir alt kümesini de önizleyebilirsiniz.
 
-- **Küme filtrelemeyi gözden geçirin**. İçerik bir gözden geçirme kümesine eklendikten sonra, yalnızca filtreleme ölçütlerinizle eşleşen öğe kümesini görüntülemek için filtreler uygulayabilirsiniz. Ardından, filtre kümelerini sorgu olarak kaydedebilirsiniz ve bu da kaydedilen filtreleri hızla yeniden uygulamanıza olanak tanır. Küme filtreleme ve kaydedilen sorguları gözden geçirin, içeriği araştırmanıza en uygun öğelere hızla silmenize yardımcı olur.
+- **Küme filtrelemeyi gözden geçirin**. İçerik bir gözden geçirme kümesine eklendikten sonra, yalnızca filtreleme ölçütlerinizle eşleşen öğe kümesini görüntülemek için filtreler uygulayabilirsiniz. Ardından, filtre kümelerini sorgu olarak kaydedebilirsiniz ve bu da kaydedilen filtreleri hızla yeniden uygulamanıza olanak tanır. Küme filtreleme ve kaydedilen sorguları gözden geçirin, araştırmanıza en uygun içerik öğelerini hızla seçmenize yardımcı olur.
 
-- **Etiketleme**. Etiketler ayrıca ilgili olmayan içeriği silmenize ve en ilgili içeriği belirlemenize yardımcı olur. Uzmanlar, avukatlar veya diğer kullanıcılar bir inceleme kümesindeki içeriği gözden geçirdiğinde, içerikle ilgili görüşleri etiketler kullanılarak yakalanabilir. Örneğin, amaç gereksiz içeriği geçersiz kılmasıysa, kullanıcı belgeleri "yanıt vermeyen" gibi bir etiketle etiketleyebilir. İçerik gözden geçirilip etiketlendikten sonra, "yanıt vermeyen" olarak etiketlenen tüm içerikleri dışlamak için bir gözden geçirme kümesi sorgusu oluşturulabilir. Bu işlem, eBulma iş akışındaki sonraki adımlardan yanıt vermeyen içeriği ortadan kaldırır.
+- **Etiketleme**. Etiketler, ilgili olmayan içeriği atlamanıza ve en ilgili içeriği belirlemenize de yardımcı olur. Uzmanlar, avukatlar veya diğer kullanıcılar bir inceleme kümesindeki içeriği gözden geçirdiğinde, içerikle ilgili görüşleri etiketler kullanılarak yakalanabilir. Örneğin, amaç gereksiz içeriği dışlamaksa, kullanıcı belgeleri "yanıt vermeyen" gibi bir etiketle etiketleyebilir. İçerik gözden geçirilip etiketlendikten sonra, "yanıt vermeyen" olarak etiketlenen tüm içerikleri dışlamak için bir gözden geçirme kümesi sorgusu oluşturulabilir. Bu işlem, eBulma iş akışındaki sonraki adımlardan yanıt vermeyen içeriği ortadan kaldırır.
 
 - **Analiz.** eBulma (Premium), belgeleri tutarlı bir şekilde düzenlemenize ve gözden geçirilecek belgelerin hacmini azaltmanıza yardımcı olmak için gözden geçirme kümesi belgelerini analiz etmeye yönelik araçlar sağlar. *Yakın yinelenen algılama* , inceleme sürecinizi daha verimli hale getirmenize yardımcı olmak için metin olarak benzer belgeleri gruplandırıyor. *Email yazışma,* bir e-posta yazışmasında konuşmanın tam bağlamını veren belirli e-posta iletilerini tanımlar. *Temalar* işlevselliği, ilgili temaya sahip belgeleri gözden geçirebilmeniz için belgeleri gözden geçirmede temaları analiz etmeye ve belgelere tema atamaya çalışır. Bu analiz özellikleri, gözden geçirenlerin toplanan belgelerin bir bölümünü gözden geçirebilmesi için gözden geçirme sürecinizi daha verimli hale getirmenize yardımcı olur.
 
-- **Tahmine dayalı kodlama modelleri**. Büyük hacimli büyük harf içeriklerini gözden geçirmek üzere önceliklendirebileceğiniz ilgili bir öğe kümesiyle azaltmak ve silmek için tahmine dayalı kodlama modellerini kullanın. Bu, bir gözden geçirme kümesindeki en ilgili öğelerin gözden geçirilmesini önceliklendirmenize yardımcı olan kendi tahmine dayalı kodlama modellerinizi oluşturup eğiterek gerçekleştirilir. Sistem, inceleme kümesindeki her öğeye tahmin puanlarını uygulamak için eğitimi kullanır. Bu, öğeleri tahmin puanına göre filtrelemenize olanak tanır ve bu sayede önce en ilgili (veya ilgili olmayan) öğeleri gözden geçirebilirsiniz.
+- **Tahmine dayalı kodlama modelleri**. Büyük hacimli büyük harf içeriklerini gözden geçirmek üzere önceliklendirebileceğiniz ilgili bir öğe kümesine azaltmak için tahmine dayalı kodlama modellerini kullanın. Bu, bir gözden geçirme kümesindeki en ilgili öğelerin gözden geçirilmesini önceliklendirmenize yardımcı olan kendi tahmine dayalı kodlama modellerinizi oluşturup eğiterek gerçekleştirilir. Sistem, inceleme kümesindeki her öğeye tahmin puanlarını uygulamak için eğitimi kullanır. Bu, öğeleri tahmin puanına göre filtrelemenize olanak tanır ve bu sayede önce en ilgili (veya ilgili olmayan) öğeleri gözden geçirebilirsiniz.
 
 - **Hesaplanan belge meta verileri**. Gelişmiş dizin oluşturma, konuşma yazışması, analiz ve tahmine dayalı kodlama gibi eBulma (Premium) özelliklerinin çoğu, ayarlanmış belgeleri gözden geçirmek için meta veri özellikleri ekler. Bu meta veriler, belirli bir özellik tarafından gerçekleştirilen işlevle ilgili bilgileri içerir. Belgeleri gözden geçirirken, filtre ölçütlerinizle eşleşen belgeleri görüntülemek için meta veri özelliklerine göre filtreleyebilirsiniz. Bu meta veriler, gözden geçirme kümesi belgeleri dışarı aktarıldıktan sonra üçüncü taraf gözden geçirme uygulamalarına aktarılabilir.
 
-- **Uzun süre çalışan işlerin saydamlığı**. eBulma (Premium) içindeki işler genellikle bir servis talebine koruyucu ekleme, inceleme kümesine içerik ekleme, analiz çalıştırma ve tahmine dayalı kodlama modellerini eğitma gibi kullanıcı eylemleri tarafından tetiklenen uzun süre çalışan işlemlerdir. Sorunları MS Desteği'ne aktarmanız gerekiyorsa bu işlerin durumunu izleyebilir ve destek bilgilerini alabilirsiniz.
+- **Uzun süre çalışan işlerin saydamlığı**. eBulma (Premium) içindeki işler genellikle bir servis talebine koruyucu ekleme, inceleme kümesine içerik ekleme, analiz çalıştırma ve tahmine dayalı kodlama modellerini eğitma gibi kullanıcı eylemleri tarafından tetiklenen uzun süre çalışan işlemlerdir. Sorunları Microsoft Desteği yükseltmeniz gerekiyorsa bu işlerin durumunu izleyebilir ve destek bilgileri alabilirsiniz.
 
 - **Müşteriye ait Azure Depolama konumuna aktarın**. Gözden geçirme kümesindeki belgeleri dışarı aktardığınızda, bunları kuruluşunuz tarafından yönetilen bir Azure Depolama hesabına dışarı aktarma seçeneğiniz vardır. Ayrıca, eBulma (Premium) hangi verilerin dışarı aktarılmış olduğunu özelleştirmenize olanak tanır. Dosya meta verilerini, yerel dosyaları, metin dosyalarını, etiketleri ve PDF dosyasına kaydedilen yeniden işlem uygulanmış belgeleri dışarı aktarmayı içerir.
 
@@ -145,7 +142,6 @@ Aşağıdaki bölümlerde İçerik arama, eBulma (Standart) ve eBulma (Premium) 
 - aboneliği Microsoft 365 İş Temel
 - A1 aboneliğini Office 365 Eğitim
 - aboneliği Office 365 E1
-
 
 ### <a name="ediscovery-standard"></a>eKeşif (Standart)
 
@@ -171,24 +167,21 @@ Aşağıdaki bölümlerde İçerik arama, eBulma (Standart) ve eBulma (Premium) 
 
 ## <a name="get-started-with-ediscovery"></a>eKeşif'i kullanmaya başlama
 
-Daha fazla bilgi edinmenize ve Microsoft 365'teki eKeşif çözümlerini kullanmaya başlamanıza yardımcı olmak için aşağıdaki makalelere bakın.
+Daha fazla bilgi edinmenize ve Microsoft Purview eKeşif çözümleri kullanmaya başlamanıza yardımcı olması için aşağıdaki makalelere bakın.
 
-### <a name="content-search"></a>İçerik arama
+### <a name="get-started-with-content-search"></a>İçerik arama ile çalışmaya başlama
 
 - [İçerik arama kullanarak içerik arama](search-for-content.md)
-
 - [Arama oluşturma](content-search.md)
 
-### <a name="ediscovery-standard"></a>eKeşif (Standart)
+### <a name="get-started-with-ediscovery-standard"></a>eKeşif’i (Standart) kullanmaya başlama
 
 - [eKeşif’i (Standart) kullanmaya başlama](get-started-core-ediscovery.md)
 
-### <a name="ediscovery-premium"></a>eKeşif (Premium)
+### <a name="get-started-with-ediscovery-premium"></a>eKeşif'i kullanmaya başlama (Premium)
 
 - [eKeşif'e Genel Bakış (Premium)](overview-ediscovery-20.md)
-
 - [eKeşif'i (Premium) ayarlama](get-started-with-advanced-ediscovery.md)
-
 - [eBulma (Premium) olayı oluşturma ve yönetme](create-and-manage-advanced-ediscoveryv2-case.md)
 
 ## <a name="ediscovery-roadmap"></a>eBulma yol haritası
@@ -197,4 +190,4 @@ Hangi eBulma özelliklerinin başlatıldığını, dağıtıldığını veya gel
 
 ## <a name="training"></a>Eğitim
 
-İçerik arama, eKeşif (Standart) ve eKeşif (Premium) ile ilgili temel bilgiler konusunda BT yöneticilerinizi, eBulma yöneticilerinizi ve uyumluluk araştırma ekiplerinizi eğiterek kuruluşunuzun Microsoft 365 eKeşif araçlarını kullanarak daha hızlı bir şekilde çalışmaya başlamasına yardımcı olabilirsiniz. Microsoft 365, kuruluşunuzdaki bu kullanıcıların eBulma'ya başlamalarına yardımcı olmak için aşağıdaki kaynağı sağlar: [Microsoft 365'in eBulma ve denetim özelliklerini açıklama](/training/modules/describe-ediscovery-capabilities-of-microsoft-365).
+İçerik arama, eBulma (Standart) ve eKeşif (Premium) ile ilgili temel bilgiler konusunda BT yöneticilerinizi, eBulma yöneticilerinizi ve uyumluluk araştırma ekiplerini eğiterek kuruluşunuzun Microsoft Purview eKeşif araçlarını kullanarak daha hızlı bir şekilde çalışmaya başlamasına yardımcı olabilirsiniz. Kuruluşunuzdaki bu kullanıcıların eBulma'yı kullanmaya başlamalarına yardımcı olmak için bkz. [Microsoft Purview'un eKeşif ve denetim özelliklerini açıklama](/training/modules/describe-ediscovery-capabilities-of-microsoft-365).

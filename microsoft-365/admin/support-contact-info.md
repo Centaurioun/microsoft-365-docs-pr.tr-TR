@@ -1,5 +1,5 @@
 ---
-title: Ülkeye veya bölgeye göre İş için Microsoft 365 telefon destek numaralarını bulma
+title: Ülkeye veya bölgeye göre İş için Microsoft 365 destek telefon numaralarını bulma
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
@@ -12,21 +12,22 @@ ms.collection:
 - highpri
 - Adm_O365
 ms.custom: VSBFY23
-ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: İş için Microsoft 365 aboneliğiniz için telefon desteği almayı öğrenin. Destek almak için bir iş aboneliği yöneticisi olmanız gerekir.
-ms.openlocfilehash: 9b5a91ae3cfd335ec196a022abbcdb78d02167eb
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.date: 10/20/2022
+ms.openlocfilehash: c73a473a1ca19463efc2f8de76898f505e07ab74
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68643210"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688509"
 ---
-# <a name="find-microsoft-365-for-business-phone-support-numbers-by-country-or-region"></a>Ülkeye veya bölgeye göre İş için Microsoft 365 telefon destek numaralarını bulma
+# <a name="find-microsoft-365-for-business-support-phone-numbers-by-country-or-region"></a>Ülkeye veya bölgeye göre İş için Microsoft 365 destek telefon numaralarını bulma
 
-İş ürünleri ve hizmetleri için Microsoft 365 faturalama desteği pazartesiden cumaya kadar 09:05'ten (Avustralya'da 09:00-18:00) İngilizce olarak sağlanır.\
-Teknik destek, haftanın 7 günü, günde 24 saat İngilizce olarak sağlanır.
+Çoğu ülkede veya bölgede, microsoft 365 iş ürünleri ve hizmetleri için faturalama desteği pazartesiden cumaya kadar 09:00-17:00 saatleri arasında İngilizce olarak sağlanır. Yerel dil desteği ülkeye veya bölgeye göre değişir.
+
+Teknik destek, günün 24 saati, haftanın 7 günü İngilizce ve bazı durumlarda da belirtildiği gibi yerel dillerde sağlanır.
 
 Yöneticiyseniz desteği ararken hesap ayrıntılarınızı hazır bulundurun.
 
@@ -3979,11 +3980,11 @@ Bahasa Endonezya: Pazartesi-Cuma, 08:00-17:00\
    :::column:::
 **Telefon numarası:**\
 0120 996 680 (Office 365 Kurumsal)\
-0120 628 860 (Diğer Planlar)
+0120 628 860 (Microsoft 365 İş Temel, Microsoft 365 İş Standart veya Microsoft 365 İş Ekstra gibi diğer planlar)
 
 Alternatif Telefon Numaraları:\
 03 4332 5493 (Office 365 Kurumsal)\
-03 4332 6257 (Diğer Planlar)\
+03 4332 6257 (Microsoft 365 İş Temel, Microsoft 365 İş Standart veya Microsoft 365 İş Ekstra gibi diğer planlar)\
 Yerel arama ücretleri uygulanır.
 
 **Faturalama destek saatleri:**\
@@ -4000,7 +4001,8 @@ Japonca: Günde 24 saat, haftada 7 gün\
 İngilizce: Haftanın 7 günü, günde 24 saat
 
 **Diğer Planlar:**\
-Telefon teknik desteği hafta içi 09:00-17:30 saatleri arası sağlanır. Yüksek önem derecesi sorunları için, haftanın 7 günü, günde 24 saat teknik destek sağlanır.
+Telefon teknik desteği hafta içi 9:00-17:30 saatleri arası sağlanır.\
+Yüksek önem derecesi sorunları için, haftanın 7 günü, günde 24 saat teknik destek sağlanır.
    :::column-end:::
 :::row-end:::
 

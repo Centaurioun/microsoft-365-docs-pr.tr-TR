@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender'daki olayları araştırma
 description: Cihazlar, kullanıcılar ve posta kutularıyla ilgili olayları araştırın.
-keywords: olay, olaylar, analiz, yanıt, makineler, cihazlar, kullanıcılar, kimlikler, posta, e-posta, posta kutusu, araştırma, graf, kanıt
+keywords: olay, olaylar, saldırı hikayesi, analiz, yanıt, makineler, cihazlar, kullanıcılar, kimlikler, posta, e-posta, posta kutusu, araştırma, graf, kanıt
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.mktglfcycl: deploy
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2dbc3bc965a1c975b354a5698b3fa0c67e2cd39c
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 41006d8c68eef16d09bc872ca3d8fc471812cb1c
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68055446"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68687771"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender'daki olayları araştırma
 
@@ -42,7 +42,7 @@ Bir olay içinde ağınızı etkileyen uyarıları analiz eder, ne anlama geldi�
 
 ## <a name="initial-investigation"></a>İlk araştırma
 
-Ayrıntılara girmeden önce olayın özelliklerine ve özetine göz atın.
+Ayrıntılara girmeden önce, olayın özelliklerine ve saldırı hikayesinin tamamına göz atın.
 
 Onay işareti sütunundan olayı seçerek başlayabilirsiniz. İşte bir örnek.
 
@@ -52,15 +52,53 @@ Bunu yaptığınızda, olayla ilgili önem derecesi, atandığı kişi gibi öne
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Microsoft 365 Defender portalında bir olayın özet ayrıntılarını görüntüleyen bölme." lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
 
-Buradan **Olay sayfasını aç'ı** seçebilirsiniz. Bu işlem uyarı, cihaz, kullanıcı, araştırma ve kanıt için daha fazla özet bilgi ve sekme bulabileceğiniz olayın ana sayfasını açar.
+Buradan **Olay sayfasını aç'ı** seçebilirsiniz. Bu, tam saldırı hikayesi bilgilerini ve uyarılar, cihazlar, kullanıcılar, araştırmalar ve kanıt sekmelerini bulabileceğiniz olayın ana sayfasını açar.
 
 Olay kuyruğundan olay adını seçerek bir olayın ana sayfasını da açabilirsiniz.
+
+## <a name="attack-story"></a>Saldırı hikayesi
+
+Saldırı hikayeleri, saldırının tüm hikayesini aynı sekmede görüntülerken saldırıları hızla gözden geçirmenize, araştırmanıza ve düzeltmenize yardımcı olur. Ayrıca varlık ayrıntılarını gözden geçirmenize ve bir dosyayı silme veya bağlamı kaybetmeden bir cihazı yalıtma gibi düzeltme eylemleri gerçekleştirmenize olanak tanır.
+
+:::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="Bir olayın saldırı hikayesi" lightbox="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png":::
+
+Saldırı hikayesinin içinde uyarı sayfasını ve olay grafiğini bulabilirsiniz.
+
+Olay uyarısı sayfasında şu bölümler vardır:
+
+- Uyarı hikayesi:
+
+   - Ne oldu
+
+   - Gerçekleştirilen eylemler
+
+   - İlgili olaylar
+
+- Sağ bölmedeki uyarı özellikleri (durum, ayrıntılar, açıklama ve diğerleri)
+
+Her uyarının **Uyarı hikayesi** bölümünde listelenen tüm alt bölümlere sahip olmadığını unutmayın.
+
+Grafikte saldırının tam kapsamı, saldırının zaman içinde ağınız üzerinden nasıl yayıldığı, nereden başladığı ve saldırganın ne kadar ileri gittiği gösterilir. Saldırının parçası olan farklı şüpheli varlıkları kullanıcılar, cihazlar ve posta kutuları gibi ilgili varlıklarına bağlar.
+
+Grafikten şunları yapabilirsiniz:
+
+- Saldırının kronolojisini anlamak için zaman içinde gerçekleşen uyarıları ve düğümleri grafikte oynatın.
+  
+  :::image type="content" source="../../media/investigate-incidents/play-alert-attack-story.gif" alt-text="Saldırı hikayesi grafı sayfasında uyarıların ve düğümlerin oynatıldığını gösteren ekran görüntüsü.":::
+
+- Varlık bölmesini açarak varlık ayrıntılarını gözden geçirmenizi ve dosyayı silme veya cihazı yalıtma gibi düzeltme eylemleri üzerinde işlem yapmanızı sağlar.
+
+  :::image type="content" source="../../media/investigate-incidents/review-entity-details-attack-story.gif" alt-text="Saldırı hikayesi graf sayfasındaki varlık ayrıntılarının gözden geçirilmesini gösteren ekran görüntüsü.":::
+
+- İlgili oldukları varlığa göre uyarıları vurgulayın.
+
+Olayın göreli önemini değerlendirmek ve ilişkili uyarılara ve etkilenen varlıklara hızla erişmek için **Özet** sayfasını kullanın.
 
 ## <a name="summary"></a>Özet
 
 **Özet** sayfası, olayla ilgili dikkat çekmeniz gereken en önemli şeylere bir anlık görüntü bakışı sağlar.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Microsoft 365 Defender portalındaki bir olayın özet bilgileri" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-investigate-summary.png" alt-text="Microsoft 365 Defender portalında bir olayın özet bilgilerini gösteren ekran görüntüsü." lightbox="../../media/incidents-overview/incidents-investigate-summary.png":::
 
 Bilgiler bu bölümlerde düzenlenmiştir.
 
@@ -71,8 +109,6 @@ Bilgiler bu bölümlerde düzenlenmiştir.
 | Kanıt | Olaydan etkilenen varlık sayısını görüntüler. |
 | Olay bilgileri | Olayın etiketler, durum ve önem derecesi gibi özelliklerini görüntüler. |
 |||
-
-Olayın göreli önemini değerlendirmek ve ilişkili uyarılara ve etkilenen varlıklara hızla erişmek için **Özet** sayfasını kullanın.
 
 ## <a name="alerts"></a>Uyarılar
 
@@ -94,20 +130,6 @@ Uyarının olaylarını, diğer tetiklenen uyarıların geçerli uyarıya neden 
 İşte bir örnek.
 
 :::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="Microsoft 365 Defender portalındaki bir olay içindeki uyarının ayrıntıları." lightbox="../../media/investigate-incidents/incident-alert-example.png":::
-
-Olay uyarısı sayfasında şu bölümler vardır:
-
-- Uyarı hikayesi:
-
-   - Ne oldu
-
-   - Gerçekleştirilen eylemler
-
-   - İlgili olaylar
-
-- Sağ bölmedeki uyarı özellikleri (durum, ayrıntılar, açıklama ve diğerleri)
-
-Her uyarı, **Uyarı hikayesi** bölümünde listelenen tüm alt bölümlere sahip olmaz.
 
 Uyarıları [araştırmak](investigate-alerts.md) için uyarı kuyruğu ve uyarı sayfalarını kullanmayı öğrenin.
 
@@ -135,7 +157,6 @@ Cihaz sayfasından cihaz hakkında tüm uyarıları, zaman çizelgesi ve güvenl
 Kullanıcı hesabı tehdidinin, açığa çıkarmanın ve iletişim bilgilerinin ayrıntılarını görmek için kullanıcının onay işaretini seçebilirsiniz. Ek kullanıcı hesabı ayrıntılarını görmek için kullanıcı adını seçin.
 
 Kullanıcıları araştırmak için ek kullanıcı bilgilerini görüntülemeyi ve bir olayın [kullanıcılarını](investigate-users.md) yönetmeyi öğrenin.
-
 
 ## <a name="mailboxes"></a>Posta kutu -ları
 
@@ -172,26 +193,6 @@ Daha fazla bilgi için bkz. [Microsoft 365 Defender'de otomatik araştırma ve y
 Microsoft 365 Defender, uyarılardaki tüm olayların desteklenen olaylarını ve şüpheli varlıkları otomatik olarak araştırır ve size önemli e-postalar, dosyalar, işlemler, hizmetler, IP Adresleri ve daha fazlası hakkında bilgi sağlar. Bu, olaydaki olası tehditleri hızla algılamanıza ve engellemenize yardımcı olur.
 
 Analiz edilen varlıkların her biri bir karar (Kötü Amaçlı, Şüpheli, Temiz) ve bir düzeltme durumuyla işaretlenir. Bu, tüm olayın düzeltme durumunu ve sonraki adımları anlamanıza yardımcı olur.
-
-## <a name="graph-preview"></a>Graph (Önizleme)
-
-**Graf** sekmesinde saldırının tam kapsamı, saldırının ağınız üzerinden zaman içinde nasıl yayıldığı, nereden başladığı ve saldırganın ne kadar ileri gittiği gösterilir. Saldırının parçası olan farklı şüpheli varlıkları kullanıcılar, cihazlar ve posta kutuları gibi ilgili varlıklarına bağlar. 
-
-**Graf** sekmesinde şunları yapabilirsiniz:
-
-1. Saldırının kronolojisini anlamak için zaman içinde gerçekleşen uyarıları ve düğümleri grafikte oynatın.
-
-
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="Graph sayfasındaki uyarıların ve düğümlerin yürütülmesi":::
- 
-
-2. Varlık bölmesini açarak varlık ayrıntılarını gözden geçirmenizi ve dosyayı silme veya cihazı yalıtma gibi düzeltme eylemleri üzerinde işlem yapmanızı sağlar.
- 
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="Microsoft 365 Defender portalındaki Grafik sayfasındaki varlık bölmesi" lightbox="../../media/investigate-incidents/incident-graph-entity-pane.png":::
-
-3. İlgili oldukları varlığa göre uyarıları vurgulayın.
- 
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Grafik sayfasında bir uyarı vurgusu" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

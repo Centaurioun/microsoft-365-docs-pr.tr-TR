@@ -1,5 +1,6 @@
 ---
 title: eBulma'da kısmen dizine alınan öğeleri araştırma
+description: Kuruluşunuzdaki Exchange, SharePoint ve OneDrive İş kısmen dizine alınmış öğeleri (dizine alınmamış öğeler olarak da adlandırılır) yönetmeyi öğrenin.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,42 +11,43 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
-description: Kuruluşunuzdaki Exchange, SharePoint ve OneDrive İş kısmen dizine alınmış öğeleri (dizine alınmamış öğeler olarak da adlandırılır) yönetmeyi öğrenin.
-ms.openlocfilehash: 9e62f635c599f529369f6a037b2ee7946fc58f81
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 813841c6c0196b51ad4a64eeb5ae0e4ab4f8a38b
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67818291"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68687662"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>eBulma'da kısmen dizine alınan öğeleri araştırma
 
 Microsoft Purview uyumluluk portalı çalıştırdığınız bir eBulma araması, bir arama çalıştırdığınızda tahmini arama sonuçlarında otomatik olarak kısmen dizine alınan öğeler içerir. Kısmen dizine alınan öğeler, SharePoint ve OneDrive İş sitelerindeki Exchange posta kutusu öğeleri ve belgeleridir ve herhangi bir nedenle arama için tamamen dizine eklenmemiştir. Çoğu e-posta iletisi ve site belgesi, [e-posta iletileri için Dizin oluşturma sınırları](limits-for-content-search.md#indexing-limits-for-email-messages) içinde olduğundan başarıyla dizinlenir. Ancak, bazı öğeler bu dizin oluşturma sınırlarını aşabilir ve kısmen dizine alınabilir. eBulma araması çalıştırdığınızda öğelerin arama için dizine alınamamalarının ve kısmen dizine alınan öğeler olarak döndürüllerinin diğer nedenleri şunlardır:
   
 - Email iletilerde açılabilen ekli bir dosya vardır; kısmen dizine alınan e-posta öğelerinin en yaygın nedeni budur.
-
 - E-posta iletisine çok fazla dosya iliştirildi.
-
 - E-posta iletisine eklenmiş bir dosya çok büyük.
-
 - Dosya türü dizin oluşturma için desteklenir, ancak belirli bir dosya için dizin oluşturma hatası oluştu.
 
 Değişiklik gösterse de çoğu kuruluş müşterisi, topluca göre içeriğin %1'inden az, kısmen dizine alınan boyuta göre içeriğin %12'sinden daha az içeriğe sahiptir. Birim ile boyut arasındaki farkın nedeni, büyük dosyaların tamamen dizine alınamaz içerik içerme olasılığının daha yüksek olmasıdır.
+
+İçerik aramasında öğeleri kısmen dizinleme hakkında daha fazla bilgi için bkz. [İçerik aramasında kısmen dizine alınan öğeleri araştırma](partially-indexed-items-in-content-search.md).
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>Kısmen dizine alınan öğe sayısı bir arama için neden değişiyor?
 
 Bir eBulma araması çalıştırdıktan sonra, arama yapılan konumlardaki kısmen dizine alınan öğelerin toplam sayısı ve boyutu, aramanın ayrıntılı istatistiklerinde görüntülenen arama sonucu istatistiklerinde listelenir. Bunların arama istatistiklerinde  *dizinlenmemiş öğeler olarak adlandırıldıklarına*  dikkat edin. Aşağıda, arama sonuçlarında döndürülen kısmen dizine alınan öğelerin sayısını etkileyecek birkaç şey vardır:
   
 - Bir öğe kısmen dizine eklenmişse ve arama sorgusuyla eşleşiyorsa, hem arama sonucu öğelerinin sayısına (hem de boyutuna) ve kısmen dizine alınan öğelere dahil edilir. Ancak, aynı aramanın sonuçları dışarı aktarıldığında, öğe yalnızca arama sonuçları kümesine eklenir; kısmen dizinlenmiş bir öğe olarak dahil değildir.
-
-- SharePoint ve OneDrive sitelerinde bulunan kısmen dizinlenmiş öğeler, aramanın ayrıntılı istatistiklerinde görüntülenen kısmen dizinlenmiş öğelerin tahmininde yer *almamaktadır* . Ancak, eBulma aramasının sonuçlarını dışarı aktardığınızda kısmen dizine alınan öğeler dışarı aktarılabilir. Örneğin, yalnızca sitelerde arama yaparsanız, kısmen dizine alınan tahmini öğe sayısı sıfır olur.
+- SharePoint ve OneDrive sitelerinde bulunan kısmen dizinlenmiş öğeler, aramanın ayrıntılı istatistiklerinde görüntülenen kısmen dizine eklenmiş öğelerin tahmininde yer *almaz* . Ancak, eBulma aramasının sonuçlarını dışarı aktardığınızda kısmen dizine alınan öğeler dışarı aktarılabilir. Örneğin, yalnızca sitelerde arama yaparsanız, kısmen dizine alınan tahmini öğe sayısı sıfır olur.
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Kuruluşunuzda kısmen dizine alınan öğelerin oranını hesaplama
 
@@ -114,77 +116,3 @@ Aşağıda dizin oluşturma hatalarının listesi ve hatanın olası nedeninin a
 | `wordbreakertruncated` <br/> |Dizin oluşturma sırasında belgede çok fazla sözcük tanımlandı. Sınıra ulaşıldığında özelliğin işlenmesi durduruldu ve özellik kesildi.  <br/> |
 
 Hata alanları, Hata Etiketleri alanında listelenen işleme hatasından hangi alanların etkilendiğini açıklar. veya `participants`gibi `subject` bir özelliği arıyorsanız, iletinin gövdesindeki hatalar aramanızın sonuçlarını etkilemez. Bu, tam olarak hangi kısmen dizine alınan öğeleri daha fazla araştırmanız gerekebileceğini belirlerken yararlı olabilir.
-
-<!--
-## Using a PowerShell script to determine your organization's exposure to partially indexed email items
-
-The following steps show you how to run a PowerShell script that searches for all items in all Exchange mailboxes, and then generates a report about your organization's ratio of partially indexed email items (by count and by size) and displays the number of items (and their file type) for each indexing error that occurs. Use the error tag descriptions in the previous section to identify the indexing error.
-  
-1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `PartiallyIndexedItems.ps1`.
-
-   ```powershell
-     write-host "**************************************************"
-     write-host "     Security & Compliance PowerShell      " -foregroundColor yellow -backgroundcolor darkgreen
-     write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
-     write-host "**************************************************"
-     " " 
-     # Create a search with Error Tags Refinders enabled
-     Remove-ComplianceSearch "RefinerTest" -Confirm:$false -ErrorAction 'SilentlyContinue'
-     New-ComplianceSearch -Name "RefinerTest" -ContentMatchQuery "size>0" -RefinerNames ErrorTags -ExchangeLocation ALL
-     Start-ComplianceSearch "RefinerTest"
-     # Loop while search is in progress
-     do{
-         Write-host "Waiting for search to complete..."
-         Start-Sleep -s 5
-         $complianceSearch = Get-ComplianceSearch "RefinerTest"
-     }while ($complianceSearch.Status -ne 'Completed')
-     $refiners = $complianceSearch.Refiners | ConvertFrom-Json
-     $errorTagProperties = $refiners.Entries | Get-Member -MemberType NoteProperty
-     $partiallyIndexedRatio = $complianceSearch.UnindexedItems / $complianceSearch.Items
-     $partiallyIndexedSizeRatio = $complianceSearch.UnindexedSize / $complianceSearch.Size
-     " "
-     "===== Partially indexed items ====="
-     "         Total          Ratio"
-     "Count    {0:N0}{1:P2}" -f $complianceSearch.Items.ToString("N0").PadRight(15, " "), $partiallyIndexedRatio
-     "Size(GB) {0:N2}{1:P2}" -f ($complianceSearch.Size / 1GB).ToString("N2").PadRight(15, " "), $partiallyIndexedSizeRatio
-     " "
-     Write-Host ===== Reasons for partially indexed items =====
-     foreach($errorTagProperty in $errorTagProperties)
-     {
-         $name = $refiners.Entries.($errorTagProperty.Name).Name
-         $count = $refiners.Entries.($errorTagProperty.Name).TotalCount
-         $frag = $name.Split("{_}")
-         $errorTag = $frag[0]
-         $fileType = $frag[1]
-         if ($errorTag -ne $lastErrorTag)
-         {
-             $errorTag
-         }
-         "    " + $fileType + " => " + $count
-         $lastErrorTag = $errorTag
-     }
-   ```
-
-2. [Connect to Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell).
-
-3. In Security & Compliance PowerShell, go to the folder where you saved the script in step 1, and then run the script; for example:
-
-   ```powershell
-   .\PartiallyIndexedItems.ps1
-   ```
-
-Here's an example fo the output returned by the script.
-  
-![Example of output from script that generates a report on your organization's exposure to partially indexed email items.](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
-
-> [!NOTE]
-> Note the following:
->  
-> - The total number and size of email items, and your organization's ratio of partially indexed email items (by count and by size).
-> 
-> - A list error tags and the corresponding file types for which the error occurred.
--->
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[eBulma'da kısmen dizine alınan öğeler](partially-indexed-items-in-content-search.md)

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 4366516d664a688a7573d1934409d1a39f073959
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 1d38fceba4d01d184ae5e451fdecaeb030450259
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68626500"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688357"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Insider risk yönetimi ayarlarını kullanmaya başlama
 
@@ -192,13 +192,9 @@ macOS cihazları (Catalina 10.15 veya üzeri), Intune veya JAMF Pro kullanılara
 
 Akıllı algılama ayarları, riskli etkinliklerin algılamalarının uyarılar için nasıl işlendiğini iyileştirmeye yardımcı olur. Bazı durumlarda, yoksaymak için dosya türleri tanımlamanız gerekebilir veya kullanıcılar için risk puanlarını artırmak için günlük olaylar için bir algılama düzeyi uygulamak isteyebilirsiniz. Dosya türü dışlamalarını denetlemek, olağan dışı etkinlikler için risk puanını artırmak ve dosya hacmi sınırlarını artırmak için bu ayarları kullanın.
 
-### <a name="file-type-exclusions"></a>Dosya türü dışlamaları
+### <a name="file-activity-detection"></a>Dosya etkinliği algılama
 
 Belirli dosya türlerini tüm insider risk yönetimi ilkesi eşleştirmelerinin dışında tutmak için dosya türü uzantılarını virgülle ayırarak girin. Örneğin, belirli türlerdeki müzik dosyalarını ilke eşleşmelerinin dışında tutmak için **Dosya türü dışlamaları** alanına *aac,mp3,wav,wma* girebilirsiniz. Bu uzantılara sahip dosyalar tüm insider risk yönetimi ilkeleri tarafından yoksayılır.
-
-### <a name="minimum-number-of-daily-events-to-boost-score-for-unusual-activity"></a>Olağan dışı etkinlikler için puanı artırmak için en az günlük etkinlik sayısı
-
-Bu ayarla, bir kullanıcı için olağan dışı olarak kabul edilen etkinliğin risk puanını artırmak için kaç günlük olayın gerekli olduğunu tanımlarsınız. Örneğin, bu risk güçlendirici için 25 girdiğinizi varsayalım. Bir kullanıcı son 30 gün içinde ortalama 10 dosya indirmesi gerçekleştiriyorsa ancak ilke bir günde 20 dosya indirdiğini algılarsa, o gün indirdiği dosya sayısı bu risk artırıcı için girdiğiniz sayıdan daha az olduğundan bu kullanıcı için olağan dışı olsa bile bu etkinliğin puanı yükseltilmeyecektir.
 
 ### <a name="alert-volume"></a>Uyarı birimi
 
@@ -208,7 +204,7 @@ Insider risk ilkeleri tarafından algılanan kullanıcı etkinliklerine, uyarı 
 - **Varsayılan birim**: Tüm yüksek önem dereceli uyarıları ve dengeli miktarda orta ve düşük önem derecesi uyarılarını görürsünüz.
 - **Daha fazla uyarı**: Tüm orta ve yüksek önem dereceli uyarıları ve en düşük önem derecesi uyarılarını görürsünüz. Bu ayar düzeyi daha fazla hatalı pozitif sonuç verebilir.
 
-### <a name="microsoft-defender-for-endpoint-alert-statuses-preview"></a>Uyarı durumlarını Uç Nokta için Microsoft Defender (önizleme)
+### <a name="microsoft-defender-for-endpoint-alert-statuses"></a>Uyarı durumlarını Uç Nokta için Microsoft Defender
 
 [Uç Nokta için Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), kurumsal ağların gelişmiş tehditleri engellemesine, algılamasına, araştırmasına ve yanıtlamasına yardımcı olmak için tasarlanmış bir kurumsal uç nokta güvenlik platformudur. Kuruluşunuzdaki güvenlik ihlallerini daha iyi görmek için, insider risk yönetimi güvenlik ihlali ilke şablonlarından oluşturulan ilkelerde kullanılan etkinlikler için Uç Nokta için Defender uyarılarını içeri aktarabilir ve filtreleyebilirsiniz.
 
@@ -244,6 +240,24 @@ Aşağıdaki etki alanı ayarlarının her biri için en fazla 500 etki alanı g
     Ayarlarda izin verilen etki alanları belirtildiğinde, bu etki alanlarıyla yapılan bu etkinlik, iç kuruluş etkinliğinin nasıl ele alındıklarına benzer şekilde değerlendirilir. Örneğin, buraya etkinliklerle eşlenen etki alanları, kuruluşunuzun dışındaki biriyle (gmail.com adresi olan birine e-posta göndermek gibi) içerik paylaşmayı içerebilir.
 
 - **Üçüncü taraf etki alanları:** Kuruluşunuz iş amacıyla (bulut depolama gibi) üçüncü taraf etki alanları kullanıyorsa, cihaz göstergesiyle ilgili etkinlik uyarıları alabilmeniz için bunları buraya ekleyin. *Üçüncü taraf bir siteden içerik indirmek için tarayıcı kullanın*.
+ 
+### <a name="sensitive-info-types-exclusion"></a>Hassas bilgi türlerini dışlama
+
+Hassas bilgi türlerini dışlayarak Uç Nokta, SharePoint, Teams, OneDrive ve Exchange için dosyayla ilgili etkinlikler içeren göstergelerle ve tetikleyicilerle eşlenen türleri belirtebilirsiniz. Burada tanımlanan hassas bilgi türlerini içeren dosyalar için risk puanı alınır ancak hassas bilgi türleriyle ilgili içerik içeren etkinlikler olarak gösterilmez. Tam liste için bkz [. Hassas bilgi türü varlık tanımları](sensitive-information-type-entity-definitions.md).
+
+Kiracıda kullanılabilen tüm kullanılabilir (kullanıma hazır ve özel) türlerin listesinden dışlanacak hassas bilgi türlerini seçebilirsiniz. Insider risk yönetimi, ABA Yönlendirme Numarası gibi çeşitli hassas bilgi türlerini varsayılan olarak dışlar. Dışlanacak en fazla 100 hassas bilgi türü seçebilirsiniz.
+
+> [!NOTE]
+> Hassas bilgi türlerinin dışlama listesi [öncelik içerik](insider-risk-management-policies.md#prioritize-content-in-policies) listesinden önceliklidir.
+
+Dışlamak üzere hassas bilgi türleri eklemek için aşağıdaki adımları tamamlayın:
+
+1. Uyumluluk portalında **Insider risk yönetimi** > **Ayarları** > **Akıllı algılamalar'a** gidin. 
+2. **Hassas bilgi türleri** bölümünde, **Dışlamak için Hassas bilgi türleri ekle'yi** seçin.
+3. **Hassas bilgi türü ekle veya düzenle** bölmesinde, dışlamak istediğiniz türleri seçin.
+4. **Değişiklikleri kabul et ekle'yi** veya değişiklikleri atmak için **İptal'i** seçin. 
+
+Hassas bilgi türü dışlamasını silmek için dışlama ve **Sil'i** seçin.
 
 ### <a name="file-path-exclusions"></a>Dosya yolu dışlamaları
 
@@ -271,7 +285,7 @@ Varsayılan dosya yolu dışlamaları şunlardır:
 
 Bu yollardaki joker karakterler, \Users ve \AppData arasındaki tüm klasör düzeylerinin dışlamada yer aldığına ilişkin bilgiler içerir. Örneğin, *C:\Users\Test1\AppData\Local* ve *C:\Users\Test2\AppData\Local*, *C:\Users\Test3\AppData\Local* (vb.) içindeki etkinliklerin tümü dahil edilir ve *\Users\\\*\AppData\Local* dışlama seçiminin bir parçası olarak risk açısından puanlanmaz.
 
-### <a name="site-url-exclusions"></a>Site URL'si dışlamaları
+### <a name="site-exclusions"></a>Site dışlamaları
 
 SharePoint'te (ve Ekip kanalı siteleriyle ilişkili SharePoint sitelerinde) gerçekleşen olası risk etkinliklerinin ilke uyarıları oluşturmasını önlemek için site URL'si dışlamalarını yapılandırın. Paydaşlarla veya genel olarak paylaşılabilen hassas olmayan dosyalar ve veriler içeren siteleri ve kanalları dışlamak isteyebilirsiniz. Dışlamak için en fazla 500 site URL yolu girebilirsiniz.
 
@@ -291,7 +305,7 @@ Hariç tutulacak site URL yollarını düzenlemek için aşağıdaki adımları 
 
 Site URL'si dışlamasını silmek için site URL'si dışlama seçeneğini belirleyin ve **Sil'i** seçin.
 
-### <a name="keyword-exclusions"></a>Anahtar sözcük dışlamaları
+### <a name="keyword-exclusion"></a>Anahtar sözcük dışlama
 
 Dosya adlarında, dosya yollarında veya e-posta iletisi konu satırlarında görünen anahtar sözcükler için dışlamaları yapılandırın. Bu, kuruluşunuz için belirtilen iyi huylu terimlerin etiketlenmesi nedeniyle olası uyarı gürültüsünü azaltması gereken kuruluşlar için esneklik sağlar. Anahtar sözcüğü içeren dosyalar veya e-posta konularıyla ilgili bu tür etkinlikler, insider risk yönetimi ilkeleriniz tarafından yoksayılır ve uyarı oluşturmaz. Dışlamak için en fazla 500 anahtar sözcük girebilirsiniz. 
 

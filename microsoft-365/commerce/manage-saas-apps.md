@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 365 yönetim merkezi'da üçüncü taraf uygulamaları etkinleştirmeyi ve yönetmeyi öğrenin.
 ms.date: 04/15/2021
-ms.openlocfilehash: fa4afd0b6b5e26c29c26277b236302081a55a9f0
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 5177898384fafa5ce3257f6f93fe998add0dbcd2
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68179603"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688548"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Kuruluşunuz için üçüncü taraf uygulama aboneliklerini yönetme
 
@@ -40,7 +40,7 @@ Yeni <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"
 - **İş ortağı satın alma** – Abonelik satın almak için İş Ortağı Merkezi aracılığıyla bir iş ortağıyla çalışın.
 - **Microsoft teklifi** – Microsoft Sales'ten üçüncü taraf uygulamaları içeren bir teklife yanıt verin.
 
-Müşteriler uygulamaları satın alıp Microsoft Müşteri Sözleşmesi kabul ettikten sonra bunları Microsoft 365 yönetim merkezi veya İş İçin Microsoft Store yönetebilir.
+Müşteriler uygulamaları satın alıp Microsoft Müşteri Sözleşmesi kabul ettikten sonra bunları Microsoft 365 yönetim merkezi'da yönetebilir.
 
 Uygulama sağlayıcıları uygulamalarını sabit bir fiyatla veya kullanıcılar için lisans satın alarak satar.
 

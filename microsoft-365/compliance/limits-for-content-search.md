@@ -1,5 +1,5 @@
 ---
-title: Uyumluluk merkezinde İçerik arama ve eBulma (Standart) sınırları
+title: Microsoft Purview uyumluluk portalı İçerik arama ve eBulma (Standart) sınırları
 description: Microsoft Purview uyumluluk portalı İçerik arama ve eBulma (Standart) özellikleri için geçerli olan sınırlar hakkında bilgi edinin.
 f1.keywords:
 - NOCSH
@@ -17,14 +17,14 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1b3adc70796e2a4cc25fb23eb6076fc5cc6ff4db
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 5933a232f9e91f2a0300f6a9fceb6543262cce33
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564268"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688141"
 ---
-# <a name="limits-for-ediscovery-search"></a>eBulma arama sınırları
+# <a name="limits-for-content-search-and-ediscovery-standard"></a>İçerik arama ve eBulma sınırları (Standart)
 
 Microsoft Purview uyumluluk portalı eBulma arama araçlarına çeşitli sınırlar uygulanır. Buna **İçerik arama** sayfasında çalıştırılacak aramalar ve eBulma **(Standart)** sayfasında eBulma olayıyla ilişkili aramalar dahildir. Bu sınırlar, kuruluşlara sağlanan hizmetlerin durumunu ve kalitesini korumaya yardımcı olur. Arama için Exchange Online'da e-posta iletilerinin dizinlenmesiyle ilgili sınırlar da vardır. eBulma aramalarının veya e-posta dizin oluşturmanın sınırlarını değiştiremezsiniz, ancak eBulma aramalarını planlarken, çalıştırırken ve sorun giderirken bu sınırları dikkate alabilmeniz için bunları bilmeniz gerekir.
 
@@ -96,7 +96,7 @@ Aşağıdaki tabloda, bir içerik aramasının sonuçları dışarı aktarılır
 |Tek bir aramadan dışarı aktarılabilir maksimum veri miktarı  <p> **Not:** Arama sonuçları 2 TB'tan büyükse, arama sonuçlarının toplam boyutunu küçültmek için tarih aralıklarını veya diğer filtre türlerini kullanmayı göz önünde bulundurun.|2TB|
 |Bir kuruluşun tek bir günde dışarı aktarabileceği maksimum değer <p> **Not:** Bu sınır her gün saat 12:00 UTC'de sıfırlanır|2TB|
 |eBulma Dışarı Aktarma Aracı kullanılarak indirilebilen arama sonuçları için en fazla posta kutusu sayısı|100,000|
-|Dışarı aktarılabilir PST dosyasının boyutu üst sınırı <p> **Not:** Kullanıcının posta kutusundan gelen arama sonuçları 10 GB'tan büyükse, posta kutusunun arama sonuçları iki (veya daha fazla) ayrı PST dosyasında dışarı aktarılır. Tüm arama sonuçlarını tek bir PST dosyasında dışarı aktarmayı seçerseniz, arama sonuçlarının toplam boyutu 10 GB'tan büyükse PST dosyası ek PST dosyalarına aktarılır. Bu varsayılan boyutu değiştirmek istiyorsanız, arama sonuçlarını dışarı aktarmak için kullandığınız bilgisayarda Windows Kayıt Defteri'ni düzenleyebilirsiniz. Bkz. [eBulma arama sonuçlarını dışarı aktarırken PST dosyalarının boyutunu değiştirme](change-the-size-of-pst-files-when-exporting-results.md). Belirli bir posta kutusunun arama sonuçları, tek bir posta kutusunun içeriği 10 GB'tan fazla olmadığı sürece birden çok PST dosyası arasında bölünemez. Arama sonuçlarını tek bir klasördeki tüm iletileri içeren bir PST dosyasında dışarı aktarmayı seçtiyseniz ve arama sonuçları 10 GB'tan büyükse, öğeler yine kronolojik sırayla düzenlenir, bu nedenle gönderilmiş tarihe göre ek PST dosyalarına aktarılırlar.|10 GB|
+|Dışarı aktarılabilir PST dosyasının boyutu üst sınırı <p> **Not:** Kullanıcının posta kutusundan gelen arama sonuçları 10 GB'tan büyükse, posta kutusunun arama sonuçları iki (veya daha fazla) ayrı PST dosyasında dışarı aktarılır. Tüm arama sonuçlarını tek bir PST dosyasında dışarı aktarmayı seçerseniz, arama sonuçlarının toplam boyutu 10 GB'tan büyükse PST dosyası ek PST dosyalarına aktarılır. Bu varsayılan boyutu değiştirmek istiyorsanız, arama sonuçlarını dışarı aktarmak için kullandığınız bilgisayarda Windows Kayıt Defteri'ni düzenleyebilirsiniz. Bkz. [eBulma arama sonuçlarını dışarı aktarırken PST dosyalarının boyutunu değiştirme](change-the-size-of-pst-files-when-exporting-results.md). Belirli bir posta kutusunun arama sonuçları, tek bir posta kutusunun içeriği 10 GB'tan fazla olmadığı sürece birden çok PST dosyası arasında bölünemez. Arama sonuçlarını tek bir klasördeki tüm iletileri içeren bir PST dosyasında dışarı aktarmayı seçtiyseniz ve arama sonuçları 10 GB'tan büyükse, öğeler yine kronolojik düzende düzenlenir, böylece gönderilme tarihine göre ek PST dosyalarına aktarılırlar.|10 GB|
 |Posta kutularından ve sitelerden gelen arama sonuçlarının Microsoft tarafından sağlanan bir Azure Depolama konumuna yüklenme oranı.|Saatte en fazla 2 GB|
 
 ## <a name="indexing-limits-for-email-messages"></a>E-posta iletileri için dizin oluşturma sınırları
@@ -123,7 +123,7 @@ Aşağıdaki tabloda, bir e-posta iletisinin dizine alınmamış bir öğe veya 
 ## <a name="jobs-limits"></a>İş sınırları
 
 |Açıklama|Sınırı|
-|---|---|
+|:----------|:----|
 |Kuruluşunuzdaki eşzamanlı iş sayısı üst sınırı.|50|
 |Tek bir kullanıcının aynı anda başlatabileceği en fazla eşzamanlı iş sayısı.|25|
 |Kuruluşunuzdaki en fazla eşzamanlı kiracı genelindeki iş sayısı (örneğin, kiracı genelinde aramalar).|5|
@@ -132,24 +132,19 @@ Aşağıdaki tabloda, bir e-posta iletisinin dizine alınmamış bir öğe veya 
 
 ## <a name="more-information"></a>Daha fazla bilgi
 
-İçerik aramanın içerik dizini oluşturma gibi farklı yönleriyle ilgili ek sınırlar vardır. Bu sınırlar hakkında daha fazla bilgi için aşağıdaki konulara bakın:
+İçerik aramanın içerik dizini oluşturma gibi farklı yönleriyle ilgili ek sınırlar vardır. Bu sınırlar hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
 - [İçerik Arama'da kısmen dizine alınan öğeler](partially-indexed-items-in-content-search.md)
-
 - [eBulma'da kısmen dizine alınan öğeleri araştırma](investigating-partially-indexed-items-in-ediscovery.md)
-
 - [SharePoint Online için arama sınırları](/sharepoint/search-limits)
 
 İçerik aramaları hakkında bilgi için bkz:
 
 - [Microsoft 365'te içerik arama](content-search.md)
-
 - [eBulma (Standart) durumunda içerik arama](search-for-content-in-core-ediscovery.md)
-
 - [İçerik arama için anahtar sözcük sorguları ve arama koşulları](keyword-queries-and-search-conditions.md)
 
 eBulma (Standart) ve eBulma (Premium) ile ilgili durum sınırları için bkz:
 
 - [eBulma sınırları (Standart)](limits-core-ediscovery.md)
-
 - [eBulma sınırları (Premium)](limits-ediscovery20.md)

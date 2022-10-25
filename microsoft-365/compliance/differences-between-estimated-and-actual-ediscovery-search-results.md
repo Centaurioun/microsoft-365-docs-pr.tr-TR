@@ -19,16 +19,16 @@ search.appverid:
 - SPO160
 - MOE150
 - MET150
-ms.openlocfilehash: a79d1171f306e0587730534f7457dfd63f2c7648
-ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
+ms.openlocfilehash: e49226e42681bfa1923c83e73af4e504aa35c79c
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68122577"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688310"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Tahmini ve gerçek eBulma arama sonuçları arasındaki farklar
 
-Bu makale, aşağıdaki Microsoft 365 eKeşif araçlarından birini kullanarak çalıştırabileceğiniz aramalar için geçerlidir: 
+Bu makale, aşağıdaki Microsoft Purview eKeşif araçlarından birini kullanarak çalıştırabileceğiniz aramalar için geçerlidir:
 
 - İçerik arama
 - eKeşif (Standart)
@@ -54,19 +54,14 @@ Ancak, Dışarı Aktarma Özeti raporunun önceki ekran görüntüsünde fark et
 Bu farklılıkların bazı nedenleri şunlardır:
   
 - **Sonuçların tahmin şekli**. Arama sonuçlarının tahmini, arama sorgusu ölçütlerini karşılayan öğelerin tahminidir (gerçek sayı değil). Exchange öğelerinin tahminini derlemek için, kullandığınız eBulma aracı tarafından Exchange veritabanından arama ölçütlerine uyan ileti kimliklerinin listesi istenir. Ancak arama sonuçlarını dışarı aktardığınızda, arama yeniden çalıştırılır ve gerçek iletiler Exchange veritabanından alınır. Dolayısıyla bu farklar, tahmini öğe sayısı ve gerçek öğe sayısının nasıl belirlendiği nedeniyle ortaya çıkabilir.
-
 - **Arama sonuçlarını tahmin etme ve dışarı aktarma zamanı arasında gerçekleşen değişiklikler**. Arama sonuçlarını dışarı aktardığınızda, arama dizininde arama ölçütlerine uyan en son öğeleri toplamak için arama yeniden başlatılır. Tahmini arama sonuçlarının toplandığı zaman ile arama sonuçlarının dışarı aktarıldığı zaman arasında arama ölçütlerini karşılayan ek öğeler oluşturulmuş, gönderilmiş veya alınmış olabilir. Arama sonuçları dışarı aktarılmadan önce içerik konumundan temizlendikleri için arama sonuçları tahmin edildiğinde arama dizininde yer alan öğelerin artık orada olmaması da mümkündür. Bu sorunu azaltmanın bir yolu, eBulma araması için bir tarih aralığı belirtmektir. Bir diğer yol da öğelerin korunması ve temizlenememeleri için içerik konumlarına ayrı tutmaktır.
 
    Tahmini ve dışarı aktarılan arama sonuçları arasındaki farklara neden olabilecek diğer sorunlar şunlardır:
 
   - Tarih sorgusu kullanılırken öğelerde artış. Bunun nedeni genellikle aşağıdaki iki nedendir:
-
-  - SharePoint'te sürüm oluşturmayı basılı tutun. Bir belge, beklemedeki bir siteden silinirse ve belge sürümü oluşturma etkinleştirilirse, silinen belgenin tüm sürümleri korunur.
-
-  - Takvim öğeleri. İletileri kabul edin ve reddedin; yinelenen toplantılar otomatik olarak eski tarihlerle arka planda yeni öğeler oluşturmaya devam eder.
-
+      - SharePoint'te sürüm oluşturmayı basılı tutun. Bir belge, beklemedeki bir siteden silinirse ve belge sürümü oluşturma etkinleştirilirse, silinen belgenin tüm sürümleri korunur.
+      - Takvim öğeleri. İletileri kabul edin ve reddedin; yinelenen toplantılar otomatik olarak eski tarihlerle arka planda yeni öğeler oluşturmaya devam eder.
   - Ayrı tutmalarla, aynı öğenin kullanıcının birincil posta kutusunda ve arşiv posta kutusunda korunduğu durumlar olabilir. Kullanıcı bir öğeyi arşivine el ile taşırsa bu durum oluşabilir.
-
   - Bir ayrı tutma uygulandığında bile nadir olsa da, yerleşik takvim öğelerinin bakımı (kullanıcı tarafından düzenlenemez, ancak birçok arama sonucuna dahil edilir) zaman zaman kaldırılabilir. Takvim öğelerinin bu düzenli olarak kaldırılması, dışarı aktarılan öğe sayısı azalacaktır.
 
 - **Dizine alınmamış öğeler**. Arama için dizine alınmamış öğeler, tahmini ve gerçek arama sonuçları arasında farklılıklara neden olabilir. Arama sonuçlarını dışarı aktarırken dizine alınmamış öğeler ekleyebilirsiniz. Arama sonuçlarını dışarı aktarırken dizine alınmamış öğeler eklerseniz, dışarı aktarılan daha fazla öğe olabilir. Bu, tahmini ve dışarı aktarılan arama sonuçları arasında farka neden olur.

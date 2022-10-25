@@ -1,5 +1,5 @@
 ---
-title: Exchange Online posta kutularında depolanan içerik
+title: eBulma için Exchange Online posta kutularında depolanan içerik
 description: Microsoft 365'te bulut tabanlı uygulamalar tarafından üretilen içerik bir kullanıcının Exchange Online posta kutusuyla depolanır veya ilişkilendirilir. Bu içerik Microsoft eBulma araçları kullanılarak aranabilir.
 f1.keywords:
 - NOCSH
@@ -18,25 +18,23 @@ search.appverid:
 - MOE150
 - MED150
 - MET150
-ms.openlocfilehash: 47fef9022ecfc5ef2d3a36de637ab4e48c63358f
-ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
+ms.openlocfilehash: d848d25989def72d8a9056c39c9871bbd095ad05
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68121103"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68687834"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>eBulma için Exchange Online posta kutularında depolanan içerik
 
-Exchange Online'deki posta kutusu öncelikli olarak iletiler, takvim öğeleri, görevler ve notlar gibi e-postayla ilgili öğeleri depolamak için kullanılır. Ancak daha fazla bulut tabanlı uygulama verilerini kullanıcının posta kutusunda depoladıkça bu durum değişir. Verileri posta kutusunda depolamanın avantajlarından biri, bu bulut tabanlı uygulamalardan verileri bulmak, görüntülemek ve dışarı aktarmak için içerik arama, Microsoft Purview eKeşif (Standart) ve Microsoft Purview eKeşif (Premium) arama araçlarını kullanabilmenizdir. Bu uygulamalardan bazılarına ait veriler, posta kutusunda kişiler arası olmayan bir ileti (IPM olmayan) alt ağaçta bulunan gizli klasörlerde depolanır. Diğer bulut tabanlı uygulamalardan gelen veriler posta _kutusunda depolanmayabilir_ , ancak posta _kutusuyla ilişkilendirilir_ ve aramalarda döndürülür (bu veriler arama sorgusuyla eşleşiyorsa). Bulut tabanlı verilerin bir kullanıcı posta kutusunda depolanıp depolanmadığına veya kullanıcı posta kutusuyla ilişkilendirilip ilişkilendirilmediğine bakılmaksızın, kullanıcı posta kutusunu açtığında veriler genellikle e-posta istemcisinde görünmez.
+Exchange Online'deki posta kutusu öncelikli olarak iletiler, takvim öğeleri, görevler ve notlar gibi e-postayla ilgili öğeleri depolamak için kullanılır. Ancak daha fazla bulut tabanlı uygulama verilerini kullanıcının posta kutusunda depoladıkça bu durum değişir. Verileri posta kutusunda depolamanın avantajlarından biri, bu bulut tabanlı uygulamalardan verileri bulmak, görüntülemek ve dışarı aktarmak için içerik arama, Microsoft Purview eKeşif (Standart) ve Microsoft Purview eKeşif (Premium) arama araçlarını kullanabilmenizdir. 
+
+Bu uygulamalardan bazılarına ait veriler, posta kutusunda kişiler arası olmayan bir ileti (IPM olmayan) alt ağaçta bulunan gizli klasörlerde depolanır. Diğer bulut tabanlı uygulamalardan gelen veriler posta _kutusunda depolanmayabilir_ , ancak posta _kutusuyla ilişkilendirilir_ ve aramalarda döndürülür (bu veriler arama sorgusuyla eşleşiyorsa). Bulut tabanlı verilerin bir kullanıcı posta kutusunda depolanıp depolanmadığına veya kullanıcı posta kutusuyla ilişkilendirilip ilişkilendirilmediğine bakılmaksızın, kullanıcı posta kutusunu açtığında veriler genellikle e-posta istemcisinde görünmez.
 
 Aşağıdaki tabloda verileri depolayan veya bulut tabanlı bir posta kutusuyla ilişkilendiren uygulamalar listelenir. Tabloda, her uygulamanın ürettiği içerik türü de açıklanır.
 
-<br>
-
-****
-
 |Microsoft 365 uygulaması|Açıklama|
-|---|---|
+|:----------------|:----------|
 |Forms<sup>*</sup>|Formlar ve bir forma verilen yanıtlar, e-posta iletilerine eklenmiş dosyalarda depolanır ve formu oluşturan kullanıcının posta kutusundaki gizli bir klasörde depolanır. Nisan 2020'de oluşturulan formlar PDF dosyası olarak depolanır. 2020'nin ardından oluşturulan formlar JSON dosyası olarak depolanır. Bir forma verilen yanıtlar CSV dosyasında depolanır. Bir PST dosyasındaki Formlardan içeriği dışarı aktardığınızda, bu veriler **applicationdataroot** klasöründe aşağıdaki genel olarak benzersiz olarak tanımlanan (GUID) adlı bir alt klasörde bulunur: **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
 |Microsoft 365 Grupları|Email iletiler, takvim öğeleri, kişiler (Kişiler), notlar ve görevler bir Microsoft 365 grubuyla ilişkili posta kutusunda depolanır.|
 |Outlook/Exchange Online|Email iletiler, takvim öğeleri, kişiler (Kişiler), notlar ve görevler kullanıcının posta kutusunda depolanır.|

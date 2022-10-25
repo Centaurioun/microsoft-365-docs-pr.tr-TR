@@ -17,18 +17,21 @@ ms.collection:
 - tier1
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: c3663464314a764330ec7cf8c5b4c8ec67d99c6a
-ms.sourcegitcommit: 9f5cf8cf8a2e25cfd07b23b7f6d7f9d138a9cd16
+ms.openlocfilehash: 111b3e7cd4de996b6c263312acf4368d872e7a50
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68501499"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68687536"
 ---
 # <a name="how-to-get-microsoft-defender-for-business-servers-preview"></a>İş için Microsoft Defender sunucuları nasıl alınır (önizleme)
 
+> [!IMPORTANT]
+> Windows Server veya Linux Server örneğini eklemeyi planlıyorsanız, İş için Microsoft Defender sunucuları (önizleme) gibi ek bir lisansa ihtiyacınız olacaktır. Alternatif olarak [Sunucular için Microsoft Defender](/azure/defender-for-cloud/defender-for-servers-introduction) kullanabilirsiniz; ancak Sunucular için Defender Plan 1 veya Plan 2 gibi bir kurumsal plan eklediğinizde İş için Defender deneyiminiz değişebilir. Daha fazla bilgi edinmek için bkz. [Microsoft uç nokta güvenlik aboneliklerinin bir karışımına sahipsem ne olur?](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions) ve [Cihazları İş için Microsoft Defender ekleme](mdb-onboard-devices.md).
+
 İş için Microsoft Defender sunucuları (önizleme), Windows Server veya Linux Server çalıştıran bir cihazı İş için Defender'a veya Microsoft 365 İş Ekstra eklemenizi sağlar. İş için Microsoft Defender sunucuları lisansı genel kullanıma sunulduğunda, her sunucu örneği için bir lisans gerekir.
 
-İş için Microsoft Defender sunucularını alma (önizleme):
+**İş için Microsoft Defender sunucuları alma (önizleme) şöyle yapılır**:
 
 1. Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com)) gidin ve oturum açın. 
 

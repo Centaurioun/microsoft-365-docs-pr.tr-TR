@@ -1,5 +1,6 @@
 ---
 title: Microsoft Edge'de eBulma Dışarı Aktarma Aracı'nı kullanma
+description: Güvenlik ve uyumluluk portalında İçerik Arama ve eKeşif'ten arama sonuçlarını indirmek için Microsoft Edge'in en yeni sürümünü kullanmak için ClickOnce desteğini etkinleştirmeniz gerekir.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -8,21 +9,25 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-description: Güvenlik ve uyumluluk merkezinde İçerik Arama ve eBulma'dan arama sonuçlarını indirmek için Microsoft Edge'in en yeni sürümünü kullanmak için ClickOnce desteğini etkinleştirmeniz gerekir.
-ms.openlocfilehash: c1a677c7fc6a7ccc7f6e0e583260cafd63458343
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 31e8937ba83bc1612f2396040b16563fd3dbea9e
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67821439"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688641"
 ---
 # <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>Microsoft Edge'de eBulma Dışarı Aktarma Aracı'nı kullanma
 
 Microsoft Edge'in en yeni sürümünde yapılan son değişikliklerin sonucunda ClickOnce desteği artık varsayılan olarak etkin değildir. İçerik Arama veya eBulma arama sonuçlarını indirmek için eBulma Dışarı Aktarma Aracı'nı kullanmaya devam etmek için [Microsoft Internet Explorer'ı](https://support.microsoft.com/help/17621/internet-explorer-downloads) kullanmanız veya Microsoft Edge'in en yeni sürümünde ClickOnce desteğini etkinleştirmeniz gerekir.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="enable-clickonce-support-in-microsoft-edge"></a>Microsoft Edge'de ClickOnce desteğini etkinleştirme
 
@@ -32,7 +37,7 @@ Microsoft Edge'in en yeni sürümünde yapılan son değişikliklerin sonucunda 
 
    ![Açılan listeden Etkin'i seçin.](../media/ClickOnceimage1.png)
 
-3. Tarayıcı penceresinin en altına kadar aşağı kaydırın ve Edge'i yeniden başlatmak için **Yeniden Başlat'a** tıklayın.
+3. Tarayıcı penceresinin en altına kadar aşağı kaydırın ve Microsoft Edge'i yeniden başlatmak için **Yeniden Başlat'ı** seçin.
 
    ![Yeniden Başlat'a tıklayın.](../media/ClickOnceimage2.png)
 
@@ -42,21 +47,21 @@ Microsoft Edge'in en yeni sürümünde yapılan son değişikliklerin sonucunda 
 
 ## <a name="install-and-run-the-ediscovery-export-tool"></a>eBulma Dışarı Aktarma Aracı'nı yükleme ve çalıştırma
 
-1. İçerik Arama'da dışarı aktarmanın veya eBulma servis talebinin açılır sayfasında **Sonuçları indir'e** tıklayın.
+1. İçerik Arama'da veya eBulma durumundaki dışarı aktarmanın açılır sayfasında **Sonuçları indir'i** seçin.
 
    ![Arama sonuçlarını indirmek için açılır sayfada Sonuçları indir'e tıklayın.](../media/ClickOnceExport1.png)
 
-2. Aracı başlatmanız için bir onay istenir ve **Aç'a** tıklayın.
+2. Aracı başlatmanız için bir onay istenir ve **Aç'ı** seçin.
 
    ![eBulma Dışarı Aktarma Aracı'nı başlatmak için Aç'a tıklayın.](../media/ClickOnceimage4.png)
 
-   eBulma Dışarı Aktarma Aracı yüklü değilse, sizden bir Güvenlik Uyarısı istenir. 
+   eBulma Dışarı Aktarma Aracı yüklü değilse bir Güvenlik Uyarısı girmeniz istenir. 
 
    ![eBulma Dışarı Aktarma Aracı'nı yüklemek için Yükle'ye tıklayın.](../media/ClickOnceimage5.png)
 
-3. **Yükle**'ye tıklayın. Yüklendikten sonra dışarı aktarma aracı otomatik olarak başlatılır.
+3. **Yükle**’yi seçin. Yüklendikten sonra dışarı aktarma aracı otomatik olarak başlatılır.
 
-Daha fazla bilgi için, aşağıdaki konulara bakın:
+Daha fazla bilgi için aşağıdaki makalelere bakın:
 
 - [İçerik Arama sonuçlarını dışarı aktarma](export-search-results.md)
 

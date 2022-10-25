@@ -1,5 +1,6 @@
 ---
 title: eBulma arama sonuçlarının istatistiklerini görüntüleme
+description: Microsoft Purview uyumluluk portalı bir eBulma (Standart) olayıyla ilişkili İçerik aramalarının ve aramalarının istatistiklerini görüntülemek için arama istatistikleri özelliğini kullanmayı öğrenin.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,19 +10,22 @@ ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.search: M365-security-compliance
+ms.search: purview-compliance
 ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Purview uyumluluk portalı bir eBulma (Standart) olayıyla ilişkili İçerik aramalarının ve aramalarının istatistiklerini görüntülemek için arama istatistikleri özelliğini kullanmayı öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9d44e4472afa485d5dc9453f6dea34627566806f
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
+ms.openlocfilehash: f729eadedce0771783ff52ef2dc7d69e7df79c1f
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67820911"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68687958"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>eBulma arama sonuçlarının istatistiklerini görüntüleme
 
@@ -29,21 +33,23 @@ ms.locfileid: "67820911"
   
 Ayrıca, arama sorgusundaki her anahtar sözcüğün istatistiklerini döndürmek üzere arama yapılandırmak için anahtar sözcükler listesini kullanabilirsiniz. Bu, sorgudaki her anahtar sözcük tarafından döndürülen sonuç sayısını karşılaştırmanıza olanak tanır.
   
-Arama istatistiklerini bir CSV dosyasına da indirebilirsiniz. Bu, sonuçları karşılaştırmak ve raporları arama sonuçlarınız için hazırlamak için Excel'deki filtreleme ve sıralama özelliklerini kullanmanıza olanak tanır.
+Arama istatistiklerini virgülle ayrılmış değer (CSV) dosyasına da indirebilirsiniz. Bu, sonuçları karşılaştırmak ve raporları arama sonuçlarınız için hazırlamak için Excel'deki filtreleme ve sıralama özelliklerini kullanmanıza olanak tanır.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="get-statistics-for-searches"></a>Aramalar için istatistikleri alma
 
 İçerik araması veya eBulma (Standart) servis talebiyle ilişkilendirilmiş bir aramanın istatistiklerini görüntülemek için:
   
-1. Microsoft Purview uyumluluk portalı **Tümünü göster'e** tıklayın ve aşağıdakilerden birini yapın:
+1. Microsoft Purview uyumluluk portalı **Tümünü göster'i** seçin ve aşağıdakilerden birini yapın:
 
-   - **İçerik araması'na** tıklayın ve açılır sayfayı görüntülemek için bir arama seçin.
+   - **İçerik araması'nı** ve ardından açılır sayfayı görüntülemek için bir arama seçin.
 
      VEYA
 
-   - **eBulma** > **eBulma (Standart)** seçeneğine tıklayın, bir servis talebi seçin ve sonra açılır sayfayı görüntülemek için **Aramalar** sekmesinde bir arama seçin.
+   - **Açılır sayfayı** >  görüntülemek için eBulma **eBulma (Standart)** öğesini seçin, bir servis talebi seçin ve arama **sekmesinde** bir arama seçin.
 
-2. Seçili aramanın açılır sayfasında, **Arama istatistikleri** sekmesine tıklayın.
+2. Seçili aramanın açılır sayfasında Arama **istatistikleri** sekmesini seçin.
   
    ![İstatistikleri ara sekmesi.](../media/SearchStatistics1.png)
 
@@ -56,9 +62,7 @@ Bu bölümde, arama tarafından döndürülen tahmini öğelerin grafik özeti g
 ![Arama için tahminler.](../media/SearchContentReport.png)
 
 - **Konumlara göre tahmini öğeler**: Arama tarafından döndürülen tahmini öğelerin toplam sayısı. Posta kutularında bulunan ve sitelerde bulunan belirli öğe sayısı da görüntülenir.
-
 - **İsabetli tahmini konumlar**: Arama tarafından döndürülen öğeleri içeren içerik konumlarının toplam sayısı. Belirli sayıda posta kutusu ve site konumu da görüntülenir.
-
 - **Konuma göre veri hacmi (MB cinsinden):** Arama tarafından döndürülen tüm tahmini öğelerin toplam boyutu. Posta kutusu öğelerinin ve site öğelerinin belirli boyutu da görüntülenir.
 
 ### <a name="condition-report"></a>Koşul raporu
@@ -68,15 +72,10 @@ Bu bölümde, arama sorgusuyla ilgili istatistikler ve arama sorgusunun farklı 
 ![Koşul raporu.](../media/SearchContentReportNoKeywordList.png)
 
 - **Konum türü**: Sorgu istatistiklerinin uygulanabilecek içerik konumu türü. **Exchange** değeri bir posta kutusu konumunu gösterir; **SharePoint** değeri site konumunu gösterir.
-
 - **Bölüm**: arama sorgusunun istatistikler için geçerli olan bölümü. **Birincil** , arama sorgusunun tamamını gösterir. **Anahtar sözcük** , satırdaki istatistiklerin belirli bir anahtar sözcük için olduğunu gösterir. Arama sorgusu için bir anahtar sözcük listesi kullanırsanız, sorgunun her bileşenine ilişkin istatistikler bu tabloya eklenir. Daha fazla bilgi için bkz. [Aramalar için anahtar sözcük istatistiklerini alma](#get-keyword-statistics-for-searches).
-
 - **Koşul**: İlgili satırda görüntülenen istatistikleri döndüren arama sorgusunun gerçek bileşeni (anahtar sözcük veya koşul).
-
 - **İsabetli konumlar**: **Koşul** sütununda listelenen birincil veya anahtar sözcük sorgusuyla eşleşen öğeleri içeren içerik konumlarının sayısı (**Konum türü** sütunu tarafından belirtilir).
-
 - **Öğeler**: **Koşul** sütununda listelenen sorguyla eşleşen öğe sayısı (belirtilen içerik konumundan). Daha önce açıklandığı gibi, bir öğe aranmakta olan bir anahtar sözcüğün birden çok örneğini içeriyorsa, bu sütunda yalnızca bir kez sayılır.
-
 - **Boyut (MB)**: **Koşul** sütunundaki arama sorgusuyla eşleşen bulunan tüm öğelerin (belirtilen içerik konumunda) toplam boyutu.
 
 ### <a name="top-locations"></a>En iyi konumlar
@@ -84,20 +83,17 @@ Bu bölümde, arama sorgusuyla ilgili istatistikler ve arama sorgusunun farklı 
 Bu bölümde, arama tarafından döndürülen en çok öğeye sahip belirli içerik konumlarıyla ilgili istatistikler görüntülenir. İlk 1.000 konum görüntülenir. Bu raporun bir kopyasını CSV biçiminde de indirebilirsiniz.
 
 - Konum adının adı (posta kutularının e-posta adresi ve sitelerin URL'si).
-
 - Konum türü (posta kutusu veya site).
-
 - Arama tarafından döndürülen içerik konumundaki tahmini öğe sayısı.
-
 - Her içerik konumundaki tahmini öğelerin toplam boyutu.
 
 ## <a name="get-keyword-statistics-for-searches"></a>Aramalar için anahtar sözcük istatistikleri alma
 
-Daha önce açıklandığı gibi **Koşul raporu** bölümünde arama sorgusu ve sorguyla eşleşen öğelerin sayısı (ve boyutu) gösterilir. Arama sorgusu oluştururken veya düzenlerken anahtar sözcük listesi kullanırsanız, her anahtar sözcük veya anahtar sözcük tümceciğiyle eşleşen öğe sayısını gösteren gelişmiş istatistikler elde edebilirsiniz. Bu, sorgunun hangi bölümlerinin en (ve en az) etkili olduğunu hızla belirlemenize yardımcı olabilir. Örneğin, bir anahtar sözcük çok sayıda öğe döndürüyorsa, arama sonuçlarını daraltmak için anahtar sözcük sorgusunu daraltmayı seçebilirsiniz.
+**Koşul raporu** bölümünde arama sorgusu ve sorguyla eşleşen öğelerin sayısı (ve boyutu) gösterilir. Arama sorgusu oluştururken veya düzenlerken anahtar sözcük listesi kullanırsanız, her anahtar sözcük veya anahtar sözcük tümceciğiyle eşleşen öğe sayısını gösteren gelişmiş istatistikler elde edebilirsiniz. Bu, sorgunun hangi bölümlerinin en (ve en az) etkili olduğunu hızla belirlemenize yardımcı olabilir. Örneğin, bir anahtar sözcük çok sayıda öğe döndürüyorsa, arama sonuçlarını daraltmak için anahtar sözcük sorgusunu daraltmayı seçebilirsiniz.
 
 Bir anahtar sözcük listesi oluşturmak ve arama için anahtar sözcük istatistiklerini görüntülemek için:
   
-1. Uyumluluk portalında yeni bir İçerik araması veya eBulma (Standart) servis talebiyle ilişkilendirilmiş bir arama oluşturun.
+1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) yeni bir İçerik araması veya eBulma (Standart) servis talebiyle ilişkilendirilmiş bir arama oluşturun.
 
 2. Arama sihirbazının **Koşullar** sayfasında. **Anahtar sözcük listesini göster** onay kutusunu seçin.
 
@@ -114,16 +110,13 @@ Bir anahtar sözcük listesi oluşturmak ve arama için anahtar sözcük istatis
 
 5. Arama tamamlandığında açılır sayfayı görüntülemek için seçin.
 
-6. **Arama istatistikleri** sekmesinde **Koşul raporuna** tıklayarak aramanın anahtar sözcük istatistiklerini görüntüleyin.
+6. **Arama istatistikleri** sekmesinde **Koşul raporunu** seçerek aramanın anahtar sözcük istatistiklerini görüntüleyin.
 
     ![Her anahtar sözcüğün istatistikleri görüntülenir.](../media/SearchKeywordsList3.png)
   
     Önceki ekran görüntüsünde gösterildiği gibi, her anahtar sözcüğün istatistikleri görüntülenir; buna şunlar dahildir:
 
     - Aramaya dahil edilen her içerik konumu türü için anahtar sözcük istatistikleri.
-
     - Dizine alınmamış posta kutusu öğelerinin sayısı.
-
     - Her anahtar sözcüğün gerçek arama sorgusu ve sonuçları (**Bölüm** sütununda **Anahtar Sözcük** olarak tanımlanır) ve arama sorgusundan herhangi bir koşul içerir.
-
     - Tam arama sorgusu (**Bölüm** sütununda **Birincil** olarak tanımlanır) ve her konum türü için tam sorgunun istatistikleri. Bunların **Özet** sekmesinde görüntülenen istatistiklerle aynı olduğunu unutmayın.

@@ -1,7 +1,7 @@
 ---
 title: Adım 2. İlk olayınızı düzeltme
 description: Microsoft 365 Defender'daki ilk olayınızı düzeltmeye başlama.
-keywords: olaylar, uyarılar, araştırma, bağıntı, saldırı, makineler, cihazlar, kullanıcılar, kimlikler, kimlik, posta kutusu, e-posta, 365, Microsoft, m365, olay yanıtı, siber saldırı
+keywords: olaylar, uyarılar, saldırı hikayesi, araştırma, bağıntı, saldırı, makineler, cihazlar, kullanıcılar, kimlikler, kimlik, posta kutusu, e-posta, 365, Microsoft, m365, olay yanıtı, siber saldırı
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -24,12 +24,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bdb13779935290840e81211e69f54cf2d05fbe86
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 7094a4445422e6fb68f797c7011f0e420df0a765
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68536158"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68687682"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Adım 2. İlk olayınızı düzeltme
 
@@ -51,6 +51,9 @@ Microsoft 365 Defender analistlerin el ile başlatabileceği çeşitli düzeltme
 - **Canlı yanıt başlatma** - Canlı yanıt, uzak kabuk bağlantısı kullanarak bir cihaza anında erişim sağlayan bir özelliktir. Bu sayede ayrıntılı araştırma çalışmaları yapabilir ve belirlenen tehditleri anında gerçek zamanlı olarak içermek için anında yanıt eylemleri gerçekleştirebilirsiniz. Canlı yanıt, adli veri toplamanıza, betik çalıştırmanıza, analiz için şüpheli varlıklar göndermenize, tehditleri düzeltmenize ve yeni ortaya çıkan tehditleri proaktif olarak avlamanıza olanak tanıyarak araştırmalarını geliştirmek için tasarlanmıştır.
 - **Araştırma paketini toplama** - Araştırma veya yanıt sürecinin bir parçası olarak bir cihazdan araştırma paketi toplayabilirsiniz. Araştırma paketini toplayarak cihazın geçerli durumunu belirleyebilir ve saldırgan tarafından kullanılan araç ve teknikleri daha iyi anlayabilirsiniz. 
 - **Defender Uzmanlarına Sorun** (cihazlarda ve dosyalarda hem Eylemler'de kullanılabilir) - Tehlikeye girmiş olabilecek cihazlar veya zaten güvenliği aşılmış cihazlar hakkında daha fazla içgörü için Microsoft Defender uzmanına başvurabilirsiniz. Microsoft Defender uzmanları, zamanında ve doğru bir yanıt için doğrudan Microsoft 365 Defender içinden devreye eklenebilir.
+
+> [!NOTE]
+> Saldırı hikayesinin içindeki grafikten doğrudan cihazlarda eylem gerçekleştirebilirsiniz.
 
 ## <a name="actions-on-files"></a>Dosyalardaki eylemler
 

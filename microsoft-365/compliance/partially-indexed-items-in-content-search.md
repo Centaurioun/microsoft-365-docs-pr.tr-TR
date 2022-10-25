@@ -1,5 +1,6 @@
 ---
 title: İçerik Arama'da kısmen dizine alınan öğeler
+description: Exchange ve SharePoint'te Microsoft Purview uyumluluk portalı çalıştırdığınız bir İçerik aramasında ekleyebileceğiniz dizine alınmamış öğeler hakkında bilgi edinin.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -13,37 +14,30 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - SPO160
 - MOE150
 - MET150
-ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
-description: Exchange ve SharePoint'te Microsoft Purview uyumluluk portalı çalıştırdığınız bir eBulma aramasında ekleyebileceğiniz dizinlenmemiş öğeler hakkında bilgi edinin.
-ms.openlocfilehash: 4e8b22a21f9ab0b9bd38fb12c3d0a79a958c9440
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: b1f0af9bf7c69b87cfa867191a714f81702ab367
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67825554"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688122"
 ---
-# <a name="partially-indexed-items-in-ediscovery"></a>eBulma'da kısmen dizine alınan öğeler
+# <a name="partially-indexed-items-in-content-search"></a>İçerik aramasında kısmen dizine alınan öğeler
 
-Microsoft Purview uyumluluk portalı çalıştırdığınız bir Microsoft Purview eKeşif araması, arama çalıştırdığınızda tahmini arama sonuçlarında otomatik olarak kısmen dizine alınan öğeleri içerir. Kısmen dizine alınan öğeler, SharePoint ve OneDrive İş sitelerindeki Exchange posta kutusu öğeleri ve belgeleridir ve herhangi bir nedenle arama için tamamen dizine eklenmemiştir. Exchange'de, kısmen dizine alınan bir öğe genellikle bir e-posta iletisine eklenmiş bir dosya (dizine alınamaz dosya türünde) içerir. eBulma araması çalıştırdığınızda öğelerin arama için dizine alınamamalarının ve kısmen dizine alınan öğeler olarak döndürüllerinin diğer nedenlerinden bazıları şunlardır:
+Microsoft Purview uyumluluk portalı çalıştırdığınız İçerik araması, bir arama çalıştırdığınızda tahmini arama sonuçlarına otomatik olarak kısmen dizinlenmiş öğeler ekler. Kısmen dizine alınan öğeler, SharePoint ve OneDrive İş sitelerindeki Exchange posta kutusu öğeleri ve belgeleridir ve herhangi bir nedenle arama için tamamen dizine eklenmemiştir. Exchange'de, kısmen dizine alınan bir öğe genellikle bir e-posta iletisine eklenmiş bir dosya (dizine alınamaz dosya türünde) içerir. eBulma araması çalıştırdığınızda öğelerin arama için dizine alınamamalarının ve kısmen dizine alınan öğeler olarak döndürüllerinin diğer nedenlerinden bazıları şunlardır:
   
 - Dosya türü tanınmadı veya dizin oluşturma için desteklenmiyor.
-
 - İletilerde açılabilen ekli bir dosya vardır; Bu, kısmen dizine alınan e-posta öğelerinin en yaygın nedenidir.
-
 - Dosya türü dizin oluşturma için desteklenir, ancak belirli bir dosya için dizin oluşturma hatası oluştu.
-
 - E-posta iletisine çok fazla dosya iliştirildi.
-
 - E-posta iletisine eklenmiş bir dosya çok büyük.
-
 - Dosya Microsoft dışı teknolojilerle şifrelenir.
-
 - Dosya parola korumalıdır.
 
 > [!NOTE]
@@ -51,16 +45,16 @@ Microsoft Purview uyumluluk portalı çalıştırdığınız bir Microsoft Purvi
   
 Yasal araştırmalarda kuruluşunuzun kısmen dizine alınan öğeleri gözden geçirmesi gerekebilir. Arama sonuçlarını yerel bir bilgisayara aktarırken veya sonuçları eBulma (Premium) ile analiz için hazırlarken kısmen dizine alınan öğelerin dahil edilip edilmeyeceğini de belirtebilirsiniz. Daha fazla bilgi için bkz [. eBulma'da kısmen dizine alınan öğeleri araştırma](investigating-partially-indexed-items-in-ediscovery.md).
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="file-types-not-indexed-for-search"></a>Dosya türleri arama için dizine alınmadı
 
-Bit Eşlem veya MP3 dosyaları gibi bazı dosya türleri dizine alınabilecek içerik içermez. Sonuç olarak, Exchange ve SharePoint'teki arama dizin sunucuları bu tür dosyalarda tam metin dizini oluşturma gerçekleştirmez. Bu dosya türleri desteklenmeyen dosya türleri olarak kabul edilir. Tam metin dizini oluşturmanın varsayılan olarak veya yönetici tarafından devre dışı bırakıldığı dosya türleri de vardır. Desteklenmeyen ve devre dışı bırakılan dosya türleri İçerik Aramalarında dizine alınmamış öğeler olarak etiketlenir. Daha önce belirtildiği gibi, bir arama çalıştırdığınızda, arama sonuçlarını yerel bir bilgisayara aktardığınızda veya arama sonuçlarını eBulma (Premium) için hazırladığınızda, kısmen dizine alınmış öğeler arama sonuçları kümesine eklenebilir.
+Bit Eşlem (.bmp) veya MP3 (.mp3) dosyaları gibi bazı dosya türleri dizine alınabilecek içerik içermez. Sonuç olarak, Exchange ve SharePoint'teki arama dizin sunucuları bu tür dosyalarda tam metin dizini oluşturma gerçekleştirmez. Bu dosya türleri desteklenmeyen dosya türleri olarak kabul edilir. Tam metin dizini oluşturmanın varsayılan olarak veya yönetici tarafından devre dışı bırakıldığı dosya türleri de vardır. Desteklenmeyen ve devre dışı bırakılan dosya türleri İçerik Aramalarında dizine alınmamış öğeler olarak etiketlenir. Daha önce belirtildiği gibi, bir arama çalıştırdığınızda, arama sonuçlarını yerel bir bilgisayara aktardığınızda veya arama sonuçlarını eBulma (Premium) için hazırladığınızda, kısmen dizine alınmış öğeler arama sonuçları kümesine eklenebilir.
   
-Desteklenen ve devre dışı bırakılan dosya biçimlerinin listesi için aşağıdaki konulara bakın:
+Desteklenen ve devre dışı bırakılan dosya biçimlerinin listesi için aşağıdaki makalelere bakın:
   
 - **Exchange** -  [Exchange Search tarafından dizine alınan dosya biçimleri](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
-
 - **Exchange** -  [Get-SearchDocumentFormat](/powershell/module/exchange/get-searchdocumentformat)
-
 - **Sharepoint** -  [SharePoint'te varsayılan gezinilen dosya adı uzantıları ve ayrıştırılmış dosya türleri](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
   
 ## <a name="messages-and-documents-with-partially-indexed-file-types-can-be-returned-in-search-results"></a>Kısmen dizinlenmiş dosya türlerine sahip iletiler ve belgeler arama sonuçlarında döndürülebilir
@@ -81,16 +75,14 @@ Kuruluşunuzun ne olduğunu, ne içerdiğini ve belirli bir araştırmayla ilgil
 Kısmen dizine alınan öğeler hakkında aşağıdakileri göz önünde bulundurun:
   
 - Bir eBulma araması çalıştırdığınızda, kısmen dizine alınmış Exchange öğelerinin toplam sayısı ve boyutu (arama sorgusu tarafından döndürülür) açılır sayfadaki arama istatistiklerinde görüntülenir ve **dizinlenmemiş öğeler olarak etiketlenir**. Açılır sayfada görüntülenen kısmen dizine alınan öğelerle ilgili istatistikler, SharePoint sitelerinde veya OneDrive hesaplarında kısmen dizine alınan öğeleri içermez.
-
 - Sonuçları dışarı aktardığınız arama belirli içerik konumlarında veya kuruluşunuzdaki tüm içerik konumlarında yapılan bir aramaysa, yalnızca içerik konumlarından arama ölçütlerine uyan öğeleri içeren dizine alınmamış öğeler dışarı aktarılır. Başka bir deyişle, bir posta kutusunda veya sitede arama sonucu bulunamazsa, bu posta kutusu veya sitedeki dizine alınmamış öğeler dışarı aktarılmaz. Bunun nedeni, kuruluştaki birçok konumdan kısmen dizine alınan öğeleri dışarı aktarmanın dışarı aktarma hataları olasılığını artırabileceği ve arama sonuçlarını dışarı aktarmak ve indirmek için gereken süreyi artırabileceğidir.
 
     Aramanın tüm içerik konumlarından kısmen dizinlenmiş öğeleri dışarı aktarmak için, aramayı tüm öğeleri döndürecek şekilde yapılandırın (arama sorgusundan anahtar sözcükleri kaldırarak) ve ardından arama sonuçlarını dışarı aktardığınızda (**Yalnızca tanınmayan biçime sahip olan, şifrelenen veya Çıkış seçenekleri altında başka nedenlerle dizine eklenemeyen öğeler'e** tıklayarak) yalnızca kısmen dizine alınan öğeleri dışarı aktarın.
 
 - Arama sonuçlarına tüm posta kutusu öğelerini eklemeyi seçerseniz veya arama sorgusu herhangi bir anahtar sözcük belirtmezse veya yalnızca bir tarih aralığı belirtirse, kısmen dizine alınmış öğeler kısmen dizinlenmiş öğeleri içeren PST dosyasına kopyalanamayabilir. Bunun nedeni, kısmen dizine alınan öğeler de dahil olmak üzere tüm öğelerin otomatik olarak normal arama sonuçlarına dahil edilmesidir.
-
 - Kısmen dizine alınan öğeler önizleme için kullanılamaz. Arama tarafından döndürülen kısmen dizine alınan öğeleri görüntülemek için arama sonuçlarını dışarı aktarmanız gerekir.
 
-   Buna ek olarak, arama sonuçlarını dışarı aktardığınızda ve dışarı aktarmaya kısmen dizinlenmiş öğeler eklediğinizde, SharePoint öğelerinden kısmen dizine alınan öğeler **, Gezinilemez** adlı bir klasöre aktarılır. Kısmen dizine alınan Exchange öğelerini dışarı aktardığınızda, kısmen dizine alınan öğelerin arama sorgusuyla eşleşip eşleşmediğine ve dışarı aktarma ayarlarının yapılandırmasına bağlı olarak bunlar farklı şekilde dışarı aktarılır. 
+   Buna ek olarak, arama sonuçlarını dışarı aktardığınızda ve dışarı aktarmaya kısmen dizinlenmiş öğeler eklediğinizde, SharePoint öğelerinden kısmen dizine alınan öğeler **, Gezinilemez** adlı bir klasöre aktarılır. Kısmen dizine alınan Exchange öğelerini dışarı aktardığınızda, kısmen dizine alınan öğelerin arama sorgusuyla ve dışarı aktarma ayarlarının yapılandırmasıyla eşleşmesine bağlı olarak bunlar farklı şekilde dışarı aktarılır.
 
 - Aşağıdaki tabloda, dizine alınan ve kısmen dizine alınan öğelerin dışarı aktarma davranışı ve her birinin farklı dışarı aktarma yapılandırma ayarlarına dahil edilip edilmediği gösterilir.
 
@@ -139,7 +131,7 @@ Aşağıdaki tabloda, Microsoft 365'teki bir eBulma aramasında bir e-posta ilet
 SharePoint belgeleri için dizin oluşturma sınırlarının listesi için bkz. [SharePoint Online için arama sınırları](/sharepoint/search-limits).
   
 |**Dizin oluşturma sınırı**|**En büyük değer**|**Açıklama**|
-|:-----|:-----|:-----|
+|:-----------------|:----------------|:--------------|
 |En büyük ek boyutu (Excel dosyaları hariç)  <br/> |150 MB  <br/> |Dizin oluşturma için ayrıştırılacak bir e-posta ekinin en büyük boyutu. Bu sınırdan daha büyük olan ekler dizin oluşturma için ayrıştırılamaz ve eki içeren ileti kısmen dizinlenmiş olarak işaretlenir.  <br/><br/> **Not:** Ayrıştırma, dizin oluşturma hizmetinin ekten metin ayıkladığı, noktalama işaretleri ve boşluklar gibi gereksiz karakterleri kaldırdığı ve ardından metni daha sonra dizinde depolanan sözcüklere (belirteç oluşturma adı verilen bir işlemde) böldüğü işlemdir.           |
 |Excel dosyalarının en büyük boyutu  <br/> |4 MB  <br/> |Bir sitede bulunan veya dizin oluşturma için ayrıştırılacak bir e-posta iletisine eklenmiş bir Excel dosyasının en büyük boyutu. Bu sınırdan daha büyük olan herhangi bir Excel dosyası ayrıştırılmaz ve dosya ekinin bulunduğu ileti veya e-posta dizinlenmemiş olarak işaretlenir.  <br/> |
 |En fazla ek sayısı  <br/> |250  <br/> |Dizin oluşturma için ayrıştırılacak bir e-posta iletisine eklenen dosya sayısı üst sınırı. İletinin 250'den fazla eki varsa, ilk 250 ek ayrıştırılır ve dizine eklenir ve ayrıştırılmamış ekleri olduğundan ileti kısmen dizinlenmiş olarak işaretlenir.  <br/> |
@@ -167,7 +159,3 @@ SharePoint belgeleri için dizin oluşturma sınırlarının listesi için bkz. 
 - Azure Rights Management kullanılarak korunan Email iletiler dizine alınır ve arama sorgusuyla eşleşiyorsa arama sonuçlarına eklenir. Hak korumalı e-posta iletilerinin şifresi çözülür ve önizlenebilir ve dışarı aktarılabilir. Bu işlev, varsayılan olarak eBulma Yöneticisi rol grubuna atanan RMS Şifre Çözme rolüne atanmanızı gerektirir.
 
 - eBulma olayıyla ilişkili sorgu tabanlı bir ayrı tutma oluşturursanız, kısmen dizine alınan tüm öğeler beklemeye alınır. Bu, ayrı tutma için arama sorgusu ölçütleri ile eşleşmeyen kısmen dizine alınan öğeleri içerir. Sorgu tabanlı eBulma tutmaları oluşturma hakkında daha fazla bilgi için bkz. [eBulma ayrı tutması oluşturma](create-ediscovery-holds.md).
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-[eBulma'da kısmen dizine alınan öğeleri araştırma](investigating-partially-indexed-items-in-ediscovery.md)

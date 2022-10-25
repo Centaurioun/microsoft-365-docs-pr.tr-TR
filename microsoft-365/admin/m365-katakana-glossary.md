@@ -10,17 +10,18 @@ ms.topic: reference
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - Adm_O365
 - scotvorg
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 yönetim merkezi için Japonca katakana sözlüğü görüntülemeyi öğrenin.
 ms.date: 09/14/2022
-ms.openlocfilehash: 06594439dd669dc36e236a4ba35926d03f2af001
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: abb862461d83802c6c5eb5c98d21545a234a40d4
+ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68057535"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68688075"
 ---
 <!-- DO NOT MAKE CHANGES TO THIS ARTICLE WITHOUT FIRST CONTACTING THE MS.REVIEWER -->
 
