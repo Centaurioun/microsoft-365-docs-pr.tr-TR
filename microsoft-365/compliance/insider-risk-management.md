@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - highpri
-ms.openlocfilehash: 889589330ddc79b434d8fa07b11fa20e784c4762
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 3745707ed7b6e6e4988bbb64583227ffad09fbf4
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68621262"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730369"
 ---
 # <a name="learn-about-insider-risk-management"></a>İçeriden risk yönetimi hakkında daha fazla bilgi edinme
 
@@ -32,11 +32,9 @@ ms.locfileid: "68621262"
 
 Microsoft Purview İçeriden Risk Yönetimi, kuruluşunuzdaki kötü amaçlı ve yanlışlıkla etkinlikleri algılamanıza, araştırmanıza ve eyleme geçirmenize olanak tanıyarak iç riskleri en aza indirmenize yardımcı olan bir uyumluluk çözümüdür. Insider risk ilkeleri, kuruluşunuzda tanımlanması ve algılanması gereken risk türlerini tanımlamanıza olanak sağlar. Örneğin, olaylar üzerinde işlem yapmak ve gerekirse servis taleplerini Microsoft eKeşif'e (Premium) yükseltmek de buna dahildir. Kuruluşunuzdaki risk analistleri, kullanıcıların kuruluşunuzun uyumluluk standartlarıyla uyumlu olduğundan emin olmak için hızlı bir şekilde uygun eylemler gerçekleştirebilir.
 
-Daha fazla bilgi edinmek ve kuruluşunuzdaki riskli etkinlikleri ele almak için planlama sürecine genel bakış için bkz. [Insider risk yönetimi programı başlatma](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
+Daha fazla bilgi edinmek ve kuruluşunuzda güvenlik olayına yol açabilecek riskli olabilecek etkinlikleri ele almak için planlama sürecine genel bakış için bkz. [Insider risk yönetimi programı başlatma](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
 
 Insider risk yönetiminin kuruluşunuzun kuruluşunuzun değerlerini, kültürünü ve kullanıcı deneyimini öncelik sırasına getirirken riskleri engellemesine, algılamasına ve içermesine nasıl yardımcı olabileceğini öğrenmek için aşağıdaki videoları izleyin:
-<br>
-<br>
 
 **Insider risk yönetimi çözümü geliştirme &**:
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4j9CN]
@@ -54,7 +52,7 @@ Kuruluşunuzdaki kullanıcıların veri risklerini en aza indirmeye yardımcı o
 
 ## <a name="modern-risk-pain-points"></a>Modern risk ağrı noktaları
 
-Kuruluşunuzda riski yönetmek ve en aza indirmek, modern çalışma alanında bulunan risk türlerini anlamakla başlar. Bazı riskler, doğrudan denetimin dışında kalan dış olaylar ve faktörler tarafından yönlendirilir. Diğer riskler, en aza indirilebilen ve önlenebilen iç olaylara ve kullanıcı etkinliklerine bağlıdır. Bazı örnekler, kuruluşunuzdaki kullanıcıların yasa dışı, uygunsuz, yetkisiz veya etik olmayan davranışlarından ve eylemlerinden kaynaklanan risklerdir. Bu davranışlar, kullanıcıların çok çeşitli iç risklerini içerir:
+Kuruluşunuzda riski yönetmek ve en aza indirmek, modern çalışma alanında bulunan risk türlerini anlamakla başlar. Bazı riskler, doğrudan denetimin dışında kalan dış olaylar ve faktörler tarafından yönlendirilir. Diğer riskler, en aza indirilebilen ve önlenebilen iç olaylara ve kullanıcı eylemlerine bağlıdır. Bazı örnekler, kuruluşunuzdaki kullanıcıların yasa dışı, uygunsuz, yetkisiz veya etik olmayan davranışlarından ve eylemlerinden kaynaklanan risklerdir. Bu davranışlar, kullanıcıların çok çeşitli iç risklerini içerir:
 
 - Hassas veri sızıntıları ve veri taşması
 - Gizlilik ihlalleri
@@ -132,13 +130,13 @@ Uyarılar, yeni bir servis talebi açılarak, uyarı mevcut bir servis talebine 
 
 ### <a name="investigate"></a>Araştır
 
-[Kullanıcı etkinlik raporlarıyla](insider-risk-management-activities.md#user-activity-reports) seçili bir kullanıcının tüm etkinliklerini hızla araştırın. Bu raporlar, kuruluşunuzdaki araştırmacıların belirli bir süre boyunca belirli kullanıcılara yönelik etkinlikleri geçici veya açık bir şekilde şirket içi risk yönetimi ilkesine atamak zorunda kalmadan incelemelerine olanak sağlar. Bir kullanıcının etkinliklerini inceledikten sonra araştırmacılar zararsız olarak tek tek etkinlikleri kapatabilir, raporun bağlantısını diğer araştırmacılarla paylaşabilir veya e-postayla gönderebilir ya da kullanıcıyı geçici veya açık olarak bir iç risk yönetimi ilkesine atamayı seçebilir.
+[Kullanıcı etkinlik raporları (önizleme)](insider-risk-management-activities.md#user-activity-reports) ile seçilen bir kullanıcının tüm risk etkinliklerini hızla araştırın. Bu raporlar, kuruluşunuzdaki araştırmacıların belirli bir süre boyunca belirli kullanıcılara yönelik etkinlikleri geçici veya açık bir şekilde şirket içi risk yönetimi ilkesine atamak zorunda kalmadan incelemelerine olanak sağlar. Bir kullanıcının etkinliklerini inceledikten sonra araştırmacılar zararsız olarak tek tek etkinlikleri kapatabilir, raporun bağlantısını diğer araştırmacılarla paylaşabilir veya e-postayla gönderebilir ya da kullanıcıyı geçici veya açık olarak bir iç risk yönetimi ilkesine atamayı seçebilir.
 
 [Olaylar](insider-risk-management-cases.md) , ilke eşleşmesi ile ilgili etkinlik ayrıntılarının ve koşullarının daha ayrıntılı bir şekilde incelenmesini ve incelenmesini gerektiren uyarılar için oluşturulur. **Servis Talebi panosu** tüm etkin servis taleplerinin, zaman içindeki açık servis taleplerinin ve kuruluşunuzun servis talebi istatistiklerinin tümünün görünümünü sağlar. Gözden geçirenler servis taleplerini duruma, servis talebinin açıldığı tarihe ve servis talebinin son güncelleştirildiği tarihe göre hızla filtreleyebilir.
 
 Servis talebi panosunda bir servis talebi seçildiğinde araştırma ve inceleme için servis talebi açılır. Bu adım, insider risk yönetimi iş akışının kalbidir. Bu alan, risk etkinliklerinin, ilke koşullarının, uyarı ayrıntılarının ve kullanıcı ayrıntılarının gözden geçirenler için tümleşik bir görünümde sentezlendiği yerdir. Bu alandaki birincil araştırma araçları şunlardır:
 
-- **Kullanıcı etkinliği**: Kullanıcı etkinliği, zaman içinde ve geçerli veya geçmiş risk etkinlikleri için risk düzeyine göre etkinlikleri çizen etkileşimli bir grafikte otomatik olarak görüntülenir. Gözden geçirenler, kullanıcı için risk geçmişinin tamamını hızla filtreleyebilir ve görüntüleyebilir ve daha fazla ayrıntı için belirli etkinliklerin detayına gidebilir.
+- **Kullanıcı etkinliği**: Kullanıcı riski etkinliği, zaman içinde ve geçerli veya geçmiş risk etkinlikleri için risk düzeyine göre etkinlikleri çizen etkileşimli bir grafikte otomatik olarak görüntülenir. Gözden geçirenler, kullanıcı için risk geçmişinin tamamını hızla filtreleyebilir ve görüntüleyebilir ve daha fazla ayrıntı için belirli etkinliklerin detayına gidebilir.
 - **İçerik gezgini**: Uyarı etkinlikleriyle ilişkili tüm veri dosyaları ve e-posta iletileri otomatik olarak yakalanır ve İçerik gezgininde görüntülenir. Gözden geçirenler dosyaları ve iletileri veri kaynağına, dosya türüne, etiketlere, konuşmaya ve daha birçok özniteliğe göre filtreleyebilir ve görüntüleyebilir.
 - **Servis talebi notları**: Gözden geçirenler Servis Talebi Notları bölümünde bir servis talebi için notlar sağlayabilir. Bu liste, tüm notları merkezi bir görünümde birleştirir ve gözden geçiren ve gönderilen tarih bilgilerini içerir.
 
@@ -176,7 +174,7 @@ Kullanıcılar kuruluşta kendi istekleriyle veya sonlandırmanın bir sonucu ol
 
 ### <a name="intentional-or-unintentional-security-policy-violations-preview"></a>Kasıtlı veya kasıtsız güvenlik ilkesi ihlalleri (önizleme)
 
-Kullanıcılar genellikle cihazlarını modern çalışma alanında yönetirken büyük ölçüde denetime sahiptir. Bu denetim, görevlerinin performansında gereken uygulamaları yükleme veya kaldırma izinlerini veya cihaz güvenlik özelliklerini geçici olarak devre dışı bırakma özelliğini içerebilir. Bu etkinliğin yanlışlıkla, yanlışlıkla veya kötü amaçlı olması fark etmeksizin, bu davranış kuruluşunuz için risk oluşturabilir ve en aza indirmek için tanımlamak ve harekete geçmek önemlidir. Aşağıdaki insider risk yönetimi güvenlik ilkesi ihlal şablonları, bu riskli güvenlik etkinliklerini tanımlamaya yardımcı olmak için güvenlik riski göstergelerini puanlar ve güvenlikle ilgili etkinliklere yönelik içgörüler sağlamak için Uç Nokta için Microsoft Defender uyarılarını kullanır:
+Kullanıcılar genellikle cihazlarını modern çalışma alanında yönetirken büyük ölçüde denetime sahiptir. Bu denetim, görevlerinin performansında gereken uygulamaları yükleme veya kaldırma izinlerini veya cihaz güvenlik özelliklerini geçici olarak devre dışı bırakma özelliğini içerebilir. Bu risk etkinliğinin yanlışlıkla, yanlışlıkla veya kötü amaçlı olması fark etmeksizin, bu davranış kuruluşunuz için risk oluşturabilir ve en aza indirmek için tanımlamak ve harekete geçmek önemlidir. Aşağıdaki insider risk yönetimi güvenlik ilkesi ihlal şablonları, bu riskli güvenlik etkinliklerini tanımlamaya yardımcı olmak için güvenlik riski göstergelerini puanlar ve güvenlikle ilgili etkinliklere yönelik içgörüler sağlamak için Uç Nokta için Microsoft Defender uyarılarını kullanır:
 
 - [Genel güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [Ayrılan kullanıcılar tarafından güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
@@ -198,7 +196,7 @@ Sağlık sektöründeki kuruluşlar için yapılan son çalışmalar, insider il
 
 ### <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>Dağıtılmamış kullanıcıların eylemleri ve davranışları (önizleme)
 
-Çalışma stresi olayları, kullanıcı davranışını insider riskleriyle ilgili çeşitli şekillerde etkileyebilir. Bu stresörler kötü bir performans incelemesi, konum indirgeme veya performans gözden geçirme planına yerleştirilen kullanıcı olabilir. Stresörler ayrıca kullanıcıların e-postada ve diğer iletilerde tehdit edici, taciz edici veya ayrımcı dil göndermesi gibi uygunsuz davranışlara da yol açabilir. Kullanıcıların çoğu bu olaylara kötü amaçlı olarak yanıt vermese de, bu eylemlerin stresi bazı kullanıcıların normal koşullarda normalde dikkate almayabilecekleri şekilde davranmalarına neden olabilir. Aşağıdaki insider risk yönetimi ilkesi şablonları, bu tür riskli etkinlikleri tanımlamaya yardımcı olmak için İk bağlayıcısını ve/veya [özel bir iletişim uyumluluk ilkesiyle](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) tümleştirmeyi kullanarak kullanıcıları şirket içi risk yönetimi ilkeleri kapsamına alabilir ve istihdam stresi olayları yakınlarında oluşabilecek davranışlarla ilgili risk göstergelerini puanlamaya başlayabilir:
+Çalışma stresi olayları, kullanıcı davranışını insider riskleriyle ilgili çeşitli şekillerde etkileyebilir. Bu stresörler kötü bir performans incelemesi, konum indirgeme veya performans gözden geçirme planına yerleştirilen kullanıcı olabilir. Stresörler ayrıca kullanıcıların e-postada ve diğer iletilerde tehdit edici, taciz edici veya ayrımcı dil göndermesi gibi uygunsuz davranışlara da yol açabilir. Kullanıcıların çoğu bu olaylara kötü amaçlı olarak yanıt vermese de, bu eylemlerin stresi bazı kullanıcıların normal koşullarda normalde dikkate almayabilecekleri şekilde davranmalarına neden olabilir. Aşağıdaki insider risk yönetimi ilkesi şablonları, bu tür riskli etkinlikleri tanımlamaya yardımcı olmak için İk bağlayıcısını ve/veya [özel bir iletişim uyumluluk ilkesiyle](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) tümleştirmeyi kullanarak kullanıcıları şirket içi risk yönetimi ilkeleri kapsamına alabilir ve oluşabilecek davranışlarla ilgili risk göstergelerini puanlamaya başlayabilir:
 
 - [Bozuk kullanıcılar tarafından veri sızıntıları (önizleme)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Dağıtılmamış kullanıcıların güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)

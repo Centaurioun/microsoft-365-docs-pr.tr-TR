@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 530a10beecab3c0f371db7a607e1b2a5d441c5a9
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: f8d5831d907386ec64db5666f6603d29a5e91d6d
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68635432"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733515"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender için en düşük gereksinimler
 
@@ -143,6 +143,8 @@ Ekleme sihirbazını ilk kez çalıştırdığınızda, Uç Nokta için Microsof
 Tanılama veri hizmetinin kuruluşunuzdaki tüm cihazlarda etkinleştirildiğinden emin olun.
 Varsayılan olarak, bu hizmet etkindir. Algılayıcı verilerini onlardan aldığınızdan emin olmak için kontrol etmek iyi bir uygulamadır.
 
+Bu hizmetin görünen adı _Bağlı Kullanıcı Deneyimleri ve Telemetri'dir_.
+
 #### <a name="use-the-command-line-to-check-the-windows-diagnostic-data-service-startup-type"></a>Windows tanılama veri hizmeti başlangıç türünü denetlemek için komut satırını kullanın
 
 1. Cihazda yükseltilmiş bir komut satırı istemi açın:
@@ -208,7 +210,7 @@ Sunucuları ekliiyorsanız ve Microsoft Defender Virüsten Koruma sunucularını
 
 Cihazlarınızda birincil kötü amaçlı yazılımdan koruma ürünü olarak Microsoft Defender Virüsten Koruma çalıştırıyorsanız, Uç Nokta için Defender aracısı başarıyla eklenecektir.
 
-Üçüncü taraf kötü amaçlı yazılımdan koruma istemcisi çalıştırıyorsanız ve Mobil Cihaz Yönetimi çözümleri veya Microsoft Endpoint Manager (geçerli dal) kullanıyorsanız, Virüsten Koruma ELAM sürücüsünün etkinleştirildiğinden Microsoft Defender emin olmanız gerekir. Daha fazla bilgi için bkz[. Microsoft Defender Virüsten Koruma'nın ilke tarafından devre dışı bırakılmadığından emin olun](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+Üçüncü taraf kötü amaçlı yazılımdan koruma istemcisi çalıştırıyorsanız ve Mobile Cihaz Yönetimi çözümlerini veya Microsoft Endpoint Manager'ı (geçerli dal) kullanıyorsanız Microsoft Defender Virüsten Koruma ELAM sürücüsünün etkinleştirildiğinden emin olmanız gerekir. Daha fazla bilgi için bkz[. Microsoft Defender Virüsten Koruma'nın ilke tarafından devre dışı bırakılmadığından emin olun](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## <a name="related-topics"></a>İlgili konular
 

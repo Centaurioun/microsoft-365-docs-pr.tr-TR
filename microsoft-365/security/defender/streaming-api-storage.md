@@ -19,12 +19,12 @@ ms.collection:
 - tier3
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.openlocfilehash: 7c541e1e86fdc2967444d5e4297ed04460a47bf5
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 73428378c3229765b5e9ea3783dfdde7021fabaf
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68645637"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727267"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Depolama hesabınıza Gelişmiş Tehdit Avcılığı olaylarının akışını yapmak için Microsoft 365 Defender yapılandırma
 
@@ -61,9 +61,11 @@ Depolama hesabı oluşturulduktan sonra aşağıdakileri yapmanız gerekir:
 4. Görüntülenen **Yeni Akış API'si ayarları ekle** açılır penceresinde aşağıdaki ayarları yapılandırın:
    1. **Ad**: Yeni ayarlarınız için bir ad seçin.
    2. **Olayları Azure Depolama'ya ilet'i** seçin.
-   3. Görüntülenen **Depolama Hesabı Kaynak Kimliği** kutusuna **Depolama Hesabı Kaynak Kimliğinizi** yazın. **Depolama Hesabı Kaynak Kimliğinizi** almak için konumunda Azure portal <https://portal.azure.com>açın, **Depolama hesapları'na** \> tıklayın özellikler sekmesine \> gidin **ve Depolama Hesabı Kaynak Kimliği** altındaki metni kopyalayın.
+4. Azure portal depolama hesabının Azure Resource Manager kaynak kimliğini görüntülemek için şu adımları izleyin:
 
-      :::image type="content" source="../defender-endpoint/images/storage-account-resource-id.png" alt-text="Depolama Hesabı Kaynak Kimliği" lightbox="../defender-endpoint/images/storage-account-resource-id.png":::
+   1. Azure portal depolama hesabınıza gidin.
+   2. **Genel Bakış** sayfasındaki **Temel Bileşenler** bölümünde **JSON Görünümü** bağlantısını seçin.
+   3. Depolama hesabının kaynak kimliği sayfanın en üstünde görüntülenir ve metni **Depolama Hesabı Kaynak Kimliği'nin** altına kopyalayın.
 
    4. **Yeni Akış API'si ayarları ekle** açılır menüsüne geri dönüp akış yapmak istediğiniz **Olay türlerini** seçin.
 

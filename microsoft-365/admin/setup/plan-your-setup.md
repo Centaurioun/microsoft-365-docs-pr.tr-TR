@@ -7,9 +7,11 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: İş için Microsoft 365'e geçiş yapma gereksinimleri ve dikkat edilmesi gerekenler hakkında bilgi edinin.
-ms.openlocfilehash: b9f90399d9475f7c05b08258d81fdc36b86dfc5f
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: f7de8e2159d5389873bd747a89ada8e065bc935d
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661047"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733405"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>İş için Microsoft 365 kurulumunuzu planlama
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için standart kiracı yapılandırmalarını dağıtmak için temelleri kullanma hakkında bilgi edinin.
-ms.openlocfilehash: f5c3336aa7b77f29dcf0ec41181567c9bd07c9b9
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: 089a1cc932e13c12786337d0a1fa636f0ef4e138
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68688160"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729929"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Standart kiracı yapılandırmalarını dağıtmak için Microsoft 365 Lighthouse temellerini kullanmaya genel bakış 
 
@@ -46,7 +47,7 @@ Lighthouse temel yapılandırmaları, tüm yönetilen kiracıların güvenli ve 
 | Eski kimlik doğrulamasını engelle | Eski istemci kimlik doğrulamasını engelleyen bir Koşullu Erişim ilkesi. Bu temel hakkında daha fazla bilgi için bkz[. Koşullu Erişim ile Azure AD için eski kimlik doğrulamasını engelleme](/azure/active-directory/conditional-access/block-legacy-authentication).|
 | Cihaz kaydını ayarlama | Cihaz kaydı, kiracı cihazlarınızın Microsoft Endpoint Manager'a kaydolmasına ve cihaz sistem durumu izleme aracılığıyla cihazlarınıza Endpoint Analytics görünürlüğü sağlamasına olanak tanır. Bu yapılandırma, Azure Active Directory ile Microsoft Endpoint Manager arasında Otomatik Kayıt ayarlanarak gerçekleştirilir. Bu temel hakkında daha fazla bilgi için bkz. [Windows cihazları için kaydı ayarlama](/mem/intune/enrollment/windows-enroll). |
 | Uygulama koruma ilkesini yapılandırma | Herhangi bir mobil cihaz yönetimi (MDM) çözümünden bağımsız olarak, bir uygulama içinde yönetilen kiracının kuruluş verilerini yönetmenize ve korumanıza olanak sağlayan koruma ilkeleri kümesi. Kuruluşun verileri, cihazları bir MDM çözümüne kaydederek veya kaydetmeden korunur. |
-| İş için Microsoft Defender ayarlama | kiracıyı İş için Microsoft Defender için sağlar ve Microsoft Endpoint Manager'a kayıtlı cihazları İş için Microsoft Defender ekler. Daha fazla bilgi için bkz. [İş için Microsoft Defender nedir?](../security/defender-business/mdb-overview.md) |
+| İş için Microsoft Defender ayarlama | kiracıyı İş için Microsoft Defender için sağlar ve Microsoft Endpoint Manager'a kayıtlı cihazları İş için Microsoft Defender için ekler. Daha fazla bilgi için bkz. [İş için Microsoft Defender nedir?](../security/defender-business/mdb-overview.md) |
 | Exchange Online Protection ve Office 365 için Microsoft Defender ayarlama | Önerilen istenmeyen posta önleme, kötü amaçlı yazılımdan koruma, kimlik avı önleme, güvenli bağlantılar ve güvenli ek ilkelerini kiracılarınıza Exchange Online posta kutularına uygulama ilkesi. |
 | Microsoft Defender Virüsten Koruma'Windows 10 ve üzeri için yapılandırma | Virüsten koruma ayarları Microsoft Defender önceden yapılandırılmış Windows cihazları için bir cihaz yapılandırma profili. Bu temel hakkında daha fazla bilgi için bkz[. Intune'da Uç Nokta için Microsoft Defender yapılandırma](/mem/intune/protect/advanced-threat-protection-configure).|
 | Windows 10 ve üzeri için Microsoft Defender Güvenlik Duvarı'nı yapılandırma | İstenmeyen ve yetkisiz ağ trafiğini engelleyerek cihazların güvenliğini sağlamaya yardımcı olan bir güvenlik duvarı ilkesi. Bu temel hakkında daha fazla bilgi için bkz. [Windows Defender Güvenlik Duvarı'nı yapılandırmaya yönelik en iyi yöntemler](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |

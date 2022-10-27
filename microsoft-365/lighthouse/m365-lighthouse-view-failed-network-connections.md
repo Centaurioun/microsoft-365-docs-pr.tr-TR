@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP' ler) için kurumsal bulut bilgisayarı başarısız ağ bağlantısını görüntülemeyi öğrenin.
-ms.openlocfilehash: 9d4fc475408c1567298e2f91f260ca99157c6e13
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: ce37f8cf8eb39ab3d0af958b73551e1f09564602
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68662543"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68735099"
 ---
 # <a name="view-an-enterprise-cloud-pc-failed-network-connection-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'da kurumsal bir Cloud PC başarısız ağ bağlantısını görüntüleme
 
@@ -42,7 +43,7 @@ Microsoft 365 Lighthouse, müşteri kiracılarınızla Azure Active Directory (A
 
 3. Renkli count-annotation **çubuğundan Başarısız bağlantılar'ı** seçin.
 
-4. Filtrelenen listeden, araştırmak istediğiniz **bağlantının yanındaki Microsoft Endpoint Manager bağlantı ayrıntılarını görüntüle'yi** seçin.
+4. Filtrelenen listeden, araştırmak istediğiniz **bağlantının yanındaki Microsoft Endpoint Manager'da bağlantı ayrıntılarını görüntüle'yi** seçin.
 
 5. Microsoft Endpoint Manager yönetim merkezinde **Ayrıntıları görüntüle'yi** seçerek hata hakkında daha fazla bilgi edinin.
 

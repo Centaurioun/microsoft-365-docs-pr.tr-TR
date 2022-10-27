@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Microsoft 365 yönetim merkezi yeni ürün ve özellik güncelleştirmeleri için sürüm seçeneğini ayarlamayı öğrenin.
-ms.openlocfilehash: 9cd35f76c839bf234eb434b774e98ef49e7ed095
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 1efd02e45ca2d573eca49aefc7b7dc202ec4bc02
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68564180"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734989"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Standart veya Hedefli sürüm seçeneklerini ayarlama
 

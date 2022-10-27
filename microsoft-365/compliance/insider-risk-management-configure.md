@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 460be0f6e84693504de56574688979733a28acd7
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: c49a9037b87709858b93fa15e68f4e931f9d7fff
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68687704"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68732987"
 ---
 # <a name="get-started-with-insider-risk-management"></a>İçeriden risk yönetimini kullanmaya başlama
 
@@ -66,7 +66,7 @@ Insider risk yönetimi yapılandırmanızı kullanmaya başlamanıza veya en üs
 
 - **Denetimi açma**: Etkinleştirildiğinde, kuruluşunuzdaki kullanıcı ve yönetici etkinliği Microsoft 365 denetim günlüğüne kaydedilir. Insider risk ilkeleri ve analiz taramaları, risk etkinliklerini algılamak için bu günlüğü kullanır.
 - **Kullanıcı risk yönetimi izinlerini alma**: Insider risk yönetimi özelliklerine sahip olduğunuz erişim düzeyi, hangi rol grubuna atandığınıza bağlıdır. Önerilen eylemlere erişmek ve bu eylemleri yapılandırmak için kullanıcıların *Insider Risk Management veya Insider Risk Management* *Admins* rol gruplarına atanması gerekir.
-- **İlke göstergelerini seçme**: Göstergeler temelde algılamak ve araştırmak istediğiniz kullanıcı etkinlikleridir. Çeşitli Microsoft 365 konumları ve hizmetlerinde etkinliği izlemek için göstergeleri seçebilirsiniz.
+- **İlke göstergelerini seçme**: Göstergeler temelde algılamak ve araştırmak istediğiniz risk yönetimi etkinlikleridir. Çeşitli Microsoft 365 konumları ve hizmetlerinde etkinliği izlemek için göstergeleri seçebilirsiniz.
 - **Olası insider risklerini tarama**: Kuruluşunuzda ortaya çıkabilecek olası insider risklerini keşfetmek için bir analiz taraması çalıştırın. Sonuçları değerlendirdikten sonra, ayarlamak için önerilen ilkeleri gözden geçirin.
 - **Başkalarına izin atama**: İç risk özelliklerini yönetmekten sorumlu olacak ek ekip üyeleri varsa, bunları uygun rol gruplarına atamanız gerekir.
 - **İlk ilkenizi oluşturma**: Riskli olabilecek etkinliklerle ilgili uyarılar almak için algılamak ve araştırmak istediğiniz kullanıcı etkinliklerini tanımlayan önceden tanımlanmış şablonları temel alan ilkeler ayarlamanız gerekir.
@@ -78,7 +78,7 @@ Bu deneyime dahil edilen önerilen her eylemin dört özniteliği vardır:
 - **Gerekli veya isteğe bağlı**: Insider risk yönetimi özelliklerinin beklendiği gibi çalışması için önerilen eylemin gerekli mi yoksa isteğe bağlı mı olduğu.
 - **Tahmini tamamlanma süresi**: Önerilen eylemin dakika cinsinden tamamlanması için tahmini süre.
 
-Insider risk yönetimini yapılandırmaya başlamak için listeden bir öneri seçin. Önerilen her eylem, gereksinimler, beklenecekler ve özelliğin kuruluşunuzdaki yapılandırmasının etkisi de dahil olmak üzere öneri için gerekli etkinliklerde size yol gösterir.   Önerilen her eylem yapılandırıldığında otomatik olarak tamamlandı olarak işaretlenir veya yapılandırıldığında eylemi tamamlandı olarak el ile seçmeniz gerekir.
+Insider risk yönetimini yapılandırmaya başlamak için listeden bir öneri seçin. Önerilen her eylem, gereksinimler, beklenecekler ve özelliğin kuruluşunuzdaki yapılandırmasının etkisi de dahil olmak üzere öneri için gerekli eylemde size yol gösterir. Önerilen her eylem yapılandırıldığında otomatik olarak tamamlandı olarak işaretlenir veya yapılandırıldığında eylemi tamamlandı olarak el ile seçmeniz gerekir.
 
 ## <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>1. Adım (gerekli): Insider risk yönetimi için izinleri etkinleştirme
 
@@ -145,7 +145,7 @@ Insider risk yönetimi rol grubuna kullanıcı eklemek için aşağıdaki adıml
 
 ## <a name="step-2-required-enable-the-microsoft-365-audit-log"></a>2. Adım (gerekli): Microsoft 365 denetim günlüğünü etkinleştirme
 
-Insider risk yönetimi, kullanıcı içgörüleri ve ilkeler ve analiz içgörülerinde tanımlanan etkinlikler için Microsoft 365 denetim günlüklerini kullanır. Microsoft 365 denetim günlükleri, kuruluşunuzdaki tüm etkinliklerin özetidir ve iç risk yönetimi ilkeleri ilke içgörüleri oluşturmak için bu etkinlikleri kullanabilir.
+Insider risk yönetimi, ilkeler ve analiz içgörülerinde tanımlanan kullanıcı içgörüleri ve risk yönetimi etkinlikleri için Microsoft 365 denetim günlüklerini kullanır. Microsoft 365 denetim günlükleri, kuruluşunuzdaki tüm etkinliklerin özetidir ve iç risk yönetimi ilkeleri ilke içgörüleri oluşturmak için bu etkinlikleri kullanabilir.
 
 Denetim, Microsoft 365 kuruluşları için varsayılan olarak etkindir. Bazı kuruluşlar belirli nedenlerle denetimi devre dışı bırakmış olabilir. Kuruluşunuzda denetim devre dışı bırakıldıysa, bunun nedeni başka bir yöneticinin kapatması olabilir. Bu adımı tamamlarken denetimi yeniden açmanın uygun olduğunu onaylamanızı öneririz.
 
@@ -155,7 +155,7 @@ Denetimi açmak için adım adım yönergeler için bkz. [Denetim günlüğü ar
 
 Insider risk yönetimi analizi, herhangi bir insider risk ilkesi yapılandırmadan kuruluşunuzdaki olası insider risklerini değerlendirmenizi sağlar. Bu değerlendirme, kuruluşunuzun daha yüksek kullanıcı riski olan olası alanları belirlemesine yardımcı olabilir ve yapılandırmayı düşünebileceğiniz iç risk yönetimi ilkelerinin türünü ve kapsamını belirlemeye yardımcı olabilir. Bu değerlendirme, mevcut ilkelerin ek lisanslama veya gelecekteki iyileştirme gereksinimlerini belirlemenize de yardımcı olabilir. Analiz tarama sonuçlarının, içgörülerin gözden geçirilebilir raporlar olarak kullanılabilir hale gelmesi 48 saat kadar sürebilir. Analiz içgörüleri hakkında daha fazla bilgi edinmek için [Insider risk yönetimi ayarları: Analiz'e](insider-risk-management-settings.md#analytics) bakın ve insider risklerinin tanımlanmasını hızlandırmaya ve hızla harekete geçmenize nasıl yardımcı olabileceğini anlamak için [Insider Risk Yönetimi Analizi videosunu](https://www.youtube.com/watch?v=5c0P5MCXNXk) inceleyin.
 
-Insider risk Analizi'ni etkinleştirmek için *Insider Risk Management, Insider Risk Management* *Yönetici* veya Microsoft 365 *Genel yönetici* rol grubunun üyesi olmanız gerekir.
+Insider risk analizini etkinleştirmek için *Insider Risk Management, Insider Risk Management* *Yönetici* veya Microsoft 365 *Genel yönetici* rol grubunun üyesi olmanız gerekir.
 
 Insider risk analizini etkinleştirmek için aşağıdaki adımları tamamlayın:
 
@@ -183,12 +183,11 @@ Aşağıdaki ilke şablonları kullanılırken Microsoft 365 HR bağlayıcısı 
 
 Kuruluşunuz için Microsoft 365 İK bağlayıcısını yapılandırmaya yönelik adım adım yönergeler için [İk verilerini içeri aktarmak için bağlayıcı ayarlama](import-hr-data.md) makalesine bakın. İk bağlayıcısını yapılandırdıktan sonra bu yapılandırma adımlarına dönün.
 
-### <a name="configure--a-healthcare-specific-data-connector"></a>Sağlık hizmetleriyle ilgili veri bağlayıcısı yapılandırma
+### <a name="configure-a-healthcare-specific-data-connector"></a>Sağlık hizmetleriyle ilgili veri bağlayıcısı yapılandırma
 
-Insider risk yönetimi, mevcut elektronik tıbbi kayıt (EMR) sistemlerinde üçüncü taraflardan içeri aktarılan kullanıcı ve günlük verilerinin içeri aktarılmasını destekler. Microsoft Healthcare ve Epic veri bağlayıcıları, uygunsuz hasta kaydı erişimi, şüpheli toplu etkinlikler ve düzenleme ve dışarı aktarma etkinlikleri dahil olmak üzere CSV dosyalarıyla EMR sisteminizden etkinlik verilerini çekmenize olanak sağlar. Bu veriler, şirket içi risk yönetimi ilkelerinde uyarı göstergelerini yönlendirmeye yardımcı olur ve kuruluşunuzda tam risk yönetimi kapsamını yapılandırmanın önemli bir parçasıdır.
+Insider risk yönetimi, mevcut elektronik tıbbi kayıt (EMR) sistemlerinde üçüncü taraflardan içeri aktarılan kullanıcı ve günlük verilerinin içeri aktarılmasını destekler. Microsoft Healthcare ve Epic veri bağlayıcıları, uygunsuz hasta kaydı erişimi, şüpheli toplu etkinlikler ve etkinlikleri düzenleme ve dışarı aktarma gibi CSV dosyalarıyla EMR sisteminizden etkinlik verilerini çekmenize olanak sağlar. Bu veriler, şirket içi risk yönetimi ilkelerinde uyarı göstergelerini yönlendirmeye yardımcı olur ve kuruluşunuzda tam risk yönetimi kapsamını yapılandırmanın önemli bir parçasıdır.
 
-Kuruluşunuz için birden fazla Healthcare veya Epic bağlayıcısı yapılandırıyorsanız, insider risk yönetimi tüm Healthcare ve Epic bağlayıcılarından gelen etkinlik ve etkinlik sinyallerini otomatik olarak destekler.
-Aşağıdaki ilke şablonları kullanılırken Microsoft 365 Healthcare veya Epic bağlayıcısı gereklidir:
+Kuruluşunuz için birden fazla Healthcare veya Epic bağlayıcısı yapılandırıyorsanız, insider risk yönetimi tüm Healthcare ve Epic bağlayıcılarından gelen etkinlik ve etkinlik sinyallerini otomatik olarak destekler. Aşağıdaki ilke şablonları kullanılırken Microsoft 365 Healthcare veya Epic bağlayıcısı gereklidir:
 
 - Genel hasta verilerini kötüye kullanma
 
@@ -198,13 +197,13 @@ Kuruluşunuza yönelik [bir sağlık hizmeti bağlayıcısını](import-healthca
 
 Insider risk yönetimi, yüksek önem düzeyi DLP uyarıları için hassas bilgilerin istenmeyen taraflara kasıtlı veya yanlışlıkla maruz kalmasını belirlemeye yardımcı olmak için DLP ilkelerinin kullanılmasını destekler. **Veri sızıntısı** şablonlarından herhangi biriyle bir iç risk yönetimi ilkesi yapılandırırken, bu tür uyarılar için ilkeye belirli bir DLP ilkesi atama seçeneğiniz vardır.
 
-DLP ilkeleri, hassas bilgiler için yüksek önem dereceli DLP uyarıları için kullanıcıların şirket içi risk yönetiminde risk puanlama özelliğini etkinleştirmelerine yardımcı olur ve kuruluşunuzda tam risk yönetimi kapsamını yapılandırmanın önemli bir parçasıdır. Insider risk yönetimi ve DLP ilkesi tümleştirmesi ve planlama konuları hakkında daha fazla bilgi için bkz. [Insider risk yönetimi ilkeleri](insider-risk-management-policies.md#general-data-leaks).
+Veri kaybı ilkeleri, hassas bilgiler için yüksek önem dereceli DLP uyarıları için kullanıcıların şirket içi risk yönetiminde risk puanlama özelliğini etkinleştirmelerine yardımcı olur ve kuruluşunuzda tam risk yönetimi kapsamını yapılandırmanın önemli bir parçasıdır. Insider risk yönetimi ve DLP ilkesi tümleştirmesi ve planlama konuları hakkında daha fazla bilgi için bkz. [Insider risk yönetimi ilkeleri](insider-risk-management-policies.md#general-data-leaks).
 
 > [!IMPORTANT]
->Aşağıdakileri tamamladığınızdan emin olun:
+> Aşağıdakileri tamamladığınızdan emin olun:
 >
 > - Beklediğiniz ilke kapsamını oluşturmak için hem DLP hem de iç risk yönetimi ilkelerindeki kapsam içi kullanıcıları anlar ve uygun şekilde yapılandırabilirsiniz.
-> - Bu şablonlarla kullanılan iç risk yönetimi için DLP ilkesindeki **Olay raporları** ayarının *Yüksek* önem düzeyi uyarıları için yapılandırıldığından emin olun. Insider risk yönetimi uyarıları, **Olay raporları** alanı *Düşük* veya *Orta* olarak ayarlanmış DLP ilkelerinden oluşturulmaz.
+> - Bu şablonlarla kullanılan iç risk yönetimi için DLP ilkesindeki **Olay raporları** ayarı *, Yüksek* önem düzeyi uyarıları için yapılandırılır. Insider risk yönetimi uyarıları, **Olay raporları** alanı *Düşük* veya *Orta* olarak ayarlanmış DLP ilkelerinden oluşturulmaz.
 
 Aşağıdaki ilke şablonları kullanılırken bir DLP ilkesi isteğe bağlıdır:
 
@@ -252,13 +251,12 @@ Kuruluşunuz için adli kanıt yapılandırmaya yönelik adım adım yönergeler
 [Insider risk ayarları](insider-risk-management-settings.md) , ilke oluştururken seçtiğiniz şablondan bağımsız olarak tüm insider risk yönetimi ilkeleri için geçerlidir. Ayarlar, tüm **insider risk** yönetimi sekmelerinin en üstünde bulunan Insider risk ayarları denetimi kullanılarak yapılandırılır. Bu ayarlar gizliliği, göstergeleri, akıllı algılamaları ve daha fazlasını denetler.
 
 İlkeyi yapılandırmadan önce aşağıdaki insider risk ayarlarını tanımlayın:
-
 1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) **Insider risk yönetimi'ne** gidin ve herhangi bir sayfanın sağ üst köşesinden **Insider risk ayarları'nı** seçin.
 2. **Gizlilik** sayfasında, ilke uyarıları için kullanıcı adlarını görüntülemek için bir gizlilik ayarı seçin.
 3. **Göstergeler** sayfasında, tüm insider risk ilkelerine uygulamak istediğiniz uyarı göstergelerini seçin.
 
     > [!IMPORTANT]
-    > İlkelerinizde tanımlanan riskli etkinliklere yönelik uyarılar almak için bir veya daha fazla gösterge seçmelisiniz. Göstergeler Ayarlar'da yapılandırılmadıysa, iç risk ilkelerinde göstergeler seçilemez.
+    > İlkelerinizde tanımlandığı gibi riskli olabilecek etkinliklere yönelik uyarılar almak için bir veya daha fazla gösterge seçmeniz gerekir. Göstergeler Ayarlar'da yapılandırılmadıysa, iç risk ilkelerinde göstergeler seçilemez.
 
 4. **İlke zaman çerçeveleri** sayfasında, bir kullanıcı bir iç risk ilkesi için eşleşme tetiklediğinde etkin olacak [ilke zaman çerçevelerini](insider-risk-management-settings.md#policy-timeframes) seçin.
 5. **Akıllı algılamalar** sayfasında, insider risk ilkeleri için aşağıdaki ayarları yapılandırın:
@@ -270,16 +268,17 @@ Kuruluşunuz için adli kanıt yapılandırmaya yönelik adım adım yönergeler
     - [Dosya yolu dışlamaları](insider-risk-management-settings.md#file-path-exclusions)
     - [Site dışlamaları](insider-risk-management-settings.md#site-exclusions)
     - [Anahtar sözcük dışlama](insider-risk-management-settings.md#keyword-exclusion)
+    
 6. **Uyarıları dışarı aktar** sayfasında, gerekirse Office 365 Yönetimi API'lerini kullanarak insider risk uyarısı bilgilerinin dışarı aktarılabilmesini sağlayın.
 7. **Öncelik kullanıcı grupları** sayfasında, bir öncelik kullanıcı grubu oluşturun ve **3. Adımda** oluşturulmadıysa kullanıcıları ekleyin.
 8. **Power Automate akışları** sayfasında, insider risk akışı şablonlarından bir akış yapılandırın veya yeni bir akış oluşturun. Adım adım yönergeler için [Insider risk yönetimi ayarlarını kullanmaya başlama](insider-risk-management-settings.md#power-automate-flows-preview) makalesine bakın.
 9. **Öncelik varlıkları sayfasında**, fiziksel denetiminizdeki verileri kullanmak için öncelik varlıklarını yapılandırın ve Fiziksel bağlantı bağlayıcısı tarafından içeri aktarılan erişim platformuna erişin. Adım adım yönergeler için [Insider risk yönetimi ayarlarını kullanmaya başlama](insider-risk-management-settings.md#priority-physical-assets-preview) makalesine bakın.
 10. **Microsoft Teams** sayfasında, servis talebi veya kullanıcı işbirliği için otomatik olarak bir ekip oluşturmak için Microsoft Teams'in insider risk yönetimiyle tümleştirmesini etkinleştirin. Adım adım yönergeler için [Insider risk yönetimi ayarlarını kullanmaya başlama](insider-risk-management-settings.md#microsoft-teams-preview) makalesine bakın.
-12. Insider risk ilkelerinizde bu ayarları etkinleştirmek için **Kaydet'i** seçin.
+11. Insider risk ilkelerinizde bu ayarları etkinleştirmek için **Kaydet'i** seçin.
 
 ## <a name="step-6-required-create-an-insider-risk-management-policy"></a>6. Adım (gerekli): Insider risk yönetimi ilkesi oluşturma
 
-Insider risk yönetimi ilkeleri atanmış kullanıcıları içerir ve uyarılar için hangi tür risk göstergelerinin yapılandırıldığını tanımlar. Etkinliklerin uyarıları tetikleyebilmesi için önce bir ilkenin yapılandırılması gerekir. Yeni insider risk yönetimi ilkeleri oluşturmak için ilke sihirbazını kullanın.
+Insider risk yönetimi ilkeleri atanmış kullanıcıları içerir ve uyarılar için hangi tür risk göstergelerinin yapılandırıldığını tanımlar. Riskli olabilecek etkinliklerin uyarıları tetikleyebilmesi için önce bir ilkenin yapılandırılması gerekir. Yeni insider risk yönetimi ilkeleri oluşturmak için ilke sihirbazını kullanın.
 
 1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) **Insider risk yönetimi'ne** gidin ve **İlkeler** sekmesini seçin.
 2. İlke sihirbazını açmak için İlke **oluştur'u** seçin.
@@ -305,11 +304,11 @@ Insider risk yönetimi ilkeleri atanmış kullanıcıları içerir ve uyarılar 
 
 11. Önceki adımda **İçeriği önceliklendirmek istiyorum** seçeneğini belirlediyseniz *SharePoint sitelerinin* ayrıntı sayfalarını, *hassas bilgi türlerini*, *duyarlılık etiketlerini*, *dosya uzantılarını* ve *Puanlama'yı* görürsünüz. İlkeye öncelik vermek üzere SharePoint' i, hassas bilgi türlerini, duyarlılık etiketlerini ve dosya uzantılarını tanımlamak için bu ayrıntı sayfalarını kullanın. *Puanlama* ayrıntıları sayfası, ilkenin kapsamını yalnızca risk puanlarını atayarak öncelik içeriği içeren belirtilen etkinlikler için uyarılar oluşturmanızı sağlar.
 
-    - **SharePoint siteleri**: **SharePoint sitesi ekle'yi** seçin ve erişiminiz olan ve önceliklendirmek istediğiniz SharePoint sitelerini seçin. Örneğin, *"group1@contoso.sharepoint.com/sites/group1"*.
+    - **SharePoint siteleri**: **SharePoint sitesi ekle'yi** seçin ve erişiminiz olan ve önceliklendirmek istediğiniz SharePoint sitelerini seçin. Örneğin, *"group1@contoso.sharepoint.com/sites/group1"*.    
     - **Hassas bilgi türü**: **Hassas bilgi türü ekle'yi** seçin ve önceliklendirmek istediğiniz duyarlılık türlerini seçin. Örneğin, *"ABD Banka Hesap Numarası"* ve *"Kredi Kartı Numarası"*.
     - **Duyarlılık etiketleri**: **Duyarlılık etiketi ekle'yi** seçin ve önceliklendirmek istediğiniz etiketleri seçin. Örneğin, *"Gizli"* ve *"Gizli"*.
     - **Dosya uzantıları**: En fazla 50 dosya uzantısı ekleyin. '.' dosyasını dosya uzantısına ekleyebilir veya atlayabilirsiniz. Örneğin, *.py* veya *py* Python dosyalarının önceliklerini belirlemeye yöneliktir.
-    - **Puanlama**: Risk puanlarının bu ilke tarafından algılanan tüm etkinliklere mi yoksa yalnızca öncelik içeriği içeren etkinlikler için mi atandığına karar verin. **Tüm etkinlikler için uyarı al'ı** veya **Yalnızca öncelik içeriği içeren etkinlikler için uyarı al'ı** seçin.
+     - **Puanlama**: Bu ilke tarafından algılanan tüm risk yönetimi etkinliklerine veya yalnızca öncelik içeriği içeren etkinlikler için risk puanlarının atanıp atanmayacağına karar verin. **Tüm etkinlikler için uyarı al'ı** veya **Yalnızca öncelik içeriği içeren etkinlikler için uyarı al'ı** seçin.
 
     > [!NOTE]
     > İlkeyi yapılandıran ve öncelikli SharePoint sitelerini seçen kullanıcılar, erişim iznine sahip oldukları SharePoint sitelerini seçebilir. SharePoint siteleri geçerli kullanıcı tarafından ilkede seçilemiyorsa, gerekli izinlere sahip başka bir kullanıcı ilkenin sitelerini daha sonra seçebilir veya geçerli kullanıcıya gerekli sitelere erişim verilmesi gerekir.

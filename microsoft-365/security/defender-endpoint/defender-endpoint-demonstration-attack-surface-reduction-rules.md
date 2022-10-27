@@ -16,14 +16,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: conceptual
+- demo
+ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 10973a8191d12703a7520d95c3b13cda8493e753
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.date: 10/21/2022
+ms.openlocfilehash: b0c57f4fc094d8efbcd2fd13f4c4835536dceb21
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68643393"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729863"
 ---
 # <a name="attack-surface-reduction-rules-demonstrations"></a>Saldırı yüzeyi azaltma kuralları tanıtımları
 
@@ -63,9 +65,9 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids 7674BA52-37EB-4A4F-A9A1-F0F9A1
 
 |Durum | Mod| Sayısal değer |
 |:---|:---|:---|
-| AuditMode | = Denetim Modu | 2 |
-| Etkin | = Blok modu | 1 |
 | Devre dışı | = Kapalı | 0 |
+| Etkin | = Blok modu | 1 |
+| Denetim | = Denetim modu | 2 |
 
 ### <a name="verify-configuration"></a>Yapılandırmayı doğrulama
 

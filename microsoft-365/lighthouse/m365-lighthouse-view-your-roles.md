@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcısı (MSP) teknisyenleri için, kuruluşunuzun yönettiği farklı müşteri kiracılarında Azure Active Directory (Azure AD) rollerinizi görüntülemeyi öğrenin.
-ms.openlocfilehash: dce01eea5904ee785e2b56adc32c8b51867a876a
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: 148ce429811f570fec0691cc9ec81c04aec6624d
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68659335"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68736221"
 ---
 # <a name="view-your-azure-active-directory-roles-in-microsoft-365-lighthouse"></a>Azure Active Directory rollerinizi Microsoft 365 Lighthouse'de görüntüleme
 

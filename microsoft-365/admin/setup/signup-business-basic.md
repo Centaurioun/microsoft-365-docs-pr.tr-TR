@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -26,12 +27,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 İş Temel aboneliğine kaydolmayı öğrenin.
-ms.openlocfilehash: c00ddf1c1c4a3d732c3e15ce29574bc5762e877b
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 035e7fe7bdb02b3aaaef45db33bf32f17bf7b3e6
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68624807"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733823"
 ---
 # <a name="sign-up-for-microsoft-365-business-basic"></a>Microsoft 365 İş Temel için kaydolun
 

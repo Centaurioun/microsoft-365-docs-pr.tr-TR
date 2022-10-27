@@ -9,16 +9,17 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 ms.collection:
+- Tier1
 - scotvorg
 - highpri
 ms.custom: VSBFY23
 description: Web tabanlı bir rezervasyon takvimi içeren ve personelinizin takvimini iyileştirmek ve müşterilerinize randevu rezervasyonu için esneklik sağlamak için Outlook ile tümleşen Microsoft Bookings uygulamasına genel bakış.
-ms.openlocfilehash: 897f1294ee678cc2fd1c4c8b5c01be2c0c2cf651
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: c0df24d9103bd820d216330c4ce1839f4167ad68
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68193421"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733977"
 ---
 # <a name="microsoft-bookings"></a>Microsoft Kayıtları
 

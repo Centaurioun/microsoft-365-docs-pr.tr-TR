@@ -15,21 +15,21 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 04117f0880266f934955c1285250e509667a8482
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 906df5f89688b90af8bb11cf8223d28fff1653c9
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68505213"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733589"
 ---
 # <a name="insider-risk-management-notice-templates"></a>Insider risk yönetimi bildirim şablonları
 
->[!IMPORTANT]
->Microsoft Purview İçeriden Risk Yönetimi IP hırsızlığı, veri sızıntısı ve güvenlik ihlalleri gibi olası kötü amaçlı veya yanlışlıkla insider risklerini belirlemek için çeşitli sinyalleri ilişkilendirmektedir. Insider risk yönetimi, müşterilerin güvenlik ve uyumluluğu yönetmek için ilkeler oluşturmasına olanak tanır. Tasarım gereği gizlilikle oluşturulan kullanıcılar varsayılan olarak takma ad kullanır ve kullanıcı düzeyinde gizlilik sağlamaya yardımcı olmak için rol tabanlı erişim denetimleri ve denetim günlükleri kullanılır.
+> [!IMPORTANT]
+> Microsoft Purview İçeriden Risk Yönetimi IP hırsızlığı, veri sızıntısı ve güvenlik ihlalleri gibi olası kötü amaçlı veya yanlışlıkla insider risklerini belirlemek için çeşitli sinyalleri ilişkilendirmektedir. Insider risk yönetimi, müşterilerin güvenlik ve uyumluluğu yönetmek için ilkeler oluşturmasına olanak tanır. Tasarım gereği gizlilikle oluşturulan kullanıcılar varsayılan olarak takma ad kullanır ve kullanıcı düzeyinde gizlilik sağlamaya yardımcı olmak için rol tabanlı erişim denetimleri ve denetim günlükleri kullanılır.
 
-Insider risk yönetimi bildirim şablonları, ilke eşleşmesi ve onaylanan uyarı oluşturan etkinlikler için bir servis talebi oluşturulduğunda kullanıcılara otomatik olarak e-posta iletileri göndermenizi sağlar. Vaka oluşturan uyarıların çoğu için kullanıcı eylemleri, hatalı amaçlara sahip olmayan hataların veya yanlışlıkla yapılan etkinliklerin sonucu olur. Bildirimler, kullanıcılara daha dikkatli olmaları, daha yenileyici eğitimle ilgili bilgilere bağlantılar sağlamaları veya şirket ilkesi kaynaklarına yönelik basit anımsatıcılar görevi görür. Bildirimler, iç uyumluluk eğitim programınızın önemli bir parçası olabilir ve yinelenen risk etkinlikleri olan kullanıcılar için belgelenmiş bir denetim kaydı oluşturmanıza yardımcı olabilir.
+Insider risk yönetimi bildirim şablonları, ilke eşleşmesi ve onaylanan uyarı oluşturan risk etkinlikleri için bir servis talebi oluşturulduğunda kullanıcılara otomatik olarak e-posta iletileri göndermenizi sağlar. Vaka oluşturan uyarıların çoğu için kullanıcı eylemleri, hatalı veya yanlışlıkla yapılan ve amacı olmayan eylemlerin sonucu olur. Bildirimler, kullanıcılara daha dikkatli olmaları, daha yenileyici eğitimle ilgili bilgilere bağlantılar sağlamaları veya şirket ilkesi kaynaklarına yönelik basit anımsatıcılar görevi görür. Bildirimler, iç uyumluluk eğitim programınızın önemli bir parçası olabilir ve yinelenen risk etkinlikleri olan kullanıcılar için belgelenmiş bir denetim kaydı oluşturmanıza yardımcı olabilir.
 
-Kullanıcılara, servis talebi çözümleme sürecinin bir parçası olarak ilke eşleşmeleri için bir e-posta anımsatıcı bildirimi göndermek istiyorsanız bildirim şablonları oluşturun. Bildirimler yalnızca incelenmekte olan servis talebiyle ilişkili kullanıcı e-posta adresine gönderilebilir. İlke eşleşmesine uygulanacak bir bildirim şablonu seçerken, şablonda tanımlanan alan değerlerini kabul etmeyi veya gerektiğinde alanların üzerine yazmayı seçebilirsiniz
+Kullanıcılara, servis talebi çözümleme sürecinin bir parçası olarak ilke eşleşmeleri için bir e-posta anımsatıcı bildirimi göndermek istiyorsanız bildirim şablonları oluşturun. Bildirimler yalnızca incelenmekte olan servis talebiyle ilişkili kullanıcı e-posta adresine gönderilebilir. İlke eşleşmesine uygulanacak bir bildirim şablonu seçerken, şablonda tanımlanan alan değerlerini kabul etmeyi veya gerektiğinde alanların üzerine yazmayı seçebilirsiniz.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -81,7 +81,7 @@ Mevcut bir insider risk yönetimi bildirim şablonunu güncelleştirmek için a�
 
 1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) **Insider risk yönetimi'ne** gidin ve **Bildirim şablonları** sekmesini seçin.
 2. Bildirim panosunda, yönetmek istediğiniz bildirim şablonunu seçin.
-3. Bildirim ayrıntıları sayfasında **Düzenle'yi** seçin
+3. Bildirim ayrıntıları sayfasında **Düzenle'yi** seçin.
 4. **Düzenle** sayfasında, aşağıdaki alanları düzenleyebilirsiniz:
     - **Şablon adı**: Bildirim için yeni bir kolay ad girin. Bu ad, bildirim panosundaki bildirimler listesinde ve servis talebiyle ilgili bildirimler gönderilirken bildirim seçimi listesinde görünür.
     - **Gönderen:** Bildirim için gönderen e-posta adresini güncelleştirin. Bu adres, servis talebi bildirimi gönderilirken değiştirilmediği sürece kullanıcılara gönderilen tüm bildirimlerde **Kimden:** alanında görünür.

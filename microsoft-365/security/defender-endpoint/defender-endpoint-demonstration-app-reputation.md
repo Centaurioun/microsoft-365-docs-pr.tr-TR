@@ -16,14 +16,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: conceptual
+- demo
+ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 82a0eab112545e8bbb78356f4a26baf6af903648
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.date: 10/21/2022
+ms.openlocfilehash: cc7081f8c6e71e321e68016f45c5d400e3a1c3cd
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68631952"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730281"
 ---
 # <a name="smartscreen-app-reputation-demonstration"></a>SmartScreen uygulaması saygınlığı tanıtımı
 
@@ -43,8 +45,6 @@ Bu program iyi bir üne sahiptir; İndirme işlemi kesintisiz olarak çalıştı
 
 - [Bilinen iyi program indirme](https://demo.smartscreen.msft.net/download/known/freevideo.exe)
 
-  <!-- Hide {this intro with no subsequent list items} [Replace this link when new/updated source becomes available] -->
-
   Bu bağlantının başlatılması aşağıdakine benzer bir ileti işlemelidir:
 
   :::image type="content" source="images/smartscreen-app-reputation-known-good.png" alt-text="Hedef dosyanın itibarına bağlı olarak, SmartScreen engelleme olmadan indirmeye izin verir.":::
@@ -54,8 +54,6 @@ Bu program iyi bir üne sahiptir; İndirme işlemi kesintisiz olarak çalıştı
 Program indirmesinin güvenilir olduğundan emin olmak için yeterli saygınlığı olmadığından, SmartScreen program indirmesini çalıştırmadan önce bir uyarı gösterir.
 
 - [Bilinmeyen program](https://demo.smartscreen.msft.net/download/unknown/freevideo.exe)
-
-  <!-- Hide {this intro with no subsequent list items} [Replace this link when new/updated source becomes available] -->
   
   Bu bağlantının başlatılması aşağıdakine benzer bir ileti işlemelidir:
 
@@ -66,8 +64,6 @@ Program indirmesinin güvenilir olduğundan emin olmak için yeterli saygınlı�
 Bu indirme bilinen kötü amaçlı yazılımdır; SmartScreen bu programın çalışmasını engellemelidir.
 
 - [Bilinen kötü amaçlı yazılım](https://demo.smartscreen.msft.net/download/known/knownmalicious.exe)
-
-  <!-- Hide {this intro with no subsequent list items} [Replace this link when new/updated source becomes available] -->  
 
   Bu bağlantının başlatılması aşağıdakine benzer bir ileti işlemelidir:
 

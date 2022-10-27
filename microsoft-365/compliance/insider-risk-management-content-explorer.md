@@ -14,19 +14,19 @@ audience: itpro
 ms.collection:
 - tier1
 - purview-compliance
-ms.openlocfilehash: 9bcd30f68f73d3596a55e1cd74a77aff32889df7
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: e6b94111802c624312447bbe7bb1de5d538aa005
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503940"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733559"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Insider risk yönetimi İçerik gezgini
 
->[!IMPORTANT]
->Microsoft Purview İçeriden Risk Yönetimi IP hırsızlığı, veri sızıntısı ve güvenlik ihlalleri gibi olası kötü amaçlı veya yanlışlıkla insider risklerini belirlemek için çeşitli sinyalleri ilişkilendirmektedir. Insider risk yönetimi, müşterilerin güvenlik ve uyumluluğu yönetmek için ilkeler oluşturmasına olanak tanır. Tasarım gereği gizlilikle oluşturulan kullanıcılar varsayılan olarak takma ad kullanır ve kullanıcı düzeyinde gizlilik sağlamaya yardımcı olmak için rol tabanlı erişim denetimleri ve denetim günlükleri kullanılır.
+> [!IMPORTANT]
+> Microsoft Purview İçeriden Risk Yönetimi IP hırsızlığı, veri sızıntısı ve güvenlik ihlalleri gibi olası kötü amaçlı veya yanlışlıkla insider risklerini belirlemek için çeşitli sinyalleri ilişkilendirmektedir. Insider risk yönetimi, müşterilerin güvenlik ve uyumluluğu yönetmek için ilkeler oluşturmasına olanak tanır. Tasarım gereği gizlilikle oluşturulan kullanıcılar varsayılan olarak takma ad kullanır ve kullanıcı düzeyinde gizlilik sağlamaya yardımcı olmak için rol tabanlı erişim denetimleri ve denetim günlükleri kullanılır.
 
-Insider risk yönetimi **İçerik gezgini** , *Insider Risk Yönetimi Araştırmacıları* rolüne atanan kullanıcıların uyarılardaki etkinlikle ilişkili içeriğin bağlamını ve ayrıntılarını incelemesine olanak tanır. İçerik gezginindeki servis talebi verileri her gün yeni etkinlik içerecek şekilde yenilenir. Bir servis talebi için onaylanan tüm uyarılar için, verilerin ve ileti dosyalarının kopyaları öğelerin zamanında anlık görüntü olarak arşivlenir ve depolama kaynaklarında özgün dosyalar ve iletiler korunur. Gerekirse, servis talebi veri dosyaları taşınabilir belge dosyası (PDF) olarak veya özgün dosya biçiminde dışarı aktarılabilir.
+Insider risk yönetimi **İçerik gezgini** , *Insider Risk Yönetimi Araştırmacıları* rolüne atanan kullanıcıların uyarılardaki etkinlikle ilişkili içeriğin bağlamını ve ayrıntılarını incelemesine olanak tanır. İçerik gezginindeki durum verileri, yeni risk etkinliği içerecek şekilde günlük olarak yenilenir. Bir servis talebi için onaylanan tüm uyarılar için, verilerin ve ileti dosyalarının kopyaları öğelerin zamanında anlık görüntü olarak arşivlenir ve depolama kaynaklarında özgün dosyalar ve iletiler korunur. Gerekirse, servis talebi veri dosyaları taşınabilir belge dosyası (PDF) olarak veya özgün dosya biçiminde dışarı aktarılabilir.
 
 Yeni durumlarda, içerik gezgininde içeriğin doldurulma süresi genellikle yaklaşık bir saat sürer. Büyük miktarda içeriğe sahip durumlarda anlık görüntü oluşturmak daha uzun sürebilir. İçerik gezgininde içerik yüklenmeye devam ediyorsa tamamlanma yüzdesini gösteren bir ilerleme göstergesi görürsünüz.
 
@@ -120,7 +120,7 @@ Bir aramanın kapsamını daraltmak ve daha iyileştirilmiş bir sonuç kümesi 
 
 | **Filtreler** | **Açıklama** |
 |:---------------------|:----------------|
-| **Uyumluluk etiketleri** | Office 365 uygulanan uyumluluk etiketleri. |
+| **Uyumluluk etiketleri** | Microsoft 365'te uygulanan uyumluluk etiketleri. |
 | **Oluşturma saati (UTC)** | Dosyanın veya e-posta iletisinin oluşturulduğu tarih ve saat. Tarih ve saat Eşgüdümlü Evrensel Saat (UTC) içindedir. |
 | **Son değiştirme tarihi (UTC)** | Belgenin son değiştirildiği tarih. Tarih ve saat Eşgüdümlü Evrensel Saat (UTC) içindedir. |
 | **Dosya uzantısı** | Dosyanın uzantı türü. |

@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
-ms.author: v-jweston
+author: dansimp
+ms.author: dansimp
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.custom: asr
@@ -20,13 +20,15 @@ ms.collection:
 - tier2
 ms.date: ''
 search.appverid: met150
-ms.openlocfilehash: 4f087588f122748220947f9d115f07f9e87b0577
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 82573c583ffd8dcb9ea94ed7cf6aab3de56f0eab
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68227162"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730721"
 ---
+<!--v-jweston/jweston-1 is to resume authorship appx. April/May 2023.-->
+
 # <a name="network-protection-for-linux"></a>Linux için ağ koruması
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -136,7 +138,6 @@ C. Ağ Koruması'nın her zaman engellenen siteler üzerinde etkisi olup olmadı
 
 - [http://www.smartscreentestratings2.net](http://www.smartscreentestratings2.net)
 - [https://www.smartscreentestratings2.net](https://www.smartscreentestratings2.net)
-- [http://malw-090-0-1.phsh-005-0-1.smartscreentestratings.com/](http://malw-090-0-1.phsh-005-0-1.smartscreentestratings.com/)
 
 B. Tanılama günlüklerini inceleme
 

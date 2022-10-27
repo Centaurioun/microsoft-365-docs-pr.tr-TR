@@ -7,13 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- Tier1
+- scotvorg
 description: Bu sayfayı, personel listenizi oluşturmak ve ad, telefon numarası ve e-posta adresi gibi personel üyesi ayrıntılarını yönetmek için kullanın.
-ms.openlocfilehash: b9acf72e9026b230702ed4cad232a92842b51028
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.openlocfilehash: dbdf0be6c08c0ed0bf0ef7ce22a415d7728cd93d
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185159"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730457"
 ---
 # <a name="add-staff-to-bookings"></a>Bookings’e personel ekleme
 
@@ -21,7 +24,7 @@ Bookings'teki Personel sayfası, personel listenizi oluşturduğunuz ve ad, tele
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Bookings bir Microsoft 365 özelliği olsa da tüm personelinizin Microsoft 365 hesabı olması gerekmez. Tüm personelin rezervasyon alabilmesi ve değişiklikleri zamanlaması için geçerli bir e-posta adresi olmalıdır.
+Bookings, Microsoft 365'in bir özelliği olsa da, tüm personelinizin bir Microsoft 365 hesabına sahip olması gerekmez. Tüm personelin rezervasyon alabilmesi ve değişiklikleri zamanlaması için geçerli bir e-posta adresi olmalıdır.
 
 ## <a name="watch-add-your-staff-to-bookings"></a>İzleyin: Bookings'e personelinizi ekleme
 
@@ -75,7 +78,7 @@ Bookings'te bir kişiyi müşterilerin veya müşterilerin kullanımına sunmada
 > [!NOTE]
 > Bu adımlar yalnızca eklenen kullanıcıya Bookings'te zaten bir **görüntüleyici** rolü atanmamışsa çalışır.
 
-1. [PowerShell ile Microsoft 365 Bağlan](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+1. [PowerShell ile Microsoft 365'e bağlanın](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 2. PowerShell'i kullanarak aşağıdaki komutlarla tam erişim atayın:
 

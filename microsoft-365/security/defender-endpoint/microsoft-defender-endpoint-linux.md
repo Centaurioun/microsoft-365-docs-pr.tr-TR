@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: aa50312eba19928dcbfeafe3c47ad64e5dee1fd3
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 166750a65ac8a7c15a58f1cbd0270ea6bd511546
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68646649"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734461"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender
 
@@ -113,8 +113,8 @@ Herhangi bir yükleme hatasıyla karşılaşırsanız [Bkz. Linux'ta Uç Nokta i
 
 - Desteklenen çekirdek sürümlerinin listesi
   > [!NOTE]
-  > RHEL/CentOS üzerinde Uç Nokta için Microsoft Defender - 6.7 ile 6.10 arası çekirdek tabanlı bir çözümdür. Daha yeni bir çekirdek sürümüne güncelleştirmeden önce çekirdeğin desteklendiğini doğrulamanız gerekir. Desteklenen çekirdekler listesi için aşağıdaki listeye bakın.
-  > Diğer tüm desteklenen dağıtımlar ve sürümler için Uç Nokta için Microsoft Defender uygulama, çekirdek-sürüm-belirsizdir. Çekirdek sürümünün 3.10.0-327 veya üzerinde olması en düşük gereksinimle.
+  > Red Hat Enterprise Linux ve CentOS üzerinde Uç Nokta için Microsoft Defender - 6.7 - 6.10 çekirdek tabanlı bir çözümdür. Daha yeni bir çekirdek sürümüne güncelleştirmeden önce çekirdek sürümünün desteklendiğini doğrulamanız gerekir. Desteklenen çekirdekler listesi için aşağıdaki listeye bakın.
+  > Diğer tüm desteklenen dağıtımlar ve sürümler için Uç Nokta için Microsoft Defender çekirdek-sürüm-belirsizdir. Çekirdek sürümünün 3.10.0-327 veya üzerinde olması en düşük gereksinimle.
 
   - Çekirdek `fanotify` seçeneği etkinleştirilmelidir
   - Red Hat Enterprise Linux 6 ve CentOS 6:

@@ -10,6 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ search.appverid:
 - GEA150
 description: 21Vianet tarafından sağlanan Office 365 için Azure Information Protection (AIP) ve Çin'deki müşteriler için yapılandırma hakkında daha fazla bilgi edinin.
 monikerRange: o365-21vianet
-ms.openlocfilehash: b1e140b1862cdfaa8662a3c3794125cd9e156f47
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: a5b09c9797a37245fc8e2b9243eca00c8dd674a8
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68192651"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730611"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>21Vianet tarafından sağlanan Office 365 için Azure Information Protection desteği
 

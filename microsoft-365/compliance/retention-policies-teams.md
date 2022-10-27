@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Kuruluşunuz için Teams iletilerinin otomatik olarak tutulmasını veya silinmesini yönetebilmeniz için Microsoft Teams için geçerli olan Microsoft 365 bekletme ilkeleri hakkında bilgi edinin.
-ms.openlocfilehash: cea95093a48aeda2e93c77c975b0838ae1962ba2
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 417c98f4e9510d1fc02e7b485e41d50a621690fa
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68633052"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729995"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams için bekletme hakkında bilgi edinin
 
@@ -47,7 +47,7 @@ Diğer iş yükleri için bkz:
 ## <a name="whats-included-for-retention-and-deletion"></a>Saklama ve silmeye dahil olanlar
 
 > [!NOTE]
-> Bekletme ilkeleri [paylaşılan kanalları destekler](/MicrosoftTeams/shared-channels). Paylaşılan kanallar, saklama ayarlarını üst kanaldan devralır.
+> Bekletme ilkeleri [paylaşılan kanalları destekler](/MicrosoftTeams/shared-channels). Paylaşılan kanallar, saklama ayarlarını üst ekipten devralır.
 > 
 > Bekletme ilkeleri, [kendinizle sohbet](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) özelliğiyle gönderilen iletileri de destekler.
 

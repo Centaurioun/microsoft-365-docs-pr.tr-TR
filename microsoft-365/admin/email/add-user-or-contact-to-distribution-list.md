@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -25,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: E-posta dağıtım grubuna bir Microsoft 365 kullanıcısı veya çalışan, iş ortağı veya satıcı gibi bir kişi eklemeyi öğrenin.
-ms.openlocfilehash: 1d9036702df64ffae5275e214dcded0f7fe6ebb6
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: c6466312038267414f7a267194f03a24fc8e9809
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68191221"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730127"
 ---
 # <a name="add-a-user-or-contact-to-a-microsoft-365-distribution-group"></a>Microsoft 365 dağıtım grubuna kullanıcı veya kişi ekleme
 

@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 254fb4f17331be8b688463599dea86b9f3748ca8
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 77fab460187f1935c016e691937af91d014929a2
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68634640"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734857"
 ---
 # <a name="insider-risk-management-cases"></a>Insider risk yönetimi durumları
 
@@ -31,9 +31,9 @@ Vakalar, içeriden risk yönetiminin merkezidir ve ilkelerinizde tanımlanan ris
 
 Bir olayın ayrıntılarını araştırdıktan sonra şunları yaparak işlem yapabilirsiniz:
 
-- kullanıcıya bildirim gönderme
-- olayı iyi huylu olarak çözümleme
-- servis talebini ServiceNow örneğinle veya bir e-posta alıcısıyla paylaşma
+- Kullanıcıya bildirim gönderme
+- Olayı iyi huylu olarak çözümleme
+- Servis talebini ServiceNow örneğinle veya bir e-posta alıcısıyla paylaşma
 - eBulma (Premium) araştırması için olayı yükseltme
 
 Insider risk yönetiminde vakaların nasıl araştırıldığını ve yönetildiğini gösteren bir genel bakış için [Insider Risk Yönetimi Araştırması ve Yükseltme videosunu](https://www.youtube.com/watch?v=UONUSmkRC8s) gözden geçirin.
@@ -92,11 +92,11 @@ Bir servis talebi seçildiğinde olay yönetimi araçları açılır ve analistl
 - **Yönetici adı**: Kullanıcının yöneticisinin adı.
 - **Yönetici e-postası**: Kullanıcının yöneticisinin e-posta diğer adı.
 
-![Insider risk yönetimi servis talebi ayrıntıları.](../media/insider-risk-case-details.png)
+![Insider risk yönetimi servis talebi ayrıntıları](../media/insider-risk-case-details.png)
 
 **Olaya genel bakış** sekmesi, servis talebiyle ilişkili ilke eşleştirme uyarıları hakkında aşağıdaki bilgileri içeren bir **Uyarılar** bölümü de içerir:
 
-- **İlke eşleşmeleri**: Kullanıcı etkinliği için eşleştirme uyarılarıyla ilişkili insider risk yönetimi ilkesinin adı.
+- **İlke eşleşmeleri**: Güvenlik olayına yol açabilecek riskli olabilecek kullanıcı etkinliğine yönelik uyarılarla ilişkili insider risk yönetimi ilkesinin adı.
 - **Durum**: Uyarının durumu.
 - **Önem Derecesi**: Uyarının önem derecesi.
 - **Algılanan zaman**: Uyarının oluşturulmasından bu yana geçen süre.
@@ -119,6 +119,7 @@ Belirli bir metin için uyarı adlarını aramak için arama denetimini kullanı
 
 Uyarıları aşağıdakiler gibi çeşitli özniteliklere göre filtrelemek için filtre denetimini kullanın:
 
+
 - **Durum**: Uyarı listesini filtrelemek için bir veya daha fazla durum değeri seçin. Seçenekler *Onaylandı*, *Kapatıldı*, *Gözden geçirilmesi gerekiyor* ve *Çözümlendi şeklindedir*.
 - **Önem derecesi**: Uyarı listesini filtrelemek için bir veya daha fazla uyarı riski önem düzeyi seçin. Seçenekler *Yüksek*, *Orta* ve *Düşük'tir*.
 - **Algılanan zaman**: Uyarının oluşturulduğu zaman için başlangıç ve bitiş tarihlerini seçin.
@@ -126,15 +127,15 @@ Uyarıları aşağıdakiler gibi çeşitli özniteliklere göre filtrelemek içi
 
 ### <a name="user-activity"></a>Kullanıcı etkinliği
 
-**Kullanıcı etkinliği** sekmesi, risk analistlerinin ve araştırmacıların etkinlik ayrıntılarını gözden geçirmesine ve risk uyarıları ve vakalarıyla ilişkili tüm etkinliklerin görsel bir gösterimini kullanmasına olanak tanır. Örneğin, uyarı önceliklendirme sürecinin bir parçası olarak analistlerin daha fazla ayrıntı için servis talebiyle ilişkili tüm risk etkinliklerini gözden geçirmeleri gerekebilir. Böyle durumlarda risk araştırmacıları, olayla ilişkili etkinliklerin genel kapsamını anlamanıza yardımcı olmak için kullanıcı etkinliği ayrıntılarını ve kabarcık grafiğini gözden geçirebilir. Kullanıcı etkinlik grafiği hakkında daha fazla bilgi için [Insider risk yönetimi etkinlikleri](insider-risk-management-activities.md#user-activity) makalesine bakın.
+**Kullanıcı etkinliği** sekmesi, risk analistlerinin ve araştırmacıların kullanıcı etkinliği ayrıntılarını gözden geçirmesine ve bu riskli etkinliklerin bir güvenlik olayına neden olup olmadığını belirlemek için risk uyarıları ve vakalarla ilişkili tüm riskli etkinliklerin görsel bir gösterimini kullanmasına olanak tanır. Örneğin, uyarı önceliklendirme sürecinin bir parçası olarak analistlerin daha fazla ayrıntı için servis talebiyle ilişkili tüm risk etkinliklerini gözden geçirmeleri gerekebilir. Böyle durumlarda, risk araştırmacıları kullanıcı etkinliği ayrıntılarını ve kabarcık grafiğini gözden geçirerek olayla ilişkili risk etkinliklerinin genel kapsamını anlayabilir. Kullanıcı etkinlik grafiği hakkında daha fazla bilgi için [Insider risk yönetimi etkinlikleri](insider-risk-management-activities.md#user-activity) makalesine bakın.
 
 ### <a name="activity-explorer-preview"></a>Etkinlik gezgini (önizleme)
 
-**Etkinlik gezgini** sekmesi, risk analistlerinin ve araştırmacıların risk uyarılarıyla ilişkili etkinlik ayrıntılarını gözden geçirmesine olanak tanır. Örneğin, olay yönetimi eylemleri kapsamında araştırmacıların ve analistlerin daha fazla ayrıntı için olayla ilişkili tüm risk etkinliklerini gözden geçirmeleri gerekebilir. **Etkinlik gezgini** ile gözden geçirenler algılanan riskli etkinliğin zaman çizelgesini hızla gözden geçirebilir ve uyarılarla ilişkili tüm risk etkinliklerini tanımlayıp filtreleyebilir.
+**Etkinlik gezgini** sekmesi, risk analistlerinin ve araştırmacıların risk uyarılarıyla ilişkili olay etkinliği ayrıntılarını gözden geçirmesine olanak tanır. Örneğin, olay yönetimi eylemleri kapsamında araştırmacıların ve analistlerin daha fazla ayrıntı için olayla ilişkili tüm risk etkinliklerini gözden geçirmeleri gerekebilir. **Etkinlik gezgini** ile gözden geçirenler, riskli olabilecek etkinliklerin zaman çizelgesini hızla inceleyebilir ve uyarılarla ilişkili tüm risk etkinliklerini tanımlayıp filtreleyebilir.
 
 Etkinlik gezgini hakkında daha fazla bilgi için [Insider risk yönetimi etkinlikleri](insider-risk-management-activities.md#activity-explorer) makalesine bakın.
 
-### <a name="forensic-evidence-preview"></a>Adli kanıt (önizleme)
+## <a name="forensic-evidence-preview"></a>Adli kanıt (önizleme)
 
 **Adli kanıt (önizleme)** sekmesi, risk araştırmacılarının vakalara dahil edilen risk etkinlikleriyle ilişkili görsel yakalamaları gözden geçirmesine olanak tanır. Örneğin, olay yönetimi eylemlerinin bir parçası olarak araştırmacıların gözden geçirilirken kullanıcı etkinliğinin bağlamını netleştirmeye yardımcı olması gerekebilir. Etkinliğin gerçek kliplerinin görüntülenmesi, araştırmacının kullanıcı etkinliğinin potansiyel olarak riskli olup olmadığını ve bir güvenlik olayına yol açıp açmadığını belirlemesine yardımcı olabilir.
 
@@ -215,20 +216,20 @@ Insider risk yönetimi olayı yeni bir kullanıcı araştırma olayına yükselt
 
 Önerilen Power Automate akışlarını kullanarak risk araştırmacıları ve analistler aşağıdaki işlemleri hızla gerçekleştirebilir:
 
-- şirket içi risk durumundaki bir kullanıcı hakkında İk'dan veya işletmeden bilgi isteme
-- Kullanıcının içeriden risk uyarısı olduğunda yöneticiye bildirme
-- ServiceNow'da insider risk yönetimi olayı için kayıt oluşturma
-- Insider risk ilkesine eklendiklerinde kullanıcılara bildirme
+- şirket içi risk durumundaki bir kullanıcı hakkında İk'dan veya işletmeden bilgi isteyin.
+- Kullanıcının insider risk uyarısı olduğunda yöneticiye bildirme.
+- ServiceNow'da insider risk yönetimi olayı için bir kayıt oluşturun.
+- Bir iç risk ilkesine eklendiklerinde kullanıcıları bilgilendirin.
 
 Insider risk yönetimi olayı için Power Automate akışlarını çalıştırmak, yönetmek veya oluşturmak için:
 
-1. Servis talebi eylem araç çubuğunda **Otomatikleştir'i** seçin. 
-2. Çalıştırılacak Power Automate akışını ve ardından **Akışı çalıştır'ı** seçin. 
+1. Servis talebi eylem araç çubuğunda **Otomatikleştir'i** seçin.
+2. Çalıştırılacak Power Automate akışını ve ardından **Akışı çalıştır'ı** seçin.
 3. Akış tamamlandıktan sonra **Bitti'yi** seçin.
 
 Insider risk yönetimi için Power Automate akışları hakkında daha fazla bilgi edinmek için bkz. [Insider risk yönetimi ayarlarını kullanmaya başlama](insider-risk-management-settings.md#power-automate-flows-preview).
 
-### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Servis talebi için bir Microsoft Teams ekibi görüntüleme veya oluşturma
+ ### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Servis talebi için bir Microsoft Teams ekibi görüntüleme veya oluşturma
 
 Ayarlarda insider risk yönetimi için Microsoft Teams tümleştirmesi etkinleştirildiğinde, her uyarı onaylandığında ve bir servis talebi oluşturulduğunda otomatik olarak bir Microsoft Teams ekibi oluşturulur. Risk araştırmacıları ve analistler, servis talebi eylem araç çubuğunda Microsoft Teams **ekibini görüntüle'yi seçerek Microsoft Teams'i** hızla açabilir ve bir servis talebi için doğrudan ekise gidebilir.
 

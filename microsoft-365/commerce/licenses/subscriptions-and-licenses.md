@@ -11,6 +11,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ ms.custom:
 search.appverid: MET150
 description: Aldığınız uygulamalar ve hizmetler, İş için Microsoft 365 Uygulamaları gibi satın aldığınız Microsoft 365 ürününe bağlıdır.
 ms.date: 05/12/2022
-ms.openlocfilehash: c097905050bdbe285e83b31008b9ff7f53f32e1f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: e2494fd52ea7edcab4a68ca69e024b0561aa1d5f
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180769"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730875"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>İş için Microsoft 365'teki abonelikleri ve lisansları anlama
 

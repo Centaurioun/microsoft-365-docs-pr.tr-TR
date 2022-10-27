@@ -16,26 +16,26 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: conceptual
+- demo
+ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 0af4f8d51b335514b8770dab761b224a8324735f
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.date: 10/21/2022
+ms.openlocfilehash: b8f8f33d0fc47c395d19e67286eb43f7b9552dbe
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68635608"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734440"
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
-
 # <a name="microsoft-defender-for-endpoint---demonstration-scenarios"></a>Uç Nokta için Microsoft Defender - tanıtım senaryoları
 
 Aşağıdaki tanıtım senaryoları, Windows'ta Uç Nokta için Microsoft Defender özellikleri hakkında bilgi edinmenize yardımcı olur (Mac ve Linux kapsam dışındadır). Aşağıdaki Uç Nokta için Microsoft Defender koruma alanları için gösterim senaryoları sağlanır:
 
 :::image type="content" source="images/microsoft-defender-for-endpoint-cloud-protection.png" alt-text="Bu koleksiyonda ele alınan Uç Nokta için Microsoft Defender tanıtım senaryolarının alanlarını gösterir" lightbox="images/microsoft-defender-for-endpoint-cloud-protection.png":::
 
-- Saldırı yüzeyi koruması (ASR)
-- Yeni Nesil Koruma (NGP)
-- Uç nokta algılama ve yanıt (EDR)
+- Saldırı yüzeyi koruması (**ASR**)
+- Yeni Nesil Koruma (**NGP**)
+- Uç nokta algılama ve yanıt (**EDR**)
 
 > [!NOTE]
 > Bu koleksiyonda sağlanan örnek dosyaların veya _şüpheli_ bağlantıların hiçbiri aslında kötü amaçlı değil; tüm bağlantılar ve tanıtım dosyaları zararsızdır.
@@ -65,5 +65,4 @@ Aşağıdaki tabloda kullanılabilir gösterimler, ilişkili koruma alanlarıyla
 [Test saldırısı yüzey azaltma kuralları](attack-surface-reduction-rules-deployment-test.md)
 [Yeni Nesil Koruma \(NGP'ye\) genel bakış](next-generation-protection.md)
 [Uç nokta algılama ve yanıt \(EDR'ye\) genel bakış](overview-endpoint-detection-response.md)
-
-[Uç Nokta için Microsoft Defender güvenlik blogu](https://www.microsoft.com/security/blog/microsoft-defender-for-endpoint/)
+ [Uç Nokta için Microsoft Defender güvenlik blogu](https://www.microsoft.com/security/blog/microsoft-defender-for-endpoint/)

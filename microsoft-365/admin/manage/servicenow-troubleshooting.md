@@ -1,5 +1,5 @@
 ---
-title: ServiceNow Microsoft 365 destek tümleştirmesi sorunlarını giderme
+title: ServiceNow ile Microsoft 365 destek tümleştirme sorunlarını giderme
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -7,40 +7,42 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
+- scotvorg
 - M365-subscription-management
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
-description: ServiceNow için Kapsam Sertifikalı uygulama yükleme ve yapılandırma kılavuzu.
-ms.openlocfilehash: bac3981b728ac997839e7ac99a9411a8da244add
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: ServiceNow için Kapsamlı Sertifikalı uygulama yükleme ve yapılandırma kılavuzu.
+ms.openlocfilehash: f0972b937c864191ba5f6d2eb5689c879d1d5d5e
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324949"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734329"
 ---
-# <a name="troubleshooting-microsoft-365-support-integration-with-servicenow"></a>ServiceNow Microsoft 365 destek tümleştirmesi sorunlarını giderme
+# <a name="troubleshooting-microsoft-365-support-integration-with-servicenow"></a>ServiceNow ile Microsoft 365 destek tümleştirme sorunlarını giderme
 
 | \#  | Sorun  | Tanılama eylemi     |
 |-----|--------------------------------|----------------------|
-| 1   | Destek sekmesini **Microsoft 365** göremiyorum                                                                                                                                                                                    |  &gt; Filtre xmiomsm365assit\_\_ ile geçerli görünümü ve Sistem Günlükleri'nin hepsini doğrulama \_                        |
-| 2   | **Microsoft tarafından önerilen çözümler'i** seçin ancak "Lütfen ServiceNow yöneticinize başvurarak uygulamanın kurulum adımlarını tamamlamalarını sorun" hatasını alabilirsiniz.                                                                      | Formun üst kısmında yer alan hata iletisini ve filtre  &gt; xmiomsm365assit \_\_\_ile Tüm Sistem Günlükleri'ne bakabilirsiniz     |
-| 3   | **Microsoft tarafından önerilen çözümler'i** seçin ancak "Lütfen ServiceNow yöneticinize başvurarak uygulamanın son ayarlama adımını tamamlamalarını sorun" hatasını alabilirsiniz.                                                                | Formun üst kısmında yer alan hata iletisini ve filtre  &gt; xmiomsm365assit \_\_\_ile Tüm Sistem Günlükleri'ne bakabilirsiniz     |
-| 4   | Sorunu arama kutusuna yazın ve **Microsoft** tarafından önerilen çözümler'i seçin, ancak "Lütfen ServiceNow yöneticinize başvurarak uygulamanın kurulum adımlarını tamamlamalarını sorun" hatasını alabilirsiniz.                                   | Formun üst kısmında yer alan hata iletisini ve filtre  &gt; xmiomsm365assit \_\_\_ile Tüm Sistem Günlükleri'ne bakabilirsiniz     |
-| 5   | Arama kutusuna sorun yazın ve **Microsoft** tarafından önerilen çözümler'i seçin, ancak "Lütfen ServiceNow yöneticinize başvurarak uygulamanın son ayarlama adımını tamamlamalarını sorun" hatasını alabilirsiniz.                                 | Formun üst kısmında yer alan hata iletisini ve filtre  &gt; xmiomsm365assit \_\_\_ile Tüm Sistem Günlükleri'ne bakabilirsiniz     |
-| 6   | **Microsoft desteğine başvurun'u** seçin, ancak "Lütfen ServiceNow yöneticinize başvurun ve uygulamanın kurulum adımlarını tamamlamalarını sorun" hatasını alabilirsiniz.                                                                       | Formun üst kısmında yer alan hata iletisini ve filtre  &gt; xmiomsm365assit \_\_\_ile Tüm Sistem Günlükleri'ne bakabilirsiniz     |
-| 7   | **Microsoft desteğine başvurun'u** seçin, ancak "Lütfen ServiceNow yöneticinize başvurun ve uygulamanın son ayarlama adımını tamamlamalarını sorun" hatasını alabilirsiniz.                                                                 | Formun üst kısmında yer alan hata iletisini ve filtre  &gt; xmiomsm365assit \_\_\_ile Tüm Sistem Günlükleri'ne bakabilirsiniz     |
-| 8   | **Microsoft desteğine başvurun'u** seçin ancak "{EmailAddress} geçerli bir yönetici Microsoft 365 alın. Hizmet Microsoft 365 için yönetici ayrıcalıklarına sahip olmanız gerekir. Uygulamada yönetici hesabıyla bağlantı açın." | Formun üst kısmında yer alan hata iletisini ve filtre  &gt; xmiomsm365assit \_\_\_ile Tüm Sistem Günlükleri'ne bakabilirsiniz     |
-| 9   | **Microsoft tarafından önerilen çözümler'i seçin** ancak hiçbir şey ortaya çıktı                                                                                                                                                            | Sistem **Günlüklerini Denetleme – Filtre uygulama ve** filtre uygulama login.microsoftonline.com Giden HTTP connector.rave.microsoft.com |
-| 10  | **Microsoft tarafından önerilen çözümler'i seçin** ancak "Lütfen uygulama desteğine başvurun" hatasını alabilirsiniz.                                                                                                                                     | Formun üst kısmında yer alan hata iletisini ve filtre  &gt; xmiomsm365assit \_\_\_ile Tüm Sistem Günlükleri'ne bakabilirsiniz     |
-| 11  | Arama kutusuna sorun yazın ve Microsoft tarafından **önerilen çözümler'i seçin** ancak hiçbir şey ortaya çıktı                                                                                                                             | Sistem **Günlüklerini Denetleme – Filtre uygulama ve** filtre uygulama login.microsoftonline.com Giden HTTP connector.rave.microsoft.com |
-| 12  | Arama kutusuna sorun yazın ve Microsoft tarafından önerilen **çözümler'i seçin** , ancak "Lütfen uygulama desteğine başvurun" hatasını alabilirsiniz.                                                                                                      | Formun üst kısmında yer alan hata iletisini ve filtre  &gt; xmiomsm365assit \_\_\_ile Tüm Sistem Günlükleri'ne bakabilirsiniz     |
-| 13  | Kullanıcı Microsoft **desteğine başvurun'u seçer** ancak hiçbir şey olmaz                                                                                                                                                            | Sistem **Günlüklerini Denetleme – Filtre uygulama ve** filtre uygulama login.microsoftonline.com Giden HTTP connector.rave.microsoft.com |
-| 14  | Olayı yeniden açtıktan sonra Microsoft'un önerilen çözümü göremiyorum                                                                                                                                                      | Filtre  xmiomsm365assit\_ &gt; ile\_ Tüm Sistem Günlüklerini\_ Denetleme                                              |
-| 15  | Microsoft desteğine aktarılan olayı yeniden a açılırken Microsoft davalarını göremiyorum                                                                                                                            | Filtre  xmiomsm365assit\_ &gt; ile\_ Tüm Sistem Günlüklerini\_ Denetleme                                              |
-| 16  | Bilet ayrıntıları kaydedemiyorsanız" hatasını alabilirsiniz "Bilet ayrıntıları kaydedemedi. Lütfen Uygulama desteğine başvurun."                                                                                                                          | Formun üstünde hata iletisini denetleme                                                                            |
+| 1   | **Microsoft 365 destek** sekmesi görünmüyor                                                                                                                                                                                    | Geçerli görünümü ve **Sistem Günlükleri** &gt; **Tümünü** filtre x\_mioms\_m365\_assit ile doğrulayın                        |
+| 2   | **Microsoft tarafından önerilen çözümler'i** seçin ancak "Lütfen ServiceNow yöneticinize başvurun ve uygulama için kurulum adımlarını tamamlamasını isteyin" hatasını alın.                                                                      | Formun üst kısmındaki hata iletisini ve x mioms m365\_assit filtresiyle\_ **Sistem Günlükleri** &gt;\_**Tümünü** Denetleyin     |
+| 3   | **Microsoft tarafından önerilen çözümler'i** seçin ancak "Lütfen ServiceNow yöneticinize başvurun ve uygulama için son kurulum adımını tamamlamasını isteyin" hatasını alın.                                                                | Formun üst kısmındaki hata iletisini ve x mioms m365\_assit filtresiyle\_ **Sistem Günlükleri** &gt;\_**Tümünü** Denetleyin     |
+| 4   | Sorunu arama kutusuna yazın ve **Microsoft tarafından önerilen çözümler'i** seçin ancak "Lütfen ServiceNow yöneticinize başvurun ve uygulama için kurulum adımlarını tamamlamalarını isteyin" hatasını alın.                                   | Formun üst kısmındaki hata iletisini ve x mioms m365\_assit filtresiyle\_ **Sistem Günlükleri** &gt;\_**Tümünü** Denetleyin     |
+| 5   | Arama kutusuna sorun yazın ve **Microsoft tarafından önerilen çözümler'i** seçin ancak "Lütfen ServiceNow yöneticinize başvurun ve uygulama için son kurulum adımını tamamlamasını isteyin" hatasını alın.                                 | Formun üst kısmındaki hata iletisini ve x mioms m365\_assit filtresiyle\_ **Sistem Günlükleri** &gt;\_**Tümünü** Denetleyin     |
+| 6   | **Microsoft desteğine başvurun'u** seçin, ancak "Lütfen ServiceNow yöneticinize başvurun ve uygulama için kurulum adımlarını tamamlamasını isteyin" hatasını alın.                                                                       | Formun üst kısmındaki hata iletisini ve x mioms m365\_assit filtresiyle\_ **Sistem Günlükleri** &gt;\_**Tümünü** Denetleyin     |
+| 7   | **Microsoft desteğine başvurun'u** seçin, ancak "Lütfen ServiceNow yöneticinize başvurun ve uygulama için son kurulum adımını tamamlamasını isteyin" hatasını alın.                                                                 | Formun üst kısmındaki hata iletisini ve x mioms m365\_assit filtresiyle\_ **Sistem Günlükleri** &gt;\_**Tümünü** Denetleyin     |
+| 8   | **Microsoft desteğine başvurun'u** seçin ancak "{EmailAddress} geçerli bir Microsoft 365 yönetici hesabı değil. Hizmet isteğini açmak için Microsoft 365 yönetici ayrıcalıklarına sahip olmanız gerekir. Uygulamada yönetici hesabını bağlayın." | Formun üst kısmındaki hata iletisini ve x mioms m365\_assit filtresiyle\_ **Sistem Günlükleri** &gt;\_**Tümünü** Denetleyin     |
+| 9   | **Microsoft tarafından önerilen çözümleri** seçin ancak hiçbir şey gösterilmez                                                                                                                                                            | Sistem Günlüklerini Denetleme – Filtre login.microsoftonline.com ve connector.rave.microsoft.com ile **giden HTTP günlükleri** |
+| 10  | **Microsoft tarafından önerilen çözümler'i** seçin ancak "Lütfen uygulama desteğine başvurun" hatası alın.                                                                                                                                     | Formun üst kısmındaki hata iletisini ve x mioms m365\_assit filtresiyle\_ **Sistem Günlükleri** &gt;\_**Tümünü** Denetleyin     |
+| 11  | Arama kutusuna sorun yazın ve **Microsoft tarafından önerilen çözümler'i** seçin ancak hiçbir şey gösterilmez                                                                                                                             | Sistem Günlüklerini Denetleme – Filtre login.microsoftonline.com ve connector.rave.microsoft.com ile **giden HTTP günlükleri** |
+| 12  | Arama kutusuna sorun yazın ve **Microsoft tarafından önerilen çözümler'i** seçin ancak "Lütfen uygulama desteğine başvurun" hatası alın.                                                                                                      | Formun üst kısmındaki hata iletisini ve x mioms m365\_assit filtresiyle\_ **Sistem Günlükleri** &gt;\_**Tümünü** Denetleyin     |
+| 13  | Kullanıcı **Microsoft desteğine başvurun'u** seçer ancak hiçbir şey olmaz                                                                                                                                                            | Sistem Günlüklerini Denetleme – Filtre login.microsoftonline.com ve connector.rave.microsoft.com ile **giden HTTP günlükleri** |
+| 14  | Olay yeniden açıldıktan sonra Microsoft tarafından önerilen çözüm görünmüyor                                                                                                                                                      | **Sistem Günlüklerinin** &gt; **Tümünü** filtre x\_mioms\_m365\_assit ile denetleyin                                              |
+| 15  | Microsoft desteğine aktarılan olay yeniden açılırken Microsoft servis taleplerini göremiyorum                                                                                                                            | **Sistem Günlüklerinin** &gt; **Tümünü** filtre x\_mioms\_m365\_assit ile denetleyin                                              |
+| 16  | Bilet ayrıntıları kaydedilemiyor, "Bilet ayrıntıları kaydedilemiyor. Lütfen Uygulama desteğine başvurun."                                                                                                                          | Formun üstündeki hata iletisini denetleyin                                                                            |

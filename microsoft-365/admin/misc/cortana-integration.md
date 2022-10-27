@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Geçerli iş veya okul hesaplarına sahip kullanıcılar, Office 365 kurumsal düzeyde güvenlik vaatlerini karşılayan Microsoft 365 deneyimlerinde Cortana'ya sahip olabilir.
-ms.openlocfilehash: d720b3b238bd528af5a747b59d422471024cd573
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 835bbe6c4654dfe65891c2bd870e77c4c6b2d988
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68191111"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734892"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365'te Cortana
 

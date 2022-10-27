@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier1
 - scotvorg
 - highpri
 - Adm_O365
@@ -25,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: İş için Microsoft 365 aboneliğiniz için çevrimiçi veya telefon desteği almayı öğrenin. Destek almak için bir iş aboneliği yöneticisi olmanız gerekir.
-ms.openlocfilehash: 254c20dc7fc709b4217a92f0102d802a79286df1
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: 62fc287bf493a9e8f3f1977b199228f4ee999046
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68688441"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729819"
 ---
 # <a name="get-support-for-microsoft-365-for-business"></a>İş için Microsoft 365 desteği alma
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Microsoft Office 2013 yüklü cihazlar için modern kimlik doğrulamasını etkinleştirmek için kayıt defteri anahtarlarını ayarlamayı öğrenin.
-ms.openlocfilehash: a272eacc546aa4d9dadbf9acac1ae1372f332209
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: f27bb813e113d34975f2848786122806d2f8a744
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68663334"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730633"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Windows cihazlarda Office 2013 için Modern kimlik doğrulamasını etkinleştirme
 

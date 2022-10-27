@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_TOC
@@ -18,12 +19,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow için Kapsamlı Sertifikalı uygulama yükleme ve yapılandırma kılavuzu.
-ms.openlocfilehash: 724517e0ac268ecc1d857f59b3e0352cecfd1903
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 8e26913dff7706ad8868b0fe325a30258a6a17c5
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68624851"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734549"
 ---
 # <a name="configure-microsoft-365-support-integration-with-azure-ad-auth-token"></a>Azure AD Kimlik Doğrulama Belirteci ile Microsoft 365 destek tümleştirmesini yapılandırma
 

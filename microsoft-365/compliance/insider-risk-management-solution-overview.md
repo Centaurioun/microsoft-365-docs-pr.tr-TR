@@ -18,22 +18,24 @@ ms.collection:
 - m365initiative-compliance
 - m365solution-scenario
 - highpri
-ms.openlocfilehash: 64fd0ea78218e822dceee801749b4f80862cd5b3
-ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
+ms.openlocfilehash: c3d4e6662806cbf2a821e0ef4228e5efa87a012e
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68382523"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733603"
 ---
 # <a name="insider-risk-management"></a>İçeriden risk yönetimi
 
-Çalışanlar, geniş bir platform ve hizmet yelpazesinde veri oluşturmak, yönetmek ve paylaşmak için giderek daha fazla erişime sahiptir. Çoğu durumda kuruluşlar, uyumluluk gereksinimlerini ve çalışan gizlilik standartlarını karşılarken kuruluş genelindeki riskleri belirlemek ve azaltmak için sınırlı kaynaklara ve araçlara sahiptir. Bu riskler, çalışanları terk ederek veri hırsızlığını ve yanlışlıkla fazla paylaşım veya kötü amaçlı olarak kuruluşunuzun dışındaki bilgilerin veri sızıntılarını içerebilir.
+> [!IMPORTANT]
+> Microsoft Purview İçeriden Risk Yönetimi IP hırsızlığı, veri sızıntısı ve güvenlik ihlalleri gibi olası kötü amaçlı veya yanlışlıkla insider risklerini belirlemek için çeşitli sinyalleri ilişkilendirmektedir. Insider risk yönetimi, müşterilerin güvenlik ve uyumluluğu yönetmek için ilkeler oluşturmasına olanak tanır. Tasarım gereği gizlilikle oluşturulan kullanıcılar varsayılan olarak takma ad kullanır ve kullanıcı düzeyinde gizlilik sağlamaya yardımcı olmak için rol tabanlı erişim denetimleri ve denetim günlükleri kullanılır.
 
-Microsoft Purview İçeriden Risk Yönetimi, riskli kullanıcı etkinliklerini hızla tanımlamanıza, önceliklendirmenize ve harekete geçirmenize yardımcı olmak için hizmetin ve üçüncü taraf göstergelerin tamamını kullanır. Insider risk yönetimi, Microsoft 365 ve Microsoft Graph günlüklerini kullanarak risk göstergelerini tanımlamak için belirli ilkeler tanımlamanızı sağlar. Riskleri belirledikten sonra, bu riskleri azaltmak için eylem gerçekleştirebilirsiniz.
+Çalışanlar artık geniş bir platform ve hizmet yelpazesinde veri oluşturmak, yönetmek ve paylaşmak için daha fazla erişime sahip. Çoğu durumda kuruluşlar, uyumluluk gereksinimlerini ve çalışan gizlilik standartlarını karşılarken kuruluş genelindeki riskleri belirlemek ve azaltmak için sınırlı kaynaklara ve araçlara sahiptir. Bu riskler, çalışanları terk ederek olası veri hırsızlığını ve yanlışlıkla fazla paylaşım veya kötü amaçlı olarak kuruluşunuzun dışındaki bilgilerin veri sızıntısı riskini içerir.
+
+Microsoft Purview İçeriden Risk Yönetimi, riskli olabilecek etkinlikleri hızla tanımlamanıza, önceliklendirmenize ve harekete geçirmenize yardımcı olmak için hizmetin ve üçüncü taraf göstergelerin tamamını kullanır. Insider risk yönetimi, Microsoft 365 ve Microsoft Graph günlüklerini kullanarak risk göstergelerini tanımlamak için belirli ilkeler tanımlamanızı sağlar. Riskleri belirledikten sonra, bu riskleri azaltmak için eylem gerçekleştirebilir ve gerekirse açık soruşturma davaları açabilir ve uygun yasal işlemleri gerçekleştirebilirsiniz.
 
 Insider risk yönetiminin kuruluşunuzun riskleri engellemesine, algılamasına ve içermesine nasıl yardımcı olabileceğini öğrenmek için aşağıdaki videoları izleyin:
-<br>
-<br>
+
 
 **Insider risk yönetimi çözümü geliştirme &**:
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4j9CN]
@@ -48,7 +50,7 @@ Insider risk yönetiminin kuruluşunuzun riskleri engellemesine, algılamasına 
 
 Kuruluşunuzda insider risk yönetimini yapılandırmak için aşağıdaki adımları kullanın:
 
-![Insider risk çözümü insider risk yönetimi adımları.](../media/ir-solution-ir-steps.png)
+![Insider risk çözümü insider risk yönetimi adımları](../media/ir-solution-ir-steps.png)
 
 1. [Insider risk yönetimi](insider-risk-management.md) hakkında bilgi edinin
 2. [Insider risk yönetimini planlama ve lisanslama doğrulama](insider-risk-management-plan.md)

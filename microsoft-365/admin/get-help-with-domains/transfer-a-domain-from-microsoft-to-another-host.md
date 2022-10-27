@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: "Bir etki alanını Microsoft'tan başka bir kayıt şirketine aktarma adımlarını burada bulabilirsiniz. "
-ms.openlocfilehash: 68b145dfdd11cf58a2a56bfdcbba1cc45fccc519
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: ae4c261cacd12e99bac8e18d6fc55a8db452e03b
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68642095"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727421"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>Bir etki alanını Microsoft'tan başka bir konağa aktarma
 

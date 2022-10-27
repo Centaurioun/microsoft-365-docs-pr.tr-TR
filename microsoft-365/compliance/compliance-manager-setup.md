@@ -10,24 +10,28 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- highpri
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview Uyumluluk Yöneticisi kullanıcı izinlerini ve rollerini ayarlayın ve eylemlerin otomatik testini yapılandırın. Kullanıcı geçmişini yönetin ve pano görünümünüzü filtreleyin.
-ms.openlocfilehash: 295ba35eeb454314adb364a0203b6d6c337c8ba8
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 6787da712db94c0048355f4bd59d401194e520c2
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67467953"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730083"
 ---
 # <a name="get-started-with-compliance-manager"></a>Uyumluluk Yöneticisini kullanmaya başlama
 
 **Bu makalede:** Bu makale, Uyumluluk Yöneticisi'nin ayarlanmasına yardımcı olur. Uyumluluk Yöneticisi'ne **erişmeyi** , **rolleri ve izinleri ayarlamayı ve** **iyileştirme eylemlerinin otomatik testini yapılandırmayı** öğrenin. **Uyumluluk Yöneticisi panonuzda** ilerleyin ve ana sayfaları anlayın: iyileştirme eylemleri sayfası, çözümler sayfası, değerlendirmeler sayfası ve değerlendirme şablonları sayfası.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="who-can-access-compliance-manager"></a>Uyumluluk Yöneticisi'ne kimler erişebilir?
 
@@ -248,7 +252,7 @@ Uyumluluk Yöneticisi panosu, geçerli uyumluluk duruşunuzun bir bakışta gör
 
 Uyumluluk puanınız en üstte öne çıkıyor. Önemli veri koruma standartlarını ve düzenlemelerini ele alan iyileştirme eylemlerini tamamlamak için ulaşılabilir noktaları temel alan bir yüzde gösterir. [Microsoft'umu yönetilen Microsoft eylemlerinden](compliance-manager-assessments.md#microsoft-actions-tab) alınan puanlar da uyumluluk puanınıza göre sayılır.
 
-Uyumluluk Yöneticisi'ne ilk kez geldiğinizde, ilk puanınız [Microsoft 365 veri koruma temelini temel](compliance-manager-assessments.md#data-protection-baseline-default-assessment) alır. Tüm kuruluşların kullanımına sunulan bu temel değerlendirme, ortak endüstri düzenlemelerini ve standartlarını içeren bir dizi denetimdir. Uyumluluk Yöneticisi mevcut Microsoft 365 çözümlerinizi tarar ve geçerli gizlilik ve güvenlik ayarlarınıza göre size bir ilk değerlendirme sağlar. Kuruluşunuzla ilgili değerlendirmeler eklediğinizde puanınız sizin için daha anlamlı hale gelir.
+Uyumluluk Yöneticisi'ne ilk kez geldiğinizde, ilk puanınız [Microsoft 365 veri koruma temelini temel](compliance-manager-assessments.md#data-protection-baseline-default-assessment) alır. Tüm kuruluşların kullanımına sunulan bu temel değerlendirme, ortak endüstri düzenlemelerini ve standartlarını içeren bir dizi denetimdir. Uyumluluk Yöneticisi mevcut Microsoft 365 çözümlerinizi denetler ve geçerli gizlilik ve güvenlik ayarlarınıza göre size bir ilk değerlendirme sağlar. Kuruluşunuzla ilgili değerlendirmeler eklediğinizde puanınız sizin için daha anlamlı hale gelir.
 
 **Daha fazla bilgi edinin:** [Uyumluluk puanınızın nasıl hesaplanmış olduğunu anlama](compliance-score-calculation.md).
 

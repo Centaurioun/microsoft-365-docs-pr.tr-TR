@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier1
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -24,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: Yinelenen faturalamayı kapatarak veya açarak iş için Microsoft 365 aboneliklerinin çoğunu yenilemeyi öğrenin.
 ms.date: 08/18/2022
-ms.openlocfilehash: c5f8fbaa743f75e4db3d0c38a6868f282c6e4dda
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: e692641dbc281ca8e742bdc07e07c599710be1d7
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180747"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68735187"
 ---
 # <a name="renew-microsoft-365-for-business"></a>İş için Microsoft 365'i yenileme
 

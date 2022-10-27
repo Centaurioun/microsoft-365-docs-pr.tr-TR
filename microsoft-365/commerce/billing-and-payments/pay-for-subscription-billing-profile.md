@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 ms.date: 05/26/2022
-ms.openlocfilehash: 1124d4041f8d8e230b2a530732a9a21a29d9852c
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: c3ce7793e6b27cb2bfd6151d3c4f27d635d105da
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68195005"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730933"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Faturalama profiliyle aboneliğiniz için ödeme
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +21,12 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: Kuruluşunuzdaki kullanıcılar için Office Betikleri ayarlarını yönetmeyi öğrenin.
-ms.openlocfilehash: 9a26aeb3854971b35cebb18f785c1a0d6f174eea
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 5fc83c585fd7edb288cc709e91f44f45b9c9d79c
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68178130"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734395"
 ---
 # <a name="manage-office-scripts-settings"></a>Office Betikleri ayarlarını yönetme
 

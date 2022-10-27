@@ -17,37 +17,38 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 - tier1
-ms.openlocfilehash: 5e0d29d96eeafe418d1773e20a73e33b402389fa
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 9e3563348e0139fc092f5d40722d29bffd13b212
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503500"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733647"
 ---
 # <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection"></a>Insider risk yönetimi tarayıcısı sinyal algılama hakkında bilgi edinin ve yapılandırın
 
 >[!IMPORTANT]
 >Microsoft Purview İçeriden Risk Yönetimi IP hırsızlığı, veri sızıntısı ve güvenlik ihlalleri gibi olası kötü amaçlı veya yanlışlıkla insider risklerini belirlemek için çeşitli sinyalleri ilişkilendirmektedir. Insider risk yönetimi, müşterilerin güvenlik ve uyumluluğu yönetmek için ilkeler oluşturmasına olanak tanır. Tasarım gereği gizlilikle oluşturulan kullanıcılar varsayılan olarak takma ad kullanır ve kullanıcı düzeyinde gizlilik sağlamaya yardımcı olmak için rol tabanlı erişim denetimleri ve denetim günlükleri kullanılır.
 
-Web tarayıcıları genellikle kullanıcılar tarafından bir kuruluştaki hem hassas hem de hassas olmayan dosyalara erişmek için kullanılır. Insider risk yönetimi, kuruluşunuzun [Microsoft Edge](https://www.microsoft.com/edge) ve [Google Chrome](https://www.google.com/chrome) tarayıcılarında görüntülenen yürütülebilir olmayan tüm dosyalar için tarayıcı sızdırma sinyallerini algılamasına ve üzerinde işlem yapmasına olanak tanır. Bu sinyallerle, analistler ve araştırmacılar bu tarayıcıları kullanırken kapsam içi ilke kullanıcıları tarafından aşağıdaki etkinliklerden herhangi biri gerçekleştirildiğinde hızla harekete geçebilir:
+Web tarayıcıları genellikle kullanıcılar tarafından bir kuruluştaki hem hassas hem de hassas olmayan dosyalara erişmek için kullanılır. Insider risk yönetimi, kuruluşunuzun [Microsoft Edge](https://www.microsoft.com/edge) ve [Google Chrome](https://www.google.com/chrome) tarayıcılarında görüntülenen yürütülebilir olmayan tüm dosyalar için tarayıcı sızdırma sinyallerini algılamasına ve üzerinde işlem yapmasına olanak tanır. Bu sinyallerle, analistler ve araştırmacılar aşağıdaki risk etkinliklerinden herhangi biri kapsam içi ilke kullanıcıları tarafından bu tarayıcıları kullanırken gerçekleştirildiğinde hızla harekete geçebilir:
 
 - Kişisel bulut depolama alanına kopyalanan dosyalar
 - Yerel veya ağ cihazlarına yazdırılan dosyalar
 - Ağ paylaşımına aktarılan veya kopyalanan dosyalar
 - USB cihazlarına kopyalanan dosyalar
 - Riskli web sitelerine göz atma
+- Riskli olabilecek web sitelerine göz atma
 
 Bu olaylara yönelik sinyaller Microsoft Edge'de yerleşik tarayıcı özellikleri ve *Microsoft Uyumluluk Uzantısı* eklentisi kullanılarak algılanmıştır. Google Chrome'da müşteriler sinyal algılama için *Microsoft Uyumluluk Uzantısı'nı* kullanır.
 
-Aşağıdaki tabloda, her tarayıcı için algılanan etkinlikler ve uzantı desteği özetlenmiştir:
+Aşağıdaki tabloda, her tarayıcı için tanımlanan risk etkinlikleri ve uzantı desteği özetlenmiştir:
 
-| **Algılanan etkinlikler**                        | **Microsoft Edge** | **Google Chrome** |
-| ---------------------------------------------- | ------------------ | ----------------- |
-| Kişisel bulut depolama alanına kopyalanan dosyalar         | Yerel             | Uzantısı         |
-| Yerel veya ağ cihazlarına yazdırılan dosyalar      | Yerel             | Uzantısı         |
-| Ağ paylaşımına aktarılan veya kopyalanan dosyalar | Uzantısı          | Uzantısı         |
-| USB cihazlarına kopyalanan dosyalar                    | Uzantısı          | Uzantısı         |
-| Riskli web sitelerine göz atma                        | Uzantısı          | Uzantısı         |
+| **Algılanan etkinlikler** | **Microsoft Edge** | **Google Chrome** |
+| ----------------------- | ------------------ | ----------------- |
+| Kişisel bulut depolama alanına kopyalanan dosyalar | Yerel  | Uzantısı  |
+| Yerel veya ağ cihazlarına yazdırılan dosyalar | Yerel | Uzantısı |
+| Ağ paylaşımına aktarılan veya kopyalanan dosyalar | Uzantısı  | Uzantısı  |
+| USB cihazlarına kopyalanan dosyalar | Uzantısı   | Uzantısı    |
+| Riskli web sitelerine göz atma     | Uzantısı   | Uzantısı    |
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -76,7 +77,7 @@ Belirli tarayıcı yapılandırma gereksinimleri için bu makalenin devamında y
 
 ### <a name="option-1-basic-setup-recommended-for-testing-with-edge"></a>Seçenek 1: Temel kurulum (Edge ile test için önerilir)
 
-Tarayıcı sinyali algılamayı test ederken kuruluşunuzdaki her cihaz için tek bir makine selfhost yapılandırmak için bu seçeneği kullanın.
+Tarayıcı sinyali algılamayı test ederken kuruluşunuzdaki her cihaz için tek bir makine kendi kendine konak yapılandırmak için bu seçeneği kullanın.
 
 Temel kurulum seçeneği için aşağıdaki adımları tamamlayın:
 
@@ -138,7 +139,7 @@ Google Chrome için Insider risk yönetimi tarayıcısı sinyal algılama deste�
 
 ### <a name="option-1-basic-setup-recommended-for-testing-with-chrome"></a>1. Seçenek: Temel kurulum (Chrome ile test için önerilir)
 
-Tarayıcı sinyal algılamayı test ederken kuruluşunuzdaki her cihaz için tek makineli selfhost yapılandırmak için bu seçeneği kullanın.
+Tarayıcı sinyali algılamayı test ederken kuruluşunuzdaki her cihaz için tek makineli kendi kendine konak yapılandırmak için bu seçeneği kullanın.
 
 Temel kurulum seçeneği için aşağıdaki adımları tamamlayın:
 
@@ -148,8 +149,8 @@ Temel kurulum seçeneği için aşağıdaki adımları tamamlayın:
 Get-Item -path "HKLM:\\SOFTWARE\\Microsoft\\Windows Defender\\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
 ```
 
->[!Important]
->Uzantının düzgün işlevselliğini sağlamak için bu kayıt defteri anahtarları gereklidir. Sinyalleri test etmeden önce bu kayıt defteri anahtarlarını etkinleştirmeniz gerekir.*
+> [!Important]
+> Uzantının düzgün işlevselliğini sağlamak için bu kayıt defteri anahtarları gereklidir. Sinyalleri test etmeden önce bu kayıt defteri anahtarlarını etkinleştirmeniz gerekir.*
 
 **2. Adım: *Microsoft Uyumluluk Uzantısını* Yükleme**
 

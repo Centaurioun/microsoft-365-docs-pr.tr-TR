@@ -12,20 +12,21 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
-- m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: a6f7f2e33966898f98d1119dcffcc165bac19cb6
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+- highpri
+ms.openlocfilehash: 6939acd47434473e9bb95c39490d3acde648f388
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811974"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734087"
 ---
 # <a name="microsoft-purview-insider-risk-solutions"></a>Microsoft Purview içeriden risk çözümleri
 
-Insider riskleri, modern çalışma alanında güvenlik ve uyumluluk uzmanlarının en önemli endişelerinden biridir. Sektör çalışmaları, insider risklerinin genellikle belirli kullanıcı olayları veya etkinlikleriyle ilişkili olduğunu göstermiştir. Kuruluşunuzu bu risklere karşı korumak, tanımlanması ve azaltılması zor olabilir. Insider riskleri arasında çeşitli alanlardaki güvenlik açıkları yer alır ve kuruluşunuz için fikri mülkiyet kaybından iş yerinde tacize ve daha fazlasına kadar önemli sorunlara neden olabilir. Aşağıdaki şekilde, yaygın insider riskleri özetlenmiştir:
+Insider riskleri, modern çalışma alanında güvenlik ve uyumluluk uzmanlarının en önemli endişelerinden biridir. Sektör çalışmaları, insider risklerinin genellikle riskli etkinliklerle ilişkili olduğunu göstermiştir. Kuruluşunuzu bu risklere karşı korumak, tanımlanması ve azaltılması zor olabilir. Insider riskleri, çeşitli alanlardaki güvenlik açıklarını içerir ve kuruluşunuz için fikri mülkiyet kaybından gizli verilere ve daha fazlasına kadar önemli sorunlara neden olabilir. Aşağıdaki şekilde, yaygın insider riskleri özetlenmiştir:
 
 ![Insider risk tehditleri.](../media/ir-solution-threats.png)
 
@@ -46,13 +47,15 @@ Microsoft 365 risk önleme özellikleri, insider risk ürünlerimizin ve çözü
 | ![Güvenlik ihlalleri simgesi.](../media/ir-risk-security-violations.png)| Güvenlik ihlalleri |  | ![Destekleniyor](../media/check-mark.png) |  | ![Destekleniyor](../media/check-mark.png) |
 | ![Mevzuat uyumluluğu ihlalleri simgesi.](../media/ir-risk-regulatory-compliance-violations.png)| Mevzuat uyumluluğu ihlalleri | ![Destekleniyor](../media/check-mark.png) | ![Destekleniyor](../media/check-mark.png) | ![Destekleniyor](../media/check-mark.png) |  |
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="insider-risk-solutions"></a>İçeriden risk çözümleri
 
 Kuruluşunuzun şirket içi risklere karşı korunmasına yardımcı olmak için bu Microsoft Purview özelliklerini ve özelliklerini kullanın.
 
 ### <a name="communication-compliance"></a>İletişim uyumluluğu
 
-[Microsoft Purview İletişim Uyumluluğu](communication-compliance.md), kuruluşunuzdaki uygunsuz iletileri algılamanıza, yakalamanıza ve üzerinde işlem yapmanıza yardımcı olarak iletişim risklerini en aza indirmenize yardımcı olur.
+[Microsoft Purview İletişim Uyumluluğu](communication-compliance.md), kuruluşunuzdaki uygunsuz olabilecek iletileri algılamanıza, yakalamanıza ve üzerinde işlem yapmanıza yardımcı olarak iletişim risklerini en aza indirmenize yardımcı olur.
 
 İletişim uyumluluğu aşağıdaki aboneliklerde kullanılabilir:
 
@@ -65,7 +68,7 @@ Kuruluşunuzun şirket içi risklere karşı korunmasına yardımcı olmak için
 
 ### <a name="insider-risk-management"></a>İçeriden risk yönetimi
 
-[Microsoft Purview İçeriden Risk Yönetimi](insider-risk-management.md), kuruluşunuzdaki kötü amaçlı ve yanlışlıkla etkinlikleri algılamanıza, araştırmanıza ve eyleme geçirmenize olanak tanıyarak iç riskleri en aza indirmenize yardımcı olur.
+[Microsoft Purview İçeriden Risk Yönetimi](insider-risk-management.md), kuruluşunuzdaki kötü amaçlı ve yanlışlıkla olabilecek etkinlikleri algılamanıza, araştırmanıza ve eyleme geçirmenize olanak tanıyarak iç riskleri en aza indirmenize yardımcı olur.
 
 Insider risk yönetimi aşağıdaki aboneliklerde kullanılabilir:
 

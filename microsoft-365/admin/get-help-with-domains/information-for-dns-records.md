@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -27,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: Etki alanınızı Microsoft 365 aboneliğinize bağlamak için DNS kayıtları oluşturmak için ihtiyacınız olan değerleri/bilgileri toplayın.
-ms.openlocfilehash: 6cbfb96f142c412960684427e4eac1cacc41f381
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: d63252881fc40cad8dba9acbdc345871163354bc
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68203255"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729775"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>DNS kayıtları oluşturmak için ihtiyacınız olan bilgileri toplayın
 

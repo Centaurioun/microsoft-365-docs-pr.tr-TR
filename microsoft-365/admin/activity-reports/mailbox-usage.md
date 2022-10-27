@@ -5,9 +5,11 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -19,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Kullanıcı posta kutusu olan kullanıcıların etkinlik düzeylerinin yanı sıra her birine ilişkin depolama ve kota bilgilerini öğrenmek için Posta Kutusu kullanım raporunu nasıl alacağınızı öğrenin.
-ms.openlocfilehash: 4df0859930d2fe8a11623a775c96454fd3c9aaa7
-ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
+ms.openlocfilehash: 55b5fba9328b43d107a8c34a40a4a5e55aa8a1aa
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "67004312"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68723945"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Yönetim merkezinde Microsoft 365 Raporları - Posta kutusu kullanımı
 
@@ -40,7 +42,10 @@ ms.locfileid: "67004312"
 
 **Posta Kutusu**, **Depolama** ve **Kota** grafiklerine bakarak kuruluşunuzun posta kutusu kullanımına ilişkin bir görünüm elde edebilirsiniz.
 
-Paylaşılan posta kutusu bilgilerine erişmek için grafiklerin sağ üst kısmındaki açılan seçimi **Paylaşılan** olarak değiştirin.  Kiracınızda paylaşılan posta kutuları yoksa, paylaşılan posta kutusu bilgilerini görüntüleyemezsiniz.  Paylaşılan grafikleri görüntülemeyi seçtiyseniz, şu anda grafik bilgilerini dışarı aktaramayacağınızı da unutmayın. Bu bilinen bir sorundur ve gelecekteki bir yinelemede düzeltilecektir.
+Paylaşılan posta kutusu bilgilerine erişmek için grafiklerin sağ üst kısmındaki açılan seçimi **Paylaşılan** olarak değiştirin.  Kiracınızda paylaşılan posta kutuları yoksa, paylaşılan posta kutusu bilgilerini görüntüleyemezsiniz.
+
+> [!NOTE]
+> Şu anda paylaşılan posta kutuları için özet grafik bilgilerini dışarı aktaramazsınız. Bu bilinen bir sorundur ve gelecekteki bir yinelemede düzeltilecektir.
   
 :::image type="content" alt-text="Posta kutusu kullanım raporu." source="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png" lightbox="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png":::
 
@@ -48,7 +53,10 @@ Paylaşılan posta kutusu bilgilerine erişmek için grafiklerin sağ üst kısm
 
 ### <a name="the-mailbox-chart"></a>Posta Kutusu grafiği
 
-**Posta Kutusu** grafiği, kuruluşunuzdaki kullanıcı veya paylaşılan posta kutularının toplam sayısını ve raporlama döneminin herhangi bir gününde etkin olan toplam sayıyı gösterir. Bir kullanıcı veya paylaşılan posta kutusu e-posta gönderme, okuma, randevu oluşturma, toplantı gönderme, toplantıyı kabul etme, toplantıyı reddetme ve toplantı etkinliğini iptal etme işlemine sahipse etkin olarak kabul edilir.
+**Posta Kutusu** grafiği, kuruluşunuzdaki toplam kullanıcı veya paylaşılan posta kutusu sayısını ve raporlama döneminin herhangi bir gününde etkin olan toplam kullanıcı posta kutusu sayısını gösterir. Bir kullanıcı posta kutusu, e-posta gönderme, okuma, randevu oluşturma, toplantı talebinde bulunma, toplantı kabul etme, reddetme ve toplantı etkinliğini iptal etme durumları varsa etkin kabul edilir.
+
+> [!NOTE]
+> Paylaşılan posta kutularının kullanıcı posta kutusundan bağımsız etkinliği yoktur, bu nedenle bu posta kutusu türü seçildiğinde yalnızca paylaşılan posta kutularının sayısı gösterilir.
 
 Posta kutusu grafiğinde:
 - Y ekseni, kullanıcı veya paylaşılan posta kutularının sayısıdır. 
@@ -83,7 +91,7 @@ Bu tabloda, posta kutusu düzeyinde posta kutusu kullanımının dökümü göst
 |Öğe|Açıklama|
 |:-----|:-----|
 |Alıcı türü |Paylaşılan veya Kullanıcı. |
-|Kullanıcı adı |Kullanıcının e-posta adresi. |
+|Kullanıcı Adı |Kullanıcının e-posta adresi. |
 |Görünen Ad  |Kullanıcının tam adı. |
 |Silindi |Geçerli durumu silinmiş ancak raporun raporlama döneminin bir bölümünde etkin olan posta kutusu.|
 |Silinme tarihi |Posta kutusunun silindiği tarih. |

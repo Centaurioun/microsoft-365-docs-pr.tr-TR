@@ -8,15 +8,16 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ROBOTS: NO INDEX, NO FOLLOW
 description: Başkalarının Outlook'ta sizinle toplantı zamanlamasına izin vermek için Bookings'i benimle birlikte kullanın.
-ms.openlocfilehash: 7eea946472e94fb6d4e2ae144a1127a6b8e09c72
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 6b35d422a12e346df30551e303a0426ea6b200c0
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565498"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730347"
 ---
 # <a name="bookings-with-me"></a>Benimle Bookings
 
@@ -136,8 +137,12 @@ PowerShell Exchange Online kullanarak aşağıdaki komutları çalıştırmanız
    Set-OrganizationConfig -EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
    ```
 
-    - Kuruluşunuzda Bookings'i benimle açmak için, aşağıdaki komutu çalıştırarak **MicrosoftOWSPersonalBookings'i** **EwsAllowList'e** ekleyin:  
+    - Kuruluşunuzda Bookings'i benimle açmak için **EwsApplicationAccessPolicy'yi** **EnforceAllowList** olarak ayarlamanız ve aşağıdaki komutu çalıştırarak **MicrosoftOWSPersonalBookings'i** **EwsAllowList'e** eklemeniz gerekir:  
 
+   ```PowerShell
+   Set-OrganizationConfig -EwsApplicationAccessPolicy:EnforceAllowList
+   ```
+   
    ```PowerShell
    Set-OrganizationConfig -EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
    ```

@@ -8,15 +8,16 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Bookings etkinliğinizin 4 aylık görünümünü nasıl görebileceğinizi öğrenin
-ms.openlocfilehash: 4ca1a4c94ce14a8d673ff88be49dbb67b013a9c3
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: bcb6b90585299469dbbe4b67b628d4cfee88c463
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68207830"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733295"
 ---
 # <a name="reporting-info-for-bookings"></a>Bookings için raporlama bilgileri
 

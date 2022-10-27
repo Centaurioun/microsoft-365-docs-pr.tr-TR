@@ -19,17 +19,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b4697afae9745934437084927ed347582c4a300a
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 1f5ccfbd5cca1f20bd023ad7214618597a5a57a6
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565102"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727223"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>İletişim uyumluluk raporlarını ve denetimlerini kullanma
 
 >[!IMPORTANT]
->Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamak için kullanılır.
+>Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamaya yardımcı olur.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -41,14 +41,14 @@ Rapor pencere öğeleri, iletişim uyumluluk etkinliklerinin durumunun genel de�
 
 Tarih aralığı filtresi için, olayların tarih ve saati Eşgüdümlü Evrensel Saat (UTC) içinde listelenir. Raporlar için iletileri filtrelerken, istekte bulunan kullanıcının yerel tarih/saatinin UTC'ye dönüştürülmesi temelinde sonuçları belirler. Örneğin, ABD Pasifik Yaz Saati (PDT) içindeki bir kullanıcı 30.08.2021 ile 31.08.2021 saat 00:00 arasında bir raporu filtrelerse, rapor 30.08.2021 07:00 UTC ile 31.08.2021 07:00 UTC arası iletileri içerir. Saat 00:00'da filtreleme yaparken aynı kullanıcı ABD Doğu Yaz Saati'nde (EDT) bulunuyorsa, rapor 30.08.2021 04:00 UTC ile 31.08.2021 04:00 UTC arası iletileri içerir.
 
-![İletişim uyumluluk raporları panosu.](../media/communication-compliance-reports-dashboard.png)
+![İletişim uyumluluk raporları panosu](../media/communication-compliance-reports-dashboard.png)
 
 **Raporlar panosu** aşağıdaki rapor pencere öğelerini ve ayrıntılı rapor bağlantılarını içerir:
 
 ### <a name="report-widgets"></a>Rapor pencere öğeleri
 
-- **Son ilke eşleşmeleri: Etkin ilkenin** zaman içindeki eşleşme sayısını görüntüler.
-- **İlkeye göre çözümlenen öğeler**: zaman içinde ilke tarafından çözümlenen ilke eşleştirme uyarılarının sayısını görüntüler.
+- **Son ilke eşleşmeleri**: Zaman içinde etkin ilkelere göre eşleşme sayısını görüntüler.
+- **İlkeye göre çözümlenen öğeler**: zaman içinde ilkeler tarafından çözümlenen ilke eşleştirme uyarılarının sayısını görüntüler.
 - **İlke eşleşmesi en fazla olan kullanıcılar**: Belirli bir dönem için kullanıcıları (veya anonimleştirilmiş kullanıcı adlarını) ve ilke eşleşmelerinin sayısını görüntüler.
 - **En çok eşleşme içeren ilke**: Belirli bir dönem için ilkeleri ve eşleşme sayısını görüntüler; eşleşmeler için en yüksek ile en düşük arasında sıralanır.
 - **İlkeye göre yükseltmeler**: Belirli bir zaman içindeki ilke başına yükseltme sayısını görüntüler.
@@ -106,7 +106,7 @@ Tüm ayrıntılı raporların rapor ayrıntılarını içeren bir .csv dosyası 
 
 Özel raporlar oluşturun ve **İlkeler** sekmesindeki belirli ilkelerde yer alan iletilerin ayrıntılarını gözden geçirin. Bu raporlar, iletilerin tüm gözden geçirmeleri ve özelleştirilebilir bir zaman aralığı için iletilerin durumu için bir rapor anlık görüntüsü oluşturmak için kullanılabilir. Rapor oluşturduktan sonra, **ayrıntılar raporunu İleti ayrıntıları raporları** sekmesinde .csv dosyası olarak görüntüleyebilir ve indirebilirsiniz.
 
-![İletişim uyumluluk iletisi ayrıntı raporu.](../media/communication-compliance-message-detail-report.png)
+![İletişim uyumluluk iletisi ayrıntı raporu](../media/communication-compliance-message-detail-report.png)
 
 Yeni bir ileti ayrıntıları raporu oluşturmak için aşağıdaki adımları tamamlayın:
 
@@ -130,18 +130,18 @@ Rapordaki öğe sayısına bağlı olarak, raporun indirilmeye hazır olması bi
 - **Gönderilme Tarihi**: İletinin gönderildiği tarih.
 - **Eşleşme Tarihi**: İletinin ilke koşullarıyla eşleşme tarihi.
 - **Konu**: İletinin konusu.
-- **Ekler içerir**: iletinin eklerinin durumu. Değerler Evet veya Hayır'dır.
+- **Ekler içerir**: İletinin eklerinin durumu. Değerler *Evet* veya *Hayır'dır*.
 - **İlke Adı**: İletiyle ilişkili ilkenin adı. Bu değer rapordaki tüm iletiler için aynı olacaktır.
-- **Öğe Durumu**: İlkedeki ileti öğesinin durumu. Değerler Beklemede veya Çözümlendi.
-- **Etiketler**: İletiye atanan etiketler. Değerler Sorgulanabilir, Uyumlu veya Uyumsuz'dır.
+- **Öğe Durumu**: İlkedeki ileti öğesinin durumu. Değerler *Beklemede* veya *Çözümlendi*.
+- **Etiketler**: İletiye atanan etiketler. Değerler *Sorgulanabilir, Uyumlu* veya *Uyumsuz'dır*.
 - **Anahtar Sözcük Eşleşmeleri**: İleti için anahtar sözcük eşleşmeleri.
 - **Gözden Geçirenler**: İletiye atanan gözden geçirenler.
 - **Bekleme süresi (gün):** İletinin beklemede olduğu gün sayısı. Çözümlenen iletiler için değer 0'dır.
-- **Çözümlenen açıklama: çözümlendiğinde** girilen iletinin açıklamaları.
+- **Çözümlenen açıklama: Çözümlendiğinde** girilen iletinin açıklamaları.
 - **Çözümlenme Tarihi**: İletinin çözümlenme tarihi ve saati.
 - **Son Güncelleştirme Ölçütü**: Son güncelleştiricinin kullanıcı adı.
 - **Son Güncelleştirme Tarihi**: İletinin son güncelleştirildiği tarih ve saat.
-- **Açıklamaların geçmişi**: açıklama yazarı ve açıklamanın tarih/saati de dahil olmak üzere ileti uyarısı için tüm açıklamaların listesi.
+- **Açıklamaların geçmişi**: Açıklama yazarı ve açıklamanın tarih/saati de dahil olmak üzere ileti uyarısı için tüm açıklamaların listesi.
 
 ## <a name="audit"></a>Denetim
 
@@ -157,16 +157,16 @@ Bazı durumlarda, kullanıcı etkinliklerinin ve iletişimlerinin denetimini kan
 | **Creationdate** | Güncelleştirme etkinliğinin bir ilkede gerçekleştirildiği tarih. |
 | **Kullanıcı Kimlikleri** | bir ilkede güncelleştirme etkinliğini gerçekleştiren kullanıcı. |
 | **Operasyonlar** | İlke üzerinde gerçekleştirilen güncelleştirme işlemleri. |
-| **AuditData** | Bu alan, tüm ilke güncelleştirme etkinlikleri için ana veri kaynağıdır. Tüm güncelleştirme etkinlikleri kaydedilir ve virgülle ayrılmıştır. |
+| **AuditData** | Tüm ilke güncelleştirme etkinlikleri için ana veri kaynağı. Tüm güncelleştirme etkinlikleri kaydedilir ve virgülle ayrılmıştır. |
 
 bir ilkenin iletişim uyumluluğu gözden geçirme etkinliklerini görüntülemek için, belirli bir ilkenin **Genel Bakış** sayfasında **Gözden geçirme etkinliklerini dışarı aktar** denetimini seçin. Gözden geçirme etkinliklerini dışarı aktarmak için *Size Genel Yönetici* veya *İletişim Uyumluluğu Yöneticileri* rolleri atanmalıdır. Bu eylem, aşağıdaki bilgileri içeren .csv biçiminde bir denetim dosyası oluşturur:
 
 |Alan|Ayrıntılar|
 |---|---|
 | **Creationdate** | gözden geçirme etkinliğinin bir ilkede gerçekleştirildiği tarih. |
-| **Kullanıcı Kimlikleri** | bir ilkede gözden geçirme etkinliğini gerçekleştiren kullanıcı. |
-| **Operasyonlar** | İlke üzerinde gerçekleştirilen gözden geçirme işlemleri. |
-| **AuditData** | Bu alan, tüm ilke gözden geçirme etkinlikleri için ana veri kaynağıdır. Tüm gözden geçirme etkinlikleri kaydedilir ve virgülle ayrılmıştır. |
+| **Kullanıcı Kimlikleri** | İlkedeki gözden geçirme etkinliğini gerçekleştiren kullanıcı. |
+| **Operasyonlar** | İlke üzerinde gerçekleştirilen işlemleri gözden geçirin. |
+| **AuditData** | Tüm ilke gözden geçirme etkinlikleri için ana veri kaynağı. Tüm gözden geçirme etkinlikleri kaydedilir ve virgülle ayrılmıştır. |
 
 Denetim etkinliklerini birleşik denetim günlüğünde veya [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell cmdlet'iyle de görüntüleyebilirsiniz. Denetim günlüğü saklama ilkeleri hakkında daha fazla bilgi edinmek için bkz. [Denetim günlüğü saklama ilkelerini yönetme](/microsoft-365/compliance/audit-log-retention-policies).
 
