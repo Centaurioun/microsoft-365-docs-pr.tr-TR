@@ -9,6 +9,7 @@ ms.service: o365-administration
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- Tier2
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams uygulama kullanım raporunu almayı ve kuruluşunuzdaki Teams uygulaması etkinliğiyle ilgili içgörüler kazanmayı öğrenin.
-ms.openlocfilehash: 4306ab0c0617bfbba9336991d93305f4b68798d6
-ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+ms.openlocfilehash: f2135a4fd6fbb8b61406855c1f773187c1d5f794
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68300775"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68723045"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-apps-usage-reports"></a>Yönetim merkezinde Microsoft 365 Raporları - Microsoft Teams uygulamaları kullanım raporları
 

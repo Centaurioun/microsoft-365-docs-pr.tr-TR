@@ -9,6 +9,7 @@ ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Project etkinlik raporunu almayı ve kuruluşunuzdaki Project etkinliğiyle ilgili içgörüler kazanmayı öğrenin.
-ms.openlocfilehash: 4493b67cb11c784a6d84dc1cf0fdb260684400dc
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: ebefa83918fa8bf31069981488baad4c7a71b365
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68186161"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722736"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---project-activity"></a>Yönetim merkezinde Microsoft 365 Raporları - Proje etkinliği
 

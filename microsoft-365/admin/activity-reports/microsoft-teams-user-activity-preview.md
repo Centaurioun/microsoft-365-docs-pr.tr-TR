@@ -9,6 +9,7 @@ ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams kullanıcı etkinliği raporunu almayı ve kuruluşunuzdaki Teams etkinliğiyle ilgili içgörüler kazanmayı öğrenin.
-ms.openlocfilehash: c913c3969c5784f34cd8a1ca4644834eaf96f0a6
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 290f280f0ffb0d4961949f46486b0c8cce84f213
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68165371"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722956"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Yönetim merkezinde Microsoft 365 Raporları - Microsoft Teams kullanıcı etkinliği
 

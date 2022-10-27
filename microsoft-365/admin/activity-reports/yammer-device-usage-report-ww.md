@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Kullanıcılarınızın Yammer'ı hangi cihazlarda kullandığı, cihaz türüne göre günlük kullanıcı sayısı ve kullanıcı başına ayrıntılar hakkında daha fazla bilgi edinmek için Yammer cihaz kullanım raporunu alın.
-ms.openlocfilehash: df1205f763cd0b7a96ee96261268bfabdc3a519c
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 5be41a946f110c809cc45a8fa9b0cdb21c0a9f35
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68623553"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722499"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Yönetim merkezinde Microsoft 365 Raporları - Yammer cihaz kullanım raporu
 
@@ -65,4 +66,4 @@ Dışarı Aktar bağlantısını seçerek rapor verilerini bir Excel .csv dosyas
 |Android telefon  |Kullanıcının Android telefonda Yammer kullanıp kullanmadığını gösterir. |
 |Iphone  | Kullanıcının iPhone'da Yammer kullanıp kullanmadığını gösterir.  |
 |Ipad   |Kullanıcının iPad'de Yammer kullanıp kullanmadığını gösterir. |
-|Diğer  |Kullanıcının yammer'ı daha önce listelenmeyen başka bir istemcide kullanıp kullanmadığını gösterir. Buna Yammer Ekleme, SharePoint Web Bölümü, Viva Etkileşim ve Outlook e-postalarını seçme dahildir.  |
+|Diğer  |Kullanıcının yammer'ı daha önce listelenmeyen başka bir istemcide kullanıp kullanmadığını gösterir. Buna Yammer Ekleme, SharePoint Web Bölümü, Viva Engage ve Outlook e-postalarını seçme dahildir.  |

@@ -10,6 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Konukların davet edildikleri Teams'de toplantılara katılabilmesi, belgeleri görüntüleyebilmesi ve sohbet edebilmesi için Microsoft 365 yönetim merkezi Konuk kullanıcılar listesini nasıl dolduracağınızı öğrenin.
-ms.openlocfilehash: f34d610aff368106b208b3e31f0f9b9fbbd3ee3e
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 1b8f93eda4c7345940c54ea5193a6230a6303177
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68198855"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722384"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezi'deki konuk kullanıcılar
 
