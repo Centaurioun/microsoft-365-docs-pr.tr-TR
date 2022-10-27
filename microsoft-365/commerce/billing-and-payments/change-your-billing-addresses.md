@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: İşletmeler için Microsoft 365 fatura bildirimlerini almak için kullanılan fatura adreslerinizi veya e-posta adresinizi nasıl güncelleştireceğinizi öğrenin.
 ms.date: 01/24/2022
-ms.openlocfilehash: 6a15d5e1b2f13f4cf7dd8f9757ff1616d9b4bc9b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 8507bc3fdd56b2a0587a73be54b4fccdf114665e
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68206267"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729621"
 ---
 # <a name="change-your-microsoft-365-for-business-billing-addresses"></a>İş için Microsoft 365 fatura adreslerinizi değiştirme
 

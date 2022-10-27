@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -30,12 +31,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Kuruluşunuza giren veya kuruluşunuzdan ayrılan tüm e-posta iletileri için yasal uyarılar veya açıklama bildirimleri de dahil olmak üzere e-posta imzalarını yönetin.
-ms.openlocfilehash: e1c9d9d449e3e6f49ac405bdbd34ab67a2c01daf
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 8181dee3d9469538f09edc1b899776906bdae9a9
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68166515"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729445"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Kuruluş genelinde imzalar ve sorumluluk reddi oluşturma
 

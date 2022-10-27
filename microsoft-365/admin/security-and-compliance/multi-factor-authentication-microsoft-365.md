@@ -10,6 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -26,12 +27,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Çok faktörlü kimlik doğrulaması (MFA) hem güçlü olması gereken bir parola hem de ek bir doğrulama yöntemi kullanır.
-ms.openlocfilehash: 0b61fea661b0c0a3652d2b5b2c74b4450e83bd4b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: f63c97019bab485b2922a61ef2c101a75cc3d1c9
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68201385"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68735957"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>Microsoft 365 için çok faktörlü kimlik doğrulaması
 

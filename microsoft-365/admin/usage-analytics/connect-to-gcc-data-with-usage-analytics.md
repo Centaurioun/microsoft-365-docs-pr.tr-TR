@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Power BI'daki Microsoft 365 Kullanım Analizi şablon uygulamasını kullanarak Microsoft 365 Kamu Topluluğu Bulutu (GCC) kiracınızdaki verilere bağlanmayı öğrenin.
-ms.openlocfilehash: c82dd3d358621e874281b89a22976e583cc0df95
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 751ef7e0b0834b13fbdb863f37249b27cd4781aa
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68193487"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729401"
 ---
 # <a name="connect-to-microsoft-365-government-community-cloud-gcc-data-with-usage-analytics"></a>Kullanım Analizi ile Microsoft 365 Kamu Topluluk Bulutu (GCC) verilerine bağlanma
 

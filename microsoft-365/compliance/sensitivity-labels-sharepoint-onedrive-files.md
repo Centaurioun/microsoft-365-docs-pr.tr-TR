@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Yöneticiler SharePoint ve OneDrive'da Word, Excel ve PowerPoint dosyaları için duyarlılık etiketi desteğini etkinleştirebilir.
-ms.openlocfilehash: 9bba98b57c2d677cce9f6afcc4ab1a11a49e94e3
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 6d3f18556a075cc6ee79481117c863b0cd107564
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503544"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728807"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint ve OneDrive'daki Office dosyaları için hassasiyet etiketlerini etkinleştirme
 
@@ -120,7 +120,9 @@ Etiketli bir belgeyi karşıya yükleme ve ardından bu duyarlılık etiketini a
 
 - Şifrelenmiş belgeler için yazdırma Web için Office desteklenmez.
 
-- Web için Office'daki şifrelenmiş belgeler için panoya ve ekran yakalamalarına kopyalama engellenmez. Daha fazla bilgi için bkz [. Rights Management ekran yakalamalarını engelleyebilir mi?](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures)
+- Web için Office'daki şifrelenmiş belgeler için [ekran yakalamaları engellenmez](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures). Yakın zamana kadar, bu belgeler için panoya kopyalama da engellenmedi. Belgeler etiketlenip şifrelendiğinde ve **Kullanım** [kopyalama hakkı](/azure/information-protection/configure-usage-rights) verilmediğinde Web üzerinde Office masaüstü uygulamalarının bu eylemi engellemesi gibi panoya kopyalamayı da engeller. Şu anda tarayıcı yenilenene, başka bir oturum başlatılana veya belge yeniden açılana kadar senaryoları yeniden etiketlemeye yönelik bazı özel durumlar vardır:
+    - Oturum ortasında, belge şifrelenmemişten şifrelenmişe dönüşür.
+    - Oturum ortasında, belge şifrelenmişten değişir ve Kullanım kopyalama hakkı şifrelenmiş olarak verilir, ancak Kullanım kopyalama hakkı verilmez.
 
 - Varsayılan olarak, Office masaüstü uygulamaları ve mobil uygulamaları şifreleme ile etiketlenmiş dosyalar için birlikte yazmayı desteklemez. Bu uygulamalar etiketli ve şifrelenmiş dosyaları özel düzenleme modunda açmaya devam ediyor.
 

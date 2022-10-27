@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Şirket dosyalarını SharePoint'e taşımayı öğrenin.
-ms.openlocfilehash: 356be1b98e9eb09869a056a9a4405e8519fec211
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 1f2b0a8fe3323021cf8b0337b36545191f2d6fd3
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68166405"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720954"
 ---
 # <a name="move-files-to-sharepoint"></a>Dosyaları SharePoint'e taşıma
 

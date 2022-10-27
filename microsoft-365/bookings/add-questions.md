@@ -6,23 +6,26 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
+ms.collection:
+- Tier1
+- scotvorg
 ms.localizationpriority: medium
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
 description: Çevrimiçi olarak sizinle randevu alırken müşterilere soru sormanız gerekiyorsa, rezervasyon sayfasına özel sorular ve gerekli sorular ekleyebilirsiniz.
-ms.openlocfilehash: d42f883f3d58882ec5a2e8e8e2bbe7baf7ed3232
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: a2000a277af8a3b71e8e29a4d6a1e244c18a71bd
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637703"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68736551"
 ---
 # <a name="add-custom-and-required-questions-to-the-booking-page"></a>Rezervasyon sayfasına özel ve gerekli sorular ekleme
 
-Bookings, müşterilerinize randevu rezervasyonu yaparken sormak için sorular oluşturmanıza olanak tanır. Ayrıca hangi soruların gerekli olduğunu seçmenizi sağlar.
+Bookings, randevu rezervasyonu yaparken müşterilerinize sormak için sorular oluşturmanıza olanak tanır. Ayrıca hangi soruların gerekli olduğunu seçmenizi sağlar.
 
 Her hizmetin farklı bir soru kümesine sahip olabilmesi için soruları bir hizmetle ilişkilendirirsiniz. Örneğin bir saç stilisti, saç boyama randevusu alan müşterilere çamaşır suyu veya renk tonlarına karşı bilinen alerjileri olup olmadığını sorabilir. Bu, sizin ve müşterilerinizin randevuları için vardığında zaman kazanmanıza olanak tanır.
 
-Müşteriler randevularını oluştururken rezervasyon sayfasında özel soruları görür. Personel, Bookings takviminden yeni bir rezervasyon oluştururken veya mevcut randevuyu görüntülerken özel soruları görür. Bookings, her hizmet için aynı soruları yeniden oluşturmanız gerekmemesi için tüm sorularınızı ana listeye kaydeder. Ayrıca soruların gerekli mi yoksa isteğe bağlı mı olduğunu da seçebilirsiniz.
+Müşteriler randevularını oluştururken rezervasyon sayfasında özel soruları görür. Personel, Bookings takviminden yeni bir rezervasyon oluştururken veya mevcut bir randevuyu görüntülerken özel soruları görür. Bookings, her hizmet için aynı soruları yeniden oluşturmanız gerekmemesi için tüm sorularınızı ana listeye kaydeder. Ayrıca soruların gerekli mi yoksa isteğe bağlı mı olduğunu da seçebilirsiniz.
 
 > [!NOTE]
 > Müşterinin sorulara verdiği yanıtlar, randevularına rezervasyon takviminde baktığınızda görülebilir.
@@ -31,7 +34,7 @@ Rezervasyon sayfanızı kişiselleştirme ve özelleştirme hakkında daha fazla
 
 ## <a name="add-custom-questions-to-your-services"></a>Hizmetlerinize özel sorular ekleme
 
-1. Microsoft 365 oturum açın ve **Bookings** gidin.
+1. Microsoft 365'te oturum açın ve **Bookings'e** gidin.
 
 1. Takviminizi seçin.
 
@@ -72,6 +75,6 @@ Müşterileriniz sizinle randevu aldığınızda, temel müşteri bilgileri soru
 
 ## <a name="staff-experience"></a>Personel deneyimi
 
-Müşterileriniz sizinle randevu aldığınızda, personeliniz rezervasyon takviminde soruları ve müşterinin yanıtlarını görür. Bunu görmek için **Bookings** \> **Takvim'e** gidin ve bir randevu açın.
+Müşterileriniz sizinle randevu aldığınızda, personeliniz rezervasyon takviminde soruları ve müşterinin yanıtlarını görür. Bunu görmek için **Bookings** \> **Takvimi'ne** gidin ve bir randevu açın.
 
 ![Sorular etkinleştirildiğinde personelin ne gördüğünün resmi.](../media/bookings-questions-staff.png)

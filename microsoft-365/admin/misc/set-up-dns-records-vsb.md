@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -22,12 +23,12 @@ description: Microsoft 365 ile etki alanınızı doğrulamayı ve DNS kayıtlar�
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
-ms.openlocfilehash: fa6c25e8ac2bca0646455d81f7a4390be3b173b5
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 234845ba0d8aea26b4c1453245788c349ac8446e
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68204837"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728500"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>Etki alanınızı Microsoft 365'e bağlayın
 

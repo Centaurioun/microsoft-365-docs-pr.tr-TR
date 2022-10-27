@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Zaman kazanmak ve Microsoft 365 yönetim merkezi birden çok kullanıcı eklediğinizde ayarları standartlaştırmak için şablon oluşturup kullanabilirsiniz.
-ms.openlocfilehash: 2bd20c6d68d71156d2ea307c7b39abc504907c13
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: b316b5e30a98258ccf0ee6dcf4afd5d190b0faa0
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68201407"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722054"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Kullanıcıları eklemek için şablon oluşturma ve kullanma
 

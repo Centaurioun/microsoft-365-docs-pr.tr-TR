@@ -8,14 +8,15 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 description: Kuruluşunuzdaki kişilerin okuduğu Microsoft 365 yardım makalelerinin raporunu alın.
-ms.openlocfilehash: 7cb78d1ed33e9978b69747699b64ceefced373a3
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 7d90a96d233eb0b59978a28a990cef5adbf85654
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68189637"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68736089"
 ---
 # <a name="experience-insights-help-article-report"></a>Deneyim içgörüleri yardım makalesi raporu
 

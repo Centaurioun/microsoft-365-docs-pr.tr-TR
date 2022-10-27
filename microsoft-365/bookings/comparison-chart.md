@@ -8,15 +8,16 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: d586eb28-b752-4c46-bf92-00a0c5ad781d
 description: Bookings web uygulaması ile Bookings Teams uygulaması arasındaki özellik farklarını gösteren bir karşılaştırma grafiği.
-ms.openlocfilehash: 40c7f3ce90287a2c86ba4a5e6f16e3720978f71e
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 5034508cae5148ad353b739eb929432705516132
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68202308"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720360"
 ---
 # <a name="comparison-chart-bookings-web-app-vs-bookings-teams-app"></a>Karşılaştırma grafiği: Bookings web uygulaması ile Bookings Teams uygulaması karşılaştırması
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: Microsoft için Namecheap'ta etki alanınızı doğrulamayı ve e-posta, Skype Kurumsal Online ve diğer hizmetler için DNS kayıtlarını ayarlamayı öğrenin.
-ms.openlocfilehash: 51461cd7456de10358c8fb9644c8fe8682e11757
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: ac1f2e5b02f8a3068d91579ed65fc9bad098f72f
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68191485"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729489"
 ---
 # <a name="connect-your-dns-records-at-namecheap-to-microsoft-365"></a>Namecheap'taki DNS kayıtlarınızı Microsoft 365'e bağlama
 

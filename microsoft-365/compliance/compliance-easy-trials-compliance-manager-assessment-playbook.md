@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Microsoft Purview Uyumluluk Yöneticisi premium değerlendirme deneme kullanım kılavuzu.
 ms.custom: trial-playbook
-ms.openlocfilehash: 1ac89c8a139c0decde42aa2a87733e02f9def957
-ms.sourcegitcommit: 3e1fc1919f64aff2e1ce83aa67bd415fe51604c1
+ms.openlocfilehash: e287b12661c57df6bd0f07a1a097d944b37fceab
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68500042"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728081"
 ---
 # <a name="trial-user-guide-microsoft-purview-compliance-manager-premium-assessments"></a>Deneme kullanım kılavuzu: Microsoft Purview Uyumluluk Yöneticisi premium değerlendirmeleri
 
@@ -45,7 +45,7 @@ Microsoft önerilerini kullanarak premium değerlendirme şablonlarının kurulu
 1. [Pano görünümünüzü filtreleme](compliance-manager-setup.md#filtering-your-dashboard-view)
 1. [İyileştirme eylemleri hakkında bilgi edinin](compliance-manager-setup.md#improvement-actions-page)
 1. [Değerlendirmeleri anlama](compliance-manager.md#assessments)
-1. [Microsoft Uyumluluk Configuration Manager kullanarak ortamınızda hızlı bir tarama yapın](compliance-manager-mcca.md)
+1. [Microsoft Uyumluluk Configuration Manager kullanarak ortamınızı hızlı bir şekilde denetleyin](compliance-manager-mcca.md)
 
 ## <a name="step-2-configure-compliance-manager"></a>2. Adım: Uyumluluk Yöneticisini Yapılandırma
 

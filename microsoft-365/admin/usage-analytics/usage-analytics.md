@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Kuruluşunuzun iletişim kurmak ve işbirliği yapmak için Microsoft 365 hizmetlerini nasıl benimsediği hakkında genel bir bakış edinin.
-ms.openlocfilehash: e36ab8cda0000ef285a84dff5c0dc430d61ba313
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 64dc62881d07989690f2755699756c195295898a
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68209348"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68735913"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 kullanım analizi
 

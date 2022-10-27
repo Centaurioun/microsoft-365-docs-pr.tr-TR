@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -19,12 +20,12 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: Yönetilen Hizmet Sağlayıcıları (MSP' ler) için Microsoft 365 Lighthouse tek bir konumdaki müşteri kiracılarının güvenliğini sağlamanıza ve yönetmenize nasıl yardımcı olabileceğini öğrenin.
-ms.openlocfilehash: 209c7ef0ea18ff9835d62161e4fa69732abb1342
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: bcdd9c4c9ce65ba6ff24f5759cb7632a28dbc95d
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68663093"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720756"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'a genel bakış
 

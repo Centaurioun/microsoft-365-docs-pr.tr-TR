@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_TOC
@@ -18,12 +19,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Microsoft 365 destek tümleştirme ekibine geri bildirim sağlamak ve test etmek için destek tümleştirmesini yapılandırın.
-ms.openlocfilehash: 858c90ac2ac101371f4b03017073ca2f4c331aee
-ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
+ms.openlocfilehash: 25c18c562776e7e28a9f6596950f36d6396021b4
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68685490"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68735649"
 ---
 # <a name="integrate-microsoft-365-with-servicenow-virtual-agent"></a>Microsoft 365'i ServiceNow Sanal Aracısı ile tümleştirme
 

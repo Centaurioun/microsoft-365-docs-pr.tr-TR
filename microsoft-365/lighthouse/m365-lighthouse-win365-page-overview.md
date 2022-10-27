@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Windows 365 (Bulut bilgisayarları) sayfası hakkında bilgi edinin.
-ms.openlocfilehash: 027fcd4fc20ea662d3fae19fba811483e6946705
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: eefa44f9014f231a331682f1171c931f92ce8b0e
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68661797"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720690"
 ---
 # <a name="overview-of-the-windows-365-cloud-pcs-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'daki Windows 365 (Bulut Bilgisayarlar) sayfasına genel bakış  
   
@@ -92,7 +93,7 @@ Ek açıklama ekleme çubuğunun altındaki listede tüm Azure ağ bağlantılar
 
 Belirli bir sağlama durumuna sahip bağlantıları görmek için, listeyi filtrelemek için count-annotation çubuğundan bu durumu seçin. Belirli bir veya daha fazla müşteri kiracısının bağlantı durumlarını görmek için **Kiracılar** açılan menüsünü kullanarak listeyi filtreleyin.
 
-Listede işlem yapmanız veya bağlantı sorunlarını gidermeniz gerekiyorsa **Microsoft Endpoint Manager bağlantı ayrıntılarını görüntüle'yi** seçin.
+Listede işlem yapmanız veya bağlantı sorunlarını gidermeniz gerekiyorsa **Microsoft Endpoint Manager'da bağlantı ayrıntılarını görüntüle'yi** seçin.
 
 Azure ağ bağlantıları sekmesi aşağıdaki seçenekleri de içerir:
 

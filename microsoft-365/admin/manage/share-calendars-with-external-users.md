@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: Kullanıcıların takvimlerini kuruluş içindeki veya dışındaki herkesle paylaşabilmesi için Microsoft 365 yönetim merkezi takvim paylaşımını etkinleştirin.
-ms.openlocfilehash: 23cb7c9374e55c4114caf808b5a2e3c3fb19b7d5
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: 168e8d894d7e4c8b04f92ae3ec54fb7bf6e08d61
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68663466"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68735495"
 ---
 # <a name="share-microsoft-365-calendars-with-external-users"></a>Microsoft 365 takvimlerini dış kullanıcılarla paylaşma
 

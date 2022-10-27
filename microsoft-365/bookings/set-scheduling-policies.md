@@ -8,15 +8,16 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: 4b2c84ec-64d3-4027-af4c-40f69e7b37c9
 description: İşletmeniz için zamanlama ilkeleri ayarlamayı öğrenin. Zamanlama ilkeleri randevuların uzunluğunun yanı sıra kabul edilebilir müşteri adayı ve iptal sürelerini içerir.
-ms.openlocfilehash: ebc3441b73efabb7122f48282118fb466a71ede5
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: fbe3cfeec6e48a2d40a186e934a15e28a61253c0
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68198745"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729049"
 ---
 # <a name="set-your-microsoft-bookings-scheduling-policies"></a>Microsoft Bookings zamanlama ilkelerinizi ayarlama
 

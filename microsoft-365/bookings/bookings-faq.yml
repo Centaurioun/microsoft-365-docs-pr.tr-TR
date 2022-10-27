@@ -9,14 +9,15 @@ metadata:
   ms.service: bookings
   ms.localizationpriority: medium
   ms.collection:
+  - Tier1
   - scotvorg
   description: Microsoft Bookings sık sorulan sorular.
-  ms.openlocfilehash: 945182bd2aba2f18ed986bed767e144beb8bff90
-  ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+  ms.openlocfilehash: 8b1e09102f7e32bc3b5e95e497f5053402dfdf5e
+  ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
   ms.translationtype: MT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 09/29/2022
-  ms.locfileid: "68168957"
+  ms.lasthandoff: 10/27/2022
+  ms.locfileid: "68736529"
 title: Microsoft Bookings Sık Sorulan Sorular
 summary: ''
 sections:

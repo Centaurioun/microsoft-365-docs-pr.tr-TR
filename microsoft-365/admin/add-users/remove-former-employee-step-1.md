@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -27,12 +28,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Genel yöneticiler eski bir çalışanın oturum açmasını ve Microsoft 365 hizmetlerine erişimini engelleyebilir.
-ms.openlocfilehash: 2c4fc7216c9b7bb0846bb6935ac537fd67420c3f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 6f59c4295f98164c152e2b42ddf08a07d8bc9eee
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68187437"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68721790"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>1. Adım - Eski bir çalışanın oturum açmasını engelleme ve Microsoft 365 hizmetlerine erişimi engelleme
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'Kuruluşunuzdaki herkesin Outlook kullanarak toplantılar ya da etkinlikler için saklayabilmesi için, bir oda veya donanım posta kutusu oluşturun. '
-ms.openlocfilehash: 505aefa5a809f3e4d4c2dfc37f68b8df844e74bb
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: f6d3e5a61e9fde8e6234b3549743c9b4ff0d9d96
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68166647"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68735759"
 ---
 # <a name="create-microsoft-365-room-and-equipment-mailboxes"></a>Microsoft 365 oda ve donanım posta kutuları oluşturma
 

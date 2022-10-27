@@ -19,12 +19,12 @@ ms.custom: ''
 description: Kuruluşunuzun güvenlik endişelerini takip etmelerine yardımcı olmak için yeni Dikkat Çekici İzleyiciler de dahil olmak üzere Tehdit İzleyicileri hakkında bilgi edinin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 300a0f0df7614714040b4274f945fdb0f00330de
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 5bc2bfb0d6592b9afd5dd1d6295b1bc1cf7d014a
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68085925"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728059"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Tehdit İzleyicileri - Yeni ve Dikkat Çekici
 
@@ -42,8 +42,6 @@ ms.locfileid: "68085925"
 ## <a name="what-are-threat-trackers"></a>Tehdit İzleyicileri nedir?
 
 Tehdit İzleyicileri, şirketinizi etkileyebilecek farklı siber güvenlik sorunları hakkında size zeka sağlayan bilgilendirici pencere öğeleri ve görünümlerdir. Örneğin, Tehdit İzleyicisi'ni kullanarak popüler kötü amaçlı yazılım kampanyalarıyla ilgili bilgileri görüntüleyebilirsiniz.
-
-:::image type="content" source="../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png" alt-text="Kötü amaçlı yazılım kampanyalarını gösteren Tehdit İzleyicisi örneği" lightbox="../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png":::
 
 İzleyici sayfalarının çoğunda düzenli aralıklarla güncelleştirilen popüler sayılar, hangi sorunların en büyük olduğunu veya en çok büyüdüğünü anlamanıza yardımcı olacak pencere öğeleri ve daha ayrıntılı bilgileri görüntüleyebileceğiniz **Eylemler** sütununda sizi Gezgin'e götüren hızlı bir bağlantı bulunur.
 

@@ -10,6 +10,7 @@ ms.topic: landing-page
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier1
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -28,12 +29,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Microsoft Business Premium, Microsoft 365 İş Standart, Microsoft 365 İş Temel, İş için Microsoft 365 Uygulamaları veya Office 365 Eğitim aboneliğinizi ayarlamayı öğrenin.
-ms.openlocfilehash: 820e01972fe071e2d2026fe65b907fd8bf409329
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: dc46b375830eae6bedf75c3a5fc48180f451d786
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68164469"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68736441"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>İş için Microsoft 365'i ayarlama
 

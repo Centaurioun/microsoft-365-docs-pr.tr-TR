@@ -10,17 +10,18 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 description: Kullanıcıları Microsoft 365 İş Standart kuruluşa katılmaya davet etme
-ms.openlocfilehash: 3ebee814a0241a6f4c6f7bc13e21209693cda6b8
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 8efc44274b6d136413b3ac62579f191f2bca7564
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68168935"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720932"
 ---
 # <a name="invite-users-to-a-microsoft-365-for-business-subscription-admin"></a>Kullanıcıları iş için Microsoft 365 aboneliğine davet etme (Yönetici)
 

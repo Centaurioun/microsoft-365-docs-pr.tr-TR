@@ -11,6 +11,7 @@ ms.service: microsoft-365-business
 ms.localizationpriority: high
 monikerRange: o365-worldwide
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Benimseme Puanı'nın insanları ve teknoloji deneyimi ölçümlerini nasıl yansıtdığını ve benzer boyuttaki kuruluşlarla nasıl karşılaştırdığını öğrenin.
-ms.openlocfilehash: 83170a50a473c24656e10ce57cea4bc44c3767fc
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 46af48a0cbb8b686657a40502a8ea1e5206baa53
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68621041"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68721240"
 ---
 # <a name="microsoft-adoption-score"></a>Microsoft Benimseme Puanı 
 
@@ -69,7 +70,7 @@ Kuruluşunuz için kişi deneyimlerini yapılandırma seçenekleri hakkında dah
 Kişilerin veri deneyimi için bir İş için Microsoft 365 veya kurumsal abonelik için Office 365 gerekir. Kiracınızın uç nokta analizi verileri için aboneliğinize Microsoft Intune eklemeniz gerekir. Intune, cihazları ve uygulamaları yöneterek kuruluşunuzun verilerini korumaya yardımcı olur. Intune aldıktan sonra, Intune deneyiminde uç nokta analizini açabilirsiniz. Microsoft Intune hakkında daha fazla bilgi edinmek için [Microsoft Intune belgelerine bakın](/mem/intune/).
 
 > [!NOTE]
-> Benimseme Puanı özelliklerini almak için Viva Analizler lisansı gerekmez.
+> Benimseme Puanı özelliklerini almak için Viva Insights lisansı gerekmez.
 
 Benimseme Puanı yalnızca Microsoft 365 yönetim merkezi kullanılabilir ve yalnızca aşağıdaki rollerden birine sahip BT uzmanları tarafından erişilebilir:  
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Kuruluş bilgilerinizi koruyan cihaz ilkeleri oluşturmak için Temel Mobilite ve Güvenlik'i kullanın.
-ms.openlocfilehash: 2a6124992f9126cd69dad4a8fcb5a1a84f8c39c6
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: da81f8b002d6bc2292f5067110de368004e4a1ff
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68573735"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727641"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Basic Mobility ve Security'de cihaz güvenlik ilkeleri oluşturma
 

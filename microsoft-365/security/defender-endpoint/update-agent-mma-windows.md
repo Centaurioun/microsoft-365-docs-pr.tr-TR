@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 10/24/2022
+ms.date: 10/25/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: pahuijbr
 search.appverid: met150
-ms.openlocfilehash: 48642c497be5b379e5d72c4e6538ffd1997b30bf
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: d55378b288159b4dcf79c4297e1aeb04e9e364a2
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68688968"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728169"
 ---
 # <a name="updating-mma-on-windows-devices-for-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender için Windows cihazlarında MMA'nın güncelleştirilmesi
 
@@ -33,14 +33,12 @@ ms.locfileid: "68688968"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Windows cihazlarında Microsoft Monitoring Agent (MMA) kullanıyorsanız, bu aracıyı güncel tutmalısınız. Windows Server 2012 R2 ve Windows Server 2016 için modern, birleşik aracıyla bunun yerine yeni çözüme geçmeniz gerekir. 
+Windows cihazlarda Microsoft Monitoring Agent (MMA) kullanıyorsanız, bu aracıyı güncel tutmak önemlidir. Windows Server 2012 R2 ve Windows Server 2016 için Microsoft, Uç Nokta için Defender için yeni, birleşik aracıya yükseltmenizi önerir. Bu makalede şunların nasıl yapılacağını açıklar: 
 
-- [Cihazlarınızda Microsoft Monitoring Agent'ı (MMA) güncelleştirme](#option-1-update-mma-on-your-devices)
-- [Windows Server 2012 R2 veya Windows Server 2016 üzerinde yeni aracı kullanma](#option-2-use-a-new-agent-on-windows-server-2012-r2-or-windows-server-2016)
+- **[Cihazlarınızda MMA'yı güncelleştirin](#update-mma-on-your-devices)** (Windows 7 SP1 Enterprise, Windows 7 SP1 Pro, Windows 8.1 Pro, Windows 8.1 Enterprise ve Windows Server 2008 R2 SP1 çalıştıran cihazlar için).
+- **[Uç Nokta için Defender için yeni, birleşik aracıya yükseltin](#upgrade-to-the-new-unified-agent-for-defender-for-endpoint)** (Windows Server 2012 R2 ve Windows Server 2016 çalıştıran cihazlar için).
 
-Bu makalede hem seçenekler açıklanır hem de ek bilgilerin bağlantıları yer alır.
-
-## <a name="option-1-update-mma-on-your-devices"></a>1. Seçenek: Cihazlarınızda MMA'ya güncelleştirme
+## <a name="update-mma-on-your-devices"></a>Cihazlarınızda MMA'ya güncelleştirme
 
 *Bu seçenek Windows 7 SP1 Enterprise, Windows 7 SP1 Pro, Windows 8.1 Pro, Windows 8.1 Enterprise ve Windows Server 2008 R2 SP1 çalıştıran cihazlar için geçerlidir.* 
 
@@ -53,7 +51,7 @@ Bu makalede hem seçenekler açıklanır hem de ek bilgilerin bağlantıları ye
    - **Windows 64 bit aracısı**: [https://go.microsoft.com/fwlink/?LinkId=828603](https://go.microsoft.com/fwlink/?LinkId=828603)
    - **Windows 32 bit aracısı**: [https://go.microsoft.com/fwlink/?LinkId=828604](https://go.microsoft.com/fwlink/?LinkId=828604)
 
-## <a name="option-2-use-a-new-agent-on-windows-server-2012-r2-or-windows-server-2016"></a>2. Seçenek: Windows Server 2012 R2 veya Windows Server 2016 üzerinde yeni aracı kullanma
+## <a name="upgrade-to-the-new-unified-agent-for-defender-for-endpoint"></a>Uç Nokta için Defender için yeni, birleşik aracıya yükseltme
 
 *Bu seçenek R2 ve Windows Server 2016 Windows Server 2012 çalıştıran sunucular için geçerlidir.*
 
@@ -77,3 +75,9 @@ Nisan 2022'de Windows Server 2012 R2 ve Windows Server 2016 için yeni bir arac�
 
 > [!IMPORTANT]
 > Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2 veya [yeni, birleşik çözüme](application-deployment-via-mecm.md) yükseltilmemiş Windows Server 2016 çalıştıran cihazlar MMA'ya bağımlı kalır. Bu gibi durumlarda [AMA](/azure/azure-monitor/agents/agents-overview) , Uç Nokta için Defender'ın yerine kullanılamaz. 
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Microsoft dışı uç nokta korumasından Uç Nokta için Microsoft Defender geçiş yapma](switch-to-mde-overview.md)
+- [Uç Nokta için Microsoft Defender dağıtımına genel bakış](deployment-phases.md)
+- [Uç Nokta için Microsoft Defender hizmetine ekleme](onboarding.md)

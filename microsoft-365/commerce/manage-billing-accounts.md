@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Ödeme hesapları ve hesap ayarlarını, faturaları, ödeme yöntemlerini ve satın almaları yönetmek için nasıl kullanıldıkları hakkında bilgi edinin.
 ms.date: 05/24/2022
-ms.openlocfilehash: 081c80f343abfc19f3f25e349f8128e407e86d6e
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 5899ad362013fdab6bc42196bca7e1817778e17c
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68189219"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728037"
 ---
 # <a name="understand-your-microsoft-billing-accounts"></a>Microsoft ödeme hesaplarınızı anlama
 

@@ -8,16 +8,19 @@ metadata:
   ms.date: 07/22/2021
   audience: Admin
   ms.topic: faq
-  ms.service: o365-administration
+  ms.service: microsoft-365-business
   ms.custom: commerce_vl
+  ms.collection:
+  - Tier2
+  - scotvorg
   ms.localizationpriority: medium
   description: Open programı için çevrimiçi hizmet etkinleştirme sık sorulan sorular
-  ms.openlocfilehash: 9bc7be1d04c28ad2f4a67e4bd6eb76461f7eb258
-  ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+  ms.openlocfilehash: c6184228f94b6cfb2d6b8ad9bb7f848261851316
+  ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
   ms.translationtype: MT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 04/08/2022
-  ms.locfileid: "64713789"
+  ms.lasthandoff: 10/27/2022
+  ms.locfileid: "68735319"
 title: Open programı için çevrimiçi hizmet etkinleştirme sık sorulan sorular
 summary: ''
 sections:
@@ -42,15 +45,15 @@ sections:
 
       Başarılı etkinleştirme, Toplu Lisanslama Çevrimiçi Hizmet Etkinleştirme web sitesinde 48 saat içinde tamamlanır.
 
-      Microsoft Azure etkinleştirme hakkında bilgi için bkz. [Açık Lisanslama'da Azure ile Başlarken](https://azure.microsoft.com/offers/ms-azr-0111p/).
+      Microsoft Azure'ı etkinleştirme hakkında bilgi için bkz. [Open Licensing'ta Azure'ı kullanmaya başlama](https://azure.microsoft.com/offers/ms-azr-0111p/).
   - question: >
       Azure siparişimi görmüyorum. Ne yapmalıyım?
     answer: >
-      Azure siparişleri anahtarlar aracılığıyla etkinleştirilir. Anahtarlarınızı VLSC'deki İndirmeler ve Anahtarlar sekmesinden alın ve [Açık Lisanslama'da Azure](https://azure.microsoft.com/offers/azure-open/) ile Başlarken sayfasına anahtarı girin.
+      Azure siparişleri anahtarlar aracılığıyla etkinleştirilir. Anahtarlarınızı VLSC'deki İndirmeler ve Anahtarlar sekmesinden alın ve [Açık Lisanslama'da Azure'ı](https://azure.microsoft.com/offers/azure-open/) Kullanmaya Başlayın sayfasında anahtarı girin.
   - question: >
       İş veya okul hesabı nedir ve çevrimiçi hizmetler etkinleştirmek için neden bir hesap gerekiyor?
     answer: >
-      İş veya okul hesabı, kullanıcıların kuruluş Microsoft hizmetleri oturum açmasına yöneliktir. Oturum açma işlemi genellikle username@orgname.com veya username@orgname.onmicrosoft.com biçimini kullanır; burada *kuruluş adı* , kuruluş e-posta etki alanı adıdır.
+      İş veya okul hesabı, kullanıcıların kuruluş Microsoft hizmetlerinde oturum açmasına yöneliktir. Oturum açma işlemi genellikle username@orgname.com veya username@orgname.onmicrosoft.com biçimini kullanır; burada *kuruluş adı* , kuruluş e-posta etki alanı adıdır.
   - question: >
       Kuruluşumun zaten bir hesabı olup olmadığını Nasıl yaparım? biliyor musunuz?
     answer: "İş veya okul hesabınızla ilişkilendirilmiş kuruluş adı, etkinleştirmekte olduğunuz hizmetin Lisans Kimliğinden alınır. Bir hesap varsa, kuruluş adı Kuruluş Hesabı kurulumunda önceden doldurulur ve özgün çevrimiçi hizmet siparişinden kuruluşunuza zaten bağlanır. Kayıt işlemi, kuruluşunuzun bir hesabı olup olmadığını doğrular. \n\n**Şirket** alanı kullanılabilir durumdaysa, oturum açmak ve hizmeti etkinleştirmek için kayıt işlemini tamamlayın. Bu alan kullanılamıyorsa, kuruluşu kaydetmeniz gerekir. Bir hesaba kuruluş kaydetmek için bir Genel yönetici olmanız gerekir.\n\nbir iş veya okul hesabı istediğinizde, isteğiniz kuruluşunuza kayıt isteğinizi veren veya reddeden Kiracı yöneticinize gönderilir. Microsoft VLSC Çevrimiçi Hizmet Etkinleştirmesi'nde oturum açarken bu iş veya okul hesabını kullanın.\n"

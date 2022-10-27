@@ -7,19 +7,22 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: Adm_TOC
+ms.collection:
+- Tier2
+- scotvorg
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 yönetim merkezi tümleşik uygulamalar portalından kuruluşunuzdaki kullanıcılar ve gruplar için Microsoft ve Microsoft iş ortağı uygulamalarını bulun, test edin ve dağıtın.
-ms.openlocfilehash: 3592cea8c7da906376bfd0cd8e08a71d1d298278
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: b5d3d0a0843bbfa5a8fad403499c03e99c87c867
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037602"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727971"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Tümleşik uygulamalar portalında iş ortakları tarafından Microsoft 365 Uygulamaları test edin ve dağıtın
 
@@ -55,6 +58,10 @@ Tümleşik uygulamalar portalı, kuruluşunuzda dağıtılan iş ortaklarının 
 7. Dağıtım tamamlandı sayfasında **Bitti'yi** seçin ve **Genel Bakış** sekmesinde testin veya tam dağıtımın ayrıntılarını gözden geçirin.
 
 8. Uygulamanın durumu **Güncelleştirme bekliyor** ise, yönet bölmesini açmak ve uygulamayı güncelleştirmek için uygulamaya tıklayabilirsiniz.
+
+
+> [!NOTE]
+> _Bu bir test dağıtımı_ , uygulamanın hala test aşamasında olup olmadığını belirleyen bir yönetim etiketi mi? Teknik bir etkisi yoktur.
 
 ## <a name="find-published-apps-for-testing-and-full-deployment"></a>Test ve tam dağıtım için yayımlanmış uygulamaları bulma
 
@@ -155,7 +162,7 @@ Outlook için, kullanıcılarınızın aşağıdakilerden birini kullanıyor olm
 ### <a name="exchange-online-requirements"></a>Exchange Online gereksinimleri 
 Microsoft Exchange, eklenti bildirimlerini kuruluşunuzun kiracısında depolar. Eklentileri dağıtan yönetici ve bu eklentileri alan kullanıcılar OAuth kimlik doğrulamasını destekleyen bir Exchange Online sürümünde olmalıdır. 
 
-Kullanılan mevcut yapılandırmanın hangisi olduğunu öğrenmek için kuruluşunuzun Exchange yöneticisiyle görüşün. Kullanıcı başına OAuth bağlantısı, [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) PowerShell cmdlet komutu kullanılarak doğrulanabilir. 
+Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) PowerShell cmdlet. 
 
 ### <a name="user-and-group-assignments"></a>Kullanıcı ve grup atamaları
 Eklentinin dağıtımı şu anda Microsoft 365 grupları, dağıtım listeleri ve güvenlik grupları dahil olmak üzere Azure Active Directory tarafından desteklenen grupların çoğunda desteklenmektedir. Dağıtım, üst grup içermeyen üst düzey gruplardaki veya gruplardaki kullanıcıları destekler, ancak iç içe gruplardaki veya üst grupları olan gruplardaki kullanıcıları desteklemez. 
@@ -173,7 +180,7 @@ Bir grubun iç içe gruplar içerip içermediğini saptamanın en kolay yolu, Ou
 
 ![Outlook kişi kartının Üyeler sekmesi.](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
-Grubun, herhangi bir grubun üyesi olup olmadığını öğrenmek için grubu çözerek ters sorgu da yapabilirsiniz. Aşağıdaki örnekte, Alt Grup 1'in Outlook kişi kartının <b>Üyelik</b> sekmesinde, Test Grubunun bir üyesi olduğunu görebilirsiniz. 
+You can do the opposite query by resolving the group to see if it's a member of any group. In the example below, you can see under the <b>Membership</b> tab of the Outlook contact card that Sub Group 1 is a member of the Test Group. 
 
 ![Outlook kişi kartının Üyelik sekmesi.](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
@@ -232,9 +239,9 @@ Office Eklentileri, eklentiyle ilgili bazı meta verileri içeren bir XML bildir
 
 Office Eklentilerinin türleri ve özellikleri hakkında daha fazla bilgi için, özellikle de "Office Eklentisinin Anatomisi" bölümü olmak üzere [Office Eklentileri platformuna genel bakış](/office/dev/add-ins/overview/office-add-ins) bölümüne bakın. 
 
-Eklentilerin kullanıcının belgeleriyle etkileşim kurabilmesi için, ihtiyaç duyduğu izinleri bildirim kısmında belirtmesi gerekir. Beş düzeyli JavaScript API erişim-izinler modeli, görev bölmesi eklentilerini kullananların gizliliğini ve güvenliğini sağlar. Office Mağazası eklentilerinin çoğu, ReadWriteDocument seviyesindedir ve neredeyse tüm eklentiler en az ReadDocument düzeyini destekler. İzin düzeyleri hakkında daha fazla bilgi için bkz. [İçerikte API kullanımı ve görev bölmesi eklentileri için izin isteme](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins). 
+To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. The majority of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins). 
 
-Bildirim güncelleştirmeleri sırasında genellikle eklentinin simgesinde ve metninde değişiklik yapılır. Bazen eklenti komutları da değişebilir. Ancak eklenti izinleri değiştirilmez. Eklentiye dair tüm kod ve mantığın bulunduğu web uygulaması, tüm web uygulamalarında olduğu gibi, her an değişebilir. 
+When updating a manifest, the typical changes are to an add-in's icon and text. Occasionally, add-in commands change. However, the permissions of the add-in do not change. The web application where all the code and logic for the add-in runs can change at any time, which is the nature of web applications. 
 
 Eklentilerin güncelleştirmeleri aşağıdaki gibi olur: 
 - İş kolu eklentisi: Bir **yöneticinin** açıkça bir bildirimi karşıya yüklediği bu durumda, eklenti, meta veri değişikliklerini desteklemek için yöneticinin yeni bir bildirim dosyası yüklemesini gerektirir. İlgili Office uygulamalarını tekrar başlattığınızda eklenti güncelleştirilir. Web uygulaması her an değişebilir. 

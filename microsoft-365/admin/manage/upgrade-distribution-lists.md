@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Exchange Online'da bir veya birden çok dağıtım listesini Microsoft 365 Grupları yükseltmeyi ve aynı anda çeşitli dağıtım listelerini yükseltmek için PowerShell'i kullanmayı öğrenin.
-ms.openlocfilehash: ba0555011cba2dcc3bd8285d577c61ef3c7ddded
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 981d0bbb76db5e0f1c656e3beadc3e0a0192f7fc
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68203233"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68736199"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-exchange-online"></a>Dağıtım listelerini Exchange Online'de Microsoft 365 Grupları yükseltme
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Kullanıcılarınızın Microsoft ürünleri hakkında Microsoft'a gönderebileceği geri bildirimleri yönetin.
-ms.openlocfilehash: 1b062f445558d94a5abca4fa6184ffb49009c79b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: a10c16bea183520594d47d7f3010bfcc71883325
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68192717"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729159"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Kuruluşunuz için Microsoft geri bildirimlerini yönetme
 
@@ -59,7 +60,7 @@ Aşağıdaki tablo, aşağıdaki geri bildirim ilkeleri tablosunda gösterilen g
 |**Word**|Evet|Evet|Evet|Evet|
 |**Visio**|Evet|Evet|Evet|Evet|
 |**Viva Hedefleri**|Evet|Evet|Evet|Evet|
-|**Viva Analizler**|Evet|Evet|Evet|Evet|
+|**Viva Insights**|Evet|Evet|Evet|Evet|
 |**Tahta**|Evet|Evet|Evet|Evet|
 |**Yammer**|Evet|Evet|Evet|Evet|
 

@@ -8,9 +8,11 @@ manager: scotv
 ms.reviewer: sgautam, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -22,12 +24,12 @@ ms.custom:
 search.appverid: MET150
 description: Yöneticiler süresi dolduğunda, devre dışı bırakıldığında veya iptal edildiğinde ya da abonelik döneminin ortasında iptal ettiyseniz aboneliği yeniden etkinleştirebilir.
 ms.date: 04/07/2021
-ms.openlocfilehash: 1f0d38a3b0b09a581d4ed31a6d9abb9d8f8ea467
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: a731e1563ad86e83fc33e3b6f8466702c945863d
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489458"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68735275"
 ---
 # <a name="reactivate-your-microsoft-subscription"></a>Microsoft aboneliğinizi yeniden etkinleştirme
 

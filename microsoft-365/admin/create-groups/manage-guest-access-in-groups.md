@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Bir Microsoft 365 grubuna konuk eklemeyi, konukları görüntülemeyi ve konuk erişimini denetlemek için PowerShell'i kullanmayı öğrenin.
-ms.openlocfilehash: 9d95b9fb4306942354e62cb7162830d154a02fee
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: ce3155371ecead5c6773bd30862a75ae4d5aba17
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68187371"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720426"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Microsoft 365 gruplarında konuk erişimini yönetme
 

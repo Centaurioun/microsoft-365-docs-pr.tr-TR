@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Office Eklentilerini dağıtmak için Merkezi Dağıtım'ı kullanabilmeniz için kiracınızın ve kullanıcılarınızın gereksinimleri karşılayıp karşılamadığını belirleyin.
-ms.openlocfilehash: c818a8824bb2c0ee49d6cc9cd27aba0b1f235475
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: aac5d5d617818528e454facad56ede72fc1bb083
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68187261"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727465"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Eklentilerin Merkezi Dağıtımının kuruluşunuz için çalışıp çalışmadığını belirleme
 
@@ -93,7 +94,7 @@ Bir eklentiyi Merkezi Dağıtım aracılığıyla dağıtmak için, kuruluşta G
 
 ### <a name="centralized-deployment-compatibility-checker"></a>Merkezi Dağıtım Uyumluluk Denetleyicisi
 
-Merkezi Dağıtım Uyumluluk Denetleyicisi'ni kullanarak, kiracınızdaki kullanıcıların Word, Excel ve PowerPoint için Merkezi Dağıtım kullanacak şekilde ayarlanıp ayarlanmadığını doğrulayabilirsiniz. Outlook desteği için Uyumluluk Denetleyicisi gerekmez. [Uyumluluk denetleyicisini](https://aka.ms/officeaddindeploymentorgcompatibilitychecker) indirin.
+Merkezi Dağıtım Uyumluluk Denetleyicisi'ni kullanarak, kiracınızdaki kullanıcıların Word, Excel ve PowerPoint için Merkezi Dağıtım kullanacak şekilde ayarlanıp ayarlanmadığını doğrulayabilirsiniz. Outlook desteği için Uyumluluk Denetleyicisi gerekmez. [Uyumluluk denetleyicisini](https://aka.ms/officeaddindeploymentorgcompatibilitychecker) indirip yükleyin.
 
 #### <a name="run-the-compatibility-checker"></a>Uyumluluk denetleyicisini çalıştırma
 

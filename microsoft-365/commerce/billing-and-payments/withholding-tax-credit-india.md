@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: ''
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: 5cfdced996567eabf4194fa55d5d2edb25bf072d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 8346d20376774742013162dac1c20c6d11b3085f
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68179669"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728785"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>Hesabınızdaki Stopaj Vergisi için kredi isteme (Hindistan müşterileri)
 

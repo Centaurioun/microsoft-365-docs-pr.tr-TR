@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -32,12 +33,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Office 365 kaydolma işlemine geçmeden önce Office programlarının en son sürümleri hakkında bilmeniz gerekenleri anlayın.
 ms.date: 03/17/2021
-ms.openlocfilehash: 455cb56535b3375547a0e408f6d338f4b0b49767
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: e9a469769286d0cb21a432c6d3c7f39603e0b9e8
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68191573"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68721328"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Kaydolma - Yönetici Yardımı
 

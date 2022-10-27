@@ -8,15 +8,16 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Randevu oluşturmak ve çalışan atamak için bu yönergeleri izleyin.
-ms.openlocfilehash: 6c63b1cbd2841bb23328803866cb5b092cace18d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 56984b0f1fb12f27790f786e8d2abb7d51d1c4dd
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68197381"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729137"
 ---
 # <a name="create-a-manual-booking"></a>El ile rezervasyon oluşturma
 

@@ -10,6 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_TOC
@@ -26,12 +27,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Etki alanı denetimli kullanıcıları İş için Microsoft 365 ile eşitleyin.
-ms.openlocfilehash: 30bb3d5196ec5aec0d9ddb178e961781f51a7ef9
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: d3a797f1de079108e58194f731d51b089f3d6c23
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68166295"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727663"
 ---
 # <a name="synchronize-domain-users-to-microsoft-365"></a>Etki alanı kullanıcılarını Microsoft 365 ile eşitleme
 

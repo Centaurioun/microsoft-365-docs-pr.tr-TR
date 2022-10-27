@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Cihazınızla Microsoft 365 hizmetlerini kullanabilmeniz için önce microsoft 365 için Temel Mobilite ve Güvenlik'e kaydetmeniz gerekebilir.
-ms.openlocfilehash: f7e028b44041232ea7c5ef3a9343b6b0204d37a0
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 7650cb33c88cfe4b1089f8f45da0f098d3bdaa9f
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68198041"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727993"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>Basic Mobility ve Security kullanarak mobil cihazınızı kaydetme
 

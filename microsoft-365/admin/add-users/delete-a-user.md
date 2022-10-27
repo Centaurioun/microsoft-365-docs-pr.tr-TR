@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Microsoft 365 kullanıcı hesabını silmeyi, kullanıcının e-postası ve OneDrive içeriğiyle ne yapacağınızı ve ürün lisansını koruyup korumayacağınızı öğrenin.
-ms.openlocfilehash: 1eb9354352f81ff3934b2bb5a0b7d2af4c69a581
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: a0be975af6d0bd08a8b2f69acf65ba9e736cab90
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68192761"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722120"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Kuruluşunuzdan kullanıcı silme
   

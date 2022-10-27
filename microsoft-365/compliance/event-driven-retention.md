@@ -11,7 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 search.appverid:
 - MOE150
 - MET150
@@ -20,12 +21,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Genellikle kayıt yönetimi çözümünün bir parçası olarak, tanımladığınız bir olaya göre bekletme süresini başlatmak için bir bekletme etiketi yapılandırabilirsiniz.
-ms.openlocfilehash: ac4e80872cbe377025e213a387c7be7f89a208b7
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: c4354e7e1d2e9f8367b01e57fa6d84dc32b5f978
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685953"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68735935"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Bir olay meydana geldiğinde saklamayı başlatma
 
@@ -50,6 +51,8 @@ Bazen "olay temelli saklama" olarak da adlandırılan olay tabanlı saklama, gen
 - Olaylara dayalı bekletme etiketleri genellikle saklama süresinin sonunda bir değerlendirme gözden geçirmesi tetikler, böylece kayıt yöneticisi içeriği el ile gözden geçirebilir ve atabilir. Daha fazla bilgi için bkz. [İçeriğin konumu](disposition.md).
 
 Bir olayı temel alan bekletme etiketi, Microsoft Purview'daki tüm bekletme etiketleriyle aynı özelliklere sahiptir. Daha fazla bilgi için bkz. [Bekletme ilkeleri ve bekletme etiketleri hakkında bilgi edinin](retention.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>Olay türleri, etiketler, olaylar ve varlık kimlikleri arasındaki ilişkiyi anlama
 
@@ -156,11 +159,11 @@ Olayı oluşturduğunuzda, 2. adımdaki bekletme etiketi ayarlarında belirtilen
 
 Alternatif olarak, farklı olay türlerine sahip birden çok bekletme etiketi için bir olay oluşturmanız gerekiyorsa **Mevcut Etiketleri Seç** seçeneğini belirleyin. Ardından, bu olayla ilişkilendirmek istediğiniz olay türleri için yapılandırılan etiketleri seçin.
 
-### <a name="step-7-enter-keywords-or-query-for-exchange-asset-id-for-sharepoint-and-onedrive"></a>7. Adım: Exchange için anahtar sözcükleri veya sorguyu, SharePoint ve OneDrive için varlık kimliğini girin
+### <a name="step-7-enter-keywords-or-a-query-or-asset-id-for-sharepoint-and-onedrive"></a>7. Adım: SharePoint ve OneDrive için anahtar sözcükleri veya sorguyu ya da varlık kimliğini girin
 
-Şimdi içeriğin kapsamını daraltacaksınız. Exchange içeriği için bunu anahtar sözcükler veya sorgu belirterek yaparsınız. SharePoint ve OneDrive içeriği için varlık kimliklerini belirterek bunu yaparsınız.
+Şimdi içeriğin kapsamını daraltacaksınız. Bunu anahtar sözcükler veya sorgu belirterek yaparsınız. SharePoint ve OneDrive içeriği için varlık kimliklerini belirterek de bunu yapabilirsiniz.
 
-Exchange öğeleri için anahtar sözcükler veya Anahtar Sözcük Sorgu Dili (KQL) kullanan bir sorgu kullanın. Sorgu söz dizimi hakkında daha fazla bilgi için bkz [. Anahtar Sözcük Sorgu Dili (KQL) söz dizimi başvurusu](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). Exchange için kullanabileceğiniz aranabilir özellikler hakkında daha fazla bilgi için bkz [. İçerik Arama için anahtar sözcük sorguları ve arama koşulları](keyword-queries-and-search-conditions.md).
+Sorgular Anahtar Sözcük Sorgu Dili (KQL) kullanır. Sorgu söz dizimi hakkında daha fazla bilgi için bkz [. Anahtar Sözcük Sorgu Dili (KQL) söz dizimi başvurusu](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). Kullanabileceğiniz aranabilir özellikler hakkında daha fazla bilgi için bkz [. İçerik Arama için anahtar sözcük sorguları ve arama koşulları](keyword-queries-and-search-conditions.md).
 
 Varlık kimlikleri için bekletme yalnızca belirtilen *özellik:değer* çifti olan içerikte zorlanır. Örneğin, Varlık Kimliği özelliğini kullanıyorsanız, aşağıdaki resimde gösterilen varlık kimlikleri kutusuna girin `ComplianceAssetID:<value>` .
 

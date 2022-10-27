@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -26,12 +27,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Bir kullanıcının kuruluşunuzda oturum açabilmesini engelledikten sonra, eski çalışanın posta kutusunun içeriğini kaydetmenin iki yolunu öğrenin.
-ms.openlocfilehash: f77a68cf310f292ffc776269146d363d7cc3ba0d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 6ee2a6bd84a092cda28efe54a621000d680bc166
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68195137"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68721768"
 ---
 # <a name="step-2---save-the-contents-of-a-former-employees-mailbox"></a>2. Adım - Eski çalışanın posta kutusunun içeriğini kaydetme
 

@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: Microsoft ürünlerini veya hizmetlerini satın alırken kayıt numaraları ve gözden geçirme bildirimleri hakkında bilgi edinin.
 ms.date: 02/02/2022
-ms.openlocfilehash: 70177ab7b8129e9623912b9d24360d7e28cd98f5
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 5e21d42fa1a58c28155e0c74063b0556edaabab8
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68167725"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729687"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>Kayıt numaraları ve inceleme bildirimleri hakkında
 

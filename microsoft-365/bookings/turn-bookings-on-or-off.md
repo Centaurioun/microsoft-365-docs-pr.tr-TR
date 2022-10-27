@@ -9,15 +9,16 @@ ms.service: bookings
 ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Microsoft 365'te Microsoft Bookings erişmeyi öğrenin.
-ms.openlocfilehash: 2e417afd9312a86d612a2abac1c8d2d0990f7a4c
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 52fe958d37dde7bd07602a03846566aa24c10488
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68177562"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728983"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Microsoft Bookings’i açma veya kapatma
 

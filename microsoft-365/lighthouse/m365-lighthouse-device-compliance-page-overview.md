@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Cihaz uyumluluğu sayfası hakkında bilgi edinin.
-ms.openlocfilehash: 459fee79a2b3f241c52ab7dba918e9b0d1890612
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: e4870db72860a732f08dec998f9e6bb728c30205
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68661819"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727685"
 ---
 # <a name="overview-of-the-device-compliance-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'da Cihaz uyumluluğu sayfasına genel bakış
 
@@ -45,7 +46,7 @@ Cihazlar sekmesinde, renkli count-annotation çubuğu tüm müşteri kiracılar�
 
 Hangi kiracıların belirli bir uyumluluk durumuna sahip cihazları olduğunu görmek için, listeyi filtrelemek için count-annotation çubuğundan bu durumu seçin. Belirli bir veya daha fazla müşteri kiracısının cihaz uyumluluk durumlarını görmek için **Kiracılar** açılan menüsünü kullanarak listeyi filtreleyin.
 
-Bu cihazın geçerli uyumluluk durumu hakkında daha fazla ayrıntı görüntülemek için listeden herhangi bir cihaz adını seçin. Sorunu gidermeniz veya daha fazla işlem yapmanız gerekiyorsa cihazı eşitleyebilir veya yeniden başlatabilir ya **da Cihazı Microsoft Endpoint Manager'de görüntüle'yi** seçebilirsiniz.
+Bu cihazın geçerli uyumluluk durumu hakkında daha fazla ayrıntı görüntülemek için listeden herhangi bir cihaz adını seçin. Sorunu gidermeniz veya daha fazla işlem yapmanız gerekiyorsa cihazı eşitleyebilir veya yeniden başlatabilir ya **da Microsoft Endpoint Manager'da cihazı görüntüle'yi** seçebilirsiniz.
 
 > [!NOTE]
 > Bir cihazı yeniden başlattığınızda, cihaz sahibi otomatik olarak bilgilendirilmez ve kaydedilmemiş çalışmayı kaybedebilir. Bu nedenle, bir cihazı yeniden başlatmadan önce cihaz sahibini bilgilendirmek isteyebilirsiniz.
@@ -66,7 +67,7 @@ Cihazlar sekmesi aşağıdaki seçenekleri de içerir:
 
 Belirli bir platformdaki cihazların ilkelerini görmek için, listeyi filtrelemek için **işletim sistemi** açılan menüsünü kullanın. Belirli bir veya daha fazla müşteri kiracısının ilkelerini görmek için **Kiracılar** açılan menüsünü kullanarak listeyi filtreleyin.
 
-Bu ilke hakkında daha fazla ayrıntı görüntülemek için listeden herhangi bir ilke adını seçin. Eylem gerçekleştirmeniz veya ek bilgiler görmeniz gerekiyorsa **Bu ilkeyi Microsoft Endpoint Manager'de görüntüle'yi** seçin.
+Bu ilke hakkında daha fazla ayrıntı görüntülemek için listeden herhangi bir ilke adını seçin. Eylem gerçekleştirmeniz veya ek bilgiler görmeniz gerekiyorsa **Bu ilkeyi Microsoft Endpoint Manager'da görüntüle'yi** seçin.
 
 İlkeler sekmesi aşağıdaki seçenekleri de içerir:
 
@@ -82,7 +83,7 @@ Ayarlar sekmesi, kiracı cihazlarında uyumlu olmayan ayarların toplu bir rapor
 
 Belirli bir platformdaki cihazların uyumlu olmayan ayarlarını görmek için **Platform** açılan menüsünü kullanarak listeyi filtreleyin. Belirli bir veya daha fazla müşteri kiracısının uyumlu olmayan ayarlarını görmek için **Kiracılar** açılan menüsünü kullanarak listeyi filtreleyin.
 
-Belirli bir uyumlu olmayan ayara sahip cihazları olan kiracıların listesini görüntüleyebileceğiniz bir bölme açmak için listeden uyumlu olmayan herhangi bir ayar adı seçin. Burada, belirli bir uyumlu olmayan ayara sahip olan kiracı içindeki cihazlar hakkındaki bilgileri görüntülemek için listeden herhangi bir kiracıyı seçerek detaya gidebilirsiniz. Ayrıca, sorun gidermeniz veya daha fazla işlem yapmanız gerekiyorsa cihazı eşitleyebilir veya yeniden başlatabilir ya **da Microsoft Endpoint Manager cihazı görüntüle'yi** seçebilirsiniz.
+Belirli bir uyumlu olmayan ayara sahip cihazları olan kiracıların listesini görüntüleyebileceğiniz bir bölme açmak için listeden uyumlu olmayan herhangi bir ayar adı seçin. Burada, belirli bir uyumlu olmayan ayara sahip olan kiracı içindeki cihazlar hakkındaki bilgileri görüntülemek için listeden herhangi bir kiracıyı seçerek detaya gidebilirsiniz. Ayrıca, sorun gidermeniz veya daha fazla işlem yapmanız gerekiyorsa cihazı eşitleyebilir veya yeniden başlatabilir ya **da Microsoft Endpoint Manager'da cihazı görüntüle'yi** seçebilirsiniz.
 
 Ayarlar sekmesi aşağıdaki seçenekleri de içerir:
 

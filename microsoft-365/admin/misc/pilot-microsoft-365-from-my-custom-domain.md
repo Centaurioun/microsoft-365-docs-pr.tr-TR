@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
 - scotvorg
 - Adm_O365
 - Adm_TOC
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Yalnızca iki test hesabı kullanarak özel etki alanımdan Microsoft 365 posta kutusuna e-posta işlevselliğini denemeyi öğrenin.
-ms.openlocfilehash: f48da1748b8ace33e291054cb698e3887fd23684
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 210ff211efc32267180ed95b021ec1d5d4f86c95
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68192673"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728565"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Özel etki alanımdan Microsoft 365'i pilot
 

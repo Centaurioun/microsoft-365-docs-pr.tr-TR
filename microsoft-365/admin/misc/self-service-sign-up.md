@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft Power Apps, Microsoft Power Automate ve Dynamics 365 for Finance gibi Microsoft 365 self servis kaydolma ve kullanılabilir self servis programları hakkında bilgi edinin.
 ms.date: 03/17/2021
-ms.openlocfilehash: e12e3b75be80a78640fb57cceb7aeca1cbd85a45
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 0071067558e8d4689bd4e773aad07e2204cc252c
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68204881"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728543"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Kuruluşunuzda self servis kaydolmayı kullanma
 

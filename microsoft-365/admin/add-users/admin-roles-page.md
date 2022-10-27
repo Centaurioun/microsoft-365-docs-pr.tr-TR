@@ -10,6 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier
 - scotvorg
 - M365-subscription-management
 - Adm_O365W
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Destek biletlerini açan Hizmet yöneticisi gibi, iş işlevleriyle eşlenen ve yönetim merkezinde görevler için izinlere sahip olan yönetici rolleri hakkında bilgi edinin.
-ms.openlocfilehash: d7d2f9521d89c2ae8d0d3a53e2615ff80dc0b713
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: ba9b40b026f6e4543aa12834ca7f9896f6fd7918
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68185127"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722164"
 ---
 # <a name="get-started-with-the-microsoft-365-admin-roles-page"></a>Microsoft 365 yönetici rolleri sayfasını kullanmaya başlama
 

@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -26,12 +27,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 365 aboneliğinize dosya depolama alanı ekleyin. Ek dosya depolama alanıyla SharePoint'te daha fazla içerik depolayabilirsiniz.
 ms.date: 05/24/2022
-ms.openlocfilehash: aacd4506eb08e19bfb259385608ae2a38b7564b6
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 9b169272d703fc779aa20a0c9aa5aed51f3f7068
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68195181"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728917"
 ---
 # <a name="add-more-sharepoint-storage-to-your-subscription"></a>Aboneliğinize daha fazla SharePoint depolama alanı ekleme
 

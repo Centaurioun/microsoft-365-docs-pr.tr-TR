@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Mobilitenin ayrıntıları - kişiler Benimseme Puanı'nı deneyimler.
-ms.openlocfilehash: d327884466ba01669c305e50a2cdc83fa50c75d4
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: e793a5b6ef9cda2551a70473508bd6c43e12552f
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68198987"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68721306"
 ---
 # <a name="mobility-insights-score--people-experiences"></a>Mobility insights puanı – Kişiler deneyimler
 

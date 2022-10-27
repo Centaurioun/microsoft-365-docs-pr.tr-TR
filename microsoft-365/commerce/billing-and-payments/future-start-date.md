@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ ms.custom:
 - commerce_billing
 - empty
 ms.date: 04/08/2022
-ms.openlocfilehash: 8a7054388433f1cf5b93e703969ab05bb249d145
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 78443c0a73cc19b7934bf190cda0c37319473b32
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180989"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728939"
 ---
 # <a name="understand-invoicing-for-future-start-dates"></a>Gelecekteki başlangıç tarihleri için faturalamayı anlama
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 719f4904-cbdd-4889-a0cf-fbd7837dfecd
 description: İleti merkezi, Hedefli Sürüm, Yol Haritası ve Bloglar ile Topluluk'u kullanarak Microsoft 365 güncelleştirmelerini nasıl tamamlayacağınızı öğrenin.
-ms.openlocfilehash: 468cf3be3ca78c2aa7b7beb5a9234dcd3e3d537d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: c293e8d588be7c2e69e867fcaa6bd625f46e824a
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68187151"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68735448"
 ---
 # <a name="stay-on-top-of-microsoft-365-product-and-feature-changes"></a>Microsoft 365 ürün ve özellik değişikliklerinden haberdar olun
 

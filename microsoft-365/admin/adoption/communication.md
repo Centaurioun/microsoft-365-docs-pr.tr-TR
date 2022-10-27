@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: İletişimin ayrıntıları - benimseme puanı Kişiler.
-ms.openlocfilehash: c22a7876fe460a840c22ce94986932787b0f8258
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 334abdd065ae4825af07de67d3cd089465d11816
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68178481"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68721297"
 ---
 # <a name="communication-insights-score--people-experiences"></a>İletişim içgörüleri puanı – Kişiler deneyimler
 

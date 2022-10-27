@@ -8,15 +8,16 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Microsoft Bookings'de çalışanların çalışma saatlerini ve uygunluk durumunu ayarlayın.
-ms.openlocfilehash: 84627c77ab1f4f6e73a8efccce8141759695ab9b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 4fc72e614227164f9bea776066cb7c87197aaedd
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68169749"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68728411"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Microsoft Bookings’de çalışanların çalışma saatleri
 

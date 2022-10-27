@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: cbca941070c9ae377b99f145324231fc82c3cdd3
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: b4b9ca9903918a1e84361471ce5041aaf0dbf100
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68642227"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729071"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Tehdit Gezgini ve Gerçek zamanlı algılamalar
 
@@ -41,11 +41,7 @@ Kuruluşunuzun [Office 365 için Microsoft Defender](defender-for-office-365.md)
 |---|---|
 |![Tehdit gezgini.](../../media/threatmgmt-explorer.png)|![Gerçek zamanlı algılamalar](../../media/threatmgmt-realtimedetections.png)|
 
-Explorer veya Gerçek zamanlı algılamalar, güvenlik operasyonları ekibinizin tehditleri verimli bir şekilde araştırmasına ve yanıtlamasına yardımcı olur. Rapor aşağıdaki görüntüye benzer:
-
-:::image type="content" source="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png" alt-text="Gezgin menü öğesini gösteren ekran görüntüsü." lightbox="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png":::
-
-Bu raporla şunları yapabilirsiniz:
+Explorer veya Gerçek zamanlı algılamalar, güvenlik operasyonları ekibinizin tehditleri verimli bir şekilde araştırmasına ve yanıtlamasına yardımcı olur. Bu raporla şunları yapabilirsiniz:
 
 - [Bkz. Microsoft 365 güvenlik özellikleri tarafından algılanan kötü amaçlı yazılım](#see-malware-detected-in-email-by-technology)
 - [Kimlik avı URL'sini görüntüleyin ve karar verilerine tıklayın](#view-phishing-url-and-click-verdict-data)
@@ -61,9 +57,6 @@ Tehdit Gezgini'nde uyarı kimliğini (aşağıdaki uyarı kimliği örneğine ba
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/AlertID-Filter.png" alt-text="Uyarı Kimliği için Filtreleme" lightbox="../../media/AlertID-Filter.png":::
-
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/AlertID-DetailsFlyout.png" alt-text="Ayrıntılı açılır öğede Uyarı Kimliği" lightbox="../../media/AlertID-DetailsFlyout.png":::
 
 ### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days"></a>Gezgin (ve Gerçek zamanlı algılamalar) veri saklama ve deneme kiracıları için arama sınırını 7 günden 30 güne genişletme
 
