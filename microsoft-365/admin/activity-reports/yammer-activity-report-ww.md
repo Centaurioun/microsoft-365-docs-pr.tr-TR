@@ -2,14 +2,16 @@
 title: Yammer etkinlik raporlarını Microsoft 365 yönetim merkezi
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -20,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Yammer Etkinlik raporunu alın ve yammer'ı kullanarak ileti göndermek, beğenmek veya okumak için kullanıcı sayısı hakkında daha fazla bilgi edinin.
-ms.openlocfilehash: 46d846ec4f7c23cd03035899f9ab7f0d6b28af1e
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 12381f8236bd3aa6e3c693cbec426e8b17f33417
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662602"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722516"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Yönetim merkezinde Microsoft 365 Raporları - Yammer etkinlik raporu
 

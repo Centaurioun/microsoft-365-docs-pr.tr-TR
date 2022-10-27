@@ -20,33 +20,33 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5b5af7d7dc9373f0fdd13e38f5e6934327bc1f57
-ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
+ms.openlocfilehash: 3f726431e7dea7cceeab67cc977b208690f7f9ea
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68684951"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734907"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>İletişim uyumluluğu uyarılarını araştırma ve çözümleme
 
 >[!IMPORTANT]
->Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamak için kullanılır.
+>Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamaya yardımcı olur.
 
-[İletişim uyumluluk ilkelerinizi](/microsoft-365/compliance/communication-compliance-policies) yapılandırdıktan sonra, [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) ilke koşullarınızla eşleşen ileti sorunları için uyarılar almaya başlarsınız. Uyarıları görüntülemek ve üzerinde işlem yapmak için kullanıcıların aşağıdaki izinlere sahip olması gerekir:
+[İletişim uyumluluk ilkelerinizi](/microsoft-365/compliance/communication-compliance-policies) yapılandırdıktan sonra, [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) ilke koşullarınızla eşleşen ileti sorunları için uyarılar almaya başlarsınız. Uyarıları görüntülemek ve üzerinde işlem yapmak için kullanıcıların aşağıdaki izinlere atanması gerekir:
 
-- *İletişim Uyumluluk Analistlerine* veya *İletişim Uyumluluğu Araştırmacıları* rol grubuna atanmalıdır
-- Uyarıyla ilişkili ilkede gözden geçiren olarak atanmalıdır
+- *İletişim Uyumluluğu Analistleri* veya *İletişim Uyumluluk Araştırmacıları* rol grubu
+- Uyarıyla ilişkili ilkede gözden geçiren
 
-Gerekli izinlere sahip olduktan sonra, uyarı sorunlarını araştırmak ve düzeltmek için buradaki iş akışı yönergelerini izleyin.
+Gerekli izinleri oluşturduktan sonra uyarı sorunlarını araştırmak ve düzeltmek için aşağıdaki iş akışı yönergelerini izleyin.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="investigate-alerts"></a>Uyarıları araştırın
 
-İlkeleriniz tarafından algılanan sorunları araştırmanın ilk adımı, Microsoft Purview uyumluluk portalı iletişim uyumluluk uyarılarını gözden geçirmektir. Uyarı gruplandırma şeklini görüntülemeyi tercih ettiğinize bağlı olarak, uyarıları hızlı bir şekilde araştırmanıza yardımcı olmak için iletişim uyumluluk çözümü alanında birkaç alan vardır:
+İlkeleriniz tarafından algılanan sorunları araştırmanın ilk adımı, Microsoft Purview uyumluluk portalı uyarıları gözden geçirmektir. İletişim uyumluluk alanında, uyarı gruplandırma işlemini nasıl görüntülemeyi tercih ettiğinize bağlı olarak uyarıları hızla araştırmanıza yardımcı olacak birkaç alan vardır:
 
-- **İletişim uyumluluk ilkesi sayfası**: Microsoft 365 kuruluşunuzdaki bir yönetici hesabının kimlik bilgilerini kullanarak [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) oturum açtığınızda, iletişim uyumluluğu İlkesi sayfasını görüntülemek için **İletişim uyumluluğu'na** tıklayın. Bu sayfada, Microsoft 365 kuruluşunuz için yapılandırılmış iletişim uyumluluk ilkeleri ve önerilen ilke şablonlarının bağlantıları görüntülenir. Listelenen her ilke gözden geçirilmesi gereken uyarıların sayısını, yükseltilen ve çözümlenen öğelerin sayısını, ilkenin durumunu ve son ilke taramasının tarih ve saatini içerir. İlke seçildiğinde, ilkeyle eşleşmeler için tüm bekleyen uyarılar görüntülenir, ilke ayrıntıları sayfasını başlatmak ve düzeltme eylemlerini başlatmak için belirli bir uyarı seçin.
-- **Uyarılar**: İlke **eşleşmelerine** göre gruplandırılmış son 30 günlük uyarıları görüntülemek için **İletişim uyumluluğu** >  Uyarıları'na gidin. Bu görünüm, önem derecesine göre en çok uyarı oluşturan iletişim uyumluluk ilkelerini hızla görmenizi sağlar. Düzeltme eylemlerini başlatmak için uyarıyla ilişkili ilkeyi seçerek **İlke ayrıntıları** sayfasını başlatın. **İlke ayrıntıları** sayfasından **Genel Bakış** sayfasındaki etkinliklerin özetini gözden geçirebilir, **Bekleyen** sayfasındaki uyarı iletilerini gözden geçirebilir ve üzerinde işlem yapabilir veya **Çözümlenenler** sayfasındaki kapalı uyarıların geçmişini gözden geçirebilirsiniz.
+- **İletişim uyumluluk ilkesi sayfası**: Microsoft 365 kuruluşunuzdaki bir yönetici hesabının kimlik bilgilerini kullanarak [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) oturum açtığınızda, iletişim uyumluluğu İlkesi sayfasını görüntülemek için **İletişim uyumluluğu'na** tıklayın. Bu sayfada, Microsoft 365 kuruluşunuz için yapılandırılmış iletişim uyumluluk ilkeleri ve önerilen ilke şablonlarının bağlantıları görüntülenir. Listelenen her ilke gözden geçirilmesi gereken uyarıların sayısını, yükseltilen ve çözümlenen öğelerin sayısını, ilkenin durumunu ve son ilke denetiminin tarih ve saatini içerir. İlkeyle eşleşmeler için tüm bekleyen uyarıları görüntülemek üzere bir ilke seçin, ardından ilke ayrıntıları sayfasını başlatmak ve düzeltme eylemlerini başlatmak için belirli bir uyarı seçin.
+- **Uyarılar**: İlke **eşleşmelerine** göre gruplandırılmış son 30 günlük uyarıları görüntülemek için **İletişim uyumluluğu** >  Uyarıları'na gidin. Bu görünüm, önem derecesine göre en çok uyarı oluşturan iletişim uyumluluk ilkelerini hızla görmenizi sağlar. Düzeltme eylemlerini başlatmak için uyarıyla ilişkili ilkeyi seçerek **İlke ayrıntıları** sayfasını başlatın. **İlke ayrıntıları** sayfasından **Genel Bakış** sayfasındaki etkinliklerin özetini gözden geçirebilir, **Bekleyen** sekmesindeki uyarı iletilerini gözden geçirebilir ve üzerinde işlem yapabilir veya **Çözümlenenler** sekmesinde kapatılan uyarıların geçmişini gözden geçirebilirsiniz.
 - **Raporlar**: **İletişim uyumluluk** >  raporu pencere öğelerini görüntülemek için İletişim uyumluluğu **Raporları'na** gidin. Her pencere öğesi, ilke eşleşmeleri ve düzeltme eylemleri hakkında daha ayrıntılı içgörülere erişim de dahil olmak üzere iletişim uyumluluk etkinliklerine ve durumlarına genel bir bakış sağlar.
 
 ### <a name="using-filters"></a>Filtreleri kullanma
@@ -66,8 +66,8 @@ Aşağıdaki tabloda filtre ayrıntıları özetlenmiştir:
 | **Tarih** | İletinin kuruluşunuzdaki bir kullanıcı tarafından gönderildiği veya alındığı tarih. Tek bir güne filtre uygulamak için, sonuçları istediğiniz günle başlayan ve sonraki günle biten bir tarih aralığı seçin. Örneğin, 20/9/2020 için sonuçları filtrelemek istiyorsanız, 20/9/2020-9/21/2020 filtre tarih aralığını seçersiniz.|
 | **Dosya sınıfı** | İleti türüne göre iletinin sınıfı( *ileti* veya *ek*). |
 | **Eki var** | İletideki ek iletişim durumu. |
-| **Item sınıfı** | İleti türü, e-posta, Microsoft Team sohbeti, Bloomberg vb. temelinde iletinin kaynağı. Yaygın Öğe Türleri ve İleti Sınıfları hakkında daha fazla bilgi için bkz. [Öğe Türleri ve İleti Sınıfları](/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
-| **Alıcı etki alanları** | İletinin gönderildiği etki alanı. Bu etki alanı normalde varsayılan olarak Microsoft 365 abonelik etki alanınızdır. |
+| **Item sınıfı** | İleti türü, e-posta, Microsoft Teams sohbeti, Bloomberg vb. temelinde iletinin kaynağı. Daha fazla bilgi için bkz [. Öğe Türleri ve İleti Sınıfları](/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
+| **Alıcı etki alanları** | İletinin gönderildiği etki alanı; genellikle varsayılan olarak Microsoft 365 abonelik etki alanınızdır. |
 | **Alıcı** | İletinin gönderildiği kullanıcı. |
 | **Gönderen** | İletiyi gönderen kişi. |
 | **Gönderen etki alanı** | İletiyi gönderen etki alanı. |
@@ -96,7 +96,7 @@ Aşağıdaki tabloda filtre ayrıntıları özetlenmiştir:
 
 8. Seçili filtreleri filtre sorgusu olarak kaydetmek isterseniz, en az bir filtre değeri yapılandırdıktan sonra **sorgu denetimini kaydet'i** seçin. Filtre sorgusu için bir ad girin ve **Kaydet'i** seçin. Bu filtre yalnızca bu ilke için kullanılabilir ve **Filtreler** ayrıntıları sayfasının **Kayıtlı filtre sorguları** bölümünde listelenir.
 
-    ![İletişim uyumluluk filtresi ayrıntı denetimleri.](../media/communication-compliance-filter-detail-controls.png)
+    ![İletişim uyumluluk filtresi ayrıntı denetimleri](../media/communication-compliance-filter-detail-controls.png)
 
 ## <a name="remediate-alerts"></a>Uyarıları düzeltme
 
@@ -106,13 +106,13 @@ Uyarıları veya yapılandırdığınız filtrelemeyi gözden geçirmeye nereden
 
  Bazen kaynaktan veya konudan bir iletinin hemen düzeltilebileceği açıktır. İletinin sahte veya yanlış bir şekilde bir ilkeyle eşleştirilmiş olması ve yanlış sınıflandırılmış olarak çözümlenmesi gerekebilir. Yanlış sınıflandırılmış içeriği Microsoft ile paylaşmak, uyarıyı hemen çözümlemek ve bekleyen uyarı kuyruğundan kaldırmak için Yanlış **sınıflandırılmış olarak raporla** denetimini seçin. Kaynak veya gönderen bilgilerinden, iletinin bu durumlarda nasıl yönlendirilmesi veya işlenmesi gerektiğini zaten biliyor olabilirsiniz. Geçerli iletilere etiket atamak veya belirlenen gözden geçirene ileti göndermek için **Etiket olarak** veya **Yükseltme** denetimlerini kullanmayı göz önünde bulundurun.
 
-![İletişim uyumluluğu düzeltme denetimleri.](../media/communication-compliance-remediation-controls.png)
+![İletişim uyumluluğu düzeltme denetimleri](../media/communication-compliance-remediation-controls.png)
 
 ### <a name="step-2-examine-the-message-details"></a>2. Adım: İleti ayrıntılarını inceleme
 
-İletinin temellerini gözden geçirdikten sonra, ayrıntıları incelemek ve diğer düzeltme eylemlerini belirlemek için bir ileti açmanın zamanı geldi. İleti üst bilgisinin ve gövde bilgilerinin tamamını görüntülemek için bir ileti seçin. Uygun eylem seyrini belirlemenize yardımcı olmak için çeşitli farklı seçenekler ve görünümler mevcuttur:
+İletinin temellerini gözden geçirdikten sonra, artık ayrıntıları incelemek ve diğer düzeltme eylemlerini belirlemek için bir ileti açabilirsiniz. İleti üst bilgisinin ve gövde bilgilerinin tamamını görüntülemek için bir ileti seçin. Uygun eylem seyrini belirlemenize yardımcı olmak için çeşitli farklı seçenekler ve görünümler mevcuttur:
 
-- **Ekler**: Bu seçenek, ilke koşullarıyla eşleşen Modern ekleri incelemenize olanak tanır. Modern ekler içeriği metin olarak ayıklanır ve bir ilke için Bekleyen uyarılar panosunda görüntülenebilir. Daha fazla bilgi için bkz [. İletişim uyumluluğu özelliği başvurusu](/microsoft-365/compliance/communication-compliance-channels).
+- **Ekler**: Bu seçenek, ilke koşullarıyla eşleşen modern ekleri incelemenizi sağlar. Modern ekler içeriği metin olarak ayıklanır ve ilkenin **Bekleyen** uyarılar sekmesinde görüntülenebilir. Daha fazla bilgi için bkz [. İletişim uyumluluğu özelliği başvurusu](/microsoft-365/compliance/communication-compliance-channels).
 - **Kaynak**: Bu görünüm, web tabanlı mesajlaşma platformlarının çoğunda yaygın olarak görülen standart ileti görünümüdür. Üst bilgi normal stilde biçimlendirilir ve ileti gövdesi, imbedded grafik dosyalarını ve sözcük kaydırılan metni destekler. İlke için [optik karakter tanıma (OCR)](/microsoft-365/compliance/communication-compliance-policies#optical-character-recognition-ocr) etkinleştirildiyse, ilke koşulluyla eşleşen yazdırılmış veya el yazısı metin içeren görüntüler, bu görünümdeki ilişkili ileti için alt öğe olarak görüntülenir.
 - **Düz metin**: İletinin yalnızca satır numaralı bir görünümünü görüntüleyen ve hassas bilgi türü terimleri, bir ilkeye atanan yerleşik sınıflandırıcılar tarafından tanımlanan terimler veya ilkeye atanmış ayrılmış anahtar sözcük sözlüğüne dahil edilen terimler için iletilerde ve eklerde anahtar sözcük vurgulama içeren metin görünümü. Şu anda yalnızca İngilizce dilinde kullanılabilen anahtar sözcük vurgulama, uzun iletilerde ve eklerde ilginizi çeken alana yönlendirmenize yardımcı olabilir. Bazı durumlarda, vurgulanan metin yalnızca ilke koşullarıyla eşleşen iletiler için eklerde olabilir. Katıştırılmış dosyalar görüntülenmez ve bu görünümdeki satır numaralandırması, birden çok gözden geçiren arasında ilgili ayrıntılara başvurmak için yararlıdır.
 - **Konuşma**: Microsoft Teams sohbet iletileri için kullanılabilir olan bu görünüm, gözden geçirenlerin etkinliği konuşma bağlamında görüntülemesine yardımcı olmak için bir uyarı iletisinden önce ve sonra en fazla beş ileti görüntüler. Bu bağlam, gözden geçirenlerin iletileri hızla değerlendirmesine ve daha bilinçli ileti çözümleme kararları vermesine yardımcı olur. Teams'de bulunan tüm satır içi resimler, emojiler ve çıkartmalar da dahil olmak üzere konuşmalara gerçek zamanlı ileti eklemeleri görüntülenir. İletilere resim veya metin dosyası ekleri görüntülenmez. Düzenlenen iletiler veya konuşma penceresinden silinmiş iletiler için bildirimler otomatik olarak görüntülenir. İleti çözümlendiğinde, ilişkili konuşma iletileri çözümlenen iletiyle birlikte korunmaz. Konuşma iletileri, uyarı iletisi tanımlandıktan sonra 60 güne kadar kullanılabilir.
@@ -131,7 +131,7 @@ Uyarının iletisinin ayrıntılarını gözden geçirdiyseniz, birkaç düzeltm
 - **Bildirim**: **Uyarıya** özel bir bildirim şablonu atamak ve kullanıcıya uyarı bildirimi göndermek için Bildirim denetimini kullanabilirsiniz. **İletişim uyumluluk ayarları** alanında yapılandırılan uygun bildirim şablonunu seçin ve iletiyi gönderen kullanıcıya e-postayla anımsatıcı **gönder'i** seçerek sorunu çözün.
 - **Yükseltme**: **Yükseltme** denetimini kullanarak, kuruluşunuzda başka kimlerin iletiyi gözden geçirmesi gerektiğini seçebilirsiniz. İleti uyarısının ek gözden geçirilmesini isteyen bir e-posta bildirimi göndermek için iletişim uyumluluk ilkesinde yapılandırılan gözden geçirenler listesinden seçim yapın. Seçilen gözden geçiren, doğrudan gözden geçirilecek öğelere gitmek için e-posta bildirimindeki bir bağlantıyı kullanabilir.
 - **Araştırma için yükseltme**: **Araştırma için Yükseltme** denetimini kullanarak, tek veya birden çok ileti için yeni bir [eBulma (Premium) olayı](/microsoft-365/compliance/overview-ediscovery-20) oluşturabilirsiniz. Yeni servis talebi için bir ad ve notlar sağlayacaksınız ve ilkeyle eşleşen iletiyi gönderen kullanıcı otomatik olarak servis talebi koruyucu olarak atanır. Olayı yönetmek için ek izinlere ihtiyacınız yoktur. Servis talebi oluşturma, ileti için çözümlenmiyor veya yeni bir etiket oluşturmuyor. Düzeltme işlemi sırasında eBulma (Premium) olayı oluştururken toplam 100 ileti seçebilirsiniz. İletişim uyumluluğuna dahil edilen tüm iletişim kanallarındaki iletiler desteklenir. Örneğin, bir kullanıcı için yeni bir eBulma (Premium) servis talebi açtığınızda 50 Microsoft Teams sohbeti, 25 Exchange Online e-posta iletisi ve 25 Yammer iletisi seçebilirsiniz.
-- **Teams'de iletiyi kaldırma**: **Teams'de iletiyi kaldır** denetimini kullanarak, Microsoft Teams kanallarından ve 1:1 ve grup sohbetlerinden gelen uyarılarda tanımlanan uygunsuz iletileri ve içeriği engelleyebilirsiniz. Bu, kullanıcılar tarafından bildirilen Teams sohbet iletilerini ve makine öğrenmesi ve sınıflandırıcı tabanlı iletişim uyumluluk ilkeleri kullanılarak algılanan sohbet iletilerini içerir. Kaldırılan iletiler ve içerik, engellendiğini ve görünümden kaldırılması için geçerli olan ilkeyi açıklayan bir ilke ipucuyla değiştirilir. İlgili ilke ve gözden geçirme işlemi hakkında daha fazla bilgi edinmek için alıcılara ilke ipucunda bir bağlantı sağlanır. Gönderen, engellenen ileti ve içerik için bir ilke ipucu alır, ancak engellenen iletinin ayrıntılarını ve kaldırmayla ilgili bağlam için içeriği gözden geçirebilir.
+- **Teams'de iletiyi kaldırma**: **Teams'de iletiyi kaldır** denetimini kullanarak, Microsoft Teams kanallarından ve 1:1 ve grup sohbetlerinden gelen uyarılarda tanımlanan uygunsuz olabilecek iletileri ve içeriği engelleyebilirsiniz. Bu, kullanıcılar tarafından bildirilen Teams sohbet iletilerini ve makine öğrenmesi ve sınıflandırıcı tabanlı iletişim uyumluluk ilkeleri kullanılarak algılanan sohbet iletilerini içerir. Kaldırılan iletiler ve içerik, engellendiğini ve görünümden kaldırılması için geçerli olan ilkeyi açıklayan bir ilke ipucuyla değiştirilir. İlgili ilke ve gözden geçirme işlemi hakkında daha fazla bilgi edinmek için alıcılara ilke ipucunda bir bağlantı sağlanır. Gönderen, engellenen ileti ve içerik için bir ilke ipucu alır, ancak engellenen iletinin ayrıntılarını ve kaldırmayla ilgili bağlam için içeriği gözden geçirebilir.
 
 ### <a name="step-4-determine-if-message-details-should-be-archived-outside-of-communication-compliance"></a>4. Adım: İleti ayrıntılarının iletişim uyumluluğu dışında arşivlenip arşivlenmemesi gerektiğini belirleme
 
@@ -144,7 +144,7 @@ Uyarının iletisinin ayrıntılarını gözden geçirdiyseniz, birkaç düzeltm
 İletişim uyumluluğu içeren Microsoft 365 abonelikleri olan müşterilerin önerilen varsayılan iletişim uyumluluğu Power Automate şablonunu kullanmak için ek Power Automate lisanslarına ihtiyacı yoktur. Varsayılan şablon, kuruluşunuzu destekleyecek ve temel iletişim uyumluluk senaryolarını kapsayacak şekilde özelleştirilebilir. Bu şablonlardaki premium Power Automate özelliklerini kullanmayı, Microsoft Purview bağlayıcısını kullanarak özel bir şablon oluşturmayı veya Microsoft Purview'daki diğer uyumluluk alanları için Power Automate şablonlarını kullanmayı seçerseniz ek Power Automate lisanslarına ihtiyacınız olabilir.
 
 > [!IMPORTANT]
-> Power Automate akışlarını test ederken ek lisans doğrulaması istemleri mi alıyorsunuz? Kuruluşunuz henüz bu önizleme özelliği için hizmet güncelleştirmeleri almamış olabilir. Güncelleştirmeler dağıtılıyor ve iletişim uyumluluğu içeren Microsoft 365 aboneliklerine sahip tüm kuruluşların 30 Ekim 2020'ye kadar önerilen Power Automate şablonlarından oluşturulan akışlar için lisans desteğine sahip olması gerekir.
+> Power Automate akışlarını test ederken ek lisans doğrulaması istemleri mi alıyorsunuz? Kuruluşunuz henüz bu önizleme özelliği için hizmet güncelleştirmeleri almamış olabilir. Güncelleştirmeler dağıtılıyor ve iletişim uyumluluğu içeren Microsoft 365 aboneliklerine sahip tüm kuruluşların 30 Ekim 2020'den önce önerilen Power Automate şablonlarından oluşturulan akışlar için lisans desteğine sahip olması gerekir.
 
 ![İletişim uyumluluğu Power Automate.](../media/communication-compliance-power-automate.png)
 
@@ -159,7 +159,7 @@ Uyarının iletisinin ayrıntılarını gözden geçirdiyseniz, birkaç düzeltm
 
 Önerilen varsayılan şablondan Power Automate akışı oluşturmak için, doğrudan bir uyarıda çalışırken **Otomatikleştirme** denetimindeki **Power Automate akışlarını yönet** seçeneğini kullanacaksınız. Power **Automate akışlarını yönetme ile Power Automate akışı** oluşturmak için en az bir iletişim uyumluluğu rol grubunun üyesi olmanız gerekir.
 
-Varsayılan şablondan Power Automate akışı oluşturmak için aşağıdaki adımları tamamlayın:
+Varsayılan şablondan Power Automate akışı oluşturmak için şu adımları izleyin:
 
 1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) **İletişim uyumluluk** > **İlkeleri'ne** gidin ve gözden geçirmek istediğiniz uyarıyı içeren ilkeyi seçin.
 2. İlkeden **Bekleyen** sekmesini seçin ve bekleyen bir uyarı seçin.
@@ -173,16 +173,17 @@ Varsayılan şablondan Power Automate akışı oluşturmak için aşağıdaki ad
 
 #### <a name="share-a-power-automate-flow"></a>Power Automate akışını paylaşma
 
-Varsayılan olarak, bir kullanıcı tarafından oluşturulan Power Automate akışları yalnızca bu kullanıcı tarafından kullanılabilir. Diğer iletişim uyumluluğu kullanıcılarının bir akışa erişmesi ve akış kullanması için akışın akış oluşturucusu tarafından paylaşılması gerekir. Akışı paylaşmak için, doğrudan bir uyarıda çalışırken **Power Automate** denetimini kullanacaksınız.
+Varsayılan olarak, bir kullanıcı tarafından oluşturulan Power Automate akışları yalnızca bu kullanıcı tarafından kullanılabilir. Diğer iletişim uyumluluğu kullanıcılarının bir akışa erişmesi ve akış kullanması için akışın akış oluşturucusu tarafından paylaşılması gerekir. Akışı paylaşmak için, doğrudan bir uyarıda çalışırken **Power Automate** denetimini kullanın.
 
 Power Automate akışını paylaşmak için en az bir iletişim uyumluluk rol grubunun üyesi olmanız gerekir.
-Power Automate akışını paylaşmak için aşağıdaki adımları tamamlayın:
+
+Power Automate akışını paylaşmak için şu adımları izleyin:
 
 1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) **İletişim uyumluluk** > **İlkeleri'ne** gidin ve gözden geçirmek istediğiniz uyarıyı içeren ilkeyi seçin.
 2. İlkeden **Bekleyen** sekmesini seçin ve bekleyen bir uyarı seçin.
 3. Uyarı eylemi **menüsünden Power Automate'i** seçin.
 4. **Power Automate akışları** sayfasında **Akışlarım** veya **Ekip akışları** sekmesini seçin.
-5. Paylaşacak akışı seçin ve ardından akış seçenekleri menüsünden **Paylaş'ı** seçin.
+5. Paylaşacak akışı seçin ve ardından **Akış Seçenekleri** **menüsünden Paylaş'ı** seçin.
 6. Akış paylaşımı sayfasında, akışın sahibi olarak eklemek istediğiniz kullanıcı veya grubun adını girin.
 7. **Bağlantı Kullanıldı** iletişim kutusunda **Tamam'ı** seçerek eklenen kullanıcı veya grubun akışa tam erişimi olacağını kabul edin.
 
@@ -190,7 +191,7 @@ Power Automate akışını paylaşmak için aşağıdaki adımları tamamlayın:
 
 Bir akışı düzenlemeniz gerekiyorsa, doğrudan bir uyarıda çalışırken **Power Automate** denetimini kullanırsınız. Power Automate akışını düzenlemek için en az bir iletişim uyumluluğu rol grubunun üyesi olmanız gerekir.
 
-Power Automate akışını düzenlemek için aşağıdaki adımları tamamlayın:
+Power Automate akışını düzenlemek için şu adımları izleyin:
 
 1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) **İletişim uyumluluk** > **İlkeleri'ne** gidin ve gözden geçirmek istediğiniz uyarıyı içeren ilkeyi seçin.
 2. İlkeden **Bekleyen** sekmesini seçin ve bekleyen bir uyarı seçin.
@@ -201,9 +202,9 @@ Power Automate akışını düzenlemek için aşağıdaki adımları tamamlayın
 
 #### <a name="delete-a-power-automate-flow"></a>Power Automate akışını silme
 
-Bir akışı silmeniz gerekiyorsa, doğrudan bir uyarıda çalışırken **Power Automate** denetimini kullanırsınız. Power Automate akışını silmek için en az bir iletişim uyumluluk rol grubunun üyesi olmanız gerekir.
+Bir akışı silmeniz gerekiyorsa, doğrudan bir uyarıda çalışırken **Power Automate** denetimini kullanın. Power Automate akışını silmek için en az bir iletişim uyumluluk rol grubunun üyesi olmanız gerekir.
 
-Power Automate akışını silmek için aşağıdaki adımları tamamlayın:
+Power Automate akışını silmek için şu adımları izleyin:
 
 1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) **İletişim uyumluluk** > **İlkeleri'ne** gidin ve gözden geçirmek istediğiniz uyarıyı içeren ilkeyi seçin.
 2. İlkeden **Bekleyen** sekmesini seçin ve bekleyen bir uyarı seçin.
@@ -247,9 +248,9 @@ Bildirimler için basit bir metin tabanlı e-posta iletisinden daha fazlasını 
 
 ## <a name="unresolve-messages-preview"></a>İletileri çözme (önizleme)
 
-İletiler çözümlendiğinde **Bekleyen sekme** görünümünden kaldırılır ve **Çözümlenen** sekme görünümünde görüntülenir. Araştırma ve düzeltme eylemleri *Çözümlenmiş* görünümündeki iletiler için kullanılamaz. Ancak, yanlışlıkla çözümlenen veya ilk çözümden sonra daha fazla araştırma gerektiren bir ileti üzerinde ek işlem yapmanız gereken örnekler olabilir. Çözümlenmemiş komut özelliğini kullanarak Bir veya daha fazla iletiyi *Çözümlenmiş* görünümünden *Beklemede* görünümüne geri taşıyabilirsiniz.
+İletiler çözümlendiğinde **Bekleyen sekme** görünümünden kaldırılır ve **Çözümlendi** sekmesinde görüntülenir. Araştırma ve düzeltme eylemleri *Çözümlenmiş* görünümündeki iletiler için kullanılamaz. Ancak, yanlışlıkla çözümlenen veya ilk çözümden sonra daha fazla araştırma gerektiren bir ileti üzerinde ek işlem yapmanız gereken örnekler olabilir. Çözümlenmemiş komut özelliğini kullanarak Bir veya daha fazla iletiyi *Çözümlenmiş* görünümünden *Beklemede* görünümüne geri taşıyabilirsiniz.
 
-İletileri çözümlemek için aşağıdaki adımları tamamlayın:
+İletileri çözümlemek için şu adımları izleyin:
 
 1. Microsoft 365 kuruluşunuzdaki *İletişim Uyumluluğu Analistleri* veya *İletişim Uyumluluğu Araştırmacıları* rol gruplarına atanmış bir kullanıcının kimlik bilgilerini kullanarak [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) oturum açın.
 2. Microsoft Purview uyumluluk portalı **İletişim uyumluluğu'na** gidin.

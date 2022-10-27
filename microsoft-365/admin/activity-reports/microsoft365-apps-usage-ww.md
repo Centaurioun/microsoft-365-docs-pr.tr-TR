@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -19,12 +20,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Uygulamalar genelinde lisanslı kullanıcı etkinliğini ve uygulamaların platformlar arasında nasıl kullanıldığını görmek için Microsoft 365 Uygulamaları kullanım raporu almayı öğrenin.
-ms.openlocfilehash: f8d9baf29089b7dd37a3655dec4c33dfb873bb67
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 9efa15c1e4204ea29eadd14ed32bec8af688e480
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68165239"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722912"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Yönetim merkezinde Microsoft 365 Raporları - Microsoft 365 Uygulamaları kullanımı
 

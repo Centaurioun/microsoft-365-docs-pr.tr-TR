@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Microsoft için Cloudflare'da etki alanınızı doğrulamayı ve e-posta, Skype Kurumsal Online ve diğer hizmetler için DNS kayıtlarını ayarlamayı öğrenin.
-ms.openlocfilehash: b0945bb5cc6a3ac975692fc1857f29a5fb9fa1e0
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 29a0d6dc6c4ed0f3372c78728894ab4dc9ec6e6a
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68630018"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729885"
 ---
 # <a name="connect-your-dns-records-at-cloudflare-to-microsoft-365"></a>Cloudflare'daki DNS kayıtlarınızı Microsoft 365'e bağlama
 

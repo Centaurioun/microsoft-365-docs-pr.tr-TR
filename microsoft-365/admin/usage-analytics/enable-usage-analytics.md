@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Power BI'daki Microsoft 365 Kullanım Analizi şablon uygulamasını kullanarak kiracınız için veri toplamaya nasıl başlayacağınızı öğrenin.
-ms.openlocfilehash: ff1bc0e30c2f9a79bbada94672315a14df6daae5
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 16168afaf9a5ac232f2d238a4a33f87af32f15a8
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68190187"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68736573"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Microsoft 365 kullanım analizini etkinleştirme
 
@@ -37,7 +38,7 @@ Microsoft 365 US Government Community Cloud (GCC) kiracısında Microsoft 365 ku
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Microsoft 365 kullanım analizini kullanmaya başlamak için önce verileri <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 yönetim merkezi</a> kullanılabilir hale getirmeniz ve ardından şablon uygulamasını Power BI'da başlatmanız gerekir.
+Microsoft 365 kullanım analizini kullanmaya başlamak için önce verileri <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 yönetim merkezi</a> kullanılabilir duruma getirmeniz, ardından **Kullanımı Raporlar'ı** >  seçmeniz ve şablon uygulamasını Power BI'da başlatmanız gerekir.
 
 ## <a name="get-power-bi"></a>Power BI'ı alma
 

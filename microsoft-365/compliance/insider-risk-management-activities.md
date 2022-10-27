@@ -15,50 +15,52 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 236d1e8b176475891988c0085a4de467799c7f1a
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: e35809f3cf95bd9995c21b638e5a4c1fef8027df
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68686641"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734923"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Insider risk yönetimi etkinliklerini araştırma
 
 >[!IMPORTANT]
 >Microsoft Purview İçeriden Risk Yönetimi IP hırsızlığı, veri sızıntısı ve güvenlik ihlalleri gibi olası kötü amaçlı veya yanlışlıkla insider risklerini belirlemek için çeşitli sinyalleri ilişkilendirmektedir. Insider risk yönetimi, müşterilerin güvenlik ve uyumluluğu yönetmek için ilkeler oluşturmasına olanak tanır. Tasarım gereği gizlilikle oluşturulan kullanıcılar varsayılan olarak takma ad kullanır ve kullanıcı düzeyinde gizlilik sağlamaya yardımcı olmak için rol tabanlı erişim denetimleri ve denetim günlükleri kullanılır.
 
-Riskli kullanıcı etkinliklerini araştırmak, kuruluşunuz için insider risklerini en aza indirmenin önemli bir ilk adımıdır. Bu riskler, şirket içi risk yönetimi ilkelerinden uyarı oluşturan etkinlikler veya ilkeler tarafından algılanan ancak kullanıcılar için hemen bir iç risk yönetimi uyarısı oluşturmayan etkinlikler olabilir. **Kullanıcı etkinlik raporlarını** veya **Uyarı panosunu** kullanarak bu tür etkinlikleri araştırabilirsiniz.
+Riskli olabilecek kullanıcı etkinliklerini araştırmak, kuruluşunuz için iç riskleri en aza indirmenin önemli bir ilk adımıdır. Bu riskler, iç risk yönetimi ilkelerinden uyarı oluşturan etkinlikler olabilir. Bunlar, ilkeler tarafından algılanan uyumlulukla ilgili etkinliklerden kaynaklanan riskler de olabilir, ancak kullanıcılar için anında şirket içi risk yönetimi uyarıları oluşturmaz. **Kullanıcı etkinlik raporlarını (önizleme)** veya **Uyarı panosunu** kullanarak bu tür etkinlikleri araştırabilirsiniz.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="user-activity-reports"></a>Kullanıcı etkinliği raporları
 
-Kullanıcı etkinliği raporları, belirli kullanıcılara yönelik etkinlikleri geçici olarak veya açık bir şekilde şirket içi risk yönetimi ilkesine atamak zorunda kalmadan tanımlı bir süre boyunca incelemenize olanak tanır. Çoğu şirket içi risk yönetimi senaryosunda kullanıcılar ilkelerde açıkça tanımlanır ve ilke uyarıları (olayları tetiklemeye bağlı olarak) ve etkinliklerle ilişkili risk puanları olabilir. Ancak bazı senaryolarda, bir ilkede açıkça tanımlanmayan kullanıcıların etkinliklerini incelemek isteyebilirsiniz. Bu etkinlikler, kullanıcı ve riskli olabilecek etkinlikler hakkında bir ipucu aldığınız kullanıcılar veya genellikle bir iç risk yönetimi ilkesine atanma ihtiyacı olmayan kullanıcılara yönelik olabilir.
+Kullanıcı etkinliği raporları, bu etkinlikleri geçici veya açık bir şekilde bir iç risk yönetimi ilkesine atamak zorunda kalmadan riskli olabilecek etkinlikleri (belirli kullanıcılar ve tanımlı bir zaman aralığı için) incelemenize olanak tanır. Çoğu şirket içi risk yönetimi senaryosunda kullanıcılar ilkelerde açıkça tanımlanır ve ilke uyarıları (olayları tetiklemeye bağlı olarak) ve etkinliklerle ilişkili risk puanları olabilir. Ancak bazı senaryolarda, bir ilkede açıkça tanımlanmayan kullanıcıların etkinliklerini incelemek isteyebilirsiniz. Bu etkinlikler, kullanıcı ve riskli olabilecek etkinlikler hakkında bir ipucu aldığınız kullanıcılar veya genellikle bir iç risk yönetimi ilkesine atanma ihtiyacı olmayan kullanıcılara yönelik olabilir.
 
-Insider risk yönetimi **Ayarları** sayfasında göstergeleri yapılandırdıktan sonra, seçilen göstergelerle ilişkili riskli etkinlik için kullanıcı etkinliği algılanır. Kuruluşunuzdaki kullanıcıların riskli etkinliklerini algılamak ve raporlamak için kullanıcı etkinliği raporları için bir ilke yapılandırmanız gerekmez. Kullanıcı etkinlik raporlarına dahil edilen etkinlikler, etkinliklerin görüntülenmesi için olayların tetiklenmesine gerek yoktur. Bu yapılandırma, kullanıcı için algılanan tüm etkinliklerin bir tetikleyici olayı olup olmadığına veya bir uyarı oluştursa bile gözden geçirilebilir olduğu anlamına gelir. Raporlar kullanıcı başına oluşturulur ve özel 90 günlük bir süre için tüm etkinlikleri içerebilir. Aynı kullanıcı için birden çok rapor desteklenmez.
+Insider risk yönetimi **Ayarları** sayfasında göstergeleri yapılandırdıktan sonra, seçilen göstergelerle ilişkili riskli olabilecek etkinlikler için kullanıcı etkinliği algılanır. Bu yapılandırma, kullanıcılar için algılanan tüm etkinliklerin bir tetikleyici olayı olup olmadığına veya uyarı oluştursa bile gözden geçirilebilir olduğu anlamına gelir. Raporlar kullanıcı başına oluşturulur ve özel 90 günlük bir süre için tüm etkinlikleri içerebilir. Aynı kullanıcı için birden çok rapor desteklenmez.
 
-Bir kullanıcının etkinliklerini inceledikten sonra araştırmacılar zararsız olarak tek tek etkinlikleri kapatabilir, raporun bağlantısını diğer araştırmacılarla paylaşabilir veya e-postayla gönderebilir ya da kullanıcıyı geçici veya açık olarak bir iç risk yönetimi ilkesine atamayı seçebilir. **Kullanıcı etkinlik raporları** sayfasını görüntülemek için kullanıcıların *Insider Risk Yönetimi Araştırmacıları* rol grubuna atanması gerekir.  
+Olası riskli etkinlikleri inceledikten sonra, araştırmacılar tek tek kullanıcının etkinliklerini zararsız olarak kapatabilir. Ayrıca raporun bağlantısını diğer araştırmacılarla paylaşabilir veya e-postayla gönderebilir ya da kullanıcıları (geçici veya açık olarak) bir şirket içi risk yönetimi ilkesine atamayı seçebilirler. **Kullanıcı etkinlik raporları** sayfasını görüntülemek için kullanıcıların *Insider Risk Yönetimi Araştırmacıları* rol grubuna atanması gerekir.  
 
 ![Insider risk yönetimi kullanıcı etkinliği raporuna genel bakış.](../media/insider-risk-user-activity-report-overview.png)
 
-Insider risk yönetimine **Genel Bakış** sayfasındaki **Kullanıcı etkinliğini araştır** bölümünde **Raporları yönet'i** seçerek başlayabilirsiniz. Bir kullanıcının etkinliklerini görüntülemek için önce **Kullanıcı etkinliği raporu oluştur'u** seçin ve **Yeni kullanıcı etkinliği raporu** bölmesinde aşağıdaki alanları tamamlayın:
+Başlamak için, insider risk yönetimine **Genel Bakış** sayfasındaki **Kullanıcı etkinliğini araştır** bölümünde **Raporları yönet'i** seçin. 
 
-- **Kullanıcı**: Bir kullanıcıyı ada veya e-posta adresine göre arama
+Bir kullanıcının etkinliklerini görüntülemek için önce **Kullanıcı etkinliği raporu oluştur'u** seçin ve **Yeni kullanıcı etkinliği raporu** bölmesinde aşağıdaki alanları tamamlayın:
+
+- **Kullanıcı**: Bir kullanıcıyı ada veya e-posta adresine göre arayın.
 - **Başlangıç tarihi**: Kullanıcı etkinliklerinin başlangıç tarihini seçmek için takvim denetimini kullanın.
 - **Bitiş tarihi**: Kullanıcı etkinliklerinin bitiş tarihini seçmek için takvim denetimini kullanın. Seçilen bitiş tarihi, seçilen başlangıç tarihinden sonra iki günden büyük ve seçili başlangıç tarihinden itibaren 90 günden uzun olmamalıdır.
+ 
 Yeni raporların gözden geçirilmesi genellikle 10 saat kadar sürer. Rapor hazır olduğunda, Kullanıcı etkinliği raporu sayfasındaki **Durum** sütununda *Rapor hazır* ifadesini görürsünüz. Ayrıntılı raporu görüntülemek için kullanıcıyı seçin:
 
-![Insider risk yönetimi kullanıcı etkinliği raporu.](../media/insider-risk-user-activity-report.png)
+![Insider risk yönetimi kullanıcı etkinlik raporu](../media/insider-risk-user-activity-report.png)
 
 Seçili kullanıcının **Kullanıcı etkinliği raporu** **Kullanıcı etkinliği**, **Etkinlik gezgini** ve **Adli kanıt (önizleme)** sekmelerini içerir:
 
-- **Kullanıcı etkinliği**: Etkinlikleri araştırmak ve dizilerde gerçekleşen olası etkinlikleri görüntülemek için bu grafik görünümünü kullanın. Bu sekme, tüm etkinliklerin geçmiş zaman çizelgesi, etkinlik ayrıntıları, kullanıcı için geçerli risk puanı, risk olaylarının sırası ve araştırma çalışmalarına yardımcı olacak filtreleme denetimleri de dahil olmak üzere bir servis talebinin hızlı bir şekilde gözden geçirilmesini sağlayacak şekilde yapılandırılmıştır.
-- **Etkinlik gezgini**: **Etkinlik gezgini** sekmesi, risk araştırmacılarına etkinlikler hakkında ayrıntılı bilgi sağlayan kapsamlı bir analiz aracı sağlar. Etkinlik gezgini ile gözden geçirenler algılanan riskli etkinliğin zaman çizelgesini hızla gözden geçirebilir ve uyarılarla ilişkili tüm risk etkinliklerini tanımlayıp filtreleyebilir. Etkinlik gezginini kullanma hakkında daha fazla bilgi edinmek için bu makalenin devamında yer alan *Etkinlik gezgini* bölümüne bakın.
-- **Adli kanıt (önizleme)**: **Adli kanıt (önizleme)** sekmesi, kullanıcılar için güvenlik olaylarına neden olabilecek etkinliklerle ilişkili adli kanıt yakalamalarına erişim sağlar. Adli kanıt, kuruluşunuzun hassas verilerin yetkisiz veri sızdırması gibi olası veri risklerini daha iyi azaltmasına, anlamasına ve yanıtlamasına yardımcı olmak için cihazlar arasında özelleştirilebilir görsel yakalamaya olanak tanır. Adli kanıt kullanma hakkında daha fazla bilgi edinmek için bkz. [Insider risk yönetimi adli kanıtı hakkında bilgi edinin](/microsoft-365/compliance/insider-risk-management-forensic-evidence).
+- **Kullanıcı etkinliği**: Riskli olabilecek etkinlikleri araştırmak ve dizilerde gerçekleşen olası ilgili etkinlikleri görüntülemek için bu grafik görünümünü kullanın. Bu sekme, tüm etkinliklerin geçmiş zaman çizelgesi, etkinlik ayrıntıları, kullanıcı için geçerli risk puanı, risk olaylarının sırası ve araştırma çalışmalarına yardımcı olacak filtreleme denetimleri de dahil olmak üzere bir servis talebinin hızlı bir şekilde gözden geçirilmesini sağlayacak şekilde yapılandırılmıştır.
+- **Etkinlik gezgini**: Bu sekme, risk araştırmacılarına etkinlikler hakkında ayrıntılı bilgi sağlayan kapsamlı bir analiz aracı sağlar. Etkinlik gezgini ile gözden geçirenler algılanan riskli etkinliğin zaman çizelgesini hızla gözden geçirebilir ve uyarılarla ilişkili tüm riskli etkinlikleri tanımlayıp filtreleyebilir. Etkinlik gezginini kullanma hakkında daha fazla bilgi edinmek için bu makalenin devamında yer alan *Etkinlik gezgini* bölümüne bakın.
 
 ## <a name="alert-dashboard"></a>Uyarı panosu
 
-Insider risk yönetimi uyarıları, insider risk yönetimi ilkelerinde tanımlanan risk göstergeleri tarafından otomatik olarak oluşturulur. Bu uyarılar, uyumluluk analistlerine ve araştırmacılara geçerli risk durumunun tamamen görünümünü sağlar ve kuruluşunuzun bulunan riskleri önceliklendirmesine ve bunlara yönelik eylemler gerçekleştirmesine olanak sağlar. Varsayılan olarak, ilkeler belirli miktarda düşük, orta ve yüksek önem derecesinde uyarı oluşturur, ancak uyarı hacmini gereksinimlerinize uyacak şekilde [artırabilir veya azaltabilirsiniz](insider-risk-management-settings.md#alert-volume) . Ayrıca, ilke oluşturma aracıyla yeni bir ilke oluştururken [ilke göstergeleri için uyarı eşiğini](insider-risk-management-settings.md#indicator-level-settings-preview) yapılandırabilirsiniz.
+Insider risk yönetimi uyarıları, insider risk yönetimi ilkelerinde tanımlanan risk göstergeleri tarafından otomatik olarak oluşturulur. Bu uyarılar, uyumluluk analistlerine ve araştırmacılara geçerli risk durumunun tamamen görünümünü sağlar ve kuruluşunuzun bulunan olası riskleri önceliklendirmesine ve bunlara yönelik eylemler gerçekleştirmesine olanak sağlar. Varsayılan olarak, ilkeler belirli miktarda düşük, orta ve yüksek önem derecesinde uyarı oluşturur, ancak uyarı hacmini gereksinimlerinize uyacak şekilde [artırabilir veya azaltabilirsiniz](insider-risk-management-settings.md#alert-volume) . Ayrıca, ilke oluşturma aracıyla yeni bir ilke oluştururken [ilke göstergeleri için uyarı eşiğini](insider-risk-management-settings.md#indicator-level-settings-preview) yapılandırabilirsiniz.
 
 Uyarıların riskli etkinlik için ayrıntıları, bağlamı ve ilgili içeriği nasıl sağladığına ve araştırma sürecinizi nasıl daha etkili hale getirebilirsiniz? genel bir bakış için [Insider Risk Yönetimi Uyarıları Önceliklendirme Deneyimi videosunu](https://www.youtube.com/watch?v=KgmpxBLJLPI) inceleyin.
 
@@ -71,34 +73,36 @@ Insider risk **Uyarısı panosu** , insider risk ilkeleri tarafından oluşturul
   - Saat, gün veya ay cinsinden listelenen orta önem derecesi uyarılarını çözümlemek için ortalama süre.
   - Düşük önem derecesi uyarılarını çözümlemek için saat, gün veya ay cinsinden listelenen ortalama süre.
 
-![Insider risk yönetimi uyarı panosu.](../media/insider-risk-alerts-dashboard.png)
+![Insider risk yönetimi uyarı panosu](../media/insider-risk-alerts-dashboard.png)
 
 > [!NOTE]
-> Insider risk yönetimi, risk araştırma ve gözden geçirme deneyiminizi korumaya ve iyileştirmeye yardımcı olmak için yerleşik uyarı azaltmayı kullanır. Bu azaltma, yanlış yapılandırılmış veri bağlayıcıları veya DLP ilkeleri gibi ilke uyarılarının aşırı yüklenmesine neden olabilecek sorunlara karşı koruma sağlar. Sonuç olarak, bir kullanıcı için yeni uyarıların görüntülenmesinde gecikme olabilir.
+> Insider risk yönetimi, risk araştırma ve gözden geçirme deneyiminizi korumaya ve iyileştirmeye yardımcı olmak için yerleşik uyarı azaltmayı kullanır. Bu azaltma, yanlış yapılandırılmış veri bağlayıcıları veya veri kaybı önleme ilkeleri gibi ilke uyarılarının aşırı yüklenmesine neden olabilecek sorunlara karşı koruma sağlar. Sonuç olarak, bir kullanıcı için yeni uyarıların görüntülenmesinde gecikme olabilir.
 
 ## <a name="alert-status-and-severity"></a>Uyarı durumu ve önem derecesi
 
 Uyarıları aşağıdaki durumlardan birinde önceliklendirme yapabilirsiniz:
 
 - **Onaylandı**: Bir uyarı onaylandı ve yeni veya mevcut bir servis talebine atandı.
-- **Kapatıldı**: Önceliklendirme işleminde iyi huylu olarak kapatılan bir uyarı. Uyarının kapatılma nedenini sağlayabilir ve gelecekte başvurmak veya diğer gözden geçirenler için ek bağlam sağlamak üzere kullanıcının uyarı geçmişine notlar ekleyebilirsiniz. Bu nedenler beklenen etkinliklerden, etkili olmayan olaylara, yalnızca kullanıcı için uyarı etkinliklerinin sayısını azaltmaya veya uyarı notları ile ilgili bir nedene kadar değişebilir. Neden sınıflandırma seçenekleri *arasında Bu kullanıcı için Etkinlik bekleniyor*, *Etkinlik daha fazla araştırma yapmamı gerektirecek kadar etkili* ve *Bu kullanıcı için uyarılar çok fazla etkinlik içeriyor*.
+- **Kapatıldı**: Önceliklendirme işleminde iyi huylu olarak kapatılan bir uyarı. Uyarının kapatılma nedenini sağlayabilir ve gelecekte başvurmak veya diğer gözden geçirenler için ek bağlam sağlamak üzere kullanıcının uyarı geçmişine notlar ekleyebilirsiniz. Nedenler beklenen etkinliklerden, etkili olmayan olaylara, yalnızca kullanıcı için uyarı etkinliklerinin sayısını azaltmaya veya uyarı notları ile ilgili bir nedene kadar değişebilir. Neden sınıflandırma seçenekleri *arasında Bu kullanıcı için Etkinlik bekleniyor*, *Etkinlik daha fazla araştırma yapmamı gerektirecek kadar etkili* ve *Bu kullanıcı için uyarılar çok fazla etkinlik içeriyor*.
 - **Gözden geçirilmesi gerekiyor**: Önceliklendirme eylemlerinin henüz yapılmadığı yeni bir uyarı.
 - **Çözüldü**: Kapatılan ve çözülen bir servis talebinin parçası olan bir uyarı.
 
-Uyarı riski puanları, çeşitli risk etkinliği göstergelerinden otomatik olarak hesaplanır. Bu göstergeler risk etkinliğinin türünü, etkinlik oluşumunun sayısını ve sıklığını, kullanıcı riski etkinliğinin geçmişini ve etkinliğin ciddiyetini artırabilecek etkinlik risklerinin eklenmesini içerir. Uyarı risk puanı, her uyarı için bir risk önem düzeyinin program aracılığıyla atanabilmesini sağlar ve özelleştirilemiyor. Uyarılar denenmemiş olarak kalırsa ve risk etkinlikleri uyarıya tahakkuk etmeye devam ederse, risk önem düzeyi artabilir. Risk analistleri ve araştırmacıları uyarı risk önem derecesini kullanarak uyarıları kuruluşunuzun risk ilkelerine ve standartlarına uygun olarak önceliklendirmeye yardımcı olabilir.
+Uyarı riski puanları, çeşitli risk etkinliği göstergelerinden otomatik olarak hesaplanır. Bu göstergeler risk etkinliğinin türünü, etkinlik oluşumunun sayısını ve sıklığını, kullanıcıların risk etkinliğinin geçmişini ve riskli olabilecek etkinliğin ciddiyetini artırabilecek etkinlik risklerinin eklenmesini içerir. Uyarı risk puanı, her uyarı için bir risk önem düzeyinin program aracılığıyla atanabilmesini sağlar ve özelleştirilemiyor. Uyarılar denenmemiş olarak kalırsa ve risk etkinlikleri uyarıya tahakkuk etmeye devam ederse, risk önem düzeyi artabilir. Risk analistleri ve araştırmacıları uyarı risk önem derecesini kullanarak uyarıları kuruluşunuzun risk ilkelerine ve standartlarına uygun olarak önceliklendirmeye yardımcı olabilir.
 
 Uyarı riski önem düzeyleri şunlardır:
 
-- **Yüksek önem derecesi**: Uyarının etkinlikleri ve göstergeleri önemli bir risk oluşturur. İlgili risk etkinlikleri ciddidir, tekrar eder ve diğer önemli risk faktörleriyle güçlü bir şekilde çekirdeklenir.
-- **Orta önem derecesi**: Uyarının etkinlikleri ve göstergeleri orta düzeyde bir risk oluşturur. İlişkili risk etkinlikleri ılımlı, sıktır ve diğer risk faktörleriyle bir bağıntıya sahiptir.
-- **Düşük önem derecesi**: Uyarının etkinlikleri ve göstergeleri küçük bir risk oluşturur. İlişkili risk etkinlikleri küçük, daha seyrek ve diğer önemli risk faktörleriyle bağlantılı değildir.
+- **Yüksek önem derecesi**: Uyarı için riskli olabilecek etkinlikler ve göstergeler önemli bir risk oluşturur. İlgili risk etkinlikleri ciddidir, tekrar eder ve diğer önemli risk faktörleriyle güçlü bir şekilde çekirdeklenir.
+- **Orta önem derecesi**: Uyarının riskli olabilecek etkinlikleri ve göstergeleri orta düzeyde bir risk oluşturur. İlişkili risk etkinlikleri ılımlı, sıktır ve diğer risk faktörleriyle bir bağıntıya sahiptir.
+- **Düşük önem derecesi**: Uyarı için riskli olabilecek etkinlikler ve göstergeler küçük bir risk oluşturur. İlişkili risk etkinlikleri küçük, daha seyrek ve diğer önemli risk faktörleriyle bağlantılı değildir.
 
 ## <a name="filter-alerts-on-the-alert-dashboard"></a>Uyarı panosundaki uyarıları filtreleme
 
-Kuruluşunuzdaki etkin insider risk yönetimi ilkelerinin sayısına ve türüne bağlı olarak, büyük bir uyarı kuyruğunun gözden geçirilmesi zor olabilir. Uyarı filtrelerini kullanmak analistlerin ve araştırmacıların uyarıları çeşitli özniteliklere göre sıralamalarına yardımcı olabilir. **Uyarılar panosundaki** uyarıları filtrelemek için **Filtre** denetimini seçin. Uyarıları bir veya daha fazla özniteliğe göre filtreleyebilirsiniz:
+Kuruluşunuzdaki etkin insider risk yönetimi ilkelerinin sayısına ve türüne bağlı olarak, büyük bir uyarı kuyruğunun gözden geçirilmesi zor olabilir. Uyarı filtrelerini kullanmak analistlerin ve araştırmacıların uyarıları çeşitli özniteliklere göre sıralamalarına yardımcı olabilir. 
+
+**Uyarılar panosundaki** uyarıları filtrelemek için **Filtre** denetimini seçin. Uyarıları bir veya daha fazla özniteliğe göre filtreleyebilirsiniz:
 
 - **Durum**: Uyarı listesini filtrelemek için bir veya daha fazla durum değeri seçin. Seçenekler *Onaylandı*, *Kapatıldı*, *Gözden geçirilmesi gerekiyor* ve *Çözümlendi şeklindedir*.
-- **Önem derecesi**: Uyarı listesini filtrelemek için bir veya daha fazla uyarı riski önem düzeyi seçin. Seçenekler *Yüksek*, *Orta* ve *Düşük'tir*.
+- **Önem derecesi**: Uyarı listesini filtrelemek için bir veya daha fazla uyarı riski önem düzeyi seçin Seçenekler *Yüksek*, *Orta* ve *Düşük'tir*.
 - **Algılanan zaman**: Uyarının oluşturulduğu zaman için başlangıç ve bitiş tarihlerini seçin. Bu filtre, başlangıç tarihinde UTC 00:00 ile bitiş tarihinde UTC 00:00 arasında uyarı arar. Belirli bir günün uyarılarını filtrelemek için **Başlangıç tarihi** alanına günün tarihini ve **Bitiş tarihi** alanına da sonraki günün tarihini girin.
 - **İlke**: Seçili ilkeler tarafından oluşturulan uyarıları filtrelemek için bir veya daha fazla ilke seçin.
 - **Risk faktörleri**: Uyarı listesini filtrelemek için daha fazla risk faktöründen birini seçin. Seçenekler *kümülatif sızdırma etkinlikleri*, *Etkinlikler öncelik içeriğini*, *Sıra etkinlikleri* ve *Etkinlikler izin verilmeyen etki alanlarını içerir*.
@@ -131,9 +135,9 @@ Uyarı hakkında daha fazla bilgi için Uyarı ayrıntısı sayfasındaki aşağ
 
 ### <a name="headersummary-section"></a>Üst Bilgi/Özet bölümü
 
-Bu bölüm, kullanıcı ve uyarı hakkında genel bilgiler içerir. Bu bilgiler, kullanıcı için uyarıya dahil edilen algılanan etkinlik hakkında ayrıntılı bilgiler gözden geçirilirken bağlam için kullanılabilir:
+Bu bölüm, kullanıcı ve uyarı hakkında genel bilgiler içerir. Bu bilgiler, kullanıcı için uyarıya dahil edilen algılanan risk yönetimi etkinliği hakkında ayrıntılı bilgiler gözden geçirilirken bağlam için kullanılabilir:
 
-- **Bu uyarıyı oluşturan etkinlik**: Uyarının oluşturulmasına neden olan etkinlik değerlendirme döneminde en yüksek risk etkinliğini ve ilke eşleşmesini görüntüler.
+- **Bu uyarıyı oluşturan etkinlik**: Uyarının oluşturulmasına neden olan etkinlik değerlendirme döneminde riskli olabilecek en yüksek etkinlik ve ilke eşleşmesini görüntüler.
 - **Tetikleyici olay**: İlkeden kullanıcının etkinliğine risk puanları atamaya başlamasını isteyen en son tetikleyici olayı görüntüler. *Dağıtılan kullanıcılar tarafından veri sızıntıları* için [iletişim uyumluluğuyla tümleştirmeyi](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) yapılandırdıysanız veya güvenlik *ilkesi ihlalleri için dağıtılan kullanıcı* ilkeleriyle tümleştirmeyi yapılandırdıysanız, bu uyarılar için tetikleme olayının kapsamı iletişim uyumluluk etkinliği olarak belirlenmiştir.
 - **Kullanıcı profili**: Uyarıya atanan kullanıcı hakkında genel bilgileri görüntüler. Anonimleştirme etkinse kullanıcı adı, e-posta adresi, diğer ad ve kuruluş alanları anonimleştirilir.
 - **Kullanıcı uyarı geçmişi**: Son 30 güne ait kullanıcının uyarılarının listesini görüntüler. Kullanıcının uyarı geçmişinin tamamını görüntülemek için bir bağlantı içerir.
@@ -142,18 +146,18 @@ Yalnızca [öncelik içeriğini](/microsoft-365/compliance/insider-risk-manageme
 
 ### <a name="all-risk-factors"></a>Tüm risk faktörleri
 
-Bu sekme, kullanıcının uyarı etkinliği için risk faktörlerinin özetini açar. Risk faktörleri, gözden geçirme sırasında bu kullanıcının etkinliğinin ne kadar riskli olduğunu belirlemenize yardımcı olabilir. Risk faktörleri şunlara ilişkin özetleri içerir:
+Bu sekme, kullanıcının uyarı etkinliği için risk faktörlerinin özetini açar. Risk faktörleri, gözden geçirme sırasında bu kullanıcının risk yönetimi etkinliğinin ne kadar riskli olduğunu belirlemenize yardımcı olabilir. Risk faktörleri şunlara ilişkin özetleri içerir:
 
 - **En çok sızdırma etkinlikleri**: Uyarı için en yüksek sayıda veya olayla sızdırma etkinliklerini görüntüler.
 - **Kümülatif sızdırma etkinlikleri**: Kümülatif sızdırma etkinlikleriyle ilişkili olayları görüntüler.
-- **Etkinlik dizileri**: Risk dizileriyle ilişkili algılanan etkinlikleri görüntüler.
-- **Bu kullanıcı için olağan dışı etkinlik**: Kullanıcı için olağan dışı olarak kabul edilen ve normal etkinliklerinden ayrılan etkinlikleri görüntüler.
-- **Öncelik içeriği**: Öncelik içeriğiyle ilişkili etkinlikleri görüntüler.
-- **İzin verilmeyen etki alanları**: İzin verilmeyen etki alanlarıyla ilişkili olayların etkinliklerini görüntüler.
-- **Sistem durumu kaydı erişimi: Sistem** durumu kayıtlarına erişimle ilişkili olayların etkinliklerini görüntüler.
-- **Riskli tarayıcı kullanımı**: Uygunsuz olabilecek web sitelerine göz atmayla ilişkili olaylara yönelik etkinlikleri görüntüler.
+- **Etkinlik dizileri**: Risk dizileriyle ilişkili algılanan riskli etkinlikleri görüntüler.
+- **Bu kullanıcı için olağan dışı etkinlik**: Kullanıcı için, olağan dışı ve tipik etkinliklerinden ayrıldıkları için riskli olduğu düşünülen belirli etkinlikleri görüntüler.
+- **Öncelik içeriği: Öncelikli içerikle** ilişkili riskli olabilecek etkinlikleri görüntüler.
+- **İzin verilmeyen etki alanları: İzin verilmeyen etki alanlarıyla** ilişkili olaylar için riskli olabilecek etkinlikleri görüntüler.
+- **Sistem durumu kaydı erişimi: Sistem** durumu kayıtlarına erişimle ilişkili olaylar için riskli olabilecek etkinlikleri görüntüler.
+- **Riskli tarayıcı kullanımı**: Uygunsuz olabilecek web sitelerine göz atmayla ilişkili olaylar için riskli olabilecek etkinlikleri görüntüler.
 
-Bu filtrelerle yalnızca bu risk faktörlerine sahip uyarıları görürsünüz, ancak uyarı oluşturan etkinlik bu kategorilerden hiçbirine girmeyebilir. Örneğin, kullanıcı bir USB cihazına dosya kopyaladığından, sıra etkinliklerini içeren bir uyarı oluşturulmuş olabilir.
+Bu filtrelerle, yalnızca yukarıdaki risk faktörlerine sahip uyarılar görürsünüz, ancak uyarı oluşturan etkinlik bu kategorilerden hiçbirine girmeyebilir. Örneğin, kullanıcı bir USB cihazına dosya kopyaladığından, sıra etkinliklerini içeren bir uyarı oluşturulmuş olabilir.
 
 ### <a name="content-detected"></a>İçerik algılandı
 
@@ -165,12 +169,12 @@ Bu sekme Etkinlik gezginini açar. Daha fazla bilgi için bu makaledeki Etkinlik
 
 ### <a name="user-activity"></a>Kullanıcı etkinliği
 
-**Kullanıcı etkinlik** grafiği, iç risk analizi ve iç risk yönetimi çözümündeki uyarılar ve durumlar için araştırma için en güçlü araçlardan biridir. Bu sekme, bir kullanıcının tüm uyarıların geçmiş zaman çizelgesi, uyarı ayrıntıları, kullanıcı için geçerli risk puanı ve risk olaylarının sırası dahil olmak üzere tüm etkinliklerin hızlı bir şekilde gözden geçirilmesini sağlayacak şekilde yapılandırılmıştır.  
+**Kullanıcı etkinlik** grafiği, iç risk analizi ve iç risk yönetimi çözümündeki uyarılar ve durumlar için araştırma için en güçlü araçlardan biridir. Bu sekme, bir kullanıcının tüm uyarıların geçmiş zaman çizelgesi, uyarı ayrıntıları, kullanıcı için geçerli risk puanı ve risk olaylarının sırası dahil olmak üzere tüm etkinliklerin hızlı bir şekilde gözden geçirilmesini sağlayacak şekilde yapılandırılmıştır.
 
-![Insider risk yönetimi kullanıcı etkinliği.](../media/insider-risk-user-activities.png)
+![Insider risk yönetimi kullanıcı etkinliği](../media/insider-risk-user-activities.png)
 
-1. **Zaman filtreleri**: Varsayılan olarak, Kullanıcı etkinlik grafiğinde görüntülenen etkinliklerin son üç ayıdır. Kabarcık grafiğinde *6 Ay*, *3 Ay* veya *1 Ay* sekmelerini seçerek grafik görünümünü kolayca filtreleyebilirsiniz.
-2. **Risk uyarısı etkinliği ve ayrıntıları**: Risk etkinlikleri, Kullanıcı etkinlik grafiğinde renkli kabarcıklar olarak görsel olarak görüntülenir. Kabarcıklar farklı risk kategorileri ve için oluşturulur. Her risk etkinliğinin ayrıntılarını görüntülemek için bir kabarcık seçin. Ayrıntılar şunlardır:
+1. **Zaman filtreleri**: Varsayılan olarak, riskli olabilecek etkinliklerin son üç ayı Kullanıcı etkinlik grafiğinde görüntülenir. Kabarcık grafiğinde *6 Ay*, *3 Ay* veya *1 Ay* sekmelerini seçerek grafik görünümünü kolayca filtreleyebilirsiniz.
+2. **Risk uyarısı etkinliği ve ayrıntıları**: Riskli olabilecek etkinlikler, Kullanıcı etkinlik grafiğinde görsel olarak renkli kabarcıklar olarak görüntülenir. Kabarcıklar farklı risk kategorileri ve için oluşturulur. Riskli olabilecek her etkinliğin ayrıntılarını görüntülemek için bir kabarcık seçin. Ayrıntılar şunlardır:
     - Risk etkinliğinin **tarihi**.
     - **Risk etkinliği kategorisi**. Örneğin, Email ve *sharepoint online'dan indirilen* *dosya veya kuruluş dışına gönderilen ekleri* içerir.
     - Uyarı için **risk puanı**. Bu puan, uyarı riski önem düzeyi için sayısal puandır.
@@ -178,13 +182,13 @@ Bu sekme Etkinlik gezginini açar. Daha fazla bilgi için bu makaledeki Etkinlik
 3. **Filtreler ve sıralama (önizleme)**:
     - **Risk kategorisi**: Etkinlikleri aşağıdaki risk kategorilerine göre filtreleyin: *Risk puanı 15 > olan etkinlikler (sıralı olmadığı sürece)* ve *Sıralı etkinlikler*.
     - **Etkinlik Türü**: Etkinlikleri şu türlere göre filtreleyin: *Erişim*, *Silme*, *Toplama*, *Sızdırma*, *Sızma*, *Gizleme* ve *Güvenlik*.
-    - **Sıralama ölçütü**: Zaman çizelgesi etkinliklerini *gerçekleşen Tarihe* veya *Risk puanına* göre listeleyin.
-4. **Risk sırası**: Riskli etkinliklerin kronolojik sırası, risk araştırmasının önemli bir yönüdür ve bu ilgili etkinliklerin tanımlanması, kuruluşunuz için genel riski değerlendirmenin önemli bir parçasıdır. İlgili uyarı etkinlikleri, bu etkinliklerin daha büyük bir risk alanıyla ilişkilendirildiğini vurgulamak için bağlantı çizgileri ile görüntülenir. Diziler, bu görünümde sıranın risk puanına göre sıra etkinliklerinin üzerine yerleştirilmiş bir simgeyle de tanımlanır. Bu diziyle ilişkili riskli etkinliğin tarihini ve saatini görmek için simgenin üzerine gelin. Etkinliklerin bu görünümü, araştırmacıların yalıtılmış veya tek seferlik olaylar olarak görülebilecek risk etkinlikleri için kelimenin tam anlamıyla "noktaları birbirine bağlamalarına" yardımcı olabilir. İlişkili tüm risk etkinliklerinin ayrıntılarını görüntülemek için dizideki simgeyi veya herhangi bir baloncuğu seçin. Ayrıntılar şunlardır:
+    - **Sıralama ölçütü**: Riskli olabilecek etkinliklerin zaman çizelgesini *Gerçekleşen Tarihe* veya *Risk puanına* göre listeleyin.
+4. **Risk sırası**: Riskli olabilecek etkinliklerin kronolojik sırası, risk araştırmasının önemli bir yönüdür ve bu ilgili etkinliklerin tanımlanması, kuruluşunuz için genel riski değerlendirmenin önemli bir parçasıdır. İlgili uyarı etkinlikleri, bu etkinliklerin daha büyük bir risk alanıyla ilişkilendirildiğini vurgulamak için bağlantı çizgileri ile görüntülenir. Diziler, bu görünümde sıranın risk puanına göre sıra etkinliklerinin üzerine yerleştirilmiş bir simgeyle de tanımlanır. Bu diziyle ilişkili riskli etkinliğin tarihini ve saatini görmek için simgenin üzerine gelin. Etkinliklerin bu görünümü, araştırmacıların yalıtılmış veya tek seferlik olaylar olarak görülebilecek risk etkinlikleri için kelimenin tam anlamıyla "noktaları birbirine bağlamalarına" yardımcı olabilir. İlişkili tüm risk etkinliklerinin ayrıntılarını görüntülemek için dizideki simgeyi veya herhangi bir baloncuğu seçin. Ayrıntılar şunlardır:
 
     - **Sıranın adı** .
     - Sıranın **Tarih** veya **Tarih aralığı**.
     - Sıra için **risk puanı**. Bu puan, dizideki ilgili her etkinlik için birleştirilmiş uyarı riski önem derecesi düzeylerinin dizisinin sayısal puanıdır.
-    - **Dizideki her uyarıyla ilişkili olay sayısı**. Her risk etkinliğiyle ilişkili her dosyaya veya e-postaya bağlantılar da sağlanır.
+    - **Dizideki her uyarıyla ilişkili olay sayısı**. Riskli olabilecek her etkinlikle ilişkili her dosyaya veya e-postaya bağlantılar da sağlanır.
     - **Etkinlikleri sırayla gösterin**. Sırayı kabarcık grafiğinde vurgu çizgisi olarak görüntüler ve uyarı ayrıntılarını genişleterek tüm ilgili uyarıları dizide görüntüler.
 
 5. **Risk etkinliği göstergesi**: Kullanıcı etkinlik grafiğinin alt kısmında, renk kodlu gösterge her uyarı için risk kategorisini hızla belirlemenize yardımcı olur.
@@ -196,7 +200,7 @@ Bu sekme Etkinlik gezginini açar. Daha fazla bilgi için bu makaledeki Etkinlik
 > [!NOTE]
 > Etkinlik gezgini, kuruluşunuzda bu özellik kullanıma sunulduktan sonra olayları tetikleyen kullanıcılar için uyarı yönetimi alanında kullanılabilir.
 
-Etkinlik gezgini, risk araştırmacılarına ve analistlerine uyarılar hakkında ayrıntılı bilgi sağlayan kapsamlı bir analiz aracı sağlar. Etkinlik gezgini ile gözden geçirenler algılanan riskli etkinliğin zaman çizelgesini hızla gözden geçirebilir ve uyarılarla ilişkili tüm risk etkinliklerini tanımlayıp filtreleyebilir.
+Etkinlik gezgini, risk araştırmacılarına ve analistlerine uyarılar hakkında ayrıntılı bilgi sağlayan kapsamlı bir analiz aracı sağlar. Etkinlik gezgini ile gözden geçirenler, riskli olabilecek etkinliklerin zaman çizelgesini hızla gözden geçirebilir ve uyarılarla ilişkili tüm risk etkinliklerini tanımlayıp filtreleyebilir. 
 
 Sütun bilgileri için Etkinlik gezginindeki uyarıları filtrelemek için Filtre denetimini seçin. Uyarıları, uyarının ayrıntılar bölmesinde listelenen bir veya daha fazla özniteliğe göre filtreleyebilirsiniz. Etkinlik gezgini, araştırmacıların ve analistlerin panoyu kendileri için en önemli bilgilere odaklamalarına yardımcı olmak için özelleştirilebilir sütunları da destekler.
 
@@ -215,7 +219,7 @@ Aşağıdaki alanlara yönelik etkinlikleri ve içgörüleri görüntülemek ve 
   - Sistem durumu kaydı erişim etkinlikleri
   - Riskli tarayıcı kullanımı
 
-![Insider risk yönetimi etkinlik gezginine genel bakış.](../media/insider-risk-activity-explorer.png)
+![Insider risk yönetimi etkinlik gezginine genel bakış](../media/insider-risk-activity-explorer.png)
 
 **Etkinlik gezginini** kullanmak için aşağıdaki adımları tamamlayın:
 
@@ -228,14 +232,14 @@ Etkinlik gezginindeki etkinlikleri gözden geçirirken araştırmacılar ve anal
 
 Etkinlik zaman çizelgesinden bir etkinliğin olaylarını seçerken, gezginde görüntülenen etkinliklerin sayısı zaman çizelgesinde listelenen etkinlik olaylarının sayısıyla eşleşmeyebilir. Bu farkın neden ortaya çıkabileceğinin örnekleri:
 
-- **Kümülatif sızdırma algılama**: Kümülatif sızdırma algılama olay günlüklerini analiz eder, ancak işlem kümülatif sızdırma riskine benzer etkinliklerin yinelenenleri kaldırmayı içeren bir model uygular. Ayrıca, mevcut ilkenizde veya ayarlarınızda değişiklik yaptıysanız Etkinlik gezgininde görüntülenen etkinliklerin sayısında da fark olabilir. Örneğin, izin verilen/izin verilmeyen etki alanlarını değiştirirseniz veya bir ilke oluşturulduktan ve etkinlik eşleşmeleri gerçekleştikten sonra yeni dosya türü dışlamaları eklerseniz, ilke veya ayarlar değişmeden önce toplu sızdırma algılama etkinlikleri sonuçlardan farklı olur. Kümülatif sızdırma algılama etkinliği toplamları hesaplama sırasında ilke ve ayarlar yapılandırmasını temel alır ve ilke ve ayarlar değişikliklerinden önceki etkinlikleri içermez
-- **Dış alıcılara gönderilen e-postalar**: Dış alıcılara gönderilen e-postaların etkinliğine, gönderilen e-postaların sayısına göre bir risk puanı atanır ve bu puan etkinlik olay günlükleriyle eşleşmeyebilir.
+- **Kümülatif sızdırma algılama**: Kümülatif sızdırma algılama olay günlüklerini analiz eder, ancak işlem kümülatif sızdırma riskine benzer etkinliklerin yinelenenleri kaldırmayı içeren bir model uygular. Ayrıca, mevcut ilkenizde veya ayarlarınızda değişiklik yaptıysanız Etkinlik gezgininde görüntülenen riskli olabilecek etkinliklerin sayısında da bir fark olabilir. Örneğin, izin verilen/izin verilmeyen etki alanlarını değiştirirseniz veya bir ilke oluşturulduktan ve riskli olabilecek etkinlik eşleşmeleri oluştuktan sonra yeni dosya türü dışlamaları eklerseniz, ilke veya ayarlar değişmeden önce toplu sızdırma algılama etkinlikleri sonuçlardan farklı olur. Kümülatif sızdırma algılama etkinliği toplamları hesaplama sırasında ilke ve ayarlar yapılandırmasını temel alır ve ilke ve ayarlar değişikliklerinden önceki etkinlikleri içermez
+- **Dış alıcılara gönderilen e-postalar: Dış alıcılara** gönderilen e-postalar için riskli olabilecek etkinliklere, gönderilen e-postaların sayısına göre bir risk puanı atanır ve bu da etkinlik olay günlükleriyle eşleşmeyebilir.
 
 ![Insider risk yönetimi etkinlik gezgini ayrıntıları.](../media/insider-risk-activity-explorer-details.png)
 
 ## <a name="create-a-case-for-an-alert"></a>Uyarı için servis talebi oluşturma
 
-Uyarı gözden geçirilip önceliklendirildikçe, risk etkinliğini daha fazla araştırmak için yeni bir olay oluşturabilirsiniz. Uyarı için servis talebi oluşturmak için şu adımları izleyin:
+Uyarı gözden geçirilip önceliklendirildikçe riskli olabilecek etkinliği daha fazla araştırmak için yeni bir olay oluşturabilirsiniz. Uyarı için servis talebi oluşturmak için şu adımları izleyin:
 
 1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) **Insider risk yönetimi'ne** gidin ve **Uyarılar** sekmesini seçin.
 2. **Uyarılar panosunda**, onaylamak istediğiniz uyarıyı seçin ve yeni bir servis talebi oluşturun.
@@ -247,9 +251,9 @@ Olay oluşturulduktan sonra, araştırmacılar ve analistler olayı yönetebilir
 
 ## <a name="retention-and-item-limits"></a>Bekletme ve öğe sınırları
 
-Insider risk yönetimi uyarıları yaş ilerledikçe, riskli etkinliği en aza indirmeye yönelik değerleri çoğu kuruluş için azalır. Buna karşılık, etkin servis talepleri ve ilişkili yapıtlar (uyarılar, içgörüler, etkinlikler) kuruluşlar için her zaman değerlidir ve otomatik son kullanma tarihine sahip olmamalıdır. Bu, etkin bir servis talebiyle ilişkilendirilmiş tüm kullanıcılar için etkin durumdaki tüm gelecek uyarıları ve yapıtları içerir.
+Insider risk yönetimi uyarıları yaş ilerledikçe, riskli olabilecek etkinlikleri en aza indirmeye yönelik değerleri çoğu kuruluş için azalır. Buna karşılık, etkin servis talepleri ve ilişkili yapıtlar (uyarılar, içgörüler, etkinlikler) kuruluşlar için her zaman değerlidir ve otomatik son kullanma tarihine sahip olmamalıdır. Bu, etkin bir servis talebiyle ilişkilendirilmiş tüm kullanıcılar için etkin durumdaki tüm gelecek uyarıları ve yapıtları içerir.
 
-Sınırlı geçerli değer sağlayan eski öğelerin sayısını en aza indirmeye yardımcı olmak için, insider risk yönetimi uyarıları, durumları ve kullanıcı etkinliği raporları için aşağıdaki saklama ve sınırlar geçerlidir:
+Sınırlı geçerli değer sağlayan eski öğelerin sayısını en aza indirmeye yardımcı olmak için, insider risk yönetimi uyarıları, durumları ve kullanıcı raporları için aşağıdaki saklama ve sınırlar geçerlidir:
 
 |**Öğe**|**Bekletme/Sınır**|
 |:-------|:------------------|
@@ -261,7 +265,7 @@ Sınırlı geçerli değer sağlayan eski öğelerin sayısını en aza indirmey
 
 ## <a name="get-help-managing-your-insider-risk-alert-queue"></a>Insider risk uyarı kuyruğunuzu yönetme konusunda yardım alın
 
-Insider risk uyarılarını gözden geçirmek, araştırmak ve üzerinde hareket etmek, kuruluşunuzdaki insider risklerini en aza indirmenin önemli parçalarıdır. Bu risklerin etkisini en aza indirmek için hızla harekete geçmek, kuruluşunuz için zaman, para ve yasal sonuçlardan veya yasal sonuçlardan tasarruf edebilir. Bu düzeltme sürecinde, uyarıları gözden geçirmenin ilk adımı birçok analist ve araştırmacı için en zor görev gibi görünebilir. Koşullarınıza bağlı olarak, içeriden risk uyarılarına göre hareket ederken bazı küçük engellerle karşılaşabilirsiniz. Aşağıdaki önerileri gözden geçirin ve uyarı gözden geçirme işlemini iyileştirmeyi öğrenin.
+Riskli olabilecek insider uyarılarını gözden geçirmek, araştırmak ve üzerinde hareket etmek, kuruluşunuzdaki insider risklerini en aza indirmenin önemli parçalarıdır. Bu risklerin etkisini en aza indirmek için hızla harekete geçmek, kuruluşunuz için zaman, para ve yasal sonuçlardan veya yasal sonuçlardan tasarruf edebilir. Bu düzeltme sürecinde, uyarıları gözden geçirmenin ilk adımı birçok analist ve araştırmacı için en zor görev gibi görünebilir. Koşullarınıza bağlı olarak, riskli olabilecek insider uyarılarına göre hareket ederken bazı küçük engellerle karşılaşabilirsiniz. Aşağıdaki önerileri gözden geçirin ve uyarı gözden geçirme işlemini iyileştirmeyi öğrenin.
 
 ### <a name="too-many-alerts-to-review"></a>Gözden geçiremeyecek kadar çok uyarı var
 
@@ -278,13 +282,13 @@ Insider risk yönetiminde uyarıları araştırmak ve bu uyarılar üzerinde iş
 
 1. **Uyarılar için [Uyarı panosunu](insider-risk-management-activities.md#alert-dashboard) gözden geçirin ve durumu Gözden geçirme gerekiyor olarak belirleyin**. Bu tür uyarıların bulunmasına yardımcı olmak için gerekirse uyarı *Durumuna* göre [filtreleyin](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard).
 2. **En yüksek önem derecesine sahip uyarılarla başlayın**. Bu tür uyarıların bulunmasına yardımcı olmak için gerekirse uyarı *Önem Derecesi'ne* göre [filtreleyin](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard).
-3. **Daha fazla bilgi bulmak ve uyarı ayrıntılarını gözden geçirmek için bir uyarı seçin**. Gerekirse, ilişkili riskli davranışın zaman çizelgesini gözden geçirmek ve uyarının tüm risk etkinliklerini belirlemek için [Etkinlik gezginini](insider-risk-management-activities.md#activity-explorer) kullanın.
+3. **Daha fazla bilgi bulmak ve uyarı ayrıntılarını gözden geçirmek için bir uyarı seçin**. Gerekirse, [etkinlik gezginini](insider-risk-management-activities.md#activity-explorer) kullanarak ilişkili olası riskli davranışın zaman çizelgesini gözden geçirin ve uyarının tüm risk etkinliklerini belirleyin.
 4. **Uyarıya göre hareket edin**. Uyarıyı onaylayabilir ve uyarı için [bir servis talebi oluşturabilir](insider-risk-management-activities.md#create-a-case-for-an-alert) veya uyarıyı kapatıp çözümleyebilirsiniz.
 
 ### <a name="resource-constraints-in-my-organization"></a>Kuruluşumdaki kaynak kısıtlamaları
 
 Modern çalışma alanı kullanıcıları genellikle zamanlarında çok çeşitli sorumluluklara ve taleplere sahiptir. Kaynak kısıtlamalarını gidermeye yardımcı olmak için gerçekleştirebileceğiniz çeşitli eylemler vardır:
 
-- **Analist ve araştırmacı çalışmalarını öncelikle en yüksek risk uyarılarına odakla**. İlkelerinize bağlı olarak, risk azaltma çabalarınızı farklı derecelerde etkileyebilecek etkinlikleri yakalayıyor ve uyarılar oluşturuyor olabilirsiniz. Uyarıları önem derecesine göre [filtreleyin](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard) ve *Yüksek önem derecesi* uyarılarının önceliklerini belirleyin.
+- **Analist ve araştırmacı çalışmalarını öncelikle en yüksek risk uyarılarına odakla**. İlkelerinize bağlı olarak, kullanıcı etkinliklerini yakalayıyor ve risk azaltma çabalarınızı farklı derecede etkileyebilecek uyarılar oluşturuyor olabilirsiniz. Uyarıları önem derecesine göre [filtreleyin](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard) ve *Yüksek önem derecesi* uyarılarının önceliklerini belirleyin.
 - **Kullanıcıları analist ve araştırmacı olarak atayın**. Doğru kullanıcıya uygun roller atanmak, insider risk uyarısı gözden geçirme sürecinin önemli bir parçasıdır. *Insider Risk Yönetimi Analistleri ve Insider Risk Yönetimi Araştırmacıları* rol gruplarına uygun kullanıcıları *atadığınızdan* emin olun.  
-- **En yüksek risk etkinliklerini keşfetmeye yardımcı olmak için otomatik insider risk özelliklerini kullanın**. Insider risk yönetimi [dizisi algılama](insider-risk-management-policies.md#sequence-detection-preview) ve [kümülatif sızdırma algılama](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) özellikleri, kuruluşunuzdaki riskleri bulmanın daha zor olduğunu hızla keşfetmenize yardımcı olabilir. [Risk puanı artırıcılarınızı](insider-risk-management-settings.md#indicators), [dosya türü dışlamalarınızı](insider-risk-management-settings.md#file-type-exclusions), [etki alanlarınızı](insider-risk-management-settings.md#domains) ve ilkeleriniz için minimum [gösterge eşiği ayarlarını](insider-risk-management-settings.md#indicator-level-settings-preview) ince ayarlamayı göz önünde bulundurun.
+- **En yüksek risk etkinliklerini keşfetmeye yardımcı olmak için otomatik insider risk özelliklerini kullanın**. Insider risk yönetimi [dizisi algılama](insider-risk-management-policies.md#sequence-detection-preview) ve [kümülatif sızdırma algılama](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) özellikleri, kuruluşunuzdaki riskleri bulmanın daha zor olduğunu hızla keşfetmenize yardımcı olabilir. [Risk puanı artırıcılarınızı](insider-risk-management-settings.md#indicators), [dosya etkinliği algılamanızı](insider-risk-management-settings.md#file-activity-detection), [etki alanlarınızı](insider-risk-management-settings.md#domains) ve ilkeleriniz için minimum [gösterge eşiği ayarlarını](insider-risk-management-settings.md#indicator-level-settings-preview) ince ayarlamayı göz önünde bulundurun.

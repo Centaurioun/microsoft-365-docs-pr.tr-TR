@@ -16,6 +16,7 @@ ms.custom:
 - O365E_AddUsersCSV
 - admindeeplinkMAC
 ms.collection:
+- Tier1
 - scotvorg
 search.appverid:
 - MET150
@@ -27,12 +28,12 @@ search.appverid:
 - GEA150
 - BCS160
 description: "İş için Microsoft 365'e elektronik tablodaki veya CSV biçimlendirilmiş başka bir dosyadaki listeden birden çok kullanıcı eklemeyi öğrenin. YouTube'da Microsoft 365'e hesap eklemeyi açıklayan bir video izleyin. Bu işlemin sonunda, hesabı olan her kullanıcının bir Microsoft 365 posta kutusu olacaktır. "
-ms.openlocfilehash: c8453e5634245897a06867b422349c3350de03ae
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: a6e58dea7eb1aeb277e319f2cef6c03ef431d6bf
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68201187"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730743"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Microsoft 365'e aynı anda birkaç kullanıcı ekleme - yardım Yönetici
 

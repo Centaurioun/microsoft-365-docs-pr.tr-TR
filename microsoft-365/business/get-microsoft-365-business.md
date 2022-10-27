@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - Adm_O365
 - M365-subscription-management
@@ -26,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft 365 İş Ekstra satın alma seçeneklerinizi ve Microsoft İş Ortağı Merkezi'nden satın almak için adım adım yönergeleri keşfedin.
-ms.openlocfilehash: 15f663a521bd1825d5f3b5fff87a23c4c9fbc26d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: b8a42e0ae0f287ff22da709fc38552fdfaea48e5
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68184995"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730325"
 ---
 # <a name="get-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra’yı edinin
 

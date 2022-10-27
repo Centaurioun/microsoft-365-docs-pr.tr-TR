@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -26,12 +27,12 @@ ms.custom:
 search.appverid: GEA150
 description: Microsoft 365 İş Standart, Microsoft 365 İş Ekstra veya İş için Microsoft 365 Uygulamaları için 30 günlük ücretsiz deneme sürümüne kaydolun.
 ms.date: 08/07/2020
-ms.openlocfilehash: 3999deed5069b3154a43318059ff69e65e87235d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 62c6218558604f358cf338e89b8263734c0faf9b
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68194917"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729335"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>İş için Microsoft 365 aboneliğini deneyin veya satın alın
 

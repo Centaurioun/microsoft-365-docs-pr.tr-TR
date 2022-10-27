@@ -11,6 +11,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ search.appverid: MET150
 description: Microsoft ürün ve hizmetlerini satın almanıza yardımcı olacak teklifler hakkında bilgi edinin.
 ROBOTS: NOINDEX
 ms.date: 07/11/2022
-ms.openlocfilehash: b1b8efb8f4d07cac1071fe3f280af59b242eb0c7
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 154691dea57c7ee95583f9a8903278e012e7d9d6
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68206091"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733204"
 ---
 # <a name="understand-the-microsoft-proposal-workflow"></a>Microsoft teklif iş akışını anlama
 

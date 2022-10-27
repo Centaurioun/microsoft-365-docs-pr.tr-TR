@@ -16,14 +16,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: conceptual
+- demo
+ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 0f9bb664fbbbb6a9791ec20c41bf5a2cda874fb5
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.date: 10/21/2022
+ms.openlocfilehash: d8d2b130381228ec2f7c57c0c8ae351841fbd277
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68643349"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68730216"
 ---
 # <a name="block-at-first-sight-bafs-demonstration"></a>İlk Bakışta Engelle (BAFS) gösterimi
 

@@ -8,15 +8,16 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Rezervasyon sayfanızın renk temasını değiştirin.
-ms.openlocfilehash: ecddaab39b39ee3f73b76e552336fc444c2f563e
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: c94513a9b32a00dbdf7ddad763397b0d5e0c7d64
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68190055"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733999"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Rezervasyon sayfanızı özelleştirme ve yayımlama
 

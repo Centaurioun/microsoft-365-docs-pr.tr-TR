@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Grupları ile, bir grup kişiye paylaşılan kaynak koleksiyonuna erişim vererek Microsoft 365 genelinde ekip çalışmasını yönlendirebilirsiniz.
-ms.openlocfilehash: 6315ef4749183f8539cebb6c5720c75708fd5709
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: a3501217e90d7b131621abae95450899b0b835a1
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68178327"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720382"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Yöneticiler için Microsoft 365 Grupları genel bakış
 
@@ -80,13 +81,12 @@ Microsoft 365 Grupları için aşağıdaki sınırlar geçerlidir:
 |:---------|:----|
 |Grup başına sahipler|100|
 |Bir kullanıcının oluşturabileceği gruplar|250|
-|Bir yöneticinin oluşturabileceği gruplar|Varsayılan kiracı sınırı 500 K'ye kadar|
+|Bir yöneticinin oluşturabileceği gruplar|Microsoft 365 grubuna özgü sınır yoktur. Her kuruluşa özgü genel bir Azure AD nesne sınırı vardır. Kuruluştaki grupları yönetebilen bir Azure AD yöneticisi, Azure AD nesne sınırına kadar sınırsız sayıda Microsoft 365 grubu oluşturabilir. Bkz. [AAD hizmet sınırları ve kısıtlamaları](/active-directory/enterprise-users/directory-service-limits-restrictions).|
 |Üye sayısı|1.000'den fazla, ancak grup konuşmalarını eşzamanlı olarak yalnızca 1.000 erişebilir. <br>Kullanıcılar, Outlook'taki büyük gruplarda takvime ve konuşmalara erişirken gecikmeler yaşayabilir.|
 |Bir kullanıcının üye olabileceği Grup sayısı|7,000|
 |Dosya depolama|Abone olan kullanıcı başına 1 Terabayt + 10 GB + satın alınan diğer depolama alanları. Sınırsız miktarda ek depolama alanı satın alabilirsiniz.|
 |Grup Posta Kutusu boyutu|50 GB|
 
-Bir kuruluşun sahip olabileceği varsayılan en fazla Microsoft 365 grubu sayısı 500.000'dir. Varsayılan sınırın ötesine geçmek için Microsoft Desteği ile iletişime geçmeniz gerekir. Microsoft 365 Grupları sınırları hakkında daha fazla bilgi için yardım [Yönetici Microsoft 365 Grupları bölümüne bakın](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 Grup kullanımı hakkında eyleme dönüştürülebilir bilgilere sahip olduğunuzda Microsoft 365 gruplarınızı yönetmek daha etkilidir. Microsoft 365 yönetim merkezi depolama kullanımını, kaç etkin grubunuz olduğunu ve kullanıcıların grupları nasıl kullandığını görmenizi sağlayan bir raporlama aracı vardır. Daha fazla bilgi için bkz. [Yönetim merkezinde Microsoft 365 Raporları](../activity-reports/office-365-groups.md) .
 

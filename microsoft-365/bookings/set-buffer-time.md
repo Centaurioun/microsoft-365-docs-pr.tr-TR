@@ -8,15 +8,16 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: Ekipmanı temizlemek veya sıfırlamak için zaman sağlamak için Microsoft Bookings randevudan önce veya sonra arabellek süresi ayarlayın.
-ms.openlocfilehash: 963add3016240e5c774eaf58c7f1418663b7f659
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 02586ff6ad6d1676c4a596a4eca6eb98959c4005
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68197293"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726541"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>Microsoft Bookings'de arabellek süresini ayarlama
 

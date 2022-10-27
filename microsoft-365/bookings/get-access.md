@@ -8,15 +8,16 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Microsoft 365'teki Bookings özelliğine nasıl erişeceğinizi öğrenin.
-ms.openlocfilehash: b3a59cb71ac90b6a5e50d3faa0f68a1fd54c30be
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: ecda7ed2b819a3929e1f93a1c92091404681c2f4
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68210712"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68719502"
 ---
 # <a name="get-access-to-microsoft-bookings"></a>Microsoft Bookings’e erişim elde etme
 

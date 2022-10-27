@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Bir kuruluşu kimlik avına ve kötü amaçlı URL kullanan diğer saldırılara karşı korumak için Office 365 için Defender'de Güvenli Bağlantılar koruması hakkında bilgi edinin. Teams Güvenli Bağlantılar'ı keşfedin ve Güvenli Bağlantılar iletilerinin grafiklerini görün.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 9365cc73239eb9086c565468aeb8f3104ad35b6f
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 174c4b7c4dd36af990920a22abb34fb85fb833d5
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68626873"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68734043"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Güvenli Bağlantılar
 
@@ -65,6 +65,8 @@ Güvenli Bağlantılar koruması aşağıdaki konumlarda kullanılabilir:
   > Güvenli Bağlantılar posta etkin ortak klasörlerde çalışmaz.
   >
   > Güvenli Bağlantılar yalnızca HTTP(S) ve FTP biçimlerini destekler.
+  >
+  > Office 365 için Defender önce bağlantıları kaydırmak için başka bir hizmet kullanmak, Bağlantının "kötü amaçlılığını" sarmalama, patlatma veya başka bir şekilde doğrulama gibi bağlantıları işlemek için Güvenli Bağlantılar özelliğini geçersiz kabilir.
 
 - **Microsoft Teams**: Teams konuşmalarındaki, grup sohbetlerindeki veya kanallardaki bağlantılar için Güvenli Bağlantılar koruması Güvenli Bağlantılar ilkeleri tarafından denetlenmektedir.
 

@@ -16,14 +16,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: conceptual
+- demo
+ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: d3898738f5030b626180d318eaa6137ad7e7f5ba
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.date: 10/21/2022
+ms.openlocfilehash: 561d36ebd04076e93b47b2679b3b236009f94c2d
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68634420"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68732789"
 ---
 # <a name="controlled-folder-access-cfa-demonstrations-block-ransomware"></a>Denetimli klasör erişimi (CFA) tanıtımları (fidye yazılımını engelle)
 
@@ -48,9 +50,9 @@ Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
 
 |Durum | Mod| Sayısal değer |
 |:---|:---|:---|
-| AuditMode | = Denetim Modu | 2 |
-| Etkin | = Blok modu | 1 |
 | Devre dışı | = Kapalı | 0 |
+| Etkin | = Blok modu | 1 |
+| Denetim | = Denetim modu | 2 |
 
 ## <a name="verify-configuration"></a>Yapılandırmayı doğrulama
 
@@ -80,7 +82,7 @@ Bunun yerine şu el ile adımları gerçekleştirebilirsiniz:
 
 ### <a name="scenario-1-cfa-blocks-ransomware-test-file"></a>Senaryo 1: CFA fidye yazılımı test dosyasını engelliyor
 
-1. PowerShell komutunu kullanarak CFA'ı açın: 
+1. PowerShell komutunu kullanarak CFA'ı açın:
   
 ```powershell
 Set-MpPreference -EnableControlledFolderAccess Enabled
@@ -101,7 +103,7 @@ Fidye yazılımı test dosyasını yürütürken 5 saniye sonra CFA'nın şifrel
 
 ### <a name="scenario-2-what-would-happen-without-cfa"></a>Senaryo 2: CFA olmadan ne olur?
 
-1. Bu PowerShell komutunu kullanarak CFA'ı kapatın: 
+1. Bu PowerShell komutunu kullanarak CFA'ı kapatın:
 
 ```powershell
 Set-MpPreference -EnableControlledFolderAccess Disabled

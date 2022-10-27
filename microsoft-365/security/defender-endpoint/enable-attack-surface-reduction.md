@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
 search.appverid: met150
-ms.openlocfilehash: b1eaf92219ba5641cd676e69558189a9cb377f51
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 452c1b11f7a283a91b03982a2e660730c9caac8c
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68175006"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68733119"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Saldırı yüzeyi azaltma kurallarını etkinleştirme
 
@@ -310,6 +310,7 @@ Dışlama eklemek için [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReduc
 
    > [!WARNING]
    > **Değer adı** sütunu veya **Değer** sütunu için desteklenmediğinden tırnak işaretleri kullanmayın.
+   > Kural kimliğinin başında veya sonunda boşluk olmamalıdır.
 
 ### <a name="powershell"></a>PowerShell
 

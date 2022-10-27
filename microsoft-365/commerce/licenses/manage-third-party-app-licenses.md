@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 description: Microsoft 365 yönetim merkezi bağımsız yazılım satıcısı (ISV) uygulamalarının lisanslarını yönetmeyi öğrenin.
 ms.date: 06/08/2022
-ms.openlocfilehash: 7c27c4b1188990426868f86be052d8304eaf7da7
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 1458088774f5a1daf8b5fe10032b05196c167d15
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68179647"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68735363"
 ---
 # <a name="manage-isv-app-licenses-in-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezi ISV uygulama lisanslarını yönetme
 

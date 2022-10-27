@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Kuruluşunuzda kullanılan toplam dosya ve depolama alanı sayısı hakkında daha fazla bilgi edinmek için OneDrive İş Kullanım Raporu'na bakın.
-ms.openlocfilehash: 5a1afc447d90e0da811d051c2fe56b36f6c641d4
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: ff25945543a7a0bbe7f6fb9c0faf1807edd87522
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68196039"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68722846"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Yönetim merkezinde Microsoft 365 Raporları - OneDrive İş kullanımı
 

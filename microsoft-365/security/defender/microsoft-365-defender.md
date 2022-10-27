@@ -24,12 +24,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 adobe-target: true
-ms.openlocfilehash: b9429afee03d59e1fe88beb9d8f77549de1a5294
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 064f56775ba259d14fe5a589cdc6278c0f453bf9
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68622628"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68729907"
 ---
 # <a name="what-is-microsoft-365-defender"></a>Microsoft 365 Defender nedir?
 
@@ -53,7 +53,7 @@ Tümleşik Microsoft 365 Defender çözümüyle, güvenlik uzmanları bu ürünl
 </table>
 <br>
 
-Bunların dışında, Microsoft 365 Defender gelişmiş saldırılara karşı tümleşik koruma sağlamak için Azure Active Directory Kimlik Koruması], Uygulama İdaresi ve Microsoft Veri Kaybı Önleme ile yakından çalışır. 
+Bunların dışında Microsoft 365 Defender, gelişmiş saldırılara karşı tümleşik koruma sağlamak için Azure Active Directory Kimlik Koruması, Uygulama İdaresi ve Microsoft Veri Kaybı Önleme ile yakından çalışır. 
 
 ## <a name="microsoft-365-defender-interactive-guide"></a>etkileşimli kılavuz Microsoft 365 Defender
 
