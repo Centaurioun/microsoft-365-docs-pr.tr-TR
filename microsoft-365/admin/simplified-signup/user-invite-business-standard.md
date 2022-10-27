@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - highpri
 - Adm_TOC
@@ -17,12 +18,12 @@ ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 description: İş için Microsoft 365 kuruluşuna katılma daveti kabul etme
-ms.openlocfilehash: df8288afe3b7fd94e4044ece9cc0dc2a9e8b93cf
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 075237d3dad20ab71bf28c76b01b52159c758d47
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68172829"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68732305"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-for-business-subscription-user"></a>İş için Microsoft 365 aboneliğine e-posta daveti kabul etme (Kullanıcı)
 

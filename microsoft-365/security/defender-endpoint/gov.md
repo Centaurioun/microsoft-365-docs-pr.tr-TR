@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/26/2022
+ms.date: 10/12/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 - tier3
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: f496e01ff3c3c4a1db42e96d4bae49080776a663
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 6de59878f5e1488e06c695584e9c0665bac225bf
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68629467"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68732679"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Kamu görevlisi müşterilere yönelik Uç Nokta için Microsoft Defender
 

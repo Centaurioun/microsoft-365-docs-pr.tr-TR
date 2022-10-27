@@ -13,6 +13,7 @@ f1_keywords:
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 ms.custom:
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Mobil cihaz yönetimi ile mobil uygulama yönetimi veya MDM ile MAM arasındaki farkları öğrenin.
-ms.openlocfilehash: 68d8214dfc2356f78fb1ac7fc68852550d874a91
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: 2321c08fffd58e9cdcc9b70cf670c8bba6e83bc1
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68573603"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720301"
 ---
 # <a name="difference-between-mdm-and-mam"></a>MDM ile MAM arasındaki fark
 

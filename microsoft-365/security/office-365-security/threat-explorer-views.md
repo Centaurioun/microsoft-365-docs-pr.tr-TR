@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.openlocfilehash: dae696dea94a821a2fd3ae7b9fc6b175587bb246
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 5861e5f4910c1ce1cbf75a408ca40c76630a47f9
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68628455"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720162"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Tehdit Gezgini'nde görünümler ve gerçek zamanlı algılamalar
 
@@ -114,7 +114,7 @@ Ek ayrıntıları görüntülemek için listeden bir öğe seçin.
 
 ## <a name="email--all-email"></a>Tüm e-postaları Email >
 
-Bu raporu görüntülemek için Gezgin'de **Tüm postalar** **Email** \> **Görüntüle'yi** \> seçin. Bu görünümler, kimlik avı veya kötü amaçlı yazılım nedeniyle kötü amaçlı olarak tanımlanan e-postalar ve kötü amaçlı olmayan tüm postalar (normal e-posta, istenmeyen posta ve toplu posta) dahil olmak üzere e-posta etkinliğinin genel görünümünü gösterir.
+Bu raporu görüntülemek için Gezgin'de **Tüm postalar** **Email** \> **Görüntüle'yi** \> seçin. Bu görünüm, kimlik avı veya kötü amaçlı yazılım nedeniyle kötü amaçlı olarak tanımlanan e-postalar ve kötü amaçlı olmayan tüm postalar (normal e-posta, istenmeyen posta ve toplu posta) dahil olmak üzere e-posta etkinliğinin tüm görünümünü gösterir.
 
 > [!NOTE]
 > **Görüntülenecek çok fazla veri** var hatasını alırsanız filtre ekleyin ve gerekirse görüntülemekte olduğunuz tarih aralığını daraltın.
@@ -137,11 +137,7 @@ Grafiğin altında, ek dosya adı, iş yükü, dosya boyutu, dosyayı en son kim
 
 ## <a name="click-to-filter-capabilities"></a>Tıkla-filtre özellikleri
 
-Gezgin (ve gerçek zamanlı algılamalar) ile bir tıklamayla filtre uygulayabilirsiniz. Göstergedeki bir öğeye tıklar ve bu öğe rapor için bir filtre olur. Örneğin, Gezgin'de Kötü Amaçlı Yazılım görünümüne baktığımızı varsayalım:
-
-:::image type="content" source="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png" alt-text="Güvenlik & Uyumluluk portalındaki Gezgin sayfası" lightbox="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png":::
-
-Bu grafikte **ATP Patlama'ya tıklanması** aşağıdaki gibi bir görünüme neden olur:
+Gezgin (ve gerçek zamanlı algılamalar) ile bir tıklamayla filtre uygulayabilirsiniz. Göstergedeki bir öğeye tıklar ve bu öğe rapor için bir filtre olur. Örneğin, bu grafikte **ATP Patlama'ya tıklanması** aşağıdaki gibi bir görünüme neden olur:
 
 :::image type="content" source="../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png" alt-text="Gezgin yalnızca Office 365 için Defender Patlama sonuçlarını görüntüleyecek şekilde filtrelendi" lightbox="../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png":::
 

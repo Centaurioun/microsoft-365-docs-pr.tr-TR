@@ -10,6 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ search.appverid:
 - GEA150
 description: 21Vianet tarafından sağlanan Office 365 için iOS için Microsoft Office uygulaması ve Çin'deki müşteriler için nasıl indirebileceğiniz hakkında daha fazla bilgi edinin.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 851e325c357b59f0c7d34b21a4006f531c1cf4e3
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 5d7cce30c51111b9d8d1bb57d558964c20fcd339
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68206751"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68732371"
 ---
 # <a name="office-app-for-ios-for-office-365-operated-by-21vianet"></a>21Vianet tarafından sağlanan Office 365 için iOS için Office uygulaması
 

@@ -16,14 +16,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: conceptual
+- demo
+ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: b2d972407d62345fa8d62c23f319b446c01939d9
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.date: 10/21/2022
+ms.openlocfilehash: b8212717d21f7509195ab5b276ccffc443b760c3
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68623134"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68732701"
 ---
 # <a name="potentially-unwanted-applications-pua-demonstration"></a>İstenmeyebilecek uygulamalar (PUA) gösterimi
 

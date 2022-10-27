@@ -11,6 +11,7 @@ f1.keywords:
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Faturalama profillerinin faturaları nasıl desteklediğini öğrenin.
 ms.date: 04/02/2021
-ms.openlocfilehash: bd154503b4f9add9e8368663b4637ea28f239ce6
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: cff74260395f31738753c2217fe15fe51e05d35d
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68197271"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720338"
 ---
 # <a name="understand-billing-profiles"></a>Faturalama profillerini anlama
 

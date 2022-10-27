@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier1
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -25,12 +26,12 @@ ms.custom:
 - AdminTemplateSet
 description: Perakende satış mağazasından Microsoft 365 İş Standart satın aldıysanız ürün anahtarını kullanmayı ve aboneliğinizi etkinleştirmeyi öğrenin.
 ms.date: 08/18/2022
-ms.openlocfilehash: 2e786fe7299c91272b69f15820aa7174e6c020ae
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 83b6ff9278053c993378aacb5bb66872ed6a7cdc
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68167593"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720008"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Microsoft 365 İş Standart için ürün anahtarınızı girin
 

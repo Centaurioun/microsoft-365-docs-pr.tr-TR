@@ -10,18 +10,18 @@ ms.service: O365-seccomp
 f1.keywords:
 - NOCSH
 ms.collection:
-- m365-security-compliance
-- m365initiative-compliance
+- tier1
+- purview-compliance
 ms.custom:
 - admindeeplinkDEFENDER
 - intro-get-started
 ms.localizationpriority: medium
-ms.openlocfilehash: 39af52a0c2b402a007899c0f13e718d4b90eada1
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: 24438848ab8437b769dd99294079fcfec84eaa3f
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071513"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68720030"
 ---
 # <a name="quick-tasks-for-getting-started-with-compliance-in-microsoft-purview"></a>Microsoft Purview'da uyumlulukla çalışmaya başlamaya yönelik hızlı görevler
 
@@ -30,6 +30,8 @@ Microsoft Purview'u kullanmaya yeni başladıysanız ve nereden başlayacağın�
 Riskleri en iyi şekilde yönetmeyi, verilerinizi korumayı ve yeni uzak bir iş gücüyle düzenlemelere ve standartlara uymayı düşünüyorsanız bu makale de yararlıdır. Çalışanlar artık yeni yollarla işbirliği yapıp birbirleriyle bağlantı kuruyor ve bu değişiklik, mevcut uyumluluk süreçlerinizin ve denetimlerinizin uyum sağlaması gerekebileceği anlamına geliyor. Kuruluşunuzda bu yeni uyumluluk risklerini belirlemek ve yönetmek, verilerinizi korumak ve tehditleri ve riskleri en aza indirmek için kritik öneme sahiptir.
 
 Bu temel uyumluluk görevlerini tamamladıktan sonra, ek Microsoft Purview çözümleri uygulayarak kuruluşunuzda uyumluluk kapsamını genişletmeyi göz önünde bulundurun.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="task-1-configure-compliance-permissions"></a>Görev 1: Uyumluluk izinlerini yapılandırma
 
@@ -93,9 +95,9 @@ Bekletme ilkelerini yapılandırmaya yönelik adım adım yönergeler için bkz.
 
 Hassas bilgilerin korunması, iş yerinde taciz olaylarının algılanması ve bu olaylarda eylemde bulunılması, iç politikalar ve standartlara uyumun önemli bir parçasıdır. Microsoft Purview'da [iletişim uyumluluğu](/microsoft-365/compliance/communication-compliance), e-posta ve Microsoft Teams iletişimleri için hızlı bir şekilde algılamanıza, yakalamanıza ve düzeltme eylemleri gerçekleştirmenize yardımcı olarak bu riskleri en aza indirmeye yardımcı olur. Bunlar küfür, tehdit ve taciz içeren uygunsuz iletişimler ile kuruluşunuzun içinde ve dışında hassas bilgileri paylaşan iletişimleri içerir.
 
-Önceden tanımlanmış *Uygun olmayan metin ilkesi algıla* şablonu, belirlenen gözden geçirenler tarafından incelenebilmeleri için ilke eşleşmeleri için iç ve dış iletişimleri taramanıza olanak tanır. Gözden geçirenler kuruluşunuzdaki taranmış e-postaları, Microsoft Teams'i, Yammer'ı veya üçüncü taraf iletişimlerini araştırabilir ve kuruluşunuzun standartlarıyla uyumlu olduklarından emin olmak için uygun düzeltme eylemlerini gerçekleştirebilir.
+Önceden tanımlanmış *Bir Uygunsuz metin* ilkesi şablonu, belirlenen gözden geçirenler tarafından incelenebilmeleri için ilke eşleşmeleri için iç ve dış iletişimleri denetlemenize olanak tanır. Gözden geçirenler kuruluşunuzdaki e-posta, Microsoft Teams, Yammer veya üçüncü taraf iletişimlerini araştırabilir ve kuruluşunuzun standartlarıyla uyumlu olduklarından emin olmak için uygun düzeltme eylemlerini gerçekleştirebilir.
 
-Önceden tanımlanmış *Hassas bilgileri algıla* ilke şablonu, önemli verilerin erişimi olmaması gereken kişilerle paylaşılmadığından emin olmak için e-postayı ve tanımlı hassas bilgi türlerini veya anahtar sözcükleri içeren Microsoft Teams iletişimlerini taramak için hızla bir ilke oluşturmanıza yardımcı olur. Bu etkinlikler arasında gizli projeler hakkında yetkisiz iletişim veya şirket içi ticaret veya diğer harmanlama etkinlikleriyle ilgili sektöre özgü kurallar yer alabilir.
+Önceden tanımlanmış *Hassas bilgileri algıla* ilke şablonu, önemli verilerin erişimi olmaması gereken kişilerle paylaşılmadığından emin olmak için e-postayı ve tanımlı hassas bilgi türlerini veya anahtar sözcükleri içeren Microsoft Teams iletişimlerini denetlemek için hızla bir ilke oluşturmanıza yardımcı olur. Bu etkinlikler arasında gizli projeler hakkında yetkisiz iletişim veya şirket içi ticaret veya diğer harmanlama etkinlikleriyle ilgili sektöre özgü kurallar yer alabilir.
 
 İletişim uyumluluğunu planlama ve yapılandırmaya yönelik adım adım yönergeler için bkz. [İletişim uyumluluğunu planlama](/microsoft-365/compliance/communication-compliance-plan) ve [İletişim uyumluluğunu kullanmaya başlama](/microsoft-365/compliance/communication-compliance-configure). İletişim uyumluluğu lisanslama bilgileri için bkz. [Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 

@@ -10,6 +10,7 @@ ms.topic: troubleshooting
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için hata iletilerini ve sorunlarını giderme konusunda yardım alın.
-ms.openlocfilehash: 4b1ed337634dd314e9c7bed9563d2c4ecbb71ae6
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: e26bda63f11cb402c82baca949aedfa986107aa4
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68663444"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68719986"
 ---
 # <a name="troubleshoot-error-messages-and-problems-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse hata iletilerini ve sorunlarını giderme
 
