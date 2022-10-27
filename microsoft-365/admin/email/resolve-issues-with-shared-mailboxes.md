@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Paylaşılan posta kutularını ayarlarken hata alabilirsiniz. Paylaşılan posta kutularıyla ilgili sorun yaşıyorsanız bu çözümleri deneyin.
-ms.openlocfilehash: bc272dcd9ad74b4f9ab7e93915fd9fa9becd33aa
-ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
+ms.openlocfilehash: 1658aa8f2fcb49dba600970bab7b406d928913eb
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68298220"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68719897"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Paylaşılan posta kutularında sorunları çözme
 

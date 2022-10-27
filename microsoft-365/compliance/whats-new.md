@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - purview-compliance
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0e2c9d57aefed7c0cf77bcce14106b0b622e8735
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 28e1dedac97d692ae1f797fe4fe4a056a5d4a7b5
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68634464"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68731491"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Microsoft Purview risk ve uyumluluk çözümlerindeki yenilikler
 
@@ -58,6 +58,30 @@ microsoft 365, [Microsoft Purview uyumluluk portalı](microsoft-365-compliance-c
 - Güvenlik ekipleri artık bir kullanıcı bir dizi gerçekleştirdiğinde ortaya çıkarma amacıyla 'veri sızıntıları' ilkesindeki bir [güvenlik tetikleyicisini özelleştirerek](/microsoft-365/compliance/insider-risk-management-policies#policy-templates) daha riskli kabul edilebilecek kullanıcı eylemlerine yanıt vermelerini sağlayabilir.
 - Yeni güncelleştirmeler artık güvenlik ekiplerinin diğer gerekli ilke göstergesi seçimleri olmadan [dizilerle](/microsoft-365/compliance/insider-risk-management-policies#sequence-detection-preview) ilkeler oluşturmasına olanak tanır.
 
+### <a name="data-lifecycle-management-and-records-management"></a>Veri yaşam döngüsü yönetimi ve kayıt yönetimi
+
+- **Genel kullanılabilirlik (GA):**[Saklama süresinin sonunda](retention-settings.md#relabeling-at-the-end-of-the-retention-period) yeniden etiketleme.
+- **Genel kullanılabilirlik (GA)**: [Kaydın kilidi açıldı](declare-records.md#configuring-retention-labels-to-declare-records).
+- **Genel kullanılabilirlik (GA):** Kullanıcılar artık yayımlanmış bekletme etiketlerini [doğrudan Teams'deki](create-apply-retention-labels.md#applying-retention-labels-using-microsoft-365-groups) dosyalara uygulayabilir.
+- Yeni bekletme desteği deyimleri: Teams için bekletme ilkeleri [sohbeti kendimle](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) birlikte destekler özellik ve [video klipleri](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c) ve Yammer destek [hikayesi gönderileri](https://support.microsoft.com/office/overview-of-storyline-for-yammer-and-viva-engage-530e4e66-9f1c-4be1-b371-08ea40dc4b69) için bekletme ilkeleri.
+- Bekletme ilkeleri hatalarla karşılaşıyorsa ürün içi deneyim iyileştirildi: Artık ayrıntılar bölmesinde hatanın ayrıntılı bir açıklamasını görürsünüz. Bu, sorunu çözebilecek ürün içi eylemlerle birlikte sunulur. Örneğin, geçersiz konumları kaldırın ve ilkeyi yeniden eşitleyin.
+
+### <a name="microsoft-priva"></a>Microsoft Priva
+
+- **Önizlemede**: Gizlilik Risk Yönetimi'ndeki [veri aktarım ilkeleri](/privacy/priva/risk-management-policy-data-transfer) artık ek esnek sınır koşulları sunuyor: kullanıcıların Azure Active Directory özniteliklerine göre aktarımları algılama, farklı Microsoft 365 gruplarındaki kullanıcılar arasında aktarımlar ve SharePoint siteleri arasında aktarımlar.
+
+### <a name="on-premises-scanner"></a>Şirket içi tarayıcı
+- **Önizlemede**: Azure Information Protection (AIP) şirket içi tarayıcısı tarayıcı **Microsoft Purview Bilgi Koruması** yeniden adlandırılıyor ve [yapılandırma Microsoft Purview uyumluluk portalı taşınıyor](/information-protection/deploy-aip-scanner-configure-install).
+
+### <a name="sensitivity-labels"></a>Duyarlılık etiketleri
+- Eylem çağrısı: Müşteri Deneyimi Mühendisliği (CxE) ekibimizden bir [geçiş playbook'u](https://microsoft.github.io/ComplianceCxE/playbooks/AIP2MIPPlaybook) ile Office uygulamaları için AIP eklentisinden geçiş yapmanıza yardımcı olacak geçiş [kılavuzu](sensitivity-labels-aip.md)
+- **Genel kullanılabilirlik (GA):** Bir siteye daha sıkı erişim koşulları uygulamak için Azure AD Koşullu Erişim ilkeleriyle çalışan etiket [grupları ve site ayarları](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) için kimlik doğrulama bağlamları.
+- **Genel kullanılabilirlik (GA):**[PowerShell kullanarak site paylaşım izinleri](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings).
+- **Kullanıma sunulma**: [Panoya kopyanın engellenmesi, SharePoint ve OneDrive'daki etiketlenmiş ve şifrelenmiş dosyalar için kabul edilir ve](sensitivity-labels-sharepoint-onedrive-files.md#limitations) senaryoların yeniden etiketlenmesi için bazı özel durumlar hariçtir.
+- **Önizlemede**: Office uygulamaları için AIP eklentisi [varsayılan olarak devre dışıdır](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps) ve bu varsayılanı geçersiz kılmak için yeni bir ayar gerektirir.
+- Destek deyimi: Bu hizmetler için duyarlılık etiketlerini etkinleştirdikten sonra [SharePoint ve OneDrive için desteklenen dosya türleri](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types).
+- [Birlikte yazma](sensitivity-labels-coauthoring.md#prerequisites) ve Azure Information Protection birleşik etiketleme istemcisi ve tarayıcısı için yeni önkoşul: Birlikte yazma özelliğiyle aynı kiracıda Çift Anahtar Şifrelemesi kullanılması desteklenmez.
+
 ## <a name="september-2022"></a>Eylül 2022
 
 ### <a name="communication-compliance"></a>İletişim uyumluluğu
@@ -65,6 +89,10 @@ microsoft 365, [Microsoft Purview uyumluluk portalı](microsoft-365-compliance-c
 - [İletişim uyumluluğunu kullanmaya başlama](/microsoft-365/compliance/communication-compliance-configure): Önerilen eylemler ve hızlandırılmış ekleme için yeni güncelleştirmeler. Önerilen eylemler, kuruluşunuzun iletişim uyumluluğunu hızlı bir şekilde kullanmaya başlamasına yardımcı olabilir.
 - [İletişim uyumluluk uyarılarını araştırma ve düzeltme](/microsoft-365/compliance/communication-compliance-investigate-remediate): Düz metin görünümü için anahtar sözcük vurgulama desteğine yönelik yeni güncelleştirme. Şu anda yalnızca İngilizce dilinde kullanılabilen anahtar sözcük vurgulama, uzun iletilerde ve eklerde ilginizi çeken alana yönlendirmenize yardımcı olabilir.
 - [İletişim uyumluluk raporlarını ve denetimlerini kullanın](/microsoft-365/compliance/communication-compliance-reports-audits): İletişim uyumluluk raporlarını görüntülemek ve yönetmek için gereken izinlere ilişkin netleştirmeler. Raporları görüntülemek ve yönetmek için kullanıcıların *İletişim Uyumluluğu Görüntüleyicileri* rol grubuna atanması gerekir.
+ 
+### <a name="compliance-manager"></a>Uyumluluk Yöneticisi
+
+- [Uyumluluk Yöneticisi şablonları listesi](/microsoft-365/compliance/compliance-manager-templates-list): ISM Sürüm 3.5 - Official ile Avustralya Bilgi Güvenliği Kayıtlı Değerlendirici Programı (IRAP) için yeni şablon eklendi.
 
 ### <a name="data-classification"></a>Veri Sınıflandırma
 

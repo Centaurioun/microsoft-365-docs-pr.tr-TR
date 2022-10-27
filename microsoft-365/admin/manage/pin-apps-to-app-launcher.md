@@ -8,6 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.collection:
+- Tier3
 - scotvorg
 - Adm_O365
 - M365-subscription-management
@@ -16,12 +17,12 @@ ms.service: microsoft-365-business
 ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
 description: Genel yönetici olarak, kullanıcılarınızın uygulama başlatıcısına en fazla üç uygulama sabitleyebilirsiniz.
-ms.openlocfilehash: 0d187c6dfb9bf9422465865033d1eb623d6b7c07
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: d3f6874fc0aa3a0731fd426f4d9a110b2b6c4632
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68187195"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68731777"
 ---
 # <a name="pin-apps-to-your-users-app-launcher"></a>Uygulamaları kullanıcılarınızın uygulama başlatıcısına sabitleme
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -26,12 +27,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: Verileri yeni iş kimliğinize taşımayı öğrenin.
-ms.openlocfilehash: 5670bea121c738d4cbc406f14c66ef23f037bd24
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 094006ed2f6d39d9910ac8b31cf9aa07eef120b6
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68204903"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68725792"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>E-postayı ve verileri Microsoft 365 İş Standart taşıma
 

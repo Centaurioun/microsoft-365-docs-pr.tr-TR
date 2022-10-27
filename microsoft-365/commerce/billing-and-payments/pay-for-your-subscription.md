@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier1
 - ContentEngagementFY23
 - scotvorg
 - highpri
@@ -27,12 +28,12 @@ ms.custom:
 - business_assist
 - AdminTemplateSet
 ms.date: 09/28/2022
-ms.openlocfilehash: 76223238cda024c5748e9228dd4940778f1d69aa
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: 204d7c9e886af4080100be10845c02837b4c969f
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492604"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68718600"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Aboneliğiniz için ödeme yapma
 

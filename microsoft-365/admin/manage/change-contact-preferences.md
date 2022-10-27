@@ -11,6 +11,7 @@ ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.custom: AdminSurgePortfolio
 ms.collection:
+- Tier3
 - scotvorg
 search.appverid:
 - BCS160
@@ -19,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 6f70de1b-a64d-4498-bfbd-be8c83a9c0fc
 description: Kuruluşunuzun iletişim bilgilerini güncelleştirin ve almak istediğiniz Microsoft 365 ürünle ilgili iletişimleri seçin.
-ms.openlocfilehash: 9975cb0d7c0c68ea9619d1ecf1963ba4de0f985e
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: b8499b73be6aafe0b7daf35889abb8b54dafec49
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68198811"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68731337"
 ---
 # <a name="change-your-contact-preferences-for-communications-from-microsoft"></a>Microsoft'tan gelen iletişim bilgileri için iletişim tercihlerinizi değiştirme
 

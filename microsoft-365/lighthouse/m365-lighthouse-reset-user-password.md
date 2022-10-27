@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP' ler) için, tek bir kullanıcı veya farklı kiracılardaki birden çok riskli kullanıcı için parola sıfırlamayı öğrenin.
-ms.openlocfilehash: 8ddd23a3d9e5276ec5ac9904ea3e06aeaa589cd8
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: e14d1cbba44aa509fadb800ed79f3ac5034b9174
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68659378"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726078"
 ---
 # <a name="reset-a-user-password-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'de kullanıcı parolasını sıfırlama
 

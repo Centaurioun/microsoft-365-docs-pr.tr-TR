@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'İşletmeler için Microsoft 365 hesabınızla ilişkilendirilmiş, e-posta diğer adı olarak adlandırılan birden fazla e-posta adresine nasıl sahip olabileceğinizi öğrenin. '
-ms.openlocfilehash: 01c2871c2918dc9be9f1eb29f44bbede19ea0afb
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 9c7d8c8b028ad196601af0c62a99aa16c9d5a382
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68197997"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68718203"
 ---
 # <a name="add-another-email-alias-for-a-microsoft-365-business-subscription-user"></a>Microsoft 365 iş aboneliği kullanıcısı için başka bir e-posta diğer adı ekleme
   

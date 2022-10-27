@@ -10,21 +10,21 @@ ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
-ms.author: v-jweston
+ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
-ms.topic: conceptual
+ms.topic: reference
 ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 238fe0e3b1ec061736cab53e0f55fe49e5d966d7
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 2072af8e0591ae0657457b00dbcfec6c7b21ff82
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68638796"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68718248"
 ---
 # <a name="attack-surface-reduction-asr-rules-reference"></a>Saldırı yüzeyini azaltma (ASR) kuralları başvurusu
 
@@ -314,7 +314,7 @@ Bu kural, aşağıdaki dosya türlerinin Microsoft Outlook uygulamasında açıl
 
 Intune adı:`Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
-Microsoft Endpoint Manager adı:`Block executable content from email client and webmail`
+Microsoft Endpoint Manager adı: `Block executable content from email client and webmail`
 
 GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
@@ -329,7 +329,7 @@ Bağımlılıklar: Microsoft Defender Virüsten Koruma
 > **E-posta istemcisinden ve web postasından yürütülebilir içeriği engelle** kuralı, hangi uygulamayı kullandığınıza bağlı olarak aşağıdaki alternatif açıklamalara sahiptir:
 >
 > - Intune (Yapılandırma Profilleri): E-postadan bırakılan yürütülebilir içeriğin (exe, dll, ps, js, vbs vb.) yürütülmesi (özel durum yok).
-> - Endpoint Manager: E-posta ve web posta istemcilerinden yürütülebilir içerik indirmeyi engelleyin.
+> - Endpoint Manager: E-posta ve web postası istemcilerinden yürütülebilir içerik indirmeyi engelleyin.
 > - grup ilkesi: E-posta istemcisinden ve web postasından yürütülebilir içeriği engelleyin.
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>Bir yaygınlık, yaş veya güvenilir liste ölçütüne uymadığı sürece yürütülebilir dosyaların çalışmasını engelleyin

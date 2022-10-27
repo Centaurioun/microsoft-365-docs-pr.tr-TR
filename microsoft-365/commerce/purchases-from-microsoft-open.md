@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: İş için Microsoft 365 aboneliğini etkinleştirmeyi, yenilemeyi veya lisans eklemeyi öğrenin.
 ms.date: 10/21/2020
-ms.openlocfilehash: bd311973048304facf74f816efb9d211ae590e46
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 180ea62e4123ef9e103cab8ee2ee2d3e3887535f
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68169573"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68731513"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Microsoft Open'dan satın alınan ürün anahtarınızı girin
 

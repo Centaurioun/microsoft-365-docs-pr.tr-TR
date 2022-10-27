@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -33,12 +34,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Microsoft 365 depolama ve Microsoft 365 dosya paylaşımı için OneDrive'ı ve ekip sitesini kullanmayı öğrenin.
-ms.openlocfilehash: 591dea47ee8b73a7858fae79191b1338c08a8c0d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: bdd62dd0e5c525933b5e0d5c14322c4ac681bb70
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68203189"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68731887"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Microsoft 365'te dosya depolama ve paylaşımı ayarlama
 

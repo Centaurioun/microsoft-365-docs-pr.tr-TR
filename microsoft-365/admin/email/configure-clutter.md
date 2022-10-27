@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: 'Exchange PowerShell kullanarak kuruluşunuzdaki tüm veya belirli kullanıcılar için İkincil özelliğini etkinleştirmeyi veya devre dışı bırakmayı öğrenin. '
-ms.openlocfilehash: 5c625bda18a1e1b30ecd33edd868ffbb040af1ef
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 6858f96c20f7d3028891aae421199379521b5798
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68193993"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68718204"
 ---
 # <a name="configure-microsoft-365-clutter-for-your-organization"></a>Kuruluşunuz için Microsoft 365 İkincil'i yapılandırma
 

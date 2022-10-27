@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - Adm_O365
 - Adm_TOC
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Daha iyi ve daha hızlı sonuçlar elde etmek için yönetim merkezindeki arama özelliğini kullanmayı öğrenin.
-ms.openlocfilehash: d20ed5a641a373eafc7209991810963050b97f04
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 6b6de6bcf92bc56e786c5af369f0e2195bad9139
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68173181"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68718270"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezinde arama yapma
 

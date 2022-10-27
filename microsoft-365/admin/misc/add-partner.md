@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Microsoft 365 satın alma sırasında bir kayıt iş ortağı ekleyin, iş ortağını değiştirin veya abonelikten bir iş ortağı silin.
-ms.openlocfilehash: 670eb31679f7ca3a704fef32102be9de8c19e74f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 57823e5411aca5270f646b6ae5adffb78cc31868
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68187129"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68718732"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Abonelik danışmanı iş ortağı ekleme, değiştirme veya silme
 

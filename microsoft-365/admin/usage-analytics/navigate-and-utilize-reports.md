@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: Gezinti sekmelerini ve filtreleri kullanarak raporları görüntülemeyi öğrenin.
-ms.openlocfilehash: 68be2af843cd887deb53e9170363a855be4272c4
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: eb32a05b8a637ce86cd6282b34e81253aca4ff6b
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68190165"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68725550"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Microsoft 365 kullanım analizinde raporlarda gezinin ve raporları kullanın
 

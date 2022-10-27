@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -19,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 093a6d0d-890b-489e-9f46-b15687d3fe4f
 description: Microsoft 365 kullanım analizi, etkinlik raporları ve benimseme ölçümlerinin etkin kullanıcısı hakkında bilgi edinin.
-ms.openlocfilehash: bddd946c9062d7fa98c5c88091ef8d92f4372e4e
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 5d97422603461ba0ae5334fc7064f287a807a971
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68193465"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68732217"
 ---
 # <a name="active-user-in-microsoft-365-usage-reports"></a>Microsoft 365 kullanım raporlarında etkin kullanıcı
 

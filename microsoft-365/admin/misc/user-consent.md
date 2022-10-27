@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Uygulamalara kullanıcı onayı ve üçüncü taraf uygulamaların kullanıcıların Microsoft 365 bilgilerine erişmesine izin vermek için bunları nasıl açacağınızı öğrenin.
-ms.openlocfilehash: 66cfd821f51624790b6c1e73e0d156da6dfd2380
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: d194303f0c0c94495f723c80a8aaa3e38a01ea7a
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68204749"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68731227"
 ---
 # <a name="managing-user-consent-to-apps-in-microsoft-365"></a>Microsoft 365'te uygulamalara kullanıcı onaylarını yönetme
 

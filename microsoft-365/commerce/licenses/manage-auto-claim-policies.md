@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +21,12 @@ ms.custom:
 description: Belirli uygulamalar için kullanıcılara otomatik olarak lisans atayan otomatik talep ilkeleri oluşturmayı ve yönetmeyi öğrenin.
 search.appverid: MET150
 ms.date: 04/06/2021
-ms.openlocfilehash: 94bfcb3e9d7b210a6ca794e0e7fa88e0161de848
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 017bf37efd2c892bcab14af76b957e7e0d4b4348
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68534794"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68731667"
 ---
 # <a name="manage-microsoft-teams-auto-claim-policies"></a>Microsoft Teams otomatik talep ilkelerini yönetme
 

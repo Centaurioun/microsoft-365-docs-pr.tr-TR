@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 Grup üyeleri konuşmalar, dosyalar ve takvim etkinlikleri, Stream ve Planner için bir grup e-postası ve paylaşılan çalışma alanı alır.
-ms.openlocfilehash: 1065a9d8321f16391f01a2153c18ea11f7f52136
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 0567e07c45afdb03ef88a384700598c12d59bf50
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68191375"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68719920"
 ---
 # <a name="compare-groups"></a>Grupları karşılaştırma
 

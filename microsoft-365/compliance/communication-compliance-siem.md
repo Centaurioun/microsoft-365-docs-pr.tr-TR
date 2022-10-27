@@ -19,21 +19,23 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0fbe9108f6f0f33ecaad3d44354c6c85f66c9195
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 3a722d2310b0144501af390f05983ed2764edbf3
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68506664"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68732151"
 ---
 # <a name="use-communication-compliance-with-siem-solutions"></a>SIEM çözümleriyle iletişim uyumluluğunu kullanma
 
 >[!IMPORTANT]
->Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamak için kullanılır.
+>Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamaya yardımcı olur.
 
-[İletişim uyumluluğu](/microsoft-365/compliance/communication-compliance) , Microsoft Purview'da kuruluşunuzdaki uygunsuz iletileri algılamanıza, yakalamanıza ve üzerinde işlem yapmanıza yardımcı olarak iletişim risklerini en aza indirmeye yardımcı olan bir iç risk çözümüdür. [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) veya [Splunk](https://www.splunk.com/) gibi güvenlik bilgileri ve olay yönetimi (SIEM) çözümleri genellikle kuruluş içindeki tehditleri toplamak ve izlemek için kullanılır.
+[İletişim uyumluluğu](/microsoft-365/compliance/communication-compliance) , Microsoft Purview'da kuruluşunuzdaki uygunsuz olabilecek iletileri algılamanıza, yakalamanıza ve üzerinde işlem yapmanıza yardımcı olarak iletişim risklerini en aza indirmeye yardımcı olan bir iç risk çözümüdür. [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) veya [Splunk](https://www.splunk.com/) gibi güvenlik bilgileri ve olay yönetimi (SIEM) çözümleri genellikle kuruluş içindeki tehditleri toplamak ve izlemek için kullanılır.
 
-Kuruluşların yaygın ihtiyaçlarından biri, iletişim uyumluluk uyarılarını ve bu SIEM çözümlerini tümleştirmektir. Bu tümleştirme sayesinde kuruluşlar, iletişim uyumluluk uyarılarını SIEM çözümlerinde görüntüleyebilir ve ardından iletişim uyumluluğu iş akışı ve kullanıcı deneyimi içindeki uyarıları düzeltebilir. Örneğin, bir çalışan başka bir çalışana rahatsız edici bir ileti gönderir ve bu ileti uygunsuz içerik için bir iletişim uyumluluk ilkesi tarafından algılanır. Bu olaylar, iletişim uyumluluk çözümü tarafından Microsoft 365 Denetiminde ("birleşik denetim günlüğü" olarak da bilinir) izlenir ve SIEM çözümüne aktarılır. Ardından, Microsoft 365 Denetimi'ne dahil edilen ve iletişim uyumluluk uyarılarıyla ilişkili olaylardan kuruluş için SIEM çözümünde bir uyarı tetiklenir. Araştırmacılara SIEM çözümlerinde uyarı bildirilir ve ardından iletişim uyumluluk çözümünde uyarıyı araştırır ve düzelterler.
+Kuruluşların yaygın ihtiyaçlarından biri, iletişim uyumluluk uyarılarını ve bunların SIEM çözümlerini tümleştirmektir. Bu tümleştirme sayesinde kuruluşlar, iletişim uyumluluk uyarılarını SIEM çözümlerinde görüntüleyebilir ve ardından iletişim uyumluluğu iş akışı ve kullanıcı deneyimi içindeki uyarıları düzeltebilir. 
+
+Örneğin, bir çalışan başka bir çalışana rahatsız edici bir ileti gönderir ve bu ileti uygunsuz olabilecek içerikler için bir iletişim uyumluluk ilkesi tarafından algılanır. Bu gibi olaylar, iletişim uyumluluk çözümü tarafından Microsoft 365 Denetiminde ("birleşik denetim günlüğü" olarak da bilinir) izlenir ve ardından SIEM çözümüne aktarılır. Microsoft 365 Denetimi'ne dahil edilen SIEM çözümünde tetiklenen uyarılar daha sonra iletişim uyumluluk uyarıları ile ilişkilendirilir. Araştırmacılara SIEM çözümlerinde bu uyarılar bildirilir ve ardından iletişim uyumluluk panosunda ilgili uyarıları araştırıp düzeltebilirler.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -46,10 +48,10 @@ Tüm iletişim uyumluluk ilkesi eşleşmeleri Microsoft 365 Denetimi'nde yakalan
 ```xml
 RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
 RecordType: ComplianceSupervisionExchange
-CreationDate: 7/7/2021 5:30:11 AM
+CreationDate: 7/7/2022 5:30:11 AM
 UserIds: user1@contoso.onmicrosoft.com
 Operations: SupervisionRuleMatch
-AuditData: {"CreationTime":"2021-07-07T05:30:11","Id":"44e98a7e-57fd-4f89-79b8-08d941084a35","Operation":"SupervisionRuleMatch","OrganizationId":"338397e6\-697e-4dbe-a66b-2ea3497ef15c","RecordType":68,"ResultStatus":"{\\"ItemClass\\":\\"IPM.Note\\",\\"CcsiResults\\":\\"\\"}","UserKey":"SupervisionStoreDeliveryAgent","UserType":0,"Version":1,"Workload":"Exchange","ObjectId":"\<HE1P190MB04600526C0524C75E5750C5AC61A9@HE1P190MB0460.EURP190.PROD.OUTLOOK.COM\>","UserId":"user1@contoso.onmicrosoft.com","IsPolicyHit":true,"SRPolicyMatchDetails":{"SRPolicyId":"53be0bf4-75ee-4315-b65d-17d63bdd53ae","SRPolicyName":"Adult images","SRRuleMatchDetails":\[\]}}
+AuditData: {"CreationTime":"2022-07-07T05:30:11","Id":"44e98a7e-57fd-4f89-79b8-08d941084a35","Operation":"SupervisionRuleMatch","OrganizationId":"338397e6\-697e-4dbe-a66b-2ea3497ef15c","RecordType":68,"ResultStatus":"{\\"ItemClass\\":\\"IPM.Note\\",\\"CcsiResults\\":\\"\\"}","UserKey":"SupervisionStoreDeliveryAgent","UserType":0,"Version":1,"Workload":"Exchange","ObjectId":"\<HE1P190MB04600526C0524C75E5750C5AC61A9@HE1P190MB0460.EURP190.PROD.OUTLOOK.COM\>","UserId":"user1@contoso.onmicrosoft.com","IsPolicyHit":true,"SRPolicyMatchDetails":{"SRPolicyId":"53be0bf4-75ee-4315-b65d-17d63bdd53ae","SRPolicyName":"Adult images","SRRuleMatchDetails":\[\]}}
 ResultIndex: 24
 ResultCount: 48
 Identity: 44e98a7e-57fd-4f89-79b8-08d941084a35
@@ -62,10 +64,10 @@ ObjectState: Unchanged
 ```xml
 RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
 RecordType: ComplianceSupervisionExchange
-CreationDate: 7/6/2021 9:50:12 PM
+CreationDate: 7/6/2022 9:50:12 PM
 UserIds: user2@contoso.onmicrosoft.com
 Operations: SupervisionRuleMatch
-AuditData: {"CreationTime":"2021-07-06T21:50:12","Id":"5c61aae5-26fc-4c8e-0791-08d940c8086f","Operation":"SupervisionRuleMatch","OrganizationId":"338397e6\-697e-4dbe-a66b-2ea3497ef15c","RecordType":68,"ResultStatus":"{\\"ItemClass\\":\\"IPM.Note\\",\\"CcsiResults\\":\\"public\\"}","UserKey":"SupervisionStoreDeliveryAgent","UserType":0,"Version":1,"Workload":"Exchange","ObjectId":"\<20210706174831.24375086.807067@sailthru.com\>","UserId":"user2@contoso.onmicrosoft.com","IsPolicyHit":true,"SRPolicyMatchDetails":{"SRPolicyId":"a97cf128-c0fc-42a1-88e3-fd3b88af9941","SRPolicyName":"Insiders","SRRuleMatchDetails":\[{"SRCategoryName":"New insiders lexicon"}\]}}
+AuditData: {"CreationTime":"2022-07-06T21:50:12","Id":"5c61aae5-26fc-4c8e-0791-08d940c8086f","Operation":"SupervisionRuleMatch","OrganizationId":"338397e6\-697e-4dbe-a66b-2ea3497ef15c","RecordType":68,"ResultStatus":"{\\"ItemClass\\":\\"IPM.Note\\",\\"CcsiResults\\":\\"public\\"}","UserKey":"SupervisionStoreDeliveryAgent","UserType":0,"Version":1,"Workload":"Exchange","ObjectId":"\<20210706174831.24375086.807067@sailthru.com\>","UserId":"user2@contoso.onmicrosoft.com","IsPolicyHit":true,"SRPolicyMatchDetails":{"SRPolicyId":"a97cf128-c0fc-42a1-88e3-fd3b88af9941","SRPolicyName":"Insiders","SRRuleMatchDetails":\[{"SRCategoryName":"New insiders lexicon"}\]}}
 ResultIndex: 46
 ResultCount: 48
 Identity: 5c61aae5-26fc-4c8e-0791-08d940c8086f
@@ -112,8 +114,8 @@ Aşağıdaki tabloda farklı ilke türleri için örnek arama sonuçları göste
 
 | İlke türleri | Örnek arama sonuçları |
 | :------------------ | :--------------------------------------- |
-| Özel hassas bilgi türü anahtar sözcük listesini algılama ilkesi | { <br> CreationTime: 2021-09-17T16:29:57 <br> Kimlik: 4b9ce23d-ee60-4f66-f38d-08d979f8631f <br> IsPolicyHit: true <br> Objectıd: <CY1PR05MB27158B96AF7F3AFE62E1F762CFDD9@CY1PR05MB2715.namprd05.prod.outlook.com> <br> İşlem: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> Kayıt Türü: 68 <br> ResultStatus: {"ItemClass":"IPM. Not","CcsiResults":"leak"} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.OnMicrosoft.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Sürüm: 1 <br> İş Yükü: Exchange <br> } |
-| Uygunsuz dili algılama ilkesi | { <br> CreationTime: 2021-09-17T23:44:35 <br> Kimlik: e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit: true <br> Objectıd: <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> İşlem: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> Kayıt Türü: 68 <br> ResultStatus: {"ItemClass":"IPM. Yammer.Message","CcsiResults":""} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Sürüm: 1 <br> }  |
+| Özel hassas bilgi türü anahtar sözcük listesini algılama ilkesi | { <br> CreationTime: 2022-09-17T16:29:57 <br> Kimlik: 4b9ce23d-ee60-4f66-f38d-08d979f8631f <br> IsPolicyHit: true <br> Objectıd: <CY1PR05MB27158B96AF7F3AFE62E1F762CFDD9@CY1PR05MB2715.namprd05.prod.outlook.com> <br> İşlem: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> Kayıt Türü: 68 <br> ResultStatus: {"ItemClass":"IPM. Not","CcsiResults":"leak"} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.OnMicrosoft.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Sürüm: 1 <br> İş Yükü: Exchange <br> } |
+| Uygunsuz olabilecek dili algılama ilkesi | { <br> CreationTime: 2022-09-17T23:44:35 <br> Kimlik: e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit: true <br> Objectıd: <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> İşlem: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> Kayıt Türü: 68 <br> ResultStatus: {"ItemClass":"IPM. Yammer.Message","CcsiResults":""} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Sürüm: 1 <br> }  |
 
 ## <a name="configure-communication-compliance-with-other-siem-solutions"></a>Diğer SIEM çözümleriyle iletişim uyumluluğunu yapılandırma
 

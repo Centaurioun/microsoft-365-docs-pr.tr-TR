@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - highpri
 - Adm_TOC
@@ -17,12 +18,12 @@ ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 description: İş aboneliği kapsamında Microsoft Teams'e kaydolmak için bu makaledeki adımları izleyin.
-ms.openlocfilehash: e9581f357c85fabd5f27d29255d9188075ca795b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 192093fbe3e6ca1c039edd18569d4dda6446b169
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68186887"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68725616"
 ---
 # <a name="sign-up-for-microsoft-teams-as-part-of-a-business-subscription"></a>İş aboneliğinin bir parçası olarak Microsoft Teams'e kaydolma
 

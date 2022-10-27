@@ -10,6 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Kuruluşunuzdaki kişilerin Microsoft 365 hizmetlerini nasıl kullandığını gösteren düzenli bir rapor alın ve daha fazla içgörü için her grafikte detaya gidin.
-ms.openlocfilehash: 1c1c5539b553b26680c826c0329f5a69a6d5c798
-ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
+ms.openlocfilehash: 568ef9e05da62ad8833f1a517bc535ad82402fcd
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2022
-ms.locfileid: "68503852"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68724957"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Yönetim merkezinde Microsoft 365 Raporları
 
@@ -117,8 +118,8 @@ Aboneliğinize bağlı olarak, tüm ortamlardaki kullanılabilir raporlar aşağ
 |[Skype Kurumsal Çevrimiçi Sürüm düzenlenen konferans etkinliği](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|Evet|Evet|<sup>Hayır 1</sup>|<sup>Hayır 1</sup>|Evet|
 |[Skype Kurumsal Çevrimiçi Sürüm konferans katılımı etkinliği](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Evet|Evet|<sup>Hayır 1</sup>|<sup>Hayır 1</sup>|Evet|
 |[Skype Kurumsal Çevrimiçi Sürüm eşler arası etkinlik](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Evet|Evet|<sup>Hayır 1</sup>|<sup>Hayır 1</sup>|Evet|
-|[Viva Öğrenme etkinliği](viva-learning-activity.md)|Evet|Yok|Yok|Yok|Yok|
-|[Viva Analizler etkinliği](viva-insights-activity.md)|Evet|Evet|Yok|Yok|Yok|
+|[Viva Learning etkinliği](viva-learning-activity.md)|Evet|Yok|Yok|Yok|Yok|
+|[Viva Insights etkinliği](viva-insights-activity.md)|Evet|Evet|Yok|Yok|Yok|
 |[Proje etkinliği](project-activity.md)|Evet|Evet|Yok|Yok|Yok|
 
 Yok<sup>1</sup>: Rapor gelecekte yayımlanmayı planlıyor. <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Yol Haritası</a>, sürümden önce güncelleştirilecektir.

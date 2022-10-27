@@ -7,18 +7,20 @@ audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: scotvorg
+ms.collection:
+- Tier2
+- scotvorg
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
 description: Microsoft 365 Sistem Durumu panosuna ve Microsoft 365 kuruluşunuzun durumu hakkında sizi güncel tutmadaki rolüne genel bir bakış edinin.
-ms.openlocfilehash: 4ab0fde685d21cde426e6f9985d5ce7b3697d098
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 63537fc7b9f371062a020dd126d13988f1e5c3a1
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68199999"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68731821"
 ---
 # <a name="microsoft-365-health-dashboard"></a>Microsoft 365 Health panosu
 

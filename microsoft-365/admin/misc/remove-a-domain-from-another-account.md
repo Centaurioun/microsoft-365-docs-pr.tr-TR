@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Microsoft 365'te self servis kullanıcı kaydı tarafından oluşturulan yönetilmeyen bir hesaba katılmayı öğrenin.
-ms.openlocfilehash: ff8f3df50736123488205aae96899943fec20237
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 3f8a508f799e845c56584b32af294df69eaba330
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68209590"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68718688"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>İç yönetici devralma işlemi gerçekleştirme
 

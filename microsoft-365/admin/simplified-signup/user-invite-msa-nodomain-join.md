@@ -10,17 +10,18 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 description: Outlook, Yahoo, Gmail veya başka bir hesap kullanarak Microsoft 365 İş Standart bir kuruluşa katılmak için e-posta daveti kabul edin.
-ms.openlocfilehash: 64567fef4456fee9fdeef71ca8a818ccc4a9b275
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 34b69cfdb141d330e3df7f64d05704691d215b18
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68164447"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68719590"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-for-business-subscription-organization-using-an-outlook-yahoo-gmail-or-other-account-user"></a>Outlook, Yahoo, Gmail veya başka bir hesap kullanarak bir İş için Microsoft 365 aboneliği kuruluşuna e-posta daveti kabul etme (Kullanıcı)
 

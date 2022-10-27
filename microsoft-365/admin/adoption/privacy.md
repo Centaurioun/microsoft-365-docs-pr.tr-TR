@@ -11,6 +11,7 @@ ms.service: microsoft-365-business
 ms.localizationpriority: medium
 monikerRange: o365-worldwide
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gizlilik, Benimseme Puanı ile nasıl korunur?
-ms.openlocfilehash: d8a7d7e03bc00a56ca410ec49ab91511db135b3a
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 74ca30762ecaccc03ff76c7c928f3f96f566a05c
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563448"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726871"
 ---
 # <a name="privacy-controls-for-adoption-score"></a>Benimseme Puanı için gizlilik denetimleri
 

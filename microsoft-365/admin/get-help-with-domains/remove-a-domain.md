@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Eski bir etki alanını Microsoft 365'ten kaldırmayı ve kullanıcıları ve grupları başka bir etki alanına taşımayı veya aboneliğinizi iptal etmeyi öğrenin.
-ms.openlocfilehash: d7dca16ad65e97940b268b300975f242accaf137
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 76b64bc8e937a83ab4333cdd6ff774525f7ddd99
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68629313"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68731359"
 ---
 # <a name="remove-a-domain"></a>Etki alanını kaldırma
 

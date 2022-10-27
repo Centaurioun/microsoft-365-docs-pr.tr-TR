@@ -8,15 +8,16 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: Çalışanların belirtilen zamanlarda rezervasyon için uygun değil olarak işaretlenmesi için, Bookings takviminden ofis kapanışlarını ve çalışan izinlerini planlayın.
-ms.openlocfilehash: 8af013fe6aff3d70c00b28204a66afd367ca2db2
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 72d4f1a0d3b27d374b8130519cf987a24c260413
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68192123"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68725418"
 ---
 # <a name="schedule-bookings-business-closures-time-off-and-vacation-time"></a>Bookings iş kapanışlarını, izin ve tatil zamanını zamanlama
 

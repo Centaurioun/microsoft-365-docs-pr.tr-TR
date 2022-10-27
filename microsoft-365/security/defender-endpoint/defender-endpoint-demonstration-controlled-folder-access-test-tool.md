@@ -16,14 +16,16 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
-ms.topic: conceptual
+- demo
+ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 2013a00076e653fdcb1e2940b2a0344fed16cf64
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.date: 10/21/2022
+ms.openlocfilehash: 50e2b0e00333303a83d60df24ca0b9f8915122a9
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68643261"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726034"
 ---
 # <a name="controlled-folder-access-cfa-demonstration-test-tool-block-script"></a>Denetimli klasör erişimi (CFA) tanıtım test aracı (blok betiği)
 
@@ -40,13 +42,13 @@ Denetimli Klasör Erişimi değerli verileri fidye yazılımı gibi kötü amaç
 Set-MpPreference -EnableControlledFolderAccess <State>
 ```
 
-Kural durumları
+## <a name="rule-states"></a>Kural durumları
 
 |Durum | Mod| Sayısal değer |
 |:---|:---|:---|
-| AuditMode | = Denetim Modu | 2 |
-| Etkin | = Blok modu | 1 |
 | Devre dışı | = Kapalı | 0 |
+| Etkin | = Blok modu | 1 |
+| Denetim | = Denetim modu | 2 |
 
 ### <a name="verify-configuration"></a>Yapılandırmayı doğrulama
 

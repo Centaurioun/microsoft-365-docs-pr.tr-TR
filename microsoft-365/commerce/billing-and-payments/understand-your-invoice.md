@@ -11,6 +11,7 @@ f1.keywords:
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - ContentEngagementFY23
 - scotvorg
 - highpri
@@ -24,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft iş ürünleri için faturanızı veya faturanızı nasıl okuyacağınızı ve anlayacağınızı öğrenin.
 ms.date: 08/08/2022
-ms.openlocfilehash: 15b07a95e981244b1c4643b857ce348222341285
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: a80bb3d593f6ef8765c8bab427f6186c9a0ef3c3
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492496"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68725352"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Fatura ekstrenizi veya faturanızı anlama
 

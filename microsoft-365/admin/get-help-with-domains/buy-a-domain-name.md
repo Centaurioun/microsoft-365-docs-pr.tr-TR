@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -27,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Microsoft 365'te etki alanı adı satın almayı öğrenin.
-ms.openlocfilehash: e43b71e0a88abd2755de6d0ca5871c39e694dbcf
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: fda54c481de2da1a6655afdd52bbc9ffd078353b
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68164865"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68725858"
 ---
 # <a name="buy-a-domain-name"></a>Etki alanı adı satın alma
 

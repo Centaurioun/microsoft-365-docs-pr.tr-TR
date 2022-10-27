@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - Adm_O365
 ms.custom:
@@ -19,12 +20,12 @@ search.appverid:
 - MOE150
 - FRP150
 description: Yeni Microsoft 365 abonelik adları hakkında bilgi edinin.
-ms.openlocfilehash: 6e04315e11a9c97b67ab045b027142fefcaf5b46
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 60ca74b41473d3c006aa4f4a71529c468c02d548
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68188361"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68731183"
 ---
 # <a name="office-365-is-now-microsoft-365"></a>Office 365 artık Microsoft 365
 

@@ -10,6 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -28,12 +29,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Çevrimiçi kuruluşunuzu telefonunuzdan veya tabletinizde yönetmek için web tabanlı Microsoft 365 yönetim merkezi eşlikçiniz olan Microsoft 365 Yönetici uygulamasını edinin.
-ms.openlocfilehash: a4bf10444eb638b86de3723baf64992cc8e46376
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 5619a63f2c219200ab98a147eb94dbc0dc4568f8
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563482"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727069"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Microsoft 365 Yönetici mobil uygulaması hakkında
 

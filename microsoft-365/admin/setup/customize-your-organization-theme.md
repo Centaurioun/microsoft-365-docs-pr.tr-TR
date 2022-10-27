@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -26,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Microsoft 365'te gezinti çubuğunun üst kısmındaki varsayılan temayı değiştirmeyi ve şirket logonuzla veya renginizle eşleşecek şekilde özelleştirmeyi öğrenin.
-ms.openlocfilehash: bf56408ea157ddaf73301d435fbada8c65fdbccd
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 071f60614d7030c4667b7fe718c27e5f7eb27d4f
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68166427"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68725660"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Kuruluşunuz için Microsoft 365 temasını özelleştirme
 

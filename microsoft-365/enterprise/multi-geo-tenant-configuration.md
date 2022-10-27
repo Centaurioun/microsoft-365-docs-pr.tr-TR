@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: Bu makalede, microsoft 365 Multi-Geo için uydu konumları eklemeyi ve kiracınızı yapılandırmayı öğrenin.
-ms.openlocfilehash: 3c8071616aa754888aa6cab9bc5a0373552497e5
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 72de636c8b6641047160c4f8dd95c10bdff2c3f5
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687251"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726474"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 Multi-Geo kiracı yapılandırması
 
@@ -115,7 +115,7 @@ Kullanıcının Tercih Edilen Veri Konumunu standart kullanıcı oluşturma iş 
 Kullanıcının kiracıda zaten oluşturulmuş bir OneDrive sitesi varsa, PDL'sini ayarlamak mevcut OneDrive'ını otomatik olarak taşımaz. Kullanıcının OneDrive'larını taşımak için bkz. [Coğrafi Taşıma OneDrive İş](move-onedrive-between-geo-locations.md).
 
 > [!NOTE]
-> Exchange Online PLD değişirse ve MailboxRegion artık Posta Kutusu Veritabanı Coğrafi Konum koduyla eşleşmiyorsa kullanıcının posta kutusunu otomatik olarak yeniden yer değiştirir. Daha fazla bilgi için bkz. [Çok coğrafi ortamda Exchange Online posta kutularını yönetme](./administering-exchange-online-multi-geo.md).
+> Exchange Online PDL değişirse ve MailboxRegion artık Posta Kutusu Veritabanı Coğrafi Konum koduyla eşleşmiyorsa kullanıcının posta kutusunu otomatik olarak yeniden yer değiştirir. Daha fazla bilgi için bkz. [Çok coğrafi ortamda Exchange Online posta kutularını yönetme](./administering-exchange-online-multi-geo.md).
 
 Kullanıcının kiracı içinde bir OneDrive sitesi yoksa, kullanıcının PDL'sinin şirketin uydu konumlarından biriyle eşleşeceği varsayılarak, OneDrive bu kullanıcılar için PDL değerine uygun olarak sağlanır.
 

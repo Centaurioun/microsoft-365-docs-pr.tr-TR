@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -22,12 +23,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Bir cihazı uzaktan silme gibi eylemler gerçekleştirerek kullanıcılarınızın mobil cihazlarının güvenliğini sağlamak ve yönetmek için Basic Mobility ve Security'yi ayarlayın.
-ms.openlocfilehash: 73271d92996be6b2d29406f2a3738db050751860
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 0eb9d1a053239ecf3e135c08f34b100c09b4e973
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68207060"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68719106"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Temel Hareketlilik ve Güvenlik'i ayarlama
 

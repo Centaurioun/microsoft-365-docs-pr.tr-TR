@@ -8,15 +8,16 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: Microsoft Bookings dil ve saat dilimi ayarlarınızı değiştirin. Rezervasyonlar yanlış zamanda oluşturulduysa, Bookings yanlış saat dilimi için ayarlanmış olabilir.
-ms.openlocfilehash: da95c0e31ac906112e92c409f617be340d8cc80d
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: ba08a26624daea96373dba392a37a9e6e7956ae3
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68210756"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726518"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>Microsoft Bookings'da dil ve saat dilimlerini ayarlama
 

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 684fbfde05c334ffadae16bae7e5c613e7fc8589
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 5dc7e4144dd5999d3075cf0ea9c1c6a7b8611c70
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68636704"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726188"
 ---
 # <a name="create-and-manage-communication-compliance-policies"></a>İletişim uyumluluğu ilkeleri oluşturma ve yönetme
 
@@ -153,6 +153,7 @@ Aşağıdaki tabloda desteklenen içerik türleri için algılama süresi özetl
 | Teams modern eki | 13 saat |
 | Teams meta verileri | 1 saat |
 | meta verileri Email | 1 saat |
+| Teams paylaşılan kanalları | 13 saat |
 
 31 Temmuz 2022'ye kadar oluşturulan mevcut ilkeler için iletileri algılamak ve bu ilkelerle eşleşen uyarıları gözden geçirmek 24 saat kadar sürebilir. Bu ilkelerin gecikme süresini azaltmak için [mevcut ilkeyi kopyalayın](/microsoft-365/compliance/communication-compliance-policies#copy-a-policy) ve kopyadan yeni bir ilke oluşturun. Eski ilkeden herhangi bir veri saklamanız gerekmiyorsa, bu veriler duraklatılabilir veya silinebilir.
 

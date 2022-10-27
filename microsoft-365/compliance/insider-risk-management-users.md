@@ -11,16 +11,21 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 14c0d5127f4b370d78b54512d8780d1cc7dfbf67
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: b4a428d3d6151c2ae1e252ec792c8a1658bd67f0
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787660"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68718336"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Insider risk yönetimi Kullanıcılar panosu
+
+> [!IMPORTANT]
+> Microsoft Purview İçeriden Risk Yönetimi IP hırsızlığı, veri sızıntısı ve güvenlik ihlalleri gibi olası kötü amaçlı veya yanlışlıkla insider risklerini belirlemek için çeşitli sinyalleri ilişkilendirmektedir. Insider risk yönetimi, müşterilerin güvenlik ve uyumluluğu yönetmek için ilkeler oluşturmasına olanak tanır. Tasarım gereği gizlilikle oluşturulan kullanıcılar varsayılan olarak takma ad kullanır ve kullanıcı düzeyinde gizlilik sağlamaya yardımcı olmak için rol tabanlı erişim denetimleri ve denetim günlükleri kullanılır.
 
 **Kullanıcılar panosu**, insider risk yönetimi iş akışında önemli bir araçtır ve araştırmacıların ve analistlerin risk etkinliklerini daha eksiksiz bir şekilde anlamalarına yardımcı olur. Bu pano, iç risk yönetimi ilkeleri oluşturma ve insider risk yönetimi olaylarını yönetme arasında yönetim gereksinimlerini karşılamak için görünümler ve yönetim özellikleri sunar.
 
@@ -31,6 +36,8 @@ Aşağıdaki senaryolarda Kullanıcılar panosunun kullanıcıları nasıl gör�
 - Etkin insider risk ilkesi uyarıları olan kullanıcılar
 - Olayları tetikleyen kullanıcılar
 - İlkelere geçici olarak eklenen kullanıcılar
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="users-with-active-insider-risk-policy-alerts"></a>Etkin insider risk ilkesi uyarıları olan kullanıcılar
 
@@ -64,15 +71,15 @@ Genel **Etkinleştirme penceresi** ayarının geçici olarak eklenen bir kullan�
 
 **Kullanıcılar panosunda** görüntülenen her kullanıcı aşağıdaki bilgilere sahiptir:
 
-- **Kullanıcılar**: Kullanıcının kullanıcı adı. Insider risk yönetimi için genel anonimleştirme ayarı etkinse bu alan anonimleştirilir.
+- **Kullanıcılar**: Bir kullanıcının kullanıcı adı. Insider risk yönetimi için genel anonimleştirme ayarı etkinse bu alan anonimleştirilir.
 - **Risk düzeyi**: Kullanıcının geçerli hesaplanan risk düzeyi. Bu puan her 24 saatte bir hesaplanır ve kullanıcıyla ilişkili tüm etkin uyarılardan alınan uyarı riski puanlarını kullanır. Yalnızca tetikleyici göstergeleri olan kullanıcılar için risk düzeyi sıfırdır.
-- **Etkin uyarılar**: Tüm ilkeler için etkin uyarıların sayısı.
+- **Etkin uyarılar**: Tüm ilkeler için etkin uyarı sayısı.
 - **Onaylanan ihlaller**: Kullanıcı için *onaylanan ilke ihlali olarak çözümlenen* servis talebi sayısı.
-- **Büyük/küçük harf**: Kullanıcı için geçerli etkin durum.
+- **Servis Talebi**: Kullanıcı için geçerli etkin durum.
 
-Belirli bir kullanıcıyı hızla bulmak için Kullanıcı panosunun sağ üst kısmındaki **Ara'yı** kullanın. Kullanıcıları ararken kullanıcı asıl adını (UPN) kullanmanız gerekir. Örneğin, kuruluşunuzda UPN'si 'thidayah' olan 'Tiara Hidayah' adlı bir kullanıcıyı ararken, **Arama'ya** 'thidayah' veya UPN'nin bir bölümünü girersiniz.
+Belirli bir kullanıcıyı hızla bulmak için Kullanıcılar panosunun sağ üst kısmındaki **Ara'yı** kullanın. Kullanıcıları ararken kullanıcı asıl adını (UPN) kullanmanız gerekir. Örneğin, kuruluşunuzda UPN'si 'thidayah' olan 'Tiara Hidayah' adlı bir kullanıcıyı ararken, **Arama'ya** 'thidayah' veya UPN'nin bir bölümünü girersiniz.
 
-![Insider risk yönetimi kullanıcıları panosu.](../media/insider-risk-users-dashboard.png)
+![Insider risk yönetimi kullanıcıları panosu](../media/insider-risk-users-dashboard.png)
 
 > [!NOTE]
 > **Kullanıcılar panosunda** görüntülenen kullanıcı sayısı, etkin uyarıların hacmine ve eşleşen ilkelere bağlı olarak bazı durumlarda sınırlı olabilir. Etkin uyarıları olan kullanıcılar, uyarılar oluşturulurken **Kullanıcılar panosunda** görüntülenir ve görüntülenen kullanıcı sayısı üst sınırına ulaşıldığında nadir durumlar olabilir. Bu sınır gerçekleşirse, mevcut kullanıcı uyarıları önceliklendirildikçe etkin uyarıları görüntülenmeyen kullanıcılar **Kullanıcılar panosuna** eklenir.
@@ -82,17 +89,17 @@ Belirli bir kullanıcıyı hızla bulmak için Kullanıcı panosunun sağ üst k
 Bir kullanıcının risk etkinliği hakkında daha fazla ayrıntı görüntülemek için Kullanıcılar **panosunda** bir kullanıcıya çift tıklayarak kullanıcı ayrıntıları bölmesini açın. Ayrıntılar bölmesinde aşağıdaki bilgileri görüntüleyebilirsiniz:
 
 - **Kullanıcı profili** sekmesi
-  - **Ad ve başlık**: Azure Active Directory'den kullanıcının adı ve konum başlığı. Insider risk yönetimi için genel anonimleştirme ayarı etkinse bu kullanıcı alanları anonimleştirilir veya boş olur.
-  - **Kullanıcı e-postası**: Kullanıcının e-posta adresi.
+  - **Ad ve başlık**: Azure Active Directory'den kullanıcı için ad ve konum başlığı. Insider risk yönetimi için genel anonimleştirme ayarı etkinse bu kullanıcı alanları anonimleştirilir veya boş olur.
+  - **Kullanıcı e-postası**: Kullanıcının Email adresi.
   - **Diğer ad**: Kullanıcının ağ diğer adı.
-  - **Kuruluş veya departman**: Kullanıcının kuruluşu veya bölümü.
+  - **Kuruluş veya departman**: Kullanıcı için kuruluş veya departman.
 
 - **Kullanıcı etkinliği** sekmesi
-  - **Son kullanıcı etkinliğinin geçmişi**: Son 180 güne kadar olan kullanıcı etkinlikleri için hem tetikleme göstergelerini hem de iç risk göstergelerini listeler. Insider risk göstergeleriyle ilgili tüm etkinlikler de puanlanmıştır, ancak etkinlikler insider risk uyarısı oluşturmuş veya oluşturmamış olabilir. Gösterge örneklerini tetikleme, bir istifa tarihi veya kullanıcının son zamanlanmış çalışma tarihi olabilir. Insider risk göstergeleri, bir risk öğesine sahip olduğu belirlenen etkinliklerdir ve kullanıcının dahil olduğu ilkelerde tanımlanır. Olay ve risk etkinlikleri, en son öğe listelenmiş olarak listelenir.
+  - **Son kullanıcı etkinliğinin geçmişi**: Son 90 güne kadar olan risk etkinlikleri için hem tetikleyen göstergeleri hem de iç risk göstergelerini listeler. Insider risk göstergeleriyle ilgili tüm risk etkinlikleri de puanlanmış olsa da, etkinlikler insider risk uyarısı oluşturmuş veya oluşturmamış olabilir. Gösterge örneklerini tetikleme, bir istifa tarihi veya kullanıcının son zamanlanmış çalışma tarihi olabilir. Insider risk göstergeleri, bir güvenlik olayına yol açabilecek bir risk öğesine sahip olduğu belirlenen etkinliklerdir ve kullanıcının dahil olduğu ilkelerde tanımlanır. Olay ve risk etkinlikleri, en son öğe listelenmiş olarak listelenir.
 
 ## <a name="remove-users-from-in-scope-assignment-to-policies"></a>Kullanıcıları kapsam içi ilke atamasından kaldırma
 
-Bir kullanıcının insider risk yönetimi ilkelerindeki etkinliğine risk puanları atamayı durdurmanız gereken senaryolar olabilir. Şu anda kapsam içinde oldukları tüm şirket içi risk yönetimi ilkelerinden bir veya daha fazla kullanıcıya risk puanı atamayı durdurmak için **Kullanıcılar panosu** sayfasında **Kullanıcıları kaldır'ı** kullanın. Bu eylem, kullanıcıları genel ilke atamasından kaldırmaz (bir ilke yapılandırmasına kullanıcı veya grup eklediğinizde), yalnızca geçerli tetikleyici olaylarından sonra kullanıcıları ilkeler tarafından etkin işlemeden kaldırır. Gelecekte kullanıcıların başka bir tetikleyici olayı varsa, ilkelerden alınan risk puanları otomatik olarak kullanıcılara yeniden atanmaya başlar. Bu kullanıcı için mevcut uyarılar veya servis talepleri kaldırılmaz.
+Şirket içi risk yönetimi ilkelerindeki kullanıcılara risk puanları atamayı durdurmanız gereken senaryolar olabilir. Şu anda kapsam içinde oldukları tüm şirket içi risk yönetimi ilkelerinden bir veya daha fazla kullanıcıya risk puanı atamayı durdurmak için **Kullanıcılar panosu** sayfasında **Kullanıcıları kaldır'ı** kullanın. Bu eylem, kullanıcıları genel ilke atamasından kaldırmaz (bir ilke yapılandırmasına kullanıcı veya grup eklediğinizde), yalnızca geçerli tetikleyici olaylarından sonra kullanıcıları ilkeler tarafından etkin işlemeden kaldırır. Gelecekte kullanıcıların başka bir tetikleyici olayı varsa, ilkelerden alınan risk puanları otomatik olarak kullanıcılara yeniden atanmaya başlar. Bu kullanıcı için mevcut uyarılar veya servis talepleri kaldırılmaz.
 
 > [!NOTE]
 > Bir kullanıcının ilkeden kaldırılması birkaç dakika sürebilir. İşlem tamamlandıktan sonra kullanıcı artık Kullanıcılar sayfasında listelenmez. Kaldırılan kullanıcının etkin uyarıları veya durumları varsa, kullanıcı Kullanıcılar sayfasında kalır ve kullanıcının ayrıntıları artık bir ilke kapsamında olmadığını gösterir.
@@ -107,11 +114,9 @@ Tüm insider risk yönetimi ilkelerinde kullanıcıları kapsam içi durumdan el
 
 ## <a name="run-automated-tasks-with-power-automate-flows-for-a-user"></a>Kullanıcı için Power Automate akışlarıyla otomatik görevleri çalıştırma
 
-Önerilen Power Automate akışlarını kullanarak risk araştırmacıları ve analistler aşağıdaki işlemleri hızla gerçekleştirebilir:
+Önerilen Power Automate akışlarını kullanan risk araştırmacıları ve analistler, bir iç risk ilkesine eklendiklerinde kullanıcıları bilgilendirmek için hızla işlem yapabilir.
 
-- Insider risk ilkesine eklendiklerinde kullanıcılara bildirme
-
-Insider risk yönetimi kullanıcısı için Power Automate akışlarını çalıştırmak, yönetmek veya oluşturmak için:
+Insider risk yönetimi kullanıcıları için Power Automate akışlarını çalıştırmak, yönetmek ve oluşturmak için:
 
 1. Kullanıcı eylem araç çubuğunda **Otomatikleştir'i** seçin.
 2. Çalıştırılacak Power Automate akışını ve ardından **Akışı çalıştır'ı** seçin.

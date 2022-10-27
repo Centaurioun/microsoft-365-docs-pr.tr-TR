@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 549e1b539bb7683b1b9ff81f6d467449908b7177
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 12cc6483fdd88a3f9e9213578b21a7eee4499dfe
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68620381"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68725177"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Canlı yanıt kullanarak cihazlardaki varlıkları araştırma
 
@@ -85,14 +85,14 @@ Bir cihazda oturum başlatabilmeniz için önce aşağıdaki gereksinimleri kar�
   [Gelişmiş özellikler ayarları](advanced-features.md) sayfasında canlı yanıt özelliğini etkinleştirmeniz gerekir.
 
   > [!NOTE]
-  > Bu ayarları yalnızca güvenlik veya genel yönetici rollerini yöneten kullanıcılar düzenleyebilir.
+  > Yalnızca "Portal Ayarlarını Yönet" izinlerine sahip yöneticiler ve kullanıcılar canlı yanıtı etkinleştirebilir. 
   >
   > Canlı yanıtı etkinleştirmeden önce [Gelişmiş özellikler ayarlarında](advanced-features.md) Otomatik Araştırma etkinleştirilmelidir.
 
 - **Gelişmiş ayarlar sayfasından sunucular için canlı yanıtı etkinleştirin** (önerilir).
 
   > [!NOTE]
-  > Bu ayarları yalnızca güvenlik veya genel yönetici rollerini yöneten kullanıcılar düzenleyebilir.
+  > Yalnızca "Portal Ayarlarını Yönet" izinlerine sahip yöneticiler ve kullanıcılar canlı yanıtı etkinleştirebilir.
 
 - **Cihazın kendisine atanmış bir Otomasyon Düzeltme düzeyi olduğundan emin olun**.
 

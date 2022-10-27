@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Microsoft Purview çözümleri deneme kullanım kılavuzu.
 ms.custom: trial-playbook
-ms.openlocfilehash: 8cbfe44551d1d6a38b5d84e05d00ef391127f388
-ms.sourcegitcommit: 3e1fc1919f64aff2e1ce83aa67bd415fe51604c1
+ms.openlocfilehash: 50be6466441a878acc3d93e75f75c701e894f224
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68499824"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68719150"
 ---
 # <a name="trial-user-guide-microsoft-purview-solutions"></a>Deneme kullanım kılavuzu: Microsoft Purview çözümleri
 
@@ -63,7 +63,7 @@ Aşağıdaki bağlantıları kullanarak belgelerimizin önemli bölümlerine do�
 - [Pano görünümünüzü filtreleme](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [İyileştirme eylemleri hakkında bilgi edinin](compliance-manager-setup.md#improvement-actions-page)
 - [Değerlendirmeleri anlama](compliance-manager.md#assessments)
-- [Uyumluluk Yöneticisi için Microsoft Uyumluluk Yapılandırma Çözümleyicisi'ni kullanarak ortamınızda hızlı bir tarama yapın (önizleme)](compliance-manager-mcca.md)
+- [Uyumluluk Yöneticisi için Microsoft Uyumluluk Yapılandırma Çözümleyicisi'ni (önizleme) kullanarak ortamınızı hızlı bir şekilde denetleyin](compliance-manager-mcca.md)
 
 :::image type="content" source="../media/compliance-trial/compliance-portal.png" alt-text="Uyumluluk Yöneticisi - pano":::
 
@@ -282,7 +282,7 @@ Denetimi açmak için adım adım yönergeler için bkz. [Denetim günlüğü ar
 
 ### <a name="step-3-recommended-enable-and-view-insider-risk-management-analytics-insights"></a>3. Adım (önerilen): Insider Risk Management analiz içgörülerini etkinleştirme ve görüntüleme
 
-Insider Risk Management içindeki analizler, şirket içi risk ilkelerini yapılandırmadan kuruluşunuzda bir veri güvenliği olayına yol açabilecek olası insider risklerini değerlendirmenizi sağlar. Analiz tarama sonuçlarının, içgörülerin gözden geçirilebilir raporlar olarak kullanılabilir hale gelmesi 48 saat kadar sürebilir. Bu değerlendirme sonuçları toplanır ve anonimleştirilir ve olası hassas veri sızdırma etkinliklerini gerçekleştiren kullanıcıların yüzdesi gibi kuruluş genelinde içgörüler sunar.
+Insider Risk Management içindeki analizler, şirket içi risk ilkelerini yapılandırmadan kuruluşunuzda bir veri güvenliği olayına yol açabilecek olası insider risklerini değerlendirmenizi sağlar. Analiz denetimi sonuçlarının, içgörülerin gözden geçirilebilir raporlar olarak kullanılabilir hale gelmesi 48 saat kadar sürebilir. Bu değerlendirme sonuçları toplanır ve anonimleştirilir ve olası hassas veri sızdırma etkinliklerini gerçekleştiren kullanıcıların yüzdesi gibi kuruluş genelinde içgörüler sunar.
 
 Analiz içgörüleri hakkında daha fazla bilgi edinmek için [Insider risk yönetimi ayarları: Analiz](insider-risk-management-settings.md#analytics) bölümüne bakın ve insider risk duruşunuzu anlamanıza yardımcı olmak ve riskli kullanıcıları tanımlamak için uygun ilkeleri ayarlayarak eyleme geçmenize yardımcı olmak için [Insider risk yönetimi analizi videosunu](https://www.youtube.com/watch?v=5c0P5MCXNXk) inceleyin.
 

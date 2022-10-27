@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Çalışanlarınızın Microsoft 365 İş Ekstra ile elde ettikleri Office uygulamalarını ayarlamayı öğrenmesine yardımcı olun.
-ms.openlocfilehash: dcba23ca2910ba90e3cf853cd81dd18130d91a80
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 558cb8d44a35d8e1f16aa7be90f26c6ba0abb4cc
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68186139"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726386"
 ---
 # <a name="employee-quick-setup-in-microsoft-365-for-business"></a>İş için Microsoft 365'te çalışan hızlı kurulumu
 

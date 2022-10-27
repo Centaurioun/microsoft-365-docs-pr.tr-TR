@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: İş için Microsoft 365 aboneliğiniz için kullanıcılardan gelen lisans isteklerini gözden geçirmeyi ve onaylamayı veya reddetmeyi öğrenin.
 ms.date: 04/22/2022
-ms.openlocfilehash: 9852243aa55c57e85d22c491fc5bf84fd714b09e
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: cda22471b7a5e66a0e0aa30bac9cda101583f2f4
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68180857"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726276"
 ---
 # <a name="manage-self-service-license-requests"></a>Self servis lisans isteklerini yönetme
 

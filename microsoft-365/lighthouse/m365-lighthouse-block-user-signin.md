@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP' ler) için, kullanıcıların oturum açamamaları için güvenliğin ihlal edilmiş olduğunu düşünüyorsanız bir kullanıcı hesabını engellemeyi öğrenin.
-ms.openlocfilehash: 8595a7182f485446528f95a2aa66df0801fb86f1
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: 2c7f46a79af9eded2510d63e08c9f9a70eaacca7
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68661995"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68719128"
 ---
 # <a name="block-user-sign-in-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse kullanıcı oturum açmasını engelleme
 

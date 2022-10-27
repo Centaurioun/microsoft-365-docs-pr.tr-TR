@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Silinen bir grup 30 gün boyunca saklanır ve yine de grubu geri yükleyebilirsiniz. 30 gün sonra grup ve içeriği kalıcı olarak silinir.
-ms.openlocfilehash: 54d68170256a59ac1e20d53a829a0bb87e1ef61c
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: ea154fa9a1533fdabf4cc9b1a8a6c50cd62cacff
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68188647"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726738"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>Silinen bir Microsoft 365 grubunu geri yükleme
 

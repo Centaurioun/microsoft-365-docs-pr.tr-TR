@@ -8,6 +8,7 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Yönetim merkezindeki Microsoft 365 Raporları panosunu kullanarak Bir Etkin Kullanıcılar raporu almayı ve kaç ürün lisansının kullanıldığını öğrenin.
-ms.openlocfilehash: 60dea51bf1b9a9411f2f6f277d32207cbdacbb8b
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 77d6ec99281c5f08b7f37639a55caf763e25dcbe
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68170101"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68725045"
 ---
 # <a name="assess-the-microsoft-365-active-users-report"></a>Microsoft 365 Etkin Kullanıcılar raporunu değerlendirme
 

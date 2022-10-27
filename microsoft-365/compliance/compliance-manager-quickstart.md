@@ -10,20 +10,21 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 description: Uyumluluk Yöneticisi'ni anlama, ayarlama ve kullanma yolculuğunuzda size yardımcı olması için Uyumluluk Yöneticisi hızlı başlangıç kılavuzunu kullanın.
-ms.openlocfilehash: 99031b0d93fef74f788f9a42b906dffc58545014
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 2913eed19753ed867321f2fe6fbb2a678a82af63
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638730"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68725243"
 ---
 # <a name="compliance-manager-quickstart"></a>Uyumluluk Yöneticisi hızlı başlangıç
 
@@ -32,6 +33,8 @@ ms.locfileid: "66638730"
 Uyumluluk Yöneticisi ilk ziyaretinizde akıllı ve eyleme dönüştürülebilir veriler sağlar. Uyumluluk Yöneticisi, hazır olduğunuzda uyumluluğunuzu ölçeklendirmeye yönelik gelişmiş özelliklere de sahiptir. Kullanılabilir değerlendirmeler lisans sözleşmenize bağlıdır; [daha fazla bilgi edinin](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 Uyumluluk Yöneticisi'ne ilk kez geliyor olun veya gelişmiş özelliklerden bazılarını kullanmaya hazır olun, bu kılavuz yolculuğunuz boyunca size destek olabilir.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="first-visit-get-to-know-compliance-manager"></a>İlk ziyaret: Uyumluluk Yöneticisi'ne alışma
 
@@ -47,7 +50,7 @@ Uyumluluk Yöneticisi'ni ilk ziyaretinizde kuruluşunuz için bir uyumluluk puan
 - [Pano görünümünüzü filtreleme](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [İyileştirme eylemleri hakkında bilgi edinin](compliance-manager-setup.md#improvement-actions-page)
 - [Değerlendirmeleri anlama](compliance-manager.md#assessments)
-- [Microsoft Purview için Yapılandırma Çözümleyicisi'ni kullanarak ortamınızda hızlı bir tarama yapın](compliance-manager-mcca.md)
+- [Microsoft Purview için Yapılandırma Çözümleyicisi'ni kullanarak ortamınızı hızlı bir şekilde denetleyin](compliance-manager-mcca.md)
 
 ## <a name="ramping-up-configure-compliance-manager-to-manage-your-compliance-activities"></a>Yükseltme: Uyumluluk Yöneticisi'ne uyumluluk etkinliklerinizi yönetecek şekilde yapılandırma
 

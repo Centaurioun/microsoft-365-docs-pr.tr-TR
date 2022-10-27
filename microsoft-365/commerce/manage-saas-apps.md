@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 365 yönetim merkezi'da üçüncü taraf uygulamaları etkinleştirmeyi ve yönetmeyi öğrenin.
 ms.date: 04/15/2021
-ms.openlocfilehash: 5177898384fafa5ce3257f6f93fe998add0dbcd2
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: 186f11435b2fadc123f5705c4929e26599ae10b2
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68688548"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68726166"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Kuruluşunuz için üçüncü taraf uygulama aboneliklerini yönetme
 
@@ -47,22 +48,160 @@ Uygulama sağlayıcıları uygulamalarını sabit bir fiyatla veya kullanıcıla
 - **Sabit fiyat** – Site tabanlı fiyatlandırma olarak da adlandırılan uygulamalar aylık veya yıllık fiyatla fiyatlanır. Uygulama sayfasında lisans miktarı Sınırsız'da listelenir.
 - **Lisanslar** – Uygulamalar lisansa göre fiyatlendirilir. Müşteriler, kuruluşlarındaki her kullanıcıya lisans atar
 
-## <a name="supported-regions"></a>Desteklenen bölgeler
+## <a name="supported-geographic-locations"></a>Desteklenen coğrafi konumlar
 
-Bu bölgelerde üçüncü taraf uygulamalar için destek sağlanır:
+Ticari market teklifleri müşterinin fatura adresi tarafından tanımlandığı gibi 141 coğrafyada satın alınabilir ve işlemler 17 para biriminde tamamlanabilir. Aşağıdaki tabloda desteklenen her coğrafi konum, [ISO 3166 iki basamaklı alfa kodu](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes) ve atanan para birimi listelenmektedir.
 
-- Arjantin
-- Avustralya
-- Kanada
-- Şili
-- Fransa
-- Almanya
-- Yunanistan
-- Porto Riko
-- South Africa
-- Birleşik Krallık
-- Amerika Birleşik Devletleri
-- Batı Avrupa
+CSP, son müşteri para birimiyle İş Ortağı Merkezi'nde bir teklif satın alabilir ve bu sayede aynı para birimiyle faturalandırabilir. Bu konuda ek bilgi için [bu SSS'lere](https://partner.microsoft.com/resources/detail/eu-efta-change-of-partner-billing-currency-faq-pdf) bakın.
+
+|   Ülke/Bölge Adı               |   ISO-2   |   Para birimi</br>(Tüm teklif türleri)  |    Para birimi</br>(Yalnızca danışmanlık hizmeti teklifleri)    |
+|-------------------------------------|-----------|--------------|---------------------------------------------|
+| Afganistan                         | Af        | Usd          | AFN, EUR, USD |
+| Arnavutluk                             | AL        | Usd          | ALL, EUR, USD |
+| Cezayir                             | Dz        | Usd          | DZD, EUR, ABD Doları |
+| Andorra                             | Reklam        | EUR          | EUR, ABD Doları |
+| Angola                              | Ao        | Usd          | AOA, EUR, USD |
+| Arjantin                           | Ar        | Usd          | ARS, EUR, USD |
+| Ermenistan                             | AM        | Usd          | AMD, EUR, USD |
+| Avustralya                           | Au        | Aud          | AUD, EUR, USD |
+| Avusturya                             | AT        | EUR          | EUR, ABD Doları  |
+| Azerbaycan                          | Az        | Usd          | AZN, EUR, USD |
+| Bahreyn                             | BH        | Usd          | BHD, EUR, ABD Doları |
+| Bangladeş                          | Bd        | Usd          | BDT, EUR, USD |
+| Barbados                            | Bb        | Usd          | BBD, EUR, ABD Doları |
+| Belarusça                             | Tarafından        | Usd          | BYN, EUR, USD |
+| Belçika                             | BE        | EUR          | EUR, ABD Doları  |
+| Belize                              | Bz        | Usd          | BZD, EUR, ABD Doları |
+| Bermuda                             | BM        | Usd          | BMD, EUR, ABD Doları |
+| Bolivya                             | Bo        | Usd          | BOB, EUR, USD |
+| Bosnia and Herzegovina (Bosna i Hercegovina)              | Ba        | Usd          | BAM, EUR, ABD Doları |
+| Botsvana                            | Bw        | Usd          | BWP, EUR, USD |
+| Brezilya                              | Br        | Brl\*        | BRL, EUR, USD |
+| Brunei                              | Bn        | Usd          | BND, EUR, SGD, USD |
+| Bulgaristan                            | Bg        | EUR          | BGN, EUR, USD |
+| Cabo Verde                          | Cv        | Usd          | CVE, EUR, USD |
+| Kamerun                            | Cm        | Usd          | EUR, USD, XAF |
+| Kanada                              | Ca        | Cad          | CAD, EUR, USD |
+| Cayman Islands                      | Ky        | Usd          | EUR, KYD, ABD Doları |
+| Şili                               | Cl        | Usd          | CLP, EUR, USD |
+| Çin\**                            | Cn        | Yok          | Yok |
+| Kolombiya                            | Co        | Usd          | COP, EUR, USD |
+| Costa Rica                          | Cr        | Usd          | CRC, EUR, USD |
+| Côte d'Ivoire                       | Cı        | Usd          | EUR, USD, XOF |
+| Hırvatistan                             | Hr        | EUR          | EUR, HRK, USD |
+| Curaçao                             | Cw        | Usd          | ANG, EUR, ABD Doları |
+| Kıbrıs                              | Cy        | EUR          | EUR, ABD Doları  |
+| Çekya                             | Cz        | EUR          | CZK, EUR, USD |
+| Danimarka                             | Dk        | Dkk          | DKK, EUR, USD |
+| Dominican Republic (República Dominicana)                  | DO        | Usd          | DOP, EUR, USD |
+| Ekvador                             | Ec        | Usd          | EUR, ABD Doları |
+| Mısır                               | Örneğin        | Usd          | EGP, EUR, USD |
+| El Salvador                         | Sv        | Usd          | EUR, ABD Doları |
+| Estonya                             | EE        | EUR          | EUR, ABD Doları |
+| Etiyopya                            | ET        | Usd          | ETB, EUR, ABD Doları |
+| Faroe Islands                       | Fo        | Dkk          | DKK, EUR, USD |
+| Fiji                                | Fj        | Aud          | AUD, EUR, FJD, USD |
+| Finlandiya                             | Fi        | EUR          | EUR, ABD Doları |
+| Fransa                              | Fr        | EUR          | EUR, ABD Doları |
+| Gürcistan                             | Ge        | Usd          | EUR, GEL, USD |
+| Almanya                             | DE        | EUR          | EUR, ABD Doları |
+| Gana                               | GH        | Usd          | EUR, GHS, ABD Doları |
+| Yunanistan                              | Gr        | EUR          | EUR, ABD Doları |
+| Guatemala                           | Gt        | Usd          | EUR, GTQ, ABD Doları |
+| Honduras                             | Hn        | Usd          | EUR, HNL, USD |
+| Hong Kong ÖİB                       | Hk        | Usd          | EUR, HKD, USD |
+| Macaristan                             | Hu        | EUR          | EUR, HUF, USD |
+| İzlanda                             | IS        | EUR          | EUR, ISK, USD |
+| Hindistan                               | Inç        | Inr          | EUR, INR, USD |
+| Endonezya                           | Kimlik        | Usd          | EUR, IDR, USD |
+| Irak                                | Iq        | Usd          | EUR, IQD, USD |
+| İrlanda                             | IE        | EUR          | EUR, ABD Doları  |
+| İsrail                              | Il        | Usd          | EUR, ILS, ABD Doları |
+| İtalya                               | IT        | EUR          | EUR, ABD Doları |
+| Jamaika                             | Jm        | Usd          | EUR, JMD, ABD Doları |
+| Japonya                               | Jp        | Jpy          | EUR, JPY, USD |
+| Ürdün                              | JO        | Usd          | EUR, JOD, ABD Doları |
+| Kazakistan                          | Kz        | Usd          | EUR, KZT, USD |
+| Kenya                               | Ke        | Usd          | EUR, KES, USD |
+| Kore (Güney)                       | KR        | Krw          | EUR, KRW, ABD Doları |
+| Kuveyt                              | Kw        | Usd          | EUR, KWD, ABD Doları |
+| Kırgızistan                          | Kg        | Usd          | EUR, KGS, ABD Doları |
+| Letonya                              | Lv        | EUR          | EUR, ABD Doları |
+| Lübnan                             | Lb        | Usd          | EUR, LBP, USD |
+| Libya                               | LY        | Usd          | EUR, LYD, USD |
+| Liechtenstein                       | Li        | EUR          | CHF, EUR, USD |
+| Litvanya                           | Teğmen        | EUR          | EUR, ABD Doları |
+| Lüksemburg                          | Lu        | EUR          | EUR, ABD Doları |
+| Makao ÖİB                           | Mo        | Usd          | EUR, MOP, USD |
+| Malezya                            | Benim        | Usd          | EUR, MYR, USD |
+| Malta                               | Mt        | EUR          | EUR, ABD Doları |
+| Mauritius                           | MU        | Usd          | EUR, MUR, USD |
+| Meksika                              | MX        | Usd          | EUR, MXN, USD |
+| Moldova                             | MD        | Usd          | EUR, MDL, USD |
+| Monako                              | Mc        | EUR          | EUR, ABD Doları |
+| Moğolistan                            | Mn        | Usd          | EUR, MNT, USD |
+| Karadağ                          | Beni        | Usd          | EUR, ABD Doları |
+| Fas                             | MA        | Usd          | EUR, MAD, USD |
+| Namibya                             | Na        | Usd          | EUR, NAD, USD, ZAR |
+| Nepal                               | Np        | Usd          | EUR, NPR, USD |
+| Hollanda                         | Nl        | EUR          | EUR, ABD Doları |
+| Yeni Zelanda                         | Nz        | Nzd          | EUR, NZD, USD |
+| Nikaragua                           | NI        | Usd          | EUR, NIO, USD |
+| Nijerya                             | Ng        | Usd          | EUR, NGN, USD |
+| Kuzey Makedonya                     | Mk        | Usd          | EUR, MKD, USD |
+| Norveç                              | HAYIR        | Nok          | EUR, NOK, USD |
+| Umman                                | Om        | Usd          | EUR, OMR, ABD Doları |
+| Pakistan                            | Pk        | Usd          | EUR, PKR, USD |
+| Palestinian Authority               | Ps        | Usd          | EUR, ILS, JOD, USD |
+| Panama                              | Pa        | Usd          | EUR, PAB, USD |
+| Paraguay                            | PY        | Usd          | EUR, PYG, ABD Doları |
+| Peru                                | Pe        | Usd          | EUR, PEN, USD |
+| Filipinler                         | Ph        | Usd          | EUR, PHP, USD |
+| Polonya                              | Pl        | EUR          | EUR, PLN, ABD Doları |
+| Portekiz                            | Pt        | EUR          | EUR, ABD Doları |
+| Porto Riko                         | Pr        | Usd          | EUR, ABD Doları |
+| Katar                               | Qa        | Usd          | EUR, QAR, USD |
+| Romanya                             | Ro        | EUR          | EUR, RON, ABD Doları |
+| Rusya                              | Ru        | Rub          | EUR, RUB, USD |
+| Ruanda                              | Rw        | Usd          | EUR, RWF, USD |
+| Saint Kitts ve Nevis               | KN        | Usd          | EUR, USD, XCD |
+| Saudi Arabia (المملكة العربية السعودية)                        | Sa        | Usd          | EUR, SAR, ABD Doları |
+| Senegal                             | SN        | Usd          | EUR, USD, XOF |
+| Sırbistan                              | RS        | Usd          | EUR, RSD, USD |
+| Singapur                           | Sg        | Usd          | BND, EUR, SGD, USD |
+| Slovakya                            | SK        | EUR          | EUR, ABD Doları |
+| Slovenya                            | Si        | EUR          | EUR, ABD Doları |
+| South Africa                        | ZA        | Usd          | EUR, USD, ZAR |
+| İspanya                               | Es        | EUR          | EUR, ABD Doları |
+| Sri Lanka                           | Lk        | Usd          | EUR, LKR, USD |
+| İsveç                              | SE        | Sek          | EUR, SEK, USD  |
+| İsviçre                         | Caner        | Chf          | CHF, EUR, USD |
+| Tayvan                              | Tw        | Twd          | EUR, TWD, USD |
+| Tacikistan                          | TJ        | Usd          | EUR, TJS, USD |
+| Tanzanya                            | Tz        | Usd          | EUR, TZS, USD |
+| Tayland                            | TH        | Usd          | EUR, THB, USD |
+| Trinidad ve Tobago                 | TT        | Usd          | EUR, TTD, USD |
+| Tunus                             | Tn        | Usd          | EUR, TND, USD |
+| Türkiye                              | TR        | Usd          | EUR, TRY, USD |
+| Türkmenistan                        | Tm        | Usd          | EUR, TMT, ABD Doları |
+| Uganda                              | Ug        | Usd          | EUR, UGX, USD |
+| Ukrayna                             | Ua        | Usd          | EUR, RUB, UAH, USD |
+| Birleşik Arap Emirlikleri                | Ae        | Usd          | AED, EUR, USD |
+| Birleşik Krallık                      | Gb        | Gbp          | EUR, GBP, ABD Doları |
+| Amerika Birleşik Devletleri                       | US        | Usd          | EUR, ABD Doları |
+| ABD Virgin Adaları                 | Vı        | Usd          | EUR, ABD Doları|
+| Uruguay                             | Uslu        | Usd          | EUR, USD, UYU |
+| Özbekistan                          | Uz        | Usd          | EUR, USD, UZS |
+| Vatikan (Kutsal Gör)             | Va        | EUR          | EUR, ABD Doları |
+| Venezuela                           | VE        | Usd          | EUR, USD, VES |
+| Vietnam                             | Vn        | Usd          | EUR, USD, VND |
+| Yemen                               | YE        | Usd          | EUR, USD, YER |
+| Zambiya                              | Zm        | Usd          | EUR, USD, ZMW |
+| Zimbabve                            | Zw        | Usd          | EUR, ABD Doları |
+
+\* Brezilya'daki müşteriler için Bulut Çözümü Sağlayıcıları (CSP) aracılığıyla sunulan ticari market ABD doları kullanır.
+
+\** Yalnızca ücretsiz ve KCG VM görüntüleri.
 
 ## <a name="activate-third-party-apps"></a>Üçüncü taraf uygulamalarını etkinleştirme
 

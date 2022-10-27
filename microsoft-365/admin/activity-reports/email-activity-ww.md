@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: Microsoft 365 yönetim merkezi Microsoft 365 Raporları panosunu kullanarak e-posta etkinlik raporu almayı ve kullanıcı e-posta eğilimlerini anlama hakkında bilgi edinin.
-ms.openlocfilehash: b443dc43449ec3de0db0fad135269a9d297c8554
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 94ae5e27e6ce95b28be587834731642f24c3b182
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68195291"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68724935"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>Yönetim merkezinde Microsoft 365 Raporları - Email etkinliği
 

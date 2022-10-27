@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - ContentEngagementFY23
 - scotvorg
 - highpri
@@ -27,12 +28,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f1b7f2a050ca051a8085f126473dc675f74d75f2
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: 2bd9783f88c711a5eb757357a281b7e371b105a4
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492191"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68718226"
 ---
 # <a name="what-is-a-domain"></a>Etki alanı nedir?
 

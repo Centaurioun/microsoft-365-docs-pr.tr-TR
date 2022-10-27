@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -28,12 +29,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: Bir etki alanı adı satın alıp Microsoft 365'e ekleyerek e-posta adresinizi tom@fourthcoffee.com gibi kolay bir e-posta adresiyle değiştirin.
-ms.openlocfilehash: b20a6c7661b1bc33f2a2969531f64eece1316b7f
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 8439689d8006d400cf2ef3f8498e1a9b80d455df
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68203299"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68719018"
 ---
 # <a name="change-your-microsoft-365-email-address-to-use-your-custom-domain"></a>Microsoft 365 e-posta adresinizi özel etki alanınızı kullanacak şekilde değiştirme
 

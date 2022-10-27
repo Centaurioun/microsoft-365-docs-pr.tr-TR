@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Reşit olmayanların kişisel verilerini yöneten Genel Veri Koruma Yönetmeliği (GDPR) düzenlemeleri hakkında bilgi edinin.
-ms.openlocfilehash: a3effed0efb2dc03ba769dd8a9d0d8685f3b6f34
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 3671d95cac7064a3254aa3fdc2ae5edbd0a33a83
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68208468"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68718644"
 ---
 # <a name="minors-and-acquiring-add-ins-from-the-store"></a>Reşit olmayanlar ve Store'dan eklenti edinme
 

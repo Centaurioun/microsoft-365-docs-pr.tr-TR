@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -26,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Azure AD PowerShell kullanarak bazı bireysel kullanıcı parolalarının süresinin hiç dolmamasına ayarlamak için Microsoft 365 yönetici hesabınızda oturum açın.
-ms.openlocfilehash: 27a5e5955267eb1a012c6dcb7618582b5256dc11
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 22757f056a3da5cd56c840c30ed1ade675f33485
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68191595"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68727047"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Tek bir kullanıcının parolasını süresi hiç dolmayacak şekilde ayarlama
 

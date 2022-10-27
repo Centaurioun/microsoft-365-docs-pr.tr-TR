@@ -1,6 +1,6 @@
 ---
-title: Örnek olay incelemesi - Contoso uygunsuz bir metin ilkesi yapılandırıyor
-description: Contoso için bir örnek olay incelemesi ve Microsoft Teams, Exchange Online ve Yammer iletişimlerinde uygunsuz metinleri algılamak için iletişim uyumluluk ilkesini nasıl hızlı bir şekilde yapılandırdıkları.
+title: Örnek olay incelemesi - Contoso, uygun olmayabilecek metni belirlemek için bir iletişim uyumluluk ilkesi yapılandırıyor
+description: Contoso için bir örnek olay incelemesi ve Microsoft Teams, Exchange Online ve Yammer iletişimlerinde uygunsuz olabilecek metinleri algılamak için iletişim uyumluluk ilkesini nasıl hızlı bir şekilde yapılandırdıkları.
 keywords: Microsoft 365, Microsoft Purview, uyumluluk, iletişim uyumluluğu
 f1.keywords:
 - NOCSH
@@ -23,23 +23,23 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e221275185476eda23cd96926c203403630dd9e3
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: f0586ce9b4ff7a8d8f9f171bad5c1b1ecef64e4c
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565454"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68719194"
 ---
-# <a name="case-study---contoso-quickly-configures-an-inappropriate-text-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Örnek olay incelemesi - Contoso Microsoft Teams, Exchange ve Yammer iletişimleri için uygun olmayan bir metin ilkesini hızla yapılandırır
+# <a name="case-study---contoso-configures-a-communication-compliance-policy-to-identify-potentially-inappropriate-text-for-microsoft-teams-exchange-and-yammer-communications"></a>Örnek olay incelemesi - Contoso, Microsoft Teams, Exchange ve Yammer iletişimleri için uygun olmayabilecek metinleri belirlemek üzere bir iletişim uyumluluk ilkesi yapılandırır
 
->[!IMPORTANT]
->Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamak için kullanılır.
+> [!IMPORTANT]
+> Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamaya yardımcı olur.
 
-[Microsoft Purview İletişim Uyumluluğu](/microsoft-365/compliance/communication-compliance), kuruluşunuzda uygunsuz metin içeren iletileri algılamanıza, yakalamanıza ve üzerinde işlem yapmanıza yardımcı olarak iletişim risklerini en aza indirmenize yardımcı olur. uygunsuz metinler küfür, tehdit, taciz ve uygunsuz görüntüler içerebilir. Önceden tanımlanmış ve özel [ilkeler](/microsoft-365/compliance/communication-compliance-policies) , belirlenen gözden geçirenler tarafından incelenebilmeleri için ilke eşleşmeleri için iç ve dış iletişimleri taramanıza olanak sağlar. Gözden geçirenler kuruluşunuzdaki e-posta, Microsoft Teams, Yammer veya üçüncü taraf [iletişimleri için uyarıları araştırabilir](/microsoft-365/compliance/communication-compliance-investigate-remediate#investigate-alerts) ve kuruluşunuzun ileti standartlarıyla uyumlu olduklarından emin olmak için uygun [düzeltme eylemlerini](/microsoft-365/compliance/communication-compliance-investigate-remediate#remediate-alerts) gerçekleştirebilir.
+[Microsoft Purview İletişim Uyumluluğu](/microsoft-365/compliance/communication-compliance), kuruluşunuzda uygunsuz olabilecek metinler içeren iletileri algılamanıza, yakalamanıza ve üzerinde işlem yapmanıza yardımcı olarak iletişim risklerini en aza indirmenize yardımcı olur. Uygunsuz olabilecek metinler küfür, tehdit, taciz ve yetişkin içeriği içerebilir. Önceden tanımlanmış ve özel [ilkeler](/microsoft-365/compliance/communication-compliance-policies) , ilke eşleşmeleri için iç ve dış iletişimleri gözden geçirmenize olanak tanıyarak belirlenen gözden geçirenler tarafından incelenebilir. Gözden geçirenler kuruluşunuz genelinde e-posta, Microsoft Teams, Yammer veya üçüncü taraf iletişim [uyarılarını araştırabilir](/microsoft-365/compliance/communication-compliance-investigate-remediate#investigate-alerts) ve kuruluşunuzun ileti standartlarıyla uyumlu olduklarından emin olmak için uygun [düzeltme eylemlerini](/microsoft-365/compliance/communication-compliance-investigate-remediate#remediate-alerts) gerçekleştirebilir.
 
-Contoso Corporation, uygunsuz metinleri algılamak için hızlı bir şekilde ilke yapılandırması gereken kurgusal bir kuruluştur. Microsoft 365'i öncelikli olarak kullanıcıları için e-posta, Microsoft Teams ve Yammer desteği için kullanıyorlar ancak iş yeri tacizi konusunda şirket ilkesini zorunlu kılmak için yeni gereksinimleri var. Contoso BT yöneticileri ve uyumluluk uzmanları, Microsoft 365 ile çalışmanın temelleri hakkında temel bilgilere sahiptir ve iletişim uyumluluğunu hızlı bir şekilde kullanmaya başlama konusunda uçtan uca yönergeler arıyor.
+Contoso Corporation, uygunsuz olabilecek metinleri algılamak için hızla ilke yapılandırması gereken kurgusal bir kuruluştur. Microsoft 365'i öncelikli olarak kullanıcıları için e-posta, Microsoft Teams ve Yammer desteği için kullanıyorlar, ancak iş yerindeki taciz konusunda şirket ilkesini zorunlu kılmak için yeni gereksinimleri var. Contoso BT yöneticileri ve uyumluluk uzmanları, Microsoft 365 ile çalışmanın temelleri hakkında temel bilgilere sahiptir ve iletişim uyumluluğunu hızlı bir şekilde kullanmaya başlama konusunda uçtan uca yönergeler arıyor.
 
-Bu örnek olay incelemesi, uygunsuz metinleri algılamak için bir iletişim uyumluluk ilkesini hızla yapılandırmaya yönelik temel bilgileri ele alacaktır. Bu kılavuz şunları içerir:
+Bu örnek olay incelemesi, uygunsuz olabilecek metinleri algılamak için bir iletişim uyumluluk ilkesini hızla yapılandırmaya yönelik temel bilgileri kapsar. Bu kılavuz şunları içerir:
 
 - [1. Adım: İletişim uyumluluğunu planlama](#step-1-planning-for-communication-compliance)
 - [2. Adım: İletişim uyumluluğuna erişme](#step-2-accessing-communication-compliance)
@@ -50,16 +50,18 @@ Bu örnek olay incelemesi, uygunsuz metinleri algılamak için bir iletişim uyu
 
 ## <a name="step-1-planning-for-communication-compliance"></a>1. Adım: İletişim uyumluluğunu planlama
 
-Contoso BT yöneticileri ve uyumluluk uzmanları Microsoft 365'teki uyumluluk çözümleri hakkında çevrimiçi web seminerlerine katıldı ve iletişim uyumluluk ilkelerinin iş yeri tacizini azaltmak için güncelleştirilmiş şirket ilkesi gereksinimlerini karşılamalarına yardımcı olduğuna karar verdi. Birlikte çalışarak, uygunsuz iletileri algılayacak bir iletişim uyumluluk ilkesi oluşturmak ve etkinleştirmek için bir plan geliştirdiler. Bu yapılandırma Microsoft Teams'de gönderilen sohbetler, Yammer'daki özel iletiler ve topluluk konuşmaları ile Exchange Online gönderilen e-posta iletileri için metin algılamayı içerir. Planları şunları belirlemeyi içerir:
+Contoso BT yöneticileri ve uyumluluk uzmanları Microsoft Purview'daki uyumluluk çözümleri hakkında çevrimiçi web seminerlerine katıldı ve iletişim uyumluluk ilkelerinin iş yeri tacizini azaltmak için güncelleştirilmiş kurumsal ilke gereksinimlerini karşılamalarına yardımcı olduğuna karar verdi. Birlikte çalışarak, uygunsuz olabilecek iletileri algılayacak bir iletişim uyumluluk ilkesi oluşturmak ve etkinleştirmek için bir plan geliştirdiler. Bu yapılandırma Microsoft Teams'de gönderilen sohbetler, Yammer'daki özel iletiler ve topluluk konuşmaları ile Exchange Online gönderilen e-posta iletileri için metin algılamayı içerir.
+
+Planları şunları belirlemeyi içerir:
 
 - İletişim uyumluluk özelliklerine erişmesi gereken BT yöneticileri.
-- İletişim ilkeleri oluşturması ve yönetmesi gereken uyumluluk uzmanları.
-- uyumluluk uzmanları ve iletişim uyumluluk uyarılarını araştırması ve düzeltmesi gereken diğer departmanlardaki (İnsan Kaynakları, Yasal vb.) diğer iş arkadaşı.
-- İletişim uyumluluğuna uygun olmayan metin ilkesi kapsamında olacak kullanıcılar.
+- İletişim uyumluluk ilkeleri oluşturması ve yönetmesi gereken uyumluluk uzmanları.
+- İletişim uyumluluğu uyarılarını araştırması ve düzeltmesi gereken diğer departmanlarda (İnsan Kaynakları, Hukuk vb.) uyumluluk uzmanları ve diğer iş arkadaşı.
+- İletişim uyumluluğunun kapsamına giren kullanıcılar, uygun olmayabilecek metin ilkesine sahip olabilir.
 
 ### <a name="licensing"></a>Lisanslama
 
-İlk adım, Contoso'nun Microsoft 365 lisanslamasının iletişim uyumluluk çözümü için destek içerdiğini onaylamaktır. İletişim uyumluluğuna erişmek ve bu uyumluluğu kullanmak için Contoso BT yöneticilerinin Contoso'nun aşağıdakilerden birine sahip olduğunu doğrulamaları gerekir:
+İlk adım, Contoso'nun Microsoft 365 lisanslama işleminin iletişim uyumluluk çözümü için destek içerip içermediğini onaylamaktır. İletişim uyumluluğuna erişmek ve bu uyumluluğu kullanmak için Contoso BT yöneticilerinin Contoso'nun aşağıdakilerden birine sahip olduğunu doğrulamaları gerekir:
 
 - Microsoft 365 E5/A5/F5/G5 aboneliği (ücretli veya deneme sürümü)
 - Microsoft 365 E3/A3/F3/G5 aboneliği + Microsoft 365 E5/A5/F5/G5 Uyumluluk eklentisi
@@ -150,7 +152,7 @@ contoso BT yöneticileri **, Microsoft Purview uyumluluk portalı** bir kez uyum
 
 ## <a name="step-3-configuring-prerequisites-and-creating-a-communication-compliance-policy"></a>3. Adım: Önkoşulları yapılandırma ve iletişim uyumluluk ilkesi oluşturma
 
-İletişim uyumluluk ilkesini kullanmaya başlamak için Contoso BT yöneticilerinin uygunsuz metinleri algılamak için yeni ilkeyi ayarlamadan önce yapılandırması gereken çeşitli önkoşullar vardır. Bu önkoşullar tamamlandıktan sonra Contoso BT yöneticileri ve uyumluluk uzmanları yeni ilkeyi yapılandırabilir ve uyumluluk uzmanları oluşturulan uyarıları araştırmaya ve düzeltmeye başlayabilir.
+İletişim uyumluluk ilkesini kullanmaya başlamak için Contoso BT yöneticilerinin uygunsuz olabilecek metinleri algılamak için yeni ilkeyi ayarlamadan önce yapılandırması gereken çeşitli önkoşullar vardır. Bu önkoşullar tamamlandıktan sonra Contoso BT yöneticileri ve uyumluluk uzmanları yeni ilkeyi yapılandırabilir ve uyumluluk uzmanları oluşturulan uyarıları araştırmaya ve düzeltmeye başlayabilir.
 
 ### <a name="enabling-auditing-in-microsoft-365"></a>Microsoft 365'te denetimi etkinleştirme
 
@@ -160,13 +162,13 @@ Contoso BT yöneticileri denetimi açmak için [adım adım yönergeleri](/micro
 
 ### <a name="configuring-yammer-tenant-for-native-mode"></a>Yammer kiracısını Yerel Mod için yapılandırma
 
-İletişim uyumluluğu, özel iletilerde ve genel topluluk konuşmalarında uygunsuz metinleri algılamak için bir kuruluşun Yammer kiracısının Yerel Modda olmasını gerektirir.
+İletişim uyumluluğu, özel iletilerde ve genel topluluk konuşmalarında uygunsuz olabilecek metinleri algılamak için bir kuruluşun Yammer kiracısının Yerel Modda olmasını gerektirir.
 
 Contoso BT yöneticileri [, Microsoft 365'te Yammer Yerel Moduna Genel Bakış makalesindeki](/yammer/configure-your-yammer-network/overview-native-mode) bilgileri gözden geçirdiklerinden emin olur ve [Microsoft 365 için Yammer ağınızı Yerel Mod için yapılandırma](/yammer/configure-your-yammer-network/native-mode) makalesindeki geçiş aracını çalıştırma adımlarını izler.
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>Kapsam içi kullanıcılar için grup ayarlama
 
-Contoso uyumluluk uzmanları, uygunsuz metinleri algılayacak iletişim ilkesine tüm kullanıcıları eklemek istiyor. Her kullanıcı hesabını ilkeye ayrı olarak eklemeye karar verebilirler, ancak bunun çok daha kolay olduğunu ve bu ilke için kullanıcılar için **Tüm Kullanıcılar** dağıtım grubunu kullanmanın zaman kazandırabileceğine karar vermişlerdir.
+Contoso uyumluluk uzmanları, uygunsuz olabilecek metinleri algılayacak iletişim ilkesine tüm kullanıcıları eklemek istiyor. Her kullanıcı hesabını ilkeye ayrı olarak eklemeye karar verebilirler, ancak bunun çok daha kolay olduğunu ve bu ilke için kullanıcılar için **Tüm Kullanıcılar** dağıtım grubunu kullanmanın zaman kazandırabileceğine karar vermişlerdir.
 
 Tüm Contoso kullanıcılarını dahil etmek için yeni bir grup oluşturmaları gerekir, bu nedenle aşağıdaki adımları uygularlar:
 
@@ -179,21 +181,21 @@ Tüm Contoso kullanıcılarını dahil etmek için yeni bir grup oluşturmaları
 
     ![Exchange yönetim merkezi.](../media/communication-compliance-case-eac.png)
 
-### <a name="creating-the-policy-to-detect-inappropriate-text"></a>Uygunsuz metni algılamak için ilke oluşturma
+### <a name="creating-the-policy-to-detect-potentially-inappropriate-text"></a>Uygunsuz olabilecek metni algılamak için ilke oluşturma
 
-Tüm önkoşullar tamamlandıysa, CONTOSO için BT yöneticileri ve uyumluluk uzmanları uygunsuz metinleri algılamak için iletişim uyumluluk ilkesini yapılandırmaya hazırdır. Yeni uygunsuz metin ilkesi şablonunu kullanarak, bu ilkeyi yapılandırmak basit ve hızlıdır.
+Tüm önkoşullar tamamlandıysa, BT yöneticileri ve Contoso için uyumluluk uzmanları, uygunsuz olabilecek metinleri algılamak için iletişim uyumluluk ilkesini yapılandırmaya hazırdır. Metin ilkesi şablonunu kullanarak bu yeni ilkeyi yapılandırmak basit ve hızlı bir işlemdir.
 
-1. Contoso BT yöneticileri ve uyumluluk uzmanları **Microsoft Purview uyumluluk portalı** oturum açıp sol gezinti bölmesinden **İletişim uyumluluğu'na** tıklayın. Bu eylem, iletişim uyumluluk ilkesi şablonları için hızlı bağlantılar içeren **Genel Bakış** panosunu açar. Şablon için **Başlarken'i** seçerek **Uygunsuz metin için izleme** şablonunu seçer.
+1. Contoso BT yöneticileri ve uyumluluk uzmanları **Microsoft Purview uyumluluk portalı** oturum açıp sol gezinti bölmesinden **İletişim uyumluluğu'na** tıklayın. Bu eylem, iletişim uyumluluk ilkesi şablonları için hızlı bağlantıları olan panoyu açar. **İlkeler'i** seçer, **Uygunsuz metinleri algıla** şablonuna kaydırıp **İlke oluştur** şablonunu seçer.
 
-    ![İletişim uyumluluğuna uygun olmayan metin şablonu.](../media/communication-compliance-case-template.png)
+    ![İletişim uyumluluğu uygun olmayan metin şablonunu algılar](../media/communication-compliance-case-template.png)
 
 2. İlke şablonu sihirbazında Contoso BT yöneticileri ve uyumluluk uzmanları, gerekli üç alanı tamamlamak için birlikte çalışır: **İlke adı**, **Denetlenecek kullanıcılar veya gruplar** ve **Gözden Geçirenler**.
 3. İlke sihirbazı ilke için zaten bir ad önerdiğinden, BT yöneticileri ve uyumluluk uzmanları önerilen adı tutmaya ve kalan alanlara odaklanmaya karar verir. Alanı **denetleyecek Kullanıcılar veya gruplar** için *Tüm kullanıcılar* grubunu ve **Gözden Geçirenler** alanı için ilke uyarılarını araştırması ve düzeltmesi gereken uyumluluk uzmanlarını seçer. İlkeyi yapılandırmanın ve uyarı bilgilerini toplamaya başlamanın son adımı **İlke oluştur'u** seçmektir.
 
-    ![İletişim uyumluluğuna uygun olmayan metin sihirbazı.](../media/communication-compliance-case-wizard.png)
+    ![İletişim uyumluluğu uygunsuz metin algılama sihirbazı](../media/communication-compliance-case-wizard.png)
 
 ## <a name="step-4-investigate-and-remediate-alerts"></a>4. Adım: Uyarıları araştırma ve düzeltme
 
-Artık uygunsuz metinleri algılamaya yönelik iletişim uyumluluk ilkesi yapılandırıldığına göre, Contoso uyumluluk uzmanları için bir sonraki adım ilke tarafından oluşturulan uyarıları araştırmak ve düzeltmek olacaktır. İlkenin tüm iletişim kaynağı kanallarındaki iletişimleri tam olarak işlemesi ve uyarıların **Uyarı panosunda** görünmesi bir saat kadar sürer.
+Uygunsuz olabilecek metinleri algılamak için iletişim uyumluluk ilkesi yapılandırıldığına göre, Contoso uyumluluk uzmanları için bir sonraki adım ilke tarafından oluşturulan uyarıları araştırmak ve düzeltmek olacaktır. İlkenin tüm iletişim kaynağı kanallarındaki iletişimleri tam olarak işlemesi ve uyarıların **Uyarı panosunda** görünmesi bir saat kadar sürer.
 
-Uyarılar oluşturulduktan sonra Contoso uyumluluk uzmanları, uygunsuz metin sorunlarını araştırmak ve düzeltmek için [iş akışı yönergelerini](/microsoft-365/compliance/communication-compliance-investigate-remediate) izler.
+Uyarılar oluşturulduktan sonra Contoso uyumluluk uzmanları, uygunsuz olabilecek metin sorunlarını araştırmak ve düzeltmek için [iş akışı yönergelerini](/microsoft-365/compliance/communication-compliance-investigate-remediate) izlemeye devam edecektir.

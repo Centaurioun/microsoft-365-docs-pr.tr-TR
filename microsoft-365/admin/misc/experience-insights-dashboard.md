@@ -8,14 +8,15 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 description: Kuruluşunuzdaki kişilerin Microsoft 365 hizmetlerini nasıl kullandığı hakkında düzenli bir rapor alın ve daha fazla içgörü için her grafikte detaya gidin.
-ms.openlocfilehash: 54c0525c4cff5d02c18aa3a2a4defaf4a9e71ba6
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 2489cbfe16ff82fa4e58340ff8586af21ff64a0c
+ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68191067"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68725814"
 ---
 # <a name="microsoft-365-experience-insights-dashboard"></a>Microsoft 365 Deneyimi içgörüleri panosu
 
