@@ -1,7 +1,7 @@
 ---
 title: macOS cihazlarındaki Uç Nokta için Microsoft Defender Jamf Pro'ya kaydetme
 description: macOS cihazlarındaki Uç Nokta için Microsoft Defender Jamf Pro'ya kaydetme
-keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: c4e10dc812b90d9e2eb025855617787cbf685957
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: ea0872a96a0d020074f3ce9caa6314af3c845ab6
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68225426"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769611"
 ---
 # <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>macOS cihazlarındaki Uç Nokta için Microsoft Defender Jamf Pro'ya kaydetme
 

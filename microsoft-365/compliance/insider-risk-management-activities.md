@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: e35809f3cf95bd9995c21b638e5a4c1fef8027df
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 540d7bd367f32399004b276ee9d7c92bc70b70a3
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68734923"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770315"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Insider risk yönetimi etkinliklerini araştırma
 
@@ -138,7 +138,7 @@ Uyarı hakkında daha fazla bilgi için Uyarı ayrıntısı sayfasındaki aşağ
 Bu bölüm, kullanıcı ve uyarı hakkında genel bilgiler içerir. Bu bilgiler, kullanıcı için uyarıya dahil edilen algılanan risk yönetimi etkinliği hakkında ayrıntılı bilgiler gözden geçirilirken bağlam için kullanılabilir:
 
 - **Bu uyarıyı oluşturan etkinlik**: Uyarının oluşturulmasına neden olan etkinlik değerlendirme döneminde riskli olabilecek en yüksek etkinlik ve ilke eşleşmesini görüntüler.
-- **Tetikleyici olay**: İlkeden kullanıcının etkinliğine risk puanları atamaya başlamasını isteyen en son tetikleyici olayı görüntüler. *Dağıtılan kullanıcılar tarafından veri sızıntıları* için [iletişim uyumluluğuyla tümleştirmeyi](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) yapılandırdıysanız veya güvenlik *ilkesi ihlalleri için dağıtılan kullanıcı* ilkeleriyle tümleştirmeyi yapılandırdıysanız, bu uyarılar için tetikleme olayının kapsamı iletişim uyumluluk etkinliği olarak belirlenmiştir.
+- **Tetikleyici olay**: İlkeden kullanıcının etkinliğine risk puanları atamaya başlamasını isteyen en son tetikleyici olayı görüntüler. *Riskli kullanıcılar tarafından yapılan Veri sızıntıları veya riskli kullanıcı* *ilkeleri tarafından güvenlik ilkesi ihlalleri* için [iletişim uyumluluğuyla tümleştirmeyi](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) yapılandırdıysanız, bu uyarılar için tetikleme olayının kapsamı iletişim uyumluluk etkinliği olarak belirlenmiştir.
 - **Kullanıcı profili**: Uyarıya atanan kullanıcı hakkında genel bilgileri görüntüler. Anonimleştirme etkinse kullanıcı adı, e-posta adresi, diğer ad ve kuruluş alanları anonimleştirilir.
 - **Kullanıcı uyarı geçmişi**: Son 30 güne ait kullanıcının uyarılarının listesini görüntüler. Kullanıcının uyarı geçmişinin tamamını görüntülemek için bir bağlantı içerir.
 

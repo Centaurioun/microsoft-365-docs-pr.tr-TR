@@ -1,7 +1,7 @@
 ---
 title: Jamf Pro'da cihaz gruplarını ayarlama
 description: macOS'ta Uç Nokta için Microsoft Defender için Jamf Pro'da cihaz gruplarını ayarlamayı öğrenin
-keywords: cihaz, grup, microsoft, defender, Uç Nokta için Microsoft Defender, mac, yükleme, dağıtma, kaldırma, intune, jamfpro, macos, catalina, mojave, high sierra
+keywords: device, group, microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ce8e999af9149f9b093420e8704162e11a526501
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 16247ae629423fd8dd2028455c6d45c894eca77f
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68229074"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68767873"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>Jamf Pro'da macOS cihaz gruplarında Uç Nokta için Microsoft Defender ayarlama
 

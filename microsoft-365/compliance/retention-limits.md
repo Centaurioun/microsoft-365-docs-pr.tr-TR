@@ -11,19 +11,20 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
 hideEdit: true
 description: Microsoft 365 bekletme ilkeleri ve bekletme etiketi ilkeleri için ilke başına en fazla ilke ve öğe sayısını anlama
-ms.openlocfilehash: 768f2711c873696aabfc71df8817b0be6beec891
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: ca63433629740846824e22abead7e816f47fa6fd
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942372"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770055"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Bekletme ilkeleri ve bekletme etiketi ilkeleri için sınırlar
 
@@ -31,17 +32,20 @@ ms.locfileid: "66942372"
 
 Kuruluşunuzda verileri otomatik olarak saklamak veya silmek için [bekletme ilkeleri ve bekletme etiketi ilkeleri](retention.md#retention-policies-and-retention-labels) kullandığınızda, dikkat etmeniz gereken bazı maksimum sayılar vardır.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="maximum-number-of-retention-labels-per-tenant"></a>Kiracı başına en fazla bekletme etiketi sayısı
 
 Kiracı başına en fazla 1.000 bekletme etiketi desteklenir.
 
 ## <a name="maximum-number-of-policies-per-tenant"></a>Kiracı başına en fazla ilke sayısı
 
-Tek bir kiracı en fazla 10.000 ilkeye (herhangi bir yapılandırma) sahip olabilir. Bu maksimum sayı, saklamaya yönelik farklı ilkeleri ve DLP ilkeleri, bilgi engelleri, eBulma tutmaları, Dava tutmaları, In-Place Tutmalar ve duyarlılık etiketleri gibi diğer uyumluluk ilkelerini içerir. Ancak bu üst sınır şunları dışlar:
+Tek bir kiracı en fazla 10.000 ilkeye (herhangi bir yapılandırma) sahip olabilir. Bu maksimum sayı, saklamaya yönelik farklı ilkeleri ve DLP ilkeleri, bilgi engelleri, eBulma tutmaları, In-Place Tutmalar ve duyarlılık etiketleri gibi diğer uyumluluk ilkelerini içerir. Ancak bu üst sınır şunları dışlar:
 
 - Bulut ekleri için olmadığı sürece SharePoint ve OneDrive için otomatik etiketleme ilkeleri.
 - SharePoint ve OneDrive için yayımlanan ve yalnızca saklama yerine yalnızca silme veya saklama ve silme ilkeleri.
 - [Mesajlaşma kayıtları yönetiminden (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) exchange bekletme ilkeleri.
+- Dava tutmaları
 
 Bu 10.000 ilke sınırı içinde, iş yükü başına saklama için maksimum ilke sayısıyla ilgili bazı sınırlar da vardır:
 
@@ -51,7 +55,7 @@ Bu 10.000 ilke sınırı içinde, iş yükü başına saklama için maksimum ilk
 - SharePoint veya OneDrive (dahil edilen veya hariç tutulan belirli konumlar): 2.600
 
 > [!NOTE]
-> Exchange ve SharePoint için bu maksimum sayılar saklama için özel değildir, ancak eBulma tutmaları, Dava tutmaları ve In-Place Tutmaları içeren diğer saklama ilkeleri türleriyle paylaşılır.
+> Exchange ve SharePoint için bu en fazla sayı saklama için özel değildir, ancak eBulma tutmaları ve In-Place Tutmaları içeren diğer saklama ilkeleri türleriyle paylaşılır.
 
 Microsoft Teams ve Yammer için bekletme ilkeleri, verileri saklama amacıyla depolamak için posta kutularını kullansa da, Exchange Online için maksimum ilke sayısı Teams ve Yammer için bekletme ilkelerini dışlar.
 
@@ -112,7 +116,7 @@ SharePoint örneği:
 
     Tüm SharePoint sitelerini tutmanız gerekmeyen bir nedenle, belirli siteleri belirten bekletme ilkeleri oluşturmanız gerekir. Bekletme ilkesi 100'den fazla belirtilen siteyi desteklemediğinden, iki bekletme dönemi için birden çok ilke oluşturmanız gerekir. Bu bekletme ilkeleri dahil edilen site sayısı üst sınırına sahiptir, bu nedenle saklaması gereken bir sonraki yeni site, saklama süresi ne olursa olsun yeni bir bekletme ilkesi gerektirir.
 
-## <a name="maximum-number-of-items-for-disposition"></a>Değerlendirme için en fazla öğe sayısı
+## <a name="maximum-numbers-for-disposition"></a>Değerlendirme için maksimum sayı sayısı
 
 [İçeriğin eğilimi için](disposition.md) dikkate alınması gereken bazı sınırlar vardır:
 
@@ -125,3 +129,8 @@ SharePoint örneği:
   - Öğenin atılmasından sonraki yedi yıla kadar edat kanıtı ve bu süre için saklama etiketi başına 1.000.000 öğe sınırı vardır.
 
     Kayıt olarak işaretlenmiş öğeler için bu sınır olan 1.000.000'den yüksek bir konum kanıtına ihtiyacınız varsa[, Microsoft Desteği](../admin/get-help-support.md) başvurun.
+
+- Değerlendirme gözden geçirenlerin sayısı üst sınırı:
+    - Tek tek kullanıcılar ve posta özellikli güvenlik gruplarının herhangi bir birleşiminde, değerlendirme aşaması başına 10 gözden geçiren
+    - Tek tek kullanıcılar ve posta özellikli güvenlik gruplarının herhangi bir birleşiminde kiracı başına 200 gözden geçiren. Bu sınır nedeniyle, daha büyük kuruluşlar için mümkün olduğunda posta özellikli güvenlik gruplarını kullanmanızı öneririz.
+

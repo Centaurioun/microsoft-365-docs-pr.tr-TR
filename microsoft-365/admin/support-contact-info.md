@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: İş için Microsoft 365 aboneliğiniz için telefon desteği almayı öğrenin. Destek almak için bir iş aboneliği yöneticisi olmanız gerekir.
 ms.date: 10/20/2022
-ms.openlocfilehash: c73a473a1ca19463efc2f8de76898f505e07ab74
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: 7c39bd1b4641ad74bf5ee4e8e66d11ee4eb9473a
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68688509"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68767697"
 ---
 # <a name="find-microsoft-365-for-business-support-phone-numbers-by-country-or-region"></a>Ülkeye veya bölgeye göre İş için Microsoft 365 destek telefon numaralarını bulma
 
@@ -3878,7 +3878,7 @@ Alternatif Telefon Numarası: 400 920 0365 (Mobil)
    :::column-end:::
    :::column:::
 **Teknik destek saatleri:**\
-Çince ve İngilizce telefon desteği: Pazartesi-Cuma, 09:00-21:00\
+Çince ve İngilizce telefon desteği: Pazartesi-Cuma, 09:00-18:00\
 Çince ve İngilizce çevrimiçi destek (yönetim merkezi aracılığıyla): Haftanın 7 günü, günde 24 saat
    :::column-end:::
 :::row-end:::

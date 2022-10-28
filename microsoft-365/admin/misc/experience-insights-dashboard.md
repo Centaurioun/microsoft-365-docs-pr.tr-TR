@@ -11,12 +11,12 @@ ms.collection:
 - Tier1
 - scotvorg
 description: Kuruluşunuzdaki kişilerin Microsoft 365 hizmetlerini nasıl kullandığı hakkında düzenli bir rapor alın ve daha fazla içgörü için her grafikte detaya gidin.
-ms.openlocfilehash: 2489cbfe16ff82fa4e58340ff8586af21ff64a0c
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 6f560628bc2ce602dca03dda4935d0071e00e2da
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68725814"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769479"
 ---
 # <a name="microsoft-365-experience-insights-dashboard"></a>Microsoft 365 Deneyimi içgörüleri panosu
 
@@ -35,7 +35,7 @@ Rapor okuyucusu rolünün bir üyesiyseniz yönetim merkezinde oturum açtığı
 
 :::image type="content" source="../../media/experience-insights-dashboard2.png" alt-text="Ekran görüntüsü: Deneyim içgörüleri panosuna genel bir bakış gösteren görüntü":::
 
-Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../add-users/about-admin-roles.md) ve [Yönetici rolleri atama](../add-users/assign-admin-roles.md).
+Daha fazla bilgi edinmek için bkz. [Yönetici rolleri hakkında](../add-users/about-admin-roles.md) ve [Yönetici rolleri atama](../add-users/assign-admin-roles.md).
 
 ## <a name="apps-and-services-data"></a>Uygulama ve hizmet verileri
 

@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: b9814616fb09388775c748db694826d17133cf87
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 6c49afa544e72110ff6646fc68f6ea3da498547d
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68728323"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68767672"
 ---
 # <a name="plan-for-insider-risk-management"></a>İçeriden risk yönetimi planı
 
@@ -103,7 +103,7 @@ Mevcut bir Microsoft 365 Kurumsal E5 planınız yoksa ve içeriden risk yönetim
 - **Kullanıcılardan ayrılarak veri hırsızlığı** şablonunu kullanırken, kuruluşunuzdaki kullanıcıların istifa ve sonlandırma tarihi bilgilerini düzenli aralıklarla içeri aktarmak için bir Microsoft 365 İK bağlayıcısı yapılandırmanız gerekir. Microsoft 365 HR bağlayıcısını yapılandırmaya yönelik adım adım yönergeler için [İk bağlayıcısı ile verileri içeri aktarma](import-hr-data.md) makalesine bakın.
 - **Veri sızıntıları** şablonunu kullanırken, kuruluşunuzdaki hassas bilgileri tanımlamak ve Yüksek Önem Derecesi DLP ilkesi uyarıları için içeriden risk uyarıları almak için en az bir Microsoft Purview Veri Kaybı Önleme (DLP) ilkesi yapılandırmanız gerekir. DLP ilkelerini yapılandırmaya yönelik adım adım yönergeler için [DLP ilkesi oluşturma, test etme ve ayarlama](create-test-tune-dlp-policy.md) makalesine bakın.
 - **Güvenlik ilkesi ihlali** şablonunu kullanırken, güvenlik ihlali uyarılarını içeri aktarmak için Defender Güvenlik Merkezi'nde insider risk yönetimi tümleştirmesi için Uç Nokta için Microsoft Defender etkinleştirmeniz gerekir. Uç Nokta için Defender tümleştirmesini insider risk yönetimiyle etkinleştirmeye yönelik adım adım yönergeler için bkz. [Uç Nokta için Microsoft Defender'de gelişmiş özellikleri yapılandırma](/windows/security/threat-protection/microsoft-defender-atp/advanced-features).
-- **Dağıtılan kullanıcı** şablonunu kullanırken, kuruluşunuzdaki kullanıcıların performans veya indirgeme durumu bilgilerini düzenli aralıklarla içeri aktarmak için bir Microsoft 365 İK bağlayıcısı yapılandırmanız gerekir. Microsoft 365 HR bağlayıcısını yapılandırmaya yönelik adım adım yönergeler için [İk bağlayıcısı ile verileri içeri aktarma](import-hr-data.md) makalesine bakın.
+- **Riskli kullanıcı** şablonunu kullanırken, kuruluşunuzdaki kullanıcıların performans veya indirgeme durumu bilgilerini düzenli aralıklarla içeri aktarmak için bir Microsoft 365 İK bağlayıcısı yapılandırmanız gerekir. Microsoft 365 HR bağlayıcısını yapılandırmaya yönelik adım adım yönergeler için [İk bağlayıcısı ile verileri içeri aktarma](import-hr-data.md) makalesine bakın.
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>Üretim ortamında küçük bir kullanıcı grubuyla test edin
 

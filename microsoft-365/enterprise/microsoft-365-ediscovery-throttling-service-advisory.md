@@ -20,12 +20,12 @@ ms.custom:
 f1.keywords:
 - NOCSH
 description: Exchange Online izlemede eKeşif azaltma için hizmet danışmanları hakkında bilgi edinin.
-ms.openlocfilehash: 61bc8b59cce6ff74c6633b85d915309c4c2d388a
-ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
+ms.openlocfilehash: 6199ff2ddf9a906774d8008c0cb67130cd8e7bc0
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68685369"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769061"
 ---
 # <a name="service-advisories-for-ediscovery-throttling-in-exchange-online-monitoring"></a>Exchange Online izlemede eBulma azaltma için hizmet önerileri
 
@@ -37,9 +37,9 @@ Bu hizmet önerileri Microsoft 365 yönetim merkezi görüntülenir. Bu hizmet �
 
 ## <a name="what-does-this-service-advisory-indicate"></a>Bu hizmet önerisi neleri gösteriyor?
 
-eBulma azaltma için hizmet önerileri, Microsoft tarafından ayarlanan sınırı aşan Arama ve Dışarı Aktarma işlerinin sayısı nedeniyle yöneticileri kiracılarının kısıtlandığı konusunda bilgilendirmektedir. [Microsoft Purview](/compliance/index.yml) uyumluluk portalında eBulma arama araçlarına çeşitli sınırlar uygulanır. Buna [İçerik Arama](/compliance/search-for-content) sayfasında çalıştırılacak aramalar ve eBulma [(Standart)](/compliance/get-started-core-ediscovery) sayfasında eBulma olayıyla ilişkili aramalar dahildir. Bu sınırlar, kuruluşlara sağlanan hizmetlerin durumunu ve kalitesini korumaya yardımcı olur. Bu öneriler, eBulma aramalarını ve dışarı aktarmalarını planlarken, çalıştırırken ve sorun giderirken bu sınırları dikkate alabilmeniz için farkındalık sağlar.
+eBulma azaltma için hizmet önerileri, Microsoft tarafından ayarlanan sınırı aşan Arama ve Dışarı Aktarma işlerinin sayısı nedeniyle yöneticileri kiracılarının kısıtlandığı konusunda bilgilendirmektedir. [Microsoft Purview](~/compliance/index.yml) uyumluluk portalında eBulma arama araçlarına çeşitli sınırlar uygulanır. Buna [İçerik Arama](~/compliance/search-for-content.md) sayfasında çalıştırılacak aramalar ve eBulma [(Standart)](~/compliance/get-started-core-ediscovery.md) sayfasında eBulma olayıyla ilişkili aramalar dahildir. Bu sınırlar, kuruluşlara sağlanan hizmetlerin durumunu ve kalitesini korumaya yardımcı olur. Bu öneriler, eBulma aramalarını ve dışarı aktarmalarını planlarken, çalıştırırken ve sorun giderirken bu sınırları dikkate alabilmeniz için farkındalık sağlar.
 
-Microsoft Purview eKeşif (Standart) aracıyla ilgili sınırlar [için uyumluluk merkezindeki İçerik arama ve eBulma (Standart) sınırları bölümüne](/compliance/limits-for-content-search?viewFallbackFrom=o365-worldwide%20for%20service%20limits) bakın.
+Microsoft Purview eKeşif (Standart) aracıyla ilgili sınırlar [için uyumluluk merkezindeki İçerik arama ve eBulma (Standart) sınırları bölümüne](~/compliance/limits-for-content-search.md?viewFallbackFrom=o365-worldwide%20for%20service%20limits) bakın.
 
 ### <a name="how-often-will-i-see-these-service-advisories"></a>Bu hizmet önerilerini ne sıklıkta göreceğim?
 
@@ -49,4 +49,4 @@ Arama ve Dışarı Aktarma işlerinin tanımlı sınır içinde olduğu zamana k
 
 - eBulma uyumluluğu sorunlarını giderme ve çözme hakkında bilgi için bkz. [Microsoft Purview sorunlarını giderme](/troubleshoot/microsoft-365-compliance-welcome).
 - Microsoft Purview hakkında bilgi için bkz. [Microsoft Purview nedir?](/purview/purview)
-- Microsoft Purview eKeşif çözümleri hakkında daha fazla bilgi edinmek için bkz. [Microsoft Purview eKeşif çözümleri](/compliance/ediscovery)
+- Microsoft Purview eKeşif çözümleri hakkında daha fazla bilgi edinmek için bkz. [Microsoft Purview eKeşif çözümleri](~/compliance/ediscovery.md)

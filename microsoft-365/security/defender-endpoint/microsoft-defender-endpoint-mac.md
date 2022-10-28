@@ -2,7 +2,7 @@
 title: Mac'te Uç Nokta için Microsoft Defender
 ms.reviewer: ''
 description: Mac'te Uç Nokta için Microsoft Defender yüklemeyi, yapılandırmayı, güncelleştirmeyi ve kullanmayı öğrenin.
-keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, deploy, uninstallation, intune, jamf, macos, monterey, big sur, catalina, mojave, mde for mac
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, deploy, uninstallation, intune, jamf, macos, monterey, big sur, catalina, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: d74b572d305718fe27cc1f74889cd4022d3705c7
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 5e42abcb76ba2a7019ca7344382df5e6049784b0
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68232748"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770535"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Mac'te Uç Nokta için Microsoft Defender
 
@@ -79,7 +79,7 @@ macOS'un en son üç ana sürümü desteklenir.
 > [!IMPORTANT]
 > macOS 11 (Big Sur) ve üzeri sürümlerde Uç Nokta için Microsoft Defender ek yapılandırma profilleri gerektirir. macOS'un önceki sürümlerinden yükseltme yapıyorsanız, [macOS Catalina için yeni yapılandırma profilleri ve macOS'un daha yeni sürümlerinde listelenen ek yapılandırma profillerini](mac-sysext-policies.md) dağıttığınızdan emin olun.
 
-- 12 (Monterey), 11 (Big Sur), 10.15 (Catalina)
+- 13 (Ventura), 12 (Monterey), 11 (Big Sur)
 - Disk alanı: 1 GB
 
 macOS'un beta sürümleri desteklenmez.

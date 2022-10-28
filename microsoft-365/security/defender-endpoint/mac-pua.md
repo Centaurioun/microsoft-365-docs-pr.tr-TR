@@ -1,7 +1,7 @@
 ---
 title: Mac'te Uç Nokta için Microsoft Defender ile istenmeyebilecek uygulamaları algılama ve engelleme
 description: macOS üzerinde Uç Nokta için Microsoft Defender kullanarak İstenmeyebilecek Uygulamaları (PUA) algılayın ve engelleyin.
-keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, pua, pus
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, pua, pus, catalina, big sur, monterey, ventura, mac için mde
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 7213960a82cdcbb7d2df1ca432ab74987b985e47
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 6469537490dfafff5aa3ea62874e4293fe810547
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68227227"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769039"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender ile istenmeyebilecek uygulamaları algılama ve engelleme
 

@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: fb5736f0de612e4de3bc19f873721a2577ca6521
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 2b0046df2cd01ada1ce2816520c9878858a133f7
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68630062"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768257"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>iOS özelliklerinde Uç Nokta için Microsoft Defender’ı yapılandırın
 
@@ -78,7 +78,7 @@ Bu yapılandırma hem kayıtlı (MDM) cihazlar hem de kayıtlı olmayan (MAM) ci
 
 1. **Web Korumasını Devre Dışı Bırak (MDM)** Kayıtlı cihazlar için **Web Koruması'nı** devre dışı bırakmak için aşağıdaki adımları kullanın.
 
-    - [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar** > **Uygulama yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
+    - [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar Uygulama** > **yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
     - İlkeye **iOS/iPadOS > Platform** adını verin.
     - Hedef uygulama olarak Uç Nokta için Microsoft Defender seçin.
     - Ayarlar sayfasında Yapılandırma tasarımcısını kullan'ı seçin ve anahtar ve değer türü olarak **WebProtection** değerini **Dize** olarak ekleyin.
@@ -100,22 +100,21 @@ Bu yapılandırma hem kayıtlı (MDM) cihazlar hem de kayıtlı olmayan (MAM) ci
 
 ## <a name="configure-network-protection"></a>Ağ Korumasını Yapılandırma
 
->[!NOTE]
->Uç Nokta için Microsoft Defender'da Ağ Koruması artık genel önizleme aşamasındadır. Aşağıdaki bilgiler, ürünün ticari olarak piyasaya sürülmeden önce önemli ölçüde değiştirilebilen ön sürümüyle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
 
-Uç nokta için Microsoft Defender ağ koruması varsayılan olarak etkindir. Yöneticiler, iOS cihazlarında Ağ koruması için MAM desteğini yapılandırmak için aşağıdaki adımları kullanabilir.
+Uç nokta için Microsoft Defender'da ağ koruması varsayılan olarak devre dışıdır. Yöneticiler, iOS cihazlarında Ağ koruması için MAM desteğini yapılandırmak için aşağıdaki adımları kullanabilir. iOS cihazlarında (MAM yapılandırması için doğrulayıcı cihaz kaydı gereklidir). Ağ Koruması başlatma işlemi için son kullanıcının uygulamayı bir kez açması gerekir. 
 
-1. Microsoft Endpoint Manager Yönetici'da Uygulamalar > Uygulama yapılandırma ilkeleri'ne gidin. Yeni bir Uygulama yapılandırma ilkesi oluşturun.
+1. Microsoft Endpoint Manager Yönetici Uygulamalar > Uygulama yapılandırma ilkeleri'ne gidin. Yeni bir Uygulama yapılandırma ilkesi oluşturun.
    :::image type="content" source="images/addiosconfig.png" alt-text="Yapılandırma ilkesi ekleyin." lightbox="images/addiosconfig.png":::
 
 2. İlkeyi benzersiz olarak tanımlamak için bir ad ve açıklama sağlayın. Ardından 'Genel uygulamaları seç'e tıklayın ve Platform iOS/IPadOS için 'Microsoft Defender' öğesini seçin :::image type="content" source="images/nameiosconfig.png" alt-text="Yapılandırmayı adlandırın." lightbox="images/nameiosconfig.png":::
 
-3. Ayarlar sayfasında, Ağ Koruması'nı devre dışı bırakmak için anahtar olarak 'DefenderNetworkProtectionEnable' değerini ve 'false' olarak değerini ekleyin. (Ağ koruması varsayılan olarak etkindir) :::image type="content" source="images/addiosconfigvalue.png" alt-text="Yapılandırma değeri ekleyin." lightbox="images/addiosconfigvalue.png":::
+3. Ayarlar sayfasında, Ağ Koruması'nı devre dışı bırakmak için anahtar olarak 'DefenderNetworkProtectionEnable' değerini ve 'true' olarak değerini ekleyin. (Ağ koruması varsayılan olarak devre dışıdır) :::image type="content" source="images/addiosconfigvalue.png" alt-text="Yapılandırma değeri ekleyin." lightbox="images/addiosconfigvalue.png":::
 
 4. Ağ korumasıyla ilgili diğer yapılandırmalar için aşağıdaki anahtarları ve uygun değeri ekleyin.
 
     |Tuş| Varsayılan (true-enable, false-disable)|Açıklama|
     |---|---|---|
+    |DefenderOpenNetworkDetection|0|1- Etkinleştir, 0 - Devre Dışı Bırak; Bu ayar, son kullanıcı algılama deneyimi olmadan açık ağ algılama bilgilendirme uyarılarını etkinleştirmek veya devre dışı bırakmak için BT Yönetici tarafından yönetilir|
     |DefenderEndUserTrustFlowEnable| False | Kullanıcıların Ağlara ve Sertifikalara Güvenmesini Sağlama|
     |DefenderNetworkProtectionAutoRemediation| True |Bu ayar, bir kullanıcı daha güvenli WIFI erişim noktalarına geçme veya Defender tarafından algılanan şüpheli sertifikaları silme gibi düzeltme etkinlikleri gerçekleştirdiğinde gönderilen düzeltme uyarılarını etkinleştirmek veya devre dışı bırakmak için BT yöneticisi tarafından kullanılır|
     |DefenderNetworkProtectionPrivacy| True |Bu ayar, ağ korumasında gizliliği etkinleştirmek veya devre dışı bırakmak için BT yöneticisi tarafından yönetilir|
@@ -164,7 +163,7 @@ Müşteriler artık iOS'ta Uç Nokta için Microsoft Defender tarafından gönde
 
 1. **Yönetici Gizlilik Denetimleri (MDM)** Kayıtlı cihazlar için kimlik avı uyarısı raporunun bir parçası olarak etki alanı adını toplamamak ve gizliliği etkinleştirmek için aşağıdaki adımları kullanın.
 
-    - [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar** > **Uygulama yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
+    - [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar Uygulama** > **yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
 
     - İlkeye **iOS/iPadOS > Platform** adını verin, profil türünü seçin.
 
@@ -213,7 +212,7 @@ iOS'ta Uç Nokta için Microsoft Defender, ekleme akışında **İsteğe Bağlı
 
 1. **Yönetici akışı (MDM)** Kayıtlı cihazlar için **İsteğe bağlı VPN** iznini etkinleştirmek için aşağıdaki adımları kullanın.
 
-    - [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar** > **Uygulama yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
+    - [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar Uygulama** > **yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
 
     - İlkeye bir ad verin, **iOS/iPadOS > Platform'u** seçin.
 
@@ -321,7 +320,7 @@ Müşteriler artık Uç Nokta için Defender uygulamasında Microsoft'a geri bil
 
 Microsoft'a geri bildirim verileri gönderme seçeneğini yapılandırmak için aşağıdaki adımları kullanın:
 
-1. [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar** > **Uygulama yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
+1. [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar Uygulama** > **yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
 
 1. İlkeye **iOS/iPadOS > Platform** adını verin, profil türünü seçin.
 

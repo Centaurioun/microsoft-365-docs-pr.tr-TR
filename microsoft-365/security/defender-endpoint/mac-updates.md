@@ -1,7 +1,7 @@
 ---
 title: Mac'te Uç Nokta için Microsoft Defender güncelleştirmelerini dağıtma
 description: Kurumsal ortamlarda Mac'te Uç Nokta için Microsoft Defender güncelleştirmelerini denetleyin.
-keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, updates, deploy
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, updates, deploy, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 8b717b3a408273879d84714def14984fdeba6e97
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 49eaa79e737b9f29202d3cb8e77ff67df55685fe
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68223100"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768577"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender güncelleştirmelerini dağıtma
 

@@ -10,12 +10,12 @@ ms.service: microsoft-365-business
 ms.collection: m365initiative-edu
 ms.localizationpriority: medium
 description: Yeni Desire2Learn Brightspace için Microsoft OneDrive Öğrenme Araçları Birlikte Çalışabilirliği ile ödevler oluşturun ve notlayın, kurs içeriğini derleyin ve dosyalar üzerinde gerçek zamanlı olarak işbirliği yapın.
-ms.openlocfilehash: 9c03ee2f46e77d8d24f7c731ac2e32b1dfc9cef2
-ms.sourcegitcommit: 2ff545246fec060ea7829da5afbc1cdc698d51ab
+ms.openlocfilehash: d01a934d134ceb8b62658d81f0d6500c467f82b4
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68363024"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768511"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-desire2learn-brightspace"></a>Microsoft OneDrive LTI'yi Desire2Learn Brightspace ile tümleştirme
 
@@ -40,8 +40,10 @@ OneDrive LTI uygulamasını ekleme adımları şunlardır:
 
 1. [Microsoft OneDrive LTI Kayıt Portalı'na giriş](https://onedrivelti.microsoft.com/admin) yapın.
 1. **Yönetici Onay** düğmesini seçin ve izinleri kabul edin.
-   >[!IMPORTANT]
-   >**Yönetici Onayı** kabul edilirse, sonraki adım size bir hata verir ve devam etmeden önce bir saat beklemeniz gerekir.
+
+   > [!IMPORTANT]
+   > **Yönetici Onayı** kabul edilirse, sonraki adım size bir hata verir ve devam etmeden önce bir saat beklemeniz gerekir.
+
 1. **Yeni LTI Kiracısı oluştur** düğmesini seçin.
 1. **LTI Tüketici Platformu** listesinde **D2L Brightspace'i** seçin.
 1. **D2L Brightspace Temel URL'si** alanına Brightspace temel URL'nizi (gibi) `https://myschool.brightspace.com`girin.
@@ -59,8 +61,8 @@ OneDrive LTI uygulamasını ekleme adımları şunlardır:
 1. Uygulama için gibi `Microsoft OneDrive LTI App`bir ad girin.
 1. **Etki alanı** alanına girin`https://onedrivelti.microsoft.com`.
 1. Diğer gerekli değerleri kopyalamak için Microsoft OneDrive LTI Kayıt Portalı ile tarayıcı sekmesine gidin:
-    1. `ToolOIDCLaunchRedirectUri` Değeri **Yeniden Yönlendirme URL'leri** alanına yapıştırın.  
-       >[!IMPORTANT] 
+    1. `ToolOIDCLaunchRedirectUri` Değeri **Yeniden Yönlendirme URL'leri** alanına yapıştırın.
+       >[!IMPORTANT]
        >Bu **Yeniden Yönlendirme URL'si** değerini sonraki adımlarda kullanacaksınız.
     1. ''OIDCLoginInitiationUri' değerini **OpenID Connect Oturum Açma URL'si** alanına yapıştırın.
     1. `ToolPublicJwksUri` Değeri **Anahtar Kümesi URL'si** alanına yapıştırın.
@@ -176,7 +178,7 @@ OneDrive LTI uygulamasını hızlı erişim için Brightspace'in etkinlik çubu�
 
 OneDrive LTI uygulaması artık Brightspace'teki **Mevcut İçerik Ekle**, **Hızlı Bağlantılar** ve **Öğe Ekle** menülerinde gösterilir.
 
-Kullanıcılar OneDrive bulut simgesi yerine genel bir bağlantı simgesi görür. Menüde gösterilen ad, uygulamanın LTI bağlantı ayarlarında sağlanan ad olacaktır.  
+Kullanıcılar OneDrive bulut simgesi yerine genel bir bağlantı simgesi görür. Menüde gösterilen ad, uygulamanın LTI bağlantı ayarlarında sağlanan ad olacaktır.
 
 Bu bağlantılar istenildiği gibi kapatılabilir ve açılabilir ve yapılandırmaya göre belirli Kuruluş ve girintilere hedeflenebilir.
 

@@ -19,21 +19,21 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3a722d2310b0144501af390f05983ed2764edbf3
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 54f54379da472c818f9fd07902d999b4dabe2561
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68732151"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769083"
 ---
 # <a name="use-communication-compliance-with-siem-solutions"></a>SIEM çözümleriyle iletişim uyumluluğunu kullanma
 
->[!IMPORTANT]
->Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamaya yardımcı olur.
+> [!IMPORTANT]
+> Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamaya yardımcı olur.
 
 [İletişim uyumluluğu](/microsoft-365/compliance/communication-compliance) , Microsoft Purview'da kuruluşunuzdaki uygunsuz olabilecek iletileri algılamanıza, yakalamanıza ve üzerinde işlem yapmanıza yardımcı olarak iletişim risklerini en aza indirmeye yardımcı olan bir iç risk çözümüdür. [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) veya [Splunk](https://www.splunk.com/) gibi güvenlik bilgileri ve olay yönetimi (SIEM) çözümleri genellikle kuruluş içindeki tehditleri toplamak ve izlemek için kullanılır.
 
-Kuruluşların yaygın ihtiyaçlarından biri, iletişim uyumluluk uyarılarını ve bunların SIEM çözümlerini tümleştirmektir. Bu tümleştirme sayesinde kuruluşlar, iletişim uyumluluk uyarılarını SIEM çözümlerinde görüntüleyebilir ve ardından iletişim uyumluluğu iş akışı ve kullanıcı deneyimi içindeki uyarıları düzeltebilir. 
+Kuruluşların yaygın ihtiyaçlarından biri, iletişim uyumluluk uyarılarını ve bunların SIEM çözümlerini tümleştirmektir. Bu tümleştirme sayesinde kuruluşlar, iletişim uyumluluk uyarılarını SIEM çözümlerinde görüntüleyebilir ve ardından iletişim uyumluluğu iş akışı ve kullanıcı deneyimi içindeki uyarıları düzeltebilir.
 
 Örneğin, bir çalışan başka bir çalışana rahatsız edici bir ileti gönderir ve bu ileti uygunsuz olabilecek içerikler için bir iletişim uyumluluk ilkesi tarafından algılanır. Bu gibi olaylar, iletişim uyumluluk çözümü tarafından Microsoft 365 Denetiminde ("birleşik denetim günlüğü" olarak da bilinir) izlenir ve ardından SIEM çözümüne aktarılır. Microsoft 365 Denetimi'ne dahil edilen SIEM çözümünde tetiklenen uyarılar daha sonra iletişim uyumluluk uyarıları ile ilişkilendirilir. Araştırmacılara SIEM çözümlerinde bu uyarılar bildirilir ve ardından iletişim uyumluluk panosunda ilgili uyarıları araştırıp düzeltebilirler.
 
@@ -115,7 +115,7 @@ Aşağıdaki tabloda farklı ilke türleri için örnek arama sonuçları göste
 | İlke türleri | Örnek arama sonuçları |
 | :------------------ | :--------------------------------------- |
 | Özel hassas bilgi türü anahtar sözcük listesini algılama ilkesi | { <br> CreationTime: 2022-09-17T16:29:57 <br> Kimlik: 4b9ce23d-ee60-4f66-f38d-08d979f8631f <br> IsPolicyHit: true <br> Objectıd: <CY1PR05MB27158B96AF7F3AFE62E1F762CFDD9@CY1PR05MB2715.namprd05.prod.outlook.com> <br> İşlem: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> Kayıt Türü: 68 <br> ResultStatus: {"ItemClass":"IPM. Not","CcsiResults":"leak"} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.OnMicrosoft.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Sürüm: 1 <br> İş Yükü: Exchange <br> } |
-| Uygunsuz olabilecek dili algılama ilkesi | { <br> CreationTime: 2022-09-17T23:44:35 <br> Kimlik: e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit: true <br> Objectıd: <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> İşlem: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> Kayıt Türü: 68 <br> ResultStatus: {"ItemClass":"IPM. Yammer.Message","CcsiResults":""} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Sürüm: 1 <br> }  |
+| Uygunsuz olabilecek dili algılama ilkesi | { <br> CreationTime: 2022-09-17T23:44:35 <br> Kimlik: e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit: true <br> Objectıd: <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> İşlem: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> Kayıt Türü: 68 <br> ResultStatus: {"ItemClass":"IPM. Yammer.Message","CcsiResults":""} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Sürüm: 1 <br> } |
 
 ## <a name="configure-communication-compliance-with-other-siem-solutions"></a>Diğer SIEM çözümleriyle iletişim uyumluluğunu yapılandırma
 
@@ -133,11 +133,13 @@ PowerShell kullanırken, iletişim uyumluluk etkinlikleri için denetim günlü�
 ```powershell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch | ft CreationDate,UserIds,AuditData
 ```
+
 Aşağıda **RecordsType** parametresini ve *ComplianceSupervisionExchange* değerini kullanan örnek bir arama verilmiştir:
 
 ```powershell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType ComplianceSuperVisionExchange | ft CreationDate,UserIds,AuditData
 ```
+
 ## <a name="resources"></a>Kaynaklar
 
 - [İletişim uyumluluğu denetimi](/microsoft-365/compliance/communication-compliance-reports-audits#audit)

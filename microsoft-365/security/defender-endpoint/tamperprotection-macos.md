@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 115b1159bb425688fe808652ab7e2b61170f3f8e
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 2f4371ab45d53168aeb0b48f02cb445412d1ab67
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68637496"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769215"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>MacOS güvenlik ayarlarını kurcalama koruması ile koruma
 
@@ -78,7 +78,7 @@ Mod adını zorlama düzeyi olarak sağlayarak kurcalama koruma modunu yapıland
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-- Desteklenen macOS sürümleri: Monterey (12), Big Sur (11), Catalina (10.15+).
+- Desteklenen macOS sürümleri: Big Sur (11) veya üzeri.
 - Uç Nokta için Defender için gereken en düşük sürüm: 101.70.19.
 
 **Kesinlikle önerilen ayarlar:**

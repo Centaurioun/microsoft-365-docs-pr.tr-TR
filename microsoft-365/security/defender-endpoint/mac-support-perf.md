@@ -1,7 +1,7 @@
 ---
 title: macOS'ta Uç Nokta için Microsoft Defender performans sorunlarını giderme
 description: macOS'ta Uç Nokta için Microsoft Defender performans sorunlarını giderme.
-keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, performans
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, performance, catalina, big sur, monterey, ventura, mac için mde
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: a4272fe770fb1d2fb471dbd9515f9b89be0fcc09
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 738c21b637e0708c86937044cd4c026ba99e162e
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68223144"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768643"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender performans sorunlarını giderme
 
@@ -44,9 +44,10 @@ Bu konu, macOS'ta Uç Nokta için Microsoft Defender ile ilgili performans sorun
 Çalıştırdığınız uygulamalara ve cihazınızın özelliklerine bağlı olarak, macOS üzerinde Uç Nokta için Microsoft Defender çalıştırırken en iyi performansla karşılaşabilirsiniz. Özellikle, kısa bir zaman aralığı boyunca birçok kaynağa erişen uygulamalar veya sistem işlemleri macOS'ta Uç Nokta için Microsoft Defender performans sorunlarına yol açabilir.
 
 >[!WARNING]
->Başlamadan önce lütfen cihazda şu anda diğer güvenlik ürünlerinin çalışmadığından emin olun. Birden çok güvenlik ürünü çakışabilir ve konak performansını etkileyebilir. 
+>Başlamadan önce lütfen cihazda şu anda diğer güvenlik ürünlerinin çalışmadığından emin olun. Birden çok güvenlik ürünü çakışabilir ve konak performansını etkileyebilir.
 
 ## <a name="troubleshoot-performance-issues-using-real-time-protection-statistics"></a>Gerçek Zamanlı Koruma İstatistiklerini kullanarak performans sorunlarını giderme
+
 **Şunlar için geçerlidir:**
 - Yalnızca AV ile ilgili performans sorunları
 
@@ -61,7 +62,6 @@ Bu sorunları gidermek ve azaltmak için aşağıdaki adımlar kullanılabilir:
     - Kullanıcı arabiriminden. macOS'ta Uç Nokta için Microsoft Defender açın ve **Ayarları yönet'e** gidin.
 
       :::image type="content" source="images/mdatp-36-rtp.png" alt-text=" Gerçek zamanlı korumayı yönet sayfası" lightbox="images/mdatp-36-rtp.png":::
-      
 
     - Terminalden. Güvenlik amacıyla, bu işlem yükseltme gerektirir.
 
@@ -141,7 +141,7 @@ Bu sorunları gidermek ve azaltmak için aşağıdaki adımlar kullanılabilir:
         cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
       ```
 
-      Yukarıdaki çıkışı, performans sorunlarına en çok katkıda bulunanların listesidir. İlk sütun işlem tanımlayıcısı (PID), ikinci sütun te işlem adı ve son sütun ise etkilenen öğeye göre sıralanmış taranan dosyaların sayısıdır.
+      Yukarıdaki çıkışı, performans sorunlarına en çok katkıda bulunanların listesidir. İlk sütun işlem tanımlayıcısı (PID), ikinci sütun işlem adı ve son sütun ise etkilenen öğeye göre sıralanmış taranan dosyaların sayısıdır.
 
       Örneğin, komutun çıkışı aşağıdakine benzer olacaktır:
 
@@ -168,23 +168,22 @@ Bu sorunları gidermek ve azaltmak için aşağıdaki adımlar kullanılabilir:
 
      Ayrıntılar için bkz[. macOS'ta Uç Nokta için Microsoft Defender için dışlamaları yapılandırma ve doğrulama](mac-exclusions.md).
 
-
 ## <a name="troubleshoot-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer"></a>Uç Nokta için Microsoft Defender İstemci Çözümleyicisi'ni kullanarak performans sorunlarını giderme
 
 **Şunlar için geçerlidir:**
-- AV ve EDR gibi kullanılabilir tüm Uç Nokta için Defender bileşenlerinin performans sorunları  
+- AV ve EDR gibi kullanılabilir tüm Uç Nokta için Defender bileşenlerinin performans sorunları
 
 Uç Nokta için Microsoft Defender İstemci Çözümleyicisi (MDECA), macOS'ta [eklenen cihazlardaki](/microsoft-365/security/defender-endpoint/onboard-configure) performans sorunlarını gidermek için izlemeleri, günlükleri ve tanılama bilgilerini toplayabilir.
 
 > [!NOTE]
->- Uç Nokta için Microsoft Defender İstemci Çözümleyicisi aracı, Microsoft Müşteri Destek Hizmetleri (CSS) tarafından ip adresleri, Uç Nokta için Microsoft Defender karşılaşabileceğiniz sorunları gidermeye yardımcı olacak bilgisayar adları gibi bilgileri toplamak için düzenli olarak kullanılır. Gizlilik bildirimimiz hakkında daha fazla bilgi için bkz. [Microsoft Gizlilik Bildirimi](https://privacy.microsoft.com/privacystatement).
->- Genel bir en iyi uygulama olarak, [Uç Nokta için Microsoft Defender aracısını  en son kullanılabilir sürüme](linux-whatsnew.md)  güncelleştirmeniz ve daha fazla araştırma yapmadan önce sorunun hala devam ettiğini onaylamanız önerilir. 
+>
+> - Uç Nokta için Microsoft Defender İstemci Çözümleyicisi aracı, Microsoft Müşteri Destek Hizmetleri (CSS) tarafından ip adresleri, Uç Nokta için Microsoft Defender karşılaşabileceğiniz sorunları gidermeye yardımcı olacak bilgisayar adları gibi bilgileri toplamak için düzenli olarak kullanılır. Gizlilik bildirimimiz hakkında daha fazla bilgi için bkz. [Microsoft Gizlilik Bildirimi](https://privacy.microsoft.com/privacystatement).
+> - Genel bir en iyi uygulama olarak, [Uç Nokta için Microsoft Defender aracısını en son kullanılabilir sürüme](linux-whatsnew.md) güncelleştirmeniz ve daha fazla araştırma yapmadan önce sorunun hala devam ettiğini onaylamanız önerilir.
 
 Performans sorunlarını gidermek üzere istemci çözümleyicisini çalıştırmak için bkz. [macOS ve Linux üzerinde istemci çözümleyicisini çalıştırma](run-analyzer-macos-linux.md).
 
->[!NOTE]
->Yukarıdaki adımların ardından performans sorununun devam etmesi durumunda, daha fazla yönerge ve risk azaltma için lütfen müşteri desteğine başvurun. 
-
+> [!NOTE]
+> Yukarıdaki adımların ardından performans sorununun devam etmesi durumunda, daha fazla yönerge ve risk azaltma için lütfen müşteri desteğine başvurun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

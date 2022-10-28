@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 929d1512229afd105dae872c932f4d49c24e3b47
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: c64e1eb67de9840fc89a8557c499675fbc711134
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68225163"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769633"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender performans sorunlarını giderme
 
@@ -102,7 +102,7 @@ Bu sorunları gidermek ve azaltmak için aşağıdaki adımlar kullanılabilir:
     ```
 
     > [!NOTE]
-    > Kullanmak ```--output json``` (çift çizgiye dikkat edin), çıkış biçiminin ayrıştırma için hazır olmasını sağlar.
+    > Kullanmak `--output json` (çift çizgiye dikkat edin), çıkış biçiminin ayrıştırma için hazır olmasını sağlar.
 
     Bu komutun çıkışı tüm işlemleri ve bunların ilişkili tarama etkinliğini gösterir.
 
@@ -113,7 +113,6 @@ Bu sorunları gidermek ve azaltmak için aşağıdaki adımlar kullanılabilir:
     ```
 
     Bu komutun çıkışı aşağıdakine benzer olmalıdır:
-
 
     ```Output
     --2020-11-14 11:27:27-- https://raw.githubusercontent.com/microsoft.mdatp-xplat/master/linus/diagnostic/high_cpu_parser.py
@@ -136,7 +135,7 @@ Bu sorunları gidermek ve azaltmak için aşağıdaki adımlar kullanılabilir:
     ```
 
       Yukarıdaki çıkışı, performans sorunlarına en çok katkıda bulunanların listesidir. İlk sütun işlem tanımlayıcısı (PID), ikinci sütun işlem adı ve son sütun ise etkilenen öğeye göre sıralanmış taranan dosyaların sayısıdır.
-    Örneğin, komutun çıkışı aşağıdakine benzer olacaktır: 
+    Örneğin, komutun çıkışı aşağıdakine benzer olacaktır:
 
     ```Output
     ... > python ~/repo/mdatp-xplat/linux/diagnostic/high_cpu_parser.py <~Downloads/output.json | head -n 10
@@ -163,20 +162,20 @@ Bu sorunları gidermek ve azaltmak için aşağıdaki adımlar kullanılabilir:
 
 ## <a name="troubleshoot-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer"></a>Uç Nokta için Microsoft Defender İstemci Çözümleyicisi'ni kullanarak performans sorunlarını giderme
 
-
 **Şunlar için geçerlidir:**
-- AV ve EDR gibi kullanılabilir tüm Uç Nokta için Defender bileşenlerinin performans sorunları  
+- AV ve EDR gibi kullanılabilir tüm Uç Nokta için Defender bileşenlerinin performans sorunları
 
 Uç Nokta için Microsoft Defender İstemci Çözümleyicisi (MDECA), macOS'ta [eklenen cihazlardaki](/microsoft-365/security/defender-endpoint/onboard-configure) performans sorunlarını gidermek için izlemeleri, günlükleri ve tanılama bilgilerini toplayabilir.
 
 > [!NOTE]
->- Uç Nokta için Microsoft Defender İstemci Çözümleyicisi aracı, Microsoft Müşteri Destek Hizmetleri (CSS) tarafından ip adresleri, Uç Nokta için Microsoft Defender karşılaşabileceğiniz sorunları gidermeye yardımcı olacak bilgisayar adları gibi bilgileri toplamak için düzenli olarak kullanılır. Gizlilik bildirimimiz hakkında daha fazla bilgi için bkz. [Microsoft Gizlilik Bildirimi](https://privacy.microsoft.com/privacystatement).
->- Genel bir en iyi uygulama olarak, [Uç Nokta için Microsoft Defender aracısını  en son kullanılabilir sürüme](mac-whatsnew.md)  güncelleştirmeniz ve daha fazla araştırma yapmadan önce sorunun hala devam ettiğini onaylamanız önerilir. 
+>
+> - Uç Nokta için Microsoft Defender İstemci Çözümleyicisi aracı, Microsoft Müşteri Destek Hizmetleri (CSS) tarafından ip adresleri, Uç Nokta için Microsoft Defender karşılaşabileceğiniz sorunları gidermeye yardımcı olacak bilgisayar adları gibi bilgileri toplamak için düzenli olarak kullanılır. Gizlilik bildirimimiz hakkında daha fazla bilgi için bkz. [Microsoft Gizlilik Bildirimi](https://privacy.microsoft.com/privacystatement).
+> - Genel bir en iyi uygulama olarak, [Uç Nokta için Microsoft Defender aracısını en son kullanılabilir sürüme](mac-whatsnew.md) güncelleştirmeniz ve daha fazla araştırma yapmadan önce sorunun hala devam ettiğini onaylamanız önerilir.
 
 Performans sorunlarını gidermek üzere istemci çözümleyicisini çalıştırmak için bkz. [macOS ve Linux üzerinde istemci çözümleyicisini çalıştırma](run-analyzer-macos-linux.md).
 
 >[!NOTE]
->Yukarıdaki adımların ardından performans sorununun devam etmesi durumunda, daha fazla yönerge ve risk azaltma için lütfen müşteri desteğine başvurun. 
+>Yukarıdaki adımların ardından performans sorununun devam etmesi durumunda, daha fazla yönerge ve risk azaltma için lütfen müşteri desteğine başvurun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

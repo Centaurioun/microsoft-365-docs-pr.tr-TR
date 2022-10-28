@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: d29e0d30c3672ce3a6987059b2d1ddf9a4e07919
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 03b7c2b9af508740475ef6859788fec7ed91b866
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68631908"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770068"
 ---
 # <a name="offboard-machine-api"></a>Makine API'sini çıkarma
 
@@ -51,9 +51,8 @@ Uç Nokta için Defender'dan cihazı kullanıma alın.
   [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 > [!NOTE]
-> Bu API Windows 11, Windows 10, sürüm 1703 ve üzeri ya da Windows Server 2019 ve sonraki sürümlerde desteklenir.
->
-> Bu API MacOS veya Linux cihazlarda desteklenmez.
+> Bu API, Windows 11, Windows 10, sürüm 1703 ve sonraki sürümlerde, Windows Server 2019 ve sonraki sürümlerde ve [Uç Nokta için Defender için yeni, birleşik aracı](update-agent-mma-windows.md#upgrade-to-the-new-unified-agent-for-defender-for-endpoint) kullanılırken Windows Server 2012 R2 ve Windows Server 2016'de desteklenir.
+> Bu API macOS veya Linux cihazlarında desteklenmez.
 
 ## <a name="permissions"></a>İzinler
 

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: c49a9037b87709858b93fa15e68f4e931f9d7fff
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 391756321722122c699ce4477d9cf495909d8d07
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68732987"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769127"
 ---
 # <a name="get-started-with-insider-risk-management"></a>İçeriden risk yönetimini kullanmaya başlama
 
@@ -175,11 +175,11 @@ Insider risk yönetimi, üçüncü taraf risk yönetimi ve insan kaynakları pla
 
 Aşağıdaki ilke şablonları kullanılırken Microsoft 365 HR bağlayıcısı gereklidir:
 
-- Bozuk kullanıcılar tarafından veri sızıntıları
+- Riskli kullanıcılar tarafından veri sızıntıları
 - Kullanıcı verilerinin çalınmasından ayrılma
 - Genel hasta verilerini kötüye kullanma
 - Ayrılan kullanıcıların güvenlik ilkesi ihlalleri
-- Dağıtılmamış kullanıcıların güvenlik ilkesi ihlalleri
+- Riskli kullanıcıların güvenlik ilkesi ihlalleri
 
 Kuruluşunuz için Microsoft 365 İK bağlayıcısını yapılandırmaya yönelik adım adım yönergeler için [İk verilerini içeri aktarmak için bağlayıcı ayarlama](import-hr-data.md) makalesine bakın. İk bağlayıcısını yapılandırdıktan sonra bu yapılandırma adımlarına dönün.
 
@@ -321,7 +321,7 @@ Insider risk yönetimi ilkeleri atanmış kullanıcıları içerir ve uyarılar 
 
     Diğer ilke şablonlarını seçtiyseniz özel tetikleyici olayları desteklenmez. Olayları tetikleyen yerleşik ilke uygulanır ve ilke öznitelikleri tanımlamadan 23. Adıma devam edersiniz.
 
-14. *Dağıtılan kullanıcılar tarafından veri sızıntıları* veya kullanıcı *şablonlarının güvenlik ilkesi ihlalleri* seçeneğini belirlediyseniz, **bu ilkenin tetikleyicileri** sayfasında iletişim uyumluluğu ve İk veri bağlayıcısı olaylarıyla tümleştirme seçeneklerini görürsünüz. Kullanıcılar tehdit edici, taciz edici veya ayrımcı dil içeren iletiler gönderdiğinde veya İk sisteminizde dağıtılan olaylar rapor edildikten sonra kullanıcıları ilke kapsamına getirmek için risk puanlarını atama seçeneğiniz vardır. **İletişim uyumluluğundan çıkarma tetikleyicileri (önizleme)** seçeneğini belirlerseniz, varsayılan iletişim uyumluluk ilkesini kabul edebilir (otomatik olarak oluşturulur), bu tetikleyici için önceden oluşturulmuş bir ilke kapsamı seçebilir veya kapsamı belirlenmiş başka bir ilke oluşturabilirsiniz. **İk veri bağlayıcısı olaylarını** seçerseniz, kuruluşunuz için bir İk veri bağlayıcısı yapılandırmanız gerekir.
+14. *Riskli kullanıcılara göre veri sızıntıları veya Riskli kullanıcılar* tarafından *güvenlik ilkesi ihlalleri şablonlarını* seçtiyseniz, iletişim uyumluluğu ve İk veri bağlayıcısı olaylarıyla tümleştirme için **bu ilkenin tetikleyicileri** sayfasında seçenekleri görürsünüz. Kullanıcılar tehdit edici, taciz edici veya ayrımcı olabilecek dil içeren iletiler gönderdiğinde veya riskli kullanıcı olayları İk sisteminizde bildirildikten sonra kullanıcıları ilke kapsamına alma seçeneğine sahipsiniz. **İletişim uyumluluğundan risk tetikleyicileri (önizleme)** seçeneğini belirlerseniz, varsayılan iletişim uyumluluk ilkesini kabul edebilir (otomatik olarak oluşturulur), bu tetikleyici için önceden oluşturulmuş bir ilke kapsamı seçebilir veya kapsamı belirlenmiş başka bir ilke oluşturabilirsiniz. **İk veri bağlayıcısı olaylarını** seçerseniz, kuruluşunuz için bir İk veri bağlayıcısı yapılandırmanız gerekir.
 15. Devam etmek için **İleri'yi** seçin.
 16. Öncelikli kullanıcılara göre *Genel veri sızıntıları* veya *Veri sızıntıları şablonlarını* seçtiyseniz ve **Kullanıcı bir sızdırma etkinliği ve ilişkili göstergeler gerçekleştirir'i** seçtiyseniz, seçtiğiniz olayları tetikleyen gösterge için özel veya varsayılan eşikleri seçebilirsiniz. Tetikleyici olaylar için **Varsayılan eşikleri kullan (Önerilen)** veya **Özel eşikleri kullan'ı** seçin.
 17. Devam etmek için **İleri'yi** seçin.

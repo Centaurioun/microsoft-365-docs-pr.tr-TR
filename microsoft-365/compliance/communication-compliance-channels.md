@@ -19,17 +19,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8ba2035f18dbdfde53ed71c125a82c98df6587ce
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 17ac1b6ad7a590b2ae14e39cc3f978712b843ca2
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68728345"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68767675"
 ---
 # <a name="detect-channel-signals-with-communication-compliance"></a>İletişim uyumluluğu ile kanal sinyallerini tespit etme
 
->[!IMPORTANT]
->Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamaya yardımcı olur.
+> [!IMPORTANT]
+> Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamaya yardımcı olur.
 
 İletişim uyumluluk ilkeleriyle, aşağıdaki iletişim platformlarından bir veya daha fazlasında iletileri grup olarak veya tek başına kaynak olarak analiz etmeyi seçebilirsiniz. Bu platformlarda yakalanan özgün iletiler, kuruluşunuzun [saklama ve saklama ilkelerine](/microsoft-365/compliance/information-governance) uygun olarak özgün platform konumunda tutulur. İletişim uyumluluk ilkeleri tarafından analiz ve araştırma için kullanılan iletilerin kopyaları, kullanıcılar kuruluşunuzdan ayrılsa ve posta kutuları silinse bile, ilke olduğu sürece saklanır. bir iletişim ilkesi silindiğinde, ilkeyle ilişkili iletilerin kopyaları da silinir.
 

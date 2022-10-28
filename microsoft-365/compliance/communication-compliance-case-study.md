@@ -23,12 +23,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f0586ce9b4ff7a8d8f9f171bad5c1b1ecef64e4c
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 90b2a34c879017fa867fa48c2ba2006a2560fd5b
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68719194"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769435"
 ---
 # <a name="case-study---contoso-configures-a-communication-compliance-policy-to-identify-potentially-inappropriate-text-for-microsoft-teams-exchange-and-yammer-communications"></a>Örnek olay incelemesi - Contoso, Microsoft Teams, Exchange ve Yammer iletişimleri için uygun olmayabilecek metinleri belirlemek üzere bir iletişim uyumluluk ilkesi yapılandırır
 

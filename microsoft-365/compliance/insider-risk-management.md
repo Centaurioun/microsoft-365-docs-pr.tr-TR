@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - highpri
-ms.openlocfilehash: 3745707ed7b6e6e4988bbb64583227ffad09fbf4
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 1a6175a0f0d64e72ca14e334cb16d970315bb797
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68730369"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769853"
 ---
 # <a name="learn-about-insider-risk-management"></a>İçeriden risk yönetimi hakkında daha fazla bilgi edinme
 
@@ -99,12 +99,12 @@ Insider risk yönetimine hızlı bir şekilde başlamak için aşağıdaki ilke 
 - [Ayrılan kullanıcılar tarafından veri hırsızlığı](insider-risk-management-policies.md#data-theft-by-departing-users)
 - [Genel veri sızıntıları](insider-risk-management-policies.md#general-data-leaks)
 - [Öncelikli kullanıcılara göre veri sızıntıları (önizleme)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
-- [Bozuk kullanıcılar tarafından veri sızıntıları (önizleme)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
+- [Riskli kullanıcılar tarafından veri sızıntıları (önizleme)](insider-risk-management-policies.md#data-leaks-by-risky-users-preview)
 - [Genel güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [Genel hasta verilerini kötüye kullanma (önizleme)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
 - [Ayrılan kullanıcılar tarafından güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Öncelikli kullanıcılara göre güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
-- [Dağıtılmamış kullanıcıların güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+- [Riskli kullanıcıların güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-risky-users-preview)
 
 ![Insider risk yönetimi ilkesi panosu.](../media/insider-risk-policy-dashboard.png)
 
@@ -170,7 +170,7 @@ Kullanıcılar kuruluşta kendi istekleriyle veya sonlandırmanın bir sonucu ol
 
 - [Genel veri sızıntıları](insider-risk-management-policies.md#general-data-leaks)
 - [Öncelikli kullanıcılara göre veri sızıntıları (önizleme)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
-- [Bozuk kullanıcılar tarafından veri sızıntıları (önizleme)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
+- [Riskli kullanıcılar tarafından veri sızıntıları (önizleme)](insider-risk-management-policies.md#data-leaks-by-risky-users-preview)
 
 ### <a name="intentional-or-unintentional-security-policy-violations-preview"></a>Kasıtlı veya kasıtsız güvenlik ilkesi ihlalleri (önizleme)
 
@@ -179,7 +179,7 @@ Kullanıcılar genellikle cihazlarını modern çalışma alanında yönetirken 
 - [Genel güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [Ayrılan kullanıcılar tarafından güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Öncelikli kullanıcılara göre güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
-- [Dağıtılmamış kullanıcıların güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+- [Riskli kullanıcıların güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-risky-users-preview)
 
 ### <a name="policies-for-users-based-on-position-access-level-or-risk-history-preview"></a>Kullanıcılar için konum, erişim düzeyi veya risk geçmişine dayalı ilkeler (önizleme)
 
@@ -194,12 +194,12 @@ Sağlık sektöründeki kuruluşlar için yapılan son çalışmalar, insider il
 
 - [Genel hasta verilerini kötüye kullanma (önizleme)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
 
-### <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>Dağıtılmamış kullanıcıların eylemleri ve davranışları (önizleme)
+### <a name="actions-and-behaviors-by-risky-users-preview"></a>Riskli kullanıcıların eylemleri ve davranışları (önizleme)
 
 Çalışma stresi olayları, kullanıcı davranışını insider riskleriyle ilgili çeşitli şekillerde etkileyebilir. Bu stresörler kötü bir performans incelemesi, konum indirgeme veya performans gözden geçirme planına yerleştirilen kullanıcı olabilir. Stresörler ayrıca kullanıcıların e-postada ve diğer iletilerde tehdit edici, taciz edici veya ayrımcı dil göndermesi gibi uygunsuz davranışlara da yol açabilir. Kullanıcıların çoğu bu olaylara kötü amaçlı olarak yanıt vermese de, bu eylemlerin stresi bazı kullanıcıların normal koşullarda normalde dikkate almayabilecekleri şekilde davranmalarına neden olabilir. Aşağıdaki insider risk yönetimi ilkesi şablonları, bu tür riskli etkinlikleri tanımlamaya yardımcı olmak için İk bağlayıcısını ve/veya [özel bir iletişim uyumluluk ilkesiyle](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview) tümleştirmeyi kullanarak kullanıcıları şirket içi risk yönetimi ilkeleri kapsamına alabilir ve oluşabilecek davranışlarla ilgili risk göstergelerini puanlamaya başlayabilir:
 
-- [Bozuk kullanıcılar tarafından veri sızıntıları (önizleme)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
-- [Dağıtılmamış kullanıcıların güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+- [Riskli kullanıcılar tarafından veri sızıntıları (önizleme)](insider-risk-management-policies.md#data-leaks-by-risky-users-preview)
+- [Riskli kullanıcıların güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-risky-users-preview)
 
 ### <a name="visual-context-for-potentially-risky-user-activities-with-forensic-evidence-preview"></a>Adli kanıtlarla riskli olabilecek kullanıcı etkinlikleri için görsel bağlam (önizleme)
 

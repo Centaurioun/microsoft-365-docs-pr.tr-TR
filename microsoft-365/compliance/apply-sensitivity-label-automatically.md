@@ -10,19 +10,20 @@ ms.service: O365-seccomp
 ms.date: ''
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 ms.topic: article
 ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
 description: Duyarlılık etiketi oluşturduğunuzda, dosyalara ve e-postalara otomatik olarak bir etiket atayabilir veya kullanıcılardan önerdiğiniz etiketi seçmelerini isteyebilirsiniz.
-ms.openlocfilehash: b986d875bc8a3368cdb6e85aa00c23b4783eaa46
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 78b20b6ef96da9bc6abcde0f32b013fd49efec06
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67476582"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768621"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>İçeriğe otomatik olarak bir hassasiyet etiketi uygulama
 
@@ -78,11 +79,13 @@ Microsoft 365'te içeriğe otomatik olarak duyarlılık etiketi uygulamak için 
     - Etiket şifreleme uyguladığında, gönderen kendi kuruluşunuzdan olduğunda e-postayı gönderen kişi [Rights Management veren ve Rights Management sahibidir](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) . Gönderen kuruluşunuzun dışındayken, ilkeniz tarafından etiketlenen ve şifrelenen gelen e-posta için bir Rights Management sahibi belirtebilirsiniz.
     - Etiket [dinamik işaretler](sensitivity-labels-office-apps.md#dynamic-markings-with-variables) uygulamak üzere yapılandırılmışsa, gelen e-posta için bu yapılandırmanın kuruluşunuz dışındaki kişilerin adlarının görüntülenmesine neden olabileceğini unutmayın.
 
-> [!TIP]
+> [!NOTE]
 > Bazı yeni müşteriler için, hem istemci tarafı etiketleme hem de hizmet tarafı etiketleme için varsayılan otomatik etiketleme ayarlarının otomatik yapılandırmasını sunuyoruz. Bu otomatik yapılandırma için uygun olmasanız bile, yapılandırmalarına başvurmak yararlı olabilir. Örneğin, etiketleme dağıtımınızı hızlandırmaya yardımcı olmak için mevcut etiketleri el ile yapılandırabilir ve aynı ayarlarla kendi otomatik etiketleme ilkelerinizi oluşturabilirsiniz.
 > 
 > Daha fazla bilgi için bkz. [Microsoft Purview Bilgi Koruması için varsayılan etiketler ve ilkeler](mip-easy-trials.md).
 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Office uygulamaları için otomatik etiketlemeyi otomatik etiketleme ilkeleriyle karşılaştırma
 
@@ -108,7 +111,17 @@ Microsoft 365'te içeriğe otomatik olarak duyarlılık etiketi uygulamak için 
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Birden çok etikete uygulandığında birden çok koşul nasıl değerlendirilir?
 
-Etiketler, ilkede belirttiğiniz konumlarına göre değerlendirme için sıralanır: önce konumlandırılan etiket en düşük konuma (en az duyarlı) ve en son konumlandırılan etiket en yüksek konuma (en hassas) sahiptir. Öncelik hakkında daha fazla bilgi için bkz. [Etiket önceliği (sipariş konuları)](sensitivity-labels.md#label-priority-order-matters).
+Etiketler, uyumluluk portalında belirttiğiniz konumlarına göre değerlendirme için sıralanır: Önce konumlandırılan etiket en düşük konuma (en az duyarlı, yani en düşük öncelik) sahiptir ve son konumlandırılan etiket en yüksek konuma (en hassas, yani en yüksek önceliğe) sahiptir. En yüksek sipariş numarasına sahip etiket seçilir.
+
+Bu davranış, alt etiketler aynı üst etiketi paylaştığında hizmet tarafı otomatik etiketleme (otomatik etiketleme ilkeleri) için de geçerlidir: Değerlendirme ve sıralamadan sonra, aynı üst etiketten birden fazla alt etiket otomatik etiketleme koşullarını karşılıyorsa, en yüksek sipariş numarasına sahip alt etiket seçilir ve uygulanır.
+
+Ancak, istemci tarafı otomatik etiketleme (etiketteki otomatik etiketleme ayarları) için davranış biraz farklıdır. Aynı üst etiketten birden çok alt etiket koşullarla eşleşiyorsa:
+
+- Bir dosya henüz etiketlenmemişse, otomatik etiketleme için yapılandırılan en yüksek sıralı alt etiket, önerilen etiketleme için yapılandırılmış en yüksek sıra alt etiketi yerine her zaman seçilir. Bu alt etiketlerden hiçbiri otomatik etiketleme için yapılandırılmamış ancak yalnızca önerilen etiketleme için yapılandırılmışsa, en yüksek sıralı alt etiket seçilir ve önerilir.
+
+- Bir dosya aynı üst öğeden bir alt etiketle zaten etiketlenmişse hiçbir işlem yapılmaz ve mevcut alt etiket kalır. Bu davranış, mevcut alt etiket varsayılan bir etiket olsa veya otomatik olarak uygulanmış olsa bile geçerlidir.
+
+Etiket önceliği hakkında daha fazla bilgi için bkz. [Etiket önceliği (sipariş konuları)](sensitivity-labels.md#label-priority-order-matters).
 
 ## <a name="dont-configure-a-parent-label-to-be-applied-automatically-or-recommended"></a>Bir üst etiketi otomatik olarak uygulanacak veya önerilecek şekilde yapılandırma
 
@@ -137,8 +150,10 @@ Yalnızca e-posta otomatik etiketleme ilkeleri için, nasıl uygulandığından 
 |Mevcut etiket |Etiket ayarıyla geçersiz kıl: Dosyalar ve e-postalar için otomatik etiketleme  |İlkeyle geçersiz kılma: Otomatik etiketleme|
 |:-----|:-----|:-----|
 |El ile uygulanan, herhangi bir öncelik|Word, Excel, PowerPoint: Hayır <br /><br> Outlook: Hayır  |SharePoint ve OneDrive: Hayır <br /><br> Exchange: Varsayılan olarak hayır, ancak yapılandırılabilir |
-|İlkeden otomatik olarak uygulanan veya varsayılan etiket, düşük öncelikli |Word, Excel, PowerPoint: Evet <br /><br> Outlook: Evet | SharePoint ve OneDrive: Evet <br /><br> Exchange: Evet |
+|İlkeden otomatik olarak uygulanan veya varsayılan etiket, düşük öncelikli |Word, Excel, PowerPoint: Evet \* <br /><br> Outlook: Evet \* | SharePoint ve OneDrive: Evet <br /><br> Exchange: Evet |
 |İlkeden otomatik olarak uygulanan veya varsayılan etiket, daha yüksek öncelik |Word, Excel, PowerPoint: Hayır <br /><br> Outlook: Hayır |SharePoint ve OneDrive: Hayır <br /><br> Exchange: Varsayılan olarak hayır, ancak yapılandırılabilir |
+
+\*[Aynı üst etiketi paylaşan alt etiketler için bir özel durum](#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) var
 
 E-posta otomatik etiketleme ilkeleri için yapılandırılabilir ayar, **E-posta için ek ayarlar** sayfasındadır. Bu sayfa, Exchange konumunu içeren bir otomatik etiketleme ilkesi için duyarlılık etiketi seçtikten sonra görüntülenir.
 

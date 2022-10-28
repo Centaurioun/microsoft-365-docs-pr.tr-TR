@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 476058e2d26f14f130a88eca412d34836368987f
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 8256340228128feef0d3f050f72a7b6ea17be576
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68623046"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768225"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>URL/etki alanı ve IP’ler için göstergeler oluşturun
 
@@ -141,7 +141,7 @@ Tehdit ve güvenlik açığı yönetiminin güvenlik açığı olan uygulama öz
 
 Uç Nokta için Microsoft Defender ilkesi Microsoft Defender Virüsten Koruma ilkesine göre önceliklidir. Uç Nokta için **Defender'ın İzin Ver** olarak ayarlandığı ancak virüsten koruma Microsoft Defender **Engelle** olarak ayarlandığı durumlarda, ilke varsayılan olarak **İzin Ver** olarak ayarlanır.
 
-#### <a name="precedence-for-multiple-active-policies"></a>Birden çok etkin ilke için öncelik
+### <a name="precedence-for-multiple-active-policies"></a>Birden çok etkin ilke için öncelik
 
 Aynı cihaza birden çok farklı web içeriği filtreleme ilkesi uygulanması, her kategori için daha kısıtlayıcı ilkenin uygulanmasına neden olur. Aşağıdaki senaryoyu inceleyin:
 

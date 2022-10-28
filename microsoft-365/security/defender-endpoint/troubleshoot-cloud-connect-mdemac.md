@@ -1,7 +1,7 @@
 ---
 title: macOS'ta Uç Nokta için Microsoft Defender için bulut bağlantısı sorunlarını giderme
 description: Bu konuda, macOS'ta Uç Nokta için Microsoft Defender için bulut bağlantısı sorunlarını giderme adımları açıklanmaktadır
-keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, monterey, ventura, bigsur, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 55c3e0376094ace126c775afa9f47f349e0eff90
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 402f5be6ca2baf62a2cbf7dd1d81f9aa1548b2ad
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68227712"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769550"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender için bulut bağlantısı sorunlarını giderme
 

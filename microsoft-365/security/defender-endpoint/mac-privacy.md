@@ -1,7 +1,7 @@
 ---
 title: Mac'te Uç Nokta için Microsoft Defender için gizlilik
 description: Gizlilik denetimleri, Mac'te Uç Nokta için Microsoft Defender toplanan tanılama verileriyle ilgili gizlilik ve bilgilerle ilgili gizliliği etkileyen ilke ayarlarını yapılandırma.
-keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, privacy, diagnostic
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, privacy, diagnostic, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 96a44fd7bd80d0d348928860be9d97a6d0cc68a6
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 527051a2bbbc902895b1fb99d5eb5f64fea01411
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68229448"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768600"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender için gizlilik
 

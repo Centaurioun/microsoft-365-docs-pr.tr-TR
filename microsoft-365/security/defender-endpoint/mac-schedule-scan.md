@@ -1,7 +1,7 @@
 ---
 title: macOS'ta Uç Nokta için Microsoft Defender ile tarama zamanlama
 description: Kuruluşunuzun varlıklarını daha iyi korumak için macOS'ta Uç Nokta için Microsoft Defender için otomatik tarama süresi zamanlamayı öğrenin.
-keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, scans, virüsten koruma
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, scans, virüsten koruma, catalina, big sur, monterey, ventura, mac için mde
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 64d1657c2e078c6e1a649e597d6ab0a37f262850
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 791288321d6968d63ba551e0872491a773ce53d4
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68223578"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769391"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender ile tarama zamanlama
 

@@ -1,6 +1,6 @@
 ---
 title: eBulma için anahtar sözcük sorguları ve arama koşulları
-description: Microsoft 365'teki eBulma arama araçlarını kullanarak arama yapabileceğiniz e-posta ve belge özellikleri hakkında bilgi edinin.
+description: Microsoft Purview'da eBulma arama araçlarını kullanarak arama yapabileceğiniz e-posta ve belge özellikleri hakkında bilgi edinin.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 788633afddc695ad35d6caee116e99b536e6d0f7
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: 721d537395dd4db5dcc6d7acd9cb1533fc4510f9
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68688284"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768995"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>eBulma için anahtar sözcük sorguları ve arama koşulları
 
@@ -64,7 +64,7 @@ Aşağıdaki tabloda, uyumluluk portalındaki eBulma arama araçları kullanıla
 |Gizli|E-posta iletisinin Gizli alanı. <sup>1</sup>|`bcc:pilarp@contoso.com` <p> `bcc:pilarp` <p> `bcc:"Pilar Pinilla"`|Tüm örnekler Gizli alanına *Pilar Pinilla* eklenmiş iletileri döndürür.<br>([Bkz. Alıcı Genişletmesi](keyword-queries-and-search-conditions.md#recipient-expansion))|
 |Kategori|Aranacak kategoriler. Kategoriler, kullanıcılar tarafından Outlook veya Web üzerinde Outlook (eski adıyla Outlook Web App) kullanılarak tanımlanabilir. Olası değerler: <ul><li>Mavi<li>Yeşil<li>Turuncu<li>Mor<li>Kırmızı<li>Sarı</li></ul>|`category:"Red Category"`|Kaynak posta kutularında *kırmızı* kategoriye atanmış iletiler.|
 |Cc|E-posta iletisinin Bilgi alanı. <sup>1</sup>|`cc:pilarp@contoso.com` <p> `cc:"Pilar Pinilla"`|Her iki örnekte de Bilgi alanında *Pilar Pinilla'nın* belirtildiği iletiler.<br>([Bkz. Alıcı Genişletmesi](keyword-queries-and-search-conditions.md#recipient-expansion))|
-|Folderid|Belirli bir posta kutusu klasörünün klasör kimliği (GUID). Bu özelliği kullanırsanız, belirtilen klasörün bulunduğu posta kutusunda arama yapmaya özen gösterin. Yalnızca belirtilen klasör aranacak. Klasördeki alt klasörler aranmayacak. Alt klasörleri aramak için, aramak istediğiniz alt klasörün *Folderid* özelliğini kullanmanız gerekir. <p> *Folderid* özelliğini arama ve belirli bir posta kutusunun klasör kimliklerini almak için betik kullanma hakkında daha fazla bilgi için bkz. [Hedeflenen koleksiyonlar için İçerik aramasını kullanma](use-content-search-for-targeted-collections.md).|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000` <p> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|İlk örnek, belirtilen posta kutusu klasöründeki tüm öğeleri döndürür. İkinci örnek, belirtilen posta kutusu klasöründeki *garthf@contoso.com* tarafından gönderilen veya alınan tüm öğeleri döndürür.|
+|Folderid|Belirli bir posta kutusu klasörünün 48 karakter biçimindeki klasör kimliği (GUID). Bu özelliği kullanırsanız, belirtilen klasörün bulunduğu posta kutusunda arama yapmaya özen gösterin. Yalnızca belirtilen klasör aranacak. Klasördeki alt klasörler aranmayacak. Alt klasörleri aramak için, aramak istediğiniz alt klasörün *Folderid* özelliğini kullanmanız gerekir. <p> *Folderid* özelliğini arama ve belirli bir posta kutusunun klasör kimliklerini almak için betik kullanma hakkında daha fazla bilgi için bkz. [Hedeflenen koleksiyonlar için İçerik aramasını kullanma](use-content-search-for-targeted-collections.md).|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000` <p> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|İlk örnek, belirtilen posta kutusu klasöründeki tüm öğeleri döndürür. İkinci örnek, belirtilen posta kutusu klasöründeki *garthf@contoso.com* tarafından gönderilen veya alınan tüm öğeleri döndürür.|
 |Kaynak|E-posta iletisinin göndereni. <sup>1</sup>|`from:pilarp@contoso.com` <p> `from:contoso.com`|Belirtilen kullanıcı tarafından gönderilen veya belirtilen bir etki alanından gönderilen iletiler.<br>([Bkz. Alıcı Genişletmesi](keyword-queries-and-search-conditions.md#recipient-expansion))|
 |HasAttachment|İletinin eki olup olmadığını gösterir. **true** veya **false** değerlerini kullanın.|`from:pilar@contoso.com AND hasattachment:true`|Belirtilen kullanıcı tarafından gönderilen ve ekleri olan iletiler.|
 |Önemi|Gönderenin ileti gönderirken belirtebileceği e-posta iletisinin önemi. Varsayılan olarak, gönderen önem derecesini **yüksek** veya **düşük** olarak belirlemediği sürece iletiler normal öneme sahip olarak gönderilir.|`importance:high` <p> `importance:medium` <p> `importance:low`|Yüksek önem, orta önem veya düşük önem olarak işaretlenmiş iletiler.|

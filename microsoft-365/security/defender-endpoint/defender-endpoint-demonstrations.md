@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.subservice: mde
 ms.date: 10/21/2022
-ms.openlocfilehash: b8f8f33d0fc47c395d19e67286eb43f7b9552dbe
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: cb04dc9817de63c3966c3168743d36fe36f66210
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68734440"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770403"
 ---
 # <a name="microsoft-defender-for-endpoint---demonstration-scenarios"></a>Uç Nokta için Microsoft Defender - tanıtım senaryoları
 
@@ -65,4 +65,5 @@ Aşağıdaki tabloda kullanılabilir gösterimler, ilişkili koruma alanlarıyla
 [Test saldırısı yüzey azaltma kuralları](attack-surface-reduction-rules-deployment-test.md)
 [Yeni Nesil Koruma \(NGP'ye\) genel bakış](next-generation-protection.md)
 [Uç nokta algılama ve yanıt \(EDR'ye\) genel bakış](overview-endpoint-detection-response.md)
- [Uç Nokta için Microsoft Defender güvenlik blogu](https://www.microsoft.com/security/blog/microsoft-defender-for-endpoint/)
+ [Uç Nokta için Microsoft Defender güvenlik blogu](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog)
+

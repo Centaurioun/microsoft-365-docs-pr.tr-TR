@@ -17,12 +17,12 @@ ms.custom: ''
 search.appverid: MET150
 description: Yeni Toplantı içgörü puanının ayrıntıları - kişiler Benimseme Puanı'nın deneyimini yaşar.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d6e74a03e459bfaaef3aa4e3b37bc70374e38b64
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 382c55e4c584a4747d822ecb3e8802725ae864c4
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68623575"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68767785"
 ---
 # <a name="meetings-insights-score--people-experiences-new"></a>Toplantı içgörü puanı – Kişiler deneyimleri (Yeni)
 
@@ -34,7 +34,7 @@ Toplantı içgörülerini kullanmaya başlamak için kuruluşunuzdaki kişilerin
 
 - Microsoft Teams
 
-Daha fazla bilgi için bkz. [Kullanıcılara lisans atama](../manage/assign-licenses-to-users.md).
+Daha fazla bilgi için bkz. [kullanıcılara lisans atama](../manage/assign-licenses-to-users.md).
 
 Teams'de son 28 gün içinde kişiler en az bir kez etkin olduktan sonra içgörüleri görmeye başlayacaksınız.
 

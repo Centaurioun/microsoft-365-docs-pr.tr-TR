@@ -1,7 +1,7 @@
 ---
 title: Jamf Pro ile macOS'ta Uç Nokta için Microsoft Defender dağıtma
 description: Jamf Pro ile macOS'ta Uç Nokta için Microsoft Defender dağıtma
-keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 947674c5b37d42d1fb16c020d919603eba56a604
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 8bf0b5894b82f8ff7587c8e5f8e39277dc4670a5
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68223622"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769941"
 ---
 # <a name="deploying-microsoft-defender-for-endpoint-on-macos-with-jamf-pro"></a>Jamf Pro ile macOS'ta Uç Nokta için Microsoft Defender dağıtma
 

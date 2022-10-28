@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: e6a97b532098631a14850be0afd06b9bc9e2e11d
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 7e5e6aa4d16dd18210754fc5349eb2a71269afc6
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68150121"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769875"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Android özelliklerinde Uç Nokta için Defender’ı yapılandırın
 
@@ -56,22 +56,20 @@ Android'de Uç Nokta için Defender, BT Yöneticilerinin web koruması özelliğ
 > Daha fazla bilgi için bkz. [Android çalıştıran cihazlarda web korumasını yapılandırma](/mem/intune/protect/advanced-threat-protection-manage-android).
 
 ## <a name="network-protection"></a>Ağ Koruması
->[!NOTE]
->Uç Nokta için Microsoft Defender'da Ağ Koruması artık genel önizleme aşamasındadır. Aşağıdaki bilgiler, ticari olarak piyasaya sürülmeden önce önemli ölçüde değiştirilebilen önceden yayımlanmış ürünle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
 
-Bu özellik, Wi-Fi ağları için birincil saldırı vektörleri olan Wi-Fi ilgili tehditlere ve sahte sertifikalara karşı koruma sağlar. Yöneticiler, Microsoft Endpoint Manager Yönetici merkezinde kök Sertifika Yetkilisi (CA) ve özel kök CA sertifikalarını listeleyebilir ve uç noktalarla güven oluşturabilir. Kullanıcıya güvenli ağlara bağlanmak için kılavuzlu bir deneyim sağlar ve ayrıca ilgili bir tehdit algılandığında bu kullanıcılara bildirir. 
+Bu özellik, Wi-Fi ağları için birincil saldırı vektörleri olan Wi-Fi ilgili tehditlere ve sahte sertifikalara karşı koruma sağlar. Yöneticiler, Microsoft Endpoint Manager Yönetici merkezinde kök Sertifika Yetkilisi (CA) ve özel kök CA sertifikalarını listeleyebilir ve uç noktalarla güven kurabilir. Kullanıcıya güvenli ağlara bağlanmak için kılavuzlu bir deneyim sağlar ve ayrıca ilgili bir tehdit algılandığında bu kullanıcılara bildirir. 
 
 Özelliği Microsoft Endpoint Manager Yönetici merkezinden yapılandırma ve güvenilen sertifikalar ekleme gibi esneklik sunmak için çeşitli yönetici denetimleri içerir. Yöneticiler, Android cihazlardan Uç Nokta için Defender tarafından gönderilen verileri yapılandırmak için [gizlilik denetimlerini](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) de etkinleştirebilir.
 
-Uç nokta için Microsoft Defender ağ koruması varsayılan olarak etkindir. Yöneticiler **, Android cihazlarda Ağ korumasını yapılandırmak** için aşağıdaki adımları kullanabilir.
+Uç nokta için Microsoft Defender'da ağ koruması varsayılan olarak devre dışıdır. Yöneticiler **, Android cihazlarda Ağ korumasını yapılandırmak** için aşağıdaki adımları kullanabilir.
 
-1. Microsoft Endpoint Manager Yönetici'da Uygulamalar > Uygulama yapılandırma ilkeleri'ne gidin. Yeni bir Uygulama yapılandırma ilkesi oluşturun.
+1. Microsoft Endpoint Manager Yönetici Uygulamalar > Uygulama yapılandırma ilkeleri'ne gidin. Yeni bir Uygulama yapılandırma ilkesi oluşturun.
     > [!div class="mx-imgBorder"]
     > ![İlke oluşturma resmi.](images/android-mem.png)
 1. İlkeyi benzersiz olarak tanımlamak için bir ad ve açıklama sağlayın. Platform olarak **'Android Enterprise'ı** ve profil türü olarak **'Yalnızca kişisel iş profili'ni** ve Hedeflenen uygulama olarak **'Microsoft Defender'** seçeneğini belirleyin.
     > [!div class="mx-imgBorder"]
     > ![İlke ayrıntılarının görüntüsü.](images/appconfigdetails.png)
-1. Ayarlar sayfasında **'Yapılandırma tasarımcısını kullan'ı seçin ve Ağ Koruması'nı** devre dışı bırakmak için anahtar ve değer olarak **'0'** olarak **'Microsoft Defender'de Ağ Korumasını Etkinleştir'i** ekleyin. (Ağ koruması varsayılan olarak etkindir)
+1. Ayarlar sayfasında **'Yapılandırma tasarımcısını kullan'ı seçin ve Ağ Koruması'nı** etkinleştirmek için anahtar olarak **'ağ korumasını etkinleştir' öğesini Microsoft Defender** ve değeri **'1'** olarak ekleyin. (Ağ koruması varsayılan olarak etkindir)
     > [!div class="mx-imgBorder"]
     > ![Ağ koruma ilkesini etkinleştirme seçeneğinin görüntüsü](images/selectnp.png)
     
@@ -79,19 +77,31 @@ Uç nokta için Microsoft Defender ağ koruması varsayılan olarak etkindir. Y�
     > ![Yapılandırma ilkesi ekleme görüntüsü.](images/npvalue.png)
 1. Kuruluşunuzda özel olabilecek kök CA'lar kullanılıyorsa, defender'ın bunları sahte sertifika olarak algılamaması için Intune (MDM çözümü) ile kullanıcının cihazları arasında açık güven oluşturulması gerekir.  
 
-    Kök CA'lar için güven oluşturmak için anahtar olarak **'Ağ Koruması için Güvenilen CA sertifika listesi (Önizleme)'** kullanın ve değer olarak **'sertifika parmak izlerinin virgülle ayrılmış listesini'** ekleyin.
-    > [!div class="mx-imgBorder"]
-    > ![Güvenilen CA sertifikasının görüntüsü.](images/trustca.png)
+    Kök CA'lar için güven oluşturmak için anahtar olarak **'Ağ Koruması için Güvenilen CA sertifika listesi'** kullanın ve değer olarak **'sertifika parmak izlerinin virgülle ayrılmış listesi (SHA 1)'** ekleyin.
+    
+    **Eklenecek parmak izi biçimi örneği** 50 30 06 09 1d 97 d4 f5 ae 39 f7 cb e7 92 7d 7d 65 2d 34 31, 503006091d97d4f5ae39f7cbe7927d7d652d3431 olacaktır 
 
-1. Ağ korumasıyla ilgili diğer yapılandırmalar için aşağıdaki anahtarları ve uygun değeri ekleyin.
+> [!IMPORTANT]
+ > Sertifika SHA-1 Parmak İzi karakterleri, boş alan saperated veya ayrılmamış olmalıdır.
+> Bu biçim geçersiz  
+> 50:30:06:09:1d:97:d4:f5:ae:39:f7:cb:e7:92:7d:7d:65:2d:34:31 
+
+Diğer tüm ayırma karakterleri geçersiz. 
+    > ![Image of trusted CA certificate.](images/trustca.png)
+
+5. Ağ korumasıyla ilgili diğer yapılandırmalar için aşağıdaki anahtarları ve uygun değeri ekleyin.
 <br>
 
     | Yapılandırma Anahtarı| Açıklama|
     |---|---|
-    |Ağ Koruması Gizliliğini Etkinleştirme|1 - etkinleştir , 0 - Devre dışı bırak ; Bu ayar, ağ korumasında gizliliği etkinleştirmek veya devre dışı bırakmak için BT yöneticileri tarafından yönetilir.|
-    |Kullanıcıların Ağlara ve Sertifikalara Güvenmesini Sağlama|1 - etkinleştir , 0 - Devre dışı bırak ; Bu ayar BT yöneticileri tarafından güvenli olmayan ve şüpheli ağlara ve kötü amaçlı sertifikalara güvenmek ve güvensiz bırakmak için son kullanıcı uygulama içi deneyimini etkinleştirmek veya devre dışı bırakmak için kullanılır.|
-    |Ağ Koruma Uyarılarının Otomatik Olarak Düzeltilmesi|1 - etkinleştir , 0 - Devre dışı bırak ; Bu ayar, bir kullanıcı daha güvenli bir Wi-Fi erişim noktasına geçme veya Defender tarafından algılanan şüpheli sertifikaları silme gibi düzeltme etkinlikleri gerçekleştirdiğinde gönderilen düzeltme uyarılarını etkinleştirmek veya devre dışı bırakmak için BT yöneticileri tarafından kullanılır|
-1. İlkenin uygulanması gereken gerekli grupları ekleyin. İlkeyi gözden geçirin ve oluşturun.
+    |Ağ Koruması için güvenilen CA sertifika listesi|Bu ayar, kök CA ve otomatik olarak imzalanan sertifikalar için güven oluşturmak üzere bir güvenlik yöneticisi tarafından yönetilir|
+    |Microsoft Defender'da Ağ korumasını etkinleştirme|1 - Etkinleştir, 0- Devre dışı bırak (varsayılan) ; Bu ayar, BT yöneticisi tarafından defender uygulamasında ağ koruma özelliklerini etkinleştirmek veya devre dışı bırakmak için kullanılır|
+    |Ağ Koruması Gizliliğini Etkinleştirme|1 - Etkinleştir (varsayılan) , 0 - Devre dışı bırak ; Bu ayar, ağ korumasında gizliliği etkinleştirmek veya devre dışı bırakmak için BT yöneticileri tarafından yönetilir.|
+    |Kullanıcıların Ağlara ve Sertifikalara Güvenmesini Sağlama|1 - Etkinleştir , 0 - Devre dışı bırak (varsayılan) ; Bu ayar BT yöneticileri tarafından güvenli olmayan ve şüpheli ağlara ve kötü amaçlı sertifikalara güvenmek ve güvensiz bırakmak için son kullanıcı uygulama içi deneyimini etkinleştirmek veya devre dışı bırakmak için kullanılır.|
+    |Ağ Koruma Uyarılarının Otomatik Olarak Düzeltilmesi|1 - Etkinleştir (varsayılan) , 0 - Devre dışı bırak ; Bu ayar, bir kullanıcı daha güvenli bir Wi-Fi erişim noktasına geçme veya Defender tarafından algılanan şüpheli sertifikaları silme gibi düzeltme etkinlikleri gerçekleştirdiğinde gönderilen düzeltme uyarılarını etkinleştirmek veya devre dışı bırakmak için BT yöneticileri tarafından kullanılır|
+    |Açık Ağlar için Ağ Koruması algılamasını yönetme|0 - Devre dışı bırak (varsayılan), 1 - Denetim Modu; Bu ayar, açık ağ algılamayı etkinleştirmek veya devre dışı bırakmak için BT Yönetici tarafından yönetilir|  
+    |Sertifikalar için Ağ Koruma Algılamasını Yönetme|0 - Devre dışı bırakma , 1 - Denetim modu (varsayılan) , 2 - Etkinleştir ; Ağ koruması etkinleştirildiğinde, sertifika algılama için denetim modu varsayılan olarak etkinleştirilir. Denetim modunda, bildirim uyarıları SOC yöneticilerine gönderilir, ancak defender hatalı bir sertifika algıladığında kullanıcıya hiçbir son kullanıcı bildirimi görüntülenmez. Ancak yöneticiler, değer olarak 0 ile bu algılamayı devre dışı bırakabilir ve değer olarak 2'yi ayarlayarak tam özellik işlevselliğini etkinleştirebilir. Özellik 2 olarak etkinleştirildiğinde, defender hatalı bir sertifika algıladığında son kullanıcı bildirimleri kullanıcıya gönderilir ve uyarılar soC Yönetici|
+6. İlkenin uygulanması gereken gerekli grupları ekleyin. İlkeyi gözden geçirin ve oluşturun.
 
 ## <a name="privacy-controls"></a>Gizlilik Denetimleri
 
@@ -150,7 +160,7 @@ Android'de Uç Nokta için Microsoft Defender 1.0.3425.0303 sürümünden, eklen
 **Kişisel cihazlardan (KCG) gelen uygulamalarla ilgili gizlilikle ilgili notlar:**
 
 - İş profili olan Android Kurumsal için yalnızca iş profilinde yüklü uygulamalar desteklenir.
-- Diğer KCG modları için varsayılan olarak uygulamaların güvenlik açığı değerlendirmesi **etkinleştirilmez** . Ancak, cihaz yönetici modundayken, yöneticiler cihazda yüklü uygulamaların listesini almak için bu özelliği Microsoft Endpoint Manager aracılığıyla açıkça etkinleştirebilir. Daha fazla bilgi için aşağıdaki ayrıntılara bakın.
+- Diğer KCG modları için varsayılan olarak uygulamaların güvenlik açığı değerlendirmesi **etkinleştirilmez** . Ancak, cihaz yönetici modundayken, yöneticiler cihazda yüklü uygulamaların listesini almak için Microsoft Endpoint Manager aracılığıyla bu özelliği açıkça etkinleştirebilir. Daha fazla bilgi için aşağıdaki ayrıntılara bakın.
 
 ### <a name="configure-privacy-for-device-administrator-mode"></a>Cihaz yöneticisi modu için gizliliği yapılandırma
 
@@ -179,7 +189,7 @@ Hedeflenen kullanıcılar için **cihaz yöneticisi** modundaki **cihazlardan uy
 
 Uç Nokta için Defender, iş profilindeki uygulamaların güvenlik açığı değerlendirmesini destekler. Ancak, bu özelliği hedeflenen kullanıcılar için kapatmak istiyorsanız aşağıdaki adımları kullanabilirsiniz:
 
-1. [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar** > **Uygulama yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
+1. [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar Uygulama** > **yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
 2. İlkeye bir ad verin; **Android Kurumsal> platform**; profil türünü seçin.
 3. Hedef uygulama olarak **Uç Nokta için Microsoft Defender'ı** seçin.
 4. Ayarlar sayfasında **Yapılandırma tasarımcısını kullan'ı** seçin ve anahtar ve değer türü olarak **DefenderTVMPrivacyMode** değerini **Tamsayı** olarak ekleyin
@@ -219,7 +229,7 @@ Bu gizlilik denetiminin kullanılması cihaz uyumluluk denetimini veya koşullu 
 
 İş profilinde hedeflenen kullanıcılar için gizliliği açmak için aşağıdaki adımları kullanın:
 
-1. [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar** > **Uygulama yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
+1. [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar Uygulama** > **yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
 2. İlkeye Bir ad verin( **Platform > Android Kurumsal**), profil türünü seçin.
 3. Hedef uygulama olarak **Uç Nokta için Microsoft Defender'ı** seçin.
 4. Ayarlar sayfasında **Yapılandırma tasarımcısını kullan'ı** seçin ve anahtar ve değer türü Olarak **DefenderExcludeURLInReport** değerini **Tamsayı** olarak ekleyin.
@@ -258,7 +268,7 @@ Bu gizlilik denetiminin kullanılması cihaz uyumluluk denetimini veya koşullu 
 
 İş profilinde hedeflenen kullanıcılar için gizliliği açmak için aşağıdaki adımları kullanın:
 
-1. [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar** > **Uygulama yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
+1. [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar Uygulama** > **yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
 2. İlkeye Bir ad verin( **Platform > Android Kurumsal**), profil türünü seçin.
 3. Hedef uygulama olarak **Uç Nokta için Microsoft Defender'ı** seçin.
 4. Ayarlar sayfasında **Yapılandırma tasarımcısını kullan'ı** seçin ve anahtar ve değer türü olarak **DefenderExcludeAppInReport** değerini **Tamsayı** olarak ekleyin

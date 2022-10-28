@@ -20,12 +20,12 @@ ms.collection:
 - tier2
 ms.date: ''
 search.appverid: met150
-ms.openlocfilehash: f71c2d4fa2807f6e7667b7ab32c54081cf239986
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: 3c2cc3c42bd23f10ed9909c0a69f2ce1add2103d
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68659400"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769017"
 ---
 <!--- jweston-1 to return as author and ms.author appx April/May 2023. --->
 
@@ -52,12 +52,12 @@ Microsoft Ağ koruması, cihazlarınızın İnternet tabanlı olaylardan saldır
 - Patla -tır
 - İnternet'te diğer kötü amaçlı içerikler
 
-Ağ koruması, düşük saygınlık kaynaklarına bağlanmaya çalışan tüm giden HTTP trafiğini engellemek için [smartscreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) Microsoft 365 Defender kapsamını genişletir. Giden HTTP trafiğindeki bloklar etki alanına veya konak adına bağlıdır.
+Ağ koruması, düşük saygınlık kaynaklarına bağlanmaya çalışan tüm giden HTTP trafiğini engellemek için [smartscreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) Microsoft 365 Defender kapsamını genişletir. Giden HTTP trafiğindeki bloklar etki alanına veya konak adına bağlıdır.
 
 ## <a name="new-and-updated-capabilities"></a>Yeni ve güncelleştirilmiş özellikler
 
 - Kurumsal VPN'nizi ağ koruması ile birlikte veya "yan yana" çalıştırabilirsiniz. Şu anda hiçbir VPN çakışması tanımlanmış değildir. Çakışmalarla karşılaşırsanız, bu sayfanın en altında listelenen geri bildirim kanalı aracılığıyla geri bildirim sağlayabilirsiniz.
-  - Web içeriği filtreleme, macOS için ağ koruması ile desteklenir.  
+  - Web içeriği filtreleme, macOS için ağ koruması ile desteklenir.
   - Ağ koruması yapılandırıldıysa ve cihazda etkinse, MDEP Portalı'nda oluşturulan web içeriği filtreleme (WCF) ilkeleri, macOS için Microsoft Edge'Chromium de dahil olmak üzere tarayıcılarda dikkate alınır. Mac üzerinde Microsoft Edge'de web içeriği filtrelemesi şu anda ağ koruması gerektirir; Bulut Uygulamaları için Microsoft Defender veya Özel Göstergeler gibi diğer E5 özellikleri de şu anda ağ koruması gerektirir.
 
 ### <a name="known-issues"></a>Bilinen sorunlar
@@ -83,7 +83,7 @@ Ağ koruması, düşük saygınlık kaynaklarına bağlanmaya çalışan tüm gi
   - Cihazınızın Dış (Önizleme) veya InsiderFast (Beta) Microsoft AutoUpdate güncelleştirme kanalında olması gerekir. Güncelleştirme kanalını denetlemek için aşağıdaki komutu kullanabilirsiniz:
 
 ```bash
-mdatp health --field release_ring 
+mdatp health --field release_ring
 ```
 
 Cihazınız henüz Dış (Önizleme) güncelleştirme kanalında değilse Terminal'den aşağıdaki komutu yürütür. Kanal güncelleştirmesi, ürün bir sonraki başlatıldığında (bir sonraki ürün güncelleştirmesi yüklendiğinde veya cihaz yeniden başlatıldığında) geçerlilik kazanır.
@@ -104,7 +104,7 @@ Cihazınızı Dış (önizleme) güncelleştirme kanalında olacak şekilde yap�
 open /Library/Application\ Support/Microsoft/MAU2.0/Microsoft\ AutoUpdate.app
 ```
 
-Genel belgelerimizdeki yönergeleri kullanarak ürünü kuruluş bilgilerinizle yapılandırın.  
+Genel belgelerimizdeki yönergeleri kullanarak ürünü kuruluş bilgilerinizle yapılandırın.
 
 Ağ koruması varsayılan olarak devre dışıdır, ancak aşağıdaki modlardan birinde (zorlama düzeyleri olarak da adlandırılır) çalışacak şekilde yapılandırılabilir:
 
@@ -136,35 +136,35 @@ mdatp health --field network_protection_status
 
 #### <a name="jamf-deployment"></a>JAMF dağıtımı
 
-Başarılı bir JAMF dağıtımı, ağ korumasının zorlama düzeyini ayarlamak için bir yapılandırma profili gerektirir.  
+Başarılı bir JAMF dağıtımı, ağ korumasının zorlama düzeyini ayarlamak için bir yapılandırma profili gerektirir.
 Bu yapılandırma profilini oluşturduktan sonra ağ korumasını etkinleştirmek istediğiniz cihazlara atayın.
 
 ##### <a name="configure-the-enforcement-level"></a>Zorlama düzeyini yapılandırma
 
 Not: Burada listelenen yönergeleri kullanarak Mac'te Endpoint için Microsoft 365 Defender zaten yapılandırdıysanız, daha önce dağıtmış olduğunuz plist dosyasını aşağıda listelenen içerikle güncelleştirin ve JAMF'den yeniden dağıtın.
 
-1.  **Bilgisayar** > **Yapılandırma Profilleri'nde** **, Özel****Ayarlar & Seçenekler** >  Uygulamaları'nı seçin
+1. **Bilgisayarlar** \> **Yapılandırma Profilleri'nde****, Özel** **Ayarlar & Seçenekler** \> Uygulamaları'nı seçin
 2. **Dosyayı Karşıya Yükle 'yi** seçin (PLIST dosyası)
 3. Tercih etki alanını _com.microsoft.wdav_ olarak ayarlayın
 4. Aşağıdaki plist dosyasını karşıya yükleyin
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>networkProtection</key> 
-    <dict> 
-        <key>enforcementLevel</key> 
-        <string>block</string> 
-    </dict> 
-</dict> 
-</plist> 
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>networkProtection</key>
+    <dict>
+        <key>enforcementLevel</key>
+        <string>block</string>
+    </dict>
+</dict>
+</plist>
 ```
 
 #### <a name="intune-deployment"></a>Intune dağıtımı
 
-Başarılı bir Intune dağıtımı, ağ korumasının zorlama düzeyini ayarlamak için bir yapılandırma profili gerektirir.  
+Başarılı bir Intune dağıtımı, ağ korumasının zorlama düzeyini ayarlamak için bir yapılandırma profili gerektirir.
 Bu yapılandırma profilini oluşturduktan sonra ağ korumasını etkinleştirmek istediğiniz cihazlara atayın.
 
 ##### <a name="configure-the-enforcement-level-using-intune"></a>Intune kullanarak zorlama düzeyini yapılandırma
@@ -172,75 +172,75 @@ Bu yapılandırma profilini oluşturduktan sonra ağ korumasını etkinleştirme
 > [!NOTE]
 > Mac'te Uç Nokta için Microsoft Defender burada listelenen yönergeleri kullanarak zaten yapılandırdıysanız, daha önce dağıtmış olduğunuz plist dosyasını aşağıda listelenen içerikle güncelleştirin ve Intune'dan yeniden dağıtın.
 
-1.  **Cihaz yapılandırmasını yönet'i** **** > açın. Profilleri **Yönet** > **Profil Oluştur'u** > seçin. ****
-2. Profil için bir ad belirtin.  **Platform=macOS**  **değerini Profil türü=Özel** olarak değiştirin. **Yapılandır'ı** seçin.
+1. **Cihaz yapılandırmasını yönet'i** \> açın. Profilleri **Yönet** \> **Profil Oluştur'u** \> seçin.
+2. Profil için bir ad belirtin. **Platform=macOS** **değerini Profil türü=Özel** olarak değiştirin. **Yapılandır'ı** seçin.
 3. Aşağıdaki yükü _com.microsoft.wdav.xml_ olarak kaydedin
-
-```xml
-<?xml version="1.0" encoding="utf-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1"> 
-    <dict> 
-        <key>PayloadUUID</key> 
-        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string> 
-        <key>PayloadType</key> 
-        <string>Configuration</string> 
-        <key>PayloadOrganization</key> 
-        <string>Microsoft</string> 
-        <key>PayloadIdentifier</key> 
-        <string>com.microsoft.wdav</string> 
-        <key>PayloadDisplayName</key> 
-        <string>Microsoft Defender ATP settings</string> 
-        <key>PayloadDescription</key> 
-        <string>Microsoft Defender ATP configuration settings</string> 
-        <key>PayloadVersion</key> 
-        <integer>1</integer> 
-        <key>PayloadEnabled</key> 
-        <true/> 
-        <key>PayloadRemovalDisallowed</key> 
-        <true/> 
-        <key>PayloadScope</key> 
-        <string>System</string> 
-        <key>PayloadContent</key> 
-        <array> 
-            <dict> 
-                <key>PayloadUUID</key> 
-                <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string> 
-                <key>PayloadType</key> 
-                <string>com.microsoft.wdav</string> 
-                <key>PayloadOrganization</key> 
-                <string>Microsoft</string> 
-                <key>PayloadIdentifier</key> 
-                <string>com.microsoft.wdav</string> 
-                <key>PayloadDisplayName</key> 
-                <string>Microsoft Defender ATP configuration settings</string> 
-                <key>PayloadDescription</key> 
-                <string/> 
-                <key>PayloadVersion</key> 
-                <integer>1</integer> 
-                <key>PayloadEnabled</key> 
-                <true/> 
-                <key>networkProtection</key> 
-                <dict> 
-                    <key>enforcementLevel</key> 
-                    <string>block</string> 
-                </dict> 
-            </dict> 
-        </array> 
-    </dict> 
-</plist>
-```
+   
+   ```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+   <plist version="1">
+       <dict>
+           <key>PayloadUUID</key>
+           <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
+           <key>PayloadType</key>
+           <string>Configuration</string>
+           <key>PayloadOrganization</key>
+           <string>Microsoft</string>
+           <key>PayloadIdentifier</key>
+           <string>com.microsoft.wdav</string>
+           <key>PayloadDisplayName</key>
+           <string>Microsoft Defender ATP settings</string>
+           <key>PayloadDescription</key>
+           <string>Microsoft Defender ATP configuration settings</string>
+           <key>PayloadVersion</key>
+           <integer>1</integer>
+           <key>PayloadEnabled</key>
+           <true/>
+           <key>PayloadRemovalDisallowed</key>
+           <true/>
+           <key>PayloadScope</key>
+           <string>System</string>
+           <key>PayloadContent</key>
+           <array>
+               <dict>
+                   <key>PayloadUUID</key>
+                   <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string>
+                   <key>PayloadType</key>
+                   <string>com.microsoft.wdav</string>
+                   <key>PayloadOrganization</key>
+                   <string>Microsoft</string>
+                   <key>PayloadIdentifier</key>
+                   <string>com.microsoft.wdav</string>
+                   <key>PayloadDisplayName</key>
+                   <string>Microsoft Defender ATP configuration settings</string>
+                   <key>PayloadDescription</key>
+                   <string/>
+                   <key>PayloadVersion</key>
+                   <integer>1</integer>
+                   <key>PayloadEnabled</key>
+                   <true/>
+                   <key>networkProtection</key>
+                   <dict>
+                       <key>enforcementLevel</key>
+                       <string>block</string>
+                   </dict>
+               </dict>
+           </array>
+       </dict>
+   </plist>
+   ```
 
 4. Yukarıdaki dosyanın doğru kopyalandığını doğrulayın. Terminal'den aşağıdaki komutu çalıştırın ve Tamam çıkışını elde ettiğini doğrulayın:
 
-```bash
-plutil -lint com.microsoft.wdav.xml
-```
+   ```bash
+   plutil -lint com.microsoft.wdav.xml
+   ```
 
-5. Özel yapılandırma profili adı olarak _com.microsoft.wdav_ girin.
+5. Özel yapılandırma profili adı olarak _com.microsoft.wdav_ girin.
 6. Yapılandırma profilini açın ve com.microsoft.wdav.xml dosyasını karşıya yükleyin. (Bu dosya 3. adımda oluşturulmuştur.)
-7.  **Tamam'ı** seçin
-8.  **Atamaları**  **Yönet'i** > seçin.  **Ekle** sekmesinde, ağ korumasını etkinleştirmek istediğiniz cihazları seçin.
+7. **Tamam'ı** seçin
+8. **Atamaları** **Yönet'i** \> seçin. **Ekle** sekmesinde, ağ korumasını etkinleştirmek istediğiniz cihazları seçin.
 
 ## <a name="how-to-explore-the-features"></a>Özellikleri keşfetme
 
@@ -252,7 +252,7 @@ plutil -lint com.microsoft.wdav.xml
    > Bir ilkeyi kaldırıyorsanız veya cihaz gruplarını aynı anda değiştiriyorsanız, bu durum ilke dağıtımında gecikmeye neden olabilir.
    > Profesyonel ipucu: Bir cihaz grubunda herhangi bir kategori seçmeden bir ilke dağıtabilirsiniz. Bu eylem, engelleme ilkesi oluşturmadan önce kullanıcı davranışını anlamanıza yardımcı olmak için yalnızca denetim ilkesi oluşturur.
    >
-   > Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.  
+   > Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.
 
 4. [Uç Nokta için Microsoft Defender Cloud Apps için Defender ile tümleştirin](/defender-cloud-apps/mde-integration) ve ağ koruması etkinleştirilmiş macOS cihazlarınız uç nokta ilkesi zorlama özelliklerine sahip olur.
    > [!NOTE]
@@ -276,7 +276,7 @@ Web tehdit koruması, Uç Nokta için Microsoft 365 Defender web korumasının b
 
 Daha fazla bilgi için bkz [. Kuruluşunuzu web tehdidine karşı koruma](web-threat-protection.md)
 
-### <a name="custom-indicators-of-compromise"></a>Güvenliğin Aşılmasına ilişkin Özel Göstergeler  
+### <a name="custom-indicators-of-compromise"></a>Güvenliğin Aşılmasına ilişkin Özel Göstergeler
 
 Risk (ICS) eşleştirmesinin göstergesi, her uç nokta koruma çözümünde önemli bir özelliktir. Bu özellik SecOps'a algılama ve engelleme (önleme ve yanıt) için göstergelerin listesini ayarlama olanağı verir.
 
@@ -348,13 +348,13 @@ Beklenmeyen bir davranışla karşılaştığında, kullanıcıların karışık
 - Kullanım için onaylı/önerilen bulut uygulamaları
 - Kullanım için kısıtlanmış/engellenen bulut uygulamaları
 
-Bu sayfa için, kuruluşunuzun temel bir SharePoint sitesi kullanmasını öneririz.  
+Bu sayfa için, kuruluşunuzun temel bir SharePoint sitesi kullanmasını öneririz.
 
 ### <a name="important-things-to-know"></a>Bilmeniz gereken önemli şeyler
 
-1. Uygulama etki alanlarının yayılması ve uç nokta cihazlarında güncelleştirilerek _İzlendi_ olarak işaretlenmesi iki saate kadar (genellikle daha az) sürebilir.  
-2. Varsayılan olarak, kuruluştaki tüm eklenen uç noktalar için Bulut Uygulamaları için Microsoft Defender portalında İzlendi olarak işaretlenmiş tüm uygulamalar ve etki alanları için eylem gerçekleştirilir.  
-3. Tam URL'ler şu anda desteklenmiyor ve Microsoft Defender altında tam URL'ler listeleniyorsa, Bulut Uygulamaları için Microsoft Defender'den Uç Nokta için Microsoft 365 Defender gönderilmez Microsoft Defender  Bulut Uygulamaları tarafından izlenen uygulamalar için kullanıcı erişim girişimi konusunda uyarı almaz (örneğin, drive.google.com desteklenirken google.com/drive desteklenmez).  
+1. Uygulama etki alanlarının yayılması ve uç nokta cihazlarında güncelleştirilerek _İzlendi_ olarak işaretlenmesi iki saate kadar (genellikle daha az) sürebilir.
+2. Varsayılan olarak, kuruluştaki tüm eklenen uç noktalar için Bulut Uygulamaları için Microsoft Defender portalında İzlendi olarak işaretlenmiş tüm uygulamalar ve etki alanları için eylem gerçekleştirilir.
+3. Tam URL'ler şu anda desteklenmiyor ve Microsoft Defender altında tam URL'ler listeleniyorsa, Bulut Uygulamaları için Microsoft Defender'den Uç Nokta için Microsoft 365 Defender gönderilmez Microsoft Defender  Bulut Uygulamaları tarafından izlenen uygulamalar için kullanıcı erişim girişimi konusunda uyarı almaz (örneğin, drive.google.com desteklenirken google.com/drive desteklenmez).
 
 Üçüncü taraf tarayıcılarda son kullanıcı bildirimi yok mu? Bildirim iletisi ayarlarınızı denetleme
 

@@ -25,12 +25,12 @@ description: Microsoft Purview Bilgi Koruması duyarlılık etiketlerinin, depol
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6c14a533ecd52eb05f85c16cb562df4c689eabfd
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: abb6fc63ee5991d216450bfc627ac88ba8123bd1
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68626412"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769259"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Duyarlılık etiketleri hakkında bilgi edinin
 
@@ -157,7 +157,7 @@ duyarlılık etiketlerinizi Microsoft Purview uyumluluk portalı oluşturduğunu
 
 Belge, e-posta veya kapsayıcı gibi bir öğeye yalnızca bir duyarlılık etiketi uygulayabilirsiniz. Kullanıcılarınızın bir etiketin sınıflandırmasını düşürürken bunun nedenini belirtmesini gerektiren bir seçenek ayarlarsanız bu listedeki sıra daha düşük sınıflandırmaları tanımlar. Ancak bu seçenek, üst etiketlerinin önceliğini paylaşan alt etiketler için geçerli değildir.
 
-Ancak alt etiketlerin sırası [otomatik etiketleme ilkeleriyle](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) birlikte kullanılır. Aynı konum için birden fazla otomatik etiketleme ilkesi yapılandırdığınızda, birden çok eşleşme birden fazla etikete neden olabilir. Uygulanacak etiketi belirlemek için etiket sıralama alt etiketleriyle bile kullanılır: Son hassas etiket seçilir ve varsa son alt etiket seçilir.
+Ancak alt etiketlerin sırası [otomatik etiketleme](apply-sensitivity-label-automatically.md) ile birlikte kullanılır. Otomatik etiketleme ilkelerini yapılandırdığınızda birden çok eşleşme birden fazla etikete neden olabilir. Ardından son hassas etiket seçilir ve varsa son alt etiket seçilir. Alt etiketleri otomatik veya önerilen etiketleme için (otomatik etiketleme ilkeleri yerine) yapılandırdığınızda, alt etiketler aynı üst etiketi paylaştığında davranış biraz farklıdır. Örneğin, otomatik etiketleme için yapılandırılmış bir alt etiket, önerilen etiketleme için yapılandırılmış bir alt etiket yerine tercih edilir. Daha fazla bilgi için bkz. [Birden çok etikete uygulanan birden çok koşul nasıl değerlendirilir](apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label)?
 
 ![Alt etiket oluşturma seçeneği.](../media/Sensitivity-label-sublabel-options.png)
 

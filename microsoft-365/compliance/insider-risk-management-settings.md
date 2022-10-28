@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: e3c1af1557e92888fb7f121afbc2431b2ab00831
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: be05acf1ca9028915a836d95f737e64ee1324f72
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68728125"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769589"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Insider risk yönetimi ayarlarını kullanmaya başlama
 
@@ -243,9 +243,9 @@ Aşağıdaki etki alanı ayarlarının her biri için en fazla 500 etki alanı g
  
 ### <a name="sensitive-info-types-exclusion"></a>Hassas bilgi türlerini dışlama
 
-Hassas bilgi türlerini dışlayarak Uç Nokta, SharePoint, Teams, OneDrive ve Exchange için dosyayla ilgili etkinlikler içeren göstergelerle ve tetikleyicilerle eşlenen türleri belirtebilirsiniz. Burada tanımlanan hassas bilgi türlerini içeren dosyalar için risk puanı alınır ancak hassas bilgi türleriyle ilgili içerik içeren etkinlikler olarak gösterilmez. Tam liste için bkz [. Hassas bilgi türü varlık tanımları](sensitive-information-type-entity-definitions.md).
+Ayarlarda dışlanan hassas bilgi türleri Uç Nokta, SharePoint, Teams, OneDrive ve Exchange için dosyayla ilgili etkinlikleri içeren göstergelerle ve tetikleyicilerle eşlenir. Bu türler hassas olmayan bilgi türleri olarak değerlendirilir. Burada tanımlanan hassas bilgi türlerini içeren dosyalar için risk puanı alınır ancak hassas bilgi türleriyle ilgili içerik içeren etkinlikler olarak gösterilmez. Tam liste için bkz [. Hassas bilgi türü varlık tanımları](sensitive-information-type-entity-definitions.md).
 
-Kiracıda kullanılabilen tüm kullanılabilir (kullanıma hazır ve özel) türlerin listesinden dışlanacak hassas bilgi türlerini seçebilirsiniz. Insider risk yönetimi, ABA Yönlendirme Numarası gibi çeşitli hassas bilgi türlerini varsayılan olarak dışlar. Dışlanacak en fazla 100 hassas bilgi türü seçebilirsiniz.
+Kiracıda kullanılabilen tüm kullanılabilir (kullanıma hazır ve özel) türlerin listesinden dışlanacak hassas bilgi türlerini seçebilirsiniz. Insider risk yönetimi, ABA Yönlendirme Numarası gibi çeşitli hassas bilgi türlerini varsayılan olarak dışlar. Dışlanacak en fazla 500 hassas bilgi türünü seçebilirsiniz.
 
 > [!NOTE]
 > Hassas bilgi türlerinin dışlama listesi [öncelik içerik](insider-risk-management-policies.md#prioritize-content-in-policies) listesinden önceliklidir.

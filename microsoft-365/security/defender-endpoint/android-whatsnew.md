@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 5cac34b5ee0e6cc0d40755aef920040d621c49af
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: a4952a1a7e9fd9559722aa53cc366906f3aeedcc
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68157490"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770007"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Android'de Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -55,7 +55,7 @@ Android'de Uç Nokta için Microsoft Defender, ekleme akışında **İsteğe Ba�
 Uç Nokta için Microsoft Defender artık Android Kurumsal kişisel profilinde (yalnızca KCG) kötü amaçlı yazılım taraması, kimlik avı bağlantılarından koruma, ağ koruması ve güvenlik açığı yönetimi gibi tüm temel özelliklerle desteklenmektedir. Bu destek, kişisel profilde kullanıcı gizliliğini sağlamak için [gizlilik denetimleriyle](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) birleştirilir. Daha fazla bilgi için [duyuruyu](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-the-public-preview-of-defender-for-endpoint-personal/ba-p/3370979) ve [dağıtım kılavuzunu](/microsoft-365/security/defender-endpoint/android-intune#set-up-microsoft-defender-in-personal-profile-on-android-enterprise-in-byod-mode) okuyun.
 
 ## <a name="network-protection"></a>Ağ koruması
-Uç Nokta için Microsoft Defender'da Ağ Koruması artık genel önizleme aşamasındadır. Ağ koruması, sahte Wi-Fi ilgili tehditlere, ananas cihazları gibi sahte donanımlara karşı koruma sağlar ve ilgili bir tehdit algılandığında kullanıcıya bildirir. Kullanıcılar güvenli olmayan bir bağlantıya bağlandıklarında güvenli ağlara bağlanmak ve ağları değiştirmek için kılavuzlu bir deneyim de görür.
+Uç Nokta için Microsoft Defender'de Ağ Koruması artık kullanılabilir. Ağ koruması, sahte Wi-Fi ilgili tehditlere, ananas cihazları gibi sahte donanımlara karşı koruma sağlar ve ilgili bir tehdit algılandığında kullanıcıya bildirir. Kullanıcılar güvenli olmayan bir bağlantıya bağlandıklarında güvenli ağlara bağlanmak ve ağları değiştirmek için kılavuzlu bir deneyim de görür.
 
 Özelliği Microsoft Endpoint Manager Yönetici merkezinden yapılandırma gibi esneklik sunmak için çeşitli yönetici denetimleri içerir. Yöneticiler, Android cihazlardan Uç Nokta için Defender tarafından gönderilen verileri yapılandırmak için gizlilik denetimlerini de etkinleştirebilir. 
 
@@ -85,7 +85,7 @@ Sürüm Derlemesi: 1.0.3501.0301 Sürüm ayı: Kasım 2021 Uç Nokta için Micro
 **Bu durum kuruluşunuzu nasıl etkiler:** Bu değişiklikler, Android 11 veya sonraki sürümleri çalıştıran cihazlarda Uç Nokta için Microsoft Defender kullanıyorsanız ve Uç Nokta için Defender'ı 1.0.3501.0301 veya sonraki bir derlemeyi yayınlayacak şekilde güncelleştirdiyseniz geçerlilik kazanır.
 
 > [!NOTE]
-> Yeni depolama izinleri, yönetici tarafından Microsoft Endpoint Manager aracılığıyla 'Otomatik Onaylama' için yapılandırılamaz. Kullanıcının bu izne erişim sağlamak için işlem gerçekleştirmesi gerekir.
+> Yeni depolama izinleri, yönetici tarafından Microsoft Endpoint Manager aracılığıyla 'Otomatik Onayla' olarak yapılandırılamaz. Kullanıcının bu izne erişim sağlamak için işlem gerçekleştirmesi gerekir.
 
 - **Kullanıcı deneyimi:** Kullanıcılar, uygulama güvenliği için eksik izni belirten bir bildirim alır. Kullanıcı bu izni reddederse cihazda 'Uygulama güvenliği' işlevi kapatılır. Kullanıcı izni kabul etmez veya reddedmezse, onaylanana kadar cihazının kilidini açarken veya uygulamayı açarken istem almaya devam eder.
 

@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: da1e100386680e6ea870e78f89524408ba823ede
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: e725a6ee7f39593a5a8eeff7c6e5885552a59624
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68627356"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768533"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS'ta Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -41,7 +41,7 @@ iOS için Uç Nokta için Microsoft Defender üzerindeki uygulamaların güvenli
 
 ## <a name="network-protection"></a>Ağ koruması
 
-Uç Nokta için Microsoft Defender'da Ağ Koruması artık genel önizleme aşamasındadır. Ağ koruması, sahte Wi-Fi ilgili tehditlere, ananas cihazları gibi sahte donanımlara karşı koruma sağlar ve ilgili bir tehdit algılandığında kullanıcıya bildirir. Kullanıcılar güvenli olmayan bir bağlantıya bağlandıklarında güvenli ağlara bağlanmak ve ağları değiştirmek için kılavuzlu bir deneyim de görür.
+Uç Nokta için Microsoft Defender'de Ağ Koruması artık kullanılabilir. Ağ koruması, sahte Wi-Fi ilgili tehditlere, ananas cihazları gibi sahte donanımlara karşı koruma sağlar ve ilgili bir tehdit algılandığında kullanıcıya bildirir. Kullanıcılar güvenli olmayan bir bağlantıya bağlandıklarında güvenli ağlara bağlanmak ve ağları değiştirmek için kılavuzlu bir deneyim de görür.
 
 Özelliği Microsoft Endpoint Manager Yönetici merkezinden yapılandırma gibi esneklik sunmak için çeşitli yönetici denetimleri içerir. Yöneticiler, iOS cihazlarından Uç Nokta için Defender tarafından gönderilen verileri yapılandırmak için gizlilik denetimlerini de etkinleştirebilir. Daha fazla bilgi için [Bkz. Ağ Korumasını Yapılandırma](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-network-protection).
 
@@ -112,7 +112,7 @@ Uç Nokta için Microsoft Defender artık uygulama mağazasında **Microsoft Def
 ## <a name="1115140101"></a>1.1.15140101
 
 - **Jailbreak Algılama** önizleme aşamasındadır. Daha fazla bilgi için bkz. [Cihaz risk sinyallerine göre Koşullu Erişim İlkesi'ni ayarlama](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios).
-- **VPN profilinin otomatik kurulumu**, Microsoft Endpoint Manager (Intune) aracılığıyla kayıtlı cihazlar için önizleme aşamasındadır. Daha fazla bilgi için bkz. [Kayıtlı iOS cihazları için VPN profilini Otomatik Ayarlama](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding).
+- Microsoft Endpoint Manager (Intune) aracılığıyla kayıtlı cihazlar için **VPN profilinin otomatik kurulumu** önizleme aşamasındadır. Daha fazla bilgi için bkz. [Kayıtlı iOS cihazları için VPN profilini Otomatik Ayarlama](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding).
 - Microsoft Defender ATP ürün adı artık uygulama mağazasında Uç Nokta için Microsoft Defender olarak güncelleştirildi.
 - Geliştirilmiş oturum açma deneyimi.
 - Hata düzeltmeleri.

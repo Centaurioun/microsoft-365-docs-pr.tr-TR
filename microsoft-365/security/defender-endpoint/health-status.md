@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ce71017582e8f29846c44039a513a5e724577fc0
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 0d8fe040f8fb8bc28343ee758d0fd58ae307ecd9
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68633933"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768115"
 ---
 # <a name="investigate-agent-health-issues"></a>Sistem durumu sorunlarını araştırın
 
@@ -68,3 +68,23 @@ Aşağıdaki tabloda, komutu çalıştırdığınızda `mdatp health` döndürü
 |real_time_protection_subsystem|Gerçek zamanlı koruma sağlamak için kullanılan alt sistem. Gerçek zamanlı koruma beklendiği gibi çalışmıyorsa, bu yazdırma kullanılamaz.|
 |release_ring|Yayın halkası. Daha fazla bilgi için bkz [. Dağıtım halkaları](deployment-rings.md).|
 |
+
+## <a name="component-specific-health"></a>Bileşene özgü sistem durumu
+
+ile `mdatp health --details <feature>`farklı Defender özellikleri için daha ayrıntılı sistem durumu bilgileri alabilirsiniz. Örneğin:
+
+    ```bash
+    mdatp health --details edr
+    ```
+
+    ```
+    edr_early_preview_enabled                   : "disabled"
+    edr_device_tags                             : []
+    edr_group_ids                               : ""
+    edr_configuration_version                   : "20.199999.main.2022.10.25.03-514032a834557bdd31ac415be6df278d9c2a4c25"
+    edr_machine_id                              : "a47ba049f43319ac669b6291ce73275cd445c9cd"
+    edr_sense_guid                              : "298a1a8c-04dd-4929-8efd-3bb14cb54b94"
+    edr_preferred_geo                           : "unitedstates"
+    ```
+
+Desteklenen `feature`tüm sürümleri listelemek için son sürümlerde çalıştırabilirsiniz`mdatp health --help`.

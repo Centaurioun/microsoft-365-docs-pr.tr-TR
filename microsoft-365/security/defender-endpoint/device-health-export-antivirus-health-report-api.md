@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/01/2022
 manager: dansimp
@@ -19,13 +19,15 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 6742c4518cece4b9f8bb920a4411accf973cad93
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 76e200022f01836195d82d46f159d35701f77a29
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68643129"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770337"
 ---
+<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
+
 # <a name="export-device-antivirus-health-report"></a>Cihaz virüsten koruma sistem durumu raporunu dışarı aktarma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -87,9 +89,9 @@ Bu API, Microsoft Defender Virüsten Koruma cihazı virüsten koruma sistem duru
 
 #### <a name="odata-supported-operators"></a>OData tarafından desteklenen işleçler
 
-- ```$filter``` on: ```machineId```, ```computerDnsName```, ```osKind```, , ```osPlatform```, ```osVersion```, ```avMode```, , ```avSignatureVersion```, ```avEngineVersion```, ```avPlatformVersion```, ```quickScanResult```, ```quickScanError```, ```fullScanResult```, , ```fullScanError```, ```avIsSignatureUpToDate``````avIsEngineUpToDate```, ```avIsPlatformUpToDate``````rbacGroupId```
-- ```$top``` 10.000 maksimum değere sahip.
-- ```$skip```.
+- `$filter`on: `machineId`, `computerDnsName`, `osKind`, , `osPlatform`, `osVersion`, `avMode`, , `avSignatureVersion`, `avEngineVersion`, `avPlatformVersion`, `quickScanResult`, `quickScanError`, `fullScanResult`, , `fullScanError`, `avIsSignatureUpToDate``avIsEngineUpToDate`, `avIsPlatformUpToDate``rbacGroupId`
+- `$top` 10.000 maksimum değere sahip.
+- `$skip`
 
 ### <a name="12-permissions"></a>1.2 İzinler
 
@@ -103,14 +105,14 @@ Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin 
 ### <a name="13-url-http-request"></a>1.3 URL 'si (HTTP isteği)
 
 ```http
-URL: GET: /api/deviceavinfo
+URL: GET: /api/deviceavinfo
 ```
 
 #### <a name="131-request-headers"></a>1.3.1 İstek üst bilgileri
 
 | Name | Tür | Açıklama |
 |:---|:---|:---|
-| Yetkilendirme | Dize | Taşıyıcı {token}.Gerekli. |
+| Yetkilendirme | Dize | Taşıyıcı {token}. Gerekli. |
 
 #### <a name="132-request-body"></a>1.3.2 İstek gövdesi
 
@@ -123,13 +125,13 @@ Başarılı olursa, bu yöntem cihaz durumu ayrıntılarının listesiyle birlik
 ### <a name="14-parameters"></a>1.4 Parametreler
 
 - Varsayılan sayfa boyutu 20'dir
--  [Uç Nokta için Microsoft Defender ile OData sorgularında](exposed-apis-odata-samples.md) örneklere bakın.
+- [Uç Nokta için Microsoft Defender ile OData sorgularında örneklere](exposed-apis-odata-samples.md) bakın.
 
 ### <a name="15-properties"></a>1.5 Özellikleri
 
 Bkz. [1.2 Cihaz virüsten koruma sistem durumu ayrıntılarını dışarı aktarma API özellikleri (JSON yanıtı)](device-health-api-methods-properties.md#12-export-device-antivirus-health-details-api-properties-json-response)
 
- [OData V4 sorgularını](https://www.odata.org/documentation/) destekler.
+[OData V4 sorgularını](https://www.odata.org/documentation/) destekler.
 
 ### <a name="16-example"></a>1.6 Örnek
 
@@ -138,7 +140,7 @@ Bkz. [1.2 Cihaz virüsten koruma sistem durumu ayrıntılarını dışarı aktar
 Örnek bir istek aşağıda verilmişti:
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/deviceavinfo 
+GET https://api.securitycenter.microsoft.com/api/deviceavinfo
 ```
 
 #### <a name="response-example"></a>Yanıt örneği
@@ -146,73 +148,73 @@ GET https://api.securitycenter.microsoft.com/api/deviceavinfo
 Aşağıda örnek bir yanıt verilmişti:
 
 ```json
-{ 
+{
 
-    @odata.context: "https://api.securitycenter.microsoft.com/api/$metadata#DeviceAvInfo", 
+    @odata.context: "https://api.securitycenter.microsoft.com/api/$metadata#DeviceAvInfo",
 
-"value": [{ 
+"value": [{
 
-            "id": "Sample Guid", 
+            "id": "Sample Guid",
 
-            "machineId": "Sample Machine Guid", 
+            "machineId": "Sample Machine Guid",
 
-            "computerDnsName": "appblockstg1", 
+            "computerDnsName": "appblockstg1",
 
-            "osKind": "windows", 
+            "osKind": "windows",
 
-            "osPlatform": "Windows10", 
+            "osPlatform": "Windows10",
 
-            "osVersion": "10.0.19044.1865", 
+            "osVersion": "10.0.19044.1865",
 
-            "avMode": "0", 
+            "avMode": "0",
 
-            "avSignatureVersion": "1.371.1279.0", 
+            "avSignatureVersion": "1.371.1279.0",
 
-            "avEngineVersion": "1.1.19428.0", 
+            "avEngineVersion": "1.1.19428.0",
 
-            "avPlatformVersion": "4.18.2206.108", 
+            "avPlatformVersion": "4.18.2206.108",
 
-            "lastSeenTime": "2022-08-02T19:40:45Z", 
+            "lastSeenTime": "2022-08-02T19:40:45Z",
 
-            "quickScanResult": "Completed", 
+            "quickScanResult": "Completed",
 
-            "quickScanError": "", 
+            "quickScanError": "",
 
-            "quickScanTime": "2022-08-02T18:40:15.882Z", 
+            "quickScanTime": "2022-08-02T18:40:15.882Z",
 
-            "fullScanResult": "", 
+            "fullScanResult": "",
 
-            "fullScanError": "", 
+            "fullScanError": "",
 
-            "fullScanTime": null, 
+            "fullScanTime": null,
 
-            "dataRefreshTimestamp": "2022-08-02T21:16:23Z", 
+            "dataRefreshTimestamp": "2022-08-02T21:16:23Z",
 
-            "avEngineUpdateTime": "2022-08-02T00:03:39Z", 
+            "avEngineUpdateTime": "2022-08-02T00:03:39Z",
 
-            "avSignatureUpdateTime": "2022-08-02T00:03:39Z", 
+            "avSignatureUpdateTime": "2022-08-02T00:03:39Z",
 
-            "avPlatformUpdateTime": "2022-06-20T16:59:35Z", 
+            "avPlatformUpdateTime": "2022-06-20T16:59:35Z",
 
-            "avIsSignatureUpToDate": "True", 
+            "avIsSignatureUpToDate": "True",
 
-            "avIsEngineUpToDate": "True", 
+            "avIsEngineUpToDate": "True",
 
-            "avIsPlatformUpToDate": "True", 
+            "avIsPlatformUpToDate": "True",
 
-            "avSignaturePublishTime": "2022-08-02T00:03:39Z", 
+            "avSignaturePublishTime": "2022-08-02T00:03:39Z",
 
-            "rbacGroupName": "TVM1", 
+            "rbacGroupName": "TVM1",
 
-            "rbacGroupId": 4415 
+            "rbacGroupId": 4415
 
-        }, 
+        },
 
-        ... 
+        ...
 
-     ] 
+     ]
 
-} 
+}
 ```
 
 ## <a name="2-export-health-reporting-via-files"></a>2 Sistem durumu raporlamayı dışarı aktarma (dosyalar aracılığıyla)
@@ -241,7 +243,7 @@ Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir.
 
 | İzin türü | Izni | İzin görünen adı |
 |:---|:---|:---|
-| Uygulama | Vulnerability.Read.All | '"Tehdit ve Güvenlik Açığı Yönetimi" güvenlik açığı bilgilerini okuyun'  |
+| Uygulama | Vulnerability.Read.All | '"Tehdit ve Güvenlik Açığı Yönetimi" güvenlik açığı bilgilerini okuyun' |
 | Temsilci (iş veya okul hesabı) | Vulnerability.Read | '"Tehdit ve Güvenlik Açığı Yönetimi" güvenlik açığı bilgilerini okuyun' |
 
 İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek [için ayrıntılar için bkz. Uç Nokta için Microsoft Defender API'lerini kullanma](apis-intro.md).
@@ -249,12 +251,12 @@ Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir.
 ### <a name="23-url"></a>2.3 URL
 
 ```http
-GET /api/machines/InfoGatheringExport 
+GET /api/machines/InfoGatheringExport
 ```
 
 ### <a name="24-parameters"></a>2.4 Parametreler
 
-- ```sasValidHours```: İndirme URL'lerinin geçerli olacağı saat sayısı (En fazla 24 saat).
+- `sasValidHours`: İndirme URL'lerinin geçerli olacağı saat sayısı (En fazla 24 saat).
 
 ### <a name="25-properties"></a>2.5 Özellikleri
 
@@ -267,10 +269,10 @@ Bkz. [1.3 Dosyalar aracılığıyla\) cihaz virüsten koruma sistem durumu ayrı
 Örnek bir istek aşağıda verilmişti:
 
 ```HTTP
-GET https://api-us.securitycenter.contoso.com/api/machines/InfoGatheringExport 
+GET https://api-us.securitycenter.contoso.com/api/machines/InfoGatheringExport
 ```
 
-#### <a name="262-response-example"></a>2.6.2 Yanıt örneği  
+#### <a name="262-response-example"></a>2.6.2 Yanıt örneği
 
 Aşağıda örnek bir yanıt verilmişti:
 
@@ -281,7 +283,7 @@ Aşağıda örnek bir yanıt verilmişti:
 
    "exportFiles": [
 
-       "https://tvmexportexternalprdeus.blob.core.windows.net/temp-../2022-08-02/2201/InfoGatheringExport/json/OrgId=../_RbacGroupId=../part-00055-12fc2fcd-8f56-4e09-934f-e8efe7ce74a0.c000.json.gz?sv=2020-08-04&st=2022-08-02T22%3A47%3A11Z&se=2022-08-03T01%3A47%3A11Z&sr=b&sp=r&sig=..",               
+       "https://tvmexportexternalprdeus.blob.core.windows.net/temp-../2022-08-02/2201/InfoGatheringExport/json/OrgId=../_RbacGroupId=../part-00055-12fc2fcd-8f56-4e09-934f-e8efe7ce74a0.c000.json.gz?sv=2020-08-04&st=2022-08-02T22%3A47%3A11Z&se=2022-08-03T01%3A47%3A11Z&sr=b&sp=r&sig=..",
 
        "https://tvmexportexternalprdeus.blob.core.windows.net/temp-../2022-08-02/2201/InfoGatheringExport/json/OrgId=../_RbacGroupId=../part-00055-12fc2fcd-8f56-4e09-934f-e8efe7ce74a0.c000.json.gz?sv=2020-08-04&st=2022-08-02T22%3A47%3A11Z&se=2022-08-03T01%3A47%3A11Z&sr=b&sp=r&sig=.."
 

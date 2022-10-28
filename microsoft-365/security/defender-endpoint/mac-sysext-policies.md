@@ -1,7 +1,7 @@
 ---
 title: macOS Catalina için yeni yapılandırma profilleri ve macOS'un daha yeni sürümleri
 description: Bu konuda, macOS Catalina'daki çekirdek uzantılarının ve macOS'un daha yeni sürümlerinin yerini alan sistem uzantılarından yararlanmak için yapılması gereken değişiklikler açıklanmaktadır.
-keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, çekirdek, sistem, uzantılar, catalina
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, çekirdek, sistem, uzantılar, catalina, big sur, monterey, ventura, mac için mde
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.subservice: mde
-ms.openlocfilehash: 8c3f944c9297e9ba922e2dbdb5f55750bdc0e6a5
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 3ecd935bfbbd6f37d6803409e7ee8336ca25381f
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68223166"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770073"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>macOS Catalina için yeni yapılandırma profilleri ve macOS'un daha yeni sürümleri
 
@@ -36,8 +36,6 @@ ms.locfileid: "68223166"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
-macOS evrimiyle uyumlu olarak, macOS güncelleştirmesinde çekirdek uzantıları yerine sistem uzantılarından yararlanan bir Uç Nokta için Microsoft Defender hazırlıyoruz. Bu güncelleştirme yalnızca macOS Catalina (10.15.4) ve macOS'un daha yeni sürümleri için geçerli olacaktır.
 
 macOS'ta yönetilen bir ortamda (JAMF, Intune veya başka bir MDM çözümü aracılığıyla) Uç Nokta için Microsoft Defender dağıttıysanız, yeni yapılandırma profilleri dağıtmanız gerekir. Bu adımların yapılmaması, kullanıcıların bu yeni bileşenleri çalıştırmak için onay istemleri almasına neden olur.
 

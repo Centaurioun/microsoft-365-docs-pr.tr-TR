@@ -19,17 +19,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c1463866c97e5618caa4bab0cc45328d1849fc01
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: eb413a08d0239f86205ebb7c0e5038a9888dcc89
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68730897"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769567"
 ---
 # <a name="plan-for-communication-compliance"></a>İletişim uyumluluğu planı
 
->[!IMPORTANT]
->Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamaya yardımcı olur.
+> [!IMPORTANT]
+> Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamaya yardımcı olur.
 
 Kuruluşunuzda [iletişim uyumluluğunu](/microsoft-365/compliance/communication-compliance) kullanmaya başlamadan önce, bilgi teknolojisi ve uyumluluk yönetimi ekipleriniz tarafından gözden geçirilmesi gereken önemli planlama etkinlikleri ve dikkat edilmesi gereken noktalar vardır. Aşağıdaki alanlarda dağıtımı ayrıntılı bir şekilde anlamak ve planlamak, iletişim uyumluluk özelliklerini uygulama ve kullanımınızın sorunsuz bir şekilde ilerlemesini ve çözüm için en iyi yöntemlerle uyumlu olmasını sağlamaya yardımcı olur.
 

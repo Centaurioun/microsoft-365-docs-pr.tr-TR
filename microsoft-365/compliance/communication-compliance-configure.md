@@ -24,17 +24,17 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 650447ae4e910fa0b9ebf22d22859a8fd0bf520d
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: c837bee4ccbab7f146c553b97a8d44bff8ae2949
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68728829"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769985"
 ---
 # <a name="get-started-with-communication-compliance"></a>İletişim uyumluluğunu kullanmaya başlama
 
->[!IMPORTANT]
->Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamaya yardımcı olur.
+> [!IMPORTANT]
+> Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamaya yardımcı olur.
 
 İç veya dış gözden geçirenler tarafından analiz için kullanıcı iletişimlerini tanımlamak için iletişim uyumluluk ilkelerini kullanın. İletişim uyumluluk ilkelerinin kuruluşunuzdaki iletişimleri algılamanıza nasıl yardımcı olabileceği hakkında daha fazla bilgi için bkz. [iletişim uyumluluk ilkeleri](/microsoft-365/compliance/communication-compliance-policies). Contoso'nun Microsoft Teams, Exchange Online ve Yammer iletişimlerindeki uygunsuz olabilecek içerikleri algılamak için iletişim uyumluluk ilkesini nasıl hızlı bir şekilde yapılandırmış olduğunu gözden geçirmek isterseniz bu [örnek olay incelemesine](/microsoft-365/compliance/communication-compliance-case-study) göz atın.
 
@@ -237,11 +237,11 @@ Yammer'ı Yerel Modda yapılandırma hakkında daha fazla bilgi için bkz:
 
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>5. Adım (gerekli): İletişim uyumluluk ilkesi oluşturma
 
->[!IMPORTANT]
->İletişim uyumluluk ilkeleri oluşturmak ve yönetmek için PowerShell kullanılması desteklenmez. Bu ilkeleri oluşturmak ve yönetmek için [, iletişim uyumluluk çözümünde](https://compliance.microsoft.com/supervisoryreview) ilke yönetimi denetimlerini kullanmanız gerekir.
+> [!IMPORTANT]
+> İletişim uyumluluk ilkeleri oluşturmak ve yönetmek için PowerShell kullanılması desteklenmez. Bu ilkeleri oluşturmak ve yönetmek için [, iletişim uyumluluk çözümünde](https://compliance.microsoft.com/supervisoryreview) ilke yönetimi denetimlerini kullanmanız gerekir.
 
->[!TIP]  
->Yeni bir iletişim uyumluluk ilkesi ayarlama ve uyarıyı düzeltme konusunda ayrıntılı bir izlenecek yol görmek ister misiniz? İletişim uyumluluk ilkelerinin uygunsuz olabilecek iletileri algılamanıza, olası ihlalleri araştırmanıza ve uyumluluk sorunlarını düzeltmenize nasıl yardımcı olabileceğini gösteren bir tanıtım görmek için [bu 15 dakikalık videoya](/microsoft-365/compliance/communication-compliance-plan#creating-a-communication-compliance-policy-walkthrough) göz atın.
+> [!TIP]
+> Yeni bir iletişim uyumluluk ilkesi ayarlama ve uyarıyı düzeltme konusunda ayrıntılı bir izlenecek yol görmek ister misiniz? İletişim uyumluluk ilkelerinin uygunsuz olabilecek iletileri algılamanıza, olası ihlalleri araştırmanıza ve uyumluluk sorunlarını düzeltmenize nasıl yardımcı olabileceğini gösteren bir tanıtım görmek için [bu 15 dakikalık videoya](/microsoft-365/compliance/communication-compliance-plan#creating-a-communication-compliance-policy-walkthrough) göz atın.
 
 1. Microsoft 365 kuruluşunuzdaki bir yönetici hesabının kimlik bilgilerini kullanarak [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) oturum açın.
 

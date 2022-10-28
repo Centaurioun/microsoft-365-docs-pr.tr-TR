@@ -18,12 +18,12 @@ ms.collection:
 - purview-compliance
 - data-connectors
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 193b45e50d76f6647d871fd84bda70f9be2b324c
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 53d4ef19554f5916e603610158197daa6e946593
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68537302"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770293"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>İk verilerini içeri aktarmak için bağlayıcı ayarlama
 
@@ -69,11 +69,11 @@ Insider risk yönetimi ilkelerinin risk göstergeleri oluşturmak için kullanab
 | Ayrılan kullanıcılar tarafından veri hırsızlığı | Çalışan istifaları|
 | Genel veri sızıntıları                             | Geçerli değil|
 | Öncelikli kullanıcılara göre veri sızıntıları                   | Geçerli değil |
-| Bozuk kullanıcılar tarafından veri sızıntıları                | İş düzeyi değişiklikleri, Performans incelemeleri, Performans geliştirme planları|
+| Riskli kullanıcılar tarafından veri sızıntıları                | İş düzeyi değişiklikleri, Performans incelemeleri, Performans geliştirme planları|
 | Genel güvenlik ilkesi ihlalleri             | Geçerli değil |
 | Ayrılan kullanıcıların güvenlik ilkesi ihlalleri  | Çalışan istifaları|
 | Öncelikli kullanıcılara göre güvenlik ilkesi ihlalleri   | Geçerli değil|
-| Dağıtılmamış kullanıcıların güvenlik ilkesi ihlalleri| İş düzeyi değişiklikleri, Performans incelemeleri, Performans geliştirme planları |
+| Riskli kullanıcıların güvenlik ilkesi ihlalleri| İş düzeyi değişiklikleri, Performans incelemeleri, Performans geliştirme planları |
 | E-postada rahatsız edici dil                    | Geçerli değil |
 | Sağlık politikası| Çalışan profili |
 |||

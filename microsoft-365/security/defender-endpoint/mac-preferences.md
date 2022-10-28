@@ -1,7 +1,7 @@
 ---
 title: Mac'te Uç Nokta için Microsoft Defender tercihlerini ayarlama
 description: Kurumsal kuruluşlarda Mac'te Uç Nokta için Microsoft Defender yapılandırın.
-keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, management, tercihler, enterprise, intune, jamf, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, management, preferences, enterprise, intune, jamf, macos, catalina, big sur, monterey, ventura, mac için mde
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 972240c3683b469587d82ec5f729b35d79a40c0c
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: cc9b76c30bbf44fb19308790bb61a30145c8774b
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68573462"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68767852"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın
 

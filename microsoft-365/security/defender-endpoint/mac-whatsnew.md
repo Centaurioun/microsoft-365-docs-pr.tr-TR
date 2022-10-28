@@ -1,7 +1,7 @@
 ---
 title: Mac'te Uç Nokta için Microsoft Defender'deki yenilikler
 description: Mac'te önceki Uç Nokta için Microsoft Defender sürümlerindeki önemli değişiklikler hakkında bilgi edinin.
-keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, macos, whatsnew
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, macos, whatsnew, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: f777106544a361fd9a288268be049685f4fad285
-ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
+ms.openlocfilehash: 229e118612f195ea3fb8d0c7fd5e89ca7cf926e5
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68684727"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770425"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac'te Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -53,6 +53,9 @@ Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkınd
 <br/>
 </details>
 
+> [!IMPORTANT]
+> Bu, macOS Ventura için en az önerilen MDE sürümüdür.
+
 <details>
   <summary>Ekim 2022 (Derleme: 101.82.21 | Sürüm: 20.122082.18221.0)</summary>
 
@@ -71,9 +74,6 @@ Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkınd
 
 <br/>
 </details>
-
-> [!IMPORTANT]
-> Bu, sürüm notlarının yayımlandığı gün macOS Ventura'da bilinen sorunlar olmadan en düşük MDE sürümüdür. Apple, artık ve macOS Ventura GA arasında MDE deneyimini etkileyen platform değişiklikleriyle Ventura Beta'ları yayınlamaya devam edebilir. Önerilen son Ventura uyumlu MDE sürüm numarası için Ventura GA tarihi ile ilgili bu sürüm notlarını ziyaret edin.
 
 <details>
   <summary>Ağustos 2022 (Derleme: 101.78.13 | Sürüm: 20.122072.17813.0)</summary>

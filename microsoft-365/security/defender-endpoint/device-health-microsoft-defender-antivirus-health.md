@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 ms.reviewer: mkaminska
-ms.openlocfilehash: a5641725f9f259064c7d380da470353395335363
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 9e8e54f6d788a8a4c35da2f318f55c0f7921ce67
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68635564"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68770359"
 ---
 # <a name="device-health-microsoft-defender-antivirus-health-report"></a>Cihaz durumu, Microsoft Defender Virüsten Koruma sistem durumu raporu
 
@@ -76,8 +76,7 @@ Bu izinleri atamak için:
 
 Kullanıcı rolü yönetimi hakkında daha fazla bilgi için bkz. [Rol tabanlı erişim denetimi için rol oluşturma ve yönetme](user-roles.md).
 
-## <a name="microsoft-defender-antivirus-health-tab"></a>Microsoft Defender Virüsten Koruma sistem durumu sekmesi  
-
+## <a name="microsoft-defender-antivirus-health-tab"></a>Microsoft Defender Virüsten Koruma sistem durumu sekmesi 
 Microsoft Defender Virüsten Koruma sistem durumu sekmesi, kuruluşunuzdaki Microsoft Defender Virüsten Koruma'nın çeşitli yönlerini bildiren sekiz kart içerir:
 
 İki kart, [Virüsten koruma modu kartı](#antivirus-mode-card) ve [En son virüsten koruma tarama sonuçları kartı](#recent-antivirus-scan-results-card), Microsoft Defender Virüsten Koruma işlevleri hakkında rapor sağlar.
@@ -132,9 +131,9 @@ Aşağıdaki tabloda Virüsten Koruma raporlama Microsoft Defender yeni olan ter
 
 | Sütun adı | Açıklama |
 |:---|:---|
-| Güvenlik bilgileri yayımlama süresi  | Microsoft'un cihazdaki güvenlik bilgileri güncelleştirme sürümünün yayın tarihini gösterir. Güvenlik bilgileri yayımlama süresi yedi günden uzun olan cihazlar raporlarda güncel değil olarak kabul edilir. |
+| Güvenlik bilgileri yayımlama süresi | Microsoft'un cihazdaki güvenlik bilgileri güncelleştirme sürümünün yayın tarihini gösterir. Güvenlik bilgileri yayımlama süresi yedi günden uzun olan cihazlar raporlarda güncel değil olarak kabul edilir. |
 | Son görülme | Cihazın en son ne zaman bağlantı olduğunu gösterir. |
-| Veri yenileme zaman damgası  | İstemci olaylarının raporlama için en son ne zaman alındığını gösterir: AV modu, AV altyapısı sürümü, AV platformu sürümü, AV güvenlik zekası sürümü ve tarama bilgileri. |
+| Veri yenileme zaman damgası | İstemci olaylarının raporlama için en son ne zaman alındığını gösterir: AV modu, AV altyapısı sürümü, AV platformu sürümü, AV güvenlik zekası sürümü ve tarama bilgileri. |
 | İmza yenileme zamanı | Altyapı, platform ve imza durumuyla ilgili raporlama için istemci olaylarının en son ne zaman alındığını gösterir. |
 
 Açılır listede: Cihazın adına tıkladığınızda, ayrıntılı raporlara erişebileceğiniz bu cihazın "Cihaz sayfası"na yönlendirilirsiniz.
@@ -240,13 +239,13 @@ Geçerli sürümler ve farklı Microsoft Defender Virüsten Koruma bileşenlerin
 
 #### <a name="up-to-date-cards"></a>Güncel kartlar
 
-Güncel kartlar  **Virüsten Koruma altyapısı, Virüsten Koruma**  **platformu** ve **Güvenlik bilgileri** güncelleştirme sürümleri için güncel durumu gösterir. Üç olası durum vardır:  _Güncel_ ('Doğru'), _güncel değil_ ('Yanlış') ve _kullanılabilir veri yok_ ('Bilinmiyor').
+Güncel kartlar **Virüsten Koruma altyapısı**, **Virüsten Koruma platformu** ve **Güvenlik bilgileri** güncelleştirme sürümleri için güncel durumu gösterir. Üç olası durum vardır: _Güncel_ ('True'), _güncel değil_ ('Yanlış') ve _kullanılabilir veri yok_ ('Bilinmiyor').
 
 > [!IMPORTANT]
 >
 > Güncel belirlemeyi yapmak için kullanılan mantık yakın zamanda geliştirilmiş ve basitleştirilmiştir. Yeni davranış bu bölümde belgelenmiştir.
 
-Aşağıdaki her kart için  _Güncel_, _güncel_ olmayan ve _kullanılabilir veri yok_ tanımları sağlanmıştır.
+Aşağıdaki her kart için _Güncel_, _güncel_ olmayan ve _kullanılabilir veri yok_ tanımları sağlanmıştır.
 
 Microsoft Defender Virüsten Koruma, altyapı, platform ve güvenlik bilgileri güncelleştirmeleri için güncel raporlar ve belirlemeler yapmak için "İmza yenileme süresi" (cihazın en son güncel raporlarla iletişim kurması) ölçütlerini kullanır.
 
@@ -303,13 +302,13 @@ Aşağıdaki tabloda **Virüsten Koruma Altyapısı** için güncel raporlar iç
 | < 7 gün (yeni) | hangi istemcinin rapor verdiği (_Güncel <br/> Olmayan <br/> Bilinmeyen)_ |
 | > 7 gün (eski) | _Unknown_ |
 
-Microsoft Defender Virüsten Koruma güncelleştirme sürümlerini yönetme hakkında bilgi için bkz.  [Aylık platform ve altyapı sürümleri](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+Microsoft Defender Virüsten Koruma güncelleştirme sürümlerini yönetme hakkında bilgi için bkz. [Aylık platform ve altyapı sürümleri](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
 #### <a name="antivirus-platform-updates-card"></a>Virüsten koruma platformu güncelleştirme kartı
 
 Bu kart, Virüsten Koruma platformu sürümlerinin güncel ve güncel olmayan cihazları tanımlar.
 
-**'Güncel' genel tanımı** Cihazdaki platform sürümü en son platform sürümüdür. Platform _genellikle_ Windows Update (WU) aracılığıyla aylık olarak yayınlanır. WU'nun serbest bırakıldığından itibaren üç günlük yetkisiz kullanım süresi vardır.
+**'Güncel' genel tanımı** Cihazdaki platform sürümü en son platform sürümüdür. Platform _genellikle_ Windows Update (WU) aracılığıyla aylık olarak yayınlanır. WU'nun serbest bırakıldığından itibaren üç günlük yetkisiz kullanım süresi vardır.
 
 Aşağıdaki tabloda **Virüsten Koruma Platformu** için olası güncel rapor değerleri yer almaktadır. Bildirilen değerler, raporlama olayının son alındığı zamanı (imza yenileme zamanı) temel alır. Cihaz raporlarla yedi günden fazla iletişim kurmadıysa (imza yenileme süresi >7 gün) otomatik olarak "Bilinmiyor"/ "Kullanılabilir Veri Yok" olarak işaretlenir.
 
@@ -332,7 +331,7 @@ Aşağıdaki tabloda **Güvenlik Bilgileri** güncelleştirmeleri için olası g
 |:----|:----|:----|
 | >7 gün (eski) | >7 gün (eski) | _Unknown_ |
 | <7 gün (yeni) | >7 gün (eski) | _Güncel değil_ |
-| >7 gün (eski) | <7 gün (yeni) |  _Unknown_ |
+| >7 gün (eski) | <7 gün (yeni) | _Unknown_ |
 | <7 gün (yeni) | <7 gün (yeni) | Modern |
 
 ## <a name="see-also"></a>Ayrıca bkz.

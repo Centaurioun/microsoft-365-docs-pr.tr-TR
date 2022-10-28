@@ -1,7 +1,7 @@
 ---
 title: Mac'te Uç Nokta için Microsoft Defender yükleme sorunlarını giderme
 description: Mac'te Uç Nokta için Microsoft Defender yükleme sorunlarını giderme.
-keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, install
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, install, catalina, big sur, monterey, ventura, mac için mde
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 9e507e4625804da819845466cd7d16ab94996369
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 1ac3f82c713673a236816a5279e0e5cb772cfbff
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68226613"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769158"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender yükleme sorunlarını giderme
 

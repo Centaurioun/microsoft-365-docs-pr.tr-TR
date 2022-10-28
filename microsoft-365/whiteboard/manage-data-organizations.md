@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Azure ve OneDrive İş'de Microsoft Whiteboard için veri saklama hakkında bilgi edinin.
-ms.openlocfilehash: 136506afcec7fe067a270e0577678b5b6a9ec9ff
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: f450c8a715f6dc865c4bcdb889e98288ad9d1561
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68662851"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769898"
 ---
 # <a name="manage-data-for-microsoft-whiteboard"></a>Microsoft Whiteboard için verileri yönetme
 
@@ -27,7 +27,7 @@ Verileri yönetmek için önce Whiteboard'un kuruluşunuz için etkinleştirildi
 
 ## <a name="azure-storage-overview"></a>Azure depolamaya genel bakış
 
->[!NOTE]
+> [!NOTE]
 > Aşağıdaki bilgiler Azure'da depolanan beyaz tahtalar için geçerlidir.
 
 Whiteboard şu anda içeriği Azure'da güvenli bir şekilde depolar. Veriler ülkeye ve Whiteboard'un bu konumlarda yeni içerik depolamaya geçişine bağlı olarak farklı konumlarda depolanabilir. Yeni verilerin nerede oluşturulduğunu denetlemek için bkz. [Microsoft 365 müşteri verilerinizin depolandığı yer](/microsoft-365/enterprise/o365-data-locations).
@@ -38,7 +38,7 @@ Azure'daki içerik Veri Kaybı Önleme (DLP), eBulma, bekletme ilkeleri ve benze
 
 Kullanıcının hesabı Azure'da silindiğinde beyaz tahtaların depolanma şeklini değiştiriyoruz. Değişiklik öncesinde, silinen bir kullanıcının hesabına ait olan tüm beyaz tahtalar da silinmişti. Ancak başkalarıyla paylaşılan beyaz tahtalar silinmez.
 
->[!NOTE]
+> [!NOTE]
 > OneDrive İş'de depolanan beyaz tahtalar, OneDrive İş'daki diğer tüm içeriklerde olduğu gibi işlenir. Daha fazla bilgi için bkz. [Silinen kullanıcılar için OneDrive bekletmesini ayarlama](/onedrive/set-retention).
 
 **1 Haziran 2022** itibarıyla Azure'da beyaz tahtaların davranışı değişti. Diğer kullanıcılarla paylaşılan tüm beyaz tahtalar silinir.

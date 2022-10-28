@@ -20,17 +20,17 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3f726431e7dea7cceeab67cc977b208690f7f9ea
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: e2f59515613afb189a323ed251cd6e3f94867485
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68734907"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68769457"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>İletişim uyumluluğu uyarılarını araştırma ve çözümleme
 
->[!IMPORTANT]
->Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamaya yardımcı olur.
+> [!IMPORTANT]
+> Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamaya yardımcı olur.
 
 [İletişim uyumluluk ilkelerinizi](/microsoft-365/compliance/communication-compliance-policies) yapılandırdıktan sonra, [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) ilke koşullarınızla eşleşen ileti sorunları için uyarılar almaya başlarsınız. Uyarıları görüntülemek ve üzerinde işlem yapmak için kullanıcıların aşağıdaki izinlere atanması gerekir:
 

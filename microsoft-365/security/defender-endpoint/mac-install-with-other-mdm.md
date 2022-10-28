@@ -1,7 +1,7 @@
 ---
 title: Mac'te Uç Nokta için Microsoft Defender için farklı bir Mobil Cihaz Yönetimi (MDM) sistemiyle dağıtım
 description: Mac'e diğer yönetim çözümlerine Uç Nokta için Microsoft Defender yükleyin.
-keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, deploy, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, deploy, macos, catalina, big sur, monterey, ventura, mde veya mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 6c72612efcba81b57a55566816c164f001357943
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 93e22b11bba51b1b1ac33306c0a01c375ed09d27
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68227228"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68768093"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender için farklı bir Mobil Cihaz Yönetimi (MDM) sistemiyle dağıtım
 

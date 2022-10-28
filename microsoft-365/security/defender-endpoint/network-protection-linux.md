@@ -20,12 +20,12 @@ ms.collection:
 - tier2
 ms.date: ''
 search.appverid: met150
-ms.openlocfilehash: 82573c583ffd8dcb9ea94ed7cf6aab3de56f0eab
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 50a541c6a2252fac14137dff4c4d82ba190b204e
+ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68730721"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68767876"
 ---
 <!--v-jweston/jweston-1 is to resume authorship appx. April/May 2023.-->
 
@@ -52,7 +52,7 @@ Ağ koruması, cihazlarınızın saldırı yüzeyini İnternet tabanlı olaylard
 - Patla -tır
 - İnternet'te diğer kötü amaçlı içerikler
 
-Ağ koruması, Microsoft Defender [SmartScreen'in](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) kapsamını genişleterek düşük saygınlık kaynaklarına bağlanmaya çalışan tüm giden HTTP trafiğini engeller. Giden HTTP trafiğindeki bloklar etki alanına veya konak adına bağlıdır.
+Ağ koruması, düşük saygınlık kaynaklarına bağlanmaya çalışan tüm giden HTTP trafiğini engellemek için [smartscreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) Microsoft Defender kapsamını genişletir. Giden HTTP trafiğindeki bloklar etki alanına veya konak adına bağlıdır.
 
 ## <a name="web-content-filtering-for-linux"></a>Linux için web içeriği filtreleme
 
@@ -81,13 +81,13 @@ Linux'ı el ile dağıtma, bkz[. Linux'ta Uç Nokta için Microsoft Defender el 
 Aşağıdaki örnekte insider-Slow kanalı için ubuntu 20.04 üzerindeki mdatp paketine gereken komut dizisi gösterilmektedir.
 
 ```bash
-curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/20.04/insiders-slow.list 
-sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-insiders-slow.list 
-sudo apt-get install gpg 
-curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add - 
-sudo apt-get install apt-transport-https 
-sudo apt-get update 
-sudo apt install -y mdatp 
+curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/20.04/insiders-slow.list
+sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-insiders-slow.list
+sudo apt-get install gpg
+curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+sudo apt-get install apt-transport-https
+sudo apt-get update
+sudo apt install -y mdatp
 ```
 
 ### <a name="device-onboarding"></a>Cihaz Ekleme
@@ -95,17 +95,18 @@ sudo apt install -y mdatp
 Cihazı eklemek için Linux sunucusu için Python ekleme paketini Microsoft 365 Defender -> Ayarlar -> Cihaz Yönetimi -> Ekleme'den indirmeniz ve çalıştırmanız gerekir:
 
 ```bash
-sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py 
+sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
 ```
 
 ### <a name="manually-enable-network-protection"></a>Ağ korumasını el ile etkinleştirme
 
-1. "networkProtection" özelliğini açın, "/etc/opt/microsoft/mdatp/wdavcfg" öğesini düzenleyin ve **networkProtection** ayarını **etkin** olarak ayarlayın.  
+1. "networkProtection" özelliğini açın, "/etc/opt/microsoft/mdatp/wdavcfg" öğesini düzenleyin ve **networkProtection** ayarını **etkin** olarak ayarlayın.
 2. Aşağıdaki komutu çalıştırarak mdatp hizmetini yeniden başlatın:
 
 ```bash
-sudo systemctl restart mdatp 
+sudo systemctl restart mdatp
 ```
+
 > :::image type="content" source="images/network-protection-linux-mdatp-restart.png" alt-text="Linux mdatp yeniden başlatmayı gösterir." lightbox="images/network-protection-linux-mdatp-restart.png":::
 
 ### <a name="configure-the-enforcement-level"></a>Zorlama düzeyini yapılandırma
@@ -142,8 +143,8 @@ C. Ağ Koruması'nın her zaman engellenen siteler üzerinde etkisi olup olmadı
 B. Tanılama günlüklerini inceleme
 
 ```bash
-$ sudo mdatp log level set --level debug 
-$ sudo tail -f /var/log/microsoft/mdatp/microsoft_defender_np_ext.log 
+$ sudo mdatp log level set --level debug
+$ sudo tail -f /var/log/microsoft/mdatp/microsoft_defender_np_ext.log
 ```
 
 #### <a name="to-exit-the-validation-mode"></a>Doğrulama modundan çıkmak için
@@ -160,7 +161,7 @@ Varsayılan olarak, Linux ağ koruması varsayılan ağ geçidinde etkindir; yö
 Ağ arabirimlerini özelleştirmek için **networkSetupMode** parametresini **/opt/microsoft/mdatp/conf/**  yapılandırma dosyasından değiştirin ve hizmeti yeniden başlatın:
 
 ```bash
-sudo systemctl restart  mdatp 
+sudo systemctl restart  mdatp
 ```
 
 Yapılandırma dosyası, kullanıcının şunları özelleştirmesine de olanak tanır:
@@ -175,7 +176,7 @@ Varsayılan değerler[, Linux üzerinde Uç Nokta için Microsoft Defender](micr
 
 ### <a name="microsoft-defender-portal"></a>Microsoft Defender portalı
 
-Ayrıca **, Microsoft Defender** >  **Settings Endpoints** >  > **Gelişmiş özelliklerinde** **'Özel ağ göstergeleri'** iki durumlu düğmesinin _etkinleştirildiğinden_ emin olun.
+Ayrıca **, Microsoft Defender** \> **Ayarlar** \> **Uç Noktaları** \> **Gelişmiş özellikler** bölümünde **"Özel ağ göstergeleri"** iki durumlu düğmesinin _etkinleştirildiğinden_ emin olun.
 
 > [!IMPORTANT]
 > Yukarıdaki **'Özel ağ göstergeleri'** iki durumlu düğmesi, Windows dahil olmak üzere Ağ Koruması desteğine sahip TÜM **platformlar için Özel Göstergeler** etkinleştirmesini **denetler. Göstergelerin zorunlu kılınması için Windows'ta Ağ Koruması'nın da açıkça etkinleştirilmiş olması gerektiğini anımsatıcı.
@@ -188,13 +189,15 @@ Ayrıca **, Microsoft Defender** >  **Settings Endpoints** >  > **Gelişmiş öz
    - Web tehdit koruması, Uç Nokta için Microsoft Defender'da web korumasının bir parçasıdır. Cihazlarınızın web tehditlerine karşı güvenliğini sağlamak için ağ koruması kullanır.
 2. [Özel Gösterge türündeki blokları almak için Özel Risk Göstergeleri](indicator-ip-domain.md) akışında ilerleyin.
 3. [Web içeriği filtrelemeyi keşfedin](web-content-filtering.md).
+
    > [!NOTE]
    > Bir ilkeyi kaldırıyorsanız veya cihaz gruplarını aynı anda değiştiriyorsanız, bu durum ilke dağıtımında gecikmeye neden olabilir.
    > Profesyonel ipucu: Bir cihaz grubunda herhangi bir kategori seçmeden bir ilke dağıtabilirsiniz. Bu eylem, engelleme ilkesi oluşturmadan önce kullanıcı davranışını anlamanıza yardımcı olmak için yalnızca denetim ilkesi oluşturur.
    >
-   > Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.  
+   > Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.
  
 4. [Uç Nokta için Microsoft Defender Cloud Apps için Defender ile tümleştirin](/defender-cloud-apps/mde-integration) ve ağ koruması etkinleştirilmiş macOS cihazlarınız uç nokta ilkesi zorlama özelliklerine sahip olur.
+
    > [!NOTE]
    > Bulma ve diğer özellikler şu anda bu platformlarda desteklenmiyor.
 
