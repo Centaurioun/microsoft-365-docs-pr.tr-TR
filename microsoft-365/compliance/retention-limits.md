@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Microsoft 365 bekletme ilkeleri ve bekletme etiketi ilkeleri için ilke başına en fazla ilke ve öğe sayısını anlama
-ms.openlocfilehash: ca63433629740846824e22abead7e816f47fa6fd
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 582288cf8af1a942134bf7b0ec9daee4c907f6f5
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/28/2022
-ms.locfileid: "68770055"
+ms.locfileid: "68776975"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Bekletme ilkeleri ve bekletme etiketi ilkeleri için sınırlar
 
@@ -45,7 +45,7 @@ Tek bir kiracı en fazla 10.000 ilkeye (herhangi bir yapılandırma) sahip olabi
 - Bulut ekleri için olmadığı sürece SharePoint ve OneDrive için otomatik etiketleme ilkeleri.
 - SharePoint ve OneDrive için yayımlanan ve yalnızca saklama yerine yalnızca silme veya saklama ve silme ilkeleri.
 - [Mesajlaşma kayıtları yönetiminden (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) exchange bekletme ilkeleri.
-- Dava tutmaları
+- Dava tutmaları.
 
 Bu 10.000 ilke sınırı içinde, iş yükü başına saklama için maksimum ilke sayısıyla ilgili bazı sınırlar da vardır:
 

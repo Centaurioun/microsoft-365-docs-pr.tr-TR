@@ -1,5 +1,5 @@
 ---
-title: PowerShell kullanarak Vardiyaları Mavi Yonder'a bağlama Workforce Management
+title: Vardiyaları UKG Boyutlarına bağlamak için PowerShell kullanma
 author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: ''
@@ -8,46 +8,47 @@ ms.topic: article
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: Shift'leri Blue Yonder Workforce Management ile tümleştirmek için PowerShell'i kullanmayı öğrenin.
+description: Shift'leri UKG Boyutları ile tümleştirmek için PowerShell'i kullanmayı öğrenin.
 ms.localizationpriority: high
 ms.collection:
 - M365-collaboration
 - m365-frontline
-- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 8d94fdbf97ab8debeda7bfb0607fa81a50ed2d4b
+ms.openlocfilehash: 22449be5194adf4057e334dfae0ea4a769cbdf14
 ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/28/2022
-ms.locfileid: "68777030"
+ms.locfileid: "68777142"
 ---
-# <a name="use-powershell-to-connect-shifts-to-blue-yonder-workforce-management"></a>PowerShell kullanarak Vardiyaları Mavi Yonder'a bağlama Workforce Management
+# <a name="use-powershell-to-connect-shifts-to-ukg-dimensions"></a>Vardiyaları UKG Boyutlarına bağlamak için PowerShell kullanma
 
 ## <a name="overview"></a>Genel bakış
 
-[Microsoft Teams'deki Vardiyalar uygulamasını Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) Workforce Management (Blue Yonder WFM) ile tümleştirmek için Blue Yonder için Microsoft Teams Vardiyaları bağlayıcısını kullanın. Bağlantı kurulduktan sonra ön cephe çalışanlarınız Vardiyalar'ın içinden Blue Yonder WFM zamanlamalarını sorunsuz bir şekilde görüntüleyebilir ve yönetebilir.
+[!INCLUDE [preview-feature](includes/preview-feature.md)]
 
-Bu makalede, Bağlayıcıyı Ayarlama ve Yapılandırma için PowerShell'in nasıl kullanılacağı konusunda size yol gösteririz. Bu makalede, Shift'leri Blue Yonder WFM ile tümleştirmek için bağlayıcıyı ayarlama ve yapılandırma.
+[UkG Boyutları için Microsoft Teams Vardiyaları bağlayıcısını](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) kullanarak Microsoft Teams'deki Vardiyalar uygulamasını UKG Boyutları ile tümleştirin. Bağlantı kurulduktan sonra ön cephe çalışanlarınız Vardiyalar'ın içinden UKG Dimensions'ta zamanlamalarını sorunsuz bir şekilde görüntüleyebilir ve yönetebilir.
 
-Bağlantıyı kurmak için bir PowerShell betiği çalıştırırsınız. Betik bağlayıcıyı yapılandırıyor, eşitleme ayarlarını uyguluyor, bağlantıyı oluşturuyor ve Blue Yonder WFM örneklerini ekiplere eşler. Eşitleme ayarları, Vardiyalar'da etkinleştirilen özellikleri ve Blue Yonder WFM ile Vardiyalar arasında eşitlenen zamanlama bilgilerini belirler. Eşlemeler, Teams'deki Blue Yonder WFM örnekleriniz ve ekipleriniz arasındaki eşitleme ilişkisini tanımlar. Mevcut ekiplere ve yeni ekiplere eşleyebilirsiniz.
+Bu makalede, Bağlayıcıyı Shift'leri UKG Boyutları ile tümleştirecek şekilde ayarlamak ve yapılandırmak için PowerShell'i kullanma konusunda size yol gösteririz.
+
+Bağlantıyı kurmak için bir PowerShell betiği çalıştırırsınız. Betik bağlayıcıyı yapılandırıyor, eşitleme ayarlarını uyguluyor, bağlantıyı oluşturuyor ve UKG Dimensions örneklerini ekiplere eşler. Eşitleme ayarları, Vardiyalar'da etkinleştirilen özellikleri ve UKG Boyutları ile Vardiyalar arasında eşitlenen zamanlama bilgilerini belirler. Eşlemeler, Teams'deki UKG Boyutları örnekleriniz ve ekipleriniz arasındaki eşitleme ilişkisini tanımlar. Mevcut ekiplere ve yeni ekiplere eşleyebilirsiniz.
 
 İki betik sağlıyoruz. Mevcut ekiplere eşlemek veya eşlemek için yeni ekipler oluşturmak istediğinize bağlı olarak betiklerden birini kullanabilirsiniz.
 
-Her birinde farklı eşitleme ayarları olan birden çok bağlantı ayarlayabilirsiniz. Örneğin, kuruluşunuzun farklı zamanlama gereksinimlerine sahip birden çok konumu varsa, her konum için benzersiz eşitleme ayarlarıyla bir bağlantı oluşturun. Blue Yonder WFM örneğinin herhangi bir anda yalnızca bir ekiple eşlenebileceğini unutmayın. Bir örnek zaten bir takımla eşlenmişse, başka bir takımla eşlenemez.
+Her birinde farklı eşitleme ayarları olan birden çok bağlantı ayarlayabilirsiniz. Örneğin, kuruluşunuzun farklı zamanlama gereksinimlerine sahip birden çok konumu varsa, her konum için benzersiz eşitleme ayarlarıyla bir bağlantı oluşturun. UkG Dimensions örneğinin herhangi bir anda yalnızca bir ekiple eşlenebileceğini unutmayın. Bir örnek zaten bir takımla eşlenmişse, başka bir takımla eşlenemez.
 
-Kayıt sistemi olarak Blue Yonder WFM, ön cephe çalışanlarınız kendi cihazlarında Vardiyalar'da zamanlamalarını ve kullanılabilirliklerini verimli bir şekilde yönetebilir. Ön cephe yöneticileri, zamanlamaları ayarlamak için Blue Yonder WFM kullanmaya devam edebilir.
+Kayıt sistemi olarak UKG Dimensions sayesinde ön saha çalışanlarınız zamanlamalarını ve kullanılabilirliklerini cihazlarında Vardiyalar'da verimli bir şekilde yönetebilir. Ön cephe yöneticileri zamanlamaları ayarlamak için UKG Boyutlarını kullanmaya devam edebilir.
 
 > [!NOTE]
-> [Ayrıca, Microsoft 365 yönetim merkezi'deki Vardiyalar bağlayıcı sihirbazını](shifts-connector-wizard.md) kullanarak Shift'leri Mavi Yonder WFM bağlayabilirsiniz.
+> Shift'leri UKG Boyutlarına bağlamak için Microsoft 365 yönetim merkezi Shifts [bağlayıcı sihirbazını](shifts-connector-wizard-ukg.md) da kullanabilirsiniz.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
 ### <a name="prerequisites"></a>Önkoşullar
 
-[!INCLUDE [shifts-connector-prerequisites](includes/shifts-connector-prerequisites.md)]
+[!INCLUDE [shifts-connector-ukg-prerequisites](includes/shifts-connector-ukg-prerequisites.md)]
 
 ### <a name="admin-role-to-manage-the-connector-using-powershell"></a>PowerShell kullanarak bağlayıcıyı yönetmek için Yönetici rolü
 
@@ -70,7 +71,7 @@ Connect-MicrosoftTeams
 ## <a name="identify-the-teams-you-want-to-map"></a>Eşlemek istediğiniz ekipleri belirleme
 
 > [!NOTE]
-> Blue Yonder WFM örneklerini mevcut ekiplere eşlerseniz bu adımı tamamlayın. Eşleme için yeni ekipler oluşturuyorsanız bu adımı atlayabilirsiniz.
+> UKG Dimensions örneklerini mevcut ekiplere eşlerseniz bu adımı tamamlayın. Eşleme için yeni ekipler oluşturuyorsanız bu adımı atlayabilirsiniz.
 
 Azure portal, kuruluşunuzdaki ekiplerin TeamId'lerinin listesini almak için [Tüm gruplar](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) sayfasına gidin.
 
@@ -88,20 +89,20 @@ Betiği çalıştırın:
 
 Betik aşağıdaki eylemleri gerçekleştirir. Kurulum ve yapılandırma ayrıntılarını girmeniz istenir.
 
-1. Girdiğiniz Blue Yonder WFM hizmet hesabı kimlik bilgilerini ve hizmet URL'lerini kullanarak Blue Yonder WFM bağlantısını test eder ve doğrular.
+1. Girdiğiniz UKG Dimensions hizmet hesabı kimlik bilgilerini ve hizmet URL'lerini kullanarak UKG Dimensions bağlantısını test eder ve doğrular.
 1. Vardiyalar bağlayıcısını yapılandırıyor.
-1. Eşitleme ayarlarını uygular. Bu ayarlar arasında eşitleme sıklığı (dakika cinsinden) ve Blue Yonder WFM ile Vardiyalar arasında eşitlenen zamanlama verileri bulunur. Zamanlama verileri aşağıdaki parametrelerde tanımlanır:
+1. Eşitleme ayarlarını uygular. Bu ayarlar arasında eşitleme sıklığı (dakika cinsinden) ve UKG Boyutları ile Vardiyalar arasında eşitlenen zamanlama verileri yer alır. Zamanlama verileri aşağıdaki parametrelerde tanımlanır:
 
-    - **enabledConnectorScenarios** parametresi, Blue Yonder WFM'dan Shifts'e eşitlenen verileri tanımlar. Seçenekler şunlardır: `Shift`, `SwapRequest`, `UserShiftPreferences``OpenShift`, , `OpenShiftRequest`, `TimeOff`, `TimeOffRequest`.
-    - **enabledWfiScenarios** parametresi, Shifts ile Blue Yonder WFM eşitlenen verileri tanımlar. Seçenekler : `SwapRequest`, `OpenShiftRequest`, `TimeOffRequest`, `UserShiftPreferences`.
+    - **enabledConnectorScenarios** parametresi, UKG Boyutlarından Shift'lere eşitlenen verileri tanımlar. Seçenekler şunlardır: `Shift`, `SwapRequest`, `UserShiftPreferences``OpenShift`, , `OpenShiftRequest`, `TimeOff`, `TimeOffRequest`.
+    - **enabledWfiScenarios** parametresi, Vardiyalar ile UKG Boyutları arasında eşitlenen verileri tanımlar. Seçenekler : `SwapRequest`, `OpenShiftRequest`, `TimeOffRequest`, `UserShiftPreferences`.
 
     Daha fazla bilgi için bkz. [New-CsTeamsShiftsConnectionInstance](/powershell/module/teams/new-csteamsshiftsconnectioninstance). Her parametre için desteklenen eşitleme seçeneklerinin listesini görmek için [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector) komutunu çalıştırın.
 
     > [!IMPORTANT]
-    > Betik, tüm bu seçenekler için eşitlemeyi etkinleştirir. Eşitleme ayarlarını değiştirmek istiyorsanız, bağlantı kurulduktan sonra bunu yapabilirsiniz. Daha fazla bilgi edinmek için bkz. [PowerShell kullanarak Blue Yonder Workforce Management Vardiyalar bağlantınızı yönetme](shifts-connector-powershell-manage.md).
+    > Betik, tüm bu seçenekler için eşitlemeyi etkinleştirir. Eşitleme ayarlarını değiştirmek istiyorsanız, bağlantı kurulduktan sonra bunu yapabilirsiniz. Daha fazla bilgi edinmek için bkz. [PowerShell kullanarak UKG Boyutlarına Vardiyalar bağlantınızı yönetme](shifts-connector-ukg-powershell-manage.md).
 
 1. Bağlantıyı oluşturur.
-1. Mavi Yonder WFM örneklerini ekiplerle eşler. Eşlemeler, çalıştırdığınız betike bağlı olarak girdiğiniz Mavi Yonder WFM örnek kimliklerini ve oluşturduğunuz yeni takımları temel alır. Bir ekibin mevcut bir zamanlaması varsa betik, belirttiğiniz tarih ve saat aralığı için zamanlama verilerini kaldırır.
+1. UKG Dimensions örneklerini ekiplere eşler. Eşlemeler, çalıştırdığınız betike bağlı olarak girdiğiniz UKG Boyutlar örneği kimliklerini ve oluşturduğunuz yeni ekipleri veya oluşturduğunuz TeamId'leri temel alır. Bir ekibin mevcut bir zamanlaması varsa betik, belirttiğiniz tarih ve saat aralığı için zamanlama verilerini kaldırır.
 
 Ekrandaki Başarılı iletisi bağlantınızın başarıyla ayarlandığını gösterir.
 
@@ -113,11 +114,11 @@ Bağlantı kurulduktan sonra, Microsoft 365 yönetim merkezi veya PowerShell kul
 
 Bağlayıcı Yönetimi sayfasında, ayarladığınız her bağlantının yanı sıra sistem durumu ve eşitleme aralığı ayrıntıları gibi bilgiler listelenir. Bağlantılarınızdan herhangi birinde değişiklik yapmak için sihirbaza da erişebilirsiniz. Örneğin, eşitleme ayarlarını ve ekip eşlemelerini güncelleştirebilirsiniz.
 
-Daha fazla bilgi edinmek için bkz. [Microsoft 365 yönetim merkezi kullanarak Blue Yonder Workforce Management Vardiyalar bağlantınızı yönetme](shifts-connector-blue-yonder-admin-center-manage.md).
+Daha fazla bilgi edinmek için bkz. [UKG Boyutlarına Vardiyalar bağlantınızı yönetmek için Microsoft 365 yönetim merkezi kullanma](shifts-connector-ukg-admin-center-manage.md).
 
 ### <a name="use-powershell"></a>PowerShell kullanma
 
-PowerShell'i kullanarak hata raporunu görüntüleyebilir, bağlantı ayarlarını değiştirebilir, eşitlemeyi devre dışı bırakabilir ve daha fazlasını yapabilirsiniz. Adım adım yönergeler için bkz. [PowerShell kullanarak Blue Yonder Workforce Management Vardiyalar bağlantınızı yönetme](shifts-connector-powershell-manage.md).
+PowerShell'i kullanarak hata raporunu görüntüleyebilir, bağlantı ayarlarını değiştirebilir, eşitlemeyi devre dışı bırakabilir ve daha fazlasını yapabilirsiniz. Adım adım yönergeler için bkz. [PowerShell kullanarak UkG Boyutlarına Vardiyalar bağlantınızı yönetme](shifts-connector-ukg-powershell-manage.md).
 
 ## <a name="scripts"></a>Komut dosyaları
 
@@ -141,12 +142,12 @@ Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 
 #List connector types available (comment out if not implemented for preview)
 Write-Host "Listing connector types available"
-$BlueYonderId = "6A51B888-FF44-4FEA-82E1-839401E9CD74"
+$UkgId = "95BF2848-2DDA-4425-B0EE-D62AEED4C0A0"
 $connectors = Get-CsTeamsShiftsConnectionConnector
 write $connectors
-$blueYonder = $connectors | where {$_.Id -match $BlueYonderId}
-$enabledConnectorScenario = $blueYonder.SupportedScenario
-$wfiSupportedScenario = $blueYonder.wfiSupportedScenario
+$Ukg = $connectors | where {$_.Id -match $UkgId}
+$enabledConnectorScenario = $Ukg.SupportedScenario
+$wfiSupportedScenario = $Ukg.wfiSupportedScenario
 
 #Prompt for entering of WFM username and password
 $WfmUserName = Read-Host -Prompt 'Input your WFM user name'
@@ -156,23 +157,24 @@ $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropSe
 #Test connection settings
 Write-Host "Testing connection settings"
 $InstanceName = Read-Host -Prompt 'Input connection instance name'
-$adminApiUrl = Read-Host -Prompt 'Input admin api url'
-$cookieAuthUrl = Read-Host -Prompt 'Input cookie authorization url'
-$essApiUrl = Read-Host -Prompt 'Input ess api url'
-$federatedAuthUrl = Read-Host -Prompt 'Input federated authorization url'
-$retailWebApiUrl = Read-Host -Prompt 'Input retail web api url'
-$siteManagerUrl = Read-Host -Prompt 'Input site manager url'
+$apiUrl = Read-Host -Prompt 'Input connector api url'
+$ssoUrl = Read-Host -Prompt 'Input connector sso url'
+$clientId = Read-Host -Prompt 'Input connector client id'
+$AppKey = Read-Host -Prompt 'Input your app key' -AsSecureString
+$plainKey =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($AppKey))
+$ClientSecret = Read-Host -Prompt 'Input your client secret' -AsSecureString
+$plainSecret =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($ClientSecret))
+
 $testResult = Test-CsTeamsShiftsConnectionValidate `
     -Name $InstanceName `
-    -ConnectorId $BlueYonderId `
-    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+    -ConnectorId $UkgId `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
         -Property @{
-            AdminApiUrl = $adminApiUrl
-            SiteManagerUrl = $siteManagerUrl
-            EssApiUrl = $essApiUrl
-            RetailWebApiUrl = $retailWebApiUrl
-            CookieAuthUrl = $cookieAuthUrl
-            FederatedAuthUrl = $federatedAuthUrl
+            apiUrl = $apiUrl
+            ssoUrl = $ssoUrl
+            appKey = $plainKey
+            clientId = $clientId
+            clientSecret = $plainSecret
             LoginUserName = $WfmUserName
             LoginPwd = $plainPwd
         })
@@ -204,21 +206,20 @@ if ($decision -eq 1) {
 }
 }
 $InstanceResponse = New-CsTeamsShiftsConnectionInstance `
-    -ConnectorId $BlueYonderId `
+    -ConnectorId $UkgId `
     -ConnectorAdminEmail $AdminEmailList `
     -DesignatedActorId $teamsUserId `
     -EnabledConnectorScenario $enabledConnectorScenario `
     -EnabledWfiScenario $wfiSupportedScenario `
     -Name $InstanceName `
     -SyncFrequencyInMin $syncFreq `
-    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
         -Property @{
-            AdminApiUrl = $adminApiUrl
-            SiteManagerUrl = $siteManagerUrl
-            EssApiUrl = $essApiUrl
-            RetailWebApiUrl = $retailWebApiUrl
-            CookieAuthUrl = $cookieAuthUrl
-            FederatedAuthUrl = $federatedAuthUrl
+            apiUrl = $apiUrl
+            ssoUrl = $ssoUrl
+            appKey = $plainKey
+            clientId = $clientId
+            clientSecret = $plainSecret
             LoginUserName = $WfmUserName
             LoginPwd = $plainPwd
         })
@@ -305,7 +306,7 @@ Disconnect-MgGraph
 ### <a name="set-up-a-connection-and-map-to-existing-teams"></a>Bağlantı kurma ve mevcut ekiplere eşleme
 
 ```powershell
-#Map WFM sites to existing teams script
+#Map WFM instances to existing teams script
 Write-Host "Map WFM sites to existing teams"
 Start-Sleep 1
 
@@ -322,12 +323,12 @@ Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 
 #List connector types available (comment out if not implemented for preview)
 Write-Host "Listing connector types available"
-$BlueYonderId = "6A51B888-FF44-4FEA-82E1-839401E9CD74"
+$UkgId = "95BF2848-2DDA-4425-B0EE-D62AEED4C0A0"
 $connectors = Get-CsTeamsShiftsConnectionConnector
 write $connectors
-$blueYonder = $connectors | where {$_.Id -match $BlueYonderId}
-$enabledConnectorScenario = $blueYonder.SupportedScenario
-$wfiSupportedScenario = $blueYonder.wfiSupportedScenario
+$ukg = $connectors | where {$_.Id -match $UkgId}
+$enabledConnectorScenario = $ukg.SupportedScenario
+$wfiSupportedScenario = $ukg.wfiSupportedScenario
 
 #Prompt for entering of WFM username and password
 $WfmUserName = Read-Host -Prompt 'Input your WFM user name'
@@ -337,23 +338,24 @@ $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropSe
 #Test connection settings
 Write-Host "Testing connection settings"
 $InstanceName = Read-Host -Prompt 'Input connection instance name'
-$adminApiUrl = Read-Host -Prompt 'Input admin api url'
-$cookieAuthUrl = Read-Host -Prompt 'Input cookie authorization url'
-$essApiUrl = Read-Host -Prompt 'Input ess api url'
-$federatedAuthUrl = Read-Host -Prompt 'Input federated authorization url'
-$retailWebApiUrl = Read-Host -Prompt 'Input retail web api url'
-$siteManagerUrl = Read-Host -Prompt 'Input site manager url'
+$apiUrl = Read-Host -Prompt 'Input connector api url'
+$ssoUrl = Read-Host -Prompt 'Input connector sso url'
+$clientId = Read-Host -Prompt 'Input connector client id'
+$AppKey = Read-Host -Prompt 'Input your app key' -AsSecureString
+$plainKey =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($AppKey))
+$ClientSecret = Read-Host -Prompt 'Input your client secret' -AsSecureString
+$plainSecret =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($ClientSecret))
+
 $testResult = Test-CsTeamsShiftsConnectionValidate `
     -Name $InstanceName `
-    -ConnectorId $BlueYonderId `
-    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+    -ConnectorId $UkgId `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
         -Property @{
-            AdminApiUrl = $adminApiUrl
-            SiteManagerUrl = $siteManagerUrl
-            EssApiUrl = $essApiUrl
-            RetailWebApiUrl = $retailWebApiUrl
-            CookieAuthUrl = $cookieAuthUrl
-            FederatedAuthUrl = $federatedAuthUrl
+            apiUrl = $apiUrl
+            ssoUrl = $ssoUrl
+            appKey = $plainKey
+            clientId = $clientId
+            clientSecret = $plainSecret
             LoginUserName = $WfmUserName
             LoginPwd = $plainPwd
         })
@@ -363,7 +365,7 @@ if ($testResult.Code -ne $NULL) {
 }
 Write-Host "Test complete, no conflicts found"
 
-#Create an instance (includes WFM site team ids)
+#Create a connection instance (includes WFM site team ids)
 Write-Host "Creating a connection instance"
 $designatorName = Read-Host -Prompt "Input designated actor's user name"
 $domain = $designatorName.Split("@")[1]
@@ -386,24 +388,23 @@ if ($decision -eq 1) {
 }
 
 $InstanceResponse = New-CsTeamsShiftsConnectionInstance `
-    -ConnectorId $BlueYonderId `
+    -ConnectorId $UkgId `
     -ConnectorAdminEmail $AdminEmailList `
     -DesignatedActorId $teamsUserId `
     -EnabledConnectorScenario $enabledConnectorScenario `
     -EnabledWfiScenario $wfiSupportedScenario `
     -Name $InstanceName `
     -SyncFrequencyInMin $syncFreq `
-    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
         -Property @{
-            AdminApiUrl = $adminApiUrl
-            SiteManagerUrl = $siteManagerUrl
-            EssApiUrl = $essApiUrl
-            RetailWebApiUrl = $retailWebApiUrl
-            CookieAuthUrl = $cookieAuthUrl
-            FederatedAuthUrl = $federatedAuthUrl
+            apiUrl = $apiUrl
+            ssoUrl = $ssoUrl
+            appKey = $plainKey
+            clientId = $clientId
+            clientSecret = $plainSecret
             LoginUserName = $WfmUserName
             LoginPwd = $plainPwd
-    })
+        })
 $InstanceId = $InstanceResponse.id
 $Etag = $InstanceResponse.etag
 if ($InstanceId -ne $null){
@@ -412,7 +413,7 @@ if ($InstanceId -ne $null){
     throw "Connector instance creation failed"
 }
 
-#Retrieve the list of instances
+#Retrieve the list of sites
 Write-Host "Listing the WFM team sites"
 $WfmTeamIds = Get-CsTeamsShiftsConnectionWfmTeam -ConnectorInstanceId $InstanceId
 write $WfmTeamIds
@@ -487,8 +488,8 @@ Betiklerde kullanılan cmdlet'ler de dahil olmak üzere Shifts bağlayıcı cmdl
 ## <a name="related-articles"></a>İlgili makaleler
 
 - [Vardiya bağlayıcıları](shifts-connectors.md)
-- [PowerShell kullanarak Blue Yonder ile Vardiyalar bağlantınızı yönetme Workforce Management](shifts-connector-powershell-manage.md)
-- [Microsoft 365 yönetim merkezi kullanarak Blue Yonder ile Vardiyalar bağlantınızı yönetme Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md)
+- [PowerShell kullanarak UkG Boyutlarına Vardiyalar bağlantınızı yönetme](shifts-connector-ukg-powershell-manage.md)
+- [UKG Boyutlarına Vardiyalar bağlantınızı yönetmek için Microsoft 365 yönetim merkezi kullanın](shifts-connector-ukg-admin-center-manage.md)
 - [Vardiyalar uygulamasını yönetme](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Teams PowerShell'e genel bakış](/microsoftteams/teams-powershell-overview)
 - [Teams PowerShell cmdlet başvurusu](/powershell/teams/intro)

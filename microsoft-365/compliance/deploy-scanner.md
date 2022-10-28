@@ -13,12 +13,12 @@ ms.collection:
 - purview-compliance
 - tier3
 description: Microsoft Purview Bilgi Koruması tarayıcının veri depolarında dosyaları nasıl bulabileceğini, sınıflandırabileceğini ve koruyabileceğini öğrenin.
-ms.openlocfilehash: 624abb6e989612098c7ac47eb2ef15e48af1479b
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 82006023b6893a62028067e2b99bed9e92ffdbb4
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68647631"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68776989"
 ---
 # <a name="learn-about-the-information-protection-scanner"></a>Bilgi koruma tarayıcısı hakkında bilgi edinin
 
@@ -38,7 +38,7 @@ Bilgi koruma tarayıcısı, Windows'un dizine ekleyebileceği tüm dosyaları in
 
 Aşağıdaki görüntüde, tarayıcının şirket içi ve SharePoint sunucularınızdaki dosyaları keşfettiği tarayıcı mimarisi gösterilmektedir.
 
-:::image type="content" source="../media/ul-scanner-arch.png" alt-text="Microsoft Purview Bilgi Koruması tarayıcı mimarisi":::
+:::image type="content" source="../media/scanner-arch.png" alt-text="Microsoft Purview Bilgi Koruması tarayıcı mimarisi":::
 
 Dosyalarınızı incelemek için tarayıcı, bilgisayarda yüklü olan IFilters'ı kullanır. Dosyaların etiketlenmesi gerekip gerekmediğini belirlemek için tarayıcı hassas bilgi türlerini ve desen algılamayı veya regex desenlerini kullanır.
 

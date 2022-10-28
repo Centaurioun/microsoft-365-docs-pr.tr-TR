@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - purview-compliance
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 28e1dedac97d692ae1f797fe4fe4a056a5d4a7b5
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 70ba18d1471ea5fc5d145f64b68c6fef1691124c
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68731491"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68777189"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Microsoft Purview risk ve uyumluluk çözümlerindeki yenilikler
 
@@ -47,12 +47,12 @@ microsoft 365, [Microsoft Purview uyumluluk portalı](microsoft-365-compliance-c
 
 ### <a name="communication-compliance"></a>İletişim uyumluluğu
 
-- **Önizlemede**: [Insider risk yönetimiyle yeni iletişim uyumluluğu tümleştirmesi](/microsoft-365/compliance/communication-compliance#integration-with-insider-risk-management-preview). İletişim uyumluluğu artık iletilerde algılanan azaltma sinyallerini insider risk yönetimi azaltma ilkelerine sağlayabilir. İletişim uyumluluk ilkesi tarafından iletilerde algılanan azaltma, kullanıcıları insider risk yönetimi ilkeleri kapsamına almak için tetikleyici bir olay olarak görev görür.
+- **Önizlemede**: [Insider risk yönetimiyle yeni iletişim uyumluluğu tümleştirmesi](/microsoft-365/compliance/communication-compliance#integration-with-insider-risk-management-preview). İletişim uyumluluğu artık iletilerde algılanan risk sinyallerini insider risk yönetimi ilkelerine sağlayabilir. İletişim uyumluluk ilkesi tarafından iletilerde algılanan riskli kullanıcılar, kullanıcıları insider risk yönetimi ilkeleri kapsamına almak için tetikleyici bir olay görevi görür.
 
 ### <a name="insider-risk-management"></a>İçeriden risk yönetimi
 
 - **Önizlemede**: Insider risk yönetimi, kuruluşunuzun hassas verilerin yetkisiz veri sızdırması gibi olası veri risklerini daha iyi azaltmasına, anlamasına ve yanıtlamasına yardımcı olmak için cihazlar arasında özelleştirilebilir görsel etkinlik yakalamaya olanak tanıyan [adli kanıt](/microsoft-365/compliance/insider-risk-management-forensic-evidence) sağlar.
-- **Önizlemede**: *Dışlanan kullanıcılar tarafından veri sızıntıları* veya kullanıcı ilkesi şablonlarının *güvenlik ilkesi ihlalleri* kullanılırken iletişim uyumluluğuyla Insider risk yönetimi [tümleştirmesi](/microsoft-365/compliance/communication-compliance#integration-with-insider-risk-management-preview). İletişim uyumluluğu artık iletilerde algılanan azaltma sinyallerini insider risk yönetimi azaltma ilkelerine sağlayabilir.
+- **Önizlemede**: *Riskli kullanıcılar tarafından veri sızıntıları veya Riskli kullanıcılar* ilke şablonları tarafından *güvenlik ilkesi ihlalleri* kullanılırken iletişim uyumluluğuyla Insider risk yönetimi [tümleştirmesi](/microsoft-365/compliance/communication-compliance#integration-with-insider-risk-management-preview). İletişim uyumluluğu artık iletilerde algılanan risk sinyallerini insider risk yönetimi ilkelerine sağlayabilir.
 - **Önizlemede**: Yeni [satır içi uyarı özelleştirmesi](/microsoft-365/compliance/insider-risk-management-settings#inline-alert-customization-preview) , analistlerin ve araştırmacıların uyarıları gözden geçirirken ilkeleri hızla düzenlemesine olanak tanır.
 - İlke tarafından algılanan tüm etkinliklere mi yoksa yalnızca öncelik içeriği içeren etkinliklere mi risk puanları atamayı seçmenizi sağlayan yeni öncelikli [içerik puanlama güncelleştirmeleri](/microsoft-365/compliance/insider-risk-management-policies#prioritize-content-in-policies) .
 - Güvenlik ekipleri artık bir kullanıcı bir dizi gerçekleştirdiğinde ortaya çıkarma amacıyla 'veri sızıntıları' ilkesindeki bir [güvenlik tetikleyicisini özelleştirerek](/microsoft-365/compliance/insider-risk-management-policies#policy-templates) daha riskli kabul edilebilecek kullanıcı eylemlerine yanıt vermelerini sağlayabilir.

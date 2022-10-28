@@ -18,12 +18,12 @@ ms.collection:
 - purview-compliance
 - data-connectors
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 53d4ef19554f5916e603610158197daa6e946593
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 04bb63b5494f12570ea089693d0729c74cbcfe5c
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/28/2022
-ms.locfileid: "68770293"
+ms.locfileid: "68776825"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>İk verilerini içeri aktarmak için bağlayıcı ayarlama
 
@@ -67,10 +67,10 @@ Insider risk yönetimi ilkelerinin risk göstergeleri oluşturmak için kullanab
 |  İlke şablonu |  İk veri türü |
 |:------------------------------|:--------------------------------|
 | Ayrılan kullanıcılar tarafından veri hırsızlığı | Çalışan istifaları|
-| Genel veri sızıntıları                             | Geçerli değil|
+| Veri sızıntıları                             | Geçerli değil|
 | Öncelikli kullanıcılara göre veri sızıntıları                   | Geçerli değil |
 | Riskli kullanıcılar tarafından veri sızıntıları                | İş düzeyi değişiklikleri, Performans incelemeleri, Performans geliştirme planları|
-| Genel güvenlik ilkesi ihlalleri             | Geçerli değil |
+| Güvenlik ilkesi ihlalleri             | Geçerli değil |
 | Ayrılan kullanıcıların güvenlik ilkesi ihlalleri  | Çalışan istifaları|
 | Öncelikli kullanıcılara göre güvenlik ilkesi ihlalleri   | Geçerli değil|
 | Riskli kullanıcıların güvenlik ilkesi ihlalleri| İş düzeyi değişiklikleri, Performans incelemeleri, Performans geliştirme planları |

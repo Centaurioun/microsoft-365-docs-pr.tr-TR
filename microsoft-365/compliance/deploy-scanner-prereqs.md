@@ -13,12 +13,12 @@ ms.collection:
 - purview-compliance
 - tier3
 description: Microsoft Purview Bilgi Koruması tarayıcısını yükleme ve dağıtma önkoşullarını listeler.
-ms.openlocfilehash: cf8daa62709c557d771a76889b9c277c124cadbc
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: ef1b3397814915a010d45b2131caaac6b0b3643e
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68639018"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68777878"
 ---
 # <a name="get-started-with-the-information-protection-scanner"></a>Bilgi koruma tarayıcısını kullanmaya başlama
 
@@ -233,13 +233,13 @@ Birleşik etiketleme istemcisi İnternet bağlantısı olmadan şifreleme uygula
 
 Bağlantısı kesilmiş bir bilgisayarı desteklemek için aşağıdaki yöntemlerden birini kullanın:
 
-- [Azure portal kullanın](#use-the-azure-portal-with-a-disconnected-computer) (mümkün olduğunda önerilir)
+- [Uyumluluk portalını kullanma](#use-the-microsoft-purview-compliance-portal-with-a-disconnected-computer) (mümkün olduğunda önerilir)
 
 - [PowerShell kullanma](#use-powershell-with-a-disconnected-computer)
 
-#### <a name="use-the-azure-portal-with-a-disconnected-computer"></a>bağlantısı kesilmiş bir bilgisayarla Azure portal kullanma
+#### <a name="use-the-microsoft-purview-compliance-portal-with-a-disconnected-computer"></a>bağlantısı kesilmiş bir bilgisayarla Microsoft Purview uyumluluk portalı kullanma
 
-Azure portal bağlantısı kesilmiş bir bilgisayarı desteklemek için aşağıdaki adımları uygulayın:
+Microsoft Purview uyumluluk portalı bağlanamıyor bir bilgisayarı desteklemek için aşağıdaki adımları gerçekleştirin:
 
 1.  İlkenizdeki etiketleri yapılandırın ve çevrimdışı sınıflandırmayı ve [etiketlemeyi etkinleştirmek üzere bağlantısı kesilmiş bilgisayarları desteklemek için yordamı](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#support-for-disconnected-computers) kullanın.
 

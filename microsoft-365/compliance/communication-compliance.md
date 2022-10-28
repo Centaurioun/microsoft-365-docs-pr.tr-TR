@@ -23,12 +23,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3ce5d5498deb1029b00125dc510e0c67c23d8970
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: f2bc78b9b742d47b9421af758d7109650dd6f28a
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/28/2022
-ms.locfileid: "68768181"
+ms.locfileid: "68777053"
 ---
 # <a name="learn-about-communication-compliance"></a>İletişim uyumluluğu hakkında daha fazla bilgi edinme
 
@@ -137,7 +137,7 @@ uyumluluk sorunlarını hızla gözden geçirmenize ve düzeltmenize yardımcı 
 
 ## <a name="integration-with-insider-risk-management-preview"></a>Insider risk yönetimiyle tümleştirme (önizleme)
 
-İletişim uyumluluğu, iletilerde algılanan azaltma sinyallerini insider risk yönetimi azaltma ilkelerine sağlayabilir. İletişim uyumluluğunda özel bir [Uygunsuz metin algıla](/microsoft-365/compliance/communication-compliance-policies#policy-templates) ilkesi kullanarak, bu ilkeyi, iç risk yönetiminde [dağıtılan çalışanlar ilkesi tarafından dağıtılan çalışanlar](/microsoft-365/compliance/insider-risk-management-policies#data-leaks-by-disgruntled-users-preview) veya [Güvenlik ilkesi ihlalleri tarafından veri sızıntılarına](/microsoft-365/compliance/insider-risk-management-policies#security-policy-violations-by-disgruntled-users-preview) eklemeyi seçebilirsiniz. İletişim uyumluluk ilkesi tarafından iletilerde algılanan azaltma, kullanıcıları insider risk yönetimi ilkeleri kapsamına almak için tetikleyici bir olay olarak görev görür.
+İletişim uyumluluğu, iletilerde algılanan risk sinyallerini insider risk yönetimi riskli kullanıcı ilkelerine sağlayabilir. İletişim uyumluluğunda [özel bir Uygunsuz metin](/microsoft-365/compliance/communication-compliance-policies#policy-templates) algılama ilkesi kullanarak, bu ilkeyi [riskli çalışanlar tarafından veri sızıntılarına](/microsoft-365/compliance/insider-risk-management-policies#data-leaks-by-risky-users-preview) veya şirket içi risk yönetimindeki [riskli çalışanlar tarafından güvenlik ilkesi ihlallerine](/microsoft-365/compliance/insider-risk-management-policies#security-policy-violations-by-risky-users-preview) eklemeyi seçebilirsiniz. İletişim uyumluluk ilkesi tarafından iletilerde algılanan riskli kullanıcılar, kullanıcıları insider risk yönetimi ilkeleri kapsamına almak için tetikleyici bir olay görevi görür.
 
 Insider risk yönetimiyle tümleştirme hakkında daha fazla bilgi edinmek için bkz. [İletişim uyumluluk ilkeleri oluşturma ve yönetme](/microsoft-365/compliance/communication-compliance-policies#integration-with-insider-risk-management-preview).
 Insider risk yönetimi hakkında daha fazla bilgi edinmek için bkz. [Insider risk yönetimi hakkında bilgi edinin](/microsoft-365/compliance/insider-risk-management).

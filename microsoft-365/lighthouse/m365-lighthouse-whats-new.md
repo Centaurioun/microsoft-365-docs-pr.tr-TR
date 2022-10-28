@@ -19,12 +19,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP' ler) için her ay Microsoft 365 Lighthouse eklenen, değiştirilen ve düzeltilmiş olanlara bakın.
-ms.openlocfilehash: 2c63cd304fc8893c5a767212ef540939e9954793
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 483902edcd0cfdf9d3c9e5101fe7dd82311b5ece
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68735077"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68777102"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'daki yenilikler
 
@@ -32,6 +32,18 @@ ms.locfileid: "68735077"
 
 > [!NOTE]
 > Bazı özellikler müşterilerimiz için farklı hızlarda kullanıma sunulur. Henüz bir özellik görmüyorsanız, yakında görmeniz gerekir.
+
+## <a name="october-2022"></a>Ekim 2022
+
+### <a name="app-protection-policies"></a>Uygulama koruması ilkeleri
+
+Yönetilen Hizmet Sağlayıcıları (MSP'ler) artık yönetilen kiracıları için uygulama koruma ilkelerini Microsoft 365 Lighthouse'deki varsayılan temelden dağıtabilir ve bu da kiracıların şirket verilerinin daha iyi korunmasına olanak tanır. Bu ilkeler, şirket verileri için en güvenli korumayı sağlamak için iOS ve Android cihazlarda Mobil Uygulama Yönetimi'ni (MAM) kullanır.
+
+### <a name="device-health-monitoring"></a>Cihaz durumu izleme
+
+Cihaz kaydı ayarlama görevinin altındaki varsayılan temele **Cihaz Durumu İzlemeyi Etkinleştir** adlı yeni bir dağıtım alt görevi **ekledik** . Yeni alt görev etkinleştirildikten ve dağıtım görevi dağıtıldıktan sonra, Microsoft Endpoint Manager'daki Uç Nokta analizi cihaz verilerini analiz edebilir ve yazılım önerebilir, başlatma performansını iyileştirmeye yardımcı olabilir ve yaygın destek sorunlarını çözebilir.
+
+Daha fazla bilgi için bkz [. Uç nokta analizi nedir?](/mem/analytics/overview).
 
 ## <a name="september-2022"></a>Eylül 2022
 

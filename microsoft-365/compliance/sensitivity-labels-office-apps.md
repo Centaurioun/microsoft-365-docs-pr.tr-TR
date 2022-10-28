@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: MASAÜSTÜ, mobil ve web için Office uygulamalarında duyarlılık etiketlerini yönetmek için BT yöneticilerine yönelik bilgiler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d026e7d4b3171be954003717f0b6debba1d21869
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 91f037fa35396e87bba4b007c1c09fb628a06165
+ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68730853"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68776684"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office uygulamalarında duyarlılık etiketlerini yönetme
 
@@ -87,7 +87,7 @@ Listelenen sayılar, her özellik için gereken en düşük Office uygulaması s
 |[İçeriğe otomatik olarak bir hassasiyet etiketi uygulama](apply-sensitivity-label-automatically.md) <br /> - Hassas bilgi türlerini kullanma                    | Güncel Kanal: 2009+ <br /><br> Aylık Kurumsal Kanal: 2009+ <br /><br> Semi-Annual Enterprise Channel: 2102+ | 16.44+ | İnceleme altında | İnceleme altında | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[İçeriğe otomatik olarak bir hassasiyet etiketi uygulama](apply-sensitivity-label-automatically.md) <br /> - Eğitilebilir sınıflandırıcıları kullanma                    | Güncel Kanal: 2105+ <br /><br> Aylık Kurumsal Kanal: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | İnceleme altında | İnceleme altında | İnceleme altında |
 |Etiketlenmiş ve şifrelenmiş belgeler için [birlikte yazma ve Otomatik Kaydetme](sensitivity-labels-coauthoring.md) desteği | Güncel Kanal: 2107+ <br /><br> Aylık Kurumsal Kanal: 2107+ <br /><br> Semi-Annual Enterprise Channel: 2202+ |  16.51+ | 2.58+ | 16.0.14931+  | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[PDF desteği](#pdf-support)| Güncel Kanal: 2208+ <br /><br> Aylık Kurumsal Kanal: 2208+ <br /><br> Semi-Annual Enterprise Channel: İnceleme altında|  İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
+|[PDF desteği](#pdf-support)| Güncel Kanal: 2208+ <br /><br> Aylık Kurumsal Kanal: 2209+ <br /><br> Semi-Annual Enterprise Channel: İnceleme altında|  İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
 |[Duyarlılık çubuğu](#sensitivity-bar) ve [görüntü etiketi rengi](#label-colors) | Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım | İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Outlook'ta duyarlılık etiketi özellikleri
