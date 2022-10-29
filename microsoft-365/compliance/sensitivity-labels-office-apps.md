@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: MASAÜSTÜ, mobil ve web için Office uygulamalarında duyarlılık etiketlerini yönetmek için BT yöneticilerine yönelik bilgiler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 91f037fa35396e87bba4b007c1c09fb628a06165
-ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
+ms.openlocfilehash: c4ae1dfd9d38650a7f34287685a3f00b34c1234e
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68777709"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786771"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office uygulamalarında duyarlılık etiketlerini yönetme
 
@@ -146,7 +146,7 @@ Bu koşulların her ikisi de karşılanıyorsa ancak Windows Office uygulamalar�
 
 Daha sonra bu yapılandırmayı geri almanız gerekiyorsa, değeri **1** olarak değiştirin. Şeritte **duyarlılık düğmesi beklendiği** gibi görüntülenmiyorsa bu değeri 1 olarak değiştirmeniz de gerekebilir. Örneğin, önceki bir yönetici bu etiketleme ayarını kapattı.
  
-bu ayarı grup ilkesi veya [Office bulut ilkesi hizmetini](/DeployOffice/overview-office-cloud-policy-service) kullanarak dağıtın. Bu Office uygulamaları yeniden başlatıldığında bu ayar geçerlilik kazanır. 
+Grup ilkesi kullanarak veya [Microsoft 365 için Bulut İlkesi hizmetini](/DeployOffice/overview-office-cloud-policy-service) kullanarak bu ayarı dağıtın. Bu Office uygulamaları yeniden başlatıldığında bu ayar geçerlilik kazanır. 
 
 Bu ayar Windows Office uygulamalarına özgü olduğundan, Windows'ta duyarlılık etiketlerini (Power BI gibi) veya diğer platformları (macOS, mobil cihazlar ve Web için Office) destekleyen diğer uygulamaları etkilemez. Kullanıcıların bir kısmının veya tümünün tüm uygulamalarda ve tüm platformlarda duyarlılık etiketlerini görmesini ve kullanmasını istemiyorsanız, bu kullanıcılara duyarlılık etiketi ilkesi atamayın.
 
