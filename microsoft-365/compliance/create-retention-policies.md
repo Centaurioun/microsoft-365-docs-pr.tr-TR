@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Kullanıcıların e-posta, belgeler ve konuşmalarla oluşturduğu içeriğin denetimini verimli bir şekilde korumak için bekletme ilkesi kullanın. İstediğinizi koruyun ve istemediğinizden kurtulun.
-ms.openlocfilehash: e8efe7834f20b651d875a17cf59413edb63bd6b1
-ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
+ms.openlocfilehash: f78df6609a501cafb086aa82d86374258f468ee6
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68484269"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786529"
 ---
 # <a name="create-and-configure-retention-policies"></a>Bekletme ilkeleri oluşturma ve yapılandırma
 
@@ -78,6 +78,8 @@ Birden fazla bekletme ilkeniz varsa ve bekletme etiketlerini de kullandığını
 
 > [!NOTE]
 > Bekletme ilkeleri [paylaşılan kanalları destekler](/MicrosoftTeams/shared-channels). **Teams kanalı ileti** konumu için bekletme ayarlarını yapılandırdığınızda, bir ekibin paylaşılan kanalları varsa, bu kişiler bekletme ayarlarını üst ekibinden devralır.
+> 
+> Bekletme ilkeleri, sistem tarafından oluşturulan iletiler olan yeni oluşturulan arama verileri kayıtlarını da destekler. Ancak, özel kanal iletileri için arama verileri kayıtları Teams **özel kanal iletileri** konumu yerine **Teams sohbetleri** konumuna eklenir.
 
 1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/) **Veri yaşam döngüsü yönetimi** > **Microsoft 365** > **Bekletme İlkeleri'ni** seçin.
 
@@ -111,6 +113,8 @@ Teams için bekletme ilkelerini kullanma ve son kullanıcı deneyimini anlama ko
 - Öğelerin en son değiştirildiği saklama süresini başlatma seçeneğini belirleyebilirsiniz ancak **öğeler oluşturulduğunda** değeri her zaman kullanılır. Düzenlenen iletiler için, bu önceden düzenlenmiş iletinin ne zaman oluşturulduğunu belirlemek için özgün iletinin bir kopyası özgün zaman damgasıyla birlikte kaydedilir ve düzenlenen iletinin daha yeni bir zaman damgası vardır.
 
 - Teams sohbetleri konumu için **Düzenle'yi** seçtiğinizde konukları ve posta kutusu olmayan kullanıcıları görebilirsiniz. Bekletme ilkeleri bu kullanıcılar için tasarlanmamıştır, bu nedenle bunları seçmeyin.
+
+- Teams özel kanal iletileri için yeni oluşturulan arama verileri kayıtlarını eklemek için Teams **özel kanal iletileri** konumu yerine **Teams sohbetleri** konumunu seçmeniz gerekir.
 
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>Teams'i desteklemek için ek saklama ilkesi gerekiyor

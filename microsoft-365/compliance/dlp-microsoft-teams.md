@@ -11,16 +11,17 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 description: Microsoft Teams sohbetleri ve kanalları Veri Kaybı Önleme (DLP) ilkelerini destekler.
-ms.openlocfilehash: ae9f7b273dc84d16c499a13f4c491d517d804cd2
-ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
+ms.openlocfilehash: fa901a910cd49f1dd38a4b6fe3ca7908f9a67996
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67639624"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785649"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Veri kaybı önleme ve Microsoft Teams
 
@@ -43,6 +44,8 @@ DLP **İlkeleri** başlığından **Otomatik dosya koruması'nı** seçerek Team
     - **Ekiple paylaşma (şirket içinde):** Kanalı Contoso'daki başka bir ekip TeamB ile paylaşırsınız. Başka bir ekibin farklı bir DLP ilkesi olabilir, ancak bu önemli değildir. P1, hem TeamA hem de TeamB kullanıcıları dahil olmak üzere bu paylaşılan kanaldaki herkes için geçerlidir.
     - **Ekiple paylaşma (kiracılar arası)**: Kanalı Fabrikam'daki teamF ekibiyle paylaşırsınız. Fabrikam'ın kendi DLP ilkesi olabilir, ancak bu önemli değildir. P1, hem TeamA (Contoso) hem de TeamF (Fabrikam) kullanıcıları dahil olmak üzere bu paylaşılan kanaldaki herkese uygulanır.
  
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="dlp-licensing-for-microsoft-teams"></a>Microsoft Teams için DLP Lisansı
 
 [Veri kaybı önleme](dlp-learn-about-dlp.md) özellikleri şunlar için **özel kanal iletileri de dahil olmak üzere** Microsoft Teams sohbet ve kanal iletilerini içerir:
@@ -131,7 +134,7 @@ Bu görevi gerçekleştirmek için DLP ilkelerini düzenleme izinlerine sahip bi
 5. **Konumları seç** sekmesinde, tüm hesapların varsayılan ayarını koruyun veya **Belirli konumları seçmeme izin ver'i** seçin. Şunları belirtebilirsiniz:
 
     1. Dahil etmek veya hariç tutmak için en fazla 1000 bireysel hesap
-    1. Dahil etmek veya dışlamak için dağıtım listeleri ve güvenlik grupları. 
+    1. Dahil etmek veya dışlamak için dağıtım listeleri ve güvenlik grupları (posta etkin). 
     <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**--> 
     
 6. Ardından **İleri'yi** seçin.

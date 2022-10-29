@@ -6,7 +6,7 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection:
@@ -19,12 +19,12 @@ ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 056590f985c6fc4d0d5653e61beae5989e2f0084
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 1fd8fab674ce1ce732869d49c52b8979a2943ecd
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68644691"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786353"
 ---
 # <a name="microsoft-365-for-frontline-workers---scenario-posters"></a>Ön cephe çalışanları için Microsoft 365 - senaryo posterleri
 

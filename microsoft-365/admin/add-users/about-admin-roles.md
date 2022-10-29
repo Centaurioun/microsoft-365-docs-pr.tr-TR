@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Genel yönetici rolü veya hizmet yöneticisi rolü gibi yönetici rolleri hakkında bilgi edinin. Roller, belirli iş işlevleriyle eşlenir ve Microsoft 365 yönetim merkezinde belirli görevleri yapmak için izinler verir.
-ms.openlocfilehash: 0d3dcd975b6cd40ac9817bd5afce5597a6402d79
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 5921762a927e4fd6ed0364da1366f947fb923e47
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68722428"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785605"
 ---
 # <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezinde, yönetici rolleri
 
@@ -94,7 +94,7 @@ Muhtemelen kuruluşunuzda yalnızca aşağıdaki rolleri atamanız gerekecek. Va
 |Lisans yöneticisi    |   Kullanıcılara lisans ataması, kullanıcıların lisanslarını kaldırması ve kullanım konumlarını düzenlemesi gereken kullanıcılara Lisans yöneticisi rolünü atayın. <br/><br/> Lisans yöneticileri şunları da yapabilir: <br> - Grup tabanlı lisanslama için lisans atamalarını yeniden işleme <br> - Grup tabanlı lisanslama için gruplara ürün lisansları atama  |
 |Mesaj merkezi gizlilik gözetmeni    |   Microsoft 365 İleti merkezindeki gizlilik ve güvenlik iletilerini ve güncelleştirmeleri okuması gereken kullanıcılara İleti merkezi gizlilik okuyucusu rolünü atayın. İleti merkezi gizliliği okuyucuları, tercihlerine bağlı olarak veri gizliliği ile ilgili e-posta bildirimleri alabilir ve İleti merkezi tercihlerini kullanarak abonelikten çıkabilirler. Yalnızca genel yöneticiler ve İleti merkezi gizlilik okuyucuları, veri gizliliği iletilerini okuyabilir. Bu rolün hizmet isteklerini görüntüleme, oluşturma veya yönetme izni yoktur. <br><br>İleti merkezi gizlilik okuyucuları ayrıca şunları yapabilir: <br> - Veri gizliliği iletileri de dahil olmak üzere İleti Merkezindeki tüm bildirimleri izleme <br> - Grupları, alanları ve abonelikleri görüntüleme   |
 |Message merkezi gözetmeni |   Aşağıdaki işlemleri yapması gereken kullanıcılara İleti merkezi okuyucusu rolünü atayın: <br> - İleti merkezi bildirimlerini izleme <br> - İleti merkezi gönderileri ve güncelleştirmelerinin haftalık e-posta özetlerini alma <br> - İleti merkezi gönderilerini paylaşma <br> - Kullanıcılar ve gruplar gibi Azure AD hizmetleri için salt okunur erişime sahip olma|
-|Office Uygulamaları yöneticisi    |   Aşağıdaki işlemi yapmasına gerek duyan kullanıcılara Office Uygulamaları yöneticisi rolünü atayın: <br> -Office bulut ilkesi hizmetini kullanarak Office için bulut tabanlı ilkeler oluşturma ve yönetme <br> - Hizmet istekleri oluşturma ve yönetme <br> - Kullanıcıların kendi Office uygulamalarında gördüğü Yenilikler içeriğini yönetme   <br> - Hizmet durumunu görüntüleme  |
+|Office Uygulamaları yöneticisi    |   Aşağıdaki işlemi yapmasına gerek duyan kullanıcılara Office Uygulamaları yöneticisi rolünü atayın: <br> - Microsoft 365 için Bulut İlkesi hizmetini kullanarak Office için bulut tabanlı ilkeler oluşturma ve yönetme <br> - Hizmet istekleri oluşturma ve yönetme <br> - Kullanıcıların kendi Office uygulamalarında gördüğü Yenilikler içeriğini yönetme   <br> - Hizmet durumunu görüntüleme  |
 |Parola yöneticisi  |   - Yönetici olmayanların ve Parola Yöneticilerinin parolalarını sıfırlaması gereken bir kullanıcıya Parola yöneticisi rolünü atayın.   |
 |Power Platform yöneticisi |   Aşağıdaki işlemleri yapması gereken kullanıcılara Power Platform yöneticisi rolünü atayın: <br> - Power Apps, Power Automate ve Microsoft Purview Veri Kaybını Önleme için tüm yönetici özelliklerini yönetme <br> - Hizmet istekleri oluşturma ve yönetme <br> - Hizmet durumunu görüntüleme  |
 |Rapor gözetmeni |   Aşağıdaki işlemleri yapması gereken kullanıcılara Rapor okuyucusu rolünü atayın: <br> - Microsoft 365 yönetim merkezindeki kullanım verilerini ve etkinlik raporlarını görüntüleme <br> - Power BI benimseme içerik paketine erişme <br> - Azure AD'de oturum açma raporlarına ve etkinliğine erişme <br> - Microsoft Graph raporlama API'si tarafından döndürülen verileri görüntüleme|

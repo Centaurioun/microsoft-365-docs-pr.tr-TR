@@ -4,7 +4,7 @@ author: lanachin
 ms.author: v-lanachin
 ms.reviewer: mabolan
 manager: samanro
-ms.topic: article
+ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: bac87e202ebf656f8da6986738e42f847b8e098a
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 3e80da42f723bb00da15a054b930a76831f8413c
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68563262"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785911"
 ---
 # <a name="manage-mobile-devices-for-frontline-workers"></a>Ön cephe çalışanları için mobil cihazları yönetme
 
@@ -59,7 +59,7 @@ Bu bölüm, ön cephe çalışanları için paylaşılan cihazları yönetmeye y
 
 Örnek olarak Teams'i kullanarak paylaşılan cihaz modunun nasıl çalıştığı aşağıda açıklanmaktadır. Bir çalışan vardiyasının başlangıcında Teams'de oturum açtığında, cihazda paylaşılan cihaz modunu destekleyen diğer tüm uygulamalarda otomatik olarak oturum açar. Vardiyalarının sonunda Teams oturumunu kapattığında, paylaşılan cihaz modunu destekleyen diğer tüm uygulamalardan genel olarak oturumu kapatılmış olur. Oturumu kapatıldıktan sonra, çalışanın Teams'deki verilerine ve şirket verilerine (içinde barındırılan uygulamalar dahil) ve paylaşılan cihaz modunu destekleyen diğer tüm uygulamalara artık erişilemiyor. Cihaz bir sonraki çalışan için hazır ve güvenli bir şekilde teslim edilebilir.
 
-Microsoft [Authenticator uygulamasını](https://support.microsoft.com/account-billing/how-to-use-the-microsoft-authenticator-app-9783c865-0308-42fb-a519-8cf666fe0acc) yükleyip paylaşılan modu açarak bir cihazı paylaşılacak şekilde hazırlamak için Microsoft Endpoint Manager'da Microsoft Intune gibi bir mobil cihaz yönetimi (MDM) çözümü kullanırsınız. Teams ve paylaşılan cihaz modunu destekleyen diğer tüm uygulamalar, cihazdaki kullanıcıları yönetmek için paylaşılan mod ayarını kullanır. Kullandığınız MDM çözümü, oturumu kapattığınızda bir cihaz temizleme işlemi de gerçekleştirmelidir.
+[Microsoft Authenticator uygulamasını](https://support.microsoft.com/account-billing/how-to-use-the-microsoft-authenticator-app-9783c865-0308-42fb-a519-8cf666fe0acc) yükleyip paylaşılan modu açarak bir cihazı paylaşılacak şekilde hazırlamak için Microsoft Endpoint Manager'da Microsoft Intune gibi bir mobil cihaz yönetimi (MDM) çözümü kullanırsınız. Teams ve paylaşılan cihaz modunu destekleyen diğer tüm uygulamalar, cihazdaki kullanıcıları yönetmek için paylaşılan mod ayarını kullanır. Kullandığınız MDM çözümü, oturumu kapattığınızda bir cihaz temizleme işlemi de gerçekleştirmelidir.
 
 Paylaşılan cihaz modu şu anda Android cihazlarda desteklenmektedir. Başlamanıza yardımcı olacak bazı kaynaklar aşağıdadır.
 

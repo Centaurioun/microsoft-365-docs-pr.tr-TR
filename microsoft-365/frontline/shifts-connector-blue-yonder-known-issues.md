@@ -4,7 +4,7 @@ author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: ''
 manager: samanro
-ms.topic: article
+ms.topic: troubleshooting
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 3873a6a3d62d7f09aeba55a2680854d45dac56f5
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: dd53e2075dfd87cde5bd303e6bb61b992f54af7f
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68234602"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785935"
 ---
 # <a name="known-issues-teams-shifts-connector-for-blue-yonder"></a>Bilinen sorunlar: Blue Yonder için Teams Vardiyaları bağlayıcısı
 

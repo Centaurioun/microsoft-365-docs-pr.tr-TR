@@ -5,7 +5,7 @@ author: samanro
 ms.author: samanro
 ms.reviewer: aaglick
 manager: pamgreen
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: bebdd76ce0725ec4338825bd52cff143896b7e5d
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 8f58f2d418e279d23a24f4921148a292dc4ad6cc
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68641787"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785429"
 ---
 # <a name="start-with-a-pilot-deployment-of-microsoft-365-for-frontline-workers"></a>Ön cephe çalışanları için Microsoft 365'in pilot dağıtımıyla başlayın
 
@@ -152,7 +152,7 @@ Teams'i ayarladıktan ve ekiplerinizi ve kanallarınızı oluşturduktan sonra p
 
 - Müşteriler veya müşterilerle randevu zamanlamak için [rezervasyonlar](bookings-virtual-visits.md).
 - Ön cephe iş gücünüzü zamanlamak için [vardiyalar](shifts-for-teams-landing-page.md).
-- Çalışanlara yönelik öğrenme ve eğitim deneyimleri oluşturmak için [Viva Learning](/sharepoint/build-learning-and-training-experiences-for-employees).
+- [Çalışanlar](/sharepoint/build-learning-and-training-experiences-for-employees) için öğrenme ve eğitim deneyimleri oluşturmaya Viva Learning.
 
 ### <a name="communicate"></a>Iletişim kur
 

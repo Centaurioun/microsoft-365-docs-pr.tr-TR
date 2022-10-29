@@ -4,7 +4,7 @@ author: daisyfell
 ms.author: daisyfeller
 manager: pamgreen
 audience: ITPro
-ms.topic: article
+ms.topic: end-user-help
 ms.service: microsoft-365-frontline
 search.appverid: ''
 searchScope:
@@ -24,12 +24,12 @@ description: Teams ve Teams uygulamalarındaki iletişim ve işbirliği özellik
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 86be6c8021cfac99df618a28710efc77e049e3a8
-ms.sourcegitcommit: 674dfa2cb2f20546d2f7822e09bacf0e12e2718b
+ms.openlocfilehash: 7b049c4755e50575f281df8cee82938af061a01d
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68038807"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785143"
 ---
 # <a name="help-your-frontline-workers-use-collaboration-apps-and-features"></a>Ön cephe çalışanlarınızın işbirliği uygulamalarını ve özelliklerini kullanmalarını sağlama
 

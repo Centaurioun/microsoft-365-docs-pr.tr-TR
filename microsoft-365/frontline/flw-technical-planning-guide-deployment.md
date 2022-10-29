@@ -4,7 +4,7 @@ author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: amconkli
 manager: samanro
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -16,12 +16,12 @@ ms.collection:
 - highpri
 appliesto:
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 390ab29cbfe0ea030dea6acc887f0120a48192be
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: 03b203cc990d1d978eaeb1ccd1f9116a63d72264
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68566457"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785033"
 ---
 # <a name="technical-planning-guide-for-deploying-frontline-solutions-white-paper"></a>Ön cephe çözümleri dağıtmak için teknik planlama kılavuzu (teknik inceleme)
 

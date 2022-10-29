@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 uygulamaları için, hassas verileri korumak için Azure Information Protection (AIP) eklentisinin yerleşik etiketlemeye geçişini anlayın.
-ms.openlocfilehash: eb12c7cff4b3ca27f49503a3528a775af794901a
-ms.sourcegitcommit: 0ca3ab2abe07810e9b2cc2d806e3c6b9f35b146c
+ms.openlocfilehash: 0567f90ac308458653ceb1eaec8404a9e8b25a81
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68684930"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786515"
 ---
 # <a name="migrate-the-azure-information-protection-aip-add-in-to-built-in-labeling-for-office-apps"></a>Azure Information Protection (AIP) eklentisini Office uygulamaları için yerleşik etiketlemeye geçirme
 
@@ -127,7 +127,7 @@ Yerleşik etiketlemeyi destekleyen Windows Office uygulamalarınız için Micros
 |Outlook | `MSIP.OutlookAddin` |
 | | | 
 
-bu ayarı grup ilkesi veya [Office bulut ilkesi hizmetini](/DeployOffice/overview-office-cloud-policy-service) kullanarak dağıtın.
+Grup ilkesi kullanarak veya [Microsoft 365 için Bulut İlkesi hizmetini](/DeployOffice/overview-office-cloud-policy-service) kullanarak bu ayarı dağıtın.
 
 > [!IMPORTANT]
 > **Duyarlılık etiketlerini uygulamak ve görüntülemek için Office'te Duyarlılık özelliğini kullan** grup ilkesi ayarını kullanıyorsanız ve bunu **1** olarak ayarlarsanız, AIP eklentisinin Office uygulamalarında hala yüklenebileceği bazı durumlar vardır. Eklentinin her uygulamada yüklenmesini engellemek, bunun olmasını önler.
@@ -149,7 +149,7 @@ Bu değişiklikleri yaptıktan sonra **Duyarlılık** düğmesi Office şeridind
 
 Bu yeni ayar hala kullanıma sunulmaya devam ediyor. Henüz görmüyorsanız birkaç gün daha bekleyin ve yeniden deneyin.
 
-bu ayarı grup ilkesi veya [Office bulut ilkesi hizmetini](/DeployOffice/overview-office-cloud-policy-service) kullanarak dağıtın.
+Grup ilkesi kullanarak veya [Microsoft 365 için Bulut İlkesi hizmetini](/DeployOffice/overview-office-cloud-policy-service) kullanarak bu ayarı dağıtın.
 
 Yapılandırmanız gereken ek Office ayarları:
 

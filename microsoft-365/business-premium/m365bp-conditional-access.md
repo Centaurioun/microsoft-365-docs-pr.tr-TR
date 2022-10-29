@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/26/2022
 ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Güvenlik varsayılanlarının, Microsoft 365 İş Ekstra için önceden yapılandırılmış güvenlik ayarları sağlayarak kuruluşunuzun kimlikle ilgili saldırılara karşı korunmasına nasıl yardımcı olabileceğini öğrenin.
-ms.openlocfilehash: ed201a05714f5d32d5b23e6300e53a05f9fb741b
-ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
+ms.openlocfilehash: 2c989983a8282be161856b9da5abab1d32ca1349
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68093792"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785539"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>Güvenlik varsayılanları ve çok faktörlü kimlik doğrulaması
 
@@ -46,7 +46,7 @@ Bu makalede aşağıdakiler hakkında bilgi sağlanır:
 
 Güvenlik varsayılanları, şirketinizin kullanıcı hesaplarını baştan korumaya yardımcı olmak için tasarlanmıştır. Güvenlik varsayılanları etkinleştirildiğinde, şirketinizin güvenliğini sağlamaya yardımcı olan güvenli varsayılan ayarlar sağlar:
 
-- Tüm kullanıcıların ve yöneticilerin Microsoft Authenticator uygulamasını kullanarak MFA'ya kaydolmasını gerektirme.
+- Tüm kullanıcıların ve yöneticilerin [Microsoft Authenticator uygulamasını](/azure/active-directory/authentication/concept-authentication-authenticator-app) veya [OATH TOTP](/azure/active-directory/authentication/concept-authentication-oath-tokens#oath-software-tokens) kullanarak herhangi bir üçüncü taraf uygulamasını kullanarak MFA'ya kaydolmasını gerektirme.
 - MFA'ya sahip zorlayıcı kullanıcılar, çoğunlukla yeni bir cihazda veya uygulamada gösterildiğinde, ancak daha çok kritik roller ve görevler için.
 - MFA yapabilen eski kimlik doğrulama istemcilerinden kimlik doğrulamasını devre dışı bırakma.
 - Her oturum açtıklarında fazladan kimlik doğrulaması gerektirerek yöneticileri koruma.

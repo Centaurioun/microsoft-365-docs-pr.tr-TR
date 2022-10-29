@@ -6,7 +6,7 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 audience: admin
-ms.topic: article
+ms.topic: overview
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection:
@@ -19,12 +19,12 @@ ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 1ffcc6f8cd82614f86b0c2f4b7217b6ca4e38146
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 4bab9f8c2b3e0eebbfa234c554b5aebce03ade40
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68068666"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786749"
 ---
 # <a name="get-started-with-microsoft-365-for-frontline-workers"></a>Ön saf çalışanları için Microsoft 365'i kullanmaya başlama
 
@@ -51,7 +51,7 @@ F3 lisansları için bazı özellikler kullanılabilir, ancak Power Apps ve Powe
 
 ## <a name="enhance-communications-and-collaboration"></a>İletişimi ve işbirliğini geliştirme
 
-Ön cephe çalışanları için Microsoft 365 özellikleriyle tüm kuruluşunuz genelinde ekip ve bire bir iletişimi kolaylaştırın. Çalışanlarınızın her birinin daha geniş kuruluşunuza bağlı hissetmesini sağlamak için Viva Bağlantılar ile kurumsal iletişimleri zenginleştirebilir ve genişletebilirsiniz. İş gücünüzün Teams sohbetleri, bildirimler, Walkie Talkie ve daha fazlası ile sorunsuz bir şekilde iletişim kurabildiğinden emin olun.
+Ön cephe çalışanları için Microsoft 365 özellikleriyle tüm kuruluşunuz genelinde ekip ve bire bir iletişimi kolaylaştırın. Çalışanlarınızın her birinin daha geniş kuruluşunuza bağlı hissetmesini sağlamak için kurumsal iletişimleri Viva Connections ile zenginleştirebilir ve genişletebilirsiniz. İş gücünüzün Teams sohbetleri, bildirimler, Walkie Talkie ve daha fazlası ile sorunsuz bir şekilde iletişim kurabildiğinden emin olun.
 
 | Simge | Çözüm alanı | Açıklama |
 | --- | --- | --- |
@@ -59,7 +59,7 @@ F3 lisansları için bazı özellikler kullanılabilir, ancak Power Apps ve Powe
 
 ## <a name="transform-employee-experiences"></a>Çalışan deneyimlerini dönüştürme
 
-Kapsayıcı bir şirket kültürünü teşvik edin ve tüm çalışanlarınızın başarılı olmak için ihtiyaç duydukları kaynaklara sahip olduğundan emin olurken çalışanların refahını artırın. Microsoft Teams, SharePoint, Viva Bağlantılar ve Viva Öğrenme kullanarak çalışanları en iyi işlerini yapmak ve becerileri daha hızlı oluşturmak için ihtiyaç duydukları araçlara, kişilere ve cihazlara bağlayabilirsiniz. Örneğin:
+Kapsayıcı bir şirket kültürünü teşvik edin ve tüm çalışanlarınızın başarılı olmak için ihtiyaç duydukları kaynaklara sahip olduğundan emin olurken çalışanların refahını artırın. Microsoft Teams, SharePoint, Viva Connections ve Viva Learning kullanarak, çalışanları en iyi işlerini yapmak ve becerileri daha hızlı oluşturmak için ihtiyaç duydukları araçlara, kişilere ve cihazlara bağlayabilirsiniz. Örneğin:
 
 | Simge | Çözüm alanı | Açıklama |
 | --- | --- | --- |
@@ -112,7 +112,7 @@ Sınıfının en iyisi güvenlik ve uyumluluk özellikleriyle işletmenizin güv
 |-----------|---------------------|
 |[Ön cephe çalışanları için mobil cihazları yönetme](flw-devices.md) |Kurumsal, F1, F3 |
 |[cihazları Intune ile yönetme](/microsoft-365/solutions/manage-devices-with-intune-overview) |Kurumsal, F1, F3 |
-|[Microsoft Endpoint Manager genel bakış](/mem/endpoint-manager-overview) |Kurumsal, F1, F3 |
+|[Microsoft Endpoint Manager'a genel bakış](/mem/endpoint-manager-overview) |Kurumsal, F1, F3 |
 |[Intune ile cihaz iş ortağı tümleştirmeleri](/mem/intune/protect/device-compliance-partners) |Kurumsal, F1, F3 |
 
 ## <a name="adoption-principles-to-help-envision-and-implement-business-scenarios"></a>İş senaryolarını öngörmeye ve uygulamaya yardımcı olacak benimseme ilkeleri

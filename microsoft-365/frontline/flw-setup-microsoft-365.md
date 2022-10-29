@@ -4,7 +4,7 @@ author: samanro
 ms.author: samanro
 ms.reviewer: samanro
 manager: pamgreen
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: fe5610387744c9a9a0dcfa9c87e82741b0847a8d
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 1229b9b71d926cf03441659e2c0ee538afc107fc
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68057337"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68784989"
 ---
 # <a name="set-up-microsoft-365-for-frontline-workers"></a>Ön cephe çalışanları için Microsoft 365'i ayarlama
 
@@ -45,12 +45,12 @@ Aşağıdaki tabloda ön cephe çalışanlarınızın senaryoları listelemekted
 | Senaryo | Gerekli hizmetler |
 |  ------- | -------  |
 | [Ekip iletişimi ve işbirliği](flw-team-collaboration.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[Exchange Online ile Email](#set-up-email-with-exchange-online) |
-| [Kurumsal İletişimler](flw-corp-comms.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Bağlantılar](#set-up-viva-connections) <br>[Yammer](#set-up-your-organizations-social-network-with-yammer) |
+| [Kurumsal İletişimler](flw-corp-comms.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Yammer](#set-up-your-organizations-social-network-with-yammer) |
 | [Sanal randevular](virtual-appointments.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) |
-| [Çalışanlarınızla etkileşim kurun ve çalışanların refahı üzerine odaklanın](flw-wellbeing-engagement.md)| [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Bağlantılar](#set-up-viva-connections) <br>[Yammer](#set-up-your-organizations-social-network-with-yammer) |
+| [Çalışanlarınızla etkileşim kurun ve çalışanların refahı üzerine odaklanın](flw-wellbeing-engagement.md)| [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Yammer](#set-up-your-organizations-social-network-with-yammer) |
 | [Vardiyalar ile ekibinizi zamanlama](shifts-for-teams-landing-page.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) |
-| [Yeni çalışanları ekleme](/sharepoint/onboard-employees)| [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Bağlantılar](#set-up-viva-connections) <br>[Viva Öğrenme](#set-up-viva-learning)|
-| [Devam eden eğitim](flw-onboarding-training.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[Viva Öğrenme](#set-up-viva-learning) |
+| [Yeni çalışanları ekleme](/sharepoint/onboard-employees)| [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Viva Learning](#set-up-viva-learning)|
+| [Devam eden eğitim](flw-onboarding-training.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[Viva Learning](#set-up-viva-learning) |
 | [İş süreçlerini basitleştirme](simplify-business-processes.md) | [Microsoft Teams](#step-3-set-up-microsoft-teams) <br>[Power Apps, Power Automate ve Power BI](#set-up-power-apps-power-automate-and-power-bi) |
 
 Bazı hizmetler yalnızca e-posta ve Power Platform gibi F3 lisanslarına dahil edilir. Kullanıcılarınız için ihtiyacınız olan lisans türünü belirlemek için [Ön çalışan kullanıcı türlerini ve lisanslamayı anlama](flw-licensing-options.md) bölümüne göz atın.
@@ -86,13 +86,13 @@ Kullanıcılarınızın e-postaları için kullanmak üzere Outlook uygulamasın
 
 #### <a name="set-up-viva-connections"></a>Viva Bağlantılar’ı Ayarlayın
 
-Ön cephe çalışanlarınızla iletişime geçmenize ve bunları bilgilendirmenize yardımcı olan bir pano oluşturmak için [Viva Bağlantılar](/viva/connections/viva-connections-overview) kullanın. Viva Bağlantılar, Microsoft Teams'de herkese ilgili haberleri, konuşmaları ve başarılı olmaları için ihtiyaç duydukları araçları keşfetmek için kişiselleştirilmiş bir hedef sağlayan özelleştirilebilir bir uygulamadır. 
+Ön cephe çalışanlarınızla iletişime geçmenize ve bunları bilgilendirmenize yardımcı olan bir pano oluşturmak için [Viva Connections](/viva/connections/viva-connections-overview) kullanın. Viva Connections, Microsoft Teams'de herkese ilgili haberleri, konuşmaları ve başarılı olması için ihtiyaç duydukları araçları keşfetmek için kişiselleştirilmiş bir hedef sağlayan özelleştirilebilir bir uygulamadır. 
 
-Ayarlamak için [Çalışan deneyimini oluşturma kurulum kılavuzunu](https://aka.ms/EmployeeExperienceDashboard) izleyin. [Viva Bağlantılar ayarlama](/viva/connections/guide-to-setting-up-viva-connections) hakkında daha fazla bilgi edinin.
+Ayarlamak için [Çalışan deneyimini oluşturma kurulum kılavuzunu](https://aka.ms/EmployeeExperienceDashboard) izleyin. [Viva Connections ayarlama](/viva/connections/guide-to-setting-up-viva-connections) hakkında daha fazla bilgi edinin.
 
-#### <a name="set-up-viva-learning"></a>Viva Öğrenme ayarlama
+#### <a name="set-up-viva-learning"></a>Viva Learning ayarlama
 
-[Viva Öğrenme](/viva/learning/), Microsoft Teams'de çalışanlara, zaten kullandıkları araçlar ve platformlar içinde öğrenmeyi iş akışına getirerek öğrenmeyi günün doğal bir parçası yapma gücü veren bir uygulamadır. [Viva Öğrenme ayarlamayı öğrenmek için Bkz. Teams yönetim merkezinde](/viva/learning/set-up-viva-learning) Microsoft Viva Öğrenme ayarlama.
+[Viva Learning](/viva/learning/), Microsoft Teams'de çalışanlara, zaten kullandıkları araçlar ve platformlar içinde öğrenmeyi iş akışına getirerek günün doğal bir parçası yapma gücü veren bir uygulamadır. [Viva Learning ayarlamayı öğrenmek için Bkz. Teams yönetim merkezinde](/viva/learning/set-up-viva-learning) Microsoft Viva Learning ayarlama.
 
 ### <a name="set-up-your-organizations-social-network-with-yammer"></a>Yammer ile kuruluşunuzun sosyal ağını ayarlama
 

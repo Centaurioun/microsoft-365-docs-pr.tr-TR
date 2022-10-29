@@ -4,7 +4,7 @@ author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: ''
 manager: samanro
-ms.topic: article
+ms.topic: troubleshooting
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 452eb4d826ddedddc31bffa25edfcbc8b88526f1
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: 9ecb984f313e4ca9c62490b1abda1c27fdadd5f9
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68574109"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785957"
 ---
 # <a name="known-issues-team-shifts-connector-for-ukg-dimensions"></a>Bilinen sorunlar: UKG Boyutları için Ekip Vardiyaları bağlayıcısı
 

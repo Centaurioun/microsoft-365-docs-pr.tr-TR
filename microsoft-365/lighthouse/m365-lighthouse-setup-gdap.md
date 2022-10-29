@@ -19,20 +19,24 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için müşterileriniz için GDAP'yi ayarlamayı öğrenin.
-ms.openlocfilehash: 932052cedcd3a3977594559c20b770ef75aaca76
-ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
+ms.openlocfilehash: b7baa473b19c2431edf1f5e85c9f106cc60e962d
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68778107"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785913"
 ---
 # <a name="set-up-gdap-for-your-customers"></a>Müşterileriniz için GDAP'yı ayarlama
+
+
+> [!NOTE]
+> Bu özellik müşterilerimiz için farklı hızlarda kullanıma sunmaktadır. Bu özelliği henüz görmüyorsanız, yakında görmeniz gerekir.
 
 Microsoft 365 Lighthouse eklenen iş ortakları artık lisansları veya boyutları ne olursa olsun Lighthouse aracılığıyla tüm müşterilerini Ayrıntılı Yönetici Ayrıcalıkları (GDAP) ile ayarlayabilir. Lighthouse, iş ortaklarının kuruluşlarını hızla GDAP'a geçirmelerini ve müşterilere temsilci erişimi için en az ayrıcalık yolculuğuna başlamalarını sağlar. Yönettiğiniz müşteri kiracıları için kuruluşunuzu GDAP ile ayarlayarak, kuruluşunuzdaki kullanıcılar müşteri kiracılarını güvende tutarken işlerini yapmak için gerekli izinlere sahip olur.
 
 DAP veya GDAP aracılığıyla temsilci erişimi, müşterilerin Lighthouse'a tamamen dahil olması için bir önkoşuldur. Bu nedenle, Lighthouse'da müşterilerinizi yönetmenin ilk adımı GDAP ilişkileri oluşturmak olabilir.
 
-GDAP Kurulumu işlemi sırasında, kuruluşunuzdaki çalışanların iş işlevlerinin katmanlarına roller atayacak ve ardından bu katmanlı rolleri müşteri grupları için kullanıcılarla belirli güvenlik gruplarına atayacak GDAP şablonları oluşturacaksınız. GDAP rollerinin kapsamı [yerleşik Azure AD roller](/azure/active-directory/roles/permissions-reference) olarak belirlenmiştir ve GDAP'yi ayarladığınızda her katman için gereken bir dizi rol için öneriler görürsünüz.
+GDAP kurulum işlemi sırasında, kuruluşunuzdaki çalışanların iş işlevlerinin katmanlarına roller atayacak ve ardından bu katmanlı rolleri müşteri grupları için kullanıcılarla belirli güvenlik gruplarına atayacak GDAP şablonları oluşturacaksınız. GDAP rollerinin kapsamı [yerleşik Azure AD roller](/azure/active-directory/roles/permissions-reference) olarak belirlenmiştir ve GDAP'yi ayarladığınızda her katman için gereken bir dizi rol için öneriler görürsünüz.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -52,28 +56,27 @@ GDAP Kurulumu işlemi sırasında, kuruluşunuzdaki çalışanların iş işlevl
 
 GDAP'yi ilk kez ayarlarken, aşağıdaki bölümleri sırayla tamamlamanız gerekir. İşlem tamamlandıktan sonra geri dönüp istediğiniz bölümü gerektiği gibi düzenleyebilirsiniz.
 
-Başlamak için
+Başlamak için: 
 
 1. Lighthouse'un sol gezinti bölmesinde **Giriş'i seçin.**
 
 2. **Kuruluşunuz için GDAP'yi ayarlama kartında** **Kurulumu başlat'ı seçin.**
 
-3. Her bölümü sırayla tamamlayın.
+3. Aşağıdaki bölümleri sırayla tamamlayın.
 
-    1. İzin katmanlarını tanımlama
+    [1. Adım: İzin katmanlarını tanımlama](#step-1-define-tiers-of-permissions)
 
-    2. GDAP şablonları oluşturma
+    [2. Adım: GDAP şablonları oluşturma](#step-2-create-gdap-templates)
 
-    3. Güvenlik grupları oluşturma
+    [3. Adım: Güvenlik grupları oluşturma](#step-3-create-security-groups)
 
-    4. Müşteri kiracıları atama
+    [4. Adım: Müşteri kiracılarını atama](#step-4-assign-customer-tenants)
 
-    5. Ayarları gözden geçirme
+    [5. Adım: Ayarları gözden geçirme](#step-5-review-settings)
 
+### <a name="step-1-define-tiers-of-permissions"></a>1. Adım: İzin katmanlarını tanımlama
 
-### <a name="define-tiers-of-permissions"></a>İzin katmanlarını tanımlama
-
-Bu adımda, çalışanlarınızın iş işlevlerine göre her katman için gereken rolleri seçeceksiniz.
+Çalışanlarınızın iş işlevlerine göre her katman için gereken rolleri seçin.
 
 1. **İzin katmanlarını tanımla** sayfasında, çalışanlarınızın iş işlevlerine göre her katman için gereken rolleri seçin. Yapabilecekleriniz
 
@@ -81,19 +84,21 @@ Bu adımda, çalışanlarınızın iş işlevlerine göre her katman için gerek
 
     - Her katmana el ile bir rol atayın.
 
-2. Sonraki bölüme gitmek için **İleri'yi** seçin veya Kaydet **ve kapat'ı** seçerek ayarlarınızı kaydedin ve araçtan çıkın.
+2. Sonraki bölüme gitmek için **İleri'yi** seçin veya Kaydet **ve kapat'ı** seçerek ayarlarınızı kaydedin ve GDAP Kurulumu'dan çıkın.
 
 Katmanları kuruluş gereksinimlerinize uyacak şekilde yeniden adlandırabilirsiniz. Önerilerin içindeki her katmandan rolleri kaldırabilirsiniz. Bazı roller farklı katmanlara eklenemez; örneğin, Yalnızca JIT katmanındaki roller başka bir katmana eklenemez.
 
-### <a name="create-gdap-templates"></a>GDAP şablonları oluşturma
+### <a name="step-2-create-gdap-templates"></a>2. Adım: GDAP şablonları oluşturma
 
-Ardından bir GDAP şablonu oluşturun. Bu şablon aşağıdakilerden oluşan bir koleksiyon olacaktır:
+GDAP şablonu bir koleksiyondur:
 
 - Rollere sahip katmanlar
 
 - Katman başına güvenlik grupları
 
 - Her güvenlik grubundaki kullanıcılar
+ 
+GDAP şablonu oluşturmak için:
 
 1. **GDAP şablonları oluştur** sayfasında **Şablon oluştur'u** seçin.
 
@@ -103,9 +108,9 @@ Ardından bir GDAP şablonu oluşturun. Bu şablon aşağıdakilerden oluşan bi
 
 4. **Kaydet**'i seçin.
 
-5. Sonraki bölüme gitmek için **İleri'yi** seçin veya kaydet **ve kapat'ı** seçerek ayarlarınızı kaydedin ve araçtan çıkın.
+5. Sonraki bölüme gitmek için **İleri'yi** seçin veya kaydet **ve kapat'ı** seçerek ayarlarınızı kaydedin ve GDAP Kurulumu'dan çıkın.
 
-### <a name="create-security-groups"></a>Güvenlik grupları oluşturma
+### <a name="step-3-create-security-groups"></a>3. Adım: Güvenlik grupları oluşturma
 
 Her şablon için katman başına en az bir güvenlik grubu gerekir. İlk şablon için yeni bir güvenlik grubu oluşturacaksınız, ancak sonraki şablonlarda isterseniz grupları yeniden kullanabilirsiniz.
 
@@ -121,19 +126,19 @@ Her şablon için katman başına en az bir güvenlik grubu gerekir. İlk şablo
 
 6. **Kaydet'i** yeniden seçin.
 
-7. Sonraki bölüme gitmek için **İleri'yi** seçin veya Kaydet **ve kapat'ı** seçerek ayarlarınızı kaydedin ve araçtan çıkın.
+7. Sonraki bölüme gitmek için **İleri'yi** seçin veya Kaydet **ve kapat'ı** seçerek ayarlarınızı kaydedin ve GDAP Kurulumu'dan çıkın.
 
-### <a name="assign-customer-tenants"></a>Müşteri kiracıları atama
+### <a name="step-4-assign-customer-tenants"></a>4. Adım: Müşteri kiracılarını atama
 
-Artık her şablona müşteri grupları atayabilirsiniz. Her müşteri yalnızca bir şablona atanabilir, bu nedenle seçildikten sonra bu müşteri kiracısı sonraki şablonlarda seçenek olarak görüntülenmez.
+Her şablona müşteri grupları atayın. Her müşteri yalnızca bir şablona atanabilir, bu nedenle seçildikten sonra bu müşteri kiracısı sonraki şablonlarda seçenek olarak görüntülenmez.
 
-Bir müşteri kiracısını yeniden atamak istiyorsanız aracı yeniden çalıştırın ve mevcut atamadan bu müşterinin seçimini kaldırın. Ardından bunu farklı bir şablona yeniden atayabilirsiniz. Sağ üst köşedeki arama kutusunu kullanarak listeyi filtreleyebilirsiniz.
+Bir müşteri kiracısını yeniden atamak istiyorsanız GDAP Kurulumu'nu yeniden çalıştırın ve mevcut atamadan bu müşterinin seçimini kaldırın. Ardından bunu farklı bir şablona yeniden atayabilirsiniz. Sağ üst köşedeki arama kutusunu kullanarak listeyi filtreleyebilirsiniz.
 
 1. **Müşteri kiracıları ata** sayfasında, oluşturduğunuz güvenlik grubuyla ilişkilendirmek istediğiniz kiracıları seçin.
 
-2. Sonraki bölüme gitmek için **İleri'yi** seçin veya Kaydet **ve kapat'ı** seçerek ayarlarınızı kaydedin ve araçtan çıkın.
+2. Sonraki bölüme gitmek için **İleri'yi** seçin veya Kaydet **ve kapat'ı** seçerek ayarlarınızı kaydedin ve GDAP Kurulumu'dan çıkın.
 
-### <a name="review-settings"></a>Ayarları gözden geçirme
+### <a name="step-5-review-settings"></a>5. Adım: Ayarları gözden geçirme
 
 1. **Ayarları gözden geçir** sayfasında, oluşturduğunuz ayarları gözden geçirin ve **son'u seçin.**
 
@@ -141,7 +146,7 @@ Bir müşteri kiracısını yeniden atamak istiyorsanız aracı yeniden çalış
 
 Müşteri kiracılarından herhangi biri zaten bir DAP ilişkisine sahipse, onay yok penceresi sırasında bu ayarlar otomatik olarak uygulanır. DAP'ı olmayan müşteriler için veya onay penceresi kapatılmadıysa **Son'un** seçilmesi sizi her müşteri için gereken onay bağlantılarının oluşturulduğu son sayfaya götürür. Müşteri GDAP ilişkisine onay verdikten sonra, ayarların geri kalanı otomatik olarak uygulanır.
 
-GDAP Kurulum aracını tamamladıktan sonra katmanlarda, rollerde, güvenlik gruplarında veya şablonlarda güncelleştirme veya değişiklik yapmak için farklı adımlara gidebilirsiniz. GDAP ilişkileri İş Ortağı Merkezi'nde de görünür ve güvenlik grupları da Azure AD görünür.
+GDAP kurulumunu tamamladıktan sonra katmanlarda, rollerde, güvenlik gruplarında veya şablonlarda güncelleştirme veya değişiklik yapmak için farklı adımlara gidebilirsiniz. GDAP ilişkileri İş Ortağı Merkezi'nde de görünür ve güvenlik grupları da Azure AD görünür.
 
 ## <a name="related-content"></a>İlgili içerik
 
@@ -150,4 +155,4 @@ GDAP Kurulum aracını tamamladıktan sonra katmanlarda, rollerde, güvenlik gru
 [Ayrıntılı yönetici ayrıcalıklarına (GDAP) giriş (](/partner-center/gdap-introduction) makale)\
 [yerleşik rolleri Azure AD](/azure/active-directory/roles/permissions-reference) (makale)\
 [Azure Active Directory'de gruplar ve erişim hakları hakkında bilgi edinin](/azure/active-directory/fundamentals/concept-learn-about-groups) (makale)\
-[Azure AD yetkilendirme yönetimi nedir?](/azure/active-directory/governance/entitlement-management-overview) (makale)\
+[Azure AD yetkilendirme yönetimi nedir?](/azure/active-directory/governance/entitlement-management-overview) (makale)

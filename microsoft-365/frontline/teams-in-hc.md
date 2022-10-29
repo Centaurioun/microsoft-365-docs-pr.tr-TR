@@ -4,7 +4,7 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:
@@ -29,12 +29,12 @@ description: Microsoft 365 ve Microsoft Teams'deki teletıp özellikleri ve bunl
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6c6a3b4c25e670b533265ede2bf4804759662848
-ms.sourcegitcommit: 597aad78b6952b4a5642a84dddf3fe3c8cc8eeff
+ms.openlocfilehash: adb3e5ec1b032093ec1a977e2e7d4b4e71b7abcf
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/23/2022
-ms.locfileid: "68001826"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785077"
 ---
 # <a name="get-started-with-microsoft-365-for-healthcare-organizations"></a>Sağlık kuruluşları için Microsoft 365'i kullanmaya başlama
 

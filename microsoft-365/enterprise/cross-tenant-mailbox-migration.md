@@ -17,12 +17,12 @@ ms.custom:
 ms.collection:
 - scotvorg
 - M365-subscription-management
-ms.openlocfilehash: 7809e71165216f4b18ffae5e0151cdd941681832
-ms.sourcegitcommit: edc9d4dec92ca81cff39bbf9590f1cd3a75ec436
+ms.openlocfilehash: 6a26d9c3c9e759c533e0ec10cc38e007633004d2
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68484618"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786815"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Kiracılar arası posta kutusu geçişi (önizleme)
 
@@ -39,8 +39,8 @@ Kiracılar arası Exchange posta kutusu geçişleri yalnızca karma veya bulutta
 Bu makalede, kiracılar arası posta kutusu taşıma işlemi açıklanır ve Exchange Online posta kutusu içeriği taşımaları için kaynak ve hedef kiracıların nasıl hazırlandığına ilişkin yönergeler sağlanır.
 
 > [!IMPORTANT]
-> Bu özellik ile bir posta kutusu Kiracılar Arası geçirildiğinde, dava için tutulan e-postalar da dahil olmak üzere tüm e-postalar geçirilir. Geçiş başarılı olduktan sonra kaynak posta kutusu silinir. Bu, geçiş sonrasında hiçbir koşulda (dava veya bekletme saklamadaki posta kutuları dahil) kaynak kiracıda kullanılabilir, bulunabilir veya erişilebilir kaynak posta kutusu olduğu anlamına gelir.  
-> Şu anda bazı senaryolarda Teams sohbet verilerinin de posta kutusunda tutulmasına rağmen Teams sohbet verilerinin geçirilmemesi sorununu araştırıyoruz. Teams sohbet verilerinin korunması gerekiyorsa, posta kutusunu geçirmek için bu özelliği kullanmayın.
+> Posta kutularını herhangi bir ayrı tutma türüne geçirmek için bu özelliği kullanmayın. Beklemedeki kullanıcılar için kaynak posta kutularının geçirilmesi desteklenmez.  
+> Bu özelliğe sahip bir posta kutusu kiracılar arası geçirildiğinde yalnızca posta kutusunda görünen içerik (e-posta, kişiler, takvim, görevler ve notlar) geçirilir. hedefine (hedef kiracı) yönlendirin. Geçiş başarılı olduktan sonra kaynak posta kutusu silinir. Bu, geçiş sonrasında hiçbir koşulda kaynak kiracıda kullanılabilir, bulunabilir veya erişilebilir kaynak posta kutusu olduğu anlamına gelir.
 
 > [!NOTE]
 > Kiracılar arası posta kutusu geçişlerinizin yanı sıra e-posta için yeni Etki Alanı Paylaşımı özelliğimizi önizlemek istiyorsanız lütfen [formu aka.ms/domainsharingpreview'da](https://aka.ms/domainsharingpreview) tamamlayın. E-posta için etki alanı paylaşımı, ayrı Microsoft 365 kiracılarındaki kullanıcıların aynı özel etki alanındaki adresleri kullanarak e-posta gönderip almasını sağlar. Bu özellik, ayrı kiracılardaki kullanıcıların e-posta adreslerinde ortak bir kurumsal markayı temsil etmeleri gereken senaryoları çözmeye yöneliktir. Geçerli önizleme, kiracılar arası posta kutusu geçişi birlikte kullanılabilirliği sırasında etki alanlarının süresiz olarak paylaşılması ve paylaşılan etki alanlarının paylaşılması için destek sağlar.
@@ -241,7 +241,7 @@ Hedef kuruluşta aşağıdaki nesnelerin ve özniteliklerin ayarlandığından e
 
      - ExchangeGUID (kaynaktan hedefe doğrudan akış): Posta kutusu GUID'sinin eşleşmesi gerekir. Bu hedef nesnede yoksa taşıma işlemi devam etmez.
      - ArchiveGUID (kaynaktan hedefe doğrudan akış): Arşiv GUID'sinin eşleşmesi gerekir. Bu hedef nesnede yoksa taşıma işlemi devam etmez. (Bu yalnızca kaynak posta kutusu Arşiv etkinse gereklidir).
-     - LegacyExchangeDN (proxyAddress, "x500:\<LegacyExchangeDN>" olarak akış): LegacyExchangeDN hedef MailUser üzerinde x500: proxyAddress olarak bulunmalıdır. Ayrıca, kaynak posta kutusundan hedef posta kullanıcısına tüm x500 adreslerini kopyalamanız gerekir. Bunlar hedef nesnede yoksa taşıma işlemleri devam etmez.
+     - LegacyExchangeDN (proxyAddress, "x500:\<LegacyExchangeDN>" olarak akış): LegacyExchangeDN hedef MailUser üzerinde x500: proxyAddress olarak bulunmalıdır. Ayrıca, kaynak posta kutusundan hedef posta kullanıcısına tüm x500 adreslerini kopyalamanız gerekir. Bunlar hedef nesnede yoksa taşıma işlemleri devam etmez. Ayrıca bu adım, geçiş öncesinde gönderilen e-postalar için yanıt yeteneğini etkinleştirmek için önemlidir. Her e-posta öğesindeki gönderen/alıcı adresi ve Microsoft Outlook'ta ve Microsoft Outlook Web App'de (OWA) otomatik tamamlama önbelleği, LegacyExchangeDN özniteliğinin değerini kullanır. Bir kullanıcı LegacyExchangeDN değerini kullanarak bulunamıyorsa, e-posta iletilerinin teslimi 5.1.1 NDR ile başarısız olabilir.
      - UserPrincipalName: UPN, kullanıcının NEW kimliğine veya hedef şirketine hizalanır (örneğin, user@northwindtraders.onmicrosoft.com).
      - Birincil SMTPAddress: Birincil SMTP adresi kullanıcının YENİ şirketiyle (örneğin, user@northwind.com) hizalanır.
      - TargetAddress/ExternalEmailAddress: MailUser, kullanıcının kaynak kiracıda barındırılan geçerli posta kutusuna (örneğin user@contoso.onmicrosoft.com) başvurur. Bu değeri atarken, PrimarySMTPAddress'i atadığınızdan/atadığınızdan emin olun; aksi takdirde bu değer PrimarySMTPAddress değerini ayarlar ve bu da taşıma hatalarına neden olur.
@@ -285,19 +285,9 @@ Hedef kuruluşta aşağıdaki nesnelerin ve özniteliklerin ayarlandığından e
    - msExchSafeRecipientsHash – İstemcilerden gelen güvenli ve engellenen gönderen verilerini şirket içi Active Directory'a geri yazar.
    - msExchSafeSendersHash – İstemcilerden gelen çevrimiçi güvenli ve engellenen gönderen verilerini şirket içi Active Directory yazar.
 
-2. Kaynak posta kutusu LitigationHold üzerindeyse ve kaynak posta kutusu Kurtarılabilir Öğeler boyutu veritabanı varsayılanımızdan (30 GB) büyükse, hedef kota kaynak posta kutusu boyutundan küçük olduğundan taşıma işlemi devam etmeyecektir. Hedef MailUser nesnesini, ELC posta kutusu bayraklarını kaynak ortamdan hedefe geçirerek hedef sistemi tetikleyerek MailUser kotasını 100 GB'a genişleterek hedefe taşınmasını sağlayabilirsiniz. ELC bayraklarını damgalama komutları kiracı yöneticilerine gösterilmediğinden, bu yönergeler yalnızca Azure AD Connect çalıştıran karma kimlik için çalışır.
+2. Kaynak posta kutusu Kurtarılabilir Öğeler boyutu veritabanı varsayılanımızdan (30 GB) büyükse, hedef kota kaynak posta kutusu boyutundan küçük olduğundan taşıma işlemi devam etmeyecektir. Hedef MailUser nesnesini, ELC posta kutusu bayraklarını kaynak ortamdan hedefe geçirerek hedef sistemi tetikleyerek MailUser kotasını 100 GB'a genişleterek hedefe taşınmasını sağlayabilirsiniz. Karma bir ortamda, hedef ADUser üzerinde uygun msExchELCMailboxFlags değerini ayarlamanız gerekir.
 
-   > [!NOTE]
-   > ÖRNEK – OLDUĞU GIBI, GARANTİ YOK
-   >
-   > Bu betik, hem kaynak posta kutusuna (kaynak değerleri almak için) hem de hedef şirket içi Active Directory (ADUser nesnesini damgalamak için) bir bağlantı olduğunu varsayar. Kaynakta dava açma veya tek öğe kurtarma etkinleştirildiyse, bunu hedef hesapta ayarlayın. Bu, hedef hesabın dökümü boyutunu 100 GB'a yükseltecektir.
-
-   ```powershell
-   $ELCValue = 0
-   if ($source.LitigationHoldEnabled) {$ELCValue = $ELCValue + 8} if ($source.SingleItemRecoveryEnabled) {$ELCValue = $ELCValue + 16} if ($ELCValue -gt 0) {Set-ADUser -Server $domainController -Identity $destination.SamAccountName -Replace @{msExchELCMailboxFlags=$ELCValue}}
-   ```
-
-3. Karma olmayan hedef kiracılar, MailUser nesnesinde Litigation Hold özelliğini etkinleştirmek ve kotayı 100 GB'a yükseltmek için aşağıdaki komutu çalıştırarak geçiş öncesinde MailUsers için Kurtarılabilir Öğeler klasöründeki kotayı değiştirebilir:
+3. Karma olmayan hedef kiracılar, hedef MailUser nesnesinde Dava Tutma özelliğini etkinleştirmek ve kotayı 100 GB'a yükseltmek için aşağıdaki komutu çalıştırarak geçişten önce MailUsers için Kurtarılabilir Öğeler klasöründeki kotayı değiştirebilir:
 
    ```powershell
    Set-MailUser -Identity <MailUserIdentity> -EnableLitigationHoldForMigration
@@ -398,7 +388,7 @@ Toplantılar taşınır, ancak öğeler kiracılar arası geçiş yaparken Teams
 
 ### <a name="does-the-teams-chat-folder-content-migrate-cross-tenant"></a>Teams sohbet klasörü içeriği kiracılar arası geçiş yapar mı?
 
-Hayır, Teams sohbet klasörü içeriği kiracılar arası geçiş yapmaz. Bu özellik ile bir posta kutusu Kiracılar Arası geçirildiğinde, dava için tutulan e-postalar da dahil olmak üzere tüm e-postalar geçirilir. Geçiş başarılı olduktan sonra kaynak posta kutusu silinir. Bu, geçiş sonrasında hiçbir koşulda (dava veya bekletme saklamadaki posta kutuları dahil) kaynak kiracıda kullanılabilir, bulunabilir veya erişilebilir kaynak posta kutusu olduğu anlamına gelir. Şu anda bazı senaryolarda Teams sohbet verilerinin de posta kutusunda tutulmasına rağmen Teams sohbet verilerinin geçirilmemesi sorununu araştırıyoruz. Teams sohbet verilerinin korunması gerekiyorsa, posta kutusunu geçirmek için bu özelliği kullanmayın.
+Hayır, Teams sohbet klasörü içeriği kiracılar arası geçiş yapmaz. Bu özelliğe sahip bir posta kutusu kiracılar arası geçirildiğinde yalnızca posta kutusunda görünen içerik (e-posta, kişiler, takvim, görevler ve notlar) geçirilir.
 
 ### <a name="how-can-i-see-just-moves-that-are-cross-tenant-moves-not-my-onboarding-and-off-boarding-moves"></a>Ekleme ve biniş dışı hareketlerimi değil, yalnızca kiracılar arası taşımalar olan taşımaları nasıl görebilirim?
 
@@ -411,7 +401,7 @@ Get-MoveRequest -Flags "CrossTenant"
 ### <a name="can-you-provide-example-scripts-for-copying-attributes-used-in-testing"></a>Testte kullanılan öznitelikleri kopyalamak için örnek betikler sağlayabilir misiniz?
 
 > [!NOTE]
-> ÖRNEK – OLDUĞU GIBI GARANTİ YOK Bu betik, hem kaynak posta kutusuna (kaynak değerleri almak için) hem de etki alanı hizmetleri şirket içi Active Directory hedefine (ADUser nesnesini damgalama amacıyla) bir bağlantı olduğunu varsayar. Kaynakta dava açma veya tek öğe kurtarma etkinleştirildiyse, bunu hedef hesapta ayarlayın. Bu, hedef hesabın dökümü boyutunu 100 GB'a yükseltecektir.
+> ÖRNEK – OLDUĞU GIBI GARANTİ YOK Bu betik, hem kaynak posta kutusuna (kaynak değerleri almak için) hem de etki alanı hizmetleri şirket içi Active Directory hedefine (ADUser nesnesini damgalama amacıyla) bir bağlantı olduğunu varsayar.
 
 ```powershell
 # This will export users from the source tenant with the CustomAttribute1 = "Cross-Tenant-Project"
@@ -466,13 +456,17 @@ Posta kutusu taşıma işlemi yürütülürken temsilci görevleri varsayımın�
 
 Exchange posta kutusu, hedef nesnedeki bir e-posta adresiyle (proxyAddress) eşleşerek bir MailUser'a dönüştürülürken özgün kaynak posta kutusunda TARGETAddress değerini MRS oluşturarak taşınır. İşlem, taşıma komutuna geçirilen -TargetDeliveryDomain değerini alır ve ardından hedef taraftaki etki alanı için eşleşen bir ara sunucuyu denetler. Bir eşleşme bulduğumuzda, dönüştürülen posta kutusu (şimdi MailUser) nesnesinde ExternalEmailAddress (targetAddress) ayarlamak için eşleşen proxyAddress kullanılır.
 
+### <a name="how-mail-flow-works-after-migration"></a>Geçiş sonrasında posta akışı nasıl çalışır?
+
+Geçiş sonrasında Kiracılar Arası posta akışı, Exchange Karma posta akışına benzer şekilde çalışır. Geçirilen her posta kutusu, kaynak kiracıdan gelen postaları hedef kiracıdaki posta kutularına iletmek için doğru hedef adresi olan kaynak MailUser'a ihtiyaç duyar. Aktarım kuralları, güvenlik ve uyumluluk özellikleri, postanın aktığı her kiracıda yapılandırıldığı gibi çalışır. Bu nedenle, gelen postalar için istenmeyen posta önleme, kötü amaçlı yazılımdan koruma, karantina gibi özelliklerin yanı sıra aktarım kuralları ve günlük kuralları önce kaynak kiracıda, sonra hedef kiracıda çalıştırılır.
+
 ### <a name="how-do-mailbox-permissions-transition"></a>Posta kutusu izinleri nasıl geçiş yapar?
 
 Posta kutusu izinleri, Adına Gönder ve Posta Kutusu Erişimi'ni içerir:
 
 - Adına Gönder (AD:publicDelegates), kullanıcının posta kutusuna temsilci olarak erişimi olan alıcıların DN'sini depolar. Bu değer Active Directory'de depolanır ve şu anda posta kutusu geçişinin bir parçası olarak taşınmaz. Kaynak posta kutusunda publicDelegates ayarlandıysa, MEU'nun posta kutusuna dönüştürme işlemi çalıştırılarak `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>`hedef ortamda tamamlandıktan sonra hedef Posta Kutusu'nda publicDelegates'i yeniden örneklemeniz gerekir.
 
-- Posta kutusunda depolanan Posta Kutusu İzinleri, hem sorumlu hem de temsilci hedef sisteme taşındığında posta kutusuyla birlikte taşınır. Örneğin, kullanıcıya TestUser_7 kiracı SourceCompany.onmicrosoft.com posta kutusu TestUser_8 FullAccess verilir. Posta kutusu TargetCompany.onmicrosoft.com taşındıktan sonra hedef dizinde aynı izinler ayarlanır. Hem kaynak hem de hedef kiracılarda TestUser_7 için _Get-MailboxPermission_ kullanan örnekler aşağıda gösterilmiştir. Exchange cmdlet'lerine kaynak ve hedef eklenmiştir.
+- Posta kutusunda depolanan Posta Kutusu İzinleri, hem sorumlu hem de temsilci hedef sisteme taşındığında posta kutusuyla birlikte taşınır. Örneğin, TestUser *7 kullanıcısına kiracı SourceCompany.onmicrosoft.com posta kutusu TestUser_8 FullAccess verilir. Posta kutusu TargetCompany.onmicrosoft.com taşındıktan sonra hedef dizinde aynı izinler ayarlanır. Hem kaynak hem de hedef kiracılardaki TestUser_7 için Get-MailboxPermission kullanan \_örnekler* aşağıda gösterilmiştir. Exchange cmdlet'lerine kaynak ve hedef eklenmiştir.
 
 Taşımadan önce posta kutusu izni çıkışının bir örneği aşağıda verilmiştir.
 

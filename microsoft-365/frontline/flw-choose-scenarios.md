@@ -6,7 +6,7 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection:
@@ -19,16 +19,16 @@ ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: cfa44bdccad320ba0b9e0bb3593d7b8cf3bfe9c1
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 4f33fc714b4b76dd1c815f71131b46aae4a2b4ac
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68068767"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68785121"
 ---
 # <a name="choose-your-scenarios-for-microsoft-365-for-frontline-workers"></a>Ön cephe çalışanları için Microsoft 365 senaryolarınızı seçin
 
-Ön cephe çalışanları için Microsoft 365, iş gücünüzle bağlantı kurmanıza, iş gücü yönetiminizi geliştirmenize ve operasyonel verimliliği artırmanıza yardımcı olabilir. Bu hedeflere ulaşmanıza yardımcı olabilecek çeşitli çözüm alanları vardır. Microsoft 365'in temel güvenlik ve cihaz yönetimi özelliklerini, yukarıda ön cephe işinizi etkinleştiren, güçlendiren ve dönüştüren senaryolar oluşturabileceğiniz güvenli bir temel ayarlama olarak düşünün. Microsoft Teams'den SharePoint, Viva Bağlantılar, Yammer ve Power Platform'a kadar ön cephe çalışanları için Microsoft 365'te bulunan özellikleri kullanabilir ya da mevcut sistemlerle bağlantı kurmak veya işletmeniz için özel çözümler oluşturmak için dijital ekosistemdeki iş ortaklarımızdan çözümler ekleyebilirsiniz.
+Ön cephe çalışanları için Microsoft 365, iş gücünüzle bağlantı kurmanıza, iş gücü yönetiminizi geliştirmenize ve operasyonel verimliliği artırmanıza yardımcı olabilir. Bu hedeflere ulaşmanıza yardımcı olabilecek çeşitli çözüm alanları vardır. Microsoft 365'in temel güvenlik ve cihaz yönetimi özelliklerini, yukarıda ön cephe işinizi etkinleştiren, güçlendiren ve dönüştüren senaryolar oluşturabileceğiniz güvenli bir temel ayarlama olarak düşünün. Microsoft Teams'den SharePoint, Viva Connections, Yammer ve Power Platform'a kadar ön cephe çalışanları için Microsoft 365'te bulunan özellikleri kullanabilir veya mevcut sistemlerle bağlantı kurmak veya işletmeniz için özel çözümler oluşturmak için dijital ekosistemdeki iş ortaklarımızdan çözümler ekleyebilirsiniz.
 
 :::image type="content" source="media/flw-maturity-model.png" alt-text="Ön cephe için etkinleştirmeden dönüşüme kadar dijital olgunluk modeli.":::
 
@@ -53,8 +53,8 @@ Kuruluşunuzun ön cephe çalışanları için Microsoft 365 ile neler yapabilec
 
 | Senaryo | Açıklama | Hizmetleri | Teams uygulamaları |
 | --- | --- | --- |--- |
-| [Ekip iletişimi ve işbirliği](flw-team-collaboration.md) | Ön cephe iş gücünüzün Microsoft Teams ile mağaza, vardiya veya ekip içinde iletişim kurmasına yardımcı olun. Viva Bağlantılar, ihtiyaç duydukları bilgileri cihazlarının önüne ve ortasına yerleştiren bir pano oluşturmanıza yardımcı olur, böylece gerektiğinde onlara ulaşabilirler. | Microsoft Teams<br>Outlook<br>SharePoint<br>Viva Bağlantılar<br>Power Platform ve Power Apps | Onaylar, Sohbet, Dosyalar, Listeler, Toplantı, Övgü, Vardiyalar, Görevler, Telsiz |
-| [Kurumsal İletişimler](flw-corp-comms.md) | Çalışan katılımı, herhangi bir kuruluşta iş yeri memnuniyeti, sadakat ve üretkenlik açısından önemli bir katkıda bulunur. SharePoint, Teams, Stream ve Yammer'ı kullanarak herkesi bilgilendirmeyi ve etkileşimde tutmayı öğrenin. Hepsini Viva Bağlantılar ile bir araya getirin. | Microsoft Teams<br>Outlook<br>SharePoint<br>Yammer<br>Viva Bağlantılar | Karşılamak |
+| [Ekip iletişimi ve işbirliği](flw-team-collaboration.md) | Ön cephe iş gücünüzün Microsoft Teams ile mağaza, vardiya veya ekip içinde iletişim kurmasına yardımcı olun. Viva Connections, ihtiyaç duydukları bilgileri cihazlarının önüne ve ortasına yerleştiren bir pano oluşturmanıza yardımcı olur, böylece her zaman ulaşabilirler. | Microsoft Teams<br>Outlook<br>SharePoint<br>Viva Connections<br>Power Platform ve Power Apps | Onaylar, Sohbet, Dosyalar, Listeler, Toplantı, Övgü, Vardiyalar, Görevler, Telsiz |
+| [Kurumsal İletişimler](flw-corp-comms.md) | Çalışan katılımı, herhangi bir kuruluşta iş yeri memnuniyeti, sadakat ve üretkenlik açısından önemli bir katkıda bulunur. SharePoint, Teams, Stream ve Yammer'ı kullanarak herkesi bilgilendirmeyi ve etkileşimde tutmayı öğrenin. Hepsini Viva Connections ile bir araya getirin. | Microsoft Teams<br>Outlook<br>SharePoint<br>Yammer<br>Viva Connections | Karşılamak |
 
 Yammer'ın ön cephe çalışanlarınız için nasıl çalışabileceğini öğrenmek için şu kaynaklara da bakın: [Yammer On Toplulukları](https://aka.ms/Yam10Communities) ve [Yammer Lookbook](https://aka.ms/Yammer/Lookbook).
 
@@ -66,7 +66,7 @@ Tüm kuruluşunuzla etkileşim kurmalarına yardımcı olarak ön cephe çalış
 
 | Senaryo | Açıklama | Hizmetleri | Teams uygulamaları |
 | --- | --- | --- |--- |
-| [Çalışanlarınızla etkileşim kurun ve çalışanların refahı üzerine odaklanın](flw-wellbeing-engagement.md) | Kuruluşunuz genelinde daha derin bağlantılar oluşturun ve kapsayıcı bir çalışma alanı oluşturun. | Microsoft Teams <br>SharePoint <br> Microsoft Stream <br>Viva Bağlantılar <br> Yammer| Övgü |
+| [Çalışanlarınızla etkileşim kurun ve çalışanların refahı üzerine odaklanın](flw-wellbeing-engagement.md) | Kuruluşunuz genelinde daha derin bağlantılar oluşturun ve kapsayıcı bir çalışma alanı oluşturun. | Microsoft Teams <br>SharePoint <br> Microsoft Stream <br>Viva Connections <br> Yammer| Övgü |
 
 ## <a name="training--onboarding"></a>Eğitim ve işe alım
 
@@ -76,8 +76,8 @@ Tüm kuruluşunuzla etkileşim kurmalarına yardımcı olarak ön cephe çalış
 
 | Senaryo | Açıklama | Hizmetleri | Teams uygulamaları |
 | --- | --- | --- |--- |
-| [Yeni çalışanları ekleme](flw-onboarding-training.md) | Yeni çalışanların önemli kaynaklar bulabileceği, kuruluşundaki kişilerle tanışabileceği ve yeni rollerinde başarılı olmaya hazırlanabileceği hepsi bir arada karma bir çalışma ortamı geliştirerek yeni çalışanın harika bir deneyime sahip olmasını sağlayın.| SharePoint<br>Viva Öğrenme <br>Viva Bağlantılar <br>Yammer | Liste <br>Canlı toplantılar |
-| [Devam eden eğitim](flw-onboarding-training.md#ongoing-training) | Bunlar eklendikten sonra, Viva Öğrenme'da devam eden eğitimlerle iş gücünüzün becerilerini güncel tutmasına yardımcı olun. | SharePoint <br>Viva Öğrenme <br>Viva Bağlantılar <br>Yammer| |
+| [Yeni çalışanları ekleme](flw-onboarding-training.md) | Yeni çalışanların önemli kaynaklar bulabileceği, kuruluşundaki kişilerle tanışabileceği ve yeni rollerinde başarılı olmaya hazırlanabileceği hepsi bir arada karma bir çalışma ortamı geliştirerek yeni çalışanın harika bir deneyime sahip olmasını sağlayın.| SharePoint<br>Viva Learning <br>Viva Connections <br>Yammer | Liste <br>Canlı toplantılar |
+| [Devam eden eğitim](flw-onboarding-training.md#ongoing-training) | Bunlar eklendikten sonra, Viva Learning'da devam eden eğitimlerle iş gücünüzün becerilerini güncel tutmasına yardımcı olun. | SharePoint <br>Viva Learning <br>Viva Connections <br>Yammer| |
 
 ## <a name="schedule-management"></a>Zamanlama yönetimi
 
@@ -156,4 +156,4 @@ Sıfırdan kod veya şablonlu ve örnek koddan yararlanarak [Teams platformunda]
 
 ### <a name="viva-platform-extensibility"></a>Viva platformu genişletilebilirliği
 
-Geliştiriciler, yaygın olarak benimsenen SharePoint Framework [(SPFx)](/sharepoint/dev/spfx/build-for-teams-overview) ile ilgi çekici deneyimler oluşturmak için Microsoft Viva Bağlantılar [genişletebilir](/sharepoint/dev/spfx/viva/overview-viva-connections). Viva Bağlantılar, çalışanların başarılı olmasına yardımcı olmak için kültürü şekillendiren ve bağlantıları teşvik eden uygulamalar oluşturup tümleştirebileceğiniz modern bir çalışan deneyimine yönelik ağ geçidinizdir. SPFx ile, kullanıma hazır veya özel SPFx web bölümlerini, SPFx uzantılarını (üst bilgi, alt bilgi gibi) ve iyileştirilmiş mobil deneyimler için belirli bileşenleri kullanarak genişletmenin birden çok yolunuz vardır.
+Geliştiriciler, yaygın olarak benimsenen SharePoint Framework [(SPFx)](/sharepoint/dev/spfx/build-for-teams-overview) ile ilgi çekici deneyimler oluşturmak için Microsoft Viva Connections [genişletebilir](/sharepoint/dev/spfx/viva/overview-viva-connections). Viva Connections, çalışanların başarılı olmasına yardımcı olmak için kültürü şekillendiren ve bağlantıları teşvik eden uygulamalar oluşturup tümleştirebileceğiniz modern bir çalışan deneyimine yönelik ağ geçidinizdir. SPFx ile, kullanıma hazır veya özel SPFx web bölümlerini, SPFx uzantılarını (üst bilgi, alt bilgi gibi) ve iyileştirilmiş mobil deneyimler için belirli bileşenleri kullanarak genişletmenin birden çok yolunuz vardır.

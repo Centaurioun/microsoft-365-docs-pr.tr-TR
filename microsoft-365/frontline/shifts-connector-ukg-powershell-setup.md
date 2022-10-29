@@ -21,7 +21,7 @@ ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 10/28/2022
-ms.locfileid: "68777142"
+ms.locfileid: "68777691"
 ---
 # <a name="use-powershell-to-connect-shifts-to-ukg-dimensions"></a>Vardiyaları UKG Boyutlarına bağlamak için PowerShell kullanma
 

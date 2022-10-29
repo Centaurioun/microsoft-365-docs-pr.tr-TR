@@ -4,7 +4,7 @@ author: lanachin
 ms.author: v-lanachin
 ms.reviewer: ''
 manager: samanro
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 4dc87f3590d7b6213c207ae10d855c0171d8c78f
-ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
+ms.openlocfilehash: e660bd7aa5cf34498f4c7e590c9eae5d09d23cea
+ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68470200"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "68786793"
 ---
 # <a name="use-the-shifts-connector-wizard-to-connect-shifts-to-ukg-dimensions"></a>Shifts bağlayıcı sihirbazını kullanarak Shifts'i UKG Boyutlarına bağlama
 
