@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Kuruluşunuz için Teams iletilerinin otomatik olarak tutulmasını veya silinmesini yönetebilmeniz için Microsoft Teams için geçerli olan Microsoft 365 bekletme ilkeleri hakkında bilgi edinin.
-ms.openlocfilehash: 70aa52c8d6b9fd63a4f9f44a7a36152dad414ec7
-ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
+ms.openlocfilehash: 37e3546bb4b960f23c893ee401176471ad990eb4
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2022
-ms.locfileid: "68786595"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68794104"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams için bekletme hakkında bilgi edinin
 
@@ -51,7 +51,11 @@ Diğer iş yükleri için bkz:
 > 
 > Bekletme ilkeleri, [kendinizle sohbet](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) özelliğiyle gönderilen iletileri de destekler.
 
-Teams sohbetleri iletileri, kanal iletileri ve özel kanal iletileri Teams için bekletme ilkeleri kullanılarak silinebilir ve iletilerdeki metinlere ek olarak, uyumluluk nedeniyle aşağıdaki öğeler korunabilir: [Video klipleri](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c), eklenmiş resimler, tablolar, köprü metni bağlantıları, diğer Teams iletilerine ve dosyalarına bağlantılar ve [kart içeriği](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Sistem tarafından oluşturulan iletiler olan yeni oluşturulan arama verileri kayıtları da eklenir. Sohbet iletileri ve özel kanal iletileri konuşmadaki kişilerin tüm adlarını, kanal iletileri ise ekip adını ve ileti başlığını (varsa) içerir. 
+Teams sohbetleri iletileri, kanal iletileri ve özel kanal iletileri Teams için bekletme ilkeleri kullanılarak silinebilir ve iletilerdeki metinlere ek olarak, uyumluluk nedeniyle aşağıdaki öğeler korunabilir: [Video klipleri](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c), eklenmiş resimler, tablolar, köprü metni bağlantıları, diğer Teams iletilerine ve dosyalarına bağlantılar ve [kart içeriği](/microsoftteams/platform/task-modules-and-cards/what-are-cards).
+
+[Toplantılar ve çağrılar için meta veriler](/MicrosoftTeams/ediscovery-investigation#teams-metadata) içeren sistem tarafından oluşturulan iletiler olan yeni oluşturulan arama verileri kayıtları da desteklenir.
+
+Bu sohbet iletileri ve özel kanal iletileri, konuşmadaki kişilerin tüm adlarını içerir ve kanal iletileri ekip adını ve ileti başlığını (varsa) içerir. 
 
 Kod parçacıkları, Teams mobil istemcisinden kaydedilen sesli notlar, küçük resimler, duyuru görüntüleri ve ifade biçimindeki diğer kişilerden gelen tepkiler, Teams için bekletme ilkelerini kullandığınızda korunmaz.
 

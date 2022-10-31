@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - purview-compliance
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 70ba18d1471ea5fc5d145f64b68c6fef1691124c
-ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
+ms.openlocfilehash: 0d84b220496fd0a8f371e57492bb9f4cdd009be8
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68777640"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793752"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Microsoft Purview risk ve uyumluluk çözümlerindeki yenilikler
 
@@ -63,7 +63,7 @@ microsoft 365, [Microsoft Purview uyumluluk portalı](microsoft-365-compliance-c
 - **Genel kullanılabilirlik (GA):**[Saklama süresinin sonunda](retention-settings.md#relabeling-at-the-end-of-the-retention-period) yeniden etiketleme.
 - **Genel kullanılabilirlik (GA)**: [Kaydın kilidi açıldı](declare-records.md#configuring-retention-labels-to-declare-records).
 - **Genel kullanılabilirlik (GA):** Kullanıcılar artık yayımlanmış bekletme etiketlerini [doğrudan Teams'deki](create-apply-retention-labels.md#applying-retention-labels-using-microsoft-365-groups) dosyalara uygulayabilir.
-- Yeni bekletme desteği deyimleri: Teams için bekletme ilkeleri [sohbeti kendimle](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) birlikte destekler özellik ve [video klipleri](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c) ve Yammer destek [hikayesi gönderileri](https://support.microsoft.com/office/overview-of-storyline-for-yammer-and-viva-engage-530e4e66-9f1c-4be1-b371-08ea40dc4b69) için bekletme ilkeleri.
+- Yeni bekletme desteği deyimleri: Teams için bekletme ilkeleri, [toplantılar ve aramalar için meta veriler](/MicrosoftTeams/ediscovery-investigation#teams-metadata) içeren sistem tarafından oluşturulan iletiler olan [sohbet](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) özelliğini, [video klipleri](https://support.microsoft.com/office/record-a-video-clip-in-teams-0c57dae5-2974-4214-9c46-7a2136386f1c) ve arama veri kayıtlarını destekler. Yammer için bekletme ilkeleri [, hikaye akışı gönderilerini](https://support.microsoft.com/office/overview-of-storyline-for-yammer-and-viva-engage-530e4e66-9f1c-4be1-b371-08ea40dc4b69) destekler.
 - Bekletme ilkeleri hatalarla karşılaşıyorsa ürün içi deneyim iyileştirildi: Artık ayrıntılar bölmesinde hatanın ayrıntılı bir açıklamasını görürsünüz. Bu, sorunu çözebilecek ürün içi eylemlerle birlikte sunulur. Örneğin, geçersiz konumları kaldırın ve ilkeyi yeniden eşitleyin.
 
 ### <a name="microsoft-priva"></a>Microsoft Priva

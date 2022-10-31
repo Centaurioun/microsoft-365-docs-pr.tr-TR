@@ -21,12 +21,12 @@ ms.collection:
 - m365-security
 - tier2
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 9097a48dee61ea0dc96345331f83b07d1796fb2d
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: a6064137a5a8a7eefc233501707de1de6ae3afe8
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68622590"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68794052"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-microsoft-365-defender-preview"></a>Microsoft 365 Defender'de Microsoft Defender for Cloud Apps (Önizleme)
 
@@ -99,18 +99,17 @@ Aşağıdaki resimler ve tablolar, Microsoft Defender for Cloud Apps ile Microso
 | Bulut Uygulamaları için Defender | Microsoft 365 Defender |
 |---------|---------|
 | Ayarlar | Ayarlar -> Bulut uygulamaları |
-| Sistem ayarları | Ayarlar -> Bulut uygulamaları |
 | Ayarlar/İdare günlüğü | Bulut uygulamaları -> İdare günlüğü |
-| Güvenlik uzantıları | Ayarlar -> Bulut uygulamaları |
-| Playbook'lar | Ayarlar -> Bulut uygulamaları |
-| SIEM aracıları | Ayarlar -> Bulut uygulamaları |
-| Dış DLP | Ayarlar -> Bulut uygulamaları |
-| API belirteçleri | Ayarlar -> Bulut uygulamaları |
-| Yönetici erişimini yönetme | İzinler-> Bulut uygulamaları-> Rolleri |
+| Güvenlik uzantıları -> Playbook'lar | Ayarlar -> Bulut uygulamaları |
+| Güvenlik uzantıları -> SIEM aracıları | Ayarlar -> Bulut uygulamaları |
+| Dış DLP > güvenlik uzantıları | Ayarlar -> Bulut uygulamaları |
+| Güvenlik uzantıları -> API belirteçleri | Ayarlar -> Bulut uygulamaları |
+| Yönetici erişimini yönetme -> Yönetici rolleri | İzinler-> Bulut uygulamaları-> Rolleri |
+| Yönetici erişimini yönetme -> Etkinlik gizlilik izinleri | İzinler-> Bulut uygulamaları-> Etkinlik gizlilik izinleri |
 | Dışarı aktarılan raporlar | Raporlar -> Bulut uygulamaları -> Dışarı aktarılan raporlar |
-| Kapsamlı dağıtım ve gizlilik | İzinler -> Bulut uygulamaları -> Etkinlik Gizliliği izinleri |
-| Bağlı Uygulamalar/Uygulama bağlayıcıları | Ayarlar -> Cloud Apps -> Bağlı Uygulamalar |
-| Koşullu Erişim Uygulama Denetimi | Ayarlar -> Bulut uygulamaları -> Koşullu Erişim Uygulama Denetimi uygulamaları |
+| Kapsamlı dağıtım ve gizlilik | Ayarlar -> Cloud Apps -> Kapsamlı dağıtım ve gizlilik |
+| Bağlı Uygulamalar / Uygulama bağlayıcıları | Ayarlar -> Cloud Apps -> Bağlı uygulamalar -> Uygulama Bağlayıcıları |
+| Koşullu Erişim Uygulama Denetimi | Ayarlar -> Bulut uygulamaları -> Bağlı uygulamalar -> Koşullu Erişim Uygulama Denetimi uygulamaları |
 | IP adresi aralıkları              | Ayarlar -> Bulut uygulamaları                                      |
 | Kullanıcı grupları                    | Ayarlar -> Bulut uygulamaları                                      |
 

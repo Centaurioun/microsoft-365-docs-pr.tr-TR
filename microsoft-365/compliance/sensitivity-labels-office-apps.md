@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: MASAÜSTÜ, mobil ve web için Office uygulamalarında duyarlılık etiketlerini yönetmek için BT yöneticilerine yönelik bilgiler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c4ae1dfd9d38650a7f34287685a3f00b34c1234e
-ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
+ms.openlocfilehash: 4e6571b59d8ab6ec3624fda0a7827118e939d2fa
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2022
-ms.locfileid: "68786771"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793713"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office uygulamalarında duyarlılık etiketlerini yönetme
 
@@ -116,7 +116,7 @@ Listelenen sayılar, her özellik için gereken en düşük Office uygulaması s
 |[İçeriğe otomatik olarak bir hassasiyet etiketi uygulama](apply-sensitivity-label-automatically.md) <br /> - Eğitilebilir sınıflandırıcıları kullanma                    | Güncel Kanal: 2105+ <br /><br> Aylık Kurumsal Kanal: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | İnceleme altında           | İnceleme altında               | Evet |
 |[Varsayılan etiket ve zorunlu etiketleme için farklı ayarlar](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Güncel Kanal: 2105+ <br /><br> Aylık Kurumsal Kanal: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Evet |
 |[PDF desteği](#pdf-support) | Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım|  İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
-|[S/MIME koruması uygulama](#configure-a-label-to-apply-smime-protection-in-outlook) | Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım | 16.61+ <sup>\*</sup>                   | 4.2226+ | 4.2203+ | İnceleme altında |
+|[S/MIME koruması uygulama](#configure-a-label-to-apply-smime-protection-in-outlook) | Önizleme: [Beta Kanalı](https://office.com/insider) | 16.61+ <sup>\*</sup>                   | 4.2226+ | 4.2203+ | İnceleme altında |
 |[Duyarlılık çubuğu](#sensitivity-bar) ve [görüntü etiketi rengi](#label-colors) | İnceleme altında |  İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
 
 **Dipnot:**
@@ -162,7 +162,7 @@ Diğer etiketleme çözümleri için desteklenen dosya türlerine ilişkin belge
 
 ## <a name="protection-templates-and-sensitivity-labels"></a>Koruma şablonları ve duyarlılık etiketleri
 
-Office 365 İleti Şifrelemesi için tanımladığınızlar gibi yönetici tanımlı [koruma şablonları](/azure/information-protection/configure-policy-templates), yerleşik etiketleme kullanırken Office uygulamalarında görünmez. Bu basitleştirilmiş deneyim, şifrelemenin etkinleştirildiği duyarlılık etiketlerine aynı ayarlar eklendiğinden bir koruma şablonu seçmenize gerek olmadığını yansıtır.
+Microsoft Purview İleti Şifrelemesi için tanımladığınızlar gibi yönetici tanımlı [koruma şablonları](/azure/information-protection/configure-policy-templates), yerleşik etiketleme kullanırken Office uygulamalarında görünmez. Bu basitleştirilmiş deneyim, şifrelemenin etkinleştirildiği duyarlılık etiketlerine aynı ayarlar eklendiğinden bir koruma şablonu seçmenize gerek olmadığını yansıtır.
 
 *EncryptionTemplateId* parametresiyle [New-Label](/powershell/module/exchange/new-label) cmdlet'ini kullandığınızda var olan bir şablonu duyarlılık etiketine dönüştürebilirsiniz.
 
@@ -405,7 +405,7 @@ Outlook uygulaması zorunlu etiketlemeyi kapatmayı desteklemediğinde: **Kullan
 > 
 > Bir etiketi S/MIME koruması uygulamak üzere yapılandırıyorsanız ancak Windows üzerinde Outlook henüz bunu desteklemiyorsa etiket görüntülenmeye devam eder ve uygulanabilir, ancak S/MIME ayarları yoksayılır. Exchange otomatik etiketleme ilkeleri için bu etiketi seçemezsiniz.
 
-Bu yapılandırma Microsoft Purview uyumluluk portalı kullanılamaz. Office 365 [Güvenlik & Uyumluluk Merkezi PowerShell'e bağlandıktan sonra PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) gelişmiş ayarlarını [Etiket Ayarla](/powershell/module/exchange/set-label) veya [Yeni Etiket](/powershell/module/exchange/new-label) cmd ile kullanmanız gerekir.
+Bu yapılandırma Microsoft Purview uyumluluk portalı kullanılamaz. [Güvenlik & Uyumluluğu PowerShell'e bağlandıktan sonra PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) gelişmiş ayarlarını [Etiket Ayarla](/powershell/module/exchange/set-label) veya [Yeni Etiket](/powershell/module/exchange/new-label) cmd ile kullanmanız gerekir.
 
 Bu ayarları yalnızca çalışan bir [S/MIME dağıtımınız](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) varsa ve etiketin [Azure Information Protection Rights Management şifrelemesini kullanan varsayılan koruma](encryption-sensitivity-labels.md) yerine e-postalar için bu koruma yöntemini otomatik olarak uygulamasını istiyorsanız kullanın. Sonuçta elde edilen koruma, kullanıcının Outlook'tan S/MIME seçeneklerini el ile seçmesi ile aynı olacaktır.
 

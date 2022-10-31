@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint ve Microsoft Teams sitelerindeki ve Microsoft 365 gruplarındaki içeriği korumak için duyarlılık etiketlerini kullanın.
-ms.openlocfilehash: 279fdd6738811dda31a237e57b91558fb439d81b
-ms.sourcegitcommit: 04e517c7e00323b5c33d8ea937115725cf2cfd4d
+ms.openlocfilehash: c394e5b40f7c01399b822db45550a1772415244f
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "68565893"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68794214"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Microsoft Teams, Microsoft 365 grupları ve SharePoint sitelerindeki içeriği korumak için duyarlılık etiketlerini kullanma
 
@@ -476,7 +476,7 @@ Set-SPOTenant -BlockSendLabelMismatchEmail $True
 
 Birisi bir siteye veya gruba duyarlılık etiketi eklediğinde veya kaldırdığında, bu etkinlikler de denetlenir ancak otomatik olarak e-posta oluşturmaz.
 
-Tüm bu denetim olayları [Duyarlılık etiketi etkinlikleri](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) kategorisinde bulunabilir. Denetim günlüğünde arama yapma yönergeleri için bkz [. Güvenlik & Uyumluluk Merkezi'nde denetim günlüğünde arama](search-the-audit-log-in-security-and-compliance.md) yapma.
+Tüm bu denetim olayları [Duyarlılık etiketi etkinlikleri](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) kategorisinde bulunabilir. Denetim günlüğünde arama yapma yönergeleri için bkz [. Uyumluluk portalında denetim günlüğünde arama](search-the-audit-log-in-security-and-compliance.md) yapma.
 
 ## <a name="how-to-disable-sensitivity-labels-for-containers"></a>Kapsayıcılar için duyarlılık etiketlerini devre dışı bırakma
 

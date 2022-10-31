@@ -11,16 +11,16 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: normal
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
-- m365initiative-compliance
 description: Microsoft 365 saklama için ölçek, otomasyon veya gelişmiş yapılandırma senaryoları için gerekli olabilecek yapılandırmayı destekleyen PowerShell cmdlet'lerini belirleyin.
-ms.openlocfilehash: bdbda5de65421fa73f45a278e2346777835062d9
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 93ae764f0384ad14883e0498f6e733d5784ced23
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942002"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793246"
 ---
 # <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Bekletme ilkeleri ve bekletme etiketleri için PowerShell cmdlet'leri
 
@@ -28,7 +28,7 @@ ms.locfileid: "66942002"
 
 Ölçeklendirme, otomatik betikler veya gelişmiş yapılandırma senaryoları için ihtiyaç duyabileceğiniz bekletme ilkeleri ve bekletme etiketleri için kullanılabilen ana PowerShell cmdlet'lerini tanımlamak için aşağıdaki bölümleri kullanın. Cmdlet'lerin tam listesi için PowerShell belgelerindeki [ilke ve uyumluluk saklama listesine](/powershell/module/exchange#policy-and-compliance-retention) bakın.
 
-Bu cmdlet'leri kullanmadan önce [Güvenlik & Uyumluluk Merkezi PowerShell'e bağlanmanız](/powershell/exchange/connect-to-scc-powershell) gerekir.
+Bu cmdlet'leri kullanmadan önce [Güvenlik & Uyumluluk PowerShell'e bağlanmanız](/powershell/exchange/connect-to-scc-powershell) gerekir.
 
 İzleyen açıklamalarda, bekletme ilkesi bir bekletme ilkesine (etiket yok) veya bekletme etiketi ilkesine başvurabilir. Her ilke, statik mi yoksa uyarlamalı mı olduğunu ve ilkenin uygulanacağı konumları tanımlar. İlke daha sonra yapılandırmayı tamamlamak için bir kural gerektirir.
 
@@ -38,6 +38,8 @@ Bu cmdlet'leri kullanmadan önce [Güvenlik & Uyumluluk Merkezi PowerShell'e ba�
 Bekletme etiketlerini kullandığınızda, bunlar bekletme ayarlarını içerir ve ilkeleri farklı kurallara ihtiyaç duyar:
 - Yayımladığınız bir bekletme etiketi ilkesi, uygulamalarda hangi etiketlerin görüntüleneceğini tanımlayan bir kurala ihtiyaç duyar.
 - Otomatik uygulama bekletme etiketi ilkesi, uygulanacak etiketi ve etiketi uygulama koşullarını tanımlayan bir kurala ihtiyaç duyar.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="retention-cmdlets-for-most-locations"></a>Çoğu konum için bekletme cmdlet'leri
 

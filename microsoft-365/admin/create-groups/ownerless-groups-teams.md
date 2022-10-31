@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Sahipsiz bir Microsoft 365 grubunda veya Microsoft Teams'de bir ekipte sahip olmaya üyeleri otomatik olarak davet etmeyi öğrenin.
-ms.openlocfilehash: b417634638142c749fad12b5e008f2f8d6ff5638
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 3c4c0b7abff0e8c2146e794e2cc07f44fdd615c7
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68191353"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793236"
 ---
 # <a name="manage-ownerless-microsoft-365-groups-and-teams"></a>Sahipsiz Microsoft 365 gruplarını ve ekiplerini yönetme
 
@@ -72,3 +72,5 @@ Grup başına en fazla iki grup üyesi, sahip olma davetini kabul edebilir. Hiç
 ## <a name="related-topics"></a>İlgili konular
 
 [Sahipsiz grup hakkında SSS](/exchange/troubleshoot/groups-and-distribution-lists/ownerless-group-policy)
+
+[Uyumluluk portalında denetim günlüğünde arama yapma](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)

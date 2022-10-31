@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: be05acf1ca9028915a836d95f737e64ee1324f72
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 0dc240addd772dc820838a1f213fcfeb9aa43a07
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68769589"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793378"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Insider risk yönetimi ayarlarını kullanmaya başlama
 
@@ -84,7 +84,7 @@ Belirli ilke şablonları için tetikleyici olaylarını özelleştirmek için b
 - **Microsoft Defender for Cloud Apps göstergeleri (önizleme):** Bunlar Cloud Apps için Defender'ın paylaşılan uyarılarından ilke göstergelerini içerir. Cloud Apps için Defender'da otomatik olarak etkinleştirilen anomali algılama, sonuçları hemen algılamaya ve harmanlama işlemine başlar ve kullanıcılarınız ile ağınıza bağlı makineler ve cihazlar arasında çok sayıda davranış anomalisini hedefler. Bu risk yönetimi etkinliklerini ilke uyarılarına eklemek için bu bölümdeki bir veya daha fazla göstergeyi seçin. Cloud Apps için Defender analizi ve anomali algılama hakkında daha fazla bilgi edinmek için bkz. [Davranış analizi ve anomali algılamayı alma](/cloud-app-security/anomaly-detection-policy).
 - **Risk puanı artırıcıları**: Bunlar, tipik olanın üzerinde veya ilke ihlali olarak çözümlenmiş önceki durumları olan kullanıcılar için riskli olabilecek etkinlikler için risk puanını yükseltmeyi içerir. Risk puanı artırıcıların etkinleştirilmesi, risk puanlarını ve bu tür etkinlikler için uyarı olasılığını artırır. Tipik olanın üzerinde olan risk yönetimi etkinliğinde, algılanan riskli etkinlik uyumlu kabul edilen etkinliklerden saparsa puanlar artırılır. İlke ihlali olarak çözümlenmiş önceki durumları olan kullanıcılar için, bir kullanıcının daha önce onaylanmış bir ilke ihlali olarak çözümlenmiş birden fazla olayı varsa puanlar artırılır. Risk puanı güçlendiricileri yalnızca bir veya daha fazla gösterge seçiliyse seçilebilir.
 
-Bazı durumlarda, kuruluşunuzdaki insider risk ilkelerine uygulanan insider risk ilkesi göstergelerini sınırlamak isteyebilirsiniz. Belirli alanlar için ilke göstergelerini genel ayarlardaki tüm insider risk ilkelerinden devre dışı bırakarak kapatabilirsiniz. Olayları tetikleme yalnızca Öncelikli kullanıcı şablonları tarafından *Genel veri sızıntıları* veya *Veri sızıntılarından oluşturulan ilkeler* için değiştirilebilir. Diğer tüm şablonlardan oluşturulan ilkelerin özelleştirilebilir tetikleyici göstergeleri veya olayları yoktur.
+Bazı durumlarda, kuruluşunuzdaki insider risk ilkelerine uygulanan insider risk ilkesi göstergelerini sınırlamak isteyebilirsiniz. Belirli alanlar için ilke göstergelerini genel ayarlardaki tüm insider risk ilkelerinden devre dışı bırakarak kapatabilirsiniz. Olayları tetikleme yalnızca öncelikli kullanıcı şablonları tarafından *Veri sızıntılarından* veya *Veri sızıntılarından oluşturulan ilkeler* için değiştirilebilir. Diğer tüm şablonlardan oluşturulan ilkelerin özelleştirilebilir tetikleyici göstergeleri veya olayları yoktur.
 
 Tüm insider risk ilkelerinde etkinleştirilen insider risk ilkesi göstergelerini tanımlamak için **Insider risk ayarları** > **Göstergeleri'ne** gidin ve bir veya daha fazla ilke göstergesi seçin. Göstergeler ayarları sayfasında seçilen **göstergeler** , ilke sihirbazında insider risk ilkesi oluşturulurken veya düzenlenirken tek tek yapılandırılamaz.
 
@@ -241,16 +241,16 @@ Aşağıdaki etki alanı ayarlarının her biri için en fazla 500 etki alanı g
 
 - **Üçüncü taraf etki alanları:** Kuruluşunuz iş amacıyla (bulut depolama gibi) üçüncü taraf etki alanları kullanıyorsa, cihaz göstergesiyle ilgili riskli olabilecek etkinliklerle ilgili uyarılar alabilmeniz için bunları buraya ekleyin. *Üçüncü taraf bir siteden içerik indirmek için tarayıcı kullanın*.
  
-### <a name="sensitive-info-types-exclusion"></a>Hassas bilgi türlerini dışlama
+### <a name="sensitive-info-types-exclusion-preview"></a>Hassas bilgi türlerini dışlama (önizleme)
 
-Ayarlarda dışlanan hassas bilgi türleri Uç Nokta, SharePoint, Teams, OneDrive ve Exchange için dosyayla ilgili etkinlikleri içeren göstergelerle ve tetikleyicilerle eşlenir. Bu türler hassas olmayan bilgi türleri olarak değerlendirilir. Burada tanımlanan hassas bilgi türlerini içeren dosyalar için risk puanı alınır ancak hassas bilgi türleriyle ilgili içerik içeren etkinlikler olarak gösterilmez. Tam liste için bkz [. Hassas bilgi türü varlık tanımları](sensitive-information-type-entity-definitions.md).
+Ayarlarda dışlanan [hassas bilgi türleri](sensitive-information-type-learn-about.md) Uç Nokta, SharePoint, Teams, OneDrive ve Exchange için dosyayla ilgili etkinlikleri içeren göstergelerle ve tetikleyicilerle eşlenir. Dışlanan bu türler, hassas olmayan bilgi türleri olarak değerlendirilir. Burada tanımlanan hassas bilgi türlerini içeren dosyalar için risk puanı alınır ancak hassas bilgi türleriyle ilgili içerik içeren etkinlikler olarak gösterilmez. Tam liste için bkz [. Hassas bilgi türü varlık tanımları](sensitive-information-type-entity-definitions.md).
 
-Kiracıda kullanılabilen tüm kullanılabilir (kullanıma hazır ve özel) türlerin listesinden dışlanacak hassas bilgi türlerini seçebilirsiniz. Insider risk yönetimi, ABA Yönlendirme Numarası gibi çeşitli hassas bilgi türlerini varsayılan olarak dışlar. Dışlanacak en fazla 500 hassas bilgi türünü seçebilirsiniz.
+Kiracıda kullanılabilen tüm kullanılabilir (kullanıma hazır ve özel) türlerin listesinden dışlanacak hassas bilgi türlerini seçebilirsiniz. Dışlanacak en fazla 500 hassas bilgi türünü seçebilirsiniz.
 
 > [!NOTE]
 > Hassas bilgi türlerinin dışlama listesi [öncelik içerik](insider-risk-management-policies.md#prioritize-content-in-policies) listesinden önceliklidir.
 
-Dışlamak üzere hassas bilgi türleri eklemek için aşağıdaki adımları tamamlayın:
+Hassas bilgi türlerini dışlamak için aşağıdaki adımları tamamlayın:
 
 1. Uyumluluk portalında **Insider risk yönetimi** > **Ayarları** > **Akıllı algılamalar'a** gidin. 
 2. **Hassas bilgi türleri** bölümünde, **Dışlamak için Hassas bilgi türleri ekle'yi** seçin.
@@ -258,6 +258,24 @@ Dışlamak üzere hassas bilgi türleri eklemek için aşağıdaki adımları ta
 4. **Değişiklikleri kabul et ekle'yi** veya değişiklikleri atmak için **İptal'i** seçin. 
 
 Hassas bilgi türü dışlamasını silmek için dışlama ve **Sil'i** seçin.
+
+### <a name="trainable-classifier-exclusion-preview"></a>Eğitilebilir sınıflandırıcı dışlaması (önizleme)
+
+Ayarlarda dışlanan [eğitilebilir sınıflandırıcılar](classifier-get-started-with.md) SharePoint, Teams, OneDrive ve Exchange için dosyayla ilgili etkinlikler içeren göstergelerle ve tetikleyicilerle eşlenir. Burada tanımlanan eğitilebilir sınıflandırıcıları içeren dosyalar için risk puanlanır ancak eğitilebilir sınıflandırıcılarla ilgili içerik içeren etkinlikler olarak gösterilmez. Daha fazla bilgi edinmek için, önceden [eğitilmiş tüm sınıflandırıcıların](classifier-tc-definitions.md#trainable-classifiers-definitions) tam listesi için eğitilebilir sınıflandırıcı tanımları bölümüne bakın.
+
+Kiracıda kullanılabilen tüm kullanılabilir (ilk ve özel) türlerin listesinden dışlanacak eğitilebilir sınıflandırıcıları seçebilirsiniz. Insider risk yönetimi Tehdit, Küfür, Hedefli taciz, Rahatsız edici dil ve Ayrımcılık gibi bazı eğitilebilir sınıflandırıcıları varsayılan olarak dışlar. Dışlanacak en fazla 500 eğitilebilir sınıflandırıcı seçebilirsiniz.
+
+> [!NOTE]
+> İsteğe bağlı olarak, [öncelik içerik](insider-risk-management-policies.md#prioritize-content-in-policies) listesine eklenecek eğitilebilir sınıflandırıcıları seçebilirsiniz.
+
+Eğitilebilir sınıflandırıcıları dışlamak için aşağıdaki adımları tamamlayın:
+
+1. Uyumluluk portalında **Insider risk yönetimi** > **Ayarları** > **Akıllı algılamalar'a** gidin. 
+2. **Eğitilebilir sınıflandırıcılar** bölümünde, **Dışlamak için Eğitilebilir sınıflandırıcı ekle'yi** seçin.
+3. **Eğitilebilir sınıflandırıcıları ekle veya düzenle** bölmesinde, hariç tutmak istediğiniz sınıflandırıcıları seçin.
+4. **Değişiklikleri kabul et ekle'yi** veya değişiklikleri atmak için **İptal'i** seçin. 
+
+Eğitilebilir bir sınıflandırıcı dışlamasını silmek için dışlama ve **Sil'i** seçin.
 
 ### <a name="file-path-exclusions"></a>Dosya yolu dışlamaları
 
@@ -651,7 +669,7 @@ Tamamlanmış analizler için kuruluşunuzda bulunan olası riskleri ve bu riskl
 
 ![Insider risk yönetimi analizine genel bakış raporu.](../media/insider-risk-analytics-overview.png)
 
-Bir içgörüye ilişkin daha fazla bilgi görüntülemek için **Ayrıntıları görüntüle'yi** seçerek içgörüye ilişkin ayrıntılar bölmesini görüntüleyin. Ayrıntılar bölmesi, önerilen ilkeyi hızla oluşturmanıza yardımcı olmak için içgörü sonuçlarının tamamını, bir içgörü risk ilkesi önerisini ve **İlke oluştur** düğmesini içerir. İlke oluştur'u seçtiğinizde ilke sihirbazına yönlendirilirsiniz ve içgörüyle ilgili önerilen ilke şablonunu otomatik olarak seçersiniz. Örneğin analiz içgörüleri *Veri sızıntısı* etkinliğine yönelikse, ilke sihirbazında *sizin için Genel veri sızıntıları* ilke şablonu önceden seçilir.
+Bir içgörüye ilişkin daha fazla bilgi görüntülemek için **Ayrıntıları görüntüle'yi** seçerek içgörüye ilişkin ayrıntılar bölmesini görüntüleyin. Ayrıntılar bölmesi, önerilen ilkeyi hızla oluşturmanıza yardımcı olmak için içgörü sonuçlarının tamamını, bir içgörü risk ilkesi önerisini ve **İlke oluştur** düğmesini içerir. İlke oluştur'u seçtiğinizde ilke sihirbazına yönlendirilirsiniz ve içgörüyle ilgili önerilen ilke şablonunu otomatik olarak seçersiniz. Örneğin analiz içgörüleri *Veri sızıntısı* etkinliğine yönelikse, ilke sihirbazında *veri sızıntıları* ilke şablonu sizin için önceden seçilir.
 
 ![Insider risk yönetimi analiz ayrıntıları raporu.](../media/insider-risk-analytics-details.png)
 

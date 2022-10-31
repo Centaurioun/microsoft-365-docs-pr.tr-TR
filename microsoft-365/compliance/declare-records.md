@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Belgeleri ve e-postaları kayıt olarak bildirmek için, öğeleri kayıt veya mevzuat kaydı olarak işaretleyen Microsoft 365 bekletme etiketlerini kullanın.
-ms.openlocfilehash: 53ff0da40f3c7b8916d3dd70cbb0fc0e4d9aaeb9
-ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
+ms.openlocfilehash: 4cae7a214cc3d41a62f3630c07ba0ef1da75a285
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68382061"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793290"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Saklama etiketleri kullanarak kayıtları beyan etme
 
@@ -99,7 +99,7 @@ SharePoint öğeleri için:
 Exchange öğeleri için:
 - **Exchange posta kutusu etkinliklerinden****, İletiyi kayıt olarak etiketle'yi** seçin. Bu denetim olayı, öğeleri kayıt veya mevzuat kaydı olarak işaretleyen bekletme etiketlerine yöneliktir.
 
-Bu olayları arama hakkında daha fazla bilgi için bkz [. Güvenlik & Uyumluluk Merkezi'nde denetim günlüğünde arama](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities) yapma.
+Bu olayları arama hakkında daha fazla bilgi için bkz [. Uyumluluk portalında denetim günlüğünde arama](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities) yapma.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

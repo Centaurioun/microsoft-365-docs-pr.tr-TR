@@ -13,7 +13,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - SPO_Content
 search.appverid:
 - MET150
@@ -21,18 +22,20 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Veri kaybı önleme ilkeleri için uyarıları tanımlamaya ve yönetmeye başlayın.
-ms.openlocfilehash: de980fadbc6b6091a0257c032dacab4220704f62
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 16ea73f55960ed902efb1640fcf09c7dcec72ad4
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625467"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793206"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alerts-dashboard"></a>Veri kaybı önleme Uyarıları panosunu kullanmaya başlama
 
 Microsoft Purview Veri Kaybı Önleme (DLP) ilkeleri, hassas öğelerin yanlışlıkla paylaşılmasını önlemek için koruyucu eylemler gerçekleştirebilir. Hassas bir öğe üzerinde eylem yapıldığında, DLP için uyarılar yapılandırılarak bildirim alabilirsiniz. Bu makalede, veri kaybı önleme (DLP) ilkelerinize bağlı zengin uyarı ilkelerinin nasıl tanımlanacağı gösterilmektedir. DLP ilke ihlallerine yönelik uyarıları, olayları ve ilişkili meta verileri görüntülemek için <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview uyumluluk portalı</a> DLP [uyarı yönetimi panosunu](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts) nasıl kullanacağınızı göreceksiniz.
 
 DLP uyarılarını yeni kullanıyorsanız [Veri kaybı önleme uyarıları panosu hakkında bilgi edinin sayfasını](dlp-alerts-dashboard-learn.md) gözden geçirmeniz gerekir
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -93,18 +96,18 @@ ve bu iki rolden biri:
 
 veri sınıflandırması içerik görüntüleyici rolü önceden atanmıştır.
 
-### <a name="roles-and-role-groups-in-preview"></a>Önizlemede Roller ve Rol Grupları
+### <a name="roles-and-role-groups"></a>Roller ve Rol Grupları
 
 Önizlemede, erişim denetimlerinizde ince ayar yapmak için test yapabileceğiniz roller ve rol grupları vardır.
 
-Aşağıda, önizleme aşamasında olan geçerli rollerin listesi yer alır. Bunlar hakkında daha fazla bilgi edinmek için bkz [. Güvenlik & Uyumluluk Merkezi'ndeki Roller](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Aşağıda, önizleme aşamasında olan geçerli rollerin listesi yer alır. Bunlar hakkında daha fazla bilgi edinmek için [Microsoft Purview uyumluluk portalı İzinler bölümüne](microsoft-365-compliance-center-permissions.md) bakın.
 
 - Information Protection Yönetici
 - Information Protection Analisti
 - Information Protection Araştırmacısı
 - Information Protection Okuyucu
 
-Aşağıda, önizleme aşamasında olan geçerli rol gruplarının listesi yer alır. Bunlar hakkında daha fazla bilgi edinmek için bkz [. Güvenlik & Uyumluluk Merkezi'ndeki Rol grupları](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Aşağıda, önizleme aşamasında olan geçerli rol gruplarının listesi yer alır. Bunlar hakkında daha fazla bilgi edinmek için [Microsoft Purview uyumluluk portalı İzinler bölümüne](microsoft-365-compliance-center-permissions.md) bakın.
 
 - Information Protection
 - Information Protection Yöneticileri

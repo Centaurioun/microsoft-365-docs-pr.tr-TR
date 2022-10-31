@@ -1,5 +1,5 @@
 ---
-title: Veri sınıflandırması hakkında daha fazla bilgi edinme
+title: Microsoft veri sınıflandırma panosunu kullanma
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -11,22 +11,25 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkDEFENDER
 search.appverid:
 - MOE150
 - MET150
-description: Veri sınıflandırma panosu, kuruluşunuzda ne kadar hassas veri bulunduğunu ve sınıflandırıldığını size gösterir.
-ms.openlocfilehash: 188cb8b28f2a1468fd72236cf160a01e99c16634
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+description: Microsoft Purview uyumluluk sınıflandırma panosu, kuruluşunuzda ne kadar hassas veri bulunduğunu ve sınıflandırıldığını gösterir.
+ms.openlocfilehash: 07bad3c98cd5df9fa4d3265808bb25f401f7d972
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579346"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68794236"
 ---
-# <a name="learn-about-data-classification"></a>Veri sınıflandırması hakkında daha fazla bilgi edinme
+# <a name="how-to-use-the-microsoft-data-classification-dashboard"></a>Microsoft veri sınıflandırma panosunu kullanma
 
 Microsoft 365 yöneticisi veya uyumluluk yöneticisi olarak, kuruluşunuzdaki içeriği değerlendirip etiketleyebilir ve ardından içeriği denetleyebilmek, nerede olursa olsun koruyabilir ve kuruluşunuzun ihtiyaçlarına göre korunup silindiğinden emin olabilirsiniz. Bunu [duyarlılık etiketleri](sensitivity-labels.md), [bekletme etiketleri](retention.md#retention-labels) ve hassas bilgi türü sınıflandırması uygulaması aracılığıyla yaparsınız. Bulma, değerlendirme ve etiketlemenin çeşitli yolları vardır, ancak sonuç olarak bu etiketlerden biriyle veya her ikisiyle etiketlenmiş ve sınıflandırılmış çok fazla sayıda belgeniz ve e-postanız olabilir. Bekletme etiketlerinizi ve duyarlılık etiketlerinizi uyguladıktan sonra, etiketlerin kiracınızda nasıl kullanıldığını ve bu öğelerle ne yapıldığını görmek istersiniz. Veri sınıflandırma sayfası, özellikle de bu içerik gövdesine görünürlük sağlar:
 
@@ -52,6 +55,8 @@ Veri sınıflandırma özelliklerimiz için video turuna katılın.
 
 Veri sınıflandırması, herhangi bir ilke oluşturmadan önce hassas içeriğinizi ve etiketli içeriğinizi tarar. Buna **sıfır değişiklik yönetimi** adı verilir. Bu, ortamınızdaki tüm saklama ve duyarlılık etiketlerinin etkisini görmenizi sağlar ve koruma ve idare ilkesi gereksinimlerinizi değerlendirmeye başlamanızı sağlar.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="prerequisites"></a>Önkoşullar
 
 ### <a name="permissions"></a>İzinler
@@ -68,18 +73,18 @@ Veri sınıflandırması, herhangi bir ilke oluşturmadan önce hassas içeriği
 > [!NOTE]
 > En iyi uygulama olarak, Microsoft 365 veri sınıflandırmasına erişim vermek için her zaman en az ayrıcalığı olan rolü kullanın.
 
-#### <a name="roles-and-role-groups-in-preview"></a>Önizlemede Roller ve Rol Grupları
+#### <a name="roles-and-role-groups"></a>Roller ve Rol Grupları
 
 Önizlemede, erişim denetimlerinizde ince ayar yapmak için test yapabileceğiniz roller ve rol grupları vardır.
 
-Aşağıda, önizleme aşamasında olan geçerli rollerin listesi yer alır. Bunlar hakkında daha fazla bilgi edinmek için bkz [. Güvenlik & Uyumluluk Merkezi'ndeki Roller](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Aşağıda, önizleme aşamasında olan geçerli rollerin listesi yer alır. Bunlar hakkında daha fazla bilgi edinmek için [Microsoft Purview uyumluluk portalı İzinler bölümüne](microsoft-365-compliance-center-permissions.md) bakın.
 
 - Information Protection Yönetici
 - Information Protection Analisti
 - Information Protection Araştırmacısı
 - Information Protection Okuyucu
 
-Aşağıda, önizleme aşamasında olan geçerli rol gruplarının listesi yer alır. Bunlar hakkında daha fazla bilgi edinmek için bkz [. Güvenlik & Uyumluluk Merkezi'ndeki Rol grupları](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Aşağıda, önizleme aşamasında olan geçerli rol gruplarının listesi yer alır. Bunlar hakkında daha fazla bilgi edinmek için [Microsoft Purview uyumluluk portalı İzinler bölümüne](microsoft-365-compliance-center-permissions.md) bakın.
 
 - Information Protection
 - Information Protection Yöneticileri
@@ -142,7 +147,7 @@ Bu kart, kullanıcıların duyarlılık etiketli öğeler üzerinde gerçekleşt
 
 > [!NOTE]
 > Bu kartta "Etkinlik algılanmadı" iletisi görüntülenirse, dosyalarda etkinlik olmadığı veya kullanıcı ve yönetici denetiminin açık olmadığı anlamına gelir. Denetim günlüklerini açmak için bkz:
->- [Güvenlik & uyumluluk merkezinde denetim günlüğünde arama yapma](search-the-audit-log-in-security-and-compliance.md)
+>- [Uyumluluk portalında denetim günlüğünde arama yapma](search-the-audit-log-in-security-and-compliance.md)
 
 ## <a name="sensitivity-and-retention-labeled-data-by-location"></a>Konuma göre etiketlenmiş veriler duyarlılık ve bekletme
 

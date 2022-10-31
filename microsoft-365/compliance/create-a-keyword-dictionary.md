@@ -11,24 +11,27 @@ ms.service: O365-seccomp
 ms.date: ''
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-description: Office 365 Güvenlik & Uyumluluk Merkezi'nde anahtar sözcük sözlüğü oluşturmanın temel adımlarını öğrenin.
-ms.openlocfilehash: 82d6a1292b5ac8c13471df8e1b2c298c8cf262b3
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Microsoft Purview uyumluluk portalında anahtar sözcük sözlüğü oluşturmanın temel adımlarını öğrenin.
+ms.openlocfilehash: 7587357c8b9ce58b39f9027d56644401c6804c04
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637383"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793818"
 ---
 # <a name="create-a-keyword-dictionary"></a>Anahtar sözcük sözlüğü oluşturma
 
 Microsoft Purview Veri Kaybı Önleme (DLP), hassas öğelerinizi tanımlayabilir, izleyebilir ve koruyabilir. Hassas öğelerin tanımlanması bazen özellikle genel içeriği (sağlık hizmetleriyle ilgili iletişim gibi) veya uygunsuz veya açık dili tanımlarken anahtar sözcüklerin aranması gerekir. Hassas bilgi türlerinde anahtar sözcük listeleri oluşturabilirsiniz ancak anahtar sözcük listelerinin boyutu sınırlıdır ve bunları oluşturmak veya düzenlemek için XML'nin değiştirilmesi gerekir. Anahtar sözcük sözlükleri, sözlükte 1 MB'a kadar terimleri (sıkıştırma sonrası) destekleyen ve herhangi bir dili destekleyen anahtar sözcüklerin daha basit bir şekilde yönetilmesini ve çok daha büyük bir ölçekte yönetilmesini sağlar. Sıkıştırmadan sonra kiracı sınırı da 1 MB'tır. 1 MB sıkıştırma sonrası sınırı, kiracı genelinde birleştirilen tüm sözlüklerin 1 milyona yakın karaktere sahip olabileceği anlamına gelir.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="keyword-dictionary-limits"></a>Anahtar sözcük sözlüğü sınırları
 
@@ -80,7 +83,7 @@ Sözlüğünüzün anahtar sözcükleri, en yaygın olarak hizmette veya PowerSh
 
 3. **Sözlüğünüzü oluşturun**. Bir ad ve açıklama seçin ve sözlüğünüzü oluşturun.
 
-## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>Güvenlik & Uyumluluk Merkezi'ni kullanarak anahtar sözcük sözlüğü oluşturma
+## <a name="create-a-keyword-dictionary-using-the-microsoft-purview-compliance-portal"></a>Microsoft Purview uyumluluk portalı kullanarak anahtar sözcük sözlüğü oluşturma
 
 Özel bir sözlük için anahtar sözcükler oluşturmak ve içeri aktarmak için aşağıdaki adımları kullanın:
 

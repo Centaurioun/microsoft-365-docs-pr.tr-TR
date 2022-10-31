@@ -10,7 +10,8 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.localizationpriority: medium
 search.appverid:
 - MOE150
@@ -19,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: DLP ilkesi eşleşmelerinin, geçersiz kılmalarının veya hatalı pozitiflerin sayısını görüntülemek ve zaman içinde eğilimin artıp artmadığını görmek için Office 365'daki DLP raporlarını kullanın.
-ms.openlocfilehash: 6f60aefaa1548e3c3aed2ca1643de42f412cf5cf
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b2d006730cfa8688d664a4fc60ab13c27c7dec7f
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641108"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793730"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Veri kaybı önleme raporlarını görüntüleme
 
@@ -64,6 +65,8 @@ Bu raporları Microsoft Purview uyumluluk portalı \> **Raporlar** \> **Panosu'n
 
 ![DLP ilkesi raporla eşleşir.](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>Geçersiz kılma için kullanıcı tarafından gönderilen gerekçeyi görüntüleme
 
 DLP ilkeniz kullanıcıların bu ilkeyi geçersiz kılmasına izin veriyorsa, ilke ipucunda kullanıcılar tarafından gönderilen metni görüntülemek için hatalı pozitif ve geçersiz kılma raporunu kullanabilirsiniz.
@@ -78,11 +81,11 @@ Raporlar, olası sorunlarla ilgili ayrıntıları görmek ve olası düzeltme i�
 
 ## <a name="permissions-for-dlp-reports"></a>DLP raporları için izinler
 
-Güvenlik & Uyumluluk Merkezi'nde DLP raporlarını görüntülemek için aşağıdakilere atanmış olmanız gerekir:
+Purview uyumluluk portalında DLP raporlarını görüntülemek için aşağıdakilere atanmış olmanız gerekir:
 
 - <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange yönetim merkezinde</a> **Güvenlik Okuyucusu** rolü. Varsayılan olarak, bu rol Exchange yönetim merkezindeki Kuruluş Yönetimi ve Güvenlik Okuyucusu rol gruplarına atanır.
 
-- Güvenlik & Uyumluluk Merkezi'nde **Yalnızca DLP Uyumluluk Yönetimi rolünü görüntüleyin**. Varsayılan olarak, bu rol Güvenlik & Uyumluluk Merkezi'ndeki Uyumluluk Yöneticisi, Kuruluş Yönetimi, Güvenlik Yöneticisi ve Güvenlik Okuyucusu rol gruplarına atanır.
+- Purview uyumluluk portalında **Yalnızca Görüntüleme DLP Uyumluluk Yönetimi** rolü. Varsayılan olarak, bu rol Purview uyumluluk portalındaki Uyumluluk Yöneticisi, Kuruluş Yönetimi, Güvenlik Yöneticisi ve Güvenlik Okuyucusu rol gruplarına atanır.
 
 - <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange yönetim merkezinde</a> **Yalnızca Alıcıları Görüntüle** rolü. Varsayılan olarak, bu rol Exchange yönetim merkezindeki Uyumluluk Yönetimi, Kuruluş Yönetimi ve View-Only Kuruluş Yönetimi rol gruplarına atanır.
 

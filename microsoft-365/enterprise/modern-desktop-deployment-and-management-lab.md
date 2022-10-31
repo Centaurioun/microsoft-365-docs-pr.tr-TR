@@ -16,23 +16,21 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows ve Office Dağıtım Laboratuvar Seti'ne nereden erişeceğinizi öğrenin.
-ms.openlocfilehash: e2fcb99a28d5d8625a8a333fcb7b2e2109b0f3e4
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 921f13231c7830dbfa00a684db2ebe2429c0cd92
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67681833"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793642"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Windows ve Office 365 dağıtım laboratuvarı seti
 
-Windows ve Office 365 dağıtım laboratuvar seti, Windows 10 Enterprise veya Windows 11 Enterprise çalıştıran masaüstlerinin dağıtımını ve yönetimini planlamanıza, test edip doğrulamanıza yardımcı olmak için tasarlanmıştır ve Kurumlar için Microsoft 365 Uygulamaları. Kitteki laboratuvarlar, Microsoft Endpoint Configuration Manager, OneDrive, Windows Autopilot ve daha fazlasını kullanarak ele alınıyor. Bu set, masaüstü yükseltmelerine hazırlanan kuruluşlar için kesinlikle önerilir. Yalıtılmış bir ortam olarak laboratuvar, dağıtım aracı güncelleştirmelerini keşfetmek ve dağıtımla ilgili otomasyonunuzu test etme için de idealdir.
-
-Laboratuvarın iki sürümü ücretsiz olarak indirilebilir:  
+Windows ve Office 365 dağıtım laboratuvarı setleri, Windows 10 Enterprise veya Windows 11 Enterprise ve Microsoft 365 Uygulamaları çalıştıran masaüstlerinin dağıtımını ve yönetimini planlamanıza, test edip doğrulamanıza yardımcı olmak için tasarlanmıştır. Kitteki laboratuvarlar, Microsoft Intune ve Microsoft Configuration Manager kullanılarak kapsıyor. Bu set, masaüstü yükseltmelerine hazırlanan kuruluşlar için kesinlikle önerilir. Yalıtılmış bir ortam olarak laboratuvar, dağıtım aracı güncelleştirmelerini keşfetmek ve dağıtımla ilgili otomasyonunuzu test etme için de idealdir. Aşağıdaki laboratuvar setleri ücretsiz olarak indirilebilir:  
 
 |Windows 10 Laboratuvarı|Windows 11 Laboratuvarı|
 |---|---|
-|[Windows 10 laboratuvar ortamı](https://download.microsoft.com/download/8/5/e/85e007b0-1f3e-460c-bd0a-5a8c6ec490b5/Win10_21H2_lab.zip)|[Windows 11 laboratuvar ortamı](https://download.microsoft.com/download/5/0/b/50bbe36a-9291-4339-9dcc-2a444fcd1659/Microsoft365DeviceLabKit.zip)|
-|[Windows 10 laboratuvar kılavuzları](https://download.microsoft.com/download/b/d/4/bd4f430b-8cd1-4a07-97b1-c32100fce7ae/Win_10_21H2_lab_guides.zip)|[Windows 11 laboratuvar kılavuzları](https://download.microsoft.com/download/5/0/b/50bbe36a-9291-4339-9dcc-2a444fcd1659/Win11_SetUp_Guide_08.05.zip)|
+|[Windows 10 laboratuvar ortamı](https://download.microsoft.com/download/b/7/6/b7696d5b-940e-4af6-ba8b-32cfa3532e6e/Windows10_21H2_2022-10-19.zip)|[Windows 11 laboratuvar ortamı](https://download.microsoft.com/download/a/1/0/a10d1f67-b499-4c2f-8db1-79d29cd98b05/Windows11_21H1_2022-10-18.zip)|
+|[Windows 10 laboratuvar kılavuzları](https://download.microsoft.com/download/b/d/4/bd4f430b-8cd1-4a07-97b1-c32100fce7ae/Win_10_21H2_lab_guides.zip)|[Windows 11 laboratuvar kılavuzları](https://download.microsoft.com/download/a/1/0/a10d1f67-b499-4c2f-8db1-79d29cd98b05/Win11_Lab_Guides_10.18.zip)|
 
 ## <a name="a-complete-lab-environment"></a>Eksiksiz bir laboratuvar ortamı
 
@@ -40,8 +38,8 @@ Laboratuvar, etki alanına katılmış masaüstü istemcileri, etki alanı denet
 
 |Windows 10 Laboratuvarı|Windows 11 Laboratuvarı|
 |---|---|
-|Windows 10 Enterprise, Sürüm 21H2|Windows 11 Enterprise|
-|Microsoft Uç Nokta Yapılandırma Yöneticisi, Sürüm 2103|Microsoft Endpoint Configuration Manager, Sürüm 2203|
+|Windows 10 Enterprise, Sürüm 21H2|Windows 11 Enterprise, Sürüm 21H2|
+|Microsoft Uç Nokta Yapılandırma Yöneticisi, Sürüm 2103|Microsoft Endpoint Configuration Manager, Sürüm 2207|
 |Windows 10 için Windows Değerlendirme ve Dağıtım Seti|Windows 11 için Windows Değerlendirme ve Dağıtım Seti|
 |Windows Server 2019|Windows Server 2022|
 
@@ -73,15 +71,15 @@ Ayrıntılı laboratuvar kılavuzları, birden çok dağıtım ve yönetim senar
 - Microsoft Intune kullanarak Windows'a hizmet verme
 - Configuration Manager ile Windows'a hizmet verme
 
-### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Kurumlar için Microsoft 365 Uygulamaları dağıtma
+### <a name="deploy-microsoft-365-apps"></a>Microsoft 365 Uygulamaları’nı dağıtın 
 
 - Bulut tarafından yönetilen dağıtım
 - Yerel olarak yönetilen dağıtım
-- AD'ye Katılmamış Cihazlarda dağıtım Kurumlar için Microsoft 365 Uygulamaları
+- AD'ye Katılmamış Cihazlarda dağıtımı Microsoft 365 Uygulamaları
 - Configuration Manager kullanarak kurumsal yönetilen dağıtım
 - Microsoft Intune kullanarak kurumsal yönetilen dağıtım
-- Configuration Manager kullanarak hizmet Kurumlar için Microsoft 365 Uygulamaları
-- Intune kullanarak hizmet Kurumlar için Microsoft 365 Uygulamaları
+- Configuration Manager kullanarak hizmet Microsoft 365 Uygulamaları
+- Intune kullanarak hizmet Microsoft 365 Uygulamaları
 - Microsoft Intune ile LOB Dağıtımı ve Yönetimi
 - Microsoft Teams'i dağıtma
 - Atama filtreleri
@@ -105,7 +103,7 @@ Ayrıntılı laboratuvar kılavuzları, birden çok dağıtım ve yönetim senar
 
 
 > [!NOTE]
-> Lütfen bu içeriği indirmek için geniş bant İnternet bağlantısı kullanın ve otomatik sağlama için yaklaşık 30 dakika bekleyin. Laboratuvar ortamı için en az 16 GB kullanılabilir bellek ve 150 GB boş disk alanı gerekir. En iyi performans için 32 GB kullanılabilir bellek ve 300 GB boş alan önerilir. Windows istemci sanal makinelerinin süresi laboratuvarın etkinleştirilmesinin ardından 90 gün sonra dolar. Laboratuvarların yeni sürümleri 5 Kasım 2022 tarihinde veya öncesinde yayımlanacaktır. 
+> Lütfen bu içeriği indirmek için geniş bant İnternet bağlantısı kullanın ve otomatik sağlama için yaklaşık 30 dakika bekleyin. Laboratuvar ortamı için en az 16 GB kullanılabilir bellek ve 150 GB boş disk alanı gerekir. En iyi performans için 32 GB kullanılabilir bellek ve 300 GB boş alan önerilir. Windows istemci sanal makinelerinin süresi laboratuvarın etkinleştirilmesinin ardından 90 gün sonra dolar. Laboratuvarların yeni sürümleri 31 Aralık 2022 tarihinde veya öncesinde yayımlanacaktır. 
 
 ## <a name="additional-guidance"></a>Ek yönergeler
 

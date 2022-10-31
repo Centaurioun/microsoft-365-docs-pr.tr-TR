@@ -12,19 +12,20 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: Bu makalede, kuruluş gereksinimlerinize göre bir DLP ilkesi oluşturmayı, test etmeyi ve ayarlamayı öğreneceksiniz.
-ms.openlocfilehash: 231c055fb9a67b921e3e6796f82e5c1a8161593d
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: f1a18f52646682f1e196dfa455b88f28c89526db
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943320"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793994"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Bir DLP ilkesi oluşturma, test etme ve ayarlama
 
@@ -35,6 +36,8 @@ DLP, kredi kartı numarası gibi hassas bilgiler için e-posta iletilerini ve do
 - Olayı denetim amacıyla günlüğe kaydetme
 - E-postayı gönderen veya dosyayı paylaşan son kullanıcıya bir uyarı görüntüleme
 - E-posta veya dosya paylaşımının gerçekleştirilmesine etkin bir şekilde engel olun
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="permissions"></a>İzinler
 
@@ -58,14 +61,14 @@ Bu izinler, ilkeleri zorlamamak için bir DLP ilkesi oluşturmak ve uygulamak i�
 
 Önizlemede, erişim denetimlerinizde ince ayar yapmak için test yapabileceğiniz roller ve rol grupları vardır.
 
-Aşağıda, önizleme aşamasında olan geçerli rollerin listesi yer alır. Bunlar hakkında daha fazla bilgi edinmek için bkz [. Güvenlik & Uyumluluk Merkezi'ndeki Roller](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Aşağıda, önizleme aşamasında olan geçerli rollerin listesi yer alır. Bunlar hakkında daha fazla bilgi edinmek için [Microsoft Purview uyumluluk portalı İzinler bölümüne](microsoft-365-compliance-center-permissions.md) bakın.
 
 - Information Protection Yönetici
 - Information Protection Analisti
 - Information Protection Araştırmacısı
 - Information Protection Okuyucu
 
-Aşağıda, önizleme aşamasında olan geçerli rol gruplarının listesi yer alır. Daha fazla bilgi için bkz [. Güvenlik & Uyumluluk Merkezi'nde rol grupları](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Aşağıda, önizleme aşamasında olan geçerli rol gruplarının listesi yer alır. Daha fazla bilgi için bkz. [Microsoft Purview uyumluluk portalı İzinler](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection
 - Information Protection Yöneticileri

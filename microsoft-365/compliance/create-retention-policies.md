@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Kullanıcıların e-posta, belgeler ve konuşmalarla oluşturduğu içeriğin denetimini verimli bir şekilde korumak için bekletme ilkesi kullanın. İstediğinizi koruyun ve istemediğinizden kurtulun.
-ms.openlocfilehash: f78df6609a501cafb086aa82d86374258f468ee6
-ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
+ms.openlocfilehash: c8e6540e42b6692c980b96cec859a137d866c965
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2022
-ms.locfileid: "68786529"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793840"
 ---
 # <a name="create-and-configure-retention-policies"></a>Bekletme ilkeleri oluşturma ve yapılandırma
 
@@ -79,7 +79,7 @@ Birden fazla bekletme ilkeniz varsa ve bekletme etiketlerini de kullandığını
 > [!NOTE]
 > Bekletme ilkeleri [paylaşılan kanalları destekler](/MicrosoftTeams/shared-channels). **Teams kanalı ileti** konumu için bekletme ayarlarını yapılandırdığınızda, bir ekibin paylaşılan kanalları varsa, bu kişiler bekletme ayarlarını üst ekibinden devralır.
 > 
-> Bekletme ilkeleri, sistem tarafından oluşturulan iletiler olan yeni oluşturulan arama verileri kayıtlarını da destekler. Ancak, özel kanal iletileri için arama verileri kayıtları Teams **özel kanal iletileri** konumu yerine **Teams sohbetleri** konumuna eklenir.
+> Bekletme ilkeleri, [toplantılar ve aramalar için meta veriler](/MicrosoftTeams/ediscovery-investigation#teams-metadata) içeren sistem tarafından oluşturulan iletiler olan yeni oluşturulan arama verileri kayıtlarını da destekler. Ancak, özel kanal iletileri için arama verileri kayıtları Teams **özel kanal iletileri** konumu yerine **Teams sohbetleri** konumuna eklenir.
 
 1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/) **Veri yaşam döngüsü yönetimi** > **Microsoft 365** > **Bekletme İlkeleri'ni** seçin.
 

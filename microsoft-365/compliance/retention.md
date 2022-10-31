@@ -11,19 +11,20 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
+- highpri
 - SPO_Content
-- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: İhtiyacınız olanı korumak ve kuruluşunuzun verilerini yönetmek için olmayanları silmek için Microsoft 365 bekletme ilkeleri ve bekletme etiketleri hakkında bilgi edinin.
-ms.openlocfilehash: 7e4c0384cd2678d666be4d65f59a1651d1e2d03e
-ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.openlocfilehash: 6ac5a8c79360896fe12ebd27c87cbc937f33a83e
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67336276"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793326"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Bekletme ilkeleri ve bekletme etiketleri hakkında bilgi edinin
 
@@ -62,6 +63,8 @@ Bu iki bekletme eylemiyle, aşağıdaki sonuçlar için bekletme ayarlarını ya
 Bu bekletme ayarları, uyumluluk nedeniyle içeriği saklamanız gerektiğinde ek depolama alanı oluşturma ve yapılandırma ek yüklerinden tasarruf etmenizi sağlayan içerikle çalışır. Ayrıca, bu verileri kopyalamak ve eşitlemek için özelleştirilmiş işlemler uygulamanız gerekmez.
 
 Bekletme ilkelerinin ve bekletme etiketlerinin nasıl çalıştığı, bunların ne zaman kullanılacağı ve bunların birbirini nasıl tamamladıkları hakkında daha fazla bilgi edinmek için aşağıdaki bölümleri kullanın. Ancak bazı yaygın senaryolar için bekletme ayarlarını kullanmaya ve dağıtmaya hazırsanız bkz. [Veri yaşam döngüsü yönetimini kullanmaya başlama](get-started-with-data-lifecycle-management.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Bekletme ayarları içerikle nasıl çalışır?
 
@@ -257,7 +260,7 @@ Kullanıcılar tarafından veya otomatik olarak uygulanan bekletme etiketleri i�
 |Yeteneği|Bekletme ilkesi |Bekletme etiketi|
 |:-----|:-----|:-----|:-----|
 |Saklama ayarlarını koruyup silebilen, yalnızca tutabilen veya yalnızca silebilen bekletme ayarları |Evet |Evet |
-|Desteklenen iş yükleri: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 grupları <br />- Skype Kurumsal <br />- Ekipler<br />- Yammer|<br /> Evet <br /> Evet <br /> Evet <br /> Evet <br /> Evet <br /> Evet <br /> Evet | <br /> Evet, ortak klasörler dışında <br /> Evet <br /> Evet <br /> Evet <br /> Hayır <br /> Hayır <br /> Hayır |
+|Desteklenen iş yükleri: <br />-Exchange <br />-Sharepoint <br />- OneDrive <br />- Microsoft 365 grupları <br />- Skype Kurumsal <br />-Takım<br />- Yammer|<br /> Evet <br /> Evet <br /> Evet <br /> Evet <br /> Evet <br /> Evet <br /> Evet | <br /> Evet, ortak klasörler dışında <br /> Evet <br /> Evet <br /> Evet <br /> Hayır <br /> Hayır <br /> Hayır |
 |Bekletme otomatik olarak uygulanır | Evet | Evet |
 |Saklama süresinin sonunda farklı bekletme ayarlarını otomatik olarak uygulama | Hayır | Evet |
 |Koşullara göre uygulanan bekletme <br /> - hassas bilgi türleri, KQL sorguları ve anahtar sözcükler, eğitilebilir sınıflandırıcılar, bulut ekleri| Hayır | Evet |
@@ -266,6 +269,7 @@ Kullanıcılar tarafından veya otomatik olarak uygulanan bekletme etiketleri i�
 |İçerik taşınırsa kalıcı olur | Hayır | Evet, Microsoft 365 kiracınızda |
 |Öğeyi kayıt olarak bildirme| Hayır | Evet |
 |Etiketlendiğinde veya bir olayı temel alarak bekletme süresini başlatma | Hayır | Evet |
+|Bekletme süresinin sonunda Power Automate akışı çalıştırma | Hayır | Evet|
 |Değerlendirmeyi bırakma | Hayır| Evet |
 |7 yıla kadar edat kanıtı | Hayır |Evet, değerlendirmeyi kullandığınızda veya öğe bir kayıt olarak işaretlendiğinde|
 |Yönetici etkinliklerini denetleme| Evet | Evet|
@@ -548,7 +552,7 @@ Denetim olayları olarak günlüğe kaydedilen bekletme eylemleri yalnızca bekl
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Bekletme ilkeleri ve bekletme etiketleri için PowerShell cmdlet'leri
 
-Purview bekletme cmdlet'leri için [Office 365 Güvenlik & Uyumluluk Merkezi PowerShell'i](/powershell/exchange/scc-powershell) kullanın. Bu cmdlet'ler büyük ölçekte yapılandırmayı destekler, otomasyon için betik oluşturur veya gelişmiş yapılandırma senaryoları için gerekli olabilir.
+Büyük ölçekte yapılandırmayı destekleyen, otomasyon için betik oluşturma veya gelişmiş yapılandırma senaryoları için gerekli olabilecek Purview bekletme cmdlet'leri için [Güvenlik & Uyumluluğu PowerShell'i](/powershell/exchange/scc-powershell) kullanın.
 
 Kullanılabilir cmdlet'lerin listesi ve farklı konumlar için desteklenen cmdlet'leri belirlemek için bkz. [Bekletme ilkeleri ve bekletme etiketleri için PowerShell cmdlet'leri](retention-cmdlets.md).
 

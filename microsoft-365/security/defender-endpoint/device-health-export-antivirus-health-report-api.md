@@ -19,12 +19,12 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 76e200022f01836195d82d46f159d35701f77a29
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 571a5230dca05faf1bdcc3d9d48a97997239752d
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68770337"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793542"
 ---
 <!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
@@ -85,7 +85,7 @@ Bu API, Microsoft Defender Virüsten Koruma cihazı virüsten koruma sistem duru
 #### <a name="111-limitations"></a>1.1.1 Sınırlamaları
 
 - en büyük sayfa boyutu 200.000'dir
-- Bu API için hız sınırlamaları şunlardır (**_dakika_** başına 30 çağrı ve hour._ başına 1000 çağrı)
+- Bu API için hız sınırlamaları dakikada 30 çağrı ve saatte 1000 çağrıdır.
 
 #### <a name="odata-supported-operators"></a>OData tarafından desteklenen işleçler
 

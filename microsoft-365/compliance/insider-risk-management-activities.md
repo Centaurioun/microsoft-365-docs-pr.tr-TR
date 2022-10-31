@@ -15,12 +15,12 @@ ms.collection:
 - tier1
 - purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 540d7bd367f32399004b276ee9d7c92bc70b70a3
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 9e752622d40e79dd5d4a0da54b90d26c1162a40a
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68770315"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793356"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Insider risk yönetimi etkinliklerini araştırma
 
@@ -272,7 +272,7 @@ Riskli olabilecek insider uyarılarını gözden geçirmek, araştırmak ve üze
 Insider risk yönetimi ilkeleriniz tarafından oluşturulan uyarı sayısından bunalmış olmak sinir bozucu olabilir. Aldığınız uyarı birimi türlerine bağlı olarak, uyarı sayısı basit adımlarla hızlı bir şekilde giderilebilir. Çok fazla geçerli uyarı alıyor olabilirsiniz veya çok fazla eski düşük riskli uyarınız olabilir. Aşağıdaki eylemleri gerçekleştirmeyi göz önünde bulundurun:
 
 - **Insider risk ilkelerinizi ayarlayın: Doğru insider** risk ilkesini seçmek ve yapılandırmak, uyarıların türünü ve hacmini ele almak için en temel yöntemdir. Uygun [ilke şablonuyla](insider-risk-management-policies.md#policy-templates) başlayarak, göreceğiniz risk etkinliklerinin ve uyarıların türlerine odaklanmanıza yardımcı olur. Uyarı hacmini etkileyebilecek diğer faktörler kapsam içi kullanıcı ve grupların boyutu ile [önceliklendirilen içerik ve kanallardır](insider-risk-management-policies.md#prioritize-content-in-policies). Bu alanları kuruluşunuz için en önemli olan alanlara daraltmak için ilkeleri ayarlamayı göz önünde bulundurun.
-- **Insider risk ayarlarınızı değiştirme**: Insider risk ayarları, alacağınız birim ve uyarı türlerini etkileyebilecek çok çeşitli yapılandırma seçenekleri içerir. Bunlar [ilke göstergeleri](insider-risk-management-settings.md#indicators), [gösterge eşikleri](insider-risk-management-settings.md#indicator-level-settings-preview) ve [ilke zaman çerçeveleri](insider-risk-management-settings.md#policy-timeframes) için ayarları içerir. Belirli dosya türlerini ve hassas bilgi türlerini dışlamak, ilkeleriniz tarafından etkinlik uyarıları raporlanmadan önce minimum eşikleri tanımlamak ve uyarı birimi yapılandırmasını daha düşük bir ayara değiştirmek için [akıllı algılama](insider-risk-management-settings.md#intelligent-detections) seçeneklerini yapılandırmayı göz önünde bulundurun.
+- **Insider risk ayarlarınızı değiştirme**: Insider risk ayarları, alacağınız birim ve uyarı türlerini etkileyebilecek çok çeşitli yapılandırma seçenekleri içerir. Bunlar [ilke göstergeleri](insider-risk-management-settings.md#indicators), [gösterge eşikleri](insider-risk-management-settings.md#indicator-level-settings-preview) ve [ilke zaman çerçeveleri](insider-risk-management-settings.md#policy-timeframes) için ayarları içerir. Belirli dosya türlerini ve hassas bilgi türlerini, eğitilebilir sınıflandırıcıları dışlamak, ilkeleriniz tarafından etkinlik uyarıları raporlanmadan önce minimum eşikleri tanımlamak ve uyarı birimi yapılandırmasını daha düşük bir ayara değiştirmek için [akıllı algılama](insider-risk-management-settings.md#intelligent-detections) seçeneklerini yapılandırmayı göz önünde bulundurun.
 - **Satır içi uyarı özelleştirmesini etkinleştirme (önizleme)**: [Satır içi uyarı özelleştirmesini](/microsoft-365/compliance/insider-risk-management-settings#inline-alert-customization-preview) etkinleştirmek analistlerin ve araştırmacıların uyarıları gözden geçirirken ilkeleri hızla düzenlemesine olanak tanır. Microsoft önerileriyle etkinlik algılama için eşikleri güncelleştirebilir, özel eşikleri yapılandırabilir veya uyarıyı oluşturan etkinlik türünü yoksaymayı seçebilirler. Bu etkin değilse, yalnızca *Insider Risk Yönetimi* rol grubuna atanan kullanıcılar satır içi uyarı özelleştirmesini kullanabilir.
 - **Uygun olduğunda uyarıları toplu silme**: Analistlerinizin ve araştırmacılarınızın [aynı anda birden fazla uyarıyı hemen kapatması](insider-risk-management-activities.md#dismiss-multiple-alerts-preview) için önceliklendirme süresinden tasarruf etmeye yardımcı olabilir. Aynı anda kapatmak için en fazla 400 uyarı seçebilirsiniz.
 

@@ -10,6 +10,7 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
+ms.date: 10/24/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -25,16 +26,14 @@ ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
 search.appverid: met150
-ms.openlocfilehash: d057d64ac3d828a871103fa1b5120f7730f0d63c
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.openlocfilehash: 18b5745e9d8104f6a4eea370923e318e227ac9a3
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68195357"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68794192"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'da yanlış pozitifleri/negatifleri ele alın
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Şunlar için geçerlidir:**
 
@@ -44,7 +43,7 @@ ms.locfileid: "68195357"
 **Platform**
 - Windows
 
-Uç nokta koruma çözümlerinde hatalı pozitif, varlık aslında bir tehdit olmasa da algılanan ve kötü amaçlı olarak tanımlanan bir dosya veya işlem gibi bir varlıktır. Hatalı negatif, aslında kötü amaçlı olsa da tehdit olarak algılanmayan bir varlıktır. [Uç Nokta için Microsoft Defender](microsoft-defender-endpoint.md) dahil olmak üzere herhangi bir tehdit koruması çözümünde hatalı pozitif/negatifler oluşabilir.
+Uç nokta koruma çözümlerinde hatalı pozitif, varlık aslında bir tehdit olmasa bile algılanan ve kötü amaçlı olarak tanımlanan bir dosya veya işlem gibi bir varlıktır. Hatalı negatif, aslında kötü amaçlı olsa bile tehdit olarak algılanan bir varlıktır. [Uç Nokta için Microsoft Defender](microsoft-defender-endpoint.md) dahil olmak üzere herhangi bir tehdit koruması çözümünde hatalı pozitif/negatifler oluşabilir.
 
 :::image type="content" source="images/false-positives-overview.png" alt-text="Uç Nokta için Microsoft Defender portalında hatalı pozitif ve negatiflerin tanımı" lightbox="images/false-positives-overview.png":::
 
@@ -65,7 +64,7 @@ Bu makalede açıklanan görevleri gerçekleştirdikten sonra hatalı pozitif/ne
 
 ## <a name="part-1-review-and-classify-alerts"></a>1. Bölüm: Uyarıları gözden geçirme ve sınıflandırma
 
-Kötü amaçlı veya şüpheli olarak algılanan ve olmaması gereken bir [uyarı](alerts.md) görürseniz bu varlık için uyarıyı gizleyebilirsiniz. Hatalı pozitif olması gerekmeyen ancak önemli olmayan uyarıları da gizleyebilirsiniz. Uyarıları da sınıflandırmanızı öneririz.
+Kötü amaçlı veya şüpheli olarak algılanan bir [uyarı](alerts.md) görürseniz ve böyle olmaması gerekiyorsa, bu varlık için uyarıyı gizleyebilirsiniz. Hatalı pozitif olması gerekmeyen ancak önemli olmayan uyarıları da gizleyebilirsiniz. Uyarıları da sınıflandırmanızı öneririz.
 
 Uyarılarınızı yönetmek ve doğru/yanlış pozitifleri sınıflandırmak, tehdit koruma çözümünüzü eğitmeye yardımcı olur ve zaman içinde hatalı pozitif veya hatalı negatiflerin sayısını azaltabilir. Bu adımların izlenmesi, güvenlik ekibinizin daha yüksek öncelikli iş öğelerine odaklanması için kuyruğunuzdaki gürültüyü azaltmaya da yardımcı olur.
 
@@ -75,9 +74,9 @@ Bir uyarıyı sınıflandırmadan veya gizlemeden önce, uyarının doğru mu, h
 
 1. Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com)) gidin ve oturum açın.
 
-2. Gezinti bölmesinde **Uyarılar kuyruğu'na** tıklayın.
+2. Gezinti bölmesinde **Olaylar & uyarılar'ı** ve ardından **Uyarılar'ı** seçin.
 
-3. Uyarı hakkında daha fazla ayrıntı için bir uyarı seçin. (Bkz[. Uç Nokta için Microsoft Defender uyarıları gözden geçirme](review-alerts.md).)
+3. Hakkında daha fazla ayrıntı görüntülemek için bir uyarı seçin. (Bkz[. Uç Nokta için Microsoft Defender uyarıları gözden geçirme](review-alerts.md).)
 
 4. Uyarı durumuna bağlı olarak, aşağıdaki tabloda açıklanan adımları izleyin:
 
@@ -93,11 +92,11 @@ Uyarılar, Microsoft 365 Defender hatalı pozitifler veya gerçek pozitifler ola
 
 1. Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com)) gidin ve oturum açın.
 
-2. **Uyarılar kuyruğu'nı** ve ardından bir uyarı seçin.
+2. Gezinti bölmesinde **Olaylar & uyarılar'ı** seçin, **Uyarılar'ı** ve ardından bir uyarı seçin.
 
-3. Seçili uyarı için **Eylemler** \> **Uyarıyı yönet'i** seçin. Açılır pencere bölmesi açılır.
+3. Seçili uyarı için **Uyarıyı yönet'i** seçin. Açılır pencere bölmesi açılır.
 
-4. **Uyarıyı yönet** bölümünde **Doğru uyarı** veya **Yanlış uyarı'yı** seçin. ( **Hatalı pozitifi** sınıflandırmak için Yanlış uyarı kullanın.)
+4. **Uyarıyı yönet** bölümündeki **Sınıflandırma** alanında uyarıyı sınıflandırın (Doğru pozitif, Bilgilendirici, beklenen etkinlik veya Hatalı pozitif).
 
 > [!TIP]
 > Uyarıları gizleme hakkında daha fazla bilgi için bkz. [Uç Nokta için Microsoft Defender uyarılarını yönetme](/microsoft-365/security/defender-endpoint/manage-alerts). Kuruluşunuz bir güvenlik bilgileri ve olay yönetimi (SIEM) sunucusu kullanıyorsa, orada da bir engelleme kuralı tanımladığınızdan emin olun.
@@ -108,7 +107,7 @@ Hatalı pozitif veya gerçek pozitif olan ancak önemli olmayan olaylar için uy
 
 1. Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com)) gidin ve oturum açın.
 
-2. Gezinti bölmesinde **Uyarılar kuyruğu'na** tıklayın.
+2. Gezinti bölmesinde **Olaylar & uyarılar'ı** ve ardından **Uyarılar'ı** seçin.
 
 3. **Ayrıntılar** bölmesini açmak için gizlemesini istediğiniz bir uyarı seçin.
 
@@ -143,7 +142,7 @@ Hatalı pozitif sonuçlar sonucunda gerçekleştirilen eylemleri gözden geçirm
 
 ### <a name="review-completed-actions"></a>Tamamlanan eylemleri gözden geçirme
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalının</a> sol gezinti bölmesinde **İşlem merkezi'ne** tıklayın.
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalının</a> sol gezinti bölmesinde **Eylemler & gönderimler'i** ve ardından **İşlem merkezi'ni** seçin.
 
 2. Gerçekleştirilen eylemlerin listesini görüntülemek için **Geçmiş** sekmesini seçin.
 
@@ -151,7 +150,7 @@ Hatalı pozitif sonuçlar sonucunda gerçekleştirilen eylemleri gözden geçirm
 
 ### <a name="restore-a-quarantined-file-from-the-action-center"></a>karantinaya alınmış bir dosyayı İşlem Merkezi'nden geri yükleme
 
-1. Microsoft 365 Defender portalının sol gezinti bölmesinde **İşlem merkezi'ne** tıklayın.
+1. Microsoft 365 Defender portalın sol gezinti bölmesinde **Eylemler & gönderimler'i** ve ardından **İşlem merkezi'ni** seçin.
 
 2. **Geçmiş** sekmesinde, geri almak istediğiniz eylemi seçin.
 
@@ -159,22 +158,30 @@ Hatalı pozitif sonuçlar sonucunda gerçekleştirilen eylemleri gözden geçirm
 
 ### <a name="undo-multiple-actions-at-one-time"></a>Aynı anda birden çok eylemi geri alma
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalının</a> sol gezinti bölmesinde **İşlem merkezi'ne** tıklayın.
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalının</a> sol gezinti bölmesinde **Eylemler & gönderimler'i** ve ardından **İşlem merkezi'ni** seçin.
 
 2. **Geçmiş** sekmesinde, geri almak istediğiniz eylemleri seçin.
 
-3. Ekranın sağ tarafındaki bölmede **Geri Al'ı** seçin.
+3. Ekranın sağ tarafındaki açılır bölmede **Geri Al'ı** seçin.
 
 ### <a name="remove-a-file-from-quarantine-across-multiple-devices"></a>Bir dosyayı birden çok cihazda karantinadan kaldırma
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/autoir-quarantine-file-1.png" alt-text="Karantina dosyası" lightbox="images/autoir-quarantine-file-1.png":::
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalının</a> sol gezinti bölmesinde **İşlem merkezi'ne** tıklayın.
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalının</a> sol gezinti bölmesinde **Eylemler & gönderimler'i** ve ardından **İşlem merkezi'ni** seçin.
 
 2. **Geçmiş** sekmesinde, Eylem türü Karantina dosyası olan bir **dosya** seçin.
 
 3. Ekranın sağ tarafındaki bölmede **Bu dosyanın X daha fazla örneğine uygula'yı** ve ardından **Geri Al'ı** seçin.
+
+### <a name="review-quarantined-messages"></a>Karantinaya alınan iletileri gözden geçirme
+
+1. Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com)) gidin ve oturum açın.
+
+2. Gezinti bölmesinde, **işbirliği Email &** altında **Exchange ileti izleme'yi** seçin.
+
+3. Ayrıntıları görüntülemek için bir ileti seçin.
 
 ### <a name="restore-file-from-quarantine"></a>Dosyayı karantinadan geri yükleyin
 
@@ -214,12 +221,12 @@ Bu bölümdeki yordamlarda dışlamaların ve göstergelerin nasıl tanımlanaca
 
 ### <a name="exclusions-for-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma için Dışlamalar
 
-Genel olarak, Microsoft Defender Virüsten Koruma için dışlamalar tanımlamanız gerekmez. Dışlamaları düzenli olarak tanımladığınızdan ve yalnızca hatalı pozitif sonuçlara neden olan dosyaları, klasörleri, işlemleri ve işlem tarafından açılan dosyaları eklediğinizden emin olun. Ayrıca, tanımlı dışlamalarınızı düzenli olarak gözden geçirmeyi unutmayın. Virüsten koruma dışlamalarınızı tanımlamak veya düzenlemek için [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) kullanmanızı öneririz; ancak [grup ilkesi](/azure/active-directory-domain-services/manage-group-policy) gibi diğer yöntemleri kullanabilirsiniz (bkz. [Uç Nokta için Microsoft Defender yönetme](manage-mde-post-migration.md).
+Genel olarak, Microsoft Defender Virüsten Koruma için dışlamalar tanımlamanız gerekmez. Dışlamaları düzenli olarak tanımladığınızdan ve yalnızca hatalı pozitif sonuçlara neden olan dosyaları, klasörleri, işlemleri ve işlem tarafından açılan dosyaları eklediğinizden emin olun. Ayrıca, tanımlı dışlamalarınızı düzenli olarak gözden geçirmeyi unutmayın. Virüsten koruma dışlamalarınızı tanımlamak veya düzenlemek için [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) kullanmanızı öneririz; ancak, [grup ilkesi](/azure/active-directory-domain-services/manage-group-policy) gibi diğer yöntemleri kullanabilirsiniz (bkz. [Uç Nokta için Microsoft Defender yönetme](manage-mde-post-migration.md).
 
 > [!TIP]
 > Virüsten koruma dışlamalarıyla ilgili yardıma mı ihtiyacınız var? Bkz[. Microsoft Defender Virüsten Koruma taramaları için dışlamaları yapılandırma ve doğrulama](configure-exclusions-microsoft-defender-antivirus.md).
 
-#### <a name="use-microsoft-endpoint-manager-to-manage-antivirus-exclusions-for-existing-policies"></a>Virüsten koruma dışlamalarını yönetmek için Microsoft Endpoint Manager kullanma (mevcut ilkeler için)
+#### <a name="use-microsoft-endpoint-manager-to-manage-antivirus-exclusions-for-existing-policies"></a>Virüsten koruma dışlamalarını yönetmek için Microsoft Endpoint Manager'ı kullanma (mevcut ilkeler için)
 
 1. Microsoft Endpoint Manager yönetim merkezine (<https://endpoint.microsoft.com>) gidin ve oturum açın.
 
@@ -231,7 +238,7 @@ Genel olarak, Microsoft Defender Virüsten Koruma için dışlamalar tanımlaman
 
 5. **Gözden Geçir + kaydet'i** ve ardından **Kaydet'i** seçin.
 
-#### <a name="use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions"></a>Dışlamalarla yeni bir virüsten koruma ilkesi oluşturmak için Microsoft Endpoint Manager kullanma
+#### <a name="use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions"></a>Dışlamalarla yeni bir virüsten koruma ilkesi oluşturmak için Microsoft Endpoint Manager'ı kullanma
 
 1. Microsoft Endpoint Manager yönetim merkezine (<https://endpoint.microsoft.com>) gidin ve oturum açın.
 
@@ -332,7 +339,7 @@ Davranışa göre kötü amaçlı yazılım olarak bir şey algılandıysa ve do
 
 Gönderiniz, bir analist davanızı işlemeye başlamadan önce bile size en son belirlemeyi sağlamak için sistemlerimiz tarafından hemen taranır. Bir dosya zaten bir analist tarafından gönderilmiş ve işlenmiş olabilir. Bu gibi durumlarda, hızlı bir şekilde bir belirleme yapılır.
 
-Henüz işlenmemiş gönderimler için, analiz için aşağıdaki gibi öncelikleri belirlenir:
+Henüz işlenmemiş gönderimler için aşağıdaki gibi analiz için öncelikleri belirlenir:
 
 - Çok sayıda bilgisayarı etkileme olasılığı olan yaygın dosyalara daha yüksek öncelik verilir.
 - Kimliği doğrulanmış müşterilere, özellikle de geçerli [Yazılım Güvencesi Kimliklerine (SAID)](https://www.microsoft.com/licensing/licensing-programs/software-assurance-default.aspx) sahip kurumsal müşterilere daha yüksek öncelik verilir.
@@ -358,9 +365,9 @@ Microsoft Defender Virüsten Koruma için bulut tabanlı koruma düzeyinizi dene
 > [!TIP]
 > Bulut tabanlı korumanızı yapılandırma hakkında daha fazla bilgi edinmek için bkz. [Bulut tabanlı koruma düzeyini belirtme](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).
 
-Bulut tabanlı koruma ayarlarınızı düzenlemek veya ayarlamak için [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) kullanmanızı öneririz; ancak [grup ilkesi](/azure/active-directory-domain-services/manage-group-policy) gibi diğer yöntemleri kullanabilirsiniz (bkz. [Uç Nokta için Microsoft Defender yönetme](manage-mde-post-migration.md).
+Bulut tabanlı koruma ayarlarınızı düzenlemek veya ayarlamak için [Microsoft Endpoint Manager'ı](/mem/endpoint-manager-overview) kullanmanızı öneririz; ancak, [grup ilkesi](/azure/active-directory-domain-services/manage-group-policy) gibi diğer yöntemleri kullanabilirsiniz (bkz. [Uç Nokta için Microsoft Defender yönetme](manage-mde-post-migration.md).
 
-#### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>Bulut tabanlı koruma ayarlarını gözden geçirmek ve düzenlemek için Microsoft Endpoint Manager kullanma (mevcut ilkeler için)
+#### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>Bulut tabanlı koruma ayarlarını gözden geçirmek ve düzenlemek için Microsoft Endpoint Manager'ı kullanma (mevcut ilkeler için)
 
 1. Microsoft Endpoint Manager yönetim merkezine (<https://endpoint.microsoft.com>) gidin ve oturum açın.
 
@@ -372,7 +379,7 @@ Bulut tabanlı koruma ayarlarınızı düzenlemek veya ayarlamak için [Microsof
 
 5. **Gözden Geçir + kaydet'i** ve ardından **Kaydet'i** seçin.
 
-#### <a name="use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy"></a>Bulut tabanlı koruma ayarlarını ayarlamak için Microsoft Endpoint Manager kullanma (yeni bir ilke için)
+#### <a name="use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy"></a>Bulut tabanlı koruma ayarlarını ayarlamak için Microsoft Endpoint Manager'ı kullanma (yeni bir ilke için)
 
 1. Microsoft Endpoint Manager yönetim merkezine (<https://endpoint.microsoft.com>) gidin ve oturum açın.
 
@@ -395,16 +402,16 @@ Bulut tabanlı koruma ayarlarınızı düzenlemek veya ayarlamak için [Microsof
 
 ### <a name="remediation-for-potentially-unwanted-applications"></a>İstenmeyebilecek uygulamalar için düzeltme
 
-İstenmeyebilecek uygulamalar (PUA), cihazların yavaş çalışmasına, beklenmeyen reklamlar görüntülemesine veya beklenmeyen veya istenmeyen olabilecek başka yazılımlar yüklemesine neden olabilen bir yazılım kategorisidir. PUA'ya örnek olarak reklam yazılımları, paketleme yazılımları ve güvenlik ürünleriyle farklı davranan kaçış yazılımları verilebilir. PUA kötü amaçlı yazılım olarak kabul edilmese de, bazı yazılım türleri davranışlarına ve itibarına göre PUA'dır.
+İstenmeyebilecek uygulamalar (PUA), cihazların yavaş çalışmasına, beklenmeyen reklamlar görüntülemesine veya beklenmeyen veya istenmeyen olabilecek başka yazılımlar yüklemesine neden olabilen bir yazılım kategorisidir. PUA'ya örnek olarak reklam yazılımları, paketleme yazılımları ve güvenlik ürünleriyle farklı davranan kaçış yazılımları verilebilir. PUA kötü amaçlı yazılım olarak kabul edilmese de, bazı yazılım türleri davranışlarına ve saygınlığına göre PUA'dır.
 
 > [!TIP]
 > PUA hakkında daha fazla bilgi edinmek için bkz. [İstenmeyebilecek uygulamaları algılama ve engelleme](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
 Kuruluşunuzun kullandığı uygulamalara bağlı olarak, PUA koruma ayarlarınızın bir sonucu olarak hatalı pozitif sonuçlar alıyor olabilirsiniz. Gerekirse, PUA korumasını bir süre denetim modunda çalıştırmayı veya kuruluşunuzdaki cihazların bir alt kümesine PUA koruması uygulamayı göz önünde bulundurun. PUA koruması Microsoft Edge tarayıcısı ve Microsoft Defender Virüsten Koruma için yapılandırılabilir.
 
-PUA koruma ayarlarını düzenlemek veya ayarlamak için [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) kullanmanızı öneririz; ancak [grup ilkesi](/azure/active-directory-domain-services/manage-group-policy) gibi diğer yöntemleri kullanabilirsiniz (bkz. [Uç Nokta için Microsoft Defender yönetme](manage-mde-post-migration.md).
+PUA koruma ayarlarını düzenlemek veya ayarlamak için [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) kullanmanızı öneririz; ancak, [grup ilkesi](/azure/active-directory-domain-services/manage-group-policy) gibi diğer yöntemleri kullanabilirsiniz (bkz. [Uç Nokta için Microsoft Defender yönetme](manage-mde-post-migration.md).
 
-#### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>PUA korumasını düzenlemek için Microsoft Endpoint Manager kullanma (mevcut yapılandırma profilleri için)
+#### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>PUA korumasını düzenlemek için Microsoft Endpoint Manager'ı kullanma (mevcut yapılandırma profilleri için)
 
 1. Microsoft Endpoint Manager yönetim merkezine (<https://endpoint.microsoft.com>) gidin ve oturum açın.
 
@@ -418,7 +425,7 @@ PUA koruma ayarlarını düzenlemek veya ayarlamak için [Microsoft Endpoint Man
 
 6. **Gözden Geçir + kaydet'i** ve ardından **Kaydet'i** seçin.
 
-#### <a name="use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile"></a>PUA korumasını ayarlamak için Microsoft Endpoint Manager kullanma (yeni bir yapılandırma profili için)
+#### <a name="use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile"></a>PUA korumasını ayarlamak için Microsoft Endpoint Manager'ı kullanma (yeni bir yapılandırma profili için)
 
 1. Microsoft Endpoint Manager yönetim merkezine (<https://endpoint.microsoft.com>) gidin ve oturum açın.
 
@@ -452,7 +459,7 @@ Kuruluşunuz için ayarlanan [otomasyon düzeyine](/microsoft-365/security/defen
 
 ## <a name="still-need-help"></a>Yine de yardım mı gerekiyor?
 
-Bu makaledeki tüm adımlarda çalıştıysanız ve hala yardıma ihtiyacınız varsa teknik desteğe başvurun.
+Bu makaledeki tüm adımları tamamladıktan sonra hala yardıma ihtiyacınız varsa teknik desteğe başvurun.
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> gidin ve oturum açın.
 

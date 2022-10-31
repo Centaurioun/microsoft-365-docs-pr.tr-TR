@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Bu makale, ileti şifrelemesinin farklı sürümleri arasındaki farkları açıklamaya yardımcı olur.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 355ae33ff7e9860bb9ef151d3bcdf538857e9d25
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: d77d61ce5c27dad476a67a4360eae463196385b4
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68630764"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793268"
 ---
 # <a name="compare-versions-of-message-encryption"></a>İleti şifreleme sürümlerini karşılaştırma
 
@@ -51,7 +51,6 @@ Bu kullanımdan kaldırmanın kuruluşunuzu etkileyip etkilemediğini değerlend
 |*Dış alıcı deneyimi*|Alıcılar web tarayıcısında veya mobil uygulamada indirdikleri ve açtıkları bir HTML iletisi alır|Yok|Microsoft 365 alıcıları için yerel satır içi deneyim. Diğer tüm alıcılar OME portalından iletiyi okuyabilir (indirme veya uygulama gerekmez).|
 |*Ek izinleri*           |Eklerde kısıtlama yok|Ekler korunur|Ekler İletme seçeneği ve özel şablonlar için korunur. Yöneticiler yalnızca şifrele seçeneğinin eklerinin korunup korunmayacağını seçebilir.|
 |*Kendi anahtarını getir (BYOK) desteği*|Yok                |Yok               |BYOK desteklenir          |
-||
 
 ## <a name="advantages-of-microsoft-purview-message-encryption-over-legacy-ome"></a>eski OME'ye kıyasla Microsoft Purview İleti Şifrelemesi avantajları
 

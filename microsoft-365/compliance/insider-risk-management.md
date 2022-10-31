@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - highpri
-ms.openlocfilehash: 1a6175a0f0d64e72ca14e334cb16d970315bb797
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 65ec1b52582b1cbefb9a4b995118bb7f60d0081d
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68769853"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68793334"
 ---
 # <a name="learn-about-insider-risk-management"></a>İçeriden risk yönetimi hakkında daha fazla bilgi edinme
 
@@ -97,11 +97,11 @@ Insider risk yönetimi iş akışı, kuruluşunuzdaki iç riskleri tanımlamanı
 Insider risk yönetimine hızlı bir şekilde başlamak için aşağıdaki ilke şablonlarından seçim yapabilirsiniz:
 
 - [Ayrılan kullanıcılar tarafından veri hırsızlığı](insider-risk-management-policies.md#data-theft-by-departing-users)
-- [Genel veri sızıntıları](insider-risk-management-policies.md#general-data-leaks)
+- [Veri sızıntıları](insider-risk-management-policies.md#data-leaks)
 - [Öncelikli kullanıcılara göre veri sızıntıları (önizleme)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 - [Riskli kullanıcılar tarafından veri sızıntıları (önizleme)](insider-risk-management-policies.md#data-leaks-by-risky-users-preview)
-- [Genel güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#general-security-policy-violations-preview)
-- [Genel hasta verilerini kötüye kullanma (önizleme)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
+- [Güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-preview)
+- [Hasta verilerini kötüye kullanma (önizleme)](insider-risk-management-policies.md#patient-data-misuse-preview)
 - [Ayrılan kullanıcılar tarafından güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Öncelikli kullanıcılara göre güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Riskli kullanıcıların güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-risky-users-preview)
@@ -168,7 +168,7 @@ Kullanıcılar kuruluşta kendi istekleriyle veya sonlandırmanın bir sonucu ol
 
 Çoğu durumda, kullanıcılar hassas veya gizli bilgileri düzgün bir şekilde işlemek için ellerinden gelenin en iyisini yapmaya çalışır. Ancak bazen kullanıcılar hatalar yapabilir ve bilgiler yanlışlıkla kuruluşunuzun dışında veya bilgi koruma ilkelerinizi ihlal ederek paylaşılır. Diğer durumlarda, kullanıcılar hassas ve gizli bilgileri kasıtlı olarak kötü amaçlı ve potansiyel kişisel kazanç amacıyla sızdırabilir veya paylaşabilir. Aşağıdaki Veri sızıntıları ilke şablonları kullanılarak oluşturulan Insider risk yönetimi ilkeleri, genellikle hassas veya gizli bilgilerin paylaşılmasıyla ilişkili etkinlikleri otomatik olarak algılar:
 
-- [Genel veri sızıntıları](insider-risk-management-policies.md#general-data-leaks)
+- [Veri sızıntıları](insider-risk-management-policies.md#data-leaks)
 - [Öncelikli kullanıcılara göre veri sızıntıları (önizleme)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 - [Riskli kullanıcılar tarafından veri sızıntıları (önizleme)](insider-risk-management-policies.md#data-leaks-by-risky-users-preview)
 
@@ -176,7 +176,7 @@ Kullanıcılar kuruluşta kendi istekleriyle veya sonlandırmanın bir sonucu ol
 
 Kullanıcılar genellikle cihazlarını modern çalışma alanında yönetirken büyük ölçüde denetime sahiptir. Bu denetim, görevlerinin performansında gereken uygulamaları yükleme veya kaldırma izinlerini veya cihaz güvenlik özelliklerini geçici olarak devre dışı bırakma özelliğini içerebilir. Bu risk etkinliğinin yanlışlıkla, yanlışlıkla veya kötü amaçlı olması fark etmeksizin, bu davranış kuruluşunuz için risk oluşturabilir ve en aza indirmek için tanımlamak ve harekete geçmek önemlidir. Aşağıdaki insider risk yönetimi güvenlik ilkesi ihlal şablonları, bu riskli güvenlik etkinliklerini tanımlamaya yardımcı olmak için güvenlik riski göstergelerini puanlar ve güvenlikle ilgili etkinliklere yönelik içgörüler sağlamak için Uç Nokta için Microsoft Defender uyarılarını kullanır:
 
-- [Genel güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#general-security-policy-violations-preview)
+- [Güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-preview)
 - [Ayrılan kullanıcılar tarafından güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Öncelikli kullanıcılara göre güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Riskli kullanıcıların güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-risky-users-preview)
@@ -192,7 +192,7 @@ Kuruluşunuzdaki kullanıcılar konumlarına, hassas bilgilere erişim düzeyler
 
 Sağlık sektöründeki kuruluşlar için yapılan son çalışmalar, insider ile ilgili veri ihlallerinin çok yüksek oranda olduğunu tespit etti. Hasta verilerinin ve sağlık kaydı bilgilerinin kötüye kullanımını algılamak, hasta gizliliğini korumanın ve Sağlık Sigortası Taşınabilirlik ve Sorumluluk Yasası (HIPAA) ve Ekonomik ve Klinik Sağlık için Sağlık Bilgi Teknolojisi (HITECH) Yasası gibi uyumluluk düzenlemelerine uymanın kritik bir bileşenidir. Hasta verilerinin kötüye kullanılması, ayrıcalıklı hasta kayıtlarına erişmekten kötü amaçlı olarak aile veya komşulardan gelen hastaların kayıtlarına erişmeye kadar değişebilir. Aşağıdaki insider risk yönetimi ilkesi şablonları, bu tür riskli etkinliklerin kimliğini belirlemeye yardımcı olmak için Microsoft 365 HR bağlayıcısını ve sağlık hizmetlerine özgü bir veri bağlayıcısını kullanarak elektronik ısı kaydı (EHR) sistemlerinizde oluşabilecek davranışlarla ilgili risk göstergelerini puanlamaya başlar:
 
-- [Genel hasta verilerini kötüye kullanma (önizleme)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
+- [Hasta verilerini kötüye kullanma (önizleme)](insider-risk-management-policies.md#patient-data-misuse-preview)
 
 ### <a name="actions-and-behaviors-by-risky-users-preview"></a>Riskli kullanıcıların eylemleri ve davranışları (önizleme)
 

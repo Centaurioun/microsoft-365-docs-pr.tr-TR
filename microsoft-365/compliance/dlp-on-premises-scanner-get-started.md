@@ -13,23 +13,27 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: Şirket içi tarayıcıda veri kaybı önlemeyi ayarlama
-ms.openlocfilehash: fae1b5d2113935e2e3a899a16aafb224297d9912
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+description: Bu makalede, Şirket içi Microsoft Purview veri kaybı önleme tarayıcısının önkoşulları ve yapılandırması açıklanmaktadır.
+ms.openlocfilehash: 8e98f982ed98fa988c87039d962cb4f6312e2146
+ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67359175"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68794082"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>Şirket içi veri kaybı önleme tarayıcısını kullanmaya başlama
 
 Bu makalede, Şirket içi Microsoft Purview veri kaybı önleme tarayıcısının önkoşulları ve yapılandırmasında size yol gösterildi.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -56,18 +60,18 @@ DLP şirket içi tarayıcıdaki veriler [Etkinlik gezgininde](data-classificatio
 - Güvenlik yöneticisi
 - Uyumluluk veri yöneticisi
 
-#### <a name="roles-and-role-groups-in-preview"></a>Önizlemede Roller ve Rol Grupları
+#### <a name="roles-and-role-groups"></a>Roller ve Rol Grupları
 
 Önizlemede, erişim denetimlerinizde ince ayar yapmak için test yapabileceğiniz roller ve rol grupları vardır.
 
-Aşağıda, önizleme aşamasında olan geçerli rollerin listesi yer alır. Bunlar hakkında daha fazla bilgi edinmek için bkz [. Güvenlik & Uyumluluk Merkezi'ndeki Roller](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Aşağıda, önizleme aşamasında olan geçerli rollerin listesi yer alır. Bunlar hakkında daha fazla bilgi edinmek için [Microsoft Purview uyumluluk portalı İzinler bölümüne](microsoft-365-compliance-center-permissions.md) bakın.
 
 - Information Protection Yönetici
 - Information Protection Analisti
 - Information Protection Araştırmacısı
 - Information Protection Okuyucu
 
-Aşağıda, önizleme aşamasında olan geçerli rol gruplarının listesi yer alır. hakkında daha fazla bilgi edinmek için bkz [. Güvenlik & Uyumluluk Merkezi'ndeki Rol grupları](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Aşağıda, önizleme aşamasında olan geçerli rol gruplarının listesi yer alır. hakkında daha fazla bilgi edinmek için [bkz. Microsoft Purview uyumluluk portalı İzinler](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection
 - Information Protection Yöneticileri
@@ -116,7 +120,7 @@ Aşağıda, önizleme aşamasında olan geçerli rol gruplarının listesi yer a
       - \*
       - \*\\A
       - Acar
-      - c:\
+      - C:\
       - C:\test
 
 > [!IMPORTANT]
