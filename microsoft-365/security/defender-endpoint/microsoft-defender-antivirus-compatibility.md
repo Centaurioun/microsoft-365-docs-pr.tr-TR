@@ -7,7 +7,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 10/20/2022
+ms.date: 10/31/2022
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 2f9f9b65804d5218f2439e85af1c888b012c9a62
-ms.sourcegitcommit: 87283bb02ca750286f7c069f811b788730ed5832
+ms.openlocfilehash: c935c9e6131f602c582edb5a98787cc8871afbec
+ms.sourcegitcommit: 4bae15909267a70c8842bd0cd3dceb8459b4cc29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68661665"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68798353"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender Virüsten Koruma'nın diğer güvenlik ürünleriyle uyumluluğu
 
@@ -152,7 +152,7 @@ Uç Nokta için Defender, Microsoft Defender Virüsten Koruma'nın pasif modda �
 | [Bulut tabanlı koruma](enable-cloud-protection-microsoft-defender-antivirus.md) | Evet | Hayır  | Hayır | Hayır | 
 | [Ağ koruması](network-protection.md)  | Evet | Hayır | Hayır | Hayır | 
 | [Saldırı yüzeyini azaltma kuralları](attack-surface-reduction.md)  | Evet | Hayır | Hayır  | Hayır | 
-| [Sınırlı düzenli tarama kullanılabilirliği](limited-periodic-scanning-microsoft-defender-antivirus.md) | Hayır | Hayır | Evet | Hayır | 
+| [Sınırlı düzenli tarama kullanılabilirliği](limited-periodic-scanning-microsoft-defender-antivirus.md) | Hayır | Evet | Hayır | Hayır | 
 | [Dosya tarama ve algılama bilgileri](review-scan-results-microsoft-defender-antivirus.md) | Evet | Evet <sup>[[5](#fn5)]</sup> | Hayır | Evet | 
 | [Tehdit düzeltme](configure-remediation-microsoft-defender-antivirus.md) | Evet | Bkz. not <sup>[[6](#fn6)]</sup> | Hayır | Evet | 
 | [Güvenlik bilgileri güncelleştirmeleri](manage-updates-baselines-microsoft-defender-antivirus.md) | Evet | Evet <sup>[[7](#fn7)]</sup> | Hayır | Evet <sup>[[7](#fn7)]</sup> | 
@@ -249,7 +249,7 @@ Aşağıdaki bölümlerde virüsten koruma Microsoft Defender ne bekleyebileceğ
 
 ### <a name="active-mode"></a>Etkin mod
 
-Etkin modda Microsoft Defender Virüsten Koruma, makinede virüsten koruma uygulaması olarak kullanılır. Configuration Manager, grup ilkesi, Microsoft Intune veya diğer yönetim ürünleri kullanılarak yapılandırılan ayarlar uygulanır. Dosyalar taranır, tehditler giderilir ve algılama bilgileri yapılandırma aracınızda (örneğin, Microsoft Endpoint Manager yönetim merkezinde veya uç noktadaki Microsoft Defender Virüsten Koruma uygulamasında) bildirilir.  
+Etkin modda Microsoft Defender Virüsten Koruma, makinede virüsten koruma uygulaması olarak kullanılır. Configuration Manager, grup ilkesi, Microsoft Intune veya diğer yönetim ürünleri kullanılarak yapılandırılan ayarlar uygulanır. Dosyalar taranır, tehditler düzeltilir ve algılama bilgileri yapılandırma aracınızda (örneğin, Microsoft Endpoint Manager yönetim merkezinde veya uç noktadaki Microsoft Defender Virüsten Koruma uygulamasında) bildirilir.  
 
 ### <a name="passive-mode-or-edr-block-mode"></a>Pasif mod veya EDR Blok modu
 

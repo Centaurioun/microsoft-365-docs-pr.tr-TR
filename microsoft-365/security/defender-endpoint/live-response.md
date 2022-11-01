@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 12cc6483fdd88a3f9e9213578b21a7eee4499dfe
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 075d32e8a7e24bf688902f919ec926edcd26344b
+ms.sourcegitcommit: 4bae15909267a70c8842bd0cd3dceb8459b4cc29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68725177"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68798397"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Canlı yanıt kullanarak cihazlardaki varlıkları araştırma
 
@@ -63,10 +63,7 @@ Bir cihazda oturum başlatabilmeniz için önce aşağıdaki gereksinimleri kar�
     - [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795) ile [Sürüm 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803)
     - [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816) ile [Sürüm 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709)
 
-  - **macOS** - Yalnızca Genel Önizleme için geçerlidir, gerekli en düşük sürüm: 101.43.84
-
-   > [!NOTE]
-   > Şu anda yalnızca Intel tabanlı macOS sistemleri desteklenmektedir.
+  - **macOS** - Yalnızca Genel Önizleme için geçerlidir, gerekli en düşük sürüm: 101.43.84. Intel tabanlı ve ARM tabanlı macOS cihazları için desteklenir
 
   - **Linux** - Yalnızca Genel Önizleme için geçerlidir, gerekli en düşük sürüm: 101.45.13
 

@@ -24,12 +24,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 adobe-target: true
-ms.openlocfilehash: bc690e91ceb83d49814e869f40411da900faa719
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 93c1532440108f6c1b001154400c79bbd77b436b
+ms.sourcegitcommit: 4bae15909267a70c8842bd0cd3dceb8459b4cc29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68051266"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68798419"
 ---
 # <a name="microsoft-365-defender-portal"></a>Microsoft 365 Defender portalı
 
@@ -58,7 +58,7 @@ Microsoft 365 Defender portalı, güvenlik ekiplerinin farklı iş yüklerinden 
 Microsoft 365 Defender *birlik, netlik ve ortak hedefleri* vurgular. 
 
 > [!NOTE]
-> Microsoft 365 Defender portalına müşterilerin geçiş adımlarını gerçekleştirmesine veya yeni lisans satın almasına gerek kalmadan erişilebilir. Örneğin, bu yeni portalA3 aboneliğine sahip yöneticiler için de aynı Plan 1 ve Plan 2 Office 365 için Microsoft Defender olanlar için erişilebilir; ancak Exchange Online Protection veya Office 365 için Defender  Plan 1 müşterileri yalnızca abonelik lisanslarının desteklediği güvenlik özelliklerini görür. Portalın amacı güvenliği merkezileştirmektir.
+> Microsoft 365 Defender portalına müşterilerin geçiş adımlarını gerçekleştirmesine veya yeni lisans satın almasına gerek kalmadan erişilebilir. Örneğin, bu yeni portalA3 aboneliğine sahip yöneticiler için erişilebilir; aynı Office 365 için Microsoft Defender Plan 1 ve Plan 2'ye sahip olanlar için olduğu gibi; ancak Exchange Online Protection veya Office 365 için Defender  Plan 1 müşterileri yalnızca abonelik lisanslarının desteklediği güvenlik özelliklerini görür. Portalın amacı güvenliği merkezileştirmektir.
 
 ## <a name="incident-and-alert-investigations"></a>Olay ve uyarı araştırmaları
 
@@ -146,7 +146,7 @@ Ortaya çıkan tehditleri aşağıdaki Microsoft 365 Defender tehdit analiziyle 
 > Ürün filtresiyle birlikte geçerli konular, kaynak türleri (videolardan web seminerlerine), güvenlik alanları, güvenlik rolleri ve ürün özellikleriyle ilgili bilgi ve deneyim düzeyleri listelenir.
 
 > [!TIP]
-> [Microsoft Learn'de](/training/) birçok başka öğrenme fırsatı vardır. [Kurs MS-500T02-A: Microsoft 365 Tehdit Koruması Uygulama gibi sertifika eğitimleri](/training/certifications/courses/ms-500t02) bulacaksınız.
+> [Microsoft Learn'de](/training/) birçok başka öğrenme fırsatı vardır. [Kurs MS-500T00: Microsoft 365 Güvenlik Yönetimi](/training/courses/ms-500t00) gibi sertifika eğitimlerini bulacaksınız.
 
 ## <a name="send-us-your-feedback"></a>Bize geri bildiriminizi gönderin
 

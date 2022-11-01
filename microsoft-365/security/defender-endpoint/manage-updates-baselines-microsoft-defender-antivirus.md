@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 10/21/2022
+ms.date: 10/31/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: 94f2818f2e470807b9e4ed7f4ee23334106e2d50
-ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
+ms.openlocfilehash: 6ecc138f1eb02dcbac6ac3c46252e45c1e91ae37
+ms.sourcegitcommit: 4bae15909267a70c8842bd0cd3dceb8459b4cc29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68673183"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68798265"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama
 
@@ -89,6 +89,36 @@ Tüm güncelleştirmelerimiz
 - Tümleştirme geliştirmeleri (Bulut, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>Ekim-2022 (Platform: 4.18.2210.4 | Motor: 1.1.19800.x)</summary>
+
+&ensp;Güvenlik bilgileri güncelleştirme sürümü: **x.x**<br/>
+&ensp;Sürüm tarihi: **31 Ekim 2022**<br/>
+&ensp;Platform: **4.18.2210.4**<br/>
+&ensp;Motor: **1.1.19800.x**<br/>
+&ensp;Destek aşaması: **Güvenlik ve Kritik Güncelleştirmeler**<br/>
+
+Altyapı sürümü: 1.1.19800.x (*son sürüm numarası yakında sunulacak*)<br/>
+Güvenlik bilgileri güncelleştirme sürümü: x.x (*çok yakında*)<br/>
+
+### <a name="whats-new"></a>Yenilikler
+
+- Virüsten koruma altyapısında iyileştirilmiş askı algılama 
+- OOBE (ilk çalıştırma deneyimi) işlemi sırasında defender güncelleştirmelerini kabul etme eklendi 
+- Geliştirilmiş [kurcalama koruması](prevent-changes-to-security-settings-with-tamper-protection.md) özelliği 
+- Intune raporunu çözmek için tehdit & güvenlik açığı yönetimi (TVM)-uyar ve TVM engelleme eylemi değiştirildi 
+- için Intune ilkesinden Temizleme Eylemi kaldırıldı`ThreadSeverityDefaultAction` 
+- Intune ilkesine zamanlanmış görev zamanlarını rastgele yapılandırma eklendi 
+- Ağ koruması için `DisableSMTPParsing` yönetilebilirlik eklendi 
+- Davranış izleme için iyileştirme eklendi 
+- Windows Defender için olay 1151 için normalleştirilmiş tarih biçimi 
+- Cdrom sürücüsünü belirli koşullar altında bağlarken dışlamaların güncelleştirilmesiyle `\device\cdrom*` ilgili kilitlenme düzeltildi 
+- Tehdit algılama için geliştirilmiş PID bilgileri 
+
+### <a name="known-issues"></a>Bilinen Sorunlar
+
+- Yok  
+<br/><br/>
+</details><details>
 <summary>Eylül-2022 (Platform: 4.18.2209.7 | Motor: 1.1.19700.3)</summary>
 
 &ensp;Güvenlik bilgileri güncelleştirme sürümü: **1.377.8.0**<br/>
@@ -144,14 +174,21 @@ Güvenlik bilgileri güncelleştirme sürümü: 1.373.1647.0 <br/>
 - Yok
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Önceki sürüm güncelleştirmeleri: Yalnızca teknik yükseltme desteği
+
+Yeni bir paket sürümü yayımlandıktan sonra, önceki iki sürüme yönelik destek yalnızca teknik desteğe indirgener. Bu bölümde listelenen sürümlerden eski sürümler ve yalnızca teknik yükseltme desteği için sağlanır.<br/><br/>
+
+<details>
 <summary>Temmuz-2022 (Platform: 4.18.2207.5 | Motor: 1.1.19500.2)</summary>
 
 &ensp;Güvenlik bilgileri güncelleştirme sürümü: **1.373.219.0**<br/>
 &ensp;Sürüm tarihi: **15 Ağustos 2022**<br/>
 &ensp;Platform: **4.18.2207.5**<br/>
 &ensp;Motor: **1.1.19500.2**<br/>
-&ensp;Destek aşaması: **Güvenlik ve Kritik Güncelleştirmeler**<br/>
+&ensp;Destek aşaması: **Teknik yükseltme desteği (yalnızca)**<br/>
 
 Altyapı sürümü: 1.1.19300.2<br/>
 Güvenlik bilgileri güncelleştirme sürümü: 1.373.219.0 <br/>
@@ -182,14 +219,7 @@ Güvenlik bilgileri güncelleştirme sürümü: 1.373.219.0 <br/>
 - Platform güncelleştirmesi 4.18.2207.5'i dağıtan müşteriler, uygulamaları etkileyebilecek gecikmeli ağ performansıyla karşılaşabilir.
 
 <br/><br/>
-</details>
-
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Önceki sürüm güncelleştirmeleri: Yalnızca teknik yükseltme desteği
-
-Yeni bir paket sürümü yayımlandıktan sonra, önceki iki sürüme yönelik destek yalnızca teknik desteğe indirgener. Bu bölümde listelenen sürümlerden eski sürümler ve yalnızca teknik yükseltme desteği için sağlanır.<br/><br/>
-
-<details>
+</details><details>
 <summary>Mayıs 2022 (Platform: 4.18.2205.7 | Motor: 1.1.19300.2)</summary>
 
 &ensp;Güvenlik bilgileri güncelleştirme sürümü: **1.369.88.0**<br/>

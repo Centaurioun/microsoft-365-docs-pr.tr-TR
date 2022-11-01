@@ -21,12 +21,12 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: Kuruluşunuzdaki kullanıcılar için Office Betikleri ayarlarını yönetmeyi öğrenin.
-ms.openlocfilehash: 5fc83c585fd7edb288cc709e91f44f45b9c9d79c
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 5179c88c90a6a96b1f2d0dfcafe1c06299c5069d
+ms.sourcegitcommit: 4bae15909267a70c8842bd0cd3dceb8459b4cc29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68734395"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68798331"
 ---
 # <a name="manage-office-scripts-settings"></a>Office Betikleri ayarlarını yönetme
 
@@ -100,6 +100,12 @@ ms.locfileid: "68734395"
 8. **Kaydet**'i seçin.
 
     Office Betikleri ayarlarında yapılan değişikliklerin etkili olması 48 saate kadar sürebilir.
+
+## <a name="manage-visibility-of-the-automate-tab-by-using-group-policy"></a>grup ilkesi kullanarak Otomatikleştirme sekmesinin görünürlüğünü yönetme
+
+grup ilkesi, **Otomatikleştir** sekmesini veya kuruluşunuzdaki tüm Masaüstü kullanıcıları için Excel'i gösterme veya gizleme ayarına sahiptir. Office Betikleri ayarlarını, grup ilkesi Yönetim Konsolu'nda Bilgisayar Yapılandırması\Yönetim Şablonları\Microsoft Excel 2016\Çeşitli altında bulabilirsiniz.
+
+Daha fazla bilgi için bkz. [Microsoft 365 Uygulamaları güncelleştirme ayarlarını yapılandırmak için grup ilkesi kullanma](/deployoffice/configure-update-settings-microsoft-365-apps#use-group-policy-to-configure-update-settings-for-microsoft-365-apps).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

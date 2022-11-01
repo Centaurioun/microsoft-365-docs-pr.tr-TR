@@ -14,12 +14,12 @@ audience: itpro
 ms.collection:
 - tier1
 - purview-compliance
-ms.openlocfilehash: e6b94111802c624312447bbe7bb1de5d538aa005
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 6e28bf2680e15d6d49837fef00f60fc15e6e9fb8
+ms.sourcegitcommit: 4bae15909267a70c8842bd0cd3dceb8459b4cc29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68733559"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68798375"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Insider risk yönetimi İçerik gezgini
 
@@ -27,6 +27,13 @@ ms.locfileid: "68733559"
 > Microsoft Purview İçeriden Risk Yönetimi IP hırsızlığı, veri sızıntısı ve güvenlik ihlalleri gibi olası kötü amaçlı veya yanlışlıkla insider risklerini belirlemek için çeşitli sinyalleri ilişkilendirmektedir. Insider risk yönetimi, müşterilerin güvenlik ve uyumluluğu yönetmek için ilkeler oluşturmasına olanak tanır. Tasarım gereği gizlilikle oluşturulan kullanıcılar varsayılan olarak takma ad kullanır ve kullanıcı düzeyinde gizlilik sağlamaya yardımcı olmak için rol tabanlı erişim denetimleri ve denetim günlükleri kullanılır.
 
 Insider risk yönetimi **İçerik gezgini** , *Insider Risk Yönetimi Araştırmacıları* rolüne atanan kullanıcıların uyarılardaki etkinlikle ilişkili içeriğin bağlamını ve ayrıntılarını incelemesine olanak tanır. İçerik gezginindeki durum verileri, yeni risk etkinliği içerecek şekilde günlük olarak yenilenir. Bir servis talebi için onaylanan tüm uyarılar için, verilerin ve ileti dosyalarının kopyaları öğelerin zamanında anlık görüntü olarak arşivlenir ve depolama kaynaklarında özgün dosyalar ve iletiler korunur. Gerekirse, servis talebi veri dosyaları taşınabilir belge dosyası (PDF) olarak veya özgün dosya biçiminde dışarı aktarılabilir.
+
+## <a name="use-the-content-explorer-to-view-details-for-a-specific-case"></a>Belirli bir servis talebinin ayrıntılarını görüntülemek için İçerik gezginini kullanma
+
+Belirli bir servis talebine dahil edilen ilkeler tarafından yakalanan e-postaları ve dosyaları incelemek için Insider risk yönetimi **Servis Talepleri** sayfasına gidin ve ayrıntılarını görüntülemek istediğiniz servis talebi için listede *Servis Talebi adının* satırını seçin. Ardından servis talebi ayrıntıları sayfasında İçerik gezgini sekmesini seçerek İçerik **gezginini** açın.
+
+> [!IMPORTANT]
+> Bir uyarı bir servis talebine onaylandıktan sonra, kuruluş *insider Risk Management Araştırmacısı veya Insider Risk Yönetimi* rol grubuna bir kullanıcı atamadıysa İçerik gezgini bu durumla ilgili hiçbir ayrıntı görüntülemez.
 
 Yeni durumlarda, içerik gezgininde içeriğin doldurulma süresi genellikle yaklaşık bir saat sürer. Büyük miktarda içeriğe sahip durumlarda anlık görüntü oluşturmak daha uzun sürebilir. İçerik gezgininde içerik yüklenmeye devam ediyorsa tamamlanma yüzdesini gösteren bir ilerleme göstergesi görürsünüz.
 
