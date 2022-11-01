@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 10/24/2022
+ms.date: 11/01/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
@@ -19,16 +19,16 @@ ms.collection:
 - m365solution-mdb-setup
 - highpri
 - tier1
-ms.openlocfilehash: 674b48c5c558cb4d31df85e439c1eb216c09f00c
-ms.sourcegitcommit: e7dbe3b0d97cd8c64b5ae15f990d5e4b1dc9c464
+ms.openlocfilehash: 553dc3143d7cd01c48200097a3ba60b054ba5da8
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68687618"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68805046"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Cihazları İş için Microsoft Defender ekleme
 
-İş için Defender ile, şirketinizin cihazlarını eklemek için aralarından seçim yapabileceğiniz çeşitli seçenekler vardır. Bu makalede bu seçeneklerde size yol gösterilir ve eklemenin nasıl çalıştığına ilişkin bir genel bakış sağlanır.
+İş cihazlarınızı hemen korumak için ekleme. Şirketinizin cihazlarını eklemek için çeşitli seçenekler arasından seçim yapabilirsiniz. Bu makalede seçeneklerinizde size yol gösterilir ve eklemenin nasıl çalıştığı açıklanır.
 
 ## <a name="what-to-do"></a>Yapılması gerekenler
 
@@ -52,11 +52,7 @@ Windows istemci cihazlarını İş için Defender'a eklemek için aşağıdaki s
 
 ### <a name="local-script-for-windows-10-and-11"></a>Windows 10 ve 11 için yerel betik
 
-Windows istemci cihazlarını eklemek için yerel bir betik kullanabilirsiniz. Bir cihazda ekleme betiğini çalıştırdığınızda: 
-
-- Bu güven henüz yoksa Azure Active Directory ile bir güven oluşturur.
-- Henüz kaydedilmemişse cihazı Microsoft Intune kaydeder ve ardından cihazı İş için Defender'a ekler. 
-- Yerel betik yöntemi şu anda Intune sahip olmasanız bile çalışır ve bu, İş için Defender müşterileri için önerilen yöntemdir.
+Windows istemci cihazlarını eklemek için yerel bir betik kullanabilirsiniz. Bir cihazda ekleme betiğini çalıştırdığınızda, bu güven yoksa Azure Active Directory ile bir güven oluşturur; henüz kaydedilmemişse cihazı Microsoft Intune kaydeder ve ardından cihazı İş için Defender'a ekler. Şu anda Intune kullanmıyorsanız, yerel betik yöntemi, İş için Defender müşterileri için önerilen ekleme yöntemidir.
 
 > [!TIP]
 > Yerel betik yöntemini kullanırken bir kerede en fazla 10 cihaz eklemenizi öneririz.
@@ -86,7 +82,7 @@ Windows istemcilerini eklemek için grup ilkesi kullanmayı tercih ediyorsanız 
 Microsoft Endpoint Manager yönetim merkezini ([https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) kullanarak Windows istemcilerini ve diğer cihazları Intune'a ekleyebilirsiniz. Cihazları Intune kaydetmek için kullanılabilecek çeşitli yöntemler vardır. Aşağıdaki yöntemlerden birini kullanmanızı öneririz:
 
 - [Şirkete ait veya şirket tarafından yönetilen cihazlar için Windows otomatik kaydını etkinleştirme](#enable-automatic-enrollment-for-windows-10-and-11)
-- [Kullanıcılardan kendi Windows 10/11 cihazlarını Intune kaydetmelerini isteyin](#ask-users-enroll-their-own-windows-10-and-11-devices)
+- [Kullanıcılardan kendi Windows 10/11 cihazlarını Intune kaydetmelerini isteyin](#ask-users-to-enroll-their-windows-10-and-11-devices)
 
 #### <a name="enable-automatic-enrollment-for-windows-10-and-11"></a>Windows 10 ve 11 için otomatik kaydı etkinleştirme
 
@@ -114,7 +110,7 @@ Otomatik kaydı ayarladığınızda, kullanıcılar iş hesabını cihaza ekler.
 > [!TIP]
 > Daha fazla bilgi için bkz. [Windows otomatik kaydını etkinleştirme](/mem/intune/enrollment/windows-enroll).
 
-#### <a name="ask-users-enroll-their-own-windows-10-and-11-devices"></a>Kullanıcılardan kendi Windows 10 ve 11 cihazlarını kaydetmelerini isteyin
+#### <a name="ask-users-to-enroll-their-windows-10-and-11-devices"></a>Kullanıcılardan Windows 10 ve 11 cihazlarını kaydetmelerini isteyin
 
 1. Kaydın nasıl çalıştığını görmek için aşağıdaki videoyu izleyin:<br/><br/>
 
@@ -140,7 +136,7 @@ Windows cihazlarını İş için Defender'a ekledikten sonra, her şeyin düzgü
 
 Komut çalıştırıldıktan sonra Komut İstemi penceresi otomatik olarak kapatılır. Başarılı olursa algılama testi tamamlandı olarak işaretlenir ve yeni eklenen cihaz için Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com)) yaklaşık 10 dakika içinde yeni bir uyarı görünür.
 
-## <a name="view-a-list-of-onboarded-devices"></a>Eklenen cihazların listesini görüntüleme
+## <a name="view-the-list-of-onboarded-devices"></a>Eklenen cihazların listesini görüntüleme
 
 İş için Defender'a eklenen cihazların listesini görüntülemek için Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com) ) gidin. Gezinti bölmesinde **Varlık** > **Cihazları'na** gidin.
 
@@ -194,7 +190,7 @@ Mac Intune kaydedildikten sonra bir cihaz grubuna ekleyebilirsiniz. [İş için 
 
 ### <a name="intune-for-mac"></a>Mac için Intune
 
-Zaten Intune varsa, Microsoft Endpoint Manager yönetim merkezini ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) kullanarak Mac bilgisayarları kaydedebilirsiniz. Mac'i Intune'a kaydetmek için kullanılabilecek çeşitli yöntemler vardır. Aşağıdaki yöntemlerden birini öneririz:
+Zaten Intune varsa, Microsoft Endpoint Manager yönetim merkezini ([https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) kullanarak Mac bilgisayarları kaydedebilirsiniz. Mac'i Intune'a kaydetmek için kullanılabilecek çeşitli yöntemler vardır. Aşağıdaki yöntemlerden birini öneririz:
 
 - [Şirkete ait Mac için bir seçenek belirleyin](#options-for-company-owned-mac)
 - [Kullanıcılardan kendi Mac'lerini Intune kaydetmelerini isteyin](#ask-users-to-enroll-their-own-mac-in-intune)
@@ -247,8 +243,8 @@ Bir cihaz Intune kaydedildikten sonra cihaz grubuna ekleyebilirsiniz. [İş içi
 
 ## <a name="servers"></a>Sunucular
 
-> [!IMPORTANT]
-> Windows Server veya Linux Server örneğini eklemeyi planlıyorsanız, İş için Microsoft Defender sunucuları (önizleme) gibi ek bir lisansa ihtiyacınız olacaktır. Alternatif olarak [Sunucular için Microsoft Defender](/azure/defender-for-cloud/defender-for-servers-introduction) kullanabilirsiniz; ancak Sunucular için Defender Plan 1 veya Plan 2 gibi bir kurumsal plan eklediğinizde İş için Defender deneyiminiz değişebilir. Daha fazla bilgi edinmek için bkz. [Microsoft uç nokta güvenlik aboneliklerinin bir karışımına sahipsem ne olur?](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions).
+> [!NOTE]
+> Windows Server veya Linux Server örneğini eklemeyi planlıyorsanız, [Kurumsal sunucular için Microsoft Defender](get-defender-business-servers.md) gibi ek bir lisansa ihtiyacınız olacaktır. Alternatif olarak [Sunucular için Microsoft Defender](/azure/defender-for-cloud/defender-for-servers-introduction) kullanabilirsiniz; ancak Sunucular için Defender Plan 1 veya Plan 2 gibi bir kurumsal plan eklediğinizde İş için Defender deneyiminiz değişebilir. Daha fazla bilgi edinmek için bkz. [Microsoft uç nokta güvenlik aboneliklerinin bir karışımına sahipsem ne olur?](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions).
 
 Sunucunuz için işletim sistemini seçin:
 
@@ -258,9 +254,8 @@ Sunucunuz için işletim sistemini seçin:
 ## <a name="windows-server"></a>Windows Server
 
 > [!IMPORTANT]
-> **Windows Server uç noktalarını ekleme özelliği şu anda önizleme aşamasındadır**. Genel kullanılabilirlik duyurulduğunda, eklenen her sunucu için bir İş için Microsoft Defender sunucuları lisansı satın alınmalıdır; aksi durumda bu sunucular kullanıma alınabilir.
 > Windows Server uç noktasını eklemeden önce aşağıdaki gereksinimleri karşıladığınızdan emin olun:
-> - **Önizleme özellikleri** ayarı açıktır. Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ), **Ayarlar** > **Uç Noktaları** > **Genel** > **Gelişmiş özellikler****Önizleme özellikleri'ne** >  gidin.
+> - Kurumsal sunucular için Microsoft Defender lisansınız var. (Bkz[. Kurumsal sunucular için Microsoft Defender alma](get-defender-business-servers.md).)
 > - Windows Server için zorlama kapsamı açık. **Ayarlar** > **Uç Noktaları** > **Yapılandırma yönetimi** > **Zorlama kapsamı'na** gidin. **MEM'den güvenlik yapılandırma ayarlarını zorunlu kılmak için MDE kullan'ı** seçin, **Windows Server'ı** ve ardından **Kaydet'i** seçin.
 
 Yerel bir betik kullanarak bir Windows Server örneğini İş için Defender'a ekleyebilirsiniz.
@@ -314,9 +309,8 @@ Komut çalıştırıldıktan sonra Komut İstemi penceresi otomatik olarak kapat
 ## <a name="linux-server"></a>Linux Server
 
 > [!IMPORTANT]
-> **Linux Server uç noktalarını ekleme özelliği şu anda önizleme aşamasındadır**. Genel kullanılabilirlik duyurulduğunda, eklenen her sunucu için bir İş için Microsoft Defender sunucuları lisansı satın alınmalıdır; aksi durumda bu sunucular kullanıma alınabilir.
 > Linux Server uç noktasını eklemeden önce aşağıdaki gereksinimleri karşıladığınızdan emin olun:
-> - **Önizleme özellikleri** ayarı açıktır. Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ), **Ayarlar** > **Uç Noktaları** > **Genel** > **Gelişmiş özellikler****Önizleme özellikleri'ne** >  gidin.
+> - Kurumsal sunucular için Microsoft Defender lisansınız var. (Bkz[. Kurumsal sunucular için Microsoft Defender alma](get-defender-business-servers.md).)
 > - [Linux'ta Uç Nokta için Microsoft Defender önkoşullarını](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites) karşılarsınız.
 
 ### <a name="onboard-linux-server-endpoints"></a>Linux Server uç noktalarını ekleme

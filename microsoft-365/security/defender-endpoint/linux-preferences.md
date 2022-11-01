@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: dd14c5ff33f53701d39a47438bd57ab01bc8c6c2
-ms.sourcegitcommit: 1f4c51d022d1cfb6c194bf0f0af9c2841c781d68
+ms.openlocfilehash: 8a04c1720585d8b17c95a0bd4e02ace62bcd1f26
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68573471"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68803973"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın
 
@@ -419,6 +419,9 @@ Aşağıdaki yapılandırma profili şunları yapacaktır:
 ## <a name="full-configuration-profile-example"></a>Tam yapılandırma profili örneği
 
 Aşağıdaki yapılandırma profili, bu belgede açıklanan tüm ayarların girdilerini içerir ve ürün üzerinde daha fazla denetime sahip olmak istediğiniz daha gelişmiş senaryolar için kullanılabilir.
+  
+> [!NOTE]
+> Bu JSON'da yalnızca bir ara sunucu ayarıyla tüm Uç Nokta için Microsoft Defender iletişimi denetlemek mümkün değildir.
 
 ### <a name="full-profile"></a>Tam profil
 
@@ -538,6 +541,7 @@ JSON iyi biçimlendirilmişse, yukarıdaki komut onu Terminal'e geri gönderir v
 
 > [!NOTE]
 > mdatp_managed.json dosyasının etkili olması için deamon'un `mdatp` yeniden başlatılması gerekmez.
+  
 
 ## <a name="configuration-profile-deployment"></a>Yapılandırma profili dağıtımı
 

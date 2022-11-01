@@ -10,18 +10,19 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: Yeni ve etiketsiz belgeler için SharePoint belge kitaplığı için varsayılan duyarlılık etiketini yapılandırın.
-ms.openlocfilehash: 6f3146f8ce59f88eafc311cd9bf382f06103eb94
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: cfa0eda2c3c30502c3d190976cf8e5418e6233d5
+ms.sourcegitcommit: b439d097e55bba35d9328447d993bbcac7a178a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710773"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68803234"
 ---
 # <a name="configure-a-default-sensitivity-label-for-a-sharepoint-document-library"></a>SharePoint belge kitaplığı için varsayılan duyarlılık etiketini yapılandırma
 
@@ -46,6 +47,8 @@ Dosya oluşturmak veya düzenlemek için Web üzerinde Office kullandığınızd
 - Dosya yükleme: Etiketin uygulanması birkaç dakika sürebilir.
 - Microsoft 365 Uygulamaları: Etiket uygulama kapatıldıktan sonra uygulanır.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="will-an-existing-label-be-overridden"></a>Mevcut bir etiket geçersiz kılınacak mı?
 
 Sonuçların özeti:
@@ -60,7 +63,9 @@ Sonuçların özeti:
 
 ## <a name="requirements"></a>Gereksinimler
 
-- [SharePoint ve OneDrive'da Office dosyaları için duyarlılık etiketlerini etkinleştirdiniz](sensitivity-labels-sharepoint-onedrive-files.md).
+- Duyarlılık etiketleri [oluşturup yayımladınız](create-sensitivity-labels.md) ve sharepoint belge kitaplığı için varsayılan duyarlılık etiketini seçecek kullanıcılara yayımlanır.
+
+- [SharePoint ve OneDrive'da Office dosyaları için duyarlılık etiketlerini etkinleştirdiniz](sensitivity-labels-sharepoint-onedrive-files.md). Bu durumu denetlemek için [SharePoint Online Yönetim Kabuğu'ndan](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) komutunu çalıştırarak `Get-SPOTenant -EnableAIPIntegration` değerin true olarak ayarlandığını onaylayabilirsiniz.
 
 - [Kitaplık için SharePoint Bilgi Hakları Yönetimi (IRM) etkinleştirilmedi](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists). Bu eski teknoloji, SharePoint belge kitaplığı için varsayılan duyarlılık etiketinin kullanılmasıyla uyumlu değildir. IRM için bir kitaplık etkinleştirildiyse, varsayılan duyarlılık etiketini seçemezsiniz.
 
@@ -110,7 +115,7 @@ Bu özelliğin yapılandırma ayarını denetlemek için **SharePoint** liste et
 
 Duyarlılık etiketi GUID'lerini etiket adlarıyla eşlemek için [Get-Label](/powershell/module/exchange/get-label) cmdlet'ini kullanın:
 
-1. İlk olarak [Office 365 Güvenlik & Uyumluluk Merkezi PowerShell'e bağlanın](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. İlk olarak [Güvenlik & Uyumluluk PowerShell'e bağlanın](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Ardından, GUID'yi belirttiğiniz aşağıdaki komutu çalıştırın:
 

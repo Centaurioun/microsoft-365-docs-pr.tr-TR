@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: faefd13ad36cb643f1e92e7c0b2409fd86bb2236
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 70a4c3d31aec26f6be1abcc018765741bb11fef7
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68768819"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68804344"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender için el ile dağıtım
 
@@ -99,7 +99,7 @@ Bu işlemi tamamlamak için cihazda yönetici ayrıcalıklarına sahip olmanız 
 
 2. **Devam'ı** seçin, Lisans koşullarını kabul edin ve istendiğinde parolayı girin.
 
-3. Yükleme işleminin sonunda, ürün tarafından kullanılan sistem uzantılarını onaylayacak şekilde yükseltileceksiniz. **Güvenlik Tercihlerini Aç'ı** seçin.
+3. Yükleme işleminin sonunda, ürün tarafından kullanılan sistem uzantılarını onaylamanız istenir. **Güvenlik Tercihlerini Aç'ı** seçin.
 
    :::image type="content" source="images/monterey-install-2.png" alt-text="Sistem uzantısı onayı" lightbox="images/monterey-install-2.png":::
 

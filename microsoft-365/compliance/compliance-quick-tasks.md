@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 - intro-get-started
 ms.localizationpriority: medium
-ms.openlocfilehash: 24438848ab8437b769dd99294079fcfec84eaa3f
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 2b779ebaa99daf064cfe64eadb710bdbb4a6ad55
+ms.sourcegitcommit: b439d097e55bba35d9328447d993bbcac7a178a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68720030"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68803496"
 ---
 # <a name="quick-tasks-for-getting-started-with-compliance-in-microsoft-purview"></a>Microsoft Purview'da uyumlulukla çalışmaya başlamaya yönelik hızlı görevler
 
@@ -71,7 +71,7 @@ Microsoft, yönetici izinlerinin kötüye kullanımı, kötü amaçlı yazılım
 
 Özel uyarı ilkeleri oluşturmak ve kullanıcılar ilke koşullarıyla eşleşen etkinlikler gerçekleştirdiğinde oluşturulan uyarıları görüntülemek için uyarı ilkesi ve uyarı panosu araçlarını kullanın. Bazı örnekler, kuruluşunuzdaki uyumluluk gereksinimlerini, izinlerini ve veri kaybı olaylarını etkileyen kullanıcı ve yönetici etkinliklerini izlemek için uyarı ilkelerini kullanmak olabilir.
 
-Özel uyarı ilkeleri oluşturmaya yönelik adım adım yönergeler için bkz. [Güvenlik ve uyumluluk merkezinde uyarı ilkeleri](/microsoft-365/compliance/alert-policies).
+Özel uyarı ilkeleri oluşturmaya yönelik adım adım yönergeler için bkz. [Microsoft 365'te uyarı ilkeleri](/microsoft-365/compliance/alert-policies).
 
 ## <a name="task-5-classify-and-protect-sensitive-data"></a>5. Görev: Hassas verileri sınıflandırma ve koruma
 

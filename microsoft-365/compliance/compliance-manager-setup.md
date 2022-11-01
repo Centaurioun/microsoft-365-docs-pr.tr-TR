@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview Uyumluluk Yöneticisi kullanıcı izinlerini ve rollerini ayarlayın ve eylemlerin otomatik testini yapılandırın. Kullanıcı geçmişini yönetin ve pano görünümünüzü filtreleyin.
-ms.openlocfilehash: 6787da712db94c0048355f4bd59d401194e520c2
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 22c23c64148f9a95b26b90e1b9097218413158ec
+ms.sourcegitcommit: b439d097e55bba35d9328447d993bbcac7a178a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68730083"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68802295"
 ---
 # <a name="get-started-with-compliance-manager"></a>Uyumluluk Yöneticisini kullanmaya başlama
 
@@ -351,7 +351,7 @@ Bu ekrandan işlem yapmanın iki yolu vardır:
 
 1. Hedeflenen çözümünüzün satırındaki **Kalan eylemler** sütununun altında köprülenmiş sayıyı seçin. Bu çözüm için test edilmemiş iyileştirme eylemlerini gösteren iyileştirme eylemleri ekranının filtrelenmiş bir görünümünü görürsünüz.
 
-2. Hedeflenen çözümünüzün satırındaki **Çözümü aç** sütununun altında **Aç'ı** seçin. Çözümü veya konumu Microsoft 365'te ve önerilen eylemi gerçekleştirebileceğiniz Office 365 güvenlik ve uyumluluk merkezlerinde görürsünüz.
+2. Hedeflenen çözümünüzün satırındaki **Çözümü aç** sütununun altında **Aç'ı** seçin. Çözümün konumuna Microsoft Purview uyumluluk portalı, Microsoft 365 Defender portalında veya önerilen eylemi gerçekleştirebileceğiniz yönetim merkezinde ulaşırsınız.
 
 ## <a name="assessments-page"></a>Değerlendirmeler sayfası
 

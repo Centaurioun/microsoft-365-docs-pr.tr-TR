@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Microsoft Purview çözümleri deneme kullanım kılavuzu.
 ms.custom: trial-playbook
-ms.openlocfilehash: 50be6466441a878acc3d93e75f75c701e894f224
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: b34caf007a9710dd351ec4a7e5ed456b5b19d840
+ms.sourcegitcommit: b439d097e55bba35d9328447d993bbcac7a178a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68719150"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68801990"
 ---
 # <a name="trial-user-guide-microsoft-purview-solutions"></a>Deneme kullanım kılavuzu: Microsoft Purview çözümleri
 
@@ -414,7 +414,7 @@ Denetim günlüğü saklama ilkeleri, Microsoft 365'teki yeni Gelişmiş Denetim
 1. Bir denetim günlüğü saklama ilkesi oluşturmadan önce, ilkenizi oluşturmadan önce [bilmeniz gereken önemli şeyler](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) .
 1. [Denetim günlüğü saklama ilkesi oluşturun](audit-log-retention-policies.md#create-an-audit-log-retention-policy).
 1. [denetim günlüğü saklama ilkelerini Microsoft Purview uyumluluk portalı](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal) - Denetim günlüğü saklama ilkeleri Denetim bekletme ilkeleri sekmesinde (pano olarak da adlandırılır) listelenir. Denetim bekletme ilkelerini görüntülemek, düzenlemek ve silmek için panoyu kullanabilirsiniz.
-1. [PowerShell'de denetim günlüğü saklama ilkeleri oluşturma ve yönetme](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell) - Güvenlik & Uyumluluk Merkezi PowerShell'i kullanarak denetim günlüğü saklama ilkeleri oluşturabilir ve yönetebilirsiniz. PowerShell'i kullanmanın bir nedeni, kullanıcı arabiriminde bulunmayan bir kayıt türü veya etkinliği için ilke oluşturmaktır.
+1. [PowerShell'de denetim günlüğü saklama ilkeleri oluşturma ve yönetme](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell) - Güvenlik & Uyumluluğu PowerShell'i kullanarak denetim günlüğü saklama ilkeleri oluşturabilir ve yönetebilirsiniz. PowerShell'i kullanmanın bir nedeni, kullanıcı arabiriminde bulunmayan bir kayıt türü veya etkinliği için ilke oluşturmaktır.
 
 ## <a name="additional-trials-and-add-ons"></a>Ek denemeler ve eklentiler
 

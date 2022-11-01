@@ -1,5 +1,6 @@
 ---
 title: Teams'de sohbet iletilerini arama ve silme
+description: Microsoft Teams'de sohbet iletilerini aramak ve temizlemek ve Teams'deki veri taşması olaylarına yanıt vermek için eBulma (Premium) ve Microsoft Graph Gezgini'ni kullanın.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,22 +11,24 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: Microsoft Teams'de sohbet iletilerini aramak ve temizlemek ve Teams'deki veri taşması olaylarına yanıt vermek için eBulma (Premium) ve Microsoft Graph Gezgini'ni kullanın.
-ms.openlocfilehash: 0c7d87743f254018db3d9a9a96e3261b529428f4
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: f559e1303e27c55adecf4e3dee80fc3d39c0eb73
+ms.sourcegitcommit: b439d097e55bba35d9328447d993bbcac7a178a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67822495"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68802683"
 ---
 # <a name="search-and-purge-chat-messages-in-teams-preview"></a>Teams'de sohbet iletilerini arama ve temizleme (Önizleme)
 
 Microsoft Teams'de sohbet iletilerini aramak ve silmek için eKeşif (Premium) ve Microsoft Graph Gezgini'ni kullanabilirsiniz. Bu, hassas bilgileri veya uygunsuz içeriği bulup kaldırmanıza yardımcı olabilir. Bu arama ve temizleme iş akışı, Teams sohbet iletileri aracılığıyla gizli veya kötü amaçlı bilgiler içeren içerik yayımlandığında veri taşması olayına yanıt vermenizi de sağlar.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="before-you-search-and-purge-chat-messages"></a>Sohbet iletilerini aramadan ve temizlemeden önce
 
@@ -109,9 +112,9 @@ Graph Explorer'ı kullanma hakkında bilgi için bkz. [Microsoft Graph API'lerin
 
 1. <https://developer.microsoft.com/graph/graph-explorer> Microsoft Purview uyumluluk portalı **Arama ve Temizleme** rolü atanmış bir hesapla Graph Gezgini'ne gidin ve bu hesapta oturum açın.
 
-2. eBulma (Premium) olayının kimliğini almak için aşağıdaki GET isteğini çalıştırın. İstek sorgusunun adres çubuğundaki değeri `https://graph.microsoft.com/beta/compliance/ediscovery/cases` kullanın. API sürümü açılan listesinde **v1.0'ı** seçtiğinizden emin olun.
+2. eBulma (Premium) olayının kimliğini almak için aşağıdaki GET isteğini çalıştırın. İstek sorgusunun adres çubuğundaki değeri `https://graph.microsoft.com/beta/security/ediscovery/cases` kullanın. API sürümü açılan listesinde **v1.0'ı** seçtiğinizden emin olun.
 
-   ![Olay kimliği için GET isteği.](..\media\GraphGetRequestForCaseId.png)
+   ![Olay kimliği için GET isteği.](..\media\ediscovery-GraphGetRequestForCaseId.png)
 
    Bu istek **, Yanıt önizleme** sekmesinde kuruluşunuzdaki tüm servis talepleri hakkında bilgi döndürür.
 
@@ -126,9 +129,9 @@ Graph Explorer'ı kullanma hakkında bilgi için bkz. [Microsoft Graph API'lerin
 
 ### <a name="get-the-collection-id"></a>Koleksiyon kimliğini alma
 
-1. Graph Explorer'da, 2. Adımda oluşturduğunuz koleksiyonun kimliğini almak için aşağıdaki GET isteğini çalıştırın ve temizlemek istediğiniz öğeleri içerir. İstek sorgusunun adres çubuğundaki değeri `https://graph.microsoft.com/beta/compliance/ediscovery/cases('caseId')/sourceCollections` kullanın; burada CaseId, önceki yordamda aldığınız kimliktir. Büyük/küçük harf kimliğini parantezler ve tek tırnak işaretleri ile çevrelemeye özen gösterin.
+1. Graph Explorer'da, 2. Adımda oluşturduğunuz koleksiyonun kimliğini almak için aşağıdaki GET isteğini çalıştırın ve temizlemek istediğiniz öğeleri içerir. İstek sorgusunun adres çubuğundaki değeri `https://graph.microsoft.com/beta/security/ediscovery/cases('caseId')/sourceCollections` kullanın; burada CaseId, önceki yordamda aldığınız kimliktir. Büyük/küçük harf kimliğini parantezler ve tek tırnak işaretleri ile çevrelemeye özen gösterin.
 
-   ![Koleksiyon kimliği için GET isteği.](..\media\GraphGetRequestForCollectionId.png)
+   ![Koleksiyon kimliği için GET isteği.](..\media\ediscovery-GraphGetRequestForCollectionId.png)
 
    Bu istek **, Yanıt önizleme** sekmesindeki örnekteki tüm koleksiyonlar hakkında bilgi döndürür.
 
@@ -145,13 +148,13 @@ Graph Explorer'ı kullanma hakkında bilgi için bkz. [Microsoft Graph API'lerin
 
 ### <a name="purge-the-chat-messages"></a>Sohbet iletilerini temizleme
 
-1. Graph Explorer'da, 2. Adımda oluşturduğunuz koleksiyon tarafından döndürülen öğeleri temizlemek için aşağıdaki POST isteğini çalıştırın. İstek sorgusunun adres çubuğundaki değeri `https://graph.microsoft.com/beta/compliance/ediscovery/cases('caseId')/sourceCollections('collectionId')/purgeData` kullanın; burada caseId ve collectionId, önceki yordamlarda elde ettiğiniz kimliklerdir. Kimlik değerlerini parantezler ve tek tırnak işaretleri ile çevrelemeye özen gösterin.
+1. Graph Explorer'da, 2. Adımda oluşturduğunuz koleksiyon tarafından döndürülen öğeleri temizlemek için aşağıdaki POST isteğini çalıştırın. İstek sorgusunun adres çubuğundaki değeri `https://graph.microsoft.com/beta/security/ediscovery/cases('caseId')/sourceCollections('collectionId')/purgeData` kullanın; burada caseId ve collectionId, önceki yordamlarda elde ettiğiniz kimliklerdir. Kimlik değerlerini parantezler ve tek tırnak işaretleri ile çevrelemeye özen gösterin.
 
-      ![Koleksiyon tarafından döndürülen öğeleri silmek için POST isteği.](..\media\GraphPOSTRequestToPurgeItems.png)
+      ![Koleksiyon tarafından döndürülen öğeleri silmek için POST isteği.](..\media\ediscovery-GraphPOSTRequestToPurgeItems.png)
 
    POST isteği başarılı olursa, isteğin kabul edildiğine ilişkin yeşil bir başlıkta http yanıt kodu görüntülenir.
 
-   ![Temizleme isteği için yanıt.](..\media\GraphResponseForPurge.png)
+   ![Temizleme isteği için yanıt.](..\media\ediscovery-GraphResponseForPurge.png)
 
   purgeData hakkında daha fazla bilgi için bkz. [sourceCollection: purgeData](/graph/api/ediscovery-sourcecollection-purgedata).
 

@@ -14,25 +14,29 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- Strat_O365_IP
-- m365-security-compliance
+- highpri
+- tier3
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
-ms.openlocfilehash: 6bf13adb96ae5d4d4030ebe44f10dab22602196e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 2f00f1898ccdf5505a0b4873ff83485e065320bf
+ms.sourcegitcommit: b439d097e55bba35d9328447d993bbcac7a178a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622557"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68802971"
 ---
 # <a name="learn-about-privileged-access-management"></a>Ayrıcalıklı erişim yönetimi hakkında daha fazla bilgi edinme
 
 Microsoft Purview Privileged Access Management, Office 365 ayrıcalıklı yönetici görevleri üzerinde ayrıntılı erişim denetimi sağlar. Kuruluşunuzun hassas verilere veya kritik yapılandırma ayarlarına erişimi olan mevcut ayrıcalıklı yönetici hesaplarını kullanan ihlallere karşı korunmasına yardımcı olabilir. Ayrıcalıklı erişim yönetimi, kullanıcıların yüksek kapsamlı ve zamana bağlı bir onay iş akışı aracılığıyla yükseltilmiş ve ayrıcalıklı görevleri tamamlamak için tam zamanında erişim istemelerini gerektirir. Bu yapılandırma, kullanıcılara hassas verilerin veya kritik yapılandırma ayarlarının açığa çıkmadan eldeki görevi gerçekleştirmeleri için yeterli erişim sağlar. Ayrıcalıklı erişim yönetiminin etkinleştirilmesi, kuruluşunuzun sıfır daimi ayrıcalıklarla çalışmasına ve yönetim erişim açıklarına karşı bir savunma katmanı sağlamasına olanak tanır.
 
 Tümleşik Müşteri Kasası ve ayrıcalıklı erişim yönetimi iş akışına hızlı bir genel bakış için bu [Müşteri Kasası ve ayrıcalıklı erişim yönetimi videosuna](https://go.microsoft.com/fwlink/?linkid=2066800) bakın.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="layers-of-protection"></a>Koruma katmanları
 
@@ -52,13 +56,13 @@ Aşağıdaki işlem akışlarının her biri ayrıcalıklı erişim mimarisini v
 
 ### <a name="step-1-configure-a-privileged-access-policy"></a>1. Adım: Ayrıcalıklı erişim ilkesi yapılandırma
 
-[Microsoft 365 yönetim merkezi](https://admin.microsoft.com) veya Exchange Management PowerShell ile ayrıcalıklı bir erişim ilkesi yapılandırdığınızda, microsoft 365 alt klasöründe ilkeyi ve ayrıcalıklı erişim özelliği işlemlerini ve ilke özniteliklerini tanımlarsınız. Etkinlikler Güvenlik &amp; Uyumluluk Merkezi'nde günlüğe kaydedilir. İlke artık etkindir ve onaylar için gelen istekleri işlemeye hazırdır.
+[Microsoft 365 yönetim merkezi](https://admin.microsoft.com) veya Exchange Management PowerShell ile ayrıcalıklı bir erişim ilkesi yapılandırdığınızda, microsoft 365 alt klasöründe ilkeyi ve ayrıcalıklı erişim özelliği işlemlerini ve ilke özniteliklerini tanımlarsınız. Etkinlikler denetim günlüğüne kaydedilir. İlke artık etkindir ve onaylar için gelen istekleri işlemeye hazırdır.
 
 ![1. Adım: İlke oluşturma.](../media/pam-step1-policy-creation.jpg)
 
 ### <a name="step-2-access-request"></a>2. Adım: Erişim isteği
 
-[Microsoft 365 yönetim merkezi](https://admin.microsoft.com) veya Exchange Management PowerShell ile kullanıcılar yükseltilmiş veya ayrıcalıklı görevlere erişim isteyebilir. Ayrıcalıklı erişim özelliği, isteği yapılandırılan ayrıcalık erişim ilkesine göre işlenmek üzere Microsoft 365 alt katmanına gönderir ve Etkinliği Güvenlik &amp; Uyumluluk Merkezi günlüklerine kaydeder.
+[Microsoft 365 yönetim merkezi](https://admin.microsoft.com) veya Exchange Management PowerShell ile kullanıcılar yükseltilmiş veya ayrıcalıklı görevlere erişim isteyebilir. Ayrıcalıklı erişim özelliği, isteği yapılandırılan ayrıcalık erişim ilkesine göre işlenmek üzere Microsoft 365 alt kümesine gönderir ve Etkinlik'i denetim günlüklerine kaydeder.
 
 ![2. Adım: Erişim isteği.](../media/pam-step2-access-request.jpg)
 
@@ -70,7 +74,7 @@ Onay isteği oluşturulur ve bekleyen istek bildirimi onaylayanlara e-postayla g
 
 ### <a name="step-4-access-processing"></a>4. Adım: Erişim işleme
 
-Onaylanan bir istek için görev Exchange Yönetimi çalışma alanı tarafından işlenir. Onay, ayrıcalıklı erişim ilkesine göre denetlenip Microsoft 365 alt tabaka tarafından işlenir. Görevin tüm etkinlikleri Güvenlik &amp; Uyumluluk Merkezi'nde günlüğe kaydedilir.
+Onaylanan bir istek için görev Exchange Yönetimi çalışma alanı tarafından işlenir. Onay, ayrıcalıklı erişim ilkesine göre denetlenip Microsoft 365 alt tabaka tarafından işlenir. Görevin tüm etkinlikleri denetim günlüklerine kaydedilir.
 
 ![4. Adım: Erişim işleme.](../media/pam-step4-access-processing.jpg)
 

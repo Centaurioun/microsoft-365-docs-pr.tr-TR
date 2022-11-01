@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - m365-security
 - tier1
-ms.openlocfilehash: c03c92a213b5cf4fe14bbd98094ff3816ab1beab
-ms.sourcegitcommit: 9f5cf8cf8a2e25cfd07b23b7f6d7f9d138a9cd16
+ms.openlocfilehash: 4f2df614e85a1cc31381d051867845df90a145e1
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68501456"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68803736"
 ---
 # <a name="get-microsoft-defender-for-business"></a>İş için Microsoft Defender alma
 
@@ -111,3 +111,4 @@ Başlamaya hazır olduğunuzda iki ana portalla çalışırsınız: Microsoft 36
 - [İş için Microsoft Defender'da kurulum sihirbazını kullanın](mdb-use-wizard.md).
 - [bkz. İş için Defender'ın kurulum ve yapılandırma işlemi](mdb-setup-configuration.md).
 - [İş için Defender için nasıl yardım ve destek alabileceğinizi öğrenin](mdb-get-help.md) (yardıma ihtiyacınız olması durumunda).
+- [Kurumsal sunucular için Microsoft Defender hakkında bilgi edinin](get-defender-business-servers.md).

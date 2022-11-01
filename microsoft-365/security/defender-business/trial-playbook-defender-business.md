@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Bu kılavuzla İş için Defender denemenizden en iyi şekilde emin olun. Hızlı bir şekilde ayarlayın ve yeni güvenlik özelliklerinizi kullanmaya başlayın.
 ms.custom: trial-playbook
-ms.openlocfilehash: 290c5eb2f6ced1816a7955fc8528a3c6cadcccc2
-ms.sourcegitcommit: 9f5cf8cf8a2e25cfd07b23b7f6d7f9d138a9cd16
+ms.openlocfilehash: edcc5cebcce868cd11806d0a14cc33dd87f6f4fa
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68501542"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68804125"
 ---
 # <a name="trial-user-guide-microsoft-defender-for-business"></a>Deneme kullanım kılavuzu: İş için Microsoft Defender
 
@@ -84,7 +84,7 @@ Microsoft 365 Defender portalı ([https://security.microsoft.com](https://securi
    > [!NOTE]
    > Kurulum sihirbazını kullandığınızda, sistem zaten Intune kayıtlı Windows cihazlarınız olup olmadığını algılar. Bu cihazların tümü veya bazıları için otomatik ekleme kullanmak isteyip istemediğiniz sorulur. Tüm Windows cihazlarını bir kerede ekleyebilir veya ilk başta belirli cihazları seçip daha sonra daha fazla cihaz ekleyebilirsiniz. [Otomatik ekleme hakkında daha fazla bilgi edinin](mdb-use-wizard.md#what-is-automatic-onboarding).
 
-   Diğer cihazları eklemek için [4. adıma](#step-4-set-up-and-configure-defender-for-business) bakın.
+   Diğer cihazları eklemek için bkz [. 4. Adım: İş için Defender'ı ayarlama ve yapılandırma](#step-4-set-up-and-configure-defender-for-business).
 
 4. **[Güvenlik ilkelerinizi görüntüleyin ve düzenleyin](mdb-configure-security-settings.md)**. İş için Defender, şirketinizin cihazlarına uygulanabilecek yeni nesil koruma ve güvenlik duvarı koruması için varsayılan güvenlik ilkelerini içerir. Önceden yapılandırılmış bu güvenlik ilkeleri önerilen ayarları kullanır, böylece cihazlarınız İş için Defender'a eklenir eklenmez korunursunuz. Ayrıca ilkeleri düzenleyebilir veya yeni ilkeler oluşturabilirsiniz.
 

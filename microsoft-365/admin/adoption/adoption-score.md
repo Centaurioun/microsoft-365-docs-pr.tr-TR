@@ -23,14 +23,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Benimseme Puanı'nın insanları ve teknoloji deneyimi ölçümlerini nasıl yansıtdığını ve benzer boyuttaki kuruluşlarla nasıl karşılaştırdığını öğrenin.
-ms.openlocfilehash: 46af48a0cbb8b686657a40502a8ea1e5206baa53
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 410da81d1b10740ace40bd361768202fd6743770
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68721240"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68804586"
 ---
-# <a name="microsoft-adoption-score"></a>Microsoft Benimseme Puanı 
+# <a name="microsoft-adoption-score"></a>Microsoft Benimseme Puanı
 
 Benimseme Puanı, kuruluşunuzun Microsoft 365'i nasıl kullandığı ve onu destekleyen teknoloji deneyimleri hakkındaki içgörülerle dijital dönüşüm yolculuğunu destekler. Kuruluşunuzun puanı, insan ve teknoloji deneyimi ölçümlerini yansıtır ve sizinkine benzer kuruluşların karşılaştırmalarıyla karşılaştırılabilir.
 
@@ -53,12 +53,12 @@ Benimseme Puanı, kuruluşunuzun Microsoft 365'i nasıl kullandığı ve onu des
 > [!NOTE]
 > Tüm içgörüler, tek tek düzeyde değil, kuruluş düzeyindeki veriler kullanılarak hesaplanır.
 
-## <a name="how-to-turn-on-adoption-score"></a>Benimseme Puanı'nı açma
+## <a name="how-to-enable-adoption-score"></a>Benimseme Puanı'nı etkinleştirme
 
 Benimseme Puanı'nı etkinleştirmek için:
 
 1. Microsoft 365 yönetim merkezi Genel Yönetici olarak oturum açın ve **Raporlar** > **Benimseme Puanı'na** gidin
-2. **Benimseme Puanını Etkinleştir'i** seçin. İçgörülerin kullanılabilir duruma gelmesi 24 saat kadar sürebilir.
+2. **Benimseme Puanını etkinleştir'i** seçin. İçgörülerin kullanılabilir duruma gelmesi 24 saat kadar sürebilir.
 
 > [!NOTE]
 > Benimseme Puanı'nı yalnızca Genel Yönetici rolüne sahip bir BT uzmanı kabul edebilir.

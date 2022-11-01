@@ -13,42 +13,42 @@ f1.keywords:
 - NOCSH
 description: Her coğrafi konum için ayrı yöneticiler yapılandırmanız mı gerekiyor? Microsoft 365 Multi-Geo'da coğrafi yönetici eklemeyi veya kaldırmayı öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 259c04b70aedd13430a06ce1307aa900e62fcb96
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 511dcc104eb8898c974c811b87704b3f22d4a2c2
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67556380"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68804674"
 ---
-# <a name="add-or-remove-a-geo-administrator-in-microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo'da coğrafi yönetici ekleme veya kaldırma
+# <a name="add-or-remove-a-_geography_-administrator-in-microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo'da _Coğrafya_ yöneticisi ekleme veya kaldırma
 
-Kiracınızdaki her coğrafi konum için ayrı yöneticiler yapılandırabilirsiniz. Bu yöneticiler, coğrafi konumlarına özgü SharePoint Online ve OneDrive ayarlarına erişebilir.
+_Kiracınızda_ bulunan her _Coğrafya_ konumu için ayrı yöneticiler yapılandırabilirsiniz. Bu yöneticiler _, Coğrafya_ konumlarına özgü SharePoint Online ve OneDrive ayarlarına erişebilir.
 
-Depo terimi gibi bazı hizmetler merkezi konumdan yönetilir ve uydu konumlarına çoğaltılır. Merkezi konumun coğrafi yöneticisi bunlara erişime sahipken, uydu konumları için coğrafi yöneticiler erişime sahip değildir.
+Depo terimi gibi bazı hizmetler _Birincil Sağlanan Coğrafya_ konumundan yönetilir ve _Uydu Coğrafya_ konumlarına çoğaltılır. _Birincil Sağlanan Coğrafya_ konumunun _Coğrafya_ yöneticisi bunlara erişebilirken _, Uydu Coğrafya_ konumları için _Coğrafya_ yöneticilerine erişim yoktur.
 
-Genel yöneticiler ve SharePoint Online yöneticileri, merkezi konumdaki ve tüm uydu konumlarındaki ayarlara erişmeye devam eder.
+Genel yöneticiler ve SharePoint Online yöneticileri _Birincil Sağlanan Coğrafya_ konumu ve tüm _Uydu Coğrafya_ konumlarındaki ayarlara erişmeye devam eder.
 
-## <a name="configuring-geo-administrators"></a>Coğrafi yöneticileri yapılandırma
+## <a name="configuring-_geography_-administrators"></a>_Coğrafya_ yöneticilerini yapılandırma
 
-Coğrafi yöneticileri yapılandırmak için SharePoint Online PowerShell modülü gerekir.
+_Coğrafya_ yöneticilerinin yapılandırılması için SharePoint Online PowerShell modülü gerekir.
 
-Coğrafi yöneticiyi eklemek istediğiniz coğrafi konumun yönetim merkezine bağlanmak için [Connect-SPOService](/powershell/module/sharepoint-online/Connect-SPOService) kullanın. (Örneğin, Connect-SPOService  https://ContosoEUR-admin.sharepoint.com.)
+[Connect-SPOService'i](/powershell/module/sharepoint-online/Connect-SPOService) kullanarak Coğrafya _yöneticisini_ eklemek istediğiniz _Coğrafya_ konumunun yönetim merkezine bağlanın. (Örneğin, Connect-SPOServicehttps://ContosoEUR-admin.sharepoint.com.)
 
-Bir konumun mevcut coğrafi yöneticilerini görüntülemek için `Get-SPOGeoAdministrator`
+Bir konumun mevcut _Coğrafya_ yöneticilerini görüntülemek için `Get-SPOGeoAdministrator`
 
-### <a name="adding-a-user-as-a-geo-admin"></a>Coğrafi yönetici olarak kullanıcı ekleme
+## <a name="adding-a-user-as-a-_geography_-admin"></a>_Coğrafya_ yöneticisi olarak kullanıcı ekleme
 
-Kullanıcıyı coğrafi yönetici olarak eklemek için `Add-SPOGeoAdministrator -UserPrincipalName <UPN>`
+Kullanıcıyı _Coğrafya_ yöneticisi olarak eklemek için `Add-SPOGeoAdministrator -UserPrincipalName <UPN>`
 
-Bir kullanıcıyı konumun Coğrafi Yönetici olarak kaldırmak için`Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`
+Bir konumun _Coğrafya_ Yönetici olarak bir kullanıcıyı kaldırmak için`Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`
 
-### <a name="adding-a-group-as-a-geo-admin"></a>Coğrafi yönetici olarak grup ekleme
+## <a name="adding-a-group-as-a-_geography_-admin"></a>_Coğrafya_ yöneticisi olarak grup ekleme
 
-Coğrafi yönetici olarak bir güvenlik grubu veya posta özellikli bir güvenlik grubu ekleyebilirsiniz. (Dağıtım grupları ve Microsoft 365 Grupları desteklenmez.)
+_Coğrafya_ yöneticisi olarak bir güvenlik grubu veya posta etkin bir güvenlik grubu ekleyebilirsiniz. (Dağıtım grupları ve Microsoft 365 Grupları desteklenmez.)
 
-Bir grubu coğrafi yönetici olarak eklemek için `Add-SPOGeoAdministrator -GroupAlias <alias>`
+Bir grubu _Coğrafya_ yöneticisi olarak eklemek için `Add-SPOGeoAdministrator -GroupAlias <alias>`
 
-Bir grubu coğrafi yönetici olarak kaldırmak için `Remove-SPOGeoAdministrator -GroupAlias <alias>`
+Bir grubu _Coğrafya_ yöneticisi olarak kaldırmak için `Remove-SPOGeoAdministrator -GroupAlias <alias>`
 
 Tüm güvenlik gruplarının bir grup diğer adına sahip olmadığını unutmayın. Diğer adı olmayan bir güvenlik grubu eklemek istiyorsanız, grupların listesini almak için [Get-MsolGroup](/powershell/module/msonline/get-msolgroup) komutunu çalıştırın, güvenlik grubunuzun ObjectID değerini bulun ve şunu çalıştırın:
 

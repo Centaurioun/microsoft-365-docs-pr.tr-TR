@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams toplantılarını Schoology LMS ile tümleştirme
+title: Microsoft Teams toplantılarını Schoology Learning ile tümleştirme
 ms.author: danismith
 author: DaniEASmith
 manager: serdars
@@ -11,27 +11,27 @@ ms.collection:
 - M365-modern-desktop
 - m365initiative-edu
 ms.localizationpriority: medium
-description: Schoology LMS için Microsoft Öğrenme Araçları Birlikte Çalışabilirliği (LTI) ile Teams toplantıları oluşturun ve yönetin.
-ms.openlocfilehash: 9a2aaf2780bfa79324b7292e0383e595cec2e0f1
-ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
+description: PowerSchool Unified Classroom® Schoology Learning için Microsoft Öğrenme Araçları Birlikte Çalışabilirliği (LTI) ile Teams toplantıları oluşturun ve yönetin.
+ms.openlocfilehash: 9fb0d513f3f6cc4148006abb01473d12210fbfbb
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68471870"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68804608"
 ---
-# <a name="integrate-microsoft-teams-meetings-with-schoology-lms"></a>Microsoft Teams toplantılarını Schoology LMS ile tümleştirme
+# <a name="integrate-microsoft-teams-meetings-with-schoology-learning"></a>Microsoft Teams toplantılarını Schoology Learning ile tümleştirme
 
-Bu kılavuz, Teams Toplantıları LTI uygulamasını Schoology'ye kaydetmeye yönelik BT yöneticisi adımlarını sağlar.
+Bu kılavuz, PowerSchool Unified Classroom® Schoology Learning'de Teams Toplantıları LTI uygulamasını kaydetmeye yönelik BT yöneticisi adımlarını sağlar.
 
 Microsoft LTI'ye genel bakış için bkz. [Microsoft ürünlerini Öğrenme Yönetim Sisteminizle (LMS) tümleştirme](index.md).
 
 > [!NOTE]
-> Bu tümleştirmeyi gerçekleştiren kişi Schoology yöneticisi olmalıdır. Ancak Schoology **App Center'a** erişimi olan Schoology kullanıcıları Microsoft Teams Toplantıları LTI uygulamasını da yükleyebilir.
+> Bu tümleştirmeyi gerçekleştiren kişi Schoology Learning yöneticisi olmalıdır. Ancak Schoology Learning **Uygulama Merkezi'ne** erişimi olan Schoology Learning kullanıcıları, Microsoft Teams Toplantıları LTI uygulamasını da yükleyebilir.
 
-## <a name="deploy-the-teams-meetings-lti-app-in-schoology"></a>Schoology'de Teams Toplantıları LTI uygulamasını dağıtma
+## <a name="deploy-the-teams-meetings-lti-app-in-schoology-learning"></a>Schoology Learning'de Teams Toplantıları LTI uygulamasını dağıtma
 
-1. Uygulamaları yükleme ve yapılandırma erişimiyle Schoology örneğinizde yönetici olarak oturum açın.
-1. Schoology'de **Microsoft Teams Toplantıları'nın** bu doğrudan bağlantısını açarak [**App**](https://app.schoology.com/apps) [Center'daki Microsoft Teams Toplantıları uygulamasına erişin](https://app.schoology.com/apps/profile/6017478062).
+1. Schoology Learning örneğinizde uygulama yükleme ve yapılandırma erişimi olan bir yönetici olarak oturum açın.
+1. Schoology Learning'de **Microsoft Teams Toplantıları'nın** bu doğrudan bağlantısını açarak [**App Center'daki**](https://app.schoology.com/apps) [Microsoft Teams Toplantıları uygulamasına erişin](https://app.schoology.com/apps/profile/6017478062).
 1. Yükleme işlemini başlatmak için **LTI 1.3 Uygulamasını Yükle** düğmesini seçin.
 1. **Kabul ediyorum** düğmesini seçin.
 1. Bu uygulamanın tüm kuruluşunuz için mi yoksa yalnızca sizin için mi yüklenmesi gerektiği sorulur. **Kuruluşa Ekle'yi** seçtiğinizde yapılandırmayı tamamlamak için **Kuruluş Uygulamaları** sayfasına yönlendirilirsiniz.

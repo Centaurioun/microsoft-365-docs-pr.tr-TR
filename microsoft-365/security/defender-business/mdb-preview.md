@@ -17,12 +17,12 @@ ms.collection:
 - m365-security
 - tier1
 ms.topic: conceptual
-ms.openlocfilehash: bdb9bf7721b86443f38ea9f1e49ba82ae9c3041d
-ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
+ms.openlocfilehash: da0de6c9ecae13aab10f7f6e24513e2bb39f519f
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68114175"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68803649"
 ---
 # <a name="microsoft-defender-for-business-preview-features"></a>İş için Microsoft Defender önizleme özellikleri
 
@@ -59,4 +59,7 @@ Yaklaşan özellikleri ilk deneyenler arasında olmak için önizleme deneyimi a
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İş için Microsoft Defender sunucuları nasıl alınır (önizleme)](get-defender-business-servers.md)
+- [İş için Microsoft Defender alma](get-defender-business.md)
+- [Kurumsal sunucular için Microsoft Defender alma](get-defender-business-servers.md)
+- [Deneme kullanım kılavuzu: İş için Microsoft Defender](trial-playbook-defender-business.md)
+- [Microsoft 365 Defender portalını ziyaret edin](mdb-get-started.md)

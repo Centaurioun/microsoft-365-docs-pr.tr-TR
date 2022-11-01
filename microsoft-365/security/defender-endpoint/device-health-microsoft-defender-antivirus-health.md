@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 ms.reviewer: mkaminska
-ms.openlocfilehash: 3ae1ea891933d6b7731316c3fb83635d2a999d29
-ms.sourcegitcommit: 3d7dd25abcbf923b45eae84ff4d9d2bb95ef4ca4
+ms.openlocfilehash: 5211cbe42ec735f914eff6fb420d9fc0baf4c883
+ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68777121"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68804432"
 ---
 <!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
@@ -46,17 +46,15 @@ Cihaz Durumu raporu, kuruluşunuzdaki cihazlar hakkında bilgi sağlar. Rapor vi
 > [!IMPORTANT]
 > Windows&nbsp;Server&nbsp;2012&nbsp;R2 ve Windows&nbsp;Server&nbsp;2016'nın cihaz durumu raporlarında görünmesi için bu cihazların modern birleşik çözüm paketi kullanılarak eklenmesi gerekir. Daha fazla bilgi için bkz. [Windows Server 2012 R2 ve 2016 için modern birleşik çözümde yeni işlevler](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
-Microsoft 365 Güvenlik panosu gezinti panelinde **Raporlar'ı** seçin ve ardından **Cihaz durumu ve uyumluluğu'nu** açın.
-
-- [**Microsoft Defender Virüsten Koruma sistem durumu** sekmesinde](#microsoft-defender-antivirus-health-tab), Microsoft Defender Virüsten Koruma'nın aşağıdaki yönlerini bildiren sekiz kart vardır:
-  - [Virüsten koruma modu kartı](#antivirus-mode-card)
-  - [Virüsten koruma altyapısı sürüm kartı](#antivirus-engine-version-card)
-  - [Virüsten koruma güvenlik bilgileri sürüm kartı](#antivirus-security-intelligence-version-card)
-  - [Virüsten koruma platformu sürüm kartı](#antivirus-platform-version-card)
-  - [En son virüsten koruma tarama sonuçları kartı](#recent-antivirus-scan-results-card)
-  - [Virüsten koruma altyapısı güncelleştirme kartı](#antivirus-engine-updates-card)
-  - [Güvenlik bilgileri güncelleştirme kartı](#security-intelligence-updates-card)
-  - [Virüsten koruma platformu güncelleştirme kartı](#antivirus-platform-updates-card)
+Microsoft 365 Güvenlik panosu gezinti panelinde **Raporlar'ı** seçin ve ardından **Cihaz durumu ve uyumluluğu'nu** açın. [**Microsoft Defender Virüsten Koruma sistem durumu** sekmesinde](#microsoft-defender-antivirus-health-tab), Microsoft Defender Virüsten Koruma'nın aşağıdaki yönlerini bildiren sekiz kart vardır:
+- [Virüsten koruma modu kartı](#antivirus-mode-card)
+- [Virüsten koruma altyapısı sürüm kartı](#antivirus-engine-version-card)
+- [Virüsten koruma güvenlik bilgileri sürüm kartı](#antivirus-security-intelligence-version-card)
+- [Virüsten koruma platformu sürüm kartı](#antivirus-platform-version-card)
+- [En son virüsten koruma tarama sonuçları kartı](#recent-antivirus-scan-results-card)
+- [Virüsten koruma altyapısı güncelleştirme kartı](#antivirus-engine-updates-card)
+- [Güvenlik bilgileri güncelleştirme kartı](#security-intelligence-updates-card)
+- [Virüsten koruma platformu güncelleştirme kartı](#antivirus-platform-updates-card)
 
 ## <a name="report-access-permissions"></a>Rapor erişim izinleri
 
@@ -92,12 +90,12 @@ Kalan altı kart, kuruluşunuzdaki cihazlar için Microsoft Defender Virüsten K
 
 <sup>{[1](#fn1)}</sup> Üç _güncelleştirme_ kartı için (güncel raporlama kartları olarak da bilinir), "**Kullanılabilir veri yok**" (veya "Bilinmeyen" değer), güncelleştirme durumunu bildirmemiş cihazları gösterir. Güncelleştirme durumunu bildirmemeyen cihazlar çeşitli nedenlerden kaynaklanabilir, örneğin:
 
-- Bilgisayarın ağ bağlantısı kesildi
-- Bilgisayar kapatıldı veya hazırda bekleme durumunda
-- Microsoft Defender Virüsten Koruma devre dışı bırakıldı
-- Cihaz Windows olmayan (Mac veya Linux) bir cihazdır
-- Bulut koruması etkin değil
-- Cihaz Virüsten Koruma altyapısı veya platform sürümü için önkoşulları karşılamıyor
+- Bilgisayarın ağ bağlantısı kesildi.
+- Bilgisayar kapatıldı veya hazırda bekleme durumunda.
+- Microsoft Defender Virüsten Koruma devre dışı bırakıldı.
+- Cihaz, Windows (Mac veya Linux) olmayan bir cihazdır.
+- Bulut koruması etkinleştirilmedi.
+- Cihaz, Virüsten Koruma altyapısı veya platform sürümü için önkoşulları karşılamıyor.
 
 ### <a name="prerequisites"></a>Önkoşullar
 
@@ -106,26 +104,26 @@ Güncel raporlama, aşağıdaki ölçütlere uyan cihazlar için bilgi oluşturu
 - Altyapı sürümü: 1.1.19300.2+
 - Platform sürümü: 4.18.2202.1+
 - Bulut koruması etkin
-- Windows işletim sistemi*
+- Windows işletim sistemi
+   >[!Note]
+   >Şu anda güncel raporlama yalnızca Windows cihazları için kullanılabilir. Mac ve Linux gibi platformlar arası cihazlar "Kullanılabilir veri yok"/Bilinmiyor altında listelenir.
 
-*Şu anda güncel raporlama yalnızca Windows cihazları için kullanılabilir. Mac ve Linux gibi platformlar arası cihazlar "Kullanılabilir veri yok"/Bilinmiyor altında listelenir
-
->:::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Microsoft Defender Virüsten Koruma Durumu sekmesini gösterir." lightbox="images/device-health-defender-antivirus-health-tab.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Microsoft Defender Virüsten Koruma Durumu sekmesini gösterir." lightbox="images/device-health-defender-antivirus-health-tab.png":::
 
 ### <a name="card-functionality"></a>Kart işlevselliği
 
 İşlevsellik temelde tüm kartlar için aynıdır. Kartlardan herhangi birinde numaralandırılmış bir çıtaya tıklayarak **Virüsten Koruma ayrıntıları** açılır Microsoft Defender açılır ve bu karttaki bir yönün sürüm numarasıyla yapılandırılmış tüm cihazlar hakkındaki bilgileri gözden geçirmenizi sağlar.
 
->:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-details.png" alt-text="virüsten koruma ayrıntıları açılır Microsoft Defender gösterir." lightbox="images/device-health-defender-antivirus-health-antivirus-details.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-details.png" alt-text="virüsten koruma ayrıntıları açılır Microsoft Defender gösterir." lightbox="images/device-health-defender-antivirus-health-antivirus-details.png":::
 
 Tıkladığınız sürüm numarası şuysa:
 
-- Geçerli bir sürüm, ardından **Düzeltme gerekli** ve **Güvenlik önerisi** yok
+- Geçerli bir sürüm, ardından **Düzeltme gerekiyor** ve **Güvenlik önerisi** yok.
 - Güncel olmayan bir sürüm, raporun üst kısmında **Düzeltme gerektiğini** belirten bir bildirim bulunur ve **bir Güvenlik önerisi** bağlantısı bulunur. Uygun virüsten koruma güncelleştirmelerini önerebilen Tehdit ve Güvenlik Açığı Yönetimi konsoluna gitmek için güvenlik önerisi bağlantısını seçin.
 
 **virüsten koruma ayrıntıları açılır Microsoft Defender belirli türlerdeki** bilgileri eklemek veya kaldırmak için **Sütunları Özelleştir'i** seçin. **Sütunları Özelleştir** bölümünde, Microsoft Defender Virüsten Koruma ayrıntıları raporuna eklenmesini istediklerinizi belirtmek için öğeleri seçin veya temizleyin.
 
->:::image type="content" source="images/device-health-defender-antivirus-engine-version-details-custom-columns.png" alt-text="Microsoft Defender Virüsten Koruma sistem durumu raporlaması için özel sütun seçeneklerini gösterir." lightbox="images/device-health-defender-antivirus-engine-version-details-custom-columns.png":::
+:::image type="content" source="images/device-health-defender-antivirus-engine-version-details-custom-columns.png" alt-text="Microsoft Defender Virüsten Koruma sistem durumu raporlaması için özel sütun seçeneklerini gösterir." lightbox="images/device-health-defender-antivirus-engine-version-details-custom-columns.png":::
 
 #### <a name="new-microsoft-defender-antivirus-filter-definitions"></a>Yeni Microsoft Defender Virüsten Koruma filtresi tanımları
 
@@ -148,13 +146,13 @@ Dışarı aktarabileceğiniz iki rapor düzeyi vardır:
 
 Portal aracılığıyla iki farklı dışarı aktarma csv işlevi vardır:
 
-- **Üst düzey dışarı aktarma** Tüm Microsoft Defender Virüsten Koruma sistem durumu raporunu (500 K sınırı) toplamak için en üst düzey **Dışarı Aktar** düğmesini kullanabilirsiniz.
+- **Üst düzey dışarı aktarma**. Virüsten Koruma sistem durumu raporu (500 K sınırı) Microsoft Defender toplamak için en üst düzey **Dışarı Aktar** düğmesini kullanabilirsiniz.
 
->:::image type="content" source="images/device-health-defender-antivirus-health-tab-export.png" alt-text="En üst düzey dışarı aktarma raporu düğmesini gösterir" lightbox="images/device-health-defender-antivirus-health-tab-export.png":::
+   ::image type="content" source="images/device-health-defender-antivirus-health-tab-export.png" alt-text="En üst düzey dışarı aktarma raporu düğmesini gösterir" lightbox="images/device-health-defender-antivirus-health-tab-export.png":::
 
-- **Açılır öğe düzeyi dışarı aktarma** Bir raporu Excel elektronik tablosuna (100 K sınırı) dışarı aktarmak için açılır listelerdeki **Dışarı Aktar** düğmesini kullanabilirsiniz.
+- **Açılır öğe düzeyi dışarı aktarma**. Bir raporu Excel elektronik tablosuna (100 K sınırı) dışarı aktarmak için açılır listelerdeki **Dışarı Aktar** düğmesini kullanabilirsiniz.
 
-Dışarı aktarılan raporlar, ayrıntılar raporuna giriş noktanızı ve hangi filtreleri veya özelleştirilmiş sütunları ayarladığınızı temel alarak bilgileri yakalar.
+Dışarı aktarılan raporlar, ayrıntılar raporuna giriş noktanıza ve ayarladığınız filtrelere veya özelleştirilmiş sütunlara göre bilgileri yakalar.
 
 API kullanarak dışarı aktarma hakkında bilgi için aşağıdaki makalelere bakın:
 
@@ -175,13 +173,13 @@ Aşağıda, Microsoft Defender Virüsten Koruma altyapısı, güvenlik bilgileri
 
 Üç _sürüm_ kartından herhangi birinde **Tam raporu görüntüle'yi** seçerek üç cihaz türünün her biri için en son dokuz Microsoft Defender Virüsten Koruma _sürümü_ raporunu görüntüleyin: Windows, Mac ve Linux; dokuzdan az varsa hepsi gösterilir. **Diğer** kategorisi, algılanırsa onuncu ve altındaki en son virüsten koruma altyapısı sürümlerini yakalar.
 
->:::image type="content" source="images/device-health-defender-antivirus-health-view-full-report.png" alt-text="Her türden ilk dokuz işletim sisteminin dağılımını gösterir" lightbox="images/device-health-defender-antivirus-health-view-full-report.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-view-full-report.png" alt-text="Her türden ilk dokuz işletim sisteminin dağılımını gösterir" lightbox="images/device-health-defender-antivirus-health-view-full-report.png":::
 
 Üç _sürüm_ kartının birincil avantajlarından biri, virüsten koruma motorlarının, platformlarının ve güvenlik zekasının en güncel sürümlerinin kullanılıp kullanılmadığına ilişkin hızlı göstergeler sağlamasıdır. Sürüm kartları, karta bağlı ayrıntılı bilgilerle birlikte sürümlerin güncel olup olmadığını denetlemek ve tek tek bilgisayarlar veya bilgisayar grupları hakkında bilgi toplamak için güçlü bir araç haline gelir.
 İdeal olarak, bu raporları çalıştırdığınızda, eski sürümlerin aksine en güncel virüsten koruma sürümlerinin yüklü olduğunu gösterirler.
 Kuruluşunuzun en güncel sürümlerden tam olarak yararlanıp yararlanmadığını belirlemek için bu raporları kullanın.
 
->:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png" alt-text="Microsoft Defender Virüsten Koruma sürümü ayrıntılarını gösterir" lightbox="images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png" alt-text="Microsoft Defender Virüsten Koruma sürümü ayrıntılarını gösterir" lightbox="images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png":::
 
 Kötü amaçlı yazılımdan koruma çözümünüzün en son tehditleri algılamasına yardımcı olmak için güncelleştirmeleri Windows Update bir parçası olarak otomatik olarak alın.
 
@@ -203,7 +201,7 @@ Kuruluşunuzdaki kaç cihazın (kartta belirtilen tarihte) aşağıdaki Microsof
 | 3 | Diğerleri (Çalışmıyor, Bilinmiyor) |
 | 4 | EDRBlocked |
 
->:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-mode.png" alt-text="Virüsten Koruma modlarını Microsoft Defender filtrelemeyi gösterir" lightbox="images/device-health-defender-antivirus-health-antivirus-mode.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-mode.png" alt-text="Virüsten Koruma modlarını Microsoft Defender filtrelemeyi gösterir" lightbox="images/device-health-defender-antivirus-health-antivirus-mode.png":::
 
 Her modun açıklamaları aşağıdadır:
 
@@ -245,7 +243,7 @@ Güncel kartlar **Virüsten Koruma altyapısı**, **Virüsten Koruma platformu**
 
 > [!IMPORTANT]
 >
-> Güncel belirlemeyi yapmak için kullanılan mantık yakın zamanda geliştirilmiş ve basitleştirilmiştir. Yeni davranış bu bölümde belgelenmiştir.
+> Güncel belirlemeleri yapmak için kullanılan mantık yakın zamanda geliştirilmiş ve basitleştirilmiştir. Yeni davranış bu bölümde belgelenmiştir.
 
 Aşağıdaki her kart için _Güncel_, _güncel_ olmayan ve _kullanılabilir veri yok_ tanımları sağlanmıştır.
 
@@ -273,17 +271,17 @@ Yukarıda belirtilen terimler hakkında daha fazla bilgi için şu bölüme bak�
 
 Altyapı ve platform için güncel tanımlar aşağıdadır:
 
-| Cihazdaki motor/platform dikkate alınır: | Eğer: |
+| Cihazdaki motor/platform dikkate alınır: | Durum |
 |:---|:---|
-| **Güncel** | son yedi gün içinde Defender rapor olayıyla ('İmza yenileme süresi') iletişim kuran cihaz ve Altyapı veya Platform sürümü derleme süresi son 60 gün içindedir. |
-| **Güncel** | son yedi gün içinde Defender rapor olayıyla ('İmza yenileme süresi') iletişim kuran cihaz, ancak Altyapı veya Platform sürümü derleme süresi 60 günden eskidir. |
-| **bilinmiyor (kullanılabilir veri yok)** | cihaz yedi günden uzun süredir rapor olayıyla ('İmza yenileme süresi') iletişim kurmadı. |
+| **Güncel** | Cihaz son yedi gün içinde Defender rapor olayıyla ('İmza yenileme süresi') iletişim kurarsa ve Altyapı veya Platform sürümü derleme süresi son 60 gün içindeyse. |
+| **Güncel** | Cihaz son yedi gün içinde Defender rapor olayıyla ('İmza yenileme süresi') iletişim kursa, ancak Altyapı veya Platform sürümü derleme süresi 60 günden eskiyse. |
+| **bilinmiyor (kullanılabilir veri yok)** | Cihaz yedi günden uzun süredir rapor olayıyla ('İmza yenileme süresi') iletişim kurmadıysa. |
 
-Güvenlik zekası için güncel tanımlar aşağıdadır:
+Güncel güvenlik zekası tanımları aşağıdadır:
 
-| Güvenlik bilgileri güncelleştirmesi dikkate alınır | Eğer: |
+| Güvenlik bilgileri güncelleştirmesi dikkate alınır: | Durum |
 |:---|:---|
-|**Güncel** | cihazdaki güvenlik bilgileri sürümü son yedi gün içinde yazılmıştır ve cihaz son yedi gün içinde rapor olayıyla iletişim kurar. |
+|**Güncel** | Cihazdaki güvenlik bilgileri sürümü son yedi gün içinde yazılmışsa ve cihaz son yedi gün içinde rapor olayıyla iletişim kurmuşsa. |
 
 Daha fazla bilgi için bkz.:
 
@@ -295,7 +293,7 @@ Daha fazla bilgi için bkz.:
 
 Bu kart, virüsten koruma altyapısı sürümleri güncel ve güncel olmayan cihazları tanımlar.
 
-**'_Güncel_' genel tanımı** - Cihazdaki altyapı sürümü en son altyapı sürümüdür. Altyapı _genellikle_ Windows Update (WU) aracılığıyla aylık olarak yayınlanır. Windows Update (WU) serbest bırakıldığında verilen üç günlük yetkisiz kullanım süresi vardır.
+**'Güncel' genel tanımı** - Cihazdaki altyapı sürümü en son altyapı sürümüdür. Altyapı _genellikle_ Windows Update (WU) aracılığıyla aylık olarak yayınlanır. Windows Update (WU) serbest bırakıldığında verilen üç günlük yetkisiz kullanım süresi vardır.
 
 Aşağıdaki tabloda **Virüsten Koruma Altyapısı** için güncel raporlar için olası değerler yer alır. Bildirilen Durum, raporlama olayının son alındığı zamanı (_imza yenileme zamanı_) temel alır. Cihaz yedi günden uzun süredir raporlarla iletişim kurmadıysa (imza yenileme süresi >7 gün), durum otomatik olarak 'Bilinmiyor' / 'Kullanılabilir Veri Yok' olarak işaretlenir.
 
@@ -304,32 +302,32 @@ Aşağıdaki tabloda **Virüsten Koruma Altyapısı** için güncel raporlar iç
 | < 7 gün (yeni) | hangi istemcinin rapor verdiği (_Güncel <br/> Olmayan <br/> Bilinmeyen)_ |
 | > 7 gün (eski) | _Unknown_ |
 
-Microsoft Defender Virüsten Koruma güncelleştirme sürümlerini yönetme hakkında bilgi için bkz. [Aylık platform ve altyapı sürümleri](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+Microsoft Defender Virüsten Koruma güncelleştirme sürümlerini yönetme hakkında bilgi için bkz. [Aylık platform ve altyapı sürümleri](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).
 
 #### <a name="antivirus-platform-updates-card"></a>Virüsten koruma platformu güncelleştirme kartı
 
 Bu kart, Virüsten Koruma platformu sürümlerinin güncel ve güncel olmayan cihazları tanımlar.
 
-**'Güncel' genel tanımı** Cihazdaki platform sürümü en son platform sürümüdür. Platform _genellikle_ Windows Update (WU) aracılığıyla aylık olarak yayınlanır. WU'nun serbest bırakıldığından itibaren üç günlük yetkisiz kullanım süresi vardır.
+**'Güncel' genel tanımı** , cihazdaki platform sürümünün en son platform sürümü olmasıdır. Platform _genellikle_ Windows Update (WU) aracılığıyla aylık olarak yayınlanır. WU'nun serbest bırakıldığından itibaren üç günlük yetkisiz kullanım süresi vardır.
 
 Aşağıdaki tabloda **Virüsten Koruma Platformu** için olası güncel rapor değerleri yer almaktadır. Bildirilen değerler, raporlama olayının son alındığı zamanı (imza yenileme zamanı) temel alır. Cihaz raporlarla yedi günden fazla iletişim kurmadıysa (imza yenileme süresi >7 gün) otomatik olarak "Bilinmiyor"/ "Kullanılabilir Veri Yok" olarak işaretlenir.
 
-| Olayın Son Yenileme Zamanı (raporlarda "İmza Yenileme Zamanı" olarak da bilinir) | _Bildirilen Durum_: |
+| Olayın Son Yenileme Zamanı (raporlarda "İmza Yenileme Zamanı" olarak da bilinir) | _Bildirilen Durum_ |
 |:----|:----|
 | < 7 gün (yeni) | hangi istemcinin rapor verdiği (_Güncel <br/> Olmayan <br/> Bilinmeyen)_ |
 | > 7 gün (eski) | _Unknown_ |
 
-Microsoft Defender Virüsten Koruma güncelleştirme sürümlerini yönetme hakkında bilgi için bkz. [Aylık platform ve altyapı sürümleri](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+Microsoft Defender Virüsten Koruma güncelleştirme sürümlerini yönetme hakkında bilgi için bkz. [Aylık platform ve altyapı sürümleri](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).
 
 ##### <a name="security-intelligence-updates-card"></a>Güvenlik bilgileri güncelleştirme kartı
 
 Bu kart, güncel ve güncel olmayan güvenlik bilgileri sürümlerine sahip cihazları tanımlar.
 
-**'Güncel' genel tanımı** – cihazdaki güvenlik zekası sürümü son 7 gün içinde yazılmıştır.
+**'Güncel' genel tanımı** , cihazdaki güvenlik zekası sürümünün son 7 gün içinde yazıldığıdır.
 
 Aşağıdaki tabloda **Güvenlik Bilgileri** güncelleştirmeleri için olası güncel rapor değerleri yer alır. Bildirilen değerler raporlama olayının son alındığı zamanı ve güvenlik zekası yayımlama süresini temel alır. Cihaz yedi günden uzun süredir raporlarla iletişim kurmadıysa (imza yenileme süresi >7 gün), durum otomatik olarak 'Bilinmiyor/ Kullanılabilir Veri Yok' olarak işaretlenir. Aksi takdirde, güvenlik bilgileri yayımlama süresinin yedi gün içinde olup olmadığına bağlı olarak belirleme yapılır.
 
-| Olayın Son Yenileme Zamanı <br/> (Raporlarda "İmza Yenileme Zamanı" olarak da bilinir) | Güvenlik Zekası Yayımlama Zamanı | _Bildirilen Durum_: |
+| Olayın Son Yenileme Zamanı <br/> (Raporlarda "İmza Yenileme Zamanı" olarak da bilinir) | Güvenlik Zekası Yayımlama Zamanı | _Bildirilen Durum_ |
 |:----|:----|:----|
 | >7 gün (eski) | >7 gün (eski) | _Unknown_ |
 | <7 gün (yeni) | >7 gün (eski) | _Güncel değil_ |
