@@ -16,12 +16,13 @@ f1.keywords:
 description: Mevcut Office 365 müşterileri, ülkelerinin Microsoft 365 hizmet verilerini yeni coğrafi bölgelerine taşımaları için son tarihten önce bir istek göndermelidir.
 ms.custom: seo-marvel-apr2020
 ms.collection: scotvorg
-ms.openlocfilehash: bffd6c99f4df0cc89ae064d49fcc9c97d9e4dd3c
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ROBOTS: NOINDEX
+ms.openlocfilehash: f70e7d54dab18a400a0c07073f57678cf4647819
+ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68208710"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68807398"
 ---
 # <a name="how-to-request-your-data-move"></a>Veri taşıma isteğinde bulunma
 

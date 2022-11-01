@@ -15,20 +15,30 @@ ms.collection:
 - m365initiative-migratetom365
 search.appverid: MET150
 description: OneDrive Kiracılar arası geçiş özelliğinin 5. adımı
-ms.openlocfilehash: 8ebd76f91ddb1711cb1aa5e2a66ae5fb27b71d5c
-ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
+ms.openlocfilehash: 5e8706b88b255132bb4db36cd6010668b36b3f26
+ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 11/01/2022
-ms.locfileid: "68806260"
+ms.locfileid: "68807683"
 ---
-# <a name="step-5-cross-tenant-onedrive-migration---identity-mapping"></a>5. Adım: Kiracılar arası OneDrive geçişi - Kimlik eşleme
+# <a name="step-5-identity-mapping"></a>5. Adım: Kimlik eşleme
+
+Bu, Kiracılar Arası OneDrive geçişini tamamlamak için tasarlanmış bir çözümdeki 5. Adımdır. Daha fazla bilgi için bkz. [Kiracılar arası OneDrive geçişine genel bakış](cross-tenant-onedrive-migration.md).
+
+- 1. Adım: [Kaynağa ve hedef kiracılara bağlanma](cross-tenant-onedrive-migration-step1.md)
+- 2. Adım: [Kaynak ile hedef kiracı arasında güven oluşturma](cross-tenant-onedrive-migration-step2.md) 
+- 3. Adım: [Güvenin kurulduğunu doğrulama](cross-tenant-onedrive-migration-step3.md) 
+- 4. Adım: [Kullanıcıları ve grupları önceden oluşturma](cross-tenant-onedrive-migration-step4.md)  
+- **5. Adım: [Kimlik eşlemesini hazırlama](cross-tenant-onedrive-migration-step5.md)**
+- 6. Adım: [Kiracılar arası OneDrive geçişi başlatma](cross-tenant-onedrive-migration-step6.md)
+- 7. Adım: [Geçiş sonrası adımları](cross-tenant-onedrive-migration-step7.md)
+
+## <a name="create-the-identity-mapping-file"></a>Kimlik eşleme dosyasını oluşturma 
 
 Kiracılar arası geçiş işleminin bu adımında, kaynak kiracıdaki kullanıcıların ve grupların hedef kiracıdaki ilgili kullanıcı ve gruplarıyla eşlemesini içeren tek bir CSV (virgülle ayrılmış değerler) dosyası oluşturacaksınız.
 
 Hedef kiracıya geçişleri başlatmadan önce eşlemelerinizi doğrulamak için zaman ayırmanızı ve bunların doğru olduğundan emin olmanız önerilir.
-
-## <a name="create-the-identity-mapping-file"></a>Kimlik eşleme dosyasını oluşturma 
 
 Kimlik eşleme dosyasında bire bir ilişki vardır.  Aynı kullanıcıyı hedef kiracıdaki birden çok kullanıcıyla eşleyemezsiniz. Örneğin, yöneticinin birden çok OneDrive hesabının sahibi olduğu örnekleriniz varsa, sahipliğin Kaynaktan Hedefe geçirmek istediğiniz ilgili kullanıcıyla eşleşecek şekilde değiştirilmesi gerekir.  Bunu yapmazsanız, bu hesap dosyaları geçirilmez.
 

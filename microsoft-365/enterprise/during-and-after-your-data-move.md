@@ -18,12 +18,13 @@ f1.keywords:
 - NOCSH
 description: Veri taşıma işlemleri, Microsoft kiracınız için hizmetleri ve ilişkili verileri yeni bir veri merkezi coğrafi alanına taşırken gerçekleşen arka uç işlemleridir.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9df2cbbf802dcba692bbd3e4033e15128ee2a1a9
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ROBOTS: NOINDEX
+ms.openlocfilehash: 436e8f52940dd4ab036b0356da9c10b4785bd467
+ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68171333"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68807661"
 ---
 # <a name="during-and-after-your-data-move"></a>Verilerinizi taşıma sırasında ve sonrasında
 

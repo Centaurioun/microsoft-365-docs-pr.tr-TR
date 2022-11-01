@@ -16,12 +16,13 @@ ms.custom: seo-marvel-mar2020
 ms.collection:
 - scotvorg
 description: Çekirdek verileri yeni bir Office 365 veri merkezi coğrafi konumuna taşıma hakkında sık sorulan soruların (SSS) yanıtlarını bulun.
-ms.openlocfilehash: af07ee89ffb8948ac2961db179112e70f3d0cfb4
-ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ROBOTS: NOINDEX
+ms.openlocfilehash: d7e6f063b92094c26054da15b6c45f4fea1b5ea3
+ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68209018"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68807705"
 ---
 # <a name="data-move-general-faq"></a>Veri taşıma genel SSS
 

@@ -15,14 +15,24 @@ ms.collection:
 - m365initiative-migratetom365
 search.appverid: MET150
 description: OneDrive Kiracılar arası geçiş özelliğinin 6. adımı
-ms.openlocfilehash: 6ebf12c11388d35daa4e8261c193af721af88124
-ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
+ms.openlocfilehash: b12ff8d9b1aebcfa0286f7c1bc291586cb9c0f91
+ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 11/01/2022
-ms.locfileid: "68806212"
+ms.locfileid: "68807727"
 ---
-# <a name="step-6-start-a-onedrive-cross-tenant-migration"></a>6. Adım: OneDrive Kiracılar Arası Geçişi Başlatma
+# <a name="step-6-start-a-onedrive-cross-tenant-migration"></a>6. Adım: OneDrive kiracılar arası geçişi başlatma
+
+Bu, Kiracılar Arası OneDrive geçişini tamamlamak için tasarlanmış bir çözümdeki 6. Adımdır. Daha fazla bilgi için bkz. [Kiracılar arası OneDrive geçişine genel bakış](cross-tenant-onedrive-migration.md).
+
+- 1. Adım: [Kaynağa ve hedef kiracılara bağlanma](cross-tenant-onedrive-migration-step1.md)
+- 2. Adım: [Kaynak ile hedef kiracı arasında güven oluşturma](cross-tenant-onedrive-migration-step2.md) 
+- 3. Adım: [Güvenin kurulduğunu doğrulama](cross-tenant-onedrive-migration-step3.md) 
+- 4. Adım: [Kullanıcıları ve grupları önceden oluşturma](cross-tenant-onedrive-migration-step4.md)  
+- 5. Adım: [Kimlik eşlemesini hazırlama](cross-tenant-onedrive-migration-step5.md)
+- **6. Adım: [Kiracılar arası OneDrive geçişi başlatma](cross-tenant-onedrive-migration-step6.md)**
+- 7. Adım: [Geçiş sonrası adımları](cross-tenant-onedrive-migration-step7.md)
 
 Artık OneDrive geçişinizi başlatmaya hazırsınız.  Kiracılar arası geçişe başlamadan önce aşağıdaki adımları uygulayın. 
 

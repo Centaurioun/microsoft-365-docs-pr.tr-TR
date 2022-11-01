@@ -14,27 +14,28 @@ ms.collection:
 - m365initiative-migratetom365
 search.appverid: MET150
 description: Kiracılar arası OneDrive geçişi
-ms.openlocfilehash: a822c019e2c81bf23537ea4f0db139b6b433e7c8
-ms.sourcegitcommit: 0c72639cc3dc74667a6b14343d303f318e70d457
+ms.openlocfilehash: 6e2d925d6512df4fa62d3b8d5b71138439f836e8
+ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 11/01/2022
-ms.locfileid: "68804234"
+ms.locfileid: "68807551"
 ---
 # <a name="cross-tenant-onedrive-migration"></a>Kiracılar arası OneDrive geçişi
 
 >[!Note]
-> Bu özellik şu anda GCC, Tüketici, GCC High veya DoD gibi Kamu Bulutu kullanıcıları için desteklenmemaktadır.
-
-
->[!Note]
-> Bu makaledeki bilgiler **, Kiracılar arası OneDrive geçişi** anlamına gelir. [Kiracılar arası Posta Kutusu geçişi hakkında buradan bilgi edinin](/microsoft-365/enterprise/cross-tenant-mailbox-migration)
+> Bu makaledeki bilgiler **, Kiracılar arası OneDrive geçişi** anlamına gelir. Posta kutusu geçişi için bkz. [Kiracılar arası posta kutusu geçişi](/microsoft-365/enterprise/cross-tenant-mailbox-migration).
 
 Birleştirmeler veya dalışlar sırasında, genellikle kullanıcılar OneDrive hesaplarını yeni bir Microsoft 365 kiracısına taşıyabilmeniz gerekir. Kiracılar arası OneDrive geçişiyle, kiracı yöneticileri kullanıcıları yeni kuruluşlarına aktarmak için *SharePoint Online PowerShell* gibi tanıdık araçları kullanabilir.
 
 İki ayrı kiracının SharePoint yöneticileri, bir kuruluş ilişkisi oluşturmak için *Set-SPOCrossTenantRelationship* cmdlet'ini ve kiracılar arası OneDrive taşımalarını başlatmak için *Start-SPOCrossTenantUserContentMove* komutunu kullanabilir.
 
 Belirli bir zamanda geçiş için en fazla 4.000 OneDrive hesabı zamanlanabilir. Zamanlandıktan sonra, geçişler kullanıcının verileri Microsoft 365 bulutunu terk etmeden ve minimum kesintiyle gerçekleşir ve kullanıcının OneDrive'ını salt okunur hale gelmesi için yalnızca birkaç dakika gerekir. Geçişler tamamlandığında, kullanıcının özgün OneDrive konumuna bir yeniden yönlendirme yerleştirilir, böylece dosya ve klasörlere yönelik tüm bağlantılar yeni konumda çalışmaya devam edebilir. 
+
+>[!Note]
+> Bu özellik şu anda GCC, Tüketici, GCC High veya DoD gibi Kamu Bulutu kullanıcıları için desteklenmemaktadır.
+
+
 
 >[!Important]
 >- OneDrive'ları kiracılar arası geçirilen her kullanıcının **Kiracılar Arası Kullanıcı Verileri Geçişi** lisansına sahip olması gerekir.
@@ -94,8 +95,9 @@ Bu yeniden yönlendirmeler, kaynak kiracının yetkisi kaldırılana kadar kalı
 - **1. Adım:** [Kaynağa ve hedef kiracılara bağlanın](cross-tenant-onedrive-migration-step1.md).  
 - **2. Adım:** [Kaynak ile hedef kiracı arasında güven oluşturma](cross-tenant-onedrive-migration-step2.md) 
 - **3. Adım:** [Güvenin kurulduğunu doğrulama](cross-tenant-onedrive-migration-step3.md) 
-- **4. Adım:** [İzinleri yönetme](cross-tenant-onedrive-migration-step4.md)  
+- **4. Adım:** [Kullanıcıları ve grupları önceden oluşturma](cross-tenant-onedrive-migration-step4.md)  
 - **5. Adım:** [Kimlik eşlemesini hazırlama](cross-tenant-onedrive-migration-step5.md)
-- **6. Adım:** [Kiracılar arası OneDrive geçişi başlatma](cross-tenant-onedrive-migration-step6.md) 
+- **6. Adım:** [Kiracılar arası OneDrive geçişini başlatma]
+- **7. Adım:** [Geçiş sonrası adımları](cross-tenant-onedrive-migration-step7.md)
 
 ## <a name="step-1-connect-to-source-and-target-tenants"></a>1. Adım: [Kaynak ve hedef kiracılara bağlanma](cross-tenant-onedrive-migration-step1.md)
