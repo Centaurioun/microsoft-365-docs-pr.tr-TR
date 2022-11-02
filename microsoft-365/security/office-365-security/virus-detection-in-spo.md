@@ -20,12 +20,12 @@ description: SharePoint Online'ın kullanıcıların karşıya yüklediği dosya
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 373c8d1b26fc31aae034b47fbe17b78024ad2147
-ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
+ms.openlocfilehash: 58560d86c412f343301d859afa5044be2fdcc30c
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68074999"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68815495"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint Online, OneDrive ve Microsoft Teams'de yerleşik virüs koruması
 
@@ -58,7 +58,7 @@ Varsayılan olarak, kullanıcılar SharePoint Online'dan virüslü dosyaları in
 1. Bir web tarayıcısında, kullanıcı SharePoint Online'dan virüs bulaşmış bir dosyayı indirmeye çalışır.
 2. Kullanıcıya dosyada bir virüs algılandığını belirten bir uyarı gösterilir. Kullanıcıya indirme işlemine devam etme ve cihazında virüsten koruma yazılımı kullanarak temizlemeye çalışma seçeneği verilir.
 
-Bu davranışı, virüs koruması uyarı penceresinden bile kullanıcıların virüslü dosyaları indirememelerini sağlamak için yöneticiler SharePoint Online **[PowerShell'deki Set-SPOTenant cmdlet'indeki](/powershell/module/sharepoint-online/Set-SPOTenant)** *DisallowInfectedFileDownload* parametresini kullanabilir. *DisallowInfectedFileDownload* parametresi için $true değeri, kullanıcılar için algılanan/bocked dosyalara erişimi tamamen engeller.
+Bu davranışı, virüs koruması uyarı penceresinden bile kullanıcıların virüslü dosyaları indirememelerini sağlamak için yöneticiler SharePoint Online **[PowerShell'deki Set-SPOTenant cmdlet'indeki](/powershell/module/sharepoint-online/Set-SPOTenant)** *DisallowInfectedFileDownload* parametresini kullanabilir. *DisallowInfectedFileDownload* parametresi için $true değeri, kullanıcılar için algılanan/engellenen dosyalara erişimi tamamen engeller.
 
 Yönergeler için bkz. [Kullanıcıların kötü amaçlı dosyaları indirmesini önlemek için SharePoint Online PowerShell kullanma](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
 

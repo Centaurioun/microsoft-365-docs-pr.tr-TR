@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Bu, hassas bilgileri bulmak için tüm eğitilebilir sınıflandırıcıların, tanımlarının ve aradıkları tüm dosya türlerinin listesidir
-ms.openlocfilehash: d62e3e9b32a7ab977c0b052725b472ac326967f3
-ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
+ms.openlocfilehash: 91f4350250adf5f2bd20bc67183f183539887a6c
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68673161"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814065"
 ---
 # <a name="trainable-classifiers-definitions"></a>Eğitilebilir sınıflandırıcı tanımları
 
 Microsoft Purview, önceden eğitilmiş birden çok sınıflandırıcı ile birlikte gelir.  Microsoft Purview uyumluluk portalı **Veri sınıflandırması** \> **Eğitilebilir sınıflandırıcılar** görünümünde durumuyla `Ready to use`birlikte görünürler\>.
 
 
-- **Yetişkin, müstehcen ve gory**: Bu tür görüntüleri algılar. Görüntülerin boyutu 50 kilobayt (KB) ile 4 megabayt (MB) arasında olmalı ve yükseklik x genişlik boyutlarında 50 x 50 pikselden büyük olmalıdır. Tarama ve algılama, Exchange Online e-posta iletileri ile Microsoft Teams kanalları ve sohbetleri için desteklenir. .jpeg, .png, .gif ve .bmp dosyalarındaki içeriği algılar.
+- **Yetişkin, müstehcen ve gory**: Bu tür görüntüleri algılar. Görüntülerin boyutu 100 kilobayt (KB) ile 4 megabayt (MB) arasında olmalı ve yükseklik x genişlik boyutlarında 50 x 50 pikselden büyük olmalıdır. Tarama ve algılama, Exchange Online e-posta iletileri ile Microsoft Teams kanalları ve sohbetleri için desteklenir. .jpeg, .png, .gif ve .bmp dosyalarındaki içeriği algılar.
 
 - **Sözleşmeler**: İfşa etmeme sözleşmeleri, iş beyanları, kredi ve kira sözleşmeleri, istihdam ve rekabet dışı sözleşmeler gibi yasal sözleşmelerle ilgili içeriği algılar. .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml dosyalarındaki içeriği algılar.
 

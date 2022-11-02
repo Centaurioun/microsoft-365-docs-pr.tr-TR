@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 0dc240addd772dc820838a1f213fcfeb9aa43a07
-ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
+ms.openlocfilehash: 6304ff45bb5ee9b05061f0ff4c793c875fed4233
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68793378"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68812547"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Insider risk yönetimi ayarlarını kullanmaya başlama
 
@@ -360,15 +360,15 @@ INSIDER risk uyarısı bilgilerini gözden geçirmek için API'leri kullanmak i�
 
 ![Insider risk yönetimi dışarı aktarma uyarı ayarları.](../media/insider-risk-settings-export.png)
 
-Uyarı bilgileri, güvenlik ve uyumluluk uyarı şemasından ve Office 365 Yönetim Etkinliği API'sinin ortak şemasından gelen bilgileri içerir.
+Uyarı bilgileri, Güvenlik ve Uyumluluk Uyarıları şemasından ve [Office 365 Yönetim Etkinliği API'sinin](/office/office-365-management-api/office-365-management-activity-api-schema.md#security-and-compliance-alerts-schema) ortak şemasından bilgiler içerir.
 
-Aşağıdaki alanlar ve değerler, Güvenlik & Uyumluluğu uyarı şeması için insider risk yönetimi uyarıları için dışarı aktarılır:
+Güvenlik ve Uyumluluk Uyarıları şeması için insider risk yönetimi uyarıları için aşağıdaki alanlar ve değerler dışarı aktarılır:
 
 | **Uyarı parametresi** | **Açıklama** |
 |:------------------|:----------------|
 | Alerttype | Uyarının türü *Özel'dir*.  |
 | AlertId | Uyarının GUID'i. Insider risk yönetimi uyarıları değişebilir. Uyarı durumu değiştikçe, aynı AlertID'ye sahip yeni bir günlük oluşturulur. Bu AlertID, bir uyarının güncelleştirmelerini ilişkilendirmek için kullanılabilir. |
-| Kategori | Uyarının kategorisi *InsiderRiskManagement'tır*. Bu kategori, bu uyarıları diğer Güvenlik & Uyumluluk uyarılarından ayırmak için kullanılabilir. |
+| Kategori | Uyarının kategorisi *InsiderRiskManagement'tır*. Bu kategori, bu uyarılardan diğer güvenlik ve uyumluluk uyarılarından ayırmak için kullanılabilir. |
 | Açıklamalar | Uyarı için varsayılan açıklamalar. Değerler *Yeni Uyarıdır* (bir uyarı oluşturulduğunda günlüğe kaydedilir) ve *Uyarı Güncelleştirildi* (bir uyarı güncelleştirmesi olduğunda günlüğe kaydedilir). Uyarı güncelleştirmelerini ilişkilendirmek için AlertID kullanın. |
 | Veri | Uyarının verileri benzersiz kullanıcı kimliğini, kullanıcı asıl adını ve kullanıcının bir ilkede tetiklendiğinde tarih ve saati (UTC) içerir. |
 | Name | Uyarıyı oluşturan insider risk yönetimi ilkesinin ilke adı. |
@@ -376,7 +376,7 @@ Aşağıdaki alanlar ve değerler, Güvenlik & Uyumluluğu uyarı şeması için
 | Önem derecesi | Uyarının önem derecesi. Değerler *Yüksek*, *Orta* veya *Düşük'tir*. |
 | Kaynak | Uyarının kaynağı. Değer *Office 365 Güvenlik & Uyumluluğu'dur*. |
 | Durum | Uyarının durumu. Değerler *Etkin* (insider riskinde *gözden geçirme gerekiyor* ), *Araştırma* (insider riskinde *onaylandı* ), *Çözüldü* (insider riskinde *çözümlendi* ), *Kapatıldı* (insider riskinde *kapatıldı* ). |
-| Sürüm | Güvenlik ve uyumluluk uyarı şemasının sürümü. |
+| Sürüm | Güvenlik ve Uyumluluk Uyarıları şemasının sürümü. |
 
 Aşağıdaki alanlar ve değerler[, Office 365 Yönetim Etkinliği API'sinin ortak şeması](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) için insider risk yönetimi uyarıları için dışarı aktarılır.
 

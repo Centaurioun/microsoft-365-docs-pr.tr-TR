@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 484da1e07de1a160149f2a1159b5610a3d22192f
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 5bc3f1863fa2e49bc6cc98aca1c9be38b07ec582
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68639030"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68815231"
 ---
 # <a name="learn-about-insider-risk-management-forensic-evidence-preview"></a>Insider risk yönetimi adli kanıtı (önizleme) hakkında bilgi edinin
 
@@ -36,6 +36,39 @@ Güvenlikle ilgili olabilecek kullanıcı etkinlikleriyle ilgili daha iyi içgö
 - **Kullanıcı merkezli ilke hedefleme,** güvenlik ve uyumluluk ekiplerinin daha iyi bağlamsal içgörüler için cihaza değil kullanıcıya göre etkinliğe odaklanabileceği anlamına gelir.
 - **Güçlü rol tabanlı erişim denetimleri (RBAC),** adli klipleri ayarlama ve gözden geçirme özelliğinin sıkı bir şekilde denetlendiği ve yalnızca kuruluştaki doğru izinlere sahip kişiler tarafından kullanılabildiği anlamına gelir.
 - **Mevcut insider risk yönetimi özellikleriyle derin tümleştirme**, daha kolay ekleme ve insider risk yönetimi yöneticileri için daha tanıdık iş akışları ve güvenilir bir tek platform yaklaşımı sağlar.
+
+## <a name="device-and-configuration-requirements"></a>Cihaz ve yapılandırma gereksinimleri
+
+Aşağıdaki tablolarda, insider risk yönetimi adli kanıtını kullanmak için desteklenen minimum gereksinimler yer alır.
+
+### <a name="supported-platforms"></a>Desteklenen platformlar
+
+|**İşletim sistemi**|**Sku**|**Işlemci**|
+|:----------|:-------|:-------------------|
+| Windows 10 | Enterprise | 64 bit (Intel veya AMD) |
+| Windows 11 | Enterprise | 64 bit (Intel veya AMD) |
+
+### <a name="physical-devices"></a>Fiziksel cihazlar
+
+|**Donanım**|**En düşük gereksinim**|
+|:----------|:-------------------------------|
+| Ram | En az 8 GB (istemci kullanımı için en az 2 GB kullanılabilir olmalıdır) |
+| CPU işlemcisi | Intel i5 veya üzeri ve AMD Ryzen 5 veya üzeri |
+| Grafik kartı | WDDM 1.0 veya üzeri bir sürücüyle (şu anda yalnızca tümleşik grafik kartları desteklenmektedir) DirectX 11 veya üzeri ile uyumludur|
+| Disk alanı | En az 10 GB disk depolama alanı |
+| Görüntü | En düşük ekran çözünürlüğü 1920 x 1080 | 
+
+### <a name="hyper-v-and-virtual-machines"></a>Hyper-V ve sanal makineler
+
+|**Donanım**|**En düşük gereksinim**|
+|:----------|:-------------------------------|
+| Ram | En az 16 GB (istemci kullanımı için en az 2 GB kullanılabilir olmalıdır) |
+| CPU işlemcisi | Her vCPU işlemcisi için en az iki vCPU işlemci ve en az dört çekirdek |
+| Disk alanı | En az 10 GB disk depolama alanı |
+| Görüntü | En düşük ekran çözünürlüğü 1920 x 1080 | 
+
+> [!IMPORTANT]
+> Minimum gereksinimler karşılanmazsa, kullanıcılar büyük olasılıkla Microsoft Purview istemci sorunlarıyla karşılaşabilir ve adli kayıtların kalitesi güvenilir olmayabilir.
 
 ## <a name="capturing-options"></a>Yakalama seçenekleri
 

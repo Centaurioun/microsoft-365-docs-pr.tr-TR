@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Uç nokta veri kaybı önleme (DLP) merkezi ayarlarını yapılandırmayı öğrenin.
-ms.openlocfilehash: eaa286aa1767b1cbf401d44035d1ed240131af69
-ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
+ms.openlocfilehash: 155de9a60966f53b1b0e8b8d41e2d1e7e8e8a063
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68672963"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68813207"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Uç noktada veri kaybı önleme ayarlarını yapılandırma
 
@@ -253,7 +253,7 @@ Liste modu **İzin Ver** olarak ayarlanırsa, hassas bir öğe ve listede yer al
 
 - **Hizmet etki alanları** liste modu **İzin Ver** olarak ayarlanır.
     - Contoso.com listede.
--  DLP ilkesi, Kredi kartı numaraları içeren hassas öğelerin karşıya yüklenmesini **engelle** olarak ayarlanır.
+    -  DLP ilkesi, Kredi kartı numaraları içeren hassas öğelerin karşıya yüklenmesini **engelle** olarak ayarlanır.
  
 Kullanıcı şu işlemleri yapmaya çalışır:
 
@@ -289,6 +289,15 @@ ancak bir kullanıcı aşağıdaki işlemleri yapmaya çalışırsa:
 
 > [!IMPORTANT]
 > Hizmet kısıtlama modu "İzin Ver" olarak ayarlandığında, kısıtlamalar uygulanmadan önce en az bir hizmet etki alanı yapılandırmış olmanız gerekir.
+
+Özet tablosu
+
+
+|Hizmet etki alanı listesi ayarı |Hassas öğeyi listedeki siteye yükleme  |Hassas öğeyi listede olmayan siteye yükleme  |
+|---------|---------|---------|
+|İzin ver   |- DLP ilkeleri uygulanmaz </br> - Kullanıcı etkinliği denetlendi </br> - Olay oluşturuldu        | - DLP ilkeleri uygulanır </br> - Yapılandırılmış eylemler gerçekleştirilen </br>- Olay oluşturulur </br>- Uyarı oluşturulur          |
+|Engelle    | - DLP ilkeleri uygulanır </br> - Yapılandırılmış eylemler gerçekleştirilen </br> - Olay oluşturulur </br> - Uyarı oluşturulur         | - DLP ilkeleri uygulanmaz </br> - Kullanıcı etkinliği denetlendi </br>- Olay oluşturulur         |
+
 
 Listeye bir etki alanı eklediğinizde hizmet etki alanının FQDN biçimini bitiş `.` olmadan kullanın.
 

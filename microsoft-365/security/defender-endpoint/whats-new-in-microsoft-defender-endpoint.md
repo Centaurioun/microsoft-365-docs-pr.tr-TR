@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/26/2022
+ms.date: 11/01/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 228c126f3355cb5e0435c9b2b83aa84fac176b42
-ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
+ms.openlocfilehash: 656ed58f84657b76a8b923582fff7cf27a786c87
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68224744"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68815583"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender’daki yenilikler
 
@@ -64,6 +64,11 @@ Belirli işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkın
 - [macOS'ta Uç Nokta için Defender'daki yenilikler](mac-whatsnew.md)
 - [iOS'ta Uç Nokta için Defender'daki yenilikler](ios-whatsnew.md)
 - [Linux'ta Uç Nokta için Defender'daki yenilikler](linux-whatsnew.md)
+
+## <a name="october-2022"></a>Ekim 2022
+
+- [Ağ koruması C2 algılama ve düzeltme genel kullanıma sunuldu](network-protection.md#block-command-and-control-attacks). <br/>Saldırganlar genellikle İnternet'e bağlı mevcut sunucuların güvenliğini tehlikeye atarak komut ve denetim sunucuları haline gelir. Saldırganlar, güvenliği aşılmış sunucuları kullanarak kötü amaçlı trafiği gizleyebilir ve uç noktalara bulaştırmak için kullanılan kötü amaçlı botları dağıtabilir. Ağ koruma algılama ve düzeltme, güvenlik işlemleri (SecOps) ekiplerinin uç noktaların güvenliğini aşmak isteyen kötü amaçlı ağ tehditlerini belirlemesi ve yanıtlaması için gereken süreyi iyileştirmeye yardımcı olur.
+
 
 ## <a name="september-2022"></a>Eylül 2022
 
@@ -123,7 +128,7 @@ Belirli işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkın
 
 - [Android ve iOS için güvenlik açığı yönetimi genel kullanıma sunuldu](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663)<br>Bu yeni platformlar arası kapsam sayesinde Tehdit ve Güvenlik Açığı Yönetimi özellikleri artık iş istasyonları, sunucular ve mobil cihazlar gibi kuruluş genelindeki tüm büyük cihaz platformlarını desteklemektedir. 
 - [Uç Nokta için Microsoft Defender Plan 1 Artık Microsoft 365 E3/A3 Lisanslarına Dahil](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-plan-1-now-included-in-m365-e3/ba-p/3060639)<br>14 Ocak'tan itibaren Uç Nokta için Microsoft Defender Plan 1 (P1) otomatik olarak Microsoft 365 E3/A3 lisanslarına dahil edilecek.
-- [iOS'ta Uç Nokta için Microsoft Defender artık genel önizlemede sıfır dokunmayla ekleme](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/zero-touch-onboarding-of-microsoft-defender-for-endpoint-on-ios/ba-p/3038045)<br>Bu yeni özellik sayesinde kuruluşlar artık uygulamayla etkileşime geçmek için son kullanıcılara gerek kalmadan microsoft Endpoint Manager otomatik olarak kaydedilen iOS cihazlarına Uç Nokta için Microsoft Defender dağıtabilir. Bu, Uç Nokta için Microsoft Defender hedeflenen cihazlarda sessizce etkinleştirildiğinden ve iOS varlığınızı korumaya başladığından dağıtım uyuşmalarını kolaylaştırır ve uygulamayı tüm cihazlara dağıtmak için gereken süreyi önemli ölçüde azaltır.
+- [iOS'ta Uç Nokta için Microsoft Defender artık genel önizlemede sıfır dokunmayla ekleme](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/zero-touch-onboarding-of-microsoft-defender-for-endpoint-on-ios/ba-p/3038045)<br>Bu yeni özellik sayesinde kuruluşlar artık uygulamayla etkileşime geçmek için son kullanıcılara gerek kalmadan Microsoft Endpoint Manager'a otomatik olarak kaydedilen iOS cihazlarına Uç Nokta için Microsoft Defender dağıtabilir. Bu, Uç Nokta için Microsoft Defender hedeflenen cihazlarda sessizce etkinleştirildiğinden ve iOS varlığınızı korumaya başladığından dağıtım uyuşmalarını kolaylaştırır ve uygulamayı tüm cihazlara dağıtmak için gereken süreyi önemli ölçüde azaltır.
 
 ## <a name="december-2021"></a>Aralık 2021
 
@@ -133,7 +138,7 @@ Belirli işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkın
 
 ## <a name="november-2021"></a>Kasım 2021
 
-- [Güvenlik yapılandırma yönetimi](security-config-management.md) <br/> Microsoft Intune veya Microsoft Endpoint Configuration Manager microsoft Endpoint Manager tarafından yönetilmeyen cihazların Microsoft Defender güvenlik yapılandırmalarını doğrudan Endpoint Manager.
+- [Güvenlik yapılandırma yönetimi](security-config-management.md) <br/> Microsoft Intune veya Microsoft Endpoint Configuration Manager microsoft Endpoint Manager tarafından yönetilmeyen cihazların Microsoft Defender için güvenlik yapılandırmalarını doğrudan Endpoint Manager'dan alma özelliği.
 - [Değerlendirme Laboratuvarı: Atomik Kırmızı Takım simülasyonları & genişletilmiş işletim sistemi desteği](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/evaluation-lab-expanded-os-support-amp-atomic-red-team/ba-p/2993927)<br>Değerlendirme Laboratuvarı artık Windows 11, Windows Server 2016 ve Linux cihazları eklemeyi destekliyor. Ayrıca, Red Canary'nin açık kaynak simülasyon kitaplığı Atomik Kırmızı Takım ile yeni bir ortaklığı duyurmak istiyoruz!
 - [Uç Nokta için Microsoft Defender Mobile - Kurcalama korumasının genel önizlemesini duyurma](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-the-public-preview-of-microsoft-defender-for-endpoint/ba-p/2971038)<br>Uç Nokta için Microsoft Defender mobil uygulamasında yedi günlük işlem yapılmadığında cihazı uyumsuz olarak işaretleyin.
 - [Davranış izleme, genişletilmiş dağıtım kapsamı ve daha fazlası ile Linux varlığınızın korumasını artırın](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/boost-protection-of-your-linux-estate-with-behavior-monitoring/ba-p/2909320)<br>Linux'ta yeni nesil koruma, uç nokta algılama ve yanıt (EDR), Tehdit ve Güvenlik Açığı Yönetimi (TVM) Uç Nokta için Microsoft Defender hakkında en son haberleri paylaşmak için heyecanlıyız. Linux varlığınız için Microsoft koruması, güvenlik paketinin tüm yelpazesinde etkileyici bir destek alıyor. Linux'ın Azure Güvenlik Merkezi tümleştirmesine yönelik son Uç Nokta için Microsoft Defender, Linux EDR ve TVM'nin avantajları artık Azure Defender müşterilerine de genişlemektedir.

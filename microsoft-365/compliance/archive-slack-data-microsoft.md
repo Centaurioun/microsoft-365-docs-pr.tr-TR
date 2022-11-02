@@ -15,12 +15,12 @@ ms.collection:
 - tier3
 - purview-compliance
 - data-connectors
-ms.openlocfilehash: 519a86113b8258f28dc7d283809af4167b2531eb
-ms.sourcegitcommit: 8d3c027592a638f411f87d89772dd3d39e92aab0
+ms.openlocfilehash: 8c117a8410af9774adf992f3559b10cf02158c28
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68533124"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68811821"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Slack eKeşif verilerini arşivleme (önizleme) için bağlayıcı ayarlama
 
@@ -48,9 +48,9 @@ Aşağıdaki genel bakış, Microsoft 365'te Slack verilerini arşivleyemek içi
 
 - Veri bağlayıcısını oluşturan kullanıcıya Slack kuruluşunda **Kuruluş sahipleri** uygulama rolü atanmalıdır. Daha fazla bilgi için bkz. [Slack'teki rol türleri](https://slack.com/intl/en-gb/help/articles/360018112273-Types-of-roles-in-Slack).
 
-- Kuruluşunuzun Slack kurumsal hesabının kullanıcı adını ve parolasını alın. Veri bağlayıcısını oluştururken bu hesapta oturum açmak için bu kimlik bilgilerini kullanırsınız. Slack kuruluşunuzda otomatik kullanıcı sağlama özelliğinin çoklu oturum açma (SSO) kullanacak şekilde yapılandırılmış olması da önerilir. [Güvenlik & Uyumluluk Merkezi'ndeki roller](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+- Kuruluşunuzun Slack kurumsal hesabının kullanıcı adını ve parolasını alın. Veri bağlayıcısını oluştururken bu hesapta oturum açmak için bu kimlik bilgilerini kullanırsınız. Slack kuruluşunuzda otomatik kullanıcı sağlama özelliğinin çoklu oturum açma (SSO) kullanacak şekilde yapılandırılmış olması da önerilir. [Güvenlik & Uyumluluk Merkezi'ndeki roller](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-defender-and-compliance-portals)
 
-- Slack eKeşif bağlayıcısını oluşturan kullanıcıya Veri Bağlayıcısı Yönetici rolü atanmalıdır. Bu rol, Microsoft Purview uyumluluk portalı **Veri bağlayıcıları sayfasına bağlayıcı** eklemek için gereklidir. Bu rol varsayılan olarak birden çok rol grubuna eklenir. Bu rol gruplarının listesi için Güvenlik [& Uyumluluk Merkezi'ndeki İzinler bölümündeki "Güvenlik ve uyumluluk merkezlerindeki](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center) roller" bölümüne bakın. Alternatif olarak, kuruluşunuzdaki bir yönetici özel bir rol grubu oluşturabilir, Veri Bağlayıcısı Yönetici rolünü atayabilir ve ardından uygun kullanıcıları üye olarak ekleyebilir. Yönergeler için, [Microsoft Purview uyumluluk portalı İzinler](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group) bölümündeki "Özel rol grubu oluşturma" bölümüne bakın.
+- Slack eKeşif bağlayıcısını oluşturan kullanıcıya Veri Bağlayıcısı Yönetici rolü atanmalıdır. Bu rol, Microsoft Purview uyumluluk portalı **Veri bağlayıcıları sayfasına bağlayıcı** eklemek için gereklidir. Bu rol varsayılan olarak birden çok rol grubuna eklenir. Bu rol gruplarının listesi için Microsoft 365 Defender ve [Microsoft Purview uyumluluk portallarındaki Roller ve rol grupları bölümündeki "Defender ve uyumluluk portallarındaki roller](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-defender-and-compliance-portals)" bölümüne bakın. Alternatif olarak, kuruluşunuzdaki bir yönetici özel bir rol grubu oluşturabilir, Veri Bağlayıcısı Yönetici rolünü atayabilir ve ardından uygun kullanıcıları üye olarak ekleyebilir. Yönergeler için, [Microsoft Purview uyumluluk portalı İzinler](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group) bölümündeki "Özel rol grubu oluşturma" bölümüne bakın.
 
 ## <a name="step-1-create-a-slack-ediscovery-connector"></a>1. Adım: Slack eKeşif bağlayıcısı oluşturma
 

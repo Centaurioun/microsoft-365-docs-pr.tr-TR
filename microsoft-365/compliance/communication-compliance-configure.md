@@ -24,12 +24,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c837bee4ccbab7f146c553b97a8d44bff8ae2949
-ms.sourcegitcommit: a20d30f4e5027f90d8ea4cde95d1d5bacfdd2b5e
+ms.openlocfilehash: 75d25c6f138e7a48494361c9d88482bb48fce611
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68769985"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814351"
 ---
 # <a name="get-started-with-communication-compliance"></a>İletişim uyumluluğunu kullanmaya başlama
 
@@ -131,19 +131,19 @@ Aşağıdaki rollerin üyeleri *, İletişim Uyumluluğu Yöneticileri* rol grub
 
 ### <a name="option-1-assign-all-compliance-users-to-the-communication-compliance-role-group"></a>Seçenek 1: Tüm uyumluluk kullanıcılarını İletişim Uyumluluğu rol grubuna atama
 
-1. [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) Microsoft 365 kuruluşunuzdaki bir yönetici hesabının kimlik bilgilerini kullanarak oturum açın.
+Bu rol grubuna kullanıcı eklemek için aşağıdaki adımları tamamlayın:
 
-2. Güvenlik &amp; Uyumluluk Merkezi'nde **İzinler'e** gidin. Office 365 rolleri görüntülemek ve yönetmek için bağlantıyı seçin.
+1. Microsoft 365 kuruluşunuzdaki bir yönetici hesabının kimlik bilgilerini kullanarak [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) oturum açın.
 
-3. *İletişim Uyumluluğu* rol grubunu ve ardından **Rol grubunu düzenle'yi** seçin.
+2. Sol gezinti bölmesinde **İzinler'i** seçin ve **Microsoft Purview çözümleri** listesinin altında **Roller'i** seçin.
 
-4. Sol gezinti **bölmesinden Üyeleri seç'i** ve ardından **Düzenle'yi** seçin.
+3. *İletişim Uyumluluğu* rol grubunu ve ardından **Düzenle'yi** seçin.
 
-5. **Ekle'yi** seçin ve ardından *İletişim Uyumluluğu* rol grubuna eklemek istediğiniz tüm kullanıcılar için onay kutusunu seçin.
+4. **Kullanıcıları seçin** sekmesini seçin ve ardından rol grubuna eklemek istediğiniz tüm kullanıcılar için onay kutusunu seçin.
 
-6. **Ekle'yi** ve ardından **Bitti'yi** seçin.
+6. **Seç'i** ve ardından **İleri'yi** seçin.
 
-7. Kullanıcıları rol grubuna eklemek için **Kaydet'i** seçin. Adımları tamamlamak için **Kapat'ı** seçin
+7. Kullanıcıları rol grubuna eklemek için **Kaydet'i** seçin. Adımları tamamlamak için **Bitti'yi** seçin.
 
 ### <a name="option-2-assign-users-to-specific-communication-compliance-role-groups"></a>2. Seçenek: Kullanıcıları belirli iletişim uyumluluğu rol gruplarına atama
 

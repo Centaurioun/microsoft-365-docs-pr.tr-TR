@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 2fbf1cbdeedcbca9a29a8a161bd9bde2c803e97c
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 10cbbb5c374e75b9bf16430de1b478fa5ee320d4
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68624895"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68815539"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalındaki izinler
 
@@ -63,7 +63,7 @@ Aşağıdaki rol ve rol grubu türleri, Microsoft 365 Defender portalındaki **�
 
 - **Azure AD rolleri**: Rolleri ve atanan kullanıcıları görüntüleyebilirsiniz, ancak bunları doğrudan Microsoft 365 Defender portalında yönetemezsiniz. Azure AD rolleri **, tüm** Microsoft 365 hizmetleri için izin atayan merkezi rollerdir.
 
-- **Email & işbirliği rolleri**: Bunlar, Güvenlik & Uyumluluk Merkezi'nde kullanılabilen rol gruplarıyla aynıdır, ancak bunları doğrudan Microsoft 365 Defender portalından yönetebilirsiniz. Burada atadığınız izinler Microsoft 365 Defender portalına, Microsoft Purview uyumluluk portalı ve Güvenlik & Uyumluluk Merkezi'ne özeldir ve diğer Microsoft 365 iş yüklerinde gereken tüm izinleri kapsamaz.
+- **Email & işbirliği rolleri**: Bu rol gruplarını doğrudan Microsoft 365 Defender portalında görüntüleyebilir ve yönetebilirsiniz. Bu izinler Microsoft 365 Defender portalına ve Microsoft Purview uyumluluk portalı özeldir ve diğer Microsoft 365 iş yüklerinde gereken tüm izinleri kapsamaz.
 
 :::image type="content" source="../../media/m365-sc-permissions-and-roles-page.png" alt-text="Microsoft 365 Defender portalındaki İzinler & rolleri sayfası" lightbox="../../media/m365-sc-permissions-and-roles-page.png":::
 
@@ -91,9 +91,9 @@ Daha fazla bilgi için bkz. [Azure Active Directory'de yönetici rollerini gör�
 
 ### <a name="email--collaboration-roles-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalında işbirliği rollerini Email &
 
-Microsoft 365 Defender portalını adresinde <https://security.microsoft.com> açıp **Email & işbirliği rollerine** \> **izinler & roller** \> **Email & işbirliği rolleri** \> **Roller'e** (veya doğrudan adresine<https://security.microsoft.com/emailandcollabpermissions>) gittiğinizde, Güvenlik & Uyumluluk Merkezi'nde bulunan rol gruplarının aynısını görürsünüz.
+Email & **işbirliği rollerinin** \> **İzinleri & rolleri** sayfasında \> Email & **işbirliği rollerinin** \> **(veya** doğrudan adresinden<https://security.microsoft.com/emailandcollabpermissions>) Microsoft 365 Defender portalında <https://security.microsoft.com> \>, <https://compliance.microsoft.com> \> Microsoft Purview uyumluluk portalı **İzinler** sayfası \> **Microsoft Purview çözümleri** \> **Rolleri** (veya doğrudan adresinde<https://compliance.microsoft.com/compliancecenterpermissions>).
 
-Bu rol grupları hakkında tam bilgi için bkz [. Güvenlik & Uyumluluk Merkezi'nde İzinler](permissions-in-the-security-and-compliance-center.md)
+Bu rol grupları hakkında tam bilgi için bkz. [Microsoft 365 Defender ve Microsoft Purview uyumluluk portallarındaki roller ve rol grupları](permissions-in-the-security-and-compliance-center.md)
 
 #### <a name="modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalında Email & işbirliği rolü üyeliğini değiştirme
 

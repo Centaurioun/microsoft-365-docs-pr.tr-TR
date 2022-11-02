@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - purview-compliance
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0d84b220496fd0a8f371e57492bb9f4cdd009be8
-ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
+ms.openlocfilehash: 2caf9fb9c958eae004fe8754009d325673066129
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68793752"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814637"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Microsoft Purview risk ve uyumluluk çözümlerindeki yenilikler
 
@@ -49,6 +49,22 @@ microsoft 365, [Microsoft Purview uyumluluk portalı](microsoft-365-compliance-c
 
 - **Önizlemede**: [Insider risk yönetimiyle yeni iletişim uyumluluğu tümleştirmesi](/microsoft-365/compliance/communication-compliance#integration-with-insider-risk-management-preview). İletişim uyumluluğu artık iletilerde algılanan risk sinyallerini insider risk yönetimi ilkelerine sağlayabilir. İletişim uyumluluk ilkesi tarafından iletilerde algılanan riskli kullanıcılar, kullanıcıları insider risk yönetimi ilkeleri kapsamına almak için tetikleyici bir olay görevi görür.
 
+### <a name="data-loss-prevention"></a>Veri kaybı önleme
+
+- **Önizlemede** [Uç nokta DLP ayarlarını yapılandırma](/microsoft-365/compliance/dlp-configure-endpoint-settings.md) ve [Uç nokta veri kaybı önlemeyi kullanma](/microsoft-365/compliance/endpoint-dlp-using.md) başlığında yetkilendirme grupları için birden çok güncelleştirme.
+    - [Yazıcı grupları](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#printer-groups-preview)
+    - [Çıkarılabilir USB depolama cihazı grupları](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#removable-storage-device-groups-preview)
+    - [Ağ paylaşımı yolları](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#network-share-groups-preview)
+    - [Web sitesi grupları](/microsoft-365/compliance/endpoint-dlp-using.md#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview)
+    - [VPN ağ konum grupları](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#vpn-settings-preview)
+    - [Hassas hizmet etki alanları](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#sensitive-service-domains)
+- **Önizlemede** İlkeler koşulları gruplandırma, grupları iç içe yerleştirme ve aralarında boole işleçlerinin (AND/OR/NOT) kullanımını kullanabilir.
+    - [Karmaşık kural tasarımı](/microsoft-365/compliance/dlp-policy-design.md#complex-rule-design-preview)
+    - [DLP ilkelerinde koşul olarak eğitilebilir sınıflandırıcıları kullanma](/microsoft-365/compliance/dlp-policy-reference.md#location-support-for-how-content-can-be-defined)
+-  **Önizlemede** Uç noktalar için parola korumalı veya şifrelenmiş hassas öğeleri algılama desteği.
+    - [Cihazların desteklediği koşullar](/microsoft-365/compliance/dlp-policy-reference.md#conditions-devices-supports)
+- **Genel kullanıma sunulan** [100 yeni dosya türü taranabilir](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments.md#supported-file-types-for-mail-flow-rule-content-inspection)
+
 ### <a name="insider-risk-management"></a>İçeriden risk yönetimi
 
 - **Önizlemede**: Insider risk yönetimi, kuruluşunuzun hassas verilerin yetkisiz veri sızdırması gibi olası veri risklerini daha iyi azaltmasına, anlamasına ve yanıtlamasına yardımcı olmak için cihazlar arasında özelleştirilebilir görsel etkinlik yakalamaya olanak tanıyan [adli kanıt](/microsoft-365/compliance/insider-risk-management-forensic-evidence) sağlar.
@@ -71,9 +87,11 @@ microsoft 365, [Microsoft Purview uyumluluk portalı](microsoft-365-compliance-c
 - **Önizlemede**: Gizlilik Risk Yönetimi'ndeki [veri aktarım ilkeleri](/privacy/priva/risk-management-policy-data-transfer) artık ek esnek sınır koşulları sunuyor: kullanıcıların Azure Active Directory özniteliklerine göre aktarımları algılama, farklı Microsoft 365 gruplarındaki kullanıcılar arasında aktarımlar ve SharePoint siteleri arasında aktarımlar.
 
 ### <a name="on-premises-scanner"></a>Şirket içi tarayıcı
+
 - **Önizlemede**: Azure Information Protection (AIP) şirket içi tarayıcısı tarayıcı **Microsoft Purview Bilgi Koruması** yeniden adlandırılıyor ve [yapılandırma Microsoft Purview uyumluluk portalı taşınıyor](/information-protection/deploy-aip-scanner-configure-install).
 
 ### <a name="sensitivity-labels"></a>Duyarlılık etiketleri
+
 - Eylem çağrısı: Müşteri Deneyimi Mühendisliği (CxE) ekibimizden bir [geçiş playbook'u](https://microsoft.github.io/ComplianceCxE/playbooks/AIP2MIPPlaybook) ile Office uygulamaları için AIP eklentisinden geçiş yapmanıza yardımcı olacak geçiş [kılavuzu](sensitivity-labels-aip.md)
 - **Genel kullanılabilirlik (GA):** Bir siteye daha sıkı erişim koşulları uygulamak için Azure AD Koşullu Erişim ilkeleriyle çalışan etiket [grupları ve site ayarları](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) için kimlik doğrulama bağlamları.
 - **Genel kullanılabilirlik (GA):**[PowerShell kullanarak site paylaşım izinleri](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings).
@@ -81,6 +99,11 @@ microsoft 365, [Microsoft Purview uyumluluk portalı](microsoft-365-compliance-c
 - **Önizlemede**: Office uygulamaları için AIP eklentisi [varsayılan olarak devre dışıdır](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps) ve bu varsayılanı geçersiz kılmak için yeni bir ayar gerektirir.
 - Destek deyimi: Bu hizmetler için duyarlılık etiketlerini etkinleştirdikten sonra [SharePoint ve OneDrive için desteklenen dosya türleri](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types).
 - [Birlikte yazma](sensitivity-labels-coauthoring.md#prerequisites) ve Azure Information Protection birleşik etiketleme istemcisi ve tarayıcısı için yeni önkoşul: Birlikte yazma özelliğiyle aynı kiracıda Çift Anahtar Şifrelemesi kullanılması desteklenmez.
+
+### <a name="trainable-classifiers"></a>Eğitilebilir sınıflandırıcılar
+
+- **Önizlemede** 20 + yeni eğitilebilir sınıflandırıcılar ve tek başına eğitilebilir sınıflandırıcı tanımları makalesi.
+    - [Eğitilebilir sınıflandırıcı tanımları](/microsoft-365/compliance/classifier-tc-definitions.md)
 
 ## <a name="september-2022"></a>Eylül 2022
 

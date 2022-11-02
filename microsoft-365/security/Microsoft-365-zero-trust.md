@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Sıfır Güven dağıtım planı
+title: Microsoft 365 ile Sıfır Güven dağıtım planı
 f1.keywords:
 - deploy zero trust
 - zero trust strategy
@@ -7,7 +7,7 @@ ms.author: bcarter
 author: brendacarter
 manager: dansimp
 audience: Admin
-description: Tehditlere karşı savunmak ve hassas verileri korumak için Ortamınıza Microsoft 365 Sıfır Güven güvenliği dağıtmayı öğrenin.
+description: Tehditlere karşı savunmak ve hassas verileri korumak için Microsoft 365 ile Sıfır Güven güvenlik ilkelerini uygulamayı öğrenin.
 ms.topic: tutorial
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
@@ -20,14 +20,14 @@ ms.collection:
 - zerotrust-solution
 - highpri
 - tier1
-ms.openlocfilehash: 7293085f5a16c05d5657246de481857fe6675d26
-ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
+ms.openlocfilehash: de227a1f4524770709e1a25345cfbdb697076c8d
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68492301"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68815605"
 ---
-# <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 Sıfır Güven dağıtım planı
+# <a name="zero-trust-deployment-plan-with-microsoft-365"></a>Microsoft 365 ile Sıfır Güven dağıtım planı
 
 Bu makale, Microsoft 365 ile **Sıfır Güven** güvenliği oluşturmaya yönelik bir dağıtım planı sağlar. Sıfır Güven, ihlal olduğunu varsayan ve her isteği kontrolsüz bir ağdan geliyormuş gibi doğrulayan yeni bir güvenlik modelidir. İsteğin nereden kaynaklandığına veya hangi kaynağa eriştiğine bakılmaksızın, Sıfır Güven modeli bize "hiçbir zaman güvenme, her zaman doğrulama" öğretir.
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.openlocfilehash: ab9af833225c26a0c0651a6fd3adacf948881f34
-ms.sourcegitcommit: a250d043a2e42ecbc7b86147468d1660af5a6ba7
+ms.openlocfilehash: 99d1d4bfbbce6a010f9823071b2c3be8920aa409
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68673205"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68815561"
 ---
 # <a name="protect-your-network"></a>Ağınızı koruyun
 
@@ -96,7 +96,7 @@ Ağ koruması, Microsoft koruması ve yanıt yığınının kritik bir parçası
 > [!TIP]
 > Windows Server, Linux, MacOS ve Mobile Threat Defense (MTD) için ağ koruması hakkında ayrıntılı bilgi için bkz. [Gelişmiş tehdit avcılığı ile tehditleri proaktif olarak avlama](advanced-hunting-overview.md).
 
-### <a name="block-command-and-control-c2-attacks"></a>Komut ve Denetim (C2) saldırılarını engelleme
+### <a name="block-command-and-control-attacks"></a>Komut ve Denetim saldırılarını engelleme
 
 Komut ve Denetim (C2) sunucu bilgisayarları kötü amaçlı kullanıcılar tarafından kötü amaçlı yazılımlar tarafından ele geçirilen sistemlere komut göndermek için kullanılır ve ardından güvenliği aşılmış sistemler üzerinde bir tür denetim kullanır. C2 saldırıları genellikle dosya paylaşımı ve web posta hizmetleri gibi bulut tabanlı hizmetlerde gizlenir ve C2 sunucularının tipik trafikle karışarak algılamayı önlemesini sağlar.
 
@@ -108,6 +108,12 @@ C2 sunucuları, şu komutları başlatmak için kullanılabilir:
 - Fidye yazılımı gibi kötü amaçlı yazılımları yayma
 
 Uç Nokta için Defender'ın ağ koruma bileşeni, makine öğrenmesi ve akıllı risk göstergesi (IoC) belirleme gibi teknikleri kullanarak insan tarafından çalıştırılan fidye yazılımı saldırılarında kullanılan C2 altyapılarına yönelik bağlantıları tanımlar ve engeller.
+
+#### <a name="network-protection-c2-detection-and-remediation"></a>Ağ koruması: C2 algılama ve düzeltme
+
+İlk biçiminde fidye yazılımı, önceden programlanmış ve sınırlı, belirli sonuçlara (örneğin, bir bilgisayarı şifrelemeye) odaklanmış bir ticari tehdittir. Ancak fidye yazılımı, insan odaklı, uyarlamalı ve daha geniş ölçekli ve daha yaygın sonuçlara odaklanan gelişmiş bir tehdit haline geldi. Örneğin, tüm kuruluşun varlıklarını veya verilerini fidye için tutma.
+
+Komut ve Denetim sunucuları (C2) desteği bu fidye yazılımı evriminin önemli bir parçasıdır ve bu saldırıların hedefledikleri ortama uyum sağlamasına olanak tanır. Komut ve denetim altyapısı bağlantısının kesilmesi, saldırının bir sonraki aşamasına ilerlemesini durdurur. C2 algılama ve düzeltme hakkında ek bilgi için bkz. [Ağ katmanında komut ve denetim saldırılarını algılama ve düzeltme](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/detecting-and-remediating-command-and-control-attacks-at-the/ba-p/3650607).
 
 #### <a name="network-protection-new-toast-notifications"></a>Ağ koruması: Yeni bildirim bildirimleri
 
@@ -158,14 +164,6 @@ Kullanıcı bir web sitesini ziyaret eder:
   - **Geribildirim** Bildirimde kullanıcıya, siteye erişimi gerekçelendirmek amacıyla yöneticiye geri bildirim göndermek için kullanabileceği bir bilet gönderme bağlantısı bulunur.
 
     :::image type="content" source="images/network-protection-phishing-blocked.png" alt-text="Bilinen kimlik avı içeriği engellendi bildirimini gösteren ağ koruması." lightbox="images/network-protection-phishing-blocked.png":::
-
-### <a name="network-protection-c2-detection-and-remediation"></a>Ağ koruması: C2 algılama ve düzeltme
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
-İlk biçiminde fidye yazılımı, önceden programlanmış ve sınırlı, belirli sonuçlara (örneğin, bir bilgisayarı şifrelemeye) odaklanmış bir ticari tehdittir. Ancak fidye yazılımı insan odaklı, uyarlamalı ve daha büyük ölçekli ve daha yaygın sonuçlara odaklanan gelişmiş bir tehdit haline gelmiştir; bir kuruluşun tüm varlıklarını veya verilerini fidye için tutmak gibi.
-
-Komut ve Denetim sunucuları (C2) desteği bu fidye yazılımı evriminin önemli bir parçasıdır ve bu saldırıların hedefledikleri ortama uyum sağlamasına olanak tanır. Komut ve denetim altyapısı bağlantısının kesilmesi, saldırının bir sonraki aşamasına ilerlemesini durdurur.
 
 ## <a name="smartscreen-unblock"></a>SmartScreen Engellemesini Kaldır
 

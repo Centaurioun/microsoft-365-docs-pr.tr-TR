@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Microsoft Purview çözümleri deneme kullanım kılavuzu.
 ms.custom: trial-playbook
-ms.openlocfilehash: b34caf007a9710dd351ec4a7e5ed456b5b19d840
-ms.sourcegitcommit: b439d097e55bba35d9328447d993bbcac7a178a9
+ms.openlocfilehash: f3683f195982eb2bb115dbd04cec7ded44c1a171
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "68801990"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68815407"
 ---
 # <a name="trial-user-guide-microsoft-purview-solutions"></a>Deneme kullanım kılavuzu: Microsoft Purview çözümleri
 
@@ -270,7 +270,7 @@ Hızla tanımlamanıza, önceliklendirmenize ve düzeltmenize yardımcı olmak i
 
 Farklı rollere ve erişim düzeyine sahip Insider Risk Management özelliklerini yönetmek için izinleri yapılandırmak için kullanılan dört rol grubu vardır. Devam etmeden önce Insider Risk Management izinlerini ayarlamak çok önemlidir.
 
-[Insider risk yönetimi rol grubuna kullanıcı ekleme](insider-risk-management-configure.md#add-users-to-an-insider-risk-management-role-group)
+[Insider Risk Management rol grubuna kullanıcı ekleme](insider-risk-management-configure.md#add-users-to-the-insider-risk-management-role-group)
 
 İzinleri göremiyorsanız, doğru rolleri atamak için lütfen kiracı yöneticinizle görüşün.
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft Syntex'da özel modeller arasındaki temel farklar hakkında bilgi edinin.
-ms.openlocfilehash: e5ef01e7d0bd575c58d5bd38867c5690fdf4a86c
-ms.sourcegitcommit: b386eaa33e1e5cdea59916247082b6e6e6a3d99e
+ms.openlocfilehash: a6102debf34c56807e8ca10b08c6f5abc52da3de
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "68807617"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814901"
 ---
 # <a name="compare-custom-models-in-microsoft-syntex"></a>Microsoft Syntex'de özel modelleri karşılaştırma 
 
@@ -26,7 +26,9 @@ Gereksinimlerinize en uygun modeli belirlemenize yardımcı olmak için özel mo
 
 | Özellik | Yapılandırılmamış belge işleme | Serbest biçimli belge işleme | Yapılandırılmış belge işleme |
 | ------- | ------- | ------- | ------- |
+| Oluşturma yöntemi | Eğitim yöntemi | Serbest biçimli seçim yöntemi | Layout yöntemi |
 | Bu içerik türü için kullanın | Yapılandırılmamış veya yarı yapılandırılmış dosya biçimleri, örneğin, düzende farklılıklar bulunan ancak yine de ayıklanacak benzer bilgiler olan Office belgeleri. | Yapılandırılmamış ve serbest biçimli dosya biçimleri, örneğin harfler, sözleşmeler ve iş deyimleri gibi ayarlanmış yapısı olmayan belgeler. | Yapılandırılmış ve yarı yapılandırılmış dosya biçimleri, örneğin, düzen ve biçimlendirmenin benzer olduğu faturalar veya satın alma siparişleri gibi form içeriğine yönelik PDF'ler. |
+| Eğitim yöntemi | Öğretim yöntemi | Serbest biçimli seçim yöntemi | Layout yöntemi |
 | Model oluşturma | SharePoint'te içerik merkezi olan yeni bir sitede oluşturulan model.  | SharePoint belge kitaplığından sorunsuz erişimle [AI Builder'da](/ai-builder/overview) oluşturulan model.| SharePoint belge kitaplığından sorunsuz erişimle [AI Builder'da](/ai-builder/overview) oluşturulan model. |
 | Sınıflandırma türü | Hangi verilerin ayıklanması için belge konumu atamak için makine öğretimi kullanan isteğe bağlı ayıklayıcılarla eğitilebilir sınıflandırıcı. | Geçerli değil | Geçerli değil |
 | Konum | Birden çok kitaplık için uygulanabilir. | Birden çok kitaplık için uygulanabilir. | Birden çok kitaplık için uygulanabilir. |

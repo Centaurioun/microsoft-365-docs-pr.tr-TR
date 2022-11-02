@@ -1,5 +1,6 @@
 ---
 title: Microsoft Purview uyumluluk portalındaki izinler
+description: Microsoft Purview uyumluluk portalı izinleri yönetme hakkında bilgi edinin.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,17 +10,18 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-description: Microsoft Purview uyumluluk portalı izinleri yönetme hakkında bilgi edinin.
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: b8e7f17ef22163e091307fda7cd0beb6659022dc
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 9e372ce41b3c1e037dfd6b1d740af785cb437ac0
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623853"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68812371"
 ---
 # <a name="permissions-in-the-microsoft-purview-compliance-portal"></a>Microsoft Purview uyumluluk portalındaki izinler
 
@@ -31,6 +33,8 @@ Uyumluluk portalında **İzinler** sekmesini görüntülemek için kullanıcıla
 
 Uyumluluk portalındaki izinler rol tabanlı erişim denetimi (RBAC) izin modelini temel alır. RBAC, Microsoft 365 hizmetlerinin çoğu tarafından kullanılan izin modeliyle aynıdır. Bu nedenle, bu hizmetlerdeki izin yapısı hakkında bilgi sahibiyseniz uyumluluk portalında izinler vermek tanıdık olacaktır. Uyumluluk portalında yönetilen izinlerin her bir hizmette gereken tüm izinlerin yönetimini kapsamadığını unutmayın. Yine de belirli bir hizmet için yönetim merkezinde belirli hizmete özgü izinleri yönetmeniz gerekir. Örneğin, arşivleme, denetim ve MRM bekletme ilkeleri için izinler atamanız gerekiyorsa, bu izinleri <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange yönetim merkezinde</a> yönetmeniz gerekir.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="relationship-of-members-roles-and-role-groups"></a>Üyelerin, rollerin ve rol gruplarının ilişkisi
 
 Rol, bir görev kümesi gerçekleştirme izinleri verir; örneğin, Olay Yönetimi rolü kullanıcıların eBulma servis talepleri ile çalışmasına olanak tanır.
@@ -41,7 +45,7 @@ Rol grubu, kullanıcıların uyumluluk çözümlerinde uyumluluk portalında iş
 
 ## <a name="permissions-needed-to-use-features-in-the-compliance-portal"></a>Uyumluluk portalında özellikleri kullanmak için gereken izinler
 
-Uyumluluk portalında kullanılabilen tüm varsayılan rol gruplarını ve rol gruplarına varsayılan olarak atanan rolleri görüntülemek için [Güvenlik & Uyumluluk Merkezi'ndeki İzinler'e](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) bakın.
+Uyumluluk portalında kullanılabilen tüm varsayılan rol gruplarını ve rol gruplarına varsayılan olarak atanan rolleri görüntülemek için bkz. [Microsoft 365 Defender ve Microsoft Purview uyumluluk portallarındaki roller ve rol grupları](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
 Uyumluluk portalında izinleri yönetmek, kullanıcıların yalnızca uyumluluk portalında bulunan uyumluluk özelliklerine erişmesini sağlar. Uyumluluk portalında olmayan Exchange posta akışı kuralları (taşıma kuralları olarak da bilinir) gibi diğer özelliklere izin vermek istiyorsanız <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">, Exchange yönetim merkezini</a> kullanmanız gerekir.
 

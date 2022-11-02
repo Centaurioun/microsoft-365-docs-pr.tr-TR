@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1d4406ea6372786fda542d2a9b4e83f2ede9abac
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 38dd4b4ee3908da144b1e55d8efbc0af30a39dc9
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68623945"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814395"
 ---
 # <a name="get-started-with-insider-risk-management-forensic-evidence-preview"></a>Insider risk yönetimi adli kanıtlarını kullanmaya başlama (önizleme)
 
@@ -47,12 +47,7 @@ Adli kanıt yakalamaya uygun kullanıcı cihazları [Microsoft Purview uyumluluk
 >[!IMPORTANT]
 >Microsoft Purview İstemcisi, cihaz yapılandırması ve performans ölçümleriyle ilgili genel tanılama verilerini otomatik olarak toplar. Bu, kritik hatalara, RAM tüketimine, işlem hatalarına ve diğer verilere ilişkin verileri içerir. Bu veriler, istemcinin durumunu değerlendirmemize ve sorunları tanımlamamıza yardımcı olur. Tanılama verilerinin nasıl kullanılabileceğini öğrenmek için [Microsoft Ürün Koşulları'nda](https://www.microsoft.com/licensing/product-licensing/products) Online Services ile Yazılım Kullanımı bölümüne bakın.
 
-Adli kanıttaki görsel yakalamalar aşağıdaki cihazlar/yapılandırmalar için desteklenir:
-
-- En son Windows 10 veya Windows 11 x64 derlemesi
-- Cihaz başına en fazla 4 monitör
-
-Cihazları eklemek için, Microsoft [365'e cihaz ekleme ve Windows 11 Windows 10 genel bakış](/microsoft-365/compliance/device-onboarding-overview) makalesinde açıklanan adımları tamamlayın.
+Cihaz ve yapılandırma gereksinimlerinin listesi için bkz. [Adli kanıt (önizleme) hakkında bilgi edinin](insider-risk-management-forensic-evidence.md#device-and-configuration-requirements). Desteklenen cihazları eklemek için, [Microsoft 365'e cihaz ekleme ve Windows 11 Windows 10 genel bakış](/microsoft-365/compliance/device-onboarding-overview) makalesinde açıklanan adımları tamamlayın. 
 
 Microsoft Purview İstemcisi'ni yüklemek için aşağıdaki adımları tamamlayın:
 
@@ -60,7 +55,7 @@ Microsoft Purview İstemcisi'ni yüklemek için aşağıdaki adımları tamamlay
 2. Windows **yükleme paketini indirmek için Yükleyici paketini indir (x64 sürümü)** seçeneğini belirleyin.
 3. Yükleme paketini indirdikten sonra istemciyi kullanıcıların cihazlarına yüklemek için tercih ettiğiniz yöntemi kullanın. Bu seçenekler, istemci yüklemesini otomatikleştirmeye yardımcı olmak için istemciyi cihazlara veya araçlara el ile yüklemeyi içerebilir:
 
-    - **Microsoft Endpoint Manager**: [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), tüm cihazlarınızı yönetmek için tümleşik bir çözümdür. Microsoft, [karmaşık](/mem/configmgr/core/understand/introduction) bir geçiş olmadan ve basitleştirilmiş lisanslama ile [Configuration Manager ve Intune](/mem/intune/fundamentals/what-is-intune) bir araya getirir.
+    - **Microsoft Endpoint Manager**: [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) , tüm cihazlarınızı yönetmek için tümleşik bir çözümdür. Microsoft, [karmaşık](/mem/configmgr/core/understand/introduction) bir geçiş olmadan ve basitleştirilmiş lisanslama ile [Configuration Manager ve Intune](/mem/intune/fundamentals/what-is-intune) bir araya getirir.
     - **Üçüncü taraf cihaz yönetimi çözümleri**: Kuruluşunuz üçüncü taraf cihaz yönetimi çözümleri kullanıyorsa, istemciyi yüklemek için bu araçların belgelerine bakın.
 
 

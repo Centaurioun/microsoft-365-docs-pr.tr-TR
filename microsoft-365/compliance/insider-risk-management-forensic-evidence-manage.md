@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a0cbe8409517d5b27e6f7eb1b9dca54cd3b238ae
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 6d35faf52b03afd6189e869da38e2b6f20255ec4
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68631418"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68815099"
 ---
 # <a name="manage-insider-risk-management-forensic-evidence-preview"></a>Insider risk yönetimi adli kanıtlarını yönetme (önizleme)
 
@@ -150,7 +150,9 @@ Cihazlar adli kanıtı destekleyecek şekilde yapılandırıldıktan sonra, **In
 
 ![Insider risk yönetimi adli kanıt cihaz durumu.](../media/insider-risk-forensic-evidence-device-health.png)
 
-Rapor, adli kanıt aracısının yüklü olduğu tüm cihazların durumunu ve durumunu görüntülemenizi sağlar. Rapordaki her rapor pencere öğesi son 24 saate ilişkin bilgileri görüntüler.
+En düşük cihaz ve yapılandırma gereksinimlerinin listesi için bkz. [Adli kanıt (önizleme) hakkında bilgi edinin](insider-risk-management-forensic-evidence.md#device-and-configuration-requirements). Desteklenen cihazları eklemek için, [Microsoft 365'e cihaz ekleme ve Windows 11 Windows 10 genel bakış](/microsoft-365/compliance/device-onboarding-overview) makalesinde açıklanan adımları tamamlayın. 
+
+Cihaz durumu raporu, adli kanıt aracısının yüklü olduğu tüm cihazların durumunu ve durumunu görüntülemenizi sağlar. Rapordaki her rapor pencere öğesi son 24 saate ilişkin bilgileri görüntüler.
 
 - **Çevrimiçi cihazlar**: Şu anda çevrimiçi olan cihazların toplam sayısı.
 - **Çevrimdışı cihazlar**: Şu anda çevrimdışı olan cihazların toplam sayısı.

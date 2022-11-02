@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - highpri
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 1ba34b942c125ec08cb0372fa09c50e68e4c1a32
-ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
+ms.openlocfilehash: 5daa694e32399e1b62cd34f1ed7c14fb654f9997
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68793664"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814549"
 ---
 # <a name="get-started-with-insider-risk-management"></a>İçeriden risk yönetimini kullanmaya başlama
 
@@ -125,23 +125,21 @@ Aşağıdaki rollerin üyeleri kullanıcıları insider risk yönetimi rol grupl
 > [!NOTE]
 > Bu rol grupları şu anda Privileged Identity Management (PIM) üzerinde desteklenmemektedir. PIM hakkında daha fazla bilgi edinmek için bkz. [Privileged Identity Management'da Azure AD rolleri atama](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
 
-### <a name="add-users-to-an-insider-risk-management-role-group"></a>Insider risk yönetimi rol grubuna kullanıcı ekleme
+### <a name="add-users-to-the-insider-risk-management-role-group"></a>Insider Risk Management rol grubuna kullanıcı ekleme
 
-Insider risk yönetimi rol grubuna kullanıcı eklemek için aşağıdaki adımları tamamlayın:
+Bu rol grubuna kullanıcı eklemek için aşağıdaki adımları tamamlayın:
 
 1. Microsoft 365 kuruluşunuzdaki bir yönetici hesabının kimlik bilgilerini kullanarak [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) oturum açın.
 
-2. Güvenlik &amp; Uyumluluk Merkezi'nde **İzinler'e** gidin. Office 365 rolleri görüntülemek ve yönetmek için bağlantıyı seçin.
+2. Sol gezinti bölmesinde **İzinler'i** seçin ve **Microsoft Purview çözümleri** listesinin altında **Roller'i** seçin.
 
-3. Kullanıcıları eklemek istediğiniz insider risk yönetimi rol grubunu seçin ve ardından **Rol grubunu düzenle'yi** seçin.
+3. *Insider Risk Management* rol grubunu ve ardından **Düzenle'yi** seçin.
 
-4. Sol gezinti **bölmesinden Üyeleri seç'i** ve ardından **Düzenle'yi** seçin.
+4. **Kullanıcıları seçin** sekmesini seçin ve ardından rol grubuna eklemek istediğiniz tüm kullanıcılar için onay kutusunu seçin.
 
-5. **Ekle'yi** seçin ve ardından rol grubuna eklemek istediğiniz tüm kullanıcılar için onay kutusunu seçin.
+6. **Seç'i** ve ardından **İleri'yi** seçin.
 
-6. **Ekle'yi** ve ardından **Bitti'yi** seçin.
-
-7. Kullanıcıları rol grubuna eklemek için **Kaydet'i** seçin. Adımları tamamlamak için **Kapat'ı** seçin.
+7. Kullanıcıları rol grubuna eklemek için **Kaydet'i** seçin. Adımları tamamlamak için **Bitti'yi** seçin.
 
 ## <a name="step-2-required-enable-the-microsoft-365-audit-log"></a>2. Adım (gerekli): Microsoft 365 denetim günlüğünü etkinleştirme
 

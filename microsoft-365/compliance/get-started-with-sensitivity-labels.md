@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Kuruluşunuzun verilerini korumaya yardımcı olmak için duyarlılık etiketlerini kullanan yöneticiler, lisans gereksinimleri ve yaygın senaryolar için açıklayıcı adımlar.
-ms.openlocfilehash: cb956c413d975c6d0199cb9b8f2d620b35b69fdc
-ms.sourcegitcommit: ca082da1c51a3f643f152492579eef5679d52bd0
+ms.openlocfilehash: d684232f7ed44231d45a5a4e3d7ac26b834be7d7
+ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68548004"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68814241"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Hassasiyet etiketlerini kullanmaya başlama
 
@@ -78,7 +78,7 @@ Alternatif olarak, varsayılan rolleri kullanmak için yeni bir rol grubu oluşt
 > - **Information Protection Araştırmacıları**
 > - **Information Protection Okuyucular**
 >
-> Her birinin ve içerdikleri yeni rollerin açıklaması için <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">, Microsoft Purview uyumluluk portalı</a> **Permissions &** >  rolleri **Uyumluluk merkezi** > **Rolleri'nde** bir rol  >  grubu seçin ve açılan bölmedeki açıklamayı gözden geçirin. Veya bkz [. Güvenlik & Uyumluluk Merkezi'nde rol grupları](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center).
+> Her birinin ve içerdikleri yeni rollerin açıklaması için <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">, Microsoft Purview uyumluluk portalı</a> **Permissions &** >  rolleri **Uyumluluk merkezi** > **Rolleri'nde** bir rol  >  grubu seçin ve açılan bölmedeki açıklamayı gözden geçirin. Veya bkz [. Güvenlik & Uyumluluk Merkezi'nde rol grupları](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-defender-and-compliance-portals).
 
 Varsayılan rol grubuna, rollere kullanıcı ekleme veya kendi rol gruplarınızı oluşturma yönergeleri için bkz. [Microsoft Purview uyumluluk portalı izinler](microsoft-365-compliance-center-permissions.md).
 
