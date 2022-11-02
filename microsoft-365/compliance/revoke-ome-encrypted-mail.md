@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Yönetici olarak ve ileti gönderen olarak, Microsoft Purview Gelişmiş İleti Şifrelemesi ile şifrelenen bazı e-postaları iptal edebilirsiniz.
-ms.openlocfilehash: 739165155817f3063bfb87aaae0bce7b3aa02931
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: bdae122260b932111017b1a0af31bb268d46a9d6
+ms.sourcegitcommit: a88aadf5786f1bd9e5bae763f603a2b690473322
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68643591"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68817442"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Gelişmiş İleti Şifrelemesi ile şifrelenen e-postayı iptal etme
 
@@ -90,15 +90,15 @@ Microsoft 365 yöneticileri, uygun bir şifrelenmiş e-postayı iptal etmek içi
 
 İptal etmek istediğiniz e-postanın İleti Kimliğini bulmanın birden çok yolu vardır. Bu bölümde birkaç seçenek açıklanmaktadır, ancak kimliği sağlayan herhangi bir yöntemi kullanabilirsiniz.
 
-#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-message-trace-in-the-security-amp-compliance-center"></a>Güvenlik &amp; Uyumluluk Merkezi'nde İleti İzleme'yi kullanarak iptal etmek istediğiniz e-postanın İleti Kimliğini belirlemek için
+#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-message-trace-in-the-microsoft-purview-compliance-portal"></a>Microsoft Purview uyumluluk portalı İleti İzleme'yi kullanarak iptal etmek istediğiniz e-postanın İleti Kimliğini belirlemek için
 
-1. [Güvenlik & Uyumluluk Merkezi'nde Yeni İleti İzleme'yi](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/) kullanarak gönderene veya alıcıya göre e-postayı arayın.
+1. [Microsoft Purview uyumluluk portalı'da Yeni İleti İzleme'yi](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/) kullanarak gönderene veya alıcıya göre e-postayı arayın.
 
 2. E-postayı bulduktan sonra **, İleti izleme ayrıntıları** bölmesini açmak için e-postayı seçin. İleti Kimliğini bulmak için **Daha Fazla Bilgi'yi** genişletin.
 
-#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-message-encryption-reports-in-the-security-amp-compliance-center"></a>Güvenlik &amp; Uyumluluk Merkezi'nde İleti Şifreleme raporlarını kullanarak iptal etmek istediğiniz e-postanın İleti Kimliğini belirlemek için
+#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-message-encryption-reports-in-the-microsoft-purview-compliance-portal"></a>Microsoft Purview uyumluluk portalı İleti Şifrelemesi raporlarını kullanarak iptal etmek istediğiniz e-postanın İleti Kimliğini belirlemek için
 
-1. Güvenlik &amp; Uyumluluk Merkezi'nde **İleti şifreleme raporuna** gidin. Bu rapor hakkında bilgi için bkz. [Güvenlik &amp; Uyumluluk Merkezi'nde e-posta güvenlik raporlarını görüntüleme](../security/office-365-security/view-email-security-reports.md).
+1. Microsoft Purview uyumluluk portalı **İleti şifreleme raporuna** gidin. Bu rapor hakkında bilgi için bkz. [Güvenlik &amp; Uyumluluk Merkezi'nde e-posta güvenlik raporlarını görüntüleme](../security/office-365-security/view-email-security-reports.md).
 
 2. **Ayrıntıları görüntüle** tablosunu seçin ve iptal etmek istediğiniz iletiyi belirleyin.
 
@@ -106,7 +106,7 @@ Microsoft 365 yöneticileri, uygun bir şifrelenmiş e-postayı iptal etmek içi
 
 ### <a name="step-2-verify-that-the-mail-is-revocable"></a>Adım 2. Postanın iptal edilebilir olduğunu doğrulayın
 
-bir iletiyi iptal edip etmediğinizi doğrulamak için İptal Durumu alanının Güvenlik &amp; Uyumluluk Merkezi'ndeki **Ayrıntılar** tablosundaki Şifreleme raporunda görünüp görünmediğini denetleyin.
+bir iletiyi iptal edip etmediğinizi doğrulamak için İptal Durumu alanının Microsoft Purview uyumluluk portalı **ayrıntılar** tablosundaki Şifreleme raporunda görünüp görünmediğini denetleyin.
 
 Windows PowerShell kullanarak belirli bir e-posta iletisini iptal edip etmediğinizi doğrulamak için bu adımları tamamlayın.
 
@@ -128,11 +128,11 @@ Windows PowerShell kullanarak belirli bir e-posta iletisini iptal edip etmediği
 
 ### <a name="step-3-revoke-the-mail"></a>Adım 3. Postayı iptal etme
 
-İptal etmek istediğiniz e-postanın İleti Kimliğini bildiğinizde ve iletinin iptal edilebilir olduğunu doğruladıktan sonra, Güvenlik &amp; Uyumluluk Merkezi'ni veya Windows PowerShell kullanarak e-postayı iptal edebilirsiniz.
+İptal etmek istediğiniz e-postanın İleti Kimliğini bildiğinizde ve iletinin iptal edilebilir olduğunu doğruladıktan sonra, Microsoft Purview uyumluluk portalı veya Windows PowerShell kullanarak e-postayı iptal edebilirsiniz.
 
-Güvenlik &amp; Uyumluluk Merkezi'ni kullanarak iletiyi iptal etmek için
+Microsoft Purview uyumluluk portalı kullanarak iletiyi iptal etmek için
 
-1. Kuruluşunuzda genel yönetici izinlerine sahip bir iş veya okul hesabı kullanarak Güvenlik & Uyumluluk Merkezi'ne bağlanın.
+1. Kuruluşunuzda genel yönetici izinlerine sahip bir iş veya okul hesabı kullanarak Microsoft Purview uyumluluk portalı bağlanın.
 
 2. **Şifreleme raporunda**, iletinin **Ayrıntılar** tablosunda İletiyi **iptal et'i** seçin.
 

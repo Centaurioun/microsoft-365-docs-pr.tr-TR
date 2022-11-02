@@ -20,12 +20,12 @@ description: Office 365 İleti Şifrelemesi kullanarak kuruluşunuz için hassas
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: a3c6797750c25e876e1df159d75f1a269decee80
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 798d5da090624cb25a7e3d3c02e7cca5db5ead90
+ms.sourcegitcommit: a88aadf5786f1bd9e5bae763f603a2b690473322
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68634552"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68817259"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>İleti Şifrelemesi'ni kullanarak kuruluşunuz için hassas bilgi türü ilkesi oluşturma
 
@@ -73,7 +73,7 @@ Kuruluşunuzdaki kişileri bu değişikliğe hazırlamak için geçerli son kull
 
 ## <a name="view-these-changes-in-the-audit-log"></a>Bu değişiklikleri denetim günlüğünde görüntüleyin
 
-Microsoft 365 bu etkinliği denetler ve yöneticilerin kullanımına sağlar. İşlem 'New-TransportRule' işlemidir ve Güvenlik & Uyumluluk Merkezi'nde Denetim Günlüğü Araması'ndan bir örnek denetim girişinin parçacığı aşağıda verilmiştir:
+Microsoft 365 bu etkinliği denetler ve yöneticilerin kullanımına sağlar. İşlem 'New-TransportRule' işlemidir ve Microsoft Purview uyumluluk portalı denetim günlüğü aramasından örnek bir denetim girişinin parçacığı aşağıda verilmiştir:
 
 ```text
 *{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications"...etc.*

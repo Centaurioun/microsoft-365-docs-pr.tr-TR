@@ -18,12 +18,12 @@ metadata:
   ms.collection:
   - tier1
   - purview-compliance
-  ms.openlocfilehash: 57b10ae8e70e6d04d840b434d852b00ab170df62
-  ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+  ms.openlocfilehash: c1dc1b1bef51b069545b5b54532dc5094d8d238d
+  ms.sourcegitcommit: a88aadf5786f1bd9e5bae763f603a2b690473322
   ms.translationtype: MT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 10/20/2022
-  ms.locfileid: "68630808"
+  ms.lasthandoff: 11/02/2022
+  ms.locfileid: "68817440"
 title: İleti Şifreleme hakkında SSS
 summary: "\nYeni ileti koruma özelliklerinin nasıl çalıştığı hakkında bir sorunuz mu var? Burada bir yanıt olup olmadığını kontrol edin. Ayrıca [Azure Information Protection'de veri koruma](/information-protection/get-started/faqs-rms) hizmeti olan Azure Rights Management hakkındaki soruların yanıtları için Azure Information Protection'da veri koruma hakkında sık sorulan sorulara göz atın.\n"
 sections:
@@ -132,7 +132,7 @@ sections:
     answer: "Şifrelenmiş ileti portalı etkinlik günlükleri yalnızca şifrelenmiş ileti portallarına erişerek dış alıcıların olaylarını yakalar.  Dış alıcılar tarafından tetiklenen e-posta istemcilerindeki etkinlikler kaydedilmez. İç alıcılar için bkz. [Purview Denetimi (Premium) - Erişilen posta öğeleri günlükleri](/compliance/mailitemsaccessed-forensics-investigations#the-mailitemsaccessed-mailbox-auditing-action). \n"
   - question: >
       Şifrelenmiş e-postalar için herhangi bir raporlama özelliği veya içgörü var mı?
-    answer: "Güvenlik ve Uyumluluk Merkezi'nde bir Şifreleme raporu vardır. Bkz. [Güvenlik & Uyumluluk Merkezi'nde e-posta güvenlik raporlarını görüntüleme](../security/office-365-security/view-email-security-reports.md).\n  \n"
+    answer: "Güvenlik ve Uyumluluk Merkezi'nde bir Şifreleme raporu vardır. Bkz. [Microsoft Purview uyumluluk portalı e-posta güvenlik raporlarını görüntüleme](../security/office-365-security/view-email-security-reports.md).\n  \n"
   - question: >
       İleti şifrelemeyi eBulma gibi uyumluluk özellikleriyle kullanabilir miyim?
     answer: >

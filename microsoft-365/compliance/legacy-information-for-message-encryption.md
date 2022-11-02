@@ -21,12 +21,12 @@ ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 description: Kuruluşunuz için eski dosyaların Office 365 İleti Şifrelemesi'ne (OME) nasıl geçirilmesini anlayın.
-ms.openlocfilehash: 97333df898dfd8aaff0670cc73b3c67a9325fd47
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: ef6dd13ee42d83a671486a502667b4ccaa9fea39
+ms.sourcegitcommit: a88aadf5786f1bd9e5bae763f603a2b690473322
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68626434"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68817576"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 İleti Şifrelemesi için eski bilgiler
 
@@ -317,4 +317,4 @@ Hayır. İleti gönderildikten sonra belirli bir kişiye ileti gönderemezsiniz.
 
 İlk olarak, e-posta istemcinizdeki gereksiz veya istenmeyen posta klasörünü denetleyin. Kuruluşunuzun DKIM ve DMARC ayarları bu e-postaların istenmeyen posta olarak filtrelenmesine neden olabilir.
 
-Ardından, Güvenlik & Uyumluluk Merkezi'nde karantinayı denetleyin. Genellikle, tek seferlik bir geçiş kodu içeren iletiler, özellikle kuruluşunuzun ilk aldığı iletiler karantinaya alınıyor.
+Ardından, Microsoft Purview uyumluluk portalı karantinaya alın. Genellikle, tek seferlik bir geçiş kodu içeren iletiler, özellikle kuruluşunuzun ilk aldığı iletiler karantinaya alınıyor.

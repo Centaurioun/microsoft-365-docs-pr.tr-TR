@@ -13,12 +13,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Kayıp Müşteri Anahtarlarını kurtarmak için kullanılan kullanılabilirlik anahtarı hakkında bilgi edinin.
-ms.openlocfilehash: 3a6fcebcd9ccc3a6e81728803e19b3b21a62432a
-ms.sourcegitcommit: 0d8fb571024f134d7480fe14cffc5e31a687d356
+ms.openlocfilehash: 6b89639fdcd3045c3b8c1d68f1af186556616c90
+ms.sourcegitcommit: a88aadf5786f1bd9e5bae763f603a2b690473322
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68641963"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68817601"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>Müşteri Anahtarı için uygunluk anahtarı hakkında daha fazla bilgi edinme
 
@@ -175,7 +175,7 @@ Microsoft 365'teki otomatik sistemler, virüsten koruma, e-bulma, veri kaybı ö
 
 Exchange Online ve Skype Kurumsal hizmet sağlamak için kullanılabilirlik anahtarına eriştiğinde, Microsoft 365 Güvenlik ve Uyumluluk Merkezi'nden erişilebilen müşteri görünür günlükleri yayımlar. Hizmet kullanılabilirlik anahtarını her kullandığında kullanılabilirlik anahtarı işlemi için bir denetim günlüğü kaydı oluşturulur. Etkinlik türü "Kullanılabilirlik Anahtarına Geri Dönüş" olan "Müşteri Anahtar Hizmeti Şifrelemesi" adlı yeni kayıt türü, yöneticilerin kullanılabilirlik anahtarı kayıtlarını görüntülemek için [Birleşik Denetim Günlüğü](./search-the-audit-log-in-security-and-compliance.md) arama sonuçlarını filtrelemesine olanak tanır.
 
-Günlük kayıtları tarih, saat, etkinlik, kuruluş kimliği ve veri şifreleme ilkesi kimliği gibi öznitelikleri içerir. Kayıt Birleşik Denetim Günlükleri'nin bir parçası olarak kullanılabilir ve Güvenlik & Uyumluluk Merkezi Denetim Günlüğü Arama sekmesinden erişilebilir.
+Günlük kayıtları tarih, saat, etkinlik, kuruluş kimliği ve veri şifreleme ilkesi kimliği gibi öznitelikleri içerir. Kayıt Birleşik Denetim Günlükleri'nin bir parçası olarak kullanılabilir ve Microsoft Purview uyumluluk portalı Denetim Günlüğü Araması sekmesinden erişilebilir.
 
 ![Kullanılabilirlik anahtarı olayları için denetim günlüğü araması](../media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
 

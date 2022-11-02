@@ -19,12 +19,12 @@ ms.custom: ''
 description: Kuruluşunuzun güvenlik endişelerini takip etmelerine yardımcı olmak için yeni Dikkat Çekici İzleyiciler de dahil olmak üzere Tehdit İzleyicileri hakkında bilgi edinin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 5bc2bfb0d6592b9afd5dd1d6295b1bc1cf7d014a
-ms.sourcegitcommit: 181a0aff54842dcbafd834647c6e9ee47304d10f
+ms.openlocfilehash: 1b0d22cbe4eb34d06e439d620b1b58d25e7ddd32
+ms.sourcegitcommit: a88aadf5786f1bd9e5bae763f603a2b690473322
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68728059"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68817497"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Tehdit İzleyicileri - Yeni ve Dikkat Çekici
 
@@ -42,10 +42,6 @@ ms.locfileid: "68728059"
 ## <a name="what-are-threat-trackers"></a>Tehdit İzleyicileri nedir?
 
 Tehdit İzleyicileri, şirketinizi etkileyebilecek farklı siber güvenlik sorunları hakkında size zeka sağlayan bilgilendirici pencere öğeleri ve görünümlerdir. Örneğin, Tehdit İzleyicisi'ni kullanarak popüler kötü amaçlı yazılım kampanyalarıyla ilgili bilgileri görüntüleyebilirsiniz.
-
-İzleyici sayfalarının çoğunda düzenli aralıklarla güncelleştirilen popüler sayılar, hangi sorunların en büyük olduğunu veya en çok büyüdüğünü anlamanıza yardımcı olacak pencere öğeleri ve daha ayrıntılı bilgileri görüntüleyebileceğiniz **Eylemler** sütununda sizi Gezgin'e götüren hızlı bir bağlantı bulunur.
-
-:::image type="content" source="../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png" alt-text="Gezgin'de kampanya bilgileri örneği" lightbox="../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png":::
 
 İzleyiciler, [Office 365 için Microsoft Defender Plan 2](office-365-ti.md) ile elde ettiğiniz birçok harika özelliğin yalnızca birkaçıdır. Tehdit İzleyicileri [arasında Önemli izleyiciler](#noteworthy-trackers), [Popüler izleyiciler](#trending-trackers), [İzlenen sorgular](#tracked-queries) ve [Kaydedilen sorgular](#saved-queries) bulunur.
 

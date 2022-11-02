@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Bu makale, ileti şifrelemesinin farklı sürümleri arasındaki farkları açıklamaya yardımcı olur.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d77d61ce5c27dad476a67a4360eae463196385b4
-ms.sourcegitcommit: 21548843708d80bc861f03ffae41457252492bb6
+ms.openlocfilehash: 710c7aa0830548afe569a7980dabefde8a4e4f39
+ms.sourcegitcommit: a88aadf5786f1bd9e5bae763f603a2b690473322
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68793268"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68817562"
 ---
 # <a name="compare-versions-of-message-encryption"></a>İleti şifreleme sürümlerini karşılaştırma
 
@@ -62,7 +62,7 @@ Yeni özellikler aşağıdaki avantajları sağlar:
 - Gmail, Yahoo ve Microsoft hesapları gibi Microsoft 365 dışındaki hesaplar, bu alıcılar için daha iyi bir kullanıcı deneyimi sağlayan OME portalıyla birleştirilir. Diğer tüm kimlikler şifrelenmiş iletilere erişmek için tek seferlik bir geçiş kodu kullanır.
 - Yöneticiler markayı özelleştirebilir ve birden çok marka şablonu oluşturabilir.
 - Yöneticiler yeni özelliklerle şifrelenmiş e-postaları iptal edebilir.
-- Yeni özellikler, Güvenlik &amp; Uyumluluk Merkezi aracılığıyla ayrıntılı kullanım raporları sağlar.
+- Yeni özellikler, Microsoft Purview uyumluluk portalı aracılığıyla ayrıntılı kullanım raporları sağlar.
 
 ## <a name="microsoft-purview-advanced-message-encryption-capabilities"></a>Microsoft Purview Gelişmiş İleti Şifreleme özellikleri
 

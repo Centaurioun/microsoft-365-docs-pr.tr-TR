@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-migratetom365
 search.appverid: MET150
 description: Kiracılar arası OneDrive geçişi
-ms.openlocfilehash: 0088e7088dd67fd3a4d189eacdacde5362d0ff73
-ms.sourcegitcommit: ab45f2963e0635ff2cb9670f6f7b4c784f6a250e
+ms.openlocfilehash: d17c1ff16dc5cc4a833fb0f37823516b335ea34c
+ms.sourcegitcommit: a88aadf5786f1bd9e5bae763f603a2b690473322
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 11/02/2022
-ms.locfileid: "68814109"
+ms.locfileid: "68817224"
 ---
 # <a name="cross-tenant-onedrive-migration"></a>Kiracılar arası OneDrive geçişi
 
@@ -34,7 +34,8 @@ Birleştirmeler veya dalışlar sırasında, genellikle kullanıcılar OneDrive 
 
 Belirli bir zamanda geçiş için en fazla 4.000 OneDrive hesabı zamanlanabilir. Zamanlandıktan sonra, geçişler kullanıcının verileri Microsoft 365 bulutunu terk etmeden ve minimum kesintiyle gerçekleşir ve kullanıcının OneDrive'ını salt okunur hale gelmesi için yalnızca birkaç dakika gerekir. Geçişler tamamlandığında, kullanıcının özgün OneDrive konumuna bir yeniden yönlendirme yerleştirilir, böylece dosya ve klasörlere yönelik tüm bağlantılar yeni konumda çalışmaya devam edebilir. 
 
-Bu özellik GCC, Tüketici, GCC High veya DoD dahil olmak üzere Kamu Bulutu kullanıcıları için desteklenmez.
+>[!Note]
+>Bu özellik GCC, Tüketici, GCC High veya DoD dahil olmak üzere Kamu Bulutu kullanıcıları için desteklenmez.
 
 ## <a name="licensing"></a>Lisanslama
 
