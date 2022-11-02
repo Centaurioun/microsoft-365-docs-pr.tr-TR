@@ -24,12 +24,12 @@ description: Müşterilerinizin Bookings'te zamanlanmış sanal randevuların ku
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 48a584769980bea2257bf5f2f629a0bd9f77428c
-ms.sourcegitcommit: 0ad7edcfdcdd11d02fa8a14ffe4b36e120d92deb
+ms.openlocfilehash: 50735b59689b0b1d2fcb6673bf409dd8f643852c
+ms.sourcegitcommit: a66b30765efc0ea0eca865f08a62d45047a90246
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2022
-ms.locfileid: "68786705"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68827956"
 ---
 # <a name="help-your-clients-and-customers-use-virtual-appointments-scheduled-with-bookings"></a>Müşterilerinizin ve müşterilerinizin Bookings ile zamanlanmış sanal randevuları kullanmalarına yardımcı olun
 
@@ -117,10 +117,10 @@ Web sitenizde öne çıkan bu bilgi grafiklerinden birini indirin ve [özelleşt
 
 | Grafik                | Açıklama ve bağlantılar              |
 | :------------------- | -------------------: |
-| [![Finansal hizmetler bilgi grafiğinin görüntüsü](media/vv-finserv-thumbnail.png)](//download.microsoft.com/download/8/5/7/85784cd8-6945-4fcc-a3c3-972bd88d3fef/VirtualVisit_Financial_Infographic.pdf) | Finansal hizmetler kuruluşunuz için özelleştirilebilir bilgi grafiği <br> [PDF olarak indirme](//download.microsoft.com/download/8/5/7/85784cd8-6945-4fcc-a3c3-972bd88d3fef/VirtualVisit_Financial_Infographic.pdf) <br> [PowerPoint olarak indirme](//download.microsoft.com/download/8/5/7/85784cd8-6945-4fcc-a3c3-972bd88d3fef/VirtualVisit_Financial_Infographic.pptx)
-| [![Perakende bilgi grafiğinin görüntüsü](media/vv-retail-thumbnail.png)](//download.microsoft.com/download/a/b/5/ab5c07d9-cf7a-47b3-ba54-05a8a0a2a1bd/VirtualVisit_Retail_Infographic.pdf) | Perakende kuruluşunuz için özelleştirilebilir bilgi grafiği <br> [PDF olarak indirme](//download.microsoft.com/download/a/b/5/ab5c07d9-cf7a-47b3-ba54-05a8a0a2a1bd/VirtualVisit_Retail_Infographic.pdf) <br> [PowerPoint olarak indirme](//download.microsoft.com/download/a/b/5/ab5c07d9-cf7a-47b3-ba54-05a8a0a2a1bd/VirtualVisit_Retail_Infographic.pptx) |
-| [![Sağlık bilgi grafiğinin görüntüsü](media/vv-healthcare-thumbnail.png)](//download.microsoft.com/download/4/d/3/4d3d9c53-0304-4aea-a56a-60a16402c58f/VirtualVisit_Healthcare_Infographic.pdf) | Sağlık kuruluşunuz için özelleştirilebilir bilgi grafiği <br> [PDF olarak indirme](//download.microsoft.com/download/4/d/3/4d3d9c53-0304-4aea-a56a-60a16402c58f/VirtualVisit_Healthcare_Infographic.pdf) <br> [PowerPoint olarak indirme](//download.microsoft.com/download/4/d/3/4d3d9c53-0304-4aea-a56a-60a16402c58f/VirtualVisit_Healthcare_Infographic.pptx) |
-| [![Sektöre özgü olmayan bilgi grafiğinin görüntüsü.](media/va-generic-thumb.png)](//download.microsoft.com/download/c/6/9/c69d3f29-a8f5-462b-a645-79119beab406/VirtualVisit_Generic_Infographic.pdf) | Belirli bir sektöre özgü olmayan özelleştirilebilir bilgi grafiği <br> [PDF olarak indirme](//download.microsoft.com/download/c/6/9/c69d3f29-a8f5-462b-a645-79119beab406/VirtualVisit_Generic_Infographic.pdf) <br> [PowerPoint olarak indirme](//download.microsoft.com/download/c/6/9/c69d3f29-a8f5-462b-a645-79119beab406/VirtualVisit_Generic_Infographic.pptx) |
+|![Finansal hizmetler bilgi grafiğinin görüntüsü](media/vv-finserv-thumbnail.png)| Finansal hizmetler kuruluşunuz için özelleştirilebilir bilgi grafiği <br> [PDF olarak indirme](https://go.microsoft.com/fwlink/?linkid=2214189) <br> [PowerPoint olarak indirme](https://go.microsoft.com/fwlink/?linkid=2214285)
+|![Perakende bilgi grafiğinin görüntüsü](media/vv-retail-thumbnail.png)| Perakende kuruluşunuz için özelleştirilebilir bilgi grafiği <br> [PDF olarak indirme](https://go.microsoft.com/fwlink/?linkid=2214355) <br> [PowerPoint olarak indirme](https://go.microsoft.com/fwlink/?linkid=2214283) |
+|![Sağlık bilgi grafiğinin görüntüsü](media/vv-healthcare-thumbnail.png)| Sağlık kuruluşunuz için özelleştirilebilir bilgi grafiği <br> [PDF olarak indirme](https://go.microsoft.com/fwlink/?linkid=2214356) <br> [PowerPoint olarak indirme](https://go.microsoft.com/fwlink/?linkid=2214357) |
+|![Sektöre özgü olmayan bilgi grafiğinin görüntüsü.](media/va-generic-thumb.png)| Belirli bir sektöre özgü olmayan özelleştirilebilir bilgi grafiği <br> [PDF olarak indirme](https://go.microsoft.com/fwlink/?linkid=2214284) <br> [PowerPoint olarak indirme](https://go.microsoft.com/fwlink/?linkid=2214282) |
 
 ### <a name="customize-your-infographic"></a>Bilgi grafiğinizi özelleştirme
 
@@ -128,7 +128,7 @@ Web sitenizde öne çıkan bu bilgi grafiklerinden birini indirin ve [özelleşt
     1. Sağlık Hizmetleri
     2. Finansal hizmetler
     3. Perakende
-    1. Herhangi bir sektör
+    4. Herhangi bir sektör
 
 2. PowerPoint'te bilgi grafiğini özelleştirme.
     1. Kuruluşunuzun renklerini ve tercih edilen yazı tiplerini kullanın.
